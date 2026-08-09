@@ -13,4 +13,3 @@
 - 电商、产品发布、颜色系列与材料/机构展示。
 - 不用于口播广告、虚构功能、假参数或廉价通用科技舞台。
 - H3 使用官方仓库 `minimalist-product-ad-generator`；本 Skill 不导入 ComfyUI。
-

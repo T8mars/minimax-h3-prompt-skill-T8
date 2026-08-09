@@ -13,4 +13,3 @@
 - 风格化 3D 故事、角色短片、连续多片段动画。
 - 不适合纯写实实拍、单张静帧或无故事目标的通用润色。
 - H3 使用官方仓库 `3d-animation-short-generator`；本 Skill 不导入 ComfyUI。
-

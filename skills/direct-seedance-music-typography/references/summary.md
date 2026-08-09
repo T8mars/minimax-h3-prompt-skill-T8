@@ -13,4 +13,3 @@
 - MV、音乐视觉、说唱/演唱片段、节拍驱动空间字效。
 - 不用于普通字幕清理，也不复制无权使用的歌词。
 - H3 使用官方仓库 `music-video-subtitle-generator`；本 Skill 不导入 ComfyUI。
-

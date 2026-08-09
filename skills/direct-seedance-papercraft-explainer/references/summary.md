@@ -13,4 +13,3 @@
 - 科普、教育、机制说明与手工微缩舞台短片。
 - 不用于平面矢量动画、实拍或只做纸纹滤镜。
 - H3 使用官方仓库 `papercraft-stop-motion-explainer`；本 Skill 不导入 ComfyUI。
-

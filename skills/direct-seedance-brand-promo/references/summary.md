@@ -13,4 +13,3 @@
 - 产品发布、网站/App 演示、店铺、个人项目与品牌 Reel。
 - 不用于编造品牌声明、仿造不可用 Logo 或无证据的性能宣传。
 - H3 使用官方仓库 `brand-promo-video-generator`；本 Skill 不导入 ComfyUI。
-

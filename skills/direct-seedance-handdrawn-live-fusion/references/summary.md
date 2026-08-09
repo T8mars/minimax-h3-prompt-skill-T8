@@ -13,4 +13,3 @@
 - 4–15 秒轻喜剧、奇想或温暖的混合媒介短片。
 - 不用于恐怖跳吓、光滑 CG、无因果拼接或简单视觉滤镜。
 - H3 使用官方仓库 `handdrawn-live-video-generator`；本 Skill 不导入 ComfyUI。
-

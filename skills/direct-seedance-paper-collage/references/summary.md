@@ -13,4 +13,3 @@
 - 4–15 秒知识讲解、观点 B-roll、故事节拍或品牌概念插段。
 - 不用于写实主持人广告、可编辑图层交付或光滑数字图层漂移。
 - H3 使用官方仓库 `paper-collage-explainer-generator`；本 Skill 不导入 ComfyUI。
-
