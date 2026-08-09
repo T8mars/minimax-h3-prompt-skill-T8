@@ -1,0 +1,58 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "reddit-1vgynd7-chibi-pinch",
+  "slug": "create-cross-medium-reaction",
+  "title": "Cross-Medium Contact Reaction Ladder",
+  "source_title": "2D chibi girl added ‘Just a Pinch’ — MiniMax H3",
+  "summary": "在稳定写实空间中放入唯一的平面角色，让一次真实—动画接触先建立因果，再通过三段清晰反应逐级升级，最后把不可思议的材质效果落回真实物体。",
+  "status": "released",
+  "source_duration_seconds": 10.154,
+  "target_duration_seconds": 15,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/create-cross-medium-reaction",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/reddit-1vgynd7-chibi-pinch/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/reddit-1vgynd7-chibi-pinch/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "tags": [
+    "mixed-media",
+    "live-action",
+    "2d-character",
+    "locked-camera",
+    "reaction-ladder",
+    "contact-physics"
+  ],
+  "quality": {
+    "weighted_score": 4.693,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-09T01:34:52+08:00",
+  "updated_at": "2026-08-09T18:06:11+08:00"
+}

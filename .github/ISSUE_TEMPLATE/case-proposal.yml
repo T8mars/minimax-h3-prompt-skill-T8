@@ -1,0 +1,54 @@
+name: Case proposal / 案例建议
+description: Suggest one specific creative short video with reusable mechanisms.
+title: "[Case] "
+labels:
+  - case-proposal
+body:
+  - type: markdown
+    attributes:
+      value: 技术教程、Benchmark、模型对比、新闻和工作流帖子不属于案例。请先搜索 URL、作者和机制，避免重复。
+  - type: input
+    id: source
+    attributes:
+      label: Canonical source URL / 原始帖子地址
+      placeholder: https://x.com/creator/status/...
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: Creator and platform / 作者与平台
+    validations:
+      required: true
+  - type: textarea
+    id: mechanism
+    attributes:
+      label: Reusable mechanism / 可复用机制
+      description: Explain motion, timing, camera, light, sound, performance, or narrative value—not only visual style.
+    validations:
+      required: true
+  - type: dropdown
+    id: attribution
+    attributes:
+      label: Model attribution / 模型归属
+      options:
+        - Explicit creator statement
+        - Strong linked evidence
+        - Inferred only
+        - Unknown
+    validations:
+      required: true
+  - type: textarea
+    id: prompt_evidence
+    attributes:
+      label: Prompt evidence / 提示词证据
+      description: State whether prompt text is in the same post/thread by the same creator. Leave unknown facts unknown.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks / 提交确认
+      options:
+        - label: I searched for duplicate URL, creator, and mechanism entries.
+          required: true
+        - label: This is a specific creative video, not a tutorial, benchmark, comparison, news, or workflow post.
+          required: true

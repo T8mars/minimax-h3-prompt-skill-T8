@@ -1,0 +1,35 @@
+{
+  "name": "t8-creative-dna-prompt-library",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public MiniMax H3 and Seedance 2.0 Creative DNA cases, Skills, and Electron viewer.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "npm run validate:boundary && npm run validate:catalog && npm run validate:skills && npm run gallery:check && npm run test:public",
+    "validate:boundary": "node scripts/public/validate-public-boundary.mjs",
+    "validate:catalog": "node scripts/public/validate-catalog.mjs",
+    "validate:skills": "node scripts/public/validate-skills.mjs",
+    "validate:media": "node scripts/public/validate-media-pack.mjs",
+    "validate:version": "node scripts/public/validate-release-version.mjs --current",
+    "gallery:write": "node scripts/public/generate-gallery.mjs --write",
+    "gallery:check": "node scripts/public/generate-gallery.mjs --check",
+    "test:public": "node --test scripts/public/tests/*.test.mjs",
+    "media:pack": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/public/prepare-media-pack.ps1",
+    "app:install": "npm ci --prefix apps/prompt-library-desktop",
+    "app:test": "npm test --prefix apps/prompt-library-desktop",
+    "app:validate": "npm run validate --prefix apps/prompt-library-desktop",
+    "app:pack": "npm run pack --prefix apps/prompt-library-desktop",
+    "app:dist": "npm run dist --prefix apps/prompt-library-desktop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/T8mars/minimax-h3-prompt-skill-T8.git"
+  },
+  "bugs": {
+    "url": "https://github.com/T8mars/minimax-h3-prompt-skill-T8/issues"
+  },
+  "homepage": "https://github.com/T8mars/minimax-h3-prompt-skill-T8#readme"
+}

@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  public-contracts:
+    name: Public contracts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate release-safe public content
+        run: npm run validate
+
+      - name: Validate decimal-carry version
+        run: npm run validate:version
+
+  electron-media-free-build:
+    name: Electron media-free build
+    needs: public-contracts
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/prompt-library-desktop/package-lock.json
+
+      - name: Install Electron dependencies
+        run: npm ci --prefix apps/prompt-library-desktop
+
+      - name: Test Electron application
+        run: npm test --prefix apps/prompt-library-desktop
+
+      - name: Validate media-free application contract
+        run: npm run validate --prefix apps/prompt-library-desktop
+
+      - name: Build unpacked media-free application
+        run: npm run pack --prefix apps/prompt-library-desktop
+
+      - name: Upload media-free build for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: electron-media-free-${{ github.sha }}
+          path: apps/prompt-library-desktop/dist/win-unpacked/
+          if-no-files-found: error
+          retention-days: 7

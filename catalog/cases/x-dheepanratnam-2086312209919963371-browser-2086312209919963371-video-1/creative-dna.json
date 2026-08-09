@@ -1,0 +1,136 @@
+{
+  "schema_version": "public-creative-dna/v1",
+  "case_id": "x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1",
+  "title": "Layered Field-Guide Illustration Comes Alive",
+  "complexity": "moderate",
+  "mechanism": "A fixed composition turns creation into a readable causal ladder: low-commitment guides establish geometry, committed structure locks it, material finish adds specificity, contextual details certify completion, and one restrained in-medium motion supplies the final surprise.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Lock the camera and reserve stable spatial zones before any marks appear.",
+      "purpose": "Makes every later change comparable and cumulative.",
+      "ablation_failure": "If framing or layout drifts, the viewer reads a montage of replacements instead of one object making itself."
+    },
+    {
+      "id": "inv-02",
+      "rule": "Progress from low-commitment guides to committed structure to material colour or finish.",
+      "purpose": "Creates a legible hierarchy of decisions rather than random simultaneous growth.",
+      "ablation_failure": "If finish arrives before structure, the transformation becomes visual noise and loses causal clarity."
+    },
+    {
+      "id": "inv-03",
+      "rule": "Delay secondary labels, studies or context until the hero form is already readable.",
+      "purpose": "Extends retention without competing with the main reveal.",
+      "ablation_failure": "If every region activates at once, attention fragments and no milestone feels complete."
+    },
+    {
+      "id": "inv-04",
+      "rule": "End with one subtle motion that remains faithful to the finished medium while the support stays inert.",
+      "purpose": "Adds an impossible payoff without breaking the artifact illusion.",
+      "ablation_failure": "Large three-dimensional motion or support movement turns the elegant category break into an unrelated VFX gag."
+    }
+  ],
+  "slots": [
+    {
+      "name": "support",
+      "constraint": "One stable physical or graphic surface with reserved hero and context zones."
+    },
+    {
+      "name": "hero_subject",
+      "constraint": "A single dominant form readable first as guides, then structure, then finish."
+    },
+    {
+      "name": "representation_ladder",
+      "constraint": "Three visibly distinct commitment stages appropriate to the chosen medium."
+    },
+    {
+      "name": "context_details",
+      "constraint": "Two to four secondary marks or diagrams that arrive only after the hero reads."
+    },
+    {
+      "name": "finish_palette",
+      "constraint": "A restrained palette that clarifies material stages."
+    },
+    {
+      "name": "living_idle",
+      "constraint": "One small loop or response that does not leave or volumize the surface."
+    },
+    {
+      "name": "sound_ladder",
+      "constraint": "Material sounds change with each process stage, followed by one payoff accent."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source bird species, pose, branch and natural-history subject",
+    "the antique two-page folio, exact plate geometry and wooden tabletop",
+    "source handwriting, taxonomic wording, plate number and page marks",
+    "the exact timecode pattern, colour placement, final blink and tail gesture"
+  ],
+  "instantiations": [
+    {
+      "concept": "On a dark architectural blueprint, graphite planning arcs become precise white linework, cyan and amber system zones illuminate, tiny legend symbols populate the margin, and one printed status light begins pulsing while remaining flat ink.",
+      "prompt_seed": "Locked overhead blueprint builds from guides to linework to restrained colour, then a single flat schematic indicator pulses."
+    },
+    {
+      "concept": "A square ceramic mural begins as charcoal registration marks, gains cobalt outlines, then mineral glazes flood a geometric koi design; small border motifs appear last and the painted water rings ripple once without leaving the tiles.",
+      "prompt_seed": "Locked tile grid progresses through charcoal, cobalt and glaze, ending with one surface-bound ripple."
+    },
+    {
+      "concept": "A minimalist fashion cutting pattern draws itself on translucent paper, seam lines and notches lock in, fabric swatches tint the panels, measurement symbols appear, and the completed illustrated sleeve gives one gentle printed flutter.",
+      "prompt_seed": "Flat pattern-making process accumulates in ordered stages and closes with a restrained in-medium fabric cue."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "All layers appear together as a generic dissolve.",
+      "repair": "Give each representation stage a distinct material behavior and complete one milestone before the next begins."
+    },
+    {
+      "failure": "The support or camera drifts during creation.",
+      "repair": "Lock framing, shadows, surface texture and prior marks; permit motion only inside active drawing regions."
+    },
+    {
+      "failure": "The final animation breaks into three dimensions.",
+      "repair": "Restrict the payoff to one flat, local, low-amplitude motion that preserves the medium boundary."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "On a dark architectural blueprint, graphite planning arcs become precise white linework, cyan and amber system zones illuminate, tiny legend symbols populate the margin, and one printed status light begins pulsing while remaining flat ink.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04"
+      ],
+      "changed_slots": [
+        "support",
+        "hero_subject",
+        "representation_ladder",
+        "context_details",
+        "finish_palette",
+        "living_idle"
+      ]
+    },
+    {
+      "concept": "A square ceramic mural begins as charcoal registration marks, gains cobalt outlines, then mineral glazes flood a geometric koi design; small border motifs appear last and the painted water rings ripple once without leaving the tiles.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04"
+      ],
+      "changed_slots": [
+        "support",
+        "hero_subject",
+        "representation_ladder",
+        "context_details",
+        "finish_palette",
+        "living_idle",
+        "sound_ladder"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+changelog:
+  exclude:
+    labels:
+      - skip-changelog
+  categories:
+    - title: New cases and Skills / 新案例与 Skills
+      labels:
+        - case
+        - skill
+    - title: Desktop viewer / 桌面查看器
+      labels:
+        - electron
+        - enhancement
+    - title: Fixes / 修复
+      labels:
+        - bug
+        - content-correction
+    - title: Documentation / 文档
+      labels:
+        - documentation
+    - title: Other changes / 其他
+      labels:
+        - "*"

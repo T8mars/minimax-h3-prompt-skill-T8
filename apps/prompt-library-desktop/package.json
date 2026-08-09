@@ -1,0 +1,29 @@
+{
+  "name": "t8-prompt-library-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "T8 Creative DNA video prompt library desktop viewer",
+  "main": "main.cjs",
+  "author": "T8mars",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.cjs",
+    "test:e2e": "node test/electron.e2e.cjs",
+    "validate": "node scripts/validate.mjs",
+    "validate:release": "node scripts/validate-release.mjs",
+    "pack": "electron-builder --dir --config electron-builder.config.cjs",
+    "dist": "electron-builder --win nsis --config electron-builder.config.cjs"
+  },
+  "dependencies": {
+    "electron-updater": "6.8.9"
+  },
+  "devDependencies": {
+    "electron": "43.3.0",
+    "electron-builder": "26.15.3",
+    "playwright-core": "^1.62.1"
+  }
+}

@@ -1,0 +1,33 @@
+name: Source or content correction / 来源或内容修正
+description: Correct attribution, source, model status, prompt, or analysis in a released case.
+title: "[Correction] "
+labels:
+  - content-correction
+body:
+  - type: input
+    id: case_id
+    attributes:
+      label: Case ID / 案例 ID
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: Correction area / 修正范围
+      options:
+        - Creator or source URL
+        - Model attribution
+        - GIF or MP4 mapping
+        - Creative DNA analysis
+        - MiniMax H3 prompt
+        - Seedance 2.0 prompt
+        - Other metadata
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Correction and evidence / 修正内容与证据
+      description: Link the strongest available primary source.
+    validations:
+      required: true

@@ -1,0 +1,58 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "reddit-1vhloyz-walter-prompt-guide",
+  "slug": "direct-proof-state-handoff",
+  "title": "Proof-State Camera Handoff",
+  "source_title": "Walter White and the MiniMax H3 official prompting guide",
+  "summary": "用一次紧急干预制造冲突，随后让稳定、可读的物理证据证明风险，最后通过一个有动机的镜头交接，把结尾交给第二人物的简短反应。",
+  "status": "released",
+  "source_duration_seconds": 14.42,
+  "target_duration_seconds": 15,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/direct-proof-state-handoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/reddit-1vhloyz-walter-prompt-guide/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/reddit-1vhloyz-walter-prompt-guide/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "tags": [
+    "micro-drama",
+    "visual-proof",
+    "camera-handoff",
+    "dialogue",
+    "reaction",
+    "causal-reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.674,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-09T01:34:53+08:00",
+  "updated_at": "2026-08-09T18:06:12+08:00"
+}

@@ -1,0 +1,207 @@
+name: Build full Windows release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Decimal-carry version without v (for example 1.0.0)"
+        required: true
+        default: "1.0.0"
+        type: string
+      media_sha256:
+        description: "SHA-256 of prompt-library-media-v<version>.zip already uploaded to the Draft Release"
+        required: true
+        type: string
+      publish:
+        description: "Publish the verified Draft Release after uploading all assets"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ inputs.version }}
+  cancel-in-progress: false
+
+jobs:
+  full-windows-release:
+    name: Full Windows v${{ inputs.version }}
+    runs-on: windows-latest
+    steps:
+      - name: Check out release commit with tags
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: refs/tags/v${{ inputs.version }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/prompt-library-desktop/package-lock.json
+
+      - name: Resolve FFmpeg and FFprobe for evidence validation
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $ffmpeg = Get-Command ffmpeg -ErrorAction SilentlyContinue
+          $ffprobe = Get-Command ffprobe -ErrorAction SilentlyContinue
+          if (-not $ffmpeg -or -not $ffprobe) {
+            choco install ffmpeg --yes --no-progress --limit-output
+            if ($LASTEXITCODE -ne 0) { throw "Chocolatey failed to install FFmpeg." }
+            $ffmpeg = Get-Command ffmpeg -ErrorAction SilentlyContinue
+            $ffprobe = Get-Command ffprobe -ErrorAction SilentlyContinue
+          }
+          if (-not $ffmpeg -or -not $ffprobe) { throw "Both ffmpeg and ffprobe are required for release validation." }
+          & $ffmpeg.Source -version | Select-Object -First 1
+          & $ffprobe.Source -version | Select-Object -First 1
+          $utf8 = [System.Text.UTF8Encoding]::new($false)
+          [System.IO.File]::AppendAllText($env:GITHUB_ENV, "T8_FFMPEG_PATH=$($ffmpeg.Source)`n", $utf8)
+          [System.IO.File]::AppendAllText($env:GITHUB_ENV, "T8_FFPROBE_PATH=$($ffprobe.Source)`n", $utf8)
+
+      - name: Validate public repository and release version
+        shell: pwsh
+        run: |
+          npm run validate
+          node scripts/public/validate-release-version.mjs --candidate "${{ inputs.version }}"
+          $tagCommit = (git rev-list -n 1 "v${{ inputs.version }}").Trim()
+          $headCommit = (git rev-parse HEAD).Trim()
+          if (-not $tagCommit) { throw "Release tag v${{ inputs.version }} does not exist." }
+          if ($tagCommit -ne $headCommit) { throw "Draft tag points to $tagCommit but workflow checked out $headCommit." }
+
+      - name: Download and verify staged media pack
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = "Stop"
+          $version = "${{ inputs.version }}"
+          $tag = "v$version"
+          $asset = "prompt-library-media-v$version.zip"
+          $release = gh release view $tag --json isDraft,assets | ConvertFrom-Json
+          if (-not $release.isDraft) {
+            throw "$tag must exist as a Draft Release before this workflow runs."
+          }
+          if ($asset -notin @($release.assets | ForEach-Object { $_.name })) {
+            throw "Draft Release $tag does not contain the exact media asset $asset."
+          }
+          New-Item -ItemType Directory -Force -Path ".release-input\download", ".release-input\media" | Out-Null
+          gh release download $tag --pattern $asset --dir ".release-input\download"
+          $mediaZip = Join-Path ".release-input\download" $asset
+          $expected = "${{ inputs.media_sha256 }}".Trim().ToLowerInvariant()
+          if ($expected -notmatch "^[a-f0-9]{64}$") { throw "media_sha256 must contain exactly 64 hexadecimal characters." }
+          $actual = (Get-FileHash -LiteralPath $mediaZip -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actual -ne $expected) { throw "Media pack SHA-256 mismatch: expected $expected, got $actual." }
+          Expand-Archive -LiteralPath $mediaZip -DestinationPath ".release-input\media" -Force
+
+      - name: Validate all released MP4 files and media manifest
+        shell: pwsh
+        run: |
+          node scripts/public/validate-media-pack.mjs --media-dir .release-input/media --ffprobe "$env:T8_FFPROBE_PATH" --ffmpeg "$env:T8_FFMPEG_PATH"
+
+      - name: Install Electron dependencies
+        run: npm ci --prefix apps/prompt-library-desktop
+
+      - name: Test Electron application
+        run: npm test --prefix apps/prompt-library-desktop
+
+      - name: Validate and build full NSIS installer
+        shell: pwsh
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
+        run: |
+          $ErrorActionPreference = "Stop"
+          $env:T8_MEDIA_DIR = (Resolve-Path ".release-input\media").Path
+          npm run validate:release --prefix apps/prompt-library-desktop
+          npm run dist --prefix apps/prompt-library-desktop -- --publish never
+
+      - name: Verify packaged media is byte-bound to the staged manifest
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $packagedMedia = "apps\prompt-library-desktop\dist\win-unpacked\resources\media"
+          $sourceManifest = ".release-input\media\media-pack-manifest.json"
+          $packagedManifest = Join-Path $packagedMedia "media-pack-manifest.json"
+          if (-not (Test-Path -LiteralPath $packagedManifest -PathType Leaf)) { throw "Packaged media-pack-manifest.json is missing." }
+          $sourceHash = (Get-FileHash -LiteralPath $sourceManifest -Algorithm SHA256).Hash
+          $packagedHash = (Get-FileHash -LiteralPath $packagedManifest -Algorithm SHA256).Hash
+          if ($sourceHash -ne $packagedHash) { throw "Packaged media manifest differs from the staged, verified manifest." }
+          node scripts/public/validate-media-pack.mjs --media-dir $packagedMedia --manifest $packagedManifest --ffprobe "$env:T8_FFPROBE_PATH" --ffmpeg "$env:T8_FFMPEG_PATH"
+
+      - name: Run packaged Electron end-to-end test
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $packagedExe = "apps\prompt-library-desktop\dist\win-unpacked\T8 Prompt Library.exe"
+          if (-not (Test-Path -LiteralPath $packagedExe -PathType Leaf)) { throw "Packaged Electron executable is missing." }
+          $env:T8_E2E_EXECUTABLE = (Resolve-Path $packagedExe).Path
+          npm run test:e2e --prefix apps/prompt-library-desktop
+
+      - name: Assemble catalog, Skills, updater, and checksums
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $version = "${{ inputs.version }}"
+          $assets = New-Item -ItemType Directory -Force -Path ".release-input\assets"
+          Compress-Archive -Path "catalog" -DestinationPath (Join-Path $assets "prompt-library-catalog-v$version.zip") -CompressionLevel Optimal
+          Compress-Archive -Path "skills" -DestinationPath (Join-Path $assets "prompt-library-skills-v$version.zip") -CompressionLevel Optimal
+          Copy-Item -LiteralPath ".release-input\download\prompt-library-media-v$version.zip" -Destination $assets
+          Copy-Item -LiteralPath ".release-input\media\media-pack-manifest.json" -Destination $assets
+
+          $dist = "apps\prompt-library-desktop\dist"
+          $installer = Join-Path $dist "T8-Prompt-Library-Setup-v$version.exe"
+          if (-not (Test-Path -LiteralPath $installer -PathType Leaf)) { throw "Expected installer was not built: $installer" }
+          Copy-Item -LiteralPath $installer -Destination $assets
+          Get-ChildItem -LiteralPath $dist -File | Where-Object { $_.Name -eq "latest.yml" -or $_.Extension -eq ".blockmap" } | Copy-Item -Destination $assets
+          if (-not (Test-Path -LiteralPath (Join-Path $assets "latest.yml"))) { throw "Electron updater metadata latest.yml is missing." }
+
+          $checksumLines = Get-ChildItem -LiteralPath $assets -File | Sort-Object Name | ForEach-Object {
+            $hash = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+            "$hash *$($_.Name)"
+          }
+          [System.IO.File]::WriteAllLines((Join-Path $assets "SHA256SUMS.txt"), $checksumLines, [System.Text.UTF8Encoding]::new($false))
+
+      - name: Upload full release build for workflow inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: t8-prompt-library-v${{ inputs.version }}
+          path: .release-input/assets/*
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload assets to existing Draft Release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = "Stop"
+          $tag = "v${{ inputs.version }}"
+          Get-ChildItem -LiteralPath ".release-input\assets" -File | ForEach-Object {
+            gh release upload $tag $_.FullName --clobber
+            if ($LASTEXITCODE -ne 0) { throw "Failed to upload $($_.Name) to $tag." }
+          }
+
+      - name: Publish verified release
+        if: ${{ inputs.publish }}
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release edit "v${{ inputs.version }}" --draft=false
+          if ($LASTEXITCODE -ne 0) { throw "Failed to publish release." }
+
+      - name: Write release summary
+        if: always()
+        shell: pwsh
+        run: |
+          @"
+          ## T8 Prompt Library v${{ inputs.version }}
+
+          - Full installer build requested: yes
+          - Media pack source: pre-staged Draft Release asset
+          - Media SHA-256 supplied: yes
+          - Publish requested: ${{ inputs.publish }}
+          "@ | Add-Content -LiteralPath $env:GITHUB_STEP_SUMMARY

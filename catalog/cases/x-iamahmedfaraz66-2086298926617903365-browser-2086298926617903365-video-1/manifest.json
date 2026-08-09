@@ -1,0 +1,58 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1",
+  "slug": "build-earned-arrival-journey",
+  "title": "Backstage-to-Stage Continuous Journey",
+  "source_title": "X creative video by @iamahmedfaraz66",
+  "summary": "用一个稳定可识别的人物作为情感坐标，通过真实物体、障碍与协作者推动路线，让空间从压迫逐步扩展到明亮目标，并用一项完成任务的物理动作证明到达。",
+  "status": "released",
+  "source_duration_seconds": 15.116,
+  "target_duration_seconds": 15,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/build-earned-arrival-journey",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "tags": [
+    "continuous-journey",
+    "earned-arrival",
+    "environmental-storytelling",
+    "parallax",
+    "threshold",
+    "human-anchor"
+  ],
+  "quality": {
+    "weighted_score": 4.796,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-09T13:59:27+08:00",
+  "updated_at": "2026-08-09T15:12:52+08:00"
+}

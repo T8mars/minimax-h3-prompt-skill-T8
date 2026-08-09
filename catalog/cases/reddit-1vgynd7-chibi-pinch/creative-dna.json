@@ -1,0 +1,139 @@
+{
+  "schema_version": "public-creative-dna/v1",
+  "case_id": "reddit-1vgynd7-chibi-pinch",
+  "title": "Cross-Medium Contact Reaction Ladder",
+  "complexity": "moderate",
+  "mechanism": "A single flat 2D character shares a locked photoreal environment with a real hand; one small cross-medium contact causes a three-stage readable reaction that ends in a medium-specific impossible effect.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Keep exactly one flat animated character inside an otherwise photoreal, stable environment.",
+      "purpose": "Makes the mixed-medium anomaly instantly legible.",
+      "ablation_failure": "Multiple animated elements blur the boundary and weaken the hook."
+    },
+    {
+      "id": "inv-02",
+      "rule": "Show real-to-animated contact before the reaction begins.",
+      "purpose": "Provides a causal bridge between media layers.",
+      "ablation_failure": "A reaction without contact feels like an unrelated animation loop."
+    },
+    {
+      "id": "inv-03",
+      "rule": "Escalate in three readable states: neutral, discomfort, impossible payoff.",
+      "purpose": "Lets the audience track cause and intensity without cuts.",
+      "ablation_failure": "Jumping directly to the final effect removes anticipation and acting."
+    },
+    {
+      "id": "inv-04",
+      "rule": "Keep the camera locked and let contact, expression, and effects move attention.",
+      "purpose": "Protects spatial continuity between real and animated layers.",
+      "ablation_failure": "Camera movement makes contact alignment harder to read."
+    }
+  ],
+  "slots": [
+    {
+      "name": "photoreal_arena",
+      "constraint": "A stable real location with clear depth and one interaction surface."
+    },
+    {
+      "name": "flat_character",
+      "constraint": "One original 2D paper- or sticker-like adult mascot, visually distinct from the source."
+    },
+    {
+      "name": "real_agent",
+      "constraint": "One live-action hand or tool entering from a consistent edge."
+    },
+    {
+      "name": "contact_object",
+      "constraint": "A small real object whose motion can visibly cross the medium boundary."
+    },
+    {
+      "name": "sensation",
+      "constraint": "A simple cause such as cold, static, scent, or weight, not source heat/chili."
+    },
+    {
+      "name": "reaction_states",
+      "constraint": "Three visually distinct but causally continuous poses."
+    },
+    {
+      "name": "payoff_effect",
+      "constraint": "An original safe effect appropriate to the new sensation."
+    },
+    {
+      "name": "sound",
+      "constraint": "Real location ambience plus contact-synced foley and one effect accent."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source girl character, hairstyle, clothes, face, outline, or childlike proportions",
+    "source kitchen, wok, food, seasoning jar, spoon interaction, and camera composition",
+    "chili or heat tasting, lateral tear jets, red forehead, and fire breathing",
+    "exact reaction timing and source visual effects"
+  ],
+  "instantiations": [
+    {
+      "concept": "A flat 2D alpine-fox sticker at a real tea counter receives one drop of mint extract, sips, shivers, and exhales a small frost cloud that freezes a spoon.",
+      "prompt_seed": "One real mint drop crosses into a flat sticker character's cup, causing a three-stage cold reaction and a spoon-freezing payoff."
+    },
+    {
+      "concept": "A flat 2D robot sticker at a real workbench receives one drop of lubricant, tests a hinge, spins with the over-loose joint, and stops with a dizzy status-light pattern.",
+      "prompt_seed": "One real lubricant drop causes a clear neutral-to-surprise-to-spin reaction in a flat robot sticker."
+    },
+    {
+      "concept": "A flat 2D botanist sticker in a real greenhouse touches one pollen grain, sneezes through two escalating poses, and releases a tiny animated cloud shaped like leaves.",
+      "prompt_seed": "A real pollen contact triggers a three-stage sticker-character sneeze and an original leaf-cloud payoff."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The animated character no longer looks flat against the real scene.",
+      "repair": "Keep constant paper thickness, a crisp outline, planar deformation, and a consistent contact shadow."
+    },
+    {
+      "failure": "The reaction begins before contact.",
+      "repair": "Hold neutral expression through the contact frame, then delay the first change by a short readable beat."
+    },
+    {
+      "failure": "The adaptation still feels like the source spicy-food gag.",
+      "repair": "Change arena, character category, contact object, sensation, palette, reaction graphics, and final effect together."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A flat 2D alpine-fox sticker at a real tea counter receives one drop of mint extract, sips, shivers, and exhales a small frost cloud that freezes a spoon.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04"
+      ],
+      "changed_slots": [
+        "photoreal_arena",
+        "flat_character",
+        "contact_object",
+        "sensation",
+        "reaction_states",
+        "payoff_effect"
+      ]
+    },
+    {
+      "concept": "A flat 2D robot sticker at a real workbench receives one drop of lubricant, tests a hinge, spins with the over-loose joint, and stops with a dizzy status-light pattern.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04"
+      ],
+      "changed_slots": [
+        "photoreal_arena",
+        "flat_character",
+        "real_agent",
+        "contact_object",
+        "sensation",
+        "payoff_effect"
+      ]
+    }
+  ]
+}

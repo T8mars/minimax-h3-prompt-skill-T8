@@ -1,0 +1,58 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "reddit-1vh8jy6-h3-high-card",
+  "slug": "stage-one-signal-reversal",
+  "title": "One Signal Beats Many",
+  "source_title": "The H3 High Card — one 15-second local T2V",
+  "summary": "先让多个嘈杂选项取得表面优势，再由一个克制、清晰的校准信号打断局面，并用可见的物理后果证明“一个正确答案胜过大量堆叠”。",
+  "status": "released",
+  "source_duration_seconds": 15.125,
+  "target_duration_seconds": 15,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-one-signal-reversal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/reddit-1vh8jy6-h3-high-card/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/reddit-1vh8jy6-h3-high-card/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "tags": [
+    "visual-reversal",
+    "one-versus-many",
+    "calibration",
+    "comparison",
+    "physical-proof",
+    "comedy"
+  ],
+  "quality": {
+    "weighted_score": 4.748,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-09T01:34:53+08:00",
+  "updated_at": "2026-08-09T18:06:12+08:00"
+}
