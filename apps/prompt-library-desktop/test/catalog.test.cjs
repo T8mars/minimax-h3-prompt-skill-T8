@@ -78,7 +78,7 @@ test("loads pinned upstream H3 access and local Seedance companion without embed
   const catalogRoot = path.join(root, "catalog");
   const skillsRoot = path.join(root, "skills");
   const companion = "seedance-companion";
-  fs.mkdirSync(path.join(catalogRoot, "official-skills"), { recursive: true });
+  fs.mkdirSync(path.join(catalogRoot, "official-skills", "previews"), { recursive: true });
   fs.mkdirSync(path.join(skillsRoot, companion, "references"), { recursive: true });
   fs.writeFileSync(path.join(catalogRoot, "manifest.json"), JSON.stringify({
     schema_version: "public-catalog/v1",
@@ -100,6 +100,9 @@ test("loads pinned upstream H3 access and local Seedance companion without embed
       upstream_skill_url: `https://github.com/MiniMax-AI/MiniMax-H3/tree/${"a".repeat(40)}/skills/h3-prompt-writing`,
       upstream_install_command: "npx skills add https://github.com/MiniMax-AI/MiniMax-H3 --skill h3-prompt-writing",
       upstream_skill_sha256: "b".repeat(64),
+      local_preview_ref: "official-skills/previews/h3-prompt-writing.gif",
+      preview_kind: "official-mode-demo-converted",
+      preview_label: "官方 T2VA 示例 · GIF",
       companion_skill: companion,
       companion_summary_ref: `${companion}/references/summary.md`,
       companion_seedance_ref: `${companion}/references/template.md`,
@@ -109,12 +112,15 @@ test("loads pinned upstream H3 access and local Seedance companion without embed
   }));
   fs.writeFileSync(path.join(skillsRoot, companion, "references", "summary.md"), "# Summary\n\nSeedance companion use and scope.");
   fs.writeFileSync(path.join(skillsRoot, companion, "references", "template.md"), "# Seedance template\n\nA coherent event prompt.");
+  fs.writeFileSync(path.join(catalogRoot, "official-skills", "previews", "h3-prompt-writing.gif"), "GIF89a");
 
   const catalog = loadCatalog({ catalogRoot, skillsRoot });
   assert.equal(catalog.officialSkills.length, 1);
   const item = catalog.officialSkills[0];
   assert.equal(item.kind, "officialSkill");
   assert.equal(item.comfyuiImport, false);
+  assert.deepEqual(item.media.gif, { scope: "catalog", relativePath: "official-skills/previews/h3-prompt-writing.gif" });
+  assert.equal(item.previewLabel, "官方 T2VA 示例 · GIF");
   assert.match(item.prompts.minimaxH3, /安装官方 H3 Skill/u);
   assert.equal(item.prompts.seedance20, "# Seedance template\n\nA coherent event prompt.");
   assert.doesNotMatch(item.prompts.minimaxH3, /Global settings:/u);

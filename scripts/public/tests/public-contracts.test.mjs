@@ -31,6 +31,8 @@ test("indexes nine upstream MiniMax Skills, nine independent Seedance companions
   assert.equal(official.skills.length, 9);
   assert.equal(official.comfyui_import, false);
   assert.equal(official.upstream_content_embedded, false);
+  assert.equal(official.upstream_skill_bodies_embedded, false);
+  assert.equal(official.upstream_preview_assets_embedded, true);
   const companions = new Set(official.skills.map((entry) => entry.companion_skill));
   assert.equal(companions.size, 9);
   for (const entry of official.skills) {
@@ -38,6 +40,8 @@ test("indexes nine upstream MiniMax Skills, nine independent Seedance companions
     assert.ok(fs.existsSync(path.join(repoRoot, "skills", entry.companion_skill, "SKILL.md")));
     assert.ok(fs.existsSync(path.join(repoRoot, "skills", entry.companion_summary_ref)));
     assert.ok(fs.existsSync(path.join(repoRoot, "skills", entry.companion_seedance_ref)));
+    assert.ok(fs.existsSync(path.join(repoRoot, "catalog", entry.local_preview_ref)));
+    assert.ok(readme.includes(`catalog/${entry.local_preview_ref}`), `${entry.id} official GIF missing from README`);
   }
   const skillDirectories = fs.readdirSync(path.join(repoRoot, "skills"), { withFileTypes: true }).filter((entry) => entry.isDirectory());
   assert.equal(skillDirectories.length, 17);

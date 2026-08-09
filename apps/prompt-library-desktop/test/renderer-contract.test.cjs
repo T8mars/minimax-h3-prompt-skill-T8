@@ -7,6 +7,11 @@ const appDir = path.resolve(__dirname, "..");
 const html = fs.readFileSync(path.join(appDir, "src", "index.html"), "utf8");
 const renderer = fs.readFileSync(path.join(appDir, "src", "app.js"), "utf8");
 
+test("header uses the T8 brand mark", () => {
+  assert.match(html, /<span class="brand-mark">T8<\/span>/u);
+  assert.doesNotMatch(html, /<span class="brand-mark">VP<\/span>/u);
+});
+
 test("renderer exposes comparison controls and side-by-side content", () => {
   for (const id of ["compare-bar", "compare-dialog", "compare-grid", "compare-tab-h3", "compare-tab-seedance"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`));
@@ -21,8 +26,17 @@ test("renderer exposes a separate official Skill view with H3 and Seedance compa
   for (const id of ["view-cases", "view-official-skills", "view-official-count"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`));
   }
-  for (const token of ["officialSkills", "renderOfficialSkillCard", "switchView", "不导入 ComfyUI"]) {
+  for (const token of ["officialSkills", "renderOfficialSkillCard", "switchView", "不导入 ComfyUI", "previewLabel", "media.gifUrl"]) {
     assert.ok(renderer.includes(token), `missing official Skill token: ${token}`);
+  }
+});
+
+test("renderer defaults to an aggregate all-content view", () => {
+  for (const id of ["view-all", "view-all-count"]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`));
+  }
+  for (const token of ["activeView: \"all\"", "全部提示词案例与 Skills", "全部内容", "可预览内容"]) {
+    assert.ok(renderer.includes(token), `missing all-content token: ${token}`);
   }
 });
 

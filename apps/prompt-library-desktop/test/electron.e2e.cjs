@@ -33,11 +33,21 @@ async function run() {
       if (message.type() === "error") rendererErrors.push(message.text());
     });
     await page.waitForSelector(".case-card", { timeout: 15000 });
+    const allCount = await page.locator(".case-card").count();
+    assert.equal(allCount, 17, "default all-content view must render 7 cases + 9 official Skills + 1 non-official Skill");
+    assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
+    assert.equal(await page.locator("#stat-cases").textContent(), "17");
+    assert.equal(await page.locator("#stat-videos").textContent(), "17", "every item in the aggregate view must have a local preview");
+    assert.equal(await page.locator("#stat-prompts").textContent(), "34", "all 17 items must expose both model surfaces");
+    assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "official Skills must use local GIF previews in the aggregate view");
+    assert.equal(await page.locator(".compare-toggle").count(), 0, "aggregate view must not expose case-only comparison controls");
+    await page.screenshot({ path: screenshotPath, animations: "disabled" });
+
+    await page.locator("#view-cases").click();
+    await page.waitForFunction(() => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === 7);
     const caseCount = await page.locator(".case-card").count();
     assert.equal(caseCount, 7, "viewer must render all seven public cases");
     assert.equal(await page.locator("#stat-videos").textContent(), "7", "development media pack must bind seven MP4s");
-
-    await page.screenshot({ path: screenshotPath, animations: "disabled" });
 
     await page.locator(".case-card").first().click();
     await page.waitForSelector("#case-dialog[open]");
@@ -123,10 +133,23 @@ async function run() {
     assert.equal(await page.locator("#stat-videos").textContent(), "9");
     assert.equal(await page.locator("#stat-prompts").textContent(), "9");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "official Skills do not enter case comparison");
+    assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "all official entries must render local GIFs instead of placeholder art");
+    await page.locator(".case-card.official-skill img").evaluateAll(async (images) => {
+      await Promise.all(images.map((image) => image.complete
+        ? Promise.resolve()
+        : new Promise((resolve, reject) => {
+          image.addEventListener("load", resolve, { once: true });
+          image.addEventListener("error", () => reject(new Error(`official GIF failed: ${image.src}`)), { once: true });
+        })));
+      if (images.some((image) => image.naturalWidth <= 0 || image.naturalHeight <= 0)) throw new Error("one or more official GIFs did not decode");
+    });
+    assert.match(await page.locator(".case-card.official-skill img").first().getAttribute("src"), /^t8media:\/\/catalog\/official-skills\/previews\//u);
     await page.screenshot({ path: officialScreenshotPath, animations: "disabled" });
     await page.locator(".case-card.official-skill").first().click();
     await page.waitForSelector("#case-dialog[open]");
     assert.equal(await page.locator("#detail-media video").count(), 0, "official Skill details do not pretend to have a case video");
+    assert.equal(await page.locator("#detail-media img").count(), 1, "official Skill details must show the local GIF preview");
+    assert.match(await page.locator("#detail-media img").getAttribute("src"), /^t8media:\/\/catalog\/official-skills\/previews\//u);
     assert.match(await page.locator("#prompt-text").textContent(), /npx skills add https:\/\/github\.com\/MiniMax-AI\/MiniMax-H3/u);
     assert.match(await page.locator("#detail-meta").textContent(), /不导入/u);
     await page.locator("#tab-seedance").click();
@@ -164,7 +187,7 @@ async function run() {
     await page.screenshot({ path: communityDetailScreenshotPath, animations: "disabled" });
     assert.deepEqual(rendererErrors, [], `renderer errors: ${rendererErrors.join(" | ")}`);
 
-    console.log(`PASS Electron runtime; cases=${caseCount}; officialSkills=9; communitySkills=1; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath};${communityScreenshotPath};${communityDetailScreenshotPath}`);
+    console.log(`PASS Electron runtime; all=${allCount}; cases=${caseCount}; officialSkills=9; communitySkills=1; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath};${communityScreenshotPath};${communityDetailScreenshotPath}`);
   } finally {
     await electronApp.close();
   }

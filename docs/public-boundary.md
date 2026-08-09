@@ -8,7 +8,7 @@
 
 - 状态为 `released` 的脱敏案例；
 - 原创摘要、Creative DNA、双模型提示词与案例 Skill；
-- MiniMax 官方仓库 Skill 的固定版本元数据/链接，以及独立编写的 Seedance 2.0 伴侣 Skills；
+- MiniMax 官方仓库 Skill 的固定版本元数据/链接、哈希绑定的官方预览 GIF，以及独立编写的 Seedance 2.0 伴侣 Skills；
 - 明确标注为非官方/用户贡献、带哈希证据和双模型模板的公开 Skill；
 - GIF/Poster、来源 URL 与版本化媒体映射；
 - Electron 公共应用代码和无媒体 fixture；
@@ -41,7 +41,7 @@
 - Windows、macOS、Linux 本地绝对路径扫描；
 - 符号链接与危险本地状态文件检查。
 
-`validate-catalog.mjs` 进一步要求公开案例状态为 `released`；`validate-official-skills.mjs` 固定检查 9 个上游入口、哈希、来源分类、Seedance 伴侣和 `comfyui_import=false`；`validate-community-skills.mjs` 检查非官方标签、输入哈希、解码门、GIF/Poster、双模型模板和未修改 ComfyUI 的边界；`validate-skills.mjs` 检查 Skill 名称、frontmatter、摘要、模板及 Agent 元数据。
+`validate-catalog.mjs` 进一步要求公开案例状态为 `released`；`validate-official-skills.mjs` 固定检查 9 个上游入口、来源分类、Seedance 伴侣、预览来源/本地 SHA-256、GIF 文件边界和 `comfyui_import=false`；`validate-community-skills.mjs` 检查非官方标签、输入哈希、解码门、GIF/Poster、双模型模板和未修改 ComfyUI 的边界；`validate-skills.mjs` 检查 Skill 名称、frontmatter、摘要、模板及 Agent 元数据。
 
 这些检查是最后防线，不替代人工审核。公开导出应始终从字段白名单重新生成，不应通过删除少数字段来“清洗”整份私有记录。
 

@@ -67,6 +67,11 @@ if (fs.existsSync(path.join(catalogRoot, "manifest.json"))) {
     if (!item.prompts.minimaxH3 || !item.prompts.seedance20) errors.push(`${item.id}: missing H3 or Seedance prompt`);
     if (!item.sourceUrl) errors.push(`${item.id}: missing HTTPS source URL`);
   }
+  for (const item of catalog.officialSkills) {
+    if (!item.media.gif) errors.push(`${item.id}: missing official local preview GIF`);
+    if (!item.previewLabel?.includes("GIF")) errors.push(`${item.id}: official preview label must identify GIF media`);
+    if (!item.prompts.minimaxH3 || !item.prompts.seedance20) errors.push(`${item.id}: missing official H3 access or Seedance companion`);
+  }
   for (const item of catalog.communitySkills) {
     if (!item.media.gif || !item.media.poster) errors.push(`${item.id}: missing community Skill GIF or poster`);
     if (!item.prompts.minimaxH3 || !item.prompts.seedance20) errors.push(`${item.id}: missing community Skill H3 or Seedance template`);

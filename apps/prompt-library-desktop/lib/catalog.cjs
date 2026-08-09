@@ -268,14 +268,15 @@ function rootUpdatedAt(manifest) {
   return typeof manifest.provenance === "object" ? firstString(manifest.provenance.updated_at) : "";
 }
 
-function normalizeOfficialSkill(entry, index, skillsRoot) {
+function normalizeOfficialSkill(entry, index, catalogRoot, skillsRoot) {
   if (!entry || typeof entry !== "object") return null;
   const id = firstString(entry.id);
   const companionSkill = firstString(entry.companion_skill);
   if (!id || !companionSkill || !skillsRoot) return null;
   const summaryPath = safeResolve(skillsRoot, firstString(entry.companion_summary_ref));
   const templatePath = safeResolve(skillsRoot, firstString(entry.companion_seedance_ref));
-  if (!summaryPath || !templatePath || !fs.existsSync(summaryPath) || !fs.existsSync(templatePath)) return null;
+  const previewPath = safeResolve(catalogRoot, firstString(entry.local_preview_ref));
+  if (!summaryPath || !templatePath || !previewPath || !fs.existsSync(summaryPath) || !fs.existsSync(templatePath) || !fs.existsSync(previewPath)) return null;
   const pinnedCommit = firstString(index.pinned_commit);
   const installCommand = firstString(entry.upstream_install_command);
   const upstreamSkillUrl = firstString(entry.upstream_skill_url);
@@ -301,6 +302,8 @@ function normalizeOfficialSkill(entry, index, skillsRoot) {
     upstreamSkillUrl,
     sourceUrl: upstreamSkillUrl,
     upstreamPreviewUrl: firstString(entry.upstream_preview_url),
+    previewKind: firstString(entry.preview_kind),
+    previewLabel: firstString(entry.preview_label, "官方示例 GIF"),
     upstreamInstallCommand: installCommand,
     pinnedCommit,
     upstreamSkillSha256: firstString(entry.upstream_skill_sha256),
@@ -309,6 +312,12 @@ function normalizeOfficialSkill(entry, index, skillsRoot) {
     models: uniqueStrings(entry.models),
     tags: uniqueStrings(entry.tags),
     comfyuiImport: false,
+    media: {
+      gif: assetDescriptor(catalogRoot, previewPath, "catalog"),
+      poster: null,
+      video: null,
+      hasFullVideo: false
+    },
     prompts: {
       minimaxH3: h3Access,
       seedance20: readText(templatePath).trim()
@@ -330,7 +339,7 @@ function loadOfficialSkills(catalogRoot, rootManifest, skillsRoot, warnings) {
     return [];
   }
   const normalized = asArray(index.skills)
-    .map((entry) => normalizeOfficialSkill(entry, index, skillsRoot))
+    .map((entry) => normalizeOfficialSkill(entry, index, catalogRoot, skillsRoot))
     .filter(Boolean);
   if (Number(index.skill_count) !== normalized.length) warnings.push("部分官方仓库 Skill 或 Seedance 伴侣文件不可用");
   return normalized;

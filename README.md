@@ -16,7 +16,7 @@ A curated Creative DNA library, installable Skills, and a video-first Electron d
 | --- | --- | --- |
 | `catalog/` | 浏览案例、Creative DNA、来源和双模型提示词 | GitHub 使用轻量循环 GIF；点击可回到原帖 |
 | `skills/` | 安装到支持 Skills 的 Agent，直接复用案例机制 | Skill 引用同一案例与来源 |
-| `catalog/official-skills/` | 固定索引 MiniMax 官方仓库收录的 9 个 Skills | H3 打开上游固定版本；Seedance 使用本库原创伴侣 Skill |
+| `catalog/official-skills/` | 固定索引 MiniMax 官方仓库收录的 9 个 Skills | 本地官方示例 GIF；H3 打开上游固定版本；Seedance 使用本库原创伴侣 Skill |
 | `catalog/community-skills/` | 浏览非官方、用户贡献的高质量提示词 Skills | GitHub 有 GIF/海报；Electron 包含完整有声样片 |
 | Electron 桌面版 | 搜索、筛选、播放、对比和复制提示词 | 安装包包含完整 MP4，支持声音和离线播放 |
 
@@ -26,19 +26,19 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 
 下表收录 [MiniMax-AI/MiniMax-H3 官方仓库的 `skills/` 目录](https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills)：1 个通用 H3 提示词 Skill 与 8 个风格制作 Skill。这里的“官方仓库收录”不等于 9 项都由 MiniMax 原创；上游 `meta.yaml` 的来源分类包括 `official`、`official-featured` 和 `community`，本库按原值展示。
 
-为避免错误再分发，本仓库不复制上游 Skill 正文，只保存固定 commit、目录 SHA、文件 SHA-256、安装命令和链接。Seedance 2.0 支持由本库独立编写的 9 个伴侣 Skills 提供。
+本仓库不复制上游 Skill 正文，只保存固定 commit、目录 SHA、文件 SHA-256、安装命令和链接。为便于直观看效果，9 个条目均提供哈希绑定的本地 GIF：8 个来自对应官方演示 GIF，通用写作条目由官方 T2VA 示例转换。Seedance 2.0 支持由本库独立编写的 9 个伴侣 Skills 提供。
 
-| 官方仓库 Skill | 上游来源分类 | Seedance 2.0 伴侣 Skill |
-| --- | --- | --- |
-| [`h3-prompt-writing`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/h3-prompt-writing) | 官方仓库自有 | [`write-seedance-video-prompts`](./skills/write-seedance-video-prompts/) |
-| [`minimalist-product-ad-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/minimalist-product-ad-generator) | community | [`direct-seedance-minimalist-product-ad`](./skills/direct-seedance-minimalist-product-ad/) |
-| [`3d-animation-short-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/3d-animation-short-generator) | community | [`direct-seedance-3d-animation`](./skills/direct-seedance-3d-animation/) |
-| [`papercraft-stop-motion-explainer`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/papercraft-stop-motion-explainer) | official | [`direct-seedance-papercraft-explainer`](./skills/direct-seedance-papercraft-explainer/) |
-| [`brand-promo-video-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/brand-promo-video-generator) | official-featured | [`direct-seedance-brand-promo`](./skills/direct-seedance-brand-promo/) |
-| [`music-video-subtitle-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/music-video-subtitle-generator) | official-featured | [`direct-seedance-music-typography`](./skills/direct-seedance-music-typography/) |
-| [`co-op-game-intro-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/co-op-game-intro-generator) | official | [`direct-seedance-coop-game-intro`](./skills/direct-seedance-coop-game-intro/) |
-| [`paper-collage-explainer-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/paper-collage-explainer-generator) | official-featured | [`direct-seedance-paper-collage`](./skills/direct-seedance-paper-collage/) |
-| [`handdrawn-live-video-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/handdrawn-live-video-generator) | official-featured | [`direct-seedance-handdrawn-live-fusion`](./skills/direct-seedance-handdrawn-live-fusion/) |
+| 预览 | 官方仓库 Skill | 上游来源分类 | Seedance 2.0 伴侣 Skill |
+| --- | --- | --- | --- |
+| <img src="catalog/official-skills/previews/h3-prompt-writing.gif" width="180" alt="H3 prompt writing official T2VA preview"> | [`h3-prompt-writing`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/h3-prompt-writing) | 官方仓库自有 | [`write-seedance-video-prompts`](./skills/write-seedance-video-prompts/) |
+| <img src="catalog/official-skills/previews/minimalist-product-ad-generator.gif" width="180" alt="Minimalist product ad official preview"> | [`minimalist-product-ad-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/minimalist-product-ad-generator) | community | [`direct-seedance-minimalist-product-ad`](./skills/direct-seedance-minimalist-product-ad/) |
+| <img src="catalog/official-skills/previews/3d-animation-short-generator.gif" width="180" alt="3D animation official preview"> | [`3d-animation-short-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/3d-animation-short-generator) | community | [`direct-seedance-3d-animation`](./skills/direct-seedance-3d-animation/) |
+| <img src="catalog/official-skills/previews/papercraft-stop-motion-explainer.gif" width="180" alt="Papercraft stop-motion official preview"> | [`papercraft-stop-motion-explainer`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/papercraft-stop-motion-explainer) | official | [`direct-seedance-papercraft-explainer`](./skills/direct-seedance-papercraft-explainer/) |
+| <img src="catalog/official-skills/previews/brand-promo-video-generator.gif" width="180" alt="Brand promo official preview"> | [`brand-promo-video-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/brand-promo-video-generator) | official-featured | [`direct-seedance-brand-promo`](./skills/direct-seedance-brand-promo/) |
+| <img src="catalog/official-skills/previews/music-video-subtitle-generator.gif" width="180" alt="Music video subtitle official preview"> | [`music-video-subtitle-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/music-video-subtitle-generator) | official-featured | [`direct-seedance-music-typography`](./skills/direct-seedance-music-typography/) |
+| <img src="catalog/official-skills/previews/co-op-game-intro-generator.gif" width="180" alt="Co-op game intro official preview"> | [`co-op-game-intro-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/co-op-game-intro-generator) | official | [`direct-seedance-coop-game-intro`](./skills/direct-seedance-coop-game-intro/) |
+| <img src="catalog/official-skills/previews/paper-collage-explainer-generator.gif" width="180" alt="Paper collage official preview"> | [`paper-collage-explainer-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/paper-collage-explainer-generator) | official-featured | [`direct-seedance-paper-collage`](./skills/direct-seedance-paper-collage/) |
+| <img src="catalog/official-skills/previews/handdrawn-live-video-generator.gif" width="180" alt="Handdrawn live-action official preview"> | [`handdrawn-live-video-generator`](https://github.com/MiniMax-AI/MiniMax-H3/tree/b7227fa6a6206e9fb30562383d39e53cf3866a48/skills/handdrawn-live-video-generator) | official-featured | [`direct-seedance-handdrawn-live-fusion`](./skills/direct-seedance-handdrawn-live-fusion/) |
 
 这 9 个官方仓库条目明确设置 `comfyui_import=false`：目标 ComfyUI 节点已经包含对应官方能力，本库不会重复导入或修改节点。
 
@@ -75,7 +75,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. 下载 `T8-Prompt-Library-Setup-v1.0.2.exe`。
+2. 下载 `T8-Prompt-Library-Setup-v1.0.3.exe`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. 后续版本可在应用内检查并安装更新。
 
@@ -124,7 +124,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.0.2**。项目使用十进制进位：
+当前目标版本是 **v1.0.3**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0

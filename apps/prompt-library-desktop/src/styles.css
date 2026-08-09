@@ -85,7 +85,7 @@ button { color: inherit; }
 
 main { width: min(1580px, 100%); margin: 0 auto; padding: 42px clamp(22px, 4vw, 56px) 70px; }
 
-.view-tabs { display: flex; gap: 9px; margin: -10px 0 28px; }
+.view-tabs { display: flex; flex-wrap: wrap; gap: 9px; margin: -10px 0 28px; }
 .view-tab { padding: 10px 15px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: #aeb6af; cursor: pointer; }
 .view-tab span { display: inline-grid; min-width: 23px; height: 23px; margin-left: 7px; padding: 0 6px; place-items: center; border-radius: 999px; background: #242924; color: #dce3dc; font-size: 11px; }
 .view-tab.active { border-color: var(--acid); background: var(--acid); color: #10120c; font-weight: 800; }
@@ -161,6 +161,7 @@ h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1; letter-spacin
 .case-card.comparing { border-color: var(--acid); box-shadow: 0 0 0 1px rgba(204, 255, 76, 0.25); }
 .card-media { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #070807; }
 .card-media img, .card-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.case-card.official-skill .card-media img { object-fit: cover; background: #050705; }
 .case-card.community-skill .card-media img, .case-card.community-skill .card-media video { object-fit: contain; background: #050705; }
 .card-hover-video { position: absolute; inset: 0; opacity: 0; transition: opacity 160ms ease; }
 .case-card.previewing .card-hover-video { opacity: 1; }
