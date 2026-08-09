@@ -1,0 +1,38 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1",
+  "slug": "stage-threshold-inspection-passage",
+  "title": "Threshold-to-Passage Field Inspection",
+  "source_title": "Field team enters and inspects a frozen passage — MiniMax H3",
+  "summary": "先用远景锁定一个有后果的入口，一次剪辑跨过阈值，再以连续跟随建立身体可感的通行；一个局部材料信号打断前进，检查后只展示可见路线状态，不虚构诊断。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15,
+  "models": ["MiniMax H3", "Seedance 2.0"],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {"minimax_h3": "prompts/minimax-h3.md", "seedance_2_0": "prompts/seedance-2.0.md"},
+  "skill_ref": "../../../skills/stage-threshold-inspection-passage",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/preview.mp4"
+  },
+  "preview_status": {"gif": "available", "poster": "available", "mp4": "available_in_electron_media_pack"},
+  "tags": ["threshold", "continuous-passage", "field-inspection", "material-cue", "camera-continuity", "uncertainty"],
+  "quality": {
+    "weighted_score": 4.613,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {"minimax_h3": true, "seedance_2_0": true},
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T00:20:20+08:00",
+  "updated_at": "2026-08-10T00:53:58+08:00"
+}

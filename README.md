@@ -67,6 +67,9 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![Layered Field-Guide Illustration Comes Alive](catalog/cases/x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1/preview.gif)](https://x.com/Dheepanratnam/status/2086312209919963371) | **[Layered Field-Guide Illustration Comes Alive](catalog/cases/x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1/SUMMARY.md)**<br><sub>x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![Luminous Anomaly Materialization Loop](catalog/cases/x-godofprompt-2086142925063516348-browser-2086142925063516348-video-1/preview.gif)](https://x.com/godofprompt/status/2086142925063516348) | **[Luminous Anomaly Materialization Loop](catalog/cases/x-godofprompt-2086142925063516348-browser-2086142925063516348-video-1/SUMMARY.md)**<br><sub>x-godofprompt-2086142925063516348-browser-2086142925063516348-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![Backstage-to-Stage Continuous Journey](catalog/cases/x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1/preview.gif)](https://x.com/iamahmedfaraz66/status/2086298926617903365) | **[Backstage-to-Stage Continuous Journey](catalog/cases/x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1/SUMMARY.md)**<br><sub>x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![Evidence Ladder Crosses into Reality](catalog/cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/preview.gif)](https://x.com/mimu_ai1/status/2086474098859987150) | **[Evidence Ladder Crosses into Reality](catalog/cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/SUMMARY.md)**<br><sub>x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![Threshold-to-Passage Field Inspection](catalog/cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/preview.gif)](https://x.com/Strength04_X/status/2086471165581902327) | **[Threshold-to-Passage Field Inspection](catalog/cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/SUMMARY.md)**<br><sub>x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![Imperfect-Memory Farewell Take](catalog/cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/preview.gif)](https://x.com/ZephyraLeigh/status/2086466812347297938) | **[Imperfect-Memory Farewell Take](catalog/cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/SUMMARY.md)**<br><sub>x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -75,7 +78,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. 下载 `T8-Prompt-Library-Setup-v1.0.3.exe`。
+2. 下载 `T8-Prompt-Library-Setup-v1.0.4.exe`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. 后续版本可在应用内检查并安装更新。
 
@@ -124,7 +127,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.0.3**。项目使用十进制进位：
+当前目标版本是 **v1.0.4**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0

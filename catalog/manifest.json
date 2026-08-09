@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.0.3",
-  "generated_at": "2026-08-09T23:05:00+08:00",
-  "case_count": 7,
+  "catalog_version": "1.0.4",
+  "generated_at": "2026-08-10T01:20:00+08:00",
+  "case_count": 10,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 1,
@@ -252,6 +252,81 @@
       ],
       "quality_score": 4.796,
       "updated_at": "2026-08-09T15:12:52+08:00"
+    },
+    {
+      "case_id": "x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1",
+      "slug": "escalate-evidence-into-reality",
+      "title": "Evidence Ladder Crosses into Reality",
+      "status": "released",
+      "summary": "让稳定现实与一个有边界的证据载体产生可核对矛盾；载体沿同一变量连续更新两次，现实暂时保持不变，直到最终状态跨出边界并留下清晰的物理结果。",
+      "manifest_path": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/manifest.json",
+      "summary_path": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/SUMMARY.md",
+      "source_path": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/source.json",
+      "creative_dna_path": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/preview.gif",
+        "poster": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/poster.webp",
+        "mp4": "media/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/escalate-evidence-into-reality",
+      "models": ["MiniMax H3", "Seedance 2.0"],
+      "tags": ["evidence-ladder", "boundary-crossing", "reality-payoff", "negative-space", "carrier-update", "causal-escalation"],
+      "quality_score": 4.712,
+      "updated_at": "2026-08-10T00:41:40+08:00"
+    },
+    {
+      "case_id": "x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1",
+      "slug": "stage-threshold-inspection-passage",
+      "title": "Threshold-to-Passage Field Inspection",
+      "status": "released",
+      "summary": "先用远景锁定一个有后果的入口，一次剪辑跨过阈值，再以连续跟随建立身体可感的通行；一个局部材料信号打断前进，检查后只展示可见路线状态，不虚构诊断。",
+      "manifest_path": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/manifest.json",
+      "summary_path": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/SUMMARY.md",
+      "source_path": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/source.json",
+      "creative_dna_path": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/preview.gif",
+        "poster": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/poster.webp",
+        "mp4": "media/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-threshold-inspection-passage",
+      "models": ["MiniMax H3", "Seedance 2.0"],
+      "tags": ["threshold", "continuous-passage", "field-inspection", "material-cue", "camera-continuity", "uncertainty"],
+      "quality_score": 4.613,
+      "updated_at": "2026-08-10T00:53:58+08:00"
+    },
+    {
+      "case_id": "x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1",
+      "slug": "direct-imperfect-memory-farewell",
+      "title": "Imperfect-Memory Farewell Take",
+      "status": "released",
+      "summary": "让不完美的连续观察者迟一步发现正在做日常小事的主体；一个外部信号改变目标，临近离场时只回应摄影者一次，再以有动机的录制失误结束这段私人记忆。",
+      "manifest_path": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/manifest.json",
+      "summary_path": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/SUMMARY.md",
+      "source_path": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/source.json",
+      "creative_dna_path": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/preview.gif",
+        "poster": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/poster.webp",
+        "mp4": "media/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/direct-imperfect-memory-farewell",
+      "models": ["MiniMax H3", "Seedance 2.0"],
+      "tags": ["one-take", "observer-presence", "routine", "external-cue", "late-acknowledgment", "imperfect-memory"],
+      "quality_score": 4.736,
+      "updated_at": "2026-08-10T00:53:28+08:00"
     }
   ]
 }

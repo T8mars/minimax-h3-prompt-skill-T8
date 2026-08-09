@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.0.3`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.0.3`。
+当前版本是 `v1.0.4`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.0.4`。
 
 版本采用十进制进位：
 
@@ -46,10 +46,10 @@ GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 M
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.0.3
+npm run media:pack -- -Version 1.0.4
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.0.3.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.0.4.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 
@@ -62,7 +62,7 @@ npm run media:pack -- -Version 1.0.3
 7. 工作流定位或安装 `ffmpeg`/`ffprobe`，从 Draft Release 下载指定媒体资产、校验 ZIP 哈希并解压。
 8. 每个 MP4 都重新探测时长与 codec，并用 `ffmpeg -xerror` 完整解码视频和音频；探针结果必须与 manifest 一致。
 9. 工作流构建完整 NSIS 安装包，再逐 path、size 与 SHA-256 检查 `win-unpacked/resources/media` 和打包 manifest。
-10. 工作流以打包后的 Electron EXE 运行 E2E，证明 7 个案例、9 个官方仓库条目、1 个非官方 Skill、8 份完整视频、声音、提示词和对比界面可用。
+10. 工作流以打包后的 Electron EXE 运行 E2E，证明 10 个案例、9 个官方仓库条目、1 个非官方 Skill、11 份完整视频、声音、提示词和对比界面可用。
 11. 只有以上门禁通过，才生成目录包、Skills 包及 `SHA256SUMS.txt` 并上传回 Draft。
 12. `publish=false` 时人工检查 Draft；确认后重新运行并设置 `publish=true`，工作流才发布 Release。
 

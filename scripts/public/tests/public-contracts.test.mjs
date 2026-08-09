@@ -44,7 +44,7 @@ test("indexes nine upstream MiniMax Skills, nine independent Seedance companions
     assert.ok(readme.includes(`catalog/${entry.local_preview_ref}`), `${entry.id} official GIF missing from README`);
   }
   const skillDirectories = fs.readdirSync(path.join(repoRoot, "skills"), { withFileTypes: true }).filter((entry) => entry.isDirectory());
-  assert.equal(skillDirectories.length, 17);
+  assert.equal(skillDirectories.length, 20);
   const community = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "community-skills", "manifest.json"), "utf8"));
   assert.equal(catalog.community_skill_count, 1);
   assert.equal(community.skill_count, 1);

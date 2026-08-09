@@ -1,0 +1,180 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A remote scale view identifies one consequential threshold, a single cut crosses it, and an extended continuous follow converts abstract environment into embodied passage. Moving light, partner or tool coordination and one local material cue interrupt forward motion; the sequence then ends on a clearly visible post-inspection route state without claiming the cue was diagnosed or resolved. Terrain, participants, material cue, route, camera carrier and final route state remain variable.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Use the opening scale view to identify one precise threshold or route, not merely an attractive landscape.",
+      "purpose": "Gives the following interior movement a destination and scale conversion.",
+      "ablation_failure": "Without a specific threshold, the exterior is disconnected B-roll and the interior cut feels arbitrary.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-11"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Cross the threshold with one decisive edit or occlusion, then preserve spatial continuity long enough to feel embodied travel.",
+      "purpose": "Turns environment from illustration into a route the audience can inhabit.",
+      "ablation_failure": "Repeated coverage cuts erase distance, orientation and physical effort.",
+      "evidence_ids": [
+        "beat-01",
+        "beat-02",
+        "obs-07",
+        "obs-08"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Bind participants, lights and tools into a clear coordination pattern whose spacing changes with the route.",
+      "purpose": "Supplies readable human-scale motion inside a visually repetitive environment.",
+      "ablation_failure": "Independent wandering or identity drift makes the passage feel synthetic and removes practical stakes.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-05",
+        "obs-13",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Interrupt travel with one local material or environmental cue that can be indicated, measured or physically reacted to.",
+      "purpose": "Creates a causal observation beat rather than endless forward walking.",
+      "ablation_failure": "Without a local cue the sequence has atmosphere but no event; an implausible cue destroys documentary credibility.",
+      "evidence_ids": [
+        "beat-02",
+        "beat-03",
+        "obs-06",
+        "obs-09"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "After the inspection, end on one clearly visible route state—continue, pause or change direction—without claiming a diagnosis or hazard response unless directly shown.",
+      "purpose": "Gives the passage a readable post-inspection endpoint while preserving uncertainty.",
+      "ablation_failure": "Ending before the route state is visible makes the inspection feel truncated; asserting an unshown diagnosis turns observation into fiction.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-09",
+        "obs-10"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "threshold_environment",
+      "constraint": "A specific opening, hatch, canopy, chamber or access point with visible scale context."
+    },
+    {
+      "name": "field_team",
+      "constraint": "One to three original humans, animals or machines with stable roles and silhouettes."
+    },
+    {
+      "name": "route_geometry",
+      "constraint": "A continuous, physically traversable path with stable orientation anchors."
+    },
+    {
+      "name": "reveal_light",
+      "constraint": "Headlamp, UV beam, lantern, reflected daylight or moving shadow that reveals material layers."
+    },
+    {
+      "name": "local_cue",
+      "constraint": "One plausible airflow, vibration, moisture, sound, particulate or structural change."
+    },
+    {
+      "name": "inspection_action",
+      "constraint": "A gesture or tool action that directs attention to the cue without relying on text."
+    },
+    {
+      "name": "post_inspection_route_state",
+      "constraint": "A visible continuation, pause or direction change after inspection; causation or diagnosis is optional and must not be attributed to the source unless shown."
+    },
+    {
+      "name": "camera_carrier",
+      "constraint": "Aerial, cable, body, rover or handheld path suited to the new environment."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "glacier valley, blue ice cave, black oval aperture and translucent cyan tunnel",
+    "two glaciologists, orange and blue-yellow suits, helmets, crampons, backpacks and ice axes",
+    "the exact three-second aerial push followed by the same high front-left-to-rear follow route",
+    "source prompt's under-ice water, seasonal melting, marking and retreat scenario"
+  ],
+  "instantiations": [
+    {
+      "concept": "A forest botanist and a compact quadruped rover enter an exposed-root sinkhole; a cable-cam threshold view gives way to one low interior follow, the rover's silk airflow ribbon snaps toward a side fissure, the botanist marks the observation, and both continue along the already established main root corridor.",
+      "prompt_seed": "Temperate-forest field documentary with root-sinkhole scale, human-rover coordination, an inspected airflow cue and a visible continuation state."
+    },
+    {
+      "concept": "A harbor engineer and a floating sensor puck enter a tidal service tunnel at low water; continuous waist-level following reveals a reversing foam line, the engineer tests it with dye-free cork chips, logs the observation with one physical marker, then continues along the same raised catwalk.",
+      "prompt_seed": "Tidal infrastructure inspection using seawall threshold, human-sensor coordination, a current cue and a visible post-inspection continuation."
+    },
+    {
+      "concept": "A theatre rigger and a ceiling crawler robot pass through a stage-grid hatch; one continuous beam-lit walk exposes a cable strand vibrating out of phase, the rigger tags the location without diagnosing it, and both continue along the established truss path.",
+      "prompt_seed": "Backstage height inspection with hatch threshold, tool-light reveal, a tagged vibration cue and visible continued travel."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The opening landscape has no relationship to the interior route.",
+      "repair": "Make the threshold visibly identifiable in the exterior and match its orientation at the cut."
+    },
+    {
+      "failure": "The continuous follow is only forward walking.",
+      "repair": "Use changing participant spacing, moving reveal light and one local cue that visibly interrupts attention or pace."
+    },
+    {
+      "failure": "The environment looks like glass or fantasy material.",
+      "repair": "Specify weight, deposits, moisture, abrasion, sound and tool interaction native to the new material."
+    },
+    {
+      "failure": "The transfer is only the same two explorers in a different cave.",
+      "repair": "Change team topology, environment class, tool relationship, cue physics, camera carrier and post-inspection route state together."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A forest botanist and a compact quadruped rover enter an exposed-root sinkhole; a cable-cam threshold view gives way to one low interior follow, the rover's silk airflow ribbon snaps toward a side fissure, the botanist marks the observation, and both continue along the already established main root corridor.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "threshold_environment",
+        "field_team",
+        "route_geometry",
+        "reveal_light",
+        "local_cue",
+        "inspection_action",
+        "post_inspection_route_state",
+        "camera_carrier"
+      ]
+    },
+    {
+      "concept": "A harbor engineer and a floating sensor puck enter a tidal service tunnel at low water; continuous waist-level following reveals a reversing foam line, the engineer tests it with dye-free cork chips, logs the observation with one physical marker, then continues along the same raised catwalk.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "threshold_environment",
+        "field_team",
+        "route_geometry",
+        "reveal_light",
+        "local_cue",
+        "inspection_action",
+        "post_inspection_route_state",
+        "camera_carrier"
+      ]
+    }
+  ]
+}
