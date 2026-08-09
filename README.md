@@ -1,1 +1,1 @@
-# awesome-minimax-h3-prompt-T8
+# minimax-h3-prompt-skill-T8
