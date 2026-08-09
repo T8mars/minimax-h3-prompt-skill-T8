@@ -40,6 +40,9 @@ function resolveRoots() {
   const catalogRoot = app.isPackaged
     ? path.join(process.resourcesPath, "catalog")
     : path.join(REPO_ROOT, "catalog");
+  const skillsRoot = app.isPackaged
+    ? path.join(process.resourcesPath, "skills")
+    : path.join(REPO_ROOT, "skills");
 
   let mediaRoot;
   if (process.env.T8_MEDIA_DIR) {
@@ -49,7 +52,7 @@ function resolveRoots() {
   } else {
     mediaRoot = path.join(REPO_ROOT, ".release-input", "media");
   }
-  return { catalogRoot, mediaRoot };
+  return { catalogRoot, mediaRoot, skillsRoot };
 }
 
 function trustedSender(event) {
@@ -77,6 +80,7 @@ function serializeCatalog(catalog) {
     catalogVersion: catalog.catalogVersion,
     generatedAt: catalog.generatedAt,
     warnings: catalog.warnings,
+    officialSkills: catalog.officialSkills,
     cases: catalog.cases.map((item) => ({
       ...item,
       media: {

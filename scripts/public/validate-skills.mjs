@@ -44,6 +44,16 @@ for (const directory of directories) {
     failures.push(`${relativeBase}/SKILL.md: missing`);
     continue;
   }
+
+  for (const relative of ["references/summary.md", "references/template.md", "agents/openai.yaml"]) {
+    const required = path.join(skillsRoot, directory, relative);
+    if (!fs.existsSync(required) || fs.statSync(required).size === 0) failures.push(`${relativeBase}/${relative}: required non-empty file is missing`);
+  }
+  const agentPath = path.join(skillsRoot, directory, "agents", "openai.yaml");
+  if (fs.existsSync(agentPath)) {
+    const agent = fs.readFileSync(agentPath, "utf8");
+    if (!agent.includes(`$${directory}`)) failures.push(`${relativeBase}/agents/openai.yaml: default_prompt must invoke $${directory}`);
+  }
   try {
     const parsed = parseFrontmatter(fs.readFileSync(skillPath, "utf8"), `${relativeBase}/SKILL.md`);
     const uniqueKeys = [...new Set(parsed.keys)];

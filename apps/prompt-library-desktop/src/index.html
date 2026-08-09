@@ -28,11 +28,15 @@
     </header>
 
     <main>
+      <nav class="view-tabs" aria-label="内容类型">
+        <button id="view-cases" class="view-tab active" type="button" aria-pressed="true">创意案例 <span id="view-case-count">0</span></button>
+        <button id="view-official-skills" class="view-tab" type="button" aria-pressed="false">MiniMax 官方仓库 Skills <span id="view-official-count">0</span></button>
+      </nav>
       <section class="intro" aria-labelledby="page-title">
         <div>
-          <p class="eyebrow">LOCAL · READ-ONLY CASES</p>
+          <p id="page-kicker" class="eyebrow">LOCAL · READ-ONLY CASES</p>
           <h1 id="page-title">高质量视频提示词案例</h1>
-          <p class="intro-copy">从完整视频中提炼可迁移的 Creative DNA，同时提供 MiniMax H3 与 Seedance 2.0 模板。</p>
+          <p id="page-intro" class="intro-copy">从完整视频中提炼可迁移的 Creative DNA，同时提供 MiniMax H3 与 Seedance 2.0 模板。</p>
         </div>
         <div class="catalog-version">
           <span>CATALOG</span>
@@ -41,9 +45,9 @@
       </section>
 
       <section class="stats" aria-label="案例统计">
-        <div><span>公开案例</span><strong id="stat-cases">0</strong></div>
-        <div><span>本地完整视频</span><strong id="stat-videos">0</strong></div>
-        <div><span>模型模板</span><strong id="stat-prompts">0</strong></div>
+        <div><span id="stat-cases-label">公开案例</span><strong id="stat-cases">0</strong></div>
+        <div><span id="stat-videos-label">本地完整视频</span><strong id="stat-videos">0</strong></div>
+        <div><span id="stat-prompts-label">模型模板</span><strong id="stat-prompts">0</strong></div>
         <div><span>当前结果</span><strong id="stat-results">0</strong></div>
       </section>
 
@@ -53,7 +57,7 @@
           <input id="search" type="search" placeholder="搜索机制、风格、运镜、标签、作者或案例 ID" autocomplete="off">
         </label>
         <label>
-          <span>平台</span>
+          <span id="platform-filter-label">平台</span>
           <select id="platform-filter"><option value="">全部平台</option></select>
         </label>
         <label>
@@ -71,7 +75,7 @@
       <section id="case-grid" class="case-grid" aria-live="polite" aria-busy="true"></section>
       <section id="empty-state" class="empty-state hidden">
         <span>VP</span>
-        <h2>没有匹配的案例</h2>
+          <h2 id="empty-title">没有匹配的案例</h2>
         <p>调整搜索词或清空筛选条件后再试。</p>
       </section>
 
@@ -100,15 +104,18 @@
           <aside class="detail-summary">
             <p id="detail-summary"></p>
             <dl id="detail-meta"></dl>
-            <button id="open-source" class="button source hidden" type="button">查看作者原帖 ↗</button>
+            <div class="detail-actions">
+              <button id="open-source" class="button source hidden" type="button">查看作者原帖 ↗</button>
+              <button id="open-preview" class="button hidden" type="button">打开官方示例 GIF ↗</button>
+            </div>
           </aside>
         </div>
 
         <section class="detail-section">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">REUSABLE MECHANISM</p>
-              <h3>Creative DNA</h3>
+              <p id="detail-mechanism-kicker" class="eyebrow">REUSABLE MECHANISM</p>
+              <h3 id="detail-mechanism-title">Creative DNA</h3>
             </div>
           </div>
           <div id="creative-dna" class="dna-grid"></div>
@@ -117,10 +124,10 @@
         <section class="detail-section prompt-section">
           <div class="section-heading prompt-heading">
             <div>
-              <p class="eyebrow">MODEL-READY PROMPTS</p>
-              <h3>提示词模板</h3>
+              <p id="detail-prompt-kicker" class="eyebrow">MODEL-READY PROMPTS</p>
+              <h3 id="detail-prompt-title">提示词模板</h3>
             </div>
-            <button id="copy-prompt" class="button copy" type="button">复制提示词</button>
+            <button id="copy-prompt" class="button copy" type="button">复制当前内容</button>
           </div>
           <div class="prompt-tabs" role="tablist" aria-label="模型提示词">
             <button id="tab-h3" class="prompt-tab active" type="button" role="tab" aria-selected="true">MiniMax H3</button>

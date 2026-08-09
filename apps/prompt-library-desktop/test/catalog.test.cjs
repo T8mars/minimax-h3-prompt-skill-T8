@@ -71,3 +71,51 @@ test("extractPrompt returns the model-ready block only", () => {
   const markdown = "---\nmodel: H3\n---\n# Title\n## Prompt\n```text\nusable prompt\n```\n## Usage\nnotes";
   assert.equal(extractPrompt(markdown), "usable prompt");
 });
+
+test("loads pinned upstream H3 access and local Seedance companion without embedding upstream text", (t) => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "t8-official-skills-"));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  const catalogRoot = path.join(root, "catalog");
+  const skillsRoot = path.join(root, "skills");
+  const companion = "seedance-companion";
+  fs.mkdirSync(path.join(catalogRoot, "official-skills"), { recursive: true });
+  fs.mkdirSync(path.join(skillsRoot, companion, "references"), { recursive: true });
+  fs.writeFileSync(path.join(catalogRoot, "manifest.json"), JSON.stringify({
+    schema_version: "public-catalog/v1",
+    catalog_version: "1.0.1",
+    official_skills_manifest: "official-skills/manifest.json"
+  }));
+  fs.writeFileSync(path.join(catalogRoot, "official-skills", "manifest.json"), JSON.stringify({
+    pinned_commit: "a".repeat(40),
+    skill_count: 1,
+    upstream_content_embedded: false,
+    comfyui_import: false,
+    skills: [{
+      id: "h3-prompt-writing",
+      title: "H3 Prompt Writing",
+      title_zh: "H3 提示词编写",
+      summary: "官方入口与独立适配",
+      source_classification: "repository-owned",
+      source_label: "MiniMax 官方仓库自有",
+      upstream_skill_url: `https://github.com/MiniMax-AI/MiniMax-H3/tree/${"a".repeat(40)}/skills/h3-prompt-writing`,
+      upstream_install_command: "npx skills add https://github.com/MiniMax-AI/MiniMax-H3 --skill h3-prompt-writing",
+      upstream_skill_sha256: "b".repeat(64),
+      companion_skill: companion,
+      companion_summary_ref: `${companion}/references/summary.md`,
+      companion_seedance_ref: `${companion}/references/template.md`,
+      models: ["MiniMax H3", "Seedance 2.0"],
+      tags: ["prompt-writing"]
+    }]
+  }));
+  fs.writeFileSync(path.join(skillsRoot, companion, "references", "summary.md"), "# Summary\n\nSeedance companion use and scope.");
+  fs.writeFileSync(path.join(skillsRoot, companion, "references", "template.md"), "# Seedance template\n\nA coherent event prompt.");
+
+  const catalog = loadCatalog({ catalogRoot, skillsRoot });
+  assert.equal(catalog.officialSkills.length, 1);
+  const item = catalog.officialSkills[0];
+  assert.equal(item.kind, "officialSkill");
+  assert.equal(item.comfyuiImport, false);
+  assert.match(item.prompts.minimaxH3, /安装官方 H3 Skill/u);
+  assert.equal(item.prompts.seedance20, "# Seedance template\n\nA coherent event prompt.");
+  assert.doesNotMatch(item.prompts.minimaxH3, /Global settings:/u);
+});

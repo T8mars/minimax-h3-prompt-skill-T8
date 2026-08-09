@@ -5,6 +5,7 @@ const ALLOWED_EXTERNAL_HOSTS = Object.freeze([
   "youtube.com",
   "youtu.be",
   "huggingface.co",
+  "github.com",
   "minimax.io",
   "minimaxi.com",
   "hailuoai.video",

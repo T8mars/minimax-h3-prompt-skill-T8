@@ -7,6 +7,7 @@ test("allows supported source platforms over HTTPS", () => {
   assert.equal(allowedExternalUrl("https://www.reddit.com/r/test/comments/123")?.hostname, "www.reddit.com");
   assert.equal(allowedExternalUrl("https://www.youtube.com/watch?v=123")?.hostname, "www.youtube.com");
   assert.equal(isAllowedHost("platform.minimaxi.com"), true);
+  assert.equal(allowedExternalUrl("https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills")?.hostname, "github.com");
 });
 
 test("rejects unlisted, non-HTTPS, credentialed and lookalike links", () => {

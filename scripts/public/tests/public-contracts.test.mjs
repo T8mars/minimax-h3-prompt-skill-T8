@@ -10,7 +10,7 @@ const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."
 const catalog = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "manifest.json"), "utf8"));
 const readme = fs.readFileSync(path.join(repoRoot, "README.md"), "utf8");
 
-test("v1.0.0 gallery contains all seven catalog-relative GIF and summary links", () => {
+test("creative-case gallery contains every catalog-relative GIF and summary link", () => {
   const version = JSON.parse(fs.readFileSync(path.join(repoRoot, "package.json"), "utf8")).version;
   if (version === "1.0.0") assert.equal(catalog.cases.length, 7);
   for (const entry of catalog.cases) {
@@ -21,6 +21,25 @@ test("v1.0.0 gallery contains all seven catalog-relative GIF and summary links",
   }
   const galleryRows = readme.split(/\r?\n/).filter((line) => line.startsWith("| [!["));
   assert.equal(galleryRows.length, catalog.cases.length);
+});
+
+test("v1.0.1 indexes nine upstream MiniMax Skills and nine independent Seedance companions", () => {
+  const official = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "official-skills", "manifest.json"), "utf8"));
+  assert.equal(catalog.official_skill_count, 9);
+  assert.equal(official.skill_count, 9);
+  assert.equal(official.skills.length, 9);
+  assert.equal(official.comfyui_import, false);
+  assert.equal(official.upstream_content_embedded, false);
+  const companions = new Set(official.skills.map((entry) => entry.companion_skill));
+  assert.equal(companions.size, 9);
+  for (const entry of official.skills) {
+    assert.match(entry.upstream_skill_url, new RegExp(`/tree/${official.pinned_commit}/skills/${entry.id}$`));
+    assert.ok(fs.existsSync(path.join(repoRoot, "skills", entry.companion_skill, "SKILL.md")));
+    assert.ok(fs.existsSync(path.join(repoRoot, "skills", entry.companion_summary_ref)));
+    assert.ok(fs.existsSync(path.join(repoRoot, "skills", entry.companion_seedance_ref)));
+  }
+  const skillDirectories = fs.readdirSync(path.join(repoRoot, "skills"), { withFileTypes: true }).filter((entry) => entry.isDirectory());
+  assert.equal(skillDirectories.length, 16);
 });
 
 test("public Skill installation may document CODEX_HOME without weakening the boundary", () => {

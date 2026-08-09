@@ -24,6 +24,22 @@ const entries = Array.isArray(catalog.cases) ? catalog.cases : [];
 if (!Number.isInteger(catalog.case_count) || catalog.case_count !== entries.length) {
   failures.push(`catalog/manifest.json: case_count must equal cases.length (${entries.length})`);
 }
+if (catalog.official_skill_count !== 9) failures.push("catalog/manifest.json: official_skill_count must be 9");
+if (catalog.official_skills_manifest !== "official-skills/manifest.json") {
+  failures.push("catalog/manifest.json: official_skills_manifest must be 'official-skills/manifest.json'");
+} else {
+  const officialPath = path.join(repoRoot, "catalog", catalog.official_skills_manifest);
+  if (!fs.existsSync(officialPath)) failures.push("catalog/official-skills/manifest.json: missing");
+  else {
+    try {
+      const official = readJson(officialPath);
+      if (official.catalog_version !== catalog.catalog_version) failures.push("official Skill index catalog_version must match catalog_version");
+      if (official.skill_count !== catalog.official_skill_count) failures.push("official Skill index skill_count must match official_skill_count");
+    } catch (error) {
+      failures.push(error.message);
+    }
+  }
+}
 if (typeof catalog.schema_version !== "string" || !catalog.schema_version.trim()) failures.push("catalog/manifest.json: schema_version is required");
 if (typeof catalog.catalog_version !== "string" || !catalog.catalog_version.trim()) failures.push("catalog/manifest.json: catalog_version is required");
 

@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前起始版本是 `v1.0.0`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.0.0`。
+当前版本是 `v1.0.1`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.0.1`。
 
 版本采用十进制进位：
 
@@ -43,10 +43,10 @@ GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 M
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.0.0
+npm run media:pack -- -Version 1.0.1
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.0.0.zip`、`media-pack-manifest.json` 和对应 SHA-256。`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.0.1.zip`、`media-pack-manifest.json` 和对应 SHA-256。`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 

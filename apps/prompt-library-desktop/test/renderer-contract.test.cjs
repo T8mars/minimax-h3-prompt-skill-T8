@@ -17,6 +17,15 @@ test("renderer exposes comparison controls and side-by-side content", () => {
   assert.ok(renderer.includes("if (event.target !== card) return;"), "nested compare button keys must not open case details");
 });
 
+test("renderer exposes a separate official Skill view with H3 and Seedance companions", () => {
+  for (const id of ["view-cases", "view-official-skills", "view-official-count"]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`));
+  }
+  for (const token of ["officialSkills", "renderOfficialSkillCard", "switchView", "不导入 ComfyUI"]) {
+    assert.ok(renderer.includes(token), `missing official Skill token: ${token}`);
+  }
+});
+
 test("detail dialog cancel and close paths clean up video playback", () => {
   assert.match(renderer, /dialog\.addEventListener\("cancel"/u);
   assert.match(renderer, /dialog\.addEventListener\("close", cleanupDetailMedia\)/u);

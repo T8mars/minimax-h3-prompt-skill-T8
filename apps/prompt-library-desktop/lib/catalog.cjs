@@ -268,7 +268,75 @@ function rootUpdatedAt(manifest) {
   return typeof manifest.provenance === "object" ? firstString(manifest.provenance.updated_at) : "";
 }
 
-function loadCatalog({ catalogRoot, mediaRoot = null }) {
+function normalizeOfficialSkill(entry, index, skillsRoot) {
+  if (!entry || typeof entry !== "object") return null;
+  const id = firstString(entry.id);
+  const companionSkill = firstString(entry.companion_skill);
+  if (!id || !companionSkill || !skillsRoot) return null;
+  const summaryPath = safeResolve(skillsRoot, firstString(entry.companion_summary_ref));
+  const templatePath = safeResolve(skillsRoot, firstString(entry.companion_seedance_ref));
+  if (!summaryPath || !templatePath || !fs.existsSync(summaryPath) || !fs.existsSync(templatePath)) return null;
+  const pinnedCommit = firstString(index.pinned_commit);
+  const installCommand = firstString(entry.upstream_install_command);
+  const upstreamSkillUrl = firstString(entry.upstream_skill_url);
+  const h3Access = [
+    "此条目来自 MiniMax-AI/MiniMax-H3 官方仓库。为遵守上游许可，本仓库不复制官方 Skill 正文。",
+    "",
+    "安装官方 H3 Skill：",
+    installCommand,
+    "",
+    `固定版本：${upstreamSkillUrl}`,
+    `Commit：${pinnedCommit}`,
+    `SKILL.md SHA-256：${firstString(entry.upstream_skill_sha256)}`
+  ].join("\n");
+  return {
+    kind: "officialSkill",
+    id,
+    title: firstString(entry.title_zh, entry.title, id),
+    englishTitle: firstString(entry.title),
+    summary: firstString(entry.summary, markdownSummary(readText(summaryPath))),
+    sourceClassification: firstString(entry.source_classification),
+    sourceLabel: firstString(entry.source_label, "MiniMax 官方仓库收录"),
+    upstreamVersion: entry.upstream_version === null ? null : firstString(entry.upstream_version),
+    upstreamSkillUrl,
+    sourceUrl: upstreamSkillUrl,
+    upstreamPreviewUrl: firstString(entry.upstream_preview_url),
+    upstreamInstallCommand: installCommand,
+    pinnedCommit,
+    upstreamSkillSha256: firstString(entry.upstream_skill_sha256),
+    companionSkill,
+    companionSummary: readText(summaryPath).trim(),
+    models: uniqueStrings(entry.models),
+    tags: uniqueStrings(entry.tags),
+    comfyuiImport: false,
+    prompts: {
+      minimaxH3: h3Access,
+      seedance20: readText(templatePath).trim()
+    }
+  };
+}
+
+function loadOfficialSkills(catalogRoot, rootManifest, skillsRoot, warnings) {
+  const reference = firstString(rootManifest.official_skills_manifest);
+  if (!reference) return [];
+  const indexPath = safeResolve(catalogRoot, reference);
+  if (!indexPath || !fs.existsSync(indexPath)) {
+    warnings.push("未找到 MiniMax 官方仓库 Skill 索引");
+    return [];
+  }
+  const index = readJson(indexPath, null);
+  if (!index || index.comfyui_import !== false || index.upstream_content_embedded !== false) {
+    warnings.push("MiniMax 官方仓库 Skill 索引未通过公开边界检查");
+    return [];
+  }
+  const normalized = asArray(index.skills)
+    .map((entry) => normalizeOfficialSkill(entry, index, skillsRoot))
+    .filter(Boolean);
+  if (Number(index.skill_count) !== normalized.length) warnings.push("部分官方仓库 Skill 或 Seedance 伴侣文件不可用");
+  return normalized;
+}
+
+function loadCatalog({ catalogRoot, mediaRoot = null, skillsRoot = null }) {
   const resolvedCatalogRoot = path.resolve(catalogRoot);
   const rootPath = path.join(resolvedCatalogRoot, "manifest.json");
   const rootManifest = readJson(rootPath, {});
@@ -280,12 +348,19 @@ function loadCatalog({ catalogRoot, mediaRoot = null }) {
     .filter(Boolean);
 
   if (!cases.length) warnings.push("公开目录中没有可显示的 published 案例");
+  const officialSkills = loadOfficialSkills(
+    resolvedCatalogRoot,
+    rootManifest,
+    skillsRoot ? path.resolve(skillsRoot) : null,
+    warnings
+  );
 
   return {
     schemaVersion: firstString(rootManifest.schema_version, "1.0.0"),
     catalogVersion: firstString(rootManifest.catalog_version, rootManifest.version, "1.0.0"),
     generatedAt: firstString(rootManifest.generated_at, rootManifest.updated_at),
     cases,
+    officialSkills,
     warnings
   };
 }

@@ -4,6 +4,7 @@ const path = require("node:path");
 const appDir = __dirname;
 const repoRoot = path.resolve(appDir, "../..");
 const catalogDir = path.join(repoRoot, "catalog");
+const skillsDir = path.join(repoRoot, "skills");
 const configuredMediaDir = process.env.T8_MEDIA_DIR
   ? path.resolve(repoRoot, process.env.T8_MEDIA_DIR)
   : null;
@@ -14,6 +15,14 @@ if (fs.existsSync(catalogDir)) {
   extraResources.push({
     from: catalogDir,
     to: "catalog",
+    filter: ["**/*"]
+  });
+}
+
+if (fs.existsSync(skillsDir)) {
+  extraResources.push({
+    from: skillsDir,
+    to: "skills",
     filter: ["**/*"]
   });
 }
