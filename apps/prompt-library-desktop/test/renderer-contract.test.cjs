@@ -26,6 +26,15 @@ test("renderer exposes a separate official Skill view with H3 and Seedance compa
   }
 });
 
+test("renderer exposes a separate non-official Skill view with local preview media", () => {
+  for (const id of ["view-community-skills", "view-community-count"]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`));
+  }
+  for (const token of ["communitySkills", "renderCommunitySkillCard", "非官方", "完整样片"] ) {
+    assert.ok(renderer.includes(token), `missing community Skill token: ${token}`);
+  }
+});
+
 test("detail dialog cancel and close paths clean up video playback", () => {
   assert.match(renderer, /dialog\.addEventListener\("cancel"/u);
   assert.match(renderer, /dialog\.addEventListener\("close", cleanupDetailMedia\)/u);

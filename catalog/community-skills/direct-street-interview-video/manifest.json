@@ -1,0 +1,124 @@
+{
+  "schema_version": "public-community-skill/v1",
+  "id": "direct-street-interview-video",
+  "title": "Natural Street Interaction",
+  "title_zh": "自然街拍互动",
+  "summary": "把竖屏街头对话组织为可执行的连续动作链：人物与镜头边走边交流，距离、视线、步速和手势逐步改变关系，环境视差、移动自然光和现场声同时证明空间连续，结尾落在一个清楚的互动状态。",
+  "official": false,
+  "source_classification": "user-contributed",
+  "source_label": "非官方 · 用户贡献",
+  "origin_type": "user-supplied-video-and-prompt",
+  "source_attribution": "用户提供 AIGC 样片与提示词文本；未提供原始发布地址或外部作者信息。",
+  "source_url": null,
+  "source_duration_seconds": 10.125,
+  "target_duration_range_seconds": [4, 15],
+  "source_media": {
+    "sha256": "809aa4254d724f802427aaadb93fbd418b2350b4272c4aa6e3bcf12acc8151e5",
+    "size_bytes": 2190119,
+    "width": 720,
+    "height": 1280,
+    "fps": 24,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "full_video_decode": "passed",
+    "full_audio_decode": "passed"
+  },
+  "release_media": {
+    "sha256": "1f3c21190ebc5c1f06ef9e0dbbcc2147e311824cf6aac975184543c51564c754",
+    "size_bytes": 2149656,
+    "duration_seconds": 10.125,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "streams_copied_without_reencode": true,
+    "metadata_sanitized": true,
+    "full_video_decode": "passed",
+    "full_audio_decode": "passed"
+  },
+  "source_prompt": {
+    "sha256": "c07ac1dcbaca3c4157cae0d5d76557307941a4c9d62d9a0aece0e637abc1cd19",
+    "source_model_context": "MiniMax H3 Ref2VA",
+    "analysis_ref": "direct-street-interview-video/references/source-analysis.md"
+  },
+  "skill_ref": "direct-street-interview-video",
+  "summary_ref": "direct-street-interview-video/references/summary.md",
+  "prompt_refs": {
+    "minimax_h3": "direct-street-interview-video/references/h3-template.md",
+    "seedance_2_0": "direct-street-interview-video/references/seedance-template.md"
+  },
+  "preview_refs": {
+    "gif": "community-skills/direct-street-interview-video/preview.gif",
+    "poster": "community-skills/direct-street-interview-video/poster.webp",
+    "mp4": "community-skills/direct-street-interview-video/preview.mp4"
+  },
+  "preview_assets": {
+    "gif": {
+      "sha256": "7a970fddd4184bed3efb18a0b36ab42a2cb4c09d38051cf073521f67e5850cf4",
+      "size_bytes": 5168650,
+      "width": 360,
+      "height": 640,
+      "duration_seconds": 6.01,
+      "frame_count": 48
+    },
+    "poster": {
+      "sha256": "71a25d4174ba08cc8391fa3352adf0ade3df29a3cdfdb074839834b3f9c1608b",
+      "size_bytes": 81226,
+      "width": 640,
+      "height": 1138
+    }
+  },
+  "models": ["MiniMax H3", "Seedance 2.0"],
+  "tags": [
+    "street-interview",
+    "vertical-video",
+    "handheld",
+    "walk-and-talk",
+    "natural-light",
+    "dialogue",
+    "identity-reference"
+  ],
+  "creative_dna": {
+    "mechanism": "单一社交前提驱动连续街道路线上人物与镜头的距离变化；表演、视差、移动自然光和现场声共同把关系推进到可读结尾。",
+    "applicable_scope": [
+      "街头采访、偶遇、城市漫步和人物介绍",
+      "服装、美妆、旅行与生活方式短片",
+      "需要保持人物身份和服装稳定的 H3 Ref2VA 或 Seedance 多模态参考",
+      "4–15 秒内可由一个连续动作链讲清的互动"
+    ],
+    "not_suitable_for": [
+      "大段口播、复杂辩论或多地点群戏",
+      "精密舞蹈、大量硬切或逐帧复刻真人与地点",
+      "未经明确要求的陌生人肢体接触"
+    ],
+    "usage_steps": [
+      "明确互动目的、时长、画幅、人物关系、路线和结尾",
+      "为每个输入素材分配唯一且狭窄的身份、服装、环境、动作或声音职责",
+      "先写接近—交流—关系变化—落点的因果链，再决定是否切镜",
+      "按时长删减对白，并分别用 H3 与 Seedance 原生语法编译",
+      "检查身份、步态、路线、光影、手部接触、声音与时间闭包"
+    ],
+    "invariants": [
+      "开场立即建立互动理由",
+      "镜头跟随人物地理而运动",
+      "距离、步态、视线或手势至少发生一次可见变化",
+      "环境视差、光影和现场声保持连续",
+      "结尾是可读状态而不是突然截断"
+    ],
+    "quality_repairs": [
+      "所有事件必须落在实际目标时长内",
+      "10 秒优先两到三句短对白，先删对白再加速语速",
+      "不从片尾才开始第二镜头",
+      "默认用语言或手势定位，肢体接触必须明确、合意且物理可执行",
+      "不以虚构 4K 标签代替动作、光影和空间设计"
+    ],
+    "anti_copy_exclusions": [
+      "不复制样片人物外貌、服装和身体造型",
+      "不复制原树荫街道、围栏道路构图和对白",
+      "至少同时改变人物类型、关系、地点、路线、服装、对白、镜头实现和结尾中的六项"
+    ]
+  },
+  "comfyui": {
+    "bundled": false,
+    "reason": "本次发布只新增可安装 Agent Skill 与双模型模板，不修改或重复打包 ComfyUI 节点。"
+  },
+  "updated_at": "2026-08-09T22:35:00+08:00"
+}

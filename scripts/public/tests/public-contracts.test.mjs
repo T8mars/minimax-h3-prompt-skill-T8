@@ -19,11 +19,12 @@ test("creative-case gallery contains every catalog-relative GIF and summary link
     assert.ok(readme.includes(`catalog/${entry.preview_paths.gif}`), `${entry.case_id} GIF link missing from README`);
     assert.ok(readme.includes(`catalog/${entry.summary_path}`), `${entry.case_id} summary link missing from README`);
   }
-  const galleryRows = readme.split(/\r?\n/).filter((line) => line.startsWith("| [!["));
+  const galleryBlock = readme.split("<!-- CASE_GALLERY:START -->")[1]?.split("<!-- CASE_GALLERY:END -->")[0] || "";
+  const galleryRows = galleryBlock.split(/\r?\n/).filter((line) => line.startsWith("| [!["));
   assert.equal(galleryRows.length, catalog.cases.length);
 });
 
-test("v1.0.1 indexes nine upstream MiniMax Skills and nine independent Seedance companions", () => {
+test("indexes nine upstream MiniMax Skills, nine independent Seedance companions, and one non-official Skill", () => {
   const official = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "official-skills", "manifest.json"), "utf8"));
   assert.equal(catalog.official_skill_count, 9);
   assert.equal(official.skill_count, 9);
@@ -39,7 +40,12 @@ test("v1.0.1 indexes nine upstream MiniMax Skills and nine independent Seedance 
     assert.ok(fs.existsSync(path.join(repoRoot, "skills", entry.companion_seedance_ref)));
   }
   const skillDirectories = fs.readdirSync(path.join(repoRoot, "skills"), { withFileTypes: true }).filter((entry) => entry.isDirectory());
-  assert.equal(skillDirectories.length, 16);
+  assert.equal(skillDirectories.length, 17);
+  const community = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "community-skills", "manifest.json"), "utf8"));
+  assert.equal(catalog.community_skill_count, 1);
+  assert.equal(community.skill_count, 1);
+  assert.equal(community.official, false);
+  assert.ok(fs.existsSync(path.join(repoRoot, "skills", "direct-street-interview-video", "SKILL.md")));
 });
 
 test("public Skill installation may document CODEX_HOME without weakening the boundary", () => {
@@ -116,4 +122,26 @@ test("media validation fails closed on a full-decode error", () => {
     requireAudio: true,
     runTool
   }), /full video decode: corrupt frame/);
+});
+
+test("media validation rejects embedded workflow metadata and absolute local paths", () => {
+  const runTool = (tool) => tool === "probe-tool"
+    ? {
+        status: 0,
+        stdout: JSON.stringify({
+          format: { duration: "10.125", tags: { workflow: `load ${["C:", "private", "input.png"].join("\\")}` } },
+          streams: [
+            { codec_type: "video", codec_name: "h264" },
+            { codec_type: "audio", codec_name: "aac" }
+          ]
+        }),
+        stderr: ""
+      }
+    : { status: 0, stdout: "", stderr: "" };
+  assert.throws(() => probeAndDecodeMedia("leaky.mp4", {
+    ffprobePath: "probe-tool",
+    ffmpegPath: "decode-tool",
+    requireAudio: true,
+    runTool
+  }), /public release metadata contains (?:Windows absolute path|embedded generation workflow)/u);
 });

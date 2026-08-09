@@ -75,21 +75,23 @@ function assetUrl(asset) {
 }
 
 function serializeCatalog(catalog) {
+  const serializeMediaItem = (item) => ({
+    ...item,
+    media: {
+      gifUrl: assetUrl(item.media.gif),
+      posterUrl: assetUrl(item.media.poster),
+      videoUrl: assetUrl(item.media.video),
+      hasFullVideo: item.media.hasFullVideo
+    }
+  });
   return {
     schemaVersion: catalog.schemaVersion,
     catalogVersion: catalog.catalogVersion,
     generatedAt: catalog.generatedAt,
     warnings: catalog.warnings,
     officialSkills: catalog.officialSkills,
-    cases: catalog.cases.map((item) => ({
-      ...item,
-      media: {
-        gifUrl: assetUrl(item.media.gif),
-        posterUrl: assetUrl(item.media.poster),
-        videoUrl: assetUrl(item.media.video),
-        hasFullVideo: item.media.hasFullVideo
-      }
-    }))
+    communitySkills: catalog.communitySkills.map(serializeMediaItem),
+    cases: catalog.cases.map(serializeMediaItem)
   };
 }
 

@@ -15,7 +15,7 @@
 
 桌面版提供：
 
-- “创意案例”与“MiniMax 官方仓库 Skills”两个独立入口；
+- “创意案例”“MiniMax 官方仓库 Skills”与“非官方 Skills”三个独立入口；
 - 搜索机制、风格、运镜、标签、作者与案例 ID；
 - 卡片 GIF/Poster 快速浏览；
 - 详情页完整 MP4 与声音播放；
@@ -25,6 +25,8 @@
 - 原始帖子跳转。
 
 官方 Skill 视图的 H3 标签页显示上游固定版本、校验哈希和安装命令，不复制上游正文；Seedance 2.0 标签页显示本库原创伴侣模板。官方项没有案例视频，也不会进入案例对比或 ComfyUI 导入。
+
+“非官方 Skills”视图始终显示来源分类。用户提供完整样片时，Electron 播放媒体包内的有声 MP4，GitHub 则显示轻量 GIF；详情同时呈现证据修复、适用范围、H3 和 Seedance 模板。未提供外部原帖时，界面隐藏来源按钮，不伪造作者或链接。
 
 ## 官方 H3 与 Seedance 伴侣如何配合
 
@@ -50,6 +52,18 @@ catalog/cases/<case-id>/
 ```
 
 `source.json` 中的完整 MP4 映射指向 Release 媒体包，不表示 MP4 会进入 Git 历史。
+
+非官方 Skill 的公开索引位于：
+
+```text
+catalog/community-skills/
+├─ manifest.json
+└─ <skill-id>/
+   ├─ manifest.json
+   ├─ SUMMARY.md
+   ├─ preview.gif
+   └─ poster.webp
+```
 
 ## 提示词迁移检查
 

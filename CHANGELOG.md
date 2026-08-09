@@ -9,6 +9,22 @@
 - 首批持续扩充的 MiniMax H3 与 Seedance 2.0 Creative DNA 案例。
 - macOS 与 Linux 桌面发行评估。
 
+## [1.0.2] - 2026-08-09
+
+### Added
+
+- 首个明确分区的非官方、用户贡献 Skill：`direct-street-interview-video`。
+- MiniMax H3 Ref2VA/Base 与 Seedance 2.0 两套自然街拍互动模板、摘要、证据修复与反复制边界。
+- GitHub 6 秒 GIF/Poster 预览，以及 Electron 内 10.125 秒完整有声样片。
+- Electron “非官方 Skills”独立入口、来源标签、搜索筛选、详情播放和双模型复制。
+- 媒体包 `community_skill_files` 合同与完整视频/音频解码校验。
+
+### Fixed
+
+- 防止提示词在目标时长终点才开启下一镜头。
+- 为 10 秒与 15 秒街头对话增加可执行的对白密度门，并移除无证据的 4K 声明。
+- 肢体定位改为合意优先；默认使用语言、视线和手势，避免不必要的陌生人接触。
+
 ## [1.0.1] - 2026-08-09
 
 ### Added

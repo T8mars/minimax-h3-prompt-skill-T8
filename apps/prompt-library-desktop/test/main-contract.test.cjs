@@ -21,4 +21,5 @@ test("packaged and development roots include the installable Skill library", () 
   assert.match(main, /path\.join\(process\.resourcesPath, "skills"\)/u);
   assert.match(main, /path\.join\(REPO_ROOT, "skills"\)/u);
   assert.match(main, /officialSkills: catalog\.officialSkills/u);
+  assert.match(main, /communitySkills: catalog\.communitySkills/u);
 });

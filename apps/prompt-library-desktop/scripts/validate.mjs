@@ -45,11 +45,13 @@ const skillsRoot = path.join(repoRoot, "skills");
 let caseCount = 0;
 let videoCount = 0;
 let officialSkillCount = 0;
+let communitySkillCount = 0;
 if (fs.existsSync(path.join(catalogRoot, "manifest.json"))) {
   const catalog = loadCatalog({ catalogRoot, mediaRoot: devMediaRoot, skillsRoot });
   caseCount = catalog.cases.length;
   videoCount = catalog.cases.filter((item) => item.media.hasFullVideo).length;
   officialSkillCount = catalog.officialSkills.length;
+  communitySkillCount = catalog.communitySkills.length;
   const rootManifest = JSON.parse(fs.readFileSync(path.join(catalogRoot, "manifest.json"), "utf8"));
   if (Number.isInteger(rootManifest.case_count) && rootManifest.case_count !== caseCount) {
     errors.push(`catalog case_count=${rootManifest.case_count}, viewer loaded ${caseCount}`);
@@ -57,10 +59,18 @@ if (fs.existsSync(path.join(catalogRoot, "manifest.json"))) {
   if (Number.isInteger(rootManifest.official_skill_count) && rootManifest.official_skill_count !== officialSkillCount) {
     errors.push(`catalog official_skill_count=${rootManifest.official_skill_count}, viewer loaded ${officialSkillCount}`);
   }
+  if (Number.isInteger(rootManifest.community_skill_count) && rootManifest.community_skill_count !== communitySkillCount) {
+    errors.push(`catalog community_skill_count=${rootManifest.community_skill_count}, viewer loaded ${communitySkillCount}`);
+  }
   for (const item of catalog.cases) {
     if (!item.media.gif || !item.media.poster) errors.push(`${item.id}: missing GIF or poster`);
     if (!item.prompts.minimaxH3 || !item.prompts.seedance20) errors.push(`${item.id}: missing H3 or Seedance prompt`);
     if (!item.sourceUrl) errors.push(`${item.id}: missing HTTPS source URL`);
+  }
+  for (const item of catalog.communitySkills) {
+    if (!item.media.gif || !item.media.poster) errors.push(`${item.id}: missing community Skill GIF or poster`);
+    if (!item.prompts.minimaxH3 || !item.prompts.seedance20) errors.push(`${item.id}: missing community Skill H3 or Seedance template`);
+    if (item.sourceClassification !== "user-contributed") errors.push(`${item.id}: community Skill must remain user-contributed`);
   }
 }
 
@@ -69,4 +79,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`PASS app static validation; catalog cases=${caseCount}; official Skills=${officialSkillCount}; local full videos=${videoCount}`);
+console.log(`PASS app static validation; catalog cases=${caseCount}; official Skills=${officialSkillCount}; community Skills=${communitySkillCount}; local case videos=${videoCount}`);
