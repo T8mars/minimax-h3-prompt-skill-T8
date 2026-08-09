@@ -7,6 +7,11 @@ const appDir = path.resolve(__dirname, "..");
 const html = fs.readFileSync(path.join(appDir, "src", "index.html"), "utf8");
 const renderer = fs.readFileSync(path.join(appDir, "src", "app.js"), "utf8");
 
+test("header uses the T8 brand mark", () => {
+  assert.match(html, /<span class="brand-mark">T8<\/span>/u);
+  assert.doesNotMatch(html, /<span class="brand-mark">VP<\/span>/u);
+});
+
 test("renderer exposes comparison controls and side-by-side content", () => {
   for (const id of ["compare-bar", "compare-dialog", "compare-grid", "compare-tab-h3", "compare-tab-seedance"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`));
