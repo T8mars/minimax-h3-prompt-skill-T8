@@ -89,7 +89,7 @@ function serializeCatalog(catalog) {
     catalogVersion: catalog.catalogVersion,
     generatedAt: catalog.generatedAt,
     warnings: catalog.warnings,
-    officialSkills: catalog.officialSkills,
+    officialSkills: catalog.officialSkills.map(serializeMediaItem),
     communitySkills: catalog.communitySkills.map(serializeMediaItem),
     cases: catalog.cases.map(serializeMediaItem)
   };

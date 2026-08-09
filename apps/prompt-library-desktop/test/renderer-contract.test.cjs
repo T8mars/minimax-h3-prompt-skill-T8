@@ -21,8 +21,17 @@ test("renderer exposes a separate official Skill view with H3 and Seedance compa
   for (const id of ["view-cases", "view-official-skills", "view-official-count"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`));
   }
-  for (const token of ["officialSkills", "renderOfficialSkillCard", "switchView", "不导入 ComfyUI"]) {
+  for (const token of ["officialSkills", "renderOfficialSkillCard", "switchView", "不导入 ComfyUI", "previewLabel", "media.gifUrl"]) {
     assert.ok(renderer.includes(token), `missing official Skill token: ${token}`);
+  }
+});
+
+test("renderer defaults to an aggregate all-content view", () => {
+  for (const id of ["view-all", "view-all-count"]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`));
+  }
+  for (const token of ["activeView: \"all\"", "全部提示词案例与 Skills", "全部内容", "可预览内容"]) {
+    assert.ok(renderer.includes(token), `missing all-content token: ${token}`);
   }
 });
 

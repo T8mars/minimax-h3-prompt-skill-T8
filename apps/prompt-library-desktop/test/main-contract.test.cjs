@@ -20,6 +20,6 @@ test("media protocol resolves canonical paths and delegates range responses", ()
 test("packaged and development roots include the installable Skill library", () => {
   assert.match(main, /path\.join\(process\.resourcesPath, "skills"\)/u);
   assert.match(main, /path\.join\(REPO_ROOT, "skills"\)/u);
-  assert.match(main, /officialSkills: catalog\.officialSkills/u);
-  assert.match(main, /communitySkills: catalog\.communitySkills/u);
+  assert.match(main, /officialSkills: catalog\.officialSkills\.map\(serializeMediaItem\)/u);
+  assert.match(main, /communitySkills: catalog\.communitySkills\.map\(serializeMediaItem\)/u);
 });

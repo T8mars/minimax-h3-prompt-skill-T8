@@ -51,7 +51,7 @@ Electron 优先播放安装包内的完整 MP4，并在标题附近显示平台�
 
 ## MiniMax 官方仓库 Skill 索引
 
-`catalog/official-skills/manifest.json` 保存 MiniMax 官方仓库 9 个 Skill 的固定 commit、目录 SHA、`SKILL.md` SHA-256、上游版本和 `meta.yaml` 来源分类。它只保存元数据、链接和安装命令，不包含上游 Skill 正文。
+`catalog/official-skills/manifest.json` 保存 MiniMax 官方仓库 9 个 Skill 的固定 commit、目录 SHA、`SKILL.md` SHA-256、上游版本和 `meta.yaml` 来源分类。它不包含上游 Skill 正文；为支持离线直观浏览，本仓库同时保存 9 个固定来源的轻量预览 GIF，并记录上游地址、源文件 SHA-256 与本地 GIF SHA-256。8 个风格条目使用上游同名 GIF，通用写作条目由上游 `t2va.mp4` 转换为 GIF。
 
 “官方仓库收录”与“官方原创”不是同一概念：本库分别显示 `official`、`official-featured`、`community` 和无 `meta.yaml` 时的 `repository-owned`。上游内容的许可见索引中的 `license_reference`；本库 9 个 Seedance 2.0 伴侣为独立编写并按本仓库内容许可发布。
 
