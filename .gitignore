@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Electron output
+dist/
+out/
+release/
+apps/*/dist/
+apps/*/out/
+apps/*/release/
+
+# Logs and coverage
+*.log
+coverage/
+.nyc_output/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+cookies.txt
+*.har
+
+# Temporary/public-export staging
+/.release-input/
+.cache/
+.tmp/
+tmp/
+staging/
+media-staging/
+
+# Locally assembled release assets
+prompt-library-media-v*.zip
+prompt-library-catalog-v*.zip
+prompt-library-skills-v*.zip
+T8-Prompt-Library-Setup-v*.exe
+SHA256SUMS.txt
+latest.yml
+*.blockmap
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

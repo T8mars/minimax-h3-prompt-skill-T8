@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: t8media:; media-src 'self' t8media:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    >
+    <title>T8 Prompt Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand" aria-label="T8 Prompt Library">
+        <span class="brand-mark">VP</span>
+        <span>
+          <strong>Prompt Library</strong>
+          <small>CREATIVE DNA ARCHIVE</small>
+        </span>
+      </div>
+      <div class="update-area">
+        <span id="update-status" class="update-status" aria-live="polite">尚未检查更新</span>
+        <button id="install-update" class="button ghost hidden" type="button">重启安装</button>
+        <button id="check-update" class="button ghost" type="button">检查更新</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">LOCAL · READ-ONLY CASES</p>
+          <h1 id="page-title">高质量视频提示词案例</h1>
+          <p class="intro-copy">从完整视频中提炼可迁移的 Creative DNA，同时提供 MiniMax H3 与 Seedance 2.0 模板。</p>
+        </div>
+        <div class="catalog-version">
+          <span>CATALOG</span>
+          <strong id="catalog-version">v1.0.0</strong>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="案例统计">
+        <div><span>公开案例</span><strong id="stat-cases">0</strong></div>
+        <div><span>本地完整视频</span><strong id="stat-videos">0</strong></div>
+        <div><span>模型模板</span><strong id="stat-prompts">0</strong></div>
+        <div><span>当前结果</span><strong id="stat-results">0</strong></div>
+      </section>
+
+      <section class="filters" aria-label="筛选案例">
+        <label class="search-field">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="搜索机制、风格、运镜、标签、作者或案例 ID" autocomplete="off">
+        </label>
+        <label>
+          <span>平台</span>
+          <select id="platform-filter"><option value="">全部平台</option></select>
+        </label>
+        <label>
+          <span>模型</span>
+          <select id="model-filter"><option value="">全部模型</option></select>
+        </label>
+        <label>
+          <span>标签</span>
+          <select id="tag-filter"><option value="">全部标签</option></select>
+        </label>
+        <button id="clear-filters" class="button clear" type="button">清空</button>
+      </section>
+
+      <div id="catalog-warning" class="catalog-warning hidden" role="status"></div>
+      <section id="case-grid" class="case-grid" aria-live="polite" aria-busy="true"></section>
+      <section id="empty-state" class="empty-state hidden">
+        <span>VP</span>
+        <h2>没有匹配的案例</h2>
+        <p>调整搜索词或清空筛选条件后再试。</p>
+      </section>
+
+      <section id="compare-bar" class="compare-bar hidden" aria-label="案例对比">
+        <div>
+          <strong>案例对比</strong>
+          <span id="compare-count">已选 0/3</span>
+        </div>
+        <div id="compare-chips" class="compare-chips"></div>
+        <button id="open-compare" class="button source" type="button" disabled>开始对比</button>
+      </section>
+    </main>
+
+    <dialog id="case-dialog" class="case-dialog" aria-labelledby="detail-title">
+      <div class="dialog-shell">
+        <header class="dialog-header">
+          <div>
+            <p id="detail-kicker" class="eyebrow"></p>
+            <h2 id="detail-title"></h2>
+          </div>
+          <button id="close-dialog" class="icon-button" type="button" aria-label="关闭详情">×</button>
+        </header>
+
+        <div class="detail-hero">
+          <section id="detail-media" class="detail-media" aria-label="案例视频"></section>
+          <aside class="detail-summary">
+            <p id="detail-summary"></p>
+            <dl id="detail-meta"></dl>
+            <button id="open-source" class="button source hidden" type="button">查看作者原帖 ↗</button>
+          </aside>
+        </div>
+
+        <section class="detail-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">REUSABLE MECHANISM</p>
+              <h3>Creative DNA</h3>
+            </div>
+          </div>
+          <div id="creative-dna" class="dna-grid"></div>
+        </section>
+
+        <section class="detail-section prompt-section">
+          <div class="section-heading prompt-heading">
+            <div>
+              <p class="eyebrow">MODEL-READY PROMPTS</p>
+              <h3>提示词模板</h3>
+            </div>
+            <button id="copy-prompt" class="button copy" type="button">复制提示词</button>
+          </div>
+          <div class="prompt-tabs" role="tablist" aria-label="模型提示词">
+            <button id="tab-h3" class="prompt-tab active" type="button" role="tab" aria-selected="true">MiniMax H3</button>
+            <button id="tab-seedance" class="prompt-tab" type="button" role="tab" aria-selected="false">Seedance 2.0</button>
+          </div>
+          <pre id="prompt-text" class="prompt-text" tabindex="0"></pre>
+          <p id="prompt-missing" class="prompt-missing hidden">此案例暂未提供该模型的模板。</p>
+        </section>
+      </div>
+    </dialog>
+
+    <dialog id="compare-dialog" class="case-dialog compare-dialog" aria-labelledby="compare-title">
+      <div class="dialog-shell">
+        <header class="dialog-header">
+          <div>
+            <p class="eyebrow">SIDE-BY-SIDE REVIEW</p>
+            <h2 id="compare-title">案例机制与提示词对比</h2>
+          </div>
+          <button id="close-compare" class="icon-button" type="button" aria-label="关闭对比">×</button>
+        </header>
+        <div class="compare-toolbar">
+          <span>提示词模型</span>
+          <div class="prompt-tabs" role="tablist" aria-label="对比提示词模型">
+            <button id="compare-tab-h3" class="prompt-tab active" type="button" role="tab" aria-selected="true">MiniMax H3</button>
+            <button id="compare-tab-seedance" class="prompt-tab" type="button" role="tab" aria-selected="false">Seedance 2.0</button>
+          </div>
+        </div>
+        <section id="compare-grid" class="compare-grid"></section>
+      </div>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

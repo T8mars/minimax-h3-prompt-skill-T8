@@ -1,0 +1,141 @@
+{
+  "schema_version": "public-creative-dna/v1",
+  "case_id": "reddit-1vh8jy6-h3-high-card",
+  "title": "One Signal Beats Many",
+  "complexity": "moderate",
+  "mechanism": "A noisy system makes quantity look powerful, one restrained corrective signal interrupts it, and a physical consequence proves that calibrated clarity beats accumulation.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show the asymmetric one-versus-many matchup before either side explains it.",
+      "purpose": "Creates an immediate comparison question.",
+      "ablation_failure": "If the single answer appears first, there is no reversal."
+    },
+    {
+      "id": "inv-02",
+      "rule": "Let the many-item side perform longer and occupy more space before the concise answer.",
+      "purpose": "Builds apparent advantage and visual noise.",
+      "ablation_failure": "Equal screen time makes the payoff predictable and weak."
+    },
+    {
+      "id": "inv-03",
+      "rule": "Give the single corrective signal a dedicated sensory close-up.",
+      "purpose": "Turns a small action or object into the strongest information beat without requiring copied text or props.",
+      "ablation_failure": "A wide or simultaneous reveal loses hierarchy and emphasis."
+    },
+    {
+      "id": "inv-04",
+      "rule": "End with calm control versus noisy consequence, not another explanation.",
+      "purpose": "Converts the logical reversal into a visual punchline.",
+      "ablation_failure": "A verbal summary repeats information and drains comic energy."
+    }
+  ],
+  "slots": [
+    {
+      "name": "arena",
+      "constraint": "A stable comparison space unrelated to gambling or the source saloon."
+    },
+    {
+      "name": "many_side",
+      "constraint": "One expressive character with three to five compact labeled options."
+    },
+    {
+      "name": "one_side",
+      "constraint": "One calm character with a single short answer label."
+    },
+    {
+      "name": "many_signals",
+      "constraint": "Three to five distinct controls, sounds, lights, routes, or gestures that create legible visual noise."
+    },
+    {
+      "name": "single_answer",
+      "constraint": "One visually and sonically distinct corrective action or object that carries the reversal without needing text."
+    },
+    {
+      "name": "proof",
+      "constraint": "A visible consequence showing why the concise answer wins."
+    },
+    {
+      "name": "meltdown",
+      "constraint": "Safe exaggerated reaction with no weapons or copied gesture."
+    },
+    {
+      "name": "sound",
+      "constraint": "Escalating object sounds, one reveal accent, and a short consequence sound."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "legacy cartoon characters, voices, silhouettes, or franchise animation surface",
+    "saloon, gambling table, gold-and-carrot stakes, or Western props",
+    "source model names and exact card text",
+    "pistols, smoke-cloud surrender, exact poses, and shot compositions"
+  ],
+  "instantiations": [
+    {
+      "concept": "In a whimsical calibration lab, a frantic octopus pulls five mismatched levers while a maintenance robot taps one brass tuning fork; the resonance aligns the machines and produces one perfect glass sphere.",
+      "prompt_seed": "Five noisy controls lose to one calibrated resonance signal, proved by a synchronized mechanical correction."
+    },
+    {
+      "concept": "In a nocturnal vineyard, five autonomous pruning drones chase competing light paths until one gardener strikes a pitch pipe; the swarm settles into a single measured spiral and trims one clean row.",
+      "prompt_seed": "Five conflicting routes yield to one audible calibration cue, proved by coherent motion rather than a written answer."
+    },
+    {
+      "concept": "In a kinetic paper city, five traffic towers flash different patterns until one tiny clockmaker inserts a metronome key; every paper vehicle snaps into one flowing rhythm.",
+      "prompt_seed": "Five competing signals versus one timing key, proved by a city-scale choreography reset."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The answer appears too early.",
+      "repair": "Hold it until after the many side has completed the spatial display and presentation pose."
+    },
+    {
+      "failure": "The many-side noise becomes random rather than countable.",
+      "repair": "Limit it to three to five distinct controls or signals and stage them in a clear activation sequence."
+    },
+    {
+      "failure": "The ending copies the source meltdown.",
+      "repair": "Replace weapons and smoke with a consequence native to the new arena, such as collapsing mockups, foaming food, or desynchronized lights."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In a whimsical calibration lab, a frantic octopus pulls five mismatched levers while a maintenance robot taps one brass tuning fork; the resonance aligns the machines and produces one perfect glass sphere.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04"
+      ],
+      "changed_slots": [
+        "arena",
+        "many_side",
+        "one_side",
+        "many_signals",
+        "single_answer",
+        "proof",
+        "meltdown"
+      ]
+    },
+    {
+      "concept": "In a nocturnal vineyard, five autonomous pruning drones chase competing light paths until one gardener strikes a pitch pipe; the swarm settles into a single measured spiral and trims one clean row.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04"
+      ],
+      "changed_slots": [
+        "arena",
+        "many_side",
+        "one_side",
+        "many_signals",
+        "single_answer",
+        "proof",
+        "sound"
+      ]
+    }
+  ]
+}
