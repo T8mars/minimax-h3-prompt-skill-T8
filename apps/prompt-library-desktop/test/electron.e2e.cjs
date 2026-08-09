@@ -27,6 +27,7 @@ async function run() {
 
   try {
     const page = await electronApp.firstWindow();
+    await page.setViewportSize({ width: 1280, height: 720 });
     const rendererErrors = [];
     page.on("pageerror", (error) => rendererErrors.push(error.message));
     page.on("console", (message) => {
@@ -134,16 +135,23 @@ async function run() {
     assert.equal(await page.locator("#stat-prompts").textContent(), "9");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "official Skills do not enter case comparison");
     assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "all official entries must render local GIFs instead of placeholder art");
-    await page.locator(".case-card.official-skill img").evaluateAll(async (images) => {
-      await Promise.all(images.map((image) => image.complete
-        ? Promise.resolve()
-        : new Promise((resolve, reject) => {
-          image.addEventListener("load", resolve, { once: true });
-          image.addEventListener("error", () => reject(new Error(`official GIF failed: ${image.src}`)), { once: true });
-        })));
-      if (images.some((image) => image.naturalWidth <= 0 || image.naturalHeight <= 0)) throw new Error("one or more official GIFs did not decode");
-    });
-    assert.match(await page.locator(".case-card.official-skill img").first().getAttribute("src"), /^t8media:\/\/catalog\/official-skills\/previews\//u);
+    const officialImages = page.locator(".case-card.official-skill img");
+    for (let index = 0; index < 9; index += 1) {
+      const image = officialImages.nth(index);
+      await image.scrollIntoViewIfNeeded();
+      await image.evaluate(async (node) => {
+        if (!node.complete) {
+          await new Promise((resolve, reject) => {
+            const timeout = setTimeout(() => reject(new Error(`official GIF timed out: ${node.src}`)), 12000);
+            node.addEventListener("load", () => { clearTimeout(timeout); resolve(); }, { once: true });
+            node.addEventListener("error", () => { clearTimeout(timeout); reject(new Error(`official GIF failed: ${node.src}`)); }, { once: true });
+          });
+        }
+        if (node.naturalWidth <= 0 || node.naturalHeight <= 0) throw new Error(`official GIF did not decode: ${node.src}`);
+      });
+    }
+    await officialImages.first().scrollIntoViewIfNeeded();
+    assert.match(await officialImages.first().getAttribute("src"), /^t8media:\/\/catalog\/official-skills\/previews\//u);
     await page.screenshot({ path: officialScreenshotPath, animations: "disabled" });
     await page.locator(".case-card.official-skill").first().click();
     await page.waitForSelector("#case-dialog[open]");
