@@ -2,7 +2,7 @@
 
 ## Skill 是什么
 
-`skills/` 中共有两类可安装产物：7 个案例机制 Skill，以及为 MiniMax 官方仓库 9 个 H3 Skills 独立编写的 9 个 Seedance 2.0 伴侣 Skills。每个目录都有 `SKILL.md`、`references/summary.md`、`references/template.md` 和 Agent 元数据。
+`skills/` 中共有三类可安装产物：7 个案例机制 Skill、为 MiniMax 官方仓库 9 个 H3 Skills 独立编写的 9 个 Seedance 2.0 伴侣 Skills，以及明确标注“非官方 · 用户贡献”的高质量双模型 Skill。v1.0.2 共 17 个可安装目录。每个目录都有 `SKILL.md`、`references/summary.md`、`references/template.md` 和 Agent 元数据。
 
 公开案例 Skill 与本项目内部的采集/审核 Skill 完全分离；安装公开 Skill 不会获得搜索、登录、下载或内部自动化能力。
 
@@ -25,6 +25,16 @@ Copy-Item -Recurse .\skills\direct-seedance-brand-promo "$env:CODEX_HOME\skills\
 ```
 
 这些伴侣是 T8 独立编写的 Seedance 原生工作流，不是对上游 H3 Skill 正文的复制或改写。
+
+## 安装非官方用户贡献 Skill
+
+非官方条目位于同一个 `skills/` 目录，但在 Electron 和 catalog 中单独分区。例如：
+
+```powershell
+Copy-Item -Recurse .\skills\direct-street-interview-video "$env:CODEX_HOME\skills\direct-street-interview-video"
+```
+
+该 Skill 同时输出 MiniMax H3 与 Seedance 2.0 模板。它不会冒充官方预设，也不会自动修改 ComfyUI 节点。
 
 ## 安装单个 Skill
 

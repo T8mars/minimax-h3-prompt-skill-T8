@@ -119,3 +119,61 @@ test("loads pinned upstream H3 access and local Seedance companion without embed
   assert.equal(item.prompts.seedance20, "# Seedance template\n\nA coherent event prompt.");
   assert.doesNotMatch(item.prompts.minimaxH3, /Global settings:/u);
 });
+
+test("loads a non-official user-contributed Skill with dual-model templates and media", (t) => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "t8-community-skills-"));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  const catalogRoot = path.join(root, "catalog");
+  const mediaRoot = path.join(root, "media");
+  const skillsRoot = path.join(root, "skills");
+  const id = "direct-street-interview-video";
+  fs.mkdirSync(path.join(catalogRoot, "community-skills", id), { recursive: true });
+  fs.mkdirSync(path.join(mediaRoot, "community-skills", id), { recursive: true });
+  fs.mkdirSync(path.join(skillsRoot, id, "references"), { recursive: true });
+  fs.writeFileSync(path.join(catalogRoot, "manifest.json"), JSON.stringify({
+    schema_version: "public-catalog/v1",
+    catalog_version: "1.0.2",
+    community_skills_manifest: "community-skills/manifest.json"
+  }));
+  fs.writeFileSync(path.join(catalogRoot, "community-skills", "manifest.json"), JSON.stringify({
+    official: false,
+    skill_count: 1,
+    skills: [{ id, manifest_ref: `community-skills/${id}/manifest.json` }]
+  }));
+  fs.writeFileSync(path.join(catalogRoot, "community-skills", id, "manifest.json"), JSON.stringify({
+    id,
+    title_zh: "自然街拍互动",
+    summary: "连续路线上的自然交流",
+    official: false,
+    source_classification: "user-contributed",
+    source_label: "非官方 · 用户贡献",
+    source_attribution: "用户提供样片",
+    source_duration_seconds: 10.125,
+    target_duration_range_seconds: [4, 15],
+    skill_ref: id,
+    summary_ref: `${id}/references/summary.md`,
+    prompt_refs: { minimax_h3: `${id}/references/h3-template.md`, seedance_2_0: `${id}/references/seedance-template.md` },
+    preview_refs: { gif: `community-skills/${id}/preview.gif`, poster: `community-skills/${id}/poster.webp`, mp4: `community-skills/${id}/preview.mp4` },
+    models: ["MiniMax H3", "Seedance 2.0"],
+    tags: ["street-interview"],
+    creative_dna: { mechanism: "distance change" },
+    comfyui: { bundled: false, reason: "not bundled" }
+  }));
+  fs.writeFileSync(path.join(catalogRoot, "community-skills", id, "preview.gif"), "GIF89a");
+  fs.writeFileSync(path.join(catalogRoot, "community-skills", id, "poster.webp"), "RIFF");
+  fs.writeFileSync(path.join(mediaRoot, "community-skills", id, "preview.mp4"), "ftyp");
+  fs.writeFileSync(path.join(skillsRoot, id, "SKILL.md"), "---\nname: direct-street-interview-video\ndescription: test\n---\n");
+  fs.writeFileSync(path.join(skillsRoot, id, "references", "summary.md"), "# Summary\n\nUse scope.");
+  fs.writeFileSync(path.join(skillsRoot, id, "references", "h3-template.md"), "# H3\n\nsubject_definitions:");
+  fs.writeFileSync(path.join(skillsRoot, id, "references", "seedance-template.md"), "# Seedance\n\n自然街拍。");
+
+  const catalog = loadCatalog({ catalogRoot, mediaRoot, skillsRoot });
+  assert.equal(catalog.communitySkills.length, 1);
+  const item = catalog.communitySkills[0];
+  assert.equal(item.kind, "communitySkill");
+  assert.equal(item.sourceClassification, "user-contributed");
+  assert.equal(item.comfyuiImport, false);
+  assert.deepEqual(item.media.video, { scope: "media", relativePath: `community-skills/${id}/preview.mp4` });
+  assert.match(item.prompts.minimaxH3, /subject_definitions/u);
+  assert.match(item.prompts.seedance20, /自然街拍/u);
+});

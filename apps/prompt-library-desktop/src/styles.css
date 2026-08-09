@@ -161,6 +161,7 @@ h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1; letter-spacin
 .case-card.comparing { border-color: var(--acid); box-shadow: 0 0 0 1px rgba(204, 255, 76, 0.25); }
 .card-media { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #070807; }
 .card-media img, .card-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.case-card.community-skill .card-media img, .case-card.community-skill .card-media video { object-fit: contain; background: #050705; }
 .card-hover-video { position: absolute; inset: 0; opacity: 0; transition: opacity 160ms ease; }
 .case-card.previewing .card-hover-video { opacity: 1; }
 .card-placeholder { display: grid; width: 100%; height: 100%; place-items: center; background: linear-gradient(135deg, #151a15, #090b09); color: #59615b; font-size: 42px; font-weight: 900; }

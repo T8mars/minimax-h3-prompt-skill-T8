@@ -19,7 +19,7 @@
 Windows 校验示例：
 
 ```powershell
-Get-FileHash .\T8-Prompt-Library-Setup-v1.0.1.exe -Algorithm SHA256
+Get-FileHash .\T8-Prompt-Library-Setup-v1.0.2.exe -Algorithm SHA256
 ```
 
 将结果与 `SHA256SUMS.txt` 中对应文件比较。
@@ -30,7 +30,7 @@ Git 仓库只保存轻量 GIF/Poster。完整 MP4 位于对应 GitHub Release �
 
 - 安装完成后可直接播放完整视频和声音；
 - 不需要登录 X、Reddit 或 YouTube 才能查看本地视频；
-- 每个案例仍保留原始帖子按钮，便于查看作者和上下文；
+- 有原始帖子地址的案例保留来源按钮；用户提供但未附外部地址的非官方 Skill 不会伪造链接；
 - 普通源代码 CI 只验证无完整媒体构建，不会假装包含 MP4。
 
 ### 自动更新

@@ -336,6 +336,86 @@ function loadOfficialSkills(catalogRoot, rootManifest, skillsRoot, warnings) {
   return normalized;
 }
 
+function normalizeCommunitySkill(entry, index, catalogRoot, mediaRoot, skillsRoot) {
+  if (!entry || typeof entry !== "object" || !skillsRoot) return null;
+  const id = firstString(entry.id);
+  if (!id || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(id) || entry.official !== false) return null;
+  const skillRef = firstString(entry.skill_ref, id);
+  const skillPath = safeResolve(skillsRoot, path.join(skillRef, "SKILL.md"));
+  const summaryPath = safeResolve(skillsRoot, firstString(entry.summary_ref, `${skillRef}/references/summary.md`));
+  const h3Path = safeResolve(skillsRoot, firstString(entry.prompt_refs?.minimax_h3));
+  const seedancePath = safeResolve(skillsRoot, firstString(entry.prompt_refs?.seedance_2_0));
+  if (![skillPath, summaryPath, h3Path, seedancePath].every((candidate) => candidate && fs.existsSync(candidate))) return null;
+
+  const previewRefs = entry.preview_refs || {};
+  const gifPath = safeResolve(catalogRoot, firstString(previewRefs.gif));
+  const posterPath = safeResolve(catalogRoot, firstString(previewRefs.poster));
+  const videoPath = mediaRoot ? safeResolve(mediaRoot, firstString(previewRefs.mp4)) : null;
+  const sourceUrl = (() => {
+    try {
+      const parsed = new URL(firstString(entry.source_url));
+      return parsed.protocol === "https:" ? parsed.toString() : "";
+    } catch {
+      return "";
+    }
+  })();
+
+  return {
+    kind: "communitySkill",
+    id,
+    title: firstString(entry.title_zh, entry.title, id),
+    englishTitle: firstString(entry.title),
+    summary: firstString(entry.summary, markdownSummary(readText(summaryPath))),
+    sourceClassification: firstString(entry.source_classification, "user-contributed"),
+    sourceLabel: firstString(entry.source_label, "非官方 · 用户贡献"),
+    sourceAttribution: firstString(entry.source_attribution),
+    sourceUrl,
+    sourceDurationSeconds: Number.isFinite(Number(entry.source_duration_seconds)) ? Number(entry.source_duration_seconds) : null,
+    targetDurationRangeSeconds: Array.isArray(entry.target_duration_range_seconds) ? entry.target_duration_range_seconds.map(Number) : [4, 15],
+    skillRef,
+    companionSummary: readText(summaryPath).trim(),
+    models: uniqueStrings(entry.models),
+    tags: uniqueStrings(entry.tags),
+    creativeDna: entry.creative_dna && typeof entry.creative_dna === "object" ? entry.creative_dna : {},
+    comfyuiImport: Boolean(entry.comfyui?.bundled),
+    comfyuiReason: firstString(entry.comfyui?.reason),
+    prompts: {
+      minimaxH3: readText(h3Path).trim(),
+      seedance20: readText(seedancePath).trim()
+    },
+    media: {
+      gif: assetDescriptor(catalogRoot, gifPath, "catalog"),
+      poster: assetDescriptor(catalogRoot, posterPath, "catalog"),
+      video: assetDescriptor(mediaRoot, videoPath, "media"),
+      hasFullVideo: Boolean(videoPath && fs.existsSync(videoPath))
+    },
+    updatedAt: firstString(entry.updated_at, index.updated_at)
+  };
+}
+
+function loadCommunitySkills(catalogRoot, rootManifest, mediaRoot, skillsRoot, warnings) {
+  const reference = firstString(rootManifest.community_skills_manifest);
+  if (!reference) return [];
+  const indexPath = safeResolve(catalogRoot, reference);
+  if (!indexPath || !fs.existsSync(indexPath)) {
+    warnings.push("未找到非官方 Skill 索引");
+    return [];
+  }
+  const index = readJson(indexPath, null);
+  if (!index || index.official !== false) {
+    warnings.push("非官方 Skill 索引边界无效");
+    return [];
+  }
+  const normalized = asArray(index.skills).map((item) => {
+    const manifestRef = firstString(item?.manifest_ref);
+    const manifestPath = safeResolve(catalogRoot, manifestRef);
+    if (!manifestPath || !fs.existsSync(manifestPath)) return null;
+    return normalizeCommunitySkill(readJson(manifestPath, null), index, catalogRoot, mediaRoot, skillsRoot);
+  }).filter(Boolean);
+  if (Number(index.skill_count) !== normalized.length) warnings.push("部分非官方 Skill、模板或预览文件不可用");
+  return normalized;
+}
+
 function loadCatalog({ catalogRoot, mediaRoot = null, skillsRoot = null }) {
   const resolvedCatalogRoot = path.resolve(catalogRoot);
   const rootPath = path.join(resolvedCatalogRoot, "manifest.json");
@@ -354,6 +434,13 @@ function loadCatalog({ catalogRoot, mediaRoot = null, skillsRoot = null }) {
     skillsRoot ? path.resolve(skillsRoot) : null,
     warnings
   );
+  const communitySkills = loadCommunitySkills(
+    resolvedCatalogRoot,
+    rootManifest,
+    mediaRoot ? path.resolve(mediaRoot) : null,
+    skillsRoot ? path.resolve(skillsRoot) : null,
+    warnings
+  );
 
   return {
     schemaVersion: firstString(rootManifest.schema_version, "1.0.0"),
@@ -361,6 +448,7 @@ function loadCatalog({ catalogRoot, mediaRoot = null, skillsRoot = null }) {
     generatedAt: firstString(rootManifest.generated_at, rootManifest.updated_at),
     cases,
     officialSkills,
+    communitySkills,
     warnings
   };
 }

@@ -3,8 +3,10 @@ const api = window.promptLibrary;
 const elements = {
   viewCases: document.querySelector("#view-cases"),
   viewOfficialSkills: document.querySelector("#view-official-skills"),
+  viewCommunitySkills: document.querySelector("#view-community-skills"),
   viewCaseCount: document.querySelector("#view-case-count"),
   viewOfficialCount: document.querySelector("#view-official-count"),
+  viewCommunityCount: document.querySelector("#view-community-count"),
   pageKicker: document.querySelector("#page-kicker"),
   pageTitle: document.querySelector("#page-title"),
   pageIntro: document.querySelector("#page-intro"),
@@ -61,7 +63,7 @@ const elements = {
 };
 
 const state = {
-  catalog: { cases: [], officialSkills: [], warnings: [] },
+  catalog: { cases: [], officialSkills: [], communitySkills: [], warnings: [] },
   activeView: "cases",
   activeCase: null,
   promptModel: "minimaxH3",
@@ -83,7 +85,13 @@ const DNA_LABELS = {
   camera: "运镜",
   motion: "动态",
   timeline: "时间结构",
-  sound: "声音设计"
+  sound: "声音设计",
+  applicable_scope: "适用范围",
+  not_suitable_for: "不适用范围",
+  usage_steps: "使用方法",
+  quality_repairs: "质量修复",
+  source_boundary: "来源边界",
+  comfyui_boundary: "ComfyUI 边界"
 };
 
 function el(tag, className, text) {
@@ -133,15 +141,17 @@ function resetSelect(select, label) {
 }
 
 function activeItems() {
-  return state.activeView === "officialSkills" ? state.catalog.officialSkills : state.catalog.cases;
+  if (state.activeView === "officialSkills") return state.catalog.officialSkills;
+  if (state.activeView === "communitySkills") return state.catalog.communitySkills;
+  return state.catalog.cases;
 }
 
 function populateFilters() {
   const items = activeItems();
-  resetSelect(elements.platform, state.activeView === "officialSkills" ? "全部来源" : "全部平台");
+  resetSelect(elements.platform, state.activeView === "cases" ? "全部平台" : "全部来源");
   resetSelect(elements.model, "全部模型");
   resetSelect(elements.tag, "全部标签");
-  const platforms = [...new Set(items.map((item) => item.kind === "officialSkill" ? item.sourceLabel : platformLabel(item.platform)))].sort();
+  const platforms = [...new Set(items.map((item) => item.kind?.endsWith("Skill") ? item.sourceLabel : platformLabel(item.platform)))].sort();
   const models = [...new Set(items.flatMap((item) => item.models))].sort();
   const tags = [...new Set(items.flatMap((item) => item.tags))].sort((a, b) => a.localeCompare(b, "zh-CN"));
   platforms.forEach((value) => elements.platform.append(option(value)));
@@ -159,6 +169,7 @@ function searchDocument(item) {
     item.platform,
     item.sourceLabel,
     item.sourceClassification,
+    item.sourceAttribution,
     item.companionSkill,
     ...item.tags,
     ...item.models,
@@ -173,7 +184,7 @@ function filteredItems() {
   const tag = elements.tag.value;
   return activeItems().filter((item) => {
     if (query && !searchDocument(item).includes(query)) return false;
-    const itemSource = item.kind === "officialSkill" ? item.sourceLabel : platformLabel(item.platform);
+    const itemSource = item.kind?.endsWith("Skill") ? item.sourceLabel : platformLabel(item.platform);
     if (platform && itemSource !== platform) return false;
     if (model && !item.models.includes(model)) return false;
     if (tag && !item.tags.includes(tag)) return false;
@@ -303,39 +314,114 @@ function renderOfficialSkillCard(item) {
   return card;
 }
 
+function renderCommunitySkillCard(item) {
+  const card = el("article", "case-card community-skill");
+  card.tabIndex = 0;
+  card.setAttribute("aria-label", `查看非官方 Skill：${item.title}`);
+
+  const media = el("div", "card-media");
+  const imageUrl = item.media.gifUrl || item.media.posterUrl;
+  if (imageUrl) {
+    const image = document.createElement("img");
+    image.src = imageUrl;
+    image.alt = `${item.title} 预览`;
+    image.loading = "lazy";
+    image.decoding = "async";
+    media.append(image);
+  } else {
+    media.append(el("div", "card-placeholder", "US"));
+  }
+  if (item.media.videoUrl) {
+    const video = document.createElement("video");
+    video.className = "card-hover-video";
+    video.src = item.media.videoUrl;
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.preload = "metadata";
+    media.append(video);
+    card.addEventListener("pointerenter", () => {
+      if (!window.matchMedia("(hover: hover)").matches) return;
+      card.classList.add("previewing");
+      void video.play().catch(() => card.classList.remove("previewing"));
+    });
+    card.addEventListener("pointerleave", () => {
+      video.pause();
+      video.currentTime = 0;
+      card.classList.remove("previewing");
+    });
+  }
+  media.append(el("span", `media-badge${item.media.hasFullVideo ? " local" : ""}`, item.media.hasFullVideo ? "完整样片 · 有声" : "GIF 预览"));
+  card.append(media);
+
+  const body = el("div", "card-body");
+  const badges = el("div", "badges");
+  badges.append(el("span", "badge primary community", item.sourceLabel));
+  item.models.forEach((model) => badges.append(el("span", "badge", model)));
+  body.append(badges, el("h2", "card-title", item.title), el("p", "card-summary", item.summary));
+  const tags = el("div", "card-tags");
+  item.tags.slice(0, 4).forEach((tag) => tags.append(el("span", "tag", tag)));
+  body.append(tags);
+  const footer = el("div", "card-footer");
+  footer.append(el("span", "", "用户样片拆解 · 可安装 Skill"), el("strong", "", "查看并播放 →"));
+  body.append(footer);
+  card.append(body);
+
+  const open = () => openCase(item);
+  card.addEventListener("click", open);
+  card.addEventListener("keydown", (event) => {
+    if (event.target !== card) return;
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      open();
+    }
+  });
+  return card;
+}
+
 function updateViewChrome(resultCount) {
   const official = state.activeView === "officialSkills";
-  elements.viewCases.classList.toggle("active", !official);
+  const community = state.activeView === "communitySkills";
+  const cases = !official && !community;
+  elements.viewCases.classList.toggle("active", cases);
   elements.viewOfficialSkills.classList.toggle("active", official);
-  elements.viewCases.setAttribute("aria-pressed", String(!official));
+  elements.viewCommunitySkills.classList.toggle("active", community);
+  elements.viewCases.setAttribute("aria-pressed", String(cases));
   elements.viewOfficialSkills.setAttribute("aria-pressed", String(official));
-  elements.pageKicker.textContent = official ? "MINIMAX OFFICIAL REPOSITORY · PINNED INDEX" : "LOCAL · READ-ONLY CASES";
-  elements.pageTitle.textContent = official ? "MiniMax 官方仓库 Skills" : "高质量视频提示词案例";
+  elements.viewCommunitySkills.setAttribute("aria-pressed", String(community));
+  elements.pageKicker.textContent = official ? "MINIMAX OFFICIAL REPOSITORY · PINNED INDEX" : community ? "NON-OFFICIAL · USER-CONTRIBUTED" : "LOCAL · READ-ONLY CASES";
+  elements.pageTitle.textContent = official ? "MiniMax 官方仓库 Skills" : community ? "非官方高质量提示词 Skills" : "高质量视频提示词案例";
   elements.pageIntro.textContent = official
     ? "固定索引 MiniMax 官方仓库收录的 9 个 H3 Skills，并提供独立编写的 Seedance 2.0 伴侣 Skill；上游正文不复制，官方项不导入 ComfyUI。"
-    : "从完整视频中提炼可迁移的 Creative DNA，同时提供 MiniMax H3 与 Seedance 2.0 模板。";
-  elements.search.placeholder = official ? "搜索用途、风格、标签、官方 Skill 或 Seedance 伴侣" : "搜索机制、风格、运镜、标签、作者或案例 ID";
-  elements.platformLabel.textContent = official ? "来源" : "平台";
-  elements.emptyTitle.textContent = official ? "没有匹配的 Skill" : "没有匹配的案例";
-  elements.statCasesLabel.textContent = official ? "官方仓库收录" : "公开案例";
-  elements.statVideosLabel.textContent = official ? "H3 源 Skill" : "本地完整视频";
+    : community
+      ? "从用户提供的视频与提示词组中提炼可复用机制，修复时长与模型语法问题，并提供完整样片、H3 与 Seedance 2.0 模板。"
+      : "从完整视频中提炼可迁移的 Creative DNA，同时提供 MiniMax H3 与 Seedance 2.0 模板。";
+  elements.search.placeholder = official ? "搜索用途、风格、标签、官方 Skill 或 Seedance 伴侣" : community ? "搜索非官方 Skill、机制、运镜、风格或标签" : "搜索机制、风格、运镜、标签、作者或案例 ID";
+  elements.platformLabel.textContent = cases ? "平台" : "来源";
+  elements.emptyTitle.textContent = cases ? "没有匹配的案例" : "没有匹配的 Skill";
+  elements.statCasesLabel.textContent = official ? "官方仓库收录" : community ? "非官方 Skills" : "公开案例";
+  elements.statVideosLabel.textContent = official ? "H3 源 Skill" : community ? "完整样片" : "本地完整视频";
   elements.statPromptsLabel.textContent = official ? "Seedance 适配" : "模型模板";
   if (official) {
     elements.statCases.textContent = String(state.catalog.officialSkills.length);
     elements.statVideos.textContent = String(state.catalog.officialSkills.filter((item) => item.prompts.minimaxH3).length);
     elements.statPrompts.textContent = String(state.catalog.officialSkills.filter((item) => item.prompts.seedance20).length);
+  } else if (community) {
+    elements.statCases.textContent = String(state.catalog.communitySkills.length);
+    elements.statVideos.textContent = String(state.catalog.communitySkills.filter((item) => item.media.hasFullVideo).length);
+    elements.statPrompts.textContent = String(state.catalog.communitySkills.reduce((total, item) => total + Number(Boolean(item.prompts.minimaxH3)) + Number(Boolean(item.prompts.seedance20)), 0));
   } else {
     elements.statCases.textContent = String(state.catalog.cases.length);
     elements.statVideos.textContent = String(state.catalog.cases.filter((item) => item.media.hasFullVideo).length);
     elements.statPrompts.textContent = String(state.catalog.cases.reduce((total, item) => total + Number(Boolean(item.prompts.minimaxH3)) + Number(Boolean(item.prompts.seedance20)), 0));
   }
   elements.statResults.textContent = String(resultCount);
-  elements.compareBar.classList.toggle("hidden", official || state.compareIds.length === 0);
+  elements.compareBar.classList.toggle("hidden", !cases || state.compareIds.length === 0);
 }
 
 function render() {
   const items = filteredItems();
-  const renderer = state.activeView === "officialSkills" ? renderOfficialSkillCard : renderCard;
+  const renderer = state.activeView === "officialSkills" ? renderOfficialSkillCard : state.activeView === "communitySkills" ? renderCommunitySkillCard : renderCard;
   elements.caseGrid.replaceChildren(...items.map(renderer));
   elements.caseGrid.setAttribute("aria-busy", "false");
   elements.empty.classList.toggle("hidden", items.length > 0);
@@ -501,6 +587,33 @@ function openCase(item) {
     elements.dialog.querySelector(".dialog-shell").scrollTop = 0;
     return;
   }
+  if (item.kind === "communitySkill") {
+    elements.detailKicker.textContent = `${item.sourceLabel} · ${item.id}`;
+    elements.detailTitle.textContent = item.title;
+    elements.detailSummary.textContent = item.summary;
+    elements.detailMeta.replaceChildren();
+    addMeta("英文名称", item.englishTitle);
+    addMeta("来源说明", item.sourceAttribution);
+    addMeta("样片时长", formatDuration(item.sourceDurationSeconds));
+    addMeta("目标范围", `${item.targetDurationRangeSeconds[0]}–${item.targetDurationRangeSeconds[1]} 秒`);
+    addMeta("适配模型", item.models.join(" / "));
+    addMeta("视频状态", item.media.hasFullVideo ? "本地完整 MP4（含声音）" : "GIF/海报降级预览");
+    addMeta("ComfyUI", item.comfyuiImport ? "已打包" : "未打包节点；Skill 可独立安装");
+    addMeta("标签", item.tags.join("、") || "—");
+    elements.openSource.classList.toggle("hidden", !item.sourceUrl);
+    elements.openSource.textContent = "查看来源 ↗";
+    elements.openPreview.classList.add("hidden");
+    elements.detailMechanismKicker.textContent = "REUSABLE MECHANISM · QUALITY REPAIRS";
+    elements.detailMechanismTitle.textContent = "Skill 核心机制";
+    elements.detailPromptKicker.textContent = "NON-OFFICIAL · DUAL-MODEL TEMPLATES";
+    elements.detailPromptTitle.textContent = "MiniMax H3 / Seedance 2.0 模板";
+    renderDetailMedia(item);
+    renderCreativeDna({ ...item.creativeDna, source_boundary: item.sourceAttribution, comfyui_boundary: item.comfyuiReason });
+    choosePrompt("minimaxH3");
+    elements.dialog.showModal();
+    elements.dialog.querySelector(".dialog-shell").scrollTop = 0;
+    return;
+  }
   elements.detailKicker.textContent = `${platformLabel(item.platform)} · ${item.id}`;
   elements.detailTitle.textContent = item.title;
   elements.detailSummary.textContent = item.summary || "该案例聚焦可迁移的视频生成机制。";
@@ -635,6 +748,7 @@ async function initialize() {
     elements.catalogVersion.textContent = `v${state.catalog.catalogVersion || "1.0.0"}`;
     elements.viewCaseCount.textContent = String(state.catalog.cases.length);
     elements.viewOfficialCount.textContent = String(state.catalog.officialSkills.length);
+    elements.viewCommunityCount.textContent = String(state.catalog.communitySkills.length);
     if (state.catalog.warnings?.length) {
       elements.warning.textContent = state.catalog.warnings.join("；");
       elements.warning.classList.remove("hidden");
@@ -651,6 +765,7 @@ async function initialize() {
 
 elements.viewCases.addEventListener("click", () => switchView("cases"));
 elements.viewOfficialSkills.addEventListener("click", () => switchView("officialSkills"));
+elements.viewCommunitySkills.addEventListener("click", () => switchView("communitySkills"));
 [elements.search, elements.platform, elements.model, elements.tag].forEach((control) => control.addEventListener("input", render));
 elements.clear.addEventListener("click", () => {
   elements.search.value = "";

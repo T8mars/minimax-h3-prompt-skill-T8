@@ -11,6 +11,8 @@ async function run() {
   const compareScreenshotPath = `${screenshotStem}-compare.png`;
   const officialScreenshotPath = `${screenshotStem}-official-skills.png`;
   const officialDetailScreenshotPath = `${screenshotStem}-official-skill-detail.png`;
+  const communityScreenshotPath = `${screenshotStem}-community-skills.png`;
+  const communityDetailScreenshotPath = `${screenshotStem}-community-skill-detail.png`;
   const packagedExecutable = process.env.T8_E2E_EXECUTABLE ? path.resolve(process.env.T8_E2E_EXECUTABLE) : null;
   const electronApp = await electron.launch({
     executablePath: packagedExecutable || require("electron"),
@@ -131,9 +133,38 @@ async function run() {
     assert.match(await page.locator("#prompt-text").textContent(), /Seedance/u);
     await page.waitForTimeout(150);
     await page.screenshot({ path: officialDetailScreenshotPath, animations: "disabled" });
+
+    await page.keyboard.press("Escape");
+    await page.locator("#case-dialog").waitFor({ state: "hidden" });
+    await page.locator("#view-community-skills").click();
+    await page.waitForFunction(() => document.querySelectorAll(".case-card.community-skill").length === 1);
+    assert.equal(await page.locator(".case-card.community-skill").count(), 1, "viewer must render the non-official user-contributed Skill");
+    assert.equal(await page.locator("#stat-cases").textContent(), "1");
+    assert.equal(await page.locator("#stat-videos").textContent(), "1");
+    assert.equal(await page.locator("#stat-prompts").textContent(), "2");
+    assert.equal(await page.locator(".compare-toggle").count(), 0, "community Skills do not enter case comparison");
+    await page.screenshot({ path: communityScreenshotPath, animations: "disabled" });
+    await page.locator(".case-card.community-skill").click();
+    await page.waitForSelector("#case-dialog[open]");
+    const communityVideo = page.locator("#detail-media video");
+    await communityVideo.waitFor({ state: "visible" });
+    const communityVideoState = await communityVideo.evaluate(async (node) => {
+      if (node.readyState < 1) await new Promise((resolve) => node.addEventListener("loadedmetadata", resolve, { once: true }));
+      return { duration: node.duration, muted: node.muted, controls: node.controls, src: node.getAttribute("src") };
+    });
+    assert.match(communityVideoState.src, /^t8media:\/\/media\/community-skills\//u);
+    assert.ok(Math.abs(communityVideoState.duration - 10.125) < 0.05, "community Skill must expose the complete reference video");
+    assert.equal(communityVideoState.muted, false);
+    assert.equal(communityVideoState.controls, true);
+    assert.match(await page.locator("#detail-meta").textContent(), /非官方|用户提供/u);
+    assert.equal(await page.locator("#open-source").isHidden(), true, "missing source URL must not be fabricated");
+    assert.match(await page.locator("#prompt-text").textContent(), /subject_definitions:/u);
+    await page.locator("#tab-seedance").click();
+    assert.match(await page.locator("#prompt-text").textContent(), /Seedance|街拍/u);
+    await page.screenshot({ path: communityDetailScreenshotPath, animations: "disabled" });
     assert.deepEqual(rendererErrors, [], `renderer errors: ${rendererErrors.join(" | ")}`);
 
-    console.log(`PASS Electron runtime; cases=${caseCount}; officialSkills=9; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath}`);
+    console.log(`PASS Electron runtime; cases=${caseCount}; officialSkills=9; communitySkills=1; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath};${communityScreenshotPath};${communityDetailScreenshotPath}`);
   } finally {
     await electronApp.close();
   }
