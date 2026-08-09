@@ -2,9 +2,29 @@
 
 ## Skill 是什么
 
-`skills/` 中的每个目录都是一个可安装的案例 Skill。它向 Agent 提供经过审核的 Creative DNA、适用范围、迁移步骤以及 MiniMax H3 / Seedance 2.0 提示词合同。
+`skills/` 中共有两类可安装产物：7 个案例机制 Skill，以及为 MiniMax 官方仓库 9 个 H3 Skills 独立编写的 9 个 Seedance 2.0 伴侣 Skills。每个目录都有 `SKILL.md`、`references/summary.md`、`references/template.md` 和 Agent 元数据。
 
 公开案例 Skill 与本项目内部的采集/审核 Skill 完全分离；安装公开 Skill 不会获得搜索、登录、下载或内部自动化能力。
+
+## 安装 MiniMax 官方 H3 Skill
+
+官方 H3 Skill 正文不复制到本仓库。按 `catalog/official-skills/manifest.json` 中对应条目的固定链接核对后，从上游安装，例如：
+
+```powershell
+npx skills add https://github.com/MiniMax-AI/MiniMax-H3 --skill h3-prompt-writing
+```
+
+其余 8 个条目只需替换 `--skill` 后的名称。Electron 的“MiniMax 官方仓库 Skills”视图可直接复制每项安装命令。
+
+## 安装 Seedance 2.0 伴侣 Skill
+
+Seedance 伴侣位于本仓库 `skills/`，例如：
+
+```powershell
+Copy-Item -Recurse .\skills\direct-seedance-brand-promo "$env:CODEX_HOME\skills\direct-seedance-brand-promo"
+```
+
+这些伴侣是 T8 独立编写的 Seedance 原生工作流，不是对上游 H3 Skill 正文的复制或改写。
 
 ## 安装单个 Skill
 
@@ -46,7 +66,7 @@ Copy-Item -Recurse .\skills\<skill-name> "$env:CODEX_HOME\skills\<skill-name>"
 - 卸载：删除对应 Skill 目录并重新加载 Agent。
 - 冲突：不要同时安装两个不同版本的同名 Skill。
 
-Skill 只帮助组织提示词与创意机制，不会自动调用付费生成接口、上传素材或修改 ComfyUI 节点。
+Skill 只帮助组织提示词与创意机制，不会自动调用付费生成接口、上传素材或修改 ComfyUI 节点。官方仓库 9 项及其 Seedance 伴侣都不进入 ComfyUI 导入流程；目标节点已经包含官方能力。
 
 ---
 

@@ -45,6 +45,12 @@ Electron 优先播放安装包内的完整 MP4，并在标题附近显示平台�
 
 本仓库原创摘要、Creative DNA 与提示词模板采用 [CC BY 4.0](../LICENSE-CONTENT)。引用视频和其中的第三方元素保留原作者与原帖标注。本仓库不会把第三方作品重新声明为 T8 原创。
 
+## MiniMax 官方仓库 Skill 索引
+
+`catalog/official-skills/manifest.json` 保存 MiniMax 官方仓库 9 个 Skill 的固定 commit、目录 SHA、`SKILL.md` SHA-256、上游版本和 `meta.yaml` 来源分类。它只保存元数据、链接和安装命令，不包含上游 Skill 正文。
+
+“官方仓库收录”与“官方原创”不是同一概念：本库分别显示 `official`、`official-featured`、`community` 和无 `meta.yaml` 时的 `repository-owned`。上游内容的许可见索引中的 `license_reference`；本库 9 个 Seedance 2.0 伴侣为独立编写并按本仓库内容许可发布。
+
 ---
 
 **English summary:** Every case keeps a canonical source-post URL, creator, platform, model-attribution status, and media mapping. GitHub GIFs are clickable source references; Electron pairs local full-video playback with a visible “View original post” action.

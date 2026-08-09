@@ -1,6 +1,6 @@
 {
   "name": "t8-creative-dna-prompt-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Public MiniMax H3 and Seedance 2.0 Creative DNA cases, Skills, and Electron viewer.",
   "license": "MIT",
@@ -8,9 +8,10 @@
     "node": ">=22"
   },
   "scripts": {
-    "validate": "npm run validate:boundary && npm run validate:catalog && npm run validate:skills && npm run gallery:check && npm run test:public",
+    "validate": "npm run validate:boundary && npm run validate:catalog && npm run validate:official-skills && npm run validate:skills && npm run gallery:check && npm run test:public",
     "validate:boundary": "node scripts/public/validate-public-boundary.mjs",
     "validate:catalog": "node scripts/public/validate-catalog.mjs",
+    "validate:official-skills": "node scripts/public/validate-official-skills.mjs",
     "validate:skills": "node scripts/public/validate-skills.mjs",
     "validate:media": "node scripts/public/validate-media-pack.mjs",
     "validate:version": "node scripts/public/validate-release-version.mjs --current",

@@ -9,6 +9,8 @@ async function run() {
   const screenshotPath = `${screenshotStem}-catalog.png`;
   const detailScreenshotPath = `${screenshotStem}-detail.png`;
   const compareScreenshotPath = `${screenshotStem}-compare.png`;
+  const officialScreenshotPath = `${screenshotStem}-official-skills.png`;
+  const officialDetailScreenshotPath = `${screenshotStem}-official-skill-detail.png`;
   const packagedExecutable = process.env.T8_E2E_EXECUTABLE ? path.resolve(process.env.T8_E2E_EXECUTABLE) : null;
   const electronApp = await electron.launch({
     executablePath: packagedExecutable || require("electron"),
@@ -109,9 +111,29 @@ async function run() {
     assert.equal(await page.locator(".compare-column").count(), 2);
     assert.ok((await page.locator(".compare-prompt").first().textContent()).length > 100);
     await page.screenshot({ path: compareScreenshotPath, animations: "disabled" });
+    await page.keyboard.press("Escape");
+    await page.locator("#compare-dialog").waitFor({ state: "hidden" });
+
+    await page.locator("#view-official-skills").click();
+    await page.waitForFunction(() => document.querySelectorAll(".case-card.official-skill").length === 9);
+    assert.equal(await page.locator(".case-card.official-skill").count(), 9, "viewer must render all nine official repository entries");
+    assert.equal(await page.locator("#stat-cases").textContent(), "9");
+    assert.equal(await page.locator("#stat-videos").textContent(), "9");
+    assert.equal(await page.locator("#stat-prompts").textContent(), "9");
+    assert.equal(await page.locator(".compare-toggle").count(), 0, "official Skills do not enter case comparison");
+    await page.screenshot({ path: officialScreenshotPath, animations: "disabled" });
+    await page.locator(".case-card.official-skill").first().click();
+    await page.waitForSelector("#case-dialog[open]");
+    assert.equal(await page.locator("#detail-media video").count(), 0, "official Skill details do not pretend to have a case video");
+    assert.match(await page.locator("#prompt-text").textContent(), /npx skills add https:\/\/github\.com\/MiniMax-AI\/MiniMax-H3/u);
+    assert.match(await page.locator("#detail-meta").textContent(), /不导入/u);
+    await page.locator("#tab-seedance").click();
+    assert.match(await page.locator("#prompt-text").textContent(), /Seedance/u);
+    await page.waitForTimeout(150);
+    await page.screenshot({ path: officialDetailScreenshotPath, animations: "disabled" });
     assert.deepEqual(rendererErrors, [], `renderer errors: ${rendererErrors.join(" | ")}`);
 
-    console.log(`PASS Electron runtime; cases=${caseCount}; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${compareScreenshotPath}`);
+    console.log(`PASS Electron runtime; cases=${caseCount}; officialSkills=9; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath}`);
   } finally {
     await electronApp.close();
   }

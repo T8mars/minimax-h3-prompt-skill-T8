@@ -1,19 +1,31 @@
 const api = window.promptLibrary;
 
 const elements = {
+  viewCases: document.querySelector("#view-cases"),
+  viewOfficialSkills: document.querySelector("#view-official-skills"),
+  viewCaseCount: document.querySelector("#view-case-count"),
+  viewOfficialCount: document.querySelector("#view-official-count"),
+  pageKicker: document.querySelector("#page-kicker"),
+  pageTitle: document.querySelector("#page-title"),
+  pageIntro: document.querySelector("#page-intro"),
   catalogVersion: document.querySelector("#catalog-version"),
   caseGrid: document.querySelector("#case-grid"),
   warning: document.querySelector("#catalog-warning"),
   empty: document.querySelector("#empty-state"),
   search: document.querySelector("#search"),
   platform: document.querySelector("#platform-filter"),
+  platformLabel: document.querySelector("#platform-filter-label"),
   model: document.querySelector("#model-filter"),
   tag: document.querySelector("#tag-filter"),
   clear: document.querySelector("#clear-filters"),
   statCases: document.querySelector("#stat-cases"),
+  statCasesLabel: document.querySelector("#stat-cases-label"),
   statVideos: document.querySelector("#stat-videos"),
+  statVideosLabel: document.querySelector("#stat-videos-label"),
   statPrompts: document.querySelector("#stat-prompts"),
+  statPromptsLabel: document.querySelector("#stat-prompts-label"),
   statResults: document.querySelector("#stat-results"),
+  emptyTitle: document.querySelector("#empty-title"),
   compareBar: document.querySelector("#compare-bar"),
   compareCount: document.querySelector("#compare-count"),
   compareChips: document.querySelector("#compare-chips"),
@@ -24,7 +36,12 @@ const elements = {
   detailSummary: document.querySelector("#detail-summary"),
   detailMeta: document.querySelector("#detail-meta"),
   detailMedia: document.querySelector("#detail-media"),
+  detailMechanismKicker: document.querySelector("#detail-mechanism-kicker"),
+  detailMechanismTitle: document.querySelector("#detail-mechanism-title"),
+  detailPromptKicker: document.querySelector("#detail-prompt-kicker"),
+  detailPromptTitle: document.querySelector("#detail-prompt-title"),
   openSource: document.querySelector("#open-source"),
+  openPreview: document.querySelector("#open-preview"),
   closeDialog: document.querySelector("#close-dialog"),
   creativeDna: document.querySelector("#creative-dna"),
   tabH3: document.querySelector("#tab-h3"),
@@ -44,7 +61,8 @@ const elements = {
 };
 
 const state = {
-  catalog: { cases: [], warnings: [] },
+  catalog: { cases: [], officialSkills: [], warnings: [] },
+  activeView: "cases",
   activeCase: null,
   promptModel: "minimaxH3",
   comparePromptModel: "minimaxH3",
@@ -108,11 +126,24 @@ function option(value) {
   return node;
 }
 
+function resetSelect(select, label) {
+  const first = option("");
+  first.textContent = label;
+  select.replaceChildren(first);
+}
+
+function activeItems() {
+  return state.activeView === "officialSkills" ? state.catalog.officialSkills : state.catalog.cases;
+}
+
 function populateFilters() {
-  const cases = state.catalog.cases;
-  const platforms = [...new Set(cases.map((item) => platformLabel(item.platform)))].sort();
-  const models = [...new Set(cases.flatMap((item) => item.models))].sort();
-  const tags = [...new Set(cases.flatMap((item) => item.tags))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+  const items = activeItems();
+  resetSelect(elements.platform, state.activeView === "officialSkills" ? "全部来源" : "全部平台");
+  resetSelect(elements.model, "全部模型");
+  resetSelect(elements.tag, "全部标签");
+  const platforms = [...new Set(items.map((item) => item.kind === "officialSkill" ? item.sourceLabel : platformLabel(item.platform)))].sort();
+  const models = [...new Set(items.flatMap((item) => item.models))].sort();
+  const tags = [...new Set(items.flatMap((item) => item.tags))].sort((a, b) => a.localeCompare(b, "zh-CN"));
   platforms.forEach((value) => elements.platform.append(option(value)));
   models.forEach((value) => elements.model.append(option(value)));
   tags.forEach((value) => elements.tag.append(option(value)));
@@ -122,23 +153,28 @@ function searchDocument(item) {
   return normalize([
     item.id,
     item.title,
+    item.englishTitle,
     item.summary,
     item.author,
     item.platform,
+    item.sourceLabel,
+    item.sourceClassification,
+    item.companionSkill,
     ...item.tags,
     ...item.models,
     JSON.stringify(item.creativeDna)
   ].join(" "));
 }
 
-function filteredCases() {
+function filteredItems() {
   const query = normalize(elements.search.value.trim());
   const platform = elements.platform.value;
   const model = elements.model.value;
   const tag = elements.tag.value;
-  return state.catalog.cases.filter((item) => {
+  return activeItems().filter((item) => {
     if (query && !searchDocument(item).includes(query)) return false;
-    if (platform && platformLabel(item.platform) !== platform) return false;
+    const itemSource = item.kind === "officialSkill" ? item.sourceLabel : platformLabel(item.platform);
+    if (platform && itemSource !== platform) return false;
     if (model && !item.models.includes(model)) return false;
     if (tag && !item.tags.includes(tag)) return false;
     return true;
@@ -223,13 +259,96 @@ function renderCard(item) {
   return card;
 }
 
+function renderOfficialSkillCard(item) {
+  const card = el("article", "case-card official-skill");
+  card.tabIndex = 0;
+  card.setAttribute("aria-label", `查看官方仓库 Skill：${item.title}`);
+
+  const media = el("div", "card-media");
+  const art = el("div", "official-skill-art");
+  art.append(el("strong", "", "H3 ↔ S2"), el("span", "", "UPSTREAM + T8 COMPANION"));
+  media.append(art, el("span", "media-badge local", "无需视频 · 可安装 Skill"));
+  card.append(media);
+
+  const body = el("div", "card-body");
+  const badges = el("div", "badges");
+  const sourceClass = item.sourceClassification === "community" ? "community" : "official";
+  badges.append(el("span", `badge primary ${sourceClass}`, item.sourceLabel));
+  item.models.forEach((model) => badges.append(el("span", "badge", model)));
+  body.append(
+    badges,
+    el("h2", "card-title", item.title),
+    el("p", "card-summary", item.summary)
+  );
+  const tags = el("div", "card-tags");
+  item.tags.slice(0, 4).forEach((tag) => tags.append(el("span", "tag", tag)));
+  body.append(tags);
+  const footer = el("div", "card-footer");
+  footer.append(
+    el("span", "", item.upstreamVersion ? `上游 v${item.upstreamVersion} · 不导入 ComfyUI` : "上游固定版本 · 不导入 ComfyUI"),
+    el("strong", "", "查看 H3 / Seedance →")
+  );
+  body.append(footer);
+  card.append(body);
+
+  const open = () => openCase(item);
+  card.addEventListener("click", open);
+  card.addEventListener("keydown", (event) => {
+    if (event.target !== card) return;
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      open();
+    }
+  });
+  return card;
+}
+
+function updateViewChrome(resultCount) {
+  const official = state.activeView === "officialSkills";
+  elements.viewCases.classList.toggle("active", !official);
+  elements.viewOfficialSkills.classList.toggle("active", official);
+  elements.viewCases.setAttribute("aria-pressed", String(!official));
+  elements.viewOfficialSkills.setAttribute("aria-pressed", String(official));
+  elements.pageKicker.textContent = official ? "MINIMAX OFFICIAL REPOSITORY · PINNED INDEX" : "LOCAL · READ-ONLY CASES";
+  elements.pageTitle.textContent = official ? "MiniMax 官方仓库 Skills" : "高质量视频提示词案例";
+  elements.pageIntro.textContent = official
+    ? "固定索引 MiniMax 官方仓库收录的 9 个 H3 Skills，并提供独立编写的 Seedance 2.0 伴侣 Skill；上游正文不复制，官方项不导入 ComfyUI。"
+    : "从完整视频中提炼可迁移的 Creative DNA，同时提供 MiniMax H3 与 Seedance 2.0 模板。";
+  elements.search.placeholder = official ? "搜索用途、风格、标签、官方 Skill 或 Seedance 伴侣" : "搜索机制、风格、运镜、标签、作者或案例 ID";
+  elements.platformLabel.textContent = official ? "来源" : "平台";
+  elements.emptyTitle.textContent = official ? "没有匹配的 Skill" : "没有匹配的案例";
+  elements.statCasesLabel.textContent = official ? "官方仓库收录" : "公开案例";
+  elements.statVideosLabel.textContent = official ? "H3 源 Skill" : "本地完整视频";
+  elements.statPromptsLabel.textContent = official ? "Seedance 适配" : "模型模板";
+  if (official) {
+    elements.statCases.textContent = String(state.catalog.officialSkills.length);
+    elements.statVideos.textContent = String(state.catalog.officialSkills.filter((item) => item.prompts.minimaxH3).length);
+    elements.statPrompts.textContent = String(state.catalog.officialSkills.filter((item) => item.prompts.seedance20).length);
+  } else {
+    elements.statCases.textContent = String(state.catalog.cases.length);
+    elements.statVideos.textContent = String(state.catalog.cases.filter((item) => item.media.hasFullVideo).length);
+    elements.statPrompts.textContent = String(state.catalog.cases.reduce((total, item) => total + Number(Boolean(item.prompts.minimaxH3)) + Number(Boolean(item.prompts.seedance20)), 0));
+  }
+  elements.statResults.textContent = String(resultCount);
+  elements.compareBar.classList.toggle("hidden", official || state.compareIds.length === 0);
+}
+
 function render() {
-  const cases = filteredCases();
-  elements.caseGrid.replaceChildren(...cases.map(renderCard));
+  const items = filteredItems();
+  const renderer = state.activeView === "officialSkills" ? renderOfficialSkillCard : renderCard;
+  elements.caseGrid.replaceChildren(...items.map(renderer));
   elements.caseGrid.setAttribute("aria-busy", "false");
-  elements.empty.classList.toggle("hidden", cases.length > 0);
-  elements.statResults.textContent = String(cases.length);
-  renderCompareBar();
+  elements.empty.classList.toggle("hidden", items.length > 0);
+  updateViewChrome(items.length);
+  if (state.activeView === "cases") renderCompareBar();
+}
+
+function switchView(view) {
+  state.activeView = view;
+  state.compareIds = [];
+  elements.search.value = "";
+  populateFilters();
+  render();
 }
 
 function toggleCompare(id) {
@@ -307,6 +426,12 @@ function renderCreativeDna(data) {
 
 function renderDetailMedia(item) {
   elements.detailMedia.replaceChildren();
+  if (item.kind === "officialSkill") {
+    const art = el("div", "official-skill-art");
+    art.append(el("strong", "", "H3 ↔ S2"), el("span", "", "PINNED UPSTREAM + ORIGINAL COMPANION"));
+    elements.detailMedia.append(art);
+    return;
+  }
   if (item.media.videoUrl) {
     const video = document.createElement("video");
     video.src = item.media.videoUrl;
@@ -346,6 +471,36 @@ function choosePrompt(model) {
 
 function openCase(item) {
   state.activeCase = item;
+  if (item.kind === "officialSkill") {
+    elements.detailKicker.textContent = `${item.sourceLabel} · ${item.id}`;
+    elements.detailTitle.textContent = item.title;
+    elements.detailSummary.textContent = item.summary;
+    elements.detailMeta.replaceChildren();
+    addMeta("英文名称", item.englishTitle);
+    addMeta("上游版本", item.upstreamVersion ? `v${item.upstreamVersion}` : "仓库固定版本");
+    addMeta("固定 Commit", item.pinnedCommit.slice(0, 12));
+    addMeta("Seedance 伴侣", item.companionSkill);
+    addMeta("适配模型", item.models.join(" / "));
+    addMeta("ComfyUI", "不导入（节点已内置官方能力）");
+    addMeta("标签", item.tags.join("、") || "—");
+    elements.openSource.textContent = "打开官方仓库 Skill ↗";
+    elements.openSource.classList.remove("hidden");
+    elements.openPreview.classList.toggle("hidden", !item.upstreamPreviewUrl);
+    elements.detailMechanismKicker.textContent = "USAGE · SCOPE · BOUNDARY";
+    elements.detailMechanismTitle.textContent = "Skill 摘要与使用范围";
+    elements.detailPromptKicker.textContent = "UPSTREAM H3 · T8 SEEDANCE COMPANION";
+    elements.detailPromptTitle.textContent = "安装入口与 Seedance 模板";
+    renderDetailMedia(item);
+    renderCreativeDna({
+      companion_summary: item.companionSummary,
+      source_boundary: "H3 使用固定版本的官方上游 Skill；Seedance 2.0 使用本库独立编写的伴侣 Skill。上游正文不复制。",
+      comfyui_boundary: "此组官方条目不进入 ComfyUI 导入流程。"
+    });
+    choosePrompt("minimaxH3");
+    elements.dialog.showModal();
+    elements.dialog.querySelector(".dialog-shell").scrollTop = 0;
+    return;
+  }
   elements.detailKicker.textContent = `${platformLabel(item.platform)} · ${item.id}`;
   elements.detailTitle.textContent = item.title;
   elements.detailSummary.textContent = item.summary || "该案例聚焦可迁移的视频生成机制。";
@@ -358,10 +513,17 @@ function openCase(item) {
   addMeta("视频状态", item.media.hasFullVideo ? "本地完整 MP4（含声音）" : "GIF/海报降级预览");
   addMeta("标签", item.tags.join("、") || "—");
   elements.openSource.classList.toggle("hidden", !item.sourceUrl);
+  elements.openSource.textContent = "查看作者原帖 ↗";
+  elements.openPreview.classList.add("hidden");
+  elements.detailMechanismKicker.textContent = "REUSABLE MECHANISM";
+  elements.detailMechanismTitle.textContent = "Creative DNA";
+  elements.detailPromptKicker.textContent = "MODEL-READY PROMPTS";
+  elements.detailPromptTitle.textContent = "提示词模板";
   renderDetailMedia(item);
   renderCreativeDna(item.creativeDna);
   choosePrompt(item.prompts.minimaxH3 ? "minimaxH3" : "seedance20");
   elements.dialog.showModal();
+  elements.dialog.querySelector(".dialog-shell").scrollTop = 0;
 }
 
 function cleanupDetailMedia() {
@@ -471,9 +633,8 @@ async function initialize() {
   try {
     state.catalog = await api.loadCatalog();
     elements.catalogVersion.textContent = `v${state.catalog.catalogVersion || "1.0.0"}`;
-    elements.statCases.textContent = String(state.catalog.cases.length);
-    elements.statVideos.textContent = String(state.catalog.cases.filter((item) => item.media.hasFullVideo).length);
-    elements.statPrompts.textContent = String(state.catalog.cases.reduce((total, item) => total + Number(Boolean(item.prompts.minimaxH3)) + Number(Boolean(item.prompts.seedance20)), 0));
+    elements.viewCaseCount.textContent = String(state.catalog.cases.length);
+    elements.viewOfficialCount.textContent = String(state.catalog.officialSkills.length);
     if (state.catalog.warnings?.length) {
       elements.warning.textContent = state.catalog.warnings.join("；");
       elements.warning.classList.remove("hidden");
@@ -488,6 +649,8 @@ async function initialize() {
   }
 }
 
+elements.viewCases.addEventListener("click", () => switchView("cases"));
+elements.viewOfficialSkills.addEventListener("click", () => switchView("officialSkills"));
 [elements.search, elements.platform, elements.model, elements.tag].forEach((control) => control.addEventListener("input", render));
 elements.clear.addEventListener("click", () => {
   elements.search.value = "";
@@ -526,6 +689,11 @@ elements.openSource.addEventListener("click", async () => {
   if (!state.activeCase?.sourceUrl) return;
   try { await api.openExternal(state.activeCase.sourceUrl); }
   catch { showToast("无法打开该 HTTPS 来源链接"); }
+});
+elements.openPreview.addEventListener("click", async () => {
+  if (!state.activeCase?.upstreamPreviewUrl) return;
+  try { await api.openExternal(state.activeCase.upstreamPreviewUrl); }
+  catch { showToast("无法打开官方示例链接"); }
 });
 elements.tabH3.addEventListener("click", () => choosePrompt("minimaxH3"));
 elements.tabSeedance.addEventListener("click", () => choosePrompt("seedance20"));
