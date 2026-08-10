@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Structure a first-person product testimonial as a proof ladder: introduce the unopened object and speaker together, expose contents, isolate one tactile or functional macro proof, let the speaker perform one genuine use action, then hold the product and changed reaction together. The product claim must be earned by visible use rather than spoken hype.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Open with presenter and unopened product in the same frame.",
+      "purpose": "Binds person, object and expectation.",
+      "ablation_failure": "A product-only beauty shot lacks testimonial ownership.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Reveal the complete contents before isolating details.",
+      "purpose": "Gives macro proof a known context.",
+      "ablation_failure": "Macro-first editing can hide what is actually being evaluated.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Choose one product-specific tactile or functional proof.",
+      "purpose": "Makes the claim inspectable.",
+      "ablation_failure": "Generic close-ups create polish without evidence.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Perform one complete use action with the outcome still visible.",
+      "purpose": "Converts product state into demonstrated experience.",
+      "ablation_failure": "A cut before the result turns use into implication.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with product and changed human reaction readable together.",
+      "purpose": "Links proof to evaluation.",
+      "ablation_failure": "A reaction without the object can feel unrelated or staged.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source woman",
+    "source burger and fries",
+    "source packaging",
+    "source caption and kitchen-like setting"
+  ],
+  "instantiations": [
+    {
+      "concept": "A ceramic artist unboxes a compact pour-over kit, reveals all pieces, macros the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction.",
+      "prompt_seed": "A ceramic artist unboxes a compact pour-over kit, reveals all pieces, macros the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction."
+    },
+    {
+      "concept": "A cyclist tests a pocket rain-shell pouch, reveals the folded garment, macros the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression.",
+      "prompt_seed": "A cyclist tests a pocket rain-shell pouch, reveals the folded garment, macros the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A product-only beauty shot lacks testimonial ownership.",
+      "repair": "Open with presenter and unopened product in the same frame."
+    },
+    {
+      "failure": "Macro-first editing can hide what is actually being evaluated.",
+      "repair": "Reveal the complete contents before isolating details."
+    },
+    {
+      "failure": "Generic close-ups create polish without evidence.",
+      "repair": "Choose one product-specific tactile or functional proof."
+    },
+    {
+      "failure": "A cut before the result turns use into implication.",
+      "repair": "Perform one complete use action with the outcome still visible."
+    },
+    {
+      "failure": "A reaction without the object can feel unrelated or staged.",
+      "repair": "End with product and changed human reaction readable together."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A ceramic artist unboxes a compact pour-over kit, reveals all pieces, macros the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A cyclist tests a pocket rain-shell pouch, reveals the folded garment, macros the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

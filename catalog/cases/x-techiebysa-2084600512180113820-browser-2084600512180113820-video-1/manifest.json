@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1",
+  "slug": "stage-two-turn-pause-reaction",
+  "title": "对话喜剧｜双轮停顿无声反应",
+  "source_title": "X creative video by @TechieBySA",
+  "summary": "双人同框先建立眼线，第一轮说话后留出清楚停顿，再完成第二轮说话并以第一人的无声反应收尾；具体对白和喜剧语义必须全新原创。",
+  "status": "released",
+  "source_duration_seconds": 14.496,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-two-turn-pause-reaction",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-two-turn-pause-reaction-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "双人中景 + 第一轮简短说话 + 一次可读停顿 + 第二轮简短说话 + 第一人的无声反应",
+  "recommended_input": "两名原创博物馆夜班保安在休息室对坐：A 问雕像是否眨眼，停顿后 B 冷静回答“只有你转开视线时”，最后 A 无声看向黑暗展厅门，不增加第二句笑点。",
+  "required_anchors": [
+    "开场双人中景建立稳定眼线",
+    "只保留一轮第一人说话",
+    "两轮之间有一次清楚停顿",
+    "第二人只说一轮且动作克制",
+    "结尾第一人无声反应且不再增加说话轮次"
+  ],
+  "tags": [
+    "two",
+    "turn",
+    "pause",
+    "reaction"
+  ],
+  "quality": {
+    "weighted_score": 4.678,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T22:55:48+08:00",
+  "updated_at": "2026-08-10T23:52:56+08:00"
+}

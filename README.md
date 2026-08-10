@@ -89,6 +89,16 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![微缩介入｜外部物只进入一次](catalog/cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/preview.gif)](https://x.com/nicolasmariar/status/2086226500538273920) | **[微缩介入｜外部物只进入一次](catalog/cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/SUMMARY.md)**<br><sub>x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![微缩闯关｜同一材质连续变形](catalog/cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/preview.gif)](https://x.com/Arzoo12sh/status/2086407184309792852) | **[微缩闯关｜同一材质连续变形](catalog/cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/SUMMARY.md)**<br><sub>x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![升级讽刺｜新物登场旧爱被移走](catalog/cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/preview.gif)](https://x.com/Dheepanratnam/status/2086493087707086919) | **[升级讽刺｜新物登场旧爱被移走](catalog/cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/SUMMARY.md)**<br><sub>x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![角色板节拍｜环境切换不丢身份](catalog/cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/preview.gif)](https://x.com/aimikoda/status/2086553240448241802) | **[角色板节拍｜环境切换不丢身份](catalog/cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![相机记忆｜固定取景框串联日常](catalog/cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/preview.gif)](https://x.com/aripratama293/status/2058715926451896397) | **[相机记忆｜固定取景框串联日常](catalog/cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/SUMMARY.md)**<br><sub>x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![舞台表演｜远景起势到倒地复起](catalog/cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/preview.gif)](https://x.com/aimikoda/status/2053053922332262547) | **[舞台表演｜远景起势到倒地复起](catalog/cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![UGC测评｜开箱到一口实证](catalog/cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/preview.gif)](https://x.com/oggii_0/status/2083436822085165289) | **[UGC测评｜开箱到一口实证](catalog/cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/SUMMARY.md)**<br><sub>x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![互动图鉴｜固定菜单切换生物](catalog/cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/preview.gif)](https://x.com/aimikoda/status/2083949566009778473) | **[互动图鉴｜固定菜单切换生物](catalog/cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![动力短片｜文字障碍逐个击碎](catalog/cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/preview.gif)](https://x.com/sebatheepan/status/2084311486277599712) | **[动力短片｜文字障碍逐个击碎](catalog/cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/SUMMARY.md)**<br><sub>x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![力量反差｜小体型用杠杆反制](catalog/cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/preview.gif)](https://x.com/craftian_keskin/status/2082658222247137433) | **[力量反差｜小体型用杠杆反制](catalog/cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/SUMMARY.md)**<br><sub>x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![材质字效｜霜花成字再归位](catalog/cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/preview.gif)](https://x.com/CharaspowerAI/status/2085622021812039920) | **[材质字效｜霜花成字再归位](catalog/cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/SUMMARY.md)**<br><sub>x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![纪实跟拍｜行进中偶遇再离开](catalog/cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/preview.gif)](https://x.com/techhalla/status/2081333381401334006) | **[纪实跟拍｜行进中偶遇再离开](catalog/cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/SUMMARY.md)**<br><sub>x-techhalla-2081333381401334006-browser-2081333381401334006-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![对话喜剧｜双轮停顿无声反应](catalog/cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/preview.gif)](https://x.com/TechieBySA/status/2084600512180113820) | **[对话喜剧｜双轮停顿无声反应](catalog/cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -97,7 +107,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. 下载 `T8-Prompt-Library-Setup-v1.0.6.exe`。
+2. 下载 `T8-Prompt-Library-Setup-v1.0.7.exe`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. 后续版本可在应用内检查并安装更新。
 
@@ -146,7 +156,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.0.6**。项目使用十进制进位：
+当前目标版本是 **v1.0.7**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0

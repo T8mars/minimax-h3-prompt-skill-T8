@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1",
+  "slug": "break-kinetic-text-obstacles",
+  "title": "动力短片｜文字障碍逐个击碎",
+  "source_title": "X creative video by @sebatheepan",
+  "summary": "低饱和世界里，短词成为路线上的实体障碍，主角通过前进动作逐个击碎，每次冲击恢复一部分颜色，最后用一个原创短句命名新状态。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/break-kinetic-text-obstacles",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-kinetic-text-obstacle-break-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "受抑制环境基线 + 2个短词实体障碍 + 主角前进击碎 + 每次恢复环境状态 + 一个原创结尾短句",
+  "recommended_input": "配送无人机穿过灰色物流隧道，依次撞碎实体词 DELAY 与 HOLD，每次冲击恢复一段路线灯，最后停入装载区并出现短句 ROUTE CLEAR。",
+  "required_anchors": [
+    "开场先建立受抑制环境状态",
+    "短词必须占据真实路线空间",
+    "障碍只能由主角前进动作击碎",
+    "每次击碎恢复可见环境状态",
+    "结尾只用一个原创短句命名结果"
+  ],
+  "tags": [
+    "kinetic",
+    "text",
+    "obstacle",
+    "break"
+  ],
+  "quality": {
+    "weighted_score": 4.731,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T22:55:47+08:00",
+  "updated_at": "2026-08-10T23:52:56+08:00"
+}

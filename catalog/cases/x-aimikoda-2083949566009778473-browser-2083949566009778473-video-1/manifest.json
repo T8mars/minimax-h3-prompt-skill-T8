@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1",
+  "slug": "switch-subjects-through-persistent-selector",
+  "title": "互动图鉴｜固定菜单切换生物",
+  "source_title": "X creative video by @aimikoda",
+  "summary": "菜单、数据区和主视窗固定不动，选择器逐项切换，每次让名称、参数与主视窗主体同步更新并完成一个定义动作。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/switch-subjects-through-persistent-selector",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-persistent-selector-subject-swap-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "固定选择菜单 + 固定数据区 + 固定主视窗 + 至少4个原创对象 + 每次可见选择 + 同步字段更新 + 一个定义动作",
+  "recommended_input": "固定气象无人机图鉴依次选择五台原创无人机，每次先移动选择器，再同步更新呼号、风力参数和主视窗，并让新无人机在对应天气舱完成一个定义动作。",
+  "required_anchors": [
+    "菜单、数据区和主视窗位置固定",
+    "每次内容变化前必须有可见选择",
+    "名称参数和主体同步更新",
+    "每个被选主体完成一个定义动作",
+    "结尾保持完整最终选择状态"
+  ],
+  "tags": [
+    "persistent",
+    "selector",
+    "subject",
+    "swap"
+  ],
+  "quality": {
+    "weighted_score": 4.714,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T22:55:47+08:00",
+  "updated_at": "2026-08-10T23:52:56+08:00"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1",
+  "slug": "form-reversible-material-typography",
+  "title": "材质字效｜霜花成字再归位",
+  "source_title": "X creative video by @CharaspowerAI",
+  "summary": "固定竖直玻璃先建立清晰基线，霜晶从同一表面长成一个短词，保持可读后融成真实水珠，最终恢复开场窗口形成闭环。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/form-reversible-material-typography",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-reversible-material-typography-loop-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "固定镜头 + 单一材质基线 + 同材质形成1个短词 + 可读停留 + 同一物理法则溶解 + 回到开场",
+  "recommended_input": "夜间温室竖直玻璃保持清晰，霜晶沿四条成核路径形成 THAW，短暂停留后由下方暖风融成水珠流走，最后恢复同一铜锁扣和虚化叶片构图。",
+  "required_anchors": [
+    "先保持无字的固定材质基线",
+    "所有字母由同一材质形成",
+    "全片只出现一个可读短词",
+    "用同一材料法则完成溶解",
+    "镜头和空间锚点回到开场状态"
+  ],
+  "tags": [
+    "reversible",
+    "material",
+    "typography",
+    "loop"
+  ],
+  "quality": {
+    "weighted_score": 4.732,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T22:55:48+08:00",
+  "updated_at": "2026-08-10T23:52:56+08:00"
+}

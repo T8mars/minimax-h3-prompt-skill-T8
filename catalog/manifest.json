@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.0.6",
-  "generated_at": "2026-08-10T01:20:00+08:00",
-  "case_count": 29,
+  "catalog_version": "1.0.7",
+  "generated_at": "2026-08-11T00:35:08+08:00",
+  "case_count": 39,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 1,
@@ -1016,6 +1016,354 @@
       ],
       "quality_score": 4.757,
       "updated_at": "2026-08-10T18:12:20+08:00"
+    },
+    {
+      "case_id": "x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1",
+      "slug": "verify-recurring-identity-board",
+      "title": "角色板节拍｜环境切换不丢身份",
+      "status": "released",
+      "summary": "固定角色板持续在场，实景区域连续换环境并用不同动作、尺度和机位验证同一身份；作为既有角色卡验真模板的第二来源，不新增下拉项。",
+      "manifest_path": "cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/manifest.json",
+      "summary_path": "cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/SUMMARY.md",
+      "source_path": "cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/source.json",
+      "creative_dna_path": "cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/preview.gif",
+        "poster": "cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/poster.webp",
+        "mp4": "media/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/verify-recurring-identity-board",
+      "template_id": "t8-case-recurring-identity-board-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "recurring",
+        "identity",
+        "board"
+      ],
+      "quality_score": 4.71,
+      "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1",
+      "slug": "record-memory-through-fixed-viewfinder",
+      "title": "相机记忆｜固定取景框串联日常",
+      "status": "released",
+      "summary": "一个固定相机取景界面贯穿多处日常空间，同一人物每到一处完成一个小动作，最后用手掌触镜物理结束记录。",
+      "manifest_path": "cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/manifest.json",
+      "summary_path": "cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/SUMMARY.md",
+      "source_path": "cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/source.json",
+      "creative_dna_path": "cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/preview.gif",
+        "poster": "cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/poster.webp",
+        "mp4": "media/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/record-memory-through-fixed-viewfinder",
+      "template_id": "t8-case-recorder-overlay-memory-route-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "recorder",
+        "overlay",
+        "memory",
+        "route"
+      ],
+      "quality_score": 4.715,
+      "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1",
+      "slug": "stage-performance-fall-rise-arc",
+      "title": "舞台表演｜远景起势到倒地复起",
+      "status": "released",
+      "summary": "单人表演先用大远景建立身体与空间，再推进近景表达、完成一次受控倒地和俯拍停留，最后在独立光束中复起。",
+      "manifest_path": "cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/manifest.json",
+      "summary_path": "cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/SUMMARY.md",
+      "source_path": "cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/source.json",
+      "creative_dna_path": "cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/preview.gif",
+        "poster": "cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/poster.webp",
+        "mp4": "media/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-performance-fall-rise-arc",
+      "template_id": "t8-case-performance-fall-rise-arc-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "performance",
+        "fall",
+        "rise",
+        "arc"
+      ],
+      "quality_score": 4.717,
+      "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1",
+      "slug": "prove-product-through-first-person-test",
+      "title": "UGC测评｜开箱到一口实证",
+      "status": "released",
+      "summary": "真人与未开封产品同框起手，完整开箱后给一个关键微距证据，再完成真实使用，并让产品与变化后的反应一起收口。",
+      "manifest_path": "cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/manifest.json",
+      "summary_path": "cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/SUMMARY.md",
+      "source_path": "cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/source.json",
+      "creative_dna_path": "cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/preview.gif",
+        "poster": "cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/poster.webp",
+        "mp4": "media/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/prove-product-through-first-person-test",
+      "template_id": "t8-case-first-person-testimonial-proof-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "first",
+        "person",
+        "testimonial",
+        "proof"
+      ],
+      "quality_score": 4.715,
+      "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1",
+      "slug": "switch-subjects-through-persistent-selector",
+      "title": "互动图鉴｜固定菜单切换生物",
+      "status": "released",
+      "summary": "菜单、数据区和主视窗固定不动，选择器逐项切换，每次让名称、参数与主视窗主体同步更新并完成一个定义动作。",
+      "manifest_path": "cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/manifest.json",
+      "summary_path": "cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/SUMMARY.md",
+      "source_path": "cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/source.json",
+      "creative_dna_path": "cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/preview.gif",
+        "poster": "cases/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/poster.webp",
+        "mp4": "media/x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/switch-subjects-through-persistent-selector",
+      "template_id": "t8-case-persistent-selector-subject-swap-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "persistent",
+        "selector",
+        "subject",
+        "swap"
+      ],
+      "quality_score": 4.714,
+      "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1",
+      "slug": "break-kinetic-text-obstacles",
+      "title": "动力短片｜文字障碍逐个击碎",
+      "status": "released",
+      "summary": "低饱和世界里，短词成为路线上的实体障碍，主角通过前进动作逐个击碎，每次冲击恢复一部分颜色，最后用一个原创短句命名新状态。",
+      "manifest_path": "cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/manifest.json",
+      "summary_path": "cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/SUMMARY.md",
+      "source_path": "cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/source.json",
+      "creative_dna_path": "cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/preview.gif",
+        "poster": "cases/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/poster.webp",
+        "mp4": "media/x-sebatheepan-2084311486277599712-browser-2084311486277599712-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/break-kinetic-text-obstacles",
+      "template_id": "t8-case-kinetic-text-obstacle-break-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "kinetic",
+        "text",
+        "obstacle",
+        "break"
+      ],
+      "quality_score": 4.731,
+      "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1",
+      "slug": "redirect-mass-with-leverage",
+      "title": "力量反差｜小体型用杠杆反制",
+      "status": "released",
+      "summary": "先证明巨大质量差与可用支点，让重型对手完整承诺攻击，小体型主角进入转弯半径并用杠杆重定向动量，最后形成非致命控制。",
+      "manifest_path": "cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/manifest.json",
+      "summary_path": "cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/SUMMARY.md",
+      "source_path": "cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/source.json",
+      "creative_dna_path": "cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/preview.gif",
+        "poster": "cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/poster.webp",
+        "mp4": "media/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/redirect-mass-with-leverage",
+      "template_id": "t8-case-asymmetric-mass-control-fight-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "asymmetric",
+        "mass",
+        "control",
+        "fight"
+      ],
+      "quality_score": 4.733,
+      "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1",
+      "slug": "form-reversible-material-typography",
+      "title": "材质字效｜霜花成字再归位",
+      "status": "released",
+      "summary": "固定竖直玻璃先建立清晰基线，霜晶从同一表面长成一个短词，保持可读后融成真实水珠，最终恢复开场窗口形成闭环。",
+      "manifest_path": "cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/manifest.json",
+      "summary_path": "cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/SUMMARY.md",
+      "source_path": "cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/source.json",
+      "creative_dna_path": "cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/preview.gif",
+        "poster": "cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/poster.webp",
+        "mp4": "media/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/form-reversible-material-typography",
+      "template_id": "t8-case-reversible-material-typography-loop-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "reversible",
+        "material",
+        "typography",
+        "loop"
+      ],
+      "quality_score": 4.732,
+      "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-techhalla-2081333381401334006-browser-2081333381401334006-video-1",
+      "slug": "follow-one-encounter-and-departure",
+      "title": "纪实跟拍｜行进中偶遇再离开",
+      "status": "released",
+      "summary": "侧面跟拍同一人物离开狭窄空间，镜头漂到身后并揭示更大路线；只发生一次偶遇和一次克制回应，人物随后继续离开。",
+      "manifest_path": "cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/manifest.json",
+      "summary_path": "cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/SUMMARY.md",
+      "source_path": "cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/source.json",
+      "creative_dna_path": "cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/preview.gif",
+        "poster": "cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/poster.webp",
+        "mp4": "media/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/follow-one-encounter-and-departure",
+      "template_id": "t8-case-observer-follow-encounter-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "observer",
+        "follow",
+        "encounter"
+      ],
+      "quality_score": 4.713,
+      "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1",
+      "slug": "stage-two-turn-pause-reaction",
+      "title": "对话喜剧｜双轮停顿无声反应",
+      "status": "released",
+      "summary": "双人同框先建立眼线，第一轮说话后留出清楚停顿，再完成第二轮说话并以第一人的无声反应收尾；具体对白和喜剧语义必须全新原创。",
+      "manifest_path": "cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/manifest.json",
+      "summary_path": "cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/SUMMARY.md",
+      "source_path": "cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/source.json",
+      "creative_dna_path": "cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/preview.gif",
+        "poster": "cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/poster.webp",
+        "mp4": "media/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-two-turn-pause-reaction",
+      "template_id": "t8-case-two-turn-pause-reaction-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "two",
+        "turn",
+        "pause",
+        "reaction"
+      ],
+      "quality_score": 4.678,
+      "updated_at": "2026-08-10T23:52:56+08:00"
     }
   ]
 }

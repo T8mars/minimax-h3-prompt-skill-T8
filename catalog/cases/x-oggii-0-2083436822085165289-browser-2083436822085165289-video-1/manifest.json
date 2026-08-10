@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1",
+  "slug": "prove-product-through-first-person-test",
+  "title": "UGC测评｜开箱到一口实证",
+  "source_title": "X creative video by @oggii_0",
+  "summary": "真人与未开封产品同框起手，完整开箱后给一个关键微距证据，再完成真实使用，并让产品与变化后的反应一起收口。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/prove-product-through-first-person-test",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-first-person-testimonial-proof-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "出镜测评者 + 未开封产品 + 完整内容展示 + 一个产品专属微距证据 + 一次完整使用 + 产品与反应同框",
+  "recommended_input": "陶艺师测评便携手冲套件：先展示密封盒并完整摆出部件，微距证明滤网四分之一圈锁定，完成一次无渗漏冲煮与品尝，最后举起套件和干燥接缝并克制点头。",
+  "required_anchors": [
+    "开场测评者与未开封产品同框",
+    "先完整展示内容再进入细节",
+    "只有一个产品专属功能证据",
+    "必须完成一次真实使用并保留结果",
+    "结尾产品与变化后的反应同框"
+  ],
+  "tags": [
+    "first",
+    "person",
+    "testimonial",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.715,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T22:55:47+08:00",
+  "updated_at": "2026-08-10T23:52:56+08:00"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1",
+  "slug": "stage-performance-fall-rise-arc",
+  "title": "舞台表演｜远景起势到倒地复起",
+  "source_title": "X creative video by @aimikoda",
+  "summary": "单人表演先用大远景建立身体与空间，再推进近景表达、完成一次受控倒地和俯拍停留，最后在独立光束中复起。",
+  "status": "released",
+  "source_duration_seconds": 15.092971,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-performance-fall-rise-arc",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performance-fall-rise-arc-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "单人表演者 + 巨大空场 + 远景起势 + 近景表达 + 一次受控倒地 + 俯拍确认 + 连续复起",
+  "recommended_input": "打击乐舞者独自在废弃天文台起舞，从大远景轨迹进入近景手部节奏，完成一次膝盖先着地的螺旋倒地，俯拍停留后在开启的穹顶光束中连续起身。",
+  "required_anchors": [
+    "开场先证明全身与巨大场地尺度",
+    "近景必须晚于动作语言建立",
+    "全片只有一次决定性下降",
+    "用俯拍或地面机位证明落地",
+    "结尾连续复起且不回到开场构图"
+  ],
+  "tags": [
+    "performance",
+    "fall",
+    "rise",
+    "arc"
+  ],
+  "quality": {
+    "weighted_score": 4.717,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T22:55:46+08:00",
+  "updated_at": "2026-08-10T23:52:56+08:00"
+}

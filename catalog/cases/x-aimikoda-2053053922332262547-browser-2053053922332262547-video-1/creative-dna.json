@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Build a solo performance through a scale-changing camera arc: establish the whole body in a large empty venue, advance to close expressive proof, let the body descend into one floor-level low point, then restore vertical energy in a final isolated light. The reusable template excludes any storyboard or prompt-demo overlay and depends on the visible fall-to-rise performance logic.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Open with full-body scale inside a visibly larger venue.",
+      "purpose": "Creates a measurable spatial baseline.",
+      "ablation_failure": "Opening close removes the scale contrast needed later.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Move closer only after the body's initial movement language is established.",
+      "purpose": "Makes close expression feel earned.",
+      "ablation_failure": "Immediate close coverage turns the piece into a generic portrait.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use one controlled descent as the single decisive low point.",
+      "purpose": "Gives the performance an irreversible middle transition.",
+      "ablation_failure": "Repeated falls become choreography noise rather than structure.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Hold the low point with a camera relation that proves floor contact and body geometry.",
+      "purpose": "Prevents the descent from reading as a cutaway.",
+      "ablation_failure": "A hidden landing weakens physical causality.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End upright in one isolated light, without recreating the opening framing.",
+      "purpose": "Restores agency while showing change.",
+      "ablation_failure": "Returning to the exact opening makes the arc feel reset rather than resolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source performer appearance",
+    "source industrial hall",
+    "source storyboard sheet overlay",
+    "the exact source shot order"
+  ],
+  "instantiations": [
+    {
+      "concept": "A percussionist-choreographer performs in a decommissioned observatory: distant circular steps, close hand rhythm, controlled floor spiral, overhead stillness and upright recovery under the open dome.",
+      "prompt_seed": "A percussionist-choreographer performs in a decommissioned observatory: distant circular steps, close hand rhythm, controlled floor spiral, overhead stillness and upright recovery under the open dome."
+    },
+    {
+      "concept": "A paper-costume dancer performs in an empty greenhouse: aisle-wide start, leaf-shadow close work, soft collapse among cloth rows and rise into one shaft of dawn light.",
+      "prompt_seed": "A paper-costume dancer performs in an empty greenhouse: aisle-wide start, leaf-shadow close work, soft collapse among cloth rows and rise into one shaft of dawn light."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Opening close removes the scale contrast needed later.",
+      "repair": "Open with full-body scale inside a visibly larger venue."
+    },
+    {
+      "failure": "Immediate close coverage turns the piece into a generic portrait.",
+      "repair": "Move closer only after the body's initial movement language is established."
+    },
+    {
+      "failure": "Repeated falls become choreography noise rather than structure.",
+      "repair": "Use one controlled descent as the single decisive low point."
+    },
+    {
+      "failure": "A hidden landing weakens physical causality.",
+      "repair": "Hold the low point with a camera relation that proves floor contact and body geometry."
+    },
+    {
+      "failure": "Returning to the exact opening makes the arc feel reset rather than resolved.",
+      "repair": "End upright in one isolated light, without recreating the opening framing."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A percussionist-choreographer performs in a decommissioned observatory: distant circular steps, close hand rhythm, controlled floor spiral, overhead stillness and upright recovery under the open dome.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A paper-costume dancer performs in an empty greenhouse: aisle-wide start, leaf-shadow close work, soft collapse among cloth rows and rise into one shaft of dawn light.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

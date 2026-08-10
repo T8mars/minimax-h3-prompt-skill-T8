@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Keep one information interface and spatial grid fixed while a visible selector chooses one item at a time. Each selection must update the title, concise attributes and one large live viewport together; the selected subject then performs one short behavior that proves the new state before the next choice.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Keep one selector grid, one data zone and one live viewport fixed.",
+      "purpose": "Creates an inspectable state machine.",
+      "ablation_failure": "Moving interface regions make updates difficult to compare.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Show one visible selector action before every content change.",
+      "purpose": "Makes each update causal.",
+      "ablation_failure": "Unmotivated swaps become a montage.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Update title, attributes and live subject as one synchronized state.",
+      "purpose": "Prevents contradictory interface evidence.",
+      "ablation_failure": "Partial updates make the catalog feel broken.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Give each selected subject one short defining behavior.",
+      "purpose": "Proves more than a static thumbnail.",
+      "ablation_failure": "Idle subjects do not justify a live viewport.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a held complete state with selector and selected subject both visible.",
+      "purpose": "Lets the viewer verify the final choice.",
+      "ablation_failure": "Cutting away immediately removes the proof relation.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "CREATURE ENCYCLOPEDIA title",
+    "source creature designs",
+    "source names and statistics",
+    "the exact source grid and cursor path"
+  ],
+  "instantiations": [
+    {
+      "concept": "A fixed weather-drone field guide selects five original drones; tile, call sign, wind rating and large live weather test update together for each choice.",
+      "prompt_seed": "A fixed weather-drone field guide selects five original drones; tile, call sign, wind rating and large live weather test update together for each choice."
+    },
+    {
+      "concept": "A seed-vault interface selects five invented plants; fixed specimen grid, growth attributes and large time-lapse diorama update in one synchronized state.",
+      "prompt_seed": "A seed-vault interface selects five invented plants; fixed specimen grid, growth attributes and large time-lapse diorama update in one synchronized state."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Moving interface regions make updates difficult to compare.",
+      "repair": "Keep one selector grid, one data zone and one live viewport fixed."
+    },
+    {
+      "failure": "Unmotivated swaps become a montage.",
+      "repair": "Show one visible selector action before every content change."
+    },
+    {
+      "failure": "Partial updates make the catalog feel broken.",
+      "repair": "Update title, attributes and live subject as one synchronized state."
+    },
+    {
+      "failure": "Idle subjects do not justify a live viewport.",
+      "repair": "Give each selected subject one short defining behavior."
+    },
+    {
+      "failure": "Cutting away immediately removes the proof relation.",
+      "repair": "End on a held complete state with selector and selected subject both visible."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A fixed weather-drone field guide selects five original drones; tile, call sign, wind rating and large live weather test update together for each choice.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A seed-vault interface selects five invented plants; fixed specimen grid, growth attributes and large time-lapse diorama update in one synchronized state.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin in a visually suppressed world, bind one short word or phrase to a physical obstacle in the subject's route, and require the subject's forward action to break that obstacle rather than merely passing it. Each break restores a visible part of the world; finish with one original concise statement that names the achieved state, not the source slogan.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Begin with one visibly suppressed environmental state.",
+      "purpose": "Creates a measurable baseline for recovery.",
+      "ablation_failure": "Without a baseline, color restoration has no consequence.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Turn a short readable word into a real obstacle on the route.",
+      "purpose": "Binds abstraction to physical action.",
+      "ablation_failure": "Floating captions do not participate in causality.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Require forward subject action to break each obstacle.",
+      "purpose": "Preserves agency and momentum.",
+      "ablation_failure": "Passive explosions detach the change from the protagonist.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Make each break restore a visible part of the environment.",
+      "purpose": "Converts impacts into cumulative progress.",
+      "ablation_failure": "If nothing changes, repeated breaks feel interchangeable.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with one original concise statement describing the achieved state.",
+      "purpose": "Provides a readable payoff without copying a slogan.",
+      "ablation_failure": "A long motivational paragraph overwhelms the visual result.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "STUCK IN THE STATIC",
+    "TOO TIRED",
+    "NOT TODAY",
+    "BREAK THE STATIC / RUN YOUR DAY",
+    "source runner and grey city"
+  ],
+  "instantiations": [
+    {
+      "concept": "An autonomous delivery drone crosses a monochrome logistics tunnel, shattering physical DELAY and HOLD barriers; each impact restores route lights, ending on ROUTE CLEAR.",
+      "prompt_seed": "An autonomous delivery drone crosses a monochrome logistics tunnel, shattering physical DELAY and HOLD barriers; each impact restores route lights, ending on ROUTE CLEAR."
+    },
+    {
+      "concept": "A tiny sailboat crosses a grey paper sea, cutting through physical DOUBT and DRIFT reefs; color returns to wind and water, ending on TRUE COURSE.",
+      "prompt_seed": "A tiny sailboat crosses a grey paper sea, cutting through physical DOUBT and DRIFT reefs; color returns to wind and water, ending on TRUE COURSE."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a baseline, color restoration has no consequence.",
+      "repair": "Begin with one visibly suppressed environmental state."
+    },
+    {
+      "failure": "Floating captions do not participate in causality.",
+      "repair": "Turn a short readable word into a real obstacle on the route."
+    },
+    {
+      "failure": "Passive explosions detach the change from the protagonist.",
+      "repair": "Require forward subject action to break each obstacle."
+    },
+    {
+      "failure": "If nothing changes, repeated breaks feel interchangeable.",
+      "repair": "Make each break restore a visible part of the environment."
+    },
+    {
+      "failure": "A long motivational paragraph overwhelms the visual result.",
+      "repair": "End with one original concise statement describing the achieved state."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An autonomous delivery drone crosses a monochrome logistics tunnel, shattering physical DELAY and HOLD barriers; each impact restores route lights, ending on ROUTE CLEAR.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A tiny sailboat crosses a grey paper sea, cutting through physical DOUBT and DRIFT reefs; color returns to wind and water, ending on TRUE COURSE.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

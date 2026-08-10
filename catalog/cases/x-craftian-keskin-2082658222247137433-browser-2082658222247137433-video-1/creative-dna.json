@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Make a large mass advantage visually undeniable, then let the smaller subject survive by reading commitment, moving inside the heavy subject's turning radius and using one environmental fulcrum. The reversal must come from timing and leverage, not a sudden power increase; end in clear nonlethal control with both scale relations still visible.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Prove the mass difference and one usable environmental fulcrum early.",
+      "purpose": "Makes the later reversal physically accountable.",
+      "ablation_failure": "A surprise prop or hidden scale difference makes the reversal arbitrary.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Let the heavy subject fully commit before the smaller subject moves inside its recovery path.",
+      "purpose": "Turns speed into timing rather than invulnerability.",
+      "ablation_failure": "Early dodging removes the near-miss tension and strategic read.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use at least one impact to reveal momentum and recovery cost.",
+      "purpose": "Provides evidence for the later tactic.",
+      "ablation_failure": "Weight without visible consequence is only character design.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Make the decisive reversal depend on leverage or redirection, never sudden strength.",
+      "purpose": "Preserves the asymmetric premise.",
+      "ablation_failure": "A power-up breaks the causal strategy.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End in nonlethal visible control with the fulcrum still readable.",
+      "purpose": "Shows how the tactic worked and avoids an unexplained knockout.",
+      "ablation_failure": "A cut to victory hides the mechanism.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source fantasy fighters",
+    "source tavern",
+    "source green heavy character",
+    "source costume and finishing pose"
+  ],
+  "instantiations": [
+    {
+      "concept": "A small salvage robot faces a heavy cargo loader in a scrapyard, studies its slow swing, threads inside the turn and uses a hanging magnetic cable to pin one loader arm safely.",
+      "prompt_seed": "A small salvage robot faces a heavy cargo loader in a scrapyard, studies its slow swing, threads inside the turn and uses a hanging magnetic cable to pin one loader arm safely."
+    },
+    {
+      "concept": "A compact harbor tug confronts an unmanned barge in a storm channel, uses the barge's committed drift and one fixed mooring post to redirect it into a safe holding arc.",
+      "prompt_seed": "A compact harbor tug confronts an unmanned barge in a storm channel, uses the barge's committed drift and one fixed mooring post to redirect it into a safe holding arc."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A surprise prop or hidden scale difference makes the reversal arbitrary.",
+      "repair": "Prove the mass difference and one usable environmental fulcrum early."
+    },
+    {
+      "failure": "Early dodging removes the near-miss tension and strategic read.",
+      "repair": "Let the heavy subject fully commit before the smaller subject moves inside its recovery path."
+    },
+    {
+      "failure": "Weight without visible consequence is only character design.",
+      "repair": "Use at least one impact to reveal momentum and recovery cost."
+    },
+    {
+      "failure": "A power-up breaks the causal strategy.",
+      "repair": "Make the decisive reversal depend on leverage or redirection, never sudden strength."
+    },
+    {
+      "failure": "A cut to victory hides the mechanism.",
+      "repair": "End in nonlethal visible control with the fulcrum still readable."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A small salvage robot faces a heavy cargo loader in a scrapyard, studies its slow swing, threads inside the turn and uses a hanging magnetic cable to pin one loader arm safely.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A compact harbor tug confronts an unmanned barge in a storm channel, uses the barge's committed drift and one fixed mooring post to redirect it into a safe holding arc.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}
