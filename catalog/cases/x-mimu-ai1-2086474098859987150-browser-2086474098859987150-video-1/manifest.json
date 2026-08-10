@@ -2,13 +2,16 @@
   "schema_version": "public-case/v1",
   "case_id": "x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1",
   "slug": "escalate-evidence-into-reality",
-  "title": "Evidence Ladder Crosses into Reality",
-  "source_title": "Predictive-photograph mystery short — Seedance 2.0",
-  "summary": "让稳定现实与一个有边界的证据载体产生可核对矛盾；载体沿同一变量连续更新两次，现实暂时保持不变，直到最终状态跨出边界并留下清晰的物理结果。",
+  "title": "未来证据｜异常闯入现实",
+  "source_title": "X creative video by @mimu_ai1",
+  "summary": "稳定现实中，同一证据载体连续更新，最后异常内容延迟跨入现实。",
   "status": "released",
   "source_duration_seconds": 15.11619,
-  "target_duration_seconds": 15,
-  "models": ["MiniMax H3", "Seedance 2.0"],
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
   "source_ref": "source.json",
   "creative_dna_ref": "creative-dna.json",
   "summary_ref": "SUMMARY.md",
@@ -32,12 +35,30 @@
     "poster": "available",
     "mp4": "available_in_electron_media_pack"
   },
-  "tags": ["evidence-ladder", "boundary-crossing", "reality-payoff", "negative-space", "carrier-update", "causal-escalation"],
+  "template_id": "t8-case-evidence-ladder-reality-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "有边界的证据载体 + 稳定现实 + 同一变量连续2次更新 + 延迟跨界 + 一次反应",
+  "recommended_input": "温室里的黄铜叶片扫描器连续吐出两张状态纸条，第二张显示尚未出现的霜纹；短暂停顿后霜纹从纸面蔓延到真实叶片，园艺师只后退一步。",
+  "required_anchors": [
+    "现实基线稳定",
+    "同一证据载体至少两次更新",
+    "异常先在证据内出现",
+    "跨界延迟发生且只有一次克制反应"
+  ],
+  "tags": [
+    "evidence",
+    "ladder",
+    "reality"
+  ],
   "quality": {
     "weighted_score": 4.712,
     "scale": 5,
     "anti_copy_passed": true,
-    "prompt_validation": {"minimax_h3": true, "seedance_2_0": true},
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
     "release_passed": true
   },
   "created_at": "2026-08-10T00:20:19+08:00",

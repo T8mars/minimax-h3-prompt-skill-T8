@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1",
+  "slug": "prove-mechanical-convoy-follow",
+  "title": "机械同行｜启动后稳定伴行",
+  "source_title": "X creative video by @saniaspeaks_",
+  "summary": "装置启动并达到阈值后带动负载，连续镜头证明它确实稳定跟随。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/prove-mechanical-convoy-follow",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-mechanical-convoy-proof-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "机械装置启动→达到可见阈值→负载起浮→连续镜头证明稳定跟随",
+  "recommended_input": "档案馆标本箱底部的磁力足逐个启动，指示灯达到绿色阈值后箱体轻微起浮，连续跟拍证明它稳定跟随管理员推车穿过走廊。",
+  "required_anchors": [
+    "启动过程可见",
+    "阈值状态可读",
+    "负载在阈值后才移动",
+    "连续镜头证明稳定伴行"
+  ],
+  "tags": [
+    "mechanical",
+    "convoy",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.702,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T02:03:00+08:00",
+  "updated_at": "2026-08-10T04:07:39+08:00"
+}

@@ -35,20 +35,20 @@ async function run() {
     });
     await page.waitForSelector(".case-card", { timeout: 15000 });
     const allCount = await page.locator(".case-card").count();
-    assert.equal(allCount, 20, "default all-content view must render 10 cases + 9 official Skills + 1 non-official Skill");
+    assert.equal(allCount, 37, "default all-content view must render 27 cases + 9 official Skills + 1 non-official Skill");
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
-    assert.equal(await page.locator("#stat-cases").textContent(), "20");
-    assert.equal(await page.locator("#stat-videos").textContent(), "20", "every item in the aggregate view must have a local preview");
-    assert.equal(await page.locator("#stat-prompts").textContent(), "40", "all 20 items must expose both model surfaces");
+    assert.equal(await page.locator("#stat-cases").textContent(), "37");
+    assert.equal(await page.locator("#stat-videos").textContent(), "37", "every item in the aggregate view must have a local preview");
+    assert.equal(await page.locator("#stat-prompts").textContent(), "74", "all 37 items must expose their declared model surfaces");
     assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "official Skills must use local GIF previews in the aggregate view");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "aggregate view must not expose case-only comparison controls");
     await page.screenshot({ path: screenshotPath, animations: "disabled" });
 
     await page.locator("#view-cases").click();
-    await page.waitForFunction(() => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === 10);
+    await page.waitForFunction(() => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === 27);
     const caseCount = await page.locator(".case-card").count();
-    assert.equal(caseCount, 10, "viewer must render all ten public cases");
-    assert.equal(await page.locator("#stat-videos").textContent(), "10", "development media pack must bind ten case MP4s");
+    assert.equal(caseCount, 27, "viewer must render all 27 public cases");
+    assert.equal(await page.locator("#stat-videos").textContent(), "27", "development media pack must bind 27 case MP4s");
 
     await page.locator(".case-card").first().click();
     await page.waitForSelector("#case-dialog[open]");

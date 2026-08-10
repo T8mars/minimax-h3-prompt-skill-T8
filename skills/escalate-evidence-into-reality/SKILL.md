@@ -1,55 +1,46 @@
 ---
 name: escalate-evidence-into-reality
-description: "Create original 15-second shorts where a bounded evidence carrier contradicts a stable live scene, updates one readable variable twice, and only then crosses into physical reality. Use for MiniMax H3 or Seedance 2.0 suspense, wonder, technical mystery, comedy, or product-proof concepts."
+description: "Create original short videos using the 未来证据｜异常闯入现实 Creative DNA for MiniMax H3 or Seedance 2.0. Use when the user wants this causal, camera, motion, rhythm, or payoff structure with new subjects and surfaces."
 ---
 
-# Evidence Ladder Crosses into Reality
+# 未来证据｜异常闯入现实
 
-Create a new execution from the reusable causal mechanism, not from the reference video's surface.
+Create a new execution from the reusable mechanism, not a surface reskin of any reference video.
 
 ## Workflow
 
-1. Read [references/summary.md](references/summary.md) for fit, slots, and anti-copy boundaries.
+1. Read [references/summary.md](references/summary.md) for fit, input slots, and the concise starting example.
 2. Read [references/template.md](references/template.md) completely before drafting.
-3. Extract the user's objective, audience, subject, live baseline, evidence carrier, advancing variable, emotional register, sound needs, and desired physical payoff.
-4. Fill every variable slot. Change the carrier modality, setting, genre, camera grammar, phenomenon, and payoff together; do not make a new photograph-or-monitor horror reskin.
-5. Write a causal map before prose: baseline -> contradiction -> verification -> update 1 -> verification -> update 2 -> boundary crossing -> readable consequence.
-6. Prove every invariant using the new scene's own anchors and physics.
-7. Compile MiniMax H3 and Seedance 2.0 independently.
-8. Check timing, anchor continuity, update count, delayed reaction, payoff readability, and anti-copy distance.
+3. Preserve the user's subject and objective, then fill every missing scene, trigger, event-chain, camera, sound, and payoff slot.
+4. Treat these anchors as mandatory:
 
-## Compile for MiniMax H3
+- 现实基线稳定
+- 同一证据载体至少两次更新
+- 异常先在证据内出现
+- 跨界延迟发生且只有一次克制反应
 
-- Use English by default.
-- Provide integrated audiovisual description, overall soundscape, and non-diegetic music or explicit silence.
-- Keep the live baseline and carrier comparison visually legible in every event.
-- Use consecutive shot or event onsets only where needed to lock the update ladder.
-- Describe one unambiguous physical consequence after the final evidence state.
+5. Change source-specific people, setting, props, palette, dialogue, shot boundaries, sound family, and payoff surfaces together.
+6. Compile MiniMax H3 and Seedance 2.0 independently; do not leak one model's field syntax into the other.
+7. Silently verify anchor coverage, continuity, timing, physical causality, and anti-copy distance before returning the final prompts.
 
-## Compile for Seedance 2.0
+## MiniMax H3
 
-- Use Chinese by default.
-- Define stable subjects and evidence objects once.
-- Use event-ordered shots for a multi-step ladder; do not assign exact per-shot durations.
-- State the overall duration once, then describe causal order, camera motivation, sound cues, and continuity constraints.
-- Prevent random carrier content, premature crossing, identity drift, and overacted reactions.
+- Use the current official H3 task grammar and language profile.
+- Separate integrated visual action, overall soundscape, and non-diegetic music or explicit silence.
+- Use timestamps only to make event order executable; keep shots consecutive and duration-safe.
+
+## Seedance 2.0
+
+- Define stable subjects once and preserve event order, camera motivation, sound intent, and overall duration.
+- Use a simple paragraph for simple concepts or an ordered multi-shot structure for complex concepts.
+- State overall duration once; do not copy H3 field labels or per-shot timecode grammar.
 
 ## Output
 
-Return:
+Return one concept sentence, the filled slots, an anchor-coverage check, one MiniMax H3 prompt, one Seedance 2.0 prompt, and a short anti-copy validation note.
 
-1. One-sentence concept.
-2. Slot table.
-3. Invariant-to-execution proof.
-4. MiniMax H3 prompt.
-5. Seedance 2.0 prompt.
-6. Validation note covering causality, continuity, model fit, and anti-copy distance.
+## Non-Negotiable
 
-## Non-Negotiable Constraints
-
-- Keep one stable referent shared by the live scene and evidence carrier.
-- Update one countable variable at least twice; do not randomize the whole carrier.
-- Hold reality stable until the comparison rule is understood.
-- Delay the strongest reaction until the physical crossing is visible.
-- Do not reuse source people, locations, signature props, exact compositions, timings, dialogue, or effect surfaces.
-- If the concept is only a new monster inside a new photograph, redesign the carrier, genre, physics, camera, and payoff.
+- A subject-only request is underspecified. Preserve that subject and complete the mechanism instead of returning a generic portrait or showcase.
+- Do not omit, reorder, or weaken a required anchor.
+- Do not reuse source people, brands, dialogue, exact storyboard, signature props, exact timings, or recognizable effect surfaces.

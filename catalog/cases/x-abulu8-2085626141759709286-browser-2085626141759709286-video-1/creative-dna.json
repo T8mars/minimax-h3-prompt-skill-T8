@@ -1,7 +1,4 @@
 {
-  "schema_version": "public-creative-dna/v1",
-  "case_id": "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1",
-  "title": "Flexible Proof-State Product Launch Film",
   "complexity": "moderate",
   "mechanism": "A compressed launch film behaves as a flexible proof state machine rather than a fixed storyboard: an outcome, operation, internal mechanism, maximum contrast event, breadth proof and final action may be merged or reordered as long as each state answers a new product question. A strict material, light and typography system maintains coherence while shot count, information order, camera carrier and breadth device change across instances.",
   "invariants": [
@@ -9,37 +6,71 @@
       "id": "inv-01",
       "rule": "Within the first third, establish one emotionally legible outcome and its causal relationship to the product; outcome-first and proof-first openings are both valid.",
       "purpose": "Gives technical information a human consequence without prescribing a brand-hero first frame.",
-      "ablation_failure": "If the product and outcome never connect, the sequence becomes either abstract mood or disconnected documentation."
+      "ablation_failure": "If the product and outcome never connect, the sequence becomes either abstract mood or disconnected documentation.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-10"
+      ]
     },
     {
       "id": "inv-02",
       "rule": "Make each information state answer a different product question, but merge related questions and vary their order according to the new product's strongest causal proof.",
       "purpose": "Turns speed into cumulative proof instead of a montage of interchangeable beauty shots.",
-      "ablation_failure": "If adjacent beats repeat the same claim, the fast pace becomes empty and the product remains vague."
+      "ablation_failure": "If adjacent beats repeat the same claim, the fast pace becomes empty and the product remains vague.",
+      "evidence_ids": [
+        "beat-02",
+        "beat-03",
+        "beat-04",
+        "obs-08"
+      ]
     },
     {
       "id": "inv-03",
       "rule": "Concentrate one maximum contrast event after enough setup to make it legible; the peak may be physical, spatial, typographic or human, and its position is variable.",
       "purpose": "Creates a memorable second hook without requiring oversized text or a fixed midpoint boundary.",
-      "ablation_failure": "Equal intensity across all states produces a flat montage; repeating a source-style giant-text peak exposes the borrowed surface."
+      "ablation_failure": "Equal intensity across all states produces a flat montage; repeating a source-style giant-text peak exposes the borrowed surface.",
+      "evidence_ids": [
+        "beat-05",
+        "beat-06",
+        "obs-06",
+        "obs-10"
+      ]
     },
     {
       "id": "inv-04",
       "rule": "Bind different modules with one strict contrast system, typography behavior and recurring assembly physics.",
       "purpose": "Maintains brand coherence while people, interfaces and use cases change rapidly.",
-      "ablation_failure": "Unrelated palettes, transitions or type treatments make the film feel like stock fragments."
+      "ablation_failure": "Unrelated palettes, transitions or type treatments make the film feel like stock fragments.",
+      "evidence_ids": [
+        "obs-02",
+        "obs-03",
+        "obs-04",
+        "obs-14"
+      ]
     },
     {
       "id": "inv-05",
       "rule": "Prove breadth once before the final action using a device native to the new concept—continuous space, physical transformation, one montage, radial staging or audience behavior—not a mandatory card row or grid.",
       "purpose": "Converts a singular proof into broader relevance without locking the template to one information design.",
-      "ablation_failure": "No breadth proof makes the product feel niche; repeating cards then grid reproduces a specific campaign storyboard."
+      "ablation_failure": "No breadth proof makes the product feel niche; repeating cards then grid reproduces a specific campaign storyboard.",
+      "evidence_ids": [
+        "beat-07",
+        "beat-08",
+        "beat-09",
+        "obs-09"
+      ]
     },
     {
       "id": "inv-06",
       "rule": "Keep all visible copy short, complete and motion-safe: text lands at final size on a cut or via a hard mask and remains sharp long enough to read.",
       "purpose": "Protects comprehension in a dense 15-second information sequence.",
-      "ablation_failure": "Scaling, warping or partially formed words compete with the product proof and create spelling artifacts."
+      "ablation_failure": "Scaling, warping or partially formed words compete with the product proof and create spelling artifacts.",
+      "evidence_ids": [
+        "obs-12",
+        "beat-06",
+        "beat-09"
+      ]
     }
   ],
   "slots": [

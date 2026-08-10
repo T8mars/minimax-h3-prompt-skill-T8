@@ -1,7 +1,4 @@
 {
-  "schema_version": "public-creative-dna/v1",
-  "case_id": "reddit-1vgynd7-chibi-pinch",
-  "title": "Cross-Medium Contact Reaction Ladder",
   "complexity": "moderate",
   "mechanism": "A single flat 2D character shares a locked photoreal environment with a real hand; one small cross-medium contact causes a three-stage readable reaction that ends in a medium-specific impossible effect.",
   "invariants": [
@@ -9,25 +6,41 @@
       "id": "inv-01",
       "rule": "Keep exactly one flat animated character inside an otherwise photoreal, stable environment.",
       "purpose": "Makes the mixed-medium anomaly instantly legible.",
-      "ablation_failure": "Multiple animated elements blur the boundary and weaken the hook."
+      "ablation_failure": "Multiple animated elements blur the boundary and weaken the hook.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-02"
+      ]
     },
     {
       "id": "inv-02",
       "rule": "Show real-to-animated contact before the reaction begins.",
       "purpose": "Provides a causal bridge between media layers.",
-      "ablation_failure": "A reaction without contact feels like an unrelated animation loop."
+      "ablation_failure": "A reaction without contact feels like an unrelated animation loop.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-04"
+      ]
     },
     {
       "id": "inv-03",
       "rule": "Escalate in three readable states: neutral, discomfort, impossible payoff.",
       "purpose": "Lets the audience track cause and intensity without cuts.",
-      "ablation_failure": "Jumping directly to the final effect removes anticipation and acting."
+      "ablation_failure": "Jumping directly to the final effect removes anticipation and acting.",
+      "evidence_ids": [
+        "beat-03",
+        "beat-04"
+      ]
     },
     {
       "id": "inv-04",
       "rule": "Keep the camera locked and let contact, expression, and effects move attention.",
       "purpose": "Protects spatial continuity between real and animated layers.",
-      "ablation_failure": "Camera movement makes contact alignment harder to read."
+      "ablation_failure": "Camera movement makes contact alignment harder to read.",
+      "evidence_ids": [
+        "obs-07",
+        "obs-08"
+      ]
     }
   ],
   "slots": [

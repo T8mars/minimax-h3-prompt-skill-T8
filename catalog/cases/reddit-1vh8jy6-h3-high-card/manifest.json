@@ -2,12 +2,12 @@
   "schema_version": "public-case/v1",
   "case_id": "reddit-1vh8jy6-h3-high-card",
   "slug": "stage-one-signal-reversal",
-  "title": "One Signal Beats Many",
+  "title": "一对多反转｜单一证据胜出",
   "source_title": "The H3 High Card — one 15-second local T2V",
-  "summary": "先让多个嘈杂选项取得表面优势，再由一个克制、清晰的校准信号打断局面，并用可见的物理后果证明“一个正确答案胜过大量堆叠”。",
+  "summary": "多个喧闹方案看似占优，单一克制信号通过校准和物理证明完成反转。",
   "status": "released",
   "source_duration_seconds": 15.125,
-  "target_duration_seconds": 15,
+  "target_duration_seconds": 15.0,
   "models": [
     "MiniMax H3",
     "Seedance 2.0"
@@ -35,13 +35,23 @@
     "poster": "available",
     "mp4": "available_in_electron_media_pack"
   },
+  "template_id": "t8c006-clarity-over-quantity-reversal",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "喧闹多数 + 克制单一信号 + 校准动作 + 可见物理证明",
+  "recommended_input": "五台机器人各自给出冲突读数，一枚克制的音叉信号完成校准；所有机械臂同步归零，并共同生成一个稳定透明球作为物理证明。",
+  "required_anchors": [
+    "多数方案先制造噪声或冲突",
+    "单一信号保持克制",
+    "有明确校准动作",
+    "最终用物理结果而非口号证明胜出"
+  ],
   "tags": [
-    "visual-reversal",
-    "one-versus-many",
-    "calibration",
-    "comparison",
-    "physical-proof",
-    "comedy"
+    "t8c006",
+    "clarity",
+    "over",
+    "quantity",
+    "reversal"
   ],
   "quality": {
     "weighted_score": 4.748,

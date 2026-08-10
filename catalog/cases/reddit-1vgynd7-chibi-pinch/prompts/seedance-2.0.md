@@ -3,13 +3,13 @@ schema_version: "public-prompt/v1"
 case_id: "reddit-1vgynd7-chibi-pinch"
 model: "Seedance 2.0"
 duration_seconds: 15
-language: "中文"
+language: "zh"
 validation: "passed"
 ---
 
-# Cross-Medium Contact Reaction Ladder — Seedance 2.0
+# 二维角色｜真人接触三级反应 — Seedance 2.0
 
-这是 Creative DNA 的一个已验证原创实例。使用时应更换人物、场景、道具、色彩、动作和结尾，不要只做名词替换。
+这是 Creative DNA 的一个已验证原创实例。使用时应重新实例化主体、场景、道具和风格，同时保留案例的因果结构锚点。
 
 ## Prompt
 
@@ -27,6 +27,6 @@ validation: "passed"
 
 ## 使用检查
 
-- 保留因果机制，不复刻来源视频的人物、品牌、对白、构图和标志性效果。
-- 核对主体身份、空间关系、动作先后与最终状态是否稳定。
-- 需要明显不同的新用途时，返回 [Creative DNA](../creative-dna.json) 重新实例化可变槽。
+- 保留因果机制与结构锚点，不复刻来源人物、地点、道具、构图或标志性效果。
+- 核对主体身份、空间关系、事件先后、运镜职责与最终状态。
+- 新用途应返回 [Creative DNA](../creative-dna.json) 重新实例化。

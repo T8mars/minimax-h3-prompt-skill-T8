@@ -1,0 +1,181 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin with monumental environment scale and a tiny stable subject pair. Contract framing in discrete evidence steps—paired medium, full-body investigation, object inspection, subject-owned mechanism insert and eye-level reaction—so every scale change answers one question and raises a more personal one. Preserve route, axis and identity, keep performance restrained, and stop at the facial endpoint instead of adding another action branch.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish world scale, route and the stable subject group in an extreme or very wide opening.",
+      "purpose": "Gives later close evidence a measurable spatial and emotional baseline.",
+      "ablation_failure": "Opening close removes the scale contrast and makes later inserts feel arbitrary.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-06"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Contract framing through ordered information layers rather than random beauty shots.",
+      "purpose": "Turns camera scale into an evidence funnel.",
+      "ablation_failure": "Repeated similar coverage reveals no new question and produces a flat montage.",
+      "evidence_ids": [
+        "beat-02",
+        "beat-03",
+        "obs-06",
+        "obs-07",
+        "obs-10"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Move the evidence from the shared environment to a local object and then to a mechanism owned by the lead subject.",
+      "purpose": "Raises personal stakes without requiring a copied threat or effect.",
+      "ablation_failure": "Unrelated props do not create an inward causal progression.",
+      "evidence_ids": [
+        "beat-03",
+        "beat-04",
+        "obs-08",
+        "obs-10"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Preserve the same route axis, subject identities and wardrobe or material markers across every scale change.",
+      "purpose": "Lets the audience read all shots as one continuous investigation.",
+      "ablation_failure": "Continuity drift makes the scale ladder look like disconnected footage.",
+      "evidence_ids": [
+        "beat-01",
+        "beat-02",
+        "beat-03",
+        "beat-04",
+        "obs-15"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on one restrained face or sensor response immediately after the closest mechanism proof.",
+      "purpose": "Converts physical evidence into a readable human or system endpoint.",
+      "ablation_failure": "A new action after the reaction restarts the sequence and weakens the funnel closure.",
+      "evidence_ids": [
+        "beat-04",
+        "beat-05",
+        "obs-09",
+        "obs-12"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject_group",
+      "constraint": "One stable person, pair or machine group whose identity remains continuous."
+    },
+    {
+      "name": "monumental_setting",
+      "constraint": "A setting with a readable route and strong wide-scale geography."
+    },
+    {
+      "name": "local_discovery",
+      "constraint": "One small external object or state that justifies stopping."
+    },
+    {
+      "name": "owned_mechanism",
+      "constraint": "One tool, garment mechanism or device physically associated with the lead subject."
+    },
+    {
+      "name": "scale_ladder",
+      "constraint": "A deliberate wide-to-close information order in which each scale reveals new evidence."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "Restrained testing and recognition rather than exaggerated reaction."
+    },
+    {
+      "name": "final_response",
+      "constraint": "One face, lens or status response that closes the sequence."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "two wuxia women in white and green robes",
+    "misty Chinese immortal valley settlement",
+    "silver sword, pebble test and the source Mandarin dialogue",
+    "the unverified four-step audio-before-action rule and exact source shot boundaries"
+  ],
+  "instantiations": [
+    {
+      "concept": "Two orbital engineers cross a vast repair bay, stop at a washer pulled toward a sealed bulkhead, inspect a wrist seal tester carrying the same pulse and end on one engineer listening toward the door.",
+      "prompt_seed": "Orbital suspense told by a world-to-pair-to-object-to-device-to-eyes evidence funnel."
+    },
+    {
+      "concept": "A ranger pair crosses a giant wind farm, kneels at a frost-covered feather, checks the same crystalline growth on a handheld vane and ends on a controlled gaze toward one silent turbine.",
+      "prompt_seed": "Wind-farm mystery using ordered scale contraction and restrained verification."
+    },
+    {
+      "concept": "Two conservators enter a monumental archive, find one curled paper fiber, inspect the same curl inside a book clasp and finish on a magnified eye reaction under stable warm light.",
+      "prompt_seed": "Archive investigation that narrows from hall scale to material evidence and a final face."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Opening close removes the scale contrast and makes later inserts feel arbitrary.",
+      "repair": "Begin with a route-readable monumental wide and stable subject group."
+    },
+    {
+      "failure": "Repeated similar coverage reveals no new question and produces a flat montage.",
+      "repair": "Assign one new evidence job to every scale contraction."
+    },
+    {
+      "failure": "Unrelated props do not create an inward causal progression.",
+      "repair": "Link the external discovery and subject-owned mechanism through one visible state."
+    },
+    {
+      "failure": "Continuity drift makes the scale ladder look like disconnected footage.",
+      "repair": "Lock route axis, identity and material markers across all shots."
+    },
+    {
+      "failure": "A new action after the reaction restarts the sequence and weakens the funnel closure.",
+      "repair": "Hold the final face or sensor response as the endpoint."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Two orbital engineers cross a vast repair bay, stop at a washer pulled toward a sealed bulkhead, inspect a wrist seal tester carrying the same pulse and end on one engineer listening toward the door.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject_group",
+        "monumental_setting",
+        "local_discovery",
+        "owned_mechanism",
+        "scale_ladder",
+        "performance_rule",
+        "final_response"
+      ]
+    },
+    {
+      "concept": "A ranger pair crosses a giant wind farm, kneels at a frost-covered feather, checks the same crystalline growth on a handheld vane and ends on a controlled gaze toward one silent turbine.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject_group",
+        "monumental_setting",
+        "local_discovery",
+        "owned_mechanism",
+        "scale_ladder",
+        "performance_rule",
+        "final_response"
+      ]
+    }
+  ]
+}

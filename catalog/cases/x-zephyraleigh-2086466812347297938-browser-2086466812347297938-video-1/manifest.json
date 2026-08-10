@@ -2,17 +2,23 @@
   "schema_version": "public-case/v1",
   "case_id": "x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1",
   "slug": "direct-imperfect-memory-farewell",
-  "title": "Imperfect-Memory Farewell Take",
-  "source_title": "Candid departure captured as an imperfect memory — Seedance 2.0",
-  "summary": "让不完美的连续观察者迟一步发现正在做日常小事的主体；一个外部信号改变目标，临近离场时只回应摄影者一次，再以有动机的录制失误结束这段私人记忆。",
+  "title": "复古手持｜日常送别回眸",
+  "source_title": "X creative video by @ZephyraLeigh",
+  "summary": "观察者先发现人物日常，外部信号改变人物目标，一次回应后以有动机的拍摄失误结束。",
   "status": "released",
   "source_duration_seconds": 15.13941,
-  "target_duration_seconds": 15,
-  "models": ["MiniMax H3", "Seedance 2.0"],
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
   "source_ref": "source.json",
   "creative_dna_ref": "creative-dna.json",
   "summary_ref": "SUMMARY.md",
-  "prompt_refs": {"minimax_h3": "prompts/minimax-h3.md", "seedance_2_0": "prompts/seedance-2.0.md"},
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
   "skill_ref": "../../../skills/direct-imperfect-memory-farewell",
   "preview_refs": {
     "gif": "preview.gif",
@@ -24,15 +30,37 @@
     "poster": "poster.webp",
     "mp4": "media/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/preview.mp4"
   },
-  "preview_status": {"gif": "available", "poster": "available", "mp4": "available_in_electron_media_pack"},
-  "tags": ["one-take", "observer-presence", "routine", "external-cue", "late-acknowledgment", "imperfect-memory"],
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-imperfect-memory-farewell-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "观察者媒介 + 日常人物/地点 + 两个日常动作 + 外部信号改变目标 + 一次回应 + 有动机录制失误",
+  "recommended_input": "家用摄像机记录泳池管理员收拾浮板和锁柜门，远处哨声让她改变去向；她回头挥一次手，摄影者追拍时短暂失焦并切到水面。",
+  "required_anchors": [
+    "先建立观察者媒介",
+    "至少两个普通日常动作",
+    "外部信号改变目标",
+    "一次回应后以有动机失误收尾"
+  ],
+  "tags": [
+    "imperfect",
+    "memory",
+    "farewell"
+  ],
   "quality": {
     "weighted_score": 4.736,
     "scale": 5,
     "anti_copy_passed": true,
-    "prompt_validation": {"minimax_h3": true, "seedance_2_0": true},
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
     "release_passed": true
   },
-  "created_at": "2026-08-10T00:20:21+08:00",
+  "created_at": "2026-08-10T00:20:20+08:00",
   "updated_at": "2026-08-10T00:53:28+08:00"
 }

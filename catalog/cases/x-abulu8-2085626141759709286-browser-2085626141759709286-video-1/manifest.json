@@ -2,12 +2,12 @@
   "schema_version": "public-case/v1",
   "case_id": "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1",
   "slug": "structure-product-proof-launch",
-  "title": "Flexible Proof-State Product Launch Film",
+  "title": "产品广告｜功能证据递进",
   "source_title": "X creative video by @abulu8",
-  "summary": "把 15 秒发布片组织成可重排的“证据状态机”：结果、操作、内部机制、最大反差、广度证明与行动收束各自回答一个新的产品问题，并由统一材质、光线和字体系统保持连续性。",
+  "summary": "先给结果，再用多个可见证据逐层证明产品功能，最后收束到行动。",
   "status": "released",
-  "source_duration_seconds": 15.256,
-  "target_duration_seconds": 15,
+  "source_duration_seconds": 15.25551,
+  "target_duration_seconds": 15.0,
   "models": [
     "MiniMax H3",
     "Seedance 2.0"
@@ -35,13 +35,23 @@
     "poster": "available",
     "mp4": "available_in_electron_media_pack"
   },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "产品/服务 + 目标人群 + 3个不同证明状态 + 最终行动",
+  "recommended_input": "一款便携净水器，面向户外徒步者：先展示喝到清水的结果，再依次用滤芯剖面、浑水变清和营地实用场景证明功能，最后出现简短购买行动。",
+  "required_anchors": [
+    "先结果后证据",
+    "至少三个不同证明状态",
+    "证据必须可见且递进",
+    "结尾有明确行动或产品收束"
+  ],
   "tags": [
-    "product-launch",
-    "proof-state",
-    "technology-ad",
-    "typography-system",
-    "state-machine",
-    "brand-film"
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
   ],
   "quality": {
     "weighted_score": 4.837,

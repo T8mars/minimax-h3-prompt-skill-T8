@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1",
+  "slug": "prove-dual-system-convergence",
+  "title": "双系统碰撞｜同时证明两种规则",
+  "source_title": "X creative video by @airina_xyz",
+  "summary": "先分别建立两个对立系统的独立规则，再让它们一次汇聚形成持久第三状态。",
+  "status": "released",
+  "source_duration_seconds": 15.104,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/prove-dual-system-convergence",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-dual-system-convergence-proof-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "系统A材质/规则 + 系统B材质/规则 + 分别建立 + 一次汇聚碰撞 + 双方共同形成的第三状态",
+  "recommended_input": "实验台左侧是会结晶的液态玻璃，右侧是会脉动的磁性沙；分别证明各自规则后，它们只汇聚一次，形成同时透明且持续脉动的悬浮晶格。",
+  "required_anchors": [
+    "两个系统先独立成立",
+    "材质或运动规则明确不同",
+    "只发生一次关键汇聚",
+    "第三状态同时保留双方证据"
+  ],
+  "tags": [
+    "dual",
+    "system",
+    "convergence",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.721,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T09:55:25+08:00",
+  "updated_at": "2026-08-10T11:35:08+08:00"
+}

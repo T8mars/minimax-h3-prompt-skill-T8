@@ -1,0 +1,175 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish two systems separately with distinct color, material physics, motion cadence and starting zones. Alternate equal proof beats while their spatial distance decreases, align them on one readable axis, permit exactly one convergence event, and end on a third shared result that neither system produced alone.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Give each system an independent establishing proof.",
+      "purpose": "Prevents color alone from carrying identity.",
+      "ablation_failure": "Immediate collision makes the systems interchangeable.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep material physics and cadence distinct before convergence.",
+      "purpose": "Makes alternation informative.",
+      "ablation_failure": "Shared motion grammar erases opposition.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Reduce one visible spatial gap across matched views.",
+      "purpose": "Creates measurable progress.",
+      "ablation_failure": "Random angles obscure whether convergence is approaching.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Allow only one terminal meeting event.",
+      "purpose": "Protects anticipation and causal clarity.",
+      "ablation_failure": "Repeated clashes dilute the payoff.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Leave a persistent third-state consequence.",
+      "purpose": "Proves both inputs affected the result.",
+      "ablation_failure": "A flash followed by reset provides no outcome evidence.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject or system whose identity remains stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One visible variable that changes in countable causal stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained behavior rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting state changes."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "two female elemental warriors",
+    "fire magic versus ice magic",
+    "ruined stone arena at sunset",
+    "weapons, petals and the source mid-air collision pose"
+  ],
+  "instantiations": [
+    {
+      "concept": "In a materials lab, a magnetic black-granule stream and a translucent foam lattice are calibrated separately, approach along opposite rails and meet once to form a stable striped composite.",
+      "prompt_seed": "In a materials lab, a magnetic black-granule stream and a translucent foam lattice are calibrated separately, approach along opposite rails and meet once to form a stable striped composite."
+    },
+    {
+      "concept": "A weather visualization establishes a dry dust front and a humid membrane separately, converging once into a rotating condensation wall.",
+      "prompt_seed": "A weather visualization establishes a dry dust front and a humid membrane separately, converging once into a rotating condensation wall."
+    },
+    {
+      "concept": "An abstract dance of paper tabs and liquid-metal beads moves from separate channels to one woven reflective grid.",
+      "prompt_seed": "An abstract dance of paper tabs and liquid-metal beads moves from separate channels to one woven reflective grid."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Immediate collision makes the systems interchangeable.",
+      "repair": "Give each system an independent establishing proof."
+    },
+    {
+      "failure": "Shared motion grammar erases opposition.",
+      "repair": "Keep material physics and cadence distinct before convergence."
+    },
+    {
+      "failure": "Random angles obscure whether convergence is approaching.",
+      "repair": "Reduce one visible spatial gap across matched views."
+    },
+    {
+      "failure": "Repeated clashes dilute the payoff.",
+      "repair": "Allow only one terminal meeting event."
+    },
+    {
+      "failure": "A flash followed by reset provides no outcome evidence.",
+      "repair": "Leave a persistent third-state consequence."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In a materials lab, a magnetic black-granule stream and a translucent foam lattice are calibrated separately, approach along opposite rails and meet once to form a stable striped composite.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A weather visualization establishes a dry dust front and a humid membrane separately, converging once into a rotating condensation wall.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

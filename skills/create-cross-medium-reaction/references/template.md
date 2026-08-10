@@ -1,4 +1,4 @@
-# Cross-Medium Contact Reaction Ladder Template
+# 二维角色｜真人接触三级反应 Template
 
 ## Mechanism
 
@@ -30,18 +30,26 @@ A single flat 2D character shares a locked photoreal environment with a real han
 - Purpose: Protects spatial continuity between real and animated layers.
 - Failure if removed: Camera movement makes contact alignment harder to read.
 
+
 ## Variable Slots
 
 | Slot | Constraint |
 |---|---|
-| `photoreal_arena` | A stable real location with clear depth and one interaction surface. |
-| `flat_character` | One original 2D paper- or sticker-like adult mascot, visually distinct from the source. |
-| `real_agent` | One live-action hand or tool entering from a consistent edge. |
-| `contact_object` | A small real object whose motion can visibly cross the medium boundary. |
-| `sensation` | A simple cause such as cold, static, scent, or weight, not source heat/chili. |
-| `reaction_states` | Three visually distinct but causally continuous poses. |
-| `payoff_effect` | An original safe effect appropriate to the new sensation. |
-| `sound` | Real location ambience plus contact-synced foley and one effect accent. |
+| photoreal_arena | A stable real location with clear depth and one interaction surface. |
+| flat_character | One original 2D paper- or sticker-like adult mascot, visually distinct from the source. |
+| real_agent | One live-action hand or tool entering from a consistent edge. |
+| contact_object | A small real object whose motion can visibly cross the medium boundary. |
+| sensation | A simple cause such as cold, static, scent, or weight, not source heat/chili. |
+| reaction_states | Three visually distinct but causally continuous poses. |
+| payoff_effect | An original safe effect appropriate to the new sensation. |
+| sound | Real location ambience plus contact-synced foley and one effect accent. |
+
+## Required Human-Facing Anchors
+
+- 平面与真实媒介同框
+- 只有一次关键接触
+- 反应至少三级升级
+- 结尾由平面媒介自身完成
 
 ## Anti-Copy Boundary
 
@@ -50,54 +58,30 @@ A single flat 2D character shares a locked photoreal environment with a real han
 - chili or heat tasting, lateral tear jets, red forehead, and fire breathing
 - exact reaction timing and source visual effects
 
-Treat these exclusions as a floor, not a checklist. Also change the setting, subject category, prop system, palette, camera implementation, sound design, and final visual state whenever they are source-adjacent.
+## Transfer Tests
 
-## Transfer Test
+1. A flat 2D alpine-fox sticker at a real tea counter receives one drop of mint extract, sips, shivers, and exhales a small frost cloud that freezes a spoon.
+   - Preserved: inv-01, inv-02, inv-03, inv-04
+   - Changed: photoreal_arena, flat_character, contact_object, sensation, reaction_states, payoff_effect
+2. A flat 2D robot sticker at a real workbench receives one drop of lubricant, tests a hinge, spins with the over-loose joint, and stops with a dizzy status-light pattern.
+   - Preserved: inv-01, inv-02, inv-03, inv-04
+   - Changed: photoreal_arena, flat_character, real_agent, contact_object, sensation, payoff_effect
 
-Before drafting prompts:
-
-1. Choose a new purpose and audience.
-2. Fill every slot with an internally coherent choice.
-3. Change at least four slots together; for close genres, change six or more.
-4. Prove every invariant using the new scene's own actions and physics.
-5. Reject the concept if it keeps the same beat-for-beat spectacle after the nouns change.
-
-## Model Templates
+## Model Skeletons
 
 ### MiniMax H3
 
-```text
-integrated_multimodal_description: [opening state and hook] [causal action] [readable escalation or proof] [final state and hold]
-overall_soundscape: [location ambience, action-synchronized foley, final accent]
-non_diegetic_music: [optional arc; omit or state silence when inappropriate]
-```
+    integrated_multimodal_description: [new subject, environment, ordered actions, camera, light and final state preserving every anchor]
+    overall_soundscape: [diegetic ambience, action cues and causal payoff]
+    non_diegetic_music: [original music arc or N/A]
 
 ### Seedance 2.0
 
-```text
-任务：[文本生成新视频或用户指定任务]
-总时长约15秒。
-主体定义：[稳定主体名称与不变特征]
-镜头/事件1：[开场状态、构图、光线、声音]
-镜头/事件2：[因果动作与空间关系]
-镜头/事件3：[递进、证明或转折]
-镜头/事件4：[最终状态与停留]
-整体风格与画质：[媒介、材质、光影、连续性]
-约束：[数量、身份、文字、禁止项和反复制边界]
-```
+    任务：[原创实例意图]
+    总时长约[4–15]秒。
+    主体定义：[稳定人物、物体与空间关系]
+    事件或镜头：[按因果顺序实现全部锚点]
+    整体风格与画质：[原创媒介、光影、色彩与声音]
+    约束：[连续性、物理逻辑、反复制与结尾状态]
 
-Adapt the event count to the new concept. Do not force four events.
-
-## Quality Repairs
-
-- **The animated character no longer looks flat against the real scene.** Repair by: Keep constant paper thickness, a crisp outline, planar deformation, and a consistent contact shadow.
-- **The reaction begins before contact.** Repair by: Hold neutral expression through the contact frame, then delay the first change by a short readable beat.
-- **The adaptation still feels like the source spicy-food gag.** Repair by: Change arena, character category, contact object, sensation, palette, reaction graphics, and final effect together.
-
-## Non-Binding Transfer Examples
-
-These examples demonstrate distance from the source. Do not reproduce them verbatim.
-
-- A flat 2D alpine-fox sticker at a real tea counter receives one drop of mint extract, sips, shivers, and exhales a small frost cloud that freezes a spoon.
-- A flat 2D robot sticker at a real workbench receives one drop of lubricant, tests a hinge, spins with the over-loose joint, and stops with a dizzy status-light pattern.
-- A flat 2D botanist sticker in a real greenhouse touches one pollen grain, sneezes through two escalating poses, and releases a tiny animated cloud shaped like leaves.
+Adapt shot count to the user's concept. Preserve the causal mechanism, not a fixed storyboard.

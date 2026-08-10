@@ -1,124 +1,19 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.0.4",
+  "catalog_version": "1.0.5",
   "generated_at": "2026-08-10T01:20:00+08:00",
-  "case_count": 10,
+  "case_count": 27,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 1,
   "community_skills_manifest": "community-skills/manifest.json",
   "cases": [
     {
-      "case_id": "reddit-1vgynd7-chibi-pinch",
-      "slug": "create-cross-medium-reaction",
-      "title": "Cross-Medium Contact Reaction Ladder",
-      "status": "released",
-      "summary": "在稳定写实空间中放入唯一的平面角色，让一次真实—动画接触先建立因果，再通过三段清晰反应逐级升级，最后把不可思议的材质效果落回真实物体。",
-      "manifest_path": "cases/reddit-1vgynd7-chibi-pinch/manifest.json",
-      "summary_path": "cases/reddit-1vgynd7-chibi-pinch/SUMMARY.md",
-      "source_path": "cases/reddit-1vgynd7-chibi-pinch/source.json",
-      "creative_dna_path": "cases/reddit-1vgynd7-chibi-pinch/creative-dna.json",
-      "prompt_paths": {
-        "minimax_h3": "cases/reddit-1vgynd7-chibi-pinch/prompts/minimax-h3.md",
-        "seedance_2_0": "cases/reddit-1vgynd7-chibi-pinch/prompts/seedance-2.0.md"
-      },
-      "preview_paths": {
-        "gif": "cases/reddit-1vgynd7-chibi-pinch/preview.gif",
-        "poster": "cases/reddit-1vgynd7-chibi-pinch/poster.webp",
-        "mp4": "media/reddit-1vgynd7-chibi-pinch/preview.mp4"
-      },
-      "skill_path": "../skills/create-cross-medium-reaction",
-      "models": [
-        "MiniMax H3",
-        "Seedance 2.0"
-      ],
-      "tags": [
-        "mixed-media",
-        "live-action",
-        "2d-character",
-        "locked-camera",
-        "reaction-ladder",
-        "contact-physics"
-      ],
-      "quality_score": 4.693,
-      "updated_at": "2026-08-09T18:06:11+08:00"
-    },
-    {
-      "case_id": "reddit-1vh8jy6-h3-high-card",
-      "slug": "stage-one-signal-reversal",
-      "title": "One Signal Beats Many",
-      "status": "released",
-      "summary": "先让多个嘈杂选项取得表面优势，再由一个克制、清晰的校准信号打断局面，并用可见的物理后果证明“一个正确答案胜过大量堆叠”。",
-      "manifest_path": "cases/reddit-1vh8jy6-h3-high-card/manifest.json",
-      "summary_path": "cases/reddit-1vh8jy6-h3-high-card/SUMMARY.md",
-      "source_path": "cases/reddit-1vh8jy6-h3-high-card/source.json",
-      "creative_dna_path": "cases/reddit-1vh8jy6-h3-high-card/creative-dna.json",
-      "prompt_paths": {
-        "minimax_h3": "cases/reddit-1vh8jy6-h3-high-card/prompts/minimax-h3.md",
-        "seedance_2_0": "cases/reddit-1vh8jy6-h3-high-card/prompts/seedance-2.0.md"
-      },
-      "preview_paths": {
-        "gif": "cases/reddit-1vh8jy6-h3-high-card/preview.gif",
-        "poster": "cases/reddit-1vh8jy6-h3-high-card/poster.webp",
-        "mp4": "media/reddit-1vh8jy6-h3-high-card/preview.mp4"
-      },
-      "skill_path": "../skills/stage-one-signal-reversal",
-      "models": [
-        "MiniMax H3",
-        "Seedance 2.0"
-      ],
-      "tags": [
-        "visual-reversal",
-        "one-versus-many",
-        "calibration",
-        "comparison",
-        "physical-proof",
-        "comedy"
-      ],
-      "quality_score": 4.748,
-      "updated_at": "2026-08-09T18:06:12+08:00"
-    },
-    {
-      "case_id": "reddit-1vhloyz-walter-prompt-guide",
-      "slug": "direct-proof-state-handoff",
-      "title": "Proof-State Camera Handoff",
-      "status": "released",
-      "summary": "用一次紧急干预制造冲突，随后让稳定、可读的物理证据证明风险，最后通过一个有动机的镜头交接，把结尾交给第二人物的简短反应。",
-      "manifest_path": "cases/reddit-1vhloyz-walter-prompt-guide/manifest.json",
-      "summary_path": "cases/reddit-1vhloyz-walter-prompt-guide/SUMMARY.md",
-      "source_path": "cases/reddit-1vhloyz-walter-prompt-guide/source.json",
-      "creative_dna_path": "cases/reddit-1vhloyz-walter-prompt-guide/creative-dna.json",
-      "prompt_paths": {
-        "minimax_h3": "cases/reddit-1vhloyz-walter-prompt-guide/prompts/minimax-h3.md",
-        "seedance_2_0": "cases/reddit-1vhloyz-walter-prompt-guide/prompts/seedance-2.0.md"
-      },
-      "preview_paths": {
-        "gif": "cases/reddit-1vhloyz-walter-prompt-guide/preview.gif",
-        "poster": "cases/reddit-1vhloyz-walter-prompt-guide/poster.webp",
-        "mp4": "media/reddit-1vhloyz-walter-prompt-guide/preview.mp4"
-      },
-      "skill_path": "../skills/direct-proof-state-handoff",
-      "models": [
-        "MiniMax H3",
-        "Seedance 2.0"
-      ],
-      "tags": [
-        "micro-drama",
-        "visual-proof",
-        "camera-handoff",
-        "dialogue",
-        "reaction",
-        "causal-reveal"
-      ],
-      "quality_score": 4.674,
-      "updated_at": "2026-08-09T18:06:12+08:00"
-    },
-    {
       "case_id": "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1",
       "slug": "structure-product-proof-launch",
-      "title": "Flexible Proof-State Product Launch Film",
+      "title": "产品广告｜功能证据递进",
       "status": "released",
-      "summary": "把 15 秒发布片组织成可重排的“证据状态机”：结果、操作、内部机制、最大反差、广度证明与行动收束各自回答一个新的产品问题，并由统一材质、光线和字体系统保持连续性。",
+      "summary": "先给结果，再用多个可见证据逐层证明产品功能，最后收束到行动。",
       "manifest_path": "cases/x-abulu8-2085626141759709286-browser-2085626141759709286-video-1/manifest.json",
       "summary_path": "cases/x-abulu8-2085626141759709286-browser-2085626141759709286-video-1/SUMMARY.md",
       "source_path": "cases/x-abulu8-2085626141759709286-browser-2085626141759709286-video-1/source.json",
@@ -133,17 +28,18 @@
         "mp4": "media/x-abulu8-2085626141759709286-browser-2085626141759709286-video-1/preview.mp4"
       },
       "skill_path": "../skills/structure-product-proof-launch",
+      "template_id": "t8c001-product-proof-state-machine",
+      "template_action": "selector",
       "models": [
         "MiniMax H3",
         "Seedance 2.0"
       ],
       "tags": [
-        "product-launch",
-        "proof-state",
-        "technology-ad",
-        "typography-system",
-        "state-machine",
-        "brand-film"
+        "t8c001",
+        "product",
+        "proof",
+        "state",
+        "machine"
       ],
       "quality_score": 4.837,
       "updated_at": "2026-08-09T15:17:42+08:00"
@@ -151,9 +47,9 @@
     {
       "case_id": "x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1",
       "slug": "animate-fixed-frame-construction",
-      "title": "Layered Field-Guide Illustration Comes Alive",
+      "title": "固定机位｜从线稿生成成品",
       "status": "released",
-      "summary": "在一个固定构图里把创作过程变成可读的因果阶梯：先用低承诺引导线建立几何，再锁定结构、添加材质与语境细节，最后以克制的媒介内动作证明作品已经完成。",
+      "summary": "锁定构图，用不可逆的制作阶段让同一对象从草图逐步成为成品。",
       "manifest_path": "cases/x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1/manifest.json",
       "summary_path": "cases/x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1/SUMMARY.md",
       "source_path": "cases/x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1/source.json",
@@ -168,17 +64,18 @@
         "mp4": "media/x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1/preview.mp4"
       },
       "skill_path": "../skills/animate-fixed-frame-construction",
+      "template_id": "t8c002-fixed-composition-medium-ladder",
+      "template_action": "selector",
       "models": [
         "MiniMax H3",
         "Seedance 2.0"
       ],
       "tags": [
-        "fixed-frame",
-        "layered-construction",
-        "illustration",
-        "process-reveal",
-        "material-finish",
-        "micro-motion"
+        "t8c002",
+        "fixed",
+        "composition",
+        "medium",
+        "ladder"
       ],
       "quality_score": 4.76,
       "updated_at": "2026-08-09T14:40:50+08:00"
@@ -186,9 +83,9 @@
     {
       "case_id": "x-godofprompt-2086142925063516348-browser-2086142925063516348-video-1",
       "slug": "choreograph-anomaly-materialization",
-      "title": "Luminous Anomaly Materialization Loop",
+      "title": "形态奇观｜平面升级到现实",
       "status": "released",
-      "summary": "让一个低信息量的小异常沿单一载体连续生长：从平面痕迹变为空间形体，再变成体积材质；接触峰值把视觉语法传播到环境锚点，随后异常收缩为接近开场位置的残留。",
+      "summary": "同一载体从平面、空间、体积一路升级到环境峰值，再回到原位留下残留。",
       "manifest_path": "cases/x-godofprompt-2086142925063516348-browser-2086142925063516348-video-1/manifest.json",
       "summary_path": "cases/x-godofprompt-2086142925063516348-browser-2086142925063516348-video-1/SUMMARY.md",
       "source_path": "cases/x-godofprompt-2086142925063516348-browser-2086142925063516348-video-1/source.json",
@@ -203,17 +100,17 @@
         "mp4": "media/x-godofprompt-2086142925063516348-browser-2086142925063516348-video-1/preview.mp4"
       },
       "skill_path": "../skills/choreograph-anomaly-materialization",
+      "template_id": "t8c003-dimensional-carrier-loop",
+      "template_action": "selector",
       "models": [
         "MiniMax H3",
         "Seedance 2.0"
       ],
       "tags": [
-        "materialization",
-        "anomaly",
-        "vfx",
-        "carrier-motion",
-        "environment-spread",
-        "residue-loop"
+        "t8c003",
+        "dimensional",
+        "carrier",
+        "loop"
       ],
       "quality_score": 4.737,
       "updated_at": "2026-08-09T16:10:42+08:00"
@@ -221,9 +118,9 @@
     {
       "case_id": "x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1",
       "slug": "build-earned-arrival-journey",
-      "title": "Backstage-to-Stage Continuous Journey",
+      "title": "人物旅程｜从困境走向目标",
       "status": "released",
-      "summary": "用一个稳定可识别的人物作为情感坐标，通过真实物体、障碍与协作者推动路线，让空间从压迫逐步扩展到明亮目标，并用一项完成任务的物理动作证明到达。",
+      "summary": "让人物从可见困境出发，经过连续物理过渡，抵达目标并完成动作。",
       "manifest_path": "cases/x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1/manifest.json",
       "summary_path": "cases/x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1/SUMMARY.md",
       "source_path": "cases/x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1/source.json",
@@ -238,27 +135,136 @@
         "mp4": "media/x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1/preview.mp4"
       },
       "skill_path": "../skills/build-earned-arrival-journey",
+      "template_id": "t8c004-pressure-to-goal-journey",
+      "template_action": "selector",
       "models": [
         "MiniMax H3",
         "Seedance 2.0"
       ],
       "tags": [
-        "continuous-journey",
-        "earned-arrival",
-        "environmental-storytelling",
-        "parallax",
-        "threshold",
-        "human-anchor"
+        "t8c004",
+        "pressure",
+        "to",
+        "goal",
+        "journey"
       ],
       "quality_score": 4.796,
       "updated_at": "2026-08-09T15:12:52+08:00"
     },
     {
+      "case_id": "reddit-1vgynd7-chibi-pinch",
+      "slug": "create-cross-medium-reaction",
+      "title": "二维角色｜真人接触三级反应",
+      "status": "released",
+      "summary": "真实世界一次接触触发平面角色的三级反应，并以媒介自身的变化收尾。",
+      "manifest_path": "cases/reddit-1vgynd7-chibi-pinch/manifest.json",
+      "summary_path": "cases/reddit-1vgynd7-chibi-pinch/SUMMARY.md",
+      "source_path": "cases/reddit-1vgynd7-chibi-pinch/source.json",
+      "creative_dna_path": "cases/reddit-1vgynd7-chibi-pinch/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/reddit-1vgynd7-chibi-pinch/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/reddit-1vgynd7-chibi-pinch/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/reddit-1vgynd7-chibi-pinch/preview.gif",
+        "poster": "cases/reddit-1vgynd7-chibi-pinch/poster.webp",
+        "mp4": "media/reddit-1vgynd7-chibi-pinch/preview.mp4"
+      },
+      "skill_path": "../skills/create-cross-medium-reaction",
+      "template_id": "t8c005-cross-medium-contact-reaction",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "t8c005",
+        "cross",
+        "medium",
+        "contact",
+        "reaction"
+      ],
+      "quality_score": 4.693,
+      "updated_at": "2026-08-09T18:06:11+08:00"
+    },
+    {
+      "case_id": "reddit-1vh8jy6-h3-high-card",
+      "slug": "stage-one-signal-reversal",
+      "title": "一对多反转｜单一证据胜出",
+      "status": "released",
+      "summary": "多个喧闹方案看似占优，单一克制信号通过校准和物理证明完成反转。",
+      "manifest_path": "cases/reddit-1vh8jy6-h3-high-card/manifest.json",
+      "summary_path": "cases/reddit-1vh8jy6-h3-high-card/SUMMARY.md",
+      "source_path": "cases/reddit-1vh8jy6-h3-high-card/source.json",
+      "creative_dna_path": "cases/reddit-1vh8jy6-h3-high-card/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/reddit-1vh8jy6-h3-high-card/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/reddit-1vh8jy6-h3-high-card/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/reddit-1vh8jy6-h3-high-card/preview.gif",
+        "poster": "cases/reddit-1vh8jy6-h3-high-card/poster.webp",
+        "mp4": "media/reddit-1vh8jy6-h3-high-card/preview.mp4"
+      },
+      "skill_path": "../skills/stage-one-signal-reversal",
+      "template_id": "t8c006-clarity-over-quantity-reversal",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "t8c006",
+        "clarity",
+        "over",
+        "quantity",
+        "reversal"
+      ],
+      "quality_score": 4.748,
+      "updated_at": "2026-08-09T18:06:12+08:00"
+    },
+    {
+      "case_id": "reddit-1vhloyz-walter-prompt-guide",
+      "slug": "direct-proof-state-handoff",
+      "title": "风险揭晓｜证据交给人物反应",
+      "status": "released",
+      "summary": "一次干预阻止风险，可读证据随后由有动机的镜头交接给人物反应。",
+      "manifest_path": "cases/reddit-1vhloyz-walter-prompt-guide/manifest.json",
+      "summary_path": "cases/reddit-1vhloyz-walter-prompt-guide/SUMMARY.md",
+      "source_path": "cases/reddit-1vhloyz-walter-prompt-guide/source.json",
+      "creative_dna_path": "cases/reddit-1vhloyz-walter-prompt-guide/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/reddit-1vhloyz-walter-prompt-guide/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/reddit-1vhloyz-walter-prompt-guide/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/reddit-1vhloyz-walter-prompt-guide/preview.gif",
+        "poster": "cases/reddit-1vhloyz-walter-prompt-guide/poster.webp",
+        "mp4": "media/reddit-1vhloyz-walter-prompt-guide/preview.mp4"
+      },
+      "skill_path": "../skills/direct-proof-state-handoff",
+      "template_id": "t8c007-proof-object-reaction-handoff",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "t8c007",
+        "proof",
+        "object",
+        "reaction",
+        "handoff"
+      ],
+      "quality_score": 4.674,
+      "updated_at": "2026-08-09T18:06:12+08:00"
+    },
+    {
       "case_id": "x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1",
       "slug": "escalate-evidence-into-reality",
-      "title": "Evidence Ladder Crosses into Reality",
+      "title": "未来证据｜异常闯入现实",
       "status": "released",
-      "summary": "让稳定现实与一个有边界的证据载体产生可核对矛盾；载体沿同一变量连续更新两次，现实暂时保持不变，直到最终状态跨出边界并留下清晰的物理结果。",
+      "summary": "稳定现实中，同一证据载体连续更新，最后异常内容延迟跨入现实。",
       "manifest_path": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/manifest.json",
       "summary_path": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/SUMMARY.md",
       "source_path": "cases/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/source.json",
@@ -273,17 +279,26 @@
         "mp4": "media/x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1/preview.mp4"
       },
       "skill_path": "../skills/escalate-evidence-into-reality",
-      "models": ["MiniMax H3", "Seedance 2.0"],
-      "tags": ["evidence-ladder", "boundary-crossing", "reality-payoff", "negative-space", "carrier-update", "causal-escalation"],
+      "template_id": "t8-case-evidence-ladder-reality-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "evidence",
+        "ladder",
+        "reality"
+      ],
       "quality_score": 4.712,
       "updated_at": "2026-08-10T00:41:40+08:00"
     },
     {
       "case_id": "x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1",
       "slug": "stage-threshold-inspection-passage",
-      "title": "Threshold-to-Passage Field Inspection",
+      "title": "第一视角探险｜穿越后巡检",
       "status": "released",
-      "summary": "先用远景锁定一个有后果的入口，一次剪辑跨过阈值，再以连续跟随建立身体可感的通行；一个局部材料信号打断前进，检查后只展示可见路线状态，不虚构诊断。",
+      "summary": "从入口跨过阈值后连续通行，局部检查异常，再给出可见但不武断的路线终态。",
       "manifest_path": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/manifest.json",
       "summary_path": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/SUMMARY.md",
       "source_path": "cases/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/source.json",
@@ -298,17 +313,26 @@
         "mp4": "media/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/preview.mp4"
       },
       "skill_path": "../skills/stage-threshold-inspection-passage",
-      "models": ["MiniMax H3", "Seedance 2.0"],
-      "tags": ["threshold", "continuous-passage", "field-inspection", "material-cue", "camera-continuity", "uncertainty"],
+      "template_id": "t8-case-threshold-inspection-passage-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "threshold",
+        "inspection",
+        "passage"
+      ],
       "quality_score": 4.613,
       "updated_at": "2026-08-10T00:53:58+08:00"
     },
     {
       "case_id": "x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1",
       "slug": "direct-imperfect-memory-farewell",
-      "title": "Imperfect-Memory Farewell Take",
+      "title": "复古手持｜日常送别回眸",
       "status": "released",
-      "summary": "让不完美的连续观察者迟一步发现正在做日常小事的主体；一个外部信号改变目标，临近离场时只回应摄影者一次，再以有动机的录制失误结束这段私人记忆。",
+      "summary": "观察者先发现人物日常，外部信号改变人物目标，一次回应后以有动机的拍摄失误结束。",
       "manifest_path": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/manifest.json",
       "summary_path": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/SUMMARY.md",
       "source_path": "cases/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/source.json",
@@ -323,10 +347,606 @@
         "mp4": "media/x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1/preview.mp4"
       },
       "skill_path": "../skills/direct-imperfect-memory-farewell",
-      "models": ["MiniMax H3", "Seedance 2.0"],
-      "tags": ["one-take", "observer-presence", "routine", "external-cue", "late-acknowledgment", "imperfect-memory"],
+      "template_id": "t8-case-imperfect-memory-farewell-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "imperfect",
+        "memory",
+        "farewell"
+      ],
       "quality_score": 4.736,
       "updated_at": "2026-08-10T00:53:28+08:00"
+    },
+    {
+      "case_id": "x-decat2025-2086476172783759520-browser-2086476172783759520-video-1",
+      "slug": "stage-deadpan-chain-failure",
+      "title": "反差喜剧｜越从容越失控",
+      "status": "released",
+      "summary": "正式场合中连锁失控不断升级，但主体始终镇定，反差本身构成笑点。",
+      "manifest_path": "cases/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/manifest.json",
+      "summary_path": "cases/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/SUMMARY.md",
+      "source_path": "cases/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/source.json",
+      "creative_dna_path": "cases/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/preview.gif",
+        "poster": "cases/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/poster.webp",
+        "mp4": "media/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-deadpan-chain-failure",
+      "template_id": "t8-case-deadpan-chain-failure-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "deadpan",
+        "chain",
+        "failure"
+      ],
+      "quality_score": 4.655,
+      "updated_at": "2026-08-10T04:07:39+08:00"
+    },
+    {
+      "case_id": "x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1",
+      "slug": "activate-layered-character-dossier",
+      "title": "人物档案｜能力逐层点亮",
+      "status": "released",
+      "summary": "固定档案界面不换主体，按身份、诊断、能力、工具和待命状态逐层激活。",
+      "manifest_path": "cases/x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1/manifest.json",
+      "summary_path": "cases/x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1/SUMMARY.md",
+      "source_path": "cases/x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1/source.json",
+      "creative_dna_path": "cases/x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1/preview.gif",
+        "poster": "cases/x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1/poster.webp",
+        "mp4": "media/x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/activate-layered-character-dossier",
+      "template_id": "t8-case-layered-dossier-activation-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "layered",
+        "dossier",
+        "activation"
+      ],
+      "quality_score": 4.641,
+      "updated_at": "2026-08-10T04:07:39+08:00"
+    },
+    {
+      "case_id": "x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1",
+      "slug": "animate-created-mark-into-world",
+      "title": "画中物成真｜小光点变奇观",
+      "status": "released",
+      "summary": "被创作的小标记获得自主性，跨出实体边界，扩张并改变真实环境。",
+      "manifest_path": "cases/x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1/manifest.json",
+      "summary_path": "cases/x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1/SUMMARY.md",
+      "source_path": "cases/x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1/source.json",
+      "creative_dna_path": "cases/x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1/preview.gif",
+        "poster": "cases/x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1/poster.webp",
+        "mp4": "media/x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/animate-created-mark-into-world",
+      "template_id": "t8-case-created-mark-boundary-crossing-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "created",
+        "mark",
+        "boundary",
+        "crossing"
+      ],
+      "quality_score": 4.663,
+      "updated_at": "2026-08-10T04:07:39+08:00"
+    },
+    {
+      "case_id": "x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1",
+      "slug": "use-material-as-progress-clock",
+      "title": "工艺过程｜材料覆盖当进度",
+      "status": "released",
+      "summary": "同一工艺物保持连续，用只增不减的材料变量作为清晰进度钟。",
+      "manifest_path": "cases/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/manifest.json",
+      "summary_path": "cases/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/SUMMARY.md",
+      "source_path": "cases/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/source.json",
+      "creative_dna_path": "cases/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/preview.gif",
+        "poster": "cases/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/poster.webp",
+        "mp4": "media/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/use-material-as-progress-clock",
+      "template_id": "t8-case-material-progress-clock-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "material",
+        "progress",
+        "clock"
+      ],
+      "quality_score": 4.622,
+      "updated_at": "2026-08-10T04:07:39+08:00"
+    },
+    {
+      "case_id": "x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1",
+      "slug": "stage-progressive-character-reveal",
+      "title": "角色登场｜细节到全身揭晓",
+      "status": "released",
+      "summary": "从标志细节开始，逐层扩展到面部、动作和全身英雄定格。",
+      "manifest_path": "cases/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/manifest.json",
+      "summary_path": "cases/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/SUMMARY.md",
+      "source_path": "cases/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/source.json",
+      "creative_dna_path": "cases/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/preview.gif",
+        "poster": "cases/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/poster.webp",
+        "mp4": "media/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-progressive-character-reveal",
+      "template_id": "t8-case-staged-character-reveal-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "staged",
+        "character",
+        "reveal"
+      ],
+      "quality_score": 4.601,
+      "updated_at": "2026-08-10T04:07:39+08:00"
+    },
+    {
+      "case_id": "x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1",
+      "slug": "prove-mechanical-convoy-follow",
+      "title": "机械同行｜启动后稳定伴行",
+      "status": "released",
+      "summary": "装置启动并达到阈值后带动负载，连续镜头证明它确实稳定跟随。",
+      "manifest_path": "cases/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/manifest.json",
+      "summary_path": "cases/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/SUMMARY.md",
+      "source_path": "cases/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/source.json",
+      "creative_dna_path": "cases/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/preview.gif",
+        "poster": "cases/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/poster.webp",
+        "mp4": "media/x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/prove-mechanical-convoy-follow",
+      "template_id": "t8-case-mechanical-convoy-proof-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "mechanical",
+        "convoy",
+        "proof"
+      ],
+      "quality_score": 4.702,
+      "updated_at": "2026-08-10T04:07:39+08:00"
+    },
+    {
+      "case_id": "x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1",
+      "slug": "reconstruct-flat-geometry-poster",
+      "title": "平面重组｜几何节奏品牌片",
+      "status": "released",
+      "summary": "稳定剪影与几何母题被反复拆解重组，在高密阶段后短暂停顿并收束为既有图形族。",
+      "manifest_path": "cases/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/manifest.json",
+      "summary_path": "cases/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/SUMMARY.md",
+      "source_path": "cases/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/source.json",
+      "creative_dna_path": "cases/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/preview.gif",
+        "poster": "cases/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/poster.webp",
+        "mp4": "media/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/reconstruct-flat-geometry-poster",
+      "template_id": "t8-case-flat-geometry-reconstruction-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "flat",
+        "geometry",
+        "reconstruction"
+      ],
+      "quality_score": 4.619,
+      "updated_at": "2026-08-10T04:07:39+08:00"
+    },
+    {
+      "case_id": "x-soranlan-2086461295818084617-browser-2086461295818084617-video-1",
+      "slug": "contract-scale-into-evidence",
+      "title": "景别收紧｜从世界到眼神",
+      "status": "released",
+      "summary": "景别从宏大环境逐步收紧，按人物、局部发现、自有装置和眼神反应形成证据漏斗。",
+      "manifest_path": "cases/x-soranlan-2086461295818084617-browser-2086461295818084617-video-1/manifest.json",
+      "summary_path": "cases/x-soranlan-2086461295818084617-browser-2086461295818084617-video-1/SUMMARY.md",
+      "source_path": "cases/x-soranlan-2086461295818084617-browser-2086461295818084617-video-1/source.json",
+      "creative_dna_path": "cases/x-soranlan-2086461295818084617-browser-2086461295818084617-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-soranlan-2086461295818084617-browser-2086461295818084617-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-soranlan-2086461295818084617-browser-2086461295818084617-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-soranlan-2086461295818084617-browser-2086461295818084617-video-1/preview.gif",
+        "poster": "cases/x-soranlan-2086461295818084617-browser-2086461295818084617-video-1/poster.webp",
+        "mp4": "media/x-soranlan-2086461295818084617-browser-2086461295818084617-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/contract-scale-into-evidence",
+      "template_id": "t8-case-scale-contraction-evidence-funnel-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "scale",
+        "contraction",
+        "evidence",
+        "funnel"
+      ],
+      "quality_score": 4.655,
+      "updated_at": "2026-08-10T11:35:09+08:00"
+    },
+    {
+      "case_id": "x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1",
+      "slug": "verify-recurring-identity-board",
+      "title": "角色卡验真｜四类证据锁定角色",
+      "status": "released",
+      "summary": "固定角色卡反复出现，用姿态、操作、步态和面部四类不同证据验证同一身份。",
+      "manifest_path": "cases/x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1/manifest.json",
+      "summary_path": "cases/x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1/SUMMARY.md",
+      "source_path": "cases/x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1/source.json",
+      "creative_dna_path": "cases/x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1/preview.gif",
+        "poster": "cases/x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1/poster.webp",
+        "mp4": "media/x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/verify-recurring-identity-board",
+      "template_id": "t8-case-recurring-identity-board-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "recurring",
+        "identity",
+        "board"
+      ],
+      "quality_score": 4.622,
+      "updated_at": "2026-08-10T11:35:08+08:00"
+    },
+    {
+      "case_id": "x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1",
+      "slug": "reconstruct-flat-geometry-poster",
+      "title": "平面重组｜纸艺无障碍示例",
+      "status": "released",
+      "summary": "同一平面重组机制的纸艺无障碍说明变体；用于扩展证据，不新增下拉选项。",
+      "manifest_path": "cases/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/manifest.json",
+      "summary_path": "cases/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/SUMMARY.md",
+      "source_path": "cases/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/source.json",
+      "creative_dna_path": "cases/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/preview.gif",
+        "poster": "cases/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/poster.webp",
+        "mp4": "media/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/reconstruct-flat-geometry-poster",
+      "template_id": "t8-case-flat-geometry-reconstruction-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "flat",
+        "geometry",
+        "reconstruction"
+      ],
+      "quality_score": 4.708,
+      "updated_at": "2026-08-10T11:35:09+08:00"
+    },
+    {
+      "case_id": "x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1",
+      "slug": "prove-dual-system-convergence",
+      "title": "双系统碰撞｜同时证明两种规则",
+      "status": "released",
+      "summary": "先分别建立两个对立系统的独立规则，再让它们一次汇聚形成持久第三状态。",
+      "manifest_path": "cases/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/manifest.json",
+      "summary_path": "cases/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/SUMMARY.md",
+      "source_path": "cases/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/source.json",
+      "creative_dna_path": "cases/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/preview.gif",
+        "poster": "cases/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/poster.webp",
+        "mp4": "media/x-airina-xyz-2086404681480233236-browser-2086404681480233236-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/prove-dual-system-convergence",
+      "template_id": "t8-case-dual-system-convergence-proof-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "dual",
+        "system",
+        "convergence",
+        "proof"
+      ],
+      "quality_score": 4.721,
+      "updated_at": "2026-08-10T11:35:08+08:00"
+    },
+    {
+      "case_id": "x-decat2025-2086379637874078201-browser-2086379637874078201-video-1",
+      "slug": "alternate-obstacles-toward-goal",
+      "title": "单目标逃生｜前后灾害交替逼近",
+      "status": "released",
+      "summary": "终点始终可读，身后封闭与前方危险交替出现，以一次恢复和近失结果证明推进能力。",
+      "manifest_path": "cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/manifest.json",
+      "summary_path": "cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/SUMMARY.md",
+      "source_path": "cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/source.json",
+      "creative_dna_path": "cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/preview.gif",
+        "poster": "cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/poster.webp",
+        "mp4": "media/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/alternate-obstacles-toward-goal",
+      "template_id": "t8-case-alternating-obstacle-goal-corridor-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "alternating",
+        "obstacle",
+        "goal",
+        "corridor"
+      ],
+      "quality_score": 4.705,
+      "updated_at": "2026-08-10T11:35:08+08:00"
+    },
+    {
+      "case_id": "x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1",
+      "slug": "stage-calm-dense-delayed-finish",
+      "title": "对决节奏｜静止密战一击定局",
+      "status": "released",
+      "summary": "先安静建立，进入连续密集交换，再用一次决定性干预、短暂假稳定和延迟结果终结。",
+      "manifest_path": "cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/manifest.json",
+      "summary_path": "cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/SUMMARY.md",
+      "source_path": "cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/source.json",
+      "creative_dna_path": "cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/preview.gif",
+        "poster": "cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/poster.webp",
+        "mp4": "media/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-calm-dense-delayed-finish",
+      "template_id": "t8-case-calm-dense-decisive-delay-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "calm",
+        "dense",
+        "decisive",
+        "delay"
+      ],
+      "quality_score": 4.698,
+      "updated_at": "2026-08-10T11:35:08+08:00"
+    },
+    {
+      "case_id": "x-decat2025-2086287667948396933-browser-2086287667948396933-video-1",
+      "slug": "collapse-route-after-threshold",
+      "title": "路线坍塌｜安全空间逐段消失",
+      "status": "released",
+      "summary": "主体只朝固定终点前进，走过的路线单调消失，完全跨过阈值后最后连接才断开。",
+      "manifest_path": "cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/manifest.json",
+      "summary_path": "cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/SUMMARY.md",
+      "source_path": "cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/source.json",
+      "creative_dna_path": "cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/preview.gif",
+        "poster": "cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/poster.webp",
+        "mp4": "media/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/collapse-route-after-threshold",
+      "template_id": "t8-case-monotonic-route-loss-threshold-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "monotonic",
+        "route",
+        "loss",
+        "threshold"
+      ],
+      "quality_score": 4.74,
+      "updated_at": "2026-08-10T11:35:08+08:00"
+    },
+    {
+      "case_id": "x-decat2025-2086134168992236013-browser-2086134168992236013-video-1",
+      "slug": "reveal-nested-counterpart",
+      "title": "程序错位｜扫描到实物双确认",
+      "status": "released",
+      "summary": "超尺度主体认真执行熟悉程序，扫描先揭示嵌套对象，随后同一对象实体出现完成双确认。",
+      "manifest_path": "cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/manifest.json",
+      "summary_path": "cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/SUMMARY.md",
+      "source_path": "cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/source.json",
+      "creative_dna_path": "cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/preview.gif",
+        "poster": "cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/poster.webp",
+        "mp4": "media/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/reveal-nested-counterpart",
+      "template_id": "t8-case-procedure-mismatch-nested-proof-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "procedure",
+        "mismatch",
+        "nested",
+        "proof"
+      ],
+      "quality_score": 4.663,
+      "updated_at": "2026-08-10T11:35:09+08:00"
+    },
+    {
+      "case_id": "x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1",
+      "slug": "link-skills-with-base-loop",
+      "title": "技能展示｜基础动作串联升级",
+      "status": "released",
+      "summary": "持续基础动作连接逐级高级技能，每个机位只证明一种运动，峰值后回到基础循环。",
+      "manifest_path": "cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/manifest.json",
+      "summary_path": "cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/SUMMARY.md",
+      "source_path": "cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/source.json",
+      "creative_dna_path": "cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/preview.gif",
+        "poster": "cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/poster.webp",
+        "mp4": "media/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/link-skills-with-base-loop",
+      "template_id": "t8-case-base-loop-skill-ladder-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "base",
+        "loop",
+        "skill",
+        "ladder"
+      ],
+      "quality_score": 4.683,
+      "updated_at": "2026-08-10T11:35:08+08:00"
+    },
+    {
+      "case_id": "x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1",
+      "slug": "stage-one-external-miniature-intervention",
+      "title": "微缩介入｜外部物只进入一次",
+      "status": "released",
+      "summary": "静态标准物先校准微缩尺度，内部日常稳定后，不同外部执行物只进入一次并改变局部状态。",
+      "manifest_path": "cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/manifest.json",
+      "summary_path": "cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/SUMMARY.md",
+      "source_path": "cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/source.json",
+      "creative_dna_path": "cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/preview.gif",
+        "poster": "cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/poster.webp",
+        "mp4": "media/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-one-external-miniature-intervention",
+      "template_id": "t8-case-inert-scale-active-intervention-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "inert",
+        "scale",
+        "active",
+        "intervention"
+      ],
+      "quality_score": 4.686,
+      "updated_at": "2026-08-10T11:35:08+08:00"
     }
   ]
 }

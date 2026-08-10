@@ -2,12 +2,12 @@
   "schema_version": "public-case/v1",
   "case_id": "x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1",
   "slug": "build-earned-arrival-journey",
-  "title": "Backstage-to-Stage Continuous Journey",
+  "title": "人物旅程｜从困境走向目标",
   "source_title": "X creative video by @iamahmedfaraz66",
-  "summary": "用一个稳定可识别的人物作为情感坐标，通过真实物体、障碍与协作者推动路线，让空间从压迫逐步扩展到明亮目标，并用一项完成任务的物理动作证明到达。",
+  "summary": "让人物从可见困境出发，经过连续物理过渡，抵达目标并完成动作。",
   "status": "released",
-  "source_duration_seconds": 15.116,
-  "target_duration_seconds": 15,
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
   "models": [
     "MiniMax H3",
     "Seedance 2.0"
@@ -35,13 +35,23 @@
     "poster": "available",
     "mp4": "available_in_electron_media_pack"
   },
+  "template_id": "t8c004-pressure-to-goal-journey",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "人物困境 + 可见目标空间 + 3个物理过渡 + 抵达后的完成动作",
+  "recommended_input": "疲惫的钟表匠被困在地下维修间，远处钟塔是目标；他穿过狭窄管道、升降平台和风雨屋顶，抵达后重新启动大钟。",
+  "required_anchors": [
+    "起点困境明确",
+    "目标空间提前可见或可理解",
+    "至少三个连续物理过渡",
+    "抵达后完成目标动作"
+  ],
   "tags": [
-    "continuous-journey",
-    "earned-arrival",
-    "environmental-storytelling",
-    "parallax",
-    "threshold",
-    "human-anchor"
+    "t8c004",
+    "pressure",
+    "to",
+    "goal",
+    "journey"
   ],
   "quality": {
     "weighted_score": 4.796,

@@ -1,0 +1,175 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Build a flat poster world around one dominant geometric motif and one stable protagonist silhouette. Repeatedly fracture and reconstruct the layout through hard-edged crops, diagrams, negative space and key states; peak information density before a short contrastive operational tableau, then resolve established graphic families into one original closing system.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one dominant motif and stable silhouette immediately.",
+      "purpose": "Creates anchors for later fragmentation.",
+      "ablation_failure": "Without anchors the result becomes random collage.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep spatial behavior flat while graphic planes transform.",
+      "purpose": "Protects editorial motion-graphics identity.",
+      "ablation_failure": "Realistic depth weakens the designed system.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use symbolic key states rather than continuous realistic action.",
+      "purpose": "Lets composition carry motion.",
+      "ablation_failure": "Full choreography competes with the graphic transitions.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Peak density before one quieter contrast state.",
+      "purpose": "Creates acceleration and a readable breath.",
+      "ablation_failure": "Uniform density removes rhythm.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Resolve only established graphic families into the endpoint.",
+      "purpose": "Turns montage energy into closure.",
+      "ablation_failure": "An unrelated logo or fade does not resolve the system.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject or system whose identity remains stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One visible variable that changes in countable causal stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained behavior rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting state changes."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "short-haired woman wielding a long blade",
+    "red black white city poster palette",
+    "wide-brim opposing figure inside a red ring",
+    "the source slash montage and exact final disc composition"
+  ],
+  "instantiations": [
+    {
+      "concept": "A tactile paper-cut accessibility explainer centers a folded-corridor motif and evacuation-chair silhouette, rebuilds hinged floor-plan states, pauses on an empty blocked landing and folds all established paper strips into an accessible route badge.",
+      "prompt_seed": "Paper-cut accessibility route system with hinged planar transitions and a four-part information rhythm."
+    },
+    {
+      "concept": "An analog music sequencer ident centers a punched-disc motif and mechanical stylus silhouette, rebuilds rhythm lanes and mute states, pauses on an empty locked groove and resolves into a playable loop marker.",
+      "prompt_seed": "Flat analog music system driven by material punch patterns rather than environmental maps."
+    },
+    {
+      "concept": "A woven meteorology card centers a braided isobar motif and sensor-kite silhouette, rethreads wind states, pauses on a blank storm latch and knots established fibers into a route forecast seal.",
+      "prompt_seed": "Woven flat-motion weather ident with thread tension and a non-digital contrast state."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without anchors the result becomes random collage.",
+      "repair": "Establish one dominant motif and stable silhouette immediately."
+    },
+    {
+      "failure": "Realistic depth weakens the designed system.",
+      "repair": "Keep spatial behavior flat while graphic planes transform."
+    },
+    {
+      "failure": "Full choreography competes with the graphic transitions.",
+      "repair": "Use symbolic key states rather than continuous realistic action."
+    },
+    {
+      "failure": "Uniform density removes rhythm.",
+      "repair": "Peak density before one quieter contrast state."
+    },
+    {
+      "failure": "An unrelated logo or fade does not resolve the system.",
+      "repair": "Resolve only established graphic families into the endpoint."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A tactile paper-cut accessibility explainer centers a folded-corridor motif and evacuation-chair silhouette, rebuilds hinged floor-plan states, pauses on an empty blocked landing and folds all established paper strips into an accessible route badge.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An analog music sequencer ident centers a punched-disc motif and mechanical stylus silhouette, rebuilds rhythm lanes and mute states, pauses on an empty locked groove and resolves into a playable loop marker.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

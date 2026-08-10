@@ -2,12 +2,12 @@
   "schema_version": "public-case/v1",
   "case_id": "reddit-1vhloyz-walter-prompt-guide",
   "slug": "direct-proof-state-handoff",
-  "title": "Proof-State Camera Handoff",
+  "title": "风险揭晓｜证据交给人物反应",
   "source_title": "Walter White and the MiniMax H3 official prompting guide",
-  "summary": "用一次紧急干预制造冲突，随后让稳定、可读的物理证据证明风险，最后通过一个有动机的镜头交接，把结尾交给第二人物的简短反应。",
+  "summary": "一次干预阻止风险，可读证据随后由有动机的镜头交接给人物反应。",
   "status": "released",
   "source_duration_seconds": 14.42,
-  "target_duration_seconds": 15,
+  "target_duration_seconds": 15.0,
   "models": [
     "MiniMax H3",
     "Seedance 2.0"
@@ -35,13 +35,23 @@
     "poster": "available",
     "mp4": "available_in_electron_media_pack"
   },
+  "template_id": "t8c007-proof-object-reaction-handoff",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "紧急干预 + 隐藏风险 + 可视证据 + 有动机镜头交接 + 简短反应",
+  "recommended_input": "实验员拦住同伴触碰容器，紫外光显出内部裂纹；镜头沿容器反光移交到同伴面部，他安静地收回手并点头。",
+  "required_anchors": [
+    "先有干预冲突",
+    "风险通过可视证据证明",
+    "镜头交接有物理动机",
+    "反应简短且改变后续行为"
+  ],
   "tags": [
-    "micro-drama",
-    "visual-proof",
-    "camera-handoff",
-    "dialogue",
+    "t8c007",
+    "proof",
+    "object",
     "reaction",
-    "causal-reveal"
+    "handoff"
   ],
   "quality": {
     "weighted_score": 4.674,

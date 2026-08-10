@@ -1,7 +1,4 @@
 {
-  "schema_version": "public-creative-dna/v1",
-  "case_id": "x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1",
-  "title": "Layered Field-Guide Illustration Comes Alive",
   "complexity": "moderate",
   "mechanism": "A fixed composition turns creation into a readable causal ladder: low-commitment guides establish geometry, committed structure locks it, material finish adds specificity, contextual details certify completion, and one restrained in-medium motion supplies the final surprise.",
   "invariants": [
@@ -9,25 +6,43 @@
       "id": "inv-01",
       "rule": "Lock the camera and reserve stable spatial zones before any marks appear.",
       "purpose": "Makes every later change comparable and cumulative.",
-      "ablation_failure": "If framing or layout drifts, the viewer reads a montage of replacements instead of one object making itself."
+      "ablation_failure": "If framing or layout drifts, the viewer reads a montage of replacements instead of one object making itself.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-07"
+      ]
     },
     {
       "id": "inv-02",
       "rule": "Progress from low-commitment guides to committed structure to material colour or finish.",
       "purpose": "Creates a legible hierarchy of decisions rather than random simultaneous growth.",
-      "ablation_failure": "If finish arrives before structure, the transformation becomes visual noise and loses causal clarity."
+      "ablation_failure": "If finish arrives before structure, the transformation becomes visual noise and loses causal clarity.",
+      "evidence_ids": [
+        "beat-01",
+        "beat-02",
+        "beat-03"
+      ]
     },
     {
       "id": "inv-03",
       "rule": "Delay secondary labels, studies or context until the hero form is already readable.",
       "purpose": "Extends retention without competing with the main reveal.",
-      "ablation_failure": "If every region activates at once, attention fragments and no milestone feels complete."
+      "ablation_failure": "If every region activates at once, attention fragments and no milestone feels complete.",
+      "evidence_ids": [
+        "beat-03",
+        "beat-04",
+        "obs-11"
+      ]
     },
     {
       "id": "inv-04",
       "rule": "End with one subtle motion that remains faithful to the finished medium while the support stays inert.",
       "purpose": "Adds an impossible payoff without breaking the artifact illusion.",
-      "ablation_failure": "Large three-dimensional motion or support movement turns the elegant category break into an unrelated VFX gag."
+      "ablation_failure": "Large three-dimensional motion or support movement turns the elegant category break into an unrelated VFX gag.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-15"
+      ]
     }
   ],
   "slots": [

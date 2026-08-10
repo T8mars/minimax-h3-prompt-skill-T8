@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1",
+  "slug": "stage-calm-dense-delayed-finish",
+  "title": "对决节奏｜静止密战一击定局",
+  "source_title": "X creative video by @CharaspowerAI",
+  "summary": "先安静建立，进入连续密集交换，再用一次决定性干预、短暂假稳定和延迟结果终结。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-calm-dense-delayed-finish",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-calm-dense-decisive-delay-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "两个主体/系统 + 可读静止 + 连续密集交换 + 一次决定性干预 + 短暂假稳定 + 延迟结果",
+  "recommended_input": "两组动力雕塑先静止对峙，随后连续交换高速磁片；其中一组只做一次反向脉冲，场面短暂恢复平静，数秒后对方结构延迟塌落。",
+  "required_anchors": [
+    "安静建立可读",
+    "中段交换连续且高密",
+    "决定性干预只有一次",
+    "假稳定后才出现不可逆结果"
+  ],
+  "tags": [
+    "calm",
+    "dense",
+    "decisive",
+    "delay"
+  ],
+  "quality": {
+    "weighted_score": 4.698,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T09:55:26+08:00",
+  "updated_at": "2026-08-10T11:35:08+08:00"
+}

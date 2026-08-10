@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-decat2025-2086476172783759520-browser-2086476172783759520-video-1",
+  "slug": "stage-deadpan-chain-failure",
+  "title": "反差喜剧｜越从容越失控",
+  "source_title": "X creative video by @DeCat2025",
+  "summary": "正式场合中连锁失控不断升级，但主体始终镇定，反差本身构成笑点。",
+  "status": "released",
+  "source_duration_seconds": 10.10068,
+  "target_duration_seconds": 10.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-deadpan-chain-failure",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2086476172783759520-browser-2086476172783759520-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-deadpan-chain-failure-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "正式场合 + 附着负担 + 至少2次连锁后果 + 可见失效 + 主体始终从容",
+  "recommended_input": "糕点师在颁奖展示中背着巨大的糖艺帆，帆先扫倒装饰塔，再扯翻展示布，最后糖船断裂；他始终面带微笑完成鞠躬。",
+  "required_anchors": [
+    "正式场合与沉着主体",
+    "负担始终附着主体",
+    "至少两次因果连锁",
+    "失效可见但主体不慌"
+  ],
+  "tags": [
+    "deadpan",
+    "chain",
+    "failure"
+  ],
+  "quality": {
+    "weighted_score": 4.655,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T02:00:39+08:00",
+  "updated_at": "2026-08-10T04:07:39+08:00"
+}

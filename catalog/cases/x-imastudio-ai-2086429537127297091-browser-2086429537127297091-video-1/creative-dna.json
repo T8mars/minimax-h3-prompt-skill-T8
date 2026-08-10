@@ -1,0 +1,175 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Use one fixed identity board as a recurring visual checkpoint between four different live-scene proofs: silhouette and pose, small performance action, locomotion and face-level detail. Keep the board layout stable while camera scale and environment vary, then remove or subordinate the board so the verified live subject owns the final hero composition.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish the identity board and live subject together before major action.",
+      "purpose": "Creates an explicit comparison contract.",
+      "ablation_failure": "A hidden reference cannot function as visible evidence.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Return to the same board layout between distinct live proofs.",
+      "purpose": "Makes each action a new identity check.",
+      "ablation_failure": "A changing board destroys the reference baseline.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Each live proof must test a different identity dimension.",
+      "purpose": "Avoids redundant beauty shots.",
+      "ablation_failure": "Repeated face close-ups do not prove gait or silhouette.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Keep defining proportions and markers continuous across board and scene.",
+      "purpose": "Preserves subject identity through camera changes.",
+      "ablation_failure": "Marker drift breaks the verification mechanism.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on the verified live subject rather than a board-only frame.",
+      "purpose": "Converts evidence into a satisfying hero payoff.",
+      "ablation_failure": "A board-only ending feels like documentation, not completion.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject or system whose identity remains stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One visible variable that changes in countable causal stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained behavior rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting state changes."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "blonde anime cowgirl with black hat and sunglasses",
+    "Route 66 sunset and vintage muscle car",
+    "low-angle boots then sunglasses close-up",
+    "the NOVA character sheet layout and source end card"
+  ],
+  "instantiations": [
+    {
+      "concept": "A ceramic service robot's orthographic maintenance card returns between a gallery entrance pose, delicate tray placement, stair locomotion and lens-aperture close-up before the robot owns the final exhibit frame.",
+      "prompt_seed": "A ceramic service robot's orthographic maintenance card returns between a gallery entrance pose, delicate tray placement, stair locomotion and lens-aperture close-up before the robot owns the final exhibit frame."
+    },
+    {
+      "concept": "A deep-sea diver suit diagram recurs between pressure-door entry, tool exchange, weighted walk and visor reflection, ending on the live diver at the observation window.",
+      "prompt_seed": "A deep-sea diver suit diagram recurs between pressure-door entry, tool exchange, weighted walk and visor reflection, ending on the live diver at the observation window."
+    },
+    {
+      "concept": "A modular parade puppet blueprint checkpoints silhouette, hand articulation, rolling gait and painted face before the puppet alone fills the final stage picture.",
+      "prompt_seed": "A modular parade puppet blueprint checkpoints silhouette, hand articulation, rolling gait and painted face before the puppet alone fills the final stage picture."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A hidden reference cannot function as visible evidence.",
+      "repair": "Establish the identity board and live subject together before major action."
+    },
+    {
+      "failure": "A changing board destroys the reference baseline.",
+      "repair": "Return to the same board layout between distinct live proofs."
+    },
+    {
+      "failure": "Repeated face close-ups do not prove gait or silhouette.",
+      "repair": "Each live proof must test a different identity dimension."
+    },
+    {
+      "failure": "Marker drift breaks the verification mechanism.",
+      "repair": "Keep defining proportions and markers continuous across board and scene."
+    },
+    {
+      "failure": "A board-only ending feels like documentation, not completion.",
+      "repair": "End on the verified live subject rather than a board-only frame."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A ceramic service robot's orthographic maintenance card returns between a gallery entrance pose, delicate tray placement, stair locomotion and lens-aperture close-up before the robot owns the final exhibit frame.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A deep-sea diver suit diagram recurs between pressure-door entry, tool exchange, weighted walk and visor reflection, ending on the live diver at the observation window.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

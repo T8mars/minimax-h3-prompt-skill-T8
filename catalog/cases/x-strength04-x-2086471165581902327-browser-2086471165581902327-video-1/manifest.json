@@ -2,17 +2,23 @@
   "schema_version": "public-case/v1",
   "case_id": "x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1",
   "slug": "stage-threshold-inspection-passage",
-  "title": "Threshold-to-Passage Field Inspection",
-  "source_title": "Field team enters and inspects a frozen passage — MiniMax H3",
-  "summary": "先用远景锁定一个有后果的入口，一次剪辑跨过阈值，再以连续跟随建立身体可感的通行；一个局部材料信号打断前进，检查后只展示可见路线状态，不虚构诊断。",
+  "title": "第一视角探险｜穿越后巡检",
+  "source_title": "X creative video by @Strength04_X",
+  "summary": "从入口跨过阈值后连续通行，局部检查异常，再给出可见但不武断的路线终态。",
   "status": "released",
   "source_duration_seconds": 15.168,
-  "target_duration_seconds": 15,
-  "models": ["MiniMax H3", "Seedance 2.0"],
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
   "source_ref": "source.json",
   "creative_dna_ref": "creative-dna.json",
   "summary_ref": "SUMMARY.md",
-  "prompt_refs": {"minimax_h3": "prompts/minimax-h3.md", "seedance_2_0": "prompts/seedance-2.0.md"},
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
   "skill_ref": "../../../skills/stage-threshold-inspection-passage",
   "preview_refs": {
     "gif": "preview.gif",
@@ -24,15 +30,37 @@
     "poster": "poster.webp",
     "mp4": "media/x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1/preview.mp4"
   },
-  "preview_status": {"gif": "available", "poster": "available", "mp4": "available_in_electron_media_pack"},
-  "tags": ["threshold", "continuous-passage", "field-inspection", "material-cue", "camera-continuity", "uncertainty"],
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-threshold-inspection-passage-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "远景入口 + 跨过阈值 + 连续通行 + 局部异常检查 + 可见路线终态（不下诊断）",
+  "recommended_input": "植物学小队进入树根洞穴，跨过明暗阈值后沿狭窄通道前进；领队停下检查一条轻摆的空气丝带，未下结论，随后全队继续沿原路线深入。",
+  "required_anchors": [
+    "入口与阈值清楚",
+    "阈值后保持空间连续",
+    "只检查一个局部线索",
+    "结尾显示路线状态但不虚构诊断"
+  ],
+  "tags": [
+    "threshold",
+    "inspection",
+    "passage"
+  ],
   "quality": {
     "weighted_score": 4.613,
     "scale": 5,
     "anti_copy_passed": true,
-    "prompt_validation": {"minimax_h3": true, "seedance_2_0": true},
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
     "release_passed": true
   },
-  "created_at": "2026-08-10T00:20:20+08:00",
+  "created_at": "2026-08-10T00:20:19+08:00",
   "updated_at": "2026-08-10T00:53:58+08:00"
 }

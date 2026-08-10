@@ -1,0 +1,175 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Keep one destination visible while a single operator advances along a constrained route. Alternate obstacles from behind, ahead and the side so each requires a different physical adaptation without changing the goal. Reserve one deliberate control action for the endpoint, then prove success with a near-miss protective state that visibly intercepts the pursuing hazard.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show the destination before the first obstacle.",
+      "purpose": "Keeps every adaptation goal-directed.",
+      "ablation_failure": "A hidden target turns the sequence into generic running.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Alternate obstacle direction across at least three vectors.",
+      "purpose": "Prevents repetitive chase beats.",
+      "ablation_failure": "All hazards from behind produce one-note escalation.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Preserve one travel direction and recover after each disruption.",
+      "purpose": "Maintains spatial and causal readability.",
+      "ablation_failure": "Direction resets make progress impossible to measure.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Require a physical endpoint control action.",
+      "purpose": "Lets the subject cause the outcome.",
+      "ablation_failure": "Automatic rescue removes agency.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Prove the control with a visible near-miss interception.",
+      "purpose": "Closes the causal chain.",
+      "ablation_failure": "A cut to safety does not show why the subject survived.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject or system whose identity remains stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One visible variable that changes in countable causal stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained behavior rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting state changes."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "geothermal reactor catwalk and lava eruptions",
+    "helmeted plant technician",
+    "falling industrial pipes and steam jet",
+    "large wheel control and blast shield"
+  ],
+  "instantiations": [
+    {
+      "concept": "An orbital maintenance drone crosses a truss toward a thermal shutter, dodging loose foil behind, a solar panel ahead and coolant from the side before clamping the shutter closed against a flare.",
+      "prompt_seed": "An orbital maintenance drone crosses a truss toward a thermal shutter, dodging loose foil behind, a solar panel ahead and coolant from the side before clamping the shutter closed against a flare."
+    },
+    {
+      "concept": "A seed-vault courier follows a glass aisle toward an isolation hatch as roots rupture behind, a tray falls ahead and mist jets sideways before a manual seal blocks spores.",
+      "prompt_seed": "A seed-vault courier follows a glass aisle toward an isolation hatch as roots rupture behind, a tray falls ahead and mist jets sideways before a manual seal blocks spores."
+    },
+    {
+      "concept": "A cave-rescue rover reaches a floodgate while gravel, a swinging cable and a lateral water jet alternate around the route.",
+      "prompt_seed": "A cave-rescue rover reaches a floodgate while gravel, a swinging cable and a lateral water jet alternate around the route."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A hidden target turns the sequence into generic running.",
+      "repair": "Show the destination before the first obstacle."
+    },
+    {
+      "failure": "All hazards from behind produce one-note escalation.",
+      "repair": "Alternate obstacle direction across at least three vectors."
+    },
+    {
+      "failure": "Direction resets make progress impossible to measure.",
+      "repair": "Preserve one travel direction and recover after each disruption."
+    },
+    {
+      "failure": "Automatic rescue removes agency.",
+      "repair": "Require a physical endpoint control action."
+    },
+    {
+      "failure": "A cut to safety does not show why the subject survived.",
+      "repair": "Prove the control with a visible near-miss interception."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An orbital maintenance drone crosses a truss toward a thermal shutter, dodging loose foil behind, a solar panel ahead and coolant from the side before clamping the shutter closed against a flare.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A seed-vault courier follows a glass aisle toward an isolation hatch as roots rupture behind, a tray falls ahead and mist jets sideways before a manual seal blocks spores.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

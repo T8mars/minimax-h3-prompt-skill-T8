@@ -1,0 +1,167 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin with a small mark being intentionally created on a bounded physical surface. Let it acquire autonomy before crossing the surface edge, preserve one continuous trajectory into the live environment, then multiply or scale until its emitted property changes the surrounding world. Creation, autonomy, crossing, multiplication and environmental consequence must occur in that order; medium, creature, setting, emission, scale and emotion are variable.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show the mark being completed on a readable physical surface.",
+      "purpose": "Establishes authored origin.",
+      "ablation_failure": "A pre-existing magical object loses the creation-to-life premise.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Prove autonomy while the mark is still near its source boundary.",
+      "purpose": "Separates life from a hard cut or projection.",
+      "ablation_failure": "Crossing before lift-off makes the transition ambiguous.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use one continuous path to cross from authored surface into shared space.",
+      "purpose": "Binds the two ontological layers.",
+      "ablation_failure": "Teleportation removes the legible boundary event.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Multiply or enlarge only after the first entity has crossed.",
+      "purpose": "Creates a clear scale ladder.",
+      "ablation_failure": "Early swarm imagery skips the intimate proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Let the scaled phenomenon visibly alter environmental light, motion or material.",
+      "purpose": "Supplies a physical consequence.",
+      "ablation_failure": "Particles without environmental response remain decorative VFX.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject whose identity and silhouette remain stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One readable variable that changes monotonically or in countable stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "One restrained performance rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy the source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence that closes the causal chain."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting each state change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "yellow-pencil firefly drawn in a rain-covered sketchbook",
+    "warm golden insect swarm in a gloomy urban alley",
+    "source hand, page angle, street geography and pedestrian arrangement",
+    "MiniMax or Hailuo watermark placement"
+  ],
+  "instantiations": [
+    {
+      "concept": "A costume maker stitches one silver crane outline into black velvet; it folds free, crosses a stage curtain seam, then unspools into reflective paper forms that unfold a dormant mirror mobile and redirect one spotlight into a geometric seat pattern.",
+      "prompt_seed": "Textile authorship, origami autonomy, backstage boundary crossing, mechanical scale expansion and a redirected-light stage consequence."
+    },
+    {
+      "concept": "A child paints a tiny red leaf on a fogged train window; the leaf peels into the carriage air and enlarges into a paper canopy whose shadow pattern changes every cold reflection.",
+      "prompt_seed": "Paint-to-object crossing inside a train, followed by one enlarged canopy and a non-emissive environmental consequence."
+    },
+    {
+      "concept": "A ceramicist scores one blue wave into wet clay; the line rises as a ribbon, crosses the wheel rim and spreads into a suspended acoustic membrane that stills every hanging chime.",
+      "prompt_seed": "Clay authorship, boundary crossing and a sound-field consequence rather than a luminous swarm."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The swarm appears before a single entity crosses.",
+      "repair": "Hold on one autonomous entity until it visibly passes the source edge."
+    },
+    {
+      "failure": "The live environment is already brightly lit.",
+      "repair": "Protect a subdued baseline so the emitted property can change it."
+    },
+    {
+      "failure": "The new version simply swaps one glowing insect for another.",
+      "repair": "Change creation medium, entity class, environment, emission physics, camera and emotional payoff."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A costume maker stitches one silver crane outline into black velvet; it folds free, crosses a stage curtain seam, then unspools into reflective paper forms that unfold a dormant mirror mobile and redirect one spotlight into a geometric seat pattern.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A child paints a tiny red leaf on a fogged train window; the leaf peels into the carriage air and enlarges into a paper canopy whose shadow pattern changes every cold reflection.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

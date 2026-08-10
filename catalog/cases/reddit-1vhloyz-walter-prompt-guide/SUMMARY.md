@@ -1,40 +1,38 @@
-# Proof-State Camera Handoff
+# 风险揭晓｜证据交给人物反应
 
-用一次紧急干预制造冲突，随后让稳定、可读的物理证据证明风险，最后通过一个有动机的镜头交接，把结尾交给第二人物的简短反应。
+一次干预阻止风险，可读证据随后由有动机的镜头交接给人物反应。
 
 ## 核心机制
 
 An urgent intervention creates conflict, a controlled visual proof makes the hidden risk undeniable, and one motivated camera handoff transfers that proof to the recipient's compact reaction.
 
-## 视觉与节奏风格
+## 推荐输入格式
 
-写实微剧情；双人物非重叠对白；证据状态清晰停留；一次受光线、视线或声音驱动的重构图。
+`紧急干预 + 隐藏风险 + 可视证据 + 有动机镜头交接 + 简短反应`
 
-## 适用范围
+## 简短示例
 
-- 安全提醒、专业知识演示和带反应笑点的微剧情
-- 需要让道具或光学状态承担解释工作的 15 秒场景
-- 两个人物、两句以内对白和一次镜头交接
+> 实验员拦住同伴触碰容器，紫外光显出内部裂纹；镜头沿容器反光移交到同伴面部，他安静地收回手并点头。
 
-## 不适合
+## 必须保留的结构锚点
 
-- 证据无法在画面中被直接读懂的纯口播
-- 需要大量覆盖镜头或复杂对白的剧情
+- 先有干预冲突
+- 风险通过可视证据证明
+- 镜头交接有物理动机
+- 反应简短且改变后续行为
 
 ## 使用方法
 
-1. 先阅读 [Creative DNA](./creative-dna.json)，保留其中的因果不变量。
-2. 重新选择人物、环境、道具、色彩、动作、声音与结尾，避免复刻来源视频表面。
-3. 根据目标模型选用 [MiniMax H3 提示词](./prompts/minimax-h3.md) 或 [Seedance 2.0 提示词](./prompts/seedance-2.0.md)。
-4. 将现成提示词视为已验证实例，不要只替换名词；新概念至少改变四个可变槽，并再次检查因果、连续性与反复制边界。
-5. 在 GitHub 直接查看 GIF，或在 Electron 桌面版播放媒体包中的完整 MP4（含声音）；需要作者上下文时打开原帖。
+1. 先保留用户主体和目标，再按推荐格式补齐场景、事件链、镜头和结果。
+2. 阅读 [Creative DNA](./creative-dna.json)，重新实例化变量，不做来源表面换名词。
+3. 分别查看 [MiniMax H3](./prompts/minimax-h3.md) 与 [Seedance 2.0](./prompts/seedance-2.0.md) 的已验证实例。
+4. GitHub 使用 GIF 快速预览；Electron 媒体包播放完整有声 MP4。
 
 ## 来源与署名
 
 - 平台：reddit
 - 作者：GrayingGamer
-- 原帖标题：Walter White and the MiniMax H3 official prompting guide
 - 原始视频：[打开来源](https://www.reddit.com/r/StableDiffusion/comments/1vhloyz/walter_white_and_the_minimax_h3_official/)
 - 模型归因：MiniMax H3（creator_claimed）
 
-来源视频用于机制研究与引用。这里发布的 Creative DNA 和双模型提示词是面向新创作的抽象模板，不要求复刻来源人物、品牌、对白、构图或特效表面。
+来源视频用于机制研究与引用；公开模板只保留可迁移因果，不要求复刻来源人物、道具、场景、构图、对白或标志性效果。

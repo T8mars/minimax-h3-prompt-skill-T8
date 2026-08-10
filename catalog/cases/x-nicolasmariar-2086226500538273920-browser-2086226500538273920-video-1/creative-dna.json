@@ -1,0 +1,175 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Use one familiar inert object at the opening to calibrate a miniature world immediately. Let the small actors, tools, motion, shadows and atmosphere then sustain a coherent routine while the calibrator remains passive. Later, introduce one different external execution object exactly once, let it change one local state, and hold the intervention, affected object and internal reaction together so the story shifts from scale observation to outside control.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Calibrate scale early with one familiar inert standard object.",
+      "purpose": "Makes scale an established fact rather than a delayed trick.",
+      "ablation_failure": "Without calibration the later intervention is mistaken for a scale reveal.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Prove the known miniature world through coordinated routine and local physics.",
+      "purpose": "Gives the internal system temporary autonomy.",
+      "ablation_failure": "A static model offers no relation to disrupt.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep the opening calibrator passive after its proof.",
+      "purpose": "Separates measurement from agency.",
+      "ablation_failure": "An active calibrator collapses the two external roles.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Introduce one different external execution object only once in continuous entry.",
+      "purpose": "Creates a clear observer-to-controller transition.",
+      "ablation_failure": "Repeated tools or cuts turn the event into ordinary handling.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Show one changed local state and internal reaction with both scales visible.",
+      "purpose": "Proves intervention rather than proximity.",
+      "ablation_failure": "A hovering tool without consequence does not alter the relationship.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject or system whose identity remains stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One visible variable that changes in countable causal stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained behavior rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting state changes."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "miniature barbecue on a kitchen table",
+    "full-size human hand entering the scene",
+    "foreground fork and wooden tabletop",
+    "tiny men in colorful sweaters around a smoking grill"
+  ],
+  "instantiations": [
+    {
+      "concept": "A standard sewing needle calibrates a tiny alpine weather station on rough bark from the opening; later one insulated magnetic probe enters once and rotates a jammed vane while technicians react.",
+      "prompt_seed": "A standard sewing needle calibrates a tiny alpine weather station on rough bark from the opening; later one insulated magnetic probe enters once and rotates a jammed vane while technicians react."
+    },
+    {
+      "concept": "A paper clip establishes a miniature harbor's scale beside a shell groove; later one suction pipette enters once and lifts a stranded buoy into its channel.",
+      "prompt_seed": "A paper clip establishes a miniature harbor's scale beside a shell groove; later one suction pipette enters once and lifts a stranded buoy into its channel."
+    },
+    {
+      "concept": "A pencil tip calibrates a page-cut library from the opening; later one rubber stamp arm enters once and closes a wind-blown roof flap while readers scatter.",
+      "prompt_seed": "A pencil tip calibrates a page-cut library from the opening; later one rubber stamp arm enters once and closes a wind-blown roof flap while readers scatter."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without calibration the later intervention is mistaken for a scale reveal.",
+      "repair": "Calibrate scale early with one familiar inert standard object."
+    },
+    {
+      "failure": "A static model offers no relation to disrupt.",
+      "repair": "Prove the known miniature world through coordinated routine and local physics."
+    },
+    {
+      "failure": "An active calibrator collapses the two external roles.",
+      "repair": "Keep the opening calibrator passive after its proof."
+    },
+    {
+      "failure": "Repeated tools or cuts turn the event into ordinary handling.",
+      "repair": "Introduce one different external execution object only once in continuous entry."
+    },
+    {
+      "failure": "A hovering tool without consequence does not alter the relationship.",
+      "repair": "Show one changed local state and internal reaction with both scales visible."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A standard sewing needle calibrates a tiny alpine weather station on rough bark from the opening; later one insulated magnetic probe enters once and rotates a jammed vane while technicians react.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A paper clip establishes a miniature harbor's scale beside a shell groove; later one suction pipette enters once and lifts a stranded buoy into its channel.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,38 +1,46 @@
 ---
 name: stage-threshold-inspection-passage
-description: "Create original 15-second field passages that begin with a purposeful scale view, cross one threshold, preserve embodied travel, interrupt movement with one inspectable material cue, and end on a visible route state without inventing a diagnosis. Use for MiniMax H3 or Seedance 2.0 exploration, infrastructure, science, backstage, rescue, or industrial shorts."
+description: "Create original short videos using the 第一视角探险｜穿越后巡检 Creative DNA for MiniMax H3 or Seedance 2.0. Use when the user wants this causal, camera, motion, rhythm, or payoff structure with new subjects and surfaces."
 ---
 
-# Threshold-to-Passage Field Inspection
+# 第一视角探险｜穿越后巡检
 
-Build an evidence-bounded exploration sequence. Preserve the threshold-to-passage mechanism while redesigning the terrain, team, cue, camera carrier, and endpoint.
+Create a new execution from the reusable mechanism, not a surface reskin of any reference video.
 
 ## Workflow
 
-1. Read [references/summary.md](references/summary.md).
-2. Read [references/template.md](references/template.md) completely.
-3. Define the objective, threshold environment, field team, route geometry, reveal light, local cue, inspection action, post-inspection route state, and camera carrier.
-4. Draw a route map before writing shots. The opening must identify the exact threshold used after the cut.
-5. Use one decisive threshold crossing, then preserve continuous orientation and participant spacing.
-6. Insert one plausible cue and one readable inspection action.
-7. End on a visible continuation, pause, or direction change. Do not claim cause, danger, safety, or diagnosis unless the new scene explicitly proves it.
-8. Compile MiniMax H3 and Seedance 2.0 independently, then check continuity and anti-copy distance.
+1. Read [references/summary.md](references/summary.md) for fit, input slots, and the concise starting example.
+2. Read [references/template.md](references/template.md) completely before drafting.
+3. Preserve the user's subject and objective, then fill every missing scene, trigger, event-chain, camera, sound, and payoff slot.
+4. Treat these anchors as mandatory:
 
-## Model Guidance
+- 入口与阈值清楚
+- 阈值后保持空间连续
+- 只检查一个局部线索
+- 结尾显示路线状态但不虚构诊断
 
-- MiniMax H3: use English fields, consecutive events, spatial anchors, material behavior, coordinated movement, sound, and an uncertainty-preserving final state.
-- Seedance 2.0: use Chinese by default, stable subject definitions, one overall duration, event order without per-shot timestamps, and explicit route/cue/continuity constraints.
-- In both models, distinguish camera motion from team motion and local material behavior.
+5. Change source-specific people, setting, props, palette, dialogue, shot boundaries, sound family, and payoff surfaces together.
+6. Compile MiniMax H3 and Seedance 2.0 independently; do not leak one model's field syntax into the other.
+7. Silently verify anchor coverage, continuity, timing, physical causality, and anti-copy distance before returning the final prompts.
+
+## MiniMax H3
+
+- Use the current official H3 task grammar and language profile.
+- Separate integrated visual action, overall soundscape, and non-diegetic music or explicit silence.
+- Use timestamps only to make event order executable; keep shots consecutive and duration-safe.
+
+## Seedance 2.0
+
+- Define stable subjects once and preserve event order, camera motivation, sound intent, and overall duration.
+- Use a simple paragraph for simple concepts or an ordered multi-shot structure for complex concepts.
+- State overall duration once; do not copy H3 field labels or per-shot timecode grammar.
 
 ## Output
 
-Return a concept sentence, route map, slot table, invariant proof, both prompts, and a validation note.
+Return one concept sentence, the filled slots, an anchor-coverage check, one MiniMax H3 prompt, one Seedance 2.0 prompt, and a short anti-copy validation note.
 
-## Non-Negotiable Constraints
+## Non-Negotiable
 
-- Opening scale must identify a real threshold or route.
-- After the threshold, continuous travel must remain orientable.
-- Participant roles, lights, and tools must form one coordination pattern.
-- The cue must be plausible and inspectable.
-- The ending must show a route state while preserving uncertainty.
-- Do not recreate the source terrain, team, equipment, route, palette, timing, or diagnostic scenario.
+- A subject-only request is underspecified. Preserve that subject and complete the mechanism instead of returning a generic portrait or showcase.
+- Do not omit, reorder, or weaken a required anchor.
+- Do not reuse source people, brands, dialogue, exact storyboard, signature props, exact timings, or recognizable effect surfaces.

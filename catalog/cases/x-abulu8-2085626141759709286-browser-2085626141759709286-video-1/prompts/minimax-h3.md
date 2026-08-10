@@ -7,9 +7,9 @@ language: "en"
 validation: "passed"
 ---
 
-# Flexible Proof-State Product Launch Film — MiniMax H3
+# 产品广告｜功能证据递进 — MiniMax H3
 
-这是 Creative DNA 的一个已验证原创实例。使用时应更换人物、场景、道具、色彩、动作和结尾，不要只做名词替换。
+这是 Creative DNA 的一个已验证原创实例。使用时应重新实例化主体、场景、道具和风格，同时保留案例的因果结构锚点。
 
 ## Prompt
 
@@ -23,6 +23,6 @@ non_diegetic_music: An original restrained score of low felted pulses, breath-li
 
 ## 使用检查
 
-- 保留因果机制，不复刻来源视频的人物、品牌、对白、构图和标志性效果。
-- 核对主体身份、空间关系、动作先后与最终状态是否稳定。
-- 需要明显不同的新用途时，返回 [Creative DNA](../creative-dna.json) 重新实例化可变槽。
+- 保留因果机制与结构锚点，不复刻来源人物、地点、道具、构图或标志性效果。
+- 核对主体身份、空间关系、事件先后、运镜职责与最终状态。
+- 新用途应返回 [Creative DNA](../creative-dna.json) 重新实例化。

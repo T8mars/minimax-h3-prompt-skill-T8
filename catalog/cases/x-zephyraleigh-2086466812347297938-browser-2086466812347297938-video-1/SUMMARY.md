@@ -1,38 +1,38 @@
-# Imperfect-Memory Farewell Take
+# 复古手持｜日常送别回眸
 
-让不完美的连续观察者迟一步发现正在做日常小事的主体；一个外部信号改变目标，临近离场时只回应摄影者一次，再以有动机的录制失误结束这段私人记忆。
+观察者先发现人物日常，外部信号改变人物目标，一次回应后以有动机的拍摄失误结束。
 
 ## 核心机制
 
-An imperfect continuous observer discovers an ordinary routine, lets one environmental cue change the subject's goal, receives one late acknowledgment, and misses the motivated exit imperfectly.
+An imperfect continuous observer discovers a subject already engaged in an ordinary routine, lingers through small unperformed actions, then lets one external environmental cue change the subject's goal. A single late acknowledgment briefly closes the distance between subject and operator before a motivated exit and imperfect recording finish. Place, subject, routine, cue, medium defects, acknowledgment and exit remain variable.
 
-## 视觉与节奏风格
+## 推荐输入格式
 
-单镜头生活切片；克制的消费级记录缺陷；普通动作先于事件；摄影者存在感与轻微情感收束。
+`观察者媒介 + 日常人物/地点 + 两个日常动作 + 外部信号改变目标 + 一次回应 + 有动机录制失误`
 
-## 适用范围
+## 简短示例
 
-- 家庭录像、怀旧、生活切片、温柔告别和低强度 found-footage
-- 无对白建立人物关系的 15 秒单镜头
+> 家用摄像机记录泳池管理员收拾浮板和锁柜门，远处哨声让她改变去向；她回头挥一次手，摄影者追拍时短暂失焦并切到水面。
 
-## 不适合
+## 必须保留的结构锚点
 
-- 全程摆拍、不断看镜头
-- 模拟缺陷持续满强度
-- 信号与离场没有因果联系
+- 先建立观察者媒介
+- 至少两个普通日常动作
+- 外部信号改变目标
+- 一次回应后以有动机失误收尾
 
 ## 使用方法
 
-1. 阅读 [Creative DNA](./creative-dna.json)，先规划日常空间、两个小动作、信号、一次回应和离场路径。
-2. 同时改变地点类别、主体关系、动作、信号、媒介、回应与结尾。
-3. 直接查看 [MiniMax H3](./prompts/minimax-h3.md) 与 [Seedance 2.0](./prompts/seedance-2.0.md) 已验证实例。
-4. GitHub 查看 GIF；Electron 媒体包播放完整有声 MP4；作者上下文见原帖。
+1. 先保留用户主体和目标，再按推荐格式补齐场景、事件链、镜头和结果。
+2. 阅读 [Creative DNA](./creative-dna.json)，重新实例化变量，不做来源表面换名词。
+3. 分别查看 [MiniMax H3](./prompts/minimax-h3.md) 与 [Seedance 2.0](./prompts/seedance-2.0.md) 的已验证实例。
+4. GitHub 使用 GIF 快速预览；Electron 媒体包播放完整有声 MP4。
 
 ## 来源与署名
 
-- 平台：X
+- 平台：x
 - 作者：@ZephyraLeigh
 - 原始视频：[打开来源](https://x.com/ZephyraLeigh/status/2086466812347297938)
 - 模型归因：Seedance 2.0（creator_claimed）
 
-公开模板不复刻来源人物、服装、交通环境、道具、具体拍摄缺陷或离场走位。
+来源视频用于机制研究与引用；公开模板只保留可迁移因果，不要求复刻来源人物、道具、场景、构图、对白或标志性效果。

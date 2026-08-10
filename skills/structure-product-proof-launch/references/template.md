@@ -1,4 +1,4 @@
-# Flexible Proof-State Product Launch Film Template
+# 产品广告｜功能证据递进 Template
 
 ## Mechanism
 
@@ -42,20 +42,28 @@ A compressed launch film behaves as a flexible proof state machine rather than a
 - Purpose: Protects comprehension in a dense 15-second information sequence.
 - Failure if removed: Scaling, warping or partially formed words compete with the product proof and create spelling artifacts.
 
+
 ## Variable Slots
 
 | Slot | Constraint |
 |---|---|
-| `product_identity` | One original fictional product name and a single-sentence emotional promise. |
-| `hero_benefit_image` | An original person, object or environment showing the desired outcome rather than the interface. |
-| `capability_modules` | Two or three visually distinct proofs that answer different product questions. |
-| `operation_proof` | One legible control, process or physical mechanism that demonstrates how the product works. |
-| `peak_event` | One maximum contrast event expressed through physical, spatial, typographic or human change. |
-| `breadth_device` | One original non-redundant method for proving multiple contexts; avoid the source card-row plus grid pair. |
-| `graphic_system` | A palette, material, light behavior and typography rule unrelated to the source campaign. |
-| `final_action` | One concise CTA displayed in a stable closing lockup. |
-| `information_order` | Choose an order derived from the new product's causal logic, not the source's nine-state sequence. |
-| `shot_structure` | Use five to eight states with materially different boundaries, merges and camera implementations. |
+| product_identity | One original fictional product name and a single-sentence emotional promise. |
+| hero_benefit_image | An original person, object or environment showing the desired outcome rather than the interface. |
+| capability_modules | Two or three visually distinct proofs that answer different product questions. |
+| operation_proof | One legible control, process or physical mechanism that demonstrates how the product works. |
+| peak_event | One maximum contrast event expressed through physical, spatial, typographic or human change. |
+| breadth_device | One original non-redundant method for proving multiple contexts; avoid the source card-row plus grid pair. |
+| graphic_system | A palette, material, light behavior and typography rule unrelated to the source campaign. |
+| final_action | One concise CTA displayed in a stable closing lockup. |
+| information_order | Choose an order derived from the new product's causal logic, not the source's nine-state sequence. |
+| shot_structure | Use five to eight states with materially different boundaries, merges and camera implementations. |
+
+## Required Human-Facing Anchors
+
+- 先结果后证据
+- 至少三个不同证明状态
+- 证据必须可见且递进
+- 结尾有明确行动或产品收束
 
 ## Anti-Copy Boundary
 
@@ -64,55 +72,30 @@ A compressed launch film behaves as a flexible proof state machine rather than a
 - source wordmarks, logos, translucent panel compositions, editing interface and creator-card layouts
 - the exact nine-panel storyboard, exact beat durations, exact typography positions and source color palette
 
-Treat these exclusions as a floor, not a checklist. Also change the setting, subject category, prop system, palette, camera implementation, sound design, and final visual state whenever they are source-adjacent.
+## Transfer Tests
 
-## Transfer Test
+1. A fictional compact air-quality device called AERIA ONE uses six reordered states: live room control proof, early sleeping-child outcome, combined sensor-filter macro, a physical apartment-scale clean-air peak with no giant text, one continuous environment morph for breadth, and a quiet final lockup.
+   - Preserved: inv-01, inv-02, inv-03, inv-04, inv-05, inv-06
+   - Changed: product_identity, hero_benefit_image, capability_modules, operation_proof, peak_event, breadth_device, graphic_system, final_action, information_order, shot_structure
+2. A fictional adaptive running shoe called KINETIC ARC uses seven asymmetrical states: runner impact outcome, sole pressure trace, foam macro, terrain transition, the athlete clearing one stair as the physical peak, three matched footfalls across surfaces, and a ground-level final action.
+   - Preserved: inv-01, inv-02, inv-03, inv-04, inv-05, inv-06
+   - Changed: product_identity, hero_benefit_image, capability_modules, operation_proof, peak_event, breadth_device, graphic_system, final_action, information_order, shot_structure
 
-Before drafting prompts:
-
-1. Choose a new purpose and audience.
-2. Fill every slot with an internally coherent choice.
-3. Change at least four slots together; for close genres, change six or more.
-4. Prove every invariant using the new scene's own actions and physics.
-5. Reject the concept if it keeps the same beat-for-beat spectacle after the nouns change.
-
-## Model Templates
+## Model Skeletons
 
 ### MiniMax H3
 
-```text
-integrated_multimodal_description: [opening state and hook] [causal action] [readable escalation or proof] [final state and hold]
-overall_soundscape: [location ambience, action-synchronized foley, final accent]
-non_diegetic_music: [optional arc; omit or state silence when inappropriate]
-```
+    integrated_multimodal_description: [new subject, environment, ordered actions, camera, light and final state preserving every anchor]
+    overall_soundscape: [diegetic ambience, action cues and causal payoff]
+    non_diegetic_music: [original music arc or N/A]
 
 ### Seedance 2.0
 
-```text
-任务：[文本生成新视频或用户指定任务]
-总时长约15秒。
-主体定义：[稳定主体名称与不变特征]
-镜头/事件1：[开场状态、构图、光线、声音]
-镜头/事件2：[因果动作与空间关系]
-镜头/事件3：[递进、证明或转折]
-镜头/事件4：[最终状态与停留]
-整体风格与画质：[媒介、材质、光影、连续性]
-约束：[数量、身份、文字、禁止项和反复制边界]
-```
+    任务：[原创实例意图]
+    总时长约[4–15]秒。
+    主体定义：[稳定人物、物体与空间关系]
+    事件或镜头：[按因果顺序实现全部锚点]
+    整体风格与画质：[原创媒介、光影、色彩与声音]
+    约束：[连续性、物理逻辑、反复制与结尾状态]
 
-Adapt the event count to the new concept. Do not force four events.
-
-## Quality Repairs
-
-- **The film is only a sequence of attractive product shots.** Repair by: Assign each beat a distinct question and require an observable proof before the next cut.
-- **Every beat tries to be the visual climax.** Repair by: Use restrained assembly motion early, one dominant kinetic peak, then simplify toward the CTA.
-- **Typography becomes unreadable or dominates the product.** Repair by: Limit copy, land it complete at final size, hold it sharp and keep moving effects behind the text plane.
-- **A palette swap leaves the source campaign visibly recognizable.** Repair by: Change product category, hero subject, materials, information order, shot count, camera implementation, breadth device, copy and final action in addition to color.
-
-## Non-Binding Transfer Examples
-
-These examples demonstrate distance from the source. Do not reproduce them verbatim.
-
-- A fictional compact air-quality device called AERIA ONE uses six reordered states: live room control proof, early sleeping-child outcome, combined sensor-filter macro, a physical apartment-scale clean-air peak with no giant text, one continuous environment morph for breadth, and a quiet final lockup.
-- A fictional modular field battery called NORTHSTAR GRID uses five states in a single storm environment: rescue outcome first, physical cell stacking, live cable routing across the same set, the floodlights becoming the visual peak, and a wide operational tableau carrying a small DEPLOY NOW lockup without use-case cards.
-- A fictional adaptive running shoe called KINETIC ARC uses seven asymmetrical states: runner impact outcome, sole pressure trace, foam macro, terrain transition, the athlete clearing one stair as the physical peak, three matched footfalls across surfaces, and a ground-level final action.
+Adapt shot count to the user's concept. Preserve the causal mechanism, not a fixed storyboard.

@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1",
+  "slug": "use-material-as-progress-clock",
+  "title": "工艺过程｜材料覆盖当进度",
+  "source_title": "X creative video by @derek_wall90176",
+  "summary": "同一工艺物保持连续，用只增不减的材料变量作为清晰进度钟。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/use-material-as-progress-clock",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-progress-clock-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "同一工艺物 + 一个只增不减的材料变量 + 4个阶段 + 成品揭晓",
+  "recommended_input": "同一块陶瓷浮雕保持在转台上，釉色覆盖从边缘、纹路、主体到全部表面只增不减，最后窑火反光中揭晓成品。",
+  "required_anchors": [
+    "同一工艺物贯穿",
+    "选定材料变量只增不减",
+    "至少四个可区分阶段",
+    "最后明确揭晓成品"
+  ],
+  "tags": [
+    "material",
+    "progress",
+    "clock"
+  ],
+  "quality": {
+    "weighted_score": 4.622,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T02:02:32+08:00",
+  "updated_at": "2026-08-10T04:07:39+08:00"
+}

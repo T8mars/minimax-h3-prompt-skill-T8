@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1",
+  "slug": "reconstruct-flat-geometry-poster",
+  "title": "平面重组｜几何节奏品牌片",
+  "source_title": "X creative video by @Mayz1169",
+  "summary": "稳定剪影与几何母题被反复拆解重组，在高密阶段后短暂停顿并收束为既有图形族。",
+  "status": "released",
+  "source_duration_seconds": 11.400998,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reconstruct-flat-geometry-poster",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-flat-geometry-reconstruction-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "单一几何母题 + 稳定剪影 + 反复拆解重组 + 高密阶段 + 短暂停顿 + 既有图形收束",
+  "recommended_input": "以珊瑚螺旋为唯一母题，稳定潜航器剪影贯穿；螺旋反复拆成声呐弧线和路线图，在高密数据阶段后短暂停顿，最终重组为同一图形族的徽记。",
+  "required_anchors": [
+    "只有一个几何母题",
+    "主体剪影稳定",
+    "拆解与重组多次发生",
+    "高密后留短暂停顿并用既有图形收束"
+  ],
+  "tags": [
+    "flat",
+    "geometry",
+    "reconstruction"
+  ],
+  "quality": {
+    "weighted_score": 4.619,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T02:03:08+08:00",
+  "updated_at": "2026-08-10T04:07:39+08:00"
+}

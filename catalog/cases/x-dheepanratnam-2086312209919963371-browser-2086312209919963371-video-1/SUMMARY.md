@@ -1,40 +1,38 @@
-# Layered Field-Guide Illustration Comes Alive
+# 固定机位｜从线稿生成成品
 
-在一个固定构图里把创作过程变成可读的因果阶梯：先用低承诺引导线建立几何，再锁定结构、添加材质与语境细节，最后以克制的媒介内动作证明作品已经完成。
+锁定构图，用不可逆的制作阶段让同一对象从草图逐步成为成品。
 
 ## 核心机制
 
 A fixed composition turns creation into a readable causal ladder: low-commitment guides establish geometry, committed structure locks it, material finish adds specificity, contextual details certify completion, and one restrained in-medium motion supplies the final surprise.
 
-## 视觉与节奏风格
+## 推荐输入格式
 
-固定顶视或正视构图；逐层绘制与材质生成；每层只解决一个视觉问题；完成后的微动作作为惊喜。
+`对象 + 固定构图 + 4个不可逆制作阶段 + 终态小动作`
 
-## 适用范围
+## 简短示例
 
-- 插画、工艺、地图、设计稿和教育图解的生成过程
-- 需要在不切镜情况下展示从空白到成品的 15 秒短片
-- 可被线条、结构、材质、细节和微动分层表达的对象
+> 固定正面构图中的纸艺灯塔：铅笔轮廓、纸片立体搭建、色彩与纹理完成、内部灯光点亮，最后纸浪轻轻摆动。
 
-## 不适合
+## 必须保留的结构锚点
 
-- 缺少明确构建顺序的随机变形
-- 依赖高速切镜隐藏结构漂移的生成过程
+- 构图锁定
+- 同一对象连续成长
+- 至少四个不可逆阶段
+- 终态有轻微活化动作
 
 ## 使用方法
 
-1. 先阅读 [Creative DNA](./creative-dna.json)，保留其中的因果不变量。
-2. 重新选择人物、环境、道具、色彩、动作、声音与结尾，避免复刻来源视频表面。
-3. 根据目标模型选用 [MiniMax H3 提示词](./prompts/minimax-h3.md) 或 [Seedance 2.0 提示词](./prompts/seedance-2.0.md)。
-4. 将现成提示词视为已验证实例，不要只替换名词；新概念至少改变四个可变槽，并再次检查因果、连续性与反复制边界。
-5. 在 GitHub 直接查看 GIF，或在 Electron 桌面版播放媒体包中的完整 MP4（含声音）；需要作者上下文时打开原帖。
+1. 先保留用户主体和目标，再按推荐格式补齐场景、事件链、镜头和结果。
+2. 阅读 [Creative DNA](./creative-dna.json)，重新实例化变量，不做来源表面换名词。
+3. 分别查看 [MiniMax H3](./prompts/minimax-h3.md) 与 [Seedance 2.0](./prompts/seedance-2.0.md) 的已验证实例。
+4. GitHub 使用 GIF 快速预览；Electron 媒体包播放完整有声 MP4。
 
 ## 来源与署名
 
 - 平台：x
 - 作者：@Dheepanratnam
-- 原帖标题：X creative video by @Dheepanratnam
 - 原始视频：[打开来源](https://x.com/Dheepanratnam/status/2086312209919963371)
 - 模型归因：MiniMax H3（creator_claimed）
 
-来源视频用于机制研究与引用。这里发布的 Creative DNA 和双模型提示词是面向新创作的抽象模板，不要求复刻来源人物、品牌、对白、构图或特效表面。
+来源视频用于机制研究与引用；公开模板只保留可迁移因果，不要求复刻来源人物、道具、场景、构图、对白或标志性效果。

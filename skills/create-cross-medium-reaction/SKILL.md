@@ -1,53 +1,46 @@
 ---
 name: create-cross-medium-reaction
-description: "Create original 15-second mixed-media videos in which one real-world contact drives a readable three-stage reaction in a flat character. Use for MiniMax H3 or Seedance 2.0 prompts involving live-action/2D interaction, contact-driven comedy, or escalating visual effects."
+description: "Create original short videos using the 二维角色｜真人接触三级反应 Creative DNA for MiniMax H3 or Seedance 2.0. Use when the user wants this causal, camera, motion, rhythm, or payoff structure with new subjects and surfaces."
 ---
 
-# Cross-Medium Contact Reaction Ladder
+# 二维角色｜真人接触三级反应
 
-Create a fresh video concept from the reusable mechanism, never from the source video's surface.
+Create a new execution from the reusable mechanism, not a surface reskin of any reference video.
 
 ## Workflow
 
-1. Read [references/summary.md](references/summary.md) for the style, fit, slot, and anti-copy overview.
+1. Read [references/summary.md](references/summary.md) for fit, input slots, and the concise starting example.
 2. Read [references/template.md](references/template.md) completely before drafting.
-3. Extract the user's objective, audience, subject, setting, visual medium, must-show action, sound needs, and desired ending.
-4. Instantiate every required slot. Replace all source-facing nouns and change at least four variable slots together.
-5. Build a causal event map before writing prose. Let information handoffs determine the number of events; do not copy a source shot count or timing.
-6. Verify every invariant and explain briefly how the new concept satisfies it.
-7. Compile MiniMax H3 and Seedance 2.0 independently.
-8. Run the anti-copy and continuity checks before returning the result.
+3. Preserve the user's subject and objective, then fill every missing scene, trigger, event-chain, camera, sound, and payoff slot.
+4. Treat these anchors as mandatory:
 
-## Compile for MiniMax H3
+- 平面与真实媒介同框
+- 只有一次关键接触
+- 反应至少三级升级
+- 结尾由平面媒介自身完成
 
-- Write the main prompt in English unless the user explicitly requests another supported style.
-- Use a complete integrated audiovisual description with clear shot or event onsets.
-- State camera, subject action, environment response, lighting, material behavior, spatial continuity, final state, and synchronized sound.
-- Use timestamps only where they make event order or a transition unambiguous.
-- Keep visible text, dialogue, lyrics, and counts exact when the user requires them.
+5. Change source-specific people, setting, props, palette, dialogue, shot boundaries, sound family, and payoff surfaces together.
+6. Compile MiniMax H3 and Seedance 2.0 independently; do not leak one model's field syntax into the other.
+7. Silently verify anchor coverage, continuity, timing, physical causality, and anti-copy distance before returning the final prompts.
 
-## Compile for Seedance 2.0
+## MiniMax H3
 
-- Write in Chinese by default unless the user requests another language.
-- Define recurring subjects once and refer to them by stable names.
-- Use event-ordered shots for complex content; use a compact continuous paragraph only when the mechanism is genuinely simple.
-- Describe camera motivation, spatial relationships, action order, lighting, sound cues, quality requirements, and constraints.
-- Do not invent exact per-shot timestamps.
+- Use the current official H3 task grammar and language profile.
+- Separate integrated visual action, overall soundscape, and non-diegetic music or explicit silence.
+- Use timestamps only to make event order executable; keep shots consecutive and duration-safe.
+
+## Seedance 2.0
+
+- Define stable subjects once and preserve event order, camera motivation, sound intent, and overall duration.
+- Use a simple paragraph for simple concepts or an ordered multi-shot structure for complex concepts.
+- State overall duration once; do not copy H3 field labels or per-shot timecode grammar.
 
 ## Output
 
-Return:
+Return one concept sentence, the filled slots, an anchor-coverage check, one MiniMax H3 prompt, one Seedance 2.0 prompt, and a short anti-copy validation note.
 
-1. A one-sentence concept.
-2. A compact mapping from invariants to the new execution.
-3. A MiniMax H3 prompt.
-4. A Seedance 2.0 prompt.
-5. A short validation note covering causality, continuity, model fit, and anti-copy distance.
+## Non-Negotiable
 
-## Non-Negotiable Constraints
-
-- Do not reuse source people, likenesses, brands, dialogue, signature props, exact compositions, exact timing, or recognizable effects.
-- Do not copy a reference instantiation verbatim.
-- Do not merely swap nouns while preserving the same storyboard.
-- Preserve the deep causal mechanism and vary its surface, staging, palette, camera implementation, sound, and ending.
-- If the new concept cannot pass every invariant without surface copying, redesign it before compiling.
+- A subject-only request is underspecified. Preserve that subject and complete the mechanism instead of returning a generic portrait or showcase.
+- Do not omit, reorder, or weaken a required anchor.
+- Do not reuse source people, brands, dialogue, exact storyboard, signature props, exact timings, or recognizable effect surfaces.

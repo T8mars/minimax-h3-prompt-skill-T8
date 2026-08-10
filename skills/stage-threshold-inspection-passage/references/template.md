@@ -1,83 +1,93 @@
-# Threshold-to-Passage Field Inspection Template
+# 第一视角探险｜穿越后巡检 Template
 
 ## Mechanism
 
-A remote scale view identifies one consequential threshold, one decisive cut crosses it, and an extended continuous follow converts abstract environment into embodied passage. Coordinated participants, moving reveal light, and one local cue interrupt travel; the sequence ends on a visible post-inspection route state without inventing diagnosis or resolution.
+A remote scale view identifies one consequential threshold, a single cut crosses it, and an extended continuous follow converts abstract environment into embodied passage. Moving light, partner or tool coordination and one local material cue interrupt forward motion; the sequence then ends on a clearly visible post-inspection route state without claiming the cue was diagnosed or resolved. Terrain, participants, material cue, route, camera carrier and final route state remain variable.
 
 ## Invariants
 
 ### inv-01
 
-- Rule: Use the opening scale view to identify one precise threshold or route.
-- Purpose: Gives the interior movement destination and scale conversion.
-- Failure if removed: The exterior becomes disconnected B-roll.
+- Rule: Use the opening scale view to identify one precise threshold or route, not merely an attractive landscape.
+- Purpose: Gives the following interior movement a destination and scale conversion.
+- Failure if removed: Without a specific threshold, the exterior is disconnected B-roll and the interior cut feels arbitrary.
 
 ### inv-02
 
-- Rule: Cross with one decisive edit or occlusion, then preserve spatial continuity.
-- Purpose: Makes the audience inhabit the route.
-- Failure if removed: Repeated coverage erases distance, orientation, and effort.
+- Rule: Cross the threshold with one decisive edit or occlusion, then preserve spatial continuity long enough to feel embodied travel.
+- Purpose: Turns environment from illustration into a route the audience can inhabit.
+- Failure if removed: Repeated coverage cuts erase distance, orientation and physical effort.
 
 ### inv-03
 
-- Rule: Bind participants, lights, and tools into a coordination pattern whose spacing changes with the route.
-- Purpose: Supplies human-scale motion inside repetitive environments.
-- Failure if removed: Independent wandering removes practical stakes and invites identity drift.
+- Rule: Bind participants, lights and tools into a clear coordination pattern whose spacing changes with the route.
+- Purpose: Supplies readable human-scale motion inside a visually repetitive environment.
+- Failure if removed: Independent wandering or identity drift makes the passage feel synthetic and removes practical stakes.
 
 ### inv-04
 
-- Rule: Interrupt travel with one local cue that can be indicated, measured, or physically reacted to.
-- Purpose: Creates an observation event instead of endless walking.
-- Failure if removed: The sequence has atmosphere but no causal event.
+- Rule: Interrupt travel with one local material or environmental cue that can be indicated, measured or physically reacted to.
+- Purpose: Creates a causal observation beat rather than endless forward walking.
+- Failure if removed: Without a local cue the sequence has atmosphere but no event; an implausible cue destroys documentary credibility.
 
 ### inv-05
 
-- Rule: End on one visible route state after inspection, without claiming diagnosis or hazard response unless directly shown.
-- Purpose: Gives the passage an endpoint while preserving uncertainty.
-- Failure if removed: A hidden endpoint feels truncated; an unshown diagnosis turns observation into fiction.
+- Rule: After the inspection, end on one clearly visible route state—continue, pause or change direction—without claiming a diagnosis or hazard response unless directly shown.
+- Purpose: Gives the passage a readable post-inspection endpoint while preserving uncertainty.
+- Failure if removed: Ending before the route state is visible makes the inspection feel truncated; asserting an unshown diagnosis turns observation into fiction.
+
+
+## Variable Slots
+
+| Slot | Constraint |
+|---|---|
+| threshold_environment | A specific opening, hatch, canopy, chamber or access point with visible scale context. |
+| field_team | One to three original humans, animals or machines with stable roles and silhouettes. |
+| route_geometry | A continuous, physically traversable path with stable orientation anchors. |
+| reveal_light | Headlamp, UV beam, lantern, reflected daylight or moving shadow that reveals material layers. |
+| local_cue | One plausible airflow, vibration, moisture, sound, particulate or structural change. |
+| inspection_action | A gesture or tool action that directs attention to the cue without relying on text. |
+| post_inspection_route_state | A visible continuation, pause or direction change after inspection; causation or diagnosis is optional and must not be attributed to the source unless shown. |
+| camera_carrier | Aerial, cable, body, rover or handheld path suited to the new environment. |
+
+## Required Human-Facing Anchors
+
+- 入口与阈值清楚
+- 阈值后保持空间连续
+- 只检查一个局部线索
+- 结尾显示路线状态但不虚构诊断
 
 ## Anti-Copy Boundary
 
-- Do not reuse the source frozen terrain, colored tunnel, team appearance, specialist tools, exact aerial-to-follow route, palette, timing, or melt/retreat scenario.
-- Change environment class, team topology, route geometry, tool relation, cue physics, camera carrier, and final route state together.
+- glacier valley, blue ice cave, black oval aperture and translucent cyan tunnel
+- two glaciologists, orange and blue-yellow suits, helmets, crampons, backpacks and ice axes
+- the exact three-second aerial push followed by the same high front-left-to-rear follow route
+- source prompt's under-ice water, seasonal melting, marking and retreat scenario
 
-## Transfer Test
+## Transfer Tests
 
-1. Point to the threshold visible in both opening and crossing.
-2. Name stable orientation anchors inside the route.
-3. Describe how team spacing and reveal light change during travel.
-4. State the cue and its physically readable inspection action.
-5. State only what the ending visibly proves.
-6. Reject any version that is “same explorers in another cave.”
+1. A forest botanist and a compact quadruped rover enter an exposed-root sinkhole; a cable-cam threshold view gives way to one low interior follow, the rover's silk airflow ribbon snaps toward a side fissure, the botanist marks the observation, and both continue along the already established main root corridor.
+   - Preserved: inv-01, inv-02, inv-03, inv-04, inv-05
+   - Changed: threshold_environment, field_team, route_geometry, reveal_light, local_cue, inspection_action, post_inspection_route_state, camera_carrier
+2. A harbor engineer and a floating sensor puck enter a tidal service tunnel at low water; continuous waist-level following reveals a reversing foam line, the engineer tests it with dye-free cork chips, logs the observation with one physical marker, then continues along the same raised catwalk.
+   - Preserved: inv-01, inv-02, inv-03, inv-04, inv-05
+   - Changed: threshold_environment, field_team, route_geometry, reveal_light, local_cue, inspection_action, post_inspection_route_state, camera_carrier
 
-## Model Templates
+## Model Skeletons
 
 ### MiniMax H3
 
-    integrated_multimodal_description: [scale view identifying threshold] [decisive crossing] [continuous coordinated passage] [local cue and inspection] [visible uncertainty-preserving route state]
-    overall_soundscape: [environment, movement, tools, cue, final route ambience]
-    non_diegetic_music: [optional restrained arc or N/A]
+    integrated_multimodal_description: [new subject, environment, ordered actions, camera, light and final state preserving every anchor]
+    overall_soundscape: [diegetic ambience, action cues and causal payoff]
+    non_diegetic_music: [original music arc or N/A]
 
 ### Seedance 2.0
 
-    任务：[原创巡检或通行任务]
-    总时长约15秒。
-    主体定义：[稳定团队、职责、工具]
-    事件1：[尺度与阈值]
-    事件2：[进入并连续通行]
-    事件3：[局部信号、检查、可见后续状态]
-    整体风格与画质：[材料、光线、纪录质感、空间连续]
-    约束：[方向锚点、身份、信号物理、不得虚构诊断]
+    任务：[原创实例意图]
+    总时长约[4–15]秒。
+    主体定义：[稳定人物、物体与空间关系]
+    事件或镜头：[按因果顺序实现全部锚点]
+    整体风格与画质：[原创媒介、光影、色彩与声音]
+    约束：[连续性、物理逻辑、反复制与结尾状态]
 
-## Quality Repairs
-
-- **Opening and route do not connect.** Match the threshold's orientation across the cut.
-- **The follow is only walking.** Change spacing, reveal light, and pace around one local cue.
-- **Materials look fantastical.** Specify weight, deposits, abrasion, moisture, sound, and tool contact.
-- **The ending overclaims safety or danger.** Replace diagnosis with one visible continuation, pause, or direction change.
-
-## Non-Binding Transfer Examples
-
-- A botanist and quadruped rover enter a root sinkhole, inspect a silk airflow ribbon, mark the observation, and continue along the established corridor.
-- A harbor engineer and sensor puck enter a tidal tunnel, test a reversing foam line with cork chips, and continue on the same catwalk.
-- A theatre rigger and crawler pass through a grid hatch, tag an out-of-phase cable vibration, and continue on the truss.
+Adapt shot count to the user's concept. Preserve the causal mechanism, not a fixed storyboard.

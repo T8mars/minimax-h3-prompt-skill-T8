@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1",
+  "slug": "reconstruct-flat-geometry-poster",
+  "title": "平面重组｜纸艺无障碍示例",
+  "source_title": "X creative video by @Mayz1169",
+  "summary": "同一平面重组机制的纸艺无障碍说明变体；用于扩展证据，不新增下拉选项。",
+  "status": "released",
+  "source_duration_seconds": 14.767891,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reconstruct-flat-geometry-poster",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-flat-geometry-reconstruction-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1",
+  "input_format": "单一纸艺母题 + 稳定人物剪影 + 4段状态重组 + 高密验证 + 路线徽记收束",
+  "recommended_input": "以折纸坡道为母题，轮椅使用者剪影保持稳定；四段纸艺依次建立入口、三种通行状态、高密验证和受阻平台，最终折出坡道并收束为路线徽记。",
+  "required_anchors": [
+    "复用平面重组模板而非新模板",
+    "四段纸艺节奏",
+    "人物剪影稳定",
+    "高密验证后用同一图形族收束"
+  ],
+  "tags": [
+    "flat",
+    "geometry",
+    "reconstruction"
+  ],
+  "quality": {
+    "weighted_score": 4.708,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T09:55:25+08:00",
+  "updated_at": "2026-08-10T11:35:09+08:00"
+}

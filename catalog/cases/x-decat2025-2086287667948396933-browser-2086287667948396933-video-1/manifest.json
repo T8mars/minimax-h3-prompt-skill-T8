@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-decat2025-2086287667948396933-browser-2086287667948396933-video-1",
+  "slug": "collapse-route-after-threshold",
+  "title": "路线坍塌｜安全空间逐段消失",
+  "source_title": "X creative video by @DeCat2025",
+  "summary": "主体只朝固定终点前进，走过的路线单调消失，完全跨过阈值后最后连接才断开。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/collapse-route-after-threshold",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-monotonic-route-loss-threshold-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "载体 + 固定方向和终点 + 已走路线逐段消失 + 当前段一次失稳 + 完全过阈值后最后断开",
+  "recommended_input": "透明温室管道中的采样车始终朝安全舱行驶，驶过的管段依次塌陷；当前管段只发生一次摇摆，车辆完全进入安全舱后最后接口才断开。",
+  "required_anchors": [
+    "方向与终点固定",
+    "后方路线只减不增",
+    "当前段最多一次可恢复失稳",
+    "主体完全过阈值后才断开最后连接"
+  ],
+  "tags": [
+    "monotonic",
+    "route",
+    "loss",
+    "threshold"
+  ],
+  "quality": {
+    "weighted_score": 4.74,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T09:55:26+08:00",
+  "updated_at": "2026-08-10T11:35:08+08:00"
+}

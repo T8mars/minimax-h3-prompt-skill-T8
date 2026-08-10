@@ -1,0 +1,175 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Start inside one continuous base motion and make it the mandatory entry and exit for every distinct skill. Increase difficulty across countable stages, assign each camera angle a verification purpose such as contact, clearance, rotation or recovery, combine learned principles near the end, then perform one peak variation and visibly return to the unchanged base loop.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Begin mid-loop and keep the base motion active between every skill.",
+      "purpose": "Creates continuous connective tissue.",
+      "ablation_failure": "Static resets turn the piece into disconnected highlights.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Every skill must depart from and visibly return to the loop.",
+      "purpose": "Proves real continuity.",
+      "ablation_failure": "Cuts can otherwise hide failed transitions.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Increase difficulty through distinct movement properties.",
+      "purpose": "Builds a readable skill ladder.",
+      "ablation_failure": "More of the same move adds speed but not progression.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Give each camera angle one proof job.",
+      "purpose": "Makes cutting informative.",
+      "ablation_failure": "Decorative angle changes can obscure mechanics.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "After the peak, return to the original loop without stopping.",
+      "purpose": "Closes the structure and proves control.",
+      "ablation_failure": "A freeze at the peak abandons the connective rule.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject or system whose identity remains stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One visible variable that changes in countable causal stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained behavior rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting state changes."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "male capoeira practitioner in white abada",
+    "Salvador da Bahia colorful street",
+    "ginga and named capoeira moves",
+    "berimbau rhythm and the source character sheet"
+  ],
+  "instantiations": [
+    {
+      "concept": "An autonomous inspection drone maintains a figure-eight hover loop between gap threading, roll scan, inverted inspection and precision docking, with each angle proving clearance or recovery.",
+      "prompt_seed": "An autonomous inspection drone maintains a figure-eight hover loop between gap threading, roll scan, inverted inspection and precision docking, with each angle proving clearance or recovery."
+    },
+    {
+      "concept": "A potter's wheel hand rhythm links centering, collar lift, rib compression and one tall pull before returning to the same centering cadence.",
+      "prompt_seed": "A potter's wheel hand rhythm links centering, collar lift, rib compression and one tall pull before returning to the same centering cadence."
+    },
+    {
+      "concept": "A robotic loom uses one shuttle cycle to connect diagonal weave, tension flip, edge bind and final wide-pattern pass.",
+      "prompt_seed": "A robotic loom uses one shuttle cycle to connect diagonal weave, tension flip, edge bind and final wide-pattern pass."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Static resets turn the piece into disconnected highlights.",
+      "repair": "Begin mid-loop and keep the base motion active between every skill."
+    },
+    {
+      "failure": "Cuts can otherwise hide failed transitions.",
+      "repair": "Every skill must depart from and visibly return to the loop."
+    },
+    {
+      "failure": "More of the same move adds speed but not progression.",
+      "repair": "Increase difficulty through distinct movement properties."
+    },
+    {
+      "failure": "Decorative angle changes can obscure mechanics.",
+      "repair": "Give each camera angle one proof job."
+    },
+    {
+      "failure": "A freeze at the peak abandons the connective rule.",
+      "repair": "After the peak, return to the original loop without stopping."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An autonomous inspection drone maintains a figure-eight hover loop between gap threading, roll scan, inverted inspection and precision docking, with each angle proving clearance or recovery.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A potter's wheel hand rhythm links centering, collar lift, rib compression and one tall pull before returning to the same centering cadence.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

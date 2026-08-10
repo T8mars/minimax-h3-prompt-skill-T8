@@ -1,4 +1,4 @@
-# Luminous Anomaly Materialization Loop Template
+# 形态奇观｜平面升级到现实 Template
 
 ## Mechanism
 
@@ -36,19 +36,27 @@ A small anomaly leaves a low-information real anchor as one continuously tracked
 - Purpose: Releases the spectacle, proves control over scale and creates replayable closure.
 - Failure if removed: If the film ends at the largest burst, it becomes a conventional escalation demo with no structural return or loop memory.
 
+
 ## Variable Slots
 
 | Slot | Constraint |
 |---|---|
-| `origin_anchor` | A visually simple real surface or object that can host the first anomaly and the final residue. |
-| `carrier` | One trackable point, filament, droplet, particle or shadow whose path remains causally continuous. |
-| `representation_ladder` | At least three distinct stages such as trace, spatial figure, volumetric material and environment-wide system. |
-| `practical_anchor_chain` | Two to four ordinary environmental objects revisited during propagation. |
-| `contact_trigger` | One physically readable interaction or threshold crossing that causes the largest propagation change. |
-| `environment_rewrite_medium` | A coherent graphic or material grammar that can spread across the existing setting without replacing its geometry. |
-| `camera_follow_strategy` | A motivated follow, track, orbit or focus handoff that keeps the carrier legible; exact carrier and shot count may vary. |
-| `return_residue` | A quieter, smaller state related to the carrier but not a copy of the source feather-like ending. |
-| `designed_sound_family` | Newly authored material and propagation sounds synchronized to the chosen transformation; not asserted as source audio. |
+| origin_anchor | A visually simple real surface or object that can host the first anomaly and the final residue. |
+| carrier | One trackable point, filament, droplet, particle or shadow whose path remains causally continuous. |
+| representation_ladder | At least three distinct stages such as trace, spatial figure, volumetric material and environment-wide system. |
+| practical_anchor_chain | Two to four ordinary environmental objects revisited during propagation. |
+| contact_trigger | One physically readable interaction or threshold crossing that causes the largest propagation change. |
+| environment_rewrite_medium | A coherent graphic or material grammar that can spread across the existing setting without replacing its geometry. |
+| camera_follow_strategy | A motivated follow, track, orbit or focus handoff that keeps the carrier legible; exact carrier and shot count may vary. |
+| return_residue | A quieter, smaller state related to the carrier but not a copy of the source feather-like ending. |
+| designed_sound_family | Newly authored material and propagation sounds synchronized to the chosen transformation; not asserted as source audio. |
+
+## Required Human-Facing Anchors
+
+- 同一载体贯穿
+- 形态按维度升级
+- 峰值改变环境
+- 回到初始锚点并留下残留
 
 ## Anti-Copy Boundary
 
@@ -57,55 +65,30 @@ A small anomaly leaves a low-information real anchor as one continuously tracked
 - the exact page-to-floor-to-person-to-lamp-to-bicycle-to-page traversal, compositions and beat durations
 - the creator name, MiniMax H3 marketing claim, After Effects comparison and all source-thread wording
 
-Treat these exclusions as a floor, not a checklist. Also change the setting, subject category, prop system, palette, camera implementation, sound design, and final visual state whenever they are source-adjacent.
+## Transfer Tests
 
-## Transfer Test
+1. In a midnight greenhouse, one dew bead on a fogged glass panel sprouts a bioluminescent filament, travels across leaf veins, expands into a translucent manta-like canopy form, converts the greenhouse into a cyan botanical contour system, then condenses back into one ordinary bead on the original pane.
+   - Preserved: inv-01, inv-02, inv-03, inv-04, inv-05
+   - Changed: origin_anchor, carrier, representation_ladder, practical_anchor_chain, contact_trigger, environment_rewrite_medium, camera_follow_strategy, return_residue, designed_sound_family
+2. On a dark bakery cooling slab, a sugar crystal releases an amber heat thread. A low lateral track follows it across perforated racks and copper tool handles; when the thread snaps through a falling glaze droplet, a crisp glassy ping triggers its expansion into a transparent spun-sugar weather vane. The camera cranes to a high oblique view as a warm thermal-map glaze spreads across the kitchen, then the sound thins to dry cooling clicks while the carrier crystallizes at the slab's far edge.
+   - Preserved: inv-01, inv-02, inv-03, inv-04, inv-05
+   - Changed: origin_anchor, carrier, representation_ladder, practical_anchor_chain, contact_trigger, environment_rewrite_medium, camera_follow_strategy, return_residue, designed_sound_family
 
-Before drafting prompts:
-
-1. Choose a new purpose and audience.
-2. Fill every slot with an internally coherent choice.
-3. Change at least four slots together; for close genres, change six or more.
-4. Prove every invariant using the new scene's own actions and physics.
-5. Reject the concept if it keeps the same beat-for-beat spectacle after the nouns change.
-
-## Model Templates
+## Model Skeletons
 
 ### MiniMax H3
 
-```text
-integrated_multimodal_description: [opening state and hook] [causal action] [readable escalation or proof] [final state and hold]
-overall_soundscape: [location ambience, action-synchronized foley, final accent]
-non_diegetic_music: [optional arc; omit or state silence when inappropriate]
-```
+    integrated_multimodal_description: [new subject, environment, ordered actions, camera, light and final state preserving every anchor]
+    overall_soundscape: [diegetic ambience, action cues and causal payoff]
+    non_diegetic_music: [original music arc or N/A]
 
 ### Seedance 2.0
 
-```text
-任务：[文本生成新视频或用户指定任务]
-总时长约15秒。
-主体定义：[稳定主体名称与不变特征]
-镜头/事件1：[开场状态、构图、光线、声音]
-镜头/事件2：[因果动作与空间关系]
-镜头/事件3：[递进、证明或转折]
-镜头/事件4：[最终状态与停留]
-整体风格与画质：[媒介、材质、光影、连续性]
-约束：[数量、身份、文字、禁止项和反复制边界]
-```
+    任务：[原创实例意图]
+    总时长约[4–15]秒。
+    主体定义：[稳定人物、物体与空间关系]
+    事件或镜头：[按因果顺序实现全部锚点]
+    整体风格与画质：[原创媒介、光影、色彩与声音]
+    约束：[连续性、物理逻辑、反复制与结尾状态]
 
-Adapt the event count to the new concept. Do not force four events.
-
-## Quality Repairs
-
-- **The film stacks unrelated glowing effects without a persistent carrier.** Repair by: Give every state the same trajectory, colour seed or material fingerprint and show each handoff on a recurring anchor.
-- **The environment changes before the carrier earns the scale increase.** Repair by: Complete trace, spatial figure and volumetric stages before activating the world-scale grammar.
-- **The final return copies the source page-and-feather ending.** Repair by: Change the origin class, residue material, camera implementation and return path while preserving only scale contraction and structural closure.
-- **Camera motion competes with the small carrier.** Repair by: Use one motivated move per beat, slow at each handoff and keep at least one stable practical anchor in frame.
-
-## Non-Binding Transfer Examples
-
-These examples demonstrate distance from the source. Do not reproduce them verbatim.
-
-- In a midnight greenhouse, one dew bead on a fogged glass panel sprouts a bioluminescent filament, travels across leaf veins, expands into a translucent manta-like canopy form, converts the greenhouse into a cyan botanical contour system, then condenses back into one ordinary bead on the original pane.
-- On a dark bakery cooling slab, a sugar crystal releases an amber heat thread. A low lateral track follows it across perforated racks and copper tool handles; when the thread snaps through a falling glaze droplet, a crisp glassy ping triggers its expansion into a transparent spun-sugar weather vane. The camera cranes to a high oblique view as a warm thermal-map glaze spreads across the kitchen, then the sound thins to dry cooling clicks while the carrier crystallizes at the slab's far edge.
-- Inside a quiet transit hall, a punched dot on a paper ticket becomes a red signal filament, follows rail grooves and clock hands, grows into a translucent route volume, redraws the station as a moving network diagram, then returns as one fresh punch mark on a different corner of the ticket.
+Adapt shot count to the user's concept. Preserve the causal mechanism, not a fixed storyboard.

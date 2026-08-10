@@ -7,9 +7,9 @@ language: "zh"
 validation: "passed"
 ---
 
-# Threshold-to-Passage Field Inspection — Seedance 2.0
+# 第一视角探险｜穿越后巡检 — Seedance 2.0
 
-这是 Creative DNA 的一个已验证原创实例。使用时应重新实例化可变槽，不要只替换名词。
+这是 Creative DNA 的一个已验证原创实例。使用时应重新实例化主体、场景、道具和风格，同时保留案例的因果结构锚点。
 
 ## Prompt
 
@@ -28,6 +28,6 @@ validation: "passed"
 
 ## 使用检查
 
-- 保留因果机制，不复刻来源人物、地点、道具、构图或标志性效果。
-- 核对主体定义、空间关系、动作次序、声音与约束。
+- 保留因果机制与结构锚点，不复刻来源人物、地点、道具、构图或标志性效果。
+- 核对主体身份、空间关系、事件先后、运镜职责与最终状态。
 - 新用途应返回 [Creative DNA](../creative-dna.json) 重新实例化。

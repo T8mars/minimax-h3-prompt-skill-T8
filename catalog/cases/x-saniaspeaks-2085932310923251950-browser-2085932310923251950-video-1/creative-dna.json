@@ -1,0 +1,167 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Embed one impossible following behavior inside a familiar transport routine, make a visible device produce a clear causal threshold before the behavior begins, then sustain a single view long enough to prove a stable matched-speed convoy. Setup, activation, acceleration, lift and proof must remain continuous; operator, payload, lead transport, lift mechanism, route, camera axis and tone are variable.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish the secondary payload grounded in an ordinary transport routine.",
+      "purpose": "Creates a physical baseline.",
+      "ablation_failure": "Starting airborne makes the behavior arbitrary.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Show one mechanical device fitted and activated before lift.",
+      "purpose": "Provides a readable cause.",
+      "ablation_failure": "Hidden or late cause turns flight into unexplained magic.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Let device output increase until a visible threshold triggers smooth lift.",
+      "purpose": "Makes the transition mechanically legible.",
+      "ablation_failure": "Instant teleporting or jumping breaks causal continuity.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Match the payload's forward speed to the lead transport in one sustained view.",
+      "purpose": "Proves stable convoy behavior under motion.",
+      "ablation_failure": "A short cutaway cannot verify relative position.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Keep the operator calm and the moving payload mechanically stable after the impossible event.",
+      "purpose": "Preserves the deadpan whimsical tone without depending on a living companion.",
+      "ablation_failure": "Panic, wobble or loss of payload control reframes the proof as danger or failure.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject whose identity and silhouette remain stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One readable variable that changes monotonically or in countable stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "One restrained performance rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy the source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence that closes the causal chain."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting each state change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "young woman in cream sweats riding a pale scooter",
+    "silver tabby cat wearing a yellow propeller helmet",
+    "source suburban house and street",
+    "source side tracking composition and cat body pose"
+  ],
+  "instantiations": [
+    {
+      "concept": "An archive porter clips four magnetic shoes to a sealed specimen crate on the floor; sequential induction-rail cells reach a visible threshold, the crate rises and follows a catalog cart at a fixed trailing distance through an S-shaped aisle in one overhead-oblique take. The porter remains calm and the sealed crate stays rigid without wobble throughout the convoy proof.",
+      "prompt_seed": "Worker-and-cargo relation, rail-powered magnetic lift, trailing convoy geometry and overhead proof."
+    },
+    {
+      "concept": "A greenhouse technician attaches a thermal ring to a seed vault; ceiling vents reach a marked temperature threshold and the vault floats behind a hand trolley while a fixed gantry camera proves constant separation. The technician remains calm and the seed vault stays rigid without sway or loss of control.",
+      "prompt_seed": "Cargo levitation with thermal cause and rear-following rather than side-by-side animal flight."
+    },
+    {
+      "concept": "A stage rigger powers an air-bearing base under a silent prop chest; pressure segments illuminate, the chest rises and follows a scenery dolly through a curved backstage path from a frontal retreating camera. The rigger remains calm and the chest stays rigid through the complete proof.",
+      "prompt_seed": "Visible pressure threshold, nonliving cargo and frontal convoy proof."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The payload floats before the mechanism activates.",
+      "repair": "Hold a grounded baseline and show output increasing before lift."
+    },
+    {
+      "failure": "Cuts hide the lift or matched-speed proof.",
+      "repair": "Use one continuous view across activation, lift and travel."
+    },
+    {
+      "failure": "The operator panics or the payload becomes visibly unstable.",
+      "repair": "Keep operator behavior calm and preserve rigid, mechanically supported payload motion."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An archive porter clips four magnetic shoes to a sealed specimen crate on the floor; sequential induction-rail cells reach a visible threshold, the crate rises and follows a catalog cart at a fixed trailing distance through an S-shaped aisle in one overhead-oblique take. The porter remains calm and the sealed crate stays rigid without wobble throughout the convoy proof.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A greenhouse technician attaches a thermal ring to a seed vault; ceiling vents reach a marked temperature threshold and the vault floats behind a hand trolley while a fixed gantry camera proves constant separation. The technician remains calm and the seed vault stays rigid without sway or loss of control.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

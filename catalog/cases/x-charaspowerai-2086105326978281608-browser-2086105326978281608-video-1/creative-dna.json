@@ -1,0 +1,175 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Organize a two-agent confrontation into three readable states: measured stillness, one continuous dense exchange, and a single decisive intervention. After the intervention, preserve one short false-stability beat before an irreversible physical consequence confirms the result; end on the initiator's controlled state rather than another attack.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Begin with readable stillness and a clear relation between both agents.",
+      "purpose": "Establishes parity and spatial stakes.",
+      "ablation_failure": "Immediate action removes the contrast state.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Treat the middle as one continuous exchange rather than unrelated highlights.",
+      "purpose": "Builds pressure while preserving causality.",
+      "ablation_failure": "Disconnected cuts make the decisive event arbitrary.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use only one identifiable state-changing intervention.",
+      "purpose": "Creates a legible decision point.",
+      "ablation_failure": "Multiple finishers compete for causal credit.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Hold a short false-stability beat after intervention.",
+      "purpose": "Lets the audience register cause before effect.",
+      "ablation_failure": "Immediate collapse loses the delayed proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Confirm the outcome through irreversible physical state while the initiator stays controlled.",
+      "purpose": "Provides closure without restarting action.",
+      "ablation_failure": "A reaction-only ending fails to prove the result.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject or system whose identity remains stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One visible variable that changes in countable causal stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained behavior rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting state changes."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "female swordswoman in red",
+    "white-robed assassin",
+    "snow-covered temple courtyard",
+    "blade trap, finishing cut and delayed kneeling fall"
+  ],
+  "instantiations": [
+    {
+      "concept": "Two kinetic sculptures start motionless, enter a dense fin-interlock exchange, one alignment pin changes the system, then a counterweight drops after a short false-stable pause.",
+      "prompt_seed": "Two kinetic sculptures start motionless, enter a dense fin-interlock exchange, one alignment pin changes the system, then a counterweight drops after a short false-stable pause."
+    },
+    {
+      "concept": "Two autonomous sorting arms begin parked, exchange parcels rapidly, one gate reversal changes flow and a delayed bin lock proves the win state.",
+      "prompt_seed": "Two autonomous sorting arms begin parked, exchange parcels rapidly, one gate reversal changes flow and a delayed bin lock proves the win state."
+    },
+    {
+      "concept": "Two wave tanks begin calm, exchange reflected pulses, one phase inversion occurs and a delayed standing-wave collapse confirms it.",
+      "prompt_seed": "Two wave tanks begin calm, exchange reflected pulses, one phase inversion occurs and a delayed standing-wave collapse confirms it."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Immediate action removes the contrast state.",
+      "repair": "Begin with readable stillness and a clear relation between both agents."
+    },
+    {
+      "failure": "Disconnected cuts make the decisive event arbitrary.",
+      "repair": "Treat the middle as one continuous exchange rather than unrelated highlights."
+    },
+    {
+      "failure": "Multiple finishers compete for causal credit.",
+      "repair": "Use only one identifiable state-changing intervention."
+    },
+    {
+      "failure": "Immediate collapse loses the delayed proof.",
+      "repair": "Hold a short false-stability beat after intervention."
+    },
+    {
+      "failure": "A reaction-only ending fails to prove the result.",
+      "repair": "Confirm the outcome through irreversible physical state while the initiator stays controlled."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Two kinetic sculptures start motionless, enter a dense fin-interlock exchange, one alignment pin changes the system, then a counterweight drops after a short false-stable pause.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Two autonomous sorting arms begin parked, exchange parcels rapidly, one gate reversal changes flow and a delayed bin lock proves the win state.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

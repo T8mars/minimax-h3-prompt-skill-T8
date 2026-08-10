@@ -1,7 +1,4 @@
 {
-  "schema_version": "public-creative-dna/v1",
-  "case_id": "reddit-1vhloyz-walter-prompt-guide",
-  "title": "Proof-State Camera Handoff",
   "complexity": "moderate",
   "mechanism": "An urgent intervention creates conflict, a controlled visual proof makes the hidden risk undeniable, and one motivated camera handoff transfers that proof to the recipient's compact reaction.",
   "invariants": [
@@ -9,19 +6,31 @@
       "id": "inv-01",
       "rule": "Establish an urgent conflict through action before revealing the proof state.",
       "purpose": "Creates an immediate question and gives the later evidence a causal reason to appear.",
-      "ablation_failure": "Opening on the explanation removes tension and turns the scene into a flat demonstration."
+      "ablation_failure": "Opening on the explanation removes tension and turns the scene into a flat demonstration.",
+      "evidence_ids": [
+        "beat-01",
+        "beat-02"
+      ]
     },
     {
       "id": "inv-02",
       "rule": "Hold the proof state visually stable long enough to be understood before the camera hands off.",
       "purpose": "Makes the evidence itself readable while keeping it integrated with performance.",
-      "ablation_failure": "Moving away before the hidden condition resolves makes the intervention feel arbitrary."
+      "ablation_failure": "Moving away before the hidden condition resolves makes the intervention feel arbitrary.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-05"
+      ]
     },
     {
       "id": "inv-03",
       "rule": "Use one motivated reframe to hand the last line to a contrasting second speaker.",
       "purpose": "Converts instruction into a two-person joke without wasting time on coverage.",
-      "ablation_failure": "Keeping the camera on the first speaker removes the reaction payoff."
+      "ablation_failure": "Keeping the camera on the first speaker removes the reaction payoff.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-02"
+      ]
     }
   ],
   "slots": [

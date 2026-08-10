@@ -1,40 +1,38 @@
-# Cross-Medium Contact Reaction Ladder
+# 二维角色｜真人接触三级反应
 
-在稳定写实空间中放入唯一的平面角色，让一次真实—动画接触先建立因果，再通过三段清晰反应逐级升级，最后把不可思议的材质效果落回真实物体。
+真实世界一次接触触发平面角色的三级反应，并以媒介自身的变化收尾。
 
 ## 核心机制
 
 A single flat 2D character shares a locked photoreal environment with a real hand; one small cross-medium contact causes a three-stage readable reaction that ends in a medium-specific impossible effect.
 
-## 视觉与节奏风格
+## 推荐输入格式
 
-写实实拍与单一二维纸贴角色混合；固定机位；接触阴影稳定；反应表演和材质特效承担节奏。
+`平面角色 + 真实场景 + 一次跨媒介接触 + 三级反应 + 媒介专属结尾`
 
-## 适用范围
+## 简短示例
 
-- 混合媒体短片、轻喜剧和产品演示
-- 需要在单一构图中完成明确因果链的 15 秒视频
-- 需要以动作和效果而不是对白维持注意力的概念
+> 书桌贴纸上的纸片机器人被真人手指轻触：先轻颤，再鼓起并喷出纸屑火花，最后整张桌垫折成通往它的纸桥。
 
-## 不适合
+## 必须保留的结构锚点
 
-- 多角色群戏或高速蒙太奇
-- 无法保持平面角色厚度、遮挡和接触阴影稳定的场景
+- 平面与真实媒介同框
+- 只有一次关键接触
+- 反应至少三级升级
+- 结尾由平面媒介自身完成
 
 ## 使用方法
 
-1. 先阅读 [Creative DNA](./creative-dna.json)，保留其中的因果不变量。
-2. 重新选择人物、环境、道具、色彩、动作、声音与结尾，避免复刻来源视频表面。
-3. 根据目标模型选用 [MiniMax H3 提示词](./prompts/minimax-h3.md) 或 [Seedance 2.0 提示词](./prompts/seedance-2.0.md)。
-4. 将现成提示词视为已验证实例，不要只替换名词；新概念至少改变四个可变槽，并再次检查因果、连续性与反复制边界。
-5. 在 GitHub 直接查看 GIF，或在 Electron 桌面版播放媒体包中的完整 MP4（含声音）；需要作者上下文时打开原帖。
+1. 先保留用户主体和目标，再按推荐格式补齐场景、事件链、镜头和结果。
+2. 阅读 [Creative DNA](./creative-dna.json)，重新实例化变量，不做来源表面换名词。
+3. 分别查看 [MiniMax H3](./prompts/minimax-h3.md) 与 [Seedance 2.0](./prompts/seedance-2.0.md) 的已验证实例。
+4. GitHub 使用 GIF 快速预览；Electron 媒体包播放完整有声 MP4。
 
 ## 来源与署名
 
 - 平台：reddit
 - 作者：Devajyoti1231
-- 原帖标题：2D chibi girl added ‘Just a Pinch’ — MiniMax H3
 - 原始视频：[打开来源](https://www.reddit.com/r/StableDiffusion/comments/1vgynd7/2d_chibi_girl_added_just_a_pinch_minimax_h3/)
 - 模型归因：MiniMax H3（creator_claimed）
 
-来源视频用于机制研究与引用。这里发布的 Creative DNA 和双模型提示词是面向新创作的抽象模板，不要求复刻来源人物、品牌、对白、构图或特效表面。
+来源视频用于机制研究与引用；公开模板只保留可迁移因果，不要求复刻来源人物、道具、场景、构图、对白或标志性效果。

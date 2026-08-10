@@ -1,0 +1,167 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Build a flat poster world around one dominant geometric motif and one stable protagonist silhouette. Repeatedly fracture and reconstruct the layout through hard-edged crops, diagrams, negative space and key states; reserve continuous physical action, then slow briefly for a contrastive operational tableau and resolve all graphic families into one closing system. Motif, palette, subject class, icon family, tempo, contrast state and final graphic outcome are variable.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one dominant geometric motif and protagonist silhouette immediately.",
+      "purpose": "Creates anchors for later fragmentation.",
+      "ablation_failure": "Without anchors, rapid recomposition becomes random collage.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep all space flat and poster-like while graphic planes transform.",
+      "purpose": "Protects the editorial MG identity.",
+      "ablation_failure": "Realistic 3D depth breaks the visual system.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use key states and symbolic environmental inserts instead of continuous combat.",
+      "purpose": "Lets composition carry motion and preserves readability.",
+      "ablation_failure": "Full action choreography competes with graphic transitions.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Peak information density before a short contrastive operational tableau.",
+      "purpose": "Creates a clear acceleration and breath without requiring a rival character.",
+      "ablation_failure": "Uniform density removes rhythm and makes the operational state unreadable.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Resolve the established graphic families into one original closing system.",
+      "purpose": "Converts montage energy into a memorable endpoint.",
+      "ablation_failure": "An unrelated logo or fade fails to resolve the system.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject whose identity and silhouette remain stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One readable variable that changes monotonically or in countable stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "One restrained performance rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy the source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence that closes the causal chain."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting each state change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "giant purple lunar eclipse and lunar phase diagrams",
+    "black-haired woman with massive katana",
+    "gray-haired villain in a wide-brim black hat",
+    "source purple-black-silver palette, raven inserts and exact astrology UI"
+  ],
+  "instantiations": [
+    {
+      "concept": "An underwater research PV uses a coral spiral motif, autonomous submersible silhouette, sonar wedges and ink-black fish schools; it alternates environmental scale shifts with tool-free navigation states, pauses on an empty pressure gate, then resolves into a shell-current navigation emblem.",
+      "prompt_seed": "Flat coral-poster research sequence with machine navigation states, environmental inserts, an unoccupied gate tableau and shell-current resolution."
+    },
+    {
+      "concept": "A weather-station ident centers a wind-rosette motif, sensor-mast silhouette and pressure maps, slows on an empty storm shutter state, then resolves into a route-bearing forecast system.",
+      "prompt_seed": "Editorial atmosphere geometry driven by machine state and an unoccupied operational tableau."
+    },
+    {
+      "concept": "A logistics explainer centers a folded-corridor motif, autonomous carrier silhouette and parcel-flow diagrams, slows on an empty checkpoint gate and resolves into a path-status symbol.",
+      "prompt_seed": "Flat operational motion graphics with no character rivalry or weapon-like insert."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The clip becomes realistic 3D scenery.",
+      "repair": "Use flat planes, hard shadows, graphic crops and no volumetric perspective."
+    },
+    {
+      "failure": "Characters perform continuous combat.",
+      "repair": "Reduce movement to a few iconic key poses and let layout transitions carry energy."
+    },
+    {
+      "failure": "The final mark introduces unrelated graphics.",
+      "repair": "Build it only from motif, grid and icon families already established."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An underwater research PV uses a coral spiral motif, autonomous submersible silhouette, sonar wedges and ink-black fish schools; it alternates environmental scale shifts with tool-free navigation states, pauses on an empty pressure gate, then resolves into a shell-current navigation emblem.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A weather-station ident centers a wind-rosette motif, sensor-mast silhouette and pressure maps, slows on an empty storm shutter state, then resolves into a route-bearing forecast system.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

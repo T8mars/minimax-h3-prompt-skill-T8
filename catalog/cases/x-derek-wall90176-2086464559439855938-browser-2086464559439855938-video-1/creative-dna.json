@@ -1,0 +1,167 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Compress a multi-stage making process around one persistent artifact and one irreversible visual variable that only increases—coverage, polish, oxidation, translucency or revealed pattern. Alternate contact-level macro proof with scale-restoring views, ensure each cut advances the same artifact, and reserve the longest hold for the completed state. Craft, object, material, palette, stage count and final display are variable.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one artifact in an unadvanced base state.",
+      "purpose": "Creates the zero point for the visual clock.",
+      "ablation_failure": "Without a base state, progress cannot be measured.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep object identity and defining geometry stable across process cuts.",
+      "purpose": "Lets the viewer accumulate changes on one artifact.",
+      "ablation_failure": "Object swaps look like unrelated demonstrations.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Advance one irreversible material variable in a single direction.",
+      "purpose": "Turns coverage into an intuitive timeline.",
+      "ablation_failure": "Reversing or resetting the variable breaks progress.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Show direct tool-to-material contact at each key state change.",
+      "purpose": "Provides causal proof and tactile credibility.",
+      "ablation_failure": "Off-screen transformations feel like magic rather than craft.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Give the finished artifact a longer clean hold after the final operation.",
+      "purpose": "Rewards the compressed process and confirms completion.",
+      "ablation_failure": "Ending during the last tool action denies the payoff.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject whose identity and silhouette remain stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One readable variable that changes monotonically or in countable stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "One restrained performance rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy the source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence that closes the causal chain."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting each state change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "red bulbous vase with raised coiled dragon-like relief",
+    "gold leaf applied over red lacquer",
+    "source Chinese numbered stage plaques",
+    "source artisan face, workshop and exact tool sequence"
+  ],
+  "instantiations": [
+    {
+      "concept": "A ceramic relief tile progresses from pale bisque through carved channels to increasing translucent teal glaze coverage, final kiln gloss and a clean gallery reveal.",
+      "prompt_seed": "Macro ceramic process using teal glaze coverage as the irreversible visual clock."
+    },
+    {
+      "concept": "A wooden music-box lid moves from raw carving to increasing blue resin inlay, sanding, polish and a reflective final pattern.",
+      "prompt_seed": "One persistent lid with blue inlay coverage growing across every cut."
+    },
+    {
+      "concept": "A copper botanical plaque advances from clean metal through wax masking to spreading green patina, selective polish and final framed display.",
+      "prompt_seed": "Patina coverage is the monotonic progress variable across a tactile metal process."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Different objects appear at different stages.",
+      "repair": "Lock one artifact silhouette, motif and scale across every cut."
+    },
+    {
+      "failure": "Coverage jumps backward or changes hue randomly.",
+      "repair": "Choose one irreversible variable and make every cut advance it."
+    },
+    {
+      "failure": "Only finished beauty shots are shown.",
+      "repair": "Include direct tool contact and readable intermediate states before the final hold."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A ceramic relief tile progresses from pale bisque through carved channels to increasing translucent teal glaze coverage, final kiln gloss and a clean gallery reveal.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A wooden music-box lid moves from raw carving to increasing blue resin inlay, sanding, polish and a reflective final pattern.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -2,12 +2,12 @@
   "schema_version": "public-case/v1",
   "case_id": "x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1",
   "slug": "animate-fixed-frame-construction",
-  "title": "Layered Field-Guide Illustration Comes Alive",
+  "title": "固定机位｜从线稿生成成品",
   "source_title": "X creative video by @Dheepanratnam",
-  "summary": "在一个固定构图里把创作过程变成可读的因果阶梯：先用低承诺引导线建立几何，再锁定结构、添加材质与语境细节，最后以克制的媒介内动作证明作品已经完成。",
+  "summary": "锁定构图，用不可逆的制作阶段让同一对象从草图逐步成为成品。",
   "status": "released",
   "source_duration_seconds": 15.168,
-  "target_duration_seconds": 15,
+  "target_duration_seconds": 15.0,
   "models": [
     "MiniMax H3",
     "Seedance 2.0"
@@ -35,13 +35,23 @@
     "poster": "available",
     "mp4": "available_in_electron_media_pack"
   },
+  "template_id": "t8c002-fixed-composition-medium-ladder",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "对象 + 固定构图 + 4个不可逆制作阶段 + 终态小动作",
+  "recommended_input": "固定正面构图中的纸艺灯塔：铅笔轮廓、纸片立体搭建、色彩与纹理完成、内部灯光点亮，最后纸浪轻轻摆动。",
+  "required_anchors": [
+    "构图锁定",
+    "同一对象连续成长",
+    "至少四个不可逆阶段",
+    "终态有轻微活化动作"
+  ],
   "tags": [
-    "fixed-frame",
-    "layered-construction",
-    "illustration",
-    "process-reveal",
-    "material-finish",
-    "micro-motion"
+    "t8c002",
+    "fixed",
+    "composition",
+    "medium",
+    "ladder"
   ],
   "quality": {
     "weighted_score": 4.76,

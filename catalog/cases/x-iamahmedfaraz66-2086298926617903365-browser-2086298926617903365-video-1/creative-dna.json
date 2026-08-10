@@ -1,7 +1,4 @@
 {
-  "schema_version": "public-creative-dna/v1",
-  "case_id": "x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1",
-  "title": "Backstage-to-Stage Continuous Journey",
   "complexity": "moderate",
   "mechanism": "A recognizable person remains the emotional coordinate while an externally observed journey moves from constrained work pressure into an expanded goal space. Context is revealed through material interactions and camera parallax rather than direct exposition; scale and light increase toward the transition, and a final task-completing interaction—not a gesture to the lens—turns anticipation into earned arrival. Shot count, camera carrier and reveal order are variable.",
   "invariants": [
@@ -9,31 +6,55 @@
       "id": "inv-01",
       "rule": "Keep one recognizable person emotionally legible across changing spaces, using face, posture or task behavior as the recurring anchor rather than requiring a selfie.",
       "purpose": "Preserves human stakes and orientation while allowing external, profile, wide or body-mounted camera implementations.",
-      "ablation_failure": "Without a recurring human coordinate, the route becomes anonymous location coverage; requiring a close selfie would make the template surface-specific."
+      "ablation_failure": "Without a recurring human coordinate, the route becomes anonymous location coverage; requiring a close selfie would make the template surface-specific.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01"
+      ]
     },
     {
       "id": "inv-02",
       "rule": "Make every contextual reveal originate from a physical interaction—moving a cart, opening geometry, passing an obstacle or handing off an object—and let the camera discover it through parallax, reframing or occlusion.",
       "purpose": "Makes camera change causal and informative without prescribing wrist turns or a return-to-face pattern.",
-      "ablation_failure": "Unmotivated coverage feels decorative; copying the same turn-and-recover move makes new instances mechanically identical."
+      "ablation_failure": "Unmotivated coverage feels decorative; copying the same turn-and-recover move makes new instances mechanically identical.",
+      "evidence_ids": [
+        "beat-02",
+        "beat-03",
+        "obs-03"
+      ]
     },
     {
       "id": "inv-03",
       "rule": "Create one legible transition from compressed effort to expanded possibility using at least two of scale, light, depth, sound or traffic flow; the transition may occur through a door, lift, ramp, curtain, bend or temporal match.",
       "purpose": "Gives the physical route a visible emotional direction.",
-      "ablation_failure": "If every space has equal brightness and scale, arrival has no visual payoff."
+      "ablation_failure": "If every space has equal brightness and scale, arrival has no visual payoff.",
+      "evidence_ids": [
+        "beat-04",
+        "beat-05",
+        "obs-07"
+      ]
     },
     {
       "id": "inv-04",
       "rule": "Choose a capture grammar appropriate to each new world and keep its rules consistent; controlled documentary texture may come from parallax, shallow focus, operator lag or environmental occlusion, not a fixed bundle of DV defects.",
       "purpose": "Protects immediacy while allowing polished 35mm, shoulder documentary, fixed observational or body-mounted variants.",
-      "ablation_failure": "A copied artifact bundle reveals the source; random defects or identity drift destroy route comprehension."
+      "ablation_failure": "A copied artifact bundle reveals the source; random defects or identity drift destroy route comprehension.",
+      "evidence_ids": [
+        "obs-04",
+        "obs-05",
+        "obs-14"
+      ]
     },
     {
       "id": "inv-05",
       "rule": "Resolve arrival through one task-completing physical interaction between the person and the goal environment, while their emotional state remains readable without addressing the lens.",
       "purpose": "Closes spatial and emotional questions through consequence rather than a copied reaction gesture.",
-      "ablation_failure": "A generic smile or hand sign does not prove arrival; a destination-only cut loses the human cost that made it meaningful."
+      "ablation_failure": "A generic smile or hand sign does not prove arrival; a destination-only cut loses the human cost that made it meaningful.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-12"
+      ]
     }
   ],
   "slots": [

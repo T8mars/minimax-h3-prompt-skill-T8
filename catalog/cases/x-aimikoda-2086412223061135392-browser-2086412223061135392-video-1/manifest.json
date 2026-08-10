@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1",
+  "slug": "stage-progressive-character-reveal",
+  "title": "角色登场｜细节到全身揭晓",
+  "source_title": "X creative video by @aimikoda",
+  "summary": "从标志细节开始，逐层扩展到面部、动作和全身英雄定格。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-progressive-character-reveal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-staged-character-reveal-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "标志细节→局部轮廓→面部→一次动作→全身英雄定格",
+  "recommended_input": "先拍老式列车长的黄铜打票钳，再露出制服轮廓和面部；他只完成一次打票动作，最后在蒸汽站台中全身英雄定格。",
+  "required_anchors": [
+    "从可识别细节开始",
+    "揭晓尺度逐步扩大",
+    "角色只做一次代表动作",
+    "以全身定格完成身份确认"
+  ],
+  "tags": [
+    "staged",
+    "character",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.601,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T02:02:46+08:00",
+  "updated_at": "2026-08-10T04:07:39+08:00"
+}

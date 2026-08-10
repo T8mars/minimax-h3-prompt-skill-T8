@@ -1,7 +1,4 @@
 {
-  "schema_version": "public-creative-dna/v1",
-  "case_id": "reddit-1vh8jy6-h3-high-card",
-  "title": "One Signal Beats Many",
   "complexity": "moderate",
   "mechanism": "A noisy system makes quantity look powerful, one restrained corrective signal interrupts it, and a physical consequence proves that calibrated clarity beats accumulation.",
   "invariants": [
@@ -9,25 +6,40 @@
       "id": "inv-01",
       "rule": "Show the asymmetric one-versus-many matchup before either side explains it.",
       "purpose": "Creates an immediate comparison question.",
-      "ablation_failure": "If the single answer appears first, there is no reversal."
+      "ablation_failure": "If the single answer appears first, there is no reversal.",
+      "evidence_ids": [
+        "beat-01"
+      ]
     },
     {
       "id": "inv-02",
       "rule": "Let the many-item side perform longer and occupy more space before the concise answer.",
       "purpose": "Builds apparent advantage and visual noise.",
-      "ablation_failure": "Equal screen time makes the payoff predictable and weak."
+      "ablation_failure": "Equal screen time makes the payoff predictable and weak.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03"
+      ]
     },
     {
       "id": "inv-03",
       "rule": "Give the single corrective signal a dedicated sensory close-up.",
       "purpose": "Turns a small action or object into the strongest information beat without requiring copied text or props.",
-      "ablation_failure": "A wide or simultaneous reveal loses hierarchy and emphasis."
+      "ablation_failure": "A wide or simultaneous reveal loses hierarchy and emphasis.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-04"
+      ]
     },
     {
       "id": "inv-04",
       "rule": "End with calm control versus noisy consequence, not another explanation.",
       "purpose": "Converts the logical reversal into a visual punchline.",
-      "ablation_failure": "A verbal summary repeats information and drains comic energy."
+      "ablation_failure": "A verbal summary repeats information and drains comic energy.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-09"
+      ]
     }
   ],
   "slots": [

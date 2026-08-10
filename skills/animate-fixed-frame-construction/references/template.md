@@ -1,4 +1,4 @@
-# Layered Field-Guide Illustration Comes Alive Template
+# 固定机位｜从线稿生成成品 Template
 
 ## Mechanism
 
@@ -30,17 +30,25 @@ A fixed composition turns creation into a readable causal ladder: low-commitment
 - Purpose: Adds an impossible payoff without breaking the artifact illusion.
 - Failure if removed: Large three-dimensional motion or support movement turns the elegant category break into an unrelated VFX gag.
 
+
 ## Variable Slots
 
 | Slot | Constraint |
 |---|---|
-| `support` | One stable physical or graphic surface with reserved hero and context zones. |
-| `hero_subject` | A single dominant form readable first as guides, then structure, then finish. |
-| `representation_ladder` | Three visibly distinct commitment stages appropriate to the chosen medium. |
-| `context_details` | Two to four secondary marks or diagrams that arrive only after the hero reads. |
-| `finish_palette` | A restrained palette that clarifies material stages. |
-| `living_idle` | One small loop or response that does not leave or volumize the surface. |
-| `sound_ladder` | Material sounds change with each process stage, followed by one payoff accent. |
+| support | One stable physical or graphic surface with reserved hero and context zones. |
+| hero_subject | A single dominant form readable first as guides, then structure, then finish. |
+| representation_ladder | Three visibly distinct commitment stages appropriate to the chosen medium. |
+| context_details | Two to four secondary marks or diagrams that arrive only after the hero reads. |
+| finish_palette | A restrained palette that clarifies material stages. |
+| living_idle | One small loop or response that does not leave or volumize the surface. |
+| sound_ladder | Material sounds change with each process stage, followed by one payoff accent. |
+
+## Required Human-Facing Anchors
+
+- 构图锁定
+- 同一对象连续成长
+- 至少四个不可逆阶段
+- 终态有轻微活化动作
 
 ## Anti-Copy Boundary
 
@@ -49,54 +57,30 @@ A fixed composition turns creation into a readable causal ladder: low-commitment
 - source handwriting, taxonomic wording, plate number and page marks
 - the exact timecode pattern, colour placement, final blink and tail gesture
 
-Treat these exclusions as a floor, not a checklist. Also change the setting, subject category, prop system, palette, camera implementation, sound design, and final visual state whenever they are source-adjacent.
+## Transfer Tests
 
-## Transfer Test
+1. On a dark architectural blueprint, graphite planning arcs become precise white linework, cyan and amber system zones illuminate, tiny legend symbols populate the margin, and one printed status light begins pulsing while remaining flat ink.
+   - Preserved: inv-01, inv-02, inv-03, inv-04
+   - Changed: support, hero_subject, representation_ladder, context_details, finish_palette, living_idle
+2. A square ceramic mural begins as charcoal registration marks, gains cobalt outlines, then mineral glazes flood a geometric koi design; small border motifs appear last and the painted water rings ripple once without leaving the tiles.
+   - Preserved: inv-01, inv-02, inv-03, inv-04
+   - Changed: support, hero_subject, representation_ladder, context_details, finish_palette, living_idle, sound_ladder
 
-Before drafting prompts:
-
-1. Choose a new purpose and audience.
-2. Fill every slot with an internally coherent choice.
-3. Change at least four slots together; for close genres, change six or more.
-4. Prove every invariant using the new scene's own actions and physics.
-5. Reject the concept if it keeps the same beat-for-beat spectacle after the nouns change.
-
-## Model Templates
+## Model Skeletons
 
 ### MiniMax H3
 
-```text
-integrated_multimodal_description: [opening state and hook] [causal action] [readable escalation or proof] [final state and hold]
-overall_soundscape: [location ambience, action-synchronized foley, final accent]
-non_diegetic_music: [optional arc; omit or state silence when inappropriate]
-```
+    integrated_multimodal_description: [new subject, environment, ordered actions, camera, light and final state preserving every anchor]
+    overall_soundscape: [diegetic ambience, action cues and causal payoff]
+    non_diegetic_music: [original music arc or N/A]
 
 ### Seedance 2.0
 
-```text
-任务：[文本生成新视频或用户指定任务]
-总时长约15秒。
-主体定义：[稳定主体名称与不变特征]
-镜头/事件1：[开场状态、构图、光线、声音]
-镜头/事件2：[因果动作与空间关系]
-镜头/事件3：[递进、证明或转折]
-镜头/事件4：[最终状态与停留]
-整体风格与画质：[媒介、材质、光影、连续性]
-约束：[数量、身份、文字、禁止项和反复制边界]
-```
+    任务：[原创实例意图]
+    总时长约[4–15]秒。
+    主体定义：[稳定人物、物体与空间关系]
+    事件或镜头：[按因果顺序实现全部锚点]
+    整体风格与画质：[原创媒介、光影、色彩与声音]
+    约束：[连续性、物理逻辑、反复制与结尾状态]
 
-Adapt the event count to the new concept. Do not force four events.
-
-## Quality Repairs
-
-- **All layers appear together as a generic dissolve.** Repair by: Give each representation stage a distinct material behavior and complete one milestone before the next begins.
-- **The support or camera drifts during creation.** Repair by: Lock framing, shadows, surface texture and prior marks; permit motion only inside active drawing regions.
-- **The final animation breaks into three dimensions.** Repair by: Restrict the payoff to one flat, local, low-amplitude motion that preserves the medium boundary.
-
-## Non-Binding Transfer Examples
-
-These examples demonstrate distance from the source. Do not reproduce them verbatim.
-
-- On a dark architectural blueprint, graphite planning arcs become precise white linework, cyan and amber system zones illuminate, tiny legend symbols populate the margin, and one printed status light begins pulsing while remaining flat ink.
-- A square ceramic mural begins as charcoal registration marks, gains cobalt outlines, then mineral glazes flood a geometric koi design; small border motifs appear last and the painted water rings ripple once without leaving the tiles.
-- A minimalist fashion cutting pattern draws itself on translucent paper, seam lines and notches lock in, fabric swatches tint the panels, measurement symbols appear, and the completed illustrated sleeve gives one gentle printed flutter.
+Adapt shot count to the user's concept. Preserve the causal mechanism, not a fixed storyboard.

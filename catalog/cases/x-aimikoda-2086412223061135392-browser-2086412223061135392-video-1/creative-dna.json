@@ -1,0 +1,167 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Reveal one stable character through a controlled information ladder: signature detail, partial or rear silhouette, face, one restrained personality action and complete hero view. Each stage must answer one identity question while preserving exact defining features and calm secondary motion. Character, medium, environment, reveal detail, gesture, camera axis and mood are variable.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Begin on one signature detail rather than the full design.",
+      "purpose": "Creates an identity question and gives small features value.",
+      "ablation_failure": "A full-body opening removes progressive revelation.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use a partial or rear silhouette before showing the face.",
+      "purpose": "Establishes body language and delays recognition.",
+      "ablation_failure": "Jumping directly to a portrait flattens the reveal ladder.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Preserve defining identity, materials and silhouette through every stage.",
+      "purpose": "Makes separate shots read as one character.",
+      "ablation_failure": "Redesign drift breaks trust and comparison.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Allow only one restrained signature action after the face reveal.",
+      "purpose": "Adds personality without replacing presentation with action.",
+      "ablation_failure": "Multiple gestures or combat beats dilute the introduction.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a clean complete hero view and hold it.",
+      "purpose": "Provides the promised design proof.",
+      "ablation_failure": "Cropping or immediate exit denies completion.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original subject whose identity and silhouette remain stable."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One readable variable that changes monotonically or in countable stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "One restrained performance rule that makes the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A coherent information order that does not copy the source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "One clean physical or graphic consequence that closes the causal chain."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "A new hierarchy of diegetic cues supporting each state change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source black-haired female design with cream oversized sleeves and red ties",
+    "repeated character-sheet strip beneath every shot",
+    "source sunlit stone courtyard and exact orbit",
+    "source hand-to-eye gesture, boots and final low-angle pose"
+  ],
+  "instantiations": [
+    {
+      "concept": "A retro-futurist train conductor is revealed through a gloved ticket-punch detail, a side silhouette behind frosted carriage glass, a face reveal as the door opens, one waist-level ticket punch and a high-angle full-body platform hold.",
+      "prompt_seed": "Occupational detail, non-rear silhouette, face reveal, hand-away-from-face action and overhead final proof."
+    },
+    {
+      "concept": "A moss-armored forest courier appears through a shoulder clasp, a side silhouette behind hanging roots, a profile reveal, one waist-level map fold and a complete eye-level stance beneath a canopy.",
+      "prompt_seed": "Character introduction driven by signature hardware and a restrained action away from the face."
+    },
+    {
+      "concept": "An arctic radio engineer is revealed through a wrist coil, a silhouette reflected in an instrument panel, a face reveal, one console toggle and a top-down full-body control-room hold.",
+      "prompt_seed": "Technical character reveal with different axis, gesture zone and final composition."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The complete character appears in the first shot.",
+      "repair": "Crop to one signature detail and delay face/full body."
+    },
+    {
+      "failure": "Outfit or face changes between stages.",
+      "repair": "Declare identity anchors and repeat them in every shot."
+    },
+    {
+      "failure": "The introduction becomes an action montage.",
+      "repair": "Use one restrained gesture and reserve the final seconds for a stable hero hold."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A retro-futurist train conductor is revealed through a gloved ticket-punch detail, a side silhouette behind frosted carriage glass, a face reveal as the door opens, one waist-level ticket punch and a high-angle full-body platform hold.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A moss-armored forest courier appears through a shoulder clasp, a side silhouette behind hanging roots, a profile reveal, one waist-level map fold and a complete eye-level stance beneath a canopy.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

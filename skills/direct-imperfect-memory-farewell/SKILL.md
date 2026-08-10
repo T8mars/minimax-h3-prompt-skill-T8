@@ -1,38 +1,46 @@
 ---
 name: direct-imperfect-memory-farewell
-description: "Create original 15-second continuous memory clips where an imperfect observer discovers a subject in an ordinary routine, an external cue changes the goal, one late acknowledgment makes the memory personal, and a motivated exit ends with a readable operator mistake. Use for MiniMax H3 or Seedance 2.0 nostalgic, candid, slice-of-life, farewell, or found-footage concepts."
+description: "Create original short videos using the 复古手持｜日常送别回眸 Creative DNA for MiniMax H3 or Seedance 2.0. Use when the user wants this causal, camera, motion, rhythm, or payoff structure with new subjects and surfaces."
 ---
 
-# Imperfect-Memory Farewell Take
+# 复古手持｜日常送别回眸
 
-Create a believable memory relationship, not a constant analog-filter demo or a reconstruction of the reference setting.
+Create a new execution from the reusable mechanism, not a surface reskin of any reference video.
 
 ## Workflow
 
-1. Read [references/summary.md](references/summary.md).
-2. Read [references/template.md](references/template.md) completely.
-3. Define the memory medium, everyday place, stable subject, two or three routine actions, one external cue, one acknowledgment, a continuous exit path, and one operator mistake.
-4. Map the geography for a single take. The operator must discover the subject rather than begin on a polished hero frame.
-5. Let routine occupy real screen time before the cue changes the subject's goal.
-6. Reserve direct acknowledgment for the threshold immediately before exit.
-7. Tie every focus, zoom, exposure, framing, or endpoint imperfection to operator attention; defects must never hide the causal action.
-8. Compile MiniMax H3 and Seedance 2.0 independently and verify identity, continuity, causality, and anti-copy distance.
+1. Read [references/summary.md](references/summary.md) for fit, input slots, and the concise starting example.
+2. Read [references/template.md](references/template.md) completely before drafting.
+3. Preserve the user's subject and objective, then fill every missing scene, trigger, event-chain, camera, sound, and payoff slot.
+4. Treat these anchors as mandatory:
 
-## Model Guidance
+- 先建立观察者媒介
+- 至少两个普通日常动作
+- 外部信号改变目标
+- 一次回应后以有动机失误收尾
 
-- MiniMax H3: write one integrated audiovisual take in English, name the restrained defect profile, keep geography and subject identity stable, and synchronize natural sound.
-- Seedance 2.0: write Chinese by default, define subject and medium once, state only the overall duration, preserve one-take action order, and constrain defects to motivated moments.
-- Neither model should use constant maximum shake, repeated posing, repeated acknowledgment, or an arbitrary exit.
+5. Change source-specific people, setting, props, palette, dialogue, shot boundaries, sound family, and payoff surfaces together.
+6. Compile MiniMax H3 and Seedance 2.0 independently; do not leak one model's field syntax into the other.
+7. Silently verify anchor coverage, continuity, timing, physical causality, and anti-copy distance before returning the final prompts.
+
+## MiniMax H3
+
+- Use the current official H3 task grammar and language profile.
+- Separate integrated visual action, overall soundscape, and non-diegetic music or explicit silence.
+- Use timestamps only to make event order executable; keep shots consecutive and duration-safe.
+
+## Seedance 2.0
+
+- Define stable subjects once and preserve event order, camera motivation, sound intent, and overall duration.
+- Use a simple paragraph for simple concepts or an ordered multi-shot structure for complex concepts.
+- State overall duration once; do not copy H3 field labels or per-shot timecode grammar.
 
 ## Output
 
-Return a concept, geography/route note, slot table, invariant proof, MiniMax H3 prompt, Seedance 2.0 prompt, and validation note.
+Return one concept sentence, the filled slots, an anchor-coverage check, one MiniMax H3 prompt, one Seedance 2.0 prompt, and a short anti-copy validation note.
 
-## Non-Negotiable Constraints
+## Non-Negotiable
 
-- The observer discovers the subject inside legible everyday geography.
-- At least two small routine actions precede the cue.
-- One environmental cue visibly changes the subject's goal.
-- One brief acknowledgment occurs near exit, not throughout.
-- Medium imperfections remain motivated and readable.
-- Change place class, subject/operator relationship, routine, cue mechanics, medium, acknowledgment, and exit behavior; do not recreate the source surface.
+- A subject-only request is underspecified. Preserve that subject and complete the mechanism instead of returning a generic portrait or showcase.
+- Do not omit, reorder, or weaken a required anchor.
+- Do not reuse source people, brands, dialogue, exact storyboard, signature props, exact timings, or recognizable effect surfaces.

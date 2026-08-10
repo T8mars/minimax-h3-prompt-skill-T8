@@ -81,7 +81,10 @@ for (const entry of entries) {
   if (status !== "released") failures.push(`catalog/cases/${id}/manifest.json: status must be 'released', got '${String(status)}'`);
   if (caseManifest.case_id && caseManifest.case_id !== id) failures.push(`catalog/cases/${id}/manifest.json: case_id must match directory`);
   if (!(Number(caseManifest.source_duration_seconds) > 0)) failures.push(`catalog/cases/${id}/manifest.json: source_duration_seconds must preserve the positive decoded source duration`);
-  if (Number(caseManifest.target_duration_seconds) !== 15) failures.push(`catalog/cases/${id}/manifest.json: target_duration_seconds must be 15`);
+  const targetDuration = Number(caseManifest.target_duration_seconds);
+  if (!Number.isFinite(targetDuration) || targetDuration < 4 || targetDuration > 15) {
+    failures.push(`catalog/cases/${id}/manifest.json: target_duration_seconds must be within 4..15`);
+  }
   const logicalMp4 = caseManifest.preview_refs?.mp4 ?? caseManifest.preview_paths?.mp4;
   if (logicalMp4 !== `media/${id}/preview.mp4`) failures.push(`catalog/cases/${id}/manifest.json: MP4 release mapping must be 'media/${id}/preview.mp4'`);
 
