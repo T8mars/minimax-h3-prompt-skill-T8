@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1",
+  "slug": "stage-material-role-traversal",
+  "title": "微缩闯关｜同一材质连续变形",
+  "source_title": "微缩闯关｜同一材质连续变形",
+  "summary": "让一个微型主体穿越同一巨型地形，地形依次变成路面、阻力、载体和弹性过渡，最后由一个外部尺度工具只进入一次完成跨越。",
+  "status": "released",
+  "source_duration_seconds": 16.085333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-material-role-traversal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-role-traversal-ladder-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "微型主体 + 单一巨型地形 + 同一材质至少3种连续物理角色 + 一次晚段外部桥梁 + 恢复自主的稳定结尾",
+  "recommended_input": "微型温室信使横穿一片巨型蜡质叶：叶面从路脊变成湿滑露水面、移动叶脉和弹性纤维；最后一支全尺寸玻璃滴管只进入一次成为桥，信使抵达种子标记旁稳定站立。",
+  "required_anchors": [
+    "开场先证明主体与地形尺度",
+    "同一材质至少承担三种连续物理角色",
+    "每次解决动作必须引出下一个材质状态",
+    "外部尺度工具只在后段进入一次",
+    "结尾主体恢复自主稳定状态"
+  ],
+  "tags": [
+    "material",
+    "role",
+    "traversal",
+    "ladder"
+  ],
+  "quality": {
+    "weighted_score": 4.732,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T17:35:59+08:00",
+  "updated_at": "2026-08-10T18:06:45+08:00"
+}

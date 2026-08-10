@@ -1,0 +1,182 @@
+{
+  "complexity": "moderate",
+  "mechanism": "First make an existing object feel sincerely valued, then bind one restrained subject to it through a specific physical attachment. Introduce the upgrade and remove the valued object in the same spatial event so progress and loss are inseparable. Redirect the surrounding group's genuine enthusiasm to the replacement while the attached subject remains visible but unattended. Finish with completely earnest institutional closure, preserving the unresolved attachment so the satire comes from the image logic rather than a wink or joke.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish the current object or system as sincerely valued before introducing its replacement.",
+      "purpose": "Makes displacement emotionally legible without explanatory dialogue.",
+      "ablation_failure": "If replacement arrives first, the satire is only a product comparison.",
+      "evidence_ids": [
+        "beat-01",
+        "beat-02",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Bind one restrained character or creature to the current object through a concrete physical attachment action.",
+      "purpose": "Turns abstract preference into visible relationship evidence.",
+      "ablation_failure": "Generic smiles give the audience no specific cost to track.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-04",
+        "obs-12",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Show the replacement entering while the valued object exits in one shared spatial proof.",
+      "purpose": "Makes upgrade and loss causally simultaneous.",
+      "ablation_failure": "Separate before-and-after shots hide who or what is displaced.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-04",
+        "obs-05",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Redirect group approval to the replacement while the attached subject remains visible but socially unattended.",
+      "purpose": "Creates deadpan contradiction without a comedic reaction cue.",
+      "ablation_failure": "If the group notices or apologizes, the institutional certainty collapses into ordinary drama.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-10",
+        "obs-12"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with an authoritative promotional closure that remains completely sincere and does not resolve the attachment.",
+      "purpose": "Lets institutional optimism certify the absurdity instead of commenting on it.",
+      "ablation_failure": "A wink, angry reaction or explanatory joke releases the tension and weakens the satire.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original, stable subject or group with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues supporting state changes."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "Mark IV",
+    "Mark V",
+    "OPEN MIND INC.",
+    "The Future Arrives Thursday.",
+    "1950s appliance showroom family",
+    "boy dragged while hugging old machine"
+  ],
+  "instantiations": [
+    {
+      "concept": "A handcrafted 1970s municipal greenhouse film: felt gardeners treasure a hand-painted rain gauge while an origami robin nests on it; clay technicians roll in an automatic weather tower and remove the gauge with the robin still perched; the gardeners applaud the tower beneath a blank sun emblem.",
+      "prompt_seed": "Earnest stop-motion greenhouse upgrade ritual, beloved rain gauge, attached origami robin, simultaneous tower swap, sincere blank-emblem closure."
+    },
+    {
+      "concept": "A bright contemporary museum orientation: docents admire a worn mechanical star projector while one child keeps tracing its constellations; staff roll in a silent holographic dome as the old projector and child move toward storage; visitors applaud the dome and the final shot holds an abstract seal with no text.",
+      "prompt_seed": "Museum orientation displacement satire, beloved mechanical projector, attached child, simultaneous holographic upgrade, sincere abstract-seal closure."
+    },
+    {
+      "concept": "A formal underwater habitat safety reel: divers cherish a patched observation bell while one small octopus clings to it; technicians tow in a polished sensor pod and remove the bell with the octopus attached; the team salutes the pod and closes on a wordless civic emblem.",
+      "prompt_seed": "Underwater institutional upgrade ritual, patched bell, attached octopus, simultaneous sensor-pod replacement, wordless sincere closure."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "If replacement arrives first, the satire is only a product comparison.",
+      "repair": "Establish the current object or system as sincerely valued before introducing its replacement."
+    },
+    {
+      "failure": "Generic smiles give the audience no specific cost to track.",
+      "repair": "Bind one restrained character or creature to the current object through a concrete physical attachment action."
+    },
+    {
+      "failure": "Separate before-and-after shots hide who or what is displaced.",
+      "repair": "Show the replacement entering while the valued object exits in one shared spatial proof."
+    },
+    {
+      "failure": "If the group notices or apologizes, the institutional certainty collapses into ordinary drama.",
+      "repair": "Redirect group approval to the replacement while the attached subject remains visible but socially unattended."
+    },
+    {
+      "failure": "A wink, angry reaction or explanatory joke releases the tension and weakens the satire.",
+      "repair": "End with an authoritative promotional closure that remains completely sincere and does not resolve the attachment."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A handcrafted 1970s municipal greenhouse film: felt gardeners treasure a hand-painted rain gauge while an origami robin nests on it; clay technicians roll in an automatic weather tower and remove the gauge with the robin still perched; the gardeners applaud the tower beneath a blank sun emblem.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A formal underwater habitat safety reel: divers cherish a patched observation bell while one small octopus clings to it; technicians tow in a polished sensor pod and remove the bell with the octopus attached; the team salutes the pod and closes on a wordless civic emblem.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

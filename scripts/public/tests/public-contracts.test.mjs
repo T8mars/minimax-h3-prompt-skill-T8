@@ -45,7 +45,7 @@ test("indexes nine upstream MiniMax Skills, nine independent Seedance companions
   }
   const skillDirectories = fs.readdirSync(path.join(repoRoot, "skills"), { withFileTypes: true }).filter((entry) => entry.isDirectory());
   const caseSkillCount = new Set(catalog.cases.map((entry) => entry.slug)).size;
-  assert.equal(caseSkillCount, 26, "27 cases must collapse one evidence variant into the existing stable selector");
+  assert.equal(caseSkillCount, 28, "29 cases must collapse one evidence variant into the existing stable selector");
   assert.equal(skillDirectories.length, caseSkillCount + companions.size + 1);
   const community = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "community-skills", "manifest.json"), "utf8"));
   assert.equal(catalog.community_skill_count, 1);

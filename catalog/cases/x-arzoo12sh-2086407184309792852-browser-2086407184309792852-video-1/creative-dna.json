@@ -1,0 +1,182 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one tiny protagonist crossing a single oversized terrain, then make that same substrate change physical role in a causal ladder: reliable footing becomes resistance, resistance becomes an improvised carrier, and the carrier becomes an elastic transition. Only after the protagonist has attempted those states, introduce one full-scale tool exactly once as a final bridge. End with the protagonist back in a stable self-possessed pose so scale assistance resolves the route without erasing agency.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Prove the protagonist-to-terrain scale relation in the opening before the first obstacle.",
+      "purpose": "Turns scale into usable story geography rather than a delayed reveal.",
+      "ablation_failure": "Without early scale proof, later material deformation reads as arbitrary VFX.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-10",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Make one continuous substrate perform at least three visibly different physical roles in causal order.",
+      "purpose": "Lets the environment generate the action ladder without introducing unrelated threats.",
+      "ablation_failure": "If every beat uses a new prop, the sequence becomes a montage instead of one evolving material problem.",
+      "evidence_ids": [
+        "beat-02",
+        "beat-03",
+        "beat-04",
+        "obs-05",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Let each attempted solution expose the next material state rather than resetting the route.",
+      "purpose": "Preserves causal momentum and makes escalation legible.",
+      "ablation_failure": "Independent gags remove the sense that the traveler is learning and adapting.",
+      "evidence_ids": [
+        "beat-02",
+        "beat-03",
+        "beat-04",
+        "obs-08",
+        "obs-09"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one late external-scale tool exactly once as a bridge, not as the opening scale reveal.",
+      "purpose": "Provides a stronger second scale proof and a decisive transition after self-propelled effort.",
+      "ablation_failure": "An early or repeated giant tool steals agency and collapses the material traversal into handling.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-01",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a stable pose that visibly restores agency after the external bridge.",
+      "purpose": "Prevents assistance from becoming defeat and gives the action chain a performance payoff.",
+      "ablation_failure": "Ending in midair or on the tool leaves the causal result unresolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-12",
+        "obs-15",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original, stable subject or group with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues supporting state changes."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "tiny chibi man on giant pepperoni pizza",
+    "stretchy melted cheese terrain",
+    "full-size fork and hand",
+    "warm kitchen and drinking glass"
+  ],
+  "instantiations": [
+    {
+      "concept": "A tiny greenhouse courier crosses one enormous waxy leaf: the surface shifts from firm ridge to slick dew sheet to elastic vein sling, then one full-size glass pipette enters once as a bridge before the courier lands beside a seed marker.",
+      "prompt_seed": "Tiny greenhouse courier, giant waxy leaf, dew-to-vein material ladder, single late pipette bridge, confident seed-marker landing."
+    },
+    {
+      "concept": "A miniature archive scout traverses one giant folded linen map: crisp fold, snagging loose thread and springing fabric pocket form the ladder; one brass compass leg enters once as the final bridge before a wax-seal pose.",
+      "prompt_seed": "Mini archive scout, giant linen map, fold-thread-pocket material ladder, single brass compass bridge, wax-seal finish."
+    },
+    {
+      "concept": "A micro survey rover crosses one giant translucent soap film: stable skin, sticky foam rim and elastic membrane recoil form the route; one full-size squeegee edge enters once as a ramp before a dry-platform finish.",
+      "prompt_seed": "Micro survey rover, soap-film terrain, skin-foam-membrane escalation, single squeegee ramp, stable dry-platform proof."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without early scale proof, later material deformation reads as arbitrary VFX.",
+      "repair": "Prove the protagonist-to-terrain scale relation in the opening before the first obstacle."
+    },
+    {
+      "failure": "If every beat uses a new prop, the sequence becomes a montage instead of one evolving material problem.",
+      "repair": "Make one continuous substrate perform at least three visibly different physical roles in causal order."
+    },
+    {
+      "failure": "Independent gags remove the sense that the traveler is learning and adapting.",
+      "repair": "Let each attempted solution expose the next material state rather than resetting the route."
+    },
+    {
+      "failure": "An early or repeated giant tool steals agency and collapses the material traversal into handling.",
+      "repair": "Use one late external-scale tool exactly once as a bridge, not as the opening scale reveal."
+    },
+    {
+      "failure": "Ending in midair or on the tool leaves the causal result unresolved.",
+      "repair": "End on a stable pose that visibly restores agency after the external bridge."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A tiny greenhouse courier crosses one enormous waxy leaf: the surface shifts from firm ridge to slick dew sheet to elastic vein sling, then one full-size glass pipette enters once as a bridge before the courier lands beside a seed marker.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A miniature archive scout traverses one giant folded linen map: crisp fold, snagging loose thread and springing fabric pocket form the ladder; one brass compass leg enters once as the final bridge before a wax-seal pose.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

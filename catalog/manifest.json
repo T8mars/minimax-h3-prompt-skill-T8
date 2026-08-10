@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.0.5",
+  "catalog_version": "1.0.6",
   "generated_at": "2026-08-10T01:20:00+08:00",
-  "case_count": 27,
+  "case_count": 29,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 1,
@@ -947,6 +947,75 @@
       ],
       "quality_score": 4.686,
       "updated_at": "2026-08-10T11:35:08+08:00"
+    },
+    {
+      "case_id": "x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1",
+      "slug": "stage-material-role-traversal",
+      "title": "微缩闯关｜同一材质连续变形",
+      "status": "released",
+      "summary": "让一个微型主体穿越同一巨型地形，地形依次变成路面、阻力、载体和弹性过渡，最后由一个外部尺度工具只进入一次完成跨越。",
+      "manifest_path": "cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/manifest.json",
+      "summary_path": "cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/SUMMARY.md",
+      "source_path": "cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/source.json",
+      "creative_dna_path": "cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/preview.gif",
+        "poster": "cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/poster.webp",
+        "mp4": "media/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-material-role-traversal",
+      "template_id": "t8-case-material-role-traversal-ladder-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "material",
+        "role",
+        "traversal",
+        "ladder"
+      ],
+      "quality_score": 4.732,
+      "updated_at": "2026-08-10T18:06:45+08:00"
+    },
+    {
+      "case_id": "x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1",
+      "slug": "stage-earnest-upgrade-displacement",
+      "title": "升级讽刺｜新物登场旧爱被移走",
+      "status": "released",
+      "summary": "先建立对旧物的真诚依恋，再让升级与移走同时发生；群体把掌声转向新物，最后用完全认真的制度化终态保留未解决的反差。",
+      "manifest_path": "cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/manifest.json",
+      "summary_path": "cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/SUMMARY.md",
+      "source_path": "cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/source.json",
+      "creative_dna_path": "cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/preview.gif",
+        "poster": "cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/poster.webp",
+        "mp4": "media/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-earnest-upgrade-displacement",
+      "template_id": "t8-case-earnest-upgrade-displacement-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "earnest",
+        "upgrade",
+        "displacement"
+      ],
+      "quality_score": 4.757,
+      "updated_at": "2026-08-10T18:12:20+08:00"
     }
   ]
 }

@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1",
+  "slug": "stage-earnest-upgrade-displacement",
+  "title": "升级讽刺｜新物登场旧爱被移走",
+  "source_title": "升级讽刺｜新物登场旧爱被移走",
+  "summary": "先建立对旧物的真诚依恋，再让升级与移走同时发生；群体把掌声转向新物，最后用完全认真的制度化终态保留未解决的反差。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-earnest-upgrade-displacement",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-earnest-upgrade-displacement-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "被珍爱的旧物 + 一个具体依恋动作 + 新旧同时进出 + 群体掌声转移 + 真诚但不解决依恋的终态",
+  "recommended_input": "纸艺温室里，毛毡园丁珍爱旧雨量计，折纸知更鸟在底座筑巢；自动气象塔进入时旧雨量计同时被推出，知更鸟仍随旧物离场，园丁真诚鼓掌，最后停在无文字的太阳徽记终态。",
+  "required_anchors": [
+    "先证明旧物被真诚珍爱",
+    "用一个具体身体动作锁定依恋",
+    "新物进入与旧物移走必须同镜同时发生",
+    "群体掌声转向新物且不回应被移走者",
+    "结尾保持制度化真诚并保留未解决依恋"
+  ],
+  "tags": [
+    "earnest",
+    "upgrade",
+    "displacement"
+  ],
+  "quality": {
+    "weighted_score": 4.757,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-10T17:36:03+08:00",
+  "updated_at": "2026-08-10T18:12:20+08:00"
+}

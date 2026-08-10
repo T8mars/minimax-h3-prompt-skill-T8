@@ -87,6 +87,8 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![程序错位｜扫描到实物双确认](catalog/cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/preview.gif)](https://x.com/DeCat2025/status/2086134168992236013) | **[程序错位｜扫描到实物双确认](catalog/cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/SUMMARY.md)**<br><sub>x-decat2025-2086134168992236013-browser-2086134168992236013-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![技能展示｜基础动作串联升级](catalog/cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/preview.gif)](https://x.com/TechieBySA/status/2086089483682734427) | **[技能展示｜基础动作串联升级](catalog/cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![微缩介入｜外部物只进入一次](catalog/cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/preview.gif)](https://x.com/nicolasmariar/status/2086226500538273920) | **[微缩介入｜外部物只进入一次](catalog/cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/SUMMARY.md)**<br><sub>x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![微缩闯关｜同一材质连续变形](catalog/cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/preview.gif)](https://x.com/Arzoo12sh/status/2086407184309792852) | **[微缩闯关｜同一材质连续变形](catalog/cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/SUMMARY.md)**<br><sub>x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![升级讽刺｜新物登场旧爱被移走](catalog/cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/preview.gif)](https://x.com/Dheepanratnam/status/2086493087707086919) | **[升级讽刺｜新物登场旧爱被移走](catalog/cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/SUMMARY.md)**<br><sub>x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -95,7 +97,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. 下载 `T8-Prompt-Library-Setup-v1.0.5.exe`。
+2. 下载 `T8-Prompt-Library-Setup-v1.0.6.exe`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. 后续版本可在应用内检查并安装更新。
 
@@ -144,7 +146,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.0.5**。项目使用十进制进位：
+当前目标版本是 **v1.0.6**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
