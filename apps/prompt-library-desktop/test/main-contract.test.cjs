@@ -27,6 +27,7 @@ test("builder and release workflow require universal macOS DMG and ZIP artifacts
   for (const token of ["macos-latest", "dist:mac", "latest-mac.yml", "mac-universal.dmg", "mac-universal.zip", "Run packaged macOS end-to-end test"]) {
     assert.ok(workflow.includes(token), `missing macOS release gate: ${token}`);
   }
+  assert.match(workflow, /GH_REPO: \$\{\{ github\.repository \}\}/u, "the checkout-free publish job must bind gh to this repository");
 });
 
 test("media protocol resolves canonical paths and delegates range responses", () => {
