@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "ff51980888aa96f5f0d3d51f78541b146644e0ba7f7d2cd71b70151a4a4dd67d",
+    "creative_dna_sha256": "7f3e37d48e369d62312718da5255e441b6b5834f05d8bbd65a2b6bf80c9616f3"
+  },
+  "content": {
+    "title": "对话反应｜冷静回答引爆大笑",
+    "summary": "先在稳定的双人空间关系中开场，并在共享画面里完成第一轮发言。一次清楚可读的停顿后，用较近镜头给第二人一句简短回应，再切回第一人更长的无声反应。",
+    "quick_start": {
+      "input_format": "稳定的双人空间关系 + 完整的第一轮发言 + 清楚可读的停顿 + 第二人简短回应 + 第一人更长的无声身体反应",
+      "recommended_input": "两名月球地质学家先在双人镜头中建立空间关系，由甲说完一句短台词；清楚停顿后，乙在较近镜头中简短回答；镜头再回到甲，以抱住头盔并后仰的较长无声反应收尾，不增加第三轮台词。",
+      "required_anchors": [
+        "切换到单人镜头前，先建立两名主体及其座位空间关系。",
+        "保持第二次发言简短且清晰完整。",
+        "回到第一个主体，进行较长的非语言身体反应。",
+        "以改变后的固定姿势结束，不再有额外的发言。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "适合空间关系稳定的双人对话场景：完整呈现第一轮发言，给第二人一句简短回应，再切回第一人更长的无声反应。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让两个主体保持稳定的坐姿，在共享画面中建立第一个可见的讲话回合，以更贴近的镜头给第二个主体一个简洁的回应，然后回到第一个主体，展现一段较长的身体反应且不伴随言语。对话内容可以是原创的，但可复用的源证据是讲话-停顿-反应的时间节奏和镜头切换。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在单人镜头之前确定两个主体及其座位布局。",
+          "purpose": "防止视线方向模糊。",
+          "ablation_failure": "从孤立的特写开始会削弱对话交流感。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "保持第二轮对话简洁且完整可见。",
+          "purpose": "为后续反应创建清晰的视觉过渡。",
+          "ablation_failure": "过长的讲话回合会占用不说话反应的时间。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用稳定的视线方向和道具连续性进行剪辑。",
+          "purpose": "使剪辑感觉像一次完整的对话交流。",
+          "ablation_failure": "连续性偏差会破坏时间节奏的可信度。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "回到第一个主体，展现更长的身体反应且不伴随言语。",
+          "purpose": "让表演而非说明来承载结果。",
+          "ablation_failure": "立即的口头回应会消除反应空间。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以改变后的姿势结束，无需额外的讲话回合。",
+          "purpose": "收束可见的节奏模式。",
+          "ablation_failure": "另一句台词会重启对话，而非完成反应的延续。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点且不含特定来源表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层级；不得对来源音频作未经证实的断言。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源奇幻系列角色",
+        "来源酒馆般的客厅和服装",
+        "来源作品中关于狩猎数量的争论",
+        "来源作品中完全相同的饮酒与大笑表演"
+      ],
+      "instantiations": [
+        {
+          "concept": "两名原创的月球地质学家坐在样品台对面；一人询问唱歌的岩石是否安全，另一人平静地用一句原创台词作答，第一位科学家默默地双臂环抱头盔，向后沉下。",
+          "prompt_seed": "两名原创的月球地质学家坐在样品台对面；一人询问唱歌的岩石是否安全，另一人平静地用一句原创台词作答，第一位科学家默默地双臂环抱头盔，向后沉下。"
+        },
+        {
+          "concept": "两名傀儡图书管理员比较一本归还的书；一人提出不可能的损坏情况，另一人给出一个简短的字面回答，第一个傀儡慢慢地倒在桌子后面，沉默不语。",
+          "prompt_seed": "两名傀儡图书管理员比较一本归还的书；一人提出不可能的损坏情况，另一人给出一个简短的字面回答，第一个傀儡慢慢地倒在桌子后面，沉默不语。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "从孤立的特写开始会削弱对话交流感。",
+          "repair": "在单人镜头之前确定两个主体及其座位布局。"
+        },
+        {
+          "failure": "过长的讲话回合会占用不说话反应的时间。",
+          "repair": "保持第二轮对话简洁且完整可见。"
+        },
+        {
+          "failure": "连续性偏差会破坏时间节奏的可信度。",
+          "repair": "使用稳定的视线方向和道具连续性进行剪辑。"
+        },
+        {
+          "failure": "立即的口头回应会消除反应空间。",
+          "repair": "回到第一个主体，展现更长的身体反应且不伴随言语。"
+        },
+        {
+          "failure": "另一句台词会重启对话，而非完成反应的延续。",
+          "repair": "以改变后的姿势结束，无需额外的讲话回合。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两名原创的月球地质学家坐在样品台对面；一人询问唱歌的岩石是否安全，另一人平静地用一句原创台词作答，第一位科学家默默地双臂环抱头盔，向后沉下。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "两名傀儡图书管理员比较一本归还的书；一人提出不可能的损坏情况，另一人给出一个简短的字面回答，第一个傀儡慢慢地倒在桌子后面，沉默不语。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

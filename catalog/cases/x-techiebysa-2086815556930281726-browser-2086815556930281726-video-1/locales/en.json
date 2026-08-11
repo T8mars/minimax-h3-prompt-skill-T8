@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "cf2dd01b2901ae2dbe8f806a55365efa475e2238d9da3fac3a3eda484b322d79",
+    "creative_dna_sha256": "f1b641786549c5a9cf56e79398768e768b8ab95609a0771258437964f659deb5"
+  },
+  "content": {
+    "title": "Character Board Verification | Identity Lock During Hurdles",
+    "summary": "The fixed character board remains in place, and the sports area verifies the same character layer by layer using starting position, side view, overhead shot, front view, and key action shots.",
+    "quick_start": {
+      "input_format": "Fixed character board + same original subject + at least 4 different verification roles + wide-angle/close-up dual proof + final comparison",
+      "recommended_input": "The fixed character board remains unchanged; the solar sail maintainer sequentially completes preparation, side ladder climbing, overhead shot crossing, close-up cable grabbing, and final deployment verification in the real scene above.",
+      "required_anchors": [
+        "Keep one compact original identity board visible throughout.",
+        "Assign a different verification role to each live phase.",
+        "Include one wide-angle comparison and one close-up deformation-heavy skill proof.",
+        "Place the final live result beside the unchanged board."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The fixed character board is constantly present, and the sports area verifies the same character layer by layer with starting, side, overhead, front, and key actions.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Keep one compact identity board continuously visible while the live evidence field proves the same subject through setup, acceleration, front profile, aerial comparison and a decisive skill. The board is a verification rail, not decoration: every live phase must test a different identity cue and return enough stable anchors for comparison.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Keep one compact original identity board readable throughout.",
+          "purpose": "Provides a stable comparison rail.",
+          "ablation_failure": "Without it, the piece becomes a generic sports montage.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Give each live phase a different verification role.",
+          "purpose": "Tests identity rather than repeating action.",
+          "ablation_failure": "Repeated side running adds no new evidence.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Preserve face, silhouette, costume logic and one color anchor under speed and foreshortening.",
+          "purpose": "Defines successful continuity.",
+          "ablation_failure": "Visible drift defeats the test.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Include one wide comparison and one close deformation-heavy skill proof.",
+          "purpose": "Tests both social separation and local detail.",
+          "ablation_failure": "Only one camera scale cannot verify robust identity.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Hold a final live result beside the unchanged board.",
+          "purpose": "Makes success inspectable.",
+          "ablation_failure": "A logo card cannot close the identity test.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source female hurdler and national colors",
+        "source ZURI identity board",
+        "source stadium and hurdle race",
+        "source exact board layout and race coverage"
+      ],
+      "instantiations": [
+        {
+          "concept": "An original solar-sail mechanic remains matched to a compact identity board while crouching, climbing a gantry, traversing a rotating arm, performing a cable catch and finishing beside the deployed sail.",
+          "prompt_seed": "An original solar-sail mechanic remains matched to a compact identity board while crouching, climbing a gantry, traversing a rotating arm, performing a cable catch and finishing beside the deployed sail."
+        },
+        {
+          "concept": "An original ceramic courier is verified through packing, profile walk, overhead workshop crossing, close balancing action and final delivery while a fixed turntable board remains visible.",
+          "prompt_seed": "An original ceramic courier is verified through packing, profile walk, overhead workshop crossing, close balancing action and final delivery while a fixed turntable board remains visible."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without it, the piece becomes a generic sports montage.",
+          "repair": "Keep one compact original identity board readable throughout."
+        },
+        {
+          "failure": "Repeated side running adds no new evidence.",
+          "repair": "Give each live phase a different verification role."
+        },
+        {
+          "failure": "Visible drift defeats the test.",
+          "repair": "Preserve face, silhouette, costume logic and one color anchor under speed and foreshortening."
+        },
+        {
+          "failure": "Only one camera scale cannot verify robust identity.",
+          "repair": "Include one wide comparison and one close deformation-heavy skill proof."
+        },
+        {
+          "failure": "A logo card cannot close the identity test.",
+          "repair": "Hold a final live result beside the unchanged board."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An original solar-sail mechanic remains matched to a compact identity board while crouching, climbing a gantry, traversing a rotating arm, performing a cable catch and finishing beside the deployed sail.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An original ceramic courier is verified through packing, profile walk, overhead workshop crossing, close balancing action and final delivery while a fixed turntable board remains visible.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "community-skill",
+  "resource_id": "stage-startle-to-truce-encounter",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "dea3936636d85e6196ff92f5440bf96233d49c5da01cf42302dde191f242fb03",
+    "summary_sha256": "156e2fe60ec4a5e43381fea3227a37c5c841128df27d486e446eac8d0af1920b"
+  },
+  "content": {
+    "title": "Startle-to-Truce Encounter",
+    "summary": "Build a clear relationship reversal: a technical observer discovers a calm subject, one non-lethal panic response raises the risk, the subject approaches a transparent boundary and takes control of the distance, then sustained eye contact and a small, hesitant de-escalation gesture lower the threat.",
+    "quick_start": {
+      "input_format": "Calm subject + technical observer + transparent boundary + one non-lethal panic response + distance reversal + visible de-escalation gesture",
+      "recommended_input": "A curious deep-sea creature notices a research submersible, one defensive flash startles the pilot, then the creature matches the window's movement, approaches calmly, and ends with a small gesture that the pilot can clearly see.",
+      "required_anchors": [
+        "A readable calm baseline must exist before escalation",
+        "The subject and the observer have independent perspectives with different information",
+        "Use only one readable, non-lethal panic or defensive reaction",
+        "Use coaxiality, matching speed, or the same frame to prove distance and initiative reversal",
+        "The final de-escalation gesture must be visible to the other party and held long enough to read; do not invent reciprocal acceptance"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Short encounters that move from calm observation through one readable mistake to a visible, uncertain de-escalation.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "mechanism": "A calm subject begins at a readable distance from a technical observer. Their separate viewpoints establish an information gap, and one non-lethal panic response raises the risk. The subject then approaches a transparent boundary and takes control of the distance; sustained eye contact and one small de-escalation gesture reduce the threat without claiming that both sides have fully reconciled.",
+      "applicable_scope": [
+        "Contrasting encounters between fantasy or natural subjects and technological observers or research equipment",
+        "Precise eye contact on both sides of the cockpit, submarine, observation window, greenhouse glass, or transparent barrier",
+        "Misjudgment, startle, temptation, and non-verbal reconciliation within 4–15 seconds",
+        "The reference image only locks a single character's identity; scenes and actions must be original multi-modal generation."
+      ],
+      "not_suitable_for": [
+        "Content that includes complete war, multiplayer tactics, continuous explosions, or complex weapon logic",
+        "Content that uses injury, gore, or real-life assault as a necessary selling point",
+        "Overloaded storyboards that leave no time to read the final gaze and gesture",
+        "Shot-by-shot recreations of sample characters, props, vehicles, landscapes, or staging"
+      ],
+      "usage_steps": [
+        "Identify the calm subject, technical observer, initial distance, transparent boundaries, and final relationship status",
+        "Assign a unique identity, costume, scene, action, or voice responsibility to each input material",
+        "First, write the causal chain of calm baseline—observer’s perspective—an escalation—distance reversal—gesture de-escalation.",
+        "Compile according to H3 and Seedance native syntax respectively, without copying model fields",
+        "Check identity, vehicle, bounds, speed, screen orientation, gaze, gesture, and duration closures"
+      ],
+      "invariants": [
+        "A readable calm baseline must exist before escalation",
+        "The subject and the observer have independent perspectives with different information",
+        "Use only one readable, non-lethal panic or defensive reaction",
+        "Use coaxiality, matching speed, or the same frame to prove distance and initiative reversal",
+        "The final de-escalation gesture must be visible to the other party and held long enough to read; reciprocal acceptance may be shown only when explicitly established"
+      ],
+      "quality_repairs": [
+        "Prioritize four to five causal segments in 12–15 seconds, and delete uncompleted weapon and pursuit stacks",
+        "Name effects according to visible launch structure and direction; do not write unknown light tracks as guided missiles",
+        "Closeness occurs before the final quarter, allowing time for surprise and reconciliation",
+        "Eye height, screen direction, reflection, and relative speed are locked on both sides of the glass",
+        "Do not exaggerate a unilateral wave to mean that both parties have accepted reconciliation."
+      ],
+      "anti_copy_exclusions": [
+        "Do not copy samples of fantasy women, hair accessories, fruits, flying swords, military fighter planes, or floating mountain landscapes",
+        "Do not copy the original light beam, interference flame composition, cockpit shape, or specific window placement.",
+        "Change at least eight of the following simultaneously: subject, observer, environment, boundary, motion physics, escalation device, camera treatment, color, sound, and ending behavior."
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-decat2025-2086476172783759520-browser-2086476172783759520-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "40a1ab6dd434a467dc15fb9ef3ce9ce5c0a15c53c716e3b89f08107255c10dbe",
+    "creative_dna_sha256": "72791a42ca74a0568fc451da6ecf255b0077fe1ddb9a3974619aba17bd0d8be3"
+  },
+  "content": {
+    "title": "反差喜剧｜越从容越失控",
+    "summary": "正式场合中连锁失控不断升级，但主体始终镇定，反差本身构成笑点。",
+    "quick_start": {
+      "input_format": "正式场合 + 附着负担 + 至少2次连锁后果 + 可见失效 + 主体始终从容",
+      "recommended_input": "糕点师在颁奖展示中背着巨大的糖艺帆，帆先扫倒装饰塔，再扯翻展示布，最后糖船断裂；他始终面带微笑完成鞠躬。",
+      "required_anchors": [
+        "正式场合与沉着主体",
+        "负担始终附着主体",
+        "至少两次因果连锁",
+        "失效可见但主体不慌"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "正式场合中连锁失控不断升级，但主体始终镇定，反差本身构成笑点。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "将一个无可挑剔的控制对象置于严格的公共仪式中，引入一种最初可控制的身体负担，以可数的步骤升级其附带影响，然后暴露明显的失败，同时对象保留完全相同的自信表现规则。不断增加的混乱与不变的镇定之间的不匹配创造了收束效果；选角、场景、危险、服装、调色板和最终结果都是可变的。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在颠覆开始之前，建立一个正式的仪式，并明确成功的姿态。",
+          "purpose": "为观众提供行为基准。",
+          "ablation_failure": "如果没有稳定的仪式，后来的混乱就会被视为普通的混乱。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "介绍与主体相关的一项身体负担，并使其原因显而易见。",
+          "purpose": "使每次碰撞的因果关系清晰可见。",
+          "ablation_failure": "随机的背景事故破坏了喜剧引擎。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在主体保持同样的镇定状态的同时，至少升级两次附带后果。",
+          "purpose": "形成层层递进、可数的冷面喜剧阶梯。",
+          "ablation_failure": "过早改变态度会在收束效果之前释放紧张感。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "仅在附带影响达到峰值后才显示一种不可逆转的可见故障。",
+          "purpose": "将中断转化为干净的状态变化。",
+          "ablation_failure": "早期的失败会消除升级阶梯。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以自信的继续而不是解释或尴尬结束。",
+          "purpose": "把失败转化为一次从容而有力的收尾。",
+          "ablation_failure": "道歉或恐慌会用普通的不幸事件取代面无表情的喜剧。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份和轮廓保持稳定的原创主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有地点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个只沿单一方向连续变化，或按可数阶段推进的可读变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一种清晰的物理或图形结果，可以闭合因果链。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "豪华T台上戴着墨镜的爬行动物",
+        "扫过在座观众的虹彩白色羽毛拖尾",
+        "黑色窗帘入口和反光时尚T台",
+        "原样转身轴点、碰撞位置及披风被扯落的结尾"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位冷面高级糕点师在现场工作室转台上展示高耸的动态糖艺；每次优雅调整都触发更大的连带破坏，糖帆最终折断，她仍保持微笑完成鞠躬。",
+          "prompt_seed": "冷面高级料理表演：正式展示、糖艺隐患、两轮连带破坏、可见断裂，以及镇定的最终鞠躬。"
+        },
+        {
+          "concept": "一位博物馆导览员以仪式动作揭开风驱纸艺装置；相连纸带逐步牵倒展示支柱并使一块面板脱落，导览员仍镇定完成预定动作。",
+          "prompt_seed": "博物馆仪式与相连纸艺引发的连带混乱，最终由策展员镇定收束。"
+        },
+        {
+          "concept": "一位管弦乐指挥带领微型自动机乐团；一根超长电缆缠住谱架、扯下幕布并拔掉终曲设备电源，指挥仍完成终止乐句。",
+          "prompt_seed": "正式演出程序、一根电缆引发的连带破坏，以及设备断电后指挥仍镇定完成终止乐句。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "几起无关的事故同时发生。",
+          "repair": "使用一项附加负担并说明每项后果是如何产生的。"
+        },
+        {
+          "failure": "在明显的失败之前，对象会做出惊慌的反应。",
+          "repair": "保持同一自信表情与姿势，直至最终定格。"
+        },
+        {
+          "failure": "新版本只是改变了跑道动物。",
+          "repair": "同时改变仪式、场景、危险物的运动规律、镜头语法、服装和收束结果。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位冷面高级糕点师在现场工作室转台上展示高耸的动态糖艺；每次优雅调整都触发更大的连带破坏，糖帆最终折断，她仍保持微笑完成鞠躬。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位博物馆导览员以仪式动作揭开风驱纸艺装置；相连纸带逐步牵倒展示支柱并使一块面板脱落，导览员仍镇定完成预定动作。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

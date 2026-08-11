@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2083949566009778473-browser-2083949566009778473-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "dac376fff793e4eae336ce658f4345fd4147b3f7c81d97e28a039ce58c4c77d1",
+    "creative_dna_sha256": "b51eb2046704dfd41172ee1baf617fb644f759691f23c4dd986de01124ed635b"
+  },
+  "content": {
+    "title": "互动图鉴｜固定菜单切换生物",
+    "summary": "菜单、数据区和主视窗固定不动，选择器逐项切换，每次让名称、参数与主视窗主体同步更新并完成一个定义动作。",
+    "quick_start": {
+      "input_format": "固定选择菜单 + 固定数据区 + 固定主视窗 + 至少4个原创对象 + 每次可见选择 + 同步字段更新 + 一个定义动作",
+      "recommended_input": "固定气象无人机图鉴依次选择五台原创无人机，每次先移动选择器，再同步更新呼号、风力参数和主视窗，并让新无人机在对应天气舱完成一个定义动作。",
+      "required_anchors": [
+        "菜单、数据区和主视窗位置固定",
+        "每次内容变化前必须有可见选择",
+        "名称参数和主体同步更新",
+        "每个被选主体完成一个定义动作",
+        "结尾保持完整最终选择状态"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "菜单、数据区和主视窗固定不动，选择器逐项切换，每次让名称、参数与主视窗主体同步更新并完成一个定义动作。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "保持一个信息界面和空间网格固定，同时可见的选择器一次选择一项。每个选择都必须同时更新标题、简洁的属性和一个大的实时视口；然后，选定的主体会执行一个简短的行为，以在下一个选择之前证明新的状态。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "保持 1 个选择器网格、1 个数据区域和 1 个实时视口固定。",
+          "purpose": "创建一个可检查的状态机。",
+          "ablation_failure": "移动界面区域使得更新难以比较。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在每次内容更改之前显示一个可见的选择器操作。",
+          "purpose": "使每次更新都有因果关系。",
+          "ablation_failure": "毫无动机的交换变成了蒙太奇。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "将标题、属性和实时主体更新为同一同步状态。",
+          "purpose": "防止相互矛盾的界面证据。",
+          "ablation_failure": "部分更新使目录感觉被破坏了。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "给每个选定的主体一个简短的定义行为。",
+          "purpose": "证明不仅仅是静态缩略图。",
+          "ablation_failure": "闲置的主体并不能证明实时视口是合理的。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以选择器和所选主体均可见的完成状态结束，并保持片刻。",
+          "purpose": "让观众验证最终的选择。",
+          "ablation_failure": "立即切走会破坏选择器与所选主体之间的验证关系。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "CREATURE ENCYCLOPEDIA 标题",
+        "源生物设计",
+        "来源名称和统计数据",
+        "确切的源网格和光标路径"
+      ],
+      "instantiations": [
+        {
+          "concept": "固定布局的气象无人机图鉴依次选择五架原创无人机；每次选择都会同步更新选项卡、呼号、抗风等级和大型动态天气测试画面。",
+          "prompt_seed": "固定布局的气象无人机图鉴依次选择五架原创无人机；每次选择都会同步更新选项卡、呼号、抗风等级和大型动态天气测试画面。"
+        },
+        {
+          "concept": "种子库界面选择五种虚构植物；固定标本网格、生长属性和大型延时立体模型在同一状态下同步更新。",
+          "prompt_seed": "种子库界面选择五种虚构植物；固定样本网格、生长属性和大型延时立体模型在同一状态下同步更新。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "移动界面区域使得更新难以比较。",
+          "repair": "保持 1 个选择器网格、1 个数据区域和 1 个实时视口固定。"
+        },
+        {
+          "failure": "毫无动机的交换变成了蒙太奇。",
+          "repair": "在每次内容更改之前显示一个可见的选择器操作。"
+        },
+        {
+          "failure": "部分更新使目录感觉被破坏了。",
+          "repair": "将标题、属性和实时主体更新为同一同步状态。"
+        },
+        {
+          "failure": "闲置的主体并不能证明实时视口是合理的。",
+          "repair": "给每个选定的主体一个简短的定义行为。"
+        },
+        {
+          "failure": "立即切走会破坏选择器与所选主体之间的验证关系。",
+          "repair": "以选择器和所选主体均可见的完成状态结束，并保持片刻。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "固定布局的气象无人机图鉴依次选择五架原创无人机；每次选择都会同步更新选项卡、呼号、抗风等级和大型动态天气测试画面。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "种子库界面选择五种虚构植物；固定标本网格、生长属性和大型延时立体模型在同一状态下同步更新。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

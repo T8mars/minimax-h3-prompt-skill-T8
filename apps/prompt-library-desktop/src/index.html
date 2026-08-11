@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,24 +21,28 @@
         </span>
       </div>
       <div class="update-area">
-        <span id="update-status" class="update-status" aria-live="polite">尚未检查更新</span>
-        <button id="install-update" class="button ghost hidden" type="button">重启安装</button>
-        <button id="check-update" class="button ghost" type="button">检查更新</button>
+        <div class="locale-toggle" role="group" aria-label="Display language">
+          <button id="global-locale-en" class="locale-button active" type="button" aria-pressed="true">EN</button>
+          <button id="global-locale-zh" class="locale-button" type="button" aria-pressed="false">中文</button>
+        </div>
+        <span id="update-status" class="update-status" aria-live="polite">Updates not checked</span>
+        <button id="install-update" class="button ghost hidden" type="button">Restart to install</button>
+        <button id="check-update" class="button ghost" type="button">Check for updates</button>
       </div>
     </header>
 
     <main>
-      <nav class="view-tabs" aria-label="内容类型">
-        <button id="view-all" class="view-tab active" type="button" aria-pressed="true">全部 <span id="view-all-count">0</span></button>
-        <button id="view-cases" class="view-tab" type="button" aria-pressed="false">创意案例 <span id="view-case-count">0</span></button>
-        <button id="view-official-skills" class="view-tab" type="button" aria-pressed="false">MiniMax 官方仓库 Skills <span id="view-official-count">0</span></button>
-        <button id="view-community-skills" class="view-tab" type="button" aria-pressed="false">非官方 Skills <span id="view-community-count">0</span></button>
+      <nav class="view-tabs" aria-label="Content type">
+        <button id="view-all" class="view-tab active" type="button" aria-pressed="true"><span class="view-label">All</span> <span id="view-all-count">0</span></button>
+        <button id="view-cases" class="view-tab" type="button" aria-pressed="false"><span class="view-label">Creative Cases</span> <span id="view-case-count">0</span></button>
+        <button id="view-official-skills" class="view-tab" type="button" aria-pressed="false"><span class="view-label">MiniMax Official Skills</span> <span id="view-official-count">0</span></button>
+        <button id="view-community-skills" class="view-tab" type="button" aria-pressed="false"><span class="view-label">Community Skills</span> <span id="view-community-count">0</span></button>
       </nav>
       <section class="intro" aria-labelledby="page-title">
         <div>
           <p id="page-kicker" class="eyebrow">LOCAL · READ-ONLY CASES</p>
-          <h1 id="page-title">高质量视频提示词案例</h1>
-          <p id="page-intro" class="intro-copy">从完整视频中提炼可迁移的 Creative DNA，同时提供 MiniMax H3 与 Seedance 2.0 模板。</p>
+          <h1 id="page-title">High-quality video prompt cases</h1>
+          <p id="page-intro" class="intro-copy">Reusable Creative DNA extracted from complete videos, with MiniMax H3 and Seedance 2.0 templates.</p>
         </div>
         <div class="catalog-version">
           <span>CATALOG</span>
@@ -46,48 +50,48 @@
         </div>
       </section>
 
-      <section class="stats" aria-label="案例统计">
-        <div><span id="stat-cases-label">公开案例</span><strong id="stat-cases">0</strong></div>
-        <div><span id="stat-videos-label">本地完整视频</span><strong id="stat-videos">0</strong></div>
-        <div><span id="stat-prompts-label">模型模板</span><strong id="stat-prompts">0</strong></div>
-        <div><span>当前结果</span><strong id="stat-results">0</strong></div>
+      <section class="stats" aria-label="Library statistics">
+        <div><span id="stat-cases-label">Published cases</span><strong id="stat-cases">0</strong></div>
+        <div><span id="stat-videos-label">Complete local videos</span><strong id="stat-videos">0</strong></div>
+        <div><span id="stat-prompts-label">Model templates</span><strong id="stat-prompts">0</strong></div>
+        <div><span id="stat-results-label">Current results</span><strong id="stat-results">0</strong></div>
       </section>
 
-      <section class="filters" aria-label="筛选案例">
+      <section class="filters" aria-label="Filter cases">
         <label class="search-field">
           <span aria-hidden="true">⌕</span>
-          <input id="search" type="search" placeholder="搜索机制、风格、运镜、标签、作者或案例 ID" autocomplete="off">
+          <input id="search" type="search" placeholder="Search mechanism, style, camera, tags, author or ID" autocomplete="off">
         </label>
         <label>
-          <span id="platform-filter-label">平台</span>
-          <select id="platform-filter"><option value="">全部平台</option></select>
+          <span id="platform-filter-label">Platform</span>
+          <select id="platform-filter"><option value="">All platforms</option></select>
         </label>
         <label>
-          <span>模型</span>
-          <select id="model-filter"><option value="">全部模型</option></select>
+          <span id="model-filter-label">Model</span>
+          <select id="model-filter"><option value="">All models</option></select>
         </label>
         <label>
-          <span>标签</span>
-          <select id="tag-filter"><option value="">全部标签</option></select>
+          <span id="tag-filter-label">Tag</span>
+          <select id="tag-filter"><option value="">All tags</option></select>
         </label>
-        <button id="clear-filters" class="button clear" type="button">清空</button>
+        <button id="clear-filters" class="button clear" type="button">Clear</button>
       </section>
 
       <div id="catalog-warning" class="catalog-warning hidden" role="status"></div>
       <section id="case-grid" class="case-grid" aria-live="polite" aria-busy="true"></section>
       <section id="empty-state" class="empty-state hidden">
         <span>VP</span>
-          <h2 id="empty-title">没有匹配的案例</h2>
-        <p>调整搜索词或清空筛选条件后再试。</p>
+          <h2 id="empty-title">No matching cases</h2>
+        <p id="empty-copy">Adjust the search or clear the filters.</p>
       </section>
 
       <section id="compare-bar" class="compare-bar hidden" aria-label="案例对比">
         <div>
-          <strong>案例对比</strong>
+          <strong id="compare-bar-title">Case comparison</strong>
           <span id="compare-count">已选 0/3</span>
         </div>
         <div id="compare-chips" class="compare-chips"></div>
-        <button id="open-compare" class="button source" type="button" disabled>开始对比</button>
+        <button id="open-compare" class="button source" type="button" disabled>Compare</button>
       </section>
     </main>
 
@@ -98,45 +102,82 @@
             <p id="detail-kicker" class="eyebrow"></p>
             <h2 id="detail-title"></h2>
           </div>
-          <button id="close-dialog" class="icon-button" type="button" aria-label="关闭详情">×</button>
+          <div class="dialog-header-actions">
+            <div class="locale-toggle detail-locale-toggle" role="group" aria-label="Detail language">
+              <button id="detail-locale-en" class="locale-button active" type="button" aria-pressed="true">EN</button>
+              <button id="detail-locale-zh" class="locale-button" type="button" aria-pressed="false">中文</button>
+            </div>
+            <button id="copy-full-item" class="button copy" type="button">Copy full item</button>
+            <button id="close-dialog" class="icon-button" type="button" aria-label="Close details">×</button>
+          </div>
         </header>
 
-        <div class="detail-hero">
+        <nav id="detail-nav" class="detail-nav" aria-label="Detail sections">
+          <button type="button" data-scroll-target="detail-overview">Overview</button>
+          <button type="button" data-scroll-target="detail-quick-start">Quick start</button>
+          <button type="button" data-scroll-target="detail-creative-dna">Creative DNA</button>
+          <button type="button" data-scroll-target="detail-prompts">Prompts</button>
+          <button type="button" data-scroll-target="detail-validation">Validation</button>
+        </nav>
+
+        <div id="detail-overview" class="detail-hero detail-anchor">
           <section id="detail-media" class="detail-media" aria-label="案例视频"></section>
           <aside class="detail-summary">
             <p id="detail-summary"></p>
             <dl id="detail-meta"></dl>
             <div class="detail-actions">
-              <button id="open-source" class="button source hidden" type="button">查看作者原帖 ↗</button>
-              <button id="open-preview" class="button hidden" type="button">打开官方示例 GIF ↗</button>
+              <button id="copy-overview" class="button copy-secondary" type="button">Copy overview</button>
+              <button id="copy-source-link" class="button copy-secondary hidden" type="button">Copy source link</button>
+              <button id="open-source" class="button source hidden" type="button">Open source ↗</button>
+              <button id="open-preview" class="button hidden" type="button">Open official preview ↗</button>
             </div>
           </aside>
         </div>
 
-        <section class="detail-section">
+        <section id="detail-quick-start" class="detail-section detail-anchor">
+          <div class="section-heading">
+            <div><p id="detail-quick-kicker" class="eyebrow">START HERE</p><h3 id="detail-quick-title">Quick start</h3></div>
+            <button id="copy-quick-start" class="button copy-secondary" type="button">Copy section</button>
+          </div>
+          <div id="quick-start" class="quick-start-grid"></div>
+        </section>
+
+        <section id="detail-creative-dna" class="detail-section detail-anchor">
           <div class="section-heading">
             <div>
               <p id="detail-mechanism-kicker" class="eyebrow">REUSABLE MECHANISM</p>
               <h3 id="detail-mechanism-title">Creative DNA</h3>
             </div>
+            <button id="copy-dna" class="button copy-secondary" type="button">Copy Creative DNA</button>
           </div>
           <div id="creative-dna" class="dna-grid"></div>
         </section>
 
-        <section class="detail-section prompt-section">
+        <section id="detail-prompts" class="detail-section prompt-section detail-anchor">
           <div class="section-heading prompt-heading">
             <div>
               <p id="detail-prompt-kicker" class="eyebrow">MODEL-READY PROMPTS</p>
               <h3 id="detail-prompt-title">提示词模板</h3>
             </div>
-            <button id="copy-prompt" class="button copy" type="button">复制当前内容</button>
+            <button id="copy-prompt" class="button copy" type="button">Copy current prompt</button>
           </div>
           <div class="prompt-tabs" role="tablist" aria-label="模型提示词">
-            <button id="tab-h3" class="prompt-tab active" type="button" role="tab" aria-selected="true">MiniMax H3</button>
-            <button id="tab-seedance" class="prompt-tab" type="button" role="tab" aria-selected="false">Seedance 2.0</button>
+            <button id="tab-h3" class="prompt-tab active" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel" tabindex="0">MiniMax H3</button>
+            <button id="tab-seedance" class="prompt-tab" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel" tabindex="-1">Seedance 2.0</button>
           </div>
-          <pre id="prompt-text" class="prompt-text" tabindex="0"></pre>
-          <p id="prompt-missing" class="prompt-missing hidden">此案例暂未提供该模型的模板。</p>
+          <div id="prompt-panel" role="tabpanel" aria-labelledby="tab-h3">
+            <pre id="prompt-text" class="prompt-text" tabindex="0"></pre>
+            <p id="prompt-language-note" class="prompt-language-note"></p>
+            <p id="prompt-missing" class="prompt-missing hidden">No template is available for this model.</p>
+          </div>
+        </section>
+
+        <section id="detail-validation" class="detail-section detail-anchor">
+          <div class="section-heading">
+            <div><p id="detail-validation-kicker" class="eyebrow">TRUST & DELIVERY</p><h3 id="detail-validation-title">Validation and integration</h3></div>
+            <button id="copy-validation" class="button copy-secondary" type="button">Copy section</button>
+          </div>
+          <div id="validation-grid" class="validation-grid"></div>
         </section>
       </div>
     </dialog>
@@ -146,18 +187,18 @@
         <header class="dialog-header">
           <div>
             <p class="eyebrow">SIDE-BY-SIDE REVIEW</p>
-            <h2 id="compare-title">案例机制与提示词对比</h2>
+            <h2 id="compare-title">Compare mechanisms and prompts</h2>
           </div>
           <button id="close-compare" class="icon-button" type="button" aria-label="关闭对比">×</button>
         </header>
         <div class="compare-toolbar">
-          <span>提示词模型</span>
+          <span id="compare-model-label">Prompt model</span>
           <div class="prompt-tabs" role="tablist" aria-label="对比提示词模型">
-            <button id="compare-tab-h3" class="prompt-tab active" type="button" role="tab" aria-selected="true">MiniMax H3</button>
-            <button id="compare-tab-seedance" class="prompt-tab" type="button" role="tab" aria-selected="false">Seedance 2.0</button>
+            <button id="compare-tab-h3" class="prompt-tab active" type="button" role="tab" aria-selected="true" aria-controls="compare-grid" tabindex="0">MiniMax H3</button>
+            <button id="compare-tab-seedance" class="prompt-tab" type="button" role="tab" aria-selected="false" aria-controls="compare-grid" tabindex="-1">Seedance 2.0</button>
           </div>
         </div>
-        <section id="compare-grid" class="compare-grid"></section>
+        <section id="compare-grid" class="compare-grid" role="tabpanel" aria-labelledby="compare-tab-h3"></section>
       </div>
     </dialog>
 

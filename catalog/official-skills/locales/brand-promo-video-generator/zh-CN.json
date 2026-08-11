@@ -1,0 +1,46 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "official-skill",
+  "resource_id": "brand-promo-video-generator",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "official_index_sha256": "7c5738e9bf795652e16ac3b145279733e7b5ae87b01d4a27d074850d9bd935e0",
+    "companion_summary_sha256": "796a782b438aa473dbea34026f3a44d317392e951e70c5c02042077dcc20339d"
+  },
+  "content": {
+    "title": "品牌宣传短片生成器",
+    "summary": "根据可核验品牌事实、产品证据和行动号召组织宣传短片；Seedance 伴侣强调素材职责、可信文案和产品因果证明。",
+    "quick_start": {
+      "input_format": "已核实品牌事实 + 产品身份 + 可见效果与操作证据 + 已批准文案 + 行动号召 + 可追溯素材",
+      "recommended_input": "根据可核验品牌事实、产品证据和行动号召组织宣传短片；Seedance 伴侣强调素材职责、可信文案和产品因果证明。",
+      "required_anchors": [
+        "H3 使用固定版本的 MiniMax 官方上游 Skill。",
+        "Seedance 使用独立编写的 Seedance 2.0 伴侣 Skill。",
+        "不复制上游 Skill 正文，也不重复导入 ComfyUI。"
+      ],
+      "usage_steps": [
+        "选择匹配需求的 MiniMax H3 官方 Skill，并从固定版本上游链接安装。",
+        "只准备该 Skill 明确要求的素材与事实。",
+        "生成 Seedance 2.0 时改用本库独立编写的伴侣 Skill。",
+        "生成前检查身份、时长、文字和素材职责是否闭合。"
+      ],
+      "applicable_scope": [
+        "根据可核验品牌事实、产品证据和行动号召组织宣传短片；Seedance 伴侣强调素材职责、可信文案和产品因果证明。",
+        "符合上游 Skill 明确用途和素材合同的项目。"
+      ],
+      "not_suitable_for": [
+        "超出上游 Skill 明确用途的任务。",
+        "要求把上游 Skill 正文复制进本库，或重复导入 T8 ComfyUI 节点的场景。"
+      ]
+    },
+    "creative_dna": {
+      "usage_scope": "根据可核验品牌事实、产品证据和行动号召组织宣传短片；Seedance 伴侣强调素材职责、可信文案和产品因果证明。",
+      "source_boundary": "MiniMax H3 使用固定版本的官方上游 Skill；Seedance 2.0 使用本库独立编写的伴侣 Skill。本库不复制上游 Skill 正文。",
+      "comfyui_boundary": "目标节点已内置 MiniMax 官方能力，因此该官方条目不会重复导入 ComfyUI。"
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "field-preserving bilingual editorial pass with structural and terminology validation"
+  }
+}

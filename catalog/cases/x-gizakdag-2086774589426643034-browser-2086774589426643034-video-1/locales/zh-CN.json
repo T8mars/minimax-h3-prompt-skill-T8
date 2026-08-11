@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "38eed100ea18fd67cf194125a8fdfc119b093f90a46c84985c3cfa4aeb111d09",
+    "creative_dna_sha256": "4a81bb1e4a5d3d345782f3d019bee20b307a7acff89c67bc30cbbf0f5421ce74"
+  },
+  "content": {
+    "title": "单人表演弧｜坐起、前倾，再松弛回落",
+    "summary": "在固定直视镜头中，单人表演者依次通过躺靠、坐起、前倾、手势和再次向后靠回，完成完整表演弧，不依赖来源对白。",
+    "quick_start": {
+      "input_format": "锁定单人镜头 + 躺靠基线 + 连续坐起前倾 + 一次明确的证明动作 + 停顿后带变化回位",
+      "recommended_input": "锁定镜头下，年轻女性水网调度员从侧躺靠连续坐起，前倾说一句原创干冷台词，只举一次滴水传感器标签，停顿后带着笑意旋回。",
+      "required_anchors": [
+        "保持一个固定座位视角的直接对观众镜头。",
+        "从躺姿到坐姿进行一次连续可见的转变。",
+        "在达到高潮后插入一个清晰可辨的静止停顿。",
+        "在表情发生变化的同时，让身体回到接近开场时的画面前后位置。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "适合单名坐姿表演者直视镜头、不依赖来源对白的场景：通过躺靠、坐直、前倾、手势，再次向后靠回，完成清楚的能量弧线。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "使用一个锁定机位的直接对镜画面，让独白者的姿态承载完整弧线：放松的基准状态、可见的注意力转移、身体前倾投入、简洁手势作为证明，随后以有铺垫的松弛收束，让身体回到接近开场时的前后位置。可复用结构依赖姿态、视线和呼吸长度的停顿，而非原对白的语义。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "保持一个固定机位、坐姿平视、直面镜头的画面。",
+          "purpose": "使姿势成为可测量的变化因素。",
+          "ablation_failure": "频繁更换镜头覆盖方式，会掩盖表演弧线本身是否成立。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "通过连续可见的转变从斜躺到直立。",
+          "purpose": "创建决定性的参与过渡。",
+          "ablation_failure": "直立开始会消除主要的对比效果。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在身体前倾达到峰值时，最多只使用一个主导手势。",
+          "purpose": "保持焦点和现实感。",
+          "ablation_failure": "持续的手势会削弱强调的力度。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在峰值后插入清晰可辨的静止暂停。",
+          "purpose": "让观众清楚意识到这一变化。",
+          "ablation_failure": "峰值后立即松弛回落，会让峰值显得偶然。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在表情发生变化的同时，让身体回到接近开场时的画面前后位置。",
+          "purpose": "在不重置情绪的情况下创造结束。",
+          "ablation_failure": "未改变的最终表情会使弧线感觉是循环的，而不是得到解决的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对角色关系清楚的主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点且没有特定来源表层元素的新场景设置。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一套克制的表演或运动规则，使机制保持清晰可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源男发言者外观",
+        "来源绿色沙发和客厅",
+        "来源生活笑话提示措辞",
+        "来源作品具体的手势与笑声时点"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位年轻的女性夜间水网调度员斜靠在工业转椅上，注意到蓝色信息管后向前坐直，说出一句原创河流主题台词，举起滴水的传感器标签，停顿后旋回至接近开场时的画面前后位置，露出意外笑容。",
+          "prompt_seed": "一位年轻的女性夜间水网调度员斜靠在工业转椅上，注意到蓝色信息管后向前坐直，说出一句原创河流主题台词，举起滴水的传感器标签，停顿后旋回至接近开场时的画面前后位置，露出意外笑容。"
+        },
+        {
+          "concept": "一位风格化木偶博物馆导游坐在可动关节微型椅上，注意到机械旗帜后向前倾身，说出一句原创馆藏台词，举起破裂的蜡封，停顿后向后折回，露出新绘制的惊讶表情。",
+          "prompt_seed": "一位风格化的木偶博物馆导游坐在有关节的微型椅子上，注意到机械旗帜后向前倾身，说出一句原创的馆藏台词，举起破裂的蜡封，停顿，再向后靠回，露出新绘的惊讶表情。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "频繁更换镜头覆盖方式，会掩盖表演弧线本身是否成立。",
+          "repair": "保留一个固定机位、与眼睛齐平的直视镜头。"
+        },
+        {
+          "failure": "直立开始会消除主要的对比效果。",
+          "repair": "通过连续可见的变化从斜躺到直立。"
+        },
+        {
+          "failure": "持续的手势会削弱强调的力度。",
+          "repair": "在身体前倾达到峰值时，最多只使用一个主导手势。"
+        },
+        {
+          "failure": "峰值后立即松弛回落，会让峰值显得偶然。",
+          "repair": "在峰值后插入清晰可辨的静止暂停。"
+        },
+        {
+          "failure": "未改变的最终表情会使弧线感觉是循环的，而不是得到解决的。",
+          "repair": "在表情发生变化的同时，让身体回到接近开场时的画面前后位置。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位年轻的女性夜间水网调度员斜靠在工业转椅上，注意到蓝色信息管后向前坐直，说出一句原创河流主题台词，举起滴水的传感器标签，停顿后旋回至接近开场时的画面前后位置，露出意外笑容。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位风格化木偶博物馆导游坐在可动关节微型椅上，注意到机械旗帜后向前倾身，说出一句原创馆藏台词，举起破裂的蜡封，停顿后向后折回，露出新绘制的惊讶表情。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

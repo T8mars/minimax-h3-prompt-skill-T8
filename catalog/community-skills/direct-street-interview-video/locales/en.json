@@ -1,0 +1,85 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "community-skill",
+  "resource_id": "direct-street-interview-video",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "dfa8ecf8650ef3d7e01c05b08055eebdacfa7ba51fae7e8362a7143a76447476",
+    "summary_sha256": "0436891a045e2c86e1636714daa93a307d4e58991bcb7778f2405d1cb58ca38d"
+  },
+  "content": {
+    "title": "Natural Street Interaction Mechanism",
+    "summary": "Turn a vertical street conversation into one executable action chain. The characters keep moving as distance, gaze, pace, and gesture change their relationship; environmental parallax, shifting daylight, and live sound prove spatial continuity, and the ending lands on a clearly readable interaction state.",
+    "quick_start": {
+      "input_format": "Vertical street setting + two stable identities + reason to interact + continuous walking route + visible relationship change + readable ending",
+      "recommended_input": "A market florist notices a travel photographer walking beside the stall. They exchange two short lines while continuing along the same route; their spacing, gaze, and pace visibly soften before the florist points out a side street and the photographer acknowledges it without stopping.",
+      "required_anchors": [
+        "Immediately establish a reason for interaction at the opening",
+        "Camera movement tracks the subject's spatial path",
+        "At least one visible change in distance, gait, gaze, or gestures",
+        "Ambient parallax, light, shadow and live sound remain continuous",
+        "The end is readable rather than abruptly truncated"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Vertical street interviews, chance encounters, and walk-and-talk scenes driven by one continuous route and a visible relationship change.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "mechanism": "A single social premise drives the change in distance between the characters and the camera along the continuous street route; performance, parallax, moving natural light and live sound jointly advance the relationship to a readable end.",
+      "applicable_scope": [
+        "Street interviews, chance encounters, city walks and character introductions",
+        "Clothing, Beauty, Travel and Lifestyle Short Films",
+        "H3 Ref2VA or Seedance multimodal reference that needs to keep character identity and clothing stable",
+        "Interactions that can be articulated by a continuous chain of actions in 4–15 seconds"
+      ],
+      "not_suitable_for": [
+        "Long-form monologues, complex debates, or ensemble performances spread across multiple locations",
+        "Precise choreography, extensive hard cuts, or frame-by-frame recreations of real people and locations",
+        "Unsolicited physical contact with strangers"
+      ],
+      "usage_steps": [
+        "Clarify the purpose, duration, frame, character relationships, route and ending of the interaction",
+        "Assign unique and narrow identity, costume, environment, action or voice responsibilities to each input material",
+        "First write the causal chain from approach to communication, relationship change, and final beat; then decide whether a cut is necessary.",
+        "Trim the dialogue to fit the duration, then compile it with the native syntax required by H3 or Seedance.",
+        "Check identity, gait, route, light and shadow, hand contact, sound and time closure"
+      ],
+      "invariants": [
+        "Immediately establish a reason for interaction at the opening",
+        "Camera movement tracks the subject's spatial path",
+        "At least one visible change in distance, gait, gaze, or gestures",
+        "Ambient parallax, light, shadow and live sound remain continuous",
+        "The end is readable rather than abruptly truncated"
+      ],
+      "quality_repairs": [
+        "All events must fall within the actual target duration",
+        "For a 10-second clip, prefer two or three short lines; remove lines before increasing speaking speed",
+        "Don’t start the second shot at the end of the film",
+        "Prefer verbal or gestural positioning. Any physical contact must be explicit, consensual, and physically plausible.",
+        "Don’t replace motion, light, shadow, and spatial design with fictional 4K tags"
+      ],
+      "anti_copy_exclusions": [
+        "Do not copy the appearance, clothing, or body styling of the sample characters",
+        "Do not copy the composition and dialogue of the original tree-shaded streets and fenced roads",
+        "Change at least six of character type, relationship, location, route, costume, dialogue, shot realization, and ending simultaneously"
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

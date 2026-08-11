@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "5a4718ecd5bb61a8b509a743cb3706930e62f8393edaf7b9602512ce77c6d3c5",
+    "creative_dna_sha256": "f7b81b8dbe01d388692338bb278fb4ca9e1946d29ede7710aed4141115d3f2b2"
+  },
+  "content": {
+    "title": "Stage Performance | Wide-Shot Fall and Recovery",
+    "summary": "Begin the solo performance in a wide shot that establishes body and space, move into a close facial beat, complete one controlled fall and hold it from overhead, then let the performer rise inside an isolated beam of light.",
+    "quick_start": {
+      "input_format": "Single performer + vast empty space + wide-shot buildup + close facial beat + one controlled fall + overhead confirmation + continuous rise",
+      "recommended_input": "A percussion dancer performs alone in an abandoned observatory, moving from a long shot trajectory to a close-up hand rhythm, completing a knee-first spiral fall to the ground, holding for an overhead shot, and then rising continuously within the open dome's light beam.",
+      "required_anchors": [
+        "Begin by establishing the full body against the vast scale of the space",
+        "The close-up must be established after the action language is introduced",
+        "There is only one decisive descent throughout the entire film",
+        "Use an overhead shot or ground-level camera to confirm the landing",
+        "The ending shows the performer rising continuously without returning to the opening composition"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The solo performance first uses a long shot to establish the body and space, then advances the close-up expression, completes a controlled fall to the ground and stays in an overhead shot, and finally rises up in an independent beam of light.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Build a solo performance through a scale-changing camera arc: establish the whole body in a large empty venue, advance to close expressive proof, let the body descend into one floor-level low point, then restore vertical energy in a final isolated light. The reusable template excludes any storyboard or prompt-demo overlay and depends on the visible fall-to-rise performance logic.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Open with full-body scale inside a visibly larger venue.",
+          "purpose": "Creates a measurable spatial baseline.",
+          "ablation_failure": "Opening close removes the scale contrast needed later.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Move closer only after the body's initial movement language is established.",
+          "purpose": "Makes close expression feel earned.",
+          "ablation_failure": "Immediate close coverage turns the piece into a generic portrait.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use one controlled descent as the single decisive low point.",
+          "purpose": "Gives the performance an irreversible middle transition.",
+          "ablation_failure": "Repeated falls become choreography noise rather than structure.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Hold the low point with a camera relation that proves floor contact and body geometry.",
+          "purpose": "Prevents the descent from reading as a cutaway.",
+          "ablation_failure": "A hidden landing weakens physical causality.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End upright in one isolated light, without recreating the opening framing.",
+          "purpose": "Restores agency while showing change.",
+          "ablation_failure": "Returning to the exact opening makes the arc feel reset rather than resolved.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source performer appearance",
+        "source industrial hall",
+        "source storyboard sheet overlay",
+        "the exact source shot order"
+      ],
+      "instantiations": [
+        {
+          "concept": "A percussionist-choreographer performs in a decommissioned observatory: distant circular steps, close hand rhythm, controlled floor spiral, overhead stillness and upright recovery under the open dome.",
+          "prompt_seed": "A percussionist-choreographer performs in a decommissioned observatory: distant circular steps, close hand rhythm, controlled floor spiral, overhead stillness and upright recovery under the open dome."
+        },
+        {
+          "concept": "A paper-costume dancer performs in an empty greenhouse: aisle-wide start, leaf-shadow close work, soft collapse among cloth rows and rise into one shaft of dawn light.",
+          "prompt_seed": "A paper-costume dancer performs in an empty greenhouse: aisle-wide start, leaf-shadow close work, soft collapse among cloth rows and rise into one shaft of dawn light."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Opening close removes the scale contrast needed later.",
+          "repair": "Open with full-body scale inside a visibly larger venue."
+        },
+        {
+          "failure": "Immediate close coverage turns the piece into a generic portrait.",
+          "repair": "Move closer only after the body's initial movement language is established."
+        },
+        {
+          "failure": "Repeated falls become choreography noise rather than structure.",
+          "repair": "Use one controlled descent as the single decisive low point."
+        },
+        {
+          "failure": "A hidden landing weakens physical causality.",
+          "repair": "Hold the low point with a camera relation that proves floor contact and body geometry."
+        },
+        {
+          "failure": "Returning to the exact opening makes the arc feel reset rather than resolved.",
+          "repair": "End upright in one isolated light, without recreating the opening framing."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A percussionist-choreographer performs in a decommissioned observatory: distant circular steps, close hand rhythm, controlled floor spiral, overhead stillness and upright recovery under the open dome.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A paper-costume dancer performs in an empty greenhouse: aisle-wide start, leaf-shadow close work, soft collapse among cloth rows and rise into one shaft of dawn light.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

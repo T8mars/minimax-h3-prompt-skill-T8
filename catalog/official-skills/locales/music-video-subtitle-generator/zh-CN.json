@@ -1,0 +1,46 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "official-skill",
+  "resource_id": "music-video-subtitle-generator",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "official_index_sha256": "7c5738e9bf795652e16ac3b145279733e7b5ae87b01d4a27d074850d9bd935e0",
+    "companion_summary_sha256": "13a9e6001e177f927bf7c22c82c6c8387882952ed2fccc460541a4ead5b839f4"
+  },
+  "content": {
+    "title": "音乐 MV 动态字幕生成器",
+    "summary": "把音乐、人声、表演、运镜和空间文字组成同一节奏系统；Seedance 伴侣明确音频角色，确保完整歌词短句得到收束，并保持长篇作品各短片段之间的连续性。",
+    "quick_start": {
+      "input_format": "音乐与速度 + 人声角色 + 完整歌词短句 + 表演者与场景 + 镜头节奏 + 空间文字行为 + 片段衔接",
+      "recommended_input": "把音乐、人声、表演、运镜和空间文字组成同一节奏系统；Seedance 伴侣明确音频角色，确保完整歌词短句得到收束，并保持长篇作品各短片段之间的连续性。",
+      "required_anchors": [
+        "H3 使用固定版本的 MiniMax 官方上游 Skill。",
+        "Seedance 使用独立编写的 Seedance 2.0 伴侣 Skill。",
+        "不复制上游 Skill 正文，也不重复导入 ComfyUI。"
+      ],
+      "usage_steps": [
+        "选择匹配需求的 MiniMax H3 官方 Skill，并从固定版本上游链接安装。",
+        "只准备该 Skill 明确要求的素材与事实。",
+        "生成 Seedance 2.0 时改用本库独立编写的伴侣 Skill。",
+        "生成前检查身份、时长、文字和素材职责是否闭合。"
+      ],
+      "applicable_scope": [
+        "把音乐、人声、表演、运镜和空间文字组成同一节奏系统；Seedance 伴侣明确音频角色，确保完整歌词短句得到收束，并保持长篇作品各短片段之间的连续性。",
+        "符合上游 Skill 明确用途和素材合同的项目。"
+      ],
+      "not_suitable_for": [
+        "超出上游 Skill 明确用途的任务。",
+        "要求把上游 Skill 正文复制进本库，或重复导入 T8 ComfyUI 节点的场景。"
+      ]
+    },
+    "creative_dna": {
+      "usage_scope": "把音乐、人声、表演、运镜和空间文字组成同一节奏系统；Seedance 伴侣明确音频角色，确保完整歌词短句得到收束，并保持长篇作品各短片段之间的连续性。",
+      "source_boundary": "MiniMax H3 使用固定版本的官方上游 Skill；Seedance 2.0 使用本库独立编写的伴侣 Skill。本库不复制上游 Skill 正文。",
+      "comfyui_boundary": "目标节点已内置 MiniMax 官方能力，因此该官方条目不会重复导入 ComfyUI。"
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "field-preserving bilingual editorial pass with structural and terminology validation"
+  }
+}

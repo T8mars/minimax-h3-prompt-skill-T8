@@ -1,0 +1,183 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "reddit-1vhloyz-walter-prompt-guide",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "a5ae7ca020d300a1fefac85629c7bb5845c2e383bba21447d6d4277b2e064c53",
+    "creative_dna_sha256": "a5617663d6b9fc1eee39fcd54a14864886395bfc74c9fafd913f951e4c08ad8d"
+  },
+  "content": {
+    "title": "Risk Revelation | Evidence Handoff",
+    "summary": "An intervention stops the risk, and readable evidence is then handed over to character reactions through motivated shots.",
+    "quick_start": {
+      "input_format": "Emergency intervention + Hidden risk + Visual evidence + Motivated camera handoff + Brief response",
+      "recommended_input": "The experimenter stops the companion from touching the container, and ultraviolet light reveals internal cracks; the camera follows the container's reflection to the companion's face, where he quietly withdraws his hand and nods.",
+      "required_anchors": [
+        "Intervention conflict first",
+        "Risk is demonstrated through visual evidence",
+        "Shot handoffs have physical motivations",
+        "Respond briefly and alter subsequent behavior"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An intervention stops the risk, and readable evidence is then handed over to character reactions by motivated shots.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "An urgent intervention creates conflict, a controlled visual proof makes the hidden risk undeniable, and one motivated camera handoff transfers that proof to the recipient's compact reaction.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish an urgent conflict through action before revealing the proof state.",
+          "purpose": "Creates an immediate question and gives the later evidence a causal reason to appear.",
+          "ablation_failure": "Opening on the explanation removes tension and turns the scene into a flat demonstration.",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Hold the proof state visually stable long enough to be understood before the camera hands off.",
+          "purpose": "Makes the evidence itself readable while keeping it integrated with performance.",
+          "ablation_failure": "Moving away before the hidden condition resolves makes the intervention feel arbitrary.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-05"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use one motivated reframe to hand the last line to a contrasting second speaker.",
+          "purpose": "Converts instruction into a two-person joke without wasting time on coverage.",
+          "ablation_failure": "Keeping the camera on the first speaker removes the reaction payoff.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-02"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "authority_role",
+          "constraint": "A visually decisive expert with a clear reason to instruct."
+        },
+        {
+          "name": "recipient_role",
+          "constraint": "A contrasting novice or peer who can answer in one short line."
+        },
+        {
+          "name": "proof_state",
+          "constraint": "A physical condition, instrument reading, light reveal, or object state that becomes visually unambiguous without copying source typography."
+        },
+        {
+          "name": "setting",
+          "constraint": "A context-rich location readable behind a medium close subject."
+        },
+        {
+          "name": "intervention",
+          "constraint": "One brief action or line that stops the unsafe or mistaken behavior before the proof appears."
+        },
+        {
+          "name": "reaction",
+          "constraint": "One gesture and one line that resolve the conflict."
+        },
+        {
+          "name": "camera_handoff",
+          "constraint": "One pan or cut motivated by the second speaker."
+        },
+        {
+          "name": "sound",
+          "constraint": "Location ambience plus non-overlapping dialogue; no music required."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "protected television characters or actor likenesses",
+        "source-series wardrobe, vehicle, desert setup, or color grade",
+        "source-character voices and exact dialogue",
+        "exact guide title, profanity, framing, or prop typography"
+      ],
+      "instantiations": [
+        {
+          "concept": "A museum conservator stops an assistant's brush, lowers an ultraviolet inspection hood, and reveals branching fluorescent repairs before the camera follows the glow to the assistant's embarrassed recoil.",
+          "prompt_seed": "An urgent hand-stop becomes justified by a stable ultraviolet proof, then the reflected glow motivates the reaction handoff."
+        },
+        {
+          "concept": "An observatory technician blocks a trainee from opening a dome, slides one red safety filter over the sensor, and reveals a dangerous solar flare before the camera follows the red reflection to the trainee's silent step back.",
+          "prompt_seed": "Conflict, optical proof, and a reflection-led camera handoff create a compact safety reversal."
+        },
+        {
+          "concept": "A pastry chef catches a trainee's piping bag, turns a sugar thermometer toward the light, and reveals crystallization in macro before the lens rack-focuses to the trainee lowering the tray.",
+          "prompt_seed": "A tactile intervention earns credibility through a stable macro proof and a focus-driven reaction handoff."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "The proof state changes too quickly to understand.",
+          "repair": "Hold the revealed condition for at least two seconds with stable light, focus, and spatial context before the handoff."
+        },
+        {
+          "failure": "Dialogue overlaps or sounds rushed.",
+          "repair": "Keep two short lines, place the speaker handoff after the first line fully ends, and remove extra actions."
+        },
+        {
+          "failure": "The scene feels copied despite changed names.",
+          "repair": "Change profession, location, wardrobe, prop category, dialogue, and camera surface while preserving only the causal timing."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A museum conservator stops an assistant's brush, lowers an ultraviolet inspection hood, and reveals branching fluorescent repairs before the camera follows the glow to the assistant's embarrassed recoil.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "authority_role",
+            "recipient_role",
+            "proof_state",
+            "setting",
+            "intervention",
+            "reaction"
+          ]
+        },
+        {
+          "concept": "An observatory technician blocks a trainee from opening a dome, slides one red safety filter over the sensor, and reveals a dangerous solar flare before the camera follows the red reflection to the trainee's silent step back.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "authority_role",
+            "recipient_role",
+            "proof_state",
+            "setting",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

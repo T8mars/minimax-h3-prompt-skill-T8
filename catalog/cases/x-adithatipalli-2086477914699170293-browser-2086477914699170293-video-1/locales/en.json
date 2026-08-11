@@ -1,0 +1,211 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-adithatipalli-2086477914699170293-browser-2086477914699170293-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "4256ea7cd6eac6223ad3711f90adaa16700239eaf098eef5bd5dc4bf3ba61de4",
+    "creative_dna_sha256": "63049173eedcfd4f00e3a6d484fc114be163f07db71a921d3169b922ea95fba3"
+  },
+  "content": {
+    "title": "Character Profile | Ability Layering",
+    "summary": "Keep one dossier interface stable while successive layers activate identity, diagnostic status, capability, tool, and standby information in a readable order.",
+    "quick_start": {
+      "input_format": "Stable subject + fixed dossier/profile interface + identity → diagnosis → ability → tools → standby state",
+      "recommended_input": "The deep-sea diver remains within the fixed profile frame: first displaying the identity outline, then scanning the respiratory system, followed by activating pressure resistance capabilities, deploying mechanical tools, and finally entering standby posture.",
+      "required_anchors": [
+        "Character identity is stable",
+        "The dossier frame remains fixed",
+        "Information layers progress functionally",
+        "The final state is an executable standby state"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A fixed dossier/profile interface keeps the subject stable while identity, diagnosis, ability, tools, and standby status activate in a functional sequence.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Hold one subject and one modular information grid completely stable while a dossier boots from absence to completeness in a strict hierarchy. Each phase activates a new semantic layer—identity, role, diagnostics, capability, equipment and status—while the subject performs only micro-motion. Information order, not camera travel, creates retention; subject, domain, panel geometry, palette and labels are variable.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Begin with a partially hidden subject inside a fixed modular grid.",
+          "purpose": "Creates an identity question and spatial memory.",
+          "ablation_failure": "A fully revealed first frame removes the discovery ladder.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Activate information layers in a semantic hierarchy from identity to capability.",
+          "purpose": "Prevents visual noise and makes every phase answer one question.",
+          "ablation_failure": "Random panel order produces decoration instead of explanation.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Keep subject pose and grid geometry stable while module states change.",
+          "purpose": "Makes progress attributable to the interface.",
+          "ablation_failure": "Camera movement or pose changes destroy state comparison.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Use one restrained accent color to indicate activation and completion.",
+          "purpose": "Provides a readable visual clock.",
+          "ablation_failure": "Multiple competing activation colors blur hierarchy.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with one global active-state pulse after all key modules are complete.",
+          "purpose": "Supplies a clean completion signal.",
+          "ablation_failure": "No final confirmation makes the boot feel unfinished.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original subject whose identity and silhouette remain stable."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific location."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One readable variable that changes monotonically or in countable stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "One restrained performance rule that makes the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A coherent information order that does not copy the source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "One clean physical or graphic consequence that closes the causal chain."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "A new hierarchy of diegetic cues supporting each state change."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "named ZENITH cybernetic operative and exact face",
+        "cyan-black tactical dossier with source panel arrangement",
+        "cybernetic arm diagnostic image and source stat values",
+        "source headings, labels, iconography and final slogan"
+      ],
+      "instantiations": [
+        {
+          "concept": "A deep-sea survey pilot stands inside a navy-and-amber expedition dossier that boots from silhouette to identity, pressure tolerance, suit integrity, navigation skills, tool loadout and ready-state pulse.",
+          "prompt_seed": "Stable diver dossier with hierarchical module activation and one amber completion pulse."
+        },
+        {
+          "concept": "A fantasy field botanist appears inside a parchment-and-emerald archive that reveals identity, biome expertise, specimen map, tool kit and expedition clearance.",
+          "prompt_seed": "Illustrated field archive booting from silhouette to clearance without camera movement."
+        },
+        {
+          "concept": "A rescue drone is presented in a white industrial maintenance board that reveals chassis ID, sensor health, payload capacity, route map and launch-ready status.",
+          "prompt_seed": "Machine dossier with stable product pose and modular diagnostics."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Every panel appears simultaneously.",
+          "repair": "Stage identity, diagnostics, capabilities and equipment in separate phases."
+        },
+        {
+          "failure": "The camera or character constantly moves.",
+          "repair": "Lock geometry and allow only breathing, eye or light micro-motion."
+        },
+        {
+          "failure": "Generated small text becomes the focus.",
+          "repair": "Use large trusted labels or abstract icons and bars; keep microcopy secondary."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A deep-sea survey pilot stands inside a navy-and-amber expedition dossier that boots from silhouette to identity, pressure tolerance, suit integrity, navigation skills, tool loadout and ready-state pulse.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A fantasy field botanist appears inside a parchment-and-emerald archive that reveals identity, biome expertise, specimen map, tool kit and expedition clearance.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

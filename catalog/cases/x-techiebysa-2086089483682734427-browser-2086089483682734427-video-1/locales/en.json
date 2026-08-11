@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "7c260844e7931df9fb8e3f47c0d41f8bcc033bfcc94b53a3df573b00add7cd54",
+    "creative_dna_sha256": "7a3b0efa6d11b2ea2638d301114b5afe3185d8e5c2674e8f98dd510d5ae632a2"
+  },
+  "content": {
+    "title": "Performance Progression | Base Loop to Advanced Skills",
+    "summary": "Use one continuous base movement as the connective loop, escalate through increasingly difficult skills, assign each camera position a single proof role, then return to the same base loop after the peak.",
+    "quick_start": {
+      "input_format": "Continuous basic movements + 3 advanced skills + different functional positions each time + continuous rhythm/contact sounds + return to basic movements",
+      "recommended_input": "The maintenance drone maintains stable cruising with basic movements, sequentially completing narrow gap side flight, rotation scanning, and high-speed docking; using different camera positions to demonstrate each skill, returning to the same cruising rhythm after reaching the peak.",
+      "required_anchors": [
+        "Basic actions repeat and return",
+        "At least three skills progressively increase in difficulty",
+        "Each camera position is responsible for demonstrating only one skill",
+        "Return to the base cycle after reaching the peak"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Continuous basic movements are connected to advanced skills step by step. Each camera position only proves one movement, and returns to the basic cycle after the peak.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Start inside one continuous base motion and make it the mandatory entry and exit for every distinct skill. Increase difficulty across countable stages, assign each camera angle a verification purpose such as contact, clearance, rotation or recovery, combine learned principles near the end, then perform one peak variation and visibly return to the unchanged base loop.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Begin mid-loop and keep the base motion active between every skill.",
+          "purpose": "Creates continuous connective tissue.",
+          "ablation_failure": "Static resets turn the piece into disconnected highlights.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Every skill must depart from and visibly return to the loop.",
+          "purpose": "Proves real continuity.",
+          "ablation_failure": "Cuts can otherwise hide failed transitions.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Increase difficulty through distinct movement properties.",
+          "purpose": "Builds a readable skill ladder.",
+          "ablation_failure": "More of the same move adds speed but not progression.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Give each camera angle one proof job.",
+          "purpose": "Makes cutting informative.",
+          "ablation_failure": "Decorative angle changes can obscure mechanics.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "After the peak, return to the original loop without stopping.",
+          "purpose": "Closes the structure and proves control.",
+          "ablation_failure": "A freeze at the peak abandons the connective rule.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original subject or system whose identity remains stable."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One visible variable that changes in countable causal stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained behavior rule that makes the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A coherent information order that does not copy source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "One clean physical or graphic consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "A new hierarchy of diegetic cues supporting state changes."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "male capoeira practitioner in white abada",
+        "Salvador da Bahia colorful street",
+        "ginga and named capoeira moves",
+        "berimbau rhythm and the source character sheet"
+      ],
+      "instantiations": [
+        {
+          "concept": "An autonomous inspection drone maintains a figure-eight hover loop between gap threading, roll scan, inverted inspection and precision docking, with each angle proving clearance or recovery.",
+          "prompt_seed": "An autonomous inspection drone maintains a figure-eight hover loop between gap threading, roll scan, inverted inspection and precision docking, with each angle proving clearance or recovery."
+        },
+        {
+          "concept": "A potter's wheel hand rhythm links centering, collar lift, rib compression and one tall pull before returning to the same centering cadence.",
+          "prompt_seed": "A potter's wheel hand rhythm links centering, collar lift, rib compression and one tall pull before returning to the same centering cadence."
+        },
+        {
+          "concept": "A robotic loom uses one shuttle cycle to connect diagonal weave, tension flip, edge bind and final wide-pattern pass.",
+          "prompt_seed": "A robotic loom uses one shuttle cycle to connect diagonal weave, tension flip, edge bind and final wide-pattern pass."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Static resets turn the piece into disconnected highlights.",
+          "repair": "Begin mid-loop and keep the base motion active between every skill."
+        },
+        {
+          "failure": "Cuts can otherwise hide failed transitions.",
+          "repair": "Every skill must depart from and visibly return to the loop."
+        },
+        {
+          "failure": "More of the same move adds speed but not progression.",
+          "repair": "Increase difficulty through distinct movement properties."
+        },
+        {
+          "failure": "Decorative angle changes can obscure mechanics.",
+          "repair": "Give each camera angle one proof job."
+        },
+        {
+          "failure": "A freeze at the peak abandons the connective rule.",
+          "repair": "After the peak, return to the original loop without stopping."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An autonomous inspection drone maintains a figure-eight hover loop between gap threading, roll scan, inverted inspection and precision docking, with each angle proving clearance or recovery.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A potter's wheel hand rhythm links centering, collar lift, rib compression and one tall pull before returning to the same centering cadence.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

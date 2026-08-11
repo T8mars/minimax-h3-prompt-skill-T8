@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "5e66a223e0f92c5b0729f908ceb1c5285ac978997b20147dac4c23944402c665",
+    "creative_dna_sha256": "392e174a68d22087c91a5e182f801cfdd90a0839ef14b3601f61f97763188d5d"
+  },
+  "content": {
+    "title": "多功能救援线｜跨裂隙送补给再撤离",
+    "summary": "同一根绳索从发射、攀爬、摆荡到进入持续承担路线职责，短接触建立跟随后由一人带领双方共同离开。",
+    "quick_start": {
+      "input_format": "不可达目标 + 单一绳线工具 + 至少3种路线职责 + 救援接触 + 独立路线共同离开",
+      "recommended_input": "冰洞医护员发射同一根红色救援线，依次用它滑送医疗舱、建立扶手并短距提升背包；接触被困制图员后，两人沿独立荧光旗路线共同离开。",
+      "required_anchors": [
+        "同时引入一个无法到达的目的地和一个紧凑的穿越工具。",
+        "在发射及其首次可见路线角色中，保持一条系绳和一个稳定的附着点。",
+        "在目的地内进行一次短暂接触，以确立救援选择。",
+        "接触后，让两个主体可见地一起离开，其中一方居前引导。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一根绳索从发射、攀爬、摆荡到进入持续承担路线职责，短接触建立跟随后由一人带领双方共同离开。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在目的地尚不可达时先引入一个紧凑的穿越工具，再在发射、攀爬、钟摆式改向和进入过程中重复使用同一根绳索或系绳。每一阶段都必须保持连接点与路线几何一致；一次短暂接触建立救援选择后，由一个主体清楚领路，两者共同离开，但不要臆称来源样片中的系绳在离开阶段承载着他们。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一起介绍一种无法到达的目的地和一种紧凑的穿越工具。",
+          "purpose": "定义问题和可用的解决方案。",
+          "ablation_failure": "没有可见目的地的工具没有叙事作用。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "从发射到首次发挥路线作用，始终保持同一根系绳和同一个稳定连接点。",
+          "purpose": "使工具的进展可以进行物理检查。",
+          "ablation_failure": "更改线条或隐藏的锚点会破坏连续性。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "将系绳重复用于至少三个不同的路线角色。",
+          "purpose": "创建机制的进展。",
+          "ablation_failure": "只摆荡一次，仅仅是一个动作节拍。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在目的地内安排一次短暂接触，以明确救援选择。",
+          "purpose": "将遍历变成一个社会目标。",
+          "ablation_failure": "装饰性的到来没有任何收束效果。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "接触后，让两名主体明显离开，并由一名主体带领。",
+          "purpose": "收束救援链，同时不夸大系绳的用途。",
+          "ablation_failure": "接触后立即切走，会让救援选择缺乏画面证明。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一种通过可见阶段变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "蒙面剑客来源。",
+        "中国宝塔和公主来源。",
+        "弩式钩索工具。",
+        "破窗进入及完全相同的月下逃离。"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名冰川救援医护员向裂隙对面发射带标记的救援绳，先沿绳滑送密封补给舱，再把绳索张紧为扶手，并绕过低位登山扣完成短距离物资提升；抵达受困制图师后，两人沿独立旗标路线离开。",
+          "prompt_seed": "冰川救援医护员让同一根绳索依次承担滑送补给、张紧扶手和短距提升三种职责，接触受困者后沿独立标记路线共同离开。"
+        },
+        {
+          "concept": "一名档案修复员把浮绳穿过进水过道，先运送防水文件筒，再将绳索张紧为平衡扶轨，并绕过书架圆环完成短距提升；抵达受困的档案保护师后，两人沿发光地面标记涉水离开。",
+          "prompt_seed": "一名档案修复员把浮绳穿过进水过道，先运送防水文件筒，再将绳索张紧为平衡扶轨，并绕过书架圆环完成短距提升；抵达受困的档案保护师后，两人沿发光地面标记涉水离开。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有可见目的地的工具没有叙事作用。",
+          "repair": "一起介绍一种无法到达的目的地和一种紧凑的穿越工具。"
+        },
+        {
+          "failure": "改变线条或隐藏锚点会破坏连续性。",
+          "repair": "从发射到首次发挥路线作用，始终保持同一根系绳和同一个稳定连接点。"
+        },
+        {
+          "failure": "一次摆动只是一个节拍动作。",
+          "repair": "将系绳重复用于至少三个不同的路线角色。"
+        },
+        {
+          "failure": "装饰性的到达没有收束/结果揭示。",
+          "repair": "在目的地内安排一次短暂接触，以明确救援选择。"
+        },
+        {
+          "failure": "接触后立即切走，会让救援选择缺乏画面证明。",
+          "repair": "接触后，让两个主体可见地一起离开，其中一方居前引导。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名冰川救援医护员向裂隙对面发射带标记的救援绳，先沿绳滑送密封补给舱，再把绳索张紧为扶手，并绕过低位登山扣完成短距离物资提升；抵达受困制图师后，两人沿独立旗标路线离开。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名档案修复员把浮绳穿过进水过道，先运送防水文件筒，再将绳索张紧为平衡扶轨，并绕过书架圆环完成短距提升；抵达受困的档案保护师后，两人沿发光地面标记涉水离开。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

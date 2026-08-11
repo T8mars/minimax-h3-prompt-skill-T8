@@ -1,0 +1,211 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-saniaspeaks-2085932310923251950-browser-2085932310923251950-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "2ecbfcd384e44f80d88f566d950aa36aff5fa763ef5aa66e81fab70c664bd037",
+    "creative_dna_sha256": "1c5c5badc4e58a0058bbd70632fca6039e6b209d1ce54e6e96f3e10b5ddadbf8"
+  },
+  "content": {
+    "title": "机械同行｜启动后稳定伴行",
+    "summary": "装置启动并达到阈值后带动负载，连续镜头证明它确实稳定跟随。",
+    "quick_start": {
+      "input_format": "机械装置启动→达到可见阈值→负载起浮→连续镜头证明稳定跟随",
+      "recommended_input": "档案馆标本箱底部的磁力足逐个启动，指示灯达到绿色阈值后箱体轻微起浮，连续跟拍证明它稳定跟随管理员推车穿过走廊。",
+      "required_anchors": [
+        "启动过程可见",
+        "阈值状态可读",
+        "负载在阈值后才移动",
+        "连续镜头证明稳定伴行"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "装置启动并达到阈值后带动负载，连续镜头证明它确实稳定跟随。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在熟悉的运输流程中嵌入一种不可能的跟随行为，使一个可见设备在行为开始前产生一个清晰的因果阈值，然后保持一个单一视角足够长的时间以证明一个稳定匹配速度的车队。设置、激活、加速、提升和证明必须保持连续；操作员、负载、领头运输工具、提升机制、路线、摄像机轴线和语气都是可变的。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "先在普通的运输流程中交代辅助载荷处于落地状态。",
+          "purpose": "创建物理基线。",
+          "ablation_failure": "开始空中飞行会使行为变得任意。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "显示在提升前已安装并启动的一台机械装置。",
+          "purpose": "提供清晰可辨的原因。",
+          "ablation_failure": "隐藏或迟来的原因将飞行变成了无法解释的魔法。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "让设备输出增加，直到可见阈值触发平滑提升。",
+          "purpose": "使过渡机械清晰。",
+          "ablation_failure": "即时传送或跳跃打破了因果连续性。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在一个持续镜头中，让载荷的前进速度与主载具匹配。",
+          "purpose": "证明运动中车队行为稳定。",
+          "ablation_failure": "短暂的插切镜头无法验证相对位置。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在发生不可能的事件后，请保持操作员冷静并保持移动有效负载的机械稳定。",
+          "purpose": "保持面无表情的异想天开的语气，而不依赖于活着的同伴。",
+          "ablation_failure": "恐慌、晃动或失去有效负载控制将证据重新定义为危险或失败。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份和轮廓保持稳定的原创主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有地点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个只沿单一方向连续变化，或按可数阶段推进的可读变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一种清晰的物理或图形结果可以闭合因果链。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "穿米白运动服、骑浅色踏板车的年轻女性",
+        "戴着黄色螺旋桨头盔的银色虎斑猫",
+        "来源郊区房屋和街道",
+        "侧向跟拍构图和猫的身体姿势"
+      ],
+      "instantiations": [
+        {
+          "concept": "档案搬运工把四只磁靴扣在落地的密封标本箱上；连续的感应轨道单元达到可见阈值后，箱体升起，并以固定尾随距离跟随目录推车穿过 S 形过道，全程由一个俯拍斜角的连续镜头呈现。搬运工保持冷静，密封箱体在整段队列验证中保持刚性且不摇晃。",
+          "prompt_seed": "搬运工与货物的关系、轨道驱动的磁力升降、尾随队列的几何关系，以及俯拍验证镜头。"
+        },
+        {
+          "concept": "温室技术员把保温环固定在种子保存舱上；天花板通风口达到可见温度阈值后，保存舱升起并以固定距离跟随手推车，固定龙门机位持续证明两者间距。技术员保持冷静，舱体始终刚性稳定。",
+          "prompt_seed": "种子保存舱由热触发悬浮，以固定距离跟随前方手推车；固定机位完整证明启动、升起与跟随关系。"
+        },
+        {
+          "concept": "舞台吊装工启动静音道具箱下的空气悬浮底座；压力分区依次亮起，道具箱升起并跟随前方布景车穿过弯曲后台通道，摄影机在正面向后移动完成连续验证。吊装工保持冷静，道具箱始终刚性稳定。",
+          "prompt_seed": "空气悬浮道具箱达到可见压力阈值后升起，以固定距离跟随布景车；正面后退摄影完整证明队列关系。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "在该机制激活之前，有效负载会漂浮。",
+          "repair": "先保持载荷落地的基线状态，再展示输出逐渐增强并将其升起。"
+        },
+        {
+          "failure": "剪辑会掩盖升起或等速跟随的证据。",
+          "repair": "用一个连续镜头完整呈现启动、升起和移动过程。"
+        },
+        {
+          "failure": "操作员惊慌失措或有效负载变得明显不稳定。",
+          "repair": "保持操作员行为冷静并保持刚性、机械支撑的有效负载运动。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "档案搬运工把四只磁靴扣在落地的密封标本箱上；连续的感应轨道单元达到可见阈值后，箱体升起，并以固定尾随距离跟随目录推车穿过 S 形过道，全程由一个俯拍斜角的连续镜头呈现。搬运工保持冷静，密封箱体在整段队列验证中保持刚性且不摇晃。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "温室技术员把保温环固定在种子保存舱上；天花板通风口达到可见温度阈值后，保存舱升起并以固定距离跟随手推车，固定龙门机位持续证明两者间距。技术员保持冷静，舱体始终刚性稳定。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

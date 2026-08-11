@@ -1,0 +1,195 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7cedd3a49a34b4ed673f38e94c2c484003972df8260025ecae3116f90e860ade",
+    "creative_dna_sha256": "0720696ea193a36e0985792765a6bd612ae292e6d73a63346d881231d29280c2"
+  },
+  "content": {
+    "title": "固定机位｜从线稿生成成品",
+    "summary": "锁定构图，用不可逆的制作阶段让同一对象从草图逐步成为成品。",
+    "quick_start": {
+      "input_format": "对象 + 固定构图 + 4个不可逆制作阶段 + 终态小动作",
+      "recommended_input": "固定正面构图中的纸艺灯塔：铅笔轮廓、纸片立体搭建、色彩与纹理完成、内部灯光点亮，最后纸浪轻轻摆动。",
+      "required_anchors": [
+        "构图锁定",
+        "同一对象连续成长",
+        "至少四个不可逆阶段",
+        "终态有轻微活化动作"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "锁定构图，用不可逆的制作阶段让同一对象从草图逐步成为成品。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定构图把创作过程变成清晰的因果阶梯：先用可随时修改的辅助线建立几何关系，再用确定轮廓锁定结构；随后加入材质与色彩细节，由环境信息证明作品已经完成，最后用一次克制的媒介内运动制造惊喜。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在任何标记出现之前固定机位并保留稳定的空间区域。",
+          "purpose": "使之后的每一次更改都具有可比性和累积性。",
+          "ablation_failure": "如果构图或版面漂移，观众会看到替换片段的蒙太奇，而不是一个物体自行形成。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-07"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "依次从可修改的辅助线推进到确定结构，再进入材质、色彩或表面处理。",
+          "purpose": "创建清晰的决策层次结构，而非随机的同时增长。",
+          "ablation_failure": "如果在结构之前完成材质处理，转换会变成视觉噪音并失去因果清晰度。",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "等主形体清楚后，再加入辅助标签、习作或环境信息。",
+          "purpose": "延长观众留存，同时不与主要揭示争夺注意力。",
+          "ablation_failure": "如果每个区域同时激活，注意力会分散，并且没有一个里程碑会感觉完整。",
+          "evidence_ids": [
+            "beat-03",
+            "beat-04",
+            "obs-11"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "以一种微妙的动作结束，该动作忠实于成品媒介，同时支撑物保持惰性。",
+          "purpose": "在不破坏实体作品幻觉的前提下加入不可能的收束。",
+          "ablation_failure": "大型三维运动或支撑运动会把优雅的类别突破变成无关的 VFX 笑点。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-15"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "support",
+          "constraint": "一个稳定的物理或图形表面，带有保留的主角和背景区域。"
+        },
+        {
+          "name": "hero_subject",
+          "constraint": "一个单一的主导形体：先以辅助线呈现，再形成确定结构，最后完成材质或表面处理。"
+        },
+        {
+          "name": "representation_ladder",
+          "constraint": "适合所选媒介的三个明显不同的定稿程度阶段。"
+        },
+        {
+          "name": "context_details",
+          "constraint": "两到四个次要标记或图表，只在主视觉主体已经清楚成形后出现。"
+        },
+        {
+          "name": "finish_palette",
+          "constraint": "一个克制的调色板，澄清材质阶段。"
+        },
+        {
+          "name": "living_idle",
+          "constraint": "一个不离开表面、也不从平面立体化的小幅循环动作或反应。"
+        },
+        {
+          "name": "sound_ladder",
+          "constraint": "材料声音随着每个处理阶段而变化，随后是一个收束效果重音。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源作品中的鸟类物种、姿势、树枝和自然史题材",
+        "古董双页对开册、原样图版版式和木质桌面",
+        "来源笔迹、分类措辞、图版编号和页码",
+        "完全相同的时间码样式、色彩位置、最终眨眼和尾部动作"
+      ],
+      "instantiations": [
+        {
+          "concept": "在深色建筑蓝图上，石墨规划弧线逐步成为精确的白色线稿，青色与琥珀色系统区点亮，细小图例符号填入边缘；最后，一个仍保持平面墨迹质感的印刷状态灯开始持续闪烁。",
+          "prompt_seed": "锁定俯拍蓝图从辅助线推进到正式线稿与克制配色，最后让一个平面示意指示灯开始闪烁。"
+        },
+        {
+          "concept": "方形陶瓷壁画从木炭对位标记开始，逐步获得钴蓝轮廓，再由矿物釉填满几何锦鲤图案；细小边框纹样最后出现，绘制的水环只在瓷砖表面荡漾一次。",
+          "prompt_seed": "锁定的瓷砖网格通过木炭、钴和釉料进展，最后以一个表面束缚的波纹结束。"
+        },
+        {
+          "concept": "极简服装裁剪纸样在半透明纸上自行绘制成形，缝线和剪口逐步锁定，布样为各面板赋色，测量符号依次出现；完成的绘制袖片最后在印刷平面内轻轻颤动一次。",
+          "prompt_seed": "平面服装纸样按有序阶段累积，最后让印刷袖片在纸面内轻轻扑动一次。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "所有图层通过普通叠化同时出现。",
+          "repair": "为每个表示阶段提供独特的材料行为，并在下一个里程碑开始之前完成一个里程碑。"
+        },
+        {
+          "failure": "支撑或相机在创建过程中会发生漂移。",
+          "repair": "锁定构图、阴影、表面纹理和已有笔触；只允许活动绘图区内部运动。"
+        },
+        {
+          "failure": "最终动画突然突破平面、变成立体三维。",
+          "repair": "将收束效果限制为一种平坦的、局部的、低幅度的运动，以保留媒介边界。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在深色建筑蓝图上，石墨规划弧线逐步成为精确的白色线稿，青色与琥珀色系统区点亮，细小图例符号填入边缘；最后，一个仍保持平面墨迹质感的印刷状态灯开始持续闪烁。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04"
+          ],
+          "changed_slots": [
+            "support",
+            "hero_subject",
+            "representation_ladder",
+            "context_details",
+            "finish_palette",
+            "living_idle"
+          ]
+        },
+        {
+          "concept": "方形陶瓷壁画从木炭对位标记开始，逐步获得钴蓝轮廓，再由矿物釉填满几何锦鲤图案；细小边框纹样最后出现，绘制的水环只在瓷砖表面荡漾一次。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04"
+          ],
+          "changed_slots": [
+            "support",
+            "hero_subject",
+            "representation_ladder",
+            "context_details",
+            "finish_palette",
+            "living_idle",
+            "sound_ladder"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

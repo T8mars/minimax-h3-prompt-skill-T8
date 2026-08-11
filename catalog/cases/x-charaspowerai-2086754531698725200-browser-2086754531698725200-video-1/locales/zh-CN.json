@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "822edf1ddcfed662c90ff6b4b277eb2386954ea967b868eb1ce5de1bcf5226df",
+    "creative_dna_sha256": "54e97164a79fde05b69ee35aebdf6fdc9abaefc717def5ec043f4d9439502900"
+  },
+  "content": {
+    "title": "材质字效｜云层成字再见光",
+    "summary": "同一物理材质先形成短字、稳定可读，再沿原过程逆向散回自然状态。",
+    "quick_start": {
+      "input_format": "单一物理材质 + 短词聚合 + 可读停留 + 同物理逆转 + 无字完整复位",
+      "recommended_input": "正上方实验盘中铁屑沿磁力线聚成NORTH，稳定可读后用同一粒子物理逆向散开，最后恢复为指南针周围的同心磁场。",
+      "required_anchors": [
+        "在词语出现前、中、后始终使用同一个连续的物理材质场。",
+        "通过可见的材料聚集形成一个简短且清晰可辨的单词。",
+        "使用与构成单词相同的材料物理规则进行反转。",
+        "回到一个连贯的非文本场，原始锚点仍清晰可辨。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一物理材质先形成短字、稳定可读，再沿原过程逆向散回自然状态。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让一个连续物理场重组为简短易读的单词，保持到足以识别，再沿同一材质过程反向恢复为连贯的非文字状态。镜头运动可以揭示尺度，但文字必须是材料自然形成的状态，而不是贴上去的标题。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在单词之前、期间和之后使用一个连续的物理材料场。",
+          "purpose": "将文字与物质结合起来。",
+          "ablation_failure": "单独的标题叠加会破坏效果。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "通过可见的材料聚合形成一个简短的易读单词。",
+          "purpose": "使识别可以在十五秒内实现。",
+          "ablation_failure": "长的短语或瞬间出现会削弱物质形态的表现力。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在反转开始之前保留完整的单词。",
+          "purpose": "给观众一个清晰的证明状态。",
+          "ablation_failure": "立即溶解让这个词感觉很偶然。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "使用形成该词的相同材料物理原理进行反转。",
+          "purpose": "创建一个因果循环。",
+          "ablation_failure": "普通淡出无法证明这一过程可逆。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "回到连贯的非文字材质场，并让原始锚点仍可辨认。",
+          "purpose": "确认恢复而不是破坏。",
+          "ablation_failure": "残留的字母片段会使循环不完整。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点且没有特定来源表层元素的新场景设置。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源山日出地平线",
+        "来源云层文字 MORNING",
+        "航拍镜头推进穿过字母的方式",
+        "来源作品的金色云场复位镜头"
+      ],
+      "instantiations": [
+        {
+          "concept": "哑光实验室板上的铁屑在隐藏的磁场下流动，形成“NORTH”一词，保持住，然后释放成围绕一根固定罗盘针的同心磁力线。",
+          "prompt_seed": "哑光实验室板上的铁屑在隐藏的磁场下流动，形成“NORTH”一词，保持住，然后释放成围绕一根固定罗盘针的同心磁力线。"
+        },
+        {
+          "concept": "浅圆形工艺托盘内的彩色锯末聚集成“GROW”字样，固定，然后通过受控振动重新分布成干净的径向纹理图案。",
+          "prompt_seed": "浅圆形工艺托盘内的彩色锯末聚集成“GROW”字样，固定，然后通过受控振动重新分布成干净的径向纹理图案。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "单独的标题叠加会破坏效果。",
+          "repair": "在单词之前、期间和之后使用一个连续的物理材料场。"
+        },
+        {
+          "failure": "长的短语或瞬间出现会削弱物质形态的表现力。",
+          "repair": "通过可见的材料聚合形成一个简短清晰可辨的单词。"
+        },
+        {
+          "failure": "立即溶解会让这个词感觉很偶然。",
+          "repair": "在反转开始之前保留完整的单词。"
+        },
+        {
+          "failure": "普通淡出无法证明这一过程可逆。",
+          "repair": "使用形成该词的相同材料物理原理进行反转。"
+        },
+        {
+          "failure": "残留的字母片段会使循环不完整。",
+          "repair": "回到连贯的非文字画面状态，并让原始锚点仍可辨认。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "哑光实验室板上的铁屑在隐藏的磁场下流动，形成“NORTH”一词，保持住，然后释放成围绕一根固定罗盘针的同心磁力线。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "浅圆形工艺托盘内的彩色锯末聚集成“GROW”字样，固定，然后通过受控振动重新分布成干净的径向纹理图案。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

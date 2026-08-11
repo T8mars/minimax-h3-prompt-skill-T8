@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "5a4718ecd5bb61a8b509a743cb3706930e62f8393edaf7b9602512ce77c6d3c5",
+    "creative_dna_sha256": "f7b81b8dbe01d388692338bb278fb4ca9e1946d29ede7710aed4141115d3f2b2"
+  },
+  "content": {
+    "title": "舞台表演｜远景起势到倒地复起",
+    "summary": "单人表演先用大远景建立身体与空间，再推进近景表达、完成一次受控倒地和俯拍停留，最后在独立光束中复起。",
+    "quick_start": {
+      "input_format": "单人表演者 + 巨大空场 + 远景起势 + 近景表达 + 一次受控倒地 + 俯拍确认 + 连续复起",
+      "recommended_input": "打击乐舞者独自在废弃天文台起舞，从大远景轨迹进入近景手部节奏，完成一次膝盖先着地的螺旋倒地，俯拍停留后在开启的穹顶光束中连续起身。",
+      "required_anchors": [
+        "开场先证明全身与巨大场地尺度",
+        "近景必须晚于动作语言建立",
+        "全片只有一次决定性下降",
+        "用俯拍或地面机位证明落地",
+        "结尾连续复起且不回到开场构图"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "单人表演先用大远景建立身体与空间，再推进近景表达、完成一次受控倒地和俯拍停留，最后在独立光束中复起。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "通过一条景别逐步变化的镜头弧线构建独角表演：先在大型空旷场地中以全身景别建立主体，再推进到近景表演证明，让身体下沉到一次贴近地面的低点，最后在一束孤立光线中恢复向上的能量。可复用模板排除任何故事板或提示词演示叠加，并依赖画面可见的由跌落到起身的表演逻辑。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在明显更大的场地中，以全身景别开场。",
+          "purpose": "创建可测量的空间基线。",
+          "ablation_failure": "过早的近距离拍摄会消除后续所需的比例对比。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "只有在身体的初始动作语言建立之后才可以靠近。",
+          "purpose": "让近景表情显得有充分铺垫。",
+          "ablation_failure": "立即的近距离拍摄会使作品变成普通的肖像。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用一个受控下降作为唯一决定性的低点。",
+          "purpose": "给表演一个不可逆转的中间过渡。",
+          "ablation_failure": "反复跌落只会形成杂乱的编舞噪点，而不能建立清晰结构。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在低点保持一个能清楚证明身体触地与姿态几何关系的机位。",
+          "purpose": "防止下降被解读为镜头切换。",
+          "ablation_failure": "落地过程被遮住，会削弱动作的物理因果关系。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在一盏孤立灯光下直立结束，无需复现开场构图。",
+          "purpose": "在清楚显示状态变化的同时，恢复表演者的自主行动能力。",
+          "ablation_failure": "完全回到开场画面，会让动作弧线像被重置，而不是得到收束。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源表演者外观",
+        "来源作品中的工业大厅",
+        "来源作品的分镜图纸叠层",
+        "与来源作品完全相同的镜头顺序"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位打击乐编舞家在退役天文台中表演：远景中的环形步法、近景手部节奏、受控的地板螺旋、俯拍静止，以及在开放穹顶下直立恢复。",
+          "prompt_seed": "一位打击乐编舞家在退役天文台中表演：远景中的环形步法、近景手部节奏、受控的地板螺旋、俯拍静止，以及在开放穹顶下直立恢复。"
+        },
+        {
+          "concept": "一位身着纸质服装的舞者在空温室中表演：覆盖整条过道的远景起势、叶影下的近景动作、布匹行列间的轻柔塌落，最后升入一缕黎明光线。",
+          "prompt_seed": "一位身着纸质服装的舞者在空温室中表演：覆盖整条过道的远景起势、叶影下的近景动作、布匹行列间的轻柔塌落，最后升入一缕黎明光线。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "过早的近距离拍摄会消除后续所需的比例对比。",
+          "repair": "在明显更大的场地中，以全身景别开场。"
+        },
+        {
+          "failure": "立即的近距离拍摄会使作品变成普通的肖像。",
+          "repair": "只有在身体的初始动作语言建立之后才可以靠近。"
+        },
+        {
+          "failure": "反复跌落只会形成杂乱的编舞噪点，而不能建立清晰结构。",
+          "repair": "使用一个受控下降作为唯一的决定性低点。"
+        },
+        {
+          "failure": "落地过程被遮住，会削弱动作的物理因果关系。",
+          "repair": "在低点保持一个能清楚证明身体触地与姿态几何关系的机位。"
+        },
+        {
+          "failure": "完全回到开场画面，会让动作弧线像被重置，而不是得到收束。",
+          "repair": "在一盏孤立的灯光下直立结束，无需重新创建开场构图。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位打击乐编舞家在退役天文台中表演：远景中的环形步法、近景手部节奏、受控的地板螺旋、俯拍静止，以及在开放穹顶下直立恢复。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位身着纸质服装的舞者在空温室中表演：覆盖整条过道的远景起势、叶影下的近景动作、布匹行列间的轻柔塌落，最后升入一缕黎明光线。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "reddit-1vgynd7-chibi-pinch",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "e17d2e299af27b1cf75d10e7d284babff6d550db68d55afe634b1a233099a16f",
+    "creative_dna_sha256": "ed8631e6ac8fad89a7c56ac94eb4a4d0d91b33c73e90ae72a659fe5337bb8de3"
+  },
+  "content": {
+    "title": "二维角色｜真人接触三级反应",
+    "summary": "真实世界一次接触触发平面角色的三级反应，并以媒介自身的变化收尾。",
+    "quick_start": {
+      "input_format": "平面角色 + 真实场景 + 一次跨媒介接触 + 三级反应 + 媒介专属结尾",
+      "recommended_input": "书桌贴纸上的纸片机器人被真人手指轻触：先轻颤，再鼓起并喷出纸屑火花，最后整张桌垫折成通往它的纸桥。",
+      "required_anchors": [
+        "平面与真实媒介同框",
+        "只有一次关键接触",
+        "反应至少三级升级",
+        "结尾由平面媒介自身完成"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "真实世界一次接触触发平面角色的三级反应，并以媒介自身的变化收尾。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "单个平面 2D角色与真人手共享固定机位下的写实环境；一个小的跨媒介接触会引起三阶段的清晰可辨的反应，最终导致媒介特有的超现实效果。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在一个写实且稳定的环境中仅保留一个平面动画角色。",
+          "purpose": "使混合媒介异常立即清晰可见。",
+          "ablation_failure": "多个动画元素模糊了边界，削弱了吸引力。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在反应开始之前显示真人与动画角色之间的接触。",
+          "purpose": "在媒介层之间提供因果桥梁。",
+          "ablation_failure": "没有接触的反应感觉就像一个不相关的动画循环。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "升级为三种清晰可辨的状态：中性、不适、不可能收束效果。",
+          "purpose": "让观众无需剪辑就能追踪原因和强度。",
+          "ablation_failure": "直接跳转到最终效果会消除预期和表演。",
+          "evidence_ids": [
+            "beat-03",
+            "beat-04"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "保持固定机位，让接触、表情和效果引起注意。",
+          "purpose": "保持真人层与动画层之间的空间连续性。",
+          "ablation_failure": "相机的移动使接触对准更难以读取。",
+          "evidence_ids": [
+            "obs-07",
+            "obs-08"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "photoreal_arena",
+          "constraint": "一个稳定的真实位置，具有清晰的深度和一个交互表面。"
+        },
+        {
+          "name": "flat_character",
+          "constraint": "一种原创的2D纸质或贴纸状成人吉祥物，在视觉上与来源不同。"
+        },
+        {
+          "name": "real_agent",
+          "constraint": "一只真人手或工具从一致的边缘进入。"
+        },
+        {
+          "name": "contact_object",
+          "constraint": "一个小的真实物体，其运动可以明显地跨越媒介边界。"
+        },
+        {
+          "name": "sensation",
+          "constraint": "原因保持单一，例如寒冷、静电、气味或重量；不要复刻来源样片的辣味或高温刺激。"
+        },
+        {
+          "name": "reaction_states",
+          "constraint": "三个视觉上不同但因果上连续的姿势。"
+        },
+        {
+          "name": "payoff_effect",
+          "constraint": "适合新感觉的原创安全效果。"
+        },
+        {
+          "name": "sound",
+          "constraint": "真实的位置氛围加上接触同步拟音和一种效果强调音。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源女孩角色、发型、服装、面部、轮廓或幼童化身体比例",
+        "来源厨房、炒锅、食物、调料罐、勺子互动、相机构图",
+        "辣椒或灼热味觉、横向喷射的泪柱、额头发红或喷火",
+        "与来源作品完全相同的反应时序和视觉特效"
+      ],
+      "instantiations": [
+        {
+          "concept": "真实茶饮柜台上的平面 2D 高山狐狸贴纸接到一滴薄荷提取液，先小口啜饮，再发抖，最后呼出一小团霜雾并冻住一把勺子。",
+          "prompt_seed": "一滴来自真实世界的薄荷提取液落入平面贴纸角色的杯中，引发中性、寒颤、霜雾爆发三个连续状态，并以冻住勺子收尾。"
+        },
+        {
+          "concept": "真实工作台上的平面 2D 机器人贴纸接受一滴润滑剂，测试铰链，随着过度松动的接头旋转，并以令人眼花缭乱的状态灯图案停止。",
+          "prompt_seed": "现实层的一滴润滑剂落到平面机器人贴纸上，引发中性、惊讶、失控旋转三个清楚阶段。"
+        },
+        {
+          "concept": "现实温室中的平面 2D 植物学家贴纸接触一粒花粉，经历两次逐步加剧的喷嚏姿势，最后释放一小团叶片状动画云。",
+          "prompt_seed": "现实层的一粒花粉触发贴纸角色的三阶段喷嚏反应，并以原创叶片状云团收尾。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "动画角色在真实场景中看起来不再平坦。",
+          "repair": "保持恒定的纸张厚度、清晰的轮廓、平面变形和一致的接触阴影。"
+        },
+        {
+          "failure": "反应在接触之前就开始了。",
+          "repair": "通过接触发生的画面保持中性表情，然后通过短的清晰可辨的短暂停顿延迟第一次变化。"
+        },
+        {
+          "failure": "这次改编仍像在照搬来源作品中的辛辣食物笑点。",
+          "repair": "一起更改场景、角色类别、接触对象、感觉、调色板、反应图形和最终效果。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "真实茶饮柜台上的平面 2D 高山狐狸贴纸接到一滴薄荷提取液，先小口啜饮，再发抖，最后呼出一小团霜雾并冻住一把勺子。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04"
+          ],
+          "changed_slots": [
+            "photoreal_arena",
+            "flat_character",
+            "contact_object",
+            "sensation",
+            "reaction_states",
+            "payoff_effect"
+          ]
+        },
+        {
+          "concept": "真实工作台上的平面 2D 机器人贴纸接受一滴润滑剂，测试铰链，随着过度松动的接头旋转，并以令人眼花缭乱的状态灯图案停止。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04"
+          ],
+          "changed_slots": [
+            "photoreal_arena",
+            "flat_character",
+            "real_agent",
+            "contact_object",
+            "sensation",
+            "payoff_effect"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

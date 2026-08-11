@@ -1,0 +1,233 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-godofprompt-2086142925063516348-browser-2086142925063516348-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "199883388439c461898d54706de2fa4786bba1b357c646d94dcc59124961fd9a",
+    "creative_dna_sha256": "ccdb69a0c216b1504604b22145657d0bc55451342e95cb0d17fdfc04d164c075"
+  },
+  "content": {
+    "title": "形态奇观｜平面升级到现实",
+    "summary": "同一载体从平面、空间、体积一路升级到环境峰值，再回到原位留下残留。",
+    "quick_start": {
+      "input_format": "现实锚点 + 单一载体 + 平面→空间→体积→环境峰值 + 回到原位的残留",
+      "recommended_input": "桌上的咖啡杯保持原位，蒸汽先变成平面线条，再成为空间丝带和立体水流，扩展成充满房间的雾海，最后回到杯口只留一滴发光水珠。",
+      "required_anchors": [
+        "同一载体贯穿",
+        "形态按维度升级",
+        "峰值改变环境",
+        "回到初始锚点并留下残留"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一载体从平面、空间、体积一路升级到环境峰值，再回到原位留下残留。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "一个小型异常从信息简单的现实锚点中出现，并作为同一载体被连续跟踪；它由平面痕迹升级为空间形体和立体材质，在接触高潮中把自身视觉规律传播到日常环境锚点，最后缩回一个小型残留并返回原点或与开场明确对应的位置。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在解释之前，先在稳定的普通锚上引入一颗清晰的不可能的种子。",
+          "purpose": "立即建立一个关于边界的疑问，并让观众记住后续回归的位置。",
+          "ablation_failure": "如果环境已经神奇或者起源不明，那么穿越事件和闭环就失去了意义。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-11"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每次状态切换时都让可识别的载体或轨迹保持可见，并让镜头运动由该载体驱动、始终跟随它。",
+          "purpose": "将多种视觉效果转化为一次因果旅程，而不是不相关的蒙太奇。",
+          "ablation_failure": "如果每个位置接收到不同的未连接效果，则观看者无法推断传播或预测下一个状态。",
+          "evidence_ids": [
+            "beat-02",
+            "beat-04",
+            "obs-03",
+            "obs-04",
+            "obs-13"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在环境高潮前，依次经历至少三种材质上明显不同的表现形态。",
+          "purpose": "通过逐步提高立体化程度与尺度，持续重新抓住注意力。",
+          "ablation_failure": "如果载体仅保留一条线或立即成为最终的世界效应，那么中间就会失去发现，而高峰会感觉不劳而获。",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02",
+            "beat-03",
+            "obs-06",
+            "obs-12"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "先让反复出现的实体锚点作为普通物件出现，随后再让它们承载变换后的视觉语法。",
+          "purpose": "提供尺度与连续性，并证明该现象已经传播进现实环境。",
+          "ablation_failure": "没有反复出现的锚点，扩展效果会像脱离场景的全屏转场，而不是对同一场景的改写。",
+          "evidence_ids": [
+            "beat-04",
+            "beat-05",
+            "obs-05",
+            "obs-13"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "达到最大尺度状态后，把效果缩减为小型残留，并让它回到原点或与开场明确对应的位置。",
+          "purpose": "释放奇观带来的张力，证明尺度受控，并形成适合循环观看的闭合结构。",
+          "ablation_failure": "如果影片停在最大规模的爆发，它就只是常规升级演示，既没有结构性回归，也没有首尾循环的记忆点。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-11"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "origin_anchor",
+          "constraint": "视觉上简单的真实表面或物体，可以容纳第一个异常和最终的残留物。"
+        },
+        {
+          "name": "carrier",
+          "constraint": "一个可追踪的点、细丝、液滴、粒子或阴影，其路径保持因果连续。"
+        },
+        {
+          "name": "representation_ladder",
+          "constraint": "至少三个明显不同的阶段，例如平面痕迹、空间形体、立体材质和覆盖整个环境的系统。"
+        },
+        {
+          "name": "practical_anchor_chain",
+          "constraint": "传播过程中会被镜头再次带到的两至四个普通环境物件。"
+        },
+        {
+          "name": "contact_trigger",
+          "constraint": "一次在画面中清楚可辨的物理互动或越界动作，用来触发最大幅度的传播变化。"
+        },
+        {
+          "name": "environment_rewrite_medium",
+          "constraint": "一种连贯的图形或材质语法，能在不替换既有场景空间结构的前提下扩散到整个场景。"
+        },
+        {
+          "name": "camera_follow_strategy",
+          "constraint": "一次有明确动因的跟随、追踪、环绕或焦点交接，持续让载体清楚可辨；具体载体与镜头数量可以变化。"
+        },
+        {
+          "name": "return_residue",
+          "constraint": "与载体相关的更安静、更小的状态，但不是来源作品羽毛状结尾的复刻。"
+        },
+        {
+          "name": "designed_sound_family",
+          "constraint": "新创作的材质声与传播声应和所选变换同步；不要断言它们来自来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "摊开的素描本、两个站立人物、温暖商店般的杂物、自行车、裸露灯泡、牛仔布口袋、树叶和杂志堆",
+        "由星点引导的白色轨迹、悬浮棱角线稿、青—粉—紫螺旋、羽毛状残留及原样配色顺序",
+        "来源中从页面到地面、人物、灯、自行车再回到页面的精确穿行、构图与节拍时长",
+        "创作者姓名、MiniMax H3 营销声明、After Effects 对比及样片原帖串的全部措辞"
+      ],
+      "instantiations": [
+        {
+          "concept": "在午夜温室中，雾化玻璃板上的一颗露珠发出生物发光丝，穿过叶脉，扩展成半透明的蝠鲼状树冠形式，将温室转变为青色植物轮廓系统，然后凝结回原始玻璃上的一颗普通珠子。",
+          "prompt_seed": "露珠释放的发光细丝沿温室锚点逐级抬升维度，把同一温室改写成植物轮廓系统，最后收缩回普通露珠。"
+        },
+        {
+          "concept": "在昏暗的面包店冷却板上，糖晶释放出琥珀色热丝。镜头低机位横向跟拍热丝穿过打孔架和铜工具柄；热丝接触坠落糖釉时，清脆玻璃声触发它膨胀成透明糖丝风向标。摄影机随后升上摇臂形成高位斜视，暖色热图铺满厨房，声响逐渐收束为干燥冷却的咔嗒声，载体最终在冷却板远端结晶。",
+          "prompt_seed": "低机位横向跟拍糖热丝穿过面包店锚点，以坠落糖釉的接触和玻璃声峰触发热图扩展，最后冷却成远端晶体。"
+        },
+        {
+          "concept": "在安静的换乘大厅里，纸质车票的打孔点化为红色信号细丝，沿轨道凹槽与时钟指针蔓延，扩展成半透明路线体积，把车站改写成动态网络图，最后收缩为车票另一角的新打孔标记。",
+          "prompt_seed": "车票打孔点化为网络载体，在大厅中扩展为动态路线图，再收缩回一个新的打孔标记。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "影片在没有持续载体的情况下堆叠互不相关的发光效果。",
+          "repair": "为每个状态保留同一轨迹、颜色种子或材质指纹，并在反复出现的实体锚点上展示每次交接。"
+        },
+        {
+          "failure": "承载转化的核心对象尚未完成尺度升级，环境就先发生了变化。",
+          "repair": "先完成平面痕迹、空间形体和立体材质阶段，再启用覆盖整个环境的视觉语法。"
+        },
+        {
+          "failure": "最终回归照搬了来源作品中书页与羽毛的结尾。",
+          "repair": "更改起点类别、残留材质、镜头实现方式和返回路径，只保留尺度收缩与结构闭合。"
+        },
+        {
+          "failure": "镜头运动会喧宾夺主，使小型载体不再成为视觉焦点。",
+          "repair": "每个节拍只安排一次有明确动因的运镜；在每次交接处放慢，并让画面中至少保留一个稳定的实体锚点。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在午夜温室中，雾化玻璃板上的一颗露珠发出生物发光丝，穿过叶脉，扩展成半透明的蝠鲼状树冠形式，将温室转变为青色植物轮廓系统，然后凝结回原始玻璃上的一颗普通珠子。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "origin_anchor",
+            "carrier",
+            "representation_ladder",
+            "practical_anchor_chain",
+            "contact_trigger",
+            "environment_rewrite_medium",
+            "camera_follow_strategy",
+            "return_residue",
+            "designed_sound_family"
+          ]
+        },
+        {
+          "concept": "在昏暗的面包店冷却板上，糖晶释放出琥珀色热丝。镜头低机位横向跟拍热丝穿过打孔架和铜工具柄；热丝接触坠落糖釉时，清脆玻璃声触发它膨胀成透明糖丝风向标。摄影机随后升上摇臂形成高位斜视，暖色热图铺满厨房，声响逐渐收束为干燥冷却的咔嗒声，载体最终在冷却板远端结晶。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "origin_anchor",
+            "carrier",
+            "representation_ladder",
+            "practical_anchor_chain",
+            "contact_trigger",
+            "environment_rewrite_medium",
+            "camera_follow_strategy",
+            "return_residue",
+            "designed_sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

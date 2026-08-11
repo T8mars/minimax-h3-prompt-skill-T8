@@ -1,0 +1,211 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "c5915f10ee9ddaf1d944faf64fc38cffda210b35cce0c63ffedd1a22333cae49",
+    "creative_dna_sha256": "697b53a76c84c7fe9d761792698171eabcf2ad479ce460b3399d6e7b038f402b"
+  },
+  "content": {
+    "title": "平面重组｜几何节奏品牌片",
+    "summary": "稳定剪影与几何母题被反复拆解重组，在高密阶段后短暂停顿并收束为既有图形族。",
+    "quick_start": {
+      "input_format": "单一几何母题 + 稳定剪影 + 反复拆解重组 + 高密阶段 + 短暂停顿 + 既有图形收束",
+      "recommended_input": "以珊瑚螺旋为唯一母题，稳定潜航器剪影贯穿；螺旋反复拆成声呐弧线和路线图，在高密数据阶段后短暂停顿，最终重组为同一图形族的徽记。",
+      "required_anchors": [
+        "只有一个几何母题",
+        "主体剪影稳定",
+        "拆解与重组多次发生",
+        "高密后留短暂停顿并用既有图形收束"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "稳定剪影与几何母题被反复拆解重组，在高密阶段后短暂停顿并收束为既有图形族。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "围绕一个主导几何母题和稳定的主角轮廓构建平面海报世界。通过棱角分明的裁切、图表、负空间和关键状态反复拆解并重组版面；保留连续的身体动作，再短暂减速形成对比性的操作镜头，最后将全部图形系列整合成一个收束系统。母题、调色板、主体类别、图标系列、节奏、对比状态和最终图形结果均可替换。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "立即建立一个主要的几何图案和主角轮廓。",
+          "purpose": "为以后的碎片创建锚点。",
+          "ablation_failure": "如果没有锚点，快速重组就会变成随机拼贴。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在图形平面变换时，保持所有空间平坦且像海报一样。",
+          "purpose": "保护编辑设计型动态图形（MG）的视觉身份。",
+          "ablation_failure": "逼真的 3D 深度打破了视觉系统。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用关键状态和象征性环境插入而不是持续战斗。",
+          "purpose": "让构图带有动感并保持辨识度。",
+          "ablation_failure": "完整的动作编排与图形过渡相竞争。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在短暂的对比操作画面之前达到峰值信息密度。",
+          "purpose": "无需对手角色即可产生明显的加速和呼吸。",
+          "ablation_failure": "均匀的密度消除了节奏并使操作状态难以读取。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "把已建立的图形家族收束成一个原创的结尾系统。",
+          "purpose": "将蒙太奇的能量转化为令人难忘的终点。",
+          "ablation_failure": "无关的标志或淡出无法完成既有图形系统的收束。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份和轮廓保持稳定的原创主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有地点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个只沿单一方向连续变化，或按可数阶段推进的可读变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一种清晰的物理或图形结果可以闭合因果链。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "巨大的紫色月食和月相图",
+        "拿着巨大武士刀的黑发女人",
+        "戴着宽边黑帽子的白发恶棍",
+        "来源的紫黑银配色、乌鸦插入镜头和精确的占星术 UI"
+      ],
+      "instantiations": [
+        {
+          "concept": "水下研究 PV（宣传片）采用珊瑚螺旋母题、自主潜水器轮廓、声呐楔形图与墨色鱼群；它交替呈现环境尺度变化和无需工具的导航状态，在空置压力门前短暂停顿，最终收束为贝壳—水流导航徽记。",
+          "prompt_seed": "平面珊瑚海报式研究序列：机器导航状态、环境插页、无人压力门画面，最终形成贝壳—水流导航徽记。"
+        },
+        {
+          "concept": "气象站标识以风玫瑰图案、传感器桅杆轮廓和压力图为中心，在空风暴百叶窗状态下减速，最终收束为方位预报系统。",
+          "prompt_seed": "由机器状态和无人物运行场景驱动的编辑式氛围几何。"
+        },
+        {
+          "concept": "物流动态图解以折叠走廊母题、自主运输载具轮廓和包裹流程图为核心，在空置检查闸门处放慢节奏，最后收束为路径状态符号。",
+          "prompt_seed": "平面操作动态图形，不使用人物对抗或带有武器感的插入镜头。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "剪辑变成逼真的 3D 风景。",
+          "repair": "使用平面、硬阴影、图形裁剪，不要使用体积透视。"
+        },
+        {
+          "failure": "角色进行连续战斗。",
+          "repair": "把动作简化为少量标志性关键姿势，让版式转场承载动势。"
+        },
+        {
+          "failure": "最后的标记引入了不相关的图形。",
+          "repair": "只使用已经建立的视觉母题、网格和图标系列来构建。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "水下研究 PV（宣传片）采用珊瑚螺旋母题、自主潜水器轮廓、声呐楔形图与墨色鱼群；它交替呈现环境尺度变化和无需工具的导航状态，在空置压力门前短暂停顿，最终收束为贝壳—水流导航徽记。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "气象站标识以风玫瑰图案、传感器桅杆轮廓和压力图为中心，在空风暴百叶窗状态下减速，最终收束为方位预报系统。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

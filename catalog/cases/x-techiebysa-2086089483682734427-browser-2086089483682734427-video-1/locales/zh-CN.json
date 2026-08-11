@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7c260844e7931df9fb8e3f47c0d41f8bcc033bfcc94b53a3df573b00add7cd54",
+    "creative_dna_sha256": "7a3b0efa6d11b2ea2638d301114b5afe3185d8e5c2674e8f98dd510d5ae632a2"
+  },
+  "content": {
+    "title": "技能展示｜基础动作串联升级",
+    "summary": "持续基础动作连接逐级高级技能，每个机位只证明一种运动，峰值后回到基础循环。",
+    "quick_start": {
+      "input_format": "持续基础动作 + 3种高级技能 + 每次不同功能机位 + 节奏/接触声连续 + 回到基础动作",
+      "recommended_input": "检修无人机保持稳定巡航基础动作，依次完成窄缝侧飞、旋转扫描和高速对接；每段用不同机位证明技能，峰值后回到同一巡航节奏。",
+      "required_anchors": [
+        "基础动作反复返回",
+        "至少三项技能逐级变难",
+        "每个机位只承担一种证明任务",
+        "峰值后回到基础循环"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "持续基础动作连接逐级高级技能，每个机位只证明一种运动，峰值后回到基础循环。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "从一个连续的基本动作开始，使其成为每一项不同技能的强制进入和退出。在可数阶段中逐步增加难度，为每个摄像机角度分配一个验证目的，如接触、间隙、旋转或恢复，在接近结束时结合所学原理，然后执行一次峰值变化，并明显返回到不变的基本循环。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "从循环动作进行到一半时开始，并让基础动作在各项技巧之间持续进行。",
+          "purpose": "形成连续的动作衔接。",
+          "ablation_failure": "反复静态重置会把作品变成彼此割裂的高光片段。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每项技能都必须脱离循环并明显返回循环。",
+          "purpose": "证明了真正的连续性。",
+          "ablation_failure": "否则剪辑可能掩盖失败的过渡。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "通过独特的运动属性增加难度。",
+          "purpose": "建立一个清晰可辨的技能阶梯。",
+          "ablation_failure": "更多相同的动作会增加速度，但不会增加进度。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "让每个机位只承担一项明确的证明任务。",
+          "purpose": "让剪辑切换本身承担信息表达。",
+          "ablation_failure": "装饰角度的变化可能会掩盖机械原理。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "到达峰值后，返回原循环，不停顿。",
+          "purpose": "收束结构并证明表演者仍然保持控制。",
+          "ablation_failure": "峰值的冻结放弃了连接规则。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份保持稳定的原创主体或系统。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一种在可数因果阶段发生变化的可见变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的行为规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的物理或图形结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "身着白色阿巴达的男性卡波耶拉练习者",
+        "萨尔瓦多巴伊亚多彩街",
+        "ginga 基础摆动及有名称的卡波耶拉招式",
+        "berimbau 节奏和来源作品中的角色设定表"
+      ],
+      "instantiations": [
+        {
+          "concept": "自主检查无人机以八字悬停作为基准循环，依次完成穿越狭缝、横滚扫描、倒置检查和精确对接；每个机位只证明一次间隙通过或姿态恢复。",
+          "prompt_seed": "用八字悬停串联狭缝穿越、横滚扫描、倒置检查与精确对接，每个机位只承担一项清楚的证明任务。"
+        },
+        {
+          "concept": "陶工以拉坯轮上的定心动作为基准节奏，依次完成拉高器壁、刮板压实和一次向上提拉，最后回到同样稳定的定心节奏。",
+          "prompt_seed": "以定心动作串联拉高器壁、刮板压实与向上提拉，每个机位证明一项手部技能，最后回到稳定定心。"
+        },
+        {
+          "concept": "机器人织机以一次梭子循环为基准，依次连接斜纹编织、张力反转、布边锁定和最后一次宽幅花纹梭行。",
+          "prompt_seed": "用同一梭子循环串联斜纹、张力反转、布边锁定与宽幅花纹梭行，每个机位证明一项织造技能。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "静态重置会使该片段变成不连贯的高光片段。",
+          "repair": "从循环动作进行到一半时开始，并让基础动作在各项技巧之间持续进行。"
+        },
+        {
+          "failure": "否则剪辑可能掩盖失败的过渡。",
+          "repair": "每项技能都必须脱离循环并明显返回循环。"
+        },
+        {
+          "failure": "更多相同的动作会增加速度，但不会增加进度。",
+          "repair": "通过独特的运动属性增加难度。"
+        },
+        {
+          "failure": "装饰角度的变化可能会掩盖机械原理。",
+          "repair": "让每个机位只承担一项明确的证明任务。"
+        },
+        {
+          "failure": "峰值的冻结放弃了连接规则。",
+          "repair": "到达峰值后，返回原循环，不停顿。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "自主检查无人机以八字悬停作为基准循环，依次完成穿越狭缝、横滚扫描、倒置检查和精确对接；每个机位只证明一次间隙通过或姿态恢复。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "陶工以拉坯轮上的定心动作为基准节奏，依次完成拉高器壁、刮板压实和一次向上提拉，最后回到同样稳定的定心节奏。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

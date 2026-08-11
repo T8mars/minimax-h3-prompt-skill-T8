@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "1ecf81e80c6f0d556b58bf7dfb4c66dfb2bbb8c8a3bd26825013afc04c1ba220",
+    "creative_dna_sha256": "395290caa32ab0e344836c38f905e648f2de5e62d96fcf5292388dc1807b3925"
+  },
+  "content": {
+    "title": "Character Card Verification | Evidence Confirmation",
+    "summary": "Fixed character cards appear repeatedly, using four different types of evidence—posture, operation, gait, and facial features—to verify the same identity.",
+    "quick_start": {
+      "input_format": "Character + fixed identity card + 4 distinct proofs (posture/action/gait/facial detail) + final live-action identity hold",
+      "recommended_input": "The ceramic service robot is repeatedly compared with fixed character cards to verify its standing posture proportions, tray operation, corridor gait, and facial lighting expressions, culminating in a hero freeze-frame in a real-life museum scene.",
+      "required_anchors": [
+        "Character card layout remains consistent",
+        "The same identity remains stable across shots",
+        "The four types of evidence serve different functions",
+        "At the end, enter a real scene to complete verification"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Fixed character cards appear repeatedly, using four different types of evidence: posture, operation, gait and face to verify the same identity.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Use one fixed identity board as a recurring visual checkpoint between four different live-scene proofs: silhouette and pose, small performance action, locomotion and face-level detail. Keep the board layout stable while camera scale and environment vary, then remove or subordinate the board so the verified live subject owns the final hero composition.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish the identity board and live subject together before major action.",
+          "purpose": "Creates an explicit comparison contract.",
+          "ablation_failure": "A hidden reference cannot function as visible evidence.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Return to the same board layout between distinct live proofs.",
+          "purpose": "Makes each action a new identity check.",
+          "ablation_failure": "A changing board destroys the reference baseline.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Each live proof must test a different identity dimension.",
+          "purpose": "Avoids redundant beauty shots.",
+          "ablation_failure": "Repeated face close-ups do not prove gait or silhouette.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Keep defining proportions and markers continuous across board and scene.",
+          "purpose": "Preserves subject identity through camera changes.",
+          "ablation_failure": "Marker drift breaks the verification mechanism.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End on the verified live subject rather than a board-only frame.",
+          "purpose": "Converts evidence into a satisfying hero payoff.",
+          "ablation_failure": "A board-only ending feels like documentation, not completion.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original subject or system whose identity remains stable."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One visible variable that changes in countable causal stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained behavior rule that makes the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A coherent information order that does not copy source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "One clean physical or graphic consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "A new hierarchy of diegetic cues supporting state changes."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "blonde anime cowgirl with black hat and sunglasses",
+        "Route 66 sunset and vintage muscle car",
+        "low-angle boots then sunglasses close-up",
+        "the NOVA character sheet layout and source end card"
+      ],
+      "instantiations": [
+        {
+          "concept": "A ceramic service robot's orthographic maintenance card returns between a gallery entrance pose, delicate tray placement, stair locomotion and lens-aperture close-up before the robot owns the final exhibit frame.",
+          "prompt_seed": "A ceramic service robot's orthographic maintenance card returns between a gallery entrance pose, delicate tray placement, stair locomotion and lens-aperture close-up before the robot owns the final exhibit frame."
+        },
+        {
+          "concept": "A deep-sea diver suit diagram recurs between pressure-door entry, tool exchange, weighted walk and visor reflection, ending on the live diver at the observation window.",
+          "prompt_seed": "A deep-sea diver suit diagram recurs between pressure-door entry, tool exchange, weighted walk and visor reflection, ending on the live diver at the observation window."
+        },
+        {
+          "concept": "A modular parade puppet blueprint checkpoints silhouette, hand articulation, rolling gait and painted face before the puppet alone fills the final stage picture.",
+          "prompt_seed": "A modular parade puppet blueprint checkpoints silhouette, hand articulation, rolling gait and painted face before the puppet alone fills the final stage picture."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "A hidden reference cannot function as visible evidence.",
+          "repair": "Establish the identity board and live subject together before major action."
+        },
+        {
+          "failure": "A changing board destroys the reference baseline.",
+          "repair": "Return to the same board layout between distinct live proofs."
+        },
+        {
+          "failure": "Repeated face close-ups do not prove gait or silhouette.",
+          "repair": "Each live proof must test a different identity dimension."
+        },
+        {
+          "failure": "Marker drift breaks the verification mechanism.",
+          "repair": "Keep defining proportions and markers continuous across board and scene."
+        },
+        {
+          "failure": "A board-only ending feels like documentation, not completion.",
+          "repair": "End on the verified live subject rather than a board-only frame."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A ceramic service robot's orthographic maintenance card returns between a gallery entrance pose, delicate tray placement, stair locomotion and lens-aperture close-up before the robot owns the final exhibit frame.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A deep-sea diver suit diagram recurs between pressure-door entry, tool exchange, weighted walk and visor reflection, ending on the live diver at the observation window.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

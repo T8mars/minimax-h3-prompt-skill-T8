@@ -1,0 +1,211 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-derek-wall90176-2086464559439855938-browser-2086464559439855938-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "87369dc08456f8568f65fb2ce2a5a469208dd69f6328f4c12703a840522e5ed6",
+    "creative_dna_sha256": "5a7ab0a7889381608b5c0a6729ef60beb57872dfe99d5c922bc02c17958e00f4"
+  },
+  "content": {
+    "title": "工艺过程｜材料覆盖当进度",
+    "summary": "同一工艺物保持连续，用只增不减的材料变量作为清晰进度钟。",
+    "quick_start": {
+      "input_format": "同一工艺物 + 一个只增不减的材料变量 + 4个阶段 + 成品揭晓",
+      "recommended_input": "同一块陶瓷浮雕保持在转台上，釉色覆盖从边缘、纹路、主体到全部表面只增不减，最后窑火反光中揭晓成品。",
+      "required_anchors": [
+        "同一工艺物贯穿",
+        "选定材料变量只增不减",
+        "至少四个可区分阶段",
+        "最后明确揭晓成品"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一工艺物保持连续，用只增不减的材料变量作为清晰进度钟。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "围绕同一件持续可见的工件压缩多阶段制作过程，并选择一个只增不减、不可逆的视觉变量，例如覆盖率、抛光度、氧化程度、透明度或显露出的纹样。接触级微距特写与恢复整体尺度的镜头交替出现，每次剪辑都必须推进同一工件；完成状态要获得最长停留。工艺、物体、材质、色彩、阶段数和最终展示方式均可替换。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在尚未加工的基础状态下建立一件工件。",
+          "purpose": "创建视觉时钟的零点。",
+          "ablation_failure": "没有基础状态，就无法衡量进展。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在各阶段剪辑中保持对象标识和定义几何形状稳定。",
+          "purpose": "让观众逐步感知同一件工件上的变化。",
+          "ablation_failure": "对象交换看起来像是不相关的演示。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "沿单一方向推进一个不可逆的物质变量。",
+          "purpose": "将覆盖范围转化为直观的时间线。",
+          "ablation_failure": "反转或重置变量会中断进度。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在每个关键状态变化时显示工具与材料的直接接触。",
+          "purpose": "提供因果证据和触觉可信度。",
+          "ablation_failure": "画外完成的变换会像魔法，而不像真实工艺过程。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终操作后，对成品工件进行更长时间的清晰定格。",
+          "purpose": "奖励压缩过程并确认完成。",
+          "ablation_failure": "在最后一个工具操作期间结束会否认收束效果。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个身份和轮廓保持稳定的原创主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有地点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个单调变化或以可数阶段变化的可读变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一个不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰的物理或图形结果，可以闭合因果链。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "红色球根花瓶，带有凸起的盘绕龙状浮雕",
+        "红漆上贴金箔",
+        "来源作品中的中文编号工序牌",
+        "来源工匠面孔、车间和精确的工具序列"
+      ],
+      "instantiations": [
+        {
+          "concept": "陶瓷浮雕瓷砖从浅色素瓷经过雕刻通道，逐渐增加半透明的青色釉料覆盖范围，最终呈现出窑炉光泽和干净的画廊效果。",
+          "prompt_seed": "微距呈现陶瓷工艺，让青色釉层的逐步覆盖成为不可逆的视觉时钟。"
+        },
+        {
+          "concept": "木制音乐盒盖从原始雕刻到增加蓝色树脂镶嵌、打磨、抛光和反光最终图案。",
+          "prompt_seed": "一个持续存在的盖体；蓝色镶嵌纹在每次剪辑中继续生长。"
+        },
+        {
+          "concept": "铜植物牌匾从干净的金属经过蜡掩膜，到铺展绿色铜绿、选择性抛光和最终装框展示。",
+          "prompt_seed": "铜绿覆盖率是触觉金属工艺中的单调进度变量。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "不同的对象出现在不同的阶段。",
+          "repair": "在每次剪辑中锁定同一工件的轮廓、主体特征和比例。"
+        },
+        {
+          "failure": "覆盖范围向后跳跃或随机改变色调。",
+          "repair": "选择一个不可逆变量，并让每一次剪辑都推进它。"
+        },
+        {
+          "failure": "画面只展示精美的成品镜头。",
+          "repair": "包括最终保持之前的直接工具接触和清晰可辨的中间状态。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "陶瓷浮雕瓷砖从浅色素瓷经过雕刻通道，逐渐增加半透明的青色釉料覆盖范围，最终呈现出窑炉光泽和干净的画廊效果。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "木制音乐盒盖从原始雕刻到增加蓝色树脂镶嵌、打磨、抛光和反光最终图案。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

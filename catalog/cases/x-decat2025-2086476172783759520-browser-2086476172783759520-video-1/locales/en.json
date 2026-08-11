@@ -1,0 +1,211 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-decat2025-2086476172783759520-browser-2086476172783759520-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "40a1ab6dd434a467dc15fb9ef3ce9ce5c0a15c53c716e3b89f08107255c10dbe",
+    "creative_dna_sha256": "72791a42ca74a0568fc451da6ecf255b0077fe1ddb9a3974619aba17bd0d8be3"
+  },
+  "content": {
+    "title": "Contrast Comedy | The Calmer, the More Out of Control",
+    "summary": "In formal settings, a chain of escalating mishaps occurs, yet the subject remains composed; the contrast itself creates the humor.",
+    "quick_start": {
+      "input_format": "Formal occasion + attached burden + at least 2 chain consequences + visible failure + subject remains calm throughout",
+      "recommended_input": "A pastry chef carries a massive sugar sail during an award presentation. The sail first knocks over a decorative tower, then tears down the display cloth, and finally causes the sugar boat to break. He completes his bow with a smile on his face.",
+      "required_anchors": [
+        "Formal occasions and composed subjects",
+        "The burden remains attached to the subject",
+        "At least two causal chains",
+        "Failure is visible, but the subject remains unfazed"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Formal deadpan comedy in which a causal chain of mishaps keeps escalating while the subject remains visibly composed.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Place an impeccably controlled subject inside a rigid public ritual, introduce one initially manageable physical liability, escalate its collateral effects in countable steps, then expose a visible failure while the subject preserves exactly the same confident performance rule. The mismatch between increasing chaos and unchanged poise creates the payoff; casting, setting, hazard, costume, palette and final consequence are variable.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish a formal ritual with a clear success posture before disruption begins.",
+          "purpose": "Gives the audience a behavioral baseline.",
+          "ablation_failure": "Without a stable ritual, later chaos reads as ordinary disorder.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Introduce one physical liability attached to the subject and keep its cause visible.",
+          "purpose": "Makes each collision causally legible.",
+          "ablation_failure": "Random background accidents break the comedy engine.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Escalate collateral consequences at least twice while the subject maintains the same poise.",
+          "purpose": "Builds a countable deadpan ladder.",
+          "ablation_failure": "Changing attitude too early releases tension before the payoff.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Show one irreversible visible failure only after collateral has peaked.",
+          "purpose": "Converts disruption into a clean state change.",
+          "ablation_failure": "An early failure removes the escalation ladder.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End on confident continuation rather than explanation or embarrassment.",
+          "purpose": "Turns failure into a controlled mic-drop.",
+          "ablation_failure": "Apology or panic replaces deadpan comedy with ordinary mishap.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original subject whose identity and silhouette remain stable."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific location."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One readable variable that changes monotonically or in countable stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "One restrained performance rule that makes the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A coherent information order that does not copy the source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "One clean physical or graphic consequence that closes the causal chain."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "A new hierarchy of diegetic cues supporting each state change."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "upright sunglasses-wearing reptile on a luxury runway",
+        "iridescent white feather train sweeping seated spectators",
+        "black curtain entrance and reflective fashion catwalk",
+        "source pivot, collision positions and stripped-cape ending"
+      ],
+      "instantiations": [
+        {
+          "concept": "A poised pastry chef presents a towering kinetic sugar sculpture on a live studio turntable; each elegant adjustment triggers a larger set failure, the outer sugar sail snaps, and she completes the bow without breaking her smile.",
+          "prompt_seed": "Deadpan culinary prestige: formal demo, attached sugar liability, two collateral escalations, visible break and immaculate final bow."
+        },
+        {
+          "concept": "A ceremonial museum guide unveils a wind-driven paper installation whose ribbons progressively topple display stanchions; one panel detaches, yet the guide completes the scripted gesture with perfect calm.",
+          "prompt_seed": "Museum ritual versus attached paper chaos, ending on unbroken curatorial poise."
+        },
+        {
+          "concept": "An orchestra conductor leads a miniature automaton ensemble as one overlong cable tangles stands, pulls a curtain and unplugs the finale; the conductor finishes the cadence as if planned.",
+          "prompt_seed": "Performance formality, one cable liability, escalating collateral and a composed cadence after failure."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Several unrelated accidents happen at once.",
+          "repair": "Use one attached liability and show how each consequence follows from it."
+        },
+        {
+          "failure": "The subject reacts with panic before the visible failure.",
+          "repair": "Lock one confident expression and posture until the final hold."
+        },
+        {
+          "failure": "The new version simply changes the runway animal.",
+          "repair": "Change ritual, setting, hazard physics, camera grammar, costume and payoff together."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A poised pastry chef presents a towering kinetic sugar sculpture on a live studio turntable; each elegant adjustment triggers a larger set failure, the outer sugar sail snaps, and she completes the bow without breaking her smile.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A ceremonial museum guide unveils a wind-driven paper installation whose ribbons progressively topple display stanchions; one panel detaches, yet the guide completes the scripted gesture with perfect calm.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

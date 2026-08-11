@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "3e28b41139ddf6c5d4fe2d100c3c7a0e1dc6ccd7a18b5271546deaa466981ffb",
+    "creative_dna_sha256": "bc40d26f7deaad42492f8c332ce4a6f63d169a298397418065192fd6c0a131d0"
+  },
+  "content": {
+    "title": "UGC测评｜开箱到一口实证",
+    "summary": "真人与未开封产品同框起手，完整开箱后给一个关键微距证据，再完成真实使用，并让产品与变化后的反应一起收口。",
+    "quick_start": {
+      "input_format": "出镜测评者 + 未开封产品 + 完整内容展示 + 一个产品专属微距证据 + 一次完整使用 + 产品与反应同框",
+      "recommended_input": "陶艺师测评便携手冲套件：先展示密封盒并完整摆出部件，微距证明滤网四分之一圈锁定，完成一次无渗漏冲煮与品尝，最后举起套件和干燥接缝并克制点头。",
+      "required_anchors": [
+        "开场测评者与未开封产品同框",
+        "先完整展示内容再进入细节",
+        "只有一个产品专属功能证据",
+        "必须完成一次真实使用并保留结果",
+        "结尾产品与变化后的反应同框"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "真人与未开封产品同框起手，完整开箱后给一个关键微距证据，再完成真实使用，并让产品与变化后的反应一起收口。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把第一人称产品测评组织成一条证明阶梯：让未开封产品与讲述者同框出现，完整展示内容物，再以一个触感或功能微距证明关键细节；讲述者随后完成一次真实使用动作，最后让产品和使用后的反应同时留在画面中。产品卖点必须由可见使用过程证明，而不能只靠口头宣传。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "开场让讲述者与未拆封产品同框。",
+          "purpose": "把讲述者、产品与预期结果联系起来。",
+          "ablation_failure": "只拍产品的唯美展示镜头，无法建立由讲述者亲自评价的归属感。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在隔离细节之前先揭示完整的内容。",
+          "purpose": "为后续微距证明建立清楚的整体背景。",
+          "ablation_failure": "开场即用微距剪辑，会让观众看不清实际正在评测的完整对象。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "选择一种产品特定的触觉或功能证明。",
+          "purpose": "让产品主张可以被直接检验。",
+          "ablation_failure": "普通特写只会增加精致质感，却不能提供证据。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "执行一项完整的使用操作，结果仍然可见。",
+          "purpose": "将产品状态转化为展示的体验。",
+          "ablation_failure": "在结果出现前切走，会让真实使用只剩暗示。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以产品和改变的人类反应一起可读结束。",
+          "purpose": "将证明与评估联系起来。",
+          "ablation_failure": "反应镜头若不带上被评测物体，会显得无关或像刻意摆拍。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源女人",
+        "来源汉堡和薯条",
+        "来源作品中的包装",
+        "字幕文案和厨房式场景"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位陶艺师拆开紧凑型手冲套件，展示全部部件，以微距特写证明滤网接缝已经锁紧，冲煮并品尝一杯咖啡，最后手持组装好的套件，以克制的认可反应收束。",
+          "prompt_seed": "陶艺师开箱紧凑型手冲套件：完整展示部件，微距证明滤网锁紧，完成冲煮与品尝，最后以产品和克制反应同框收束。"
+        },
+        {
+          "concept": "一名骑行者测试可收纳雨衣：打开小袋展示折叠衣物，以微距证明防水拉链密封，在喷淋测试中穿上雨衣，最后展示干燥的内侧袖口并露出宽慰表情。",
+          "prompt_seed": "一名骑行者测试可收纳雨衣：打开小袋展示折叠衣物，以微距证明防水拉链密封，在喷淋测试中穿上雨衣，最后展示干燥的内侧袖口并露出宽慰表情。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "只拍产品的唯美展示镜头，无法建立由讲述者亲自评价的归属感。",
+          "repair": "开场让讲述者与未拆封产品同框。"
+        },
+        {
+          "failure": "一开场就使用微距特写，会让观众不知道正在测评什么。",
+          "repair": "在隔离细节之前先揭示完整的内容。"
+        },
+        {
+          "failure": "普通特写只会增加精致质感，却不能提供证据。",
+          "repair": "选择一种产品特定的触觉或功能证明。"
+        },
+        {
+          "failure": "在结果出现前切走，会让真实使用只剩暗示。",
+          "repair": "执行一项完整的使用操作，结果仍然可见。"
+        },
+        {
+          "failure": "反应镜头若不带上被评测物体，会显得无关或像刻意摆拍。",
+          "repair": "以产品和改变的人类反应一起可读结束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位陶艺师拆开紧凑型手冲套件，展示全部部件，以微距特写证明滤网接缝已经锁紧，冲煮并品尝一杯咖啡，最后手持组装好的套件，以克制的认可反应收束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名骑行者测试可收纳雨衣：打开小袋展示折叠衣物，以微距证明防水拉链密封，在喷淋测试中穿上雨衣，最后展示干燥的内侧袖口并露出宽慰表情。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

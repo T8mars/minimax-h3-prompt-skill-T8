@@ -56,6 +56,26 @@ test("detail dialog cancel and close paths clean up video playback", () => {
   assert.match(renderer, /video\.removeAttribute\("src"\)/u);
 });
 
+test("detail view exposes bilingual, section copy and full-item copy controls", () => {
+  for (const id of ["global-locale-en", "global-locale-zh", "detail-locale-en", "detail-locale-zh", "copy-full-item", "copy-overview", "copy-quick-start", "copy-dna", "copy-validation", "quick-start", "validation-grid"]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`), `missing bilingual/copy control: ${id}`);
+  }
+  for (const token of ["setLocale", "fullItemMarkdown", "promptLanguages", "preserveMedia: true", "localStorage.setItem", "copyContent", "renderQuickStart", "renderValidation"]) {
+    assert.ok(renderer.includes(token), `missing bilingual/copy behavior: ${token}`);
+  }
+  assert.ok(renderer.includes("function activePrompt") && renderer.includes("item?.prompts?.[model]"), "prompt copy must read canonical prompt bytes with only the explicit official access-metadata exception");
+});
+
+test("prompt selectors implement the WAI-ARIA tabs contract", () => {
+  assert.match(html, /id="tab-h3"[^>]+aria-controls="prompt-panel"[^>]+tabindex="0"/u);
+  assert.match(html, /id="tab-seedance"[^>]+aria-controls="prompt-panel"[^>]+tabindex="-1"/u);
+  assert.match(html, /id="prompt-panel" role="tabpanel" aria-labelledby="tab-h3"/u);
+  assert.match(html, /id="compare-grid" class="compare-grid" role="tabpanel" aria-labelledby="compare-tab-h3"/u);
+  for (const token of ["handleTablistKeys", "ArrowRight", "ArrowLeft", "Home", "End", "aria-labelledby"]) {
+    assert.ok(renderer.includes(token), `missing accessible tab behavior: ${token}`);
+  }
+});
+
 test("renderer does not embed remote platform pages", () => {
   assert.doesNotMatch(html, /<iframe|<webview/iu);
   assert.doesNotMatch(renderer, /createElement\(["'](?:iframe|webview)["']\)/iu);

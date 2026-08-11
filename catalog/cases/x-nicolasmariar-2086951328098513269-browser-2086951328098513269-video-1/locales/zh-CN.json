@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "fdcd7f78eda2b10003d5f03b10009edfdb3f464032a4b97fbf19f4722cc5b107",
+    "creative_dna_sha256": "48348a805e8b8ffcf1a512c2ed476433388a89dc0a334dbedbb2c1a5899e7081"
+  },
+  "content": {
+    "title": "气闸异境｜物理异常后空间崩坏",
+    "summary": "先锁定普通密闭空间与一个见证物；常规操作后让室内逐步积累物理异常，再通过短暂黑场揭示不可能出现的外部环境，同时由保持不变的见证物证明空间连续。",
+    "quick_start": {
+      "input_format": "锁定密闭空间 + 普通操作检查 + 室内物理异常 + 连续见证物 + 不可能外部",
+      "recommended_input": "极地去污气闸完成常规冲洗检查后，暖赭色细沙从密封墙缝侵入；短暂断电后舱门外变成阳光荒漠峡谷，原位红色仪器箱证明空间连续。",
+      "required_anchors": [
+        "异常开始前，先锁定一个熟悉的密闭空间结构。",
+        "在物理异常之前，安排一次普通操作或控制检查。",
+        "让一个静止的见证物跨越中断前后保持不变。",
+        "人物离开或移位后，让不可能的外部与未改变的内部同时成立。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先锁定普通密闭空间与一个见证物；常规操作后让室内逐步积累物理异常，再通过短暂黑场揭示不可能出现的外部环境，同时由保持不变的见证物证明空间连续。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "锁定一间普通的封闭房间、一名房内人物和一个静止的见证物。经过一次日常操作或控制检查后，让封闭空间逐步积累可见的物理证据；使用一次短暂黑场，但不重置空间关系；随后打开出口，门外显露出不可能出现的外部环境，而未改变的见证物仍留在室内，从而让揭示读作规则被打破，而不是切换了地点。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在异常发生前锁定一个熟悉的封闭房间空间结构。",
+          "purpose": "建立稳定的规则基线。",
+          "ablation_failure": "如果房间本身不断变化，就无法证明究竟是哪条规则被打破。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在物理异常发生前进行一次常规操作或控制检查。",
+          "purpose": "创建熟悉的动作基线，并将注意力引导至封闭房间内部。",
+          "ablation_failure": "从无法解释的物质效应开始，会削弱从普通到不可能的升级效果。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在出口打开之前，让封闭空间内逐步积累物理证据。",
+          "purpose": "证明该事件不仅仅是显示故障。",
+          "ablation_failure": "即时门户缺乏升级感和物质因果关系。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在中断前后保留一个始终静止、未发生变化的见证物。",
+          "purpose": "通过连续性将两种状态绑定在一起。",
+          "ablation_failure": "如果一切发生变化，揭示可能被解读为场景切换。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在房内人物离开或被移走后，把不可能出现的外部环境与未改变的室内空间同时保留在画面中。",
+          "purpose": "创建完整的规则违反证明。",
+          "ablation_failure": "快速插入的外部画面无法建立空间矛盾。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点且没有特定来源表层元素的新场景设置。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一套克制的表演或运动规则，使机制保持清晰可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源作品中的电梯",
+        "源：男乘客和纸袋",
+        "来源作品中逐渐结冰的金属墙",
+        "来源作品中门外的云海与原样消失过程"
+      ],
+      "instantiations": [
+        {
+          "concept": "极地研究净化气闸室开始进行常规冲洗检查，温暖的赭色沙子渗入其密封接缝，灯光熄灭，舱门打开，通向阳光明媚的沙漠峡谷，而一个仪器箱仍留在室内。",
+          "prompt_seed": "极地研究净化气闸室开始进行常规冲洗检查，温暖的赭色沙子渗入其密封接缝，灯光熄灭，舱门打开，通向阳光明媚的沙漠峡谷，而一个仪器箱仍留在室内。"
+        },
+        {
+          "concept": "水下标本室开始例行压力冲洗，苍白的种子壳从干燥的接缝中向上渗出，灯光熄灭，圆形舱口打开，通向被风吹拂的果园，而一个红色样品盒仍留在室内。",
+          "prompt_seed": "水下标本室开始例行压力冲洗，苍白的种子壳从干燥的接缝中向上渗出，灯光熄灭，圆形舱口打开，通向被风吹拂的果园，而一个红色样品盒仍留在室内。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果房间本身不断变化，就无法证明究竟是哪条规则被打破。",
+          "repair": "在异常开始之前锁定一个熟悉的封闭房间结构。"
+        },
+        {
+          "failure": "从无法解释的物质效应开始，会削弱从普通到不可能的升级效果。",
+          "repair": "在物理异常发生前，安排一项普通的操作或控制检查。"
+        },
+        {
+          "failure": "即时出现的门户缺乏层次递进和物质因果关系。",
+          "repair": "在出口打开之前，让封闭空间内逐步积累物理证据。"
+        },
+        {
+          "failure": "如果一切发生变化，揭示可能被解读为场景切换。",
+          "repair": "在中断期间保留一个静态的见证物。"
+        },
+        {
+          "failure": "快速插入外部画面无法建立空间矛盾。",
+          "repair": "在房内人物离开或被移走后，把不可能出现的外部环境与未改变的室内空间同时保留在画面中。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "极地研究净化气闸室开始进行常规冲洗检查，温暖的赭色沙子渗入其密封接缝，灯光熄灭，舱门打开，通向阳光明媚的沙漠峡谷，而一个仪器箱仍留在室内。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "水下标本室开始例行压力冲洗，苍白的种子壳从干燥的接缝中向上渗出，灯光熄灭，圆形舱口打开，通向被风吹拂的果园，而一个红色样品盒仍留在室内。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

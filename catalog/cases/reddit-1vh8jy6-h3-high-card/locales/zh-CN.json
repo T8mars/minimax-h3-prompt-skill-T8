@@ -1,0 +1,197 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "reddit-1vh8jy6-h3-high-card",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "9fca06bc359cc9766d843d1516ebe3b4578eae8f7d3aafe991e87a4c4a338b4c",
+    "creative_dna_sha256": "2b87a30e15bd1ad221a1cbf782fa9f7532d7a712657453b946afc37b7dbcd921"
+  },
+  "content": {
+    "title": "一对多反转｜单一证据胜出",
+    "summary": "多个喧闹方案看似占优，单一克制信号通过校准和物理证明完成反转。",
+    "quick_start": {
+      "input_format": "喧闹多数 + 克制单一信号 + 校准动作 + 可见物理证明",
+      "recommended_input": "五台机器人各自给出冲突读数，一枚克制的音叉信号完成校准；所有机械臂同步归零，并共同生成一个稳定透明球作为物理证明。",
+      "required_anchors": [
+        "多数方案先制造噪声或冲突",
+        "单一信号保持克制",
+        "有明确校准动作",
+        "最终用物理结果而非口号证明胜出"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "多个喧闹方案看似占优，单一克制信号通过校准和物理证明完成反转。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "一个噪杂系统先以数量制造强势感；一次克制而明确的纠正信号将其打断，最终用可见的物理结果证明：校准后的清晰度胜过单纯堆叠。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在任何一方解释之前先展示不对称的一对多对决。",
+          "purpose": "创建一个直接的比较问题。",
+          "ablation_failure": "如果首先出现单一答案，则不会出现逆转。",
+          "evidence_ids": [
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在简洁答案出现前，让项目繁多的一侧表演更久、占据更大的画面空间。",
+          "purpose": "建立明显的优势和视觉噪音。",
+          "ablation_failure": "相同的画面时长使得收束效果可预测且微弱。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "为单个纠正信号提供专门的感官特写。",
+          "purpose": "让一个小动作或小物件成为最关键的信息节拍，同时无需复制来源文字或道具。",
+          "ablation_failure": "远景揭示或一次性同时揭示，会削弱层级与重点。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "以冷静的控制和喧闹的结果结束，而不是另一种解释。",
+          "purpose": "将逻辑反转转化为视觉笑点。",
+          "ablation_failure": "口头总结会重复信息并耗尽喜剧能量。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-09"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "arena",
+          "constraint": "与赌博或源酒馆无关的稳定比较空间。"
+        },
+        {
+          "name": "many_side",
+          "constraint": "一个富有表现力的角色，带有三到五个紧凑的标签选项。"
+        },
+        {
+          "name": "one_side",
+          "constraint": "一个冷静的角色，只有一个简短的答案标签。"
+        },
+        {
+          "name": "many_signals",
+          "constraint": "三到五个不同的控件、声音、灯光、路线或手势会产生清晰的视觉噪音。"
+        },
+        {
+          "name": "single_answer",
+          "constraint": "一种视觉上和声音上不同的纠正动作或物体，无需文字即可实现逆转。"
+        },
+        {
+          "name": "proof",
+          "constraint": "一个明显的结果显示了为什么简洁的答案获胜。"
+        },
+        {
+          "name": "meltdown",
+          "constraint": "安全的夸张反应，没有武器或模仿的手势。"
+        },
+        {
+          "name": "sound",
+          "constraint": "逐步增强的物体声、一次揭示重音，以及一段简短的结果音效。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "传统卡通人物、声音、剪影或既有系列作品的动画画风",
+        "酒馆、赌桌、金胡萝卜赌注或西部道具",
+        "来源作品中的模型名称和原样卡面文字",
+        "手枪、烟云投降，以及与来源完全相同的姿势和镜头构图"
+      ],
+      "instantiations": [
+        {
+          "concept": "在一个异想天开的校准实验室中，一只疯狂的章鱼拉动五个不匹配的杠杆，而维护机器人则敲击一个黄铜音叉；共振使机器对齐并产生一个完美的玻璃球。",
+          "prompt_seed": "同步机械校正证明了五个噪声控制会输给一个校准的共振信号。"
+        },
+        {
+          "concept": "在夜间葡萄园中，五架自主修剪无人机追逐相互竞争的光路，直到一名园丁吹响定音管；无人机群随即收束成单一螺旋，并整齐修剪完一整排葡萄藤。",
+          "prompt_seed": "五条冲突路线最终让位于一个可听见的校准信号；结果由协同动作证明，而不是书面答案。"
+        },
+        {
+          "concept": "在一座充满活力的纸城市中，五座交通塔闪烁着不同的图案，直到一个小钟表匠插入节拍器钥匙；每一辆纸质车辆都融入了一种流动的节奏。",
+          "prompt_seed": "城市规模的编排重置证明了五个竞争信号与一个计时键的对比。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "答案出现得太早了。",
+          "repair": "把答案保留到项目繁多的一侧完成空间展示与呈现姿态之后。"
+        },
+        {
+          "failure": "项目繁多一侧的噪杂变得随机，无法再逐项辨认。",
+          "repair": "将其限制为三到五个不同的控制或信号，并以清晰的激活顺序排列它们。"
+        },
+        {
+          "failure": "结尾照搬了来源作品中的混乱崩解场面。",
+          "repair": "用新场景固有的结果替换武器和烟雾，例如模型倒塌、食物起泡或灯光不同步。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在一个异想天开的校准实验室中，一只疯狂的章鱼拉动五个不匹配的杠杆，而维护机器人则敲击一个黄铜音叉；共振使机器对齐并产生一个完美的玻璃球。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04"
+          ],
+          "changed_slots": [
+            "arena",
+            "many_side",
+            "one_side",
+            "many_signals",
+            "single_answer",
+            "proof",
+            "meltdown"
+          ]
+        },
+        {
+          "concept": "在夜间葡萄园中，五架自主修剪无人机追逐相互竞争的光路，直到一名园丁吹响定音管；无人机群随即收束成单一螺旋，并整齐修剪完一整排葡萄藤。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04"
+          ],
+          "changed_slots": [
+            "arena",
+            "many_side",
+            "one_side",
+            "many_signals",
+            "single_answer",
+            "proof",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

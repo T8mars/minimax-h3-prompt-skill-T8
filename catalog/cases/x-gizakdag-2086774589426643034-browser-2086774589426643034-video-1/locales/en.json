@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "38eed100ea18fd67cf194125a8fdfc119b093f90a46c84985c3cfa4aeb111d09",
+    "creative_dna_sha256": "4a81bb1e4a5d3d345782f3d019bee20b307a7acff89c67bc30cbbf0f5421ce74"
+  },
+  "content": {
+    "title": "Single Performance Arc | Sit Up, Lean Forward, and Then Release",
+    "summary": "In a locked-off shot looking directly into the camera, a single performer completes a full performance arc using lying back, sitting up, leaning forward, gestures, and reclining backward, without relying on source dialogue.",
+    "quick_start": {
+      "input_format": "Locked single shot + lying back baseline + continuous sit-up and lean forward + single evidence action + return with changes after a pause",
+      "recommended_input": "In a locked shot, a young female water-network dispatcher transitions from lying on her side to sitting up, leans forward, delivers an original dry line, raises the drip-sensor label once, pauses, then swivels back toward her opening body depth with a smile.",
+      "required_anchors": [
+        "Maintain one locked seated-eye-level direct-address shot.",
+        "Transition from reclined to upright in one continuous visible movement.",
+        "Insert a clear still pause after the peak.",
+        "Return body depth toward the opening while altering expression."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A single seated performer looks directly into the camera and completes a clear energy arc by reclining, sitting upright, leaning forward, gesturing, and then reclining again, without relying on source dialogue.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Use one locked direct-address frame and let a solo speaker's posture carry the arc: relaxed baseline, visible attention shift, forward engagement, compact gesture proof, then an earned release that returns the body toward the original depth. The reusable structure depends on posture, eye line and breath-sized pauses, not on source dialogue meaning.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Keep one locked seated-eye-level direct-address frame.",
+          "purpose": "Makes posture the measurable variable.",
+          "ablation_failure": "Coverage changes hide whether the performance arc works.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Move from reclined to upright in one continuous visible shift.",
+          "purpose": "Creates the decisive engagement transition.",
+          "ablation_failure": "Starting upright removes the primary contrast.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use no more than one dominant gesture at the forward peak.",
+          "purpose": "Preserves focus and realism.",
+          "ablation_failure": "Constant gesturing flattens emphasis.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Insert a readable still pause after the peak.",
+          "purpose": "Lets viewers register the change.",
+          "ablation_failure": "Immediate release makes the peak feel accidental.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Return body depth toward the opening while changing expression.",
+          "purpose": "Creates closure without resetting emotion.",
+          "ablation_failure": "An unchanged final face makes the arc feel circular rather than resolved.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source male speaker appearance",
+        "source green couch and living room",
+        "source life-joke prompt wording",
+        "source exact gestures and laugh timing"
+      ],
+      "instantiations": [
+        {
+          "concept": "A young female night water-grid dispatcher reclines sideways in an industrial swivel chair, notices a blue message tube, sits forward to deliver one original river line, raises one dripping sensor tag, pauses and swivels back with an unexpected grin.",
+          "prompt_seed": "A young female night water-grid dispatcher reclines sideways in an industrial swivel chair, notices a blue message tube, sits forward to deliver one original river line, raises one dripping sensor tag, pauses and swivels back with an unexpected grin."
+        },
+        {
+          "concept": "A stylized wooden puppet museum guide rests in a jointed miniature chair, notices one mechanical flag, pitches forward to deliver an original inventory line, raises one cracked wax seal, pauses and folds back with a newly painted surprised expression.",
+          "prompt_seed": "A stylized wooden puppet museum guide rests in a jointed miniature chair, notices one mechanical flag, pitches forward to deliver an original inventory line, raises one cracked wax seal, pauses and folds back with a newly painted surprised expression."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Coverage changes hide whether the performance arc works.",
+          "repair": "Keep one locked seated-eye-level direct-address frame."
+        },
+        {
+          "failure": "Starting upright removes the primary contrast.",
+          "repair": "Move from reclined to upright in one continuous visible shift."
+        },
+        {
+          "failure": "Constant gesturing flattens emphasis.",
+          "repair": "Use no more than one dominant gesture at the forward peak."
+        },
+        {
+          "failure": "Immediate release makes the peak feel accidental.",
+          "repair": "Insert a readable still pause after the peak."
+        },
+        {
+          "failure": "An unchanged final face makes the arc feel circular rather than resolved.",
+          "repair": "Return body depth toward the opening while changing expression."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A young female night water-grid dispatcher reclines sideways in an industrial swivel chair, notices a blue message tube, sits forward to deliver one original river line, raises one dripping sensor tag, pauses and swivels back with an unexpected grin.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A stylized wooden puppet museum guide rests in a jointed miniature chair, notices one mechanical flag, pitches forward to deliver an original inventory line, raises one cracked wax seal, pauses and folds back with a newly painted surprised expression.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

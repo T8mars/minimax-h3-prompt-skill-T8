@@ -51,10 +51,13 @@ module.exports = {
   ],
   extraResources,
   win: {
+    icon: "build/icon.ico",
     target: ["nsis"],
     artifactName: "T8-Prompt-Library-Setup-v${version}.${ext}"
   },
   nsis: {
+    installerIcon: "build/icon.ico",
+    uninstallerIcon: "build/icon.ico",
     oneClick: false,
     allowToChangeInstallationDirectory: true,
     perMachine: false,

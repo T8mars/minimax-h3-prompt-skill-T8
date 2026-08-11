@@ -1,0 +1,222 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "71df2a3c7a8eef45e5ec350b522cdabf241640b710fc978bc91dde4c252351c6",
+    "creative_dna_sha256": "1adcc65ead98af47d6c83c8d089f16fe094006cf07e021159f678270285e63d9"
+  },
+  "content": {
+    "title": "Dialogue Comedy | Two-Shot Pause and Silent Reaction",
+    "summary": "When two characters are in the same frame, first establish eye contact, leave a clear pause after the first line of dialogue, then deliver the second line of dialogue and end with the first character's silent reaction; the specific dialogue and comedic meaning must be completely new and original.",
+    "quick_start": {
+      "input_format": "Medium shot of two characters + first character speaks briefly + a readable pause + second character speaks briefly + silent reaction from the first character",
+      "recommended_input": "Two original museum night shift security guards sit opposite each other in the lounge: A asks if the statue blinked. After a pause, B calmly replies, \"Only when you look away.\" Finally, A silently looks toward the dark exhibition hall door without adding a second punchline.",
+      "required_anchors": [
+        "Opening medium shot of two characters establishes a stable eyeline",
+        "Only retain one round of dialogue from the first character",
+        "There is a clear pause between the two rounds of dialogue",
+        "The second character speaks only once and moves with restraint",
+        "At the end, the first character responds silently and no additional lines of dialogue are added."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "When two people are in the same frame, they first establish eye contact, leave a clear pause after the first round of speaking, and then complete the second round of speaking and end with the first person's silent reaction; the specific dialogue and comedy semantics must be completely new and original.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Use a neutral two-shot to establish equal conversational footing, show one visible speaking turn, hold a clearly readable pause, show a second speaking turn, and end on the first speaker's silent reaction. The source supports only this visual turn-taking and reaction grammar; any question, answer meaning or comic mismatch is an explicitly original instantiation slot, never a source-derived fact.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Begin with a neutral two-shot and stable eye lines.",
+          "purpose": "Makes later singles spatially and socially legible.",
+          "ablation_failure": "Opening on isolated faces hides the relationship.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use one compact first speaking turn, with its meaning supplied only by the new original instance.",
+          "purpose": "Creates a clean expectation without inventing source semantics.",
+          "ablation_failure": "Multiple setup turns blur ownership and weaken the pause.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Hold one clearly readable pause between the two visible speaking turns.",
+          "purpose": "Builds a timing interval without inventing source semantics.",
+          "ablation_failure": "An immediate second turn removes the visible timing contrast.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Use one compact second speaking turn with minimal gesture; its meaning is an original instance variable.",
+          "purpose": "Preserves the visible turn-taking structure while allowing new content.",
+          "ablation_failure": "A large performance or extra line turns the held exchange into a sketch montage.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End on the first character's silent reaction with no additional speaking turn.",
+          "purpose": "Lets the final visible reaction complete the timing pattern.",
+          "ablation_failure": "Additional speaking turns weaken the final hold.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "Friends",
+        "Joey Tribbiani",
+        "Chandler Bing",
+        "Central Perk",
+        "source dialogue and wardrobe"
+      ],
+      "instantiations": [
+        {
+          "concept": "Two original night guards sit in a museum break room. One asks whether the marble statue blinked; after a pause the other says, 'Only when you look away,' and the first guard silently turns toward the dark gallery.",
+          "prompt_seed": "Two original night guards sit in a museum break room. One asks whether the marble statue blinked; after a pause the other says, 'Only when you look away,' and the first guard silently turns toward the dark gallery."
+        },
+        {
+          "concept": "Two lighthouse keepers share tea. One asks whether the foghorn ever gets lonely; after a pause the other answers, 'It calls everyone,' and the first keeper stops stirring.",
+          "prompt_seed": "Two lighthouse keepers share tea. One asks whether the foghorn ever gets lonely; after a pause the other answers, 'It calls everyone,' and the first keeper stops stirring."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Opening on isolated faces hides the relationship.",
+          "repair": "Begin with a neutral two-shot and stable eye lines."
+        },
+        {
+          "failure": "Multiple setup turns blur ownership and weaken the pause.",
+          "repair": "Use one compact first speaking turn, with its meaning supplied only by the new original instance."
+        },
+        {
+          "failure": "An immediate second turn removes the visible timing contrast.",
+          "repair": "Hold one clearly readable pause between the two visible speaking turns."
+        },
+        {
+          "failure": "A large performance or extra line turns the held exchange into a sketch montage.",
+          "repair": "Use one compact second speaking turn with minimal gesture; its meaning is an original instance variable."
+        },
+        {
+          "failure": "Additional speaking turns weaken the final hold.",
+          "repair": "End on the first character's silent reaction with no additional speaking turn."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "Two original night guards sit in a museum break room. One asks whether the marble statue blinked; after a pause the other says, 'Only when you look away,' and the first guard silently turns toward the dark gallery.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "Two lighthouse keepers share tea. One asks whether the foghorn ever gets lonely; after a pause the other answers, 'It calls everyone,' and the first keeper stops stirring.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

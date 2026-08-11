@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "58bfdb17afdc09cc2cb41bbf4512399d17eed329d6be30a2a6fe23ac773a3e4f",
+    "creative_dna_sha256": "1160733fbdd9a430c043a2071496b176af38a118dd842b8b16b6374494fc6565"
+  },
+  "content": {
+    "title": "Rainy-Night Chase | Street Fight to Motorcycle Escape",
+    "summary": "The chase first establishes its direction, uses one close-range interception to change the rhythm, then transfers the subject from running on foot to a faster vehicle and sustains the escape axis.",
+    "quick_start": {
+      "input_format": "Chased subject + single pursuit axis + one compact interception + immediate on-foot-to-vehicle handoff + continuous acceleration ending",
+      "recommended_input": "A research courier crosses salt flats while two survey vehicles pursue along one axis. In a narrow trench, the courier disables one clamp arm with a single counter-move, immediately steps onto a sand skiff, and keeps accelerating in the established direction.",
+      "required_anchors": [
+        "Establish one readable pursuit axis before any combat begins.",
+        "Use one narrow threshold to compress the lead and the threat.",
+        "Complete an immediate, visible foot-to-faster-carrier handoff after the encounter.",
+        "End with sustained carrier acceleration along the established travel direction."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Chase scenes that establish one travel axis, use a single close-range interception to change rhythm, then transfer the subject from running on foot to a faster vehicle and sustain the escape axis.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Establish a readable pursuit corridor, interrupt running with one compact close encounter, then immediately complete a visible foot-to-faster-carrier handoff while preserving the established travel axis. Hold sustained acceleration on that axis; the source does not prove that the encounter creates the carrier or that pursuer distance increases on screen.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one readable pursuit axis before any combat.",
+          "purpose": "Gives every later move a direction and stakes.",
+          "ablation_failure": "Action without geography becomes visual noise.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use one narrow threshold to compress the lead and threat.",
+          "purpose": "Creates a spatial reason for the encounter.",
+          "ablation_failure": "An arbitrary fight feels detached from the chase.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Limit the close encounter to one clear block, counter and release.",
+          "purpose": "Preserves chase momentum.",
+          "ablation_failure": "A long fight replaces the escape mechanism.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Complete an immediate, visible foot-to-faster-carrier handoff after the encounter.",
+          "purpose": "Keeps the chase continuous while changing the movement regime.",
+          "ablation_failure": "A delayed or disconnected carrier cut breaks the pursuit handoff.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with sustained carrier acceleration along the established travel direction.",
+          "purpose": "Makes the new speed regime visible without inventing a measured gap.",
+          "ablation_failure": "A stationary carrier beauty shot does not complete the escape progression.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source masked runner",
+        "source wet neon street and parking garage",
+        "source black sedan pursuers",
+        "source motorcycle theft and exact fight choreography"
+      ],
+      "instantiations": [
+        {
+          "concept": "A desert research courier is chased by two autonomous survey rovers, squeezed through a service trench, disables one clamp arm, takes its detachable sand-sled and accelerates toward a beacon line.",
+          "prompt_seed": "A desert research courier is chased by two autonomous survey rovers, squeezed through a service trench, disables one clamp arm, takes its detachable sand-sled and accelerates toward a beacon line."
+        },
+        {
+          "concept": "A flooded shipyard messenger is pursued by patrol drones, crosses a narrow crane deck, makes one compact grapple with a guard unit, releases a maintenance skiff and escapes down the established channel.",
+          "prompt_seed": "A flooded shipyard messenger is pursued by patrol drones, crosses a narrow crane deck, makes one compact grapple with a guard unit, releases a maintenance skiff and escapes down the established channel."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Action without geography becomes visual noise.",
+          "repair": "Establish one readable pursuit axis before any combat."
+        },
+        {
+          "failure": "An arbitrary fight feels detached from the chase.",
+          "repair": "Use one narrow threshold to compress the lead and threat."
+        },
+        {
+          "failure": "A long fight replaces the escape mechanism.",
+          "repair": "Limit the close encounter to one clear block, counter and release."
+        },
+        {
+          "failure": "A delayed or disconnected carrier cut breaks the pursuit handoff.",
+          "repair": "Complete an immediate, visible foot-to-faster-carrier handoff after the encounter."
+        },
+        {
+          "failure": "A stationary carrier beauty shot does not complete the escape progression.",
+          "repair": "End with sustained carrier acceleration along the established travel direction."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A desert research courier is chased by two autonomous survey rovers, squeezed through a service trench, disables one clamp arm, takes its detachable sand-sled and accelerates toward a beacon line.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A flooded shipyard messenger is pursued by patrol drones, crosses a narrow crane deck, makes one compact grapple with a guard unit, releases a maintenance skiff and escapes down the established channel.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

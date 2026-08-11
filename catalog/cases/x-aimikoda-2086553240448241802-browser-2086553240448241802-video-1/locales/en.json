@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "5dc4cb44e69f015f56da90cc5f727f6ba88720de053073f2e6a397c5b9c461cb",
+    "creative_dna_sha256": "b0aad1ed6692ae456819506cb50c2f6f83c9eb49d77ff5fd7d4700a385a4b730"
+  },
+  "content": {
+    "title": "Identity Board | Environments Change, Identity Holds",
+    "summary": "Keep a fixed identity board visible while the live environment changes. Each setting verifies the same subject through a different action, scale relationship, or camera role; this is an evidence variant of the existing identity-board template, not a new selector entry.",
+    "quick_start": {
+      "input_format": "Original subject + fixed character board + at least 4 environments + different verification actions/scales/camera movements in each location + final character board compared with the real scene",
+      "recommended_input": "The ceramic messenger is continuously compared with the fixed character board: he enters sequentially the packaging room, kiln, glaze laboratory, and rain-soaked loading/unloading area, demonstrating different actions and camera movements in each location, and finally completes the comparison with the same character board in the exhibition hall.",
+      "required_anchors": [
+        "The character board maintains the same layout throughout",
+        "The same identity remains stable across at least four environments",
+        "Each environment has distinct verification responsibilities",
+        "The ending character board is readable simultaneously with the final scene"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A fixed character board remains visible while live-action environments, actions, scales, and camera positions change to verify one stable identity; this is a second evidence source for the existing identity-board template and does not add a new selector entry.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Keep one compact identity board visible as a persistent verification anchor while the live evidence field changes through several environments. Each new field must prove a different behavior, scale or camera relation of the same subject; return to a readable board-plus-live-image composition often enough that variety never outruns identity.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Keep one compact identity board or reference panel readable across the sequence.",
+          "purpose": "Defines the stable comparison anchor.",
+          "ablation_failure": "Without the anchor, the piece becomes an unrelated environment montage.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Change the live evidence field at least three times while preserving one subject identity.",
+          "purpose": "Tests continuity under real variation.",
+          "ablation_failure": "Too little variation cannot prove transfer robustness.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Give each environment a different proof role: action, scale, profile, close detail or interaction.",
+          "purpose": "Prevents decorative background swapping.",
+          "ablation_failure": "Repeating the same pose in new backgrounds adds no new evidence.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Preserve face, silhouette and costume logic even when lighting and camera change.",
+          "purpose": "Keeps the character comparable.",
+          "ablation_failure": "Identity drift defeats the verification task.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with both the stable anchor and one final live proof readable together.",
+          "purpose": "Makes the accumulated result inspectable.",
+          "ablation_failure": "A decorative end card without live evidence cannot close the test.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source anime woman",
+        "the exact five source environments",
+        "the source lower identity-board artwork",
+        "the source burst-cut order"
+      ],
+      "instantiations": [
+        {
+          "concept": "An original ceramic courier crosses kiln room, glaze lab, loading dock and gallery while a compact turntable design board remains visible and each location proves a different action.",
+          "prompt_seed": "An original ceramic courier crosses kiln room, glaze lab, loading dock and gallery while a compact turntable design board remains visible and each location proves a different action."
+        },
+        {
+          "concept": "An original rescue drone appears above marsh, cliff, night road and storm shelter while a fixed specification panel anchors shape, lights and payload in every test.",
+          "prompt_seed": "An original rescue drone appears above marsh, cliff, night road and storm shelter while a fixed specification panel anchors shape, lights and payload in every test."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without the anchor, the piece becomes an unrelated environment montage.",
+          "repair": "Keep one compact identity board or reference panel readable across the sequence."
+        },
+        {
+          "failure": "Too little variation cannot prove transfer robustness.",
+          "repair": "Change the live evidence field at least three times while preserving one subject identity."
+        },
+        {
+          "failure": "Repeating the same pose in new backgrounds adds no new evidence.",
+          "repair": "Give each environment a different proof role: action, scale, profile, close detail or interaction."
+        },
+        {
+          "failure": "Identity drift defeats the verification task.",
+          "repair": "Preserve face, silhouette and costume logic even when lighting and camera change."
+        },
+        {
+          "failure": "A decorative end card without live evidence cannot close the test.",
+          "repair": "End with both the stable anchor and one final live proof readable together."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An original ceramic courier crosses kiln room, glaze lab, loading dock and gallery while a compact turntable design board remains visible and each location proves a different action.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An original rescue drone appears above marsh, cliff, night road and storm shelter while a fixed specification panel anchors shape, lights and payload in every test.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "b1dcc3ee17a6343eab8682fba04cb2899334af877b2efc54fef7411590e973c4",
+    "creative_dna_sha256": "fd746e873399c6f949465be0f8373bc093502a7d59aea2218088f432ec3d1775"
+  },
+  "content": {
+    "title": "Material Word Effect | Frost Text Reversion",
+    "summary": "Establish a clean baseline on fixed vertical glass. Frost crystals grow from that same surface into a short readable word, then melt into real droplets before the image returns to its opening state.",
+    "quick_start": {
+      "input_format": "Fixed shot + single material baseline + the same material forms a short word + readable stay + the same physical law dissolves + return to the opening",
+      "recommended_input": "At night, the vertical glass of the greenhouse remains clear. Frost crystals form THAW along four nucleation paths. After a short stay, they are melted into water droplets by the warm wind below and flow away. Finally, the same composition of copper locks and blurred leaves is restored.",
+      "required_anchors": [
+        "First maintain a fixed material baseline without words",
+        "All letters are made of the same material",
+        "Only one short readable word appears in the entire film",
+        "Complete dissolution using the same material rule",
+        "The lens and spatial anchor point return to the opening state"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The fixed vertical glass first establishes a clear baseline. The frost crystals grow from the same surface into a short word, remain readable and then merge into real water droplets. Finally, the opening window is restored to form a closed loop.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Start from a calm material baseline, generate one localized disturbance from that same material, assemble the disturbance into one short readable word, hold it long enough for verification, then let gravity or flow dissolve every letter back into the original surface. The ending must visually match the opening state closely enough to support a clean loop.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish a calm baseline using one clearly identifiable material.",
+          "purpose": "Provides a measurable before state.",
+          "ablation_failure": "Without a baseline, the return cannot be judged.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Form every letter from the same disturbed material.",
+          "purpose": "Keeps typography inside the physical world.",
+          "ablation_failure": "A digital overlay breaks causal coherence.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use one short word and hold it long enough to read.",
+          "purpose": "Makes the transformation communicative.",
+          "ablation_failure": "Long text or a brief flash becomes illegible.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Dissolve the word through the same material law that formed it.",
+          "purpose": "Creates a reversible physical system.",
+          "ablation_failure": "A fade-out bypasses the material logic.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Return camera and surface close to the opening state.",
+          "purpose": "Supports a seamless visual loop.",
+          "ablation_failure": "A changed ending removes the satisfying reset.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source lake sunrise",
+        "the word MORNING",
+        "source water-letter shapes",
+        "source horizon composition"
+      ],
+      "instantiations": [
+        {
+          "concept": "Frost crystals spread across a dark vertical greenhouse pane to form THAW, hold, then melt into the same droplets and restore the clear glass with no horizon composition.",
+          "prompt_seed": "Frost crystals spread across a dark vertical greenhouse pane to form THAW, hold, then melt into the same droplets and restore the clear glass with no horizon composition."
+        },
+        {
+          "concept": "Iron filings on a backlit laboratory plate gather around a changing magnetic field to form NORTH, hold, then relax into the original scattered field when the magnet retracts.",
+          "prompt_seed": "Iron filings on a backlit laboratory plate gather around a changing magnetic field to form NORTH, hold, then relax into the original scattered field when the magnet retracts."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without a baseline, the return cannot be judged.",
+          "repair": "Establish a calm baseline using one clearly identifiable material."
+        },
+        {
+          "failure": "A digital overlay breaks causal coherence.",
+          "repair": "Form every letter from the same disturbed material."
+        },
+        {
+          "failure": "Long text or a brief flash becomes illegible.",
+          "repair": "Use one short word and hold it long enough to read."
+        },
+        {
+          "failure": "A fade-out bypasses the material logic.",
+          "repair": "Dissolve the word through the same material law that formed it."
+        },
+        {
+          "failure": "A changed ending removes the satisfying reset.",
+          "repair": "Return camera and surface close to the opening state."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "Frost crystals spread across a dark vertical greenhouse pane to form THAW, hold, then melt into the same droplets and restore the clear glass with no horizon composition.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "Iron filings on a backlit laboratory plate gather around a changing magnetic field to form NORTH, hold, then relax into the original scattered field when the magnet retracts.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

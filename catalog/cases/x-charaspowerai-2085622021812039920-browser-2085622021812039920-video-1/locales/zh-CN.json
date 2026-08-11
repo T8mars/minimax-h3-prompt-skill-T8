@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "b1dcc3ee17a6343eab8682fba04cb2899334af877b2efc54fef7411590e973c4",
+    "creative_dna_sha256": "fd746e873399c6f949465be0f8373bc093502a7d59aea2218088f432ec3d1775"
+  },
+  "content": {
+    "title": "材质字效｜霜花成字再归位",
+    "summary": "固定竖直玻璃先建立清晰基线，霜晶从同一表面长成一个短词，保持可读后融成真实水珠，最终恢复开场窗口形成闭环。",
+    "quick_start": {
+      "input_format": "固定镜头 + 单一材质基线 + 同材质形成1个短词 + 可读停留 + 同一物理法则溶解 + 回到开场",
+      "recommended_input": "夜间温室竖直玻璃保持清晰，霜晶沿四条成核路径形成 THAW，短暂停留后由下方暖风融成水珠流走，最后恢复同一铜锁扣和虚化叶片构图。",
+      "required_anchors": [
+        "先保持无字的固定材质基线",
+        "所有字母由同一材质形成",
+        "全片只出现一个可读短词",
+        "用同一材料法则完成溶解",
+        "镜头和空间锚点回到开场状态"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定竖直玻璃先建立清晰基线，霜晶从同一表面长成一个短词，保持可读后融成真实水珠，最终恢复开场窗口形成闭环。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "从平静的材料基线开始，从相同的材料产生一个局部干扰，将干扰组装成一个简短的可读单词，保持足够长的时间进行验证，然后让重力或流动将每个字母溶解回原始表面。结尾必须在视觉上与开头状态足够接近，以支持干净的循环。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "使用一种清晰可辨的材料建立平静的基线。",
+          "purpose": "提供可测量的之前状态。",
+          "ablation_failure": "没有基线，就无法判断收束效果。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "用相同的扰动材料形成每一个字母。",
+          "purpose": "将版式保留在物理世界中。",
+          "ablation_failure": "数字叠加打破了因果连贯性。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用一个简短的单词并保持足够长的时间来阅读。",
+          "purpose": "使转变具有沟通性。",
+          "ablation_failure": "长文本或短暂闪烁变得难以辨认。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "通过形成它的相同物质法则来溶解这个词。",
+          "purpose": "创建一个可逆的物理系统。",
+          "ablation_failure": "淡出绕过了材质逻辑。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "让相机与表面回到接近开场状态的位置。",
+          "purpose": "支持无缝视觉循环。",
+          "ablation_failure": "改变的结局消除了令人满意的重置。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源湖日出",
+        "画面文字 MORNING",
+        "源水字母形状",
+        "来源作品的地平线构图"
+      ],
+      "instantiations": [
+        {
+          "concept": "霜晶沿黑暗的竖直温室玻璃扩散，聚成 THAW 并保持，随后融回同一批水滴，让玻璃恢复清晰，全程不使用地平线构图。",
+          "prompt_seed": "霜晶沿黑暗的竖直温室玻璃扩散，聚成 THAW 并保持，随后融回同一批水滴，让玻璃恢复清晰，全程不使用地平线构图。"
+        },
+        {
+          "concept": "背光实验板上的铁屑随变化的磁场聚拢成 NORTH，保持片刻；磁铁撤回后，铁屑重新散回原始分布。",
+          "prompt_seed": "背光实验板上的铁屑随变化的磁场聚拢成 NORTH，保持片刻；磁铁撤回后，铁屑重新散回原始分布。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，就无法判断收束效果。",
+          "repair": "使用一种清晰可辨的材料建立平静的基线。"
+        },
+        {
+          "failure": "数字叠加打破了因果连贯性。",
+          "repair": "用相同的扰动材料形成每一个字母。"
+        },
+        {
+          "failure": "长文本或短暂闪烁变得难以辨认。",
+          "repair": "使用一个简短的单词并保持足够长的时间来阅读。"
+        },
+        {
+          "failure": "淡出绕过了材质逻辑。",
+          "repair": "通过形成它的相同物质法则来溶解这个词。"
+        },
+        {
+          "failure": "改变的结局消除了令人满意的重置。",
+          "repair": "让相机与表面回到接近开场状态的位置。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "霜晶沿黑暗的竖直温室玻璃扩散，聚成 THAW 并保持，随后融回同一批水滴，让玻璃恢复清晰，全程不使用地平线构图。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "背光实验板上的铁屑随变化的磁场聚拢成 NORTH，保持片刻；磁铁撤回后，铁屑重新散回原始分布。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "bb387e281604cec6463c0d6e107640773faba318869c74f14295cc368a49d96c",
+    "creative_dna_sha256": "8229bc60d282f9847812a8b064200fdabae17d3ef968a43a7a3a22934f394f58"
+  },
+  "content": {
+    "title": "对话喜剧｜双轮停顿与无声回击",
+    "summary": "稳定正反打中完成两轮说话，用一个清楚停顿隔开，最后回到第一人做无声表情或姿态回应。",
+    "quick_start": {
+      "input_format": "稳定的双人空间关系 + 完整的第一轮对话 + 清楚停顿 + 第二人简短回应 + 更长的无声反应",
+      "recommended_input": "两名夜班博物馆保安保持桌轴，甲说警报异常，停顿后乙只回一句；再回甲无声看向空展柜并定住。",
+      "required_anchors": [
+        "保持一个稳定的桌面轴线和匹配的眼神线。",
+        "在一次可读停顿之前，确保首次发言段落可见地完成。",
+        "在第二次发言后插入一个无声的期待插槽。",
+        "以第一个主体的非发言回应结束，不添加额外发言段落。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "稳定正反打中完成两轮说话，用一个清楚停顿隔开，最后回到第一人做无声表情或姿态回应。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "使用稳定的交替单人镜头进行两次可见的说话轮次，用一个清晰可辨的停顿将它们分开，然后返回到第一位主体以进行最终的无声面部或姿态反应。来源证据仅支持轮次顺序、停顿和反应；任何真诚、建议、字面意义或笑话前提都属于新实例，不得以源自来源的含义呈现。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "保持稳定的桌面空间轴线和匹配的视线关系。",
+          "purpose": "让交替出现的单人镜头保持连续感。",
+          "ablation_failure": "越轴会转移观众对对白节奏的注意。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "让第一轮发言清楚结束后，再留出一个可辨识的停顿。",
+          "purpose": "在没有发明语义的情况下创建期望。",
+          "ablation_failure": "在发言中途切镜会掩盖应有的停顿。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "保持第二次发言的紧凑性和最少的手势。",
+          "purpose": "为结果反应留出时间。",
+          "ablation_failure": "较长的第二场表演使最终的收束效果变得平淡。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在第二轮发言后插入一个无声的期待停顿。",
+          "purpose": "允许回复以视觉方式呈现。",
+          "ablation_failure": "立即切到反应镜头会显得机械生硬。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以第一个主体的非语言回应结束，不增加额外的语言回合。",
+          "purpose": "在不增加第三次发言的前提下，闭合两轮对话结构。",
+          "ablation_failure": "第三句台词会重新启动这轮对话。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源电视情景喜剧演员",
+        "餐馆卡座和杯子",
+        "来源作品原对白的具体含义",
+        "来源作品具体的面部节奏与镜头边界"
+      ],
+      "instantiations": [
+        {
+          "concept": "两名原创博物馆夜班警卫隔着值班桌相对而坐；第一人提出关于动作感应警报的原创问题，清楚停顿后第二人只回答一句，最后第一人沉默望向身后那只号称空无一物的展示柜。",
+          "prompt_seed": "两名原创的博物馆夜班警卫隔着值班桌相对而坐；一人提出一个关于动作感应警报的原创问题，另一人在停顿后只回答一句，随后第一名警卫沉默地望向他们身后那只号称空无一物的展示柜。"
+        },
+        {
+          "concept": "两名深海厨师隔着厨房柜台面对面；一个报告丢失了一个香料罐，另一个给出了一个简洁的答案，第一个默默地看着气泡从密封的橱柜中升起。",
+          "prompt_seed": "两名深海厨师隔着厨房柜台面对面；一个报告丢失了一个香料罐，另一个给出了一个简洁的答案，第一个默默地看着气泡从密封的橱柜中升起。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "越轴会转移观众对对白节奏的注意。",
+          "repair": "保持稳定的桌面空间轴线和匹配的视线关系。"
+        },
+        {
+          "failure": "在发言中途切镜会掩盖应有的停顿。",
+          "repair": "让第一轮发言清楚结束后，再留出一个可辨识的停顿。"
+        },
+        {
+          "failure": "较长的第二场表演使最终的收束效果变得平淡。",
+          "repair": "保持第二次发言的紧凑性和最少的手势。"
+        },
+        {
+          "failure": "立即切到反应镜头会显得机械生硬。",
+          "repair": "在第二轮发言后插入一个无声的期待停顿。"
+        },
+        {
+          "failure": "第三句台词会重新启动这轮对话。",
+          "repair": "以第一个主体的非语言反应收尾，不再增加新的发言轮次。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两名原创博物馆夜班警卫隔着值班桌相对而坐；第一人提出关于动作感应警报的原创问题，清楚停顿后第二人只回答一句，最后第一人沉默望向身后那只号称空无一物的展示柜。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "两名深海厨师隔着厨房柜台面对面；一个报告丢失了一个香料罐，另一个给出了一个简洁的答案，第一个默默地看着气泡从密封的橱柜中升起。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

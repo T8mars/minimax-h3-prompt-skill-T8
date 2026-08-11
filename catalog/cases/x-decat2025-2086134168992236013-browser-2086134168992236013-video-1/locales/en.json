@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-decat2025-2086134168992236013-browser-2086134168992236013-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "d6b6e703fe3b14db9c9c9294d015336ece40fb532ef33e59d6536844fd0c20ad",
+    "creative_dna_sha256": "6794b0b7f368059556bb381b0610ad6a2c2abf10d0cc8d12a6e97d4a98fa2ee3"
+  },
+  "content": {
+    "title": "Procedure Mismatch | Scan-to-Physical Confirmation",
+    "summary": "An oversized subject carefully follows a familiar procedure despite repeated scale mismatches. A scan reveals a nested counterpart first; the same counterpart then appears physically, creating two independent confirmations.",
+    "quick_start": {
+      "input_format": "Oversized subject + familiar procedure + 3 distinct scale mismatches + scan reveals a nested counterpart + the same counterpart appears physically in the shared frame",
+      "recommended_input": "The giant paper moth carefully passes through luggage security. There are continuous scale mismatches on the tray, conveyor belt, and scanning door; the screen first displays the small paper moth inside the box, and after the box is opened, the same small paper moth physically flies out and appears in the same frame as the large moth.",
+      "required_anchors": [
+        "There is an obvious scale mismatch between the subject and the procedure or equipment",
+        "Evidence of at least three different mismatches",
+        "Scans reveal before physical objects",
+        "The actual object must be the same object in the scan, and both scales must appear in the same frame"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Scale-mismatch stories in which an oversized subject follows a familiar procedure and a scan-to-physical reveal confirms one nested counterpart twice.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Place one visibly mis-scaled subject inside a familiar step-by-step procedure and require sincere compliance. Let each successive checkpoint expose a different physical fit failure while the subject preserves dignity. Use imaging to reveal a nested counterpart inside one bound container, then physically expose the same counterpart and hold both scales plus the main subject's reaction so the physical reveal independently confirms the scan.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Use a procedure with immediately recognizable ordered checkpoints.",
+          "purpose": "Lets the audience predict normal behavior.",
+          "ablation_failure": "An unfamiliar process cannot create clear mismatch.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Keep the subject sincere and restrained throughout compliance.",
+          "purpose": "Makes the absurdity deadpan.",
+          "ablation_failure": "Deliberate clowning weakens the procedural contrast.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Escalate through different fit failures rather than repeated alarms.",
+          "purpose": "Adds new evidence at each step.",
+          "ablation_failure": "One repeated mismatch becomes monotonous.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Reveal the nested counterpart first through an imaging device while it remains inside the same bound container.",
+          "purpose": "Creates the first inspectable proof before physical confirmation.",
+          "ablation_failure": "Immediate emergence removes the scan-to-physical double-proof structure.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Physically expose the same counterpart and hold a visible reaction with both scales present.",
+          "purpose": "Independently confirms the scan without inventing a function or explanation.",
+          "ablation_failure": "A screen-only ending can still be read as a scan error; an off-screen reveal cannot prove identity continuity.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original subject or system whose identity remains stable."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One visible variable that changes in countable causal stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained behavior rule that makes the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A coherent information order that does not copy source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "One clean physical or graphic consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "A new hierarchy of diegetic cues supporting state changes."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "full-size T-rex at airport security",
+        "tiny sunglasses and snakeskin purse",
+        "metal detector, security wand and baggage scanner",
+        "miniature T-rex emerging from the purse"
+      ],
+      "instantiations": [
+        {
+          "concept": "An oversized clockwork parade elephant follows a museum intake, submits a tiny tool chest, fails measuring fixtures, then x-ray reveals six folded paper moths that physically emerge from the same chest and hover beside the elephant.",
+          "prompt_seed": "Deadpan conservation procedure with increasing fit failures and scan-to-physical nested confirmation."
+        },
+        {
+          "concept": "A giant soft-plastic delivery mascot enters a passport-photo booth; thermal imaging reveals three miniature badge mascots inside its hollow badge, then the same badge opens and the three figures step out while both scales hold in frame.",
+          "prompt_seed": "Photo-booth scale mismatch ending in imaging and physical double proof."
+        },
+        {
+          "concept": "An enormous origami crane enters an automated parcel return; transmitted light reveals three tiny folded cranes inside one wing sleeve, then the sleeve opens and the same three cranes emerge beside it.",
+          "prompt_seed": "Parcel procedure mismatch with transmitted-image proof and matching physical reveal."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "An unfamiliar process cannot create clear mismatch.",
+          "repair": "Use a procedure with immediately recognizable ordered checkpoints."
+        },
+        {
+          "failure": "Deliberate clowning weakens the procedural contrast.",
+          "repair": "Keep the subject sincere and restrained throughout compliance."
+        },
+        {
+          "failure": "One repeated mismatch becomes monotonous.",
+          "repair": "Escalate through different fit failures rather than repeated alarms."
+        },
+        {
+          "failure": "Immediate emergence removes the scan-to-physical double-proof structure.",
+          "repair": "Reveal the nested counterpart through imaging first while it remains inside the same container."
+        },
+        {
+          "failure": "A screen-only ending can be read as an error, while an off-screen reveal cannot prove continuity.",
+          "repair": "Show the same counterpart physically with both scales and the main subject reaction in frame."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An oversized clockwork parade elephant follows a museum intake, submits a tiny tool chest, fails measuring fixtures, then x-ray reveals six folded paper moths that physically emerge from the same chest and hover beside the elephant.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A giant soft-plastic delivery mascot enters a passport-photo booth; thermal imaging reveals three miniature badge mascots inside its hollow badge, then the same badge opens and the three figures step out while both scales hold in frame.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

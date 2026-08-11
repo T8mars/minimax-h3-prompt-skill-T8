@@ -1,0 +1,211 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2086412223061135392-browser-2086412223061135392-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "a17bf92e8e2e80f7ac208d77494757d60b311da764eab0a723cde9a241d329dd",
+    "creative_dna_sha256": "cff69bea492d7d07bbd9c104eb54952b53645223a68134e2d51529996470c00f"
+  },
+  "content": {
+    "title": "角色登场｜细节到全身揭晓",
+    "summary": "从标志细节开始，逐层扩展到面部、动作和全身英雄定格。",
+    "quick_start": {
+      "input_format": "标志细节→局部轮廓→面部→一次动作→全身英雄定格",
+      "recommended_input": "先拍老式列车长的黄铜打票钳，再露出制服轮廓和面部；他只完成一次打票动作，最后在蒸汽站台中全身英雄定格。",
+      "required_anchors": [
+        "从可识别细节开始",
+        "揭晓尺度逐步扩大",
+        "角色只做一次代表动作",
+        "以全身定格完成身份确认"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "从标志细节开始，逐层扩展到面部、动作和全身英雄定格。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "通过受控的信息阶梯展现一个身份稳定的角色：标志性细节、局部或背面轮廓、面部、一项克制的个性动作，以及完整角色全貌。每个阶段都回答一个身份问题，同时保留准确的定义特征和克制的次级动作。人物、媒介、环境、揭示细节、手势、镜头轴和情绪都可以替换。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "从一个标志性细节开始，而不是完整的设计。",
+          "purpose": "创建身份问题并赋予小特征价值。",
+          "ablation_failure": "开场就给全身镜头，会消除身份逐步揭晓的过程。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在展示脸部之前使用局部或背面轮廓。",
+          "purpose": "建立肢体语言并延迟识别。",
+          "ablation_failure": "直接跳到肖像上会使揭示阶梯变平。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在每个阶段都保留明确的身份、材料和轮廓。",
+          "purpose": "使单独的镜头被解读为一个角色。",
+          "ablation_failure": "重新设计的偏差打破了信任和比较。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "露出脸部后，只允许一个克制的标志性动作。",
+          "purpose": "无需用行动取代演示即可增添个性。",
+          "ablation_failure": "多种手势或战斗节奏淡化了介绍。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以干净完整的英雄式全身定格结束，并保持该画面。",
+          "purpose": "为前面建立的设计承诺提供可见验证。",
+          "ablation_failure": "裁剪或立即退出否认完成。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份和轮廓保持稳定的原创主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有地点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个只沿单一方向连续变化，或按可数阶段推进的可读变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一种清晰的物理或图形结果可以闭合因果链。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源黑发女性设计，奶油色超大袖子和红色领带",
+        "每个镜头下方重复出现的角色设定图条带",
+        "阳光石砌庭院及完全相同的环绕运镜",
+        "手移向眼部的动作、靴子及最终低角度姿势"
+      ],
+      "instantiations": [
+        {
+          "concept": "通过戴手套的列车乘务员手持打票钳的细节、磨砂车厢玻璃后的侧面剪影、车门开启时的侧脸亮相、腰部高度的一次打票动作，以及俯拍全身站台定格，完成复古未来主义列车乘务员的角色揭示。",
+          "prompt_seed": "职业细节、非背面轮廓、面部揭晓、远离面部的手部动作，以及最终的俯拍全身证明。"
+        },
+        {
+          "concept": "一名身穿苔藓装甲的森林信使，通过肩扣细节、悬垂树根后的侧面剪影、侧脸亮相、腰部高度的折地图动作，以及林冠下的平视全身站姿完成角色揭示。",
+          "prompt_seed": "角色介绍由标志性硬件和远离脸部的克制动作驱动。"
+        },
+        {
+          "concept": "通过手腕线圈、仪表板反射中的轮廓、面部亮相、一次控制台拨杆动作，以及俯拍的全身控制室定格，揭示一名北极无线电工程师。",
+          "prompt_seed": "技术人员角色揭示：用不同轴线、手势区域和最终俯拍全身定格，逐步证明身份。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "完整的角色出现在第一个镜头中。",
+          "repair": "裁剪至一个标志性细节并延迟面部/全身。"
+        },
+        {
+          "failure": "不同阶段的服装或面孔会发生变化。",
+          "repair": "声明身份锚并在每个镜头中重复它们。"
+        },
+        {
+          "failure": "介绍变成了动作蒙太奇。",
+          "repair": "只使用一项克制的个性动作，并把最后几秒留给稳定的全身定格。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "通过戴手套的列车乘务员手持打票钳的细节、磨砂车厢玻璃后的侧面剪影、车门开启时的侧脸亮相、腰部高度的一次打票动作，以及俯拍全身站台定格，完成复古未来主义列车乘务员的角色揭示。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名身穿苔藓装甲的森林信使，通过肩扣细节、悬垂树根后的侧面剪影、侧脸亮相、腰部高度的折地图动作，以及林冠下的平视全身站姿完成角色揭示。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

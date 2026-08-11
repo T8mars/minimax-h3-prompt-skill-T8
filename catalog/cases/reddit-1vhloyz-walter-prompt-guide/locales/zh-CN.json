@@ -1,0 +1,183 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "reddit-1vhloyz-walter-prompt-guide",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "a5ae7ca020d300a1fefac85629c7bb5845c2e383bba21447d6d4277b2e064c53",
+    "creative_dna_sha256": "a5617663d6b9fc1eee39fcd54a14864886395bfc74c9fafd913f951e4c08ad8d"
+  },
+  "content": {
+    "title": "风险揭晓｜证据交给人物反应",
+    "summary": "一次干预阻止风险，可读证据随后由有动机的镜头交接给人物反应。",
+    "quick_start": {
+      "input_format": "紧急干预 + 隐藏风险 + 可视证据 + 有动机镜头交接 + 简短反应",
+      "recommended_input": "实验员拦住同伴触碰容器，紫外光显出内部裂纹；镜头沿容器反光移交到同伴面部，他安静地收回手并点头。",
+      "required_anchors": [
+        "先有干预冲突",
+        "风险通过可视证据证明",
+        "镜头交接有物理动机",
+        "反应简短且改变后续行为"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "一次干预阻止风险，可读证据随后由有动机的镜头交接给人物反应。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "一次紧急干预先制造冲突，稳定可见的证据证明隐藏风险，随后由有动因的镜头交接把证据传递到被干预者的克制反应。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在揭露证据状态之前，通过行动建立紧急冲突。",
+          "purpose": "创建一个直接的问题，并为后续证据的出现提供因果理由。",
+          "ablation_failure": "以解释开场会消除紧张感，并把场景变成平淡的演示。",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在镜头切换前，保持证据状态视觉稳定足够长的时间，以便接收者理解。",
+          "purpose": "使证据本身清晰可辨，同时保持其与表演的融合。",
+          "ablation_failure": "在隐藏状况解决之前离开，会让干预显得武断。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-05"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "用一次有叙事动因的重新取景，把最后一句交给形成反差的第二位发言者。",
+          "purpose": "把指导转化成两人之间的笑点，同时避免浪费补拍覆盖镜头。",
+          "ablation_failure": "将镜头始终对准第一个发言者，会削弱反应的收束效果。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-02"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "authority_role",
+          "constraint": "视觉上果断的专家，有明确的指导理由。"
+        },
+        {
+          "name": "recipient_role",
+          "constraint": "一个对比鲜明的新手或同行，可以用简短的一句话回答。"
+        },
+        {
+          "name": "proof_state",
+          "constraint": "物理条件、仪器读数、光线变化或物体状态在视觉上变得明确，无需复制源作品的排版。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个上下文丰富的场景，在中近景人物背后清晰可辨。"
+        },
+        {
+          "name": "intervention",
+          "constraint": "在证据出现之前，一个简短的动作或台词可以阻止不安全或错误的行为。"
+        },
+        {
+          "name": "reaction",
+          "constraint": "一个手势，一句话，化解矛盾。"
+        },
+        {
+          "name": "camera_handoff",
+          "constraint": "由第二位说话者推动的一次横摇或剪辑切换。"
+        },
+        {
+          "name": "sound",
+          "constraint": "场地氛围加上不重叠的对话；不需要音乐。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "受保护的电视角色或演员肖像",
+        "来源剧集的服装、载具、沙漠场景设定或调色",
+        "来源角色声音及原样对白",
+        "原样指南标题、脏话、取景构图或道具字体设计"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位博物馆文物修复师伸手拦停助理的画笔，放下紫外检查罩，显出分支状荧光修复痕迹；镜头随紫外证据完成交接，转向助理尴尬的后缩。",
+          "prompt_seed": "先用稳定的紫外证据证明伸手拦停的必要性，再让反射光引导镜头交接至助理后缩的反应。"
+        },
+        {
+          "concept": "一名天文台技术人员阻止受训者打开圆顶，在传感器上滑动一个红色安全滤光片，并在镜头跟随红色反射至受训者无声后退之前显示出危险的太阳耀斑。",
+          "prompt_seed": "冲突、光学证据和以反射引导的镜头切换，创造出紧凑的安全逆转。"
+        },
+        {
+          "concept": "糕点师接住实习生的裱花袋，把糖温计转向光线，先用微距显出结晶，再把焦点转到放下托盘的实习生。",
+          "prompt_seed": "触觉干预先由稳定的微距证据获得可信度，再通过焦点转移交接反应。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "证明状态变化太快，难以理解。",
+          "repair": "在切换之前，在稳定的光线、焦点和空间环境下，将显示的条件保持至少两秒钟。"
+        },
+        {
+          "failure": "对话重叠或听起来很匆忙。",
+          "repair": "保留两条简短台词，在第一条完全结束后进行发言者切换，并删除多余动作。"
+        },
+        {
+          "failure": "尽管改了名字，这个场景还是感觉被复制了。",
+          "repair": "改变职业、地点、服装、道具类别、对话和镜头表层元素，同时仅保留因果时间。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位博物馆文物修复师伸手拦停助理的画笔，放下紫外检查罩，显出分支状荧光修复痕迹；镜头随紫外证据完成交接，转向助理尴尬的后缩。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "authority_role",
+            "recipient_role",
+            "proof_state",
+            "setting",
+            "intervention",
+            "reaction"
+          ]
+        },
+        {
+          "concept": "一名天文台技术人员阻止受训者打开圆顶，在传感器上滑动一个红色安全滤光片，并在镜头跟随红色反射至受训者无声后退之前显示出危险的太阳耀斑。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "authority_role",
+            "recipient_role",
+            "proof_state",
+            "setting",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

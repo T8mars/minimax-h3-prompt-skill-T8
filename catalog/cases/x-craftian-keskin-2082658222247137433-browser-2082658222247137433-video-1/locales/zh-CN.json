@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "e0a97a6e4e741a3905d660aa2a3e20c3897ace3d8364d34af0f795d38205b595",
+    "creative_dna_sha256": "c99dd5e0ce66c2e6b85870283422694527da7945d3fa0fe94444092a949a1a3b"
+  },
+  "content": {
+    "title": "力量反差｜小体型用杠杆反制",
+    "summary": "先证明质量差异与可用支点。让重型对手完全投入攻击动作，小体型主角随后进入转弯半径，以杠杆重定向动量，最后形成清楚可见的非致命控制。",
+    "quick_start": {
+      "input_format": "巨大重型对手 + 小型主角 + 提前可见支点 + 重型攻击承诺 + 近身预判 + 杠杆重定向 + 非致命控制",
+      "recommended_input": "小型回收机器人面对巨型货运装载机，先让磁缆和系柱可见；等待装载机完整挥臂后钻入转弯半径，借第二次挥动和磁缆杠杆把机械臂安全压在地面。",
+      "required_anchors": [
+        "开场先证明质量差和可用支点",
+        "重型对手必须先彻底发力完成动作。",
+        "至少一次冲击证明动量和恢复成本",
+        "反转只能来自杠杆与重定向",
+        "结尾非致命且支点因果仍可见"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先证明质量差异与可用支点。让重型对手完全投入攻击动作，小体型主角随后进入转弯半径，以杠杆重定向动量，最后形成清楚可见的非致命控制。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让巨大的质量优势在视觉上无可否认，然后通过判断对手已全力投入动作、在沉重主体的转弯半径内移动并使用一个环境支点让较小的主体生存下来。逆转必须来自时机和杠杆，而不是突然的力量增强；最终以明确的非致命控制结束，两种规模关系仍然可见。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "尽早证明质量差异和一个可用的环境支点。",
+          "purpose": "让之后的逆转在物理上有据可循。",
+          "ablation_failure": "令人惊讶的道具或隐藏的比例差异使逆转变得任意。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在较小的主体进入其恢复路径之前，让较重的主体完全投入。",
+          "purpose": "将速度转化为时机而不是无懈可击。",
+          "ablation_failure": "早期的躲避消除了险些发生的紧张感和战略性的解读。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "至少用一次撞击清楚展示动量及恢复代价。",
+          "purpose": "为后面的战术提供了依据。",
+          "ablation_failure": "没有明显后果的体重只是角色设计。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "决定性逆转必须依赖杠杆或借力改向，不能依靠突然增强的力量。",
+          "purpose": "保留不对称前提。",
+          "ablation_failure": "一次强化就打破了因果策略。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以非致命性可见控制结束，支点仍然可读。",
+          "purpose": "展示该策略如何发挥作用并避免不明原因的击倒。",
+          "ablation_failure": "直接剪到胜利结果会遮蔽机制。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源 幻想战士",
+        "源酒馆",
+        "魁梧的绿色角色",
+        "来源作品中的服装和收尾姿势"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个小型废料回收机器人在废品场面对重型货物装载机，观察其缓慢摆动，从转弯内侧穿过，并用悬挂磁缆安全固定一只装载臂。",
+          "prompt_seed": "小型废料回收机器人在废品场观察重型装载机的缓慢摆动，从转弯内侧穿过，再用悬挂磁缆安全固定一只装载臂。"
+        },
+        {
+          "concept": "一艘紧凑型港口拖船在风暴航道中与无人驳船对峙，利用驳船已经形成、难以改变的漂移势头和一个固定系泊柱，将它重新引导到安全的停泊弧线。",
+          "prompt_seed": "一艘紧凑型港口拖船在风暴航道中与无人驳船对峙，利用驳船已经形成、难以改变的漂移势头和一个固定系泊柱，将它重新引导到安全的停泊弧线。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "令人惊讶的道具或隐藏的比例差异使逆转变得任意。",
+          "repair": "尽早证明质量差异和一个可用的环境支点。"
+        },
+        {
+          "failure": "早期的躲避消除了险些发生的紧张感和战略性的解读。",
+          "repair": "在较小的主体进入其恢复路径之前，让较重的主体完全投入。"
+        },
+        {
+          "failure": "没有明显后果的体重只是角色设计。",
+          "repair": "至少用一次撞击清楚展示动量及恢复代价。"
+        },
+        {
+          "failure": "一次强化就打破了因果策略。",
+          "repair": "决定性逆转必须依赖杠杆或借力改向，不能依靠突然增强的力量。"
+        },
+        {
+          "failure": "直接剪到胜利结果会遮蔽机制。",
+          "repair": "以非致命性可见控制结束，支点仍然可读。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个小型废料回收机器人在废品场面对重型货物装载机，观察其缓慢摆动，从转弯内侧穿过，并用悬挂磁缆安全固定一只装载臂。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一艘紧凑型港口拖船在风暴航道中与无人驳船对峙，利用驳船已经形成、难以改变的漂移势头和一个固定系泊柱，将它重新引导到安全的停泊弧线。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

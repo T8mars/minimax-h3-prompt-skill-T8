@@ -18,7 +18,7 @@ A curated Creative DNA library, installable Skills, and a video-first Electron d
 | `skills/` | 安装到支持 Skills 的 Agent，直接复用案例机制 | Skill 引用同一案例与来源 |
 | `catalog/official-skills/` | 固定索引 MiniMax 官方仓库收录的 9 个 Skills | 本地官方示例 GIF；H3 打开上游固定版本；Seedance 使用本库原创伴侣 Skill |
 | `catalog/community-skills/` | 浏览非官方、用户贡献的高质量提示词 Skills | GitHub 有 GIF/海报；Electron 包含完整有声样片 |
-| Electron 桌面版 | 搜索、筛选、播放、对比和复制提示词 | 安装包包含完整 MP4，支持声音和离线播放 |
+| Electron 桌面版 | 中英文搜索与详情、筛选、播放、对比、分区复制和整案复制 | 安装包包含完整 MP4，支持声音和离线播放 |
 
 GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作者、平台及原始帖子引用地址；Electron 详情页同时提供“查看原帖”。
 
@@ -118,7 +118,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. 下载 `T8-Prompt-Library-Setup-v1.0.9.exe`。
+2. 下载 `T8-Prompt-Library-Setup-v1.1.0.exe`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. 后续版本可在应用内检查并安装更新。
 
@@ -167,7 +167,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.0.9**。项目使用十进制进位：
+当前目标版本是 **v1.1.0**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -181,6 +181,7 @@ v1.9.9 -> v2.0.0
 
 - [安装](./docs/installation.md)
 - [使用](./docs/usage.md)
+- [双语与复制合同](./docs/localization-and-copy.md)
 - [安装 Skills](./docs/skill-installation.md)
 - [贡献案例](./docs/contributing-cases.md)
 - [来源与引用](./docs/source-attribution.md)

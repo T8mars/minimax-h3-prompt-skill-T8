@@ -1,0 +1,250 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "e0f4d240393cf86f926bd0d60c6bb2c440f9f58df45eefc5d93500e9ea20aaad",
+    "creative_dna_sha256": "1bfea667f950ad423b368cbdfe1fe8ff2431882be49b257cd99da7f3aeff3cf8"
+  },
+  "content": {
+    "title": "产品广告｜功能证据递进",
+    "summary": "先给结果，再用多个可见证据逐层证明产品功能，最后收束到行动。",
+    "quick_start": {
+      "input_format": "产品/服务 + 目标人群 + 3个不同证明状态 + 最终行动",
+      "recommended_input": "一款便携净水器，面向户外徒步者：先展示喝到清水的结果，再依次用滤芯剖面、浑水变清和营地实用场景证明功能，最后出现简短购买行动。",
+      "required_anchors": [
+        "先结果后证据",
+        "至少三个不同证明状态",
+        "证据必须可见且递进",
+        "结尾有明确行动或产品收束"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先给结果，再用多个可见证据逐层证明产品功能，最后收束到行动。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "紧凑的产品发布短片应像一套可调整顺序的“功能证明状态机”，而不是固定故事板：结果、操作过程、内部机制、最强对比事件、适用范围证明和最终行动都可以合并或重排，但每个状态必须回答一个新的产品问题。统一的材质、光线与排版规则负责维持连贯性；镜头数量、信息顺序、拍摄方式和范围证明手段则可随具体产品改变。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在前三分之一内，建立一个情感上清晰的结果及其与产品的因果关系；结果优先和证明优先的开场都是有效的。",
+          "purpose": "让技术信息产生可感知的人类结果，同时不强制第一帧必须是品牌主视觉。",
+          "ablation_failure": "如果产品始终没有与结果建立联系，短片就会沦为抽象氛围或彼此脱节的功能记录。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-10"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "让每个信息段落回答不同的产品问题，但合并相关问题并根据新产品最强的因果证明改变其顺序。",
+          "purpose": "把快节奏转化为层层累积的证据，而不是一组可以随意互换的漂亮镜头。",
+          "ablation_failure": "如果相邻的节拍重复相同的主张，快节奏就会变得空洞，产品仍然模糊。",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "beat-04",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "先完成足够铺垫，再集中呈现一个清晰可读的最大反差事件；高潮可以来自动作、空间、排版或人物反应，出现位置不必固定。",
+          "purpose": "形成令人记住的第二个钩子，同时不依赖超大文字或固定在片中位置。",
+          "ablation_failure": "所有状态的强度相同会产生缺少起伏的蒙太奇；重复来源作品风格的巨型文字高潮段暴露了只借用了来源表层元素。",
+          "evidence_ids": [
+            "beat-05",
+            "beat-06",
+            "obs-06",
+            "obs-10"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "用统一的反差体系、排版行为和重复出现的装配规律连接不同功能模块。",
+          "purpose": "在人员、界面和用例快速变化时保持品牌一致性。",
+          "ablation_failure": "不相关的配色、转场或字体处理会让影片像素材片段拼贴。",
+          "evidence_ids": [
+            "obs-02",
+            "obs-03",
+            "obs-04",
+            "obs-14"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在最终行动前，用适合新概念的方式证明产品覆盖面，例如连续空间、物理变换、单次蒙太奇、放射式调度或观众行为；不要强制沿用横排卡片或网格。",
+          "purpose": "把单一功能证据扩展为更广泛的适用价值，同时避免把模板锁死为某一种信息版式。",
+          "ablation_failure": "缺少适用范围证明会让产品显得用途狭窄；照搬先卡片后网格的结构又会复现来源广告的故事板。",
+          "evidence_ids": [
+            "beat-07",
+            "beat-08",
+            "beat-09",
+            "obs-09"
+          ]
+        },
+        {
+          "id": "inv-06",
+          "rule": "所有可见文案都应简短、完整并适合动态画面：文字在切镜时直接以最终尺寸出现，或通过硬遮罩完整显现，并保持清晰到足以读完。",
+          "purpose": "保证观众能理解信息密集的 15 秒短片。",
+          "ablation_failure": "缩放、扭曲或部分形成的单词与产品证明画面竞争并产生拼写伪影。",
+          "evidence_ids": [
+            "obs-12",
+            "beat-06",
+            "beat-09"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "product_identity",
+          "constraint": "一个原创的虚构产品名称和一句话情感承诺。"
+        },
+        {
+          "name": "hero_benefit_image",
+          "constraint": "用一个原创人物、物体或环境直接呈现期望结果，而不是只展示产品界面。"
+        },
+        {
+          "name": "capability_modules",
+          "constraint": "两到三个视觉上不同的证据可以回答不同的产品问题。"
+        },
+        {
+          "name": "operation_proof",
+          "constraint": "一种清晰的控制、流程或物理机制，展示产品的工作原理。"
+        },
+        {
+          "name": "peak_event",
+          "constraint": "通过物理、空间、排版或人类变化来表达的一种对比最强的事件。"
+        },
+        {
+          "name": "breadth_device",
+          "constraint": "一种原创的非冗余证明多重上下文的方法；避免源卡片横排加网格的组合。"
+        },
+        {
+          "name": "graphic_system",
+          "constraint": "与来源广告无关的调色板、材质、灯光行为和排版规则。"
+        },
+        {
+          "name": "final_action",
+          "constraint": "一个简洁的 CTA 显示在稳定的结尾定格中。"
+        },
+        {
+          "name": "information_order",
+          "constraint": "选择源自新产品因果逻辑的顺序，而不是来源作品的九状态序列。"
+        },
+        {
+          "name": "shot_structure",
+          "constraint": "使用五到八种边界、合并和镜头实现方式截然不同的状态。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "MiniMax H3、HailuoAI、Create Beyond、LIVE RIGHT NOW、AVAILABLE NOW 以及所有其他源字符串。",
+        "源女性、紫色水母、星云、紫色速度条纹和相同的产品类别图像。",
+        "源文字标记、徽标、半透明面板组合、编辑界面和创建者卡布局。",
+        "完全相同的九格分镜板、节拍时长、文字位置和配色。"
+      ],
+      "instantiations": [
+        {
+          "concept": "虚构的紧凑型空气净化设备 AERIA ONE 采用六个重排状态：先用真实房间控制展示操作，再提前出现孩子安睡的结果；随后以传感器与滤芯微距合并证明内部机制，用覆盖整间公寓的空气变化形成不依赖巨型文字的高潮，再以连续环境变形证明多场景适用性，最后安静定版。",
+          "prompt_seed": "六状态、证明优先的空气净化产品片：早段出现人物结果，以空间变化形成高潮，用连续且非卡片式的多场景变形证明适用范围，最后稳定呈现 CTA。"
+        },
+        {
+          "concept": "虚构的模块化野外电池 NORTHSTAR GRID 在同一处风暴现场完成五个状态：先给出救援结果，再展示电芯实体堆叠与现场电缆接通；泛光灯亮起成为视觉高潮，最后以宽幅工作全景和小号 DEPLOY NOW 文案定版，不使用用途卡片。",
+          "prompt_seed": "五状态、单地点的能源产品片：先给结果，再展示实体组装与通电过程，以照明变化形成高潮，不使用类别网格。"
+        },
+        {
+          "concept": "虚构的自适应跑鞋 KINETIC ARC 采用七个长短不一的状态：先呈现跑者落地冲击的结果，再依次展示鞋底压力轨迹、缓震泡棉微距和地形切换；运动员一跃跨上台阶形成动作高潮，随后用三次构图匹配的不同路面脚步证明适用范围，最后以贴地机位完成行动收束。",
+          "prompt_seed": "七状态运动产品片：用构图匹配的不同路面脚步证明适用范围，不使用面板或网格。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "这部电影只是一系列有吸引力的产品镜头。",
+          "repair": "为每个节拍分配一个不同的问题，并在下一次剪辑之前需要一个可观察的证据。"
+        },
+        {
+          "failure": "每一个节拍都试图成为视觉高潮。",
+          "repair": "前段采用克制的组装动作，只设置一个主导性的动态高潮，随后逐步简化并收束到行动号召（CTA）。"
+        },
+        {
+          "failure": "版式变得难以阅读或主导产品。",
+          "repair": "减少文案字数，让文字直接以最终尺寸完整出现并保持清晰；动态效果只能位于文字平面之后。"
+        },
+        {
+          "failure": "调色板交换使来源广告清晰可辨。",
+          "repair": "更改产品类别、主角类型、材料、信息顺序、镜头数量、镜头实现方式、广度手段、文案、最终动作以及颜色。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "虚构的紧凑型空气净化设备 AERIA ONE 采用六个重排状态：先用真实房间控制展示操作，再提前出现孩子安睡的结果；随后以传感器与滤芯微距合并证明内部机制，用覆盖整间公寓的空气变化形成不依赖巨型文字的高潮，再以连续环境变形证明多场景适用性，最后安静定版。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "product_identity",
+            "hero_benefit_image",
+            "capability_modules",
+            "operation_proof",
+            "peak_event",
+            "breadth_device",
+            "graphic_system",
+            "final_action",
+            "information_order",
+            "shot_structure"
+          ]
+        },
+        {
+          "concept": "虚构的自适应跑鞋 KINETIC ARC 采用七个长短不一的状态：先呈现跑者落地冲击的结果，再依次展示鞋底压力轨迹、缓震泡棉微距和地形切换；运动员一跃跨上台阶形成动作高潮，随后用三次构图匹配的不同路面脚步证明适用范围，最后以贴地机位完成行动收束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "product_identity",
+            "hero_benefit_image",
+            "capability_modules",
+            "operation_proof",
+            "peak_event",
+            "breadth_device",
+            "graphic_system",
+            "final_action",
+            "information_order",
+            "shot_structure"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

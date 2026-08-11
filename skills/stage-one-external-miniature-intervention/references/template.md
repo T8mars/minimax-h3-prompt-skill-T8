@@ -2,7 +2,7 @@
 
 ## Mechanism
 
-Use one familiar inert object at the opening to calibrate a miniature world immediately. Let the small actors, tools, motion, shadows and atmosphere then sustain a coherent routine while the calibrator remains passive. Later, introduce one different external execution object exactly once, let it change one local state, and hold the intervention, affected object and internal reaction together so the story shifts from scale observation to outside control.
+Use one familiar inert object at the opening to calibrate a miniature world immediately. Let the small actors, tools, motion, shadows and atmosphere then sustain a coherent routine while the calibrator remains passive. Later, introduce one different external intervention tool exactly once, let it change one local state, and hold the intervention, affected object and internal reaction together so the story shifts from scale observation to outside control.
 
 ## Invariants
 
@@ -26,7 +26,7 @@ Use one familiar inert object at the opening to calibrate a miniature world imme
 
 ### inv-04
 
-- Rule: Introduce one different external execution object only once in continuous entry.
+- Rule: Introduce one different external intervention tool exactly once in one continuous action.
 - Purpose: Creates a clear observer-to-controller transition.
 - Failure if removed: Repeated tools or cuts turn the event into ordinary handling.
 

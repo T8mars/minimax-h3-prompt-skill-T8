@@ -66,10 +66,10 @@ Structure a first-person product testimonial as a proof ladder: introduce the un
 
 ## Transfer Tests
 
-1. A ceramic artist unboxes a compact pour-over kit, reveals all pieces, macros the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction.
+1. A ceramic artist unboxes a compact pour-over kit, reveals all pieces, uses a macro close-up on the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction.
    - Preserved: inv-01, inv-02, inv-03, inv-04, inv-05
    - Changed: lead_subject, setting, escalation_variable, performance_rule, camera_grammar, payoff, sound_family
-2. A cyclist tests a pocket rain-shell pouch, reveals the folded garment, macros the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression.
+2. A cyclist tests a pocket rain-shell pouch, reveals the folded garment, uses a macro close-up on the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression.
    - Preserved: inv-01, inv-02, inv-03, inv-04, inv-05
    - Changed: lead_subject, setting, escalation_variable, performance_rule, camera_grammar, payoff, sound_family
 

@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-decat2025-2086134168992236013-browser-2086134168992236013-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d6b6e703fe3b14db9c9c9294d015336ece40fb532ef33e59d6536844fd0c20ad",
+    "creative_dna_sha256": "6794b0b7f368059556bb381b0610ad6a2c2abf10d0cc8d12a6e97d4a98fa2ee3"
+  },
+  "content": {
+    "title": "流程错位｜扫描到实物双确认",
+    "summary": "超尺度主体认真执行熟悉流程；扫描先揭示嵌套对象，随后同一对象以实体形式出现，完成双重确认。",
+    "quick_start": {
+      "input_format": "超尺度主体 + 熟悉流程 + 3 种不同尺度失配 + 扫描揭示嵌套对应物 + 同一对应物以实体形式同框出现",
+      "recommended_input": "巨型纸艺飞蛾认真通过行李安检，托盘、传送带和扫描门连续出现尺度失配；屏幕先显示箱内的小纸蛾，开箱后同一只小纸蛾实体飞出，与大飞蛾同框。",
+      "required_anchors": [
+        "主体尺度与操作流程或设备尺度明显失配",
+        "至少三个不同失配证明",
+        "扫描先于实物揭晓",
+        "实物必须是扫描中的同一对象且两种尺度同框"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "超尺度主体认真执行熟悉流程；扫描先揭示嵌套对象，随后同一对象以实体形式出现，完成双重确认。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把一个尺寸明显不合常规的主体置于熟悉的分步流程中，并要求其认真照章执行。让连续检查点分别暴露不同的尺寸适配失败，同时保持主体尊严。先通过成像揭示同一封闭容器内的嵌套对应物，再实体取出同一对应物，同时保留大小两个尺度和主体反应，使实体揭示独立印证扫描。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "使用一套检查点顺序清楚、能立即识别的操作流程。",
+          "purpose": "让观众预测正常行为。",
+          "ablation_failure": "不熟悉的流程不会造成明显的不匹配。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在整个合规过程中保持主体的真诚和克制。",
+          "purpose": "以冷面、克制的方式呈现荒诞。",
+          "ablation_failure": "刻意搞怪会削弱严谨操作流程与荒诞结果之间的反差。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "通过不同的尺寸不合或适配失败逐步升级，而不是重复警报。",
+          "purpose": "在每一步添加新证据。",
+          "ablation_failure": "一次重复的不匹配就会变得单调。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "先通过成像设备揭示嵌套对应物，同时让它仍留在同一个封闭容器内。",
+          "purpose": "在物理确认之前创建第一个可检查的证据。",
+          "ablation_failure": "立即显露实体，会破坏从扫描证据到实体确认的双重验证结构。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "让同一对应物以实体出现，并把大小两个尺度和主体反应同时保留在画面中。",
+          "purpose": "独立确认扫描，无需发明功能或解释。",
+          "ablation_failure": "仅屏幕结尾仍可被解读为扫描错误；银幕外的揭露并不能证明身份的连续性。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份保持稳定的原创主体或系统。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一种在可数因果阶段发生变化的可见变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的行为规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的物理或图形结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "机场安检处的全尺寸霸王龙",
+        "小太阳镜和蛇皮钱包",
+        "金属探测器、安全棒和行李扫描仪",
+        "从钱包中出现的微型霸王龙"
+      ],
+      "instantiations": [
+        {
+          "concept": "一头巨型发条游行大象接受博物馆入藏检查，交出小工具箱，却无法通过尺寸量规；随后 X 光显示箱内六只折纸飞蛾，同一批飞蛾再从箱中实体飞出并悬停在大象旁。",
+          "prompt_seed": "严肃的博物馆入藏检查、尺寸不合、X 光成像证据，以及同一实体随后出现所构成的双重验证。"
+        },
+        {
+          "concept": "一个巨大的软塑料送货吉祥物进入护照照相亭；热成像先显示其空心徽章内的三个微型同类，随后同一徽章实体打开，三个同类走出，大小两个尺度始终同时保留在画面中。",
+          "prompt_seed": "照相亭中的尺度不匹配；成像先揭示嵌套同类，随后实体出现，在大小两种尺度同时保留的画面中完成双重验证。"
+        },
+        {
+          "concept": "一只巨型折纸鹤进入自动包裹退回区；透射光显示它的翼套内藏着三只微小折纸鹤，翼套随后打开，同样三只小鹤出现在它身旁。",
+          "prompt_seed": "包裹退回流程中的尺度错位、透射成像证据，以及与成像对应的同一实体随后出现。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "不熟悉的流程不会造成明显的不匹配。",
+          "repair": "使用一套检查点顺序清楚、能立即识别的操作流程。"
+        },
+        {
+          "failure": "刻意搞怪会削弱严谨操作流程与荒诞结果之间的反差。",
+          "repair": "在整个合规过程中保持主体的真诚和克制。"
+        },
+        {
+          "failure": "一次重复的不匹配就会变得单调。",
+          "repair": "通过不同的尺寸不合或适配失败逐步升级，而不是重复警报。"
+        },
+        {
+          "failure": "立即显露实体，会破坏从扫描证据到实体确认的双重验证结构。",
+          "repair": "首先通过成像显示嵌套的对应部分，同时它仍保留在同一容器内。"
+        },
+        {
+          "failure": "仅在屏幕上的结局可以被解读为错误，而在屏幕外的揭示则不能证明连续性。",
+          "repair": "让同一对应物以实体出现，并把大小两个尺度和主体反应同时保留在画面中。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一头巨型发条游行大象接受博物馆入藏检查，交出小工具箱，却无法通过尺寸量规；随后 X 光显示箱内六只折纸飞蛾，同一批飞蛾再从箱中实体飞出并悬停在大象旁。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个巨大的软塑料送货吉祥物进入护照照相亭；热成像先显示其空心徽章内的三个微型同类，随后同一徽章实体打开，三个同类走出，大小两个尺度始终同时保留在画面中。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

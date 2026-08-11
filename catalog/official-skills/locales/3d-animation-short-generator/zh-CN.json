@@ -1,0 +1,46 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "official-skill",
+  "resource_id": "3d-animation-short-generator",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "official_index_sha256": "7c5738e9bf795652e16ac3b145279733e7b5ae87b01d4a27d074850d9bd935e0",
+    "companion_summary_sha256": "1c03345fbe992aaaa7784b7c3b0dcf095022205cc68b583c65054517c4b8c3ab"
+  },
+  "content": {
+    "title": "3D 动画短片生成器",
+    "summary": "从故事、角色和场景设定推进到镜头、表演与连续性控制；Seedance 伴侣把长片拆成不超过 15 秒的可衔接片段。",
+    "quick_start": {
+      "input_format": "故事目标 + 角色定义 + 场景设定 + 镜头与表演计划 + 连续性锚点 + 每段不超过 15 秒的衔接片段",
+      "recommended_input": "从故事、角色和场景设定推进到镜头、表演与连续性控制；Seedance 伴侣把长片拆成不超过 15 秒的可衔接片段。",
+      "required_anchors": [
+        "H3 使用固定版本的 MiniMax 官方上游 Skill。",
+        "Seedance 使用独立编写的 Seedance 2.0 伴侣 Skill。",
+        "不复制上游 Skill 正文，也不重复导入 ComfyUI。"
+      ],
+      "usage_steps": [
+        "选择匹配需求的 MiniMax H3 官方 Skill，并从固定版本上游链接安装。",
+        "只准备该 Skill 明确要求的素材与事实。",
+        "生成 Seedance 2.0 时改用本库独立编写的伴侣 Skill。",
+        "生成前检查身份、时长、文字和素材职责是否闭合。"
+      ],
+      "applicable_scope": [
+        "从故事、角色和场景设定推进到镜头、表演与连续性控制；Seedance 伴侣把长片拆成不超过 15 秒的可衔接片段。",
+        "符合上游 Skill 明确用途和素材合同的项目。"
+      ],
+      "not_suitable_for": [
+        "超出上游 Skill 明确用途的任务。",
+        "要求把上游 Skill 正文复制进本库，或重复导入 T8 ComfyUI 节点的场景。"
+      ]
+    },
+    "creative_dna": {
+      "usage_scope": "从故事、角色和场景设定推进到镜头、表演与连续性控制；Seedance 伴侣把长片拆成不超过 15 秒的可衔接片段。",
+      "source_boundary": "MiniMax H3 使用固定版本的官方上游 Skill；Seedance 2.0 使用本库独立编写的伴侣 Skill。本库不复制上游 Skill 正文。",
+      "comfyui_boundary": "目标节点已内置 MiniMax 官方能力，因此该官方条目不会重复导入 ComfyUI。"
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "field-preserving bilingual editorial pass with structural and terminology validation"
+  }
+}

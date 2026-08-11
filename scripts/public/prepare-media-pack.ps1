@@ -9,6 +9,19 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
+function Get-Sha256Lower {
+    param([Parameter(Mandatory = $true)][string]$LiteralPath)
+    $stream = [System.IO.File]::OpenRead($LiteralPath)
+    $algorithm = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        return ([System.BitConverter]::ToString($algorithm.ComputeHash($stream))).Replace("-", "").ToLowerInvariant()
+    }
+    finally {
+        $algorithm.Dispose()
+        $stream.Dispose()
+    }
+}
+
 $repoRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot "..\.."))
 if (-not $Version) {
     $Version = ([System.IO.File]::ReadAllText((Join-Path $repoRoot "package.json"), [System.Text.Encoding]::UTF8) | ConvertFrom-Json).version
@@ -47,7 +60,7 @@ foreach ($caseId in $caseIds) {
     $files.Add([ordered]@{
         case_id = $caseId
         path = "$caseId/preview.mp4"
-        sha256 = (Get-FileHash -LiteralPath $videoPath -Algorithm SHA256).Hash.ToLowerInvariant()
+        sha256 = Get-Sha256Lower -LiteralPath $videoPath
         size_bytes = [long]$item.Length
         duration_seconds = $duration
         video_codec = [string]$videoStream.codec_name
@@ -80,7 +93,7 @@ foreach ($skillId in $communityIds) {
     $communityFiles.Add([ordered]@{
         skill_id = $skillId
         path = $relativePath
-        sha256 = (Get-FileHash -LiteralPath $videoPath -Algorithm SHA256).Hash.ToLowerInvariant()
+        sha256 = Get-Sha256Lower -LiteralPath $videoPath
         size_bytes = [long]$item.Length
         duration_seconds = $duration
         video_codec = [string]$videoStream.codec_name
@@ -130,7 +143,7 @@ finally {
     $archive.Dispose()
 }
 
-$zipHash = (Get-FileHash -LiteralPath $zipPath -Algorithm SHA256).Hash.ToLowerInvariant()
+$zipHash = Get-Sha256Lower -LiteralPath $zipPath
 Write-Output "Media pack: $zipPath"
 Write-Output "Manifest: $manifestOutput"
 Write-Output "SHA256: $zipHash"

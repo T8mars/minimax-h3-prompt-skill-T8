@@ -1,0 +1,225 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "bec38a524ecf33e0c0edb28340ce9177da0061dd3280420bc8a7dbd20c493109",
+    "creative_dna_sha256": "898a0d0523c74cc768503b9cf15c2f66f339c54ee229391da6e39bed4f3edd84"
+  },
+  "content": {
+    "title": "复古手持｜日常送别回眸",
+    "summary": "观察者先发现人物日常，外部信号改变人物目标，一次回应后以有动机的拍摄失误结束。",
+    "quick_start": {
+      "input_format": "观察/记录媒介 + 日常人物与地点 + 两个日常动作 + 改变目标的外部信号 + 一次回应 + 有动因的录制失误",
+      "recommended_input": "家用摄像机记录泳池管理员收拾浮板和锁柜门，远处哨声让她改变去向；她回头挥一次手，摄影者追拍时短暂失焦并切到水面。",
+      "required_anchors": [
+        "先建立观察/记录媒介",
+        "至少两个普通日常动作",
+        "外部信号改变目标",
+        "一次回应后以有动机失误收尾"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "观察者先发现人物日常，外部信号改变人物目标，一次回应后以有动机的拍摄失误结束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "一个带有不完美记录质感的连续观察镜头，发现主体已在进行日常活动，并在主体不带表演痕迹的细小动作上停留；随后，外部环境线索改变主体目标。临近结尾的短暂回应缩短主体与拍摄者的距离，之后主体主动离场，记录以不完美方式结束。地点、主体、日常活动、线索、记录媒介瑕疵、回应方式与离场动作均可替换。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "开场先由拍摄者在清楚的日常空间关系中发现人物，而不是直接呈现精心摆好的英雄式画面。",
+          "purpose": "建立真实生活感的观察者关系，让之后主体回应拍摄者具有意义。",
+          "ablation_failure": "精心打磨的居中开场会显得像摆拍，失去偶然发现私人记忆的感觉。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-07"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在外部提示到来之前，给主体至少两次低幅度的常规动作。",
+          "purpose": "无需对白或情节说明，也能建立人物个性与从容的时间节奏。",
+          "ablation_failure": "提示若立即出现，短片会退化成普通的抵达或离场镜头，失去生活记忆感。",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02",
+            "obs-05",
+            "obs-13"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用一种可见或可听的环境提示在同一连续的地理区域内引起目标的明显变化。",
+          "purpose": "创建叙事动作，无需剪辑或照本宣科。",
+          "ablation_failure": "无缘无故的退出让人感觉随意；多种相互竞争的线索会分散注意力。",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "obs-06",
+            "obs-09"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "只在离场前的临界点，让主体短暂直接回应拍摄者。",
+          "purpose": "把旁观式记录转化为私人记忆，同时让行为保持自然、不摆拍。",
+          "ablation_failure": "反复摆姿势给人一种表演的感觉；没有任何确认会让观察者关系在情感上不被利用。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-09",
+            "obs-11",
+            "obs-13"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "让记录媒介的瑕疵跟随拍摄者注意力——延迟对焦、运镜过冲、曝光校正或错过完整动作——但不得遮蔽因果作用。",
+          "purpose": "让拍摄更有人情味，同时保持画面清楚可辨。",
+          "ablation_failure": "持续随机摇晃会变成滤镜；毫无瑕疵的镜头记录会失去记忆质感；发生在线索上的瑕疵还可能遮蔽故事。",
+          "evidence_ids": [
+            "beat-01",
+            "beat-04",
+            "obs-07",
+            "obs-15"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "memory_medium",
+          "constraint": "一种符合时代的消费级记录媒介，并采用具体、克制的瑕疵特征。"
+        },
+        {
+          "name": "everyday_place",
+          "constraint": "一个连贯的公共或私人地点，其地理位置支持连续拍摄。"
+        },
+        {
+          "name": "subject_identity",
+          "constraint": "一名外貌、服装及其与拍摄者关系均保持稳定的原创人物。"
+        },
+        {
+          "name": "routine_actions",
+          "constraint": "使用当地原生道具进行两到三个小动作。"
+        },
+        {
+          "name": "external_cue",
+          "constraint": "明显改变主体目标的一件事。"
+        },
+        {
+          "name": "acknowledgment",
+          "constraint": "出口附近短暂的一瞥、点头、手势或分享笑话。"
+        },
+        {
+          "name": "exit_path",
+          "constraint": "物理上连续离开既定地理。"
+        },
+        {
+          "name": "operator_mistake",
+          "constraint": "一种仍然清晰可辨的有动机的聚焦、变焦、取景或端点错误。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "沿海铁路站台、韩国标志、面向大海的平行轨道、银色通勤列车和风化的长凳",
+        "韩国年轻女性，米色风衣，蓝色牛仔裤，棕色单肩包，外卖咖啡和源外观",
+        "站立—坐下—啜饮—列车到站—挥手—上车顺序及原样十五秒节拍边界",
+        "来源作品中 2000 年代初期的 MiniDV 品牌与画面特征、剧烈抖动模式、自动对焦目标、曝光行为和结尾向下拍摄方式"
+      ],
+      "instantiations": [
+        {
+          "concept": "一段 20 世纪 90 年代末的 Hi8 家庭录像，在社区泳池中发现一名年轻成年救生员正在堆放浮板并折叠毛巾；电动泳池盖启动后，他背起行李包，轻点头示意拍摄者跟上，再穿过铁链门离开，摄像机随之运镜过冲。",
+          "prompt_seed": "由现场拍摄者手持 Hi8 跟随的下班后泳池记忆：例行收拾、泳池盖启动、迟到的点头，以及人物出门时略微运镜过冲。"
+        },
+        {
+          "concept": "一段以消费级 VHS-C 摄像机拍摄的小镇面包店关店录像，记录年长面包师清理面粉并系好面包袋；送货铃与卷帘门成为离开的提示，她俏皮地轻敲一次镜头遮光罩，随后从后巷离开，白平衡在荧光灯下自然漂移。",
+          "prompt_seed": "VHS-C 小镇面包店关店记忆：清理面粉与系袋流程、送货铃提示、一次俏皮致意，以及荧光灯下漂移的色偏。"
+        },
+        {
+          "concept": "一段业余天文台的手持袖珍 DV 录像中，一名青少年志愿者擦拭目镜并检查星图；黎明时圆顶缝隙开始关闭，她带着镜头盖向拍摄者示意，再沿楼梯间离开，焦点则停留在空望远镜上。",
+          "prompt_seed": "手持袖珍摄像机记录的天文台黎明记忆：设备整理、圆顶关闭提示、镜头盖致意，最后把焦点留在无人使用的望远镜上。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "拍摄对象自始至终都在镜头前摆姿势。",
+          "repair": "继续关注日常行为，直到退出前的简短确认。"
+        },
+        {
+          "failure": "模拟媒介瑕疵始终以最大强度出现。",
+          "repair": "让每一次对焦、曝光或取景偏差都对应拍摄者的校正动作，并保留外部线索。"
+        },
+        {
+          "failure": "提示和退出无关。",
+          "repair": "先让提示进入已建立的空间关系，再在离场前展示一次清楚的目标变化。"
+        },
+        {
+          "failure": "换乘只是将火车站替换为另一个车站。",
+          "repair": "同时改变场所类别、日常流程、线索机制、主体与拍摄者的关系、媒介格式和离场行为。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一段 20 世纪 90 年代末的 Hi8 家庭录像，在社区泳池中发现一名年轻成年救生员正在堆放浮板并折叠毛巾；电动泳池盖启动后，他背起行李包，轻点头示意拍摄者跟上，再穿过铁链门离开，摄像机随之运镜过冲。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "memory_medium",
+            "everyday_place",
+            "subject_identity",
+            "routine_actions",
+            "external_cue",
+            "acknowledgment",
+            "exit_path",
+            "operator_mistake"
+          ]
+        },
+        {
+          "concept": "一段以消费级 VHS-C 摄像机拍摄的小镇面包店关店录像，记录年长面包师清理面粉并系好面包袋；送货铃与卷帘门成为离开的提示，她俏皮地轻敲一次镜头遮光罩，随后从后巷离开，白平衡在荧光灯下自然漂移。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "memory_medium",
+            "everyday_place",
+            "subject_identity",
+            "routine_actions",
+            "external_cue",
+            "acknowledgment",
+            "exit_path",
+            "operator_mistake"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

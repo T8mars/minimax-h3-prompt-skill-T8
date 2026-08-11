@@ -1,5 +1,6 @@
 const fs = require("node:fs");
 const path = require("node:path");
+const crypto = require("node:crypto");
 
 const PUBLISHED_STATES = new Set(["published", "released", "release", "public"]);
 
@@ -17,6 +18,52 @@ function readText(filePath, fallback = "") {
   } catch {
     return fallback;
   }
+}
+
+function sha256File(filePath) {
+  return crypto.createHash("sha256").update(fs.readFileSync(filePath)).digest("hex");
+}
+
+function sha256Text(value) {
+  return crypto.createHash("sha256").update(String(value || ""), "utf8").digest("hex");
+}
+
+function loadLocalizationPair({ localeDir, kind, id, expectedBindings, warnings }) {
+  const result = {};
+  const reviews = {};
+  for (const locale of ["en", "zh-CN"]) {
+    const filePath = path.join(localeDir, `${locale}.json`);
+    const document = readJson(filePath, null);
+    const prefix = `${kind} ${id} ${locale}`;
+    if (!document) {
+      warnings.push(`${prefix}: missing display localization`);
+      continue;
+    }
+    if (document.schema_version !== "public-display-locale/v1" || document.resource_kind !== kind || document.resource_id !== id || document.locale !== locale) {
+      warnings.push(`${prefix}: invalid display localization identity`);
+      continue;
+    }
+    if (document.review?.status !== "approved") {
+      warnings.push(`${prefix}: display localization is not approved`);
+      continue;
+    }
+    const stale = Object.entries(expectedBindings).some(([key, value]) => document.source_bindings?.[key] !== value);
+    if (stale) {
+      warnings.push(`${prefix}: stale display localization binding`);
+      continue;
+    }
+    const content = document.content;
+    if (!content?.title || !content?.summary || !content?.quick_start || !content?.creative_dna) {
+      warnings.push(`${prefix}: incomplete display localization content`);
+      continue;
+    }
+    result[locale] = content;
+    reviews[locale] = {
+      status: document.review.status,
+      method: typeof document.review.method === "string" ? document.review.method : ""
+    };
+  }
+  return { localizations: result, localizationReviews: reviews };
 }
 
 function safeResolve(root, reference) {
@@ -181,7 +228,7 @@ function collectCaseManifestPaths(catalogRoot, rootManifest) {
   return ordered;
 }
 
-function normalizeCase(manifestPath, catalogRoot, mediaRoot) {
+function normalizeCase(manifestPath, catalogRoot, mediaRoot, warnings) {
   const manifest = readJson(manifestPath, {});
   const caseDir = path.dirname(manifestPath);
   const id = firstString(manifest.case_id, manifest.id, manifest.slug, path.basename(caseDir));
@@ -234,6 +281,16 @@ function normalizeCase(manifestPath, catalogRoot, mediaRoot) {
 
   const summary = firstString(manifest.summary, summaryPath ? markdownSummary(readText(summaryPath)) : "");
   const quality = manifest.quality && typeof manifest.quality === "object" ? manifest.quality : {};
+  const { localizations, localizationReviews } = loadLocalizationPair({
+    localeDir: path.join(caseDir, "locales"),
+    kind: "case",
+    id,
+    expectedBindings: {
+      manifest_sha256: sha256File(manifestPath),
+      creative_dna_sha256: creativePath ? sha256File(creativePath) : ""
+    },
+    warnings
+  });
 
   return {
     id,
@@ -253,7 +310,16 @@ function normalizeCase(manifestPath, catalogRoot, mediaRoot) {
     models: normalizeModels(manifest, prompts),
     quality,
     creativeDna,
+    localizations,
+    localizationReviews,
+    inputFormat: firstString(manifest.input_format),
+    recommendedInput: firstString(manifest.recommended_input),
+    requiredAnchors: uniqueStrings([manifest.required_anchors]),
+    templateId: firstString(manifest.template_id),
+    skillRef: firstString(manifest.skill_ref),
     prompts,
+    promptLanguages: { minimaxH3: "English", seedance20: "Chinese" },
+    promptSha256: { minimaxH3: sha256Text(prompts.minimaxH3), seedance20: sha256Text(prompts.seedance20) },
     media: {
       gif: assetDescriptor(catalogRoot, gifPath, "catalog"),
       poster: assetDescriptor(catalogRoot, posterPath, "catalog"),
@@ -268,7 +334,7 @@ function rootUpdatedAt(manifest) {
   return typeof manifest.provenance === "object" ? firstString(manifest.provenance.updated_at) : "";
 }
 
-function normalizeOfficialSkill(entry, index, catalogRoot, skillsRoot) {
+function normalizeOfficialSkill(entry, index, indexPath, catalogRoot, skillsRoot, warnings) {
   if (!entry || typeof entry !== "object") return null;
   const id = firstString(entry.id);
   const companionSkill = firstString(entry.companion_skill);
@@ -280,8 +346,8 @@ function normalizeOfficialSkill(entry, index, catalogRoot, skillsRoot) {
   const pinnedCommit = firstString(index.pinned_commit);
   const installCommand = firstString(entry.upstream_install_command);
   const upstreamSkillUrl = firstString(entry.upstream_skill_url);
-  const h3Access = [
-    "此条目来自 MiniMax-AI/MiniMax-H3 官方仓库。为遵守上游许可，本仓库不复制官方 Skill 正文。",
+  const h3AccessZh = [
+    "此条目来自 MiniMax-AI/MiniMax-H3 官方仓库。本库不复制官方 Skill 正文。",
     "",
     "安装官方 H3 Skill：",
     installCommand,
@@ -290,6 +356,23 @@ function normalizeOfficialSkill(entry, index, catalogRoot, skillsRoot) {
     `Commit：${pinnedCommit}`,
     `SKILL.md SHA-256：${firstString(entry.upstream_skill_sha256)}`
   ].join("\n");
+  const h3AccessEn = [
+    "This entry points to the MiniMax-AI/MiniMax-H3 official repository. The upstream Skill body is not copied into this library.",
+    "",
+    "Install the official H3 Skill:",
+    installCommand,
+    "",
+    `Pinned source: ${upstreamSkillUrl}`,
+    `Commit: ${pinnedCommit}`,
+    `SKILL.md SHA-256: ${firstString(entry.upstream_skill_sha256)}`
+  ].join("\n");
+  const { localizations, localizationReviews } = loadLocalizationPair({
+    localeDir: path.join(catalogRoot, "official-skills", "locales", id),
+    kind: "official-skill",
+    id,
+    expectedBindings: { official_index_sha256: sha256File(indexPath), companion_summary_sha256: sha256File(summaryPath) },
+    warnings
+  });
   return {
     kind: "officialSkill",
     id,
@@ -309,6 +392,8 @@ function normalizeOfficialSkill(entry, index, catalogRoot, skillsRoot) {
     upstreamSkillSha256: firstString(entry.upstream_skill_sha256),
     companionSkill,
     companionSummary: readText(summaryPath).trim(),
+    localizations,
+    localizationReviews,
     models: uniqueStrings(entry.models),
     tags: uniqueStrings(entry.tags),
     comfyuiImport: false,
@@ -319,9 +404,12 @@ function normalizeOfficialSkill(entry, index, catalogRoot, skillsRoot) {
       hasFullVideo: false
     },
     prompts: {
-      minimaxH3: h3Access,
+      minimaxH3: h3AccessEn,
       seedance20: readText(templatePath).trim()
-    }
+    },
+    localizedPromptHelp: { minimaxH3: { en: h3AccessEn, "zh-CN": h3AccessZh } },
+    promptLanguages: { minimaxH3: "Installation metadata", seedance20: "Chinese" },
+    promptSha256: { minimaxH3: sha256Text(h3AccessEn), seedance20: sha256Text(readText(templatePath).trim()) }
   };
 }
 
@@ -339,13 +427,13 @@ function loadOfficialSkills(catalogRoot, rootManifest, skillsRoot, warnings) {
     return [];
   }
   const normalized = asArray(index.skills)
-    .map((entry) => normalizeOfficialSkill(entry, index, catalogRoot, skillsRoot))
+    .map((entry) => normalizeOfficialSkill(entry, index, indexPath, catalogRoot, skillsRoot, warnings))
     .filter(Boolean);
   if (Number(index.skill_count) !== normalized.length) warnings.push("部分官方仓库 Skill 或 Seedance 伴侣文件不可用");
   return normalized;
 }
 
-function normalizeCommunitySkill(entry, index, catalogRoot, mediaRoot, skillsRoot) {
+function normalizeCommunitySkill(entry, index, catalogRoot, mediaRoot, skillsRoot, warnings) {
   if (!entry || typeof entry !== "object" || !skillsRoot) return null;
   const id = firstString(entry.id);
   if (!id || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(id) || entry.official !== false) return null;
@@ -369,6 +457,18 @@ function normalizeCommunitySkill(entry, index, catalogRoot, mediaRoot, skillsRoo
     }
   })();
 
+  const { localizations, localizationReviews } = loadLocalizationPair({
+    localeDir: path.join(catalogRoot, "community-skills", id, "locales"),
+    kind: "community-skill",
+    id,
+    expectedBindings: {
+      manifest_sha256: sha256File(path.join(catalogRoot, "community-skills", id, "manifest.json")),
+      summary_sha256: sha256File(summaryPath)
+    },
+    warnings
+  });
+  const h3Prompt = readText(h3Path).trim();
+  const seedancePrompt = readText(seedancePath).trim();
   return {
     kind: "communitySkill",
     id,
@@ -383,15 +483,19 @@ function normalizeCommunitySkill(entry, index, catalogRoot, mediaRoot, skillsRoo
     targetDurationRangeSeconds: Array.isArray(entry.target_duration_range_seconds) ? entry.target_duration_range_seconds.map(Number) : [4, 15],
     skillRef,
     companionSummary: readText(summaryPath).trim(),
+    localizations,
+    localizationReviews,
     models: uniqueStrings(entry.models),
     tags: uniqueStrings(entry.tags),
     creativeDna: entry.creative_dna && typeof entry.creative_dna === "object" ? entry.creative_dna : {},
     comfyuiImport: Boolean(entry.comfyui?.bundled),
     comfyuiReason: firstString(entry.comfyui?.reason),
     prompts: {
-      minimaxH3: readText(h3Path).trim(),
-      seedance20: readText(seedancePath).trim()
+      minimaxH3: h3Prompt,
+      seedance20: seedancePrompt
     },
+    promptLanguages: { minimaxH3: "English", seedance20: "Chinese" },
+    promptSha256: { minimaxH3: sha256Text(h3Prompt), seedance20: sha256Text(seedancePrompt) },
     media: {
       gif: assetDescriptor(catalogRoot, gifPath, "catalog"),
       poster: assetDescriptor(catalogRoot, posterPath, "catalog"),
@@ -419,7 +523,7 @@ function loadCommunitySkills(catalogRoot, rootManifest, mediaRoot, skillsRoot, w
     const manifestRef = firstString(item?.manifest_ref);
     const manifestPath = safeResolve(catalogRoot, manifestRef);
     if (!manifestPath || !fs.existsSync(manifestPath)) return null;
-    return normalizeCommunitySkill(readJson(manifestPath, null), index, catalogRoot, mediaRoot, skillsRoot);
+    return normalizeCommunitySkill(readJson(manifestPath, null), index, catalogRoot, mediaRoot, skillsRoot, warnings);
   }).filter(Boolean);
   if (Number(index.skill_count) !== normalized.length) warnings.push("部分非官方 Skill、模板或预览文件不可用");
   return normalized;
@@ -433,7 +537,7 @@ function loadCatalog({ catalogRoot, mediaRoot = null, skillsRoot = null }) {
   if (!fs.existsSync(rootPath)) warnings.push("未找到 catalog/manifest.json");
 
   const cases = collectCaseManifestPaths(resolvedCatalogRoot, rootManifest)
-    .map((manifestPath) => normalizeCase(manifestPath, resolvedCatalogRoot, mediaRoot ? path.resolve(mediaRoot) : null))
+    .map((manifestPath) => normalizeCase(manifestPath, resolvedCatalogRoot, mediaRoot ? path.resolve(mediaRoot) : null, warnings))
     .filter(Boolean);
 
   if (!cases.length) warnings.push("公开目录中没有可显示的 published 案例");

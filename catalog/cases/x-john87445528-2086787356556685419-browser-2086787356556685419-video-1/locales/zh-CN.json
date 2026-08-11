@@ -1,0 +1,226 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-john87445528-2086787356556685419-browser-2086787356556685419-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "65ce1d986d5f2882c05631958602665f0df37391875fb7c841dfc9f8b68fb3b6",
+    "creative_dna_sha256": "7d39407b49e59b3394a07ebba8bfbf61e985627d42faf8a59059debe6d3a5ce6"
+  },
+  "content": {
+    "title": "第一视角查岗｜遮挡失效到摆烂收口",
+    "summary": "第一人称身体运动连续推进，遮挡每失败一次就暴露更深证据，最后以人物停止遮挡并后仰回到桌前状态收口。",
+    "quick_start": {
+      "input_format": "第一人称观察者 + 固定工作区 + 至少2次遮挡失败 + 物证到面部交接 + 停止遮挡的结尾",
+      "recommended_input": "第一人称温室查验：学徒先用记录板遮住发光托盘，随后又试图用托盘盖遮挡，却露出了第二个报警传感器。镜头从物证抬到脸部；学徒停止遮掩，平静地给温室浇水。",
+      "required_anchors": [
+        "使用一个连续的、具身化的第一人称观察者，其高度和距离的变化来自于物理移动。",
+        "要求至少两次隐藏尝试，每次都暴露更深层的矛盾。",
+        "从物体证据过渡到持续的面部或身体反应。",
+        "以一个可见的行为改变结束，而不是第三次揭示。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "第一人称身体运动连续推进，遮挡每失败一次就暴露更深证据，最后以人物停止遮挡并后仰回到桌前状态收口。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "保持一个具身的第一人称观察者连续在场，同时让主体尝试多次可见的遮挡。每次干预都必须暴露一层更深、且可独立读懂的矛盾；摄影机高度与距离只能随观察者的身体运动改变。收束应清楚表现主体从主动遮挡转为停止遮挡，并重新靠回工位姿态，而不是再增加一次揭露。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "使用一个连续的第一人称观察者，其高度和距离的变化来自身体运动。",
+          "purpose": "让发现过程具有参与感，并保持空间关系真实可信。",
+          "ablation_failure": "第三人称插入镜头会破坏第一人称检查逻辑。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "至少安排两次遮挡或掩藏尝试，并让每次尝试都暴露更深一层的矛盾。",
+          "purpose": "将防御转变为因果升级。",
+          "ablation_failure": "随机揭示并不构成证明阶梯。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "将每个证据层在空间上嵌套在一个稳定的工作区域内。",
+          "purpose": "让观看者了解每个对象如何隐藏下一个对象。",
+          "ablation_failure": "来自彼此无关地点的线索会像后期剪接拼出来的，而不是现场逐层发现的。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "从物体证据转向持续的面部或身体反应。",
+          "purpose": "将证据转化为社会后果。",
+          "ablation_failure": "以屏幕画面收尾，会让人物层面的收束悬而未决。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以明显的行为改变结束，而不是第三次揭露。",
+          "purpose": "提供明确的接受或拒绝状态。",
+          "ablation_failure": "持续升级却没有状态变化，就缺少收束。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "可见的 FBI 徽章",
+        "来源作品中的游戏界面",
+        "源男性躯干图像网格",
+        "来源作品中的红色警告界面",
+        "暴露度较高的服装及身体取景构图",
+        "来源作品中盖住手机的信封",
+        "桌下揭示镜头",
+        "最终后靠并回到工作台的动作",
+        "来源作品中的办公室职员与主管",
+        "来源作品对白的原样措辞"
+      ],
+      "instantiations": [
+        {
+          "concept": "一次手持温室检查发现，一名受训者反复遮掩未经授权的生物发光种子试验：写字夹板挡住发光托盘，托盘盖又暴露出第二个传感器；最终受训者停止掩藏，平静地恢复浇水。",
+          "prompt_seed": "一次手持温室检查发现，一名受训者反复遮掩未经授权的生物发光种子试验：写字夹板挡住发光托盘，托盘盖又暴露出第二个传感器；最终受训者停止掩藏，平静地恢复浇水。"
+        },
+        {
+          "concept": "第一人称博物馆库房审计跟随一名文物保护师：更换标签、盖上遮布和关上抽屉，每一步都暴露更深一层的目录不符；最后，保护师沉默地打开整座柜体接受检查。",
+          "prompt_seed": "第一人称博物馆库房审计跟随一名文物保护师：更换标签、盖上遮布和关上抽屉，每一步都暴露更深一层的目录不符；最后，保护师沉默地打开整座柜体接受检查。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "第三人称插入镜头会破坏第一人称检查逻辑。",
+          "repair": "使用一个连续的第一人称观察者，其高度和距离的变化来自身体运动。"
+        },
+        {
+          "failure": "随机揭示并不构成证明阶梯。",
+          "repair": "至少安排两次遮挡或掩藏尝试，并让每次尝试都暴露更深一层的矛盾。"
+        },
+        {
+          "failure": "来自彼此无关地点的线索会像后期剪接拼出来的，而不是现场逐层发现的。",
+          "repair": "将每个证据层在空间上嵌套在一个稳定的工作区域内。"
+        },
+        {
+          "failure": "以屏幕画面收尾，会让人物层面的收束悬而未决。",
+          "repair": "从物体证据转向持续的面部或身体反应。"
+        },
+        {
+          "failure": "持续升级却没有状态变化，就缺少收束。",
+          "repair": "以明显的行为改变结束，而不是第三次揭露。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一次手持温室检查发现，一名受训者反复遮掩未经授权的生物发光种子试验：写字夹板挡住发光托盘，托盘盖又暴露出第二个传感器；最终受训者停止掩藏，平静地恢复浇水。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "第一人称博物馆库房审计跟随一名文物保护师：更换标签、盖上遮布和关上抽屉，每一步都暴露更深一层的目录不符；最后，保护师沉默地打开整座柜体接受检查。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

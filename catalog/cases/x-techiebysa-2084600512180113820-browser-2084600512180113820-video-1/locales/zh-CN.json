@@ -1,0 +1,222 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "71df2a3c7a8eef45e5ec350b522cdabf241640b710fc978bc91dde4c252351c6",
+    "creative_dna_sha256": "1adcc65ead98af47d6c83c8d089f16fe094006cf07e021159f678270285e63d9"
+  },
+  "content": {
+    "title": "对话喜剧｜双人镜头、停顿与无声反应",
+    "summary": "双人同框先建立眼线，第一轮说话后留出清楚停顿，再完成第二轮说话并以第一人的无声反应收尾；具体对白和喜剧语义必须全新原创。",
+    "quick_start": {
+      "input_format": "双人中景 + 第一轮简短说话 + 一次可读停顿 + 第二轮简短说话 + 第一人的无声反应",
+      "recommended_input": "两名原创博物馆夜班保安在休息室对坐：A 问雕像是否眨眼，停顿后 B 冷静回答“只有你转开视线时”，最后 A 无声看向黑暗展厅门，不增加第二句笑点。",
+      "required_anchors": [
+        "开场双人中景建立稳定眼线",
+        "只保留一轮第一人说话",
+        "两轮之间有一次清楚停顿",
+        "第二人只说一轮且动作克制",
+        "结尾第一人无声反应且不再增加说话轮次"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "双人同框先建立眼线，第一轮说话后留出清楚停顿，再完成第二轮说话并以第一人的无声反应收尾；具体对白和喜剧语义必须全新原创。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "使用中性双人镜头建立平等的对话地位，展示一次可见的说话轮次，保持一个清晰可辨的停顿，展示第二次说话轮次，并以第一位发言者的无声反应结束。来源仅支持这种视觉化的轮流与反应语法；任何问题、答案含义或幽默错位都是明确原创的实例化插槽，而非源自来源的事实。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "以中性的双人镜头开场，并保持稳定的视线关系。",
+          "purpose": "让后续单人镜头在空间关系和人物关系上都清楚可读。",
+          "ablation_failure": "开场就用彼此孤立的脸部特写，会隐藏人物关系。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "第一次发言要简短，其具体含义只由新创实例决定。",
+          "purpose": "在不臆造来源作品含义的前提下，建立清晰明确的预期。",
+          "ablation_failure": "多轮铺垫发言会模糊笑点归属，并削弱关键停顿。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在两轮可见发言之间保留一次清楚可辨的停顿。",
+          "purpose": "在不臆造来源作品含义的前提下，建立清晰可感的节奏间隔。",
+          "ablation_failure": "第二轮发言若立即接上，就会消除清楚可见的节奏反差。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "第二次发言同样简短，动作尽量少；其具体含义是可替换的新创实例变量。",
+          "purpose": "保留可见的轮流结构，同时允许新内容。",
+          "ablation_failure": "夸张表演或增加台词，会把这段克制的对话变成小品式桥段拼盘。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以第一个角色的沉默反应结束，没有额外的说话回合。",
+          "purpose": "让最终可见反应完成这套节奏模式。",
+          "ablation_failure": "增加发言轮次会削弱最终反应镜头的停留效果。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "Friends",
+        "乔伊·崔比亚尼",
+        "钱德勒·宾",
+        "Central Perk",
+        "来源作品中的对白和服装"
+      ],
+      "instantiations": [
+        {
+          "concept": "两名原创夜间警卫坐在博物馆休息室里。一人问大理石雕像是否会眨眼；停顿后，另一人回答：“只有当你把目光移开时。”第一个警卫默默转头看向黑暗的画廊。",
+          "prompt_seed": "两名原创夜间警卫坐在博物馆休息室里。一人问大理石雕像是否会眨眼；停顿后，另一人回答：“只有当你把目光移开时。”第一个警卫默默转头看向黑暗的画廊。"
+        },
+        {
+          "concept": "两位灯塔看守人一起喝茶。一人问雾号会不会感到孤独；清楚停顿后，另一人回答：“它在召唤所有人。”第一名看守人默默停止搅拌。",
+          "prompt_seed": "两位灯塔看守人一起喝茶。一人问雾号会不会感到孤独；清楚停顿后，另一人回答：“它在召唤所有人。”第一名看守人默默停止搅拌。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "开场就用彼此孤立的脸部特写，会隐藏人物关系。",
+          "repair": "以中性双人镜头开始，保持眼神线稳定。"
+        },
+        {
+          "failure": "多轮铺垫发言会模糊笑点归属，并削弱关键停顿。",
+          "repair": "第一次发言要简短，其具体含义只由新创实例决定。"
+        },
+        {
+          "failure": "立即进行第二次发言段落可消除可见的时间对比。",
+          "repair": "在两个可见发言段落之间保持一个清晰可辨的停顿。"
+        },
+        {
+          "failure": "夸张表演或增加台词，会把这段克制的对话变成小品式桥段拼盘。",
+          "repair": "第二次发言同样简短，动作尽量少；其具体含义是可替换的新创实例变量。"
+        },
+        {
+          "failure": "增加发言回合会削弱最终反应镜头的停留效果。",
+          "repair": "以第一个角色的无声反应结束，不添加额外发言段落。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两名原创夜间警卫坐在博物馆休息室里。一人问大理石雕像是否会眨眼；停顿后，另一人回答：“只有当你把目光移开时。”第一个警卫默默转头看向黑暗的画廊。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "两位灯塔看守人一起喝茶。一人问雾号会不会感到孤独；清楚停顿后，另一人回答：“它在召唤所有人。”第一名看守人默默停止搅拌。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

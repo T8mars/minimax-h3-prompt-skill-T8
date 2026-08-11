@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mayz1169-2086430481072218307-browser-2086430481072218307-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "3ffadaa1331266c2ba91ddfa217ae2c0fd4bae4d5c4a6d1eca6a7d21b1feac34",
+    "creative_dna_sha256": "113fd00fde224bfc9fee36719f6492a933f9abd2df5c4e5127bac6a9eb8890e0"
+  },
+  "content": {
+    "title": "平面重组｜纸艺无障碍示例",
+    "summary": "同一平面重组机制的纸艺无障碍说明变体；用于扩展证据，不新增下拉选项。",
+    "quick_start": {
+      "input_format": "单一纸艺母题 + 稳定人物剪影 + 4段状态重组 + 高密验证 + 路线徽记收束",
+      "recommended_input": "以折纸坡道为母题，轮椅使用者剪影保持稳定；四段纸艺依次建立入口、三种通行状态、高密验证和受阻平台，最终折出坡道并收束为路线徽记。",
+      "required_anchors": [
+        "复用平面重组模板而非新模板",
+        "四段纸艺节奏",
+        "人物剪影稳定",
+        "高密验证后用同一图形族收束"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一平面重组机制的纸艺无障碍说明变体；用于扩展证据，不新增下拉选项。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "围绕一个主导的几何图案和一个稳定的主角剪影构建一个平面海报风格的世界。通过棱角分明的裁切、图表、负空间和关键状态反复打破并重构布局；在短暂的对比操作画面之前达到信息密度的高峰，然后将已建立的图形系列整合为一个原创的收束系统。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "立即建立一个主导几何母题和稳定的主角轮廓。",
+          "purpose": "为以后的碎片创建锚点。",
+          "ablation_failure": "如果没有锚点，结果就会变成随机拼贴。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在图形平面变换时保持空间行为平坦。",
+          "purpose": "保护编辑动态图形身份。",
+          "ablation_failure": "现实的深度削弱了设计的系统。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用象征性的关键状态而不是连续的现实表演。",
+          "purpose": "让构图带有动感。",
+          "ablation_failure": "完整的编排与图形过渡相竞争。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在进入一个较安静的反差状态之前，把信息密度推到峰值。",
+          "purpose": "创造加速度和清晰可辨的呼吸。",
+          "ablation_failure": "均匀的密度消除了节奏。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "只把已经建立的图形家族收束到最终状态。",
+          "purpose": "将蒙太奇的能量转化为结束。",
+          "ablation_failure": "无关的标志或淡出无法完成既有图形系统的收束。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份保持稳定的原创主体或系统。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一种在可数因果阶段发生变化的可见变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的行为规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的物理或图形结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "短发女子挥舞着长刀",
+        "红黑白城市海报调色板",
+        "红色圆环内戴宽边帽的对立人物",
+        "斩击蒙太奇及完全相同的最终圆盘构图"
+      ],
+      "instantiations": [
+        {
+          "concept": "触感剪纸无障碍讲解片以折叠走廊母题和疏散椅轮廓为中心，重建铰接平面图状态，在空置封锁平台上短暂停顿，再把既有纸条折叠成无障碍路线徽章。",
+          "prompt_seed": "具有铰接平面过渡和四部分信息节奏的剪纸无障碍路线系统。"
+        },
+        {
+          "concept": "模拟音乐音序器标识以打孔光盘图案和机械触针轮廓为中心，重建节奏通道和静音状态，在空的锁定凹槽上暂停，最终收束成可播放的循环标记。",
+          "prompt_seed": "平面模拟音乐系统由材质打孔模式而不是环境贴图驱动。"
+        },
+        {
+          "concept": "编织气象卡以等压线织纹和传感器风筝轮廓为中心，重新排列风况，在空白的风暴闩位置暂停，并将已建立的纤维打结成路线预报印记。",
+          "prompt_seed": "编织式平面动态图形天气标识，以纱线张力和非数字对比状态推进。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有锚点，结果就会变成随机拼贴。",
+          "repair": "立即建立一个主导几何母题和稳定的主角轮廓。"
+        },
+        {
+          "failure": "现实的深度削弱了设计的系统。",
+          "repair": "在图形平面变换时保持空间行为平坦。"
+        },
+        {
+          "failure": "完整的编排与图形过渡相竞争。",
+          "repair": "使用象征性的关键状态而不是连续的现实表演。"
+        },
+        {
+          "failure": "均匀的密度消除了节奏。",
+          "repair": "在进入一个较安静的反差状态之前，把信息密度推到峰值。"
+        },
+        {
+          "failure": "无关的标志或淡出无法完成既有图形系统的收束。",
+          "repair": "只把已经建立的图形家族收束到最终状态。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "触感剪纸无障碍讲解片以折叠走廊母题和疏散椅轮廓为中心，重建铰接平面图状态，在空置封锁平台上短暂停顿，再把既有纸条折叠成无障碍路线徽章。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "模拟音乐音序器标识以打孔光盘图案和机械触针轮廓为中心，重建节奏通道和静音状态，在空的锁定凹槽上暂停，最终收束成可播放的循环标记。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

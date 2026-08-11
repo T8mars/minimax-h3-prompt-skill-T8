@@ -1,0 +1,215 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "8a67daeedef24ab7764da3d52e5dfacd8544f8537abc8b3639d219de486b7aea",
+    "creative_dna_sha256": "f48c52a54bed092d46e6e4dae080121b6d5197d28415965f8ff59571e924c0ba"
+  },
+  "content": {
+    "title": "Character Journey | Dilemma to Goal",
+    "summary": "Let the character start from a visible dilemma, go through continuous physical transitions, reach the goal and complete the action.",
+    "quick_start": {
+      "input_format": "Character dilemma + visible target space + 3 physical transitions + completion action after arrival",
+      "recommended_input": "The tired clockmaker is trapped in the underground maintenance room, with the clock tower in the distance as his target; he passes through narrow pipes, lifting platforms and weather-stricken roofs, and restarts the clock after arriving.",
+      "required_anchors": [
+        "The starting point dilemma is clear",
+        "The target space is visible or understandable in advance",
+        "At least three consecutive physical transitions",
+        "Complete the target action upon arrival"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Let the character start from a visible dilemma, go through continuous physical transitions, reach the goal and complete the action.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A recognizable person remains the emotional coordinate while an externally observed journey moves from constrained work pressure into an expanded goal space. Context is revealed through material interactions and camera parallax rather than direct exposition; scale and light increase toward the transition, and a final task-completing interaction—not a gesture to the lens—turns anticipation into earned arrival. Shot count, camera carrier and reveal order are variable.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Keep one recognizable person emotionally legible across changing spaces, using face, posture or task behavior as the recurring anchor rather than requiring a selfie.",
+          "purpose": "Preserves human stakes and orientation while allowing external, profile, wide or body-mounted camera implementations.",
+          "ablation_failure": "Without a recurring human coordinate, the route becomes anonymous location coverage; requiring a close selfie would make the template surface-specific.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Make every contextual reveal originate from a physical interaction—moving a cart, opening geometry, passing an obstacle or handing off an object—and let the camera discover it through parallax, reframing or occlusion.",
+          "purpose": "Makes camera change causal and informative without prescribing wrist turns or a return-to-face pattern.",
+          "ablation_failure": "Unmotivated coverage feels decorative; copying the same turn-and-recover move makes new instances mechanically identical.",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "obs-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Create one legible transition from compressed effort to expanded possibility using at least two of scale, light, depth, sound or traffic flow; the transition may occur through a door, lift, ramp, curtain, bend or temporal match.",
+          "purpose": "Gives the physical route a visible emotional direction.",
+          "ablation_failure": "If every space has equal brightness and scale, arrival has no visual payoff.",
+          "evidence_ids": [
+            "beat-04",
+            "beat-05",
+            "obs-07"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Choose a capture grammar appropriate to each new world and keep its rules consistent; controlled documentary texture may come from parallax, shallow focus, operator lag or environmental occlusion, not a fixed bundle of DV defects.",
+          "purpose": "Protects immediacy while allowing polished 35mm, shoulder documentary, fixed observational or body-mounted variants.",
+          "ablation_failure": "A copied artifact bundle reveals the source; random defects or identity drift destroy route comprehension.",
+          "evidence_ids": [
+            "obs-04",
+            "obs-05",
+            "obs-14"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Resolve arrival through one task-completing physical interaction between the person and the goal environment, while their emotional state remains readable without addressing the lens.",
+          "purpose": "Closes spatial and emotional questions through consequence rather than a copied reaction gesture.",
+          "ablation_failure": "A generic smile or hand sign does not prove arrival; a destination-only cut loses the human cost that made it meaningful.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-12"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "traveler",
+          "constraint": "One original adult subject with stable identity and a clear reason to move."
+        },
+        {
+          "name": "prep_space",
+          "constraint": "A compressed, imperfectly lit working area with readable practical obstacles."
+        },
+        {
+          "name": "context_reveals",
+          "constraint": "One to three physically motivated discoveries whose order and camera implementation change with the instance."
+        },
+        {
+          "name": "material_handoff",
+          "constraint": "An object, obstacle or collaborator changes the route or objective; avoid mirror-based self-checks."
+        },
+        {
+          "name": "goal_threshold",
+          "constraint": "A brighter, wider destination visibly different from the prep space."
+        },
+        {
+          "name": "capture_texture",
+          "constraint": "Select an instance-specific external, fixed, body-mounted or handheld grammar; do not reuse a bundled source artifact signature."
+        },
+        {
+          "name": "resolution_action",
+          "constraint": "A material action that proves the person has entered or completed the goal, with no direct-to-camera hand sign."
+        },
+        {
+          "name": "shot_structure",
+          "constraint": "Choose three to six events with an order justified by the new task; do not map source beats one-to-one."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source face, ethnicity cues, hair, earrings and stage wardrobe",
+        "concert backstage corridor, dressing mirror, curtain and exact stage-light composition",
+        "exact dialogue, countdown, finger-heart gesture and performer premise",
+        "creator-specific DV artifact bundle, wrist-turn/return pattern, mirror readiness check or shot timing copied beat for beat"
+      ],
+      "instantiations": [
+        {
+          "concept": "An original ceramic artist is filmed by an external stabilized 35mm camera while pushing a padded kiln cart through a cramped workshop. Shelves create parallax, assistants open a canvas loading bay, and the route expands into a dawn street market where she unwraps one still-warm bowl for the first waiting buyer.",
+          "prompt_seed": "Four-event external documentary journey: kiln-cart pressure, shelf parallax, loading-bay expansion, first-buyer material payoff."
+        },
+        {
+          "concept": "A telescope technician crosses a narrow daytime maintenance gantry in three long lateral shots, passing a suspended mirror segment and a safety-team handoff before the observatory dome opens to a star-filled night created by a time-match; she seats the final instrument and watches the first signal arrive.",
+          "prompt_seed": "Three-event lateral observatory journey using object handoff, dome-scale expansion and a data-arrival payoff."
+        },
+        {
+          "concept": "A cave-rescue medic is observed from fixed lamps and one body-mounted side camera as she guides a stretcher through a constricted bend, exchanges an oxygen pack at a junction, then emerges into a wide underground base where the patient is transferred to a lit treatment platform.",
+          "prompt_seed": "Variable-camera rescue passage with constrained geometry, equipment handoff and treatment-platform resolution."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Camera changes occur without a material cause or simply imitate turn-and-return selfie coverage.",
+          "repair": "Tie each reframe to an object, obstacle, collaborator or changed route; vary carrier and shot count with the instance."
+        },
+        {
+          "failure": "The destination appears too early.",
+          "repair": "Hide it behind real geometry and reserve the brightest, widest composition for the final third."
+        },
+        {
+          "failure": "A new concept preserves the source's entire MiniDV defect signature.",
+          "repair": "Select a different coherent capture grammar and derive texture from the new environment while locking identity and route direction."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An original ceramic artist is filmed by an external stabilized 35mm camera while pushing a padded kiln cart through a cramped workshop. Shelves create parallax, assistants open a canvas loading bay, and the route expands into a dawn street market where she unwraps one still-warm bowl for the first waiting buyer.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "traveler",
+            "prep_space",
+            "context_reveals",
+            "material_handoff",
+            "goal_threshold",
+            "resolution_action",
+            "shot_structure"
+          ]
+        },
+        {
+          "concept": "A telescope technician crosses a narrow daytime maintenance gantry in three long lateral shots, passing a suspended mirror segment and a safety-team handoff before the observatory dome opens to a star-filled night created by a time-match; she seats the final instrument and watches the first signal arrive.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "traveler",
+            "prep_space",
+            "context_reveals",
+            "material_handoff",
+            "goal_threshold",
+            "capture_texture",
+            "resolution_action",
+            "shot_structure"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

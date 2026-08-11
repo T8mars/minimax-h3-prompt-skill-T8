@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techhalla-2081333381401334006-browser-2081333381401334006-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "07d9d78955a36daa5097ed1e8bed839f8f96ea99cb68e4aa656d3fae37e3a74f",
+    "creative_dna_sha256": "1adf2d6165d0387072f04db1822696f41a8e243d0c7ad46eee460a4a7e4c36f8"
+  },
+  "content": {
+    "title": "Documentary Follow | Chance Encounter and Departure",
+    "summary": "Follow the same character laterally out of a narrow starting space while the camera drifts back to reveal a larger route. Allow one chance encounter and one restrained response, then let the character continue the departure.",
+    "quick_start": {
+      "input_format": "Continuous lateral follow + narrow starting point + route revealed in motion + one chance encounter + one restrained response + continued departure",
+      "recommended_input": "The night baker walks from the narrow service aisle to the covered ferry terminal, with the camera drifting from the side to behind him; a homing pigeon lands in front of his path, he only nods and takes half a step sideways, then continues past the camera toward the service door.",
+      "required_anchors": [
+        "First follow with a side shot, then reveal the larger route",
+        "Characters continue walking during camera transitions",
+        "Only one chance encounter occurs throughout the entire film",
+        "Respond with restraint and do not stop the course",
+        "At the end, characters continue to pass by or move away from the camera"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The same character is followed from the side as he leaves a narrow space, and the camera floats behind him to reveal a larger route; only one chance encounter and one restrained response occurs, and the character then continues to leave.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Follow one subject through a real public route without stopping the world for coverage. Start in side profile, let the camera drift behind as the space opens, allow one incidental person or event to cross the route, capture a single restrained acknowledgment, then continue past the camera so the encounter remains a lived moment rather than a staged climax.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Begin with a side-profile follow before revealing the larger route.",
+          "purpose": "Creates a spatial discovery rather than an establishing postcard.",
+          "ablation_failure": "Starting wide removes the observer's gradual reveal.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Keep the subject walking through the camera transition.",
+          "purpose": "Preserves lived continuity.",
+          "ablation_failure": "Stopping for coverage makes the passage feel staged.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Allow exactly one incidental crossing or encounter to enter the established route.",
+          "purpose": "Provides a small narrative event.",
+          "ablation_failure": "Multiple incidents turn observation into montage.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Use one restrained acknowledgment without halting the route.",
+          "purpose": "Gives the event emotional weight while staying naturalistic.",
+          "ablation_failure": "A large reaction becomes a climax the scene has not earned.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with continued movement past or away from camera.",
+          "purpose": "Keeps the encounter embedded in ordinary life.",
+          "ablation_failure": "A posed final look converts the piece into a portrait.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source woman",
+        "source flower shop and public square",
+        "source children",
+        "source wardrobe and exact route"
+      ],
+      "instantiations": [
+        {
+          "concept": "A night-shift baker exits a narrow service corridor onto a covered ferry pier; a courier pigeon lands across the route, the baker shortens one step, nods and continues as the bird lifts away.",
+          "prompt_seed": "A night-shift baker exits a narrow service corridor onto a covered ferry pier; a courier pigeon lands across the route, the baker shortens one step, nods and continues as the bird lifts away."
+        },
+        {
+          "concept": "A greenhouse technician leaves a humid propagation aisle for an open loading canopy; one loose seed envelope skims across the route, the technician catches and clips it to a rail, then continues.",
+          "prompt_seed": "A greenhouse technician leaves a humid propagation aisle for an open loading canopy; one loose seed envelope skims across the route, the technician catches and clips it to a rail, then continues."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Starting wide removes the observer's gradual reveal.",
+          "repair": "Begin with a side-profile follow before revealing the larger route."
+        },
+        {
+          "failure": "Stopping for coverage makes the passage feel staged.",
+          "repair": "Keep the subject walking through the camera transition."
+        },
+        {
+          "failure": "Multiple incidents turn observation into montage.",
+          "repair": "Allow exactly one incidental crossing or encounter to enter the established route."
+        },
+        {
+          "failure": "A large reaction becomes a climax the scene has not earned.",
+          "repair": "Use one restrained acknowledgment without halting the route."
+        },
+        {
+          "failure": "A posed final look converts the piece into a portrait.",
+          "repair": "End with continued movement past or away from camera."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A night-shift baker exits a narrow service corridor onto a covered ferry pier; a courier pigeon lands across the route, the baker shortens one step, nods and continues as the bird lifts away.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A greenhouse technician leaves a humid propagation aisle for an open loading canopy; one loose seed envelope skims across the route, the technician catches and clips it to a rail, then continues.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

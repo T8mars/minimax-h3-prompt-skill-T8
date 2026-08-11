@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "655fdf51ddf9cf2b089445ae023fb4e287353091f6ede0832f60425281534d68",
+    "creative_dna_sha256": "8ec5bc37cf88c43cdf9f7a4b069bf117dca7eb1f6056fad3349ccc065c85d8e7"
+  },
+  "content": {
+    "title": "Future Evidence | Anomalies Enter Reality",
+    "summary": "In a stable reality, the same evidence carrier is continuously updated, and finally, abnormal content enters reality with a delay.",
+    "quick_start": {
+      "input_format": "Bounded evidence carrier + stable reality + 2 consecutive updates of the same variable + delayed boundary crossing + one reaction",
+      "recommended_input": "The brass leaf scanner in the greenhouse spits out two status notes in succession, the second showing frost lines that have not yet appeared; after a brief pause, the frost lines spread from the paper surface to the real leaves, and the horticulturist only takes one step back.",
+      "required_anchors": [
+        "The reality baseline is stable",
+        "The same evidence carrier must be updated at least twice",
+        "The anomaly appears first within the evidence",
+        "The boundary-crossing event is delayed and produces only one restrained reaction"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "In stable reality, the same evidence carrier is continuously updated, and finally the abnormal content enters reality delayed.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A bounded evidence carrier first contradicts a stable live scene, then updates the same spatial variable in two increasingly urgent states before the represented change crosses its boundary into shared reality. Repeated verification, invariant geometry and delayed performance make the transition legible; the carrier, genre, phenomenon, location, camera grammar and emotional payoff remain variable.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish a live baseline and one bounded evidence carrier that disagree about the same place, object or state.",
+          "purpose": "Creates a falsifiable question instead of arbitrary surreal imagery.",
+          "ablation_failure": "Without a clear baseline or shared referent, the audience cannot tell whether the evidence is predictive, stale, mistaken or merely decorative.",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Update one countable spatial, temporal or material variable inside the evidence at least twice while preserving recognizable anchors.",
+          "purpose": "Turns a single surprise into an escalation ladder whose direction can be read instantly.",
+          "ablation_failure": "One unexplained change is only a twist; changing every detail at once destroys causal comparison.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-10",
+            "obs-15"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Keep the live scene stable long enough for the evidence mismatch to be checked before any physical crossing occurs.",
+          "purpose": "Protects negative space and prevents the payoff from arriving before the rule is understood.",
+          "ablation_failure": "If reality changes immediately, the evidence carrier loses its special role and the clip becomes ordinary transformation VFX.",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "obs-09"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Cross the evidence boundary only after the escalation has reached its nearest or most consequential state, and show one unambiguous physical consequence.",
+          "purpose": "Converts information tension into a concrete payoff without requiring a copied monster or attack.",
+          "ablation_failure": "No crossing leaves the story unresolved; an early crossing removes the ladder; multiple simultaneous consequences weaken the proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-10"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Let the subject's verification and delayed recognition follow the evidence hierarchy rather than performing fear or wonder before the audience can see the cause.",
+          "purpose": "Synchronizes performance with comprehension and keeps the carrier as the narrative engine.",
+          "ablation_failure": "Premature reaction feels melodramatic and tells the audience what to feel before the visual rule is legible.",
+          "evidence_ids": [
+            "beat-02",
+            "beat-04",
+            "obs-12"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "live_baseline",
+          "constraint": "One stable place or system with clear anchors that can be checked repeatedly."
+        },
+        {
+          "name": "evidence_carrier",
+          "constraint": "A bounded sensor, map, recording, material sample or display; it must not reuse the source camera or instant photograph."
+        },
+        {
+          "name": "advancing_variable",
+          "constraint": "One countable distance, quantity, color, crack, waveform or growth state that changes twice."
+        },
+        {
+          "name": "verification_action",
+          "constraint": "A repeated human or mechanical check that compares evidence with the live baseline."
+        },
+        {
+          "name": "boundary_crossing",
+          "constraint": "One physically legible moment when the represented state affects the live scene."
+        },
+        {
+          "name": "emotional_register",
+          "constraint": "Horror, wonder, comedy, tenderness or technical urgency derived from the new concept."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "Original coverage whose information order differs from table-to-corridor-to-print-to-eye close-ups."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "A designed hierarchy of carrier cues, update cues, brief reset and physical payoff."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "old instant camera, developing print, abandoned photo room, broken window and nested dark corridor",
+        "young male source appearance, tall shadow person, over-shoulder corridor reveal and extreme terrified-eye ending",
+        "source cold blue-black palette, exact flash rhythm, exact cut boundaries and exact approach distances",
+        "phrases and concepts such as future camera, photograph the future, instant photograph and tall shadow figure"
+      ],
+      "instantiations": [
+        {
+          "concept": "In a moonlit botanical greenhouse, a caretaker uses a brass leaf scanner whose narrow paper strip shows a luminous flowering wave advancing through an otherwise dark planting bed; after two scans, the real bloom travels through soil and opens in her palm.",
+          "prompt_seed": "Magical-realist greenhouse proof ladder: stable dark bed, two advancing scanner-strip updates, then one physical flowering wave and a quiet wonder hold."
+        },
+        {
+          "concept": "At a remote weather station, a mechanical sky plotter draws a colored pressure ribbon approaching the building while the clear horizon remains unchanged; successive plots tighten the curve until real wind and polarized light sweep through the instruments.",
+          "prompt_seed": "Scientific suspense with paper weather plots, stable horizon checks, two pressure advances and one atmospheric boundary crossing."
+        },
+        {
+          "concept": "In a ceramic studio, an acoustic kiln tile emits two progressively closer resonance patterns on a bowl of water before the invisible vibration reaches the workbench and aligns scattered clay beads into one perfect ring.",
+          "prompt_seed": "Tactile studio mystery using sound evidence, water patterns, repeated checks and a physical geometric payoff."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "The evidence carrier shows random new imagery on every check.",
+          "repair": "Lock shared anchors and change only one countable variable across the update ladder."
+        },
+        {
+          "failure": "The physical payoff starts before the second evidence update.",
+          "repair": "Hold the live baseline stable until the audience has compared at least two carrier states."
+        },
+        {
+          "failure": "The new instance is merely a different monster inside a different photograph.",
+          "repair": "Change the carrier modality, genre, location, camera structure, emotional register and boundary-crossing physics together."
+        },
+        {
+          "failure": "Reaction acting overwhelms the visual proof.",
+          "repair": "Delay the strongest performance until the crossing is visible and finish on one readable consequence."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "In a moonlit botanical greenhouse, a caretaker uses a brass leaf scanner whose narrow paper strip shows a luminous flowering wave advancing through an otherwise dark planting bed; after two scans, the real bloom travels through soil and opens in her palm.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "live_baseline",
+            "evidence_carrier",
+            "advancing_variable",
+            "verification_action",
+            "boundary_crossing",
+            "emotional_register",
+            "camera_grammar",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "At a remote weather station, a mechanical sky plotter draws a colored pressure ribbon approaching the building while the clear horizon remains unchanged; successive plots tighten the curve until real wind and polarized light sweep through the instruments.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "live_baseline",
+            "evidence_carrier",
+            "advancing_variable",
+            "verification_action",
+            "boundary_crossing",
+            "emotional_register",
+            "camera_grammar",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

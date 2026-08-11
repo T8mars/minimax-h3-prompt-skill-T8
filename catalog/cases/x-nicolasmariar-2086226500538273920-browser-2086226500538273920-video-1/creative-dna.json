@@ -1,6 +1,6 @@
 {
   "complexity": "moderate",
-  "mechanism": "Use one familiar inert object at the opening to calibrate a miniature world immediately. Let the small actors, tools, motion, shadows and atmosphere then sustain a coherent routine while the calibrator remains passive. Later, introduce one different external execution object exactly once, let it change one local state, and hold the intervention, affected object and internal reaction together so the story shifts from scale observation to outside control.",
+  "mechanism": "Use one familiar inert object at the opening to calibrate a miniature world immediately. Let the small actors, tools, motion, shadows and atmosphere then sustain a coherent routine while the calibrator remains passive. Later, introduce one different external intervention tool exactly once, let it change one local state, and hold the intervention, affected object and internal reaction together so the story shifts from scale observation to outside control.",
   "invariants": [
     {
       "id": "inv-01",
@@ -37,7 +37,7 @@
     },
     {
       "id": "inv-04",
-      "rule": "Introduce one different external execution object only once in continuous entry.",
+      "rule": "Introduce one different external intervention tool exactly once in one continuous action.",
       "purpose": "Creates a clear observer-to-controller transition.",
       "ablation_failure": "Repeated tools or cuts turn the event into ordinary handling.",
       "evidence_ids": [
@@ -123,7 +123,7 @@
     },
     {
       "failure": "Repeated tools or cuts turn the event into ordinary handling.",
-      "repair": "Introduce one different external execution object only once in continuous entry."
+      "repair": "Introduce one different external intervention tool exactly once in one continuous action."
     },
     {
       "failure": "A hovering tool without consequence does not alter the relationship.",

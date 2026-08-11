@@ -3,17 +3,30 @@ const os = require("node:os");
 const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
 
+async function waitForClipboard(electronApp, predicate, message, timeoutMs = 3000) {
+  const deadline = Date.now() + timeoutMs;
+  let value = "";
+  do {
+    value = await electronApp.evaluate(({ clipboard }) => clipboard.readText());
+    if (predicate(value)) return value;
+    await new Promise((resolve) => setTimeout(resolve, 25));
+  } while (Date.now() < deadline);
+  assert.fail(`${message}; clipboard contained ${JSON.stringify(value.slice(0, 120))}`);
+}
+
 async function run() {
   const appDir = path.resolve(__dirname, "..");
   const screenshotStem = path.join(os.tmpdir(), `t8-prompt-library-${Date.now()}`);
   const screenshotPath = `${screenshotStem}-catalog.png`;
   const detailScreenshotPath = `${screenshotStem}-detail.png`;
+  const detailZhScreenshotPath = `${screenshotStem}-detail-zh.png`;
   const compareScreenshotPath = `${screenshotStem}-compare.png`;
   const officialScreenshotPath = `${screenshotStem}-official-skills.png`;
   const officialDetailScreenshotPath = `${screenshotStem}-official-skill-detail.png`;
   const communityScreenshotPath = `${screenshotStem}-community-skills.png`;
   const communityDetailScreenshotPath = `${screenshotStem}-community-skill-detail.png`;
   const communitySecondDetailScreenshotPath = `${screenshotStem}-community-skill-detail-2.png`;
+  const responsiveDetailScreenshotPath = `${screenshotStem}-responsive-detail.png`;
   const packagedExecutable = process.env.T8_E2E_EXECUTABLE ? path.resolve(process.env.T8_E2E_EXECUTABLE) : null;
   const electronApp = await electron.launch({
     executablePath: packagedExecutable || require("electron"),
@@ -29,6 +42,8 @@ async function run() {
   try {
     const page = await electronApp.firstWindow();
     await page.setViewportSize({ width: 1280, height: 720 });
+    await page.evaluate(() => localStorage.removeItem("t8-display-locale"));
+    await page.reload();
     const rendererErrors = [];
     page.on("pageerror", (error) => rendererErrors.push(error.message));
     page.on("console", (message) => {
@@ -38,11 +53,24 @@ async function run() {
     const allCount = await page.locator(".case-card").count();
     assert.equal(allCount, 60, "default all-content view must render 49 cases + 9 official Skills + 2 non-official Skills");
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
+    assert.equal(await page.locator("#global-locale-en").getAttribute("aria-pressed"), "true", "English must be the first-run default");
     assert.equal(await page.locator("#stat-cases").textContent(), "60");
     assert.equal(await page.locator("#stat-videos").textContent(), "60", "every item in the aggregate view must have a local preview");
     assert.equal(await page.locator("#stat-prompts").textContent(), "120", "all 60 items must expose their declared model surfaces");
     assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "official Skills must use local GIF previews in the aggregate view");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "aggregate view must not expose case-only comparison controls");
+    await page.locator("#global-locale-zh").click();
+    await page.reload();
+    await page.waitForSelector(".case-card", { timeout: 15000 });
+    assert.equal(await page.locator("#global-locale-zh").getAttribute("aria-pressed"), "true", "selected locale must persist across reload");
+    await page.locator("#search").fill("First-Person Passage");
+    await page.waitForFunction(() => document.querySelectorAll(".case-card").length > 0);
+    assert.ok(await page.locator(".case-card").count() >= 1, "Chinese display mode must still search English sidecars");
+    await page.locator("#search").fill("空气净化");
+    await page.waitForFunction(() => document.querySelectorAll(".case-card").length > 0);
+    assert.ok(await page.locator(".case-card").count() >= 1, "Chinese search must find Chinese sidecar content");
+    await page.locator("#search").fill("");
+    await page.locator("#global-locale-en").click();
     await page.screenshot({ path: screenshotPath, animations: "disabled" });
 
     await page.locator("#view-cases").click();
@@ -50,6 +78,8 @@ async function run() {
     const caseCount = await page.locator(".case-card").count();
     assert.equal(caseCount, 49, "viewer must render all 49 public cases");
     assert.equal(await page.locator("#stat-videos").textContent(), "49", "development media pack must bind 49 case MP4s");
+    await page.locator("#platform-filter").selectOption("platform:x");
+    assert.ok(await page.locator(".case-card").count() > 10, "stable platform filter must retain the X case set");
 
     await page.locator(".case-card").first().click();
     await page.waitForSelector("#case-dialog[open]");
@@ -110,6 +140,59 @@ async function run() {
     assert.ok(Math.abs(videoState.soughtTime - videoState.seekTarget) < 0.75, "seeking to the middle must succeed");
     assert.ok(videoState.playedTime > videoState.soughtTime + 0.15, "video must continue playing after a range seek");
     assert.ok((await page.locator("#prompt-text").textContent()).length > 100, "model prompt must render");
+    assert.equal(await page.locator("#detail-locale-en").getAttribute("aria-pressed"), "true");
+    const englishTitle = await page.locator("#detail-title").textContent();
+    assert.doesNotMatch(englishTitle, /[\u4E00-\u9FFF]/u, "English detail title must not fall back to Chinese");
+    assert.equal(await page.locator("#quick-start .quick-card").count(), 6, "quick start must expose six reviewed fields");
+    assert.equal(await page.locator("#tab-h3").getAttribute("aria-controls"), "prompt-panel");
+    assert.equal(await page.locator("#prompt-panel").getAttribute("role"), "tabpanel");
+    await page.locator("#tab-h3").focus();
+    await page.keyboard.press("ArrowRight");
+    assert.equal(await page.locator("#tab-seedance").getAttribute("aria-selected"), "true", "ArrowRight must activate the next model tab");
+    assert.equal(await page.evaluate(() => document.activeElement?.id), "tab-seedance", "keyboard activation must move focus with the active tab");
+    assert.equal(await page.locator("#prompt-panel").getAttribute("aria-labelledby"), "tab-seedance");
+    await page.keyboard.press("ArrowLeft");
+    assert.equal(await page.locator("#tab-h3").getAttribute("aria-selected"), "true", "ArrowLeft must return to the previous model tab");
+    assert.equal(await page.locator("#creative-dna .dna-item .copy-secondary").count(), await page.locator("#creative-dna .dna-item").count(), "every Creative DNA section needs its own copy button");
+    await page.locator("#copy-overview").click();
+    await waitForClipboard(electronApp, (value) => /^# .+\n/u.test(value), "overview copy must be structured Markdown");
+    await page.locator("#copy-source-link").click();
+    await waitForClipboard(electronApp, (value) => /^https:\/\/(?:x\.com|www\.reddit\.com)\//u.test(value), "source copy must preserve the exact HTTPS post URL");
+    await page.locator("#copy-quick-start").click();
+    await waitForClipboard(electronApp, (value) => /## Quick start[\s\S]+## Recommended input format/u.test(value), "quick-start copy must include its reviewed fields");
+    await page.locator("#copy-dna").click();
+    await waitForClipboard(electronApp, (value) => /## Creative DNA[\s\S]+## Core mechanism/u.test(value), "Creative DNA copy must include all top-level sections");
+    await page.locator("#creative-dna .dna-item .copy-secondary").first().click();
+    await waitForClipboard(electronApp, (value) => /^## /u.test(value), "individual DNA cards must copy a labeled Markdown section");
+    await page.locator("#copy-validation").click();
+    await waitForClipboard(electronApp, (value) => /## Validation[\s\S]+Template ID/u.test(value), "validation copy must include delivery identity");
+    const promptBeforeCopy = await page.locator("#prompt-text").textContent();
+    await page.locator("#copy-prompt").click();
+    await waitForClipboard(electronApp, (value) => value === promptBeforeCopy, "prompt copy must preserve canonical prompt bytes");
+    const timeBeforeLocale = await video.evaluate((node) => node.currentTime);
+    await page.locator("#detail-locale-zh").click();
+    assert.equal(await page.locator("#detail-locale-zh").getAttribute("aria-pressed"), "true");
+    assert.match(await page.locator("#detail-title").textContent(), /[\u4E00-\u9FFF]/u, "Chinese detail title must be reviewed Chinese content");
+    assert.equal(await page.locator("#prompt-text").textContent(), promptBeforeCopy, "display locale must never translate or alter canonical prompt bytes");
+    assert.ok(Math.abs((await video.evaluate((node) => node.currentTime)) - timeBeforeLocale) < 0.05, "locale switch must preserve media time");
+    assert.equal(await page.locator("#tab-h3").getAttribute("aria-selected"), "true", "locale switch must preserve the active model tab");
+    assert.equal(await page.locator("#platform-filter").inputValue(), "platform:x", "locale switch must preserve stable filter values");
+    await page.locator("#detail-validation").scrollIntoViewIfNeeded();
+    await page.waitForTimeout(80);
+    const stickyGeometry = await page.evaluate(() => {
+      const header = document.querySelector("#case-dialog .dialog-header").getBoundingClientRect();
+      const nav = document.querySelector("#detail-nav").getBoundingClientRect();
+      return { headerBottom: header.bottom, navTop: nav.top };
+    });
+    assert.ok(stickyGeometry.navTop >= stickyGeometry.headerBottom - 2, `detail navigation must stay below the localized sticky header (${stickyGeometry.navTop} >= ${stickyGeometry.headerBottom})`);
+    await page.screenshot({ path: detailZhScreenshotPath, animations: "disabled" });
+    await page.locator("#copy-full-item").click();
+    const fullCopy = await waitForClipboard(electronApp, (value) => /MiniMax H3 \(英文; 规范可执行提示词原文\)/u.test(value), "full-item copy must contain both localized metadata and canonical prompts");
+    assert.match(fullCopy, /MiniMax H3 \(英文; 规范可执行提示词原文\)/u);
+    assert.match(fullCopy, /Seedance 2\.0 \(中文; 规范可执行提示词原文\)/u);
+    assert.match(fullCopy, /## Creative DNA/u);
+    assert.ok(fullCopy.length < 100000, "full-item copy must fit the bounded clipboard contract without truncation");
+    await page.locator("#detail-locale-en").click();
     await page.screenshot({ path: detailScreenshotPath, animations: "disabled" });
 
     await page.keyboard.press("Escape");
@@ -124,6 +207,10 @@ async function run() {
     await page.waitForSelector("#compare-dialog[open]");
     assert.equal(await page.locator(".compare-column").count(), 2);
     assert.ok((await page.locator(".compare-prompt").first().textContent()).length > 100);
+    await page.locator("#compare-tab-h3").focus();
+    await page.keyboard.press("End");
+    assert.equal(await page.locator("#compare-tab-seedance").getAttribute("aria-selected"), "true", "End must activate the final comparison model tab");
+    assert.equal(await page.locator("#compare-grid").getAttribute("aria-labelledby"), "compare-tab-seedance");
     await page.screenshot({ path: compareScreenshotPath, animations: "disabled" });
     await page.keyboard.press("Escape");
     await page.locator("#compare-dialog").waitFor({ state: "hidden" });
@@ -160,7 +247,15 @@ async function run() {
     assert.equal(await page.locator("#detail-media img").count(), 1, "official Skill details must show the local GIF preview");
     assert.match(await page.locator("#detail-media img").getAttribute("src"), /^t8media:\/\/catalog\/official-skills\/previews\//u);
     assert.match(await page.locator("#prompt-text").textContent(), /npx skills add https:\/\/github\.com\/MiniMax-AI\/MiniMax-H3/u);
-    assert.match(await page.locator("#detail-meta").textContent(), /不导入/u);
+    assert.match(await page.locator("#prompt-text").textContent(), /This entry points to the MiniMax-AI/u, "official access metadata must follow the English display default");
+    await page.locator("#detail-locale-zh").click();
+    assert.match(await page.locator("#prompt-text").textContent(), /此条目来自 MiniMax-AI/u, "official access metadata must switch to reviewed Chinese");
+    await page.locator("#detail-locale-en").click();
+    assert.match(await page.locator("#detail-meta").textContent(), /not imported/i);
+    await page.locator("#copy-full-item").click();
+    const officialFullCopy = await waitForClipboard(electronApp, (value) => /npx skills add https:\/\/github\.com\/MiniMax-AI\/MiniMax-H3/u.test(value), "official full copy must include pinned installation metadata");
+    assert.match(officialFullCopy, /npx skills add https:\/\/github\.com\/MiniMax-AI\/MiniMax-H3/u, "official full copy must include pinned installation metadata");
+    assert.match(officialFullCopy, /Seedance 2\.0/u, "official full copy must include the local Seedance companion");
     await page.locator("#tab-seedance").click();
     assert.match(await page.locator("#prompt-text").textContent(), /Seedance/u);
     await page.waitForTimeout(150);
@@ -192,7 +287,7 @@ async function run() {
     assert.ok(Math.abs(communityVideoState.duration - 10.125) < 0.05, "community Skill must expose the complete reference video");
     assert.equal(communityVideoState.muted, false);
     assert.equal(communityVideoState.controls, true);
-    assert.match(await page.locator("#detail-meta").textContent(), /非官方|用户提供/u);
+    assert.match(await page.locator("#detail-meta").textContent(), /Community|User-supplied/i);
     assert.equal(await page.locator("#open-source").isHidden(), true, "missing source URL must not be fabricated");
     assert.match(await page.locator("#prompt-text").textContent(), /subject_definitions:/u);
     await page.locator("#tab-seedance").click();
@@ -217,15 +312,23 @@ async function run() {
     assert.ok(Math.abs(secondCommunityState.duration - 13.396) < 0.05, "second community Skill must expose the complete compatible reference video");
     assert.equal(secondCommunityState.muted, false);
     assert.equal(secondCommunityState.controls, true);
-    assert.match(await page.locator("#detail-meta").textContent(), /非官方|用户提供/u);
+    assert.match(await page.locator("#detail-meta").textContent(), /Community|User-supplied/i);
     assert.equal(await page.locator("#open-source").isHidden(), true, "second community Skill must not fabricate a source URL");
     assert.match(await page.locator("#prompt-text").textContent(), /integrated_multimodal_description:/u);
     await page.locator("#tab-seedance").click();
     assert.match(await page.locator("#prompt-text").textContent(), /镜头1|深海/u);
     await page.screenshot({ path: communitySecondDetailScreenshotPath, animations: "disabled" });
+    await page.setViewportSize({ width: 760, height: 720 });
+    assert.equal(await page.locator("#copy-full-item").isVisible(), true, "full-copy action must remain visible at narrow width");
+    assert.equal(await page.locator("#detail-locale-zh").isVisible(), true, "locale switch must remain visible at narrow width");
+    assert.equal(await page.locator("#quick-start").evaluate((node) => getComputedStyle(node).gridTemplateColumns.split(" ").length), 1, "quick-start cards must collapse to one column");
+    const narrowOverflow = await page.evaluate(() => ({ document: [document.documentElement.scrollWidth, document.documentElement.clientWidth], dialog: [document.querySelector("#case-dialog .dialog-shell").scrollWidth, document.querySelector("#case-dialog .dialog-shell").clientWidth] }));
+    assert.ok(narrowOverflow.document[0] <= narrowOverflow.document[1], `document must not overflow horizontally at 760px (${narrowOverflow.document.join(" > ")})`);
+    assert.ok(narrowOverflow.dialog[0] <= narrowOverflow.dialog[1], `detail dialog must not overflow horizontally at 760px (${narrowOverflow.dialog.join(" > ")})`);
+    await page.screenshot({ path: responsiveDetailScreenshotPath, animations: "disabled" });
     assert.deepEqual(rendererErrors, [], `renderer errors: ${rendererErrors.join(" | ")}`);
 
-    console.log(`PASS Electron runtime; all=${allCount}; cases=${caseCount}; officialSkills=9; communitySkills=2; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath};${communityScreenshotPath};${communityDetailScreenshotPath};${communitySecondDetailScreenshotPath}`);
+    console.log(`PASS Electron runtime; all=${allCount}; cases=${caseCount}; officialSkills=9; communitySkills=2; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${detailZhScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath};${communityScreenshotPath};${communityDetailScreenshotPath};${communitySecondDetailScreenshotPath};${responsiveDetailScreenshotPath}`);
   } finally {
     await electronApp.close();
   }

@@ -1,0 +1,46 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "official-skill",
+  "resource_id": "music-video-subtitle-generator",
+  "locale": "en",
+  "source_bindings": {
+    "official_index_sha256": "7c5738e9bf795652e16ac3b145279733e7b5ae87b01d4a27d074850d9bd935e0",
+    "companion_summary_sha256": "13a9e6001e177f927bf7c22c82c6c8387882952ed2fccc460541a4ead5b839f4"
+  },
+  "content": {
+    "title": "Music Video Dynamic Subtitle Generator",
+    "summary": "Combine music, vocals, performance, camera movement, and spatial text into one rhythmic system. The Seedance companion defines audio roles, complete lyric phrases, and continuity between short segments of a longer piece.",
+    "quick_start": {
+      "input_format": "Music and tempo + vocal roles + complete lyric phrases + performer and setting + camera rhythm + spatial text behavior + segment handoff",
+      "recommended_input": "Combine music, vocals, performance, camera movement, and spatial text into one rhythmic system; the Seedance companion defines audio roles, closes complete lyric phrases, and preserves continuity between short segments of a longer piece.",
+      "required_anchors": [
+        "Use the pinned official MiniMax H3 upstream Skill.",
+        "Use the independent Seedance 2.0 companion for Seedance.",
+        "Do not copy the upstream Skill body or duplicate it into ComfyUI."
+      ],
+      "usage_steps": [
+        "Choose the matching official MiniMax H3 Skill and install it from the pinned upstream link.",
+        "Prepare only the assets and facts required by that Skill.",
+        "Use the independent Seedance companion when targeting Seedance 2.0.",
+        "Validate identity, timing, text and asset responsibilities before generation."
+      ],
+      "applicable_scope": [
+        "Combine music, vocals, performance, camerawork, and spatial text into one rhythmic system; the Seedance companion defines audio roles, closes complete lyric phrases, and preserves continuity between short segments of a longer piece.",
+        "Projects that match the upstream Skill's declared purpose and asset contract."
+      ],
+      "not_suitable_for": [
+        "Tasks outside the upstream Skill's declared scope.",
+        "Cases that require copying the upstream Skill body into this library or importing it into the T8 ComfyUI node."
+      ]
+    },
+    "creative_dna": {
+      "usage_scope": "Combine music, vocals, performance, camerawork, and spatial text into one rhythmic system; the Seedance companion defines audio roles, closes complete lyric phrases, and preserves continuity between short segments of a longer piece.",
+      "source_boundary": "MiniMax H3 uses the pinned official upstream Skill. Seedance 2.0 uses the independently authored companion Skill in this library. The upstream Skill body is not copied.",
+      "comfyui_boundary": "This official entry is not imported into ComfyUI because the target node already includes the official MiniMax capability."
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

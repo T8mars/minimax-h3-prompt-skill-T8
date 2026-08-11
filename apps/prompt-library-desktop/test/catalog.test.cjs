@@ -1,9 +1,30 @@
 const assert = require("node:assert/strict");
+const crypto = require("node:crypto");
 const fs = require("node:fs");
 const os = require("node:os");
 const path = require("node:path");
 const test = require("node:test");
 const { extractPrompt, loadCatalog, safeResolve } = require("../lib/catalog.cjs");
+
+function sha(file) { return crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex"); }
+
+function writeCaseLocales(caseDir) {
+  const manifest = path.join(caseDir, "manifest.json");
+  const dna = path.join(caseDir, "creative-dna.json");
+  fs.mkdirSync(path.join(caseDir, "locales"), { recursive: true });
+  const bindings = { manifest_sha256: sha(manifest), creative_dna_sha256: sha(dna) };
+  for (const locale of ["en", "zh-CN"]) fs.writeFileSync(path.join(caseDir, "locales", `${locale}.json`), JSON.stringify({
+    schema_version: "public-display-locale/v1", resource_kind: "case", resource_id: "case-one", locale,
+    source_bindings: bindings,
+    content: {
+      title: locale === "en" ? "Test Case" : "测试案例",
+      summary: locale === "en" ? "Reusable motion test" : "可复用运动测试",
+      quick_start: { input_format: "A + B", recommended_input: "Example", required_anchors: ["A", "B"], usage_steps: ["One", "Two"], applicable_scope: ["One", "Two"], not_suitable_for: ["One", "Two"] },
+      creative_dna: { mechanism: locale === "en" ? "A causes B" : "A 导致 B" }
+    },
+    review: { status: "approved", method: "test" }
+  }));
+}
 
 function fixture() {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "t8-catalog-"));
@@ -48,6 +69,24 @@ test("loads a released case and prefers the external media pack", (t) => {
   assert.equal(item.prompts.seedance20, "Seedance prompt body");
   assert.deepEqual(item.media.video, { scope: "media", relativePath: "case-one/preview.mp4" });
   assert.equal(item.sourceUrl, "https://x.com/tester/status/1");
+});
+
+test("loads both display locales and rejects stale source bindings", (t) => {
+  const data = fixture();
+  t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
+  const caseDir = path.join(data.catalogRoot, "cases", "case-one");
+  writeCaseLocales(caseDir);
+  let catalog = loadCatalog(data);
+  assert.equal(catalog.cases[0].localizations.en.title, "Test Case");
+  assert.equal(catalog.cases[0].localizations["zh-CN"].title, "测试案例");
+  assert.equal(catalog.cases[0].prompts.minimaxH3, "H3 prompt body", "display locale must not alter canonical prompt bytes");
+  const manifestFile = path.join(caseDir, "manifest.json");
+  const manifest = JSON.parse(fs.readFileSync(manifestFile, "utf8"));
+  manifest.summary = "Changed after localization review";
+  fs.writeFileSync(manifestFile, JSON.stringify(manifest));
+  catalog = loadCatalog(data);
+  assert.equal(catalog.cases[0].localizations.en, undefined);
+  assert.ok(catalog.warnings.some((warning) => warning.includes("stale display localization binding")));
 });
 
 test("omits drafts from the public viewer", (t) => {
@@ -121,7 +160,9 @@ test("loads pinned upstream H3 access and local Seedance companion without embed
   assert.equal(item.comfyuiImport, false);
   assert.deepEqual(item.media.gif, { scope: "catalog", relativePath: "official-skills/previews/h3-prompt-writing.gif" });
   assert.equal(item.previewLabel, "官方 T2VA 示例 · GIF");
-  assert.match(item.prompts.minimaxH3, /安装官方 H3 Skill/u);
+  assert.match(item.prompts.minimaxH3, /Install the official H3 Skill/u);
+  assert.match(item.localizedPromptHelp.minimaxH3.en, /This entry points to the MiniMax-AI/u);
+  assert.match(item.localizedPromptHelp.minimaxH3["zh-CN"], /安装官方 H3 Skill/u);
   assert.equal(item.prompts.seedance20, "# Seedance template\n\nA coherent event prompt.");
   assert.doesNotMatch(item.prompts.minimaxH3, /Global settings:/u);
 });

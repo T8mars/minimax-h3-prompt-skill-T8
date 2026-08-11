@@ -1,0 +1,215 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-iamahmedfaraz66-2086298926617903365-browser-2086298926617903365-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "8a67daeedef24ab7764da3d52e5dfacd8544f8537abc8b3639d219de486b7aea",
+    "creative_dna_sha256": "f48c52a54bed092d46e6e4dae080121b6d5197d28415965f8ff59571e924c0ba"
+  },
+  "content": {
+    "title": "人物旅程｜从困境走向目标",
+    "summary": "让人物从可见困境出发，经过连续物理过渡，抵达目标并完成动作。",
+    "quick_start": {
+      "input_format": "人物困境 + 可见目标空间 + 3个物理过渡 + 抵达后的完成动作",
+      "recommended_input": "疲惫的钟表匠被困在地下维修间，远处钟塔是目标；他穿过狭窄管道、升降平台和风雨屋顶，抵达后重新启动大钟。",
+      "required_anchors": [
+        "起点困境明确",
+        "目标空间提前可见或可理解",
+        "至少三个连续物理过渡",
+        "抵达后完成目标动作"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让人物从可见困境出发，经过连续物理过渡，抵达目标并完成动作。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "一个身份清楚的人物始终是情感坐标，外部观察的旅程则从受限的工作压力逐步扩展到更开阔的目标空间。背景信息通过材质互动和相机视差被揭示，而不是直接讲解；尺度与光线在过渡中逐渐增强，最终通过完成任务的动作——并非对镜头表演——把期待兑现为真正的抵达。镜头数量、拍摄平台和揭示顺序都可以变化。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "使用面部、姿势或任务行为作为重复的锚点，让一个可识别的人在不断变化的空间中保持情绪清晰，而非要求自拍。",
+          "purpose": "保留人物的情感投入与方向感，同时允许外部视角、侧面视角、广角镜头或身体搭载式摄像机的实现方式。",
+          "ablation_failure": "若没有反复出现的人物坐标，路线会退化为空泛的地点镜头素材；要求近距离自拍又会把模板锁死在特定表面。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "让每一个上下文揭示都源自物理互动——如推动推车、打开空间、跨越障碍或传递物体——并让摄像机通过视差、重新构图或遮挡来发现它。",
+          "purpose": "使摄像机的变化具有因果性和信息性，无需规定手腕转动或返回面部的固定模式。",
+          "ablation_failure": "无动机的拍摄会显得装饰性过强；重复相同的转身与恢复动作会使新场景在机械上变得雷同。",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "obs-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用规模、光线、深度、声音或人流至少两项，创建从压缩状态到扩展可能性的清晰过渡；过渡可通过门、电梯、坡道、窗帘、弯道或时间匹配实现。",
+          "purpose": "为物理路线赋予可见的情感方向。",
+          "ablation_failure": "如果每个空间亮度与规模相同，抵达将缺乏视觉上的收束效果。",
+          "evidence_ids": [
+            "beat-04",
+            "beat-05",
+            "obs-07"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "选择适合每个新世界的拍摄语法并保持其规则一致；受控的纪录片质感可能来自视差、浅焦、操作延迟或环境遮挡，而非固定的DV缺陷集合。",
+          "purpose": "既保持临场感，也允许精致的 35mm 电影质感、肩扛纪录片、固定观察或身体搭载式拍摄。",
+          "ablation_failure": "复制的素材包会暴露来源；随机缺陷或身份漂移将破坏路线理解。",
+          "evidence_ids": [
+            "obs-04",
+            "obs-05",
+            "obs-14"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "通过人物与目标环境之间完成一项任务的物理互动来实现抵达，同时其情绪状态在不面对镜头的情况下仍清晰可辨。",
+          "purpose": "通过结果而非复制的反应动作来解决空间与情感上的疑问。",
+          "ablation_failure": "普通的微笑或手势无法证明抵达；仅以目的地为终点的剪辑会失去使其有意义的人类付出。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-12"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "traveler",
+          "constraint": "一名原创的成年主体，具有稳定的身份和明确的移动理由。"
+        },
+        {
+          "name": "prep_space",
+          "constraint": "一个压缩、光线不足的工作区域，配有清晰可辨的实际障碍物。"
+        },
+        {
+          "name": "context_reveals",
+          "constraint": "一到三个由物理动机构成的发现，其顺序和摄像机实现方式会根据具体场景而变化。"
+        },
+        {
+          "name": "material_handoff",
+          "constraint": "物体、障碍物或合作者改变了路线或目标；避免使用基于镜子的自我检查。"
+        },
+        {
+          "name": "goal_threshold",
+          "constraint": "一个更明亮、更广阔的目的地，明显区别于准备空间。"
+        },
+        {
+          "name": "capture_texture",
+          "constraint": "按场景选择外置、固定、身体安装或手持的拍摄语法；不要复用来源作品打包在一起的拍摄瑕疵特征。"
+        },
+        {
+          "name": "resolution_action",
+          "constraint": "证明该人已进入或完成目标的具体动作，不包含直接对镜头的手势。"
+        },
+        {
+          "name": "shot_structure",
+          "constraint": "选择三到六个事件，其顺序需符合新任务逻辑；不要一对一映射源节拍。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源面孔、种族特征、发型、耳环和舞台服装。",
+        "演唱会后台走廊、梳妆镜、幕布及精确的舞台灯光布置。",
+        "准确的对话内容、倒计时、比心手势和表演者设定。",
+        "创作者专属的 DV 影像瑕疵组合、手腕转动后回位、镜前准备确认及逐拍照搬的镜头时序。"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位原创陶艺师推着铺有软垫的窑车穿过狭窄车间，由稳定的外部 35mm 摄影机跟拍。货架形成层层视差，助手掀开帆布覆盖的装货区，通道延伸到黎明街市；陶艺师为第一位等候的买家打开包裹，露出仍温热的陶碗。",
+          "prompt_seed": "四段外部纪实旅程：窑车带来的空间压力、货架视差、帆布装货区展开，以及向首位买家展示实物成果。"
+        },
+        {
+          "concept": "一名望远镜技术员通过三段长距离横向镜头穿过狭窄的日间维护栈桥，完成悬挂镜片与安全团队之间的器材交接；天文台穹顶随后开启，时间匹配切入繁星夜空，她装好最后一件仪器并目睹第一组数据到达。",
+          "prompt_seed": "三段横向天文台旅程：器材交接、穹顶尺度展开与首组数据到达。"
+        },
+        {
+          "concept": "一名洞穴救援医务人员通过固定灯和一个身体安装的侧摄像头被观察，她引导担架穿过狭窄弯道，在交汇点更换氧气包，随后进入宽阔的地下基地，将病人转移至照明治疗平台。",
+          "prompt_seed": "可变机位记录的救援通道：受限空间几何、途中器材交接，以及抵达照明治疗平台的实物收束。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "摄像机的变化没有实质原因，或只是模仿转身与返回的自拍式拍摄方式。",
+          "repair": "让每次重新取景都由物体、障碍、协作者或路线变化触发；根据具体场景调整拍摄平台和镜头数量。"
+        },
+        {
+          "failure": "目的地出现得太早了。",
+          "repair": "将其隐藏在真实的几何图形后面，并为最后三分之一保留最亮、最宽的构图。"
+        },
+        {
+          "failure": "新概念保留了来源作品整套 MiniDV 画面缺陷。",
+          "repair": "选择另一套连贯的拍摄语法，从新环境中提取画面质感，同时锁定人物身份和行进方向。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位原创陶艺师推着铺有软垫的窑车穿过狭窄车间，由稳定的外部 35mm 摄影机跟拍。货架形成层层视差，助手掀开帆布覆盖的装货区，通道延伸到黎明街市；陶艺师为第一位等候的买家打开包裹，露出仍温热的陶碗。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "traveler",
+            "prep_space",
+            "context_reveals",
+            "material_handoff",
+            "goal_threshold",
+            "resolution_action",
+            "shot_structure"
+          ]
+        },
+        {
+          "concept": "一名望远镜技术员通过三段长距离横向镜头穿过狭窄的日间维护栈桥，完成悬挂镜片与安全团队之间的器材交接；天文台穹顶随后开启，时间匹配切入繁星夜空，她装好最后一件仪器并目睹第一组数据到达。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "traveler",
+            "prep_space",
+            "context_reveals",
+            "material_handoff",
+            "goal_threshold",
+            "capture_texture",
+            "resolution_action",
+            "shot_structure"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

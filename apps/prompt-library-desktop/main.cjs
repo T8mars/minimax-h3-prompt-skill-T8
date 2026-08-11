@@ -33,7 +33,7 @@ const REPO_ROOT = path.resolve(APP_DIR, "../..");
 const RENDERER_PATH = path.join(APP_DIR, "src", "index.html");
 let mainWindow = null;
 let assetRoots = null;
-let updateStatus = { state: "idle", message: "尚未检查更新" };
+let updateStatus = { state: "idle" };
 let updateInFlight = false;
 
 function resolveRoots() {
@@ -119,7 +119,7 @@ function configureUpdater() {
       await autoUpdater.downloadUpdate();
     } catch (error) {
       updateInFlight = false;
-      sendUpdateStatus({ state: "error", message: `更新下载失败：${error.message}` });
+      sendUpdateStatus({ state: "error", error: error.message });
     }
   });
   autoUpdater.on("download-progress", (progress) => {
@@ -135,7 +135,7 @@ function configureUpdater() {
   });
   autoUpdater.on("error", (error) => {
     updateInFlight = false;
-    sendUpdateStatus({ state: "error", message: `更新检查失败：${error.message}` });
+    sendUpdateStatus({ state: "error", error: error.message });
   });
 }
 
@@ -149,7 +149,7 @@ function scheduleAutomaticUpdateCheck() {
       await autoUpdater.checkForUpdates();
     } catch (error) {
       updateInFlight = false;
-      sendUpdateStatus({ state: "error", message: `自动更新检查失败：${error.message}` });
+      sendUpdateStatus({ state: "error", error: error.message });
     }
   }, delay).unref();
 }

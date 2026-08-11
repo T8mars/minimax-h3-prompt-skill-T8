@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-decat2025-2086287667948396933-browser-2086287667948396933-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "c50b9bfeaf83ae513381ccf36b5baf8d0bc3f4f2cabe6ae99922d61e3144e61b",
+    "creative_dna_sha256": "51215a519fe861beb68e91623792d9e8ce5ef6abfc1e2e06c8aad20db8ef6f5d"
+  },
+  "content": {
+    "title": "路线坍塌｜安全空间逐段消失",
+    "summary": "主体只朝固定终点前进，走过的路线单调消失，完全跨过阈值后最后连接才断开。",
+    "quick_start": {
+      "input_format": "载体 + 固定方向和终点 + 已走路线逐段消失 + 当前段一次失稳 + 完全过阈值后最后断开",
+      "recommended_input": "透明温室管道中的采样车始终朝安全舱行驶，驶过的管段依次塌陷；当前管段只发生一次摇摆，车辆完全进入安全舱后最后接口才断开。",
+      "required_anchors": [
+        "方向与终点固定",
+        "后方路线只减不增",
+        "当前段最多一次可恢复失稳",
+        "主体完全过阈值后才断开最后连接"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "主体只朝固定终点前进，走过的路线单调消失，完全跨过阈值后最后连接才断开。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让主体始终朝同一画面方向的目的地前进，并从后方按顺序移除已经通过的路线段，同时只让脚下当前路段出现一种不稳定因素。局部控制动作与剩余路线的广角证明交替出现；结尾必须让主体在最后一处连接失效前完整越过安全阈值。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个可见的目的地和一个行进方向。",
+          "purpose": "使剩余距离可测量。",
+          "ablation_failure": "更改目的地会破坏倒计时。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "仅从后面移除已经穿过的安全空间。",
+          "purpose": "防止任意危险并阻止退路。",
+          "ablation_failure": "前方随机出现缺口会让生还变得不可能，而非更紧张。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在当前段下添加一项可恢复的不稳定性。",
+          "purpose": "在不取代行进路径逻辑的前提下检验控制力。",
+          "ablation_failure": "过多局部危险会掩盖持续单向推进的坍塌过程。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在近景控制动作与剩余路线的远景证据之间交替。",
+          "purpose": "证明主体主动性和结构倒计时。",
+          "ablation_failure": "只有近景才能隐藏剩余的路线。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在最后一次连接失败之前跨越完整阈值。",
+          "purpose": "产生明确的逃逸证明。",
+          "ablation_failure": "在完全越过之前切走，会使结果仍不确定。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份保持稳定的原创主体或系统。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一种在可数因果阶段发生变化的可见变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的行为规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的物理或图形结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "吊桥上的深色SUV",
+        "大雨和黑水",
+        "滑移的废弃车辆和崩断的缆索",
+        "桥面坍塌及远岸锚固点"
+      ],
+      "instantiations": [
+        {
+          "concept": "花粉递送胶囊穿过悬挂的温室管道，密封舱段在后方逐节分离，当前舱段随之倾斜；胶囊在最后一个连接环释放前抵达气闸。",
+          "prompt_seed": "花粉递送胶囊穿过悬挂的温室管道，密封舱段在后方逐节分离，当前舱段随之倾斜；胶囊在最后一个连接环释放前抵达气闸。"
+        },
+        {
+          "concept": "一辆洞穴勘测车穿过在其后面溶解的模块化水晶轨道，稳定一个旋转的平板，并在最后一根轨道落下之前到达石头码头。",
+          "prompt_seed": "一辆洞穴勘测车穿过在其后面溶解的模块化水晶轨道，稳定一个旋转的平板，并在最后一根轨道落下之前到达石头码头。"
+        },
+        {
+          "concept": "数据包被具象为穿过实体中继走廊的运载体；已经通过的走廊区段在它身后逐段折叠，直到运载体抵达终端端口。",
+          "prompt_seed": "数据包沿实体中继走廊持续前进，已通过区段在身后逐段折叠，直至终端端口。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "更改目的地会破坏倒计时。",
+          "repair": "建立一个可见的目的地和一个行进方向。"
+        },
+        {
+          "failure": "前方随机出现缺口会让生还变得不可能，而非更紧张。",
+          "repair": "仅从后面移除已经穿过的安全空间。"
+        },
+        {
+          "failure": "过多局部危险会掩盖持续单向推进的坍塌过程。",
+          "repair": "在当前段下添加一项可恢复的不稳定性。"
+        },
+        {
+          "failure": "只有近景才能隐藏剩余的路线。",
+          "repair": "在近景控制动作与剩余路线的远景证据之间交替。"
+        },
+        {
+          "failure": "在完全越过之前切走，会使结果仍不确定。",
+          "repair": "在最后一次连接失败之前跨越完整阈值。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "花粉递送胶囊穿过悬挂的温室管道，密封舱段在后方逐节分离，当前舱段随之倾斜；胶囊在最后一个连接环释放前抵达气闸。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一辆洞穴勘测车穿过在其后面溶解的模块化水晶轨道，稳定一个旋转的平板，并在最后一根轨道落下之前到达石头码头。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

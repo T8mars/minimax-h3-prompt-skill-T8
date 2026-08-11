@@ -1,0 +1,250 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "e0f4d240393cf86f926bd0d60c6bb2c440f9f58df45eefc5d93500e9ea20aaad",
+    "creative_dna_sha256": "1bfea667f950ad423b368cbdfe1fe8ff2431882be49b257cd99da7f3aeff3cf8"
+  },
+  "content": {
+    "title": "Product Advertising | Functional Evidence Buildup",
+    "summary": "Start with the result, then use multiple visible pieces of evidence to progressively prove the product's functionality, and finally lead to an action.",
+    "quick_start": {
+      "input_format": "Product/service + target audience + 3 different proof states + final action",
+      "recommended_input": "A portable water purifier for outdoor hikers: first, the result of drinking clean water is shown, and then the filter element profile, muddy water clearing, and practical scenes in the camp are used to prove the function, and finally a brief purchase action is shown.",
+      "required_anchors": [
+        "Results first, then evidence",
+        "At least three different proof states",
+        "Evidence must be visible and progressive",
+        "End with clear action or product wrap-up"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Lead with the result, then use multiple pieces of visible evidence to prove product functions layer by layer, and conclude with one decisive action.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A compressed launch film behaves as a flexible proof state machine rather than a fixed storyboard: an outcome, operation, internal mechanism, maximum contrast event, breadth proof and final action may be merged or reordered as long as each state answers a new product question. A strict material, light and typography system maintains coherence while shot count, information order, camera carrier and breadth device change across instances.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Within the first third, establish one emotionally legible outcome and its causal relationship to the product; outcome-first and proof-first openings are both valid.",
+          "purpose": "Gives technical information a human consequence without prescribing a brand-hero first frame.",
+          "ablation_failure": "If the product and outcome never connect, the sequence becomes either abstract mood or disconnected documentation.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-10"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Make each information state answer a different product question, but merge related questions and vary their order according to the new product's strongest causal proof.",
+          "purpose": "Turns speed into cumulative proof instead of a montage of interchangeable beauty shots.",
+          "ablation_failure": "If adjacent beats repeat the same claim, the fast pace becomes empty and the product remains vague.",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "beat-04",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Concentrate one maximum contrast event after enough setup to make it legible; the peak may be physical, spatial, typographic or human, and its position is variable.",
+          "purpose": "Creates a memorable second hook without requiring oversized text or a fixed midpoint boundary.",
+          "ablation_failure": "Equal intensity across all states produces a flat montage; repeating a source-style giant-text peak exposes the borrowed surface.",
+          "evidence_ids": [
+            "beat-05",
+            "beat-06",
+            "obs-06",
+            "obs-10"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Bind different modules with one strict contrast system, typography behavior and recurring assembly physics.",
+          "purpose": "Maintains brand coherence while people, interfaces and use cases change rapidly.",
+          "ablation_failure": "Unrelated palettes, transitions or type treatments make the film feel like stock fragments.",
+          "evidence_ids": [
+            "obs-02",
+            "obs-03",
+            "obs-04",
+            "obs-14"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Prove breadth once before the final action using a device native to the new concept—continuous space, physical transformation, one montage, radial staging or audience behavior—not a mandatory card row or grid.",
+          "purpose": "Converts a singular proof into broader relevance without locking the template to one information design.",
+          "ablation_failure": "No breadth proof makes the product feel niche; repeating cards then grid reproduces a specific campaign storyboard.",
+          "evidence_ids": [
+            "beat-07",
+            "beat-08",
+            "beat-09",
+            "obs-09"
+          ]
+        },
+        {
+          "id": "inv-06",
+          "rule": "Keep all visible copy short, complete and motion-safe: text lands at final size on a cut or via a hard mask and remains sharp long enough to read.",
+          "purpose": "Protects comprehension in a dense 15-second information sequence.",
+          "ablation_failure": "Scaling, warping or partially formed words compete with the product proof and create spelling artifacts.",
+          "evidence_ids": [
+            "obs-12",
+            "beat-06",
+            "beat-09"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "product_identity",
+          "constraint": "One original fictional product name and a single-sentence emotional promise."
+        },
+        {
+          "name": "hero_benefit_image",
+          "constraint": "An original person, object or environment showing the desired outcome rather than the interface."
+        },
+        {
+          "name": "capability_modules",
+          "constraint": "Two or three visually distinct proofs that answer different product questions."
+        },
+        {
+          "name": "operation_proof",
+          "constraint": "One legible control, process or physical mechanism that demonstrates how the product works."
+        },
+        {
+          "name": "peak_event",
+          "constraint": "One maximum contrast event expressed through physical, spatial, typographic or human change."
+        },
+        {
+          "name": "breadth_device",
+          "constraint": "One original non-redundant method for proving multiple contexts; avoid the source card-row plus grid pair."
+        },
+        {
+          "name": "graphic_system",
+          "constraint": "A palette, material, light behavior and typography rule unrelated to the source campaign."
+        },
+        {
+          "name": "final_action",
+          "constraint": "One concise CTA displayed in a stable closing lockup."
+        },
+        {
+          "name": "information_order",
+          "constraint": "Choose an order derived from the new product's causal logic, not the source's nine-state sequence."
+        },
+        {
+          "name": "shot_structure",
+          "constraint": "Use five to eight states with materially different boundaries, merges and camera implementations."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "MiniMax H3, HailuoAI, Create Beyond, LIVE RIGHT NOW, AVAILABLE NOW and every other source string",
+        "source woman, violet jellyfish, nebula, purple speed streaks and identical product-category imagery",
+        "source wordmarks, logos, translucent panel compositions, editing interface and creator-card layouts",
+        "the exact nine-panel storyboard, exact beat durations, exact typography positions and source color palette"
+      ],
+      "instantiations": [
+        {
+          "concept": "A fictional compact air-quality device called AERIA ONE uses six reordered states: live room control proof, early sleeping-child outcome, combined sensor-filter macro, a physical apartment-scale clean-air peak with no giant text, one continuous environment morph for breadth, and a quiet final lockup.",
+          "prompt_seed": "Six-state proof-first clean-air launch with early human outcome, physical spatial peak, continuous non-card breadth morph and stable CTA."
+        },
+        {
+          "concept": "A fictional modular field battery called NORTHSTAR GRID uses five states in a single storm environment: rescue outcome first, physical cell stacking, live cable routing across the same set, the floodlights becoming the visual peak, and a wide operational tableau carrying a small DEPLOY NOW lockup without use-case cards.",
+          "prompt_seed": "Five-state single-location energy launch with outcome-first causality, physical assembly, lighting peak and no category grid."
+        },
+        {
+          "concept": "A fictional adaptive running shoe called KINETIC ARC uses seven asymmetrical states: runner impact outcome, sole pressure trace, foam macro, terrain transition, the athlete clearing one stair as the physical peak, three matched footfalls across surfaces, and a ground-level final action.",
+          "prompt_seed": "Seven-state performance launch whose breadth is carried by matched footfalls rather than panels or grids."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "The film is only a sequence of attractive product shots.",
+          "repair": "Assign each beat a distinct question and require an observable proof before the next cut."
+        },
+        {
+          "failure": "Every beat tries to be the visual climax.",
+          "repair": "Use restrained assembly motion early, one dominant kinetic peak, then simplify toward the CTA."
+        },
+        {
+          "failure": "Typography becomes unreadable or dominates the product.",
+          "repair": "Limit copy, land it complete at final size, hold it sharp and keep moving effects behind the text plane."
+        },
+        {
+          "failure": "A palette swap leaves the source campaign visibly recognizable.",
+          "repair": "Change product category, hero subject, materials, information order, shot count, camera implementation, breadth device, copy and final action in addition to color."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A fictional compact air-quality device called AERIA ONE uses six reordered states: live room control proof, early sleeping-child outcome, combined sensor-filter macro, a physical apartment-scale clean-air peak with no giant text, one continuous environment morph for breadth, and a quiet final lockup.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "product_identity",
+            "hero_benefit_image",
+            "capability_modules",
+            "operation_proof",
+            "peak_event",
+            "breadth_device",
+            "graphic_system",
+            "final_action",
+            "information_order",
+            "shot_structure"
+          ]
+        },
+        {
+          "concept": "A fictional adaptive running shoe called KINETIC ARC uses seven asymmetrical states: runner impact outcome, sole pressure trace, foam macro, terrain transition, the athlete clearing one stair as the physical peak, three matched footfalls across surfaces, and a ground-level final action.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "product_identity",
+            "hero_benefit_image",
+            "capability_modules",
+            "operation_proof",
+            "peak_event",
+            "breadth_device",
+            "graphic_system",
+            "final_action",
+            "information_order",
+            "shot_structure"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

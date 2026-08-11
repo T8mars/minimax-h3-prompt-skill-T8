@@ -48,6 +48,9 @@ let officialSkillCount = 0;
 let communitySkillCount = 0;
 if (fs.existsSync(path.join(catalogRoot, "manifest.json"))) {
   const catalog = loadCatalog({ catalogRoot, mediaRoot: devMediaRoot, skillsRoot });
+  if (catalog.warnings.length) {
+    for (const warning of catalog.warnings) errors.push(`catalog warning: ${warning}`);
+  }
   caseCount = catalog.cases.length;
   videoCount = catalog.cases.filter((item) => item.media.hasFullVideo).length;
   officialSkillCount = catalog.officialSkills.length;

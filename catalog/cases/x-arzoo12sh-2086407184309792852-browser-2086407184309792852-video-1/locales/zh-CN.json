@@ -1,0 +1,227 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d8170b2bd0268695508fb1922c5661dd5f77f9a5c72e74207966a439591c97fa",
+    "creative_dna_sha256": "7587b65d51e5d95848e5a9a5a98cebcebd619bceb48203f001aa0cfe838a9b69"
+  },
+  "content": {
+    "title": "微缩闯关｜同一材质连续变形",
+    "summary": "让一个微型主体穿越同一巨型材质，使其依次承担路面、阻力、载体和弹性过渡等职责；全尺寸工具只能在接近结尾时进入一次，帮助完成跨越并恢复主体的自主行动。",
+    "quick_start": {
+      "input_format": "微型主体 + 单一巨型地形 + 同一材质至少3种连续物理角色 + 一次晚段外部桥梁 + 恢复自主的稳定结尾",
+      "recommended_input": "微型温室信使横穿一片巨型蜡质叶：叶面从路脊变成湿滑露水面、移动叶脉和弹性纤维；最后一支全尺寸玻璃滴管只进入一次成为桥，信使抵达种子标记旁稳定站立。",
+      "required_anchors": [
+        "开场先证明主体与地形尺度",
+        "同一材质至少承担三种连续物理角色",
+        "每次解决动作必须引出下一个材质状态",
+        "外部尺度工具只在后段进入一次",
+        "结尾主体恢复自主稳定状态"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让一个微型主体穿越同一巨型地形，地形依次变成路面、阻力、载体和弹性过渡，最后由一个外部尺度工具只进入一次完成跨越。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先建立一个正在穿越单一超大地形的微小主角，再让同一种基质沿因果阶梯改变物理职责：可靠落脚面变成阻力，阻力变成临时载体，载体再变成弹性过渡。只有主角亲自经历这些状态后，才允许一个全尺寸工具进入一次，充当最后的桥接。结尾让主角回到稳定、自主的姿态，使尺度差带来的外部协助解决路线问题，却不夺走角色的主动权。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在开场、首个障碍出现前，证明主角与地形的比例关系。",
+          "purpose": "将规模转化为可用的故事地理，而不是延迟揭示。",
+          "ablation_failure": "如果没有早期的尺度证明，后续材质变形就会像任意添加的 VFX。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-10",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使一种连续基质按因果顺序执行至少三种明显不同的物理作用。",
+          "purpose": "让环境生成行动阶梯，而不会引入不相关的威胁。",
+          "ablation_failure": "如果每个节拍都使用一个新的道具，那么序列就变成了蒙太奇，而不是一个不断发展的材料问题。",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "beat-04",
+            "obs-05",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "让每个尝试的解决方案暴露下一个材料状态，而不是重置路线。",
+          "purpose": "保持因果动力并使升级清晰可见。",
+          "ablation_failure": "独立的笑料消除了旅行者正在学习和适应的感觉。",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "beat-04",
+            "obs-08",
+            "obs-09"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在后段只让一个全尺寸外部工具出现一次并充当桥梁，不要用它承担开场的尺度揭示。",
+          "purpose": "提供了更强的第二尺度证明和自力更生后的决定性转变。",
+          "ablation_failure": "巨型工具过早或反复出现，会夺走角色主动权，并把材质穿越退化成被巨型工具搬运。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在外部桥接工具完成作用后，以稳定姿势结束，并清楚恢复角色的自主行动。",
+          "purpose": "避免外部援助让主角显得失败，并为动作链提供表演层面的收束。",
+          "ablation_failure": "在半空中或工具上结束会使因果结果悬而未决。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-12",
+            "obs-15",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体或群体，角色关系清晰可辨。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清楚的最终物理结果或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "巨大的意大利辣香肠披萨上的小人",
+        "有弹性的融化奶酪地形",
+        "全尺寸叉子和手",
+        "温暖的厨房和水杯"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个微小的温室快递员穿越一片巨大的蜡质叶子：表面依次从坚硬叶脊变成光滑露珠薄层，再变成弹性叶脉弹弓；随后，一根全尺寸玻璃移液管只进入一次充当桥梁，快递员最终降落在种子标记旁。",
+          "prompt_seed": "微小温室快递员、巨大蜡质叶片、从露珠薄层到叶脉弹弓的材质阶梯、一次性进入的全尺寸玻璃移液管桥，以及自信落在种子标记旁的结尾。"
+        },
+        {
+          "concept": "一个微型档案侦察员穿越一张巨大的折叠亚麻地图：清晰折痕、钩住的松线和弹性布袋依次形成材质阶梯；一只黄铜罗盘脚只进入一次，成为抵达蜡封前的最后一座桥。",
+          "prompt_seed": "微型档案侦察员、巨大亚麻地图、由折痕—松线—弹性布袋组成的材质阶梯、一次性进入的黄铜罗盘桥，以及蜡封处的完成姿态。"
+        },
+        {
+          "concept": "微型勘测车穿越巨大的半透明皂膜路线：稳定薄膜、黏性泡沫边缘和弹性膜回弹依次形成材质阶梯；一把全尺寸刮水器只进入一次充当斜坡，车辆最终稳定抵达干燥平台。",
+          "prompt_seed": "微型勘测车、皂膜路线、薄膜—泡沫边缘—弹性回弹的材质阶梯、一次性进入的刮水器斜坡，以及稳定抵达干燥平台。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有早期的尺度证明，后续材质变形就会像任意添加的 VFX。",
+          "repair": "在第一个障碍之前的开场中证明主角与地形的比例关系。"
+        },
+        {
+          "failure": "如果每个节拍都使用一个新的道具，那么序列就变成了蒙太奇，而不是一个不断发展的材料问题。",
+          "repair": "使一种连续基质按因果顺序执行至少三种明显不同的物理作用。"
+        },
+        {
+          "failure": "独立的笑料消除了旅行者正在学习和适应的感觉。",
+          "repair": "让每个尝试的解决方案暴露下一个材料状态，而不是重置路线。"
+        },
+        {
+          "failure": "巨型工具过早或反复出现，会夺走角色主动权，并把材质穿越退化成被巨型工具搬运。",
+          "repair": "在后段只让一个全尺寸外部工具出现一次并充当桥梁，不要用它承担开场的尺度揭示。"
+        },
+        {
+          "failure": "在半空中或工具上结束会使因果结果悬而未决。",
+          "repair": "让角色在外部桥接工具完成作用后重新站稳，并清楚恢复自主行动。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个微小的温室快递员穿越一片巨大的蜡质叶子：表面依次从坚硬叶脊变成光滑露珠薄层，再变成弹性叶脉弹弓；随后，一根全尺寸玻璃移液管只进入一次充当桥梁，快递员最终降落在种子标记旁。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个微型档案侦察员穿越一张巨大的折叠亚麻地图：清晰折痕、钩住的松线和弹性布袋依次形成材质阶梯；一只黄铜罗盘脚只进入一次，成为抵达蜡封前的最后一座桥。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

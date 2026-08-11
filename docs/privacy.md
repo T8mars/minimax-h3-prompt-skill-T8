@@ -22,7 +22,7 @@ T8 Prompt Library 是本地只读案例查看器。应用默认：
 
 ## 本地数据
 
-v1.0.0 不提供收藏，也不持久保存搜索词或筛选状态。完整案例视频随安装包写入应用资源目录；更新程序可能按照 Electron updater 的标准行为在系统应用数据区域暂存已下载的安装包。
+v1.1.0 不提供收藏，也不持久保存搜索词或筛选状态。应用仅在本地 `localStorage` 保存用户选择的显示语言（`en` 或 `zh-CN`），不包含账号、提示词或浏览记录；用户可通过清除应用站点数据恢复默认英文。完整案例视频随安装包写入应用资源目录；更新程序可能按照 Electron updater 的标准行为在系统应用数据区域暂存已下载的安装包。
 
 本地媒体包只包含已发布案例视频及映射，不包含平台 Cookie、Token 或内部采集记录。
 
@@ -34,4 +34,4 @@ v1.0.0 不提供收藏，也不持久保存搜索词或筛选状态。完整案�
 
 ---
 
-**English summary:** The desktop viewer is local-first, account-free, and telemetry-free. It does not read browser sessions, upload prompts, persist searches or filters, or call paid generation APIs. Network access is limited to GitHub release updates and user-initiated source links.
+**English summary:** The desktop viewer is local-first, account-free, and telemetry-free. It does not read browser sessions, upload prompts, persist searches or filters, or call paid generation APIs. It stores only the selected display locale (`en` or `zh-CN`) in local storage. Network access is limited to GitHub release updates and user-initiated source links.

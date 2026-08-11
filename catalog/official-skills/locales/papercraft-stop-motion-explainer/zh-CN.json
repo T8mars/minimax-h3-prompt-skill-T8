@@ -1,0 +1,46 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "official-skill",
+  "resource_id": "papercraft-stop-motion-explainer",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "official_index_sha256": "7c5738e9bf795652e16ac3b145279733e7b5ae87b01d4a27d074850d9bd935e0",
+    "companion_summary_sha256": "10b67d1698dd4acf2f4800e08e2df868948c2e5cbf168aca51cd9c153c268841"
+  },
+  "content": {
+    "title": "纸艺定格科普视频生成器",
+    "summary": "用分层纸雕、纸偶与机械纸艺动作讲清知识路径；Seedance 伴侣锁定多层景深、物理机制、镜头克制和触感声音。",
+    "quick_start": {
+      "input_format": "主题或流程 + 分层纸艺场景 + 纸偶角色 + 可见机械步骤 + 克制镜头计划 + 触感声音体系",
+      "recommended_input": "用分层纸雕、纸偶与机械纸艺动作讲清知识路径；Seedance 伴侣锁定多层景深、物理机制、镜头克制和触感声音。",
+      "required_anchors": [
+        "H3 使用固定版本的 MiniMax 官方上游 Skill。",
+        "Seedance 使用独立编写的 Seedance 2.0 伴侣 Skill。",
+        "不复制上游 Skill 正文，也不重复导入 ComfyUI。"
+      ],
+      "usage_steps": [
+        "选择匹配需求的 MiniMax H3 官方 Skill，并从固定版本上游链接安装。",
+        "只准备该 Skill 明确要求的素材与事实。",
+        "生成 Seedance 2.0 时改用本库独立编写的伴侣 Skill。",
+        "生成前检查身份、时长、文字和素材职责是否闭合。"
+      ],
+      "applicable_scope": [
+        "用分层纸雕、纸偶与机械纸艺动作讲清知识路径；Seedance 伴侣锁定多层景深、物理机制、镜头克制和触感声音。",
+        "符合上游 Skill 明确用途和素材合同的项目。"
+      ],
+      "not_suitable_for": [
+        "超出上游 Skill 明确用途的任务。",
+        "要求把上游 Skill 正文复制进本库，或重复导入 T8 ComfyUI 节点的场景。"
+      ]
+    },
+    "creative_dna": {
+      "usage_scope": "用分层纸雕、纸偶与机械纸艺动作讲清知识路径；Seedance 伴侣锁定多层景深、物理机制、镜头克制和触感声音。",
+      "source_boundary": "MiniMax H3 使用固定版本的官方上游 Skill；Seedance 2.0 使用本库独立编写的伴侣 Skill。本库不复制上游 Skill 正文。",
+      "comfyui_boundary": "目标节点已内置 MiniMax 官方能力，因此该官方条目不会重复导入 ComfyUI。"
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "field-preserving bilingual editorial pass with structural and terminology validation"
+  }
+}

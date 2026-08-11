@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mimu-ai1-2086474098859987150-browser-2086474098859987150-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "655fdf51ddf9cf2b089445ae023fb4e287353091f6ede0832f60425281534d68",
+    "creative_dna_sha256": "8ec5bc37cf88c43cdf9f7a4b069bf117dca7eb1f6056fad3349ccc065c85d8e7"
+  },
+  "content": {
+    "title": "未来证据｜异常闯入现实",
+    "summary": "稳定现实中，同一证据载体连续更新，最后异常内容延迟跨入现实。",
+    "quick_start": {
+      "input_format": "有边界的证据载体 + 稳定现实 + 同一变量连续2次更新 + 延迟跨界 + 一次反应",
+      "recommended_input": "温室里的黄铜叶片扫描器连续吐出两张状态纸条，第二张显示尚未出现的霜纹；短暂停顿后霜纹从纸面蔓延到真实叶片，园艺师只后退一步。",
+      "required_anchors": [
+        "现实基线稳定",
+        "同一证据载体至少两次更新",
+        "异常先在证据内出现",
+        "跨界延迟发生且只有一次克制反应"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "稳定现实中，同一证据载体连续更新，最后异常内容延迟跨入现实。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "一个边界明确的证据载体先与稳定的现实场景基准相矛盾，再以两个愈发紧迫的状态更新同一空间变量，随后让所表现的变化越过载体边界进入共享现实。重复核验、稳定几何和延迟反应使转变清楚可辨；载体、类型、现象、地点、镜头语法和情感收束均可替换。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个现实场景基准和一个边界明确的证据载体；二者对同一地点、物体或状态呈现相互矛盾的信息。",
+          "purpose": "创建一个可证伪的问题，而不是随意的超现实意象。",
+          "ablation_failure": "如果没有明确的基线或共享参照物，观众将无法判断证据是预测性的、过时的、错误的还是仅仅装饰性的。",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在证据中至少两次更新一个可计数的空间、时间或物质变量，同时保留可识别的锚点。",
+          "purpose": "将一次意外转化为一个升级阶梯，其方向可以立即被识别。",
+          "ablation_failure": "一个无法解释的变化只是一个转折；同时改变所有细节会破坏因果对比。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-10",
+            "obs-15"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在发生任何实体越界前，让现实场景基准保持稳定足够久，以便核对证据差异。",
+          "purpose": "保护负空间，并防止在理解规则之前出现收束效果。",
+          "ablation_failure": "如果现实立即发生变化，证据载体会失去其特殊作用，短片也会退化成普通的变形 VFX。",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "obs-09"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "仅在升级达到最接近或最重要的状态后，跨越证据边界，并展示一个明确的物理后果。",
+          "purpose": "把信息张力转化为具体结果，而无需照搬来源作品中的怪物或袭击情节。",
+          "ablation_failure": "没有任何穿越会让故事悬而未决；过早的穿越会消除升级阶梯；多个同时发生的后果会削弱证明力度。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-10"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "让主体的验证和延迟识别遵循证据层次，而不是在观众看到原因之前就表现出恐惧或惊奇。",
+          "purpose": "将表演与理解同步，并以载体作为叙事引擎。",
+          "ablation_failure": "过早的反应会显得过于戏剧化，在视觉规则清晰之前就告诉观众该有什么感受。",
+          "evidence_ids": [
+            "beat-02",
+            "beat-04",
+            "obs-12"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "live_baseline",
+          "constraint": "一个稳定的地方或系统，具有可反复检查的明确锚点。"
+        },
+        {
+          "name": "evidence_carrier",
+          "constraint": "一个边界明确的传感器、地图、记录、材质样本或显示装置；不得复用来源作品中的相机或即时照片。"
+        },
+        {
+          "name": "advancing_variable",
+          "constraint": "一种可计数的距离、数量、颜色、裂纹、波形或生长状态，并让它变化两次。"
+        },
+        {
+          "name": "verification_action",
+          "constraint": "一种重复的人为或机械核验动作，用来把证据与现实场景基准作比较。"
+        },
+        {
+          "name": "boundary_crossing",
+          "constraint": "一个在物理画面上清楚可辨的时刻：载体所呈现的状态开始影响现实场景。"
+        },
+        {
+          "name": "emotional_register",
+          "constraint": "由新概念产生的恐惧、惊叹、喜剧、温情或技术紧迫感。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "使用原创镜头组合；信息顺序不同于来源作品中从桌面、走廊、印刷品到眼部特写的安排。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "设计的载体提示、更新提示、短暂重置和物理收束效果的层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "旧的即时相机、冲洗照片、废弃的照相室、破碎的窗户和嵌套的黑暗走廊。",
+        "来源角色的年轻男性外貌、高大人形阴影、过肩走廊揭示，以及极端惊恐的眼部特写结尾",
+        "来源作品的冷蓝黑调色板、原样闪光节奏、剪辑点和接近距离。",
+        "短语和概念，例如未来相机、拍摄未来、即时照片和高大的影子人物。"
+      ],
+      "instantiations": [
+        {
+          "concept": "在月光下的植物温室里，一名养护员使用黄铜叶片扫描仪；窄纸带显示一道发光的开花波正穿过原本昏暗的种植床。扫描两次后，真实的花开沿土壤传播，并在她掌心绽放。",
+          "prompt_seed": "魔幻现实主义温室证据阶梯：稳定的昏暗种植床、两次向前推进的扫描纸带更新，随后一道实体开花波越界出现，最后停留在安静惊叹的反应上。"
+        },
+        {
+          "concept": "在一个远程气象站，机械天空绘图仪绘制一条接近建筑物的彩色压力带，而晴朗的地平线保持不变；连续的绘图收紧曲线，直到真正的风和偏振光扫过仪器。",
+          "prompt_seed": "科学悬念：纸面天气图、对稳定地平线的核验、压力带两次逼近，以及一次跨越大气边界。"
+        },
+        {
+          "concept": "在陶瓷工作室里，一块声学窑砖先后让一碗水的水面出现两组逐渐逼近的共振纹样；随后无形振动传至工作台，把散落的陶土珠排列成一个完美圆环。",
+          "prompt_seed": "使用声音证据、水纹、重复检查和物理几何收束效果的触觉工作室谜团。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "证据载体在每次检查时显示随机的新图像。",
+          "repair": "锁定共享锚点，并在更新阶梯中仅更改一个可数变量。"
+        },
+        {
+          "failure": "实体后果在第二次证据更新前就开始出现。",
+          "repair": "让现实场景基准保持稳定，直到观众已比较至少两个载体状态。"
+        },
+        {
+          "failure": "新实例只是不同照片中的不同怪物。",
+          "repair": "同时改变载体形态、类型、地点、镜头结构、情绪基调和越界的物理机制。"
+        },
+        {
+          "failure": "反应表演压过了视觉证据。",
+          "repair": "把最强烈的表演反应延后到越界过程清楚可见之后，并以一个清晰可辨的结果收尾。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在月光下的植物温室里，一名养护员使用黄铜叶片扫描仪；窄纸带显示一道发光的开花波正穿过原本昏暗的种植床。扫描两次后，真实的花开沿土壤传播，并在她掌心绽放。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "live_baseline",
+            "evidence_carrier",
+            "advancing_variable",
+            "verification_action",
+            "boundary_crossing",
+            "emotional_register",
+            "camera_grammar",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在一个远程气象站，机械天空绘图仪绘制一条接近建筑物的彩色压力带，而晴朗的地平线保持不变；连续的绘图收紧曲线，直到真正的风和偏振光扫过仪器。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "live_baseline",
+            "evidence_carrier",
+            "advancing_variable",
+            "verification_action",
+            "boundary_crossing",
+            "emotional_register",
+            "camera_grammar",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

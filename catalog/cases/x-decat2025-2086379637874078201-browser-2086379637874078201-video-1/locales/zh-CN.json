@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-decat2025-2086379637874078201-browser-2086379637874078201-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "976ef50c0bee2dad71ca2ee6f102fcd66c21639a02347ddbb04d611cbf27d59c",
+    "creative_dna_sha256": "d4c392194e60eaf9339f1073dbc0d83171801650216960596cab858d524a3395"
+  },
+  "content": {
+    "title": "单目标逃生｜前后灾害交替逼近",
+    "summary": "始终让终点清楚可辨，同时让身后的坍塌与前方的危险交替出现。一次全身恢复动作和一次惊险擦身，为主体的推进能力与控制力提供可见证明。",
+    "quick_start": {
+      "input_format": "主体 + 可见终点 + 身后封闭 + 前方危险 + 一次全身恢复 + 近失结果证明",
+      "recommended_input": "维修无人机朝可见气闸前进，身后隔板依次关闭，前方机械臂横扫；它完成一次全身翻转恢复，擦过护盾后进入气闸。",
+      "required_anchors": [
+        "单一终点持续可读",
+        "前后危险交替而非同时混乱",
+        "有一次完整恢复动作",
+        "近失结果可见并证明保护能力"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "适合让主体身后的路线封闭与前方新危险交替出现的前进序列；在清楚可读的结尾之前，用一次恢复动作和一次险避证明推进系统。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "当一名操作员沿着受限路线前进时，保持一个目的地可见。后面、前面和侧面交替出现障碍物，因此每个障碍物都需要不同的身体适应，而不改变目标。为端点保留一项有意的控制行动，然后通过一种可以明显拦截追击危险的险些发生的保护状态来证明成功。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "显示第一个障碍物之前的目的地。",
+          "purpose": "让每一次适应都以目标为导向。",
+          "ablation_failure": "隐藏目标会让整段退化成普通奔跑。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "让障碍至少从三个方向交替出现。",
+          "purpose": "防止重复的追逐节拍。",
+          "ablation_failure": "所有危险都从后方出现，只会形成单一重复的升级。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "保留一个行进方向并在每次中断后恢复。",
+          "purpose": "保持空间和因果关系的辨识度。",
+          "ablation_failure": "方向重置使得进展无法衡量。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "需要物理端点控制操作。",
+          "purpose": "让主体的行动直接引发结果。",
+          "ablation_failure": "自动救援会剥夺主体的主动性。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "通过可见的近距离拦截来证明控制能力。",
+          "purpose": "收束因果链。",
+          "ablation_failure": "直接切到安全状态无法说明主体为何得以生还。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份保持稳定的原创主体或系统。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一种在可数因果阶段发生变化的可见变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的行为规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的物理或图形结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "地热反应堆走道和熔岩喷发",
+        "戴头盔的工厂技术员",
+        "落下的工业管道和蒸汽射流",
+        "大型控制轮和防爆护盾"
+      ],
+      "instantiations": [
+        {
+          "concept": "一架轨道维护无人机穿过桁架飞向热控百叶，依次避开身后的松散箔片、前方太阳能板和侧向冷却剂喷流，最后把热控百叶夹紧关闭，以抵挡太阳耀斑。",
+          "prompt_seed": "轨道维护无人机持续飞向热控百叶，依次适应后方、前方和侧向障碍，最后夹紧关闭百叶以抵挡太阳耀斑。"
+        },
+        {
+          "concept": "种子库快递员沿着玻璃过道前往隔离舱，后面的根部破裂，前面的托盘掉落，雾气向侧面喷出，然后手动密封阻挡孢子。",
+          "prompt_seed": "种子库快递员沿着玻璃过道前往隔离舱，后面的根部破裂，前面的托盘掉落，雾气向侧面喷出，然后手动密封阻挡孢子。"
+        },
+        {
+          "concept": "一辆洞穴救援车持续驶向水闸，砾石、摆动缆索与横向水柱依次从不同方向形成障碍。",
+          "prompt_seed": "洞穴救援车保持水闸目标可见，依次适应砾石、摆动缆索和横向水柱三类障碍。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "隐藏目标会让整段退化成普通奔跑。",
+          "repair": "显示第一个障碍物之前的目的地。"
+        },
+        {
+          "failure": "所有危险都从后方出现，只会形成单一重复的升级。",
+          "repair": "让障碍至少从三个方向交替出现。"
+        },
+        {
+          "failure": "方向重置使得进展无法衡量。",
+          "repair": "保留一个行进方向并在每次中断后恢复。"
+        },
+        {
+          "failure": "自动救援会剥夺主体的主动性。",
+          "repair": "需要物理端点控制操作。"
+        },
+        {
+          "failure": "直接切到安全状态无法说明主体为何得以生还。",
+          "repair": "通过可见的近距离拦截来证明控制能力。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一架轨道维护无人机穿过桁架飞向热控百叶，依次避开身后的松散箔片、前方太阳能板和侧向冷却剂喷流，最后把热控百叶夹紧关闭，以抵挡太阳耀斑。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "种子库快递员沿着玻璃过道前往隔离舱，后面的根部破裂，前面的托盘掉落，雾气向侧面喷出，然后手动密封阻挡孢子。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

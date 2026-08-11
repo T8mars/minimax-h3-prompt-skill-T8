@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "e0a97a6e4e741a3905d660aa2a3e20c3897ace3d8364d34af0f795d38205b595",
+    "creative_dna_sha256": "c99dd5e0ce66c2e6b85870283422694527da7945d3fa0fe94444092a949a1a3b"
+  },
+  "content": {
+    "title": "Strength Contrast | Lever Counter",
+    "summary": "First prove the mass difference and a usable pivot point. Let the heavy opponent fully commit, then have the smaller protagonist enter the turning radius, redirect the momentum through leverage, and finish in visible non-lethal control.",
+    "quick_start": {
+      "input_format": "Huge heavy opponent + small protagonist + visible fulcrum established early + committed heavy attack + close-range read and timing + leverage redirection + non-lethal control",
+      "recommended_input": "Facing the giant cargo loader, the small recycling robot first makes the magnetic cable and bollard visible; waits for the loader to complete its arm swing and then penetrates into the turning radius, and uses the second swing and the magnetic cable lever to safely press the robotic arm to the ground.",
+      "required_anchors": [
+        "Opening with proof of mass difference and usable fulcrum",
+        "Heavy opponents must first fully commit to the action",
+        "At least one impact demonstrates momentum and recovery costs",
+        "Reversals can only come from leverage and redirection",
+        "The ending is non-fatal and the fulcrum cause and effect is still visible"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "First prove the mass difference and usable pivot point, let the heavy opponent fully commit, then have the smaller protagonist enter the turning radius, redirect momentum with leverage, and end in visible non-lethal control.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Make a large mass advantage visually undeniable, then let the smaller subject survive by reading commitment, moving inside the heavy subject's turning radius and using one environmental fulcrum. The reversal must come from timing and leverage, not a sudden power increase; end in clear nonlethal control with both scale relations still visible.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Prove the mass difference and one usable environmental fulcrum early.",
+          "purpose": "Makes the later reversal physically accountable.",
+          "ablation_failure": "A surprise prop or hidden scale difference makes the reversal arbitrary.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Let the heavy subject fully commit before the smaller subject moves inside its recovery path.",
+          "purpose": "Turns speed into timing rather than invulnerability.",
+          "ablation_failure": "Early dodging removes the near-miss tension and strategic read.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use at least one impact to reveal momentum and recovery cost.",
+          "purpose": "Provides evidence for the later tactic.",
+          "ablation_failure": "Weight without visible consequence is only character design.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Make the decisive reversal depend on leverage or redirection, never sudden strength.",
+          "purpose": "Preserves the asymmetric premise.",
+          "ablation_failure": "A power-up breaks the causal strategy.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End in nonlethal visible control with the fulcrum still readable.",
+          "purpose": "Shows how the tactic worked and avoids an unexplained knockout.",
+          "ablation_failure": "A cut to victory hides the mechanism.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source fantasy fighters",
+        "source tavern",
+        "source green heavy character",
+        "source costume and finishing pose"
+      ],
+      "instantiations": [
+        {
+          "concept": "A small salvage robot faces a heavy cargo loader in a scrapyard, studies its slow swing, threads inside the turn and uses a hanging magnetic cable to pin one loader arm safely.",
+          "prompt_seed": "A small salvage robot faces a heavy cargo loader in a scrapyard, studies its slow swing, threads inside the turn and uses a hanging magnetic cable to pin one loader arm safely."
+        },
+        {
+          "concept": "A compact harbor tug confronts an unmanned barge in a storm channel, uses the barge's committed drift and one fixed mooring post to redirect it into a safe holding arc.",
+          "prompt_seed": "A compact harbor tug confronts an unmanned barge in a storm channel, uses the barge's committed drift and one fixed mooring post to redirect it into a safe holding arc."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "A surprise prop or hidden scale difference makes the reversal arbitrary.",
+          "repair": "Prove the mass difference and one usable environmental fulcrum early."
+        },
+        {
+          "failure": "Early dodging removes the near-miss tension and strategic read.",
+          "repair": "Let the heavy subject fully commit before the smaller subject moves inside its recovery path."
+        },
+        {
+          "failure": "Weight without visible consequence is only character design.",
+          "repair": "Use at least one impact to reveal momentum and recovery cost."
+        },
+        {
+          "failure": "A power-up breaks the causal strategy.",
+          "repair": "Make the decisive reversal depend on leverage or redirection, never sudden strength."
+        },
+        {
+          "failure": "A cut to victory hides the mechanism.",
+          "repair": "End in nonlethal visible control with the fulcrum still readable."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A small salvage robot faces a heavy cargo loader in a scrapyard, studies its slow swing, threads inside the turn and uses a hanging magnetic cable to pin one loader arm safely.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A compact harbor tug confronts an unmanned barge in a storm channel, uses the barge's committed drift and one fixed mooring post to redirect it into a safe holding arc.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

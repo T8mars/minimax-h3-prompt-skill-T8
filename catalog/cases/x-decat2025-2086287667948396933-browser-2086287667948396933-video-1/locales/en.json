@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-decat2025-2086287667948396933-browser-2086287667948396933-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "c50b9bfeaf83ae513381ccf36b5baf8d0bc3f4f2cabe6ae99922d61e3144e61b",
+    "creative_dna_sha256": "51215a519fe861beb68e91623792d9e8ce5ef6abfc1e2e06c8aad20db8ef6f5d"
+  },
+  "content": {
+    "title": "Route Collapse | Safe Space Erosion",
+    "summary": "The subject moves exclusively toward a fixed endpoint, with the traversed route disappearing sequentially. The connection is finally severed only after the subject completely crosses the threshold.",
+    "quick_start": {
+      "input_format": "Carrier + Fixed Direction and Endpoint + Traversed Route Disappears Segment by Segment + Current Segment Experiences One Instance of Instability + Final Disconnection Occurs Only After Fully Crossing the Threshold",
+      "recommended_input": "The sampling vehicle in the transparent greenhouse pipeline continuously travels toward the safety cabin, with each traversed section collapsing sequentially; the current section sways only once, and the final connection is severed only after the vehicle fully enters the safety cabin.",
+      "required_anchors": [
+        "Direction and Endpoint Are Fixed",
+        "The rear route can only decrease, not increase.",
+        "The current segment can recover from instability at most once.",
+        "The final connection is severed only after the subject has completely crossed the threshold."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The subject only moves towards a fixed end point, and the route it has taken disappears monotonically, and the connection is finally disconnected after it completely crosses the threshold.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Lock one subject to a single screen-direction destination, then remove traversed route segments monotonically from behind while introducing one instability under the current segment. Alternate local control proof with wide remaining-route proof, and end with the subject fully crossing a safety threshold one beat before the final connection fails.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one visible destination and one travel direction.",
+          "purpose": "Makes remaining distance measurable.",
+          "ablation_failure": "Changing destination destroys the countdown.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Remove only already-traversed safe space from behind.",
+          "purpose": "Prevents arbitrary danger and blocks retreat.",
+          "ablation_failure": "Random forward gaps can make survival impossible rather than tense.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Add one recoverable instability under the current segment.",
+          "purpose": "Tests control without replacing route logic.",
+          "ablation_failure": "Too many local hazards obscure the monotonic collapse.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Alternate close control with wide remaining-route evidence.",
+          "purpose": "Proves both agency and structural countdown.",
+          "ablation_failure": "Only close shots hide how much route remains.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Cross the full threshold before the last connection fails.",
+          "purpose": "Produces unambiguous escape proof.",
+          "ablation_failure": "Cutting away before full crossing leaves the outcome uncertain.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original subject or system whose identity remains stable."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One visible variable that changes in countable causal stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained behavior rule that makes the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A coherent information order that does not copy source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "One clean physical or graphic consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "A new hierarchy of diegetic cues supporting state changes."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "dark SUV on a suspension bridge",
+        "heavy rain and black water",
+        "sliding abandoned cars and snapping cables",
+        "the source bridge-deck collapse and far-shore anchorage"
+      ],
+      "instantiations": [
+        {
+          "concept": "A pollen courier capsule moves through a suspended greenhouse tube as sealed cells detach behind, one current cell tilts and the capsule reaches an airlock before the final collar releases.",
+          "prompt_seed": "A pollen courier capsule moves through a suspended greenhouse tube as sealed cells detach behind, one current cell tilts and the capsule reaches an airlock before the final collar releases."
+        },
+        {
+          "concept": "A cave survey cart crosses modular crystal rails that dissolve behind it, stabilizes one rotating slab and reaches a stone dock before the last rail drops.",
+          "prompt_seed": "A cave survey cart crosses modular crystal rails that dissolve behind it, stabilizes one rotating slab and reaches a stone dock before the last rail drops."
+        },
+        {
+          "concept": "A data packet is visualized as a carrier crossing a physical relay corridor whose completed segments fold away behind until the terminal port.",
+          "prompt_seed": "A data packet is visualized as a carrier crossing a physical relay corridor whose completed segments fold away behind until the terminal port."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Changing destination destroys the countdown.",
+          "repair": "Establish one visible destination and one travel direction."
+        },
+        {
+          "failure": "Random forward gaps can make survival impossible rather than tense.",
+          "repair": "Remove only already-traversed safe space from behind."
+        },
+        {
+          "failure": "Too many local hazards obscure the monotonic collapse.",
+          "repair": "Add one recoverable instability under the current segment."
+        },
+        {
+          "failure": "Only close shots hide how much route remains.",
+          "repair": "Alternate close control with wide remaining-route evidence."
+        },
+        {
+          "failure": "Cutting away before full crossing leaves the outcome uncertain.",
+          "repair": "Cross the full threshold before the last connection fails."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A pollen courier capsule moves through a suspended greenhouse tube as sealed cells detach behind, one current cell tilts and the capsule reaches an airlock before the final collar releases.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A cave survey cart crosses modular crystal rails that dissolve behind it, stabilizes one rotating slab and reaches a stone dock before the last rail drops.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

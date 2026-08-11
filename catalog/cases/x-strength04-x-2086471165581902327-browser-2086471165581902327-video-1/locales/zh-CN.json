@@ -1,0 +1,224 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-strength04-x-2086471165581902327-browser-2086471165581902327-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "194888e4bdd070e7a9f3e8c4b6f450ad4bce7d3412775efcac0a52b80afd801c",
+    "creative_dna_sha256": "19ba5baa8ed1e48a807264a0e84acb7e937f0b287915e1a123753dd4389da9fd"
+  },
+  "content": {
+    "title": "第一视角探险｜穿越后巡检",
+    "summary": "跨越清楚可辨的入口边界，在通行过程中保持空间连续；停下检查一个局部异常但不作诊断，最后以清楚可见的路线状态收束。",
+    "quick_start": {
+      "input_format": "入口远景 + 跨越实体边界 + 连续通行 + 局部异常检查 + 可见的路线终态（不作诊断）",
+      "recommended_input": "植物学小队进入树根洞穴，越过明暗分界后沿狭窄通道前进；领队停下检查一条轻轻摆动的气流丝带，但不下结论，随后全队继续沿原路线深入。",
+      "required_anchors": [
+        "清楚可辨的入口与实体边界",
+        "跨越入口边界后保持空间连续",
+        "只检查一个局部线索",
+        "结尾显示路线状态但不虚构诊断"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "适合第一人称旅程：跨越实体边界后沿连续路线前进，停下完成一次局部检查，并在不虚构诊断的前提下，以清楚可见的路线状态收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "远景尺度画面先确立一个会影响后续的实体边界；一次切镜越过边界，随后以较长的连续跟拍把抽象环境转化为身临其境的通行过程。移动光线、同伴或工具的配合，以及一个局部材质线索会打断前进；序列最终停在清楚可见的检查后路线状态，但不声称该线索已经得到诊断或解决。地形、参与者、材质线索、路线、拍摄载体和最终路线状态均可替换。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "用开场远景交代尺度，明确一个具体入口或路线，而不只是展示漂亮风景。",
+          "purpose": "为后续内部穿行提供目的地，并完成尺度转换。",
+          "ablation_failure": "没有明确入口，外景就只是脱节的 B-roll，切入内部也会显得随意。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-11"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "通过一次明确切镜或遮挡跨过入口，并保持足够久的空间连续性，让穿行具有身临其境感。",
+          "purpose": "让环境从说明性画面变成观众可以跟随进入的路线。",
+          "ablation_failure": "反复切入补充镜头会抹去距离感、方向感和体力消耗。",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02",
+            "obs-07",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "将参与者、灯光和工具绑定成一个清晰的协调模式，其间距随路线而变化。",
+          "purpose": "在视觉重复的环境中提供清楚的人体尺度运动。",
+          "ablation_failure": "人物各自游走或身份发生漂移，会让这段穿行显得像合成画面，并消除真实风险感。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-05",
+            "obs-13",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "以一个可被指认、测量或让人物作出身体反应的局部材质或环境线索打断行进。",
+          "purpose": "创造一种因果观察节奏，而不是无休止的向前行走。",
+          "ablation_failure": "没有局部线索，序列就只有氛围而没有事件；不合常理的线索会破坏纪录片可信度。",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "obs-06",
+            "obs-09"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "检查后，以一种清楚可见的路线状态收尾——继续前进、暂停或改变方向；除非画面直接展示，否则不得声称已完成诊断或危险处置。",
+          "purpose": "为段落提供清晰可辨的检查后终点，同时保留不确定性。",
+          "ablation_failure": "在检查后的行进状态清楚可见前结束，会让检查显得被截断；声称画面未展示的诊断，则会把观察变成虚构。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-09",
+            "obs-10"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "threshold_environment",
+          "constraint": "一个具体的开口、舱口、冠层、舱室或通行入口，并带有清楚可见的尺度参照。"
+        },
+        {
+          "name": "field_team",
+          "constraint": "一到三个具有稳定角色和轮廓的原创人物、动物或机器。"
+        },
+        {
+          "name": "route_geometry",
+          "constraint": "具有稳定方向锚点的连续的、物理上可穿越的路径。"
+        },
+        {
+          "name": "reveal_light",
+          "constraint": "头灯、UV 光束、灯笼、反射日光或能揭示材质层次的移动阴影。"
+        },
+        {
+          "name": "local_cue",
+          "constraint": "一种可能的气流、振动、湿气、声音、颗粒物或结构变化。"
+        },
+        {
+          "name": "inspection_action",
+          "constraint": "不依赖文本而将注意力引向提示的手势或工具动作。"
+        },
+        {
+          "name": "post_inspection_route_state",
+          "constraint": "检查后有明显的延续、暂停或方向改变；因果关系或诊断是可选的，除非显示，否则不得归因于来源。"
+        },
+        {
+          "name": "camera_carrier",
+          "constraint": "选择适合新环境的航拍、缆索机位、随身机位、探测车载机位或手持拍摄路径。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "冰川谷、蓝色冰洞、黑色椭圆洞口和半透明青色隧道",
+        "两名冰川学家、橙色和蓝黄色套装、头盔、冰爪、背包和冰镐",
+        "三秒航拍推进及随后相同的高机位前左至后方跟拍路线",
+        "来源提示词中的冰下水域、季节性融化、标记和撤退情境"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名森林植物学家与紧凑型四足漫游车进入裸根陷坑；缆索摄影机拍摄的入口视角切换为低位内部跟随，漫游车上的丝带气流标折向侧壁裂缝，植物学家记录这一现象，两者随后沿既定主根通道继续前进。",
+          "prompt_seed": "温带森林实地纪录片：裸根陷坑的尺度、人机协作、接受检查的气流线索，以及检查后继续前行的可见路线状态。"
+        },
+        {
+          "concept": "港口工程师与浮动传感器圆盘在低潮时进入海堤检修隧道；连续腰部高度跟拍揭示一条逆向泡沫线，工程师用无染料软木片检验并放置实体标记，随后沿同一条抬高步道继续前进。",
+          "prompt_seed": "潮汐基础设施检查：海堤入口、人机传感协作、水流线索，以及检查后继续前行的可见路线状态。"
+        },
+        {
+          "concept": "剧院装配工与天花板履带机器人穿过舞台栅顶舱口；连续行进中，工具灯照出一股不同步振动的电缆，装配工只标记异常位置、不作诊断，两者随后沿既定桁架路线继续前进。",
+          "prompt_seed": "后台高空检查：舱口入口、工具灯揭示、一个已标记的振动线索，以及清楚可见的继续行进。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "开场风景与内部路线毫无关系。",
+          "repair": "在外景中让入口清楚可辨，并在切镜时保持其朝向一致。"
+        },
+        {
+          "failure": "连续跟随仅限于向前行走。",
+          "repair": "改变参与者间距和揭示光源的位置，并加入一个明显打断注意力或行进节奏的局部线索。"
+        },
+        {
+          "failure": "环境看起来像玻璃或幻想材质。",
+          "repair": "明确符合该材质自身特性的重量、沉积、湿度、磨损、声音及与工具的交互。"
+        },
+        {
+          "failure": "转移仅限于同两名探险者在不同洞穴中。",
+          "repair": "同时改变团队关系、环境类别、工具关系、线索的物理特性、拍摄平台和检查后的路线状态。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名森林植物学家与紧凑型四足漫游车进入裸根陷坑；缆索摄影机拍摄的入口视角切换为低位内部跟随，漫游车上的丝带气流标折向侧壁裂缝，植物学家记录这一现象，两者随后沿既定主根通道继续前进。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "threshold_environment",
+            "field_team",
+            "route_geometry",
+            "reveal_light",
+            "local_cue",
+            "inspection_action",
+            "post_inspection_route_state",
+            "camera_carrier"
+          ]
+        },
+        {
+          "concept": "港口工程师与浮动传感器圆盘在低潮时进入海堤检修隧道；连续腰部高度跟拍揭示一条逆向泡沫线，工程师用无染料软木片检验并放置实体标记，随后沿同一条抬高步道继续前进。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "threshold_environment",
+            "field_team",
+            "route_geometry",
+            "reveal_light",
+            "local_cue",
+            "inspection_action",
+            "post_inspection_route_state",
+            "camera_carrier"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

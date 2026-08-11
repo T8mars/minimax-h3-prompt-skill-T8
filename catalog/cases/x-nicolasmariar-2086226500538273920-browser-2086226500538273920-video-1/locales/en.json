@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "858d355c180d432f784c5677e784395116ee970b1a0da30214f5a545a39a22ca",
+    "creative_dna_sha256": "45157d87591c308fe3fb7cc7ccea5b35698a51aac09662e3120db986b824a9e1"
+  },
+  "content": {
+    "title": "Micro-Intervention | Single External Object Entry",
+    "summary": "Use one static full-scale object to calibrate the miniature world. After the miniature routine becomes readable, introduce one different external intervention object exactly once and show the local state change and reaction together.",
+    "quick_start": {
+      "input_format": "Static scale calibrator + readable miniature routine + calibrator remains unchanged + one different external intervention + local state change and reaction in the same frame",
+      "recommended_input": "A static carabiner calibrates the miniature scale of the alpine weather station, and the little maintenance man continues his daily work; then a pair of real-size tweezers enters only once to straighten the antenna, and local state changes and the little man's reaction are visible at the same time.",
+      "required_anchors": [
+        "Calibrate the scale first with static standards",
+        "Establish the miniature routine clearly before the intervention",
+        "The external intervention tool must be different from the scale calibrator",
+        "External objects intervene only once, and the result is in the same frame as the reaction"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Miniature routines in which a static full-scale object calibrates scale before one different external intervention tool enters once and changes the local state.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Use one familiar inert object at the opening to calibrate a miniature world immediately. Let the small actors, tools, motion, shadows and atmosphere then sustain a coherent routine while the calibrator remains passive. Later, introduce one different external intervention tool exactly once, let it change one local state, and hold the intervention, affected object and internal reaction together so the story shifts from scale observation to outside control.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Calibrate scale early with one familiar inert standard object.",
+          "purpose": "Makes scale an established fact rather than a delayed trick.",
+          "ablation_failure": "Without calibration the later intervention is mistaken for a scale reveal.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Prove the known miniature world through coordinated routine and local physics.",
+          "purpose": "Gives the internal system temporary autonomy.",
+          "ablation_failure": "A static model offers no relation to disrupt.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Keep the opening calibrator passive after its proof.",
+          "purpose": "Separates measurement from agency.",
+          "ablation_failure": "An active calibrator collapses the two external roles.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Introduce one different external intervention tool exactly once in one continuous action.",
+          "purpose": "Creates a clear observer-to-controller transition.",
+          "ablation_failure": "Repeated tools or cuts turn the event into ordinary handling.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Show one changed local state and internal reaction with both scales visible.",
+          "purpose": "Proves intervention rather than proximity.",
+          "ablation_failure": "A hovering tool without consequence does not alter the relationship.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original subject or system whose identity remains stable."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One visible variable that changes in countable causal stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained behavior rule that makes the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A coherent information order that does not copy source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "One clean physical or graphic consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "A new hierarchy of diegetic cues supporting state changes."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "miniature barbecue on a kitchen table",
+        "full-size human hand entering the scene",
+        "foreground fork and wooden tabletop",
+        "tiny men in colorful sweaters around a smoking grill"
+      ],
+      "instantiations": [
+        {
+          "concept": "A standard sewing needle calibrates a tiny alpine weather station on rough bark from the opening; later one insulated magnetic probe enters once and rotates a jammed vane while technicians react.",
+          "prompt_seed": "A standard sewing needle calibrates a tiny alpine weather station on rough bark from the opening; later one insulated magnetic probe enters once and rotates a jammed vane while technicians react."
+        },
+        {
+          "concept": "A paper clip establishes a miniature harbor's scale beside a shell groove; later one suction pipette enters once and lifts a stranded buoy into its channel.",
+          "prompt_seed": "A paper clip establishes a miniature harbor's scale beside a shell groove; later one suction pipette enters once and lifts a stranded buoy into its channel."
+        },
+        {
+          "concept": "A pencil tip calibrates a page-cut library from the opening; later one rubber stamp arm enters once and closes a wind-blown roof flap while readers scatter.",
+          "prompt_seed": "A pencil tip calibrates a page-cut library from the opening; later one rubber stamp arm enters once and closes a wind-blown roof flap while readers scatter."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without calibration the later intervention is mistaken for a scale reveal.",
+          "repair": "Calibrate scale early with one familiar inert standard object."
+        },
+        {
+          "failure": "A static model offers no relation to disrupt.",
+          "repair": "Prove the known miniature world through coordinated routine and local physics."
+        },
+        {
+          "failure": "An active calibrator collapses the two external roles.",
+          "repair": "Keep the opening calibrator passive after its proof."
+        },
+        {
+          "failure": "Repeated tools or cuts turn the event into ordinary handling.",
+          "repair": "Introduce one different external intervention tool exactly once in one continuous action."
+        },
+        {
+          "failure": "A hovering tool without consequence does not alter the relationship.",
+          "repair": "Show one changed local state and internal reaction with both scales visible."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A standard sewing needle calibrates a tiny alpine weather station on rough bark from the opening; later one insulated magnetic probe enters once and rotates a jammed vane while technicians react.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A paper clip establishes a miniature harbor's scale beside a shell groove; later one suction pipette enters once and lifts a stranded buoy into its channel.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

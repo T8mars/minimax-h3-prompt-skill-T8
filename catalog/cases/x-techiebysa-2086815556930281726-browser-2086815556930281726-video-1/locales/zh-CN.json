@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "cf2dd01b2901ae2dbe8f806a55365efa475e2238d9da3fac3a3eda484b322d79",
+    "creative_dna_sha256": "f1b641786549c5a9cf56e79398768e768b8ab95609a0771258437964f659deb5"
+  },
+  "content": {
+    "title": "角色板验真｜跨栏全程身份锁定",
+    "summary": "固定角色板持续在场，运动区用起跑、侧面、俯拍、正面和关键动作逐层验证同一人物。",
+    "quick_start": {
+      "input_format": "固定角色板 + 同一原创主体 + 至少4种不同验证职责 + 广角/近景双证明 + 最终对照",
+      "recommended_input": "固定角色板不变；太阳帆维修员在上方实景依次完成准备、侧面攀梯、俯拍穿越、近景缆线抓取和最终部署验证。",
+      "required_anchors": [
+        "在整个过程中保持一块原创设计的紧凑身份板清晰可辨。",
+        "为每个实拍阶段分配不同的身份验证任务。",
+        "包含一次广角对照和一次近景呈现、形变幅度大的技能证明。",
+        "把最终实拍结果放在未改变的身份板旁边。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定角色板持续在场，运动区用起跑、侧面、俯拍、正面和关键动作逐层验证同一人物。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让一块紧凑的身份板始终可见，并在实拍验证区域中通过准备、加速、正面轮廓、俯拍对照和一项决定性技能反复证明同一主体。身份板是验证基准，不是装饰：每个实拍阶段都必须测试不同的身份线索，并保留足够稳定的锚点供比较。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "始终保留一块原创设计的紧凑身份板，确保内容可读。",
+          "purpose": "提供一条稳定的对照基准。",
+          "ablation_failure": "没有身份板，这段作品就会变成普通的体育蒙太奇。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "为每个实拍阶段分配不同的身份验证任务。",
+          "purpose": "测试身份而不是重复动作。",
+          "ablation_failure": "反复的侧跑并没有增加新的证据。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在速度和透视效果下保留脸部、轮廓、服装逻辑和一种颜色锚点。",
+          "purpose": "定义成功的连续性。",
+          "ablation_failure": "可见的漂移无法通过测试。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "包含一次远景对照，以及一次近景、以高形变动作为重点的技能验证。",
+          "purpose": "同时检验人物间距关系和局部细节。",
+          "ablation_failure": "只用一种景别无法可靠验证身份。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在未改动的身份板旁保留最终实拍结果。",
+          "purpose": "使成功变得可检验。",
+          "ablation_failure": "标志卡无法结束身份测试。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且稳定的主体，或一组角色关系清晰的配对主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有表层元素的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演或运动规则，使机制保持清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种能逐步证明各状态、且不照搬来源镜头分界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内声线索层次；不声称未经证实的来源音频内容。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源作品中的女子跨栏运动员和国家代表色",
+        "来源作品中的 ZURI 身份板",
+        "来源体育场和跨栏比赛",
+        "来源作品具体的身份板布局和赛事镜头组织"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名原创太阳帆机械师依次蹲下、爬上龙门架、穿越旋转臂、抓住电缆，最后停在展开的帆旁；每个阶段都与紧凑身份板上的同一人物一致。",
+          "prompt_seed": "一名原创太阳帆机械师依次蹲下、爬上龙门架、穿越旋转臂、抓住电缆，最后停在展开的帆旁；每个阶段都与紧凑身份板上的同一人物一致。"
+        },
+        {
+          "concept": "一名原创陶瓷快递员依次完成打包、侧面行走、俯拍穿越车间、近景平衡动作和最终交付；旁侧固定转台上的角色身份板始终不变。",
+          "prompt_seed": "用侧面行走、俯拍车间穿越和近景平衡动作连续验证同一名陶瓷快递员，最终完成交付，同时保持固定转台身份板不变。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有身份板，这段作品就会变成普通的体育蒙太奇。",
+          "repair": "始终保留一块原创设计的紧凑身份板，确保内容可读。"
+        },
+        {
+          "failure": "反复的侧跑并没有增加新的证据。",
+          "repair": "为每个实拍阶段分配不同的身份验证任务。"
+        },
+        {
+          "failure": "可见的漂移无法通过测试。",
+          "repair": "在速度和透视效果下保留脸部、轮廓、服装逻辑和一种颜色锚点。"
+        },
+        {
+          "failure": "只用一种景别无法可靠验证身份。",
+          "repair": "包含一次远景对照，以及一次近景、以高形变动作为重点的技能验证。"
+        },
+        {
+          "failure": "标志卡无法结束身份测试。",
+          "repair": "在未改动的身份板旁保留最终实拍结果。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名原创太阳帆机械师依次蹲下、爬上龙门架、穿越旋转臂、抓住电缆，最后停在展开的帆旁；每个阶段都与紧凑身份板上的同一人物一致。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名原创陶瓷快递员依次完成打包、侧面行走、俯拍穿越车间、近景平衡动作和最终交付；旁侧固定转台上的角色身份板始终不变。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass; English-residue editorial pass"
+  }
+}

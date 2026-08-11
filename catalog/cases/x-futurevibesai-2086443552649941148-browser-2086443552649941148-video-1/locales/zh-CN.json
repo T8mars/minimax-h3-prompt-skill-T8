@@ -1,0 +1,211 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-futurevibesai-2086443552649941148-browser-2086443552649941148-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "a7638f86997a3374d1b35ac0089c68c728dafb1101d614ae398714846f3b6afe",
+    "creative_dna_sha256": "d65b2bf76c8a3b4137d8fd2ee4b66eac4e7cef366739ad326233a58e52bb631b"
+  },
+  "content": {
+    "title": "画中物成真｜小光点变奇观",
+    "summary": "一个被创作的小标记获得自主性，从原承载表面跨入实体空间，逐渐扩大，并在现实环境中留下可见变化。",
+    "quick_start": {
+      "input_format": "被创作的小标记 + 获得自主性 + 越过实体边界 + 扩大/复制 + 改变环境",
+      "recommended_input": "刺绣布上的银色小鹤先眨眼，随后从布面跨出，复制成一群微光纸鹤，绕舞台飞行并重新点亮整片空间。",
+      "required_anchors": [
+        "起点明确是被创作的标记",
+        "先出现自主动作",
+        "必须跨过真实边界",
+        "扩张后改变环境而非只放大"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "被创作的小标记获得自主性，跨出实体边界，扩张并改变真实环境。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先在边界清楚的物理表面上有意创作一个小标记。让它在越过承载表面边缘前获得自主性，并以一条连续轨迹进入现实环境；随后让它倍增或放大，直至它释放出的特性改变周围世界。创作、自主、越界、倍增和环境后果必须依次发生；媒介、生物、场景、释放特性、尺度和情绪均可替换。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在清晰可辨的物理表面上显示正在完成的标记。",
+          "purpose": "确定创作来源。",
+          "ablation_failure": "预先存在的魔法物品失去了从创造到生命的前提。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "当标记仍靠近其源边界时证明其自主性。",
+          "purpose": "将生命与硬剪辑或投影分离。",
+          "ablation_failure": "起飞前的穿越使得过渡变得模糊。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用一条连续路径从创作表面穿越到共享空间。",
+          "purpose": "绑定两个本体层。",
+          "ablation_failure": "传送消除了清晰的边界事件。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "仅在第一个实体穿过后才进行倍增或放大。",
+          "purpose": "创建一个清晰的尺度阶梯。",
+          "ablation_failure": "早期的群体图像跳过了亲密的证据。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "让缩放现象明显改变环境光、运动或材质。",
+          "purpose": "提供物理结果。",
+          "ablation_failure": "没有环境响应的粒子仍然只是装饰性 VFX。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份和轮廓保持稳定的原创主体。"
+        },
+        {
+          "name": "setting",
+          "constraint": "一个具有固定空间锚点、且不复用来源作品特有地点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个只沿单一方向连续变化，或按可数阶段推进的可读变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的表演规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一种清晰的物理或图形结果，可以闭合因果链。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "在被雨覆盖的素描本上绘制的黄铅笔萤火虫",
+        "阴暗的城市小巷里温暖的金色昆虫群。",
+        "来源手、页面角度、街道地理和行人安排。",
+        "MiniMax 或 Hailuo 水印放置。"
+      ],
+      "instantiations": [
+        {
+          "concept": "服装师把银色纸鹤轮廓缝在黑色天鹅绒上；轮廓自行脱离布面，折叠后穿过舞台幕布接缝，再展开为更大的反光纸构件，带动静止的镜面吊饰，把聚光灯重新引向几何座椅图案。",
+          "prompt_seed": "银鹤从织物脱离，穿越幕布接缝并扩展为反光纸构件，最终以改变舞台光线完成跨媒介证明。"
+        },
+        {
+          "concept": "一个孩子在雾蒙蒙的车窗上画下一片小红叶；红叶脱离画面进入真实空间，扩展成纸质顶篷，其投影图案改变整节车厢的冷色反光。",
+          "prompt_seed": "绘画跨越媒介成为实体纸棚，并通过投影而非自发光改变整个环境。"
+        },
+        {
+          "concept": "陶艺家在湿粘土上刻下一道蓝色波纹；刻痕像丝带般抬起，越过器皿边缘，扩展为悬浮的声学薄膜，使周围风铃全部归于安静。",
+          "prompt_seed": "湿粘土刻痕跨越器皿边界，扩展成声学薄膜，并以让风铃静音的物理结果收束。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "群体出现在单个实体穿过之前。",
+          "repair": "镜头持续停留在一个自主实体上，直到它明显越过来源边缘。"
+        },
+        {
+          "failure": "现场环境已经灯火通明。",
+          "repair": "保护柔和的基线，以便发射的属性可以改变它。"
+        },
+        {
+          "failure": "新版本只是将一种发光昆虫换成了另一种。",
+          "repair": "改变创作媒介、实体类别、环境、发光或释放规律、镜头和情感收束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "服装师把银色纸鹤轮廓缝在黑色天鹅绒上；轮廓自行脱离布面，折叠后穿过舞台幕布接缝，再展开为更大的反光纸构件，带动静止的镜面吊饰，把聚光灯重新引向几何座椅图案。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个孩子在雾蒙蒙的车窗上画下一片小红叶；红叶脱离画面进入真实空间，扩展成纸质顶篷，其投影图案改变整节车厢的冷色反光。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

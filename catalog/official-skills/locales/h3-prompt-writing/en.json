@@ -1,0 +1,46 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "official-skill",
+  "resource_id": "h3-prompt-writing",
+  "locale": "en",
+  "source_bindings": {
+    "official_index_sha256": "7c5738e9bf795652e16ac3b145279733e7b5ae87b01d4a27d074850d9bd935e0",
+    "companion_summary_sha256": "5fd788c280f6dc7e6f319a1b635adda87a42a8608d6a0eadedca1a71bba0aa16"
+  },
+  "content": {
+    "title": "H3 Official Prompt Writing",
+    "summary": "The official MiniMax repository provides a general H3 prompt-writing Skill for five modes: text-to-video, first-frame, first-and-last-frame, last-frame, and full-reference. This library provides an independent Seedance 2.0 companion for the same use cases.",
+    "quick_start": {
+      "input_format": "Task mode (text-to-video, first-frame, first-and-last-frame, last-frame, or full-reference) + subject and setting + action and camera plan + sound requirements + hard constraints",
+      "recommended_input": "Choose one of the five supported task modes, provide the required source assets, then describe the subject, setting, action, camera plan, sound, and hard constraints. Use the official upstream H3 Skill for H3 and the independent companion for Seedance 2.0.",
+      "required_anchors": [
+        "Use the pinned official MiniMax H3 upstream Skill.",
+        "Use the independent Seedance 2.0 companion for Seedance.",
+        "Do not copy the upstream Skill body or duplicate it into ComfyUI."
+      ],
+      "usage_steps": [
+        "Choose the matching official MiniMax H3 Skill and install it from the pinned upstream link.",
+        "Prepare only the assets and facts required by that Skill.",
+        "Use the independent Seedance companion when targeting Seedance 2.0.",
+        "Validate identity, timing, text and asset responsibilities before generation."
+      ],
+      "applicable_scope": [
+        "MiniMax H3 projects using text-to-video, first-frame, first-and-last-frame, last-frame, or full-reference generation.",
+        "Projects that match the upstream Skill's declared purpose and asset contract."
+      ],
+      "not_suitable_for": [
+        "Tasks outside the upstream Skill's declared scope.",
+        "Cases that require copying the upstream Skill body into this library or importing it into the T8 ComfyUI node."
+      ]
+    },
+    "creative_dna": {
+      "usage_scope": "The official H3 prompt-writing entry covers text-to-video, first-frame, first-and-last-frame, last-frame, and full-reference generation. This library provides an independently authored Seedance 2.0 companion for equivalent use cases.",
+      "source_boundary": "MiniMax H3 uses the pinned official upstream Skill. Seedance 2.0 uses the independently authored companion Skill in this library. The upstream Skill body is not copied.",
+      "comfyui_boundary": "This official entry is not imported into ComfyUI because the target node already includes the official MiniMax capability."
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

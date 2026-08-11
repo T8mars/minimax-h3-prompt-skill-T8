@@ -1,0 +1,219 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "858d355c180d432f784c5677e784395116ee970b1a0da30214f5a545a39a22ca",
+    "creative_dna_sha256": "45157d87591c308fe3fb7cc7ccea5b35698a51aac09662e3120db986b824a9e1"
+  },
+  "content": {
+    "title": "微缩介入｜外部物只进入一次",
+    "summary": "用一个静止的全尺寸物体校准微缩世界。待微缩日常清楚可辨后，只让一个不同的外部干预物进入一次，并把局部状态变化与内部反应同时呈现。",
+    "quick_start": {
+      "input_format": "静态标准物校准尺度 + 清楚的微型日常 + 校准物保持不动 + 不同的外部干预工具只进入一次 + 局部状态改变与反应同框",
+      "recommended_input": "一枚静止登山扣校准高山气象站的微缩尺度，小维修员继续日常作业；随后一把真实尺寸镊子只进入一次，扶正天线，局部状态改变与小人的反应同时可见。",
+      "required_anchors": [
+        "静态标准物先校准尺度",
+        "微型日常先稳定建立",
+        "外部干预工具与尺度校准物必须是不同物体",
+        "外部物只介入一次且结果与反应同框"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "适合先用静态全尺寸物体校准微缩尺度，再让一个不同的外部干预工具仅进入一次并改变局部状态的微型日常。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在开场使用一个熟悉的静止物体，立即建立微型世界的尺度。随后让小演员、工具、动作、阴影和氛围维持连贯的日常流程，而尺度参照物始终保持被动。之后只让一个不同的外部干预工具进入一次，由它改变一个局部状态，并把干预动作、受影响物体和内部角色的反应保持在同一段连续关系中，使故事从尺度观察转向外部介入。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "尽早用一个熟悉且静止的标准参照物校准尺度。",
+          "purpose": "让尺度成为既定事实，而不是延迟的揭示。",
+          "ablation_failure": "如果没有校准，后续的干预会被误认为是尺度的揭示。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "通过协调的流程和局部物理现象来证明已知的微型世界。",
+          "purpose": "给予内部系统临时的自主权。",
+          "ablation_failure": "静态模型与颠覆无关。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "校准完成后，保持开场校准器处于被动状态。",
+          "purpose": "将测量与操作主体分开。",
+          "ablation_failure": "主动的校准器会消除这两个外部角色。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在一段连续动作中，只让一个不同的外部干预工具进入一次。",
+          "purpose": "创建一个清晰的从观察者到控制器的转换。",
+          "ablation_failure": "反复出现多个工具或频繁切镜，会把这一事件变成普通操作。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "展示一个改变的局部状态和内部反应，同时两个尺度都可见。",
+          "purpose": "证明是干预而非接近。",
+          "ablation_failure": "没有后果的悬停工具不会改变关系。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "身份保持稳定的原创主体或系统。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个在可数因果阶段中发生变化的可见变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一种克制的行为规则，使机制清楚可辨。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一个不复制源镜头边界的连贯信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个清晰明确的物理或图形结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套新的画内声线索层级，用于辅助呈现每次状态变化。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "厨房桌子上的微型烧烤炉",
+        "全尺寸人手进入场景",
+        "前景叉子和木桌面",
+        "穿着彩色毛衣的小个子男人围着冒烟的烤架"
+      ],
+      "instantiations": [
+        {
+          "concept": "从开场起，一根标准缝衣针就在粗糙树皮上校准小型高山气象站的尺度；随后，一个绝缘磁性探针只进入一次并转动卡住的风向标，技术员同时作出反应。",
+          "prompt_seed": "从开场起，一根标准缝衣针就在粗糙树皮上校准小型高山气象站的尺度；随后，一个绝缘磁性探针只进入一次并转动卡住的风向标，技术员同时作出反应。"
+        },
+        {
+          "concept": "回形针在贝壳沟槽旁建立微型港口的尺度；随后，一支带吸力的滴管只进入一次，把搁浅浮标提回航道。",
+          "prompt_seed": "以回形针建立微型港口尺度，再让带吸力的滴管只进入一次，将搁浅浮标提回航道。"
+        },
+        {
+          "concept": "开场用铅笔尖校准纸雕图书馆的尺度；随后，橡皮图章机械臂只进入一次，关上被风吹动的屋顶挡板，微型读者随即散开。",
+          "prompt_seed": "从开场起，铅笔尖便校准剪纸图书馆的尺度；随后，橡皮图章臂只进入一次并关闭被风吹动的屋顶挡板，而读者四散开来。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有校准，后来的干预会被误认为是比例揭示。",
+          "repair": "尽早用一个熟悉且静止的标准参照物校准尺度。"
+        },
+        {
+          "failure": "静态模型与颠覆无关。",
+          "repair": "通过协调常规和局部物理规律来证明已知的微型世界。"
+        },
+        {
+          "failure": "主动校准器消除了这两个外部角色。",
+          "repair": "完成尺度验证后，让开场校准物继续保持被动。"
+        },
+        {
+          "failure": "反复出现多个工具或频繁切镜，会把这一事件变成普通操作。",
+          "repair": "在一段连续动作中，只让一个不同的外部干预工具进入一次。"
+        },
+        {
+          "failure": "没有后果的悬停工具不会改变关系。",
+          "repair": "显示改变的局部状态和内部反应，两个尺度都可见。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "从开场起，一根标准缝衣针就在粗糙树皮上校准小型高山气象站的尺度；随后，一个绝缘磁性探针只进入一次并转动卡住的风向标，技术员同时作出反应。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "回形针在贝壳沟槽旁建立微型港口的尺度；随后，一支带吸力的滴管只进入一次，把搁浅浮标提回航道。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound offline bilingual editorial pass with field, terminology, evidence-token and structure validation; mechanism-level editorial pass; curated Chinese film-language glossary pass"
+  }
+}

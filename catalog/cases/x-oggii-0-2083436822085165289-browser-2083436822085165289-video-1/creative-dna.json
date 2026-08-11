@@ -101,12 +101,12 @@
   ],
   "instantiations": [
     {
-      "concept": "A ceramic artist unboxes a compact pour-over kit, reveals all pieces, macros the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction.",
-      "prompt_seed": "A ceramic artist unboxes a compact pour-over kit, reveals all pieces, macros the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction."
+      "concept": "A ceramic artist unboxes a compact pour-over kit, reveals all pieces, uses a macro close-up on the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction.",
+      "prompt_seed": "A ceramic artist unboxes a compact pour-over kit, reveals all pieces, uses a macro close-up on the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction."
     },
     {
-      "concept": "A cyclist tests a pocket rain-shell pouch, reveals the folded garment, macros the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression.",
-      "prompt_seed": "A cyclist tests a pocket rain-shell pouch, reveals the folded garment, macros the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression."
+      "concept": "A cyclist tests a pocket rain-shell pouch, reveals the folded garment, uses a macro close-up on the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression.",
+      "prompt_seed": "A cyclist tests a pocket rain-shell pouch, reveals the folded garment, uses a macro close-up on the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression."
     }
   ],
   "failure_modes": [
@@ -133,7 +133,7 @@
   ],
   "transfer_tests": [
     {
-      "concept": "A ceramic artist unboxes a compact pour-over kit, reveals all pieces, macros the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction.",
+      "concept": "A ceramic artist unboxes a compact pour-over kit, reveals all pieces, uses a macro close-up on the locking filter seam, brews one cup, tastes it and holds the assembled kit with a calm approval reaction.",
       "result": "pass",
       "preserved_invariant_ids": [
         "inv-01",
@@ -153,7 +153,7 @@
       ]
     },
     {
-      "concept": "A cyclist tests a pocket rain-shell pouch, reveals the folded garment, macros the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression.",
+      "concept": "A cyclist tests a pocket rain-shell pouch, reveals the folded garment, uses a macro close-up on the sealed zipper, pulls it on under a spray test and ends holding the dry inner cuff beside a relieved expression.",
       "result": "pass",
       "preserved_invariant_ids": [
         "inv-01",

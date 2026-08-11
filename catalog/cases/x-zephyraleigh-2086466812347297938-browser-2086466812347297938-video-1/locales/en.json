@@ -1,0 +1,225 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "bec38a524ecf33e0c0edb28340ce9177da0061dd3280420bc8a7dbd20c493109",
+    "creative_dna_sha256": "898a0d0523c74cc768503b9cf15c2f66f339c54ee229391da6e39bed4f3edd84"
+  },
+  "content": {
+    "title": "Retro Handheld | Farewell Glance",
+    "summary": "A handheld observer discovers the character inside an everyday routine. One external cue changes the character's immediate goal; after a single acknowledgment, a motivated framing or focus error gives the departure a memory-like ending.",
+    "quick_start": {
+      "input_format": "Handheld observer perspective + everyday subject and place + two routine actions + external cue changes the goal + one acknowledgment + motivated recording error",
+      "recommended_input": "A home camera records the pool manager gathering up the floatation board and locking the locker door. A whistle in the distance causes her to change direction; she turns back and waves once, but the photographer briefly loses focus and cuts to the water's surface while following the shot.",
+      "required_anchors": [
+        "Establish the observer medium first",
+        "At least two ordinary daily actions",
+        "External signals change goals",
+        "A response followed by a motivated error to conclude"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The observer first discovers the character's daily life, external signals change the character's goals, and after one response, it ends with a motivated shooting mistake.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "An imperfect continuous observer discovers a subject already engaged in an ordinary routine, lingers through small unperformed actions, then lets one external environmental cue change the subject's goal. A single late acknowledgment briefly closes the distance between subject and operator before a motivated exit and imperfect recording finish. Place, subject, routine, cue, medium defects, acknowledgment and exit remain variable.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Begin with the operator discovering the subject inside a legible everyday geography rather than presenting a perfect hero frame.",
+          "purpose": "Establishes a lived observer relationship and makes later acknowledgment meaningful.",
+          "ablation_failure": "A polished centered opening feels staged and removes the sense of a found private memory.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-07"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Give the subject at least two low-amplitude routine actions before the external cue arrives.",
+          "purpose": "Builds personality and temporal patience without dialogue or plot exposition.",
+          "ablation_failure": "If the cue arrives immediately, the clip becomes a generic arrival or departure shot with no remembered life.",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02",
+            "obs-05",
+            "obs-13"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use one visible or audible environmental cue to cause a clear change of goal inside the same continuous geography.",
+          "purpose": "Creates narrative motion without a cut or scripted speech.",
+          "ablation_failure": "An uncaused exit feels arbitrary; multiple competing cues fragment attention.",
+          "evidence_ids": [
+            "beat-02",
+            "beat-03",
+            "obs-06",
+            "obs-09"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Reserve one brief direct acknowledgment of the operator for the threshold just before exit.",
+          "purpose": "Turns detached observation into a personal memory while keeping the behavior candid.",
+          "ablation_failure": "Repeated posing feels performative; no acknowledgment leaves the observer relationship emotionally unused.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-09",
+            "obs-11",
+            "obs-13"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Let medium imperfections follow operator attention—late focus, overshoot, exposure correction or a missed finish—without obscuring the causal action.",
+          "purpose": "Makes the capture feel human while protecting readability.",
+          "ablation_failure": "Random constant shake becomes a filter; flawless coverage loses the memory texture; defects at the cue can hide the story.",
+          "evidence_ids": [
+            "beat-01",
+            "beat-04",
+            "obs-07",
+            "obs-15"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "memory_medium",
+          "constraint": "One era-appropriate consumer format with a specific, restrained defect profile."
+        },
+        {
+          "name": "everyday_place",
+          "constraint": "A coherent public or private location whose geography supports one continuous take."
+        },
+        {
+          "name": "subject_identity",
+          "constraint": "An original person with stable appearance, clothing and relationship to the operator."
+        },
+        {
+          "name": "routine_actions",
+          "constraint": "Two or three small actions with props native to the place."
+        },
+        {
+          "name": "external_cue",
+          "constraint": "One event that visibly changes the subject's goal."
+        },
+        {
+          "name": "acknowledgment",
+          "constraint": "One brief glance, nod, gesture or shared joke near exit."
+        },
+        {
+          "name": "exit_path",
+          "constraint": "A physically continuous departure through the established geography."
+        },
+        {
+          "name": "operator_mistake",
+          "constraint": "One motivated focus, zoom, framing or endpoint error that remains readable."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "coastal railway platform, Korean signs, sea-facing parallel tracks, silver commuter train and weathered bench",
+        "young Korean woman, beige trench coat, blue jeans, brown shoulder bag, takeaway coffee and source appearance",
+        "exact stand-sit-sip-train-wave-board sequence and exact fifteen-second boundaries",
+        "source early-2000s MiniDV brand/profile, heavy shake pattern, autofocus targets, exposure behavior and downward platform finish"
+      ],
+      "instantiations": [
+        {
+          "concept": "A late-1990s Hi8 home video at a neighborhood community pool discovers a young adult lifeguard stacking kickboards and folding towels; the motorized pool cover starts, he shoulders a duffel, gives the operator one small come-on nod and exits through a chain gate as the camera overshoots.",
+          "prompt_seed": "Unbroken after-hours pool memory with routine cleanup, pool-cover cue, one late nod and a human Hi8 miss at the gate."
+        },
+        {
+          "concept": "A small-town bakery closing video on consumer VHS-C follows an older baker brushing flour and tying bread bags; a delivery bell and rolling shutter door trigger departure, she taps the lens hood playfully once and leaves through the back alley while white balance drifts under fluorescent light.",
+          "prompt_seed": "Bakery closing memory using flour routines, delivery cue, one playful acknowledgment and fluorescent VHS-C imperfections."
+        },
+        {
+          "concept": "A handheld pocket-DV clip at an amateur observatory finds a teenage volunteer wiping eyepieces and checking a star chart; the dome slit begins closing at dawn, she salutes the operator with the lens cap and follows the stairwell out while focus lingers on the empty telescope.",
+          "prompt_seed": "Observatory dawn memory with equipment routine, dome cue, lens-cap salute and an imperfect empty-object finish."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "The subject poses for the camera throughout.",
+          "repair": "Keep attention on routine actions until one brief acknowledgment immediately before exit."
+        },
+        {
+          "failure": "Analog defects are applied at constant maximum intensity.",
+          "repair": "Tie each focus, exposure or framing error to an operator correction and preserve the external cue."
+        },
+        {
+          "failure": "The cue and exit are unrelated.",
+          "repair": "Show the cue entering the established geography, then stage one visible goal change before the exit path."
+        },
+        {
+          "failure": "The transfer simply replaces the train station with another stop.",
+          "repair": "Change place class, routine, cue mechanics, subject-operator relation, medium format and exit behavior together."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A late-1990s Hi8 home video at a neighborhood community pool discovers a young adult lifeguard stacking kickboards and folding towels; the motorized pool cover starts, he shoulders a duffel, gives the operator one small come-on nod and exits through a chain gate as the camera overshoots.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "memory_medium",
+            "everyday_place",
+            "subject_identity",
+            "routine_actions",
+            "external_cue",
+            "acknowledgment",
+            "exit_path",
+            "operator_mistake"
+          ]
+        },
+        {
+          "concept": "A small-town bakery closing video on consumer VHS-C follows an older baker brushing flour and tying bread bags; a delivery bell and rolling shutter door trigger departure, she taps the lens hood playfully once and leaves through the back alley while white balance drifts under fluorescent light.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "memory_medium",
+            "everyday_place",
+            "subject_identity",
+            "routine_actions",
+            "external_cue",
+            "acknowledgment",
+            "exit_path",
+            "operator_mistake"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}

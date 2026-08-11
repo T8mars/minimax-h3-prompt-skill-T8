@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "5e66a223e0f92c5b0729f908ceb1c5285ac978997b20147dac4c23944402c665",
+    "creative_dna_sha256": "392e174a68d22087c91a5e182f801cfdd90a0839ef14b3601f61f97763188d5d"
+  },
+  "content": {
+    "title": "Rescue Line | Supply, Traverse, Evacuate",
+    "summary": "Introduce one line before the destination and reuse it for at least three visibly different route roles. After brief contact establishes who will follow whom, one subject leads both people out along a separately established exit route.",
+    "quick_start": {
+      "input_format": "Unreachable Target + Single Rope Tool + At Least 3 Route Responsibilities + Rescue Contact + Independent Route for Joint Exit",
+      "recommended_input": "The ice cave medic launches the same red rescue line and sequentially uses it to slide the medical pod, set up handrails, and lift the backpack over a short distance; after making contact with the trapped cartographer, both leave together along an independent fluorescent flag route.",
+      "required_anchors": [
+        "Introduce one unreachable destination and one compact traversal tool simultaneously.",
+        "Maintain one tether and one stable anchor point throughout the launch and its first visible route responsibility.",
+        "Make a brief contact within the destination to establish the rescue choice.",
+        "After contact, have both subjects visibly exit together, with one leading the way."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The same line serves successive traversal roles—launch path, swing support, climb aid, and entry guide—before brief contact establishes a follower relationship and both subjects leave together by an independently shown route.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Introduce one compact traversal tool before the destination is reachable, then reuse the same line or tether through launch, climb, pendulum redirect and entry. Every phase must preserve the attachment point and route geometry; after one brief contact establishes the rescue choice, one subject visibly leads and both leave together without claiming the source tether carries them during departure.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Introduce one unreachable destination and one compact traversal tool together.",
+          "purpose": "Defines the problem and available solution.",
+          "ablation_failure": "A tool without a visible destination has no narrative role.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Keep one tether and one stable attachment through launch and its first visible route role.",
+          "purpose": "Makes the tool progression physically inspectable.",
+          "ablation_failure": "Changing lines or hidden anchors breaks continuity.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Reuse the tether for at least three distinct route roles.",
+          "purpose": "Creates the mechanism's progression.",
+          "ablation_failure": "A single swing is only an action beat.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Make one brief contact inside the destination establish the rescue choice.",
+          "purpose": "Turns traversal into a social objective.",
+          "ablation_failure": "A decorative arrival has no payoff.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "After contact, keep both subjects visibly leaving together with one subject leading.",
+          "purpose": "Closes the access-to-rescue chain without overclaiming tether use.",
+          "ablation_failure": "Cutting away after contact leaves the rescue choice unproven.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source masked swordsman",
+        "source Chinese pagoda and princess",
+        "source crossbow grappling tool",
+        "source window entry and exact moonlit escape"
+      ],
+      "instantiations": [
+        {
+          "concept": "A glacial medic fires one marked rescue line across a fissure, slides a sealed supply pod along it, tensions it as a handrail, redirects it through one low carabiner for a short pack lift, reaches a stranded cartographer and then leads both out along an independent flag route.",
+          "prompt_seed": "A glacial medic fires one marked rescue line across a fissure, slides a sealed supply pod along it, tensions it as a handrail, redirects it through one low carabiner for a short pack lift, reaches a stranded cartographer and then leads both out along an independent flag route."
+        },
+        {
+          "concept": "A flooded archive restorer sends one floating line across a submerged aisle, ferries a dry document tube, tensions it as a balance rail, loops it through a shelf eye for a short hoist, reaches a trapped conservator and then both wade out along lit floor markers.",
+          "prompt_seed": "A flooded archive restorer sends one floating line across a submerged aisle, ferries a dry document tube, tensions it as a balance rail, loops it through a shelf eye for a short hoist, reaches a trapped conservator and then both wade out along lit floor markers."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "A tool without a visible destination has no narrative role.",
+          "repair": "Introduce one unreachable destination and one compact traversal tool together."
+        },
+        {
+          "failure": "Changing lines or hidden anchors breaks continuity.",
+          "repair": "Keep one tether and one stable attachment through launch and its first visible route role."
+        },
+        {
+          "failure": "A single swing is only an action beat.",
+          "repair": "Reuse the tether for at least three distinct route roles."
+        },
+        {
+          "failure": "A decorative arrival has no payoff.",
+          "repair": "Make one brief contact inside the destination establish the rescue choice."
+        },
+        {
+          "failure": "Cutting away after contact leaves the rescue choice unproven.",
+          "repair": "After contact, keep both subjects visibly leaving together with one subject leading."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A glacial medic fires one marked rescue line across a fissure, slides a sealed supply pod along it, tensions it as a handrail, redirects it through one low carabiner for a short pack lift, reaches a stranded cartographer and then leads both out along an independent flag route.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A flooded archive restorer sends one floating line across a submerged aisle, ferries a dry document tube, tensions it as a balance rail, loops it through a shelf eye for a short hoist, reaches a trapped conservator and then both wade out along lit floor markers.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source offline English editorial pass with terminology and stable-token validation; title naming editorial pass"
+  }
+}
