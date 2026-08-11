@@ -61,7 +61,7 @@ jobs:
         run: npm run pack --prefix apps/prompt-library-desktop
 
       - name: Upload media-free build for inspection
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: electron-media-free-${{ github.sha }}
           path: apps/prompt-library-desktop/dist/win-unpacked/
