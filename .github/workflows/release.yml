@@ -237,6 +237,8 @@ jobs:
     name: Verify and publish v${{ inputs.version }}
     needs: build-platform
     runs-on: ubuntu-latest
+    env:
+      GH_REPO: ${{ github.repository }}
     steps:
       - name: Download both verified platform asset sets
         uses: actions/download-artifact@v4
