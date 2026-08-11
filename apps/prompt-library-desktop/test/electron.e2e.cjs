@@ -13,6 +13,7 @@ async function run() {
   const officialDetailScreenshotPath = `${screenshotStem}-official-skill-detail.png`;
   const communityScreenshotPath = `${screenshotStem}-community-skills.png`;
   const communityDetailScreenshotPath = `${screenshotStem}-community-skill-detail.png`;
+  const communitySecondDetailScreenshotPath = `${screenshotStem}-community-skill-detail-2.png`;
   const packagedExecutable = process.env.T8_E2E_EXECUTABLE ? path.resolve(process.env.T8_E2E_EXECUTABLE) : null;
   const electronApp = await electron.launch({
     executablePath: packagedExecutable || require("electron"),
@@ -35,20 +36,20 @@ async function run() {
     });
     await page.waitForSelector(".case-card", { timeout: 15000 });
     const allCount = await page.locator(".case-card").count();
-    assert.equal(allCount, 49, "default all-content view must render 39 cases + 9 official Skills + 1 non-official Skill");
+    assert.equal(allCount, 60, "default all-content view must render 49 cases + 9 official Skills + 2 non-official Skills");
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
-    assert.equal(await page.locator("#stat-cases").textContent(), "49");
-    assert.equal(await page.locator("#stat-videos").textContent(), "49", "every item in the aggregate view must have a local preview");
-    assert.equal(await page.locator("#stat-prompts").textContent(), "98", "all 49 items must expose their declared model surfaces");
+    assert.equal(await page.locator("#stat-cases").textContent(), "60");
+    assert.equal(await page.locator("#stat-videos").textContent(), "60", "every item in the aggregate view must have a local preview");
+    assert.equal(await page.locator("#stat-prompts").textContent(), "120", "all 60 items must expose their declared model surfaces");
     assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "official Skills must use local GIF previews in the aggregate view");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "aggregate view must not expose case-only comparison controls");
     await page.screenshot({ path: screenshotPath, animations: "disabled" });
 
     await page.locator("#view-cases").click();
-    await page.waitForFunction(() => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === 39);
+    await page.waitForFunction(() => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === 49);
     const caseCount = await page.locator(".case-card").count();
-    assert.equal(caseCount, 39, "viewer must render all 39 public cases");
-    assert.equal(await page.locator("#stat-videos").textContent(), "39", "development media pack must bind 39 case MP4s");
+    assert.equal(caseCount, 49, "viewer must render all 49 public cases");
+    assert.equal(await page.locator("#stat-videos").textContent(), "49", "development media pack must bind 49 case MP4s");
 
     await page.locator(".case-card").first().click();
     await page.waitForSelector("#case-dialog[open]");
@@ -168,19 +169,23 @@ async function run() {
     await page.keyboard.press("Escape");
     await page.locator("#case-dialog").waitFor({ state: "hidden" });
     await page.locator("#view-community-skills").click();
-    await page.waitForFunction(() => document.querySelectorAll(".case-card.community-skill").length === 1);
-    assert.equal(await page.locator(".case-card.community-skill").count(), 1, "viewer must render the non-official user-contributed Skill");
-    assert.equal(await page.locator("#stat-cases").textContent(), "1");
-    assert.equal(await page.locator("#stat-videos").textContent(), "1");
-    assert.equal(await page.locator("#stat-prompts").textContent(), "2");
+    await page.waitForFunction(() => document.querySelectorAll(".case-card.community-skill").length === 2);
+    assert.equal(await page.locator(".case-card.community-skill").count(), 2, "viewer must render both non-official user-contributed Skills");
+    assert.equal(await page.locator("#stat-cases").textContent(), "2");
+    assert.equal(await page.locator("#stat-videos").textContent(), "2");
+    assert.equal(await page.locator("#stat-prompts").textContent(), "4");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "community Skills do not enter case comparison");
     await page.screenshot({ path: communityScreenshotPath, animations: "disabled" });
-    await page.locator(".case-card.community-skill").click();
+    await page.locator(".case-card.community-skill").first().click();
     await page.waitForSelector("#case-dialog[open]");
     const communityVideo = page.locator("#detail-media video");
     await communityVideo.waitFor({ state: "visible" });
     const communityVideoState = await communityVideo.evaluate(async (node) => {
-      if (node.readyState < 1) await new Promise((resolve) => node.addEventListener("loadedmetadata", resolve, { once: true }));
+      if (node.readyState < 1) await new Promise((resolve, reject) => {
+        const timeout = setTimeout(() => reject(new Error("community video metadata timeout")), 12000);
+        node.addEventListener("loadedmetadata", () => { clearTimeout(timeout); resolve(); }, { once: true });
+        node.addEventListener("error", () => { clearTimeout(timeout); reject(new Error(node.error?.message || "community video load error")); }, { once: true });
+      });
       return { duration: node.duration, muted: node.muted, controls: node.controls, src: node.getAttribute("src") };
     });
     assert.match(communityVideoState.src, /^t8media:\/\/media\/community-skills\//u);
@@ -193,9 +198,34 @@ async function run() {
     await page.locator("#tab-seedance").click();
     assert.match(await page.locator("#prompt-text").textContent(), /Seedance|街拍/u);
     await page.screenshot({ path: communityDetailScreenshotPath, animations: "disabled" });
+
+    await page.keyboard.press("Escape");
+    await page.locator("#case-dialog").waitFor({ state: "hidden" });
+    await page.locator(".case-card.community-skill").nth(1).click();
+    await page.waitForSelector("#case-dialog[open]");
+    const secondCommunityVideo = page.locator("#detail-media video");
+    await secondCommunityVideo.waitFor({ state: "visible" });
+    const secondCommunityState = await secondCommunityVideo.evaluate(async (node) => {
+      if (node.readyState < 1) await new Promise((resolve, reject) => {
+        const timeout = setTimeout(() => reject(new Error("second community video metadata timeout")), 12000);
+        node.addEventListener("loadedmetadata", () => { clearTimeout(timeout); resolve(); }, { once: true });
+        node.addEventListener("error", () => { clearTimeout(timeout); reject(new Error(node.error?.message || "second community video load error")); }, { once: true });
+      });
+      return { duration: node.duration, muted: node.muted, controls: node.controls, src: node.getAttribute("src") };
+    });
+    assert.match(secondCommunityState.src, /stage-startle-to-truce-encounter\/preview\.mp4$/u);
+    assert.ok(Math.abs(secondCommunityState.duration - 13.396) < 0.05, "second community Skill must expose the complete compatible reference video");
+    assert.equal(secondCommunityState.muted, false);
+    assert.equal(secondCommunityState.controls, true);
+    assert.match(await page.locator("#detail-meta").textContent(), /非官方|用户提供/u);
+    assert.equal(await page.locator("#open-source").isHidden(), true, "second community Skill must not fabricate a source URL");
+    assert.match(await page.locator("#prompt-text").textContent(), /integrated_multimodal_description:/u);
+    await page.locator("#tab-seedance").click();
+    assert.match(await page.locator("#prompt-text").textContent(), /镜头1|深海/u);
+    await page.screenshot({ path: communitySecondDetailScreenshotPath, animations: "disabled" });
     assert.deepEqual(rendererErrors, [], `renderer errors: ${rendererErrors.join(" | ")}`);
 
-    console.log(`PASS Electron runtime; all=${allCount}; cases=${caseCount}; officialSkills=9; communitySkills=1; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath};${communityScreenshotPath};${communityDetailScreenshotPath}`);
+    console.log(`PASS Electron runtime; all=${allCount}; cases=${caseCount}; officialSkills=9; communitySkills=2; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath};${communityScreenshotPath};${communityDetailScreenshotPath};${communitySecondDetailScreenshotPath}`);
   } finally {
     await electronApp.close();
   }

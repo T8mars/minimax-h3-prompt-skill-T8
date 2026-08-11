@@ -1,11 +1,11 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.0.7",
-  "generated_at": "2026-08-11T00:35:08+08:00",
-  "case_count": 39,
+  "catalog_version": "1.0.9",
+  "generated_at": "2026-08-11T13:09:30+08:00",
+  "case_count": 49,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
-  "community_skill_count": 1,
+  "community_skill_count": 2,
   "community_skills_manifest": "community-skills/manifest.json",
   "cases": [
     {
@@ -1364,6 +1364,357 @@
       ],
       "quality_score": 4.678,
       "updated_at": "2026-08-10T23:52:56+08:00"
+    },
+    {
+      "case_id": "x-john87445528-2086787356556685419-browser-2086787356556685419-video-1",
+      "slug": "reveal-evidence-through-failed-concealment",
+      "title": "第一视角查岗｜遮挡失效到摆烂收口",
+      "status": "released",
+      "summary": "第一人称身体运动连续推进，遮挡每失败一次就暴露更深证据，最后以人物停止遮挡并后仰回到桌前状态收口。",
+      "manifest_path": "cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/manifest.json",
+      "summary_path": "cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/SUMMARY.md",
+      "source_path": "cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/source.json",
+      "creative_dna_path": "cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/preview.gif",
+        "poster": "cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/poster.webp",
+        "mp4": "media/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/reveal-evidence-through-failed-concealment",
+      "template_id": "t8-case-first-person-concealment-evidence-ladder-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "first",
+        "person",
+        "concealment",
+        "evidence",
+        "ladder"
+      ],
+      "quality_score": 4.694,
+      "updated_at": "2026-08-11T11:43:46+08:00"
+    },
+    {
+      "case_id": "x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1",
+      "slug": "handoff-pursuit-into-faster-escape",
+      "title": "雨夜追逐｜街巷近战到机车脱身",
+      "status": "released",
+      "summary": "追逐先建立方向，中段用一次近身阻断改变节奏，再把主体交接到更快载具完成脱身。",
+      "manifest_path": "cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/manifest.json",
+      "summary_path": "cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/SUMMARY.md",
+      "source_path": "cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/source.json",
+      "creative_dna_path": "cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/preview.gif",
+        "poster": "cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/poster.webp",
+        "mp4": "media/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/handoff-pursuit-into-faster-escape",
+      "template_id": "t8-case-pursuit-handoff-escape-corridor-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "pursuit",
+        "handoff",
+        "escape",
+        "corridor"
+      ],
+      "quality_score": 4.702,
+      "updated_at": "2026-08-11T11:43:46+08:00"
+    },
+    {
+      "case_id": "x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1",
+      "slug": "stage-two-turn-pause-reaction",
+      "title": "对话反应｜冷静回答引爆大笑",
+      "status": "released",
+      "summary": "双人固定地理里先交代第一轮，再给第二人短回答，最后把镜头交回第一人的长反应。",
+      "manifest_path": "cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/manifest.json",
+      "summary_path": "cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/SUMMARY.md",
+      "source_path": "cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/source.json",
+      "creative_dna_path": "cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/preview.gif",
+        "poster": "cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/poster.webp",
+        "mp4": "media/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-two-turn-pause-reaction",
+      "template_id": "t8-case-two-turn-pause-reaction-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "two",
+        "turn",
+        "pause",
+        "reaction"
+      ],
+      "quality_score": 4.67,
+      "updated_at": "2026-08-11T11:43:46+08:00"
+    },
+    {
+      "case_id": "x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1",
+      "slug": "stage-two-turn-pause-reaction",
+      "title": "对话喜剧｜双轮停顿与无声回击",
+      "status": "released",
+      "summary": "稳定正反打中完成两轮说话，用一个清楚停顿隔开，最后回到第一人做无声表情或姿态回应。",
+      "manifest_path": "cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/manifest.json",
+      "summary_path": "cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/SUMMARY.md",
+      "source_path": "cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/source.json",
+      "creative_dna_path": "cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/preview.gif",
+        "poster": "cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/poster.webp",
+        "mp4": "media/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-two-turn-pause-reaction",
+      "template_id": "t8-case-two-turn-pause-reaction-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "two",
+        "turn",
+        "pause",
+        "reaction"
+      ],
+      "quality_score": 4.677,
+      "updated_at": "2026-08-11T11:43:46+08:00"
+    },
+    {
+      "case_id": "x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1",
+      "slug": "verify-recurring-identity-board",
+      "title": "角色板验真｜跨栏全程身份锁定",
+      "status": "released",
+      "summary": "固定角色板持续在场，运动区用起跑、侧面、俯拍、正面和关键动作逐层验证同一人物。",
+      "manifest_path": "cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/manifest.json",
+      "summary_path": "cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/SUMMARY.md",
+      "source_path": "cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/source.json",
+      "creative_dna_path": "cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/preview.gif",
+        "poster": "cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/poster.webp",
+        "mp4": "media/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/verify-recurring-identity-board",
+      "template_id": "t8-case-recurring-identity-board-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "recurring",
+        "identity",
+        "board"
+      ],
+      "quality_score": 4.716,
+      "updated_at": "2026-08-11T11:43:46+08:00"
+    },
+    {
+      "case_id": "x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1",
+      "slug": "stage-solo-posture-comedy-arc",
+      "title": "单人表演弧｜坐起前倾再释放",
+      "status": "released",
+      "summary": "固定直视镜头里，单人用躺靠、坐起、前倾、手势和后仰释放完成完整表演弧，不依赖来源台词。",
+      "manifest_path": "cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/manifest.json",
+      "summary_path": "cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/SUMMARY.md",
+      "source_path": "cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/source.json",
+      "creative_dna_path": "cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/preview.gif",
+        "poster": "cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/poster.webp",
+        "mp4": "media/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-solo-posture-comedy-arc",
+      "template_id": "t8-case-solo-posture-comedy-performance-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "solo",
+        "posture",
+        "comedy",
+        "performance"
+      ],
+      "quality_score": 4.697,
+      "updated_at": "2026-08-11T11:43:46+08:00"
+    },
+    {
+      "case_id": "x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1",
+      "slug": "form-reversible-material-typography",
+      "title": "材质字效｜云层成字再见光",
+      "status": "released",
+      "summary": "同一物理材质先形成短字、稳定可读，再沿原过程逆向散回自然状态。",
+      "manifest_path": "cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/manifest.json",
+      "summary_path": "cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/SUMMARY.md",
+      "source_path": "cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/source.json",
+      "creative_dna_path": "cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/preview.gif",
+        "poster": "cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/poster.webp",
+        "mp4": "media/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/form-reversible-material-typography",
+      "template_id": "t8-case-reversible-material-typography-loop-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "reversible",
+        "material",
+        "typography",
+        "loop"
+      ],
+      "quality_score": 4.727,
+      "updated_at": "2026-08-11T11:43:46+08:00"
+    },
+    {
+      "case_id": "x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1",
+      "slug": "chain-one-tool-through-rescue-route",
+      "title": "多功能救援线｜跨裂隙送补给再撤离",
+      "status": "released",
+      "summary": "同一根绳索从发射、攀爬、摆荡到进入持续承担路线职责，短接触建立跟随后由一人带领双方共同离开。",
+      "manifest_path": "cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/manifest.json",
+      "summary_path": "cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/SUMMARY.md",
+      "source_path": "cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/source.json",
+      "creative_dna_path": "cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/preview.gif",
+        "poster": "cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/poster.webp",
+        "mp4": "media/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/chain-one-tool-through-rescue-route",
+      "template_id": "t8-case-tool-to-traversal-rescue-chain-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "tool",
+        "to",
+        "traversal",
+        "rescue",
+        "chain"
+      ],
+      "quality_score": 4.722,
+      "updated_at": "2026-08-11T11:43:46+08:00"
+    },
+    {
+      "case_id": "x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1",
+      "slug": "run-miniature-pursuit-foraging-route",
+      "title": "微缩逃亡｜巨物追赶到资源补给",
+      "status": "released",
+      "summary": "先用巨物校准微缩尺度，再让同一人物连续改变跑、弹、爬、平衡等动作，最终抵达可用资源。",
+      "manifest_path": "cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/manifest.json",
+      "summary_path": "cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/SUMMARY.md",
+      "source_path": "cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/source.json",
+      "creative_dna_path": "cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/preview.gif",
+        "poster": "cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/poster.webp",
+        "mp4": "media/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/run-miniature-pursuit-foraging-route",
+      "template_id": "t8-case-miniature-pursuit-foraging-route-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "miniature",
+        "pursuit",
+        "foraging",
+        "route"
+      ],
+      "quality_score": 4.731,
+      "updated_at": "2026-08-11T11:43:46+08:00"
+    },
+    {
+      "case_id": "x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1",
+      "slug": "break-contained-space-into-impossible-world",
+      "title": "气闸异境｜物理异常后空间崩坏",
+      "status": "released",
+      "summary": "先锁定普通密闭空间与遗留物，普通操作后让室内积累物理异常，再经短黑场开向不可能异境，用遗留物证明空间连续。",
+      "manifest_path": "cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/manifest.json",
+      "summary_path": "cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/SUMMARY.md",
+      "source_path": "cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/source.json",
+      "creative_dna_path": "cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/preview.gif",
+        "poster": "cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/poster.webp",
+        "mp4": "media/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/break-contained-space-into-impossible-world",
+      "template_id": "t8-case-contained-space-rule-break-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "contained",
+        "space",
+        "rule",
+        "break"
+      ],
+      "quality_score": 4.702,
+      "updated_at": "2026-08-11T11:43:46+08:00"
     }
   ]
 }

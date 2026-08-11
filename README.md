@@ -49,8 +49,9 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | 预览 | Skill | 模型与重点 |
 | --- | --- | --- |
 | [![自然街拍互动](catalog/community-skills/direct-street-interview-video/preview.gif)](catalog/community-skills/direct-street-interview-video/SUMMARY.md) | **[`direct-street-interview-video`](./skills/direct-street-interview-video/)**<br><sub>自然街拍互动 · 用户提供 AIGC 样片</sub> | MiniMax H3 · Seedance 2.0<br>连续路线、第一人称手持、短对白、自然光与环境视差 |
+| [![突遇惊吓到手势和解](catalog/community-skills/stage-startle-to-truce-encounter/preview.gif)](catalog/community-skills/stage-startle-to-truce-encounter/SUMMARY.md) | **[`stage-startle-to-truce-encounter`](./skills/stage-startle-to-truce-encounter/)**<br><sub>突遇惊吓到手势和解 · 用户提供 AIGC 样片</sub> | MiniMax H3 · Seedance 2.0<br>双方视角、非致命升级、距离反转、透明边界与求和手势 |
 
-首个 Skill 修复了原组中两个关键问题：生成样片实际只有 10.125 秒，但文本把第二镜头从 10 秒才开始；同时对白轮次超过自然语速可承载范围。新模板按实际目标时长分配事件，10 秒优先 2–3 句短对白，不从片尾才开启新设置，也不虚构 4K 输出规格。
+两份非官方 Skill 都以成片而不是长提示词的承诺为准：街拍 Skill 修复 10.125 秒样片的对白与片尾分镜过载；突遇 Skill 则修复 13.373 秒横屏样片与“15 秒竖屏、完整导弹追逐”文本之间的失配，只保留被画面证明的距离反转、惊吓和手势降级机制。
 
 ## 案例画廊 / Case gallery
 
@@ -99,6 +100,16 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![材质字效｜霜花成字再归位](catalog/cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/preview.gif)](https://x.com/CharaspowerAI/status/2085622021812039920) | **[材质字效｜霜花成字再归位](catalog/cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/SUMMARY.md)**<br><sub>x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![纪实跟拍｜行进中偶遇再离开](catalog/cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/preview.gif)](https://x.com/techhalla/status/2081333381401334006) | **[纪实跟拍｜行进中偶遇再离开](catalog/cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/SUMMARY.md)**<br><sub>x-techhalla-2081333381401334006-browser-2081333381401334006-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![对话喜剧｜双轮停顿无声反应](catalog/cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/preview.gif)](https://x.com/TechieBySA/status/2084600512180113820) | **[对话喜剧｜双轮停顿无声反应](catalog/cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![第一视角查岗｜遮挡失效到摆烂收口](catalog/cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/preview.gif)](https://x.com/john87445528/status/2086787356556685419) | **[第一视角查岗｜遮挡失效到摆烂收口](catalog/cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/SUMMARY.md)**<br><sub>x-john87445528-2086787356556685419-browser-2086787356556685419-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![雨夜追逐｜街巷近战到机车脱身](catalog/cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/preview.gif)](https://x.com/I_amShiti/status/2086828210457604364) | **[雨夜追逐｜街巷近战到机车脱身](catalog/cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/SUMMARY.md)**<br><sub>x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![对话反应｜冷静回答引爆大笑](catalog/cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/preview.gif)](https://x.com/aimikoda/status/2086782084723405173) | **[对话反应｜冷静回答引爆大笑](catalog/cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![对话喜剧｜双轮停顿与无声回击](catalog/cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/preview.gif)](https://x.com/TechieBySA/status/2086773163870871656) | **[对话喜剧｜双轮停顿与无声回击](catalog/cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![角色板验真｜跨栏全程身份锁定](catalog/cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/preview.gif)](https://x.com/TechieBySA/status/2086815556930281726) | **[角色板验真｜跨栏全程身份锁定](catalog/cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![单人表演弧｜坐起前倾再释放](catalog/cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/preview.gif)](https://x.com/gizakdag/status/2086774589426643034) | **[单人表演弧｜坐起前倾再释放](catalog/cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/SUMMARY.md)**<br><sub>x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![材质字效｜云层成字再见光](catalog/cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/preview.gif)](https://x.com/CharaspowerAI/status/2086754531698725200) | **[材质字效｜云层成字再见光](catalog/cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/SUMMARY.md)**<br><sub>x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![多功能救援线｜跨裂隙送补给再撤离](catalog/cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/preview.gif)](https://x.com/NVTDanh/status/2086774974921200055) | **[多功能救援线｜跨裂隙送补给再撤离](catalog/cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/SUMMARY.md)**<br><sub>x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![微缩逃亡｜巨物追赶到资源补给](catalog/cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/preview.gif)](https://x.com/FutureVibesAi/status/2086777152666796255) | **[微缩逃亡｜巨物追赶到资源补给](catalog/cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/SUMMARY.md)**<br><sub>x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![气闸异境｜物理异常后空间崩坏](catalog/cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/preview.gif)](https://x.com/nicolasmariar/status/2086951328098513269) | **[气闸异境｜物理异常后空间崩坏](catalog/cases/x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1/SUMMARY.md)**<br><sub>x-nicolasmariar-2086951328098513269-browser-2086951328098513269-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -107,7 +118,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. 下载 `T8-Prompt-Library-Setup-v1.0.7.exe`。
+2. 下载 `T8-Prompt-Library-Setup-v1.0.9.exe`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. 后续版本可在应用内检查并安装更新。
 
@@ -156,7 +167,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.0.7**。项目使用十进制进位：
+当前目标版本是 **v1.0.9**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0

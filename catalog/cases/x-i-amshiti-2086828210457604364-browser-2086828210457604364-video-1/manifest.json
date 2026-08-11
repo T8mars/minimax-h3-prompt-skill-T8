@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1",
+  "slug": "handoff-pursuit-into-faster-escape",
+  "title": "雨夜追逐｜街巷近战到机车脱身",
+  "source_title": "X creative video by @I_amShiti",
+  "summary": "追逐先建立方向，中段用一次近身阻断改变节奏，再把主体交接到更快载具完成脱身。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/handoff-pursuit-into-faster-escape",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-pursuit-handoff-escape-corridor-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "被追主体 + 单一追逐轴线 + 一次紧凑阻断 + 立即步行→更快载具交接 + 持续加速结尾",
+  "recommended_input": "盐碱地科研信使被两台勘测车追赶，窄沟槽中只做一次反撬夹臂，随后立即踏上沙地滑板并沿原轴持续加速。",
+  "required_anchors": [
+    "Establish one readable pursuit axis before any combat.",
+    "Use one narrow threshold to compress the lead and threat.",
+    "Complete an immediate, visible foot-to-faster-carrier handoff after the encounter.",
+    "End with sustained carrier acceleration along the established travel direction."
+  ],
+  "tags": [
+    "pursuit",
+    "handoff",
+    "escape",
+    "corridor"
+  ],
+  "quality": {
+    "weighted_score": 4.702,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-11T10:53:44+08:00",
+  "updated_at": "2026-08-11T11:43:46+08:00"
+}

@@ -19,7 +19,7 @@
 Windows 校验示例：
 
 ```powershell
-Get-FileHash .\T8-Prompt-Library-Setup-v1.0.7.exe -Algorithm SHA256
+Get-FileHash .\T8-Prompt-Library-Setup-v1.0.9.exe -Algorithm SHA256
 ```
 
 将结果与 `SHA256SUMS.txt` 中对应文件比较。

@@ -1,0 +1,126 @@
+{
+  "schema_version": "public-community-skill/v1",
+  "id": "stage-startle-to-truce-encounter",
+  "title": "Startle-to-Truce Encounter",
+  "title_zh": "突遇惊吓到手势和解",
+  "summary": "把短片组织成清楚的关系反转：平静主体先被技术观察者发现，一次非致命惊慌反应提高风险，主体随后贴近透明边界并反转双方距离，结尾用准确对视和迟疑求和手势把威胁降级。",
+  "official": false,
+  "source_classification": "user-contributed",
+  "source_label": "非官方 · 用户贡献",
+  "origin_type": "user-supplied-video-and-prompt",
+  "source_attribution": "用户提供 AIGC 样片与提示词文本；未提供原始发布地址、外部作者信息或可验证模型归属。",
+  "source_url": null,
+  "source_duration_seconds": 13.373,
+  "target_duration_range_seconds": [4, 15],
+  "source_media": {
+    "sha256": "d28fd1aa9bc8e7440ebd8a72dce8df727ad818545fa54e7ce854062befd4967a",
+    "size_bytes": 1892568,
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "video_codec": "hevc",
+    "audio_codec": "aac",
+    "full_video_decode": "passed",
+    "full_audio_decode": "passed"
+  },
+  "release_media": {
+    "sha256": "ad0c14508ad819150e87d3e00411072e18fa9079550cfcab90fec74f6120d754",
+    "size_bytes": 3335249,
+    "duration_seconds": 13.396,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "streams_copied_without_reencode": false,
+    "metadata_sanitized": true,
+    "full_video_decode": "passed",
+    "full_audio_decode": "passed"
+  },
+  "source_prompt": {
+    "sha256": "426a2dcfb8969574bd9de4b54c88968efa89d1262c11549bdb2f8bf0cecce264",
+    "source_model_context": "unknown; user-supplied prompt with no verified model provenance",
+    "analysis_ref": "stage-startle-to-truce-encounter/references/source-analysis.md"
+  },
+  "skill_ref": "stage-startle-to-truce-encounter",
+  "summary_ref": "stage-startle-to-truce-encounter/references/summary.md",
+  "prompt_refs": {
+    "minimax_h3": "stage-startle-to-truce-encounter/references/h3-example.txt",
+    "seedance_2_0": "stage-startle-to-truce-encounter/references/seedance-example.txt"
+  },
+  "preview_refs": {
+    "gif": "community-skills/stage-startle-to-truce-encounter/preview.gif",
+    "poster": "community-skills/stage-startle-to-truce-encounter/poster.webp",
+    "mp4": "community-skills/stage-startle-to-truce-encounter/preview.mp4"
+  },
+  "preview_assets": {
+    "gif": {
+      "sha256": "7e9f89ec423798b249e7c4541210694dad3f6e11f51919c57cd49ff5a95825bf",
+      "size_bytes": 4143578,
+      "width": 640,
+      "height": 360,
+      "duration_seconds": 5.88,
+      "frame_count": 47
+    },
+    "poster": {
+      "sha256": "ec07b5987f0a8782ed721acf64fe5dbf65627bcdec55b38eaa347f406d9b6411",
+      "size_bytes": 16816,
+      "width": 640,
+      "height": 360
+    }
+  },
+  "models": ["MiniMax H3", "Seedance 2.0"],
+  "tags": [
+    "close-encounter",
+    "startle-reaction",
+    "truce-gesture",
+    "eyeline",
+    "transparent-barrier",
+    "fantasy-technology",
+    "non-lethal-escalation",
+    "identity-reference"
+  ],
+  "creative_dna": {
+    "mechanism": "平静主体与技术观察者先保持可读距离；双方视角建立认知差，一次非致命惊慌反应提高风险，主体再贴近透明边界完成空间权力反转，最终由持续对视与一个小型求和手势把威胁降级。",
+    "applicable_scope": [
+      "幻想生物与科技载具、自然主体与研究设备之间的反差相遇",
+      "驾驶舱、潜航器、观察窗、温室玻璃或透明屏障两侧的精准对视",
+      "4–15 秒内完成的误判、惊吓、试探与非语言和解",
+      "参考图只锁定单一角色身份、场景和动作必须原创的多模态生成"
+    ],
+    "not_suitable_for": [
+      "完整战争、多人战术、连续爆炸或复杂武器逻辑",
+      "把受伤、血腥或真实攻击作为必要卖点的内容",
+      "无法给最终对视与手势留出阅读时间的过载分镜",
+      "逐项复刻样片人物、道具、载具、景观和镜头顺序"
+    ],
+    "usage_steps": [
+      "确定平静主体、技术观察者、初始距离、透明边界和最终关系状态",
+      "为每个输入素材分配唯一身份、服装、场景、动作或声音职责",
+      "先写平静基线—观察者视角—一次升级—距离反转—手势降级的因果链",
+      "分别按 H3 与 Seedance 原生语法编译，不复制模型字段",
+      "检查身份、载具、边界、速度、屏幕方向、视线、手势与时长闭包"
+    ],
+    "invariants": [
+      "升级之前必须存在可读的平静基线",
+      "主体与观察者拥有信息不同的独立视角",
+      "只使用一次可读且非致命的惊慌或防御反应",
+      "用同轴、匹配速度或同框证明距离与主动权反转",
+      "结尾求和手势必须被对方看见并获得停留"
+    ],
+    "quality_repairs": [
+      "12–15 秒优先四到五个因果段，删除无法完成的武器与追逐堆叠",
+      "按可见发射结构与方向命名效果，不把不明光轨写成制导导弹",
+      "贴近发生在最后四分之一之前，给受惊和求和留出时间",
+      "玻璃两侧锁定眼高、屏幕方向、反射与相对速度",
+      "不把单方面挥手夸大成双方已经接受和解"
+    ],
+    "anti_copy_exclusions": [
+      "不复制样片幻想女子、发饰、水果、飞剑、军用战机或浮空山景观",
+      "不复制原光柱、干扰焰构图、驾驶舱造型和具体贴窗走位",
+      "至少同时改变主体、观察者、环境、边界、运动物理、升级装置、镜头、色彩、声音和结束行为中的八项"
+    ]
+  },
+  "comfyui": {
+    "bundled": false,
+    "reason": "本次只新增案例库、GIF/海报、可安装 Agent Skill、双模型示例与推荐简写；不修改或重复打包 ComfyUI 节点。"
+  },
+  "updated_at": "2026-08-11T03:45:18+08:00"
+}

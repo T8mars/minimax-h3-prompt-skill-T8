@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Make scale readable immediately by placing a miniature subject beside one ordinary oversized force, then convert pursuit into a route of three materially different terrain actions. Each surface must change the subject's movement verb—run, spring, climb, balance or reach—and the final resource must be earned by the route rather than presented as a decorative giant object.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Calibrate miniature scale with one ordinary oversized moving force in the opening.",
+      "purpose": "Makes size and threat readable without explanation.",
+      "ablation_failure": "A tiny subject alone has no reliable scale.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Change the movement verb at every material handoff.",
+      "purpose": "Makes terrain causally useful.",
+      "ablation_failure": "Continuous running through new backgrounds becomes a chase montage.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use at least three surfaces with visibly different physical responses.",
+      "purpose": "Builds a reusable material route.",
+      "ablation_failure": "Repeated rigid platforms add no new problem-solving.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Preserve one travel direction and subject identity across scale changes.",
+      "purpose": "Keeps the route continuous.",
+      "ablation_failure": "Discontinuous geography turns actions into unrelated vignettes.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with an earned resource that the subject visibly secures or uses.",
+      "purpose": "Gives the traversal a purpose beyond survival.",
+      "ablation_failure": "A decorative giant object is not a payoff.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source tiny boy",
+    "source giant human hand",
+    "source strawberry and pink flower",
+    "source backyard garden route and eating payoff"
+  ],
+  "instantiations": [
+    {
+      "concept": "A palm-high paper surveyor is chased by a rolling maintenance brush across a textile workshop, springs from elastic ribbon, climbs a thread spool, balances across a ruler and secures a glowing battery bead.",
+      "prompt_seed": "A palm-high paper surveyor is chased by a rolling maintenance brush across a textile workshop, springs from elastic ribbon, climbs a thread spool, balances across a ruler and secures a glowing battery bead."
+    },
+    {
+      "concept": "A miniature frost engineer flees a sweeping magnet inside a clock shop, bounces from a mainspring, climbs a knurled crown, crosses a watch hand and reaches one warm oil capsule.",
+      "prompt_seed": "A miniature frost engineer flees a sweeping magnet inside a clock shop, bounces from a mainspring, climbs a knurled crown, crosses a watch hand and reaches one warm oil capsule."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A tiny subject alone has no reliable scale.",
+      "repair": "Calibrate miniature scale with one ordinary oversized moving force in the opening."
+    },
+    {
+      "failure": "Continuous running through new backgrounds becomes a chase montage.",
+      "repair": "Change the movement verb at every material handoff."
+    },
+    {
+      "failure": "Repeated rigid platforms add no new problem-solving.",
+      "repair": "Use at least three surfaces with visibly different physical responses."
+    },
+    {
+      "failure": "Discontinuous geography turns actions into unrelated vignettes.",
+      "repair": "Preserve one travel direction and subject identity across scale changes."
+    },
+    {
+      "failure": "A decorative giant object is not a payoff.",
+      "repair": "End with an earned resource that the subject visibly secures or uses."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A palm-high paper surveyor is chased by a rolling maintenance brush across a textile workshop, springs from elastic ribbon, climbs a thread spool, balances across a ruler and secures a glowing battery bead.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A miniature frost engineer flees a sweeping magnet inside a clock shop, bounces from a mainspring, climbs a knurled crown, crosses a watch hand and reaches one warm oil capsule.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

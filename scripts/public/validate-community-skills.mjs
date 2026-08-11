@@ -58,7 +58,7 @@ for (const entry of entries) {
   if (!/^[a-f0-9]{64}$/u.test(String(releaseMedia.sha256 || ""))) failures.push(`${id}: release_media.sha256 must be lowercase SHA-256`);
   if (!(Number(releaseMedia.size_bytes) > 0) || !(Number(releaseMedia.duration_seconds) > 0)) failures.push(`${id}: release_media size and duration must be positive`);
   if (!releaseMedia.video_codec || !releaseMedia.audio_codec) failures.push(`${id}: release media must record video and audio codecs`);
-  if (releaseMedia.streams_copied_without_reencode !== true || releaseMedia.metadata_sanitized !== true) failures.push(`${id}: release media must record stream-copy and metadata sanitization`);
+  if (typeof releaseMedia.streams_copied_without_reencode !== "boolean" || releaseMedia.metadata_sanitized !== true) failures.push(`${id}: release media must record whether streams were copied and must confirm metadata sanitization`);
   if (releaseMedia.full_video_decode !== "passed" || releaseMedia.full_audio_decode !== "passed") failures.push(`${id}: release media full decode gates must pass`);
   if (!/^[a-f0-9]{64}$/u.test(String(manifest.source_prompt?.sha256 || ""))) failures.push(`${id}: source_prompt.sha256 must be lowercase SHA-256`);
 

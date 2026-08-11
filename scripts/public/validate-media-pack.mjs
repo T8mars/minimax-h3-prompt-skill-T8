@@ -228,8 +228,9 @@ function main() {
       if (entry.video_codec !== observed.videoCodec) failures.push(`${expectedRelative}: manifest video_codec '${entry.video_codec}' differs from ffprobe '${observed.videoCodec}'`);
       if ((entry.audio_codec ?? null) !== observed.audioCodec) failures.push(`${expectedRelative}: manifest audio_codec '${entry.audio_codec}' differs from ffprobe '${observed.audioCodec}'`);
       const skillManifest = readJson(path.join(repoRoot, "catalog", ...expected.manifestRef.split("/")));
-      if (!durationMatches(skillManifest.source_duration_seconds, observed.durationSeconds, 0.02)) {
-        failures.push(`${expectedRelative}: catalog source_duration_seconds ${skillManifest.source_duration_seconds} differs from ffprobe ${observed.durationSeconds}`);
+      const expectedReleaseDuration = skillManifest.release_media?.duration_seconds ?? skillManifest.source_duration_seconds;
+      if (!durationMatches(expectedReleaseDuration, observed.durationSeconds, 0.02)) {
+        failures.push(`${expectedRelative}: catalog release duration ${expectedReleaseDuration} differs from ffprobe ${observed.durationSeconds}`);
       }
       if (skillManifest.release_media?.sha256 !== hash) failures.push(`${expectedRelative}: community Skill release_media SHA-256 differs from sanitized MP4`);
       if (skillManifest.release_media?.metadata_sanitized !== true) failures.push(`${expectedRelative}: community Skill release media is not marked metadata-sanitized`);

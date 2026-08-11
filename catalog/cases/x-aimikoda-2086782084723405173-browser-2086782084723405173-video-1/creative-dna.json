@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Keep two subjects in stable seated geography, establish the first visible speaking turn in a shared frame, give the second subject one compact reply in closer proof, then return to the first subject for a prolonged non-speaking physical reaction. Dialogue meaning may be original instance content, but the reusable source evidence is the turn-pause-reaction timing and shot handoff.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish both subjects and seating geography before singles.",
+      "purpose": "Prevents eye-line ambiguity.",
+      "ablation_failure": "Starting on isolated close-ups weakens the exchange.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep the second speaking turn compact and visibly complete.",
+      "purpose": "Creates a precise visual handoff to the later reaction.",
+      "ablation_failure": "An extended turn steals time from the non-speaking reaction.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use stable eye lines and prop continuity across cuts.",
+      "purpose": "Makes the edit feel like one exchange.",
+      "ablation_failure": "Continuity drift breaks timing credibility.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Return to the first subject for a longer non-speaking physical reaction.",
+      "purpose": "Makes performance, not exposition, carry the consequence.",
+      "ablation_failure": "An immediate verbal comeback removes the reaction space.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a changed held posture with no additional speaking turn.",
+      "purpose": "Closes the visible timing pattern.",
+      "ablation_failure": "Another line restarts the exchange instead of completing the reaction hold.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source fantasy franchise characters",
+    "source tavern-like living room and costumes",
+    "source hunting-count argument",
+    "source exact drinking and laughter performance"
+  ],
+  "instantiations": [
+    {
+      "concept": "Two original lunar geologists sit across a sample table; one asks whether the singing rock is safe, the other calmly answers with one original line, and the first scientist silently wraps both arms around the helmet and sinks back.",
+      "prompt_seed": "Two original lunar geologists sit across a sample table; one asks whether the singing rock is safe, the other calmly answers with one original line, and the first scientist silently wraps both arms around the helmet and sinks back."
+    },
+    {
+      "concept": "Two puppet librarians compare a returned book; one presents the impossible damage, the other gives one short literal answer, and the first puppet slowly collapses behind the desk in silent disbelief.",
+      "prompt_seed": "Two puppet librarians compare a returned book; one presents the impossible damage, the other gives one short literal answer, and the first puppet slowly collapses behind the desk in silent disbelief."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Starting on isolated close-ups weakens the exchange.",
+      "repair": "Establish both subjects and seating geography before singles."
+    },
+    {
+      "failure": "An extended turn steals time from the non-speaking reaction.",
+      "repair": "Keep the second speaking turn compact and visibly complete."
+    },
+    {
+      "failure": "Continuity drift breaks timing credibility.",
+      "repair": "Use stable eye lines and prop continuity across cuts."
+    },
+    {
+      "failure": "An immediate verbal comeback removes the reaction space.",
+      "repair": "Return to the first subject for a longer non-speaking physical reaction."
+    },
+    {
+      "failure": "Another line restarts the exchange instead of completing the reaction hold.",
+      "repair": "End on a changed held posture with no additional speaking turn."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Two original lunar geologists sit across a sample table; one asks whether the singing rock is safe, the other calmly answers with one original line, and the first scientist silently wraps both arms around the helmet and sinks back.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Two puppet librarians compare a returned book; one presents the impossible damage, the other gives one short literal answer, and the first puppet slowly collapses behind the desk in silent disbelief.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

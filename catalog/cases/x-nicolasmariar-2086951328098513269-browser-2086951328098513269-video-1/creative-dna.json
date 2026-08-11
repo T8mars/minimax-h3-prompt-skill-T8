@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Lock one ordinary enclosed room, one occupant and one inert witness object. After one ordinary operation or control check, make the enclosure accumulate visible physical evidence, use one brief blackout without resetting geometry, then open the threshold onto an impossible exterior while the unchanged witness object remains inside so the reveal reads as a rule break rather than a location cut.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Lock one familiar enclosed-room geometry before the anomaly begins.",
+      "purpose": "Creates a stable rule baseline.",
+      "ablation_failure": "A changing room cannot prove which rule broke.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Place one ordinary operation or control check before the physical anomaly.",
+      "purpose": "Creates a familiar action baseline and directs attention inside the locked room.",
+      "ablation_failure": "Starting with unexplained material effects weakens the ordinary-to-impossible escalation.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Make the enclosure accumulate physical evidence before the threshold opens.",
+      "purpose": "Proves the event is not merely a display glitch.",
+      "ablation_failure": "An instant portal lacks escalation and material causality.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Preserve one inert witness object across the interruption.",
+      "purpose": "Binds both states through continuity.",
+      "ablation_failure": "If everything changes, the reveal can read as a location cut.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Hold the impossible exterior and unchanged interior together after the occupant is absent or displaced.",
+      "purpose": "Creates a complete rule-break proof.",
+      "ablation_failure": "A quick exterior insert cannot establish spatial contradiction.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source elevator",
+    "source male passenger and paper bag",
+    "source freezing metal walls",
+    "source cloud doorway and exact disappearance"
+  ],
+  "instantiations": [
+    {
+      "concept": "A polar research decontamination airlock begins an ordinary rinse check, warm ochre sand invades its sealed joints, the lights fail, and the hatch opens onto a sunlit desert canyon while one instrument case remains.",
+      "prompt_seed": "A polar research decontamination airlock begins an ordinary rinse check, warm ochre sand invades its sealed joints, the lights fail, and the hatch opens onto a sunlit desert canyon while one instrument case remains."
+    },
+    {
+      "concept": "An underwater specimen chamber starts a routine pressure rinse, pale seed husks seep upward through dry seams, the lights cut, and the round hatch opens onto a windlit orchard while one red sample box stays inside.",
+      "prompt_seed": "An underwater specimen chamber starts a routine pressure rinse, pale seed husks seep upward through dry seams, the lights cut, and the round hatch opens onto a windlit orchard while one red sample box stays inside."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A changing room cannot prove which rule broke.",
+      "repair": "Lock one familiar enclosed-room geometry before the anomaly begins."
+    },
+    {
+      "failure": "Starting with unexplained material effects weakens the ordinary-to-impossible escalation.",
+      "repair": "Place one ordinary operation or control check before the physical anomaly."
+    },
+    {
+      "failure": "An instant portal lacks escalation and material causality.",
+      "repair": "Make the enclosure accumulate physical evidence before the threshold opens."
+    },
+    {
+      "failure": "If everything changes, the reveal can read as a location cut.",
+      "repair": "Preserve one inert witness object across the interruption."
+    },
+    {
+      "failure": "A quick exterior insert cannot establish spatial contradiction.",
+      "repair": "Hold the impossible exterior and unchanged interior together after the occupant is absent or displaced."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A polar research decontamination airlock begins an ordinary rinse check, warm ochre sand invades its sealed joints, the lights fail, and the hatch opens onto a sunlit desert canyon while one instrument case remains.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An underwater specimen chamber starts a routine pressure rinse, pale seed husks seep upward through dry seams, the lights cut, and the round hatch opens onto a windlit orchard while one red sample box stays inside.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1",
+  "slug": "chain-one-tool-through-rescue-route",
+  "title": "多功能救援线｜跨裂隙送补给再撤离",
+  "source_title": "X creative video by @NVTDanh",
+  "summary": "同一根绳索从发射、攀爬、摆荡到进入持续承担路线职责，短接触建立跟随后由一人带领双方共同离开。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/chain-one-tool-through-rescue-route",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-tool-to-traversal-rescue-chain-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "不可达目标 + 单一绳线工具 + 至少3种路线职责 + 救援接触 + 独立路线共同离开",
+  "recommended_input": "冰洞医护员发射同一根红色救援线，依次用它滑送医疗舱、建立扶手并短距提升背包；接触被困制图员后，两人沿独立荧光旗路线共同离开。",
+  "required_anchors": [
+    "Introduce one unreachable destination and one compact traversal tool together.",
+    "Keep one tether and one stable attachment through launch and its first visible route role.",
+    "Make one brief contact inside the destination establish the rescue choice.",
+    "After contact, keep both subjects visibly leaving together with one subject leading."
+  ],
+  "tags": [
+    "tool",
+    "to",
+    "traversal",
+    "rescue",
+    "chain"
+  ],
+  "quality": {
+    "weighted_score": 4.722,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-11T10:53:45+08:00",
+  "updated_at": "2026-08-11T11:43:46+08:00"
+}

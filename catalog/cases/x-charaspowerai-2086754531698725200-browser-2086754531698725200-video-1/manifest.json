@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1",
+  "slug": "form-reversible-material-typography",
+  "title": "材质字效｜云层成字再见光",
+  "source_title": "X creative video by @CharaspowerAI",
+  "summary": "同一物理材质先形成短字、稳定可读，再沿原过程逆向散回自然状态。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/form-reversible-material-typography",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-reversible-material-typography-loop-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1",
+  "input_format": "单一物理材质 + 短词聚合 + 可读停留 + 同物理逆转 + 无字完整复位",
+  "recommended_input": "正上方实验盘中铁屑沿磁力线聚成NORTH，稳定可读后用同一粒子物理逆向散开，最后恢复为指南针周围的同心磁场。",
+  "required_anchors": [
+    "Use one continuous physical material field before, during and after the word.",
+    "Form one short high-legibility word through visible material aggregation.",
+    "Reverse using the same material physics that formed the word.",
+    "Return to a coherent non-text field with the original anchor still readable."
+  ],
+  "tags": [
+    "reversible",
+    "material",
+    "typography",
+    "loop"
+  ],
+  "quality": {
+    "weighted_score": 4.727,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-11T10:53:45+08:00",
+  "updated_at": "2026-08-11T11:43:46+08:00"
+}

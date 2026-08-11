@@ -1,0 +1,182 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Keep one embodied first-person observer continuous while a subject attempts several visible concealments. Each intervention must expose a deeper, independently readable contradiction; camera height and proximity change only through the observer's body, and the payoff is a visible turn from active concealment to stopping the concealment and settling back into the workstation state rather than another reveal.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Use one continuous embodied first-person observer whose height and distance changes come from physical movement.",
+      "purpose": "Makes discovery feel participatory and spatially honest.",
+      "ablation_failure": "Third-person cutaways break the inspection logic.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Require at least two concealment attempts that each expose a deeper contradiction.",
+      "purpose": "Turns defense into causal escalation.",
+      "ablation_failure": "Random reveals do not form a proof ladder.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep every evidence layer spatially nested inside one stable work area.",
+      "purpose": "Lets viewers understand how each object hid the next.",
+      "ablation_failure": "Geographically unrelated clues feel edited rather than discovered.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Hand off from object proof to a sustained facial or bodily reaction.",
+      "purpose": "Converts evidence into a social consequence.",
+      "ablation_failure": "Ending on a screen leaves the human payoff unresolved.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with a visible behavior change rather than a third reveal.",
+      "purpose": "Provides a distinct acceptance or refusal state.",
+      "ablation_failure": "Continuous escalation without a state change has no closure.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "visible FBI insignia",
+    "source game interface",
+    "source male-torso image grid",
+    "source red warning interface",
+    "source revealing wardrobe and body framing",
+    "source envelope covering a phone",
+    "source under-desk reveal",
+    "source final recline-and-workstation action",
+    "source office worker and supervisor",
+    "exact source conversation wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "A handheld greenhouse inspection finds a trainee repeatedly covering an unauthorized bioluminescent seed trial: a clipboard hides a glowing tray, a tray lid exposes a second sensor, and the trainee finally stops hiding it and calmly resumes watering.",
+      "prompt_seed": "A handheld greenhouse inspection finds a trainee repeatedly covering an unauthorized bioluminescent seed trial: a clipboard hides a glowing tray, a tray lid exposes a second sensor, and the trainee finally stops hiding it and calmly resumes watering."
+    },
+    {
+      "concept": "A first-person museum storage audit follows a conservator whose label swap, cloth cover and drawer closure each reveal a deeper catalog mismatch before the conservator silently opens the full cabinet for inspection.",
+      "prompt_seed": "A first-person museum storage audit follows a conservator whose label swap, cloth cover and drawer closure each reveal a deeper catalog mismatch before the conservator silently opens the full cabinet for inspection."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Third-person cutaways break the inspection logic.",
+      "repair": "Use one continuous embodied first-person observer whose height and distance changes come from physical movement."
+    },
+    {
+      "failure": "Random reveals do not form a proof ladder.",
+      "repair": "Require at least two concealment attempts that each expose a deeper contradiction."
+    },
+    {
+      "failure": "Geographically unrelated clues feel edited rather than discovered.",
+      "repair": "Keep every evidence layer spatially nested inside one stable work area."
+    },
+    {
+      "failure": "Ending on a screen leaves the human payoff unresolved.",
+      "repair": "Hand off from object proof to a sustained facial or bodily reaction."
+    },
+    {
+      "failure": "Continuous escalation without a state change has no closure.",
+      "repair": "End with a visible behavior change rather than a third reveal."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A handheld greenhouse inspection finds a trainee repeatedly covering an unauthorized bioluminescent seed trial: a clipboard hides a glowing tray, a tray lid exposes a second sensor, and the trainee finally stops hiding it and calmly resumes watering.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A first-person museum storage audit follows a conservator whose label swap, cloth cover and drawer closure each reveal a deeper catalog mismatch before the conservator silently opens the full cabinet for inspection.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

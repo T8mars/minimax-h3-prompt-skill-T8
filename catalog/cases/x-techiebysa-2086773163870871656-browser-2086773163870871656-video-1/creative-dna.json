@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Use stable alternating singles for two visible speaking turns, separate them with one clearly readable pause, then return to the first subject for a final silent facial or posture response. The source evidence supports turn order, pause and reaction only; any sincerity, advice, literalness or joke premise belongs to the new instance and must not be presented as source-derived meaning.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Keep one stable table axis and matching eye lines.",
+      "purpose": "Makes the alternating singles feel continuous.",
+      "ablation_failure": "Axis reversal distracts from timing.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Make the first speaking turn visibly complete before one readable pause.",
+      "purpose": "Creates expectation without invented semantics.",
+      "ablation_failure": "Cutting mid-turn hides the pause.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep the second speaking turn compact and minimally gestured.",
+      "purpose": "Leaves time for consequence.",
+      "ablation_failure": "A long second performance flattens the final return.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Insert a silent expectation slot after the second turn.",
+      "purpose": "Allows the reply to land visually.",
+      "ablation_failure": "An immediate reaction cut feels mechanical.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on the first subject's non-speaking response without an additional speaking turn.",
+      "purpose": "Closes the two-turn pattern.",
+      "ablation_failure": "A third line restarts the exchange.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source television sitcom actors",
+    "source diner booth and cups",
+    "source original dialogue meaning",
+    "source exact facial beats and camera boundaries"
+  ],
+  "instantiations": [
+    {
+      "concept": "Two original museum guards sit across a night desk; one asks an original question about a motion alarm, the other gives one literal line after a pause, and the first guard silently looks at the supposedly empty display case behind them.",
+      "prompt_seed": "Two original museum guards sit across a night desk; one asks an original question about a motion alarm, the other gives one literal line after a pause, and the first guard silently looks at the supposedly empty display case behind them."
+    },
+    {
+      "concept": "Two deep-sea cooks face each other across a galley counter; one reports a missing spice jar, the other gives one compact answer, and the first silently watches bubbles rise from a sealed cupboard.",
+      "prompt_seed": "Two deep-sea cooks face each other across a galley counter; one reports a missing spice jar, the other gives one compact answer, and the first silently watches bubbles rise from a sealed cupboard."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Axis reversal distracts from timing.",
+      "repair": "Keep one stable table axis and matching eye lines."
+    },
+    {
+      "failure": "Cutting mid-turn hides the pause.",
+      "repair": "Make the first speaking turn visibly complete before one readable pause."
+    },
+    {
+      "failure": "A long second performance flattens the final return.",
+      "repair": "Keep the second speaking turn compact and minimally gestured."
+    },
+    {
+      "failure": "An immediate reaction cut feels mechanical.",
+      "repair": "Insert a silent expectation slot after the second turn."
+    },
+    {
+      "failure": "A third line restarts the exchange.",
+      "repair": "End on the first subject's non-speaking response without an additional speaking turn."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Two original museum guards sit across a night desk; one asks an original question about a motion alarm, the other gives one literal line after a pause, and the first guard silently looks at the supposedly empty display case behind them.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Two deep-sea cooks face each other across a galley counter; one reports a missing spice jar, the other gives one compact answer, and the first silently watches bubbles rise from a sealed cupboard.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -24,7 +24,7 @@ test("creative-case gallery contains every catalog-relative GIF and summary link
   assert.equal(galleryRows.length, catalog.cases.length);
 });
 
-test("indexes nine upstream MiniMax Skills, nine independent Seedance companions, and one non-official Skill", () => {
+test("indexes nine upstream MiniMax Skills, nine independent Seedance companions, and two non-official Skills", () => {
   const official = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "official-skills", "manifest.json"), "utf8"));
   assert.equal(catalog.official_skill_count, 9);
   assert.equal(official.skill_count, 9);
@@ -45,13 +45,14 @@ test("indexes nine upstream MiniMax Skills, nine independent Seedance companions
   }
   const skillDirectories = fs.readdirSync(path.join(repoRoot, "skills"), { withFileTypes: true }).filter((entry) => entry.isDirectory());
   const caseSkillCount = new Set(catalog.cases.map((entry) => entry.slug)).size;
-  assert.equal(caseSkillCount, 37, "39 cases must collapse two evidence variants into their existing stable selectors");
-  assert.equal(skillDirectories.length, caseSkillCount + companions.size + 1);
   const community = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "community-skills", "manifest.json"), "utf8"));
-  assert.equal(catalog.community_skill_count, 1);
-  assert.equal(community.skill_count, 1);
+  assert.equal(caseSkillCount, 43, "49 cases must collapse six evidence variants into their existing stable selectors");
+  assert.equal(skillDirectories.length, caseSkillCount + companions.size + community.skill_count);
+  assert.equal(catalog.community_skill_count, 2);
+  assert.equal(community.skill_count, 2);
   assert.equal(community.official, false);
   assert.ok(fs.existsSync(path.join(repoRoot, "skills", "direct-street-interview-video", "SKILL.md")));
+  assert.ok(fs.existsSync(path.join(repoRoot, "skills", "stage-startle-to-truce-encounter", "SKILL.md")));
 });
 
 test("public Skill installation may document CODEX_HOME without weakening the boundary", () => {
