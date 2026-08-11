@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.1.0`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.1.0`。
+当前版本是 `v1.1.1`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.1.1`。
 
 版本采用十进制进位：
 
@@ -20,6 +20,8 @@
 
 - `T8-Prompt-Library-Setup-v<version>.exe`；
 - `latest.yml` 与 Electron updater 所需 blockmap；
+- `T8-Prompt-Library-v<version>-mac-universal.dmg`；
+- `T8-Prompt-Library-v<version>-mac-universal.zip`、`latest-mac.yml` 与 ZIP blockmap；
 - `prompt-library-media-v<version>.zip`；
 - `prompt-library-catalog-v<version>.zip`；
 - `prompt-library-skills-v<version>.zip`；
@@ -46,10 +48,10 @@ GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 M
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.1.0
+npm run media:pack -- -Version 1.1.1
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.1.0.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.1.1.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 
@@ -60,19 +62,21 @@ npm run media:pack -- -Version 1.1.0
 5. 记录媒体 ZIP 的 SHA-256。
 6. 手动运行 `.github/workflows/release.yml`，输入不带 `v` 的版本与媒体 SHA-256。
 7. 工作流定位或安装 `ffmpeg`/`ffprobe`，从 Draft Release 下载指定媒体资产、校验 ZIP 哈希并解压。
-8. 每个 MP4 都重新探测时长与 codec，并用 `ffmpeg -xerror` 完整解码视频和音频；探针结果必须与 manifest 一致。
-9. 工作流构建完整 NSIS 安装包，再逐 path、size 与 SHA-256 检查 `win-unpacked/resources/media` 和打包 manifest。
-10. 工作流以打包后的 Electron EXE 运行 E2E，证明 49 个案例、9 个官方仓库条目、2 个非官方 Skills、51 份完整视频、声音、提示词和对比界面可用。
-11. 只有以上门禁通过，才生成目录包、Skills 包及 `SHA256SUMS.txt` 并上传回 Draft。
-12. `publish=false` 时人工检查 Draft；确认后重新运行并设置 `publish=true`，工作流才发布 Release。
+8. 每个 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨和音频轨；探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、轨道、进程退出、完整遍历或音轨任一失败仍会阻断发布。
+9. Windows runner 构建完整 NSIS；macOS runner 构建 unsigned universal DMG + ZIP。两端都逐 path、size 与 SHA-256 对账安装包内媒体，并按上述容错标准完整遍历视频和音频。
+10. 两个平台都以打包后的应用运行 E2E，证明 49 个案例、9 个官方仓库条目、2 个非官方 Skills、51 份完整视频、收藏/合集/历史、双语、复制、声音、提示词和对比界面可用。
+11. 最终发布 Job 必须同时收到 Windows 与 macOS 已验证产物，核对精确资产集合后统一生成 `SHA256SUMS.txt`。
+12. 只有以上门禁通过，才上传全部目录包、Skills 包、媒体包、Windows 安装包和 macOS 安装包；`publish=true` 时才把 Draft 设为正式 Release。
 
 发布工作流不会从普通 CI 猜测或伪造 MP4。如果 Draft 中没有名称完全匹配的媒体包、SHA-256 不匹配或案例媒体不完整，构建立即失败。
 
 ## 自动更新
 
-Electron updater 只查询本仓库的稳定 GitHub Releases。`latest.yml` 与安装包必须来自同一次构建。应用在 renderer 隔离环境中运行，更新逻辑只存在于 main process。更新可以自动检查并下载，但 `autoInstallOnAppQuit` 关闭；只有用户点击界面的“重启安装”后才调用安装，普通退出不会自动应用已下载更新。
+Windows Electron updater 只查询本仓库的稳定 GitHub Releases。`latest.yml` 与安装包必须来自同一次构建。更新可以自动检查并下载，但 `autoInstallOnAppQuit` 关闭；只有用户点击界面的“重启安装”后才调用安装。
 
-建议启用仓库的 Immutable Releases、分支保护和 Actions 审批。正式签名证书可用后，Windows 安装包应加入代码签名；未签名版本必须在 Release Notes 中明确说明。
+macOS 同步生成 ZIP、ZIP blockmap 和 `latest-mac.yml`，为未来签名更新保留完整产物合同；但当前公开构建没有 Apple Developer ID，自动更新在 macOS 上禁用，界面只打开 Releases 页面。获得 Apple 签名与公证密钥前，不得把 macOS 包宣称为已签名、已公证或可自动更新。
+
+建议启用仓库的 Immutable Releases、分支保护和 Actions 审批。正式签名证书可用后，Windows 与 macOS 安装包都应加入代码签名，macOS 还需 notarization；未签名版本必须在 Release Notes 中明确说明。
 
 ## 回滚
 
@@ -83,4 +87,4 @@ Electron updater 只查询本仓库的稳定 GitHub Releases。`latest.yml` 与�
 
 ---
 
-**English summary:** Releases use decimal carry versioning and a pre-staged draft media asset. The workflow probes and fully decodes every MP4, verifies the packaged resources against the manifest, runs E2E against the packaged EXE, and only then assembles checksummed assets. Downloaded updates install only after the user explicitly chooses “Restart to install.”
+**English summary:** Releases use decimal carry versioning and a pre-staged media asset. Windows and macOS jobs each traverse every staged and packaged MP4 with a single decoder thread, tolerating isolated recoverable frames while still failing on incomplete streams or non-zero decoder exits, then run packaged E2E before a final job assembles checksummed assets. Windows updates require explicit restart confirmation; unsigned macOS previews update manually.

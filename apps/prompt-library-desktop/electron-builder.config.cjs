@@ -55,6 +55,21 @@ module.exports = {
     target: ["nsis"],
     artifactName: "T8-Prompt-Library-Setup-v${version}.${ext}"
   },
+  mac: {
+    icon: "build/icon.png",
+    category: "public.app-category.graphics-design",
+    target: [
+      { target: "dmg", arch: ["universal"] },
+      { target: "zip", arch: ["universal"] }
+    ],
+    artifactName: "T8-Prompt-Library-v${version}-mac-${arch}.${ext}",
+    hardenedRuntime: false,
+    gatekeeperAssess: false,
+    notarize: false
+  },
+  dmg: {
+    title: "T8 Prompt Library ${version}"
+  },
   nsis: {
     installerIcon: "build/icon.ico",
     uninstallerIcon: "build/icon.ico",

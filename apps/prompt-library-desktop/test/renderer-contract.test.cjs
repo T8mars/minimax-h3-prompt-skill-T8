@@ -40,6 +40,15 @@ test("renderer defaults to an aggregate all-content view", () => {
   }
 });
 
+test("renderer exposes persistent on-device favorites, collections and browsing history", () => {
+  for (const id of ["view-favorites", "view-collections", "view-history", "personal-toolbar", "collection-select", "new-collection", "clear-history", "detail-favorite", "detail-collections", "collection-editor-dialog", "collection-membership-dialog"]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`), `missing personal-library control: ${id}`);
+  }
+  for (const token of ["T8PersonalLibrary", "loadLibrary", "toggleFavorite", "recordHistory", "createCollection", "setCollectionMembership", "t8-personal-library-v1"]) {
+    assert.ok(renderer.includes(token) || fs.readFileSync(path.join(appDir, "src", "personal-library.js"), "utf8").includes(token), `missing personal-library behavior: ${token}`);
+  }
+});
+
 test("renderer exposes a separate non-official Skill view with local preview media", () => {
   for (const id of ["view-community-skills", "view-community-count"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`));

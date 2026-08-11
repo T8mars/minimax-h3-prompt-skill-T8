@@ -9,6 +9,7 @@
     >
     <title>T8 Prompt Library</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="personal-library.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -37,6 +38,9 @@
         <button id="view-cases" class="view-tab" type="button" aria-pressed="false"><span class="view-label">Creative Cases</span> <span id="view-case-count">0</span></button>
         <button id="view-official-skills" class="view-tab" type="button" aria-pressed="false"><span class="view-label">MiniMax Official Skills</span> <span id="view-official-count">0</span></button>
         <button id="view-community-skills" class="view-tab" type="button" aria-pressed="false"><span class="view-label">Community Skills</span> <span id="view-community-count">0</span></button>
+        <button id="view-favorites" class="view-tab personal-tab" type="button" aria-pressed="false"><span class="view-label">Favorites</span> <span id="view-favorite-count">0</span></button>
+        <button id="view-collections" class="view-tab personal-tab" type="button" aria-pressed="false"><span class="view-label">Collections</span> <span id="view-collection-count">0</span></button>
+        <button id="view-history" class="view-tab personal-tab" type="button" aria-pressed="false"><span class="view-label">History</span> <span id="view-history-count">0</span></button>
       </nav>
       <section class="intro" aria-labelledby="page-title">
         <div>
@@ -47,6 +51,20 @@
         <div class="catalog-version">
           <span>CATALOG</span>
           <strong id="catalog-version">v1.0.0</strong>
+        </div>
+      </section>
+
+      <section id="personal-toolbar" class="personal-toolbar hidden" aria-label="Personal library tools">
+        <div id="collection-controls" class="collection-controls hidden">
+          <label for="collection-select" id="collection-select-label">Collection</label>
+          <select id="collection-select"></select>
+          <button id="new-collection" class="button copy-secondary" type="button">New collection</button>
+          <button id="rename-collection" class="button ghost" type="button">Rename</button>
+          <button id="delete-collection" class="button ghost danger" type="button">Delete</button>
+        </div>
+        <div id="history-controls" class="history-controls hidden">
+          <span id="history-note">Most recently viewed first; stored only on this device.</span>
+          <button id="clear-history" class="button ghost danger" type="button">Clear history</button>
         </div>
       </section>
 
@@ -107,7 +125,9 @@
               <button id="detail-locale-en" class="locale-button active" type="button" aria-pressed="true">EN</button>
               <button id="detail-locale-zh" class="locale-button" type="button" aria-pressed="false">中文</button>
             </div>
-            <button id="copy-full-item" class="button copy" type="button">Copy full item</button>
+             <button id="copy-full-item" class="button copy" type="button">Copy full item</button>
+             <button id="detail-favorite" class="button personal-action" type="button" aria-pressed="false">☆ Favorite</button>
+             <button id="detail-collections" class="button personal-action" type="button">＋ Collections</button>
             <button id="close-dialog" class="icon-button" type="button" aria-label="Close details">×</button>
           </div>
         </header>
@@ -179,6 +199,31 @@
           </div>
           <div id="validation-grid" class="validation-grid"></div>
         </section>
+      </div>
+    </dialog>
+
+    <dialog id="collection-editor-dialog" class="small-dialog" aria-labelledby="collection-editor-title">
+      <form id="collection-editor-form" method="dialog" class="small-dialog-shell">
+        <h2 id="collection-editor-title">New collection</h2>
+        <label for="collection-name" id="collection-name-label">Collection name</label>
+        <input id="collection-name" name="collection-name" maxlength="48" autocomplete="off" required>
+        <p id="collection-editor-error" class="form-error hidden" role="alert"></p>
+        <div class="small-dialog-actions">
+          <button id="cancel-collection-editor" class="button ghost" type="button">Cancel</button>
+          <button id="save-collection" class="button source" type="submit">Save</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="collection-membership-dialog" class="small-dialog" aria-labelledby="collection-membership-title">
+      <div class="small-dialog-shell">
+        <h2 id="collection-membership-title">Add to collections</h2>
+        <p id="collection-membership-item"></p>
+        <div id="collection-membership-list" class="collection-membership-list"></div>
+        <div class="small-dialog-actions">
+          <button id="membership-new-collection" class="button copy-secondary" type="button">New collection</button>
+          <button id="close-collection-membership" class="button source" type="button">Done</button>
+        </div>
       </div>
     </dialog>
 

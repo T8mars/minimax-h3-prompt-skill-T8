@@ -1,19 +1,19 @@
-name: Build full Windows release
+name: Build full Windows and macOS release
 
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Decimal-carry version without v (for example 1.0.0)"
+        description: "Decimal-carry version without v (for example 1.1.1)"
         required: true
-        default: "1.1.0"
+        default: "1.1.1"
         type: string
       media_sha256:
         description: "SHA-256 of prompt-library-media-v<version>.zip already uploaded to the Draft Release"
         required: true
         type: string
       publish:
-        description: "Publish the verified Draft Release after uploading all assets"
+        description: "Publish the verified Draft Release after both platforms pass"
         required: true
         default: false
         type: boolean
@@ -26,11 +26,21 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  full-windows-release:
-    name: Full Windows v${{ inputs.version }}
-    runs-on: windows-latest
+  build-platform:
+    name: ${{ matrix.label }} v${{ inputs.version }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: windows
+            label: Full Windows
+            os: windows-latest
+          - platform: macos
+            label: Universal macOS
+            os: macos-latest
+    runs-on: ${{ matrix.os }}
     steps:
-      - name: Check out release commit with tags
+      - name: Check out release tag
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -43,34 +53,43 @@ jobs:
           cache: npm
           cache-dependency-path: apps/prompt-library-desktop/package-lock.json
 
-      - name: Resolve FFmpeg and FFprobe for evidence validation
+      - name: Install the validated FFmpeg version on Windows
+        if: matrix.platform == 'windows'
+        shell: pwsh
+        run: |
+          choco install ffmpeg --version=7.1.1 --yes --no-progress --limit-output --allow-downgrade --force
+          if ($LASTEXITCODE -ne 0) { throw "Chocolatey failed to install the validated FFmpeg version." }
+
+      - name: Install FFmpeg on macOS when needed
+        if: matrix.platform == 'macos'
+        shell: bash
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            brew install ffmpeg
+          fi
+
+      - name: Resolve media tools
         shell: pwsh
         run: |
           $ErrorActionPreference = "Stop"
-          $ffmpeg = Get-Command ffmpeg -ErrorAction SilentlyContinue
-          $ffprobe = Get-Command ffprobe -ErrorAction SilentlyContinue
-          if (-not $ffmpeg -or -not $ffprobe) {
-            choco install ffmpeg --yes --no-progress --limit-output
-            if ($LASTEXITCODE -ne 0) { throw "Chocolatey failed to install FFmpeg." }
-            $ffmpeg = Get-Command ffmpeg -ErrorAction SilentlyContinue
-            $ffprobe = Get-Command ffprobe -ErrorAction SilentlyContinue
-          }
-          if (-not $ffmpeg -or -not $ffprobe) { throw "Both ffmpeg and ffprobe are required for release validation." }
+          $ffmpeg = Get-Command ffmpeg -ErrorAction Stop
+          $ffprobe = Get-Command ffprobe -ErrorAction Stop
           & $ffmpeg.Source -version | Select-Object -First 1
           & $ffprobe.Source -version | Select-Object -First 1
           $utf8 = [System.Text.UTF8Encoding]::new($false)
           [System.IO.File]::AppendAllText($env:GITHUB_ENV, "T8_FFMPEG_PATH=$($ffmpeg.Source)`n", $utf8)
           [System.IO.File]::AppendAllText($env:GITHUB_ENV, "T8_FFPROBE_PATH=$($ffprobe.Source)`n", $utf8)
 
-      - name: Validate public repository and release version
+      - name: Validate repository, version, and tag binding
         shell: pwsh
         run: |
           npm run validate
+          if ($LASTEXITCODE -ne 0) { throw "Public repository validation failed." }
           node scripts/public/validate-release-version.mjs --candidate "${{ inputs.version }}"
+          if ($LASTEXITCODE -ne 0) { throw "Release version validation failed." }
           $tagCommit = (git rev-list -n 1 "v${{ inputs.version }}").Trim()
           $headCommit = (git rev-parse HEAD).Trim()
-          if (-not $tagCommit) { throw "Release tag v${{ inputs.version }} does not exist." }
-          if ($tagCommit -ne $headCommit) { throw "Draft tag points to $tagCommit but workflow checked out $headCommit." }
+          if (-not $tagCommit -or $tagCommit -ne $headCommit) { throw "Release tag and checked-out commit are not identical." }
 
       - name: Download and verify staged media pack
         shell: pwsh
@@ -82,106 +101,188 @@ jobs:
           $tag = "v$version"
           $asset = "prompt-library-media-v$version.zip"
           $release = gh release view $tag --json isDraft,assets | ConvertFrom-Json
-          if (-not $release.isDraft) {
-            throw "$tag must exist as a Draft Release before this workflow runs."
-          }
-          if ($asset -notin @($release.assets | ForEach-Object { $_.name })) {
-            throw "Draft Release $tag does not contain the exact media asset $asset."
-          }
-          New-Item -ItemType Directory -Force -Path ".release-input\download", ".release-input\media" | Out-Null
-          gh release download $tag --pattern $asset --dir ".release-input\download"
-          $mediaZip = Join-Path ".release-input\download" $asset
+          if (-not $release.isDraft) { throw "$tag must remain a Draft Release during platform builds." }
+          if ($asset -notin @($release.assets | ForEach-Object { $_.name })) { throw "Draft Release is missing $asset." }
+          New-Item -ItemType Directory -Force -Path ".release-input/download", ".release-input/media" | Out-Null
+          gh release download $tag --pattern $asset --dir ".release-input/download"
+          if ($LASTEXITCODE -ne 0) { throw "Media asset download failed." }
+          $mediaZip = Join-Path ".release-input/download" $asset
           $expected = "${{ inputs.media_sha256 }}".Trim().ToLowerInvariant()
           if ($expected -notmatch "^[a-f0-9]{64}$") { throw "media_sha256 must contain exactly 64 hexadecimal characters." }
           $actual = (Get-FileHash -LiteralPath $mediaZip -Algorithm SHA256).Hash.ToLowerInvariant()
-          if ($actual -ne $expected) { throw "Media pack SHA-256 mismatch: expected $expected, got $actual." }
-          Expand-Archive -LiteralPath $mediaZip -DestinationPath ".release-input\media" -Force
+          if ($actual -ne $expected) { throw "Media SHA-256 mismatch: expected $expected, got $actual." }
+          Expand-Archive -LiteralPath $mediaZip -DestinationPath ".release-input/media" -Force
 
-      - name: Validate all released MP4 files and media manifest
+      - name: Traverse every staged MP4 with recoverable-frame tolerance
         shell: pwsh
         run: |
           node scripts/public/validate-media-pack.mjs --media-dir .release-input/media --ffprobe "$env:T8_FFPROBE_PATH" --ffmpeg "$env:T8_FFMPEG_PATH"
+          if ($LASTEXITCODE -ne 0) { throw "Staged media validation failed." }
 
-      - name: Install Electron dependencies
-        run: npm ci --prefix apps/prompt-library-desktop
+      - name: Install and test Electron application
+        shell: pwsh
+        run: |
+          npm ci --prefix apps/prompt-library-desktop
+          if ($LASTEXITCODE -ne 0) { throw "Electron dependency install failed." }
+          npm test --prefix apps/prompt-library-desktop
+          if ($LASTEXITCODE -ne 0) { throw "Electron tests failed." }
 
-      - name: Test Electron application
-        run: npm test --prefix apps/prompt-library-desktop
-
-      - name: Validate and build full NSIS installer
+      - name: Build Windows NSIS package
+        if: matrix.platform == 'windows'
         shell: pwsh
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: "false"
         run: |
-          $ErrorActionPreference = "Stop"
-          $env:T8_MEDIA_DIR = (Resolve-Path ".release-input\media").Path
+          $env:T8_MEDIA_DIR = (Resolve-Path ".release-input/media").Path
           npm run validate:release --prefix apps/prompt-library-desktop
-          npm run dist --prefix apps/prompt-library-desktop -- --publish never
+          if ($LASTEXITCODE -ne 0) { throw "Release validation failed." }
+          npm run dist:win --prefix apps/prompt-library-desktop -- --publish never
+          if ($LASTEXITCODE -ne 0) { throw "Windows build failed." }
 
-      - name: Verify packaged media is byte-bound to the staged manifest
+      - name: Build unsigned universal macOS DMG and ZIP
+        if: matrix.platform == 'macos'
+        shell: pwsh
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
+        run: |
+          $env:T8_MEDIA_DIR = (Resolve-Path ".release-input/media").Path
+          npm run validate:release --prefix apps/prompt-library-desktop
+          if ($LASTEXITCODE -ne 0) { throw "Release validation failed." }
+          npm run dist:mac --prefix apps/prompt-library-desktop -- --publish never
+          if ($LASTEXITCODE -ne 0) { throw "macOS build failed." }
+
+      - name: Locate and validate packaged media
         shell: pwsh
         run: |
           $ErrorActionPreference = "Stop"
-          $packagedMedia = "apps\prompt-library-desktop\dist\win-unpacked\resources\media"
-          $sourceManifest = ".release-input\media\media-pack-manifest.json"
+          if ("${{ matrix.platform }}" -eq "windows") {
+            $packagedMedia = "apps/prompt-library-desktop/dist/win-unpacked/resources/media"
+          } else {
+            $appBundle = Get-ChildItem -LiteralPath "apps/prompt-library-desktop/dist" -Recurse -Directory -Filter "T8 Prompt Library.app" | Select-Object -First 1
+            if (-not $appBundle) { throw "Packaged macOS app bundle is missing." }
+            $packagedMedia = Join-Path $appBundle.FullName "Contents/Resources/media"
+            $utf8 = [System.Text.UTF8Encoding]::new($false)
+            [System.IO.File]::AppendAllText($env:GITHUB_ENV, "T8_MAC_APP=$($appBundle.FullName)`n", $utf8)
+          }
+          $sourceManifest = ".release-input/media/media-pack-manifest.json"
           $packagedManifest = Join-Path $packagedMedia "media-pack-manifest.json"
-          if (-not (Test-Path -LiteralPath $packagedManifest -PathType Leaf)) { throw "Packaged media-pack-manifest.json is missing." }
-          $sourceHash = (Get-FileHash -LiteralPath $sourceManifest -Algorithm SHA256).Hash
-          $packagedHash = (Get-FileHash -LiteralPath $packagedManifest -Algorithm SHA256).Hash
-          if ($sourceHash -ne $packagedHash) { throw "Packaged media manifest differs from the staged, verified manifest." }
+          if (-not (Test-Path -LiteralPath $packagedManifest -PathType Leaf)) { throw "Packaged media manifest is missing." }
+          if ((Get-FileHash $sourceManifest -Algorithm SHA256).Hash -ne (Get-FileHash $packagedManifest -Algorithm SHA256).Hash) { throw "Packaged and staged media manifests differ." }
           node scripts/public/validate-media-pack.mjs --media-dir $packagedMedia --manifest $packagedManifest --ffprobe "$env:T8_FFPROBE_PATH" --ffmpeg "$env:T8_FFMPEG_PATH"
+          if ($LASTEXITCODE -ne 0) { throw "Packaged media validation failed." }
 
-      - name: Run packaged Electron end-to-end test
+      - name: Run packaged Windows end-to-end test
+        if: matrix.platform == 'windows'
         shell: pwsh
         run: |
-          $ErrorActionPreference = "Stop"
-          $packagedExe = "apps\prompt-library-desktop\dist\win-unpacked\T8 Prompt Library.exe"
-          if (-not (Test-Path -LiteralPath $packagedExe -PathType Leaf)) { throw "Packaged Electron executable is missing." }
-          $env:T8_E2E_EXECUTABLE = (Resolve-Path $packagedExe).Path
+          $exe = "apps/prompt-library-desktop/dist/win-unpacked/T8 Prompt Library.exe"
+          if (-not (Test-Path -LiteralPath $exe -PathType Leaf)) { throw "Packaged Windows executable is missing." }
+          $env:T8_E2E_EXECUTABLE = (Resolve-Path $exe).Path
           npm run test:e2e --prefix apps/prompt-library-desktop
+          if ($LASTEXITCODE -ne 0) { throw "Packaged Windows E2E failed." }
 
-      - name: Assemble catalog, Skills, updater, and checksums
+      - name: Run packaged macOS end-to-end test
+        if: matrix.platform == 'macos'
+        shell: pwsh
+        run: |
+          $exe = Join-Path $env:T8_MAC_APP "Contents/MacOS/T8 Prompt Library"
+          if (-not (Test-Path -LiteralPath $exe -PathType Leaf)) { throw "Packaged macOS executable is missing." }
+          $env:T8_E2E_EXECUTABLE = $exe
+          npm run test:e2e --prefix apps/prompt-library-desktop
+          if ($LASTEXITCODE -ne 0) { throw "Packaged macOS E2E failed." }
+
+      - name: Assemble Windows and common assets
+        if: matrix.platform == 'windows'
         shell: pwsh
         run: |
           $ErrorActionPreference = "Stop"
           $version = "${{ inputs.version }}"
-          $assets = New-Item -ItemType Directory -Force -Path ".release-input\assets"
-          Compress-Archive -Path "catalog" -DestinationPath (Join-Path $assets "prompt-library-catalog-v$version.zip") -CompressionLevel Optimal
-          Compress-Archive -Path "skills" -DestinationPath (Join-Path $assets "prompt-library-skills-v$version.zip") -CompressionLevel Optimal
-          Copy-Item -LiteralPath ".release-input\download\prompt-library-media-v$version.zip" -Destination $assets
-          Copy-Item -LiteralPath ".release-input\media\media-pack-manifest.json" -Destination $assets
-
-          $dist = "apps\prompt-library-desktop\dist"
+          $assets = New-Item -ItemType Directory -Force -Path ".release-input/assets-windows"
+          Compress-Archive -Path catalog -DestinationPath (Join-Path $assets "prompt-library-catalog-v$version.zip") -CompressionLevel Optimal
+          Compress-Archive -Path skills -DestinationPath (Join-Path $assets "prompt-library-skills-v$version.zip") -CompressionLevel Optimal
+          Copy-Item ".release-input/download/prompt-library-media-v$version.zip" $assets
+          Copy-Item ".release-input/media/media-pack-manifest.json" $assets
+          $dist = "apps/prompt-library-desktop/dist"
           $installer = Join-Path $dist "T8-Prompt-Library-Setup-v$version.exe"
-          if (-not (Test-Path -LiteralPath $installer -PathType Leaf)) { throw "Expected installer was not built: $installer" }
-          Copy-Item -LiteralPath $installer -Destination $assets
-          Get-ChildItem -LiteralPath $dist -File | Where-Object { $_.Name -eq "latest.yml" -or $_.Extension -eq ".blockmap" } | Copy-Item -Destination $assets
-          if (-not (Test-Path -LiteralPath (Join-Path $assets "latest.yml"))) { throw "Electron updater metadata latest.yml is missing." }
+          if (-not (Test-Path $installer -PathType Leaf)) { throw "Expected Windows installer is missing." }
+          Copy-Item $installer $assets
+          Get-ChildItem $dist -File | Where-Object { $_.Name -eq "latest.yml" -or $_.Extension -eq ".blockmap" } | Copy-Item -Destination $assets
+          if (-not (Test-Path (Join-Path $assets "latest.yml"))) { throw "latest.yml is missing." }
 
-          $checksumLines = Get-ChildItem -LiteralPath $assets -File | Sort-Object Name | ForEach-Object {
-            $hash = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
-            "$hash *$($_.Name)"
+      - name: Assemble macOS assets
+        if: matrix.platform == 'macos'
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $version = "${{ inputs.version }}"
+          $assets = New-Item -ItemType Directory -Force -Path ".release-input/assets-macos"
+          $dist = "apps/prompt-library-desktop/dist"
+          foreach ($name in @("T8-Prompt-Library-v$version-mac-universal.dmg", "T8-Prompt-Library-v$version-mac-universal.zip", "latest-mac.yml")) {
+            $path = Join-Path $dist $name
+            if (-not (Test-Path $path -PathType Leaf)) { throw "Expected macOS asset is missing: $name" }
+            Copy-Item $path $assets
           }
-          [System.IO.File]::WriteAllLines((Join-Path $assets "SHA256SUMS.txt"), $checksumLines, [System.Text.UTF8Encoding]::new($false))
+          Get-ChildItem $dist -File -Filter "*.blockmap" | Copy-Item -Destination $assets
+          if (-not (Test-Path (Join-Path $assets "T8-Prompt-Library-v$version-mac-universal.zip.blockmap"))) { throw "macOS ZIP blockmap is missing." }
 
-      - name: Upload full release build for workflow inspection
+      - name: Upload verified platform assets
         uses: actions/upload-artifact@v4
         with:
-          name: t8-prompt-library-v${{ inputs.version }}
-          path: .release-input/assets/*
+          name: t8-prompt-library-v${{ inputs.version }}-${{ matrix.platform }}
+          path: .release-input/assets-${{ matrix.platform }}/*
           if-no-files-found: error
           retention-days: 14
 
-      - name: Upload assets to existing Draft Release
+  publish-release:
+    name: Verify and publish v${{ inputs.version }}
+    needs: build-platform
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download both verified platform asset sets
+        uses: actions/download-artifact@v4
+        with:
+          pattern: t8-prompt-library-v${{ inputs.version }}-*
+          path: release-assets
+          merge-multiple: true
+
+      - name: Verify exact release contract and write checksums
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $version = "${{ inputs.version }}"
+          $required = @(
+            "prompt-library-catalog-v$version.zip",
+            "prompt-library-skills-v$version.zip",
+            "prompt-library-media-v$version.zip",
+            "media-pack-manifest.json",
+            "T8-Prompt-Library-Setup-v$version.exe",
+            "T8-Prompt-Library-Setup-v$version.exe.blockmap",
+            "latest.yml",
+            "T8-Prompt-Library-v$version-mac-universal.dmg",
+            "T8-Prompt-Library-v$version-mac-universal.zip",
+            "T8-Prompt-Library-v$version-mac-universal.zip.blockmap",
+            "latest-mac.yml"
+          )
+          foreach ($name in $required) {
+            if (-not (Test-Path (Join-Path "release-assets" $name) -PathType Leaf)) { throw "Release contract is missing $name" }
+          }
+          $checksumLines = Get-ChildItem release-assets -File | Sort-Object Name | ForEach-Object {
+            $hash = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+            "$hash *$($_.Name)"
+          }
+          [System.IO.File]::WriteAllLines((Join-Path "release-assets" "SHA256SUMS.txt"), $checksumLines, [System.Text.UTF8Encoding]::new($false))
+
+      - name: Upload all assets to the existing Draft Release
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          $ErrorActionPreference = "Stop"
           $tag = "v${{ inputs.version }}"
-          Get-ChildItem -LiteralPath ".release-input\assets" -File | ForEach-Object {
+          $release = gh release view $tag --json isDraft | ConvertFrom-Json
+          if (-not $release.isDraft) { throw "$tag must remain a draft until this final job." }
+          Get-ChildItem release-assets -File | ForEach-Object {
             gh release upload $tag $_.FullName --clobber
-            if ($LASTEXITCODE -ne 0) { throw "Failed to upload $($_.Name) to $tag." }
+            if ($LASTEXITCODE -ne 0) { throw "Failed to upload $($_.Name)." }
           }
 
       - name: Publish verified release
@@ -190,8 +291,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release edit "v${{ inputs.version }}" --draft=false
-          if ($LASTEXITCODE -ne 0) { throw "Failed to publish release." }
+          gh release edit "v${{ inputs.version }}" --draft=false --latest
+          if ($LASTEXITCODE -ne 0) { throw "Failed to publish the verified release." }
 
       - name: Write release summary
         if: always()
@@ -200,8 +301,9 @@ jobs:
           @"
           ## T8 Prompt Library v${{ inputs.version }}
 
-          - Full installer build requested: yes
-          - Media pack source: pre-staged Draft Release asset
-          - Media SHA-256 supplied: yes
+          - Windows NSIS: verified
+          - macOS universal DMG + ZIP: verified, unsigned and unnotarized
+          - Staged and packaged media: hash-bound and fully traversed on both platforms; isolated recoverable frames are tolerated
+          - Packaged Electron E2E: required on both platforms
           - Publish requested: ${{ inputs.publish }}
           "@ | Add-Content -LiteralPath $env:GITHUB_STEP_SUMMARY
