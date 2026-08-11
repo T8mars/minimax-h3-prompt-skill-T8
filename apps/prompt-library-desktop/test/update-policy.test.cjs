@@ -5,6 +5,7 @@ const { DEFAULT_DELAY_MS, automaticUpdateDelay } = require("../lib/update-policy
 test("automatic update checks run only in packaged builds", () => {
   assert.equal(automaticUpdateDelay({ isPackaged: false, env: {} }), null);
   assert.equal(automaticUpdateDelay({ isPackaged: true, env: {} }), DEFAULT_DELAY_MS);
+  assert.equal(automaticUpdateDelay({ isPackaged: true, platform: "darwin", env: {} }), null, "unsigned macOS builds use manual release downloads");
 });
 
 test("automatic update checks have an injectable disable switch and bounded delay", () => {

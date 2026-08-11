@@ -15,6 +15,7 @@ const { loadCatalog, safeResolve } = require("./lib/catalog.cjs");
 const { allowedExternalUrl } = require("./lib/security.cjs");
 const { automaticUpdateDelay } = require("./lib/update-policy.cjs");
 const { createFileResponse } = require("./lib/media-response.cjs");
+const RELEASES_URL = "https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases";
 
 protocol.registerSchemesAsPrivileged([
   {
@@ -103,6 +104,7 @@ function sendUpdateStatus(next) {
 }
 
 function configureUpdater() {
+  if (process.platform === "darwin") return;
   autoUpdater.autoDownload = false;
   autoUpdater.autoInstallOnAppQuit = false;
   autoUpdater.allowDowngrade = false;
@@ -140,7 +142,7 @@ function configureUpdater() {
 }
 
 function scheduleAutomaticUpdateCheck() {
-  const delay = automaticUpdateDelay({ isPackaged: app.isPackaged, env: process.env });
+  const delay = automaticUpdateDelay({ isPackaged: app.isPackaged, platform: process.platform, env: process.env });
   if (delay === null) return;
   setTimeout(async () => {
     if (updateInFlight) return;
@@ -180,6 +182,12 @@ function configureIpc() {
 
   ipcMain.handle("updater:check", async (event) => {
     requireTrustedSender(event);
+    if (process.platform === "darwin" && app.isPackaged) {
+      const manual = { state: "manual", message: "Unsigned macOS builds update through the Releases page." };
+      sendUpdateStatus(manual);
+      await shell.openExternal(RELEASES_URL, { activate: true });
+      return manual;
+    }
     if (!app.isPackaged) {
       const development = { state: "development", message: "开发模式不触发自动更新" };
       sendUpdateStatus(development);
@@ -193,6 +201,7 @@ function configureIpc() {
 
   ipcMain.handle("updater:install", (event) => {
     requireTrustedSender(event);
+    if (process.platform === "darwin") return false;
     if (!app.isPackaged || updateStatus.state !== "downloaded") return false;
     setImmediate(() => autoUpdater.quitAndInstall(false, true));
     return true;

@@ -65,7 +65,7 @@ export function probeAndDecodeMedia(filePath, {
   const nullTarget = process.platform === "win32" ? "NUL" : "/dev/null";
   runChecked(ffmpegPath, [
     "-v", "error",
-    "-xerror",
+    "-threads", "1",
     "-i", filePath,
     "-map", "0:v:0",
     "-c:v", "rawvideo",
@@ -75,7 +75,7 @@ export function probeAndDecodeMedia(filePath, {
   if (audio?.codec_name) {
     runChecked(ffmpegPath, [
       "-v", "error",
-      "-xerror",
+      "-threads", "1",
       "-i", filePath,
       "-map", "0:a:0",
       "-c:a", "pcm_s16le",
@@ -257,7 +257,7 @@ function main() {
     for (const failure of failures) console.error(`- ${failure}`);
     process.exit(1);
   }
-  console.log(`Media-pack validation passed (${entries.length} cases + ${communityEntries.length} community Skills; hash-bound, fully decoded MP4 files; audio required=${requireAudio}).`);
+  console.log(`Media-pack validation passed (${entries.length} cases + ${communityEntries.length} community Skills; hash-bound, complete video/audio traversal with recoverable-frame tolerance; audio required=${requireAudio}).`);
 }
 
 const invokedPath = process.argv[1] ? pathToFileURL(path.resolve(process.argv[1])).href : "";

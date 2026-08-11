@@ -1,14 +1,21 @@
 const api = window.promptLibrary;
+const personalLibraryApi = window.T8PersonalLibrary;
 
 const elements = {
   viewAll: document.querySelector("#view-all"),
   viewCases: document.querySelector("#view-cases"),
   viewOfficialSkills: document.querySelector("#view-official-skills"),
   viewCommunitySkills: document.querySelector("#view-community-skills"),
+  viewFavorites: document.querySelector("#view-favorites"),
+  viewCollections: document.querySelector("#view-collections"),
+  viewHistory: document.querySelector("#view-history"),
   viewAllCount: document.querySelector("#view-all-count"),
   viewCaseCount: document.querySelector("#view-case-count"),
   viewOfficialCount: document.querySelector("#view-official-count"),
   viewCommunityCount: document.querySelector("#view-community-count"),
+  viewFavoriteCount: document.querySelector("#view-favorite-count"),
+  viewCollectionCount: document.querySelector("#view-collection-count"),
+  viewHistoryCount: document.querySelector("#view-history-count"),
   pageKicker: document.querySelector("#page-kicker"),
   pageTitle: document.querySelector("#page-title"),
   pageIntro: document.querySelector("#page-intro"),
@@ -84,7 +91,33 @@ const elements = {
   tagFilterLabel: document.querySelector("#tag-filter-label"),
   emptyCopy: document.querySelector("#empty-copy"),
   compareBarTitle: document.querySelector("#compare-bar-title"),
-  compareModelLabel: document.querySelector("#compare-model-label")
+  compareModelLabel: document.querySelector("#compare-model-label"),
+  personalToolbar: document.querySelector("#personal-toolbar"),
+  collectionControls: document.querySelector("#collection-controls"),
+  collectionSelect: document.querySelector("#collection-select"),
+  collectionSelectLabel: document.querySelector("#collection-select-label"),
+  newCollection: document.querySelector("#new-collection"),
+  renameCollection: document.querySelector("#rename-collection"),
+  deleteCollection: document.querySelector("#delete-collection"),
+  historyControls: document.querySelector("#history-controls"),
+  historyNote: document.querySelector("#history-note"),
+  clearHistory: document.querySelector("#clear-history"),
+  detailFavorite: document.querySelector("#detail-favorite"),
+  detailCollections: document.querySelector("#detail-collections"),
+  collectionEditorDialog: document.querySelector("#collection-editor-dialog"),
+  collectionEditorForm: document.querySelector("#collection-editor-form"),
+  collectionEditorTitle: document.querySelector("#collection-editor-title"),
+  collectionNameLabel: document.querySelector("#collection-name-label"),
+  collectionName: document.querySelector("#collection-name"),
+  collectionEditorError: document.querySelector("#collection-editor-error"),
+  cancelCollectionEditor: document.querySelector("#cancel-collection-editor"),
+  saveCollection: document.querySelector("#save-collection"),
+  collectionMembershipDialog: document.querySelector("#collection-membership-dialog"),
+  collectionMembershipTitle: document.querySelector("#collection-membership-title"),
+  collectionMembershipItem: document.querySelector("#collection-membership-item"),
+  collectionMembershipList: document.querySelector("#collection-membership-list"),
+  membershipNewCollection: document.querySelector("#membership-new-collection"),
+  closeCollectionMembership: document.querySelector("#close-collection-membership")
 };
 
 const state = {
@@ -94,6 +127,11 @@ const state = {
   promptModel: "minimaxH3",
   comparePromptModel: "minimaxH3",
   compareIds: [],
+  personalLibrary: personalLibraryApi.emptyLibrary(),
+  activeCollectionId: null,
+  collectionEditorMode: "create",
+  collectionEditorReturnToMembership: false,
+  membershipItem: null,
   locale: localStorage.getItem("t8-display-locale") === "zh-CN" ? "zh-CN" : "en",
   updateStatus: { state: "idle" },
   toastTimer: null
@@ -101,7 +139,7 @@ const state = {
 
 const UI = {
   en: {
-    all: "All", cases: "Creative Cases", official: "MiniMax Official Skills", community: "Community Skills",
+    all: "All", cases: "Creative Cases", official: "MiniMax Official Skills", community: "Community Skills", favorites: "Favorites", collections: "Collections", history: "History",
     platform: "Platform", source: "Source", model: "Model", tag: "Tag", clear: "Clear", results: "Current results",
     allPlatforms: "All platforms", allSources: "All sources", allModels: "All models", allTags: "All tags",
     unknownDuration: "Unknown duration", seconds: "seconds", unknownPlatform: "Unknown platform",
@@ -120,10 +158,11 @@ const UI = {
     mechanism: "Core mechanism", invariants: "Invariants", slots: "Variable slots", anti_copy_exclusions: "Anti-copy exclusions", instantiations: "Instantiations", failure_modes: "Failure modes", transfer_tests: "Transfer tests",
     complexity: "Complexity", rule: "Rule", purpose: "Purpose", ablation_failure: "Ablation failure", evidence_ids: "Evidence IDs", name: "Name", constraint: "Constraint", concept: "Concept", prompt_seed: "Prompt seed", failure: "Failure", repair: "Repair", result: "Result", preserved_invariant_ids: "Preserved invariant IDs", changed_slots: "Changed slots",
     usage_scope: "Usage scope", source_boundary: "Source boundary", comfyui_boundary: "ComfyUI boundary", applicable_scope: "Applicable scope", not_suitable_for: "Not suitable for", usage_steps: "Usage steps", quality_repairs: "Quality repairs",
+    favorite: "Favorite", favorited: "Favorited", addCollections: "Collections", newCollection: "New collection", rename: "Rename", delete: "Delete", collection: "Collection", collectionName: "Collection name", cancel: "Cancel", save: "Save", done: "Done", clearHistory: "Clear history", historyNote: "Most recently viewed first; stored only on this device.", emptyFavorites: "No favorites yet", emptyCollections: "Create a collection, then add items from any card or detail page.", emptyHistory: "No browsing history yet", storageRecovered: "Personal-library data was damaged and has been safely reset.", collectionLimit: "Collection could not be created. Check the name or collection limit.", deleteCollectionConfirm: "Delete this collection? Its items will stay in the library.", clearHistoryConfirm: "Clear all local browsing history?", viewed: "Viewed",
     noDna: "No Creative DNA data is available for this item.", noMechanism: "No mechanism summary has been recorded.", updateNotChecked: "Updates not checked", checkUpdate: "Check for updates", installUpdate: "Restart to install"
   },
   "zh-CN": {
-    all: "全部", cases: "创意案例", official: "MiniMax 官方仓库 Skills", community: "非官方 Skills",
+    all: "全部", cases: "创意案例", official: "MiniMax 官方仓库 Skills", community: "非官方 Skills", favorites: "收藏", collections: "合集", history: "浏览历史",
     platform: "平台", source: "来源", model: "模型", tag: "标签", clear: "清空", results: "当前结果",
     allPlatforms: "全部平台", allSources: "全部来源", allModels: "全部模型", allTags: "全部标签",
     unknownDuration: "未知时长", seconds: "秒", unknownPlatform: "未知平台",
@@ -142,6 +181,7 @@ const UI = {
     mechanism: "核心机制", invariants: "不可变条件", slots: "可替换插槽", anti_copy_exclusions: "反复制排除", instantiations: "实例化方式", failure_modes: "失败模式", transfer_tests: "迁移测试",
     complexity: "复杂度", rule: "规则", purpose: "作用", ablation_failure: "删减后果", evidence_ids: "证据 ID", name: "名称", constraint: "约束", concept: "概念", prompt_seed: "提示词种子", failure: "失败表现", repair: "修复方法", result: "结果", preserved_invariant_ids: "保留的不可变条件", changed_slots: "已替换插槽",
     usage_scope: "使用范围", source_boundary: "来源边界", comfyui_boundary: "ComfyUI 边界", applicable_scope: "适用范围", not_suitable_for: "不适用范围", usage_steps: "使用方法", quality_repairs: "质量修复",
+    favorite: "收藏", favorited: "已收藏", addCollections: "加入合集", newCollection: "新建合集", rename: "重命名", delete: "删除", collection: "合集", collectionName: "合集名称", cancel: "取消", save: "保存", done: "完成", clearHistory: "清空历史", historyNote: "按最近浏览排序，仅保存在本机。", emptyFavorites: "还没有收藏内容", emptyCollections: "先新建合集，再从任意卡片或详情页添加内容。", emptyHistory: "还没有浏览记录", storageRecovered: "个人资料库数据已损坏，现已安全重置。", collectionLimit: "无法创建合集，请检查名称或合集数量上限。", deleteCollectionConfirm: "删除这个合集？其中内容仍会保留在资料库。", clearHistoryConfirm: "清空全部本机浏览历史？", viewed: "浏览于",
     noDna: "此条目暂未提供 Creative DNA 数据。", noMechanism: "暂未记录机制摘要。", updateNotChecked: "尚未检查更新", checkUpdate: "检查更新", installUpdate: "重启安装"
   }
 };
@@ -172,8 +212,8 @@ function sourceBadge(item) {
 
 function updateGlobalChrome() {
   const zh = state.locale === "zh-CN";
-  const labels = [t("all"), t("cases"), t("official"), t("community")];
-  [elements.viewAll, elements.viewCases, elements.viewOfficialSkills, elements.viewCommunitySkills].forEach((button, index) => {
+  const labels = [t("all"), t("cases"), t("official"), t("community"), t("favorites"), t("collections"), t("history")];
+  [elements.viewAll, elements.viewCases, elements.viewOfficialSkills, elements.viewCommunitySkills, elements.viewFavorites, elements.viewCollections, elements.viewHistory].forEach((button, index) => {
     button.querySelector(".view-label").textContent = labels[index];
   });
   elements.checkUpdate.textContent = t("checkUpdate");
@@ -187,6 +227,19 @@ function updateGlobalChrome() {
   elements.compareBar.setAttribute("aria-label", zh ? "案例对比" : "Case comparison");
   elements.closeCompare.setAttribute("aria-label", zh ? "关闭对比" : "Close comparison");
   document.querySelector("#compare-dialog .prompt-tabs").setAttribute("aria-label", zh ? "对比提示词模型" : "Comparison prompt model");
+  elements.collectionSelectLabel.textContent = t("collection");
+  elements.newCollection.textContent = t("newCollection");
+  elements.renameCollection.textContent = t("rename");
+  elements.deleteCollection.textContent = t("delete");
+  elements.historyNote.textContent = t("historyNote");
+  elements.clearHistory.textContent = t("clearHistory");
+  elements.collectionEditorTitle.textContent = state.collectionEditorMode === "rename" ? t("rename") : t("newCollection");
+  elements.collectionNameLabel.textContent = t("collectionName");
+  elements.cancelCollectionEditor.textContent = t("cancel");
+  elements.saveCollection.textContent = t("save");
+  elements.collectionMembershipTitle.textContent = t("addCollections");
+  elements.membershipNewCollection.textContent = t("newCollection");
+  elements.closeCollectionMembership.textContent = t("done");
   renderUpdateStatus();
   updateDetailChrome();
 }
@@ -215,6 +268,12 @@ function formatDuration(seconds) {
   return `${value.toFixed(value % 1 ? 1 : 0)} ${t("seconds")}`;
 }
 
+function formatViewedAt(value) {
+  const date = new Date(value);
+  if (!Number.isFinite(date.getTime())) return "—";
+  return new Intl.DateTimeFormat(state.locale === "zh-CN" ? "zh-CN" : "en", { dateStyle: "medium", timeStyle: "short" }).format(date);
+}
+
 function platformLabel(platform) {
   const value = String(platform || "unknown");
   const lower = value.toLocaleLowerCase();
@@ -237,15 +296,86 @@ function resetSelect(select, label) {
   select.replaceChildren(first);
 }
 
+function allItems() {
+  return [...state.catalog.cases, ...state.catalog.communitySkills, ...state.catalog.officialSkills];
+}
+
+function itemKey(item) {
+  return `${item.kind || "case"}:${item.id}`;
+}
+
+function itemMap() {
+  return new Map(allItems().map((item) => [itemKey(item), item]));
+}
+
+function savePersonalLibrary() {
+  try {
+    personalLibraryApi.saveLibrary(localStorage, state.personalLibrary);
+  } catch {
+    showToast(state.locale === "zh-CN" ? "无法保存个人资料库，请检查本机存储空间。" : "Could not save the personal library; check local storage space.");
+  }
+  updatePersonalCounts();
+}
+
+function updatePersonalCounts() {
+  elements.viewFavoriteCount.textContent = String(state.personalLibrary.favorites.length);
+  elements.viewCollectionCount.textContent = String(state.personalLibrary.collections.length);
+  elements.viewHistoryCount.textContent = String(state.personalLibrary.history.length);
+}
+
+function selectedCollection() {
+  return state.personalLibrary.collections.find((collection) => collection.id === state.activeCollectionId) || null;
+}
+
+function isFavorite(item) {
+  return state.personalLibrary.favorites.includes(itemKey(item));
+}
+
+function historyEntry(item) {
+  return state.personalLibrary.history.find((entry) => entry.itemKey === itemKey(item)) || null;
+}
+
+function toggleFavorite(item) {
+  const enabled = personalLibraryApi.toggleFavorite(state.personalLibrary, itemKey(item));
+  savePersonalLibrary();
+  showToast(enabled ? t("favorited") : (state.locale === "zh-CN" ? "已取消收藏" : "Removed from favorites"));
+  render();
+  if (state.activeCase === item && elements.dialog.open) updateDetailPersonalActions(item);
+}
+
+function createPersonalButton(item, type) {
+  const favorite = type === "favorite";
+  const active = favorite && isFavorite(item);
+  const button = el("button", `card-personal-button ${favorite ? "favorite" : "collections"}${active ? " active" : ""}`, favorite ? (active ? "★" : "☆") : "+");
+  button.type = "button";
+  button.setAttribute("aria-label", favorite ? `${active ? t("favorited") : t("favorite")}: ${localized(item).title}` : `${t("addCollections")}: ${localized(item).title}`);
+  if (favorite) button.setAttribute("aria-pressed", String(active));
+  button.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (favorite) toggleFavorite(item);
+    else openCollectionMembership(item);
+  });
+  return button;
+}
+
+function appendPersonalCardActions(media, item) {
+  const actions = el("div", "card-personal-actions");
+  actions.append(createPersonalButton(item, "favorite"), createPersonalButton(item, "collections"));
+  media.append(actions);
+}
+
 function activeItems() {
+  const map = itemMap();
+  if (state.activeView === "favorites") return state.personalLibrary.favorites.map((key) => map.get(key)).filter(Boolean);
+  if (state.activeView === "history") return state.personalLibrary.history.map((entry) => map.get(entry.itemKey)).filter(Boolean);
+  if (state.activeView === "collections") {
+    if (!selectedCollection()) state.activeCollectionId = state.personalLibrary.collections[0]?.id || null;
+    return (selectedCollection()?.itemKeys || []).map((key) => map.get(key)).filter(Boolean);
+  }
   if (state.activeView === "officialSkills") return state.catalog.officialSkills;
   if (state.activeView === "communitySkills") return state.catalog.communitySkills;
   if (state.activeView === "cases") return state.catalog.cases;
-  return [
-    ...state.catalog.cases,
-    ...state.catalog.communitySkills,
-    ...state.catalog.officialSkills
-  ];
+  return allItems();
 }
 
 function sourceFilterKey(item) {
@@ -357,6 +487,7 @@ function renderCard(item) {
   });
   media.append(mediaBadge);
   if (state.activeView === "cases") media.append(compareToggle);
+  appendPersonalCardActions(media, item);
   card.append(media);
 
   const body = el("div", "card-body");
@@ -370,7 +501,8 @@ function renderCard(item) {
   body.append(tags);
 
   const footer = el("div", "card-footer");
-  footer.append(el("span", "", `${platformLabel(item.platform)} · ${item.author}`), el("strong", "", t("openPlay")));
+  const viewed = state.activeView === "history" ? historyEntry(item) : null;
+  footer.append(el("span", "", viewed ? `${t("viewed")} ${formatViewedAt(viewed.viewedAt)}` : `${platformLabel(item.platform)} · ${item.author}`), el("strong", "", t("openPlay")));
   body.append(footer);
   card.append(body);
 
@@ -408,6 +540,7 @@ function renderOfficialSkillCard(item) {
     media.append(art);
   }
   media.append(el("span", "media-badge local", previewLabel));
+  appendPersonalCardActions(media, item);
   card.append(media);
 
   const body = el("div", "card-body");
@@ -482,6 +615,7 @@ function renderCommunitySkillCard(item) {
     });
   }
   media.append(el("span", `media-badge${item.media.hasFullVideo ? " local" : ""}`, item.media.hasFullVideo ? t("completeVideo") : t("gifPreview")));
+  appendPersonalCardActions(media, item);
   card.append(media);
 
   const body = el("div", "card-body");
@@ -514,18 +648,28 @@ function updateViewChrome(resultCount) {
   const official = state.activeView === "officialSkills";
   const community = state.activeView === "communitySkills";
   const cases = state.activeView === "cases";
-  elements.viewAll.classList.toggle("active", all);
-  elements.viewCases.classList.toggle("active", cases);
-  elements.viewOfficialSkills.classList.toggle("active", official);
-  elements.viewCommunitySkills.classList.toggle("active", community);
-  elements.viewAll.setAttribute("aria-pressed", String(all));
-  elements.viewCases.setAttribute("aria-pressed", String(cases));
-  elements.viewOfficialSkills.setAttribute("aria-pressed", String(official));
-  elements.viewCommunitySkills.setAttribute("aria-pressed", String(community));
+  const favorites = state.activeView === "favorites";
+  const collections = state.activeView === "collections";
+  const history = state.activeView === "history";
+  const personal = favorites || collections || history;
+  const viewButtons = new Map([
+    [elements.viewAll, all], [elements.viewCases, cases], [elements.viewOfficialSkills, official], [elements.viewCommunitySkills, community],
+    [elements.viewFavorites, favorites], [elements.viewCollections, collections], [elements.viewHistory, history]
+  ]);
+  viewButtons.forEach((active, button) => {
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
   const zh = state.locale === "zh-CN";
-  elements.pageKicker.textContent = all ? "ALL CONTENT · OFFLINE PREVIEWS" : official ? "MINIMAX OFFICIAL REPOSITORY · PINNED INDEX" : community ? "NON-OFFICIAL · USER-CONTRIBUTED" : "LOCAL · READ-ONLY CASES";
-  elements.pageTitle.textContent = all ? (zh ? "全部提示词案例与 Skills" : "All prompt cases and Skills") : official ? (zh ? "MiniMax 官方仓库 Skills" : "MiniMax Official Repository Skills") : community ? (zh ? "非官方高质量提示词 Skills" : "High-quality Community Skills") : (zh ? "高质量视频提示词案例" : "High-quality video prompt cases");
-  elements.pageIntro.textContent = all
+  elements.pageKicker.textContent = personal ? "LOCAL · PRIVATE · ON-DEVICE" : all ? "ALL CONTENT · OFFLINE PREVIEWS" : official ? "MINIMAX OFFICIAL REPOSITORY · PINNED INDEX" : community ? "NON-OFFICIAL · USER-CONTRIBUTED" : "LOCAL · READ-ONLY CASES";
+  elements.pageTitle.textContent = favorites ? t("favorites") : collections ? (selectedCollection()?.name || t("collections")) : history ? t("history") : all ? (zh ? "全部提示词案例与 Skills" : "All prompt cases and Skills") : official ? (zh ? "MiniMax 官方仓库 Skills" : "MiniMax Official Repository Skills") : community ? (zh ? "非官方高质量提示词 Skills" : "High-quality Community Skills") : (zh ? "高质量视频提示词案例" : "High-quality video prompt cases");
+  elements.pageIntro.textContent = favorites
+    ? (zh ? "保存在本机的收藏内容，不上传、不登录，也不修改公共案例。" : "Favorites stored only on this device—no upload, account, or change to public cases.")
+    : collections
+      ? (selectedCollection() ? (zh ? `“${selectedCollection().name}”中的内容；合集信息仅保存在本机。` : `Items in “${selectedCollection().name}”; collection data stays on this device.`) : t("emptyCollections"))
+      : history
+        ? t("historyNote")
+        : all
     ? (zh ? `共 ${activeItems().length} 项：${state.catalog.cases.length} 个视频案例、${state.catalog.officialSkills.length} 个 MiniMax 官方仓库 Skills、${state.catalog.communitySkills.length} 个非官方 Skill；全部可离线预览。` : `${activeItems().length} items: ${state.catalog.cases.length} video cases, ${state.catalog.officialSkills.length} MiniMax official-repository Skills, and ${state.catalog.communitySkills.length} community Skills, all with offline previews.`)
     : official
     ? (zh ? "固定索引 MiniMax 官方仓库收录的 9 个 H3 Skills，并提供独立编写的 Seedance 2.0 伴侣 Skill；上游正文不复制，官方项不导入 ComfyUI。" : "A pinned index of nine H3 Skills in the MiniMax repository, each paired with an independently authored Seedance 2.0 companion. Upstream bodies are not copied or imported into ComfyUI.")
@@ -537,15 +681,20 @@ function updateViewChrome(resultCount) {
   elements.modelFilterLabel.textContent = t("model");
   elements.tagFilterLabel.textContent = t("tag");
   elements.clear.textContent = t("clear");
-  elements.emptyTitle.textContent = zh ? (all ? "没有匹配的内容" : cases ? "没有匹配的案例" : "没有匹配的 Skill") : (all ? "No matching content" : cases ? "No matching cases" : "No matching Skills");
-  elements.emptyCopy.textContent = zh ? "调整搜索词或清空筛选条件后再试。" : "Adjust the search or clear the filters.";
-  elements.statCasesLabel.textContent = all ? (zh ? "全部内容" : "All content") : official ? (zh ? "官方仓库收录" : "Official entries") : community ? (zh ? "非官方 Skills" : "Community Skills") : (zh ? "公开案例" : "Published cases");
+  elements.emptyTitle.textContent = favorites ? t("emptyFavorites") : collections ? t("emptyCollections") : history ? t("emptyHistory") : zh ? (all ? "没有匹配的内容" : cases ? "没有匹配的案例" : "没有匹配的 Skill") : (all ? "No matching content" : cases ? "No matching cases" : "No matching Skills");
+  elements.emptyCopy.textContent = personal ? (zh ? "你可以随时从任意内容卡片或详情页管理个人资料库。" : "Manage the personal library from any content card or detail page.") : zh ? "调整搜索词或清空筛选条件后再试。" : "Adjust the search or clear the filters.";
+  elements.statCasesLabel.textContent = personal ? (favorites ? t("favorites") : collections ? t("collection") : t("history")) : all ? (zh ? "全部内容" : "All content") : official ? (zh ? "官方仓库收录" : "Official entries") : community ? (zh ? "非官方 Skills" : "Community Skills") : (zh ? "公开案例" : "Published cases");
   elements.statVideosLabel.textContent = all ? (zh ? "可预览内容" : "Previewable items") : official ? (zh ? "本地示例 GIF" : "Local demo GIFs") : community ? (zh ? "完整样片" : "Complete samples") : (zh ? "本地完整视频" : "Complete local videos");
   elements.statPromptsLabel.textContent = official ? (zh ? "Seedance 适配" : "Seedance companions") : (zh ? "模型模板" : "Model templates");
   elements.statResultsLabel.textContent = t("results");
   elements.compareBarTitle.textContent = zh ? "案例对比" : "Case comparison";
   elements.openCompare.textContent = zh ? "开始对比" : "Compare";
-  if (all) {
+  if (personal) {
+    const items = activeItems();
+    elements.statCases.textContent = String(items.length);
+    elements.statVideos.textContent = String(items.filter((item) => item.media?.gifUrl || item.media?.posterUrl || item.media?.videoUrl).length);
+    elements.statPrompts.textContent = String(items.reduce((total, item) => total + Number(Boolean(item.prompts.minimaxH3)) + Number(Boolean(item.prompts.seedance20)), 0));
+  } else if (all) {
     const items = activeItems();
     elements.statCases.textContent = String(items.length);
     elements.statVideos.textContent = String(items.filter((item) => item.media?.gifUrl || item.media?.posterUrl || item.media?.videoUrl).length);
@@ -565,6 +714,10 @@ function updateViewChrome(resultCount) {
   }
   elements.statResults.textContent = String(resultCount);
   elements.compareBar.classList.toggle("hidden", !cases || state.compareIds.length === 0);
+  elements.personalToolbar.classList.toggle("hidden", !collections && !history);
+  elements.collectionControls.classList.toggle("hidden", !collections);
+  elements.historyControls.classList.toggle("hidden", !history);
+  if (collections) renderCollectionControls();
 }
 
 function render() {
@@ -583,6 +736,107 @@ function switchView(view) {
   elements.search.value = "";
   populateFilters();
   render();
+}
+
+function renderCollectionControls() {
+  const collections = state.personalLibrary.collections;
+  if (!state.activeCollectionId || !collections.some((entry) => entry.id === state.activeCollectionId)) {
+    state.activeCollectionId = collections[0]?.id || null;
+  }
+  elements.collectionSelect.replaceChildren(...collections.map((collection) => option(collection.id, `${collection.name} (${collection.itemKeys.length})`)));
+  elements.collectionSelect.disabled = collections.length === 0;
+  elements.renameCollection.disabled = !selectedCollection();
+  elements.deleteCollection.disabled = !selectedCollection();
+  if (state.activeCollectionId) elements.collectionSelect.value = state.activeCollectionId;
+}
+
+function collectionId() {
+  return `collection-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+}
+
+function openCollectionEditor(mode = "create", returnToMembership = false) {
+  state.collectionEditorMode = mode;
+  state.collectionEditorReturnToMembership = returnToMembership;
+  elements.collectionEditorError.classList.add("hidden");
+  elements.collectionEditorError.textContent = "";
+  elements.collectionEditorTitle.textContent = mode === "rename" ? t("rename") : t("newCollection");
+  elements.collectionName.value = mode === "rename" ? (selectedCollection()?.name || "") : "";
+  elements.collectionEditorDialog.showModal();
+  requestAnimationFrame(() => elements.collectionName.focus());
+}
+
+function submitCollectionEditor() {
+  const name = elements.collectionName.value;
+  let collection = null;
+  if (state.collectionEditorMode === "rename") {
+    const current = selectedCollection();
+    if (current && personalLibraryApi.renameCollection(state.personalLibrary, current.id, name)) collection = current;
+  } else {
+    collection = personalLibraryApi.createCollection(state.personalLibrary, { id: collectionId(), name });
+    if (collection) state.activeCollectionId = collection.id;
+  }
+  if (!collection) {
+    elements.collectionEditorError.textContent = t("collectionLimit");
+    elements.collectionEditorError.classList.remove("hidden");
+    return false;
+  }
+  savePersonalLibrary();
+  elements.collectionEditorDialog.close();
+  populateFilters();
+  render();
+  if (state.collectionEditorReturnToMembership && state.membershipItem) openCollectionMembership(state.membershipItem);
+  return true;
+}
+
+function cancelCollectionEditor() {
+  const returnToMembership = state.collectionEditorReturnToMembership && state.membershipItem;
+  elements.collectionEditorDialog.close();
+  if (returnToMembership) openCollectionMembership(state.membershipItem);
+}
+
+function renderMembershipList() {
+  const item = state.membershipItem;
+  if (!item) return;
+  elements.collectionMembershipItem.textContent = localized(item).title;
+  const key = itemKey(item);
+  if (!state.personalLibrary.collections.length) {
+    elements.collectionMembershipList.replaceChildren(el("p", "personal-empty-note", t("emptyCollections")));
+    return;
+  }
+  elements.collectionMembershipList.replaceChildren(...state.personalLibrary.collections.map((collection) => {
+    const label = el("label", "collection-membership-row");
+    const checkbox = document.createElement("input");
+    const count = el("small", "", String(collection.itemKeys.length));
+    checkbox.type = "checkbox";
+    checkbox.checked = collection.itemKeys.includes(key);
+    checkbox.addEventListener("change", () => {
+      personalLibraryApi.setCollectionMembership(state.personalLibrary, collection.id, key, checkbox.checked);
+      savePersonalLibrary();
+      count.textContent = String(collection.itemKeys.length);
+      if (state.activeView === "collections") render();
+    });
+    label.append(checkbox, el("span", "", collection.name), count);
+    return label;
+  }));
+}
+
+function openCollectionMembership(item) {
+  state.membershipItem = item;
+  renderMembershipList();
+  if (!elements.collectionMembershipDialog.open) elements.collectionMembershipDialog.showModal();
+}
+
+function closeCollectionMembership() {
+  if (elements.collectionMembershipDialog.open) elements.collectionMembershipDialog.close();
+  state.membershipItem = null;
+}
+
+function updateDetailPersonalActions(item) {
+  const active = isFavorite(item);
+  elements.detailFavorite.textContent = active ? `★ ${t("favorited")}` : `☆ ${t("favorite")}`;
+  elements.detailFavorite.classList.toggle("active", active);
+  elements.detailFavorite.setAttribute("aria-pressed", String(active));
+  elements.detailCollections.textContent = `＋ ${t("addCollections")}`;
 }
 
 function toggleCompare(id) {
@@ -827,6 +1081,7 @@ function renderActiveCase({ preserveMedia = false } = {}) {
   updateDetailChrome();
   elements.detailTitle.textContent = display.title;
   elements.detailSummary.textContent = display.summary;
+  updateDetailPersonalActions(item);
   elements.detailMeta.replaceChildren();
   elements.openSource.classList.toggle("hidden", !item.sourceUrl);
   elements.copySourceLink.classList.toggle("hidden", !item.sourceUrl);
@@ -884,6 +1139,8 @@ function renderActiveCase({ preserveMedia = false } = {}) {
 
 function openCase(item) {
   state.activeCase = item;
+  personalLibraryApi.recordHistory(state.personalLibrary, itemKey(item));
+  savePersonalLibrary();
   state.promptModel = item.prompts.minimaxH3 ? "minimaxH3" : "seedance20";
   renderActiveCase();
   elements.dialog.showModal();
@@ -1084,7 +1341,8 @@ function updateStatusText(status) {
     available: zh ? `发现 ${version || "新版本"}，准备下载…` : `${version || "An update"} is available; preparing download…`,
     downloading: zh ? `正在下载更新${percent ? ` ${percent}` : ""}` : `Downloading update${percent ? ` ${percent}` : ""}`,
     downloaded: zh ? `${version || "更新"} 已下载，可重启安装` : `${version || "The update"} is ready; restart to install`,
-    error: zh ? `更新失败${status.error ? `：${status.error}` : ""}` : `Update failed${status.error ? `: ${status.error}` : ""}`
+    error: zh ? `更新失败${status.error ? `：${status.error}` : ""}` : `Update failed${status.error ? `: ${status.error}` : ""}`,
+    manual: zh ? "macOS 预览版需从 Releases 页面手动更新" : "The macOS preview updates manually from Releases"
   };
   return known[status.state] || (zh ? "更新状态未知" : "Update status unknown");
 }
@@ -1102,17 +1360,23 @@ async function initialize() {
   try {
     updateGlobalChrome();
     state.catalog = await api.loadCatalog();
+    const personal = personalLibraryApi.loadLibrary(localStorage, allItems().map(itemKey));
+    state.personalLibrary = personal.data;
+    state.activeCollectionId = state.personalLibrary.collections[0]?.id || null;
+    savePersonalLibrary();
     elements.catalogVersion.textContent = `v${state.catalog.catalogVersion || "1.0.0"}`;
     elements.viewAllCount.textContent = String(state.catalog.cases.length + state.catalog.officialSkills.length + state.catalog.communitySkills.length);
     elements.viewCaseCount.textContent = String(state.catalog.cases.length);
     elements.viewOfficialCount.textContent = String(state.catalog.officialSkills.length);
     elements.viewCommunityCount.textContent = String(state.catalog.communitySkills.length);
+    updatePersonalCounts();
     if (state.catalog.warnings?.length) {
       elements.warning.textContent = state.catalog.warnings.join("；");
       elements.warning.classList.remove("hidden");
     }
     populateFilters();
     render();
+    if (personal.recovered) showToast(t("storageRecovered"));
   } catch (error) {
     elements.warning.textContent = `${state.locale === "zh-CN" ? "案例目录读取失败" : "Catalog failed to load"}: ${error.message}`;
     elements.warning.classList.remove("hidden");
@@ -1125,6 +1389,9 @@ elements.viewAll.addEventListener("click", () => switchView("all"));
 elements.viewCases.addEventListener("click", () => switchView("cases"));
 elements.viewOfficialSkills.addEventListener("click", () => switchView("officialSkills"));
 elements.viewCommunitySkills.addEventListener("click", () => switchView("communitySkills"));
+elements.viewFavorites.addEventListener("click", () => switchView("favorites"));
+elements.viewCollections.addEventListener("click", () => switchView("collections"));
+elements.viewHistory.addEventListener("click", () => switchView("history"));
 [elements.search, elements.platform, elements.model, elements.tag].forEach((control) => control.addEventListener("input", render));
 elements.clear.addEventListener("click", () => {
   elements.search.value = "";
@@ -1188,6 +1455,49 @@ elements.detailNav.addEventListener("click", (event) => {
   const button = event.target.closest("button[data-scroll-target]");
   if (!button) return;
   document.querySelector(`#${button.dataset.scrollTarget}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+elements.detailFavorite.addEventListener("click", () => state.activeCase && toggleFavorite(state.activeCase));
+elements.detailCollections.addEventListener("click", () => state.activeCase && openCollectionMembership(state.activeCase));
+elements.collectionSelect.addEventListener("change", () => {
+  state.activeCollectionId = elements.collectionSelect.value || null;
+  populateFilters();
+  render();
+});
+elements.newCollection.addEventListener("click", () => openCollectionEditor("create"));
+elements.renameCollection.addEventListener("click", () => selectedCollection() && openCollectionEditor("rename"));
+elements.deleteCollection.addEventListener("click", () => {
+  const collection = selectedCollection();
+  if (!collection || !window.confirm(t("deleteCollectionConfirm"))) return;
+  personalLibraryApi.deleteCollection(state.personalLibrary, collection.id);
+  state.activeCollectionId = state.personalLibrary.collections[0]?.id || null;
+  savePersonalLibrary();
+  populateFilters();
+  render();
+});
+elements.clearHistory.addEventListener("click", () => {
+  if (!state.personalLibrary.history.length || !window.confirm(t("clearHistoryConfirm"))) return;
+  state.personalLibrary.history = [];
+  savePersonalLibrary();
+  populateFilters();
+  render();
+});
+elements.collectionEditorForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  submitCollectionEditor();
+});
+elements.cancelCollectionEditor.addEventListener("click", cancelCollectionEditor);
+elements.collectionEditorDialog.addEventListener("cancel", (event) => {
+  event.preventDefault();
+  cancelCollectionEditor();
+});
+elements.closeCollectionMembership.addEventListener("click", closeCollectionMembership);
+elements.collectionMembershipDialog.addEventListener("cancel", (event) => {
+  event.preventDefault();
+  closeCollectionMembership();
+});
+elements.membershipNewCollection.addEventListener("click", () => {
+  elements.collectionMembershipDialog.close();
+  openCollectionEditor("create", true);
 });
 elements.copyOverview.addEventListener("click", () => state.activeCase && copyContent(overviewMarkdown(state.activeCase), t("overview")));
 elements.copySourceLink.addEventListener("click", () => state.activeCase?.sourceUrl && copyContent(state.activeCase.sourceUrl, t("source")));

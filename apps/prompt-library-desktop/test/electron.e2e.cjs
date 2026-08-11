@@ -42,7 +42,10 @@ async function run() {
   try {
     const page = await electronApp.firstWindow();
     await page.setViewportSize({ width: 1280, height: 720 });
-    await page.evaluate(() => localStorage.removeItem("t8-display-locale"));
+    await page.evaluate(() => {
+      localStorage.removeItem("t8-display-locale");
+      localStorage.removeItem("t8-personal-library-v1");
+    });
     await page.reload();
     const rendererErrors = [];
     page.on("pageerror", (error) => rendererErrors.push(error.message));
@@ -59,6 +62,38 @@ async function run() {
     assert.equal(await page.locator("#stat-prompts").textContent(), "120", "all 60 items must expose their declared model surfaces");
     assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "official Skills must use local GIF previews in the aggregate view");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "aggregate view must not expose case-only comparison controls");
+    assert.equal(await page.locator("#view-favorite-count").textContent(), "0");
+    assert.equal(await page.locator("#view-collection-count").textContent(), "0");
+    assert.equal(await page.locator("#view-history-count").textContent(), "0");
+    await page.locator(".case-card .card-personal-button.favorite").first().click();
+    assert.equal(await page.locator("#case-dialog").getAttribute("open"), null, "favorite button must not open the card");
+    assert.equal(await page.locator("#view-favorite-count").textContent(), "1");
+    await page.locator("#view-favorites").click();
+    assert.equal(await page.locator(".case-card").count(), 1, "favorites view must contain the saved item");
+    await page.locator(".case-card .card-personal-button.collections").click();
+    await page.waitForSelector("#collection-membership-dialog[open]");
+    await page.locator("#membership-new-collection").click();
+    await page.waitForSelector("#collection-editor-dialog[open]");
+    await page.locator("#collection-name").fill("Review later");
+    await page.locator("#save-collection").click();
+    await page.waitForSelector("#collection-membership-dialog[open]");
+    await page.locator(".collection-membership-row input").check();
+    await page.locator("#close-collection-membership").click();
+    assert.equal(await page.locator("#view-collection-count").textContent(), "1");
+    await page.locator(".case-card").click();
+    await page.waitForSelector("#case-dialog[open]");
+    assert.equal(await page.locator("#view-history-count").textContent(), "1");
+    await page.keyboard.press("Escape");
+    await page.locator("#view-history").click();
+    assert.equal(await page.locator(".case-card").count(), 1, "history view must contain the opened item");
+    await page.locator("#view-collections").click();
+    assert.equal(await page.locator("#collection-select").inputValue(), await page.locator("#collection-select option").getAttribute("value"));
+    assert.equal(await page.locator(".case-card").count(), 1, "selected collection must contain the assigned item");
+    await page.reload();
+    await page.waitForSelector(".case-card", { timeout: 15000 });
+    assert.equal(await page.locator("#view-favorite-count").textContent(), "1", "favorites must persist across reload");
+    assert.equal(await page.locator("#view-collection-count").textContent(), "1", "collections must persist across reload");
+    assert.equal(await page.locator("#view-history-count").textContent(), "1", "history must persist across reload");
     await page.locator("#global-locale-zh").click();
     await page.reload();
     await page.waitForSelector(".case-card", { timeout: 15000 });
@@ -83,6 +118,12 @@ async function run() {
 
     await page.locator(".case-card").first().click();
     await page.waitForSelector("#case-dialog[open]");
+    assert.equal(await page.locator("#detail-favorite").getAttribute("aria-pressed"), "true", "detail favorite state must match the persisted card state");
+    await page.locator("#detail-collections").click();
+    await page.waitForSelector("#collection-membership-dialog[open]");
+    assert.equal(await page.locator(".collection-membership-row").count(), 1, "detail view must manage collection membership without closing the case");
+    await page.locator("#close-collection-membership").click();
+    assert.equal(await page.locator("#case-dialog").getAttribute("open"), "", "closing collection membership must return to the open detail dialog");
     const video = page.locator("#detail-media video");
     await video.waitFor({ state: "visible" });
     const videoState = await video.evaluate(async (node) => {

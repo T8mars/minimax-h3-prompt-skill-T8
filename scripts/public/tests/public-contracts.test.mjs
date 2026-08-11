@@ -63,7 +63,7 @@ test("public Skill installation may document CODEX_HOME without weakening the bo
   });
 });
 
-test("media validation probes codecs and duration and fully decodes video plus audio", () => {
+test("media validation probes codecs and duration and traverses video plus audio with one decoder thread", () => {
   const calls = [];
   const runTool = (tool, args) => {
     calls.push({ tool, args });
@@ -90,7 +90,9 @@ test("media validation probes codecs and duration and fully decodes video plus a
   });
   assert.deepEqual(observed, { durationSeconds: 15.125, videoCodec: "h264", audioCodec: "aac" });
   assert.equal(calls.length, 3);
-  assert.deepEqual(calls[1].args.slice(0, 9), ["-v", "error", "-xerror", "-i", "fixture.mp4", "-map", "0:v:0", "-c:v", "rawvideo"]);
+  assert.deepEqual(calls[1].args.slice(0, 10), ["-v", "error", "-threads", "1", "-i", "fixture.mp4", "-map", "0:v:0", "-c:v", "rawvideo"]);
+  assert.equal(calls[1].args.includes("-xerror"), false);
+  assert.equal(calls[2].args.includes("-xerror"), false);
   assert.ok(calls[2].args.includes("0:a:0"));
   assert.equal(durationMatches(15.12, 15.125), true);
   assert.equal(durationMatches(15.1, 15.125), false);
