@@ -9,8 +9,10 @@
     >
     <title>T8 Prompt Library</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="workbench.css">
     <script src="personal-library.js" defer></script>
     <script src="app.js" defer></script>
+    <script src="workbench.js" defer></script>
   </head>
   <body>
     <header class="topbar">
@@ -26,6 +28,15 @@
           <button id="global-locale-en" class="locale-button" type="button" aria-pressed="false">EN</button>
           <button id="global-locale-zh" class="locale-button active" type="button" aria-pressed="true">中文</button>
         </div>
+        <div class="repository-icon-links" role="group" aria-label="相关 GitHub 仓库" data-github-group>
+          <button id="open-library-github" class="github-icon-button" type="button" data-github-repository="library" aria-label="Prompt Library GitHub" title="Prompt Library GitHub">
+            <svg class="github-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.57 22c.57.1.77-.25.77-.55v-2.17c-3.15.68-3.81-1.34-3.81-1.34-.51-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.51-.29-5.15-1.26-5.15-5.59 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.44.11-3 0 0 .95-.3 3.11 1.16A10.8 10.8 0 0 1 12 6.08c.96 0 1.93.13 2.83.38 2.16-1.46 3.11-1.16 3.11-1.16.62 1.56.23 2.71.11 3 .73.79 1.17 1.8 1.17 3.04 0 4.34-2.65 5.3-5.17 5.58.41.35.77 1.04.77 2.1v3.13c0 .3.2.66.78.55A11.3 11.3 0 0 0 12 .7Z"/></svg>
+          </button>
+          <button id="open-node-github" class="github-icon-button" type="button" data-github-repository="node" aria-label="ComfyUI 节点 GitHub" title="ComfyUI 节点 GitHub">
+            <svg class="github-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.57 22c.57.1.77-.25.77-.55v-2.17c-3.15.68-3.81-1.34-3.81-1.34-.51-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.51-.29-5.15-1.26-5.15-5.59 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.44.11-3 0 0 .95-.3 3.11 1.16A10.8 10.8 0 0 1 12 6.08c.96 0 1.93.13 2.83.38 2.16-1.46 3.11-1.16 3.11-1.16.62 1.56.23 2.71.11 3 .73.79 1.17 1.8 1.17 3.04 0 4.34-2.65 5.3-5.17 5.58.41.35.77 1.04.77 2.1v3.13c0 .3.2.66.78.55A11.3 11.3 0 0 0 12 .7Z"/></svg>
+          </button>
+        </div>
+        <button id="open-prompt-workbench" class="button workbench-launch" type="button">✦ API 增强工作台</button>
         <span id="update-status" class="update-status" aria-live="polite">Updates not checked</span>
         <button id="install-update" class="button ghost hidden" type="button">Restart to install</button>
         <button id="check-update" class="button ghost" type="button">Check for updates</button>
@@ -186,8 +197,15 @@
             <button id="tab-seedance" class="prompt-tab" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel" tabindex="-1">Seedance 2.0</button>
           </div>
           <div id="prompt-panel" role="tabpanel" aria-labelledby="tab-h3">
+            <div id="prompt-language-banner" class="prompt-language-banner" role="note">
+              <strong id="prompt-language-title"></strong>
+              <p id="prompt-language-note" class="prompt-language-note"></p>
+            </div>
+            <div id="prompt-structure-guide" class="prompt-structure-guide hidden">
+              <strong id="prompt-structure-title"></strong>
+              <ul id="prompt-structure-list"></ul>
+            </div>
             <pre id="prompt-text" class="prompt-text" tabindex="0"></pre>
-            <p id="prompt-language-note" class="prompt-language-note"></p>
             <p id="prompt-missing" class="prompt-missing hidden">No template is available for this model.</p>
           </div>
         </section>
@@ -244,6 +262,184 @@
           </div>
         </div>
         <section id="compare-grid" class="compare-grid" role="tabpanel" aria-labelledby="compare-tab-h3"></section>
+      </div>
+    </dialog>
+
+    <dialog id="prompt-workbench-dialog" class="case-dialog workbench-dialog" aria-labelledby="workbench-title">
+      <div class="dialog-shell workbench-shell">
+        <header class="dialog-header">
+          <div>
+            <p id="workbench-kicker" class="eyebrow">T8 INSTANCE WORKBENCH</p>
+            <h2 id="workbench-title">提示词实例化与 API 增强</h2>
+            <p id="workbench-subtitle" class="workbench-subtitle">先选机制，再补齐结构，最后由你确认一次付费调用。</p>
+            <div class="workbench-repository-links" role="group" aria-label="相关 GitHub 仓库" data-github-group>
+              <button id="workbench-library-github" class="button github-repository-link" type="button" data-github-repository="library">
+                <svg class="github-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.57 22c.57.1.77-.25.77-.55v-2.17c-3.15.68-3.81-1.34-3.81-1.34-.51-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.51-.29-5.15-1.26-5.15-5.59 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.44.11-3 0 0 .95-.3 3.11 1.16A10.8 10.8 0 0 1 12 6.08c.96 0 1.93.13 2.83.38 2.16-1.46 3.11-1.16 3.11-1.16.62 1.56.23 2.71.11 3 .73.79 1.17 1.8 1.17 3.04 0 4.34-2.65 5.3-5.17 5.58.41.35.77 1.04.77 2.1v3.13c0 .3.2.66.78.55A11.3 11.3 0 0 0 12 .7Z"/></svg>
+                <span data-repo-label>Prompt Library GitHub</span>
+              </button>
+              <button id="workbench-node-github" class="button github-repository-link" type="button" data-github-repository="node">
+                <svg class="github-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.57 22c.57.1.77-.25.77-.55v-2.17c-3.15.68-3.81-1.34-3.81-1.34-.51-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.51-.29-5.15-1.26-5.15-5.59 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.44.11-3 0 0 .95-.3 3.11 1.16A10.8 10.8 0 0 1 12 6.08c.96 0 1.93.13 2.83.38 2.16-1.46 3.11-1.16 3.11-1.16.62 1.56.23 2.71.11 3 .73.79 1.17 1.8 1.17 3.04 0 4.34-2.65 5.3-5.17 5.58.41.35.77 1.04.77 2.1v3.13c0 .3.2.66.78.55A11.3 11.3 0 0 0 12 .7Z"/></svg>
+                <span data-repo-label>ComfyUI 节点 GitHub</span>
+              </button>
+            </div>
+          </div>
+          <div class="workbench-header-actions">
+            <button id="open-api-settings" class="button api-settings-button" type="button" aria-haspopup="dialog" aria-controls="api-settings-dialog">
+              <span class="api-settings-icon" aria-hidden="true">⚙</span><span id="open-api-settings-label">API 设置</span><em id="workbench-api-settings-status">0/3</em>
+            </button>
+            <button id="close-prompt-workbench" class="icon-button" type="button" aria-label="关闭工作台">×</button>
+          </div>
+        </header>
+
+        <main class="workbench-content">
+          <nav id="workbench-step-nav" class="workbench-step-nav" role="tablist" aria-label="工作台步骤">
+            <button id="workbench-step-goal" class="workbench-step active" type="button" role="tab" aria-selected="true" aria-controls="workbench-panel-goal" data-workbench-step="goal"><span>1</span><strong>选择机制</strong><small>目标与模板</small></button>
+            <button id="workbench-step-target" class="workbench-step" type="button" role="tab" aria-selected="false" aria-controls="workbench-panel-target" data-workbench-step="target" tabindex="-1"><span>2</span><strong>生成参数</strong><small>模型与约束</small></button>
+            <button id="workbench-step-result" class="workbench-step" type="button" role="tab" aria-selected="false" aria-controls="workbench-panel-result" data-workbench-step="result" tabindex="-1"><span>3</span><strong>结果验收</strong><small>复制与复盘</small></button>
+          </nav>
+
+          <div class="workbench-stage">
+          <section id="workbench-panel-goal" class="workbench-section workbench-intent-section" data-workbench-panel="goal" role="tabpanel" aria-labelledby="workbench-step-goal">
+            <div class="section-heading">
+              <div><p class="eyebrow">1 · GOAL ROUTER</p><h3 id="workbench-intent-title">你想做什么？</h3></div>
+              <button id="workbench-route" class="button copy-secondary" type="button">推荐 3 个机制</button>
+            </div>
+            <label class="workbench-field workbench-field-full">
+              <span id="workbench-intent-label">创作目标与必须保留的事实</span>
+              <textarea id="workbench-intent" rows="5" maxlength="12000" placeholder="例如：一位产品设计师在15秒内证明一台折叠相机的三项能力，结尾要有明确结果，不要旁白。"></textarea>
+            </label>
+            <div id="workbench-router-results" class="router-results" aria-live="polite"></div>
+            <label class="workbench-field workbench-field-full">
+              <span id="workbench-template-label">选定模板 / Skill</span>
+              <select id="workbench-template"></select>
+            </label>
+            <div id="workbench-template-summary" class="template-contract-summary"></div>
+          </section>
+
+          <section id="workbench-panel-target" class="workbench-section" data-workbench-panel="target" role="tabpanel" aria-labelledby="workbench-step-target" hidden>
+            <div class="section-heading"><div><p class="eyebrow">2 · TARGET</p><h3 id="workbench-plan-title">目标与硬约束</h3></div></div>
+            <div class="workbench-grid">
+              <label class="workbench-field"><span id="workbench-target-label">目标模型</span><select id="workbench-target"><option value="minimaxH3">MiniMax H3</option><option value="seedance20">Seedance 2.0</option></select></label>
+              <label class="workbench-field"><span id="workbench-output-language-label">输出语言</span><select id="workbench-output-language"><option id="workbench-output-language-zh" value="zh-CN" selected>中文（默认）</option><option id="workbench-output-language-en" value="en">English</option></select></label>
+              <label class="workbench-field"><span id="workbench-duration-label">时长</span><select id="workbench-duration"><option value="5">5 秒</option><option value="10">10 秒</option><option value="15" selected>15 秒</option></select></label>
+              <label class="workbench-field"><span id="workbench-mode-label">改写强度</span><select id="workbench-mode"><option value="strict">严格保真</option><option value="balanced" selected>平衡</option><option value="creative">创意迁移</option></select></label>
+
+              <label class="workbench-field workbench-field-full"><span id="workbench-constraints-label">额外硬约束</span><textarea id="workbench-constraints" rows="3" maxlength="12000" placeholder="例如：不出现字幕；固定同一角色；结尾停留2秒。"></textarea></label>
+              <div class="workbench-field workbench-field-full media-picker-panel">
+                <div class="media-picker-heading"><strong id="workbench-media-title">参考图片 / 视频</strong><div><button id="workbench-add-media" class="button copy-secondary" type="button">添加素材</button><button id="workbench-clear-media" class="button ghost" type="button">清空</button></div></div>
+                <p id="workbench-media-note">图片最多9张，视频最多3个，单个不超过50 MiB。素材只由 Electron 主进程读取。</p>
+                <div id="workbench-media-list" class="media-chip-list" aria-live="polite"></div>
+              </div>
+            </div>
+            <button id="workbench-preflight" class="button source workbench-primary-action" type="button">生成调用确认单</button>
+            <div id="workbench-preflight-card" class="preflight-card hidden" aria-live="polite">
+              <dl id="workbench-preflight-facts"></dl>
+              <label class="check-row confirmation-row"><input id="workbench-confirm-paid" type="checkbox"> <span id="workbench-confirm-label">我确认：提交 1 次对话请求；平价小屋还会按素材数上传。费用未知，全部不自动重试。</span></label>
+              <div class="workbench-run-actions">
+                <button id="workbench-start" class="button source" type="button" disabled>确认并开始增强</button>
+                <button id="workbench-cancel-run" class="button danger hidden" type="button">请求取消</button>
+              </div>
+            </div>
+          </section>
+
+          <section id="workbench-panel-result" class="workbench-section workbench-result-section" data-workbench-panel="result" role="tabpanel" aria-labelledby="workbench-step-result" hidden>
+            <div class="section-heading">
+              <div><p class="eyebrow">3 · RESULT & CHECK</p><h3 id="workbench-result-title">增强结果与机制验收</h3></div>
+              <button id="workbench-copy-result" class="button copy-secondary" type="button" disabled>复制结果</button>
+            </div>
+            <div id="workbench-run-status" class="run-status">尚未运行</div>
+            <pre id="workbench-output" class="prompt-text workbench-output" tabindex="0"></pre>
+            <div id="workbench-validation" class="validation-report"></div>
+            <div class="project-panel">
+              <div class="section-heading"><div><p class="eyebrow">5 · EXPERIMENT</p><h3 id="workbench-project-title">实验项目与复盘</h3></div></div>
+              <div class="workbench-grid">
+                <label class="workbench-field"><span id="workbench-project-name-label">项目名称</span><input id="workbench-project-name" type="text" maxlength="240"></label>
+                <label class="workbench-field"><span id="workbench-project-list-label">已保存项目</span><select id="workbench-project-list"><option value="">—</option></select></label>
+                <label class="workbench-field workbench-field-full"><span id="workbench-project-notes-label">人工复盘备注</span><textarea id="workbench-project-notes" rows="3" maxlength="12000"></textarea></label>
+              </div>
+              <div class="project-actions"><button id="workbench-save-project" class="button source" type="button" disabled>保存实验项目</button><button id="workbench-export-project" class="button copy-secondary" type="button" disabled>导出 JSON + Markdown</button><button id="workbench-delete-project" class="button danger" type="button" disabled>删除项目</button></div>
+            </div>
+          </section>
+          </div>
+
+          <aside id="workbench-template-preview" class="workbench-template-preview" aria-labelledby="workbench-preview-heading" aria-live="polite">
+            <div class="workbench-preview-heading">
+              <div><p class="eyebrow">LIVE TEMPLATE PREVIEW</p><h3 id="workbench-preview-heading">当前模板预览</h3></div>
+              <span id="workbench-preview-badge" class="status-pill">GIF</span>
+            </div>
+            <div id="workbench-preview-media" class="workbench-preview-media" data-state="loading">
+              <img id="workbench-preview-image" alt="" decoding="async" hidden>
+              <div id="workbench-preview-placeholder" class="workbench-preview-placeholder"><span>T8</span><small>正在加载预览…</small></div>
+            </div>
+            <div class="workbench-preview-copy">
+              <div class="workbench-preview-meta"><span id="workbench-preview-kind">案例模板</span><span id="workbench-preview-models">H3 · Seedance</span></div>
+              <h4 id="workbench-preview-title">—</h4>
+              <p id="workbench-preview-summary">—</p>
+              <div class="workbench-preview-anchors">
+                <strong id="workbench-preview-anchors-label">关键锚点</strong>
+                <ul id="workbench-preview-anchors"></ul>
+              </div>
+              <small id="workbench-preview-template-id">—</small>
+            </div>
+          </aside>
+
+          <footer class="workbench-footer">
+            <button id="workbench-prev-step" class="button ghost" type="button" disabled>上一步</button>
+            <span id="workbench-step-progress">第 1 / 3 步</span>
+            <button id="workbench-next-step" class="button source" type="button">下一步：生成参数</button>
+          </footer>
+        </main>
+      </div>
+    </dialog>
+
+    <dialog id="api-settings-dialog" class="api-settings-dialog" aria-labelledby="api-settings-title">
+      <div class="api-settings-shell">
+        <header class="api-settings-header">
+          <div><p class="eyebrow">API SETTINGS</p><h2 id="api-settings-title">API 设置</h2><p id="api-settings-subtitle">选择默认渠道并保存一次 Key，之后可直接生成。</p></div>
+          <button id="close-api-settings" class="icon-button" type="button" aria-label="关闭 API 设置">×</button>
+        </header>
+          <section class="api-settings-content">
+            <div class="section-heading">
+              <div><p class="eyebrow">2 · API CHANNEL</p><h3 id="workbench-provider-title">选择增强渠道</h3></div>
+              <span id="workbench-provider-readiness" class="status-pill">正在读取…</span>
+            </div>
+            <div id="workbench-provider-cards" class="provider-cards">
+              <button class="provider-card active" type="button" data-provider-id="seedance_nz" aria-pressed="true">
+                <strong>贞贞的平价小屋</strong><span>Seedance API · 固定模型</span><em data-provider-state="seedance_nz">未配置</em>
+              </button>
+              <button class="provider-card" type="button" data-provider-id="t8star_workshop" aria-pressed="false">
+                <strong>贞贞的 AI 工坊</strong><span>AI Workshop · 可选模型</span><em data-provider-state="t8star_workshop">未配置</em>
+              </button>
+              <button class="provider-card" type="button" data-provider-id="openai_compatible" aria-pressed="false">
+                <strong>OpenAI 兼容接口</strong><span>自定义 HTTPS Base URL 与模型</span><em data-provider-state="openai_compatible">未配置</em>
+              </button>
+            </div>
+            <div class="provider-registration-row" aria-label="API 注册入口">
+              <button class="button registration-link" type="button" data-provider-registration="seedance_nz">注册平价小屋 API ↗</button>
+              <button class="button registration-link" type="button" data-provider-registration="t8star_workshop">注册 AI 工坊 API ↗</button>
+            </div>
+            <div id="workbench-credential-panel" class="credential-panel">
+              <div>
+                <strong id="workbench-credential-title">配置平价小屋 Key</strong>
+                <p id="workbench-credential-note">Key 只进入 Electron 主进程；可仅本次会话使用，或由系统安全存储加密保存。</p>
+              </div>
+              <label class="workbench-field workbench-field-full">
+                <span id="workbench-api-key-label">API Key</span>
+                <input id="workbench-api-key" type="password" autocomplete="off" spellcheck="false" placeholder="粘贴后保存；界面不会回显">
+              </label>
+              <div class="api-provider-options">
+                <label class="workbench-field" id="workbench-model-field"><span id="workbench-model-label">默认模型 ID</span><input id="workbench-model" type="text" maxlength="160" spellcheck="false"></label>
+                <label class="workbench-field workbench-field-full hidden" id="workbench-base-url-field"><span id="workbench-base-url-label">OpenAI 兼容 Base URL</span><input id="workbench-base-url" type="url" spellcheck="false" placeholder="https://example.com"></label>
+              </div>
+              <label class="check-row"><input id="workbench-remember-key" type="checkbox" checked> <span id="workbench-remember-label">使用系统安全存储记住</span></label>
+              <div class="credential-actions">
+                <button id="workbench-save-key" class="button source" type="button">保存 Key</button>
+                <button id="workbench-clear-key" class="button ghost" type="button">清除 Key</button>
+                <button id="workbench-register-selected" class="button registration-link" type="button">没有 Key？立即注册 ↗</button>
+              </div>
+            </div>
+          </section>
+        <footer class="api-settings-footer"><span id="api-settings-footer-note">Key 由 Electron 主进程和系统安全存储管理。</span><button id="done-api-settings" class="button source" type="button">完成</button></footer>
       </div>
     </dialog>
 

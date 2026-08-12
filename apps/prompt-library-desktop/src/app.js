@@ -1,5 +1,9 @@
 const api = window.promptLibrary;
 const personalLibraryApi = window.T8PersonalLibrary;
+const GITHUB_REPOSITORIES = Object.freeze({
+  library: "https://github.com/T8mars/minimax-h3-prompt-skill-T8",
+  node: "https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8"
+});
 
 const elements = {
   viewAll: document.querySelector("#view-all"),
@@ -82,7 +86,12 @@ const elements = {
   copyValidation: document.querySelector("#copy-validation"),
   quickStart: document.querySelector("#quick-start"),
   validationGrid: document.querySelector("#validation-grid"),
+  promptLanguageBanner: document.querySelector("#prompt-language-banner"),
+  promptLanguageTitle: document.querySelector("#prompt-language-title"),
   promptLanguageNote: document.querySelector("#prompt-language-note"),
+  promptStructureGuide: document.querySelector("#prompt-structure-guide"),
+  promptStructureTitle: document.querySelector("#prompt-structure-title"),
+  promptStructureList: document.querySelector("#prompt-structure-list"),
   dialogShell: document.querySelector("#case-dialog .dialog-shell"),
   detailHeader: document.querySelector("#case-dialog .dialog-header"),
   detailNav: document.querySelector("#detail-nav"),
@@ -159,7 +168,12 @@ const UI = {
     complexity: "Complexity", rule: "Rule", purpose: "Purpose", ablation_failure: "Ablation failure", evidence_ids: "Evidence IDs", name: "Name", constraint: "Constraint", concept: "Concept", prompt_seed: "Prompt seed", failure: "Failure", repair: "Repair", result: "Result", preserved_invariant_ids: "Preserved invariant IDs", changed_slots: "Changed slots",
     usage_scope: "Usage scope", source_boundary: "Source boundary", comfyui_boundary: "ComfyUI boundary", applicable_scope: "Applicable scope", not_suitable_for: "Not suitable for", usage_steps: "Usage steps", quality_repairs: "Quality repairs",
     favorite: "Favorite", favorited: "Favorited", addCollections: "Collections", newCollection: "New collection", rename: "Rename", delete: "Delete", collection: "Collection", collectionName: "Collection name", cancel: "Cancel", save: "Save", done: "Done", clearHistory: "Clear history", historyNote: "Most recently viewed first; stored only on this device.", emptyFavorites: "No favorites yet", emptyCollections: "Create a collection, then add items from any card or detail page.", emptyHistory: "No browsing history yet", storageRecovered: "Personal-library data was damaged and has been safely reset.", collectionLimit: "Collection could not be created. Check the name or collection limit.", deleteCollectionConfirm: "Delete this collection? Its items will stay in the library.", clearHistoryConfirm: "Clear all local browsing history?", viewed: "Viewed",
-    noDna: "No Creative DNA data is available for this item.", noMechanism: "No mechanism summary has been recorded.", updateNotChecked: "Updates not checked", checkUpdate: "Check for updates", installUpdate: "Restart to install"
+    noDna: "No Creative DNA data is available for this item.", noMechanism: "No mechanism summary has been recorded.", updateNotChecked: "Updates not checked", checkUpdate: "Check for updates", installUpdate: "Restart to install",
+    githubGroup: "Related GitHub repositories", githubLibrary: "Prompt Library GitHub", githubNode: "ComfyUI node GitHub",
+    h3ExecutableTitle: "MiniMax H3 executable prompt · English", h3ContractNote: "The official strict_english contract requires English prompt prose. The display-language switch changes the guide only; Copy preserves the validated English original.",
+    seedanceExecutableTitle: "Seedance 2.0 executable prompt · Chinese", seedanceContractNote: "This Seedance 2.0 executable prompt is natively Chinese. Copy preserves the validated original.",
+    metadataPromptTitle: "Localized access metadata", metadataPromptNote: "This is reviewed installation/access guidance rather than a generated-video prompt.",
+    structureGuideTitle: "Chinese structure guide (not executable)", structureGuideExecution: "Execution: keep the English original for MiniMax H3.", structureGuideShots: "Shot structure: {count} ordered shots.", structureGuideAnchors: "Required anchors: ", structureGuideSound: "Sound contract: overall_soundscape and non_diegetic_music remain English fields and prose."
   },
   "zh-CN": {
     all: "全部", cases: "创意案例", official: "MiniMax 官方仓库 Skills", community: "非官方 Skills", favorites: "收藏", collections: "合集", history: "浏览历史",
@@ -182,7 +196,12 @@ const UI = {
     complexity: "复杂度", rule: "规则", purpose: "作用", ablation_failure: "删减后果", evidence_ids: "证据 ID", name: "名称", constraint: "约束", concept: "概念", prompt_seed: "提示词种子", failure: "失败表现", repair: "修复方法", result: "结果", preserved_invariant_ids: "保留的不可变条件", changed_slots: "已替换插槽",
     usage_scope: "使用范围", source_boundary: "来源边界", comfyui_boundary: "ComfyUI 边界", applicable_scope: "适用范围", not_suitable_for: "不适用范围", usage_steps: "使用方法", quality_repairs: "质量修复",
     favorite: "收藏", favorited: "已收藏", addCollections: "加入合集", newCollection: "新建合集", rename: "重命名", delete: "删除", collection: "合集", collectionName: "合集名称", cancel: "取消", save: "保存", done: "完成", clearHistory: "清空历史", historyNote: "按最近浏览排序，仅保存在本机。", emptyFavorites: "还没有收藏内容", emptyCollections: "先新建合集，再从任意卡片或详情页添加内容。", emptyHistory: "还没有浏览记录", storageRecovered: "个人资料库数据已损坏，现已安全重置。", collectionLimit: "无法创建合集，请检查名称或合集数量上限。", deleteCollectionConfirm: "删除这个合集？其中内容仍会保留在资料库。", clearHistoryConfirm: "清空全部本机浏览历史？", viewed: "浏览于",
-    noDna: "此条目暂未提供 Creative DNA 数据。", noMechanism: "暂未记录机制摘要。", updateNotChecked: "尚未检查更新", checkUpdate: "检查更新", installUpdate: "重启安装"
+    noDna: "此条目暂未提供 Creative DNA 数据。", noMechanism: "暂未记录机制摘要。", updateNotChecked: "尚未检查更新", checkUpdate: "检查更新", installUpdate: "重启安装",
+    githubGroup: "相关 GitHub 仓库", githubLibrary: "Prompt Library GitHub", githubNode: "ComfyUI 节点 GitHub",
+    h3ExecutableTitle: "MiniMax H3 英文可执行原文", h3ContractNote: "官方 strict_english 合同要求提示词主体使用英文。中文按钮只切换讲解内容；复制仍保留经过验证的英文原文。",
+    seedanceExecutableTitle: "Seedance 2.0 中文可执行原文", seedanceContractNote: "此案例的 Seedance 2.0 可执行提示词原生为中文；复制内容与经过验证的原文一致。",
+    metadataPromptTitle: "本地化安装入口元数据", metadataPromptNote: "这里展示的是经过审核的安装与访问说明，不是视频生成提示词。",
+    structureGuideTitle: "中文结构导读（非可执行提示词）", structureGuideExecution: "执行要求：MiniMax H3 必须使用下方英文原文。", structureGuideShots: "镜头结构：共 {count} 个按顺序执行的镜头。", structureGuideAnchors: "必须保留：", structureGuideSound: "声音合同：overall_soundscape 与 non_diegetic_music 的字段名及正文保持英文。"
   }
 };
 
@@ -218,6 +237,14 @@ function updateGlobalChrome() {
   });
   elements.checkUpdate.textContent = t("checkUpdate");
   elements.installUpdate.textContent = t("installUpdate");
+  document.querySelectorAll("[data-github-group]").forEach((group) => group.setAttribute("aria-label", t("githubGroup")));
+  document.querySelectorAll("[data-github-repository]").forEach((button) => {
+    const label = button.dataset.githubRepository === "node" ? t("githubNode") : t("githubLibrary");
+    button.setAttribute("aria-label", label);
+    button.setAttribute("title", label);
+    const text = button.querySelector("[data-repo-label]");
+    if (text) text.textContent = label;
+  });
   document.querySelector("#compare-title").textContent = zh ? "案例机制与提示词对比" : "Compare mechanisms and prompts";
   elements.compareModelLabel.textContent = zh ? "提示词模型" : "Prompt model";
   document.querySelector(".topbar .locale-toggle").setAttribute("aria-label", zh ? "显示语言" : "Display language");
@@ -1067,6 +1094,32 @@ function activePrompt(item, model, locale = state.locale) {
   return item?.localizedPromptHelp?.[model]?.[locale] || item?.prompts?.[model] || "";
 }
 
+function renderPromptLanguageBoundary(model, prompt) {
+  const h3 = model === "minimaxH3";
+  const sourceLanguage = state.activeCase?.promptLanguages?.[model] || "Original";
+  const localizedMetadata = Boolean(state.activeCase?.localizedPromptHelp?.[model]);
+  if (localizedMetadata) {
+    elements.promptLanguageTitle.textContent = t("metadataPromptTitle");
+    elements.promptLanguageNote.textContent = t("metadataPromptNote");
+  } else {
+    elements.promptLanguageTitle.textContent = t(h3 ? "h3ExecutableTitle" : "seedanceExecutableTitle");
+    elements.promptLanguageNote.textContent = t(h3 ? "h3ContractNote" : "seedanceContractNote");
+  }
+  const showChineseGuide = Boolean(prompt) && state.locale === "zh-CN" && h3 && sourceLanguage === "English" && !localizedMetadata;
+  elements.promptStructureGuide.classList.toggle("hidden", !showChineseGuide);
+  elements.promptStructureList.replaceChildren();
+  if (!showChineseGuide) return;
+  elements.promptStructureTitle.textContent = t("structureGuideTitle");
+  const local = localized(state.activeCase, "zh-CN");
+  const anchors = local.quick_start?.required_anchors || [];
+  const shots = new Set(Array.from(prompt.matchAll(/\[Shot\s+(\d+)\]/giu), (match) => match[1])).size;
+  const rows = [t("structureGuideExecution")];
+  if (shots) rows.push(t("structureGuideShots").replace("{count}", String(shots)));
+  if (anchors.length) rows.push(t("structureGuideAnchors") + anchors.slice(0, 4).join("；"));
+  rows.push(t("structureGuideSound"));
+  for (const row of rows) elements.promptStructureList.append(el("li", "", row));
+}
+
 function choosePrompt(model) {
   state.promptModel = model;
   const h3 = model === "minimaxH3";
@@ -1082,8 +1135,7 @@ function choosePrompt(model) {
   elements.promptText.classList.toggle("hidden", !prompt);
   elements.promptMissing.classList.toggle("hidden", Boolean(prompt));
   elements.copyPrompt.disabled = !prompt;
-  const language = promptLanguageLabel(state.activeCase?.promptLanguages?.[model]);
-  elements.promptLanguageNote.textContent = `${t("promptLanguage")}: ${language}. ${t("languageLocked")}`;
+  renderPromptLanguageBoundary(model, prompt);
   configureCopyButton(elements.copyPrompt, t("copyPrompt"));
   elements.promptMissing.textContent = t("noPrompt");
 }
@@ -1545,6 +1597,17 @@ elements.copyPrompt.addEventListener("click", (event) => {
   const prompt = activePrompt(state.activeCase, state.promptModel);
   if (!prompt) return;
   copyContent(prompt, state.promptModel === "minimaxH3" ? "MiniMax H3" : "Seedance 2.0", event.currentTarget);
+});
+document.querySelectorAll("[data-github-repository]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const url = GITHUB_REPOSITORIES[button.dataset.githubRepository];
+    if (!url) return;
+    try {
+      await api.openExternal(url);
+    } catch {
+      showToast(state.locale === "zh-CN" ? "无法打开 GitHub 仓库" : "Could not open the GitHub repository");
+    }
+  });
 });
 elements.checkUpdate.addEventListener("click", async () => {
   try { applyUpdateStatus(await api.checkForUpdates()); }

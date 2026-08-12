@@ -225,6 +225,14 @@ async function run() {
     assert.equal(await page.locator("#detail-locale-zh").getAttribute("aria-pressed"), "true");
     assert.match(await page.locator("#detail-title").textContent(), /[\u4E00-\u9FFF]/u, "Chinese detail title must be reviewed Chinese content");
     assert.equal(await page.locator("#prompt-text").textContent(), promptBeforeCopy, "display locale must never translate or alter canonical prompt bytes");
+    assert.match(await page.locator("#prompt-language-title").textContent(), /MiniMax H3 英文可执行原文/u, "Chinese UI must identify H3 as an English executable original");
+    assert.match(await page.locator("#prompt-language-note").textContent(), /strict_english.*复制.*英文原文/u, "H3 boundary notice must explain why the executable prompt remains English");
+    assert.equal(await page.locator("#prompt-structure-guide").isVisible(), true, "Chinese UI must provide a non-executable H3 structure guide");
+    assert.ok(await page.locator("#prompt-structure-list li").count() >= 3, "H3 structure guide must explain execution, anchors, and sound fields");
+    await page.locator("#tab-seedance").click();
+    assert.match(await page.locator("#prompt-language-title").textContent(), /Seedance 2\.0 中文可执行原文/u);
+    assert.equal(await page.locator("#prompt-structure-guide").isHidden(), true, "Chinese structure guide is only needed for strict-English H3 prompts");
+    await page.locator("#tab-h3").click();
     assert.ok(Math.abs((await video.evaluate((node) => node.currentTime)) - timeBeforeLocale) < 0.05, "locale switch must preserve media time");
     assert.equal(await page.locator("#tab-h3").getAttribute("aria-selected"), "true", "locale switch must preserve the active model tab");
     assert.equal(await page.locator("#platform-filter").inputValue(), "platform:x", "locale switch must preserve stable filter values");

@@ -82,6 +82,8 @@ test("prompt selectors implement the WAI-ARIA tabs contract", () => {
   assert.match(html, /id="tab-h3"[^>]+aria-controls="prompt-panel"[^>]+tabindex="0"/u);
   assert.match(html, /id="tab-seedance"[^>]+aria-controls="prompt-panel"[^>]+tabindex="-1"/u);
   assert.match(html, /id="prompt-panel" role="tabpanel" aria-labelledby="tab-h3"/u);
+  for (const id of ["prompt-language-banner", "prompt-language-title", "prompt-language-note", "prompt-structure-guide", "prompt-structure-title", "prompt-structure-list"]) assert.match(html, new RegExp(`id="${id}"`, "u"));
+  assert.ok(renderer.includes("renderPromptLanguageBoundary") && renderer.includes("strict_english"), "renderer must expose the model-language boundary without rewriting prompt bytes");
   assert.match(html, /id="compare-grid" class="compare-grid" role="tabpanel" aria-labelledby="compare-tab-h3"/u);
   for (const token of ["handleTablistKeys", "ArrowRight", "ArrowLeft", "Home", "End", "aria-labelledby"]) {
     assert.ok(renderer.includes(token), `missing accessible tab behavior: ${token}`);

@@ -5,8 +5,10 @@ const {
   app,
   BrowserWindow,
   clipboard,
+  dialog,
   ipcMain,
   protocol,
+  safeStorage,
   session,
   shell
 } = require("electron");
@@ -15,6 +17,10 @@ const { loadCatalog, safeResolve } = require("./lib/catalog.cjs");
 const { allowedExternalUrl } = require("./lib/security.cjs");
 const { automaticUpdateDelay } = require("./lib/update-policy.cjs");
 const { createFileResponse } = require("./lib/media-response.cjs");
+const { CredentialVault } = require("./lib/credential-vault.cjs");
+const { PromptOrchestrator } = require("./lib/prompt-orchestrator.cjs");
+const { PromptMediaStore } = require("./lib/prompt-media.cjs");
+const { PromptProjectStore } = require("./lib/prompt-projects.cjs");
 const RELEASES_URL = "https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases";
 
 protocol.registerSchemesAsPrivileged([
@@ -36,6 +42,8 @@ let mainWindow = null;
 let assetRoots = null;
 let updateStatus = { state: "idle" };
 let updateInFlight = false;
+let promptOrchestrator = null;
+let promptProjectStore = null;
 
 function resolveRoots() {
   const catalogRoot = app.isPackaged
@@ -180,6 +188,98 @@ function configureIpc() {
     return true;
   });
 
+  ipcMain.handle("prompt:providers", (event) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.providerStatuses();
+  });
+
+  ipcMain.handle("prompt:credential:set", (event, input) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.setCredential(input || {});
+  });
+
+  ipcMain.handle("prompt:credential:clear", (event, providerId) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.clearCredential(providerId);
+  });
+
+  ipcMain.handle("prompt:preflight", (event, input) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.preflight(input || {});
+  });
+
+  ipcMain.handle("prompt:media:pick", async (event) => {
+    requireTrustedSender(event);
+    const result = await dialog.showOpenDialog(mainWindow, {
+      title: "Choose reference images or videos",
+      properties: ["openFile", "multiSelections"],
+      filters: [{ name: "Reference media", extensions: ["png", "jpg", "jpeg", "webp", "mp4", "mov", "webm"] }]
+    });
+    if (result.canceled) return promptOrchestrator.mediaList();
+    promptOrchestrator.addMediaPaths(result.filePaths);
+    return promptOrchestrator.mediaList();
+  });
+
+  ipcMain.handle("prompt:media:list", (event) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.mediaList();
+  });
+
+  ipcMain.handle("prompt:media:clear", (event) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.clearMedia();
+  });
+
+  ipcMain.handle("prompt:project:list", (event) => {
+    requireTrustedSender(event);
+    return promptProjectStore.list();
+  });
+
+  ipcMain.handle("prompt:project:get", (event, projectId) => {
+    requireTrustedSender(event);
+    return promptProjectStore.get(projectId);
+  });
+
+  ipcMain.handle("prompt:project:save", (event, input) => {
+    requireTrustedSender(event);
+    const request = input || {};
+    const base = request.runId ? promptOrchestrator.projectSnapshot(request.runId) : promptProjectStore.get(request.projectId);
+    if (!base) throw new Error("Prompt project not found.");
+    return promptProjectStore.save({ ...base, projectId: request.projectId || undefined, title: request.title || base.title, notes: request.notes ?? base.notes });
+  });
+
+  ipcMain.handle("prompt:project:delete", (event, projectId) => {
+    requireTrustedSender(event);
+    return promptProjectStore.remove(projectId);
+  });
+
+  ipcMain.handle("prompt:project:export", async (event, projectId) => {
+    requireTrustedSender(event);
+    const project = promptProjectStore.get(projectId);
+    const bundle = promptProjectStore.exportBundle(project);
+    const result = await dialog.showOpenDialog(mainWindow, { title: "Export T8 prompt project", properties: ["openDirectory", "createDirectory"] });
+    if (result.canceled || !result.filePaths[0]) return { saved: false };
+    const directory = result.filePaths[0];
+    fs.writeFileSync(path.join(directory, bundle.filename + ".json"), bundle.json, "utf8");
+    fs.writeFileSync(path.join(directory, bundle.filename + ".md"), bundle.markdown, "utf8");
+    return { saved: true, filenames: [bundle.filename + ".json", bundle.filename + ".md"] };
+  });
+
+  ipcMain.handle("prompt:start", (event, input) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.start(input || {});
+  });
+
+  ipcMain.handle("prompt:status", (event, runId) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.status(runId);
+  });
+
+  ipcMain.handle("prompt:cancel", (event, runId) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.cancel(runId);
+  });
+
   ipcMain.handle("updater:check", async (event) => {
     requireTrustedSender(event);
     if (process.platform === "darwin" && app.isPackaged) {
@@ -269,6 +369,16 @@ function createWindow() {
 
 app.whenReady().then(() => {
   assetRoots = resolveRoots();
+  const mediaStore = new PromptMediaStore();
+  promptProjectStore = new PromptProjectStore({ userDataDir: app.getPath("userData") });
+  promptOrchestrator = new PromptOrchestrator({
+    mediaStore,
+    credentialVault: new CredentialVault({
+      userDataDir: app.getPath("userData"),
+      safeStorage,
+      env: process.env
+    })
+  });
   configureMediaProtocol();
   configureUpdater();
   configureIpc();

@@ -8,6 +8,11 @@
 
 A curated Creative DNA library, installable Skills, and a video-first Electron desktop viewer for **MiniMax H3** and **Seedance 2.0**.
 
+**相关 GitHub 仓库**
+
+- [T8 Creative DNA Prompt Library](https://github.com/T8mars/minimax-h3-prompt-skill-T8)
+- [ComfyUI MiniMax H3 Prompt Enhancer T8](https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8)
+
 > 这里收录可复用的创意机制，而不是技术教程、性能 Benchmark、模型对比、工作流帖子或僵硬的关键词堆叠。
 
 ## 五种内容，互相对应
@@ -143,9 +148,19 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
 2. Windows 下载 `T8-Prompt-Library-Setup-v1.1.2.exe`；macOS 下载 `T8-Prompt-Library-v1.1.2-mac-universal.dmg`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
-4. 后续版本可在应用内检查并安装更新。
+4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
 
 当前提供 Windows x64 与 universal macOS（Intel + Apple Silicon）安装包。macOS 预览包尚未 Apple 签名或公证，安装前请核对 SHA-256；更详细说明见 [安装指南](./docs/installation.md)。
+
+### API 增强工作台
+
+主界面的“API 增强工作台”提供本地 Top-3 机制推荐、模板实例化、MiniMax H3 / Seedance 2.0 目标选择、参考图片/视频、三渠道提示词增强、静态锚点验收和实验项目导出。
+
+- 贞贞的平价小屋：[注册地址](https://api.seedance.nz/sign-up?aff=5f4w)
+- 贞贞的 AI 工坊：[注册地址](https://ai.t8star.org/register?aff=dP7j)
+- OpenAI 兼容接口：用户填写 HTTPS Base URL 与模型
+
+Renderer 保持离线；公网请求、素材读取、Key、一次性确认和错误归一化只在 Electron Main。每次真实调用都需要当次确认，不自动重试、不静默换渠道。详见 [API 增强工作台](./docs/api-workbench.md)。
 
 ### 安装单个 Skill
 

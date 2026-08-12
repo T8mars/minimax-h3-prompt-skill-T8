@@ -10,7 +10,9 @@ const ALLOWED_EXTERNAL_HOSTS = Object.freeze([
   "minimaxi.com",
   "hailuoai.video",
   "bytedance.com",
-  "capcut.com"
+  "capcut.com",
+  "api.seedance.nz",
+  "ai.t8star.org"
 ]);
 
 function isAllowedHost(hostname) {
