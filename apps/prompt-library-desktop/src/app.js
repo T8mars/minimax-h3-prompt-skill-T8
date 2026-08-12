@@ -132,7 +132,7 @@ const state = {
   collectionEditorMode: "create",
   collectionEditorReturnToMembership: false,
   membershipItem: null,
-  locale: localStorage.getItem("t8-display-locale") === "zh-CN" ? "zh-CN" : "en",
+  locale: localStorage.getItem("t8-display-locale") === "en" ? "en" : "zh-CN",
   updateStatus: { state: "idle" },
   toastTimer: null
 };
@@ -145,7 +145,7 @@ const UI = {
     unknownDuration: "Unknown duration", seconds: "seconds", unknownPlatform: "Unknown platform",
     completeVideo: "Complete video · audio", gifPreview: "GIF preview", addCompare: "Add to compare", compared: "Added ✓",
     published: "PUBLISHED", openPlay: "View and play →", openModels: "View H3 / Seedance →",
-    copy: "Copy", copied: "Copied", copyFailed: "Copy failed; select the text manually",
+    copy: "Copy", copied: "Copied", copyFailed: "Copy failed; select the text manually", copyFailedShort: "Copy failed",
     copyOverview: "Copy overview", copySource: "Copy source link", copySection: "Copy section", copyDna: "Copy Creative DNA", copyFull: "Copy full item", copyPrompt: "Copy current prompt",
     overview: "Overview", quickStart: "Quick start", creativeDna: "Creative DNA", prompts: "Prompts", validation: "Validation",
     inputFormat: "Recommended input format", recommendedInput: "Example input", requiredAnchors: "Required anchors", usageSteps: "How to use", applicableScope: "Best for", notSuitableFor: "Not suitable for",
@@ -168,7 +168,7 @@ const UI = {
     unknownDuration: "未知时长", seconds: "秒", unknownPlatform: "未知平台",
     completeVideo: "完整视频 · 有声", gifPreview: "GIF 预览", addCompare: "加入对比", compared: "已加入对比 ✓",
     published: "已发布", openPlay: "查看并播放 →", openModels: "查看 H3 / Seedance →",
-    copy: "复制", copied: "已复制", copyFailed: "复制失败，请手动选择文本",
+    copy: "复制", copied: "已复制", copyFailed: "复制失败，请手动选择文本", copyFailedShort: "复制失败",
     copyOverview: "复制概览", copySource: "复制来源链接", copySection: "复制本节", copyDna: "复制 Creative DNA", copyFull: "复制完整案例", copyPrompt: "复制当前提示词",
     overview: "概览", quickStart: "快速开始", creativeDna: "Creative DNA", prompts: "提示词", validation: "验证与交接",
     inputFormat: "推荐输入格式", recommendedInput: "推荐写法", requiredAnchors: "必需锚点", usageSteps: "使用方法", applicableScope: "适用范围", notSuitableFor: "不适用范围",
@@ -256,6 +256,46 @@ function showToast(message) {
   elements.toast.classList.add("visible");
   clearTimeout(state.toastTimer);
   state.toastTimer = setTimeout(() => elements.toast.classList.remove("visible"), 2300);
+}
+
+const copyFeedbackTimers = new WeakMap();
+const COPY_FEEDBACK_MS = 1600;
+
+function renderCopyButtonState(button) {
+  if (!button) return;
+  const status = button.dataset.copyState || "idle";
+  const idleLabel = button.dataset.copyIdleLabel || t("copy");
+  const idleAriaLabel = button.dataset.copyIdleAriaLabel || idleLabel;
+  const feedbackLabel = status === "success" ? `✓ ${t("copied")}` : status === "error" ? `! ${t("copyFailedShort")}` : idleLabel;
+  button.textContent = feedbackLabel;
+  button.setAttribute("aria-label", status === "idle" ? idleAriaLabel : feedbackLabel);
+  button.classList.toggle("is-copied", status === "success");
+  button.classList.toggle("is-copy-failed", status === "error");
+}
+
+function configureCopyButton(button, label, ariaLabel = label) {
+  if (!button) return;
+  clearTimeout(copyFeedbackTimers.get(button));
+  copyFeedbackTimers.delete(button);
+  delete button.dataset.copyState;
+  button.dataset.copyIdleLabel = String(label);
+  button.dataset.copyIdleAriaLabel = String(ariaLabel);
+  button.setAttribute("aria-live", "polite");
+  button.setAttribute("aria-atomic", "true");
+  renderCopyButtonState(button);
+}
+
+function showCopyButtonFeedback(button, status) {
+  if (!button) return;
+  if (!button.dataset.copyIdleLabel) configureCopyButton(button, button.textContent || t("copy"), button.getAttribute("aria-label") || button.textContent || t("copy"));
+  clearTimeout(copyFeedbackTimers.get(button));
+  button.dataset.copyState = status;
+  renderCopyButtonState(button);
+  copyFeedbackTimers.set(button, setTimeout(() => {
+    delete button.dataset.copyState;
+    renderCopyButtonState(button);
+    copyFeedbackTimers.delete(button);
+  }, COPY_FEEDBACK_MS));
 }
 
 function normalize(value) {
@@ -884,11 +924,13 @@ function sectionMarkdown(title, value) {
   return `## ${title}\n\n${valueToText(value)}\n`;
 }
 
-async function copyContent(text, label = "") {
+async function copyContent(text, label = "", button = null) {
   try {
     await api.copyText(String(text));
+    showCopyButtonFeedback(button, "success");
     showToast(label ? `${t("copied")}: ${label}` : t("copied"));
   } catch {
+    showCopyButtonFeedback(button, "error");
     showToast(t("copyFailed"));
   }
 }
@@ -928,10 +970,10 @@ function renderCreativeDna(data) {
     const item = el("article", "dna-item");
     const header = el("div", "dna-item-header");
     header.append(el("h4", "", dnaLabel(key)));
-    const copy = el("button", "button copy-secondary", t("copy"));
+    const copy = el("button", "button copy-secondary");
     copy.type = "button";
-    copy.setAttribute("aria-label", `${t("copy")} ${dnaLabel(key)}`);
-    copy.addEventListener("click", () => copyContent(sectionMarkdown(dnaLabel(key), value), dnaLabel(key)));
+    configureCopyButton(copy, t("copy"), `${t("copy")} ${dnaLabel(key)}`);
+    copy.addEventListener("click", () => copyContent(sectionMarkdown(dnaLabel(key), value), dnaLabel(key), copy));
     header.append(copy);
     item.append(header, renderPrimitiveValue(value));
     return item;
@@ -1042,7 +1084,7 @@ function choosePrompt(model) {
   elements.copyPrompt.disabled = !prompt;
   const language = promptLanguageLabel(state.activeCase?.promptLanguages?.[model]);
   elements.promptLanguageNote.textContent = `${t("promptLanguage")}: ${language}. ${t("languageLocked")}`;
-  elements.copyPrompt.textContent = t("copyPrompt");
+  configureCopyButton(elements.copyPrompt, t("copyPrompt"));
   elements.promptMissing.textContent = t("noPrompt");
 }
 
@@ -1050,12 +1092,12 @@ function updateDetailChrome() {
   const zh = state.locale === "zh-CN";
   const labels = [t("overview"), t("quickStart"), t("creativeDna"), t("prompts"), t("validation")];
   [...elements.detailNav.querySelectorAll("button")].forEach((button, index) => { button.textContent = labels[index]; });
-  elements.copyFullItem.textContent = t("copyFull");
-  elements.copyOverview.textContent = t("copyOverview");
-  elements.copySourceLink.textContent = t("copySource");
-  elements.copyQuickStart.textContent = t("copySection");
-  elements.copyDna.textContent = t("copyDna");
-  elements.copyValidation.textContent = t("copySection");
+  configureCopyButton(elements.copyFullItem, t("copyFull"));
+  configureCopyButton(elements.copyOverview, t("copyOverview"));
+  configureCopyButton(elements.copySourceLink, t("copySource"));
+  configureCopyButton(elements.copyQuickStart, t("copySection"));
+  configureCopyButton(elements.copyDna, t("copyDna"));
+  configureCopyButton(elements.copyValidation, t("copySection"));
   document.querySelector(".detail-locale-toggle").setAttribute("aria-label", zh ? "详情语言" : "Detail language");
   elements.closeDialog.setAttribute("aria-label", zh ? "关闭详情" : "Close details");
   elements.detailNav.setAttribute("aria-label", zh ? "详情章节" : "Detail sections");
@@ -1265,17 +1307,11 @@ function createCompareColumn(item) {
 
   const prompt = activePrompt(item, state.comparePromptModel) || t("noPrompt");
   content.append(el("pre", "compare-prompt", prompt));
-  const copy = el("button", "button copy compare-copy", state.locale === "zh-CN" ? "复制本列提示词" : "Copy this prompt");
+  const copy = el("button", "button copy compare-copy");
   copy.type = "button";
   copy.disabled = !item.prompts?.[state.comparePromptModel];
-  copy.addEventListener("click", async () => {
-    try {
-      await api.copyText(item.prompts[state.comparePromptModel]);
-      showToast(`${t("copied")}: ${display.title}`);
-    } catch {
-      showToast(t("copyFailed"));
-    }
-  });
+  configureCopyButton(copy, state.locale === "zh-CN" ? "复制本列提示词" : "Copy this prompt");
+  copy.addEventListener("click", () => copyContent(item.prompts[state.comparePromptModel], display.title, copy));
   content.append(copy);
   column.append(media, content);
   return column;
@@ -1499,21 +1535,16 @@ elements.membershipNewCollection.addEventListener("click", () => {
   elements.collectionMembershipDialog.close();
   openCollectionEditor("create", true);
 });
-elements.copyOverview.addEventListener("click", () => state.activeCase && copyContent(overviewMarkdown(state.activeCase), t("overview")));
-elements.copySourceLink.addEventListener("click", () => state.activeCase?.sourceUrl && copyContent(state.activeCase.sourceUrl, t("source")));
-elements.copyQuickStart.addEventListener("click", () => state.activeCase && copyContent(quickStartMarkdown(state.activeCase), t("quickStart")));
-elements.copyDna.addEventListener("click", () => state.activeCase && copyContent(dnaMarkdown(state.activeCase), t("creativeDna")));
-elements.copyValidation.addEventListener("click", () => state.activeCase && copyContent(validationMarkdown(state.activeCase), t("validation")));
-elements.copyFullItem.addEventListener("click", () => state.activeCase && copyContent(fullItemMarkdown(state.activeCase), localized(state.activeCase).title));
-elements.copyPrompt.addEventListener("click", async () => {
+elements.copyOverview.addEventListener("click", (event) => state.activeCase && copyContent(overviewMarkdown(state.activeCase), t("overview"), event.currentTarget));
+elements.copySourceLink.addEventListener("click", (event) => state.activeCase?.sourceUrl && copyContent(state.activeCase.sourceUrl, t("source"), event.currentTarget));
+elements.copyQuickStart.addEventListener("click", (event) => state.activeCase && copyContent(quickStartMarkdown(state.activeCase), t("quickStart"), event.currentTarget));
+elements.copyDna.addEventListener("click", (event) => state.activeCase && copyContent(dnaMarkdown(state.activeCase), t("creativeDna"), event.currentTarget));
+elements.copyValidation.addEventListener("click", (event) => state.activeCase && copyContent(validationMarkdown(state.activeCase), t("validation"), event.currentTarget));
+elements.copyFullItem.addEventListener("click", (event) => state.activeCase && copyContent(fullItemMarkdown(state.activeCase), localized(state.activeCase).title, event.currentTarget));
+elements.copyPrompt.addEventListener("click", (event) => {
   const prompt = activePrompt(state.activeCase, state.promptModel);
   if (!prompt) return;
-  try {
-    await api.copyText(prompt);
-    showToast(`${t("copied")}: ${state.promptModel === "minimaxH3" ? "MiniMax H3" : "Seedance 2.0"}`);
-  } catch {
-    showToast(t("copyFailed"));
-  }
+  copyContent(prompt, state.promptModel === "minimaxH3" ? "MiniMax H3" : "Seedance 2.0", event.currentTarget);
 });
 elements.checkUpdate.addEventListener("click", async () => {
   try { applyUpdateStatus(await api.checkForUpdates()); }

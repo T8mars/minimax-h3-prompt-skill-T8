@@ -83,6 +83,8 @@ button { color: inherit; }
 .button.clear { align-self: end; }
 .button.source, .button.copy { border-color: rgba(204, 255, 76, 0.42); background: var(--acid); color: #10120c; font-weight: 750; }
 .button.copy-secondary { min-height: 32px; padding: 6px 10px; border-color: rgba(204, 255, 76, 0.25); background: rgba(204, 255, 76, 0.08); color: var(--acid); font-size: 11px; font-weight: 750; }
+.button.is-copied { border-color: var(--mint); background: var(--mint); color: #07120d; box-shadow: 0 0 0 3px rgba(98, 244, 181, 0.15); transform: translateY(-1px); }
+.button.is-copy-failed { border-color: var(--danger); background: rgba(255, 118, 111, 0.12); color: #ffaaa5; box-shadow: 0 0 0 3px rgba(255, 118, 111, 0.10); }
 .button.danger { border-color: rgba(255, 118, 111, 0.32); color: #ffaaa5; }
 .button.personal-action.active { border-color: var(--acid); background: rgba(204, 255, 76, 0.12); color: var(--acid); }
 .locale-toggle { display: inline-flex; padding: 3px; border: 1px solid var(--line); border-radius: 10px; background: #0b0e0c; }

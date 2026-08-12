@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Electron 首次启动和清空本地数据后默认显示中文，同时继续保留用户主动选择的语言。
+- 所有复制按钮在成功后显示醒目的打钩反馈并自动恢复，反馈期间仍可重复点击；失败状态也会直接显示在按钮上。
+
 ### Planned
 
 - 首批持续扩充的 MiniMax H3 与 Seedance 2.0 Creative DNA 案例。

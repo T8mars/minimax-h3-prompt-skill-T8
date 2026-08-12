@@ -69,9 +69,12 @@ test("detail view exposes bilingual, section copy and full-item copy controls", 
   for (const id of ["global-locale-en", "global-locale-zh", "detail-locale-en", "detail-locale-zh", "copy-full-item", "copy-overview", "copy-quick-start", "copy-dna", "copy-validation", "quick-start", "validation-grid"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`), `missing bilingual/copy control: ${id}`);
   }
-  for (const token of ["setLocale", "fullItemMarkdown", "promptLanguages", "preserveMedia: true", "localStorage.setItem", "copyContent", "renderQuickStart", "renderValidation"]) {
+  for (const token of ["setLocale", "fullItemMarkdown", "promptLanguages", "preserveMedia: true", "localStorage.setItem", "copyContent", "renderQuickStart", "renderValidation", "showCopyButtonFeedback", "is-copied"]) {
     assert.ok(renderer.includes(token), `missing bilingual/copy behavior: ${token}`);
   }
+  assert.match(html, /<html lang="zh-CN">/u, "static first paint must declare the Chinese default");
+  assert.match(html, /id="global-locale-zh" class="locale-button active"[^>]+aria-pressed="true"/u, "Chinese locale control must be active by default");
+  assert.ok(renderer.includes('localStorage.getItem("t8-display-locale") === "en" ? "en" : "zh-CN"'), "first run must default to Chinese while preserving an explicit English preference");
   assert.ok(renderer.includes("function activePrompt") && renderer.includes("item?.prompts?.[model]"), "prompt copy must read canonical prompt bytes with only the explicit official access-metadata exception");
 });
 

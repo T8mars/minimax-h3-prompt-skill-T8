@@ -56,7 +56,8 @@ async function run() {
     const allCount = await page.locator(".case-card").count();
     assert.equal(allCount, 60, "default all-content view must render 49 cases + 9 official Skills + 2 non-official Skills");
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
-    assert.equal(await page.locator("#global-locale-en").getAttribute("aria-pressed"), "true", "English must be the first-run default");
+    assert.equal(await page.locator("#global-locale-zh").getAttribute("aria-pressed"), "true", "Chinese must be the first-run default");
+    assert.equal(await page.locator("html").getAttribute("lang"), "zh-CN", "the document language must match the first-run Chinese default");
     assert.equal(await page.locator("#stat-cases").textContent(), "60");
     assert.equal(await page.locator("#stat-videos").textContent(), "60", "every item in the aggregate view must have a local preview");
     assert.equal(await page.locator("#stat-prompts").textContent(), "120", "all 60 items must expose their declared model surfaces");
@@ -197,6 +198,15 @@ async function run() {
     assert.equal(await page.locator("#creative-dna .dna-item .copy-secondary").count(), await page.locator("#creative-dna .dna-item").count(), "every Creative DNA section needs its own copy button");
     await page.locator("#copy-overview").click();
     await waitForClipboard(electronApp, (value) => /^# .+\n/u.test(value), "overview copy must be structured Markdown");
+    assert.equal(await page.locator("#copy-overview").textContent(), "✓ Copied", "copy buttons must show an immediate visible success state");
+    assert.equal(await page.locator("#copy-overview").getAttribute("data-copy-state"), "success");
+    assert.equal(await page.locator("#copy-overview").isDisabled(), false, "copy feedback must not disable repeated copying");
+    await electronApp.evaluate(({ clipboard }) => clipboard.writeText("repeat-copy-sentinel"));
+    await page.locator("#copy-overview").click();
+    await waitForClipboard(electronApp, (value) => /^# .+\n/u.test(value), "copy button must remain reusable while success feedback is visible");
+    await page.waitForTimeout(1700);
+    assert.equal(await page.locator("#copy-overview").textContent(), "Copy overview", "copy button must restore its idle label after feedback");
+    assert.equal(await page.locator("#copy-overview").getAttribute("data-copy-state"), null);
     await page.locator("#copy-source-link").click();
     await waitForClipboard(electronApp, (value) => /^https:\/\/(?:x\.com|www\.reddit\.com)\//u.test(value), "source copy must preserve the exact HTTPS post URL");
     await page.locator("#copy-quick-start").click();
@@ -288,7 +298,7 @@ async function run() {
     assert.equal(await page.locator("#detail-media img").count(), 1, "official Skill details must show the local GIF preview");
     assert.match(await page.locator("#detail-media img").getAttribute("src"), /^t8media:\/\/catalog\/official-skills\/previews\//u);
     assert.match(await page.locator("#prompt-text").textContent(), /npx skills add https:\/\/github\.com\/MiniMax-AI\/MiniMax-H3/u);
-    assert.match(await page.locator("#prompt-text").textContent(), /This entry points to the MiniMax-AI/u, "official access metadata must follow the English display default");
+    assert.match(await page.locator("#prompt-text").textContent(), /This entry points to the MiniMax-AI/u, "official access metadata must follow the currently selected English display mode");
     await page.locator("#detail-locale-zh").click();
     assert.match(await page.locator("#prompt-text").textContent(), /此条目来自 MiniMax-AI/u, "official access metadata must switch to reviewed Chinese");
     await page.locator("#detail-locale-en").click();
