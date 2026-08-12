@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-brittaninatali-2086846696101962006-browser-2086846696101962006-video-1",
+  "slug": "traverse-incompatible-medium-to-scale-reveal",
+  "title": "异质航行｜维修出发到巨尺度揭示",
+  "source_title": "X creative video by @BrittaniNatali",
+  "summary": "先用维修准备建立载具与成员，再让同一载具在不相容材质环境中持续航行；近景证明操控，远景证明速度与尺度，最后用巨尺度环境或生命体重构旅程大小。",
+  "status": "released",
+  "source_duration_seconds": 23.498594,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/traverse-incompatible-medium-to-scale-reveal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-brittaninatali-2086846696101962006-browser-2086846696101962006-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-brittaninatali-2086846696101962006-browser-2086846696101962006-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-incompatible-medium-travel-scale-reveal-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "载具与操作员 + 出发前准备 + 明确启动 + 不相容介质持续航行 + 近/远尺度证明 + 巨尺度揭示",
+  "recommended_input": "两台维护机器人先检修三角磁吸履带车并完成磁足自检；启动后穿越像潮汐一样流动的铝箔带，用近景证明适应、远景证明规模，最后揭示巨型压实机。",
+  "required_anchors": [
+    "Establish one carrier, its crew and a visible readiness task before departure.",
+    "Show an unambiguous engine or control engagement followed by departure.",
+    "Alternate local control proof with wider speed-and-scale proof.",
+    "Use a late giant-scale environmental, living or working-form reveal to reframe the journey's scale."
+  ],
+  "tags": [
+    "incompatible",
+    "medium",
+    "travel",
+    "scale",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.659,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-11T15:43:04+08:00",
+  "updated_at": "2026-08-11T16:16:07+08:00"
+}

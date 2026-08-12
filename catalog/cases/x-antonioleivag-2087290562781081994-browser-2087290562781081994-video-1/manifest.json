@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-antonioleivag-2087290562781081994-browser-2087290562781081994-video-1",
+  "slug": "reveal-environment-through-performance-pullback",
+  "title": "表演让位于环境｜近脸到全景的连续退镜",
+  "source_title": "X creative video by @antonioleivag",
+  "summary": "从身份清楚的近脸表演开始，表演不中断，单次连续退镜把视觉主导权逐步从面部交给身体，再交给响应中的环境；结尾人物仍可辨，但环境成为主角。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reveal-environment-through-performance-pullback",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-antonioleivag-2087290562781081994-browser-2087290562781081994-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-antonioleivag-2087290562781081994-browser-2087290562781081994-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performance-environment-pullback-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "近脸表演基准 + 连续后退镜头 + 逐层环境参照 + 人物动作不中断 + 人景关系全景终态",
+  "recommended_input": "原创风场舞者从面部近景开始持续表演，镜头连续后退，依次揭示服装、步道、海崖与天空光带，最后人景同框。",
+  "required_anchors": [
+    "Open close enough to establish one stable performer identity.",
+    "Keep one continuous performance thread through the camera retreat.",
+    "Transfer visual dominance through camera distance rather than a subject transformation.",
+    "End wide with both performer and responsive environment readable."
+  ],
+  "tags": [
+    "performance",
+    "environment",
+    "pullback"
+  ],
+  "quality": {
+    "weighted_score": 4.741,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T15:33:23+08:00",
+  "updated_at": "2026-08-12T16:09:40+08:00"
+}

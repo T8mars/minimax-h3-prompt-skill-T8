@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin with an environmental disturbance that could still be mistaken for terrain, reveal one identifying feature before the full body, switch to a high or wide view that proves the complete geometry and its scale effect on the environment, then return to a lower viewpoint for one final proximity breach.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Open on an environmental deformation that can still be mistaken for terrain.",
+      "purpose": "Creates uncertainty before identification.",
+      "ablation_failure": "A full creature opening removes the reveal.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Reveal one identifying feature while withholding most of the body.",
+      "purpose": "Confirms agency without spending scale.",
+      "ablation_failure": "Several features at once collapse the ladder.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Extend the partial form enough to establish directional body geometry.",
+      "purpose": "Bridges identity to full-scale proof.",
+      "ablation_failure": "Jumping directly to the overhead body feels disconnected.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one high or wide view to prove the complete geometry and its environmental consequence.",
+      "purpose": "Makes scale measurable.",
+      "ablation_failure": "A close body texture gives no spatial proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return to a lower viewpoint for one bounded proximity breach.",
+      "purpose": "Converts distant scale into immediate stakes.",
+      "ablation_failure": "Ending only overhead remains an illustration.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source ocean serpent",
+    "green glowing eyes and storm sea",
+    "source whirlpool coil and open jaws",
+    "the exact sea-creature reveal order"
+  ],
+  "instantiations": [
+    {
+      "concept": "A wind-buried walking greenhouse first appears as a ridge under wheat, one amber inspection window opens, articulated roof ribs rise, an aerial view proves its vast footprint bending crop lanes, and a low road view ends as one leg steps across the foreground without contact.",
+      "prompt_seed": "A wind-buried walking greenhouse first appears as a ridge under wheat, one amber inspection window opens, articulated roof ribs rise, an aerial view proves its vast footprint bending crop lanes, and a low road view ends as one leg steps across the foreground without contact."
+    },
+    {
+      "concept": "A subterranean archive machine first appears as a shifting library floor, one blue lens opens between shelves, a curved chassis emerges, a ceiling view proves a spiral body moving book aisles, and a low desk view ends with its scanner passing close overhead.",
+      "prompt_seed": "A subterranean archive machine first appears as a shifting library floor, one blue lens opens between shelves, a curved chassis emerges, a ceiling view proves a spiral body moving book aisles, and a low desk view ends with its scanner passing close overhead."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A full creature opening removes the reveal.",
+      "repair": "Open on an environmental deformation that can still be mistaken for terrain."
+    },
+    {
+      "failure": "Several features at once collapse the ladder.",
+      "repair": "Reveal one identifying feature while withholding most of the body."
+    },
+    {
+      "failure": "Jumping directly to the overhead body feels disconnected.",
+      "repair": "Extend the partial form enough to establish directional body geometry."
+    },
+    {
+      "failure": "A close body texture gives no spatial proof.",
+      "repair": "Use one high or wide view to prove the complete geometry and its environmental consequence."
+    },
+    {
+      "failure": "Ending only overhead remains an illustration.",
+      "repair": "Return to a lower viewpoint for one bounded proximity breach."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A wind-buried walking greenhouse first appears as a ridge under wheat, one amber inspection window opens, articulated roof ribs rise, an aerial view proves its vast footprint bending crop lanes, and a low road view ends as one leg steps across the foreground without contact.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A subterranean archive machine first appears as a shifting library floor, one blue lens opens between shelves, a curved chassis emerges, a ceiling view proves a spiral body moving book aisles, and a low desk view ends with its scanner passing close overhead.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

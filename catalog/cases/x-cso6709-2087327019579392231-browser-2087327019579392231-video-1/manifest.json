@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-cso6709-2087327019579392231-browser-2087327019579392231-video-1",
+  "slug": "relay-token-through-stacked-zones",
+  "title": "分层接力｜小物体穿越多区域完成传递",
+  "source_title": "X creative video by @cso6709",
+  "summary": "在同一可读空间建立多个相连区域，让一个小物体从首位角色出发；物体通过可见表面改变路线，后续见证者持续追踪，最终交给自主载体，并以全景闭合完整接力。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/relay-token-through-stacked-zones",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-cso6709-2087327019579392231-browser-2087327019579392231-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-cso6709-2087327019579392231-browser-2087327019579392231-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-stacked-zone-token-relay-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "至少3个分层区域 + 1个可数物体 + 2次路线改变 + 后段重定向 + 自主载体终点",
+  "recommended_input": "垂直种子库中，一枚琥珀胶囊从上层分拣臂出发，经过透明滑道与机械叶门两次改道，最终落入自主种植车。",
+  "required_anchors": [
+    "Show at least three connected zones in one readable geography.",
+    "Launch one countable token from a clear first participant.",
+    "Keep the same token visible through a later witness zone and into its descending segment.",
+    "End with an autonomous final carrier and a wide path closure."
+  ],
+  "tags": [
+    "stacked",
+    "zone",
+    "token",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.706,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T10:43:42+08:00",
+  "updated_at": "2026-08-12T11:35:12+08:00"
+}

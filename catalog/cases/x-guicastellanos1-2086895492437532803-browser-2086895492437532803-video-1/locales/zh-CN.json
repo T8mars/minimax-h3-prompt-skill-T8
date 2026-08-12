@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-guicastellanos1-2086895492437532803-browser-2086895492437532803-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "938c08fae021ef07ae37ca364b8c97ef0b1738ddb5d672c0d3e7a70dd928ae0e",
+    "creative_dna_sha256": "548c58786291f1221db6e235defef7d61463bae5d7850cf120ae018bfb27f1ef"
+  },
+  "content": {
+    "title": "角色登场｜失误后借身体特征破局",
+    "summary": "先用居所、醒来反应和移动方式建立原创角色，再让技术任务发生可恢复失误；角色把自身独特身体特征当成工具完成破局，并以成果同框收束。",
+    "quick_start": {
+      "input_format": "原创角色居所与移动 + 技术任务 + 可恢复失误 + 身体特征破局 + 成果同框",
+      "recommended_input": "半透明纸蛾气象员在黄铜气象塔醒来，校准棱镜气压计时遭遇阵风失误，随后用翼脉投影诊断气流并修复，最后托起一颗雨珠。",
+      "required_anchors": [
+        "在技术任务之前建立栖息地、亲密反应和运动。",
+        "显示一项具有可读中间状态的熟练任务。",
+        "使用一种身份定义身体特征作为解决方案中的实用工具。",
+        "最后将修复或改造的物体与克制的能力摆在一起。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用居所、醒来反应和移动方式建立原创角色，再让技术任务发生可恢复失误；角色把自身独特身体特征当成工具完成破局，并以成果同框收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先通过居所、苏醒反应和移动方式介绍原创角色，再交给它一项需要技巧的任务。让首次尝试出现可见且可恢复的失误，随后让角色把定义其身份的身体特征用作实际推理或控制工具。成功状态必须明确回应先前失误，并以角色和已改变对象同框的克制能力姿态收束。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在技术任务之前建立栖息地、亲密反应和运动。",
+          "purpose": "在判断技能之前建立个性和身体规则。",
+          "ablation_failure": "从工作台开始，角色沦为装饰技师。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "显示一项具有可读中间状态的熟练任务。",
+          "purpose": "使以后的故障变得具体且可检查。",
+          "ablation_failure": "一场无法解释的事故并不能证明发生了什么变化。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "保持故障可恢复并保留相同的任务对象。",
+          "purpose": "支持因果修复而不是重置魔法。",
+          "ablation_failure": "替换对象会消除后果。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "使用一种身份定义身体特征作为解决方案中的实用工具。",
+          "purpose": "使角色设计具有因果意义。",
+          "ablation_failure": "如果任意通用工具都能解决问题，角色的身体设计就只剩装饰作用。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后将修复或改造的物体与克制的能力摆在一起。",
+          "purpose": "提供学习和成功的可见证明。",
+          "ablation_failure": "没有结果的反应无法关闭任务。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色无需来源身份即可读取。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的全新场景。"
+        },
+        {
+          "name": "carrier_or_token",
+          "constraint": "一种承载因果机制的可见材料、支柱或象征锚。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "一系列可见的、按因果顺序排列的变化，而不是装饰性的蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个更改。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设置设置的最终状态。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "可见动作声音的原始层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "Ayotl 名称和来源民间传说归属",
+        "来源类似乌龟的生物，贝壳标记和颜色设计",
+        "吊床唤醒、浮动齿轮、晶体实验和源方程",
+        "确切来源工坊、爆炸、自写表面和主角姿势"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位半透明的纸蛾气象学家在折叠抽屉中醒来，组装了棱镜气压计，在阵风中失去了校准，使用其图案翅膀作为投影屏幕来绘制气流图，然后凝结并呈现出一颗雨珠。",
+          "prompt_seed": "一位半透明的纸蛾气象学家在折叠抽屉中醒来，组装了棱镜气压计，在阵风中失去了校准，使用其图案翅膀作为投影屏幕来绘制气流图，然后凝结并呈现出一颗雨珠。"
+        },
+        {
+          "concept": "一只粘土蝾螈档案保管员从潮湿的陶瓷壁龛中爬出，对准一个会唱歌的卷轴圆柱体，使音调环破裂，使用头部的感官褶边作为实时共鸣计，并恢复一种稳定的发光音调。",
+          "prompt_seed": "一只粘土蝾螈档案保管员从潮湿的陶瓷壁龛中爬出，对准一个会唱歌的卷轴圆柱体，使音调环破裂，使用头部的感官褶边作为实时共鸣计，并恢复一种稳定的发光音调。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "从工作台开始，角色沦为装饰技师。",
+          "repair": "在技术任务之前建立栖息地、亲密反应和运动。"
+        },
+        {
+          "failure": "一场无法解释的事故并不能证明发生了什么变化。",
+          "repair": "显示一项具有可读中间状态的熟练任务。"
+        },
+        {
+          "failure": "替换对象会消除后果。",
+          "repair": "保持故障可恢复并保留相同的任务对象。"
+        },
+        {
+          "failure": "如果任意通用工具都能解决问题，角色的身体设计就只剩装饰作用。",
+          "repair": "使用一种身份定义身体特征作为解决方案中的实用工具。"
+        },
+        {
+          "failure": "没有结果的反应无法关闭任务。",
+          "repair": "最后将修复或改造的物体与克制的能力摆在一起。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位半透明的纸蛾气象学家在折叠抽屉中醒来，组装了棱镜气压计，在阵风中失去了校准，使用其图案翅膀作为投影屏幕来绘制气流图，然后凝结并呈现出一颗雨珠。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "carrier_or_token",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一只粘土蝾螈档案保管员从潮湿的陶瓷壁龛中爬出，对准一个会唱歌的卷轴圆柱体，使音调环破裂，使用头部的感官褶边作为实时共鸣计，并恢复一种稳定的发光音调。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "carrier_or_token",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

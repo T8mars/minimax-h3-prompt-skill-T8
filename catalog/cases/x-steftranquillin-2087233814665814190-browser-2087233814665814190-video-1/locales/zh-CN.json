@@ -1,0 +1,217 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-steftranquillin-2087233814665814190-browser-2087233814665814190-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "2e69d266ea76675357024bee2bf03f8c76229f6da54451db816ac154165ed3c0",
+    "creative_dna_sha256": "234f3ad774164f680f702f80d23d28713e2ff0172742db0991a88604c451fac8"
+  },
+  "content": {
+    "title": "动作成字｜方向笔画驱动角色切换与终态标记",
+    "summary": "第一位角色的动作生成强方向笔画，落地后笔画变成构图分隔；第二位角色沿同一图形轴进入并把笔画弯成新几何，最终标记由两次动作共同完成。",
+    "quick_start": {
+      "input_format": "第一动作生成方向笔画 + 落地变分隔 + 第二角色沿同轴进入 + 笔画变形 + 无文字终态标记",
+      "recommended_input": "蓝色纸艺自动机把炭黑直尺变成构图分隔，琥珀自动机沿同轴进入并把直尺弯成螺旋，两次动作共同形成无文字涡轮标记。",
+      "required_anchors": [
+        "将第一个动作绑定到一个主导方向笔画。",
+        "使用第一次落地来改变笔画的构图角色。",
+        "让第二个动作弯曲或重新配置笔划。",
+        "停留展示一个明显继承两次动作的最终标记。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "第一位角色的动作生成强方向笔画，落地后笔画变成构图分隔；第二位角色沿同一图形轴进入并把笔画弯成新几何，最终标记由两次动作共同完成。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让第一位表演者的动作生成或对齐一条强方向笔画，落地时把笔画转成构图分隔线；第二位表演者沿同一图形轴进入，用动作把笔画弯成新几何，最后让完成的抽象标记成为两次动作共同造成的结果。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "将第一个动作绑定到一个主导方向笔画。",
+          "purpose": "使运动生成图形结构。",
+          "ablation_failure": "装饰线不增加因果作用。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用第一次落地来改变笔画的构图角色。",
+          "purpose": "创建从操作到布局的可见切换。",
+          "ablation_failure": "正常着陆不会留下任何图形后果。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "​​在既定的图形轴上引入第二个表演者。",
+          "purpose": "将角色切换链接到同一系统。",
+          "ablation_failure": "一个新的不相关的帧打破了连续性。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "让第二个动作弯曲或重新配置笔划。",
+          "purpose": "加入第二位角色清楚可见的因果贡献。",
+          "ablation_failure": "未更改的分隔符使第二个角色变得多余。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "停留展示一个明显继承两次动作的最终标记。",
+          "purpose": "关闭图形因果关系。",
+          "ablation_failure": "随机标题卡无法证明两动作结构。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色是明确的，无需来源身份。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源位置的全新场景。"
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "明显承载因果链的一个物体、路线、标记或设备。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "具有可观察到的切换的五个有序状态，而不是装饰性蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种新的面向证明的信息顺序，不复制源镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设定设置的最终结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "支持每个可见变化的故事世界线索的原始层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源红白黑人物和滑板",
+        "来源涂鸦轨道、酒吧秋千和数字八",
+        "精确的两位表演者图形编舞",
+        "源色块和最终标记",
+        "来源大数字 8",
+        "源重复 数字 8 母题"
+      ],
+      "instantiations": [
+        {
+          "concept": "两个原创的造纸工程自动机在奶油制绘图台上工作：第一个将木炭尺子卷入分隔器，第二个将其旋转成螺旋孔，这两个动作都解析为无字涡轮符号。",
+          "prompt_seed": "两个原创的造纸工程自动机在奶油制绘图台上工作：第一个将木炭尺子卷入分隔器，第二个将其旋转成螺旋孔，这两个动作都解析为无字涡轮符号。"
+        },
+        {
+          "concept": "两架发光深海维护无人机穿越一根电缆轴；第一个将其拉直为边界，第二个将其循环为救援信标，最终以物理信标而不是版式结束。",
+          "prompt_seed": "两架发光深海维护无人机穿越一根电缆轴；第一个将其拉直为边界，第二个将其循环为救援信标，最终以物理信标而不是版式结束。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "装饰线不增加因果作用。",
+          "repair": "将第一个动作绑定到一个主导方向笔画。"
+        },
+        {
+          "failure": "正常着陆不会留下任何图形后果。",
+          "repair": "使用第一次落地来改变笔画的构图角色。"
+        },
+        {
+          "failure": "一个新的不相关的帧打破了连续性。",
+          "repair": "​​在既定的图形轴上引入第二个表演者。"
+        },
+        {
+          "failure": "未更改的分隔符使第二个角色变得多余。",
+          "repair": "让第二个动作弯曲或重新配置笔划。"
+        },
+        {
+          "failure": "随机标题卡无法证明两动作结构。",
+          "repair": "停留展示一个明显继承两次动作的最终标记。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两个原创的造纸工程自动机在奶油制绘图台上工作：第一个将木炭尺子卷入分隔器，第二个将其旋转成螺旋孔，这两个动作都解析为无字涡轮符号。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "两架发光深海维护无人机穿越一根电缆轴；第一个将其拉直为边界，第二个将其循环为救援信标，最终以物理信标而不是版式结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

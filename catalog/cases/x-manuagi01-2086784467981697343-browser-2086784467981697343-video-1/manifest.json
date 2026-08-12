@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-manuagi01-2086784467981697343-browser-2086784467981697343-video-1",
+  "slug": "reconstruct-flat-geometry-poster",
+  "title": "平面重组｜图标开启档案世界",
+  "source_title": "X creative video by @ManuAGI01",
+  "summary": "紧凑图标先展开成角色与世界，图形密度经多个象征场景逐步升高，再用短暂状态卡打断；最后一个人物画面把持续配色与面板几何交给独立终态锁定。作为既有平面重组模板的证据变体，不新增下拉项。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reconstruct-flat-geometry-poster",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-manuagi01-2086784467981697343-browser-2086784467981697343-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-manuagi01-2086784467981697343-browser-2086784467981697343-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-flat-geometry-reconstruction-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-mayz1169-2086427292755247409-browser-2086427292755247409-video-1",
+  "input_format": "紧凑图标 + 稳定角色/配色 + 密度递增模块 + 孤立状态停顿 + 几何锁定",
+  "recommended_input": "铜色种子螺旋从标本标签展开成纸艺温室世界，经过叶廊与根系高密模块，短暂停在无字检疫花结，最终重组成植物徽记。",
+  "required_anchors": [
+    "Open with one compact flat icon that visibly expands into a larger graphic field.",
+    "Keep one character silhouette, palette and panel family stable while the world modules change.",
+    "Insert one short isolated status or negative-space state before the ending.",
+    "Resolve the recurring palette and panel geometry into a held final lockup after the last character frame hands off."
+  ],
+  "tags": [
+    "flat",
+    "geometry",
+    "reconstruction"
+  ],
+  "quality": {
+    "weighted_score": 4.69,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-11T15:43:04+08:00",
+  "updated_at": "2026-08-11T16:16:07+08:00"
+}

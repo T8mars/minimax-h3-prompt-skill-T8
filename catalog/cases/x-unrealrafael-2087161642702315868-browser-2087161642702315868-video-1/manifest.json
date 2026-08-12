@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-unrealrafael-2087161642702315868-browser-2087161642702315868-video-1",
+  "slug": "follow-repeating-landmarks-deeper",
+  "title": "连续推进｜重复地标计时并抵达更深通道",
+  "source_title": "X creative video by @UnrealRafael",
+  "summary": "在受限通道中持续前进，以重复固定地标和门洞视差作为进度时钟；接近结尾时只转向或跨越一次可见边界，并停在材质更深的次级通道，不虚构检查、诊断或隐藏威胁。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-repeating-landmarks-deeper",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-unrealrafael-2087161642702315868-browser-2087161642702315868-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-unrealrafael-2087161642702315868-browser-2087161642702315868-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-repeating-landmark-deeper-passage-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "连续受限通道 + 重复地标进度时钟 + 门洞视差逼近 + 单次边界跨越 + 更深次级通道终态",
+  "recommended_input": "植物维护镜头沿根系观察沟连续前进，用编号湿度窗和门洞视差证明进度；结尾只跨越一次气闸，停在更暗的种子库次级通道。",
+  "required_anchors": [
+    "Use one continuous constrained passage and stable travel axis.",
+    "Repeat fixed landmarks as a progress clock.",
+    "Turn or cross only once at the late visible threshold.",
+    "End inside a materially deeper secondary passage while retaining one prior-route edge."
+  ],
+  "tags": [
+    "repeating",
+    "landmark",
+    "deeper",
+    "passage"
+  ],
+  "quality": {
+    "weighted_score": 4.747,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T10:46:32+08:00",
+  "updated_at": "2026-08-12T11:35:12+08:00"
+}

@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-manuagi01-2086778003422671069-browser-2086778003422671069-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "069e7cae933d5646ff89e468279e1c7f8c9409db695c27f7c260d6cd3cf98ebb",
+    "creative_dna_sha256": "c518b2039070b7a7256fffd5f49d83f5566bdb96fa8356267cc6b6a7740e0b1d"
+  },
+  "content": {
+    "title": "双角色职责｜独立建立后共同完成",
+    "summary": "先分别用工具、局部动作和中间结果建立两个角色的独立职责，随后让双方在一个共享接口产生不可替代的依赖，最终以缺少任一方都无法完成的可见成果收束。",
+    "quick_start": {
+      "input_format": "角色A工具/操作/中间结果 + 角色B不同工具/操作/中间结果 + 共享接口 + 双贡献成果",
+      "recommended_input": "铜腿土壤采样自动机完成矿物路径，玻璃泵站自动机独立建立水压；两者在矩形混合阀会合，缺一不可地启动滴灌并让幼苗成排抬起。",
+      "required_anchors": [
+        "通过一个稳定的工具、本地操作和可见的中间结果来建立角色A。",
+        "在本地操作完成时保持角色 A 的身份和结果清晰。",
+        "将这两个角色带到一个共享界面，其中每个贡献都是明显需要的。",
+        "保持具体的联合结果，同时保留身份、工具和互补的责任。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先分别用工具、局部动作和中间结果建立两个角色的独立职责，随后让双方在一个共享接口产生不可替代的依赖，最终以缺少任一方都无法完成的可见成果收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在互动前分别用可观察的职责建立两个不同角色：每个角色都有稳定身份、专属工具、局部动作和中间结果。只有双方都已独立清楚，才让他们在一个需要两边共同贡献的共享接口相遇。最终成果必须具体可见、缺少任一方都无法成立，并继续保留双方身份。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "通过一个稳定的工具、本地操作和可见的中间结果来建立角色A。",
+          "purpose": "创建第一个可读的职责。",
+          "ablation_failure": "通用肖像不提供第二个角色可以依赖的角色。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在本地操作完成时保持角色 A 的身份和结果清晰。",
+          "purpose": "在任何团队行动之前将身份与职能联系起来。",
+          "ablation_failure": "道具若不产生结果，就只是装饰。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "稍后通过不同的工具、操作和中间结果建立角色B，而不是重播角色A。",
+          "purpose": "创造有意义的角色对比。",
+          "ablation_failure": "相同的第二个介绍感觉像是重复的角色艺术。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "将这两个角色带到一个共享界面，其中每个贡献都是明显需要的。",
+          "purpose": "将邻接关系转变为因果关系。",
+          "ablation_failure": "将角色并排放置并不能解释它们是如何连接的。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "保持具体的联合结果，同时保留身份、工具和互补的责任。",
+          "purpose": "关闭序列作为依赖证明。",
+          "ablation_failure": "通用团队姿势或合并徽章无法证明这两项操作都很重要。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色无需来源身份即可读取。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的全新场景。"
+        },
+        {
+          "name": "carrier_or_token",
+          "constraint": "一种承载因果机制的可见材料、支柱或象征锚。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "一系列可见的、按因果顺序排列的变化，而不是装饰性的蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个更改。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设置设置的最终状态。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "可见动作声音的原始层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源白发和老年长发角色",
+        "星盘、沙漏、面具和星座图词汇",
+        "来源城市三联画，圆形相机旋转和分割海报面板",
+        "红色笔环、人物轮廓和最终游戏的确切来源-PV 图"
+      ],
+      "instantiations": [
+        {
+          "concept": "在一个连续的触觉温室过道中，铜腿土壤采样器在测试床后插入矿物筒，玻璃体泵保持器单独启动水压，两者在矩形混合阀处相遇；只有它们的组合输入才能供给直线滴灌线并提升一排幼苗。",
+          "prompt_seed": "在一个连续的触觉温室过道中，铜腿土壤采样器在测试床后插入矿物筒，玻璃体泵保持器单独启动水压，两者在矩形混合阀处相遇；只有它们的组合输入才能供给直线滴灌线并提升一排幼苗。"
+        },
+        {
+          "concept": "在黑暗的实景剧院中，皮影操纵者拉紧三根架空线，而微型灯管则独立地对准移动的狭缝灯；两种操作都在一个阶段的快门上相遇，并产生一个可读的飞鸟阴影，这两个角色都无法单独创建。",
+          "prompt_seed": "在黑暗的实景剧院中，皮影操纵者拉紧三根架空线，而微型灯管则独立地对准移动的狭缝灯；两种操作都在一个阶段的快门上相遇，并产生一个可读的飞鸟阴影，这两个角色都无法单独创建。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "通用肖像不提供第二个角色可以依赖的角色。",
+          "repair": "通过一个稳定的工具、本地操作和可见的中间结果来建立角色A。"
+        },
+        {
+          "failure": "道具若不产生结果，就只是装饰。",
+          "repair": "在本地操作完成时保持角色 A 的身份和结果清晰。"
+        },
+        {
+          "failure": "相同的第二个介绍感觉像是重复的角色艺术。",
+          "repair": "稍后通过不同的工具、操作和中间结果建立角色B，而不是重播角色A。"
+        },
+        {
+          "failure": "将角色并排放置并不能解释它们是如何连接的。",
+          "repair": "将这两个角色带到一个共享界面，其中每个贡献都是明显需要的。"
+        },
+        {
+          "failure": "通用团队姿势或合并徽章无法证明这两项操作都很重要。",
+          "repair": "保持具体的联合结果，同时保留身份、工具和互补的责任。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在一个连续的触觉温室过道中，铜腿土壤采样器在测试床后插入矿物筒，玻璃体泵保持器单独启动水压，两者在矩形混合阀处相遇；只有它们的组合输入才能供给直线滴灌线并提升一排幼苗。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "carrier_or_token",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在黑暗的实景剧院中，皮影操纵者拉紧三根架空线，而微型灯管则独立地对准移动的狭缝灯；两种操作都在一个阶段的快门上相遇，并产生一个可读的飞鸟阴影，这两个角色都无法单独创建。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "carrier_or_token",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

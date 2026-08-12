@@ -1,0 +1,171 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish several connected zones in one readable geography, launch one small token from the first actor, let the token change route through visible surfaces while later witnesses keep tracking it, hand it to one autonomous final carrier, then close wide so the complete relay path is visible.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show at least three connected zones in one readable geography.",
+      "purpose": "Lets each route change be followed.",
+      "ablation_failure": "Isolated close-ups turn the relay into coincidence.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Launch one countable token from a clear first participant.",
+      "purpose": "Gives the chain a stable causal carrier.",
+      "ablation_failure": "Multiple tokens make continuity unverifiable.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Change the token route at least twice without changing identity.",
+      "purpose": "Builds escalating relay evidence.",
+      "ablation_failure": "Unchanged travel lacks participant responsibility.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Keep the same token visible through a later witness zone and into its descending segment.",
+      "purpose": "Bridges the middle route to the final carrier without inventing contact.",
+      "ablation_failure": "Losing the token before descent makes the final handoff coincidental.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with an autonomous final carrier and a wide path closure.",
+      "purpose": "Completes the chain and restores geography.",
+      "ablation_failure": "A close endpoint hides whether the relay connected.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source cat, dog and robot vacuum",
+    "white ball, piano and domestic room",
+    "the exact stacked household composition",
+    "the source animal-to-appliance relay order"
+  ],
+  "instantiations": [
+    {
+      "concept": "In a vertical seed bank, one amber capsule drops from a sorter arm, rolls across two transparent chutes, is redirected by a mechanical leaf gate and is collected by an autonomous planting cart.",
+      "prompt_seed": "In a vertical seed bank, one amber capsule drops from a sorter arm, rolls across two transparent chutes, is redirected by a mechanical leaf gate and is collected by an autonomous planting cart."
+    },
+    {
+      "concept": "In a circular tidal laboratory filmed by one overhead rotating camera, a glowing water droplet travels clockwise through three radial basins; a pressure jet, a tilting membrane and a magnetic bead each alter its arc before a self-propelled sample ring captures it at the center.",
+      "prompt_seed": "In a circular tidal laboratory filmed by one overhead rotating camera, a glowing water droplet travels clockwise through three radial basins; a pressure jet, a tilting membrane and a magnetic bead each alter its arc before a self-propelled sample ring captures it at the center."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Isolated close-ups turn the relay into coincidence.",
+      "repair": "Show at least three connected zones in one readable geography."
+    },
+    {
+      "failure": "Multiple tokens make continuity unverifiable.",
+      "repair": "Launch one countable token from a clear first participant."
+    },
+    {
+      "failure": "Unchanged travel lacks participant responsibility.",
+      "repair": "Change the token route at least twice without changing identity."
+    },
+    {
+      "failure": "Losing the token before descent makes the final handoff coincidental.",
+      "repair": "Keep the same token visible through a later witness zone and into its descending segment."
+    },
+    {
+      "failure": "A close endpoint hides whether the relay connected.",
+      "repair": "End with an autonomous final carrier and a wide path closure."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In a vertical seed bank, one amber capsule drops from a sorter arm, rolls across two transparent chutes, is redirected by a mechanical leaf gate and is collected by an autonomous planting cart.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In a circular tidal laboratory filmed by one overhead rotating camera, a glowing water droplet travels clockwise through three radial basins; a pressure jet, a tilting membrane and a magnetic bead each alter its arc before a self-propelled sample ring captures it at the center.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

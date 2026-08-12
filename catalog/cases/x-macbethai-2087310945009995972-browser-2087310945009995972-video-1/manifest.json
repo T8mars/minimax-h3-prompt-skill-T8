@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-macbethai-2087310945009995972-browser-2087310945009995972-video-1",
+  "slug": "relay-silhouette-action-states",
+  "title": "轮廓接力｜闪光换形后完成攻势闭环",
+  "source_title": "X creative video by @macbethAI",
+  "summary": "先用武器与披风轮廓建立动作基准，再通过可数的落地姿态推进；一次中央闪光只负责换形交接，新形态以能量弧与腾空段得到证明，最后回到可读的落地终态。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/relay-silhouette-action-states",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-macbethai-2087310945009995972-browser-2087310945009995972-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-macbethai-2087310945009995972-browser-2087310945009995972-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-silhouette-attack-state-relay-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "原创动作主体 + 清楚工具轮廓 + 2个落地动作几何 + 1次遮挡换形 + 效果动作与位移证明 + 落地终态",
+  "recommended_input": "陶窑维修自动机以长夹具和隔热盾建立轮廓，完成两种落地维修姿态；一次蒸汽遮挡后显出冷却配置，沿服务轨切开接缝，再落地于密封窑门旁。",
+  "required_anchors": [
+    "Establish one countable full-body action silhouette and its tool before escalation.",
+    "Advance through at least two materially different grounded action geometries.",
+    "Prove the later state through both a committed effect action and a displaced body path.",
+    "End on a readable grounded state that recalls at least one opening silhouette anchor."
+  ],
+  "tags": [
+    "silhouette",
+    "attack",
+    "state",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.691,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T15:32:03+08:00",
+  "updated_at": "2026-08-12T16:09:40+08:00"
+}

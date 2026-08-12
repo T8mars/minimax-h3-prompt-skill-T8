@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-nicolasmariar-2087313673312256276-browser-2087313673312256276-video-1",
+  "slug": "prove-background-anomaly-through-recording",
+  "title": "背景异常｜先被观众发现再由记录设备证实",
+  "source_title": "X creative video by @nicolasmariar",
+  "summary": "先让异常出现在背景而人物继续日常活动，再用记录设备把异常隔离成证据；异常改变或离开记录画面后，人物才出现延迟反应。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/prove-background-anomaly-through-recording",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nicolasmariar-2087313673312256276-browser-2087313673312256276-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nicolasmariar-2087313673312256276-browser-2087313673312256276-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-background-anomaly-recording-reveal-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "背景异常先出现 + 前景保持日常 + 记录设备取证 + 证据场变化 + 延迟反应",
+  "recommended_input": "单名温室工程师校准阀门时，远处压力窗出现非人形霜纹；墙装机械观察镜固定取证，霜纹沿铜管迁移后人物才转身。",
+  "required_anchors": [
+    "Reveal the anomaly to the viewer before the subjects notice it.",
+    "Keep foreground behavior ordinary during the first anomaly state.",
+    "Change the anomaly inside or against the evidence field.",
+    "Delay the human reaction until after the proof changes."
+  ],
+  "tags": [
+    "background",
+    "anomaly",
+    "recording",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.75,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T10:43:55+08:00",
+  "updated_at": "2026-08-12T11:35:12+08:00"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-imagvio-trends-2087163509125878029-browser-2087163509125878029-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "结果先行广告｜终态承诺倒推证据",
+  "source_title": "X creative video by @imagvio_trends",
+  "summary": "先亮出清楚可读的理想结果，再把产品隔离为因果对象；用紧凑的材质或身份证据连接产品与使用状态，最后放宽到真实生活结果并停留。该案只作为既有产品证据状态机的证据变体。",
+  "status": "released",
+  "source_duration_seconds": 17.693605,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-imagvio-trends-2087163509125878029-browser-2087163509125878029-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-imagvio-trends-2087163509125878029-browser-2087163509125878029-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "先展示护目镜带来的清晰航道结果，再倒推模块组装、佩戴与抗雾证明，最后回到佩戴者在河岸完成任务的稳定产品终态。",
+  "required_anchors": [
+    "Show one desired outcome before explaining product operation.",
+    "Isolate one product as the causal anchor for that outcome.",
+    "Widen from product-dominant proof into the lived context.",
+    "Hold the outcome long enough to read the relationship."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.736,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T15:33:27+08:00",
+  "updated_at": "2026-08-12T16:09:40+08:00"
+}

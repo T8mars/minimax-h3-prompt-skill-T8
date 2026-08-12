@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-guicastellanos1-2086895492437532803-browser-2086895492437532803-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "938c08fae021ef07ae37ca364b8c97ef0b1738ddb5d672c0d3e7a70dd928ae0e",
+    "creative_dna_sha256": "548c58786291f1221db6e235defef7d61463bae5d7850cf120ae018bfb27f1ef"
+  },
+  "content": {
+    "title": "Recoverable Failure | A Body Trait Solves the Task",
+    "summary": "Establish an original character through habitat, waking behavior, and locomotion. Let a technical task produce a recoverable mistake, then make the character's distinctive physical trait the tool that resolves it and hold the character beside the visible result.",
+    "quick_start": {
+      "input_format": "Original character residence and movement + technical tasks + recoverable mistakes + physical characteristics breakthrough + results in the same frame",
+      "recommended_input": "The translucent paper moth weatherman woke up in the brass weather tower, encountered a gust error in calibrating the prism barometer, then used wing vein projection to diagnose the airflow and repaired it, and finally held up a raindrop.",
+      "required_anchors": [
+        "Establish habitat, intimate reaction and locomotion before the technical task.",
+        "Show one skilled task with a readable intermediate state.",
+        "Use one identity-defining body feature as a practical tool in the solution.",
+        "End with the repaired or transformed object and a restrained competence pose together."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Establish an original character through habitat, waking behavior, and locomotion. Let a technical task produce a recoverable mistake, then make the character's distinctive physical trait the tool that resolves it and hold the character beside the visible result.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Introduce one original character through habitat, wake behavior and locomotion before assigning a skilled task. Let the first technical attempt create a visible recoverable failure, then make the character use one identity-defining body feature as a practical reasoning or control instrument. The success state must visibly answer the failure and end in a clean competence pose with the changed object.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish habitat, intimate reaction and locomotion before the technical task.",
+          "purpose": "Builds personality and physical rules before judging skill.",
+          "ablation_failure": "Starting at the workbench reduces the character to a decorative technician.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Show one skilled task with a readable intermediate state.",
+          "purpose": "Makes later failure specific and inspectable.",
+          "ablation_failure": "An unexplained accident cannot prove what changed.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Keep the failure recoverable and preserve the same task object.",
+          "purpose": "Supports causal repair instead of reset magic.",
+          "ablation_failure": "Replacing the object erases the consequence.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Use one identity-defining body feature as a practical tool in the solution.",
+          "purpose": "Makes character design causally meaningful.",
+          "ablation_failure": "If any generic tool solves the problem, the body design is only ornament.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with the repaired or transformed object and a restrained competence pose together.",
+          "purpose": "Provides visible proof of learning and success.",
+          "ablation_failure": "A reaction without the result cannot close the task.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair whose role is readable without source identity."
+        },
+        {
+          "name": "setting",
+          "constraint": "A materially new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "carrier_or_token",
+          "constraint": "One visible material, prop or symbolic anchor that carries the causal mechanism."
+        },
+        {
+          "name": "state_change",
+          "constraint": "A sequence of visible, causally ordered changes rather than decorative montage."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each change without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A held final state that resolves or recontextualizes the setup."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of visible-action sounds; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "Ayotl name and source folklore attribution",
+        "source turtle-like creature, shell markings and color design",
+        "hammock wake-up, floating gears, crystal experiment and source equations",
+        "the exact source workshop, explosion, self-writing surface and hero pose"
+      ],
+      "instantiations": [
+        {
+          "concept": "A translucent paper-moth meteorologist wakes in a folded drawer, assembles a prism barometer, loses its calibration in a gust, uses its patterned wings as a projection screen to map airflow, then condenses and presents one rain bead.",
+          "prompt_seed": "A translucent paper-moth meteorologist wakes in a folded drawer, assembles a prism barometer, loses its calibration in a gust, uses its patterned wings as a projection screen to map airflow, then condenses and presents one rain bead."
+        },
+        {
+          "concept": "A clay axolotl archivist crawls from a damp ceramic niche, aligns a singing scroll cylinder, cracks its pitch ring, uses the sensory frill along its head as a live resonance meter and restores one stable glowing tone.",
+          "prompt_seed": "A clay axolotl archivist crawls from a damp ceramic niche, aligns a singing scroll cylinder, cracks its pitch ring, uses the sensory frill along its head as a live resonance meter and restores one stable glowing tone."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Starting at the workbench reduces the character to a decorative technician.",
+          "repair": "Establish habitat, intimate reaction and locomotion before the technical task."
+        },
+        {
+          "failure": "An unexplained accident cannot prove what changed.",
+          "repair": "Show one skilled task with a readable intermediate state."
+        },
+        {
+          "failure": "Replacing the object erases the consequence.",
+          "repair": "Keep the failure recoverable and preserve the same task object."
+        },
+        {
+          "failure": "If any generic tool solves the problem, the body design is only ornament.",
+          "repair": "Use one identity-defining body feature as a practical tool in the solution."
+        },
+        {
+          "failure": "A reaction without the result cannot close the task.",
+          "repair": "End with the repaired or transformed object and a restrained competence pose together."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A translucent paper-moth meteorologist wakes in a folded drawer, assembles a prism barometer, loses its calibration in a gust, uses its patterned wings as a projection screen to map airflow, then condenses and presents one rain bead.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "carrier_or_token",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A clay axolotl archivist crawls from a damp ceramic niche, aligns a singing scroll cylinder, cracks its pitch ring, uses the sensory frill along its head as a live resonance meter and restores one stable glowing tone.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "carrier_or_token",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

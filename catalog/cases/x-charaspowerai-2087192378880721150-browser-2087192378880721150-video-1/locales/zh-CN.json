@@ -1,0 +1,215 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-charaspowerai-2087192378880721150-browser-2087192378880721150-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "5279bb5b3d3d6018fdf752afd9f79f9b8f38af51e6a27fcef5ec835445107fbb",
+    "creative_dna_sha256": "38e235aa1c0cd20d2c16717549d3a0c9a5357c5b247de3d8a7ed9b672496ade5"
+  },
+  "content": {
+    "title": "非对称突破｜密集阻力到空间制度改变",
+    "summary": "先建立防守目标与密集阻力场，再引入一个非对称运动力量；局部接触证明动量，广角证明推进，突破后改变空间制度，并以近景后果收束。",
+    "quick_start": {
+      "input_format": "固定目标 + 密集阻力场 + 单一非对称力量 + 3次局部接触 + 突破改变空间",
+      "recommended_input": "被淹物流大厅里，一艘无人拖船通过三次可见接触清出泡沫障碍通道，再一次推开救援闸门，让三艘小艇依次通过。",
+      "required_anchors": [
+        "建立一个固定的目标和一个密集的可见阻力场。",
+        "引入一个具有清晰运动轴的不对称力。",
+        "返回宽景，证明它正朝空间边界推进。",
+        "让一次突破改变空间格局，并停留展示其后果。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先建立防守目标与密集阻力场，再引入一个非对称运动力量；局部接触证明动量，广角证明推进，突破后改变空间制度，并以近景后果收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "建立固定目标与密集阻力场，再引入一股非对称运动力量；通过多次局部接触证明动量，拉宽镜头显示它朝目标推进，随后用一次突破改变空间格局，并在近景中停留结果。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个固定的目标和一个密集的可见阻力场。",
+          "purpose": "使进展可衡量。",
+          "ablation_failure": "没有锚定的行动缺乏方向。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "引入一个具有清晰运动轴的不对称力。",
+          "purpose": "造成可读不平衡。",
+          "ablation_failure": "几种同等的力量会造成普遍的混乱。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "用多次局部接触证明动量。",
+          "purpose": "将规模转化为实物证据。",
+          "ablation_failure": "远距离冲锋本身并不能证明力量。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "返回宽景，证明它正朝空间边界推进。",
+          "purpose": "将联系人与目标变化联系起来。",
+          "ablation_failure": "只有近景动作，会让人看不出是否真的向目标推进。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "让一次突破改变空间格局，并停留展示其后果。",
+          "purpose": "提供不可逆转的收束。",
+          "ablation_failure": "进入前结束导致目标未解决。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色是明确的，无需来源身份。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源位置的全新场景。"
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "明显承载因果链的一个物体、路线、标记或设备。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "具有可观察到的切换的五个有序状态，而不是装饰性蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种新的面向证明的信息顺序，不复制源镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设定设置的最终结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "支持每个可见变化的故事世界线索的原始层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源幻兽与装甲军",
+        "城堡大门、攻城场和火",
+        "精确的生物冲锋和突破编排",
+        "来源中世纪服装和武器设计"
+      ],
+      "instantiations": [
+        {
+          "concept": "在被淹没的物流大厅中，一艘重型自主拖船穿过一片密集的漂浮泡沫屏障，通过三个接触点证明杠杆作用，到达密封的救援走廊并推开一个大门，以便救援小艇可以通过。",
+          "prompt_seed": "在被淹没的物流大厅中，一艘重型自主拖船穿过一片密集的漂浮泡沫屏障，通过三个接触点证明杠杆作用，到达密封的救援走廊并推开一个大门，以便救援小艇可以通过。"
+        },
+        {
+          "concept": "在纸剧场中，持续的空气脉冲径向穿过一圈折叠的窗帘，通过三个连续展开的接触证明力，然后通过纸虹膜打开投影墙，使空间从存储迷宫变成一个连续的表演场。",
+          "prompt_seed": "在纸剧场中，持续的空气脉冲径向穿过一圈折叠的窗帘，通过三个连续展开的接触证明力，然后通过纸虹膜打开投影墙，使空间从存储迷宫变成一个连续的表演场。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有锚定的行动缺乏方向。",
+          "repair": "建立一个固定的目标和一个密集的可见阻力场。"
+        },
+        {
+          "failure": "几种同等的力量会造成普遍的混乱。",
+          "repair": "引入一个具有清晰运动轴的不对称力。"
+        },
+        {
+          "failure": "远距离冲锋本身并不能证明力量。",
+          "repair": "用多次局部接触证明动量。"
+        },
+        {
+          "failure": "只有近景动作，会让人看不出是否真的向目标推进。",
+          "repair": "返回宽景，证明它正朝空间边界推进。"
+        },
+        {
+          "failure": "进入前结束导致目标未解决。",
+          "repair": "让一次突破改变空间格局，并停留展示其后果。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在被淹没的物流大厅中，一艘重型自主拖船穿过一片密集的漂浮泡沫屏障，通过三个接触点证明杠杆作用，到达密封的救援走廊并推开一个大门，以便救援小艇可以通过。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在纸剧场中，持续的空气脉冲径向穿过一圈折叠的窗帘，通过三个连续展开的接触证明力，然后通过纸虹膜打开投影墙，使空间从存储迷宫变成一个连续的表演场。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

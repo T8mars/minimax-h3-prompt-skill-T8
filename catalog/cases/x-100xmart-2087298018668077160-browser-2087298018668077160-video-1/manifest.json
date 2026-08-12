@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-100xmart-2087298018668077160-browser-2087298018668077160-video-1",
+  "slug": "reveal-scale-through-environment-deformation",
+  "title": "地貌变形揭示｜局部异常到巨体逼近",
+  "source_title": "X creative video by @100xMart",
+  "summary": "先让环境异常看起来仍像地貌，再只揭出一个身份特征；随后用高位或远景证明完整几何及其对环境的尺度影响，最后回到低位视点完成一次近距离逼近。",
+  "status": "released",
+  "source_duration_seconds": 12.144036,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reveal-scale-through-environment-deformation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-100xmart-2087298018668077160-browser-2087298018668077160-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-100xmart-2087298018668077160-browser-2087298018668077160-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-environment-deformation-scale-reveal-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "环境局部异常 + 单一身份特征 + 高位完整几何证明 + 环境尺度影响 + 低位近距离逼近",
+  "recommended_input": "盐碱滩先出现像地貌的隆起，只显出琥珀观察窗；高位镜头证明它是巨型移动气象舱，最后回到低位让舱体越过测量站近旁。",
+  "required_anchors": [
+    "Open on an environmental deformation that can still be mistaken for terrain.",
+    "Reveal one identifying feature while withholding most of the body.",
+    "Use one high or wide view to prove the complete geometry and its environmental consequence.",
+    "Return to a lower viewpoint for one bounded proximity breach."
+  ],
+  "tags": [
+    "environment",
+    "deformation",
+    "scale",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.737,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T15:32:43+08:00",
+  "updated_at": "2026-08-12T16:09:40+08:00"
+}

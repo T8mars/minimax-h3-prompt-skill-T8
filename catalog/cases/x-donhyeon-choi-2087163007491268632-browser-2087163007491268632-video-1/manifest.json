@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-donhyeon-choi-2087163007491268632-browser-2087163007491268632-video-1",
+  "slug": "recombine-conversation-subgroups",
+  "title": "分组对话覆盖｜两边接力后全桌合流",
+  "source_title": "X creative video by @donhyeon_choi",
+  "summary": "先用第一组双人镜头建立共享社交空间，在组内交接可见发言轮次，再切到桌对面的第二组完成独立回应阶段，最后用更宽构图让所有人物和同一桌面锚点合流；来源对白含义未知，只迁移可见轮次与覆盖顺序。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/recombine-conversation-subgroups",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-donhyeon-choi-2087163007491268632-browser-2087163007491268632-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-donhyeon-choi-2087163007491268632-browser-2087163007491268632-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-subgroup-conversation-recombine-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "稳定群体空间 + 第一小组可见发言轮次 + 第二小组接力 + 1次非语言动作 + 全体同框收束",
+  "recommended_input": "四名原创餐厅工作人员先以两人组建立空间关系，再切到另一两人组完成发言与非语言动作，最后回到四人同框；不规定原片对白含义。",
+  "required_anchors": [
+    "Establish the first subgroup and shared table anchors before any cross-table cut.",
+    "Make speaking-turn ownership visibly readable within the first subgroup without assigning source meaning.",
+    "Give the second subgroup one distinct response phase and one listening witness.",
+    "Recombine all participants with the same spatial anchors in a held wide view."
+  ],
+  "tags": [
+    "subgroup",
+    "conversation",
+    "recombine"
+  ],
+  "quality": {
+    "weighted_score": 4.713,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T15:33:43+08:00",
+  "updated_at": "2026-08-12T16:09:40+08:00"
+}

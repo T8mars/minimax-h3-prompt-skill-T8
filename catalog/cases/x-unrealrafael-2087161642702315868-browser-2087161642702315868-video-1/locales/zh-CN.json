@@ -1,0 +1,215 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-unrealrafael-2087161642702315868-browser-2087161642702315868-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "ff73da7776e928bf7dff2b49da77b8d30be523f7099bfb3a3b4323ff7edbcc2d",
+    "creative_dna_sha256": "f84fe3e9869d17c0ad3f0c0fa60d5b4f0e98fcb29f0b8095d1abf3728121f891"
+  },
+  "content": {
+    "title": "连续推进｜重复地标计时并抵达更深通道",
+    "summary": "在受限通道中持续前进，以重复固定地标和门洞视差作为进度时钟；接近结尾时只转向或跨越一次可见边界，并停在材质更深的次级通道，不虚构检查、诊断或隐藏威胁。",
+    "quick_start": {
+      "input_format": "连续受限通道 + 重复地标进度时钟 + 门洞视差逼近 + 单次边界跨越 + 更深次级通道终态",
+      "recommended_input": "植物维护镜头沿根系观察沟连续前进，用编号湿度窗和门洞视差证明进度；结尾只跨越一次气闸，停在更暗的种子库次级通道。",
+      "required_anchors": [
+        "使用一根连续的约束通道和稳定的行进轴。",
+        "重复固定地标作为进度时钟。",
+        "仅在较晚可见阈值处转弯或穿越一次。",
+        "结束于一条更深的次要通道内，同时保留一条先前路线的边缘。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "在受限通道中持续前进，以重复固定地标和门洞视差作为进度时钟；接近结尾时只转向或跨越一次可见边界，并停在材质更深的次级通道，不虚构检查、诊断或隐藏威胁。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "沿受限通道连续前进，以反复出现的固定地标和门洞视差作为进度时钟；接近结尾时只在一个可见边界处转向或穿越一次，最终抵达材质更深的次级通道，不虚构检查、诊断或看不见的威胁。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "使用一根连续的约束通道和稳定的行进轴。",
+          "purpose": "使进度在空间上可审计。",
+          "ablation_failure": "不相关的走廊消除了路线的连续性。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "重复固定地标作为进度时钟。",
+          "purpose": "证明低能见度下的向前运动。",
+          "ablation_failure": "毫无特色的黑暗无法显示距离。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "持续前进，直到后段门洞通过视差明显变大。",
+          "purpose": "将方法变成可见的进展，而不是发明的检查。",
+          "ablation_failure": "突然的不相关的门口切断破坏了路线的连续性。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "仅在较晚可见阈值处转弯或穿越一次。",
+          "purpose": "创建一个决定性的空间切换。",
+          "ablation_failure": "反复的弯路让通道变成了任意的探索。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "结束于一条更深的次要通道内，同时保留一条先前路线的边缘。",
+          "purpose": "证明到达并保持方向。",
+          "ablation_failure": "在阈值之前停止或隐藏所有先前的几何体感觉被截断。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色是明确的，无需来源身份。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源位置的全新场景。"
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "明显承载因果链的一个物体、路线、标记或设备。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "具有可观察到的切换的五个有序状态，而不是装饰性蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种新的面向证明的信息顺序，不复制源镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设定设置的最终结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "支持每个可见变化的故事世界线索的原始层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源黑暗的地铁隧道和铁路走廊",
+        "来源第一人称游戏视角",
+        "准确的门、灯和隧道路线",
+        "任何未观察到的生物或威胁声明"
+      ],
+      "instantiations": [
+        {
+          "concept": "植物维护摄像机连续移动通过根部观察沟，计算相同的湿度窗口，然后通过后期圆形气闸进入较暗的种子库走廊，而最后一个窗口保留在框架边缘。",
+          "prompt_seed": "植物维护摄像机连续移动通过根部观察沟，计算相同的湿度窗口，然后通过后期圆形气闸进入较暗的种子库走廊，而最后一个窗口保留在框架边缘。"
+        },
+        {
+          "concept": "架空窑炉摄像机沿着圆形服务环经过重复的隔热罩；一扇径向门通过视差变大，然后相机进入一个凉爽的矩形釉面隧道，后面的环形边缘仍然可见。",
+          "prompt_seed": "架空窑炉摄像机沿着圆形服务环经过重复的隔热罩；一扇径向门通过视差变大，然后相机进入一个凉爽的矩形釉面隧道，后面的环形边缘仍然可见。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "不相关的走廊消除了路线的连续性。",
+          "repair": "使用一根连续的约束通道和稳定的行进轴。"
+        },
+        {
+          "failure": "毫无特色的黑暗无法显示距离。",
+          "repair": "重复固定地标作为进度时钟。"
+        },
+        {
+          "failure": "突然的不相关的门口切断破坏了路线的连续性。",
+          "repair": "持续前进，直到后段门洞通过视差明显变大。"
+        },
+        {
+          "failure": "反复的弯路让通道变成了任意的探索。",
+          "repair": "仅在较晚可见阈值处转弯或穿越一次。"
+        },
+        {
+          "failure": "在阈值之前停止或隐藏所有先前的几何体感觉被截断。",
+          "repair": "结束于一条更深的次要通道内，同时保留一条先前路线的边缘。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "植物维护摄像机连续移动通过根部观察沟，计算相同的湿度窗口，然后通过后期圆形气闸进入较暗的种子库走廊，而最后一个窗口保留在框架边缘。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "架空窑炉摄像机沿着圆形服务环经过重复的隔热罩；一扇径向门通过视差变大，然后相机进入一个凉爽的矩形釉面隧道，后面的环形边缘仍然可见。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

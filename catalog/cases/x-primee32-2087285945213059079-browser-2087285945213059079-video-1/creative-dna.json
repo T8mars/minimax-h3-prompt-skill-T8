@@ -1,0 +1,171 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin with a quiet traveler and an unrevealed route, increase body pace from walk to run while widening the path, delay the destination until forward commitment is established, activate one external celebration as the traveler approaches, then hold traveler, route and destination in one legible arrival field.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Begin with a quiet traveler and no visible destination.",
+      "purpose": "Creates a revealable route question.",
+      "ablation_failure": "Showing the goal immediately removes discovery.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Increase pace while preserving one travel direction.",
+      "purpose": "Turns intention into visible commitment.",
+      "ablation_failure": "A cut to a different traveler breaks the journey.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Reveal the destination only after the pace change.",
+      "purpose": "Makes arrival feel earned by movement.",
+      "ablation_failure": "An early destination becomes wallpaper.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one environmental celebration triggered near approach.",
+      "purpose": "Marks a new arrival state without dialogue.",
+      "ablation_failure": "Random spectacle has no route relationship.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Hold traveler, route and destination in one final field.",
+      "purpose": "Closes geography and emotion.",
+      "ablation_failure": "A destination-only close-up loses the journey.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source woman, sheep, grassland and fantasy castle",
+    "source dusk fireworks and hill reveal",
+    "the exact walk-run-castle storyboard",
+    "source wardrobe and pastoral palette"
+  ],
+  "instantiations": [
+    {
+      "concept": "A lone night botanist walks then runs along a dark greenhouse service canal; after the pace change a luminous seed vault appears, its irrigation rings activate on approach, and the final wide holds botanist, canal and vault.",
+      "prompt_seed": "A lone night botanist walks then runs along a dark greenhouse service canal; after the pace change a luminous seed vault appears, its irrigation rings activate on approach, and the final wide holds botanist, canal and vault."
+    },
+    {
+      "concept": "A small courier robot moves from slow roll to fast glide along a salt-flat survey route; an aurora observatory appears late, calibration beacons activate, and the final field holds robot, route and observatory.",
+      "prompt_seed": "A small courier robot moves from slow roll to fast glide along a salt-flat survey route; an aurora observatory appears late, calibration beacons activate, and the final field holds robot, route and observatory."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Showing the goal immediately removes discovery.",
+      "repair": "Begin with a quiet traveler and no visible destination."
+    },
+    {
+      "failure": "A cut to a different traveler breaks the journey.",
+      "repair": "Increase pace while preserving one travel direction."
+    },
+    {
+      "failure": "An early destination becomes wallpaper.",
+      "repair": "Reveal the destination only after the pace change."
+    },
+    {
+      "failure": "Random spectacle has no route relationship.",
+      "repair": "Use one environmental celebration triggered near approach."
+    },
+    {
+      "failure": "A destination-only close-up loses the journey.",
+      "repair": "Hold traveler, route and destination in one final field."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A lone night botanist walks then runs along a dark greenhouse service canal; after the pace change a luminous seed vault appears, its irrigation rings activate on approach, and the final wide holds botanist, canal and vault.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A small courier robot moves from slow roll to fast glide along a salt-flat survey route; an aurora observatory appears late, calibration beacons activate, and the final field holds robot, route and observatory.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

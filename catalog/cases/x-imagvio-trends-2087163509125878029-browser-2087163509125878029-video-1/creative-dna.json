@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Open on a legible desired outcome before any explanation, isolate the product as the causal object, use a compact assembly of material or identity evidence to bridge object and user state, then widen into a lived outcome and hold. This source is an evidence variant of the existing product proof-state machine and must not create another selector.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show one desired outcome before explaining product operation.",
+      "purpose": "Creates an immediate human promise.",
+      "ablation_failure": "Opening on specifications delays value.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Isolate one product as the causal anchor for that outcome.",
+      "purpose": "Keeps the promise attributable.",
+      "ablation_failure": "Several products blur responsibility.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Bridge product and user state with a compact proof assembly.",
+      "purpose": "Connects object identity to lived result.",
+      "ablation_failure": "An unrelated transition makes the outcome feel unearned.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Widen from product-dominant proof into the lived context.",
+      "purpose": "Shows the result surviving outside the close-up.",
+      "ablation_failure": "A close-only ad never proves context.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Hold the outcome long enough to read the relationship.",
+      "purpose": "Completes the proof state machine.",
+      "ablation_failure": "A rapid logo cut spends the result too quickly.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source sunglasses and male model",
+    "source ocean sunset",
+    "RESULT FIRST and See what's possible copy",
+    "source split-panel assembly and Image + Video Seedance 2.0 mark"
+  ],
+  "instantiations": [
+    {
+      "concept": "A fictional river rescue beacon opens on a night ferryman guiding a small boat safely to a marked dock, isolates the beacon, shows its seal and lens proof, then widens back to the completed arrival with the beacon still visible.",
+      "prompt_seed": "A fictional river rescue beacon opens on a night ferryman guiding a small boat safely to a marked dock, isolates the beacon, shows its seal and lens proof, then widens back to the completed arrival with the beacon still visible."
+    },
+    {
+      "concept": "A fictional cooling field scarf opens on a botanist working comfortably in a hot glasshouse, isolates the fabric weave and moisture channel, then returns wide to the botanist completing one full tray without heat interruption.",
+      "prompt_seed": "A fictional cooling field scarf opens on a botanist working comfortably in a hot glasshouse, isolates the fabric weave and moisture channel, then returns wide to the botanist completing one full tray without heat interruption."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Opening on specifications delays value.",
+      "repair": "Show one desired outcome before explaining product operation."
+    },
+    {
+      "failure": "Several products blur responsibility.",
+      "repair": "Isolate one product as the causal anchor for that outcome."
+    },
+    {
+      "failure": "An unrelated transition makes the outcome feel unearned.",
+      "repair": "Bridge product and user state with a compact proof assembly."
+    },
+    {
+      "failure": "A close-only ad never proves context.",
+      "repair": "Widen from product-dominant proof into the lived context."
+    },
+    {
+      "failure": "A rapid logo cut spends the result too quickly.",
+      "repair": "Hold the outcome long enough to read the relationship."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A fictional river rescue beacon opens on a night ferryman guiding a small boat safely to a marked dock, isolates the beacon, shows its seal and lens proof, then widens back to the completed arrival with the beacon still visible.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A fictional cooling field scarf opens on a botanist working comfortably in a hot glasshouse, isolates the fabric weave and moisture channel, then returns wide to the botanist completing one full tray without heat interruption.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

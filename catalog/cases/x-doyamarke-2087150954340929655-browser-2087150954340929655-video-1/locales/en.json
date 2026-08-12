@@ -1,0 +1,217 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-doyamarke-2087150954340929655-browser-2087150954340929655-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "dbd0cda328bd71906005bc877c763591be7e8e7a97ca3f30885b9d266dd93490",
+    "creative_dna_sha256": "5ec5256902249634e20169ff7fbb9e4bbdc95f54a4dd218a9d7d214e94534b01"
+  },
+  "content": {
+    "title": "Product Proof Variant | Outcome, Mechanism, Human Result",
+    "summary": "Move from a human outcome to product identity, provide one clear material or mechanism proof, return to the wider human result, and finish on a stable product state. This case reuses the existing product proof state machine.",
+    "quick_start": {
+      "input_format": "Human result + product identity + 1 mechanism or material proof + return result + stable product final state",
+      "recommended_input": "The office first shows the air problem, and then the purifier is shown independently; the macro proves that the filter element traps particles, and then returns to the relaxed crowd, and finally ends with the equipment, old filter element and clean airflow in the same frame.",
+      "required_anchors": [
+        "Establish one emotionally readable outcome related to the product.",
+        "Isolate the product identity before technical proof.",
+        "Return to a broader result state after proof.",
+        "End on a clean stable product state."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Move from a human outcome to product identity, provide one clear material or mechanism proof, return to the wider human result, and finish on a stable product state. This case reuses the existing product proof state machine.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A product film can move from a human outcome to isolated product identity, then to one legible internal or material proof, return to a broader human result and finish on a stable product state. This source is additional evidence for the existing flexible product proof state machine, not a new selector.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one emotionally readable outcome related to the product.",
+          "purpose": "Gives proof a human consequence.",
+          "ablation_failure": "A cold product opening lacks motivation.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Isolate the product identity before technical proof.",
+          "purpose": "Keeps the proof attributable.",
+          "ablation_failure": "Unidentified mechanism shots become generic texture.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Show one visible operation or material proof.",
+          "purpose": "Answers how the result is produced.",
+          "ablation_failure": "A beauty shot alone cannot prove function.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Return to a broader result state after proof.",
+          "purpose": "Connects mechanism back to people or environment.",
+          "ablation_failure": "Staying macro loses payoff context.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End on a clean stable product state.",
+          "purpose": "Creates a reusable closure.",
+          "ablation_failure": "A moving montage ending weakens identity.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair whose role is clear without source identity."
+        },
+        {
+          "name": "setting",
+          "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "One object, route, mark or device that visibly carries the causal chain."
+        },
+        {
+          "name": "state_change",
+          "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A held final consequence that resolves or recontextualizes the setup."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of story-world cues supporting each visible change."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source HOPWAVE beer branding",
+        "bar friends, can, bottle, foam and toast",
+        "the exact beer-serving shot order",
+        "source labels and product copy",
+        "HOPWAVE wordmark",
+        "source HOPWAVE geometric logo"
+      ],
+      "instantiations": [
+        {
+          "concept": "An office begins with tired workers, isolates an original air-quality device, proves filter airflow with particles and a gauge, returns to visibly relaxed workers, then ends on the device with a clean-air indicator.",
+          "prompt_seed": "An office begins with tired workers, isolates an original air-quality device, proves filter airflow with particles and a gauge, returns to visibly relaxed workers, then ends on the device with a clean-air indicator."
+        },
+        {
+          "concept": "A bicycle workshop begins with a stuck commuter, isolates an original chain lubricant, proves capillary flow across one link, returns to a smooth test ride, then ends on bottle and repaired chain.",
+          "prompt_seed": "A bicycle workshop begins with a stuck commuter, isolates an original chain lubricant, proves capillary flow across one link, returns to a smooth test ride, then ends on bottle and repaired chain."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "A cold product opening lacks motivation.",
+          "repair": "Establish one emotionally readable outcome related to the product."
+        },
+        {
+          "failure": "Unidentified mechanism shots become generic texture.",
+          "repair": "Isolate the product identity before technical proof."
+        },
+        {
+          "failure": "A beauty shot alone cannot prove function.",
+          "repair": "Show one visible operation or material proof."
+        },
+        {
+          "failure": "Staying macro loses payoff context.",
+          "repair": "Return to a broader result state after proof."
+        },
+        {
+          "failure": "A moving montage ending weakens identity.",
+          "repair": "End on a clean stable product state."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An office begins with tired workers, isolates an original air-quality device, proves filter airflow with particles and a gauge, returns to visibly relaxed workers, then ends on the device with a clean-air indicator.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A bicycle workshop begins with a stuck commuter, isolates an original chain lubricant, proves capillary flow across one link, returns to a smooth test ride, then ends on bottle and repaired chain.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

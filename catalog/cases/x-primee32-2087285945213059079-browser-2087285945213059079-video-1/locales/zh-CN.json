@@ -1,0 +1,215 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-primee32-2087285945213059079-browser-2087285945213059079-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "aeb4a8ca06e049acb60dfeb7e05f8cddb0a82ad856bdddd6f311cac62e9145f0",
+    "creative_dna_sha256": "a3eaaa66c4708d96945c77a54c7508f13ff080dd8f9243f30321bc910137e7e0"
+  },
+  "content": {
+    "title": "步速到抵达｜目的地延迟出现并由环境庆祝",
+    "summary": "先建立安静旅人与尚未揭示的路线，再由步行提升到奔跑并扩大空间；目的地在投入行动后才出现，接近时由环境触发庆祝，最后三者同框收束。",
+    "quick_start": {
+      "input_format": "安静旅人 + 步行转奔跑 + 延迟目的地揭示 + 环境庆祝 + 人路目的地同框",
+      "recommended_input": "夜间植物学家沿温室水渠由步行转奔跑，种子库在叶帘后延迟出现，接近时环形灌溉装置依次启动，最后三者同框。",
+      "required_anchors": [
+        "从一个安静的旅行者开始，没有明显的目的地。",
+        "加快步伐，同时保持一个行进方向。",
+        "使用一场临近接近时触发的环境庆祝活动。",
+        "将旅行者、路线和目的地保存在最后一个字段中。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先建立安静旅人与尚未揭示的路线，再由步行提升到奔跑并扩大空间；目的地在投入行动后才出现，接近时由环境触发庆祝，最后三者同框收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "从安静旅人与尚未揭示的路线开始，由步行加速到奔跑，同时拓宽可见路径；直到人物已明确投入前进后才揭示目的地，接近时触发一次环境庆祝，最后把旅人、路线与目的地保留在同一清楚的抵达构图中。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "从一个安静的旅行者开始，没有明显的目的地。",
+          "purpose": "创建一个可显示的路线问题。",
+          "ablation_failure": "显示目标会立即消除发现。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "加快步伐，同时保持一个行进方向。",
+          "purpose": "把前进意图转化为可见投入。",
+          "ablation_failure": "切换到不同的旅行者会破坏旅程。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "仅在节奏改变后才显示目的地。",
+          "purpose": "让到达感觉是通过行动赢得的。",
+          "ablation_failure": "目的地若过早出现，只会沦为背景板。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "使用一场临近接近时触发的环境庆祝活动。",
+          "purpose": "标记新到达状态，无需对话。",
+          "ablation_failure": "随机奇观没有路线关系。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将旅行者、路线和目的地保存在最后一个字段中。",
+          "purpose": "关闭空间关系和情感。",
+          "ablation_failure": "只关注目的地的特写镜头就失去了旅程。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色是明确的，无需来源身份。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源位置的全新场景。"
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "明显承载因果链的一个物体、路线、标记或设备。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "具有可观察到的切换的五个有序状态，而不是装饰性蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种新的面向证明的信息顺序，不复制源镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设定设置的最终结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "支持每个可见变化的故事世界线索的原始层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源女人、羊、草原、奇幻城堡",
+        "来源黄昏烟花和山丘显露出来",
+        "精确的步行-奔跑-城堡分镜结构",
+        "来源衣柜和田园调色板"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位孤独的夜晚植物学家沿着黑暗的温室服务运河行走然后奔跑；步伐改变后，会出现一个发光的种子库，其灌溉环在接近时激活，最后的宽阔区域容纳植物学家、运河和种子库。",
+          "prompt_seed": "一位孤独的夜晚植物学家沿着黑暗的温室服务运河行走然后奔跑；步伐改变后，会出现一个发光的种子库，其灌溉环在接近时激活，最后的宽阔区域容纳植物学家、运河和种子库。"
+        },
+        {
+          "concept": "小型快递机器人沿着盐滩勘测路线从慢速滚动到快速滑行；极光天文台出现较晚，校准信标激活，最后的场地容纳机器人、路线和天文台。",
+          "prompt_seed": "小型快递机器人沿着盐滩勘测路线从慢速滚动到快速滑行；极光天文台出现较晚，校准信标激活，最后的场地容纳机器人、路线和天文台。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "显示目标会立即消除发现。",
+          "repair": "从一个安静的旅行者开始，没有明显的目的地。"
+        },
+        {
+          "failure": "切换到不同的旅行者会破坏旅程。",
+          "repair": "加快步伐，同时保持一个行进方向。"
+        },
+        {
+          "failure": "目的地若过早出现，只会沦为背景板。",
+          "repair": "仅在节奏改变后才显示目的地。"
+        },
+        {
+          "failure": "随机奇观没有路线关系。",
+          "repair": "使用一场临近接近时触发的环境庆祝活动。"
+        },
+        {
+          "failure": "只关注目的地的特写镜头就失去了旅程。",
+          "repair": "将旅行者、路线和目的地保存在最后一个字段中。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位孤独的夜晚植物学家沿着黑暗的温室服务运河行走然后奔跑；步伐改变后，会出现一个发光的种子库，其灌溉环在接近时激活，最后的宽阔区域容纳植物学家、运河和种子库。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "小型快递机器人沿着盐滩勘测路线从慢速滚动到快速滑行；极光天文台出现较晚，校准信标激活，最后的场地容纳机器人、路线和天文台。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

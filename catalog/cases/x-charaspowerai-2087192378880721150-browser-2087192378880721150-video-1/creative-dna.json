@@ -1,0 +1,171 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish a fortified objective and dense resisting field, introduce one asymmetric moving force, prove momentum through several local contacts, widen to show progress toward the objective, then use one breach to change the spatial regime before a close held consequence.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one fixed objective and a dense visible resistance field.",
+      "purpose": "Makes progress measurable.",
+      "ablation_failure": "Unanchored action lacks direction.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Introduce one asymmetric force with a clear motion axis.",
+      "purpose": "Creates a readable imbalance.",
+      "ablation_failure": "Several equal forces create generic chaos.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use multiple local contacts to prove momentum.",
+      "purpose": "Turns scale into physical evidence.",
+      "ablation_failure": "A distant charge alone does not prove force.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Return wide to show progress toward the boundary.",
+      "purpose": "Connects contacts to objective change.",
+      "ablation_failure": "Only close action hides whether progress occurred.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Let one breach change the spatial regime and hold the consequence.",
+      "purpose": "Provides an irreversible payoff.",
+      "ablation_failure": "Ending before entry leaves the objective unresolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source fantasy beast and armored army",
+    "castle gate, siege field and fire",
+    "the exact creature charge and breach choreography",
+    "source medieval costume and weapon design"
+  ],
+  "instantiations": [
+    {
+      "concept": "In a flooded logistics hall, one heavy autonomous tug crosses a dense field of floating foam barriers, proves leverage through three contacts, reaches a sealed relief corridor and pushes one gate open so rescue skiffs can pass.",
+      "prompt_seed": "In a flooded logistics hall, one heavy autonomous tug crosses a dense field of floating foam barriers, proves leverage through three contacts, reaches a sealed relief corridor and pushes one gate open so rescue skiffs can pass."
+    },
+    {
+      "concept": "In a paper theater, one sustained air pulse travels radially through a dense ring of folded curtains, proves force through three successive unfurling contacts, then opens a projection wall through a paper iris so the space changes from a storage maze into one continuous performance field.",
+      "prompt_seed": "In a paper theater, one sustained air pulse travels radially through a dense ring of folded curtains, proves force through three successive unfurling contacts, then opens a projection wall through a paper iris so the space changes from a storage maze into one continuous performance field."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Unanchored action lacks direction.",
+      "repair": "Establish one fixed objective and a dense visible resistance field."
+    },
+    {
+      "failure": "Several equal forces create generic chaos.",
+      "repair": "Introduce one asymmetric force with a clear motion axis."
+    },
+    {
+      "failure": "A distant charge alone does not prove force.",
+      "repair": "Use multiple local contacts to prove momentum."
+    },
+    {
+      "failure": "Only close action hides whether progress occurred.",
+      "repair": "Return wide to show progress toward the boundary."
+    },
+    {
+      "failure": "Ending before entry leaves the objective unresolved.",
+      "repair": "Let one breach change the spatial regime and hold the consequence."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In a flooded logistics hall, one heavy autonomous tug crosses a dense field of floating foam barriers, proves leverage through three contacts, reaches a sealed relief corridor and pushes one gate open so rescue skiffs can pass.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In a paper theater, one sustained air pulse travels radially through a dense ring of folded curtains, proves force through three successive unfurling contacts, then opens a projection wall through a paper iris so the space changes from a storage maze into one continuous performance field.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

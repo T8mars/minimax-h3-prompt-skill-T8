@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-doyamarke-2087150954340929655-browser-2087150954340929655-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "产品证据变体｜场景结果到机理再回人群",
+  "source_title": "X creative video by @doyamarke",
+  "summary": "从人群结果切到产品身份，再给出一次清楚的材质或机理证明，返回更广的人群结果并以稳定产品终态收束；复用既有产品证据状态机。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-doyamarke-2087150954340929655-browser-2087150954340929655-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-doyamarke-2087150954340929655-browser-2087150954340929655-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1",
+  "input_format": "人类结果 + 产品身份 + 1次机理或材质证明 + 返回结果 + 稳定产品终态",
+  "recommended_input": "办公室先显示空气问题，再独立展示净化器；微距证明滤芯截留颗粒，回到放松人群，最后以设备、旧滤芯与清洁气流同框收束。",
+  "required_anchors": [
+    "Establish one emotionally readable outcome related to the product.",
+    "Isolate the product identity before technical proof.",
+    "Return to a broader result state after proof.",
+    "End on a clean stable product state."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.722,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T10:43:56+08:00",
+  "updated_at": "2026-08-12T11:35:12+08:00"
+}

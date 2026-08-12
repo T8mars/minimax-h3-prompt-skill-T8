@@ -1,0 +1,171 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Move continuously through one constrained passage, use repeated fixed landmarks and doorway parallax as a progress clock, then turn or cross once at a late visible threshold so the endpoint is a materially deeper secondary passage without inventing an inspection, diagnosis or unseen threat.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Use one continuous constrained passage and stable travel axis.",
+      "purpose": "Makes progress spatially auditable.",
+      "ablation_failure": "Unrelated corridors erase route continuity.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Repeat fixed landmarks as a progress clock.",
+      "purpose": "Proves forward motion in low visibility.",
+      "ablation_failure": "Featureless darkness cannot show distance.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep moving while one late doorway grows through parallax.",
+      "purpose": "Turns approach into visible progress rather than an invented inspection.",
+      "ablation_failure": "A sudden unrelated doorway cut breaks route continuity.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Turn or cross only once at the late visible threshold.",
+      "purpose": "Creates one decisive spatial handoff.",
+      "ablation_failure": "Repeated detours turn the passage into arbitrary exploration.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End inside a materially deeper secondary passage while retaining one prior-route edge.",
+      "purpose": "Proves arrival and preserves orientation.",
+      "ablation_failure": "Stopping before the threshold or hiding all prior geometry feels truncated.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source dark subway tunnel and rail corridor",
+    "source first-person game-like viewpoint",
+    "the exact doors, lamps and tunnel route",
+    "any unobserved creature or threat claim"
+  ],
+  "instantiations": [
+    {
+      "concept": "A botanical maintenance camera moves continuously through a root-observation trench, counts identical moisture windows, then turns once through a late circular airlock into a darker seed-vault corridor while the last window remains at frame edge.",
+      "prompt_seed": "A botanical maintenance camera moves continuously through a root-observation trench, counts identical moisture windows, then turns once through a late circular airlock into a darker seed-vault corridor while the last window remains at frame edge."
+    },
+    {
+      "concept": "An overhead kiln camera follows a circular service ring past repeating heat shields; one radial door grows larger through parallax, then the camera crosses into a cool rectangular glaze tunnel with the ring edge still visible behind.",
+      "prompt_seed": "An overhead kiln camera follows a circular service ring past repeating heat shields; one radial door grows larger through parallax, then the camera crosses into a cool rectangular glaze tunnel with the ring edge still visible behind."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Unrelated corridors erase route continuity.",
+      "repair": "Use one continuous constrained passage and stable travel axis."
+    },
+    {
+      "failure": "Featureless darkness cannot show distance.",
+      "repair": "Repeat fixed landmarks as a progress clock."
+    },
+    {
+      "failure": "A sudden unrelated doorway cut breaks route continuity.",
+      "repair": "Keep moving while one late doorway grows through parallax."
+    },
+    {
+      "failure": "Repeated detours turn the passage into arbitrary exploration.",
+      "repair": "Turn or cross only once at the late visible threshold."
+    },
+    {
+      "failure": "Stopping before the threshold or hiding all prior geometry feels truncated.",
+      "repair": "End inside a materially deeper secondary passage while retaining one prior-route edge."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A botanical maintenance camera moves continuously through a root-observation trench, counts identical moisture windows, then turns once through a late circular airlock into a darker seed-vault corridor while the last window remains at frame edge.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An overhead kiln camera follows a circular service ring past repeating heat shields; one radial door grows larger through parallax, then the camera crosses into a cool rectangular glaze tunnel with the ring edge still visible behind.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sada-ai-2087294907786600770-browser-2087294907786600770-video-1",
+  "slug": "build-viewpoint-scale-spectacle-ladder",
+  "title": "尺度奇观阶梯｜每镜重置参照再逼近",
+  "source_title": "X creative video by @sada_ai",
+  "summary": "每个短段先重置熟悉视点与尺度参照，再让一个不可能的空中形态进入；通过观察距离与遮挡变化逐步逼近，最终以近距离视点遭遇收束。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/build-viewpoint-scale-spectacle-ladder",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sada-ai-2087294907786600770-browser-2087294907786600770-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sada-ai-2087294907786600770-browser-2087294907786600770-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-viewpoint-scale-spectacle-ladder-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "5个熟悉尺度参照 + 每镜1个巨型原创形态 + 视点变化 + 距离逐步缩短 + 近距离终态",
+  "recommended_input": "五种原创巨型空中种子结构依次出现在风场、列车窗、采石场、温室与维护车视点中，每次距离更近，最后从车顶正上方掠过。",
+  "required_anchors": [
+    "Give each vignette an immediately familiar scale anchor.",
+    "Use one dominant impossible silhouette per vignette.",
+    "Increase proximity, not just nominal size.",
+    "End with a viewpoint-level encounter that preserves spatial legibility."
+  ],
+  "tags": [
+    "viewpoint",
+    "scale",
+    "spectacle",
+    "ladder"
+  ],
+  "quality": {
+    "weighted_score": 4.726,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T10:43:55+08:00",
+  "updated_at": "2026-08-12T11:35:12+08:00"
+}

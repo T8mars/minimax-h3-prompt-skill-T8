@@ -1,0 +1,173 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin inside a tight protected or confined relationship, let one immense external force abruptly displace the carrier, prove impact and disorientation locally, hold a survivor reaction long enough to register consequence, then widen to reveal the much larger environmental cause and aftermath.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Begin with an intimate confined baseline before the large event.",
+      "purpose": "Creates a human scale for the later force.",
+      "ablation_failure": "Opening on destruction removes scale contrast.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Let one external force visibly displace the established carrier.",
+      "purpose": "Makes the escalation causal.",
+      "ablation_failure": "Unrelated disaster inserts do not move the story.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Prove impact through local physical aftermath.",
+      "purpose": "Closes the displacement event.",
+      "ablation_failure": "Skipping impact makes the carrier teleport.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Hold one post-impact reaction after motion stops.",
+      "purpose": "Gives the consequence time to register.",
+      "ablation_failure": "Cutting immediately to spectacle loses the human cost.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Reveal the larger cause only after local consequence is clear.",
+      "purpose": "Recontextualizes the opening scale.",
+      "ablation_failure": "An early wide reveal spends the final information too soon.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source woman and automobile",
+    "burning giant machines and falling wreckage",
+    "source street destruction and source end card",
+    "the exact trapped-car crash storyboard",
+    "STILL HUMAN end card",
+    "WATCH CHAPTER ONE ON YOUTUBE"
+  ],
+  "instantiations": [
+    {
+      "concept": "A lone glass conservator works inside a compact museum restoration pod; a pressure wave slides the whole pod across a flooded hall, local cracked seals prove impact, the conservator steadies, and a final wide reveals a ruptured overhead aquarium.",
+      "prompt_seed": "A lone glass conservator works inside a compact museum restoration pod; a pressure wave slides the whole pod across a flooded hall, local cracked seals prove impact, the conservator steadies, and a final wide reveals a ruptured overhead aquarium."
+    },
+    {
+      "concept": "A seed technician tends one capsule inside a narrow orbital greenhouse bay; a magnetic surge drags the bay along its rail, loose soil and harness tension prove the stop, and a late exterior reveals a vast solar-sail deployment bending the station.",
+      "prompt_seed": "A seed technician tends one capsule inside a narrow orbital greenhouse bay; a magnetic surge drags the bay along its rail, loose soil and harness tension prove the stop, and a late exterior reveals a vast solar-sail deployment bending the station."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Opening on destruction removes scale contrast.",
+      "repair": "Begin with an intimate confined baseline before the large event."
+    },
+    {
+      "failure": "Unrelated disaster inserts do not move the story.",
+      "repair": "Let one external force visibly displace the established carrier."
+    },
+    {
+      "failure": "Skipping impact makes the carrier teleport.",
+      "repair": "Prove impact through local physical aftermath."
+    },
+    {
+      "failure": "Cutting immediately to spectacle loses the human cost.",
+      "repair": "Hold one post-impact reaction after motion stops."
+    },
+    {
+      "failure": "An early wide reveal spends the final information too soon.",
+      "repair": "Reveal the larger cause only after local consequence is clear."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A lone glass conservator works inside a compact museum restoration pod; a pressure wave slides the whole pod across a flooded hall, local cracked seals prove impact, the conservator steadies, and a final wide reveals a ruptured overhead aquarium.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A seed technician tends one capsule inside a narrow orbital greenhouse bay; a magnetic surge drags the bay along its rail, loose soil and harness tension prove the stop, and a late exterior reveals a vast solar-sail deployment bending the station.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

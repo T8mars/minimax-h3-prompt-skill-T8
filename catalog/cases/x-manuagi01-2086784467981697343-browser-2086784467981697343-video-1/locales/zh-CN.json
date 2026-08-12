@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-manuagi01-2086784467981697343-browser-2086784467981697343-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "672be783e56ec9605beefc2738bf68232014b643f24394af2f2cff583ea34320",
+    "creative_dna_sha256": "e586af2be4cfd5c74d4c568af2926996e77694ad8cff1dba1c1ad00c939ac346"
+  },
+  "content": {
+    "title": "平面重组｜图标开启档案世界",
+    "summary": "紧凑图标先展开成角色与世界，图形密度经多个象征场景逐步升高，再用短暂状态卡打断；最后一个人物画面把持续配色与面板几何交给独立终态锁定。作为既有平面重组模板的证据变体，不新增下拉项。",
+    "quick_start": {
+      "input_format": "紧凑图标 + 稳定角色/配色 + 密度递增模块 + 孤立状态停顿 + 几何锁定",
+      "recommended_input": "铜色种子螺旋从标本标签展开成纸艺温室世界，经过叶廊与根系高密模块，短暂停在无字检疫花结，最终重组成植物徽记。",
+      "required_anchors": [
+        "打开一个紧凑的平面图标，该图标明显扩展到更大的图形区域。",
+        "在世界模块发生变化时保持一个角色轮廓、调色板和面板系列的稳定。",
+        "在结束前插入一个短的孤立状态或负空间状态。",
+        "在最后一个字符框架移交后，将重复出现的调色板和面板几何图形解析为保留的最终锁定。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "紧凑图标先展开成角色与世界，图形密度经多个象征场景逐步升高，再用短暂状态卡打断；最后一个人物画面把持续配色与面板几何交给独立终态锁定。作为既有平面重组模板的证据变体，不新增下拉项。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "从一个紧凑的平面图标开始，将其展开成角色与世界的海报系统；经过数个象征性环境模块逐步提高图形密度，再用短暂、孤立的系统状态制造停顿，最后由末个人物画面把反复出现的配色与面板几何交接给稳定终态版式。除非画面直接证明连续性，不得把不同模块中外观相近的对象声称为同一个实体标记。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "打开一个紧凑的平面图标，该图标明显扩展到更大的图形区域。",
+          "purpose": "定义构造语法。",
+          "ablation_failure": "以全密度启动会移除扩展钩。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在世界模块发生变化时保持一个角色轮廓、调色板和面板系列的稳定。",
+          "purpose": "防止视觉编排的变化破坏角色身份。",
+          "ablation_failure": "更改每个锚点会使该作品变成不相关的海报。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "通过至少两个象征性不同的环境模块提高图形密度。",
+          "purpose": "构建超越简单后台交换的升级。",
+          "ablation_failure": "只重复同一条走廊，无法形成 PV 信息密度阶梯。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在结束前插入一个短的孤立状态或负空间状态。",
+          "purpose": "创建对比和可读的停顿。",
+          "ablation_failure": "持续的高密度让最终的锁定感觉不劳而获。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在最后一个人物画面移交后，将重复出现的调色板和面板几何图形解析为稳定停留的终态版式。",
+          "purpose": "收束图形系列，而不发明最终的角色合成。",
+          "ablation_failure": "不相关的标题卡会丢弃累积的视觉语法。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色无需来源身份即可读取。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的全新场景。"
+        },
+        {
+          "name": "carrier_or_token",
+          "constraint": "一种承载因果机制的可见材料、支柱或象征锚。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "一系列可见的、按因果顺序排列的变化，而不是装饰性的蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个更改。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设置设置的最终状态。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "可见动作声音的原始层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "青色文件夹图标、白兔和单色来源角色",
+        "梦想档案、记忆潜水员和已删除的源标题",
+        "洋红色门走廊、床、巨眼和源设备插槽",
+        "确切的源游戏-PV 面板、海报顺序和最终标志"
+      ],
+      "instantiations": [
+        {
+          "concept": "铜种子螺旋从植物标本馆标签扩展到分层的纸质温室海报，穿过树叶走廊和密集的根图模块，停在一个孤立的检疫封条上，然后与馆长剪影重新组合成无字的植物冠。",
+          "prompt_seed": "铜种子螺旋从植物标本馆标签扩展到分层的纸质温室海报，穿过树叶走廊和密集的根图模块，停在一个孤立的检疫封条上，然后与馆长剪影重新组合成无字的植物冠。"
+        },
+        {
+          "concept": "蓝色蜡玫瑰花结从博物馆目录标签扩展到微型画廊面板，积累化石网格和楼层地图模块，停在一张空白的保护状态卡上，然后与修复者轮廓重新组装成无字浮雕标志。",
+          "prompt_seed": "蓝色蜡玫瑰花结从博物馆目录标签扩展到微型画廊面板，积累化石网格和楼层地图模块，停在一张空白的保护状态卡上，然后与修复者轮廓重新组装成无字浮雕标志。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "以全密度启动会移除扩展钩。",
+          "repair": "打开一个紧凑的平面图标，该图标明显扩展到更大的图形区域。"
+        },
+        {
+          "failure": "更改每个锚点会使该作品变成不相关的海报。",
+          "repair": "在世界模块发生变化时保持一个角色轮廓、调色板和面板系列的稳定。"
+        },
+        {
+          "failure": "只重复同一条走廊，无法形成 PV 信息密度阶梯。",
+          "repair": "通过至少两个象征性不同的环境模块提高图形密度。"
+        },
+        {
+          "failure": "持续的高密度让最终的锁定感觉不劳而获。",
+          "repair": "在结束前插入一个短的孤立状态或负空间状态。"
+        },
+        {
+          "failure": "不相关的标题卡会丢弃累积的视觉语法。",
+          "repair": "在最后一个人物画面移交后，将重复出现的调色板和面板几何图形解析为稳定停留的终态版式。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "铜种子螺旋从植物标本馆标签扩展到分层的纸质温室海报，穿过树叶走廊和密集的根图模块，停在一个孤立的检疫封条上，然后与馆长剪影重新组合成无字的植物冠。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "carrier_or_token",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "蓝色蜡玫瑰花结从博物馆目录标签扩展到微型画廊面板，积累化石网格和楼层地图模块，停在一张空白的保护状态卡上，然后与修复者轮廓重新组装成无字浮雕标志。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "carrier_or_token",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

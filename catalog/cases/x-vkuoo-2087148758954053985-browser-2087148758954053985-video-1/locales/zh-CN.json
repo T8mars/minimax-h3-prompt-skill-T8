@@ -1,0 +1,215 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-vkuoo-2087148758954053985-browser-2087148758954053985-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d08e79287d459a511fef484d80006e35003bd4b8de4c02905ac63de7812558cd",
+    "creative_dna_sha256": "34c1c122d9c251fc2509b1a0903cb7bfb99e2de30ae248ffc73c2e98c422fce6"
+  },
+  "content": {
+    "title": "表面生长｜沿既有几何扩散并回收到手作载体",
+    "summary": "先让彩色线条沿真实载体既有几何生长，再扩散成图标或材质标记但不遮掉轮廓；同一线条族连接多个载体，最终回收到手作纪念物并物理关闭。",
+    "quick_start": {
+      "input_format": "真实载体 + 沿既有几何描线 + 同线条族跨载体 + 保留轮廓 + 手作纪念物闭合",
+      "recommended_input": "铜色刺绣线先沿陶瓷原型接缝生长，再跨四件原型形成一致功能标记，最终装订成实体材质样本册并扣上锁扣。",
+      "required_anchors": [
+        "通过追踪现有载体几何形状开始标记。",
+        "传播标记，同时保留载体轮廓。",
+        "更改运营商，同时保留标记行为。",
+        "把整段旅程汇集到手工纪念物中，并以实体合拢动作关闭。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让彩色线条沿真实载体既有几何生长，再扩散成图标或材质标记但不遮掉轮廓；同一线条族连接多个载体，最终回收到手作纪念物并物理关闭。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先在画面中放置清楚可辨的真实载体，让彩色线条沿其既有几何生长，再扩展成图标或材质标记但不抹掉原轮廓；随后用同一线条家族连接新的载体，把累积旅程汇集成手工纪念物并以实体合拢动作收束。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "通过追踪现有载体几何形状开始标记。",
+          "purpose": "将干预绑定到真实表面。",
+          "ablation_failure": "悬浮叠加层会显得与真实表面无关。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "传播标记，同时保留载体轮廓。",
+          "purpose": "保持转换可读。",
+          "ablation_failure": "完全遮挡会破坏前后状态的比较。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "跨不同载体保持一致的线条或材质家族。",
+          "purpose": "创建蒙太奇连续性。",
+          "ablation_failure": "不相关的样式会像彼此独立的特效。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "更改载体，同时保留标记行为。",
+          "purpose": "证明规则的可移植性。",
+          "ablation_failure": "一个表面无法展示可转移系统。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "把整段旅程汇集到手工纪念物中，并以实体合拢动作关闭。",
+          "purpose": "建立从现实表面到手持物件的完整回环。",
+          "ablation_failure": "最终的随机地标不会增加结构性收束。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色是明确的，无需来源身份。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源位置的全新场景。"
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "明显承载因果链的一个物体、路线、标记或设备。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "具有可观察到的切换的五个有序状态，而不是装饰性蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种新的面向证明的信息顺序，不复制源镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设定设置的最终结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "支持每个可见变化的故事世界线索的原始层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源世界地标和霓虹灯蜡笔涂鸦",
+        "艾菲尔铁塔、大本钟、罗马斗兽场、歌剧院和金字塔",
+        "来源地球仪素描本和闭合的手",
+        "确切的旅行图标顺序和图纸"
+      ],
+      "instantiations": [
+        {
+          "concept": "工业陶瓷原型接收一根铜绣花线，沿着接缝，成长为跨多个物体的功能针迹图，然后解析为戴手套的手合上的物理样本书。",
+          "prompt_seed": "工业陶瓷原型接收一根铜绣花线，沿着接缝，成长为跨多个物体的功能针迹图，然后解析为戴手套的手合上的物理样本书。"
+        },
+        {
+          "concept": "在一片连续的黑冰原上，投射的裂隙光沿着现有的裂缝，在圆形盆地周围重复形成天气符号，然后聚集成一个全尺寸的信标，其分段环升起并机械锁定为稳定的聚合状态。",
+          "prompt_seed": "在一片连续的黑冰原上，投射的裂隙光沿着现有的裂缝，在圆形盆地周围重复形成天气符号，然后聚集成一个全尺寸的信标，其分段环升起并机械锁定为稳定的聚合状态。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "悬浮叠加层会显得与真实表面无关。",
+          "repair": "通过追踪现有载体几何形状开始标记。"
+        },
+        {
+          "failure": "完全遮挡会破坏前后状态的比较。",
+          "repair": "传播标记，同时保留载体轮廓。"
+        },
+        {
+          "failure": "不相关的样式会像彼此独立的特效。",
+          "repair": "跨不同载体保持一致的线条或材质家族。"
+        },
+        {
+          "failure": "一个表面无法展示可转移系统。",
+          "repair": "更改载体，同时保留标记行为。"
+        },
+        {
+          "failure": "最终的随机地标不会增加结构性收束。",
+          "repair": "把整段旅程汇集到手工纪念物中，并以实体合拢动作关闭。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "工业陶瓷原型接收一根铜绣花线，沿着接缝，成长为跨多个物体的功能针迹图，然后解析为戴手套的手合上的物理样本书。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在一片连续的黑冰原上，投射的裂隙光沿着现有的裂缝，在圆形盆地周围重复形成天气符号，然后聚集成一个全尺寸的信标，其分段环升起并机械锁定为稳定的聚合状态。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

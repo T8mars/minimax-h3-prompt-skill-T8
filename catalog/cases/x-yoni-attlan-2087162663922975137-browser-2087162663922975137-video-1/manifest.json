@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-yoni-attlan-2087162663922975137-browser-2087162663922975137-video-1",
+  "slug": "reveal-impact-aftermath-at-larger-scale",
+  "title": "冲击后揭示｜从私密困境到城市尺度真因",
+  "source_title": "X creative video by @Yoni_attlan",
+  "summary": "先在狭小受保护空间建立私密困境，再让巨大外力突然移动承载体；局部撞击与长停留反应证明后果，最后广角揭示城市尺度真因。",
+  "status": "released",
+  "source_duration_seconds": 15.104,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reveal-impact-aftermath-at-larger-scale",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yoni-attlan-2087162663922975137-browser-2087162663922975137-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yoni-attlan-2087162663922975137-browser-2087162663922975137-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-intimate-impact-aftermath-reveal-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "受困主体 + 外力移动承载体 + 局部撞击证明 + 反应停留 + 广角真因揭示",
+  "recommended_input": "玻璃修复师在狭小修复舱内固定器皿，压力波把整舱推过被淹大厅；撞上软缓冲后长停留反应，最后揭示中庭上方巨型水族箱破裂。",
+  "required_anchors": [
+    "Begin with an intimate confined baseline before the large event.",
+    "Let one external force visibly displace the established carrier.",
+    "Hold one post-impact reaction after motion stops.",
+    "Reveal the larger cause only after local consequence is clear."
+  ],
+  "tags": [
+    "intimate",
+    "impact",
+    "aftermath",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.723,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T10:43:42+08:00",
+  "updated_at": "2026-08-12T11:35:12+08:00"
+}

@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish a complete ensemble and its audience or work field, bring two central contributors into a shared action, isolate one lead long enough for a complete proof phrase while the ensemble remains spatially implied, then reintroduce the co-lead and finish on a wider synchronized group state.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish the full ensemble and surrounding response field before isolating a lead.",
+      "purpose": "Makes later focus changes legible.",
+      "ablation_failure": "Opening close hides the ensemble stakes.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Bring two central contributors into one shared action before ownership narrows.",
+      "purpose": "Defines the co-lead relationship.",
+      "ablation_failure": "An immediate solo gives no handoff.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Give one lead enough uninterrupted screen ownership to complete a proof phrase.",
+      "purpose": "Makes the focus transfer countable.",
+      "ablation_failure": "Rapid cutting never establishes ownership.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Reintroduce the co-lead before the ending.",
+      "purpose": "Returns focus from individual to partnership.",
+      "ablation_failure": "A solo-only ending abandons the opening pair.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Finish wide enough to show the ensemble responding in one synchronized state.",
+      "purpose": "Closes the nested focus levels.",
+      "ablation_failure": "Ending close loses the group payoff.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source retro male singers and band",
+    "Eddie & The Comet Tails sign",
+    "source stage, microphones and audience",
+    "the exact rock performance blocking and wardrobe"
+  ],
+  "instantiations": [
+    {
+      "concept": "In a kinetic sculpture workshop, two lead technicians begin before a full crew and moving test wall; the camera isolates the color-calibration lead for one complete adjustment, reintroduces the motion lead, and ends wide as every module synchronizes.",
+      "prompt_seed": "In a kinetic sculpture workshop, two lead technicians begin before a full crew and moving test wall; the camera isolates the color-calibration lead for one complete adjustment, reintroduces the motion lead, and ends wide as every module synchronizes."
+    },
+    {
+      "concept": "At a botanical lantern launch, two coordinators begin among a full volunteer ring; one coordinator receives a complete close proof while setting the timing beacon, the second returns to trigger the release, and the final wide shows the whole ring lifting lantern pods together.",
+      "prompt_seed": "At a botanical lantern launch, two coordinators begin among a full volunteer ring; one coordinator receives a complete close proof while setting the timing beacon, the second returns to trigger the release, and the final wide shows the whole ring lifting lantern pods together."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Opening close hides the ensemble stakes.",
+      "repair": "Establish the full ensemble and surrounding response field before isolating a lead."
+    },
+    {
+      "failure": "An immediate solo gives no handoff.",
+      "repair": "Bring two central contributors into one shared action before ownership narrows."
+    },
+    {
+      "failure": "Rapid cutting never establishes ownership.",
+      "repair": "Give one lead enough uninterrupted screen ownership to complete a proof phrase."
+    },
+    {
+      "failure": "A solo-only ending abandons the opening pair.",
+      "repair": "Reintroduce the co-lead before the ending."
+    },
+    {
+      "failure": "Ending close loses the group payoff.",
+      "repair": "Finish wide enough to show the ensemble responding in one synchronized state."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In a kinetic sculpture workshop, two lead technicians begin before a full crew and moving test wall; the camera isolates the color-calibration lead for one complete adjustment, reintroduces the motion lead, and ends wide as every module synchronizes.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "At a botanical lantern launch, two coordinators begin among a full volunteer ring; one coordinator receives a complete close proof while setting the timing beacon, the second returns to trigger the release, and the final wide shows the whole ring lifting lantern pods together.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

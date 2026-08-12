@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Stage one graphic action display as a sequence of countable full-body proof states: establish a weapon-and-cape silhouette, vary grounded attack geometry, use one central flash to hand off into a visibly different form state without asserting identity continuity, prove the new state through one energy arc and one airborne passage, then return to a readable grounded endpoint.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one countable full-body action silhouette and its tool before escalation.",
+      "purpose": "Creates a comparison baseline for later proof poses.",
+      "ablation_failure": "Beginning with a flare makes the form change unreadable.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Advance through at least two materially different grounded action geometries.",
+      "purpose": "Shows action progression rather than a decorative pose loop.",
+      "ablation_failure": "Repeated near-identical poses create no escalation.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use exactly one occluding transition to hand off between visible form states without claiming hidden identity continuity.",
+      "purpose": "Keeps the transformation evidence-bounded.",
+      "ablation_failure": "An unmarked form swap looks accidental; claiming identity exceeds the visible proof.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Prove the later state through both a committed effect action and a displaced body path.",
+      "purpose": "Makes the new state operational rather than cosmetic.",
+      "ablation_failure": "A costume-only reveal lacks a functional proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a readable grounded state that recalls at least one opening silhouette anchor.",
+      "purpose": "Closes the action display as a complete arc.",
+      "ablation_failure": "Ending mid-flight leaves the state chain unresolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source monochrome armored heroines",
+    "spiral spear and white cape",
+    "source black void and exact attack poses",
+    "the exact masked-to-female form sequence"
+  ],
+  "instantiations": [
+    {
+      "concept": "A ceramic kiln-maintenance automaton establishes a clamp-and-cape heat shield, performs two grounded repair geometries, passes once behind a steam flash into a cooled tool configuration, cuts one glowing seam while crossing an overhead rail, then lands beside the sealed kiln door.",
+      "prompt_seed": "A ceramic kiln-maintenance automaton establishes a clamp-and-cape heat shield, performs two grounded repair geometries, passes once behind a steam flash into a cooled tool configuration, cuts one glowing seam while crossing an overhead rail, then lands beside the sealed kiln door."
+    },
+    {
+      "concept": "A paper rescue kite establishes a rigid tail-and-hook silhouette, demonstrates two wind-braced ground poses, passes behind one dust sheet into an expanded canopy form, draws one luminous rescue line while gliding across a ravine, then folds onto a marked landing frame.",
+      "prompt_seed": "A paper rescue kite establishes a rigid tail-and-hook silhouette, demonstrates two wind-braced ground poses, passes behind one dust sheet into an expanded canopy form, draws one luminous rescue line while gliding across a ravine, then folds onto a marked landing frame."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Beginning with a flare makes the form change unreadable.",
+      "repair": "Establish one countable full-body action silhouette and its tool before escalation."
+    },
+    {
+      "failure": "Repeated near-identical poses create no escalation.",
+      "repair": "Advance through at least two materially different grounded action geometries."
+    },
+    {
+      "failure": "An unmarked form swap looks accidental; claiming identity exceeds the visible proof.",
+      "repair": "Use exactly one occluding transition to hand off between visible form states without claiming hidden identity continuity."
+    },
+    {
+      "failure": "A costume-only reveal lacks a functional proof.",
+      "repair": "Prove the later state through both a committed effect action and a displaced body path."
+    },
+    {
+      "failure": "Ending mid-flight leaves the state chain unresolved.",
+      "repair": "End on a readable grounded state that recalls at least one opening silhouette anchor."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A ceramic kiln-maintenance automaton establishes a clamp-and-cape heat shield, performs two grounded repair geometries, passes once behind a steam flash into a cooled tool configuration, cuts one glowing seam while crossing an overhead rail, then lands beside the sealed kiln door.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A paper rescue kite establishes a rigid tail-and-hook silhouette, demonstrates two wind-braced ground poses, passes behind one dust sheet into an expanded canopy form, draws one luminous rescue line while gliding across a ravine, then folds onto a marked landing frame.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-steftranquillin-2087233814665814190-browser-2087233814665814190-video-1",
+  "slug": "switch-roles-through-direction-stroke",
+  "title": "动作成字｜方向笔画驱动角色切换与终态标记",
+  "source_title": "X creative video by @steftranquillin",
+  "summary": "第一位角色的动作生成强方向笔画，落地后笔画变成构图分隔；第二位角色沿同一图形轴进入并把笔画弯成新几何，最终标记由两次动作共同完成。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/switch-roles-through-direction-stroke",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-steftranquillin-2087233814665814190-browser-2087233814665814190-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-steftranquillin-2087233814665814190-browser-2087233814665814190-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-direction-stroke-role-switch-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "第一动作生成方向笔画 + 落地变分隔 + 第二角色沿同轴进入 + 笔画变形 + 无文字终态标记",
+  "recommended_input": "蓝色纸艺自动机把炭黑直尺变成构图分隔，琥珀自动机沿同轴进入并把直尺弯成螺旋，两次动作共同形成无文字涡轮标记。",
+  "required_anchors": [
+    "Bind the first action to one dominant directional stroke.",
+    "Use the first landing to change the stroke's composition role.",
+    "Let the second action bend or reconfigure the stroke.",
+    "Hold one final mark that visibly inherits both actions."
+  ],
+  "tags": [
+    "direction",
+    "stroke",
+    "role",
+    "switch"
+  ],
+  "quality": {
+    "weighted_score": 4.748,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T10:46:23+08:00",
+  "updated_at": "2026-08-12T11:35:12+08:00"
+}

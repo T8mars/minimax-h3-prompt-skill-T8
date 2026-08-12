@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-imagvio-trends-2087163509125878029-browser-2087163509125878029-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "2e37ec9d85caac61fe1bfd2173a5db6b319b3f86978ea01337609d562be2e668",
+    "creative_dna_sha256": "04558f05527f784a4b9f12012a672881ab2070e61f8196c48c9b4861ed88065e"
+  },
+  "content": {
+    "title": "结果先行广告｜终态承诺倒推证据",
+    "summary": "先亮出清楚可读的理想结果，再把产品隔离为因果对象；用紧凑的材质或身份证据连接产品与使用状态，最后放宽到真实生活结果并停留。该案只作为既有产品证据状态机的证据变体。",
+    "quick_start": {
+      "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+      "recommended_input": "先展示护目镜带来的清晰航道结果，再倒推模块组装、佩戴与抗雾证明，最后回到佩戴者在河岸完成任务的稳定产品终态。",
+      "required_anchors": [
+        "在解释产品操作之前先展示一个期望的结果。",
+        "隔离一种产品作为该结果的因果锚。",
+        "从产品主导的证据扩展到生活环境。",
+        "保持结果足够长的时间来解读其中的关系。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先亮出清楚可读的理想结果，再把产品隔离为因果对象；用紧凑的材质或身份证据连接产品与使用状态，最后放宽到真实生活结果并停留。该案只作为既有产品证据状态机的证据变体。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在任何解释之前先展示清楚可读的理想结果，再把产品隔离成因果对象；用紧凑的材质或身份证据连接产品与用户状态，随后放宽到真实使用结果并停留。本来源是既有产品证明状态机的证据变体，不得创建新选择器。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在解释产品操作之前先展示一个期望的结果。",
+          "purpose": "创造一个直接的人类承诺。",
+          "ablation_failure": "以规格说明开场，会延迟价值出现。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "隔离一种产品作为该结果的因果锚。",
+          "purpose": "信守承诺。",
+          "ablation_failure": "多个产品会模糊因果归属。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "通过紧凑的验证组件连接产品和用户状态。",
+          "purpose": "把产品身份连接到真实使用结果。",
+          "ablation_failure": "不相关的转变会让结果感觉不值得。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "从产品主导的证据扩展到生活环境。",
+          "purpose": "显示在特写镜头之外幸存的结果。",
+          "ablation_failure": "只在产品近景中收尾，无法证明使用情境。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "保持结果足够长的时间来解读其中的关系。",
+          "purpose": "完成证明状态机。",
+          "ablation_failure": "快速切到标志，会让结果停留时间过短。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色是明确的，无需来源身份。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源位置的全新场景。"
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "明显承载因果链的一个物体、路线、标记或设备。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "具有可观察到的切换的五个有序状态，而不是装饰性蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种新的面向证明的信息顺序，不复制源镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设定设置的最终结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "支持每个可见变化的故事世界线索的原始层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源墨镜和男模",
+        "来源海洋日落",
+        "RESULT FIRST 并查看可能的副本",
+        "源分屏组件和图像 + 视频 Seedance 2.0 标记"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个虚构的河流救援信标在夜间摆渡人引导小船安全到达标记码头时打开，隔离信标，显示其密封和镜头证明，然后加宽回到完成的到达，信标仍然可见。",
+          "prompt_seed": "一个虚构的河流救援信标在夜间摆渡人引导小船安全到达标记码头时打开，隔离信标，显示其密封和镜头证明，然后加宽回到完成的到达，信标仍然可见。"
+        },
+        {
+          "concept": "一条虚构的冷却场围巾向在炎热温室中舒适工作的植物学家打开，隔离织物编织和水分通道，然后返回到植物学家，在不中断热量的情况下完成一整托盘。",
+          "prompt_seed": "一条虚构的冷却场围巾向在炎热温室中舒适工作的植物学家打开，隔离织物编织和水分通道，然后返回到植物学家，在不中断热量的情况下完成一整托盘。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "以规格说明开场，会延迟价值出现。",
+          "repair": "在解释产品操作之前先展示一个期望的结果。"
+        },
+        {
+          "failure": "多个产品会模糊因果归属。",
+          "repair": "隔离一种产品作为该结果的因果锚。"
+        },
+        {
+          "failure": "不相关的转变会让结果感觉不值得。",
+          "repair": "通过紧凑的验证组件连接产品和用户状态。"
+        },
+        {
+          "failure": "只在产品近景中收尾，无法证明使用情境。",
+          "repair": "从产品主导的证据扩展到生活环境。"
+        },
+        {
+          "failure": "快速切到标志，会让结果停留时间过短。",
+          "repair": "保持结果足够长的时间来解读其中的关系。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个虚构的河流救援信标在夜间摆渡人引导小船安全到达标记码头时打开，隔离信标，显示其密封和镜头证明，然后加宽回到完成的到达，信标仍然可见。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一条虚构的冷却场围巾向在炎热温室中舒适工作的植物学家打开，隔离织物编织和水分通道，然后返回到植物学家，在不中断热量的情况下完成一整托盘。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

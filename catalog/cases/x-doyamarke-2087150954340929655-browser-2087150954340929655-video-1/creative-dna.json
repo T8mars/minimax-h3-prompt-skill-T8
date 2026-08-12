@@ -1,0 +1,173 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A product film can move from a human outcome to isolated product identity, then to one legible internal or material proof, return to a broader human result and finish on a stable product state. This source is additional evidence for the existing flexible product proof state machine, not a new selector.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one emotionally readable outcome related to the product.",
+      "purpose": "Gives proof a human consequence.",
+      "ablation_failure": "A cold product opening lacks motivation.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Isolate the product identity before technical proof.",
+      "purpose": "Keeps the proof attributable.",
+      "ablation_failure": "Unidentified mechanism shots become generic texture.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Show one visible operation or material proof.",
+      "purpose": "Answers how the result is produced.",
+      "ablation_failure": "A beauty shot alone cannot prove function.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Return to a broader result state after proof.",
+      "purpose": "Connects mechanism back to people or environment.",
+      "ablation_failure": "Staying macro loses payoff context.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a clean stable product state.",
+      "purpose": "Creates a reusable closure.",
+      "ablation_failure": "A moving montage ending weakens identity.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source HOPWAVE beer branding",
+    "bar friends, can, bottle, foam and toast",
+    "the exact beer-serving shot order",
+    "source labels and product copy",
+    "HOPWAVE wordmark",
+    "source HOPWAVE geometric logo"
+  ],
+  "instantiations": [
+    {
+      "concept": "An office begins with tired workers, isolates an original air-quality device, proves filter airflow with particles and a gauge, returns to visibly relaxed workers, then ends on the device with a clean-air indicator.",
+      "prompt_seed": "An office begins with tired workers, isolates an original air-quality device, proves filter airflow with particles and a gauge, returns to visibly relaxed workers, then ends on the device with a clean-air indicator."
+    },
+    {
+      "concept": "A bicycle workshop begins with a stuck commuter, isolates an original chain lubricant, proves capillary flow across one link, returns to a smooth test ride, then ends on bottle and repaired chain.",
+      "prompt_seed": "A bicycle workshop begins with a stuck commuter, isolates an original chain lubricant, proves capillary flow across one link, returns to a smooth test ride, then ends on bottle and repaired chain."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A cold product opening lacks motivation.",
+      "repair": "Establish one emotionally readable outcome related to the product."
+    },
+    {
+      "failure": "Unidentified mechanism shots become generic texture.",
+      "repair": "Isolate the product identity before technical proof."
+    },
+    {
+      "failure": "A beauty shot alone cannot prove function.",
+      "repair": "Show one visible operation or material proof."
+    },
+    {
+      "failure": "Staying macro loses payoff context.",
+      "repair": "Return to a broader result state after proof."
+    },
+    {
+      "failure": "A moving montage ending weakens identity.",
+      "repair": "End on a clean stable product state."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An office begins with tired workers, isolates an original air-quality device, proves filter airflow with particles and a gauge, returns to visibly relaxed workers, then ends on the device with a clean-air indicator.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A bicycle workshop begins with a stuck commuter, isolates an original chain lubricant, proves capillary flow across one link, returns to a smooth test ride, then ends on bottle and repaired chain.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

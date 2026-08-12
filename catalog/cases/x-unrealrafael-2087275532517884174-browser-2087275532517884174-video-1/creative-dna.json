@@ -1,0 +1,176 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Use one uninterrupted rear follow in a constrained curved passage. Keep the subject's gait and screen position stable while repeated fixed lights, rail joints and wall ribs pass as a countable progress clock; let the changing tunnel curvature slowly shift the vanishing point, then hold a visibly farther position without inventing a threshold, encounter or route change.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Begin with one stable rear-follow relationship inside a constrained passage.",
+      "purpose": "Makes later progress measurable against the body.",
+      "ablation_failure": "Changing follow distance hides the route clock.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use repeated fixed landmarks as countable progress evidence.",
+      "purpose": "Proves travel without cuts.",
+      "ablation_failure": "Featureless walls make movement ambiguous.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep gait, travel axis and body scale stable through the middle.",
+      "purpose": "Separates environmental geometry change from performance change.",
+      "ablation_failure": "Speed ramps or body jumps fake progress.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Let passage curvature shift the vanishing point gradually.",
+      "purpose": "Adds visible geometric evolution without a new event.",
+      "ablation_failure": "A sudden turn creates a different mechanism.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End at a materially farther position on the same route.",
+      "purpose": "Closes the progress study honestly.",
+      "ablation_failure": "Inventing a threshold or discovery exceeds the source.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source male pedestrian and clothing",
+    "source underground rail tunnel",
+    "source curved walkway, pipes and light sequence",
+    "the exact rear-follow staging"
+  ],
+  "instantiations": [
+    {
+      "concept": "A seed-vault technician walks through a circular archive ring while numbered cool-air vents, floor seams and shelving ribs pass as the clock; the follow distance stays fixed and the ring curvature moves the vanishing point until the technician reaches a visibly farther bay.",
+      "prompt_seed": "A seed-vault technician walks through a circular archive ring while numbered cool-air vents, floor seams and shelving ribs pass as the clock; the follow distance stays fixed and the ring curvature moves the vanishing point until the technician reaches a visibly farther bay."
+    },
+    {
+      "concept": "A small autonomous luggage cart travels through a curved airport service tube while ceiling beacons, drainage grates and panel joints count progress; one low chase camera stays fixed as the tube bends and ends deeper on the same route.",
+      "prompt_seed": "A small autonomous luggage cart travels through a curved airport service tube while ceiling beacons, drainage grates and panel joints count progress; one low chase camera stays fixed as the tube bends and ends deeper on the same route."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Changing follow distance hides the route clock.",
+      "repair": "Begin with one stable rear-follow relationship inside a constrained passage."
+    },
+    {
+      "failure": "Featureless walls make movement ambiguous.",
+      "repair": "Use repeated fixed landmarks as countable progress evidence."
+    },
+    {
+      "failure": "Speed ramps or body jumps fake progress.",
+      "repair": "Keep gait, travel axis and body scale stable through the middle."
+    },
+    {
+      "failure": "A sudden turn creates a different mechanism.",
+      "repair": "Let passage curvature shift the vanishing point gradually."
+    },
+    {
+      "failure": "Inventing a threshold or discovery exceeds the source.",
+      "repair": "End at a materially farther position on the same route."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A seed-vault technician walks through a circular archive ring while numbered cool-air vents, floor seams and shelving ribs pass as the clock; the follow distance stays fixed and the ring curvature moves the vanishing point until the technician reaches a visibly farther bay.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A small autonomous luggage cart travels through a curved airport service tube while ceiling beacons, drainage grates and panel joints count progress; one low chase camera stays fixed as the tube bends and ends deeper on the same route.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

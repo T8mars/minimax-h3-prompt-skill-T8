@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ravfx777-2087152046114038024-browser-2087152046114038024-video-1",
+  "slug": "handoff-ensemble-focus",
+  "title": "群演聚焦接力｜全场到主位再回合奏",
+  "source_title": "X creative video by @ravfx777",
+  "summary": "先建立完整群体与观众或工作场，再让两名中心贡献者进入共享动作；镜头隔离其中一名主位完成完整证明段，随后重新引入共同主位，并以更宽的同步群体终态收束。",
+  "status": "released",
+  "source_duration_seconds": 12.32,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/handoff-ensemble-focus",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ravfx777-2087152046114038024-browser-2087152046114038024-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ravfx777-2087152046114038024-browser-2087152046114038024-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-ensemble-focus-handoff-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "全体建立 + 主位聚焦 + 次主位回归 + 群体节奏持续 + 回到全体合奏终态",
+  "recommended_input": "机械工坊全体先建立节奏，镜头聚焦粉色主位的工具动作，次主位随后回归并接力，最终退回全景呈现全部工作台同步运行。",
+  "required_anchors": [
+    "Establish the full ensemble and surrounding response field before isolating a lead.",
+    "Bring two central contributors into one shared action before ownership narrows.",
+    "Reintroduce the co-lead before the ending.",
+    "Finish wide enough to show the ensemble responding in one synchronized state."
+  ],
+  "tags": [
+    "ensemble",
+    "focus",
+    "handoff"
+  ],
+  "quality": {
+    "weighted_score": 4.73,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T15:35:03+08:00",
+  "updated_at": "2026-08-12T16:09:40+08:00"
+}

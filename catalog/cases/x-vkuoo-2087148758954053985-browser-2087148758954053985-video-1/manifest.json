@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-vkuoo-2087148758954053985-browser-2087148758954053985-video-1",
+  "slug": "grow-surface-line-into-keepsake",
+  "title": "表面生长｜沿既有几何扩散并回收到手作载体",
+  "source_title": "X creative video by @vkuoo",
+  "summary": "先让彩色线条沿真实载体既有几何生长，再扩散成图标或材质标记但不遮掉轮廓；同一线条族连接多个载体，最终回收到手作纪念物并物理关闭。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/grow-surface-line-into-keepsake",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vkuoo-2087148758954053985-browser-2087148758954053985-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vkuoo-2087148758954053985-browser-2087148758954053985-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-surface-line-growth-keepsake-loop-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "真实载体 + 沿既有几何描线 + 同线条族跨载体 + 保留轮廓 + 手作纪念物闭合",
+  "recommended_input": "铜色刺绣线先沿陶瓷原型接缝生长，再跨四件原型形成一致功能标记，最终装订成实体材质样本册并扣上锁扣。",
+  "required_anchors": [
+    "Begin the mark by tracing existing carrier geometry.",
+    "Spread marks while preserving the carrier silhouette.",
+    "Change carrier while retaining the mark behavior.",
+    "Collect the journey into a handmade keepsake and physically close it."
+  ],
+  "tags": [
+    "surface",
+    "line",
+    "growth",
+    "keepsake",
+    "loop"
+  ],
+  "quality": {
+    "weighted_score": 4.74,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T10:43:56+08:00",
+  "updated_at": "2026-08-12T11:35:12+08:00"
+}

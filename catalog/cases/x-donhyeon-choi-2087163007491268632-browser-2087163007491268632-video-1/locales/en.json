@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-donhyeon-choi-2087163007491268632-browser-2087163007491268632-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "3c89fbb3cb7b68f0a5004bbe527ce17c6795630ae94bf7979184d200e0c182db",
+    "creative_dna_sha256": "a3cf5f35e177a73b75c96bcefe6fa82d3b5a42f976ec2ac4d08d225a0fbf532d"
+  },
+  "content": {
+    "title": "Subgroup Dialogue Coverage | Pair-to-Pair Relay, Whole-Table Recombine",
+    "summary": "Establish a shared social space with the first seated pair and make visible speaking-turn ownership readable inside that pair. Cut across the table for a distinct response phase, then return wider to recombine every participant with the same table anchors. Source dialogue meaning remains unknown.",
+    "quick_start": {
+      "input_format": "Stable group space + visible speaking turn of the first group + relay of the second group + 1 non-verbal action + everyone ends in the same frame",
+      "recommended_input": "The four original restaurant staff first establish a spatial relationship as a two-person group, then cut to another two-person group to complete speeches and non-verbal actions, and finally return to the four people in the same frame; the meaning of the dialogue in the original film is not specified.",
+      "required_anchors": [
+        "Establish the first subgroup and shared table anchors before any cross-table cut.",
+        "Make speaking-turn ownership visibly readable within the first subgroup without assigning source meaning.",
+        "Give the second subgroup one distinct response phase and one listening witness.",
+        "Recombine all participants with the same spatial anchors in a held wide view."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Establish a shared social space with the first seated pair and make visible speaking-turn ownership readable inside that pair. Cut across the table for a distinct response phase, then return wider to recombine every participant with the same table anchors. Source dialogue meaning remains unknown.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Establish one shared social geography by showing the first seated pair, hand visual speaking-turn ownership within that pair, cut across the table to a second pair for a distinct response phase, then return to a wider composition that recombines all participants and the same table anchors. Source dialogue meaning is unknown; only visible turn ownership and coverage order are reusable.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish the first subgroup and shared table anchors before any cross-table cut.",
+          "purpose": "Creates a stable social half-space.",
+          "ablation_failure": "Opening on singles hides group geography.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Make speaking-turn ownership visibly readable within the first subgroup without assigning source meaning.",
+          "purpose": "Defines the coverage relay.",
+          "ablation_failure": "Indistinct mouth and eye ownership makes the cut arbitrary.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Cut to a second subgroup that faces back into the same shared space.",
+          "purpose": "Expands the conversation while preserving geography.",
+          "ablation_failure": "A new unrelated location breaks the group.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Give the second subgroup one distinct response phase and one listening witness.",
+          "purpose": "Prevents equal-motion visual noise.",
+          "ablation_failure": "Both people performing at once hides ownership.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Recombine all participants with the same spatial anchors in a held wide view.",
+          "purpose": "Closes the coverage map.",
+          "ablation_failure": "Ending on a pair leaves the larger group unresolved.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair whose role is clear without source identity."
+        },
+        {
+          "name": "setting",
+          "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "One object, route, mark or device that visibly carries the causal chain."
+        },
+        {
+          "name": "state_change",
+          "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A held final consequence that resolves or recontextualizes the setup."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of story-world cues supporting each visible change."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source beach bar and four actors",
+        "source clothing and cocktails",
+        "source dialogue content",
+        "the exact male-pair to female-pair coverage"
+      ],
+      "instantiations": [
+        {
+          "concept": "Four polar greenhouse engineers sit around one circular sample table: the first pair compare a cracked seed shell, the opposite pair inspect a moisture graph, one technician rotates a sample cup, and a final wide shows all four agreeing on one marked tray without dialogue.",
+          "prompt_seed": "Four polar greenhouse engineers sit around one circular sample table: the first pair compare a cracked seed shell, the opposite pair inspect a moisture graph, one technician rotates a sample cup, and a final wide shows all four agreeing on one marked tray without dialogue."
+        },
+        {
+          "concept": "Four stop-motion harbor puppets share a chart desk: two place route tiles, the opposite pair respond with tide markers, one lifts a buoy token, and the final wide recombines every puppet and the completed route.",
+          "prompt_seed": "Four stop-motion harbor puppets share a chart desk: two place route tiles, the opposite pair respond with tide markers, one lifts a buoy token, and the final wide recombines every puppet and the completed route."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Opening on singles hides group geography.",
+          "repair": "Establish the first subgroup and shared table anchors before any cross-table cut."
+        },
+        {
+          "failure": "Indistinct mouth and eye ownership makes the cut arbitrary.",
+          "repair": "Make speaking-turn ownership visibly readable within the first subgroup without assigning source meaning."
+        },
+        {
+          "failure": "A new unrelated location breaks the group.",
+          "repair": "Cut to a second subgroup that faces back into the same shared space."
+        },
+        {
+          "failure": "Both people performing at once hides ownership.",
+          "repair": "Give the second subgroup one distinct response phase and one listening witness."
+        },
+        {
+          "failure": "Ending on a pair leaves the larger group unresolved.",
+          "repair": "Recombine all participants with the same spatial anchors in a held wide view."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "Four polar greenhouse engineers sit around one circular sample table: the first pair compare a cracked seed shell, the opposite pair inspect a moisture graph, one technician rotates a sample cup, and a final wide shows all four agreeing on one marked tray without dialogue.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "Four stop-motion harbor puppets share a chart desk: two place route tiles, the opposite pair respond with tide markers, one lifts a buoy token, and the final wide recombines every puppet and the completed route.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-alone1moon-2087282913410764864-browser-2087282913410764864-video-1",
+  "slug": "build-microexpression-greeting-arc",
+  "title": "微表情问候｜侧身发现到笑容回稳",
+  "source_title": "X creative video by @Alone1Moon",
+  "summary": "用近乎锁定的人像镜头完成五段微表情问候：侧身开始、建立直视、短暂垂眼停顿、闭眼笑容达到峰值，再回到开放而放松的表情；不换场景、不加大动作。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/build-microexpression-greeting-arc",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-alone1moon-2087282913410764864-browser-2087282913410764864-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-alone1moon-2087282913410764864-browser-2087282913410764864-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-microexpression-greeting-arc-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "单一人像 + 侧身开始 + 稳定直视 + 垂眼停顿 + 1次峰值表情 + 开放表情回稳",
+  "recommended_input": "年长纸张修复师侧身拿着修复地图，转头直视、垂眼停顿、闭眼微笑，再睁眼回到放松表情；全程保持同一安静档案室。",
+  "required_anchors": [
+    "Begin from a readable side orientation rather than immediate frontal address.",
+    "Reach and hold direct gaze before the emotional peak.",
+    "Use one countable peak expression without a large body gesture.",
+    "Recover to an open relaxed state and hold."
+  ],
+  "tags": [
+    "microexpression",
+    "greeting",
+    "arc"
+  ],
+  "quality": {
+    "weighted_score": 4.667,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T15:32:36+08:00",
+  "updated_at": "2026-08-12T16:09:40+08:00"
+}

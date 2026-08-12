@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-100xmart-2087298018668077160-browser-2087298018668077160-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "b7cee3f8294fe315bf306fda23e7a8dd3d5313525f4e5943f6341ac1fcaa355f",
+    "creative_dna_sha256": "d1f55c00e18cdd39579aef44c9370272f5e0b054d7b76b8be50f842a95bb4389"
+  },
+  "content": {
+    "title": "地貌变形揭示｜局部异常到巨体逼近",
+    "summary": "先让环境异常看起来仍像地貌，再只揭出一个身份特征；随后用高位或远景证明完整几何及其对环境的尺度影响，最后回到低位视点完成一次近距离逼近。",
+    "quick_start": {
+      "input_format": "环境局部异常 + 单一身份特征 + 高位完整几何证明 + 环境尺度影响 + 低位近距离逼近",
+      "recommended_input": "盐碱滩先出现像地貌的隆起，只显出琥珀观察窗；高位镜头证明它是巨型移动气象舱，最后回到低位让舱体越过测量站近旁。",
+      "required_anchors": [
+        "打开仍可能被误认为地形的环境变形。",
+        "显露一种识别特征，同时保留大部分身体。",
+        "使用一个高或宽的视图来证明完整的几何形状及其环境后果。",
+        "回到较低视点，完成一次边界清楚的近距离逼近。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让环境异常看起来仍像地貌，再只揭出一个身份特征；随后用高位或远景证明完整几何及其对环境的尺度影响，最后回到低位视点完成一次近距离逼近。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先让环境异常仍可能被误认成地形，在完整形态揭示前只露出一个身份特征；再切到高位或宽景证明完整几何及其对环境造成的尺度影响，最后回到低位视角完成近距离逼近。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "打开仍可能被误认为地形的环境变形。",
+          "purpose": "在识别之前产生不确定性。",
+          "ablation_failure": "开场就展示完整生物，会消除揭示过程。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "显露一种识别特征，同时保留大部分身体。",
+          "purpose": "先确认主体身份，但不提前耗掉尺度揭示。",
+          "ablation_failure": "同时暴露多个特征，会破坏逐级揭示。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "充分扩展局部形状以建立定向身体几何形状。",
+          "purpose": "将身份与全面证明联系起来。",
+          "ablation_failure": "直接跳到俯视完整形态，会显得缺少衔接。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "使用一个高或宽的视图来证明完整的几何形状及其环境后果。",
+          "purpose": "使规模可测量。",
+          "ablation_failure": "只有身体纹理近景，无法提供空间尺度证据。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "回到较低视点，完成一次边界清楚的近距离逼近。",
+          "purpose": "将遥远的规模转换为即时的赌注。",
+          "ablation_failure": "只以高位镜头结束，仍像静态说明图。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色是明确的，无需来源身份。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源位置的全新场景。"
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "明显承载因果链的一个物体、路线、标记或设备。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "具有可观察到的切换的五个有序状态，而不是装饰性蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种新的面向证明的信息顺序，不复制源镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设定设置的最终结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "支持每个可见变化的故事世界线索的原始层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源海洋蛇",
+        "绿色发光的眼睛和风暴海",
+        "源漩涡线圈和张开的钳口",
+        "准确的海洋生物揭示顺序"
+      ],
+      "instantiations": [
+        {
+          "concept": "一座被风掩埋的步行温室首先以小麦下的山脊的形式出现，一个琥珀色的检查窗打开，铰接式屋顶肋上升，鸟瞰图证明了其巨大的足迹弯曲了农作物车道，而低矮的道路视图以一条腿无接触地跨过前景结束。",
+          "prompt_seed": "一座被风掩埋的步行温室首先以小麦下的山脊的形式出现，一个琥珀色的检查窗打开，铰接式屋顶肋上升，鸟瞰图证明了其巨大的足迹弯曲了农作物车道，而低矮的道路视图以一条腿无接触地跨过前景结束。"
+        },
+        {
+          "concept": "一台地下档案机首先以移动的图书馆地板的形式出现，一个蓝色镜头在书架之间打开，一个弯曲的底盘出现，天花板视图证明了一个螺旋体移动的书籍过道，而低矮的办公桌视图则以扫描仪近距离掠过头顶而结束。",
+          "prompt_seed": "一台地下档案机首先以移动的图书馆地板的形式出现，一个蓝色镜头在书架之间打开，一个弯曲的底盘出现，天花板视图证明了一个螺旋体移动的书籍过道，而低矮的办公桌视图则以扫描仪近距离掠过头顶而结束。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "开场就展示完整生物，会消除揭示过程。",
+          "repair": "打开仍可能被误认为地形的环境变形。"
+        },
+        {
+          "failure": "同时暴露多个特征，会破坏逐级揭示。",
+          "repair": "显露一种识别特征，同时保留大部分身体。"
+        },
+        {
+          "failure": "直接跳到俯视完整形态，会显得缺少衔接。",
+          "repair": "充分扩展局部形状以建立定向身体几何形状。"
+        },
+        {
+          "failure": "只有身体纹理近景，无法提供空间尺度证据。",
+          "repair": "使用一个高或宽的视图来证明完整的几何形状及其环境后果。"
+        },
+        {
+          "failure": "只以高位镜头结束，仍像静态说明图。",
+          "repair": "回到较低视点，完成一次边界清楚的近距离逼近。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一座被风掩埋的步行温室首先以小麦下的山脊的形式出现，一个琥珀色的检查窗打开，铰接式屋顶肋上升，鸟瞰图证明了其巨大的足迹弯曲了农作物车道，而低矮的道路视图以一条腿无接触地跨过前景结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一台地下档案机首先以移动的图书馆地板的形式出现，一个蓝色镜头在书架之间打开，一个弯曲的底盘出现，天花板视图证明了一个螺旋体移动的书籍过道，而低矮的办公桌视图则以扫描仪近距离掠过头顶而结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

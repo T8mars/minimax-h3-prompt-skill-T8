@@ -1,0 +1,217 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nicolasmariar-2087313673312256276-browser-2087313673312256276-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "27f9b7a8953fe9a3fb76cee1e7fcf77294d341f45322a9fca42383dd3ed0352d",
+    "creative_dna_sha256": "3fcf67ca054a782cec798677f653ab44c595fe79e9ad0b4297341b474196a8b7"
+  },
+  "content": {
+    "title": "Background Anomaly | Audience Notices, Recording Confirms",
+    "summary": "Place an anomaly in the background while foreground routine continues. Use a recording device to isolate it as evidence, then delay the character's reaction until the anomaly changes or leaves the recorded field.",
+    "quick_start": {
+      "input_format": "The background anomaly appears first + the foreground remains normal + recording equipment forensics + evidence field changes + delayed response",
+      "recommended_input": "When a single greenhouse engineer calibrated the valve, non-human-shaped frost patterns appeared on the pressure window in the distance; the wall-mounted mechanical observation mirror was fixed to collect evidence, and the frost patterns migrated along the copper pipe before the figure turned around.",
+      "required_anchors": [
+        "Reveal the anomaly to the viewer before the subjects notice it.",
+        "Keep foreground behavior ordinary during the first anomaly state.",
+        "Change the anomaly inside or against the evidence field.",
+        "Delay the human reaction until after the proof changes."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Place an anomaly in the background while foreground routine continues. Use a recording device to isolate it as evidence, then delay the character's reaction until the anomaly changes or leaves the recorded field.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Place an anomaly in the background before foreground subjects notice it, preserve ordinary foreground behavior, use a recording or inspection device to isolate the anomaly as evidence, let the anomaly visibly disrupt or leave that evidence field, then delay the subjects' reaction until after the proof changes.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Reveal the anomaly to the viewer before the subjects notice it.",
+          "purpose": "Creates dramatic information asymmetry.",
+          "ablation_failure": "Simultaneous discovery removes suspense.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Keep foreground behavior ordinary during the first anomaly state.",
+          "purpose": "Makes the background disruption legible.",
+          "ablation_failure": "Immediate panic spends the escalation.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use one device or inspection frame to isolate the anomaly.",
+          "purpose": "Turns suspicion into observable evidence.",
+          "ablation_failure": "A random close-up does not prove discovery.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Change the anomaly inside or against the evidence field.",
+          "purpose": "Makes the proof active rather than static.",
+          "ablation_failure": "An unchanged recording adds no causal turn.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Delay the human reaction until after the proof changes.",
+          "purpose": "Completes the viewer-subject information handoff.",
+          "ablation_failure": "Early reaction breaks the asymmetry.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair whose role is clear without source identity."
+        },
+        {
+          "name": "setting",
+          "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "One object, route, mark or device that visibly carries the causal chain."
+        },
+        {
+          "name": "state_change",
+          "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A held final consequence that resolves or recontextualizes the setup."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of story-world cues supporting each visible change."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source anime women and neon alley",
+        "purple ghost silhouette and smartphone screen",
+        "the exact phone-recording disappearance storyboard",
+        "source character designs and palette",
+        "source phone 00:00 recording UI",
+        "source red record button"
+      ],
+      "instantiations": [
+        {
+          "concept": "A single greenhouse engineer calibrates valves while a six-branch frost glyph appears on a distant pressure window; a fixed mechanical observation mirror isolates the glyph, which migrates along a copper pipe before the engineer finally turns.",
+          "prompt_seed": "A single greenhouse engineer calibrates valves while a six-branch frost glyph appears on a distant pressure window; a fixed mechanical observation mirror isolates the glyph, which migrates along a copper pipe before the engineer finally turns."
+        },
+        {
+          "concept": "An autonomous archive camera inventories folded fabric while a geometric shadow appears behind one shelf; a fixed ultraviolet light table isolates its lattice, the pattern transfers onto one cloth strip, and only then does the camera pivot toward the now-normal shelf.",
+          "prompt_seed": "An autonomous archive camera inventories folded fabric while a geometric shadow appears behind one shelf; a fixed ultraviolet light table isolates its lattice, the pattern transfers onto one cloth strip, and only then does the camera pivot toward the now-normal shelf."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Simultaneous discovery removes suspense.",
+          "repair": "Reveal the anomaly to the viewer before the subjects notice it."
+        },
+        {
+          "failure": "Immediate panic spends the escalation.",
+          "repair": "Keep foreground behavior ordinary during the first anomaly state."
+        },
+        {
+          "failure": "A random close-up does not prove discovery.",
+          "repair": "Use one device or inspection frame to isolate the anomaly."
+        },
+        {
+          "failure": "An unchanged recording adds no causal turn.",
+          "repair": "Change the anomaly inside or against the evidence field."
+        },
+        {
+          "failure": "Early reaction breaks the asymmetry.",
+          "repair": "Delay the human reaction until after the proof changes."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A single greenhouse engineer calibrates valves while a six-branch frost glyph appears on a distant pressure window; a fixed mechanical observation mirror isolates the glyph, which migrates along a copper pipe before the engineer finally turns.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An autonomous archive camera inventories folded fabric while a geometric shadow appears behind one shelf; a fixed ultraviolet light table isolates its lattice, the pattern transfers onto one cloth strip, and only then does the camera pivot toward the now-normal shelf.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

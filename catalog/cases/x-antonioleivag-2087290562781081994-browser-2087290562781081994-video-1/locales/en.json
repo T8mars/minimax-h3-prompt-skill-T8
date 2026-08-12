@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-antonioleivag-2087290562781081994-browser-2087290562781081994-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "0517d176407ddb84b3df1b6521ad7cb18ed753091cd317ac18e182f58cbed903",
+    "creative_dna_sha256": "8ae0cea9a94e30876dedd951c411337a319ab59cfc53275707f51ba36504fc8f"
+  },
+  "content": {
+    "title": "Performance-to-Environment Pullback | Face Close-Up to Full World",
+    "summary": "Start on an identity-clear facial performance and keep it uninterrupted. One continuous pullback gradually transfers visual dominance from face to body to the responding environment; the performer remains identifiable while the world becomes the final subject.",
+    "quick_start": {
+      "input_format": "Close-face performance benchmark + continuous retreat lens + layer-by-layer environment reference + uninterrupted character movements + panoramic final state of the relationship between people and scenes",
+      "recommended_input": "The original wind dancer continues to perform from a close-up view of the face, and the camera continuously recedes to reveal the costumes, walking trails, sea cliffs and sky light strips, and finally the human scene is in the same frame.",
+      "required_anchors": [
+        "Open close enough to establish one stable performer identity.",
+        "Keep one continuous performance thread through the camera retreat.",
+        "Transfer visual dominance through camera distance rather than a subject transformation.",
+        "End wide with both performer and responsive environment readable."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Start on an identity-clear facial performance and keep it uninterrupted. One continuous pullback gradually transfers visual dominance from face to body to the responding environment; the performer remains identifiable while the world becomes the final subject.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Begin in an identity-close performance frame, keep the performance continuous while one unbroken pullback gradually transfers visual dominance from face to body and then to a responsive environment, and end with the performer still readable inside the now-dominant wide setting.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Open close enough to establish one stable performer identity.",
+          "purpose": "Gives the later scale transfer a human anchor.",
+          "ablation_failure": "Opening wide makes the performer secondary too early.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Keep one continuous performance thread through the camera retreat.",
+          "purpose": "Prevents the pullback from becoming scenery montage.",
+          "ablation_failure": "Stopping performance breaks the causal link.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Reveal the first environmental response before the frame becomes wide.",
+          "purpose": "Connects performer and setting gradually.",
+          "ablation_failure": "A sudden final background replacement feels unrelated.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Transfer visual dominance through camera distance rather than a subject transformation.",
+          "purpose": "Makes the scale shift legible and reusable.",
+          "ablation_failure": "Changing the performer instead of the frame changes the mechanism.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End wide with both performer and responsive environment readable.",
+          "purpose": "Completes the relationship without losing identity.",
+          "ablation_failure": "A landscape-only ending discards the opening anchor.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair whose role is clear without source identity."
+        },
+        {
+          "name": "setting",
+          "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "One object, route, mark or device that visibly carries the causal chain."
+        },
+        {
+          "name": "state_change",
+          "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A held final consequence that resolves or recontextualizes the setup."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of story-world cues supporting each visible change."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source female singer",
+        "source shoreline and aurora",
+        "source translucent dress and face lighting",
+        "the exact vocal-performance pullback"
+      ],
+      "instantiations": [
+        {
+          "concept": "A glass-bowl artisan begins in a close face-and-hands frame; one continuous retreat reveals resonating bowls, then a bioluminescent greenhouse canopy responding in expanding rings while the artisan keeps circling one mallet.",
+          "prompt_seed": "A glass-bowl artisan begins in a close face-and-hands frame; one continuous retreat reveals resonating bowls, then a bioluminescent greenhouse canopy responding in expanding rings while the artisan keeps circling one mallet."
+        },
+        {
+          "concept": "A weather engineer begins close while turning one tuning dial; the camera retreats through a tower chamber as suspended fabric vanes respond one by one, ending with the engineer small beneath the full wind lattice.",
+          "prompt_seed": "A weather engineer begins close while turning one tuning dial; the camera retreats through a tower chamber as suspended fabric vanes respond one by one, ending with the engineer small beneath the full wind lattice."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Opening wide makes the performer secondary too early.",
+          "repair": "Open close enough to establish one stable performer identity."
+        },
+        {
+          "failure": "Stopping performance breaks the causal link.",
+          "repair": "Keep one continuous performance thread through the camera retreat."
+        },
+        {
+          "failure": "A sudden final background replacement feels unrelated.",
+          "repair": "Reveal the first environmental response before the frame becomes wide."
+        },
+        {
+          "failure": "Changing the performer instead of the frame changes the mechanism.",
+          "repair": "Transfer visual dominance through camera distance rather than a subject transformation."
+        },
+        {
+          "failure": "A landscape-only ending discards the opening anchor.",
+          "repair": "End wide with both performer and responsive environment readable."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A glass-bowl artisan begins in a close face-and-hands frame; one continuous retreat reveals resonating bowls, then a bioluminescent greenhouse canopy responding in expanding rings while the artisan keeps circling one mallet.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A weather engineer begins close while turning one tuning dial; the camera retreats through a tower chamber as suspended fabric vanes respond one by one, ending with the engineer small beneath the full wind lattice.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

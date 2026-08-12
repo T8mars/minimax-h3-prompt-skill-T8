@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-macbethai-2087310945009995972-browser-2087310945009995972-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "2b3a9fceae49d4bb508943d7fa14991e5d19e884eaa133e7020d97bcd9d4f0f4",
+    "creative_dna_sha256": "668582c1fe79791590451d50ec53bbc34fd644492315625880470e390b60123b"
+  },
+  "content": {
+    "title": "轮廓接力｜闪光换形后完成攻势闭环",
+    "summary": "先用武器与披风轮廓建立动作基准，再通过可数的落地姿态推进；一次中央闪光只负责换形交接，新形态以能量弧与腾空段得到证明，最后回到可读的落地终态。",
+    "quick_start": {
+      "input_format": "原创动作主体 + 清楚工具轮廓 + 2个落地动作几何 + 1次遮挡换形 + 效果动作与位移证明 + 落地终态",
+      "recommended_input": "陶窑维修自动机以长夹具和隔热盾建立轮廓，完成两种落地维修姿态；一次蒸汽遮挡后显出冷却配置，沿服务轨切开接缝，再落地于密封窑门旁。",
+      "required_anchors": [
+        "在升级之前建立一个可数的全身动作剪影及其工具。",
+        "通过至少两种截然不同的接地动作几何结构前进。",
+        "通过承诺的效果动作和位移的身体路径来证明后来的状态。",
+        "以可读的接地状态结束，回忆起至少一个开放的轮廓锚点。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用武器与披风轮廓建立动作基准，再通过可数的落地姿态推进；一次中央闪光只负责换形交接，新形态以能量弧与腾空段得到证明，最后回到可读的落地终态。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把第一阶段动作组织成一系列可数的全身验证状态：先建立武器与披风轮廓，再改变贴地攻击几何；只用一次中央闪光交接到明显不同的形态状态，但不臆断遮挡前后身份连续。随后用能量弧和腾空位移证明新状态，最后回到清楚可读的落地终态。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在升级之前建立一个可数的全身动作剪影及其工具。",
+          "purpose": "为以后的验证姿势创建比较基线。",
+          "ablation_failure": "以耀斑开头会使形式变化变得不可读。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "通过至少两种截然不同的接地动作几何结构前进。",
+          "purpose": "显示动作进展而不是装饰性姿势循环。",
+          "ablation_failure": "重复几乎相同的姿势不会造成升级。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "​​仅使用一个遮挡过渡在可见表单状态之间进行切换，而无需声明隐藏的身份连续性。",
+          "purpose": "保持转型有证据范围。",
+          "ablation_failure": "没有明确交接的形态切换会显得偶然；断言隐藏身份连续则超出可见证据。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "通过执行到位的效果动作和身体位移轨迹来证明后来的状态。",
+          "purpose": "使新状态可操作而不是装饰。",
+          "ablation_failure": "仅展示服装缺乏功能证明。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以可读的接地状态结束，回忆起至少一个开放的轮廓锚点。",
+          "purpose": "把动作展示收束成完整弧线。",
+          "ablation_failure": "飞行途中结束导致状态链未解决。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色是明确的，无需来源身份。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源位置的全新场景。"
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "明显承载因果链的一个物体、路线、标记或设备。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "具有可观察到的切换的五个有序状态，而不是装饰性蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种新的面向证明的信息顺序，不复制源镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设定设置的最终结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "支持每个可见变化的故事世界线索的原始层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源单色铠甲女主角",
+        "螺旋矛和白斗篷",
+        "来源黑色虚空和精确的攻击姿势",
+        "准确的蒙面到女性形态序列"
+      ],
+      "instantiations": [
+        {
+          "concept": "一台陶瓷窑维护自动机建立了一个夹子和斗篷隔热罩，执行两个接地修复几何形状，在蒸汽闪蒸后面一次进入冷却工具配置，在穿过高架轨道时剪辑一条发光接缝，然后降落在密封的窑门旁边。",
+          "prompt_seed": "一台陶瓷窑维护自动机建立了一个夹子和斗篷隔热罩，执行两个接地修复几何形状，在蒸汽闪蒸后面一次进入冷却工具配置，在穿过高架轨道时剪辑一条发光接缝，然后降落在密封的窑门旁边。"
+        },
+        {
+          "concept": "纸质救援风筝形成了刚性的尾钩轮廓，展示了两种抗风地面姿势，穿过一张防尘布后面形成展开的顶篷形式，在滑过峡谷时画出一条发光的救援线，然后折叠到标记的着陆架上。",
+          "prompt_seed": "纸质救援风筝形成了刚性的尾钩轮廓，展示了两种抗风地面姿势，穿过一张防尘布后面形成展开的顶篷形式，在滑过峡谷时画出一条发光的救援线，然后折叠到标记的着陆架上。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "以耀斑开头会使形式变化变得不可读。",
+          "repair": "在升级之前建立一个可数的全身动作剪影及其工具。"
+        },
+        {
+          "failure": "重复几乎相同的姿势不会造成升级。",
+          "repair": "通过至少两种截然不同的接地动作几何结构前进。"
+        },
+        {
+          "failure": "没有明确交接的形态切换会显得偶然；断言隐藏身份连续则超出可见证据。",
+          "repair": "​​仅使用一个遮挡过渡在可见表单状态之间进行切换，而无需声明隐藏的身份连续性。"
+        },
+        {
+          "failure": "仅展示服装缺乏功能证明。",
+          "repair": "通过执行到位的效果动作和身体位移轨迹来证明后来的状态。"
+        },
+        {
+          "failure": "飞行途中结束导致状态链未解决。",
+          "repair": "以可读的接地状态结束，回忆起至少一个开放的轮廓锚点。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一台陶瓷窑维护自动机建立了一个夹子和斗篷隔热罩，执行两个接地修复几何形状，在蒸汽闪蒸后面一次进入冷却工具配置，在穿过高架轨道时剪辑一条发光接缝，然后降落在密封的窑门旁边。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "纸质救援风筝形成了刚性的尾钩轮廓，展示了两种抗风地面姿势，穿过一张防尘布后面形成展开的顶篷形式，在滑过峡谷时画出一条发光的救援线，然后折叠到标记的着陆架上。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

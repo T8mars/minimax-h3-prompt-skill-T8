@@ -1,0 +1,171 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Reset a familiar viewpoint and scale anchor in each vignette, introduce one impossible airborne form that preserves readable silhouette, vary observer distance and occlusion, then escalate proximity until the final viewpoint encounter feels immediate rather than merely larger.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Give each vignette an immediately familiar scale anchor.",
+      "purpose": "Makes the impossible size measurable.",
+      "ablation_failure": "A blank sky provides no scale proof.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one dominant impossible silhouette per vignette.",
+      "purpose": "Keeps the spectacle readable.",
+      "ablation_failure": "Several equal forms create visual noise.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Change observer carrier or occlusion between vignettes.",
+      "purpose": "Prevents a repetitive size montage.",
+      "ablation_failure": "Identical viewpoints flatten the ladder.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Increase proximity, not just nominal size.",
+      "purpose": "Creates a real escalation toward encounter.",
+      "ablation_failure": "Distant forms remain postcards.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with a viewpoint-level encounter that preserves spatial legibility.",
+      "purpose": "Converts spectacle into immediate stakes.",
+      "ablation_failure": "An abstract final close-up loses the observer relationship.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair whose role is clear without source identity."
+    },
+    {
+      "name": "setting",
+      "constraint": "A materially new setting with fixed spatial anchors and no source-specific location."
+    },
+    {
+      "name": "causal_carrier",
+      "constraint": "One object, route, mark or device that visibly carries the causal chain."
+    },
+    {
+      "name": "state_change",
+      "constraint": "Five ordered states with observable handoffs, not a decorative montage."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "A new proof-oriented information order that does not copy source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A held final consequence that resolves or recontextualizes the setup."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of story-world cues supporting each visible change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source giant whale, manta, nautilus, jellyfish and shark",
+    "Shanghai skyline, airplane window, highway and car POV",
+    "the exact animal order and city landmarks",
+    "source blue atmospheric spectacle palette"
+  ],
+  "instantiations": [
+    {
+      "concept": "Five original airborne seed structures appear over a coastal wind farm, train window, quarry road, public greenhouse and maintenance rover; each new anchor shortens distance until a translucent seed sail crosses directly over the rover canopy.",
+      "prompt_seed": "Five original airborne seed structures appear over a coastal wind farm, train window, quarry road, public greenhouse and maintenance rover; each new anchor shortens distance until a translucent seed sail crosses directly over the rover canopy."
+    },
+    {
+      "concept": "Five enormous folded-paper weather instruments drift through an archive city, observatory window, tram corridor, plaza and bicycle POV, with increasing occlusion and a final near overhead pass.",
+      "prompt_seed": "Five enormous folded-paper weather instruments drift through an archive city, observatory window, tram corridor, plaza and bicycle POV, with increasing occlusion and a final near overhead pass."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A blank sky provides no scale proof.",
+      "repair": "Give each vignette an immediately familiar scale anchor."
+    },
+    {
+      "failure": "Several equal forms create visual noise.",
+      "repair": "Use one dominant impossible silhouette per vignette."
+    },
+    {
+      "failure": "Identical viewpoints flatten the ladder.",
+      "repair": "Change observer carrier or occlusion between vignettes."
+    },
+    {
+      "failure": "Distant forms remain postcards.",
+      "repair": "Increase proximity, not just nominal size."
+    },
+    {
+      "failure": "An abstract final close-up loses the observer relationship.",
+      "repair": "End with a viewpoint-level encounter that preserves spatial legibility."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Five original airborne seed structures appear over a coastal wind farm, train window, quarry road, public greenhouse and maintenance rover; each new anchor shortens distance until a translucent seed sail crosses directly over the rover canopy.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Five enormous folded-paper weather instruments drift through an archive city, observatory window, tram corridor, plaza and bicycle POV, with increasing occlusion and a final near overhead pass.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "causal_carrier",
+        "state_change",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

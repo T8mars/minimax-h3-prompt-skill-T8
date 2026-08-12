@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-antonioleivag-2087290562781081994-browser-2087290562781081994-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "0517d176407ddb84b3df1b6521ad7cb18ed753091cd317ac18e182f58cbed903",
+    "creative_dna_sha256": "8ae0cea9a94e30876dedd951c411337a319ab59cfc53275707f51ba36504fc8f"
+  },
+  "content": {
+    "title": "表演让位于环境｜近脸到全景的连续退镜",
+    "summary": "从身份清楚的近脸表演开始，表演不中断，单次连续退镜把视觉主导权逐步从面部交给身体，再交给响应中的环境；结尾人物仍可辨，但环境成为主角。",
+    "quick_start": {
+      "input_format": "近脸表演基准 + 连续后退镜头 + 逐层环境参照 + 人物动作不中断 + 人景关系全景终态",
+      "recommended_input": "原创风场舞者从面部近景开始持续表演，镜头连续后退，依次揭示服装、步道、海崖与天空光带，最后人景同框。",
+      "required_anchors": [
+        "开放得足够近，以建立一个稳定的表演者身份。",
+        "在镜头撤退中保持一条连续的表演线索。",
+        "通过拍摄距离变化转移视觉主导权，而不是让主体变形。",
+        "结束宽，表演者和响应环境都可读。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "从身份清楚的近脸表演开始，表演不中断，单次连续退镜把视觉主导权逐步从面部交给身体，再交给响应中的环境；结尾人物仍可辨，但环境成为主角。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "从身份清楚的近脸表演镜头开始，在表演持续不中断的同时做一次连续退镜，把视觉主导权逐步从面部交给身体，再交给产生响应的环境；结尾环境占据主导，但表演者仍清楚可辨。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "开放得足够近，以建立一个稳定的表演者身份。",
+          "purpose": "为后期尺度转移提供人类锚点。",
+          "ablation_failure": "开场过早使表演者处于次要位置。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在镜头撤退中保持一条连续的表演线索。",
+          "purpose": "防止回拉成为风景蒙太奇。",
+          "ablation_failure": "停止表演会破坏因果关系。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在框架变宽之前揭示第一个环境响应。",
+          "purpose": "逐渐连接表演者和场景。",
+          "ablation_failure": "突然的最终背景更换感觉无关紧要。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "通过拍摄距离变化转移视觉主导权，而不是让主体变形。",
+          "purpose": "让尺度变化清楚且可复用。",
+          "ablation_failure": "改变表演者而不是框架改变了机制。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "结束宽，表演者和响应环境都可读。",
+          "purpose": "在不失去身份的情况下完成关系。",
+          "ablation_failure": "纯风景结局放弃了开场锚点。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或对，其角色是明确的，无需来源身份。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源位置的全新场景。"
+        },
+        {
+          "name": "causal_carrier",
+          "constraint": "明显承载因果链的一个物体、路线、标记或设备。"
+        },
+        {
+          "name": "state_change",
+          "constraint": "具有可观察到的切换的五个有序状态，而不是装饰性蒙太奇。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种新的面向证明的信息顺序，不复制源镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "解决或重新设定设置的最终结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "支持每个可见变化的故事世界线索的原始层次结构。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源女歌手",
+        "来源海岸线和极光",
+        "半透明礼服和面部照明",
+        "确切的声音表现回调"
+      ],
+      "instantiations": [
+        {
+          "concept": "玻璃碗工匠从近距离的脸部和手部框架开始；一次连续的撤退展示了共振的碗，然后是一个生物发光的温室顶篷，在不断扩大的环中做出反应，而工匠则不断地绕着一根木槌旋转。",
+          "prompt_seed": "玻璃碗工匠从近距离的脸部和手部框架开始；一次连续的撤退展示了共振的碗，然后是一个生物发光的温室顶篷，在不断扩大的环中做出反应，而工匠则不断地绕着一根木槌旋转。"
+        },
+        {
+          "concept": "气象工程师转动一个调谐旋钮开始接近；摄像机通过塔室后退，悬挂的织物叶片一一响应，最后是工程师在整个风格下方的小尺寸。",
+          "prompt_seed": "气象工程师转动一个调谐旋钮开始接近；摄像机通过塔室后退，悬挂的织物叶片一一响应，最后是工程师在整个风格下方的小尺寸。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "开场过早使表演者处于次要位置。",
+          "repair": "开放得足够近，以建立一个稳定的表演者身份。"
+        },
+        {
+          "failure": "停止表演会破坏因果关系。",
+          "repair": "在镜头撤退中保持一条连续的表演线索。"
+        },
+        {
+          "failure": "突然的最终背景更换感觉无关紧要。",
+          "repair": "在框架变宽之前揭示第一个环境响应。"
+        },
+        {
+          "failure": "改变表演者而不是框架改变了机制。",
+          "repair": "通过拍摄距离变化转移视觉主导权，而不是让主体变形。"
+        },
+        {
+          "failure": "纯风景结局放弃了开场锚点。",
+          "repair": "结束宽，表演者和响应环境都可读。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "玻璃碗工匠从近距离的脸部和手部框架开始；一次连续的撤退展示了共振的碗，然后是一个生物发光的温室顶篷，在不断扩大的环中做出反应，而工匠则不断地绕着一根木槌旋转。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "气象工程师转动一个调谐旋钮开始接近；摄像机通过塔室后退，悬挂的织物叶片一一响应，最后是工程师在整个风格下方的小尺寸。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "causal_carrier",
+            "state_change",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

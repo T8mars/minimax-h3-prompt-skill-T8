@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-charaspowerai-2087192378880721150-browser-2087192378880721150-video-1",
+  "slug": "breach-resistance-with-asymmetric-force",
+  "title": "非对称突破｜密集阻力到空间制度改变",
+  "source_title": "X creative video by @CharaspowerAI",
+  "summary": "先建立防守目标与密集阻力场，再引入一个非对称运动力量；局部接触证明动量，广角证明推进，突破后改变空间制度，并以近景后果收束。",
+  "status": "released",
+  "source_duration_seconds": 15.11681,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/breach-resistance-with-asymmetric-force",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2087192378880721150-browser-2087192378880721150-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2087192378880721150-browser-2087192378880721150-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-asymmetric-force-breach-escalation-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "固定目标 + 密集阻力场 + 单一非对称力量 + 3次局部接触 + 突破改变空间",
+  "recommended_input": "被淹物流大厅里，一艘无人拖船通过三次可见接触清出泡沫障碍通道，再一次推开救援闸门，让三艘小艇依次通过。",
+  "required_anchors": [
+    "Establish one fixed objective and a dense visible resistance field.",
+    "Introduce one asymmetric force with a clear motion axis.",
+    "Return wide to show progress toward the boundary.",
+    "Let one breach change the spatial regime and hold the consequence."
+  ],
+  "tags": [
+    "asymmetric",
+    "force",
+    "breach",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.734,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T10:43:56+08:00",
+  "updated_at": "2026-08-12T11:35:12+08:00"
+}
