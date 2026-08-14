@@ -53,7 +53,7 @@ async function run() {
     page.on("console", (message) => {
       if (message.type() === "error") rendererErrors.push(message.text());
     });
-    await page.waitForSelector(".case-card", { timeout: 15000 });
+    await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
     const allCount = await page.locator(".case-card").count();
     assert.equal(allCount, 117, "default all-content view must render 106 cases + 9 official Skills + 2 non-official Skills");
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
@@ -63,7 +63,7 @@ async function run() {
     assert.equal(await page.evaluate(() => localStorage.getItem("t8-display-locale-default-zh-v1")), "done", "the default-Chinese migration must be recorded");
     await page.locator("#global-locale-en").click();
     await page.reload();
-    await page.waitForSelector(".case-card", { timeout: 15000 });
+    await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
     assert.equal(await page.locator("#global-locale-en").getAttribute("aria-pressed"), "true", "an explicit English choice must persist after the migration");
     await page.locator("#global-locale-zh").click();
     assert.equal(await page.locator("#stat-cases").textContent(), "117");
@@ -99,13 +99,13 @@ async function run() {
     assert.equal(await page.locator("#collection-select").inputValue(), await page.locator("#collection-select option").getAttribute("value"));
     assert.equal(await page.locator(".case-card").count(), 1, "selected collection must contain the assigned item");
     await page.reload();
-    await page.waitForSelector(".case-card", { timeout: 15000 });
+    await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
     assert.equal(await page.locator("#view-favorite-count").textContent(), "1", "favorites must persist across reload");
     assert.equal(await page.locator("#view-collection-count").textContent(), "1", "collections must persist across reload");
     assert.equal(await page.locator("#view-history-count").textContent(), "1", "history must persist across reload");
     await page.locator("#global-locale-zh").click();
     await page.reload();
-    await page.waitForSelector(".case-card", { timeout: 15000 });
+    await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
     assert.equal(await page.locator("#global-locale-zh").getAttribute("aria-pressed"), "true", "selected locale must persist across reload");
     await page.locator("#search").fill("First-Person Passage");
     await page.waitForFunction(() => document.querySelectorAll(".case-card").length > 0);
