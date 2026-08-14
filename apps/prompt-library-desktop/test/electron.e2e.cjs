@@ -165,8 +165,16 @@ async function run() {
       await seeked;
       const soughtTime = node.currentTime;
       await node.play();
-      await new Promise((resolve) => setTimeout(resolve, 650));
-      const playedTime = node.currentTime;
+      const playedTime = await new Promise((resolve, reject) => {
+        const startedAt = performance.now();
+        const poll = () => {
+          if (node.error) return reject(new Error(node.error.message || "video playback error after seek"));
+          if (node.currentTime > soughtTime + 0.15) return resolve(node.currentTime);
+          if (performance.now() - startedAt > 12000) return resolve(node.currentTime);
+          setTimeout(poll, 100);
+        };
+        poll();
+      });
       node.pause();
       return {
         src: node.getAttribute("src"),
