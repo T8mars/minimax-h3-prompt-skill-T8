@@ -110,18 +110,23 @@ export function durationMatches(left, right, toleranceSeconds = 0.01) {
 
 export function versionContractErrors({ manifest, catalogVersion, rootVersion, appVersion }) {
   const errors = [];
-  if (manifest.schema_version !== "1.0.0") errors.push(`unsupported media manifest schema_version '${manifest.schema_version}'`);
+  if (manifest.schema_version !== "1.1.0") errors.push(`unsupported media manifest schema_version '${manifest.schema_version}'`);
   if (manifest.version !== rootVersion) errors.push(`media manifest version '${manifest.version}' must equal package version '${rootVersion}'`);
-  if (catalogVersion !== rootVersion) errors.push(`catalog version '${catalogVersion}' must equal package version '${rootVersion}'`);
+  if (typeof catalogVersion !== "string" || !catalogVersion.trim()) errors.push("catalog version is required");
   if (appVersion !== rootVersion) errors.push(`Electron version '${appVersion}' must equal package version '${rootVersion}'`);
   return errors;
 }
 
-export function releaseRequiresAudio(_releaseVersion) {
-  // The public product contract promises complete video with sound for every
-  // stable release. A future silent-media mode requires an explicit schema and
-  // UI contract rather than a version-string escape hatch.
-  return true;
+export function mediaEntryAudioContractErrors(entry, { allowSourceSilent = true } = {}) {
+  const errors = [];
+  const mode = entry?.audio_mode;
+  if (mode !== "present" && mode !== "source_silent") {
+    return ["audio_mode must be 'present' or 'source_silent'"];
+  }
+  if (!allowSourceSilent && mode !== "present") errors.push("audio_mode must be 'present'");
+  if (mode === "present" && !entry?.audio_codec) errors.push("audio_codec is required when audio_mode is 'present'");
+  if (mode === "source_silent" && entry?.audio_codec !== null) errors.push("audio_codec must be null when audio_mode is 'source_silent'");
+  return errors;
 }
 
 function main() {
@@ -155,8 +160,6 @@ function main() {
   })).sort((left, right) => left.id.localeCompare(right.id));
   const catalogById = new Map((catalog.cases ?? []).map((entry) => [entry.case_id, entry]));
   failures.push(...versionContractErrors({ manifest, catalogVersion: catalog.catalog_version, rootVersion, appVersion }));
-  const requireAudio = releaseRequiresAudio(rootVersion);
-
   if (manifest.case_count !== entries.length) failures.push(`media manifest case_count must equal files.length (${entries.length})`);
   if (manifest.community_skill_count !== communityEntries.length) failures.push(`media manifest community_skill_count must equal community_skill_files.length (${communityEntries.length})`);
   if (entries.length !== expectedIds.length) failures.push(`media manifest has ${entries.length} files; catalog requires ${expectedIds.length}`);
@@ -182,8 +185,9 @@ function main() {
     if (entry.sha256 !== hash) failures.push(`${expectedRelative}: SHA-256 mismatch`);
     if (entry.size_bytes !== bytes.length) failures.push(`${expectedRelative}: size_bytes mismatch`);
 
+    for (const error of mediaEntryAudioContractErrors(entry)) failures.push(`${expectedRelative}: ${error}`);
     try {
-      const observed = probeAndDecodeMedia(filePath, { ffprobePath, ffmpegPath, requireAudio });
+      const observed = probeAndDecodeMedia(filePath, { ffprobePath, ffmpegPath, requireAudio: entry.audio_mode !== "source_silent" });
       if (!durationMatches(entry.duration_seconds, observed.durationSeconds)) {
         failures.push(`${expectedRelative}: manifest duration ${entry.duration_seconds} differs from ffprobe ${observed.durationSeconds}`);
       }
@@ -220,8 +224,9 @@ function main() {
     const hash = crypto.createHash("sha256").update(bytes).digest("hex");
     if (entry.sha256 !== hash) failures.push(`${expectedRelative}: SHA-256 mismatch`);
     if (entry.size_bytes !== bytes.length) failures.push(`${expectedRelative}: size_bytes mismatch`);
+    for (const error of mediaEntryAudioContractErrors(entry, { allowSourceSilent: false })) failures.push(`${expectedRelative}: ${error}`);
     try {
-      const observed = probeAndDecodeMedia(filePath, { ffprobePath, ffmpegPath, requireAudio });
+      const observed = probeAndDecodeMedia(filePath, { ffprobePath, ffmpegPath, requireAudio: true });
       if (!durationMatches(entry.duration_seconds, observed.durationSeconds)) {
         failures.push(`${expectedRelative}: manifest duration ${entry.duration_seconds} differs from ffprobe ${observed.durationSeconds}`);
       }
@@ -257,7 +262,8 @@ function main() {
     for (const failure of failures) console.error(`- ${failure}`);
     process.exit(1);
   }
-  console.log(`Media-pack validation passed (${entries.length} cases + ${communityEntries.length} community Skills; hash-bound, complete video/audio traversal with recoverable-frame tolerance; audio required=${requireAudio}).`);
+  const sourceSilentCount = entries.filter((entry) => entry.audio_mode === "source_silent").length;
+  console.log(`Media-pack validation passed (${entries.length} cases + ${communityEntries.length} community Skills; hash-bound complete video traversal and complete audio traversal where present; source-silent=${sourceSilentCount}; recoverable-frame tolerance enabled).`);
 }
 
 const invokedPath = process.argv[1] ? pathToFileURL(path.resolve(process.argv[1])).href : "";

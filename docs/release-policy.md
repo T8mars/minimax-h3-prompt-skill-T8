@@ -62,9 +62,9 @@ npm run media:pack -- -Version 1.1.4
 5. 记录媒体 ZIP 的 SHA-256。
 6. 手动运行 `.github/workflows/release.yml`，输入不带 `v` 的版本与媒体 SHA-256。
 7. 工作流定位或安装 `ffmpeg`/`ffprobe`，从 Draft Release 下载指定媒体资产、校验 ZIP 哈希并解压。
-8. 每个 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨和音频轨；探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、轨道、进程退出、完整遍历或音轨任一失败仍会阻断发布。
-9. Windows runner 构建完整 NSIS；macOS runner 构建 unsigned universal DMG + ZIP。两端都逐 path、size 与 SHA-256 对账安装包内媒体，并按上述容错标准完整遍历视频和音频。
-10. 两个平台都以打包后的应用运行 E2E，证明 106 个案例、9 个官方仓库条目、2 个非官方 Skills、108 份完整视频、收藏/合集/历史、双语、复制、声音、提示词和对比界面可用。
+8. 每个 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨；`audio_mode=present` 的媒体还必须完整遍历音频轨，来源本身无音轨的媒体必须明确记录 `audio_mode=source_silent` 与 `audio_codec=null`。探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、声明存在的轨道、进程退出或完整遍历失败仍会阻断发布。
+9. Windows runner 构建完整 NSIS；macOS runner 构建 unsigned universal DMG + ZIP。两端都逐 path、size 与 SHA-256 对账安装包内媒体，并按上述容错标准完整遍历视频及实际存在的音频轨。
+10. 两个平台都以打包后的应用运行 E2E，证明 106 个案例、9 个官方仓库条目、2 个非官方 Skills、108 份完整来源视频、收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用。
 11. 最终发布 Job 必须同时收到 Windows 与 macOS 已验证产物，核对精确资产集合后统一生成 `SHA256SUMS.txt`。
 12. 只有以上门禁通过，才上传全部目录包、Skills 包、媒体包、Windows 安装包和 macOS 安装包；`publish=true` 时才把 Draft 设为正式 Release。
 
@@ -87,4 +87,4 @@ macOS 同步生成 ZIP、ZIP blockmap 和 `latest-mac.yml`，为未来签名更�
 
 ---
 
-**English summary:** Releases use decimal carry versioning and a pre-staged media asset. Windows and macOS jobs each traverse every staged and packaged MP4 with a single decoder thread, tolerating isolated recoverable frames while still failing on incomplete streams or non-zero decoder exits, then run packaged E2E before a final job assembles checksummed assets. Windows updates require explicit restart confirmation; unsigned macOS previews update manually.
+**English summary:** Releases use decimal carry versioning and a pre-staged media asset. Windows and macOS jobs each traverse every staged and packaged video stream with one decoder thread and every declared audio stream likewise; source-silent files must be explicitly marked. Isolated recoverable frames are tolerated while incomplete streams or non-zero decoder exits still fail. Packaged E2E runs before a final job assembles checksummed assets. Windows updates require explicit restart confirmation; unsigned macOS previews update manually.

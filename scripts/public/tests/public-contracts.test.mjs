@@ -4,7 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { durationMatches, probeAndDecodeMedia, releaseRequiresAudio, versionContractErrors } from "../validate-media-pack.mjs";
+import { durationMatches, mediaEntryAudioContractErrors, probeAndDecodeMedia, versionContractErrors } from "../validate-media-pack.mjs";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const catalog = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "manifest.json"), "utf8"));
@@ -98,7 +98,7 @@ test("media validation probes codecs and duration and traverses video plus audio
   assert.equal(durationMatches(15.1, 15.125), false);
 });
 
-test("media manifest cannot bypass the stable-release audio gate by mutating its version", () => {
+test("media manifest binds its schema/version and requires an explicit per-file audio mode", () => {
   const errors = versionContractErrors({
     manifest: { schema_version: "unexpected/v9", version: "9.9.9" },
     catalogVersion: "1.0.0",
@@ -107,8 +107,10 @@ test("media manifest cannot bypass the stable-release audio gate by mutating its
   });
   assert.ok(errors.some((error) => error.includes("schema_version")));
   assert.ok(errors.some((error) => error.includes("must equal package version")));
-  assert.equal(releaseRequiresAudio("1.0.0"), true);
-  assert.equal(releaseRequiresAudio("9.9.9"), true, "all stable releases retain the complete-video-with-sound contract");
+  assert.deepEqual(mediaEntryAudioContractErrors({ audio_mode: "present", audio_codec: "aac" }), []);
+  assert.deepEqual(mediaEntryAudioContractErrors({ audio_mode: "source_silent", audio_codec: null }), []);
+  assert.ok(mediaEntryAudioContractErrors({ audio_codec: null })[0].includes("audio_mode"));
+  assert.ok(mediaEntryAudioContractErrors({ audio_mode: "source_silent", audio_codec: null }, { allowSourceSilent: false })[0].includes("must be 'present'"));
 });
 
 test("media validation fails closed on a full-decode error", () => {

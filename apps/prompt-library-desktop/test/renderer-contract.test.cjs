@@ -75,6 +75,7 @@ test("detail view exposes bilingual, section copy and full-item copy controls", 
   assert.match(html, /<html lang="zh-CN">/u, "static first paint must declare the Chinese default");
   assert.match(html, /id="global-locale-zh" class="locale-button active"[^>]+aria-pressed="true"/u, "Chinese locale control must be active by default");
   assert.ok(renderer.includes('const DISPLAY_LOCALE_DEFAULT_ZH_MIGRATION_KEY') && renderer.includes('storage.setItem(DISPLAY_LOCALE_KEY, "zh-CN")') && renderer.includes('storage.getItem(DISPLAY_LOCALE_KEY) === "en" ? "en" : "zh-CN"'), "first run and one-time upgrades must default to Chinese while later explicit English choices persist");
+  assert.ok(renderer.includes('completeVideo: "完整来源视频"') && renderer.includes('localFull: "本地完整来源 MP4"') && !renderer.includes('完整视频 · 有声'), "the UI must not claim that every complete source video has an audio track");
   assert.ok(renderer.includes("function activePrompt") && renderer.includes("item?.prompts?.[model]"), "prompt copy must read canonical prompt bytes with only the explicit official access-metadata exception");
 });
 

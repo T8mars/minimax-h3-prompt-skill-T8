@@ -41,6 +41,7 @@ const communityManifestFiles = new Map(
     ? mediaManifest.community_skill_files.map((entry) => [entry.skill_id, entry])
     : []
 );
+if (mediaManifest && mediaManifest.schema_version !== "1.1.0") errors.push(`unsupported media manifest schema_version=${mediaManifest.schema_version}`);
 
 if (!catalog.cases.length) errors.push("public catalog has no released cases");
 if (mediaManifest && mediaManifest.case_count !== catalog.cases.length) {
@@ -59,11 +60,12 @@ for (const item of catalog.cases) {
   totalBytes += stats.size;
   const bytes = fs.readFileSync(videoPath);
   const binary = bytes.toString("latin1");
-  const missingAtoms = ["ftyp", "moov", "mdat", "vide", "soun"].filter((atom) => !binary.includes(atom));
+  const manifestEntry = manifestFiles.get(item.id);
+  const requiredAtoms = manifestEntry?.audio_mode === "present" ? ["ftyp", "moov", "mdat", "vide", "soun"] : ["ftyp", "moov", "mdat", "vide"];
+  const missingAtoms = requiredAtoms.filter((atom) => !binary.includes(atom));
   if (stats.size < 1024 || missingAtoms.length) {
     errors.push(`${item.id}: incomplete MP4 container/tracks; missing=${missingAtoms.join(",") || "payload"}`);
   }
-  const manifestEntry = manifestFiles.get(item.id);
   if (!manifestEntry) {
     errors.push(`${item.id}: missing from media-pack-manifest.json`);
   } else {
@@ -73,7 +75,10 @@ for (const item of catalog.cases) {
     if (manifestEntry.size_bytes !== stats.size) errors.push(`${item.id}: manifest size mismatch`);
     const sha256 = crypto.createHash("sha256").update(bytes).digest("hex");
     if (String(manifestEntry.sha256 || "").toLocaleLowerCase() !== sha256) errors.push(`${item.id}: manifest SHA-256 mismatch`);
-    if (!manifestEntry.video_codec || !manifestEntry.audio_codec) errors.push(`${item.id}: manifest must record video and audio codecs`);
+    if (!manifestEntry.video_codec) errors.push(`${item.id}: manifest must record a video codec`);
+    if (!["present", "source_silent"].includes(manifestEntry.audio_mode)) errors.push(`${item.id}: manifest audio_mode must be present or source_silent`);
+    if (manifestEntry.audio_mode === "present" && !manifestEntry.audio_codec) errors.push(`${item.id}: present audio_mode must record an audio codec`);
+    if (manifestEntry.audio_mode === "source_silent" && manifestEntry.audio_codec !== null) errors.push(`${item.id}: source_silent audio_mode must record audio_codec=null`);
   }
   if (item.media.video?.scope !== "media") errors.push(`${item.id}: viewer did not bind the release media pack MP4`);
 }
@@ -98,7 +103,7 @@ for (const item of catalog.communitySkills) {
     if (manifestEntry.size_bytes !== stats.size) errors.push(`${item.id}: manifest size mismatch`);
     const sha256 = crypto.createHash("sha256").update(bytes).digest("hex");
     if (String(manifestEntry.sha256 || "").toLocaleLowerCase() !== sha256) errors.push(`${item.id}: manifest SHA-256 mismatch`);
-    if (!manifestEntry.video_codec || !manifestEntry.audio_codec) errors.push(`${item.id}: manifest must record video and audio codecs`);
+    if (!manifestEntry.video_codec || !manifestEntry.audio_codec || manifestEntry.audio_mode !== "present") errors.push(`${item.id}: community Skill manifest must record present video and audio codecs`);
   }
   if (item.media.video?.scope !== "media") errors.push(`${item.id}: viewer did not bind the community Skill MP4`);
 }

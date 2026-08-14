@@ -65,6 +65,7 @@ foreach ($caseId in $caseIds) {
         duration_seconds = $duration
         video_codec = [string]$videoStream.codec_name
         audio_codec = if ($audioStream -and $audioStream.codec_name) { [string]$audioStream.codec_name } else { $null }
+        audio_mode = if ($audioStream -and $audioStream.codec_name) { "present" } else { "source_silent" }
     })
 }
 
@@ -98,6 +99,7 @@ foreach ($skillId in $communityIds) {
         duration_seconds = $duration
         video_codec = [string]$videoStream.codec_name
         audio_codec = [string]$audioStream.codec_name
+        audio_mode = "present"
     })
 }
 
@@ -109,7 +111,7 @@ if ($extraMp4.Count -gt 0) { throw "Media input contains MP4 files not listed by
 if ($Version -eq "1.0.0" -and ($files.Count -ne 7 -or $communityFiles.Count -ne 0)) { throw "v1.0.0 requires exactly 7 case MP4 files and no community Skill media." }
 
 $manifest = [ordered]@{
-    schema_version = "1.0.0"
+    schema_version = "1.1.0"
     version = $Version
     generated_at = [DateTime]::UtcNow.ToString("o")
     case_count = $files.Count
