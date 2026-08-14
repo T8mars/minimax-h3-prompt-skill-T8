@@ -1,0 +1,179 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin with one small material guide aligned to a stable subject. Keep that same material visually continuous as it pulls the camera, accumulates color and depth, becomes one readable physical structure, and expands into an inhabitable environment. Reserve one final camera rise that compresses the dimensional world into a held graphic sheet while preserving the subject and material history.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Introduce one small material guide on the same optical axis as a stable subject.",
+      "purpose": "Creates a precise origin for the transformation.",
+      "ablation_failure": "Without a small origin and stable subject, the sequence starts as an ungrounded effects montage.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep one continuous material family responsible for camera guidance, color accumulation and spatial growth.",
+      "purpose": "Makes every phase feel causally related.",
+      "ablation_failure": "Changing material rules between phases breaks the transformation chain.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Let the material form one readable, depth-bearing structure inside the scene and hold it briefly.",
+      "purpose": "Provides a recognition checkpoint before scale expansion.",
+      "ablation_failure": "Flat overlay copy or unreadable decoration cannot prove physical integration.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Expand the same material into an environment that still contains the original subject and prior palette.",
+      "purpose": "Turns a local effect into a world-scale payoff without losing identity.",
+      "ablation_failure": "A disconnected new room would read as a scene swap.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Use one late camera rise to resolve the dimensional scene into a held graphic sheet that preserves subject and material history.",
+      "purpose": "Closes spatial spectacle with an inspectable format change.",
+      "ablation_failure": "An arbitrary end card would not prove continuity with the preceding world.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source black-haired fashion model and printed white dress",
+    "the source watercolor ribbon palette and ivory paper gallery",
+    "LET SILENCE BLOOM",
+    "AQUARELLE No.7",
+    "WEAR THE UNSEEN",
+    "the source flower-petal chamber and fashion-ad poster layout",
+    "MiniMax and Hailuo AI watermarks"
+  ],
+  "instantiations": [
+    {
+      "concept": "In an original polar research archive, one autonomous brass survey beetle releases a hair-thin frost filament. The filament guides a low camera, grows into the readable physical code K-42, opens into a crystalline wind-map chamber, then one final overhead rise resolves beetle, code and ice paths into a held field-chart sheet.",
+      "prompt_seed": "In an original polar research archive, one autonomous brass survey beetle releases a hair-thin frost filament. The filament guides a low camera, grows into the readable physical code K-42, opens into a crystalline wind-map chamber, then one final overhead rise resolves beetle, code and ice paths into a held field-chart sheet."
+    },
+    {
+      "concept": "In stop-motion cork theatre, one wooden mouse drags a single red sewing thread through a circular workshop. The thread guides a lateral dolly, knots into one readable inventory mark, unfolds shelves from stitched cloth, then a ceiling camera turns the complete mouse-and-thread world into a pinned maker's card.",
+      "prompt_seed": "In stop-motion cork theatre, one wooden mouse drags a single red sewing thread through a circular workshop. The thread guides a lateral dolly, knots into one readable inventory mark, unfolds shelves from stitched cloth, then a ceiling camera turns the complete mouse-and-thread world into a pinned maker's card."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a small origin and stable subject, the sequence starts as an ungrounded effects montage.",
+      "repair": "Introduce one small material guide on the same optical axis as a stable subject."
+    },
+    {
+      "failure": "Changing material rules between phases breaks the transformation chain.",
+      "repair": "Keep one continuous material family responsible for camera guidance, color accumulation and spatial growth."
+    },
+    {
+      "failure": "Flat overlay copy or unreadable decoration cannot prove physical integration.",
+      "repair": "Let the material form one readable, depth-bearing structure inside the scene and hold it briefly."
+    },
+    {
+      "failure": "A disconnected new room would read as a scene swap.",
+      "repair": "Expand the same material into an environment that still contains the original subject and prior palette."
+    },
+    {
+      "failure": "An arbitrary end card would not prove continuity with the preceding world.",
+      "repair": "Use one late camera rise to resolve the dimensional scene into a held graphic sheet that preserves subject and material history."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In an original polar research archive, one autonomous brass survey beetle releases a hair-thin frost filament. The filament guides a low camera, grows into the readable physical code K-42, opens into a crystalline wind-map chamber, then one final overhead rise resolves beetle, code and ice paths into a held field-chart sheet.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In stop-motion cork theatre, one wooden mouse drags a single red sewing thread through a circular workshop. The thread guides a lateral dolly, knots into one readable inventory mark, unfolds shelves from stitched cloth, then a ceiling camera turns the complete mouse-and-thread world into a pinned maker's card.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

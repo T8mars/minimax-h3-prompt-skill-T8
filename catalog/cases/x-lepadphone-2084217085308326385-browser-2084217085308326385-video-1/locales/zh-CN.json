@@ -1,0 +1,223 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "b07194b838215ddf35119083c526b1147fd09b081a898f91d194c60fb811812a",
+    "creative_dna_sha256": "91cfb4efccf59aaaea0e1c96a72b53b4defe58c71e6008720be81b3abb18c910"
+  },
+  "content": {
+    "title": "材质引路｜空间生长到版式定格",
+    "summary": "从一个微小材质锚点开始，让同一连续材质先引导运镜、再形成有厚度的可读结构并扩展成环境，最后通过俯视升维把立体场景压成一张保持人物与材质关系的平面版式。",
+    "quick_start": {
+      "input_format": "稳定主体 + 微小材质原点 + 同材质引导运镜/形成实体结构/扩成环境 + 单次升高 + 保留历史的版式终态",
+      "recommended_input": "极地档案室里，黄铜勘测甲虫从一枚冰种拉出唯一霜丝；霜丝引导镜头、形成实体 K-42 代码并展开晶体风图舱，最后只升高一次，把甲虫、代码和路径收束成可读野外图表页。",
+      "required_anchors": [
+        "在同一光轴上引入一个小型材料导轨作为稳定主体。",
+        "保持一个连续的材质系列负责相机引导、颜色积累和空间增长。",
+        "将相同的材质扩展到仍包含原始主体和先前调色板的环境中。",
+        "使用后期摄像机升起将立体场景解析为保留主体和材料历史的保留图形表。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "从一个微小材质锚点开始，让同一连续材质先引导运镜、再形成有厚度的可读结构并扩展成环境，最后通过俯视升维把立体场景压成一张保持人物与材质关系的平面版式。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "从与稳定主体对齐的微小材质引导物开始，让同一材质持续牵引镜头、积累颜色与深度、形成可辨实体结构并扩展成可进入的环境；最后只进行一次俯拍升高，把立体世界压缩为保留人物与材质关系的平面版式。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在同一光轴上引入一个小型材料导轨作为稳定主体。",
+          "purpose": "为变换创建精确的原点。",
+          "ablation_failure": "由于没有小的起源和稳定的主体，该序列以不接地气的效果蒙太奇开始。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "保持一个连续的材质系列负责相机引导、颜色积累和空间增长。",
+          "purpose": "让每个阶段都感觉有因果关系。",
+          "ablation_failure": "在阶段之间更改材料规则会破坏转换链。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "让素材在场景中形成一种可读的、有深度的结构，并短暂地保留它。",
+          "purpose": "提供规模扩展前的识别检查点。",
+          "ablation_failure": "平面覆盖副本或不可读的装饰不能证明物理集成。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "将相同的材质扩展到仍包含原创主体和先前调色板的环境中。",
+          "purpose": "在不失去身份的情况下将局部效应转化为世界范围的收束。",
+          "ablation_failure": "断开连接的新房间将被视为场景交换。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "使用后期摄像机升起将立体场景解析为保留主体和材料历史的保留图形表。",
+          "purpose": "通过可观察的格式变化来关闭空间奇观。",
+          "ablation_failure": "任意的结局卡都不能证明与前一个世界的连续性。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源黑发时装模特和印花白色连衣裙",
+        "来源水彩丝带调色板和象牙纸画廊",
+        "LET SILENCE BLOOM",
+        "AQUARELLE 7号",
+        "WEAR THE UNSEEN",
+        "花瓣室源码及时尚广告海报布局",
+        "MiniMax和海洛AI水印"
+      ],
+      "instantiations": [
+        {
+          "concept": "在一份原创的极地研究档案中，一只自主黄铜调查甲虫释放出一根头发丝般细的霜丝。细丝引导低位摄像机，长成可读的物理代码 K-42，打开一个水晶风图室，然后最后一次头顶上升将甲虫、代码和冰路径解析为一张现场图表。",
+          "prompt_seed": "在一份原创的极地研究档案中，一只自主黄铜调查甲虫释放出一根头发丝般细的霜丝。细丝引导低位摄像机，长成可读的物理代码 K-42，打开一个水晶风图室，然后最后一次头顶上升将甲虫、代码和冰路径解析为一张现场图表。"
+        },
+        {
+          "concept": "在定格动画软木剧院中，一只木鼠拖着一根红色缝纫线穿过圆形车间。线引导横向移动车，打结成一个可读的库存标记，用缝制的布展开架子，然后天花板上的摄像头将整个鼠标和线的世界变成一张固定的制造商卡片。",
+          "prompt_seed": "在定格动画软木剧院中，一只木鼠拖着一根红色缝纫线穿过圆形车间。线引导横向移动车，打结成一个可读的库存标记，用缝制的布展开架子，然后天花板上的摄像头将整个鼠标和线的世界变成一张固定的制造商卡片。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "由于没有小的起源和稳定的主体，该序列以不接地气的效果蒙太奇开始。",
+          "repair": "在同一光轴上引入一个小型材料导轨作为稳定主体。"
+        },
+        {
+          "failure": "在阶段之间更改材料规则会破坏转换链。",
+          "repair": "保持一个连续的材质系列负责相机引导、颜色积累和空间增长。"
+        },
+        {
+          "failure": "平面覆盖副本或不可读的装饰不能证明物理集成。",
+          "repair": "让素材在场景中形成一种可读的、有深度的结构，并短暂地保留它。"
+        },
+        {
+          "failure": "断开连接的新房间将被视为场景交换。",
+          "repair": "将相同的材质扩展到仍包含原创主体和先前调色板的环境中。"
+        },
+        {
+          "failure": "任意的结局卡都不能证明与前一个世界的连续性。",
+          "repair": "使用后期摄像机升起将立体场景解析为保留主体和材料历史的保留图形表。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在一份原创的极地研究档案中，一只自主黄铜调查甲虫释放出一根头发丝般细的霜丝。细丝引导低位摄像机，长成可读的物理代码 K-42，打开一个水晶风图室，然后最后一次头顶上升将甲虫、代码和冰路径解析为一张现场图表。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在定格动画软木剧院中，一只木鼠拖着一根红色缝纫线穿过圆形车间。线引导横向移动车，打结成一个可读的库存标记，用缝制的布展开架子，然后天花板上的摄像头将整个鼠标和线的世界变成一张固定的制造商卡片。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

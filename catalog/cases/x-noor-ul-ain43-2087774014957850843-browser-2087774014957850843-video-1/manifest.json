@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1",
+  "slug": "hazard-gauntlet-to-scale-threat",
+  "title": "连续脱险｜假安全后升级为尺度威胁",
+  "source_title": "连续脱险｜多段灾害穿行到巨物升级",
+  "summary": "让同一主体沿单一逃生方向连续穿过多种局部危险，每次恢复都只是临时安全；晚段抵达看似更快或更安全的载具后，再用一次更大尺度的环境威胁重新定义整条路线。",
+  "status": "released",
+  "source_duration_seconds": 30.162721,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/hazard-gauntlet-to-scale-threat",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-hazard-gauntlet-to-scale-threat-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "同一逃生方向 + 至少两种局部危险 + 可见恢复 + 临时安全载具 + 更大尺度终端威胁",
+  "recommended_input": "原创钟表档案馆里，黄铜快递甲虫沿胡桃木索引传送带奔向蓝色收集灯，身后一只抽屉坍落；传送带接缝断开，甲虫借垂落目录丝带跨过并落到下一段，蓝灯仍在前方；桌面尽头开启房间尺度的纸张旋风，填满目标过道；甲虫、电车和旋风同框，结尾不声称脱险",
+  "required_anchors": [
+    "Establish one subject and one persistent escape direction before the hazard chain.",
+    "Use at least two materially different local hazards with visible recoveries between them.",
+    "Provide one brief apparent safety upgrade or open platform late in the sequence.",
+    "Use one terminal scale reveal to reclassify the apparent safety state without inventing survival beyond the visible ending."
+  ],
+  "tags": [
+    "hazard",
+    "gauntlet",
+    "to",
+    "scale",
+    "threat"
+  ],
+  "quality": {
+    "weighted_score": 4.679,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:47+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

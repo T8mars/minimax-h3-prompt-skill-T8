@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-jeroenvanh-2052849887041974577-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "411bc55d00c4de842f77d43ded392edae8ea80638d2ae7fd5ea13e1366320fc8",
+    "creative_dna_sha256": "ca8a568ab89df823def2d07f1c3ef6a13fee1b71ce4aa5e09aa8b40121e5fbe6"
+  },
+  "content": {
+    "title": "表情校准｜固定身份下的动作单元序列",
+    "summary": "锁定人物、光线和视角，只让眼睑、眉部、下颌、视线和唇形等局部动作单元分段变化；中间用微小复位防止表情混成连续表演，末段收紧景别检验身份与细节仍稳定。",
+    "quick_start": {
+      "input_format": "单一稳定人像 + 固定光线背景视角 + 至少4组分离面部动作 + 1次微小复位 + 后段细节近景",
+      "recommended_input": "年轻陶瓷快递员在冷色医疗亭中保持同一身份与正面机位，依次展示单侧微笑、闭眼、抬眉、侧视和圆唇；中间短暂回中性，最后只推进到面罩密封近景。",
+      "required_anchors": [
+        "在任何表情变化之前锁定一张脸、背景、灯光方向和相机轴。",
+        "将表情分成可读的局部单元，而不是连续变形整个脸部。",
+        "保持头部运动服从于眼睛、眉毛、嘴巴和脸颊的证据。",
+        "只有在身份被反复证明后才使用后期更接近的作物。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "锁定人物、光线和视角，只让眼睑、眉部、下颌、视线和唇形等局部动作单元分段变化；中间用微小复位防止表情混成连续表演，末段收紧景别检验身份与细节仍稳定。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "保持身份、光线、背景和镜头轴固定，每次只改变一组面部动作单元。短暂回到中性状态以维持可比性，后段用克制的局部特写检验细节稳定性，但不把校准序列变成叙事表演。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在任何表情变化之前锁定一张脸、背景、灯光方向和相机轴。",
+          "purpose": "创建可靠的比较基线。",
+          "ablation_failure": "更改肖像设置使动作单位无法进行比较。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "将表情分成可读的局部单元，而不是连续变形整个脸部。",
+          "purpose": "使每个更改都可诊断且可重用。",
+          "ablation_failure": "混合的情感表现隐藏了哪个功能发生了变化。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在较大更改之间向基线插入至少一个部分重置。",
+          "purpose": "防止累积失真并保留身份。",
+          "ablation_failure": "如果没有重置，变化可能会变成不同的面貌。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "保持头部运动服从于眼睛、眉毛、嘴巴和脸颊的证据。",
+          "purpose": "保持稳定的肖像，同时允许方向测试。",
+          "ablation_failure": "大头转动以姿势变化取代面部证明。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "只有在身份被反复证明后才使用后期更接近的作物。",
+          "purpose": "测试细节稳定性并提供明确的终点。",
+          "ablation_failure": "以极端特写镜头打开，消除了身份基线。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "秃头灰胡子老人",
+        "黑色衬衫",
+        "深色镶板工作室肖像",
+        "源面部表情顺序",
+        "源码最终嘴巴特写"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位年轻的陶瓷快递员在炫酷的医疗亭里进行非语言的面罩适配校准：中立基线、单侧眉毛提升、孤立的下眼睑紧张、闭唇下颌移动，然后是一个鼻孔和脸颊的动作。短暂的中性重置将测试分开，唯一的后期近距离裁剪验证了未改变的眼角和太阳穴遮阳板接缝。",
+          "prompt_seed": "一位年轻的陶瓷快递员在炫酷的医疗亭里进行非语言的面罩适配校准：中立基线、单侧眉毛提升、孤立的下眼睑紧张、闭唇下颌移动，然后是一个鼻孔和脸颊的动作。短暂的中性重置将测试分开，唯一的后期近距离裁剪验证了未改变的眼角和太阳穴遮阳板接缝。"
+        },
+        {
+          "concept": "一个手工制作的木制木偶在阳光明媚的排练室中以新的顺序测试了五个机械面部控制：左眉板、成对的眼睛百叶窗、闭合的下巴侧向滑动、一个脸颊杠杆，然后完全中立重置。相机末端位于未改变的眼睛铰链和木纹上，从未位于嘴部。",
+          "prompt_seed": "一个手工制作的木制木偶在阳光明媚的排练室中以新的顺序测试了五个机械面部控制：左眉板、成对的眼睛百叶窗、闭合的下巴侧向滑动、一个脸颊杠杆，然后完全中立重置。相机末端位于未改变的眼睛铰链和木纹上，从未位于嘴部。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "更改肖像设置使动作单位无法进行比较。",
+          "repair": "在任何表情变化之前锁定一张脸、背景、灯光方向和相机轴。"
+        },
+        {
+          "failure": "混合的情感表现隐藏了哪个功能发生了变化。",
+          "repair": "将表情分成可读的局部单元，而不是连续变形整个脸部。"
+        },
+        {
+          "failure": "如果没有重置，变化可能会变成不同的面貌。",
+          "repair": "在较大更改之间向基线插入至少一个部分重置。"
+        },
+        {
+          "failure": "大头转动以姿势变化取代面部证明。",
+          "repair": "保持头部运动服从于眼睛、眉毛、嘴巴和脸颊的证据。"
+        },
+        {
+          "failure": "以极端特写镜头打开，消除了身份基线。",
+          "repair": "只有在身份被反复证明后才使用后期更接近的作物。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位年轻的陶瓷快递员在炫酷的医疗亭里进行非语言的面罩适配校准：中立基线、单侧眉毛提升、孤立的下眼睑紧张、闭唇下颌移动，然后是一个鼻孔和脸颊的动作。短暂的中性重置将测试分开，唯一的后期近距离裁剪验证了未改变的眼角和太阳穴遮阳板接缝。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个手工制作的木制木偶在阳光明媚的排练室中以新的顺序测试了五个机械面部控制：左眉板、成对的眼睛百叶窗、闭合的下巴侧向滑动、一个脸颊杠杆，然后完全中立重置。相机末端位于未改变的眼睛铰链和木纹上，从未位于嘴部。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

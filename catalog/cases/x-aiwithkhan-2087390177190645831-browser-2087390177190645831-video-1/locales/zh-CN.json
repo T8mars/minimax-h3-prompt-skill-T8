@@ -1,0 +1,222 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7b721351e574072b4230705e36f8c918bf36b3ba8ad1321cc1a2d13947e8488c",
+    "creative_dna_sha256": "ef9c1344db89ae82017ad8cfd7b738caabdabab61cc0aca70733710b88435c89"
+  },
+  "content": {
+    "title": "事故悬停｜主动取样后独自离场",
+    "summary": "把一次突发事故锁在最大混乱状态，让唯一仍能行动的主体穿过固定证据、主动取走其中几件物体并完成离场；悬停现场始终不复流，异常由主体独占行动权来证明。",
+    "quick_start": {
+      "input_format": "日常多人场景 + 单次事故峰值悬停 + 唯一可动主体 + 两处主动取样 + 悬停不复流的离场",
+      "recommended_input": "原创轨道种子库内，两名技术员检修密封种子罐，一只黄铜维护甲虫停在地面，透明冷却管处于受压状态；甲虫从三串固定液珠下穿过，依次扫描技术员、漂浮罐体和琥珀诊断片，不触动它们；甲虫携带两片样品穿过舱门，门闭合前广角证明整座事故现场仍悬停，最终不复流",
+      "required_anchors": [
+        "建立事故发生前至少两名参与者的日常行程和路线。",
+        "利用一次意外在深度上分布多个独立可读的对象。",
+        "让移动主体有选择地移除至少两个分离的物体，而不释放其余物体。",
+        "以主体离开而结束，而更广阔的视野仍然证明事故仍然悬而未决。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "把一次突发事故锁在最大混乱状态，让唯一仍能行动的主体穿过固定证据、主动取走其中几件物体并完成离场；悬停现场始终不复流，异常由主体独占行动权来证明。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先建立普通的共享日常，再用一次物理事故把多个可辨物体分布在不同景深，并把事故冻结在最大混乱状态。只有一个主体仍能正常行动，它主动取走至少两个彼此分离的对象后离开；更宽画面必须继续证明其余世界仍被冻结。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立事故发生前至少两名参与者的日常行程和路线。",
+          "purpose": "使中断具有因果可读性。",
+          "ablation_failure": "悬浮碎片上的开口将活动变成了无法解释的装饰。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "利用一次意外在深度上分布多个独立可读的对象。",
+          "purpose": "创建一个可测试的停止世界场。",
+          "ablation_failure": "一个浮动道具无法证明共享的物理状态。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在最混乱状态下，除了一个明显移动的主体之外，保持所有参与者和物体固定。",
+          "purpose": "为异常提供明确的代理规则。",
+          "ablation_failure": "如果几个人移动，冻结就会成为编辑上的歧义。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "让移动主体有选择地移除至少两个分离的物体，而不释放其余物体。",
+          "purpose": "证明固定状态下的有意交互。",
+          "ablation_failure": "被动走查永远不会测试悬架。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以主体离开而结束，而更广阔的视野仍然证明事故仍然悬而未决。",
+          "purpose": "将坚持变成最终的结果。",
+          "ablation_failure": "全局重启将用通用的时间冻结版本取代该机制。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "1990 年代美式餐厅",
+        "来源黑发女人和粉色制服的女服务员",
+        "红色乙烯基展位和棋盘地板",
+        "早餐盘、鸡蛋、培根、吐司和咖啡溢出",
+        "食品取样口和电梯出口",
+        "Seedance 2.5 归属"
+      ],
+      "instantiations": [
+        {
+          "concept": "在原创的轨道种子库中，冷却剂管线破裂并将技术人员、种子罐和液体球冻结在半空中。一只维护甲虫保持移动状态，从不同的冰冻流中取出两个诊断晶片，然后在海湾保持锁定状态时穿过虹膜舱口。",
+          "prompt_seed": "在原创的轨道种子库中，冷却剂管线破裂并将技术人员、种子罐和液体球冻结在半空中。一只维护甲虫保持移动状态，从不同的冰冻流中取出两个诊断晶片，然后在海湾保持锁定状态时穿过虹膜舱口。"
+        },
+        {
+          "concept": "在定格动画粘土剧场中，印刷店的架子倒塌并悬挂着滚筒、纸条、墨滴和三个木偶。一名木制学徒从不同的位置收集一个蓝色样本和一个黄铜类型块，然后通过干燥柜退出，同时塌陷保持固定。",
+          "prompt_seed": "在定格动画粘土剧场中，印刷店的架子倒塌并悬挂着滚筒、纸条、墨滴和三个木偶。一名木制学徒从不同的位置收集一个蓝色样本和一个黄铜类型块，然后通过干燥柜退出，同时塌陷保持固定。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "悬浮碎片上的开口将活动变成了无法解释的装饰。",
+          "repair": "建立事故发生前至少两名参与者的日常行程和路线。"
+        },
+        {
+          "failure": "一个浮动道具无法证明共享的物理状态。",
+          "repair": "利用一次意外在深度上分布多个独立可读的对象。"
+        },
+        {
+          "failure": "如果几个人移动，冻结就会成为编辑上的歧义。",
+          "repair": "在最混乱状态下，除了一个明显移动的主体之外，保持所有参与者和物体固定。"
+        },
+        {
+          "failure": "被动走查永远不会测试悬架。",
+          "repair": "让移动主体有选择地移除至少两个分离的物体，而不释放其余物体。"
+        },
+        {
+          "failure": "全局重启将用通用的时间冻结版本取代该机制。",
+          "repair": "以主体离开而结束，而更广阔的视野仍然证明事故仍然悬而未决。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在原创的轨道种子库中，冷却剂管线破裂并将技术人员、种子罐和液体球冻结在半空中。一只维护甲虫保持移动状态，从不同的冰冻流中取出两个诊断晶片，然后在海湾保持锁定状态时穿过虹膜舱口。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在定格动画粘土剧场中，印刷店的架子倒塌并悬挂着滚筒、纸条、墨滴和三个木偶。一名木制学徒从不同的位置收集一个蓝色样本和一个黄铜类型块，然后通过干燥柜退出，同时塌陷保持固定。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

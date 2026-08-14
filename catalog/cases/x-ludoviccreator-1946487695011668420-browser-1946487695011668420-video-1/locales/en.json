@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "76661fe0cebb619e716231f1489629163882388e33330774ef18a83b11770620",
+    "creative_dna_sha256": "adc0d63592d868cdcafd8b8fce61bfd24ad55681acf8d4d627861330bf5fd71d"
+  },
+  "content": {
+    "title": "Frontal Retreat | A Collapsing Passage Forces the Only Refuge",
+    "summary": "Let the subject face the threat and keep backing away from the target. The camera moves backward at a matching speed to keep the face and the incoming environment in the same frame. The danger occupies the passage section by section from the far end to the front, and the margin continues to shrink. Finally, the subject enters the only visible shelter and ends with the closure of the boundary.",
+    "quick_start": {
+      "input_format": "The subject retreats towards the threat + coaxial danger approach + staged space compression + unique asylum threshold + single boundary closure",
+      "recommended_input": "On the original paper shadow light bridge, a cream-colored jointed puppet walks backwards facing the camera, a black ink crack appears on the far end arch, and a white origami shrine is clearly visible nearby; two paper rails are folded inwards, and the clean path around the puppet is narrowed, but the identity and gait of the subject are continuous; the puppet only steps in once, and the white paper door folds and closes before the black ink arrives, and the camera remains closed, without claiming subsequent results.",
+      "required_anchors": [
+        "Establish a subject facing the threat while moving backward toward a visible route.",
+        "Advance the environmental hazard along the same corridor axis as the retreat.",
+        "Keep one protective threshold readable behind the subject before the final crossing.",
+        "Use one terminal crossing and visible boundary separation from the hazard."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Let the subject face the threat and keep backing away from the target. The camera moves backward at a matching speed to keep the face and the incoming environment in the same frame. The danger occupies the passage section by section from the far end to the front, and the margin continues to shrink. Finally, the subject enters the only visible shelter and ends with the closure of the boundary.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Keep a retreating subject facing an advancing hazard while a camera moves backward at matched speed; progressively reduce corridor clearance along the shared axis, preserve one visible protective threshold behind the subject, then complete one crossing and boundary closure.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish a subject facing the threat while moving backward toward a visible route.",
+          "purpose": "Defines the frontal-retreat relationship.",
+          "ablation_failure": "Turning away removes simultaneous face-and-threat proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Advance the environmental hazard along the same corridor axis as the retreat.",
+          "purpose": "Creates a measurable closing-distance problem.",
+          "ablation_failure": "Random off-axis debris becomes generic chaos.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Reduce visible clearance in at least two stages without changing subject identity or route.",
+          "purpose": "Builds escalation through spatial compression.",
+          "ablation_failure": "One sudden blast provides no progressive pressure.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Keep one protective threshold readable behind the subject before the final crossing.",
+          "purpose": "Gives the retreat a clear actionable destination.",
+          "ablation_failure": "A surprise exit appears as an unearned rescue.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Use one terminal crossing and visible boundary separation from the hazard.",
+          "purpose": "Resolves the corridor problem without claiming unseen survival.",
+          "ablation_failure": "Cutting before the boundary leaves the payoff unproved.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source astronaut",
+        "metal spacecraft corridor",
+        "space debris and industrial collapse",
+        "the source helmet and suit",
+        "the exact hatch and collapse choreography"
+      ],
+      "instantiations": [
+        {
+          "concept": "A paper marionette backs along a lantern bridge while black ink cracks chase it through successive arches; the camera retreats face-on until it enters a white folding shrine and the final paper door seals.",
+          "prompt_seed": "A paper marionette backs along a lantern bridge while black ink cracks chase it through successive arches; the camera retreats face-on until it enters a white folding shrine and the final paper door seals."
+        },
+        {
+          "concept": "A small maintenance crab walks backward inside a transparent coolant pipe as ice fractures advance from depth; it crosses one warm service iris and the iris closes before the fracture front arrives.",
+          "prompt_seed": "A small maintenance crab walks backward inside a transparent coolant pipe as ice fractures advance from depth; it crosses one warm service iris and the iris closes before the fracture front arrives."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Turning away removes simultaneous face-and-threat proof.",
+          "repair": "Establish a subject facing the threat while moving backward toward a visible route."
+        },
+        {
+          "failure": "Random off-axis debris becomes generic chaos.",
+          "repair": "Advance the environmental hazard along the same corridor axis as the retreat."
+        },
+        {
+          "failure": "One sudden blast provides no progressive pressure.",
+          "repair": "Reduce visible clearance in at least two stages without changing subject identity or route."
+        },
+        {
+          "failure": "A surprise exit appears as an unearned rescue.",
+          "repair": "Keep one protective threshold readable behind the subject before the final crossing."
+        },
+        {
+          "failure": "Cutting before the boundary leaves the payoff unproved.",
+          "repair": "Use one terminal crossing and visible boundary separation from the hazard."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A paper marionette backs along a lantern bridge while black ink cracks chase it through successive arches; the camera retreats face-on until it enters a white folding shrine and the final paper door seals.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A small maintenance crab walks backward inside a transparent coolant pipe as ice fractures advance from depth; it crosses one warm service iris and the iris closes before the fracture front arrives.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

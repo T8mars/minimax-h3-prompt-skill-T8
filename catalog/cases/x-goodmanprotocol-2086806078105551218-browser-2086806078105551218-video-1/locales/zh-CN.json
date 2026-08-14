@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "cf4f62d4a44d6ca8d7b26d0c72395618f1e1a62a5a1737a3a1e184d99f2c1d24",
+    "creative_dna_sha256": "72cd9914ba9f6d48e4343edc61fb05f2f4667d7d89f6f3a86c242ead7ce394fa"
+  },
+  "content": {
+    "title": "纪实跟拍｜屋顶日常到镜头致意",
+    "summary": "拍摄者先像偶然发现一样接近日常人物，再用同一观察距离记录几项朴素动作；外部线索改变人物目标，人物只对镜头做一次简短回应，最后以带有手持误差的离开完成记忆感。作为既有纪实偶遇模板的新证据，不新增选择器。",
+    "quick_start": {
+      "input_format": "观察者媒介 + 日常人物/地点 + 两个日常动作 + 外部信号改变目标 + 一次回应 + 有动机录制失误",
+      "recommended_input": "原创夜间植物温室里，拍摄者绕过一张植床，发现年长园丁已经在擦玻璃冷凝水，开场不看镜头；侧门旁服务铃响起，园丁停止检查并看向铃，镜头短暂呼吸对焦；园丁离开，白平衡从荧光绿漂到钠灯琥珀色，对焦在门开始关闭后才落稳，留下空温室",
+      "required_anchors": [
+        "首先观察者发现一个已经存在于普通例程中的主体。",
+        "使用重复出现的环境地标将几个小动作保留在一个可读的空间关系区域中。",
+        "只允许观察者进行一次克制的确认。",
+        "以出发结束，至少操作员的一个轻微缺陷仍然可见。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "拍摄者先像偶然发现一样接近日常人物，再用同一观察距离记录几项朴素动作；外部线索改变人物目标，人物只对镜头做一次简短回应，最后以带有手持误差的离开完成记忆感。作为既有纪实偶遇模板的新证据，不新增选择器。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把主体作为计划外的日常发现，通过重复地标观察一段小型日常；一个外部提示或逐渐增强的镜头意识改变双方关系，主体只做一次克制回应，随后在拍摄者未完全修正的对焦、白平衡或构图偏差中离开。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "首先观察者发现一个已经存在于普通例程中的主体。",
+          "purpose": "防止开口给相机带来舞台表演的感觉。",
+          "ablation_failure": "准备好的主角姿势消除了发现关系。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用重复出现的环境地标将几个小动作保留在一个可读的空间关系区域中。",
+          "purpose": "将碎片变成连续的生活时刻。",
+          "ablation_failure": "不相关的特写镜头失去了位置和常规。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "让一个可见的外部提示或不断增强的镜头意识重​​新引导拍摄对象的注意力。",
+          "purpose": "创建因果变化，无需脚本化说明。",
+          "ablation_failure": "无法解释的反应没有明显的触发因素。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "只允许观察者进行一次克制的确认。",
+          "purpose": "改变主体与相机的关系，但不会成为性能镜头覆盖。",
+          "ablation_failure": "重复的眼神或手势使这次相遇变得戏剧化。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以出发结束，至少操作员的一个轻微缺陷仍然可见。",
+          "purpose": "保留素材的记忆记录特性。",
+          "ablation_failure": "完美的英雄完成消除了观察者的存在。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源天台女人",
+        "来源猫、洗衣、茶或家庭道具",
+        "确切的屋顶位置和衣柜",
+        "源波或手势",
+        "确切的 MiniDV/VHS 取景缺陷"
+      ],
+      "instantiations": [
+        {
+          "concept": "VHS-C 田间记录仪发现一位年长的夜间园丁已经在清除植物圆顶中的凝结物；服务铃声引导了他，他轻拍了一次遮光罩，然后退出，同时白平衡在钠灯下漂移。",
+          "prompt_seed": "VHS-C 田间记录仪发现一位年长的夜间园丁已经在清除植物圆顶中的凝结物；服务铃声引导了他，他轻拍了一次遮光罩，然后退出，同时白平衡在钠灯下漂移。"
+        },
+        {
+          "concept": "手持迷你相机发现一位定格动画毛毡天文学家正在屋顶天文台整理纸质星星；当风向标转动时，她向操作员点了点头，然后在焦点迟迟到达关闭舱门时离开。",
+          "prompt_seed": "手持迷你相机发现一位定格动画毛毡天文学家正在屋顶天文台整理纸质星星；当风向标转动时，她向操作员点了点头，然后在焦点迟迟到达关闭舱门时离开。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "准备好的主角姿势消除了发现关系。",
+          "repair": "首先观察者发现一个已经存在于普通例程中的主体。"
+        },
+        {
+          "failure": "不相关的特写镜头失去了位置和常规。",
+          "repair": "使用重复出现的环境地标将几个小动作保留在一个可读的空间关系区域中。"
+        },
+        {
+          "failure": "无法解释的反应没有明显的触发因素。",
+          "repair": "让一个可见的外部提示或不断增强的镜头意识重​​新引导拍摄对象的注意力。"
+        },
+        {
+          "failure": "重复的眼神或手势使这次相遇变得戏剧化。",
+          "repair": "只允许观察者进行一次克制的确认。"
+        },
+        {
+          "failure": "完美的英雄完成消除了观察者的存在。",
+          "repair": "以出发结束，至少操作员的一个轻微缺陷仍然可见。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "VHS-C 田间记录仪发现一位年长的夜间园丁已经在清除植物圆顶中的凝结物；服务铃声引导了他，他轻拍了一次遮光罩，然后退出，同时白平衡在钠灯下漂移。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "手持迷你相机发现一位定格动画毛毡天文学家正在屋顶天文台整理纸质星星；当风向标转动时，她向操作员点了点头，然后在焦点迟迟到达关闭舱门时离开。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

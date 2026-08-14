@@ -1,0 +1,222 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "71366361b59aba16cbb24989e95d62149790e50df80c9efcb7b818b07b1b953c",
+    "creative_dna_sha256": "8b9fcb82bb166103eb40d549de23c262970c685142b3aea47372b24703f537f3"
+  },
+  "content": {
+    "title": "连续脱险｜假安全后升级为尺度威胁",
+    "summary": "让同一主体沿单一逃生方向连续穿过多种局部危险，每次恢复都只是临时安全；晚段抵达看似更快或更安全的载具后，再用一次更大尺度的环境威胁重新定义整条路线。",
+    "quick_start": {
+      "input_format": "同一逃生方向 + 至少两种局部危险 + 可见恢复 + 临时安全载具 + 更大尺度终端威胁",
+      "recommended_input": "原创钟表档案馆里，黄铜快递甲虫沿胡桃木索引传送带奔向蓝色收集灯，身后一只抽屉坍落；传送带接缝断开，甲虫借垂落目录丝带跨过并落到下一段，蓝灯仍在前方；桌面尽头开启房间尺度的纸张旋风，填满目标过道；甲虫、电车和旋风同框，结尾不声称脱险",
+      "required_anchors": [
+        "在危险链前建立一个主体和一个持续逃生方向。",
+        "使用至少两种实质上不同的局部危险，并且它们之间有明显的恢复。",
+        "在序列后期提供一个简短的明显安全升级或开放平台。",
+        "使用一个终端尺度显示来重新分类表面的安全状态，而不会在可见的结局之外创造生存。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让同一主体沿单一逃生方向连续穿过多种局部危险，每次恢复都只是临时安全；晚段抵达看似更快或更安全的载具后，再用一次更大尺度的环境威胁重新定义整条路线。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "沿单一逃生方向串联数个视觉上不同的局部危险，让同一主体反复恢复并获得一次短暂、看似更安全的升级；最后揭示一个远大于主体和逃生平台的环境级威胁，重新定义整条路线。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在危险链前建立一个主体和一个持续逃生方向。",
+          "purpose": "将不同的危险绑定到一条路线中。",
+          "ablation_failure": "不相关的方向使序列感觉像是蒙太奇。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用至少两种实质上不同的局部危险，并且它们之间有明显的恢复。",
+          "purpose": "通过改变身体职责来升级。",
+          "ablation_failure": "重复复制一个障碍不会产生有意义的进展。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在每次恢复中保持相同的主体和路由逻辑可追溯。",
+          "purpose": "保留一个连续生存问题。",
+          "ablation_failure": "主体或空间关系重置打破了因果链。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在序列后期提供一个简短的明显安全升级或开放平台。",
+          "purpose": "为最终的比例反转创建可读基线。",
+          "ablation_failure": "如果没有暂时的缓解，结局只不过是另一个危险。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "使用一个终端尺度显示来重新分类表面的安全状态，而不会在可见的结局之外创造生存。",
+          "purpose": "使最终的威胁改变了之前所有逃跑的意义。",
+          "ablation_failure": "声称未见的结果夸大了证据并削弱了证据。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源年轻女子跑步者",
+        "集装箱及工业堆场",
+        "汽车、管道和院子特有的危险",
+        "白色游艇",
+        "巨鲨与海洋漩涡",
+        "确切的源逃脱编排"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名发条信使穿过故障的图书馆传送带、掉落的索引抽屉和滚动的梯子，到达一辆宽阔的阅读台电车，然后发现一个房间大小的纸张旋风正在消耗前面的档案。",
+          "prompt_seed": "一名发条信使穿过故障的图书馆传送带、掉落的索引抽屉和滚动的梯子，到达一辆宽阔的阅读台电车，然后发现一个房间大小的纸张旋风正在消耗前面的档案。"
+        },
+        {
+          "concept": "一颗种子囊穿过折断的温室茎和倒塌的灌溉桥梁，到达漂浮的叶筏，然后看到一个巨大的透明根漩涡充满了下面的池塘。",
+          "prompt_seed": "一颗种子囊穿过折断的温室茎和倒塌的灌溉桥梁，到达漂浮的叶筏，然后看到一个巨大的透明根漩涡充满了下面的池塘。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "不相关的方向使序列感觉像是蒙太奇。",
+          "repair": "在危险链前建立一个主体和一个持续逃生方向。"
+        },
+        {
+          "failure": "重复复制一个障碍不会产生有意义的进展。",
+          "repair": "使用至少两种实质上不同的局部危险，并且它们之间有明显的恢复。"
+        },
+        {
+          "failure": "主体或空间关系重置打破了因果链。",
+          "repair": "在每次恢复中保持相同的主体和路由逻辑可追溯。"
+        },
+        {
+          "failure": "如果没有暂时的缓解，结局只不过是另一个危险。",
+          "repair": "在序列后期提供一个简短的明显安全升级或开放平台。"
+        },
+        {
+          "failure": "声称未见的结果夸大了证据并削弱了证据。",
+          "repair": "使用一个终端尺度显示来重新分类表面的安全状态，而不会在可见的结局之外创造生存。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名发条信使穿过故障的图书馆传送带、掉落的索引抽屉和滚动的梯子，到达一辆宽阔的阅读台电车，然后发现一个房间大小的纸张旋风正在消耗前面的档案。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一颗种子囊穿过折断的温室茎和倒塌的灌溉桥梁，到达漂浮的叶筏，然后看到一个巨大的透明根漩涡充满了下面的池塘。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

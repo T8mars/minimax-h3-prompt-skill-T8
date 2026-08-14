@@ -1,0 +1,222 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "4acc3a4bc87ed453dac700f81b384494a77d4fc901cb00ced56042e23bdc88cb",
+    "creative_dna_sha256": "00b2180169701522e6102d4402854d9b89a3949b7ffbe2792af7c9b2a02ce3be"
+  },
+  "content": {
+    "title": "信息逼近｜远端警告压缩到当前空间",
+    "summary": "先让远端信息给出模糊空间警告，主体据此检查一个仍为空的方向；第二条信息必须更精确地把发送者位置压缩到主体当前空间，最后只保留转身前的反应与未揭示威胁。",
+    "quick_start": {
+      "input_format": "独处主体 + 远端模糊警告 + 空场验证 + 当前盲区精确警告 + 不揭示来源的反应",
+      "recommended_input": "原创射电望远镜控制室内，一名夜班技术员独自在固定控制台前，北阵列观察缝、墙钟和她唯一的影子先建立；技术员只检查北阵列，碟面和维护路为空，灯保持熄灭，不出现人物或移动物；技术员发现第二道影边，停止动作并开始向控制台一侧转头，发送者始终不揭示",
+      "required_anchors": [
+        "在任何消息改变其含义之前建立稳定的本地空间关系。",
+        "使用一条有界的第一条消息来警告方向，但使发送者保持遥远或模糊。",
+        "使用第二条消息来定位对象当前盲点内的发送者。",
+        "在发件人被揭露之前，在保持反应或开始回合时结束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让远端信息给出模糊空间警告，主体据此检查一个仍为空的方向；第二条信息必须更精确地把发送者位置压缩到主体当前空间，最后只保留转身前的反应与未揭示威胁。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在稳定且可复查的空间中建立独处主体。第一条受限消息只给出模糊方位，主体检查后仍看不到来源；第二条消息把发送者精确定位到主体当前盲区。结尾停在主体延迟反应或刚开始转身的瞬间，不揭示发送者。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在任何消息改变其含义之前建立稳定的本地空间关系。",
+          "purpose": "使距离声明可验证。",
+          "ablation_failure": "抽象的黑暗不提供空间参考。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用一条有界的第一条消息来警告方向，但使发送者保持遥远或模糊。",
+          "purpose": "创建谨慎的信息挂钩。",
+          "ablation_failure": "立即近距离索赔会跳过阶梯。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "让对象目视检查指定区域而不确认威胁。",
+          "purpose": "通过主动验证保留不确定性。",
+          "ablation_failure": "展现发件人提前崩溃的悬念。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "使用第二条消息来定位对象当前盲点内的发送者。",
+          "purpose": "执行决定性的距离崩溃。",
+          "ablation_failure": "重复的模糊警告不会在空间上升级。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在发件人被揭露之前，在保持反应或开始回合时结束。",
+          "purpose": "持续关注成为人身风险的信息。",
+          "ablation_failure": "完整的生物揭示用跳跃恐慌取代了机制。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源金发女郎和奶油色毛衣",
+        "源温暖的住宅走廊和黑暗的门口",
+        "源码智能手机通话界面",
+        "DON'T LOOK。 LOOK BEHIND YOU。",
+        "我是STANDING RIGHT BEHIND YOU。",
+        "来源精确的面部-电话-走廊交替"
+      ],
+      "instantiations": [
+        {
+          "concept": "在原始射电望远镜上，夜间技术人员收到两条点阵维护条。第一个说北盘应该保持黑暗；她通过控制缝检查空盘子。第二个报告称她的影子现在指向控制台；第二个阴影边缘出现在她的旁边，她在剪辑前开始转动。",
+          "prompt_seed": "在原始射电望远镜上，夜间技术人员收到两条点阵维护条。第一个说北盘应该保持黑暗；她通过控制缝检查空盘子。第二个报告称她的影子现在指向控制台；第二个阴影边缘出现在她的旁边，她在剪辑前开始转动。"
+        },
+        {
+          "concept": "在定格纸剧场中，灯塔看守人收到一张蜡封信号卡，警告下方的灯笼无人居住。他检查了空荡荡的楼梯间；第二张卡片上写着灯笼已经搬进了他的房间。当他转身时，灯光扫过他身后的墙壁，但没有露出灯笼。",
+          "prompt_seed": "在定格纸剧场中，灯塔看守人收到一张蜡封信号卡，警告下方的灯笼无人居住。他检查了空荡荡的楼梯间；第二张卡片上写着灯笼已经搬进了他的房间。当他转身时，灯光扫过他身后的墙壁，但没有露出灯笼。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "抽象的黑暗不提供空间参考。",
+          "repair": "在任何消息改变其含义之前建立稳定的本地空间关系。"
+        },
+        {
+          "failure": "立即近距离索赔会跳过阶梯。",
+          "repair": "使用一条有界的第一条消息来警告方向，但使发送者保持遥远或模糊。"
+        },
+        {
+          "failure": "展现发件人提前崩溃的悬念。",
+          "repair": "让对象目视检查指定区域而不确认威胁。"
+        },
+        {
+          "failure": "重复的模糊警告不会在空间上升级。",
+          "repair": "使用第二条消息来定位对象当前盲点内的发送者。"
+        },
+        {
+          "failure": "完整的生物揭示用跳跃恐慌取代了机制。",
+          "repair": "在发件人被揭露之前，在保持反应或开始回合时结束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在原始射电望远镜上，夜间技术人员收到两条点阵维护条。第一个说北盘应该保持黑暗；她通过控制缝检查空盘子。第二个报告称她的影子现在指向控制台；第二个阴影边缘出现在她的旁边，她在剪辑前开始转动。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在定格纸剧场中，灯塔看守人收到一张蜡封信号卡，警告下方的灯笼无人居住。他检查了空荡荡的楼梯间；第二张卡片上写着灯笼已经搬进了他的房间。当他转身时，灯光扫过他身后的墙壁，但没有露出灯笼。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

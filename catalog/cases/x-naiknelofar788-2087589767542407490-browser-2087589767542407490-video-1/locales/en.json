@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "930f7bba39643b3238e043683009594619c14660683ab28725de56db39e4f5cc",
+    "creative_dna_sha256": "302c6707cdec94a3ec83194147d73ffc2413e28dfacec6abf4e6cc504a987443"
+  },
+  "content": {
+    "title": "Protector-Led Passage | Relationship Proof to a Shared Threshold",
+    "summary": "First use close-range actions to establish the relationship between the protector and the person who needs to be escorted, and then ask the protector to turn around to confirm the route, continue to maintain visible contact, and pass through the familiar space; in the later stage, only a visually clear threshold is crossed to maintain evidence that the two people entered together.",
+    "quick_start": {
+      "input_format": "Protector and escorted + Relationship baseline + Route confirmation + Continuous guidance and contact + Crossing a single threshold together",
+      "recommended_input": "In the original mechanical archive, the brass librarian automaton protects the little paper bird with an articulated arm and ties a blue guide tape between the two; the two pass through two folding archive racks, the blue tape continues to stretch, and the automaton is always between the bird and the mobile bookshelf; the automaton first crosses over and guides the bird in in the same movement, and finally the two are framed together in the warm-colored library, and the blue tape and contact remain unchanged",
+      "required_anchors": [
+        "Establish the protector and dependent role through visible contact before travel.",
+        "Show the protector choose or confirm one route before escorting.",
+        "Keep both identities and recurring landmarks traceable.",
+        "Cross one distinct threshold together and hold connection."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "First use close-range actions to establish the relationship between the protector and the person who needs to be escorted, and then ask the protector to turn around to confirm the route, continue to maintain visible contact, and pass through the familiar space; in the later stage, only a visually clear threshold is crossed to maintain evidence that the two people entered together.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Establish a protector-dependent relationship before movement, show the protector choose and lead one continuous route while maintaining readable contact, preserve both identities through the environment, then cross one visually distinct threshold together and hold their connection.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish the protector and dependent role through visible contact before travel.",
+          "purpose": "Defines who leads and why.",
+          "ablation_failure": "Starting in motion obscures the relationship.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Show the protector choose or confirm one route before escorting.",
+          "purpose": "Makes movement goal-directed.",
+          "ablation_failure": "An unexplained cut to travel removes agency.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Maintain readable physical or spatial guidance through the route.",
+          "purpose": "Proves escort behavior.",
+          "ablation_failure": "Independent walking weakens protection.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Keep both identities and recurring landmarks traceable.",
+          "purpose": "Preserves continuity.",
+          "ablation_failure": "Losing one subject breaks the route.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Cross one distinct threshold together and hold connection.",
+          "purpose": "Completes the escort action.",
+          "ablation_failure": "Separate crossings or a premature cut leave the outcome unclear.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source father and child",
+        "the exact apartment and wardrobe",
+        "the source embrace and escort choreography",
+        "the exact glowing portal appearance",
+        "the source family identity"
+      ],
+      "instantiations": [
+        {
+          "concept": "A brass librarian automaton leads a small paper bird through archive aisles by keeping one guiding ribbon taut, then both cross a moonlit book-vault iris together.",
+          "prompt_seed": "A brass librarian automaton leads a small paper bird through archive aisles by keeping one guiding ribbon taut, then both cross a moonlit book-vault iris together."
+        },
+        {
+          "concept": "A coral ranger guides a juvenile maintenance drone through submerged garden rings using one luminous tether, then both enter a warm pressure chamber in the same held frame.",
+          "prompt_seed": "A coral ranger guides a juvenile maintenance drone through submerged garden rings using one luminous tether, then both enter a warm pressure chamber in the same held frame."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Starting in motion obscures the relationship.",
+          "repair": "Establish the protector and dependent role through visible contact before travel."
+        },
+        {
+          "failure": "An unexplained cut to travel removes agency.",
+          "repair": "Show the protector choose or confirm one route before escorting."
+        },
+        {
+          "failure": "Independent walking weakens protection.",
+          "repair": "Maintain readable physical or spatial guidance through the route."
+        },
+        {
+          "failure": "Losing one subject breaks the route.",
+          "repair": "Keep both identities and recurring landmarks traceable."
+        },
+        {
+          "failure": "Separate crossings or a premature cut leave the outcome unclear.",
+          "repair": "Cross one distinct threshold together and hold connection."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A brass librarian automaton leads a small paper bird through archive aisles by keeping one guiding ribbon taut, then both cross a moonlit book-vault iris together.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A coral ranger guides a juvenile maintenance drone through submerged garden rings using one luminous tether, then both enter a warm pressure chamber in the same held frame.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

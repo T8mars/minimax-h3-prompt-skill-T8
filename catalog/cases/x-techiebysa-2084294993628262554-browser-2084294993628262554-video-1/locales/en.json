@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "13d6db17ea9a25c15877205789895f66a4ba1d3a2ce2af66b143b072e57a7bd7",
+    "creative_dna_sha256": "b52378e0c6365893fd16c028a4269194a154a5cff3bb0d32c4d1868a76e4c232"
+  },
+  "content": {
+    "title": "Identity Board Verification | Athletic Action and Multi-Camera Proof",
+    "summary": "The fixed character identity board continues to serve as the benchmark for comparison, and the live-action area uses posture, ball feel, gait, aerial outline and late complex skills to verify the same character in turn; only adding evidence, no new selector is added.",
+    "quick_start": {
+      "input_format": "Fixed character board + same original subject + at least 4 different verification responsibilities + wide-angle/close-up dual proof + final comparison",
+      "recommended_input": "In the original felt track archive, the compact identity board is always fixed at the bottom of the picture, and the same archivist's hatch posture, goggles, turquoise jacket and magnetic boots are established above; the archivist walks four steps along the narrow track, the rhythm and side profile of the magnetic boots are stable, and the lower identity board is continuously readable; the archivist completes a wax seal capture and lands stably, and the final result stays side by side with the unmodified identity board",
+      "required_anchors": [
+        "Keep one compact identity board unchanged and readable throughout.",
+        "Verify the same subject across at least three live-view scales or poses.",
+        "Give each live camera angle one distinct proof duty.",
+        "Reserve one late complex skill proof and hold it beside the board."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The fixed character identity board continues to serve as the benchmark for comparison, and the live-action area uses posture, ball feel, gait, aerial outline and late complex skills to verify the same character in turn; only adding evidence, no new selector is added.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Keep one compact identity board unchanged while a separate live region tests the same subject through progressively different pose, action, gait, viewpoint and late skill duties; every live phase verifies a different identity anchor and ends beside the fixed reference.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Keep one compact identity board unchanged and readable throughout.",
+          "purpose": "Provides the stable comparison standard.",
+          "ablation_failure": "A changing board cannot verify continuity.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Verify the same subject across at least three live-view scales or poses.",
+          "purpose": "Tests identity beyond one angle.",
+          "ablation_failure": "One repeated pose supplies no cross-view proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Preserve key identity anchors through camera and motion changes.",
+          "purpose": "Makes each live shot a meaningful test.",
+          "ablation_failure": "Drifting face, silhouette or costume breaks identity.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Give each live camera angle one distinct proof duty.",
+          "purpose": "Prevents decorative coverage.",
+          "ablation_failure": "Redundant angles do not expand evidence.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Reserve one late complex skill proof and hold it beside the board.",
+          "purpose": "Closes verification under peak motion.",
+          "ablation_failure": "Ending early leaves the hardest test unresolved.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source football athlete",
+        "football kit and field",
+        "the source tricks and move order",
+        "the exact lower character-board design",
+        "the source camera angles and final football skill"
+      ],
+      "instantiations": [
+        {
+          "concept": "A fixed felt zero-gravity archivist board remains below while live views prove hatch posture, star-map use, magnetic-shoe gait, overhead floating silhouette and one late wax-seal catch.",
+          "prompt_seed": "A fixed felt zero-gravity archivist board remains below while live views prove hatch posture, star-map use, magnetic-shoe gait, overhead floating silhouette and one late wax-seal catch."
+        },
+        {
+          "concept": "A ceramic river courier board remains at left while live footage tests loading, narrow-bridge gait, paddle control, overhead boat balance and one late rope-loop catch.",
+          "prompt_seed": "A ceramic river courier board remains at left while live footage tests loading, narrow-bridge gait, paddle control, overhead boat balance and one late rope-loop catch."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "A changing board cannot verify continuity.",
+          "repair": "Keep one compact identity board unchanged and readable throughout."
+        },
+        {
+          "failure": "One repeated pose supplies no cross-view proof.",
+          "repair": "Verify the same subject across at least three live-view scales or poses."
+        },
+        {
+          "failure": "Drifting face, silhouette or costume breaks identity.",
+          "repair": "Preserve key identity anchors through camera and motion changes."
+        },
+        {
+          "failure": "Redundant angles do not expand evidence.",
+          "repair": "Give each live camera angle one distinct proof duty."
+        },
+        {
+          "failure": "Ending early leaves the hardest test unresolved.",
+          "repair": "Reserve one late complex skill proof and hold it beside the board."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A fixed felt zero-gravity archivist board remains below while live views prove hatch posture, star-map use, magnetic-shoe gait, overhead floating silhouette and one late wax-seal catch.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A ceramic river courier board remains at left while live footage tests loading, narrow-bridge gait, paddle control, overhead boat balance and one late rope-loop catch.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

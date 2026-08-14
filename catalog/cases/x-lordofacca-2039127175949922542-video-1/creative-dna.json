@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A scale-mismatch challenge stays coherent when one shared token remains visible across control, obstruction, route change and an attempt toward a fixed target. Court or arena markings must preserve geography, and the ending may show reaction or suspense without claiming a result that is not visibly confirmed.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish two clearly different scales, one shared token and one fixed target in the same arena.",
+      "purpose": "Makes the challenge measurable.",
+      "ablation_failure": "Hiding any one element reduces the scene to unrelated spectacle.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use repeated token control to prove who currently owns the action.",
+      "purpose": "Maintains continuity through scale contrast.",
+      "ablation_failure": "A disappearing token breaks the causal chain.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Let the larger body obstruct space while the smaller body changes route rather than matching size.",
+      "purpose": "Keeps scale functionally relevant.",
+      "ablation_failure": "Equalized movement makes the size contrast cosmetic.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Show one readable token trajectory toward the fixed target.",
+      "purpose": "Converts maneuvering into a clear attempt.",
+      "ablation_failure": "A cut directly to reaction hides the challenge's decisive action.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a visible shared reaction state and only claim success if the target result is directly shown.",
+      "purpose": "Preserves evidence fidelity and suspense.",
+      "ablation_failure": "An unsupported score claim invents the payoff.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "basketball court",
+    "small male player",
+    "giant female defender",
+    "basketball and hoop staging",
+    "source crowd and reaction close-ups"
+  ],
+  "instantiations": [
+    {
+      "concept": "On a tabletop magnetic arena, a coin-sized delivery robot controls one glowing bead while a giant inflatable gatekeeper sweeps broad sectors. The robot changes lanes and launches the bead toward a suspended copper ring; the ending holds both reactions and the ring, without declaring success unless the bead visibly passes through.",
+      "prompt_seed": "On a tabletop magnetic arena, a coin-sized delivery robot controls one glowing bead while a giant inflatable gatekeeper sweeps broad sectors. The robot changes lanes and launches the bead toward a suspended copper ring; the ending holds both reactions and the ring, without declaring success unless the bead visibly passes through."
+    },
+    {
+      "concept": "In a circular zero-gravity greenhouse, a small maintenance pod guides one water sphere around a huge slow robotic leaf. Floor rings and a fixed seed funnel preserve geography; the pod redirects the sphere toward the funnel and the film holds the unresolved arrival moment.",
+      "prompt_seed": "In a circular zero-gravity greenhouse, a small maintenance pod guides one water sphere around a huge slow robotic leaf. Floor rings and a fixed seed funnel preserve geography; the pod redirects the sphere toward the funnel and the film holds the unresolved arrival moment."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Hiding any one element reduces the scene to unrelated spectacle.",
+      "repair": "Establish two clearly different scales, one shared token and one fixed target in the same arena."
+    },
+    {
+      "failure": "A disappearing token breaks the causal chain.",
+      "repair": "Use repeated token control to prove who currently owns the action."
+    },
+    {
+      "failure": "Equalized movement makes the size contrast cosmetic.",
+      "repair": "Let the larger body obstruct space while the smaller body changes route rather than matching size."
+    },
+    {
+      "failure": "A cut directly to reaction hides the challenge's decisive action.",
+      "repair": "Show one readable token trajectory toward the fixed target."
+    },
+    {
+      "failure": "An unsupported score claim invents the payoff.",
+      "repair": "End on a visible shared reaction state and only claim success if the target result is directly shown."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "On a tabletop magnetic arena, a coin-sized delivery robot controls one glowing bead while a giant inflatable gatekeeper sweeps broad sectors. The robot changes lanes and launches the bead toward a suspended copper ring; the ending holds both reactions and the ring, without declaring success unless the bead visibly passes through.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In a circular zero-gravity greenhouse, a small maintenance pod guides one water sphere around a huge slow robotic leaf. Floor rings and a fixed seed funnel preserve geography; the pod redirects the sphere toward the funnel and the film holds the unresolved arrival moment.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

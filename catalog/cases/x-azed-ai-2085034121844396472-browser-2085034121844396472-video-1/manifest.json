@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1",
+  "slug": "suspended-world-terminal-resumption",
+  "title": "世界悬停｜持续靠近到末端复流",
+  "source_title": "冻结街景｜第一视角靠近后瞬时复流",
+  "summary": "先让一个本应高速运动的复杂环境整体悬停，以连续第一视角推进和重复地标证明时间仍被锁住；局部手部只负责对齐与观察，最后只在片尾发生一次全局复流和速度跃迁。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/suspended-world-terminal-resumption",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-suspended-world-terminal-resumption-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "复杂环境整体悬停 + 第一视角连续移动 + 至少3个冻结地标 + 局部对齐但不强称接触 + 末端只复流一次",
+  "recommended_input": "头盔视角穿过整体悬停的轨道装配舱，货运环、机械臂、螺栓和冷却液珠始终冻结；探针只与校准棱镜对齐但不接触，片尾所有机构与相机通道只恢复一次。",
+  "required_anchors": [
+    "Open on a complex environment whose normally moving elements are visibly suspended.",
+    "Move one embodied observer continuously while at least three environmental landmarks remain frozen.",
+    "Sustain the suspended comparison long enough to show that many independent elements share the same state.",
+    "Resume the world only once at the end, with distributed object motion and camera-speed change occurring together."
+  ],
+  "tags": [
+    "suspended",
+    "world",
+    "terminal",
+    "resumption"
+  ],
+  "quality": {
+    "weighted_score": 4.676,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-13T20:01:30+08:00",
+  "updated_at": "2026-08-13T20:38:54+08:00"
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A facial calibration sequence becomes reusable when identity, lighting, background and camera axis stay fixed while distinct facial action units change one group at a time. Brief micro-resets preserve comparability, and a late controlled crop can test fine identity stability without turning the sequence into a narrative performance.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Lock one face, background, lighting direction and camera axis before any expression change.",
+      "purpose": "Creates a reliable comparison baseline.",
+      "ablation_failure": "Changing the portrait setup makes action units impossible to compare.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Separate the expression into readable local units rather than morphing the whole face continuously.",
+      "purpose": "Makes each change diagnosable and reusable.",
+      "ablation_failure": "A blended emotional performance hides which feature changed.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Insert at least one partial reset toward the baseline between larger changes.",
+      "purpose": "Prevents accumulated distortion and preserves identity.",
+      "ablation_failure": "Without a reset, changes can drift into a different face.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Keep head motion subordinate to eye, brow, mouth and cheek evidence.",
+      "purpose": "Maintains a stable portrait while allowing orientation tests.",
+      "ablation_failure": "Large head turns replace facial proof with pose variation.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Use a late closer crop only after identity has been repeatedly proven.",
+      "purpose": "Tests detail stability and provides a clear endpoint.",
+      "ablation_failure": "Opening in extreme close-up removes the identity baseline.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "older bald grey-bearded man",
+    "black shirt",
+    "dark paneled studio portrait",
+    "source facial-expression order",
+    "source final mouth close-up"
+  ],
+  "instantiations": [
+    {
+      "concept": "A young ceramic courier in a cool medical kiosk performs a nonverbal visor-fit calibration: neutral baseline, one-sided brow lift, isolated lower-eyelid tension, closed-lip jaw shift, then one nostril-and-cheek action. A brief neutral reset separates the tests, and the only late close crop verifies the unchanged eye-corner and temple visor seam.",
+      "prompt_seed": "A young ceramic courier in a cool medical kiosk performs a nonverbal visor-fit calibration: neutral baseline, one-sided brow lift, isolated lower-eyelid tension, closed-lip jaw shift, then one nostril-and-cheek action. A brief neutral reset separates the tests, and the only late close crop verifies the unchanged eye-corner and temple visor seam."
+    },
+    {
+      "concept": "A handcrafted wooden puppet in a sunlit rehearsal booth tests five mechanical face controls in a new order: left brow plate, paired eye shutters, closed jaw sliding sideways, one cheek lever, then a full neutral reset. The camera ends on the unchanged eye hinge and wood grain, never on the mouth.",
+      "prompt_seed": "A handcrafted wooden puppet in a sunlit rehearsal booth tests five mechanical face controls in a new order: left brow plate, paired eye shutters, closed jaw sliding sideways, one cheek lever, then a full neutral reset. The camera ends on the unchanged eye hinge and wood grain, never on the mouth."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Changing the portrait setup makes action units impossible to compare.",
+      "repair": "Lock one face, background, lighting direction and camera axis before any expression change."
+    },
+    {
+      "failure": "A blended emotional performance hides which feature changed.",
+      "repair": "Separate the expression into readable local units rather than morphing the whole face continuously."
+    },
+    {
+      "failure": "Without a reset, changes can drift into a different face.",
+      "repair": "Insert at least one partial reset toward the baseline between larger changes."
+    },
+    {
+      "failure": "Large head turns replace facial proof with pose variation.",
+      "repair": "Keep head motion subordinate to eye, brow, mouth and cheek evidence."
+    },
+    {
+      "failure": "Opening in extreme close-up removes the identity baseline.",
+      "repair": "Use a late closer crop only after identity has been repeatedly proven."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A young ceramic courier in a cool medical kiosk performs a nonverbal visor-fit calibration: neutral baseline, one-sided brow lift, isolated lower-eyelid tension, closed-lip jaw shift, then one nostril-and-cheek action. A brief neutral reset separates the tests, and the only late close crop verifies the unchanged eye-corner and temple visor seam.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A handcrafted wooden puppet in a sunlit rehearsal booth tests five mechanical face controls in a new order: left brow plate, paired eye shutters, closed jaw sliding sideways, one cheek lever, then a full neutral reset. The camera ends on the unchanged eye hinge and wood grain, never on the mouth.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

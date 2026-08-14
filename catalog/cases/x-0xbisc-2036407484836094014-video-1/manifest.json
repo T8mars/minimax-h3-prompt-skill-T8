@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-0xbisc-2036407484836094014-video-1",
+  "slug": "material-skill-escalation-finished-proof",
+  "title": "技艺递进｜原料变形到成品特写",
+  "source_title": "拉面宗师｜手作节奏推进到角色定格",
+  "summary": "先给出单一原料，再用功能不同且难度递增的手部操作连续改变其形态；一次明确热处理完成不可逆转折，随后快速装盘，并用成品微距证明前面所有动作得到结果。",
+  "status": "released",
+  "source_duration_seconds": 15.133477,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/material-skill-escalation-finished-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-0xbisc-2036407484836094014-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-0xbisc-2036407484836094014-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-skill-escalation-finished-proof-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "单一原料 + 至少3种功能不同的形变操作 + 1次不可逆加工 + 成品组装 + 保留前序痕迹的微距终证",
+  "recommended_input": "太阳帆修复师把同一束植物纤维拉伸、分条、编织并张紧到六边形框，只热压一次完成封合，最后用微距证明成品膜仍保留拉伸、编织和封合痕迹。",
+  "required_anchors": [
+    "Establish one raw material and its maker before complex manipulation.",
+    "Use at least three functionally different manipulations that visibly change the same material.",
+    "Cross one visible irreversible processing threshold before the result assembly.",
+    "End on a macro finished-state proof that retains visible evidence of earlier transformations."
+  ],
+  "tags": [
+    "material",
+    "skill",
+    "escalation",
+    "finished",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.655,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-13T14:17:58+08:00",
+  "updated_at": "2026-08-13T14:57:57+08:00"
+}

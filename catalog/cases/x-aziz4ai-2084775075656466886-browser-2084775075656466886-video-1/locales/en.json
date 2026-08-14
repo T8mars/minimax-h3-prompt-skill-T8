@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "f4e3a6fdac9d94e0fee36c99e7f4bb5af2fdefe00a913ca63bae2f5515c3ee09",
+    "creative_dna_sha256": "eb17f5c86f1ab925a968629d20216f2a181ef0fe004eb0d4c9cf5eb2b760b830"
+  },
+  "content": {
+    "title": "Graphic Reorganization | Character and Paper Information Rhythm",
+    "summary": "Fixed the outline of the narrator and the paper graphic family, and gradually reorganized it through information cards, character copying and changes in layout density, and finally used the established paper pieces and outlines to converge into the final version; it overlaps with the official paper collage ability and the existing flat template, so it is only used as an evidence variant.",
+    "quick_start": {
+      "input_format": "Compact icon + stable character/color + density increasing module + isolated state pause + geometry lock",
+      "recommended_input": "Original clay paper weather station, a clay weatherman and three gray-blue-ochre-yellow cloud-shaped cards are built on a cream grid, without using source text; an offset copy of the same weatherman is added for rainfall comparison, the identity and grid remain unchanged; the same character, cloud cards and grid are reconstructed into an asymmetrical rectangular field report cover, without adding new text",
+      "required_anchors": [
+        "Establish one stable presenter silhouette and bounded card vocabulary.",
+        "Reorganize information using only established shapes, palette and presenter identity.",
+        "Simplify once before the final reconstruction.",
+        "Resolve established elements into a held final lockup without source copy."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Fixed the outline of the narrator and the paper graphic family, and gradually reorganized it through information cards, character copying and changes in layout density, and finally used the established paper pieces and outlines to converge into the final version; it overlaps with the official paper collage ability and the existing flat template, so it is only used as an evidence variant.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Establish one presenter silhouette and a bounded paper-card vocabulary, progressively reorganize and duplicate those established elements to increase information density, then simplify once and resolve the same family into a held final graphic composition.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one stable presenter silhouette and bounded card vocabulary.",
+          "purpose": "Defines the reusable family.",
+          "ablation_failure": "Unbounded assets make the collage arbitrary.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Reorganize information using only established shapes, palette and presenter identity.",
+          "purpose": "Preserves continuity.",
+          "ablation_failure": "New unrelated art breaks the system.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use duplication or offset repetition to raise density while retaining identity.",
+          "purpose": "Creates a measurable middle escalation.",
+          "ablation_failure": "Replacing the presenter loses the anchor.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Simplify once before the final reconstruction.",
+          "purpose": "Creates a structural turn.",
+          "ablation_failure": "Continuous density obscures the result.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Resolve established elements into a held final lockup without source copy.",
+          "purpose": "Closes the loop safely.",
+          "ablation_failure": "Copying the source end card violates transfer.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source Arabic presenter and identity",
+        "the exact Arabic copy and title cards",
+        "the source paper collage shapes",
+        "the exact duplicated-person layout",
+        "the source final title composition"
+      ],
+      "instantiations": [
+        {
+          "concept": "A clay meteorologist and three cloud-shaped cards reorganize into forecast states, briefly reduce to one blank pressure card, then resolve as an asymmetrical field-report cover.",
+          "prompt_seed": "A clay meteorologist and three cloud-shaped cards reorganize into forecast states, briefly reduce to one blank pressure card, then resolve as an asymmetrical field-report cover."
+        },
+        {
+          "concept": "A woodcut librarian and two bookmark tabs multiply into a catalog overview, simplify to one empty grid, then reconstruct as a rectangular reading-path poster.",
+          "prompt_seed": "A woodcut librarian and two bookmark tabs multiply into a catalog overview, simplify to one empty grid, then reconstruct as a rectangular reading-path poster."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Unbounded assets make the collage arbitrary.",
+          "repair": "Establish one stable presenter silhouette and bounded card vocabulary."
+        },
+        {
+          "failure": "New unrelated art breaks the system.",
+          "repair": "Reorganize information using only established shapes, palette and presenter identity."
+        },
+        {
+          "failure": "Replacing the presenter loses the anchor.",
+          "repair": "Use duplication or offset repetition to raise density while retaining identity."
+        },
+        {
+          "failure": "Continuous density obscures the result.",
+          "repair": "Simplify once before the final reconstruction."
+        },
+        {
+          "failure": "Copying the source end card violates transfer.",
+          "repair": "Resolve established elements into a held final lockup without source copy."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A clay meteorologist and three cloud-shaped cards reorganize into forecast states, briefly reduce to one blank pressure card, then resolve as an asymmetrical field-report cover.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A woodcut librarian and two bookmark tabs multiply into a catalog overview, simplify to one empty grid, then reconstruct as a rectangular reading-path poster.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

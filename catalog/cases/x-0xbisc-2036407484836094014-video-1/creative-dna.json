@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Turn craft into a visible proof ladder: establish one raw material, perform several functionally different manipulations that progressively change its length, topology or organization, cross one irreversible processing threshold, assemble the result, and end on a macro finished-state proof that visibly inherits features created earlier.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one raw material and its maker before complex manipulation.",
+      "purpose": "Gives viewers a stable before state.",
+      "ablation_failure": "Opening on spectacle removes the transformation baseline.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use at least three functionally different manipulations that visibly change the same material.",
+      "purpose": "Makes skill cumulative rather than repetitive.",
+      "ablation_failure": "Repeated tossing without distinct material effects is only flourish.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep the material identity and work-surface geography continuous across the manipulation ladder.",
+      "purpose": "Lets viewers connect each phase causally.",
+      "ablation_failure": "Unmotivated material substitutions break the proof.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Cross one visible irreversible processing threshold before the result assembly.",
+      "purpose": "Separates preparation from completion.",
+      "ablation_failure": "A finished object appearing without a threshold feels swapped in.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a macro finished-state proof that retains visible evidence of earlier transformations.",
+      "purpose": "Closes the causal ladder with a verifiable result.",
+      "ablation_failure": "A wide beauty shot alone hides whether the material work mattered.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source muscular noodle cook",
+    "source noodle dough and shrimp bowl",
+    "source dark wood kitchen",
+    "source open-wok flame",
+    "source noodle-loop choreography and food macro finish"
+  ],
+  "instantiations": [
+    {
+      "concept": "A solar-sail conservator starts with one bundle of translucent plant fiber, draws it into ribbon, splits and braids a lattice, tensions it over a frame, heat-seals it once, then ends on a macro proof of the finished light-filter membrane.",
+      "prompt_seed": "A solar-sail conservator starts with one bundle of translucent plant fiber, draws it into ribbon, splits and braids a lattice, tensions it over a frame, heat-seals it once, then ends on a macro proof of the finished light-filter membrane."
+    },
+    {
+      "concept": "A stop-motion printmaker begins with one strip of handmade paper, folds, fans, coils and interlocks it into a relief matrix, presses it once under a platen, then reveals a macro embossed print whose ridges preserve the folding logic.",
+      "prompt_seed": "A stop-motion printmaker begins with one strip of handmade paper, folds, fans, coils and interlocks it into a relief matrix, presses it once under a platen, then reveals a macro embossed print whose ridges preserve the folding logic."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Opening on spectacle removes the transformation baseline.",
+      "repair": "Establish one raw material and its maker before complex manipulation."
+    },
+    {
+      "failure": "Repeated tossing without distinct material effects is only flourish.",
+      "repair": "Use at least three functionally different manipulations that visibly change the same material."
+    },
+    {
+      "failure": "Unmotivated material substitutions break the proof.",
+      "repair": "Keep the material identity and work-surface geography continuous across the manipulation ladder."
+    },
+    {
+      "failure": "A finished object appearing without a threshold feels swapped in.",
+      "repair": "Cross one visible irreversible processing threshold before the result assembly."
+    },
+    {
+      "failure": "A wide beauty shot alone hides whether the material work mattered.",
+      "repair": "End on a macro finished-state proof that retains visible evidence of earlier transformations."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A solar-sail conservator starts with one bundle of translucent plant fiber, draws it into ribbon, splits and braids a lattice, tensions it over a frame, heat-seals it once, then ends on a macro proof of the finished light-filter membrane.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A stop-motion printmaker begins with one strip of handmade paper, folds, fans, coils and interlocks it into a relief matrix, presses it once under a platen, then reveals a macro embossed print whose ridges preserve the folding logic.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

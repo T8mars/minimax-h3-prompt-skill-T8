@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-dheepanratnam-2042910477320114293-video-1",
+  "slug": "readiness-microproof-departure",
+  "title": "载具启程｜微观检查累积到离场证明",
+  "source_title": "15镜头微剪辑｜高速摩托动作不再漂浮",
+  "summary": "先建立载具与操作者，再用多个局部检查镜头逐项证明准备状态；一次明确激活把静态部件转成联动运动，最后以远景离场证明整套系统已投入使用。",
+  "status": "released",
+  "source_duration_seconds": 15.11681,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/readiness-microproof-departure",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-dheepanratnam-2042910477320114293-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-dheepanratnam-2042910477320114293-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-readiness-microproof-departure-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "原创操作者与载具 + 至少3项不同准备检查 + 1次明确激活 + 至少2个组件联动 + 广角持续离场证明",
+  "recommended_input": "花粉技术员在轨道温室依次检查风标、种子鼓锁扣和磁力脚板，只激活一次巡检车；轮舱与种子鼓联动后沿玻璃轨道启程，并以穿越两段种植舱的高位广角收束。",
+  "required_anchors": [
+    "Establish one operator and one inactive carrier in a shared frame.",
+    "Give each close insert a different readiness job rather than repeating beauty details.",
+    "After activation, show at least two components responding in the same causal direction.",
+    "End with sustained travel in a wider spatial proof, not another static close-up."
+  ],
+  "tags": [
+    "readiness",
+    "microproof",
+    "departure"
+  ],
+  "quality": {
+    "weighted_score": 4.595,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-13T12:24:40+08:00",
+  "updated_at": "2026-08-13T13:02:28+08:00"
+}

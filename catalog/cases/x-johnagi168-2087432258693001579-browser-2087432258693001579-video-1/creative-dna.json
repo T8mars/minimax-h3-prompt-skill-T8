@@ -1,0 +1,178 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Keep one subject and assembly station spatially fixed while a visibly larger external operator installs components in a deliberate order. Alternate local contact proof with repeated whole-subject state checks so every addition accumulates. Reserve fine calibration for after the main silhouette is complete, then require one integrated movement audition that demonstrates all installed parts together before the final hold.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one stable subject, assembly station and unmodified baseline.",
+      "purpose": "Provides a state reference for every addition.",
+      "ablation_failure": "Without a baseline, later parts cannot be attributed to the operator.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Install major components one at a time and return to a whole-subject check after each stage.",
+      "purpose": "Makes accumulation inspectable.",
+      "ablation_failure": "A montage of close-ups hides whether parts coexist.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use local contact proof for fine calibration only after the primary structure is complete.",
+      "purpose": "Separates structural assembly from detail tuning.",
+      "ablation_failure": "Early fine detail weakens the state ladder.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Complete all small functional or decorative components before testing motion.",
+      "purpose": "Prevents the audition from introducing unexplained changes.",
+      "ablation_failure": "Late unseen additions break causality.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with one integrated movement audition and a held complete state.",
+      "purpose": "Proves the assembled system works together.",
+      "ablation_failure": "A static beauty pose cannot validate integration.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source doll-like young woman",
+    "giant manicured female hands",
+    "cream living room and display platform",
+    "beige skirt, western boots, straw hat and ruched handbag",
+    "makeup, choker, necklaces, rings and bracelets",
+    "the source GRWM dressing order and final twirl"
+  ],
+  "instantiations": [
+    {
+      "concept": "On an original orbital workshop bench, two large robotic service gloves assemble a palm-sized weather automaton: walking base, folded wing plates, visor, pressure wand and sensor rings. Each connection is shown locally and checked in full figure; the complete automaton walks, opens both wings and measures one airflow stream before holding.",
+      "prompt_seed": "On an original orbital workshop bench, two large robotic service gloves assemble a palm-sized weather automaton: walking base, folded wing plates, visor, pressure wand and sensor rings. Each connection is shown locally and checked in full figure; the complete automaton walks, opens both wings and measures one airflow stream before holding."
+    },
+    {
+      "concept": "In handcrafted clay theatre, a large puppet maker assembles a tiny stage crane from wooden legs, paper counterweights, thread pulleys and a lamp. After each module the entire crane is shown; final calibration tightens knots, then the crane lifts one prop and rotates safely through a full arc.",
+      "prompt_seed": "In handcrafted clay theatre, a large puppet maker assembles a tiny stage crane from wooden legs, paper counterweights, thread pulleys and a lamp. After each module the entire crane is shown; final calibration tightens knots, then the crane lifts one prop and rotates safely through a full arc."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a baseline, later parts cannot be attributed to the operator.",
+      "repair": "Establish one stable subject, assembly station and unmodified baseline."
+    },
+    {
+      "failure": "A montage of close-ups hides whether parts coexist.",
+      "repair": "Install major components one at a time and return to a whole-subject check after each stage."
+    },
+    {
+      "failure": "Early fine detail weakens the state ladder.",
+      "repair": "Use local contact proof for fine calibration only after the primary structure is complete."
+    },
+    {
+      "failure": "Late unseen additions break causality.",
+      "repair": "Complete all small functional or decorative components before testing motion."
+    },
+    {
+      "failure": "A static beauty pose cannot validate integration.",
+      "repair": "End with one integrated movement audition and a held complete state."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "On an original orbital workshop bench, two large robotic service gloves assemble a palm-sized weather automaton: walking base, folded wing plates, visor, pressure wand and sensor rings. Each connection is shown locally and checked in full figure; the complete automaton walks, opens both wings and measures one airflow stream before holding.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In handcrafted clay theatre, a large puppet maker assembles a tiny stage crane from wooden legs, paper counterweights, thread pulleys and a lamp. After each module the entire crane is shown; final calibration tightens knots, then the crane lifts one prop and rotates safely through a full arc.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Introduce one small nonverbal guide, let it repeatedly appear at spatially connected markers while a follower or camera advances, and end at a destination whose material, shape or color visibly echoes the guide's established identity.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one small moving guide and its scale relation before the destination is known.",
+      "purpose": "Creates a legible attention hook.",
+      "ablation_failure": "A destination-first opening removes the guide's purpose.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep guide, follower and route direction spatially connected during movement.",
+      "purpose": "Makes the journey continuous rather than a montage.",
+      "ablation_failure": "Unrelated locations turn reappearances into teleportation.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use at least two recurring apertures or landmarks as route-progress proofs.",
+      "purpose": "Makes repeated guide sightings cumulative.",
+      "ablation_failure": "One appearance cannot demonstrate guidance.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Let the guide enter or indicate the final destination before the follower arrives.",
+      "purpose": "Converts motion into an earned endpoint.",
+      "ablation_failure": "A follower arriving first makes the guide irrelevant.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Echo one established guide property in the destination result.",
+      "purpose": "Pays off the guide's visual identity without dialogue.",
+      "ablation_failure": "An unrelated endpoint makes the route arbitrary.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source bee",
+    "market visitor and market stalls",
+    "the source shop apertures",
+    "honey pastry or food display",
+    "the exact bee-follow route and warm food palette"
+  ],
+  "instantiations": [
+    {
+      "concept": "A glowing paper moth guides a junior archivist through circular shelf windows to a reading alcove where its wing pattern repeats in a newly illuminated map.",
+      "prompt_seed": "A glowing paper moth guides a junior archivist through circular shelf windows to a reading alcove where its wing pattern repeats in a newly illuminated map."
+    },
+    {
+      "concept": "A tiny blue maintenance fish leads an inspection camera through connected coral service rings to a filtration chamber whose membrane pulses with the same blue stripe pattern.",
+      "prompt_seed": "A tiny blue maintenance fish leads an inspection camera through connected coral service rings to a filtration chamber whose membrane pulses with the same blue stripe pattern."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A destination-first opening removes the guide's purpose.",
+      "repair": "Establish one small moving guide and its scale relation before the destination is known."
+    },
+    {
+      "failure": "Unrelated locations turn reappearances into teleportation.",
+      "repair": "Keep guide, follower and route direction spatially connected during movement."
+    },
+    {
+      "failure": "One appearance cannot demonstrate guidance.",
+      "repair": "Use at least two recurring apertures or landmarks as route-progress proofs."
+    },
+    {
+      "failure": "A follower arriving first makes the guide irrelevant.",
+      "repair": "Let the guide enter or indicate the final destination before the follower arrives."
+    },
+    {
+      "failure": "An unrelated endpoint makes the route arbitrary.",
+      "repair": "Echo one established guide property in the destination result."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A glowing paper moth guides a junior archivist through circular shelf windows to a reading alcove where its wing pattern repeats in a newly illuminated map.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A tiny blue maintenance fish leads an inspection camera through connected coral service rings to a filtration chamber whose membrane pulses with the same blue stripe pattern.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

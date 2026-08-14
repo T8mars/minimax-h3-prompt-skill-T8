@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1",
+  "slug": "message-distance-collapse",
+  "title": "信息逼近｜远端警告压缩到当前空间",
+  "source_title": "短信惊悚｜两次信息把安全距离压到身后",
+  "summary": "先让远端信息给出模糊空间警告，主体据此检查一个仍为空的方向；第二条信息必须更精确地把发送者位置压缩到主体当前空间，最后只保留转身前的反应与未揭示威胁。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/message-distance-collapse",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-message-distance-collapse-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "独处主体 + 远端模糊警告 + 空场验证 + 当前盲区精确警告 + 不揭示来源的反应",
+  "recommended_input": "原创射电望远镜控制室内，一名夜班技术员独自在固定控制台前，北阵列观察缝、墙钟和她唯一的影子先建立；技术员只检查北阵列，碟面和维护路为空，灯保持熄灭，不出现人物或移动物；技术员发现第二道影边，停止动作并开始向控制台一侧转头，发送者始终不揭示",
+  "required_anchors": [
+    "Establish stable local geography before any message changes its meaning.",
+    "Use one bounded first message that warns about a direction but keeps the sender remote or ambiguous.",
+    "Use a second message to locate the sender inside the subject's current blind spot.",
+    "End on a held reaction or beginning turn before the sender is revealed."
+  ],
+  "tags": [
+    "message",
+    "distance",
+    "collapse"
+  ],
+  "quality": {
+    "weighted_score": 4.695,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:46+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

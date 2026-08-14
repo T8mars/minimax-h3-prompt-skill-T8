@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A short trailer can escalate genre without dialogue evidence by repeatedly returning to one protagonist while broadening the world in five causal registers: relationship, public activity, private vulnerability, physical danger and maximum spectacle. A separate final title card closes the promise; recurring faces and objects, not unverified speech meaning, carry continuity.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Introduce one protagonist and one relationship anchor before the location count expands.",
+      "purpose": "Gives montage a human identity spine.",
+      "ablation_failure": "Unrelated opening faces create a generic clip reel.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Return to the protagonist while broadening public settings and group size.",
+      "purpose": "Expands genre scope without losing identity.",
+      "ablation_failure": "Pure location montage loses narrative ownership.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Insert a quieter private or clinical vulnerability phase before action escalation.",
+      "purpose": "Creates contrast and stakes.",
+      "ablation_failure": "Constant action leaves no emotional pressure change.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Escalate from interpersonal pressure to visible public physical danger.",
+      "purpose": "Makes spectacle feel earned.",
+      "ablation_failure": "An arbitrary explosion has no dramatic ladder.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Separate the maximum spectacle from a held, original title lockup.",
+      "purpose": "Closes the trailer as a promise rather than an unresolved scene.",
+      "ablation_failure": "No title closure makes the montage feel like an excerpt.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "Japanese live-action cast",
+    "source taxi nightlife hospital and boxing montage",
+    "burning interior and explosion climax",
+    "source Japanese title typography",
+    "source relationship and action ordering"
+  ],
+  "instantiations": [
+    {
+      "concept": "A felt-animation botanist trailer follows one young field researcher from a greenhouse friendship, through a river market expedition, into a quiet seed-bank emergency, then a mechanical orchard rescue and a burst of luminous pollen; it ends on an original wordless leaf emblem.",
+      "prompt_seed": "A felt-animation botanist trailer follows one young field researcher from a greenhouse friendship, through a river market expedition, into a quiet seed-bank emergency, then a mechanical orchard rescue and a burst of luminous pollen; it ends on an original wordless leaf emblem."
+    },
+    {
+      "concept": "A monochrome clay radio operator trailer begins with a sibling promise, expands to a crowded floating station, slows in a silent infirmary, escalates to a storm evacuation, and ends after a lightning spectacle on an original embossed signal mark.",
+      "prompt_seed": "A monochrome clay radio operator trailer begins with a sibling promise, expands to a crowded floating station, slows in a silent infirmary, escalates to a storm evacuation, and ends after a lightning spectacle on an original embossed signal mark."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Unrelated opening faces create a generic clip reel.",
+      "repair": "Introduce one protagonist and one relationship anchor before the location count expands."
+    },
+    {
+      "failure": "Pure location montage loses narrative ownership.",
+      "repair": "Return to the protagonist while broadening public settings and group size."
+    },
+    {
+      "failure": "Constant action leaves no emotional pressure change.",
+      "repair": "Insert a quieter private or clinical vulnerability phase before action escalation."
+    },
+    {
+      "failure": "An arbitrary explosion has no dramatic ladder.",
+      "repair": "Escalate from interpersonal pressure to visible public physical danger."
+    },
+    {
+      "failure": "No title closure makes the montage feel like an excerpt.",
+      "repair": "Separate the maximum spectacle from a held, original title lockup."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A felt-animation botanist trailer follows one young field researcher from a greenhouse friendship, through a river market expedition, into a quiet seed-bank emergency, then a mechanical orchard rescue and a burst of luminous pollen; it ends on an original wordless leaf emblem.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A monochrome clay radio operator trailer begins with a sibling promise, expands to a crowded floating station, slows in a silent infirmary, escalates to a storm evacuation, and ends after a lightning spectacle on an original embossed signal mark.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

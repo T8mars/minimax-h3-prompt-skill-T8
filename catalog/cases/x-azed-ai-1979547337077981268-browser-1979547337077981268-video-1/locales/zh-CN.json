@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "978d351524addc0223dfbf5006a7449ffdec39ae34ff3fd10da4c36984fef9be",
+    "creative_dna_sha256": "ea5f3269cd5848d88f32736a6dce06cde9b6c80b4ed472842960fc383b07995c"
+  },
+  "content": {
+    "title": "微型引路｜重复现身到终点材质回声",
+    "summary": "用一个小型非语言向导先吸引注意，再让它在不同空间孔洞或路标处重复现身，带动主体与镜头沿连续路线深入；最终向导进入的目的地以同一材质、形状或色彩回声兑现前段承诺。",
+    "quick_start": {
+      "input_format": "小型非语言向导 + 连续跟随路线 + 至少两次孔洞现身 + 向导先入终点 + 材质或图形回声",
+      "recommended_input": "原创纸艺档案馆里，年轻档案员在胡桃木书架旁停下，一只掌心大小的靛蓝发光纸蛾出现在手边，前方第一个圆形书架窗可见；纸蛾从第二个圆孔再次出现并越过一扇折叠目录门，档案员保持原方向跟进；墙图只亮起一次，与纸蛾翅膀相同的靛蓝分枝纹样展开，向导、地图和档案员同框保持",
+      "required_anchors": [
+        "​​在知道目的地之前建立一个小的移动指南及其比例关系。",
+        "在运动过程中保持引导者、跟随者和路线方向在空间上的连接。",
+        "让引导者在跟随者到达之前输入或指示最终目的地。",
+        "回显目标结果中已建立的指南属性。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用一个小型非语言向导先吸引注意，再让它在不同空间孔洞或路标处重复现身，带动主体与镜头沿连续路线深入；最终向导进入的目的地以同一材质、形状或色彩回声兑现前段承诺。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "引入一个小型非语言引导物；随着主体或镜头沿连续路线前进，它在空间相连的地标处反复出现，并最终进入一个在材质、形状或颜色上明显呼应其身份的目的地。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "​​在知道目的地之前建立一个小的移动指南及其比例关系。",
+          "purpose": "创建清晰的注意力挂钩。",
+          "ablation_failure": "目的地优先的开口消除了指南的目的。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在运动过程中保持引导者、跟随者和路线方向在空间上的连接。",
+          "purpose": "使旅程连续而不是蒙太奇。",
+          "ablation_failure": "不相关的地点将再现变成传送。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用至少两个重复出现的孔径或地标作为路线进度证明。",
+          "purpose": "使重复的向导目击事件累积起来。",
+          "ablation_failure": "一次出现无法展现引导。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "让引导者在跟随者到达之前输入或指示最终目的地。",
+          "purpose": "将运动转换为获得的端点。",
+          "ablation_failure": "首先到达的追随者使得指南变得无关紧要。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "回显目标结果中已建立的指南属性。",
+          "purpose": "无需对话即可体现引导物的视觉形象。",
+          "ablation_failure": "不相关的端点使路由任意。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源蜂",
+        "市场游客和市场摊位",
+        "源店光圈",
+        "蜂蜜糕点或食品展示",
+        "准确的蜜蜂追踪路线和温暖的食物调色板"
+      ],
+      "instantiations": [
+        {
+          "concept": "一只发光的纸蛾引导一名初级档案员穿过圆形架子窗户到达阅读室，在那里它的翅膀图案在新照亮的地图上重复出现。",
+          "prompt_seed": "一只发光的纸蛾引导一名初级档案员穿过圆形架子窗户到达阅读室，在那里它的翅膀图案在新照亮的地图上重复出现。"
+        },
+        {
+          "concept": "一条微小的蓝色维护鱼引导着检查摄像机穿过连接的珊瑚服务环到达过滤室，过滤室的膜以相同的蓝色条纹图案脉冲。",
+          "prompt_seed": "一条微小的蓝色维护鱼引导着检查摄像机穿过连接的珊瑚服务环到达过滤室，过滤室的膜以相同的蓝色条纹图案脉冲。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "目的地优先的开口消除了指南的目的。",
+          "repair": "​​在知道目的地之前建立一个小的移动指南及其比例关系。"
+        },
+        {
+          "failure": "不相关的地点将再现变成传送。",
+          "repair": "在运动过程中保持引导者、跟随者和路线方向在空间上的连接。"
+        },
+        {
+          "failure": "一次出现无法展现引导。",
+          "repair": "使用至少两个重复出现的孔径或地标作为路线进度证明。"
+        },
+        {
+          "failure": "首先到达的追随者使得指南变得无关紧要。",
+          "repair": "让引导者在跟随者到达之前输入或指示最终目的地。"
+        },
+        {
+          "failure": "不相关的端点使路由任意。",
+          "repair": "回显目标结果中已建立的指南属性。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一只发光的纸蛾引导一名初级档案员穿过圆形架子窗户到达阅读室，在那里它的翅膀图案在新照亮的地图上重复出现。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一条微小的蓝色维护鱼引导着检查摄像机穿过连接的珊瑚服务环到达过滤室，过滤室的膜以相同的蓝色条纹图案脉冲。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

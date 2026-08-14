@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1",
+  "slug": "repeat-reset-escalating-mishap-anthology",
+  "title": "重复复位｜多场景小灾难逐次升级",
+  "source_title": "重复复位｜家庭小灾难的递进式短篇",
+  "summary": "同一角色关系反复执行普通准备、主动动作、可见后果、见证者反应和场景复位；每轮更换物理问题并提高后果强度。",
+  "status": "released",
+  "source_duration_seconds": 15.136,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/repeat-reset-escalating-mishap-anthology",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-repeat-reset-escalating-mishap-anthology-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "固定角色关系 + 三轮准备/动作/后果/反应 + 场景复位 + 后果逐轮升级 + 最大结果同框",
+  "recommended_input": "原创定格工坊第一幕，铜质学徒机器人拉动松弹簧，垫圈在同一盏绿色监督灯前散开；磁刷把颜料珠拉成扩大轨迹，绿灯清楚后仰，后果大于第一幕；铜机器人、倾斜绿灯与最大齿轮场同框停住，不加入对白或修复结果",
+  "required_anchors": [
+    "Keep the same active-role and witness relationship readable across every reset.",
+    "Establish an ordinary object and action before each mishap.",
+    "Increase consequence scale or spatial reach across rounds.",
+    "Hold both roles and the largest consequence together."
+  ],
+  "tags": [
+    "repeat",
+    "reset",
+    "escalating",
+    "mishap",
+    "anthology"
+  ],
+  "quality": {
+    "weighted_score": 4.695,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:47+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

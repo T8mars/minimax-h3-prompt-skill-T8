@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1",
+  "slug": "verify-recurring-identity-board",
+  "title": "角色板验真｜足球动作与多机位锁定身份",
+  "source_title": "角色板验真｜球技动作跨镜证明同一人物",
+  "summary": "固定角色身份板持续作为比较基准，实拍区依次用姿势、球感、步态、空中轮廓和晚段复杂技巧验证同一人物；只补充证据，不新增选择器。",
+  "status": "released",
+  "source_duration_seconds": 15.046531,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/verify-recurring-identity-board",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-recurring-identity-board-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1",
+  "input_format": "固定角色板 + 同一原创主体 + 至少4种不同验证职责 + 广角/近景双证明 + 最终对照",
+  "recommended_input": "原创毛毡轨道档案馆里，紧凑身份板始终固定在画面下方，上方建立同一档案员的舱口姿势、护目镜、青绿色外套和磁力靴；档案员沿窄轨行走四步，磁靴节奏和侧面轮廓稳定，下方身份板持续可读；档案员完成一次蜡封捕捉并稳定落地，最终结果与未改动身份板并列停留",
+  "required_anchors": [
+    "Keep one compact identity board unchanged and readable throughout.",
+    "Verify the same subject across at least three live-view scales or poses.",
+    "Give each live camera angle one distinct proof duty.",
+    "Reserve one late complex skill proof and hold it beside the board."
+  ],
+  "tags": [
+    "recurring",
+    "identity",
+    "board"
+  ],
+  "quality": {
+    "weighted_score": 4.698,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:47+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

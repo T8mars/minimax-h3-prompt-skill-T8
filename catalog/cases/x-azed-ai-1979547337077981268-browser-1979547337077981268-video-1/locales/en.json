@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "978d351524addc0223dfbf5006a7449ffdec39ae34ff3fd10da4c36984fef9be",
+    "creative_dna_sha256": "ea5f3269cd5848d88f32736a6dce06cde9b6c80b4ed472842960fc383b07995c"
+  },
+  "content": {
+    "title": "Miniature Guide | Repeated Appearances Lead to a Material Echo",
+    "summary": "Use a small non-verbal guide to first attract attention, and then let it reappear in different spatial holes or road signs, driving the subject and the camera to go deeper along a continuous route; the final destination entered by the guide fulfills the previous promise with the same material, shape or color echo.",
+    "quick_start": {
+      "input_format": "Small non-verbal guide + Continuously follow the route + At least two holes appear + The guide enters the end first + Material or graphic echo",
+      "recommended_input": "In the original paper art archive, the young archivist stopped next to the walnut bookshelf. An indigo glowing paper moth the size of a palm appeared at hand, and the first circular bookshelf window in front was visible; the paper moth reappeared from the second round hole and passed through a folding catalog door, and the archivist followed in the same direction; the wall picture only lit up once, and the same indigo branching pattern as the paper moth's wings unfolded, and the guide, map and archivist remained in the same frame.",
+      "required_anchors": [
+        "Establish one small moving guide and its scale relation before the destination is known.",
+        "Keep guide, follower and route direction spatially connected during movement.",
+        "Let the guide enter or indicate the final destination before the follower arrives.",
+        "Echo one established guide property in the destination result."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Use a small non-verbal guide to first attract attention, and then let it reappear in different spatial holes or road signs, driving the subject and the camera to go deeper along a continuous route; the final destination entered by the guide fulfills the previous promise with the same material, shape or color echo.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Introduce one small nonverbal guide, let it repeatedly appear at spatially connected markers while a follower or camera advances, and end at a destination whose material, shape or color visibly echoes the guide's established identity.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one small moving guide and its scale relation before the destination is known.",
+          "purpose": "Creates a legible attention hook.",
+          "ablation_failure": "A destination-first opening removes the guide's purpose.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Keep guide, follower and route direction spatially connected during movement.",
+          "purpose": "Makes the journey continuous rather than a montage.",
+          "ablation_failure": "Unrelated locations turn reappearances into teleportation.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use at least two recurring apertures or landmarks as route-progress proofs.",
+          "purpose": "Makes repeated guide sightings cumulative.",
+          "ablation_failure": "One appearance cannot demonstrate guidance.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Let the guide enter or indicate the final destination before the follower arrives.",
+          "purpose": "Converts motion into an earned endpoint.",
+          "ablation_failure": "A follower arriving first makes the guide irrelevant.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Echo one established guide property in the destination result.",
+          "purpose": "Pays off the guide's visual identity without dialogue.",
+          "ablation_failure": "An unrelated endpoint makes the route arbitrary.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source bee",
+        "market visitor and market stalls",
+        "the source shop apertures",
+        "honey pastry or food display",
+        "the exact bee-follow route and warm food palette"
+      ],
+      "instantiations": [
+        {
+          "concept": "A glowing paper moth guides a junior archivist through circular shelf windows to a reading alcove where its wing pattern repeats in a newly illuminated map.",
+          "prompt_seed": "A glowing paper moth guides a junior archivist through circular shelf windows to a reading alcove where its wing pattern repeats in a newly illuminated map."
+        },
+        {
+          "concept": "A tiny blue maintenance fish leads an inspection camera through connected coral service rings to a filtration chamber whose membrane pulses with the same blue stripe pattern.",
+          "prompt_seed": "A tiny blue maintenance fish leads an inspection camera through connected coral service rings to a filtration chamber whose membrane pulses with the same blue stripe pattern."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "A destination-first opening removes the guide's purpose.",
+          "repair": "Establish one small moving guide and its scale relation before the destination is known."
+        },
+        {
+          "failure": "Unrelated locations turn reappearances into teleportation.",
+          "repair": "Keep guide, follower and route direction spatially connected during movement."
+        },
+        {
+          "failure": "One appearance cannot demonstrate guidance.",
+          "repair": "Use at least two recurring apertures or landmarks as route-progress proofs."
+        },
+        {
+          "failure": "A follower arriving first makes the guide irrelevant.",
+          "repair": "Let the guide enter or indicate the final destination before the follower arrives."
+        },
+        {
+          "failure": "An unrelated endpoint makes the route arbitrary.",
+          "repair": "Echo one established guide property in the destination result."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A glowing paper moth guides a junior archivist through circular shelf windows to a reading alcove where its wing pattern repeats in a newly illuminated map.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A tiny blue maintenance fish leads an inspection camera through connected coral service rings to a filtration chamber whose membrane pulses with the same blue stripe pattern.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

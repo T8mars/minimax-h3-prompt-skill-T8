@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "cf4f62d4a44d6ca8d7b26d0c72395618f1e1a62a5a1737a3a1e184d99f2c1d24",
+    "creative_dna_sha256": "72cd9914ba9f6d48e4343edc61fb05f2f4667d7d89f6f3a86c242ead7ce394fa"
+  },
+  "content": {
+    "title": "Documentary Encounter | Rooftop Routine to Camera-Aware Farewell",
+    "summary": "The photographer first approaches everyday people as if they were discovered by chance, and then records several simple actions at the same observation distance; external clues change the characters' goals, and the characters only respond briefly to the camera, and finally leave with a hand-held error to complete the sense of memory. As new evidence for the existing documentary encounter template, no new selector is added.",
+    "quick_start": {
+      "input_format": "Observer medium + everyday people/places + two everyday actions + external signal to change target + one response + motivated recording error",
+      "recommended_input": "In the original plant greenhouse at night, the photographer walked around a planting bed and found that the elderly gardener was already cleaning the condensation on the glass. He did not look at the camera during the opening scene; the service bell rang next to the side door, the gardener stopped checking and looked at the bell, and the camera took a short breath to focus; the gardener left, and the white balance drifted from fluorescent green to sodium amber. The focus did not stabilize until the door began to close, leaving an empty greenhouse.",
+      "required_anchors": [
+        "Begin with an observer discovering a subject already inside an ordinary routine.",
+        "Use recurring environmental landmarks to keep several small actions in one readable geography.",
+        "Allow exactly one restrained acknowledgment of the observer.",
+        "End with departure and at least one mild operator imperfection still visible."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The photographer first approaches everyday people as if they were discovered by chance, and then records several simple actions at the same observation distance; external clues change the characters' goals, and the characters only respond briefly to the camera, and finally leave with a hand-held error to complete the sense of memory. As new evidence for the existing documentary encounter template, no new selector is added.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Approach one subject as an unplanned discovery, observe a small routine through recurring spatial landmarks, allow one external cue or camera awareness to change the relationship, receive a single restrained acknowledgment, then follow an imperfect departure without polishing away operator error.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Begin with an observer discovering a subject already inside an ordinary routine.",
+          "purpose": "Prevents the opening from feeling staged for the camera.",
+          "ablation_failure": "A prepared hero pose removes the discovery relationship.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use recurring environmental landmarks to keep several small actions in one readable geography.",
+          "purpose": "Turns fragments into a continuous lived moment.",
+          "ablation_failure": "Unrelated close-ups lose place and routine.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Let one visible external cue or growing camera awareness redirect the subject's attention.",
+          "purpose": "Creates a causal change without scripted exposition.",
+          "ablation_failure": "An unexplained reaction has no visible trigger.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Allow exactly one restrained acknowledgment of the observer.",
+          "purpose": "Changes the subject-camera relationship without becoming performance coverage.",
+          "ablation_failure": "Repeated looks or gestures make the encounter theatrical.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with departure and at least one mild operator imperfection still visible.",
+          "purpose": "Preserves the memory-recording character of the footage.",
+          "ablation_failure": "A flawless hero finish erases the observer's presence.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source rooftop woman",
+        "the source cat, laundry, tea or domestic props",
+        "the exact rooftop location and wardrobe",
+        "the source wave or gesture",
+        "the exact MiniDV/VHS framing defects"
+      ],
+      "instantiations": [
+        {
+          "concept": "A VHS-C field recorder discovers an elderly night gardener already clearing condensation in a botanical dome; a service bell redirects him, he taps the lens hood once, then exits while white balance drifts under sodium lamps.",
+          "prompt_seed": "A VHS-C field recorder discovers an elderly night gardener already clearing condensation in a botanical dome; a service bell redirects him, he taps the lens hood once, then exits while white balance drifts under sodium lamps."
+        },
+        {
+          "concept": "A handheld mini camera finds a stop-motion felt astronomer sorting paper stars in a roof observatory; a wind vane turns, she nods once to the operator and leaves as the focus arrives late on the closing hatch.",
+          "prompt_seed": "A handheld mini camera finds a stop-motion felt astronomer sorting paper stars in a roof observatory; a wind vane turns, she nods once to the operator and leaves as the focus arrives late on the closing hatch."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "A prepared hero pose removes the discovery relationship.",
+          "repair": "Begin with an observer discovering a subject already inside an ordinary routine."
+        },
+        {
+          "failure": "Unrelated close-ups lose place and routine.",
+          "repair": "Use recurring environmental landmarks to keep several small actions in one readable geography."
+        },
+        {
+          "failure": "An unexplained reaction has no visible trigger.",
+          "repair": "Let one visible external cue or growing camera awareness redirect the subject's attention."
+        },
+        {
+          "failure": "Repeated looks or gestures make the encounter theatrical.",
+          "repair": "Allow exactly one restrained acknowledgment of the observer."
+        },
+        {
+          "failure": "A flawless hero finish erases the observer's presence.",
+          "repair": "End with departure and at least one mild operator imperfection still visible."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A VHS-C field recorder discovers an elderly night gardener already clearing condensation in a botanical dome; a service bell redirects him, he taps the lens hood once, then exits while white balance drifts under sodium lamps.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A handheld mini camera finds a stop-motion felt astronomer sorting paper stars in a roof observatory; a wind vane turns, she nods once to the operator and leaves as the focus arrives late on the closing hatch.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

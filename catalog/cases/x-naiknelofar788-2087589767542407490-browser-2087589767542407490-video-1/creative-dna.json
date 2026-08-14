@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish a protector-dependent relationship before movement, show the protector choose and lead one continuous route while maintaining readable contact, preserve both identities through the environment, then cross one visually distinct threshold together and hold their connection.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish the protector and dependent role through visible contact before travel.",
+      "purpose": "Defines who leads and why.",
+      "ablation_failure": "Starting in motion obscures the relationship.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Show the protector choose or confirm one route before escorting.",
+      "purpose": "Makes movement goal-directed.",
+      "ablation_failure": "An unexplained cut to travel removes agency.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Maintain readable physical or spatial guidance through the route.",
+      "purpose": "Proves escort behavior.",
+      "ablation_failure": "Independent walking weakens protection.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Keep both identities and recurring landmarks traceable.",
+      "purpose": "Preserves continuity.",
+      "ablation_failure": "Losing one subject breaks the route.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Cross one distinct threshold together and hold connection.",
+      "purpose": "Completes the escort action.",
+      "ablation_failure": "Separate crossings or a premature cut leave the outcome unclear.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source father and child",
+    "the exact apartment and wardrobe",
+    "the source embrace and escort choreography",
+    "the exact glowing portal appearance",
+    "the source family identity"
+  ],
+  "instantiations": [
+    {
+      "concept": "A brass librarian automaton leads a small paper bird through archive aisles by keeping one guiding ribbon taut, then both cross a moonlit book-vault iris together.",
+      "prompt_seed": "A brass librarian automaton leads a small paper bird through archive aisles by keeping one guiding ribbon taut, then both cross a moonlit book-vault iris together."
+    },
+    {
+      "concept": "A coral ranger guides a juvenile maintenance drone through submerged garden rings using one luminous tether, then both enter a warm pressure chamber in the same held frame.",
+      "prompt_seed": "A coral ranger guides a juvenile maintenance drone through submerged garden rings using one luminous tether, then both enter a warm pressure chamber in the same held frame."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Starting in motion obscures the relationship.",
+      "repair": "Establish the protector and dependent role through visible contact before travel."
+    },
+    {
+      "failure": "An unexplained cut to travel removes agency.",
+      "repair": "Show the protector choose or confirm one route before escorting."
+    },
+    {
+      "failure": "Independent walking weakens protection.",
+      "repair": "Maintain readable physical or spatial guidance through the route."
+    },
+    {
+      "failure": "Losing one subject breaks the route.",
+      "repair": "Keep both identities and recurring landmarks traceable."
+    },
+    {
+      "failure": "Separate crossings or a premature cut leave the outcome unclear.",
+      "repair": "Cross one distinct threshold together and hold connection."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A brass librarian automaton leads a small paper bird through archive aisles by keeping one guiding ribbon taut, then both cross a moonlit book-vault iris together.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A coral ranger guides a juvenile maintenance drone through submerged garden rings using one luminous tether, then both enter a warm pressure chamber in the same held frame.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

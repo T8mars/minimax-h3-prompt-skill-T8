@@ -1,0 +1,178 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Open on one compact emblem whose geometry, palette and directional cue become the construction rules of an inhabitable world. Move through at least two spatial proofs, include one readable occupant or functional checkpoint, then perform one large scale change that gathers the world's repeated geometry. Reconstruct the same opening emblem from those visible components and hold it as the terminal state.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Begin with one compact emblem that clearly defines geometry, palette and direction.",
+      "purpose": "Creates a traceable generative rule.",
+      "ablation_failure": "A generic abstract opening cannot govern the later world.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Expand the emblem into a navigable environment using repeated versions of its own components.",
+      "purpose": "Proves world construction rather than a logo cutaway.",
+      "ablation_failure": "Unrelated buildings and colors break lineage.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Include one readable inhabitant or functional checkpoint inside the expanded world.",
+      "purpose": "Gives the journey a concrete spatial stop.",
+      "ablation_failure": "Pure fly-through spectacle lacks an interior proof.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one major scale change to gather the environment into a simplified global form.",
+      "purpose": "Prepares a causal return to the origin.",
+      "ablation_failure": "A random zoom-out does not explain reconstruction.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End by rebuilding and holding the same opening emblem from visible world components.",
+      "purpose": "Closes the geometric loop.",
+      "ablation_failure": "A new logo or unrelated title card discards the accumulated world.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source luminous triangle emblem",
+    "black-white-yellow low-poly city and pipe network",
+    "the faceted white villain on a red sofa",
+    "yellow ribbons around a black-white tower",
+    "the source exact triangle-city-triangle shot sequence",
+    "MiniMax H3 and OpenArt attribution"
+  ],
+  "instantiations": [
+    {
+      "concept": "A copper compass-rose emblem unfolds into an original clockwork greenhouse. The camera follows four radial water channels to a seed-keeper automaton, rises along a helical weather tower, then blades, pipes and glass ribs fold back into the identical compass rose.",
+      "prompt_seed": "A copper compass-rose emblem unfolds into an original clockwork greenhouse. The camera follows four radial water channels to a seed-keeper automaton, rises along a helical weather tower, then blades, pipes and glass ribs fold back into the identical compass rose."
+    },
+    {
+      "concept": "A blue ink fish mark opens into a stop-motion paper harbor. Follow fin-shaped piers and current arrows to a lighthouse puppet, pull outward until the harbor becomes one paper wave, then crease wave, piers and beacon back into the original fish mark.",
+      "prompt_seed": "A blue ink fish mark opens into a stop-motion paper harbor. Follow fin-shaped piers and current arrows to a lighthouse puppet, pull outward until the harbor becomes one paper wave, then crease wave, piers and beacon back into the original fish mark."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A generic abstract opening cannot govern the later world.",
+      "repair": "Begin with one compact emblem that clearly defines geometry, palette and direction."
+    },
+    {
+      "failure": "Unrelated buildings and colors break lineage.",
+      "repair": "Expand the emblem into a navigable environment using repeated versions of its own components."
+    },
+    {
+      "failure": "Pure fly-through spectacle lacks an interior proof.",
+      "repair": "Include one readable inhabitant or functional checkpoint inside the expanded world."
+    },
+    {
+      "failure": "A random zoom-out does not explain reconstruction.",
+      "repair": "Use one major scale change to gather the environment into a simplified global form."
+    },
+    {
+      "failure": "A new logo or unrelated title card discards the accumulated world.",
+      "repair": "End by rebuilding and holding the same opening emblem from visible world components."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A copper compass-rose emblem unfolds into an original clockwork greenhouse. The camera follows four radial water channels to a seed-keeper automaton, rises along a helical weather tower, then blades, pipes and glass ribs fold back into the identical compass rose.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A blue ink fish mark opens into a stop-motion paper harbor. Follow fin-shaped piers and current arrows to a lighthouse puppet, pull outward until the harbor becomes one paper wave, then crease wave, piers and beacon back into the original fish mark.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

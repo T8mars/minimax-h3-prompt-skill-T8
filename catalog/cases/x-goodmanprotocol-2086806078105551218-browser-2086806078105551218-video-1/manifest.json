@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1",
+  "slug": "direct-imperfect-memory-farewell",
+  "title": "纪实跟拍｜屋顶日常到镜头致意",
+  "source_title": "纪实跟拍｜屋顶日常、观察回应与离开",
+  "summary": "拍摄者先像偶然发现一样接近日常人物，再用同一观察距离记录几项朴素动作；外部线索改变人物目标，人物只对镜头做一次简短回应，最后以带有手持误差的离开完成记忆感。作为既有纪实偶遇模板的新证据，不新增选择器。",
+  "status": "released",
+  "source_duration_seconds": 30.144,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/direct-imperfect-memory-farewell",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-imperfect-memory-farewell-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-zephyraleigh-2086466812347297938-browser-2086466812347297938-video-1",
+  "input_format": "观察者媒介 + 日常人物/地点 + 两个日常动作 + 外部信号改变目标 + 一次回应 + 有动机录制失误",
+  "recommended_input": "原创夜间植物温室里，拍摄者绕过一张植床，发现年长园丁已经在擦玻璃冷凝水，开场不看镜头；侧门旁服务铃响起，园丁停止检查并看向铃，镜头短暂呼吸对焦；园丁离开，白平衡从荧光绿漂到钠灯琥珀色，对焦在门开始关闭后才落稳，留下空温室",
+  "required_anchors": [
+    "Begin with an observer discovering a subject already inside an ordinary routine.",
+    "Use recurring environmental landmarks to keep several small actions in one readable geography.",
+    "Allow exactly one restrained acknowledgment of the observer.",
+    "End with departure and at least one mild operator imperfection still visible."
+  ],
+  "tags": [
+    "imperfect",
+    "memory",
+    "farewell"
+  ],
+  "quality": {
+    "weighted_score": 4.682,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:47+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

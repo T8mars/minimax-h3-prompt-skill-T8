@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "909b8fada66a54e3102ada2f69fd35d557d549f63f5c717cbc18fc7359b0b9f5",
+    "creative_dna_sha256": "308ffe0d60a811ec7d1ce1dfc8189e2b6e175484b6a6f4d0cddc2a07f7de4ed7"
+  },
+  "content": {
+    "title": "重复复位｜多场景小灾难逐次升级",
+    "summary": "同一角色关系反复执行普通准备、主动动作、可见后果、见证者反应和场景复位；每轮更换物理问题并提高后果强度。",
+    "quick_start": {
+      "input_format": "固定角色关系 + 三轮准备/动作/后果/反应 + 场景复位 + 后果逐轮升级 + 最大结果同框",
+      "recommended_input": "原创定格工坊第一幕，铜质学徒机器人拉动松弹簧，垫圈在同一盏绿色监督灯前散开；磁刷把颜料珠拉成扩大轨迹，绿灯清楚后仰，后果大于第一幕；铜机器人、倾斜绿灯与最大齿轮场同框停住，不加入对白或修复结果",
+      "required_anchors": [
+        "在每次重置时保持相同的活动角色和见证关系可读。",
+        "在每次事故发生之前建立一个普通的目标和行动。",
+        "增加各轮的后果规模或空间范围。",
+        "将两个角色和最大的后果结合在一起。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一角色关系反复执行普通准备、主动动作、可见后果、见证者反应和场景复位；每轮更换物理问题并提高后果强度。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在不同空间反复使用同一小插曲结构：日常准备、同一主动角色的一次自主动作、可见物理后果、固定见证者的反应，然后干净复位。每轮更换物理问题并提高后果强度，直到最终反应。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在每次重置时保持相同的活动角色和见证关系可读。",
+          "purpose": "使单独的房间感觉像是一部选集。",
+          "ablation_failure": "更改两个角色会将序列变成不相关的剪辑。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在每次事故发生之前建立一个普通的目标和行动。",
+          "purpose": "保留可见的因果关系。",
+          "ablation_failure": "在一片混乱中开场会消除责任和时机。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在每一轮中使用不同的材料结果。",
+          "purpose": "创造变化而不是重复的笑料。",
+          "ablation_failure": "重复一次事故并不能提供任何证据。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "增加各轮的后果规模或空间范围。",
+          "purpose": "建立可衡量的升级。",
+          "ablation_failure": "没有阶梯的随机强度感觉是任意的。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将两个角色和最大的后果结合在一起。",
+          "purpose": "完成关系和升级。",
+          "ablation_failure": "在反应失去收束之前剪辑。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源幼儿和母亲",
+        "确切的家庭房间",
+        "食物来源、家具或家庭道具",
+        "确切的事故顺序和反应",
+        "来源衣柜和家庭身份"
+      ],
+      "instantiations": [
+        {
+          "concept": "三个定格动画车间小插曲跟随一个学徒机器人和一盏监督灯：松动的弹簧、失控的油漆珠和最终的纸齿轮雪崩，每个齿轮都重置到一个新的长凳上。",
+          "prompt_seed": "三个定格动画车间小插曲跟随一个学徒机器人和一盏监督灯：松动的弹簧、失控的油漆珠和最终的纸齿轮雪崩，每个齿轮都重置到一个新的长凳上。"
+        },
+        {
+          "concept": "一个微型云守护者和一个风向标重复三个屋顶实验：雾气喷发、雨丝带和最后充满房间的雪爆发。",
+          "prompt_seed": "一个微型云守护者和一个风向标重复三个屋顶实验：雾气喷发、雨丝带和最后充满房间的雪爆发。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "更改两个角色会将序列变成不相关的剪辑。",
+          "repair": "在每次重置时保持相同的活动角色和见证关系可读。"
+        },
+        {
+          "failure": "在一片混乱中开场会消除责任和时机。",
+          "repair": "在每次事故发生之前建立一个普通的目标和行动。"
+        },
+        {
+          "failure": "重复一次事故并不能提供任何证据。",
+          "repair": "在每一轮中使用不同的材料结果。"
+        },
+        {
+          "failure": "没有阶梯的随机强度感觉是任意的。",
+          "repair": "增加各轮的后果规模或空间范围。"
+        },
+        {
+          "failure": "在反应失去收束之前剪辑。",
+          "repair": "将两个角色和最大的后果结合在一起。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "三个定格动画车间小插曲跟随一个学徒机器人和一盏监督灯：松动的弹簧、失控的油漆珠和最终的纸齿轮雪崩，每个齿轮都重置到一个新的长凳上。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个微型云守护者和一个风向标重复三个屋顶实验：雾气喷发、雨丝带和最后充满房间的雪爆发。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

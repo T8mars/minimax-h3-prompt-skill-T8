@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-artedeingenio-2039333442077241627-video-1",
+  "slug": "environmental-front-area-escalation",
+  "title": "环境前沿｜局部点燃到全域占据",
+  "source_title": "龙场景递进｜多段奇幻动作保持主体连续",
+  "summary": "在同一地理中用一个可追踪的环境前沿逐阶段扩张：局部起点、连续蔓延、跨越地标、遮蔽更多空间，最终用广角证明场地状态已整体改变；不依赖来源中的战斗身份或火焰表面。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/environmental-front-area-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-artedeingenio-2039333442077241627-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-artedeingenio-2039333442077241627-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-environmental-front-area-escalation-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "有边界环境 + 单一连续变化前沿 + 至少2个固定地标 + 占据面积逐级扩大 + 终态广角对照",
+  "recommended_input": "圆形水族实验室中，掌大蓝色藻团从进水口连续扩张，依次越过三座编号珊瑚门；最终俯拍证明大部分水槽已改变，同时保留一个清水口袋对照。",
+  "required_anchors": [
+    "Establish a bounded environment, an untouched region and one localized starting front.",
+    "Grow one contiguous front instead of spawning unrelated effects everywhere.",
+    "Increase occupied area and material state, not just brightness.",
+    "Hold a final wide comparison showing transformed and residual untouched regions."
+  ],
+  "tags": [
+    "environmental",
+    "front",
+    "area",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.597,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-13T12:24:41+08:00",
+  "updated_at": "2026-08-13T13:02:28+08:00"
+}

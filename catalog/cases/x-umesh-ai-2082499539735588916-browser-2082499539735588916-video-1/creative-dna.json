@@ -1,0 +1,178 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Lock a fast carrier and its camera to one continuous constrained route. Escalate by reducing clearance from different sides while preserving forward direction and recurring route geometry. Make one final tunnel or aperture the tightest compression, then cross it exactly once into a materially wider environment where near obstacles disappear and the camera finally slows enough to prove the release.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one fast carrier, forward route and coupled camera before the first hard constriction.",
+      "purpose": "Creates stable pursuit geography.",
+      "ablation_failure": "A late carrier reveal makes clearance impossible to judge.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Reduce usable clearance progressively with side, overhead and route obstacles.",
+      "purpose": "Builds pressure through geometry rather than random cuts.",
+      "ablation_failure": "Unrelated hazards feel episodic.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep carrier and camera on the same continuous direction through each opening.",
+      "purpose": "Preserves kinetic continuity.",
+      "ablation_failure": "Axis resets turn the sequence into disconnected action shots.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one final tunnel or aperture as the narrowest visible compression.",
+      "purpose": "Creates a measurable release threshold.",
+      "ablation_failure": "Several equivalent exits dilute the peak.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Cross once into an obstacle-free large environment and let the camera widen or slow.",
+      "purpose": "Makes openness the terminal payoff.",
+      "ablation_failure": "Continuing dense hazards after the exit cancels the release.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source cliff-carved city",
+    "the source rider and rear-thruster speeder",
+    "stone ledge road and hanging laundry",
+    "the source tunnel-to-waterfall valley route",
+    "rainbow waterfall mist",
+    "MiniMax H3 and Hailuo AI watermarks"
+  ],
+  "instantiations": [
+    {
+      "concept": "An original amber survey submersible races through a flooded coral maintenance trench. Rock ribs, hanging kelp and rotating valve hoops progressively reduce clearance; one final intake tube is the narrowest point, then the craft exits into a vast bioluminescent basin and slows above open water.",
+      "prompt_seed": "An original amber survey submersible races through a flooded coral maintenance trench. Rock ribs, hanging kelp and rotating valve hoops progressively reduce clearance; one final intake tube is the narrowest point, then the craft exits into a vast bioluminescent basin and slows above open water."
+    },
+    {
+      "concept": "A stop-motion paper courier sled follows one continuous groove through an operating loom. Shuttles close from the sides, threads drop overhead and stitched arches narrow the lane; it crosses one final bobbin eye and enters a broad blank cutting table where the camera settles.",
+      "prompt_seed": "A stop-motion paper courier sled follows one continuous groove through an operating loom. Shuttles close from the sides, threads drop overhead and stitched arches narrow the lane; it crosses one final bobbin eye and enters a broad blank cutting table where the camera settles."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A late carrier reveal makes clearance impossible to judge.",
+      "repair": "Establish one fast carrier, forward route and coupled camera before the first hard constriction."
+    },
+    {
+      "failure": "Unrelated hazards feel episodic.",
+      "repair": "Reduce usable clearance progressively with side, overhead and route obstacles."
+    },
+    {
+      "failure": "Axis resets turn the sequence into disconnected action shots.",
+      "repair": "Keep carrier and camera on the same continuous direction through each opening."
+    },
+    {
+      "failure": "Several equivalent exits dilute the peak.",
+      "repair": "Use one final tunnel or aperture as the narrowest visible compression."
+    },
+    {
+      "failure": "Continuing dense hazards after the exit cancels the release.",
+      "repair": "Cross once into an obstacle-free large environment and let the camera widen or slow."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An original amber survey submersible races through a flooded coral maintenance trench. Rock ribs, hanging kelp and rotating valve hoops progressively reduce clearance; one final intake tube is the narrowest point, then the craft exits into a vast bioluminescent basin and slows above open water.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A stop-motion paper courier sled follows one continuous groove through an operating loom. Shuttles close from the sides, threads drop overhead and stitched arches narrow the lane; it crosses one final bobbin eye and enters a broad blank cutting table where the camera settles.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

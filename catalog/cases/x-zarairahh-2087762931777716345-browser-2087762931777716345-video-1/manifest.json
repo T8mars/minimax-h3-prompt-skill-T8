@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1",
+  "slug": "emblem-world-return-loop",
+  "title": "标志入境｜穿行世界后回收到原形",
+  "source_title": "图形标志入境｜城市穿行后回收到原形",
+  "summary": "先把一个简洁标志当作入口和几何规则，进入由其形状、色彩与方向构成的三维世界；经过环境、角色与一次尺度跃迁后，所有结构必须可追溯地重新折回同一个标志。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/emblem-world-return-loop",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-emblem-world-return-loop-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "稳定标志 + 三维世界展开 + 中心角色动作 + 一次尺度跃迁 + 同一标志精确回收",
+  "recommended_input": "一枚原创铜质罗盘玫瑰只旋转一次并锁定，四片叶瓣展开成实体水道，镜头穿入奶油色玻璃温室；种子保管自动机转动一次阀门，水脉同时传到四条通道，地面仍能读出罗盘结构；已建立的塔叶、骨架、阀块和水道依次向内折叠，精确重建开场同一铜质罗盘玫瑰，不出现新文案",
+  "required_anchors": [
+    "Begin with one compact emblem that clearly defines geometry, palette and direction.",
+    "Expand the emblem into a navigable environment using repeated versions of its own components.",
+    "Use one major scale change to gather the environment into a simplified global form.",
+    "End by rebuilding and holding the same opening emblem from visible world components."
+  ],
+  "tags": [
+    "emblem",
+    "world",
+    "return",
+    "loop"
+  ],
+  "quality": {
+    "weighted_score": 4.695,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:46+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

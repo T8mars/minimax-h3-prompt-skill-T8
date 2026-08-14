@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1",
+  "slug": "external-assembly-integrated-audition",
+  "title": "外部装配｜逐件安装到整机动作验收",
+  "source_title": "巨手装配｜逐件换装到全身动态亮相",
+  "summary": "让大尺度外部操作手逐件改变一个稳定主体，每次安装都先用近景证明接合，再回到全身状态确认累积结果；完成细节校准后，必须用一段完整动作测试证明所有部件能共同工作。",
+  "status": "released",
+  "source_duration_seconds": 30.200104,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/external-assembly-integrated-audition",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-external-assembly-integrated-audition-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "稳定基础主体 + 分阶段外部装配 + 接合近景与全身复核 + 细节校准 + 整机动作验收",
+  "recommended_input": "原创轨道仪器工坊内，一具掌心大小的铜质躯干立在空白校准标记上，两只大型象牙色维修手套安装双腿行走底座；主轮廓完成后，手套安装一支压力探针，并让面罩对齐三条刻度，不新增大型结构；自动机走三步、只展开一次双翼并用探针测量一条可见气流带，所有部件保持连接，最后完整定格",
+  "required_anchors": [
+    "Establish one stable subject, assembly station and unmodified baseline.",
+    "Install major components one at a time and return to a whole-subject check after each stage.",
+    "Complete all small functional or decorative components before testing motion.",
+    "End with one integrated movement audition and a held complete state."
+  ],
+  "tags": [
+    "external",
+    "assembly",
+    "integrated",
+    "audition"
+  ],
+  "quality": {
+    "weighted_score": 4.679,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:46+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

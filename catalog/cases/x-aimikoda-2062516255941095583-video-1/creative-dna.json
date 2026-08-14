@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Keep one compact identity board visually unchanged while a separate live area verifies the same subject through several functionally different proofs. Vary pose, distance, camera angle and movement silhouette, then reserve one late high-complexity skill proof; the board is a continuous comparison standard, not decoration.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Keep one compact identity board unchanged and readable throughout.",
+      "purpose": "Provides a persistent reference baseline.",
+      "ablation_failure": "A changing board removes the comparison standard.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Verify the same subject across at least three different live-view scales or poses.",
+      "purpose": "Tests identity beyond one flattering frame.",
+      "ablation_failure": "Repeated copies of the same pose do not prove stability.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Give each live phase a different verification duty, including at least one full movement silhouette.",
+      "purpose": "Turns the montage into evidence.",
+      "ablation_failure": "Decorative angle changes cannot validate identity.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Preserve key identity anchors through camera-angle and motion changes.",
+      "purpose": "Makes continuity inspectable.",
+      "ablation_failure": "Losing face, silhouette and costume anchors makes the board irrelevant.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Reserve one late complex skill proof and hold it beside the unchanged board.",
+      "purpose": "Provides a decisive final verification.",
+      "ablation_failure": "Ending on the board alone reads like documentation, not completed live proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source white-haired futuristic performer",
+    "source saber-poi light weapon",
+    "source industrial night vehicle setting",
+    "source luminous ring choreography",
+    "source identity-board layout and typography"
+  ],
+  "instantiations": [
+    {
+      "concept": "A felt zero-gravity archivist keeps one compact reference board fixed while the live area proves hatch posture, map-folding tool use, magnetic-shoe traverse, visor reaction and one late capture of a drifting wax seal.",
+      "prompt_seed": "A felt zero-gravity archivist keeps one compact reference board fixed while the live area proves hatch posture, map-folding tool use, magnetic-shoe traverse, visor reaction and one late capture of a drifting wax seal."
+    },
+    {
+      "concept": "A ceramic rain-harvester keeps one orthographic identity card fixed while live views prove crouched calibration, valve operation, uneven-roof gait, sensor-face response and one late controlled deployment of a folding rain wing.",
+      "prompt_seed": "A ceramic rain-harvester keeps one orthographic identity card fixed while live views prove crouched calibration, valve operation, uneven-roof gait, sensor-face response and one late controlled deployment of a folding rain wing."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A changing board removes the comparison standard.",
+      "repair": "Keep one compact identity board unchanged and readable throughout."
+    },
+    {
+      "failure": "Repeated copies of the same pose do not prove stability.",
+      "repair": "Verify the same subject across at least three different live-view scales or poses."
+    },
+    {
+      "failure": "Decorative angle changes cannot validate identity.",
+      "repair": "Give each live phase a different verification duty, including at least one full movement silhouette."
+    },
+    {
+      "failure": "Losing face, silhouette and costume anchors makes the board irrelevant.",
+      "repair": "Preserve key identity anchors through camera-angle and motion changes."
+    },
+    {
+      "failure": "Ending on the board alone reads like documentation, not completed live proof.",
+      "repair": "Reserve one late complex skill proof and hold it beside the unchanged board."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A felt zero-gravity archivist keeps one compact reference board fixed while the live area proves hatch posture, map-folding tool use, magnetic-shoe traverse, visor reaction and one late capture of a drifting wax seal.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A ceramic rain-harvester keeps one orthographic identity card fixed while live views prove crouched calibration, valve operation, uneven-roof gait, sensor-face response and one late controlled deployment of a folding rain wing.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

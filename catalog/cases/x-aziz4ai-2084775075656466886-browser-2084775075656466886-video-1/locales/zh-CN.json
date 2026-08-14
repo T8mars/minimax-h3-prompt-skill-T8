@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "f4e3a6fdac9d94e0fee36c99e7f4bb5af2fdefe00a913ca63bae2f5515c3ee09",
+    "creative_dna_sha256": "eb17f5c86f1ab925a968629d20216f2a181ef0fe004eb0d4c9cf5eb2b760b830"
+  },
+  "content": {
+    "title": "平面重组｜讲解人物与纸片信息节拍",
+    "summary": "固定讲解者轮廓与纸片图形族，通过信息卡、人物复制和版式密度变化逐步重组，最后用已建立的纸片与轮廓收束为终版；与官方纸拼贴能力及既有平面模板重合，因此只作证据变体。",
+    "quick_start": {
+      "input_format": "紧凑图标 + 稳定角色/配色 + 密度递增模块 + 孤立状态停顿 + 几何锁定",
+      "recommended_input": "原创黏土纸艺气象台上，一名黏土气象员与三张灰蓝赭黄云形卡建立在奶油色网格，不使用来源文字；加入一个偏移的同一气象员副本用于降雨比较，身份与网格不变；同一人物、云卡和网格重建为非对称矩形野外报告封面，不加入新文字",
+      "required_anchors": [
+        "建立稳定的演讲者轮廓和有限的卡片词汇。",
+        "仅使用既定的形状、调色板和演示者身份来重新组织信息。",
+        "在最终重构之前简化一次。",
+        "将已建立的元素解析为稳定停留的终态版式，无需源副本。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定讲解者轮廓与纸片图形族，通过信息卡、人物复制和版式密度变化逐步重组，最后用已建立的纸片与轮廓收束为终版；与官方纸拼贴能力及既有平面模板重合，因此只作证据变体。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先建立演示者剪影和边界清楚的纸卡视觉词汇，再只用这些既有元素逐步重组、复制并提高信息密度；中途进行一次简短降密度停顿，最后让同一图形家族收束为稳定版式。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立稳定的演讲者轮廓和有限的卡片词汇。",
+          "purpose": "定义可重用族。",
+          "ablation_failure": "无界资源让拼贴随心所欲。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "仅使用既定的形状、调色板和演示者身份来重新组织信息。",
+          "purpose": "保持连续性。",
+          "ablation_failure": "新的不相关艺术打破了系统。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用重复或偏移重复来提高密度，同时保留同一性。",
+          "purpose": "创建可测量的中间升级。",
+          "ablation_failure": "更换主播就失去了主播。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在最终重构之前简化一次。",
+          "purpose": "创建结构转弯。",
+          "ablation_failure": "连续密度模糊了结果。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将已建立的元素解析为稳定停留的终态版式，无需源副本。",
+          "purpose": "安全关闭循环。",
+          "ablation_failure": "复制源端卡违规传输。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源阿拉伯语主持人及身份",
+        "精确的阿拉伯文副本和标题卡",
+        "源纸拼贴形状",
+        "精确的复制人布局",
+        "源最终标题构成"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位粘土气象学家和三张云形卡片重组为预报状态，短暂减少为一张空白压力卡片，然后解析为不对称的现场报告封面。",
+          "prompt_seed": "一位粘土气象学家和三张云形卡片重组为预报状态，短暂减少为一张空白压力卡片，然后解析为不对称的现场报告封面。"
+        },
+        {
+          "concept": "木刻图书管理员和两个书签选项卡乘以目录概述，简化为一个空网格，然后重建为矩形阅读路径海报。",
+          "prompt_seed": "木刻图书管理员和两个书签选项卡乘以目录概述，简化为一个空网格，然后重建为矩形阅读路径海报。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "无界资源让拼贴随心所欲。",
+          "repair": "建立稳定的演讲者轮廓和有限的卡片词汇。"
+        },
+        {
+          "failure": "新的不相关艺术打破了系统。",
+          "repair": "仅使用既定的形状、调色板和演示者身份来重新组织信息。"
+        },
+        {
+          "failure": "更换主播就失去了主播。",
+          "repair": "使用重复或偏移重复来提高密度，同时保留同一性。"
+        },
+        {
+          "failure": "连续密度模糊了结果。",
+          "repair": "在最终重构之前简化一次。"
+        },
+        {
+          "failure": "复制源端卡违规传输。",
+          "repair": "将已建立的元素解析为稳定停留的终态版式，无需源副本。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位粘土气象学家和三张云形卡片重组为预报状态，短暂减少为一张空白压力卡片，然后解析为不对称的现场报告封面。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "木刻图书管理员和两个书签选项卡乘以目录概述，简化为一个空网格，然后重建为矩形阅读路径海报。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

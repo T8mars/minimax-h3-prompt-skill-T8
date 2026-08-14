@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "c99f3142fcbab7f1ee981ec41467ab9e86e63496bfc34a749f30989d95482744",
+    "creative_dna_sha256": "9a72f454176a13421ce7a231a91ede540fad7fa7473497b7bb432cd83b0e209e"
+  },
+  "content": {
+    "title": "世界换材｜主体不断线穿过环境突变",
+    "summary": "先用稳定地形和连续跟拍锁定主体路线，在一次明确冲击点让周围世界整体换成另一套物质规则；主体运动、方向和速度连续不断，最终用新世界中的可读出口证明不是普通转场。",
+    "quick_start": {
+      "input_format": "连续移动主体 + 原世界基线 + 单次全局换材 + 方向速度不断线 + 新世界终点",
+      "recommended_input": "原创地图工坊里，黄铜发条种子沿奶油色纸面的一条靛蓝河线滚动，远处蓝线信标保持在同一轴线上；到达折痕顶点时，周围纸地图只转换一次为深织物峡谷，墨线变成缝线山脊，种子路线不重置；种子接近蓝线信标，织物峡谷完整保留，不恢复开场平面地图",
+      "required_anchors": [
+        "转换前建立一科、一行进轴、一普通环境规则。",
+        "在决定性的瞬间保持主体身份、方向和动作连续。",
+        "使用经过的几何形状或材料响应来证明新世界围绕相同的路线持续存在。",
+        "根据转换后的规则继续前往可读目的地，而不是重置到开放世界。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用稳定地形和连续跟拍锁定主体路线，在一次明确冲击点让周围世界整体换成另一套物质规则；主体运动、方向和速度连续不断，最终用新世界中的可读出口证明不是普通转场。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把移动主体锁定在一条清楚路线中，在运动不中断的前提下完成一次全局环境材质转换；随后让主体继续按照新世界的物理规则前往可见终点，以证明转换持久存在而不是普通转场。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "转换前建立一科、一行进轴、一普通环境规则。",
+          "purpose": "创建一个可以衡量世界变化的基线。",
+          "ablation_failure": "从转换后的世界开始，消除了因果对比。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在决定性的瞬间保持主体身份、方向和动作连续。",
+          "purpose": "使环境而不是旅行者成为变化的系统。",
+          "ablation_failure": "运动重置使更改被读取为不相关的场景剪辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "仅转换环境一次，并进行明显的全局材质更改。",
+          "purpose": "将奇观集中到一个清晰的因果事件中。",
+          "ablation_failure": "一些不相关的转变削弱了治理规则。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "使用经过的几何形状或材料响应来证明新世界围绕相同的路线持续存在。",
+          "purpose": "转换后提供持续的空间证据。",
+          "ablation_failure": "单一的闪光帧无法证明一个持久的新世界。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "根据转换后的规则继续前往可读目的地，而不是重置到开放世界。",
+          "purpose": "将持久化为最终结果。",
+          "ablation_failure": "返回原始环境会取消转换结果。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源山地自行车手",
+        "岩石高山山脊和泥土跳跃",
+        "透明玻璃碎片迷宫",
+        "来源骑手衣柜和自行车",
+        "精确的悬崖到玻璃景观和取景"
+      ],
+      "instantiations": [
+        {
+          "concept": "发条种子掠过纸质地图；一次折叠冲击会将地图转变为深邃的织物峡谷，而种子则不断滚向缝合的信标。",
+          "prompt_seed": "发条种子掠过纸质地图；一次折叠冲击会将地图转变为深邃的织物峡谷，而种子则不断滚向缝合的信标。"
+        },
+        {
+          "concept": "​​维护圆盘滑过干净的陶瓷导管；一个电磁脉冲将周围的墙壁变成悬浮的铁屑，而冰球继续朝着稳定的服务灯移动。",
+          "prompt_seed": "​​维护圆盘滑过干净的陶瓷导管；一个电磁脉冲将周围的墙壁变成悬浮的铁屑，而冰球继续朝着稳定的服务灯移动。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "从转换后的世界开始，消除了因果对比。",
+          "repair": "转换前建立一科、一行进轴、一普通环境规则。"
+        },
+        {
+          "failure": "运动重置使更改被读取为不相关的场景剪辑。",
+          "repair": "在决定性的瞬间保持主体身份、方向和动作连续。"
+        },
+        {
+          "failure": "一些不相关的转变削弱了治理规则。",
+          "repair": "仅转换环境一次，并进行明显的全局材质更改。"
+        },
+        {
+          "failure": "单一的闪光帧无法证明一个持久的新世界。",
+          "repair": "使用经过的几何形状或材料响应来证明新世界围绕相同的路线持续存在。"
+        },
+        {
+          "failure": "返回原始环境会取消转换结果。",
+          "repair": "根据转换后的规则继续前往可读目的地，而不是重置到开放世界。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "发条种子掠过纸质地图；一次折叠冲击会将地图转变为深邃的织物峡谷，而种子则不断滚向缝合的信标。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "​​维护圆盘滑过干净的陶瓷导管；一个电磁脉冲将周围的墙壁变成悬浮的铁屑，而冰球继续朝着稳定的服务灯移动。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

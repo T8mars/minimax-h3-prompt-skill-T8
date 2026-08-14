@@ -54,13 +54,13 @@ async function run() {
     });
     await page.waitForSelector(".case-card", { timeout: 15000 });
     const allCount = await page.locator(".case-card").count();
-    assert.equal(allCount, 83, "default all-content view must render 72 cases + 9 official Skills + 2 non-official Skills");
+    assert.equal(allCount, 117, "default all-content view must render 106 cases + 9 official Skills + 2 non-official Skills");
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
     assert.equal(await page.locator("#global-locale-zh").getAttribute("aria-pressed"), "true", "Chinese must be the first-run default");
     assert.equal(await page.locator("html").getAttribute("lang"), "zh-CN", "the document language must match the first-run Chinese default");
-    assert.equal(await page.locator("#stat-cases").textContent(), "83");
-    assert.equal(await page.locator("#stat-videos").textContent(), "83", "every item in the aggregate view must have a local preview");
-    assert.equal(await page.locator("#stat-prompts").textContent(), "166", "all 83 items must expose their declared model surfaces");
+    assert.equal(await page.locator("#stat-cases").textContent(), "117");
+    assert.equal(await page.locator("#stat-videos").textContent(), "117", "every item in the aggregate view must have a local preview");
+    assert.equal(await page.locator("#stat-prompts").textContent(), "234", "all 117 items must expose their declared model surfaces");
     assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "official Skills must use local GIF previews in the aggregate view");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "aggregate view must not expose case-only comparison controls");
     assert.equal(await page.locator("#view-favorite-count").textContent(), "0");
@@ -110,10 +110,10 @@ async function run() {
     await page.screenshot({ path: screenshotPath, animations: "disabled" });
 
     await page.locator("#view-cases").click();
-    await page.waitForFunction(() => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === 72);
+    await page.waitForFunction(() => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === 106);
     const caseCount = await page.locator(".case-card").count();
-    assert.equal(caseCount, 72, "viewer must render all 72 public cases");
-    assert.equal(await page.locator("#stat-videos").textContent(), "72", "development media pack must bind 72 case MP4s");
+    assert.equal(caseCount, 106, "viewer must render all 106 public cases");
+    assert.equal(await page.locator("#stat-videos").textContent(), "106", "development media pack must bind 106 case MP4s");
     await page.locator("#platform-filter").selectOption("platform:x");
     assert.ok(await page.locator(".case-card").count() > 10, "stable platform filter must retain the X case set");
 

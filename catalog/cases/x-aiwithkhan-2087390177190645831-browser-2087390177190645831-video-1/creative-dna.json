@@ -1,0 +1,178 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish an ordinary shared routine, interrupt it with one physical accident that distributes several readable objects, and suspend the accident at maximum disorder. Let exactly one subject retain normal agency, deliberately sample at least two separated pieces of the frozen event, then leave while the wider tableau remains visibly locked. The persistent world state, not a later restart, is the payoff.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish an ordinary routine and the routes of at least two participants before the accident.",
+      "purpose": "Makes the interruption causally readable.",
+      "ablation_failure": "Opening on suspended debris turns the event into unexplained decoration.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one accident to distribute several independently readable objects across depth.",
+      "purpose": "Creates a testable stopped-world field.",
+      "ablation_failure": "One floating prop cannot prove a shared physical state.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "At peak disorder, keep all participants and objects fixed except one clearly mobile subject.",
+      "purpose": "Gives the anomaly an unambiguous agency rule.",
+      "ablation_failure": "If several people move, the freeze becomes an editing ambiguity.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Have the mobile subject selectively remove at least two separated objects without releasing the rest.",
+      "purpose": "Proves deliberate interaction inside the fixed state.",
+      "ablation_failure": "A passive walk-through never tests the suspension.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with the subject leaving while a wider view still proves the accident remains suspended.",
+      "purpose": "Turns persistence into the final consequence.",
+      "ablation_failure": "A global restart would replace the mechanism with a generic time-freeze release.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "1990s American diner",
+    "the source black-haired woman and pink-uniform waitress",
+    "red vinyl booths and checkerboard floor",
+    "breakfast tray, eggs, bacon, toast and coffee spill",
+    "the source food-sampling gag and elevator exit",
+    "Seedance 2.5 attribution"
+  ],
+  "instantiations": [
+    {
+      "concept": "In an original orbital seed bank, a coolant line bursts and freezes technicians, seed canisters and liquid spheres in midair. One maintenance beetle remains mobile, plucks two diagnostic wafers from different frozen streams, then crosses an iris hatch while the bay stays locked.",
+      "prompt_seed": "In an original orbital seed bank, a coolant line bursts and freezes technicians, seed canisters and liquid spheres in midair. One maintenance beetle remains mobile, plucks two diagnostic wafers from different frozen streams, then crosses an iris hatch while the bay stays locked."
+    },
+    {
+      "concept": "In stop-motion clay theatre, a print-shop rack collapses and suspends rollers, paper strips, ink drops and three puppets. One wooden apprentice collects a blue swatch and a brass type block from separate positions, then exits through the drying cabinet while the collapse remains fixed.",
+      "prompt_seed": "In stop-motion clay theatre, a print-shop rack collapses and suspends rollers, paper strips, ink drops and three puppets. One wooden apprentice collects a blue swatch and a brass type block from separate positions, then exits through the drying cabinet while the collapse remains fixed."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Opening on suspended debris turns the event into unexplained decoration.",
+      "repair": "Establish an ordinary routine and the routes of at least two participants before the accident."
+    },
+    {
+      "failure": "One floating prop cannot prove a shared physical state.",
+      "repair": "Use one accident to distribute several independently readable objects across depth."
+    },
+    {
+      "failure": "If several people move, the freeze becomes an editing ambiguity.",
+      "repair": "At peak disorder, keep all participants and objects fixed except one clearly mobile subject."
+    },
+    {
+      "failure": "A passive walk-through never tests the suspension.",
+      "repair": "Have the mobile subject selectively remove at least two separated objects without releasing the rest."
+    },
+    {
+      "failure": "A global restart would replace the mechanism with a generic time-freeze release.",
+      "repair": "End with the subject leaving while a wider view still proves the accident remains suspended."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In an original orbital seed bank, a coolant line bursts and freezes technicians, seed canisters and liquid spheres in midair. One maintenance beetle remains mobile, plucks two diagnostic wafers from different frozen streams, then crosses an iris hatch while the bay stays locked.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In stop-motion clay theatre, a print-shop rack collapses and suspends rollers, paper strips, ink drops and three puppets. One wooden apprentice collects a blue swatch and a brass type block from separate positions, then exits through the drying cabinet while the collapse remains fixed.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

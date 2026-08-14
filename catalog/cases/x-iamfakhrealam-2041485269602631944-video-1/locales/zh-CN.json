@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-iamfakhrealam-2041485269602631944-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "cca9222305052103d3787312fb30d80ffedea9532d3a77b27aaca67a1e93ffde",
+    "creative_dna_sha256": "81ed892c2bc0c8b78a42343d46f7765e9d7f64afb743e0553b484f69ccbfb5a5"
+  },
+  "content": {
+    "title": "巨体攻防｜共享空间中的连续闪避",
+    "summary": "在不切断地理关系的连续镜头中，让巨体用慢而重的明确执行的动作占据空间，小体型主体则靠侧移、俯身和绕行依次穿过负空间；双方始终可定位，结尾保留持续对峙而非虚构胜负。",
+    "quick_start": {
+      "input_format": "大小尺度明确的两主体 + 共享地面 + 巨体明确执行的动作 + 小体型可见变线 + 无虚构胜负的共享终态",
+      "recommended_input": "掌上巡检车在明亮纸厂穿越三条标记通道，巨型吊臂缓慢横扫占据空间；巡检车只靠等待、变线与收低传感杆通过，结尾保持双方运行，不宣称胜负。",
+      "required_anchors": [
+        "在第一次交换之前建立全尺寸差异和公共接地平面。",
+        "给庞大的身体一个缓慢的、明显占据路线的运动。",
+        "​​在每次恢复过程中保护参与者和地轴。",
+        "保持最终的共享状态，不发明失败、救援或联盟。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "在不切断地理关系的连续镜头中，让巨体用慢而重的明确执行的动作占据空间，小体型主体则靠侧移、俯身和绕行依次穿过负空间；双方始终可定位，结尾保留持续对峙而非虚构胜负。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让巨体反复执行缓慢而占据空间的明确动作，小体型主体则通过可见负空间进行精确变线。连续镜头必须保持双方和共享地面关系清楚，以证明这场不对称尺度交换；结尾只保留持续对峙，不虚构画面没有证明的胜负。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在第一次交换之前建立全尺寸差异和公共接地平面。",
+          "purpose": "让观看者判断质量和可用空间。",
+          "ablation_failure": "紧密的碎片隐藏了中心的不对称性。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "给庞大的身体一个缓慢的、明显占据路线的运动。",
+          "purpose": "创建一个可读的空间问题。",
+          "ablation_failure": "随机挥动会产生噪音而不是压力。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "回答时，较小的对象通过可见的间隙改变路线，而不是等力碰撞。",
+          "purpose": "使敏捷成为反规则，而不是令人难以置信的力量。",
+          "ablation_failure": "正面交锋消除了规模前提。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "​​在每次恢复过程中保护参与者和地轴。",
+          "purpose": "保持因果和空间连续性。",
+          "ablation_failure": "重新构造任一参与者都会破坏交换逻辑。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "保持最终的共享状态，不发明失败、救援或联盟。",
+          "purpose": "保持来源衍生机制的证据范围。",
+          "ablation_failure": "不受支持的获胜条件夸大了可见的结局。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "浅衣人类战士",
+        "大型深色岩石状人形生物",
+        "雾蒙蒙的湿海岸线飞机",
+        "源盘旋战斗拦截",
+        "源身体比例和攻击编排"
+      ],
+      "instantiations": [
+        {
+          "concept": "一辆手掌大小的检查车穿过明亮的造纸厂地板，同时一个缓慢的头顶捆包臂扫过标记的车道。漫游车等待，滑过一个可见的间隙，在第二次扫描下旋转，最后在连续的横向镜头中面对仍然活跃的手臂。",
+          "prompt_seed": "一辆手掌大小的检查车穿过明亮的造纸厂地板，同时一个缓慢的头顶捆包臂扫过标记的车道。漫游车等待，滑过一个可见的间隙，在第二次扫描下旋转，最后在连续的横向镜头中面对仍然活跃的手臂。"
+        },
+        {
+          "concept": "一只小陶瓷螃蟹穿过圆形潮汐实验室，而巨大的旋转水门则关闭了广阔的区域。当螃蟹通过三个缩小的开口改变车道并到达中立的保持区域而无需击败大门时，头顶上的摄像头可以使环的几何形状保持可见。",
+          "prompt_seed": "一只小陶瓷螃蟹穿过圆形潮汐实验室，而巨大的旋转水门则关闭了广阔的区域。当螃蟹通过三个缩小的开口改变车道并到达中立的保持区域而无需击败大门时，头顶上的摄像头可以使环的几何形状保持可见。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "紧密的碎片隐藏了中心的不对称性。",
+          "repair": "在第一次交换之前建立全尺寸差异和公共接地平面。"
+        },
+        {
+          "failure": "随机挥动会产生噪音而不是压力。",
+          "repair": "给庞大的身体一个缓慢的、明显占据路线的运动。"
+        },
+        {
+          "failure": "正面交锋消除了规模前提。",
+          "repair": "回答时，较小的对象通过可见的间隙改变路线，而不是等力碰撞。"
+        },
+        {
+          "failure": "重新构造任一参与者都会破坏交换逻辑。",
+          "repair": "​​在每次恢复过程中保护参与者和地轴。"
+        },
+        {
+          "failure": "不受支持的获胜条件夸大了可见的结局。",
+          "repair": "保持最终的共享状态，不发明失败、救援或联盟。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一辆手掌大小的检查车穿过明亮的造纸厂地板，同时一个缓慢的头顶捆包臂扫过标记的车道。漫游车等待，滑过一个可见的间隙，在第二次扫描下旋转，最后在连续的横向镜头中面对仍然活跃的手臂。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一只小陶瓷螃蟹穿过圆形潮汐实验室，而巨大的旋转水门则关闭了广阔的区域。当螃蟹通过三个缩小的开口改变车道并到达中立的保持区域而无需击败大门时，头顶上的摄像头可以使环的几何形状保持可见。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

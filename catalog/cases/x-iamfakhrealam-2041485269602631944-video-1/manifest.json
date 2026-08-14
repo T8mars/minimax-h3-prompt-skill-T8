@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-iamfakhrealam-2041485269602631944-video-1",
+  "slug": "asymmetric-scale-evasion-exchange",
+  "title": "巨体攻防｜共享空间中的连续闪避",
+  "source_title": "巨体攻防｜湿地共享空间中的连续闪避",
+  "summary": "在不切断地理关系的连续镜头中，让巨体用慢而重的承诺动作占据空间，小体型主体则靠侧移、俯身和绕行依次穿过负空间；双方始终可定位，结尾保留持续对峙而非虚构胜负。",
+  "status": "released",
+  "source_duration_seconds": 15.104,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/asymmetric-scale-evasion-exchange",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-iamfakhrealam-2041485269602631944-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-iamfakhrealam-2041485269602631944-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-asymmetric-scale-evasion-exchange-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "大小尺度明确的两主体 + 共享地面 + 巨体承诺动作 + 小体型可见变线 + 无虚构胜负的共享终态",
+  "recommended_input": "掌上巡检车在明亮纸厂穿越三条标记通道，巨型吊臂缓慢横扫占据空间；巡检车只靠等待、变线与收低传感杆通过，结尾保持双方运行，不宣称胜负。",
+  "required_anchors": [
+    "Establish the full scale difference and a common ground plane before the first exchange.",
+    "Give the large body one slow committed movement that visibly occupies a route.",
+    "Preserve both participants and the ground axis through each recovery.",
+    "Hold the final shared state without inventing defeat, rescue or alliance."
+  ],
+  "tags": [
+    "asymmetric",
+    "scale",
+    "evasion",
+    "exchange"
+  ],
+  "quality": {
+    "weighted_score": 4.589,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-13T12:24:40+08:00",
+  "updated_at": "2026-08-13T13:02:28+08:00"
+}

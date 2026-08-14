@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.1.2",
-  "generated_at": "2026-08-12T17:14:43+08:00",
-  "case_count": 72,
+  "catalog_version": "1.1.3",
+  "generated_at": "2026-08-14T14:32:24+08:00",
+  "case_count": 106,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -2521,6 +2521,1199 @@
       ],
       "quality_score": 4.73,
       "updated_at": "2026-08-12T16:09:40+08:00"
+    },
+    {
+      "case_id": "x-dheepanratnam-2042910477320114293-video-1",
+      "slug": "readiness-microproof-departure",
+      "title": "载具启程｜微观检查累积到离场证明",
+      "status": "released",
+      "summary": "先建立载具与操作者，再用多个局部检查镜头逐项证明准备状态；一次明确激活把静态部件转成联动运动，最后以远景离场证明整套系统已投入使用。",
+      "manifest_path": "cases/x-dheepanratnam-2042910477320114293-video-1/manifest.json",
+      "summary_path": "cases/x-dheepanratnam-2042910477320114293-video-1/SUMMARY.md",
+      "source_path": "cases/x-dheepanratnam-2042910477320114293-video-1/source.json",
+      "creative_dna_path": "cases/x-dheepanratnam-2042910477320114293-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-dheepanratnam-2042910477320114293-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-dheepanratnam-2042910477320114293-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-dheepanratnam-2042910477320114293-video-1/preview.gif",
+        "poster": "cases/x-dheepanratnam-2042910477320114293-video-1/poster.webp",
+        "mp4": "media/x-dheepanratnam-2042910477320114293-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/readiness-microproof-departure",
+      "template_id": "t8-case-readiness-microproof-departure-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "readiness",
+        "microproof",
+        "departure"
+      ],
+      "quality_score": 4.595,
+      "updated_at": "2026-08-13T13:02:28+08:00"
+    },
+    {
+      "case_id": "x-iamfakhrealam-2041485269602631944-video-1",
+      "slug": "asymmetric-scale-evasion-exchange",
+      "title": "巨体攻防｜共享空间中的连续闪避",
+      "status": "released",
+      "summary": "在不切断地理关系的连续镜头中，让巨体用慢而重的承诺动作占据空间，小体型主体则靠侧移、俯身和绕行依次穿过负空间；双方始终可定位，结尾保留持续对峙而非虚构胜负。",
+      "manifest_path": "cases/x-iamfakhrealam-2041485269602631944-video-1/manifest.json",
+      "summary_path": "cases/x-iamfakhrealam-2041485269602631944-video-1/SUMMARY.md",
+      "source_path": "cases/x-iamfakhrealam-2041485269602631944-video-1/source.json",
+      "creative_dna_path": "cases/x-iamfakhrealam-2041485269602631944-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-iamfakhrealam-2041485269602631944-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-iamfakhrealam-2041485269602631944-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-iamfakhrealam-2041485269602631944-video-1/preview.gif",
+        "poster": "cases/x-iamfakhrealam-2041485269602631944-video-1/poster.webp",
+        "mp4": "media/x-iamfakhrealam-2041485269602631944-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/asymmetric-scale-evasion-exchange",
+      "template_id": "t8-case-asymmetric-scale-evasion-exchange-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "asymmetric",
+        "scale",
+        "evasion",
+        "exchange"
+      ],
+      "quality_score": 4.589,
+      "updated_at": "2026-08-13T13:02:28+08:00"
+    },
+    {
+      "case_id": "x-jeroenvanh-2052849887041974577-video-1",
+      "slug": "facial-action-unit-calibration",
+      "title": "表情校准｜固定身份下的动作单元序列",
+      "status": "released",
+      "summary": "锁定人物、光线和视角，只让眼睑、眉部、下颌、视线和唇形等局部动作单元分段变化；中间用微小复位防止表情混成连续表演，末段收紧景别检验身份与细节仍稳定。",
+      "manifest_path": "cases/x-jeroenvanh-2052849887041974577-video-1/manifest.json",
+      "summary_path": "cases/x-jeroenvanh-2052849887041974577-video-1/SUMMARY.md",
+      "source_path": "cases/x-jeroenvanh-2052849887041974577-video-1/source.json",
+      "creative_dna_path": "cases/x-jeroenvanh-2052849887041974577-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-jeroenvanh-2052849887041974577-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-jeroenvanh-2052849887041974577-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-jeroenvanh-2052849887041974577-video-1/preview.gif",
+        "poster": "cases/x-jeroenvanh-2052849887041974577-video-1/poster.webp",
+        "mp4": "media/x-jeroenvanh-2052849887041974577-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/facial-action-unit-calibration",
+      "template_id": "t8-case-facial-action-unit-calibration-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "facial",
+        "action",
+        "unit",
+        "calibration"
+      ],
+      "quality_score": 4.591,
+      "updated_at": "2026-08-13T13:02:28+08:00"
+    },
+    {
+      "case_id": "x-umesh-ai-2041561378495082582-video-1",
+      "slug": "contact-proof-to-substrate-breach",
+      "title": "踏面异变｜重复触点到基底破裂",
+      "status": "released",
+      "summary": "先让稳定步伐反复触发同一种局部表面反应，以可数接触建立规则；随后一次更强的接触让承载面发生不可逆破裂，镜头越过同一边界进入下层世界并以新介质状态收束。",
+      "manifest_path": "cases/x-umesh-ai-2041561378495082582-video-1/manifest.json",
+      "summary_path": "cases/x-umesh-ai-2041561378495082582-video-1/SUMMARY.md",
+      "source_path": "cases/x-umesh-ai-2041561378495082582-video-1/source.json",
+      "creative_dna_path": "cases/x-umesh-ai-2041561378495082582-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-umesh-ai-2041561378495082582-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-umesh-ai-2041561378495082582-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-umesh-ai-2041561378495082582-video-1/preview.gif",
+        "poster": "cases/x-umesh-ai-2041561378495082582-video-1/poster.webp",
+        "mp4": "media/x-umesh-ai-2041561378495082582-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/contact-proof-to-substrate-breach",
+      "template_id": "t8-case-contact-proof-to-substrate-breach-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "contact",
+        "proof",
+        "to",
+        "substrate",
+        "breach"
+      ],
+      "quality_score": 4.605,
+      "updated_at": "2026-08-13T13:02:28+08:00"
+    },
+    {
+      "case_id": "x-me-rock369-2043622237396410608-video-1",
+      "slug": "mobility-route-to-human-benefit",
+      "title": "移动兑现｜载具跃迁到生活结果",
+      "status": "released",
+      "summary": "用极短篇幅把载具身份、出发、性能跃迁、地理抵达和人的最终使用结果串成一条因果链；技术奇观必须被具体生活结果兑现，结尾不能停在无目的飞驰。",
+      "manifest_path": "cases/x-me-rock369-2043622237396410608-video-1/manifest.json",
+      "summary_path": "cases/x-me-rock369-2043622237396410608-video-1/SUMMARY.md",
+      "source_path": "cases/x-me-rock369-2043622237396410608-video-1/source.json",
+      "creative_dna_path": "cases/x-me-rock369-2043622237396410608-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-me-rock369-2043622237396410608-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-me-rock369-2043622237396410608-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-me-rock369-2043622237396410608-video-1/preview.gif",
+        "poster": "cases/x-me-rock369-2043622237396410608-video-1/poster.webp",
+        "mp4": "media/x-me-rock369-2043622237396410608-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/mobility-route-to-human-benefit",
+      "template_id": "t8-case-mobility-route-to-human-benefit-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "mobility",
+        "route",
+        "to",
+        "human",
+        "benefit"
+      ],
+      "quality_score": 4.587,
+      "updated_at": "2026-08-13T13:02:28+08:00"
+    },
+    {
+      "case_id": "x-kimikoosugi-2036241060763148376-video-1",
+      "slug": "protagonist-genre-escalation-trailer",
+      "title": "类型预告｜同一主角跨场景升级到片名",
+      "status": "released",
+      "summary": "以同一核心人物和少数关系锚点贯穿多场景预告：先建立关系，再扩展城市活动与私人压力，随后把冲突升级到公共危险和大尺度奇观，最终用独立片名卡封口；不依赖未转写对白意义。",
+      "manifest_path": "cases/x-kimikoosugi-2036241060763148376-video-1/manifest.json",
+      "summary_path": "cases/x-kimikoosugi-2036241060763148376-video-1/SUMMARY.md",
+      "source_path": "cases/x-kimikoosugi-2036241060763148376-video-1/source.json",
+      "creative_dna_path": "cases/x-kimikoosugi-2036241060763148376-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-kimikoosugi-2036241060763148376-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-kimikoosugi-2036241060763148376-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-kimikoosugi-2036241060763148376-video-1/preview.gif",
+        "poster": "cases/x-kimikoosugi-2036241060763148376-video-1/poster.webp",
+        "mp4": "media/x-kimikoosugi-2036241060763148376-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/protagonist-genre-escalation-trailer",
+      "template_id": "t8-case-protagonist-genre-escalation-trailer-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "protagonist",
+        "genre",
+        "escalation",
+        "trailer"
+      ],
+      "quality_score": 4.543,
+      "updated_at": "2026-08-13T13:02:28+08:00"
+    },
+    {
+      "case_id": "x-ix00ai-2040784936316338316-video-1",
+      "slug": "passive-anchor-to-extraordinary-exit",
+      "title": "静态伏击｜从被动锚点升级到异能出口",
+      "status": "released",
+      "summary": "先用长停留把主角固定在一个可读地点，再让威胁进入同一空间并逐次压缩活动余地；主角通过连续恢复和环境锚点维持身份与方向，最后只允许一次超常出口改变冲突状态。",
+      "manifest_path": "cases/x-ix00ai-2040784936316338316-video-1/manifest.json",
+      "summary_path": "cases/x-ix00ai-2040784936316338316-video-1/SUMMARY.md",
+      "source_path": "cases/x-ix00ai-2040784936316338316-video-1/source.json",
+      "creative_dna_path": "cases/x-ix00ai-2040784936316338316-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-ix00ai-2040784936316338316-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-ix00ai-2040784936316338316-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-ix00ai-2040784936316338316-video-1/preview.gif",
+        "poster": "cases/x-ix00ai-2040784936316338316-video-1/poster.webp",
+        "mp4": "media/x-ix00ai-2040784936316338316-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/passive-anchor-to-extraordinary-exit",
+      "template_id": "t8-case-passive-anchor-to-extraordinary-exit-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "passive",
+        "anchor",
+        "to",
+        "extraordinary",
+        "exit"
+      ],
+      "quality_score": 4.555,
+      "updated_at": "2026-08-13T13:02:28+08:00"
+    },
+    {
+      "case_id": "x-artedeingenio-2039333442077241627-video-1",
+      "slug": "environmental-front-area-escalation",
+      "title": "环境前沿｜局部点燃到全域占据",
+      "status": "released",
+      "summary": "在同一地理中用一个可追踪的环境前沿逐阶段扩张：局部起点、连续蔓延、跨越地标、遮蔽更多空间，最终用广角证明场地状态已整体改变；不依赖来源中的战斗身份或火焰表面。",
+      "manifest_path": "cases/x-artedeingenio-2039333442077241627-video-1/manifest.json",
+      "summary_path": "cases/x-artedeingenio-2039333442077241627-video-1/SUMMARY.md",
+      "source_path": "cases/x-artedeingenio-2039333442077241627-video-1/source.json",
+      "creative_dna_path": "cases/x-artedeingenio-2039333442077241627-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-artedeingenio-2039333442077241627-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-artedeingenio-2039333442077241627-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-artedeingenio-2039333442077241627-video-1/preview.gif",
+        "poster": "cases/x-artedeingenio-2039333442077241627-video-1/poster.webp",
+        "mp4": "media/x-artedeingenio-2039333442077241627-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/environmental-front-area-escalation",
+      "template_id": "t8-case-environmental-front-area-escalation-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "environmental",
+        "front",
+        "area",
+        "escalation"
+      ],
+      "quality_score": 4.597,
+      "updated_at": "2026-08-13T13:02:28+08:00"
+    },
+    {
+      "case_id": "x-lordofacca-2039127175949922542-video-1",
+      "slug": "scale-mismatch-sports-token-challenge",
+      "title": "尺度球局｜共享球体串联反差挑战",
+      "status": "released",
+      "summary": "用一个持续可见的球体把尺度反差对手、固定目标和动作阶段串在同一场地：控球建立规则、巨体封锁空间、小体型改变路线、抛物线把挑战推向目标，最后以双方可见反应收束但不臆测得分。",
+      "manifest_path": "cases/x-lordofacca-2039127175949922542-video-1/manifest.json",
+      "summary_path": "cases/x-lordofacca-2039127175949922542-video-1/SUMMARY.md",
+      "source_path": "cases/x-lordofacca-2039127175949922542-video-1/source.json",
+      "creative_dna_path": "cases/x-lordofacca-2039127175949922542-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-lordofacca-2039127175949922542-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-lordofacca-2039127175949922542-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-lordofacca-2039127175949922542-video-1/preview.gif",
+        "poster": "cases/x-lordofacca-2039127175949922542-video-1/poster.webp",
+        "mp4": "media/x-lordofacca-2039127175949922542-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/scale-mismatch-sports-token-challenge",
+      "template_id": "t8-case-scale-mismatch-sports-token-challenge-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "scale",
+        "mismatch",
+        "sports",
+        "token",
+        "challenge"
+      ],
+      "quality_score": 4.573,
+      "updated_at": "2026-08-13T13:02:28+08:00"
+    },
+    {
+      "case_id": "x-0xbisc-2037481799325286426-video-1",
+      "slug": "successive-gates-vertical-finish",
+      "title": "连续变线｜逐层防守到垂直终结",
+      "status": "released",
+      "summary": "先固定球场、球与篮筐关系，让持球者连续穿过多层可见防守门，每次用不同路线变化解决空间问题；最后只做一次垂直篮筐动作，并用人群反应与共享场地收束。",
+      "manifest_path": "cases/x-0xbisc-2037481799325286426-video-1/manifest.json",
+      "summary_path": "cases/x-0xbisc-2037481799325286426-video-1/SUMMARY.md",
+      "source_path": "cases/x-0xbisc-2037481799325286426-video-1/source.json",
+      "creative_dna_path": "cases/x-0xbisc-2037481799325286426-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-0xbisc-2037481799325286426-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-0xbisc-2037481799325286426-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-0xbisc-2037481799325286426-video-1/preview.gif",
+        "poster": "cases/x-0xbisc-2037481799325286426-video-1/poster.webp",
+        "mp4": "media/x-0xbisc-2037481799325286426-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/successive-gates-vertical-finish",
+      "template_id": "t8-case-successive-gates-vertical-finish-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "successive",
+        "gates",
+        "vertical",
+        "finish"
+      ],
+      "quality_score": 4.64,
+      "updated_at": "2026-08-13T14:57:57+08:00"
+    },
+    {
+      "case_id": "x-0xbisc-2036407484836094014-video-1",
+      "slug": "material-skill-escalation-finished-proof",
+      "title": "技艺递进｜原料变形到成品特写",
+      "status": "released",
+      "summary": "先给出单一原料，再用功能不同且难度递增的手部操作连续改变其形态；一次明确热处理完成不可逆转折，随后快速装盘，并用成品微距证明前面所有动作得到结果。",
+      "manifest_path": "cases/x-0xbisc-2036407484836094014-video-1/manifest.json",
+      "summary_path": "cases/x-0xbisc-2036407484836094014-video-1/SUMMARY.md",
+      "source_path": "cases/x-0xbisc-2036407484836094014-video-1/source.json",
+      "creative_dna_path": "cases/x-0xbisc-2036407484836094014-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-0xbisc-2036407484836094014-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-0xbisc-2036407484836094014-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-0xbisc-2036407484836094014-video-1/preview.gif",
+        "poster": "cases/x-0xbisc-2036407484836094014-video-1/poster.webp",
+        "mp4": "media/x-0xbisc-2036407484836094014-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/material-skill-escalation-finished-proof",
+      "template_id": "t8-case-material-skill-escalation-finished-proof-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "material",
+        "skill",
+        "escalation",
+        "finished",
+        "proof"
+      ],
+      "quality_score": 4.655,
+      "updated_at": "2026-08-13T14:57:57+08:00"
+    },
+    {
+      "case_id": "x-aimikoda-2062516255941095583-video-1",
+      "slug": "verify-recurring-identity-board",
+      "title": "角色板验真｜光轨技能跨镜锁定身份",
+      "status": "released",
+      "summary": "固定角色板持续在画面下方，上方实景区用不同运动轮廓、距离、机位和晚段技能证明同一角色；作为既有角色卡验真模板的新证据来源，不新增下拉项。",
+      "manifest_path": "cases/x-aimikoda-2062516255941095583-video-1/manifest.json",
+      "summary_path": "cases/x-aimikoda-2062516255941095583-video-1/SUMMARY.md",
+      "source_path": "cases/x-aimikoda-2062516255941095583-video-1/source.json",
+      "creative_dna_path": "cases/x-aimikoda-2062516255941095583-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aimikoda-2062516255941095583-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aimikoda-2062516255941095583-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aimikoda-2062516255941095583-video-1/preview.gif",
+        "poster": "cases/x-aimikoda-2062516255941095583-video-1/poster.webp",
+        "mp4": "media/x-aimikoda-2062516255941095583-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/verify-recurring-identity-board",
+      "template_id": "t8-case-recurring-identity-board-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "recurring",
+        "identity",
+        "board"
+      ],
+      "quality_score": 4.644,
+      "updated_at": "2026-08-13T14:57:57+08:00"
+    },
+    {
+      "case_id": "x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1",
+      "slug": "material-carrier-format-collapse",
+      "title": "材质引路｜空间生长到版式定格",
+      "status": "released",
+      "summary": "从一个微小材质锚点开始，让同一连续材质先引导运镜、再形成有厚度的可读结构并扩展成环境，最后通过俯视升维把立体场景压成一张保持人物与材质关系的平面版式。",
+      "manifest_path": "cases/x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1/manifest.json",
+      "summary_path": "cases/x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1/SUMMARY.md",
+      "source_path": "cases/x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1/source.json",
+      "creative_dna_path": "cases/x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1/preview.gif",
+        "poster": "cases/x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1/poster.webp",
+        "mp4": "media/x-lepadphone-2084217085308326385-browser-2084217085308326385-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/material-carrier-format-collapse",
+      "template_id": "t8-case-material-carrier-format-collapse-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "material",
+        "carrier",
+        "format",
+        "collapse"
+      ],
+      "quality_score": 4.68,
+      "updated_at": "2026-08-13T20:38:54+08:00"
+    },
+    {
+      "case_id": "x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1",
+      "slug": "suspended-world-terminal-resumption",
+      "title": "世界悬停｜持续靠近到末端复流",
+      "status": "released",
+      "summary": "先让一个本应高速运动的复杂环境整体悬停，以连续第一视角推进和重复地标证明时间仍被锁住；局部手部只负责对齐与观察，最后只在片尾发生一次全局复流和速度跃迁。",
+      "manifest_path": "cases/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/manifest.json",
+      "summary_path": "cases/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/SUMMARY.md",
+      "source_path": "cases/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/source.json",
+      "creative_dna_path": "cases/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/preview.gif",
+        "poster": "cases/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/poster.webp",
+        "mp4": "media/x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/suspended-world-terminal-resumption",
+      "template_id": "t8-case-suspended-world-terminal-resumption-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "suspended",
+        "world",
+        "terminal",
+        "resumption"
+      ],
+      "quality_score": 4.676,
+      "updated_at": "2026-08-13T20:38:54+08:00"
+    },
+    {
+      "case_id": "x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1",
+      "slug": "unstable-support-failed-transfer",
+      "title": "动态承载｜平衡升级到失败落点",
+      "status": "released",
+      "summary": "先让参与者在固定路线和稳定踏板上建立能力，再把她交给一个会滚动的动态承载面；用多机位持续证明平衡与位移，随后只做一次离开承载面的转移尝试，以清楚的腾空、落水和本人反应完成失败证明。",
+      "manifest_path": "cases/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/manifest.json",
+      "summary_path": "cases/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/SUMMARY.md",
+      "source_path": "cases/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/source.json",
+      "creative_dna_path": "cases/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/preview.gif",
+        "poster": "cases/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/poster.webp",
+        "mp4": "media/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/unstable-support-failed-transfer",
+      "template_id": "t8-case-unstable-support-failed-transfer-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "unstable",
+        "support",
+        "failed",
+        "transfer"
+      ],
+      "quality_score": 4.666,
+      "updated_at": "2026-08-13T20:38:54+08:00"
+    },
+    {
+      "case_id": "x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1",
+      "slug": "suspended-accident-active-sampling",
+      "title": "事故悬停｜主动取样后独自离场",
+      "status": "released",
+      "summary": "把一次突发事故锁在最大混乱状态，让唯一仍能行动的主体穿过固定证据、主动取走其中几件物体并完成离场；悬停现场始终不复流，异常由主体独占行动权来证明。",
+      "manifest_path": "cases/x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1/manifest.json",
+      "summary_path": "cases/x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1/SUMMARY.md",
+      "source_path": "cases/x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1/source.json",
+      "creative_dna_path": "cases/x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1/preview.gif",
+        "poster": "cases/x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1/poster.webp",
+        "mp4": "media/x-aiwithkhan-2087390177190645831-browser-2087390177190645831-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/suspended-accident-active-sampling",
+      "template_id": "t8-case-suspended-accident-active-sampling-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "suspended",
+        "accident",
+        "active",
+        "sampling"
+      ],
+      "quality_score": 4.695,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1",
+      "slug": "emblem-world-return-loop",
+      "title": "标志入境｜穿行世界后回收到原形",
+      "status": "released",
+      "summary": "先把一个简洁标志当作入口和几何规则，进入由其形状、色彩与方向构成的三维世界；经过环境、角色与一次尺度跃迁后，所有结构必须可追溯地重新折回同一个标志。",
+      "manifest_path": "cases/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/manifest.json",
+      "summary_path": "cases/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/SUMMARY.md",
+      "source_path": "cases/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/source.json",
+      "creative_dna_path": "cases/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/preview.gif",
+        "poster": "cases/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/poster.webp",
+        "mp4": "media/x-zarairahh-2087762931777716345-browser-2087762931777716345-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/emblem-world-return-loop",
+      "template_id": "t8-case-emblem-world-return-loop-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "emblem",
+        "world",
+        "return",
+        "loop"
+      ],
+      "quality_score": 4.695,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1",
+      "slug": "future-message-environmental-verification",
+      "title": "未来来信｜私密警告被外部世界兑现",
+      "status": "released",
+      "summary": "用一个私密记录装置先给出来自未来自身的警告，再让主体主动转向可核查的外部窗口；先以熟悉城市的异常版本证明时间错位，最后让更大天空证据出现，使警告从信息升级为现实威胁。",
+      "manifest_path": "cases/x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1/manifest.json",
+      "summary_path": "cases/x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1/SUMMARY.md",
+      "source_path": "cases/x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1/source.json",
+      "creative_dna_path": "cases/x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1/preview.gif",
+        "poster": "cases/x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1/poster.webp",
+        "mp4": "media/x-iam-nafisahmed-2087921744166420808-browser-2087921744166420808-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/future-message-environmental-verification",
+      "template_id": "t8-case-future-message-environmental-verification-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "future",
+        "message",
+        "environmental",
+        "verification"
+      ],
+      "quality_score": 4.679,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1",
+      "slug": "constricted-route-open-release",
+      "title": "窄路追逐｜连续压缩后豁然释放",
+      "status": "released",
+      "summary": "让高速载具与镜头始终绑定在同一狭窄路线，连续用贴墙、拱洞、垂落物与隧道压缩可用空间；最后只经过一次最窄出口，突然释放到无遮挡的大尺度环境。",
+      "manifest_path": "cases/x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1/manifest.json",
+      "summary_path": "cases/x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1/SUMMARY.md",
+      "source_path": "cases/x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1/source.json",
+      "creative_dna_path": "cases/x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1/preview.gif",
+        "poster": "cases/x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1/poster.webp",
+        "mp4": "media/x-umesh-ai-2082499539735588916-browser-2082499539735588916-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/constricted-route-open-release",
+      "template_id": "t8-case-constricted-route-open-release-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "constricted",
+        "route",
+        "open",
+        "release"
+      ],
+      "quality_score": 4.695,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1",
+      "slug": "message-distance-collapse",
+      "title": "信息逼近｜远端警告压缩到当前空间",
+      "status": "released",
+      "summary": "先让远端信息给出模糊空间警告，主体据此检查一个仍为空的方向；第二条信息必须更精确地把发送者位置压缩到主体当前空间，最后只保留转身前的反应与未揭示威胁。",
+      "manifest_path": "cases/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/manifest.json",
+      "summary_path": "cases/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/SUMMARY.md",
+      "source_path": "cases/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/source.json",
+      "creative_dna_path": "cases/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/preview.gif",
+        "poster": "cases/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/poster.webp",
+        "mp4": "media/x-nusratsid1-2086721194527510942-browser-2086721194527510942-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/message-distance-collapse",
+      "template_id": "t8-case-message-distance-collapse-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "message",
+        "distance",
+        "collapse"
+      ],
+      "quality_score": 4.695,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1",
+      "slug": "external-assembly-integrated-audition",
+      "title": "外部装配｜逐件安装到整机动作验收",
+      "status": "released",
+      "summary": "让大尺度外部操作手逐件改变一个稳定主体，每次安装都先用近景证明接合，再回到全身状态确认累积结果；完成细节校准后，必须用一段完整动作测试证明所有部件能共同工作。",
+      "manifest_path": "cases/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/manifest.json",
+      "summary_path": "cases/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/SUMMARY.md",
+      "source_path": "cases/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/source.json",
+      "creative_dna_path": "cases/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/preview.gif",
+        "poster": "cases/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/poster.webp",
+        "mp4": "media/x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/external-assembly-integrated-audition",
+      "template_id": "t8-case-external-assembly-integrated-audition-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "external",
+        "assembly",
+        "integrated",
+        "audition"
+      ],
+      "quality_score": 4.679,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1",
+      "slug": "direct-imperfect-memory-farewell",
+      "title": "纪实跟拍｜屋顶日常到镜头致意",
+      "status": "released",
+      "summary": "拍摄者先像偶然发现一样接近日常人物，再用同一观察距离记录几项朴素动作；外部线索改变人物目标，人物只对镜头做一次简短回应，最后以带有手持误差的离开完成记忆感。作为既有纪实偶遇模板的新证据，不新增选择器。",
+      "manifest_path": "cases/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/manifest.json",
+      "summary_path": "cases/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/SUMMARY.md",
+      "source_path": "cases/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/source.json",
+      "creative_dna_path": "cases/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/preview.gif",
+        "poster": "cases/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/poster.webp",
+        "mp4": "media/x-goodmanprotocol-2086806078105551218-browser-2086806078105551218-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/direct-imperfect-memory-farewell",
+      "template_id": "t8-case-imperfect-memory-farewell-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "imperfect",
+        "memory",
+        "farewell"
+      ],
+      "quality_score": 4.682,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1",
+      "slug": "frontal-retreat-collapsing-corridor",
+      "title": "正面撤退｜通道坍缩逼向唯一庇护",
+      "status": "released",
+      "summary": "让主体面向威胁、背向目标持续后退，镜头以匹配速度倒退保持脸和来袭环境同框；危险从远端向前逐段占据通道，余量不断缩小，最终主体跨入唯一可见庇护并由边界闭合结束。",
+      "manifest_path": "cases/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/manifest.json",
+      "summary_path": "cases/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/SUMMARY.md",
+      "source_path": "cases/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/source.json",
+      "creative_dna_path": "cases/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/preview.gif",
+        "poster": "cases/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/poster.webp",
+        "mp4": "media/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/frontal-retreat-collapsing-corridor",
+      "template_id": "t8-case-frontal-retreat-collapsing-corridor-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "frontal",
+        "retreat",
+        "collapsing",
+        "corridor"
+      ],
+      "quality_score": 4.687,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1",
+      "slug": "small-guide-route-destination-echo",
+      "title": "微型引路｜重复现身到终点材质回声",
+      "status": "released",
+      "summary": "用一个小型非语言向导先吸引注意，再让它在不同空间孔洞或路标处重复现身，带动主体与镜头沿连续路线深入；最终向导进入的目的地以同一材质、形状或色彩回声兑现前段承诺。",
+      "manifest_path": "cases/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/manifest.json",
+      "summary_path": "cases/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/SUMMARY.md",
+      "source_path": "cases/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/source.json",
+      "creative_dna_path": "cases/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/preview.gif",
+        "poster": "cases/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/poster.webp",
+        "mp4": "media/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/small-guide-route-destination-echo",
+      "template_id": "t8-case-small-guide-route-destination-echo-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "small",
+        "guide",
+        "route",
+        "destination",
+        "echo"
+      ],
+      "quality_score": 4.687,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1",
+      "slug": "route-continuity-through-world-conversion",
+      "title": "世界换材｜主体不断线穿过环境突变",
+      "status": "released",
+      "summary": "先用稳定地形和连续跟拍锁定主体路线，在一次明确冲击点让周围世界整体换成另一套物质规则；主体运动、方向和速度连续不断，最终用新世界中的可读出口证明不是普通转场。",
+      "manifest_path": "cases/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/manifest.json",
+      "summary_path": "cases/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/SUMMARY.md",
+      "source_path": "cases/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/source.json",
+      "creative_dna_path": "cases/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/preview.gif",
+        "poster": "cases/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/poster.webp",
+        "mp4": "media/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/route-continuity-through-world-conversion",
+      "template_id": "t8-case-route-continuity-through-world-conversion-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "route",
+        "continuity",
+        "through",
+        "world",
+        "conversion"
+      ],
+      "quality_score": 4.687,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1",
+      "slug": "bounded-render-band-progressive-conversion",
+      "title": "渲染扫描｜局部带逐段改写整体",
+      "status": "released",
+      "summary": "让一条边界清楚的活动带沿主体移动，带内即时显示转换后的媒介，带外继续保留原状态；多次通过累积覆盖整体，最后让扫描带退出以证明完整、稳定的转换结果。",
+      "manifest_path": "cases/x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1/manifest.json",
+      "summary_path": "cases/x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1/SUMMARY.md",
+      "source_path": "cases/x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1/source.json",
+      "creative_dna_path": "cases/x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1/preview.gif",
+        "poster": "cases/x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1/poster.webp",
+        "mp4": "media/x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/bounded-render-band-progressive-conversion",
+      "template_id": "t8-case-bounded-render-band-progressive-conversion-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "bounded",
+        "render",
+        "band",
+        "progressive",
+        "conversion"
+      ],
+      "quality_score": 4.679,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1",
+      "slug": "hazard-gauntlet-to-scale-threat",
+      "title": "连续脱险｜假安全后升级为尺度威胁",
+      "status": "released",
+      "summary": "让同一主体沿单一逃生方向连续穿过多种局部危险，每次恢复都只是临时安全；晚段抵达看似更快或更安全的载具后，再用一次更大尺度的环境威胁重新定义整条路线。",
+      "manifest_path": "cases/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/manifest.json",
+      "summary_path": "cases/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/SUMMARY.md",
+      "source_path": "cases/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/source.json",
+      "creative_dna_path": "cases/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/preview.gif",
+        "poster": "cases/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/poster.webp",
+        "mp4": "media/x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/hazard-gauntlet-to-scale-threat",
+      "template_id": "t8-case-hazard-gauntlet-to-scale-threat-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "hazard",
+        "gauntlet",
+        "to",
+        "scale",
+        "threat"
+      ],
+      "quality_score": 4.679,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1",
+      "slug": "repeat-reset-escalating-mishap-anthology",
+      "title": "重复复位｜多场景小灾难逐次升级",
+      "status": "released",
+      "summary": "同一角色关系反复执行普通准备、主动动作、可见后果、见证者反应和场景复位；每轮更换物理问题并提高后果强度。",
+      "manifest_path": "cases/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/manifest.json",
+      "summary_path": "cases/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/SUMMARY.md",
+      "source_path": "cases/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/source.json",
+      "creative_dna_path": "cases/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/preview.gif",
+        "poster": "cases/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/poster.webp",
+        "mp4": "media/x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/repeat-reset-escalating-mishap-anthology",
+      "template_id": "t8-case-repeat-reset-escalating-mishap-anthology-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "repeat",
+        "reset",
+        "escalating",
+        "mishap",
+        "anthology"
+      ],
+      "quality_score": 4.695,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1",
+      "slug": "procedure-ladder-layered-finish",
+      "title": "工序递进｜多层处理到揭膜验收",
+      "status": "released",
+      "summary": "固定同一处理表面，让不同工具或材料逐步改变下一步所需状态；晚段只揭除一次覆盖层，最后用独立检查动作证明稳定结果。",
+      "manifest_path": "cases/x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1/manifest.json",
+      "summary_path": "cases/x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1/SUMMARY.md",
+      "source_path": "cases/x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1/source.json",
+      "creative_dna_path": "cases/x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1/preview.gif",
+        "poster": "cases/x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1/poster.webp",
+        "mp4": "media/x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/procedure-ladder-layered-finish",
+      "template_id": "t8-case-procedure-ladder-layered-finish-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "procedure",
+        "ladder",
+        "layered",
+        "finish"
+      ],
+      "quality_score": 4.695,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1",
+      "slug": "verify-recurring-identity-board",
+      "title": "角色板验真｜足球动作与多机位锁定身份",
+      "status": "released",
+      "summary": "固定角色身份板持续作为比较基准，实拍区依次用姿势、球感、步态、空中轮廓和晚段复杂技巧验证同一人物；只补充证据，不新增选择器。",
+      "manifest_path": "cases/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/manifest.json",
+      "summary_path": "cases/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/SUMMARY.md",
+      "source_path": "cases/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/source.json",
+      "creative_dna_path": "cases/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/preview.gif",
+        "poster": "cases/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/poster.webp",
+        "mp4": "media/x-techiebysa-2084294993628262554-browser-2084294993628262554-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/verify-recurring-identity-board",
+      "template_id": "t8-case-recurring-identity-board-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "recurring",
+        "identity",
+        "board"
+      ],
+      "quality_score": 4.698,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1",
+      "slug": "follow-one-encounter-and-departure",
+      "title": "纪实跟拍｜旧城行走到轻微回应",
+      "status": "released",
+      "summary": "拍摄者在旧城日常中发现并跟随人物，稳定地理锚点串联篮子、狗、花和远景；人物只做一次轻微回应并继续离开。作为既有纪实偶遇模板的新证据，不新增选择器。",
+      "manifest_path": "cases/x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1/manifest.json",
+      "summary_path": "cases/x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1/SUMMARY.md",
+      "source_path": "cases/x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1/source.json",
+      "creative_dna_path": "cases/x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1/preview.gif",
+        "poster": "cases/x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1/poster.webp",
+        "mp4": "media/x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/follow-one-encounter-and-departure",
+      "template_id": "t8-case-observer-follow-encounter-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "observer",
+        "follow",
+        "encounter"
+      ],
+      "quality_score": 4.698,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1",
+      "slug": "protector-led-route-to-threshold",
+      "title": "护送穿行｜关系确认到发光门槛",
+      "status": "released",
+      "summary": "先用近距离动作建立保护者与需要护送者的关系，再让保护者转身确认路线、持续保持可见接触并穿过熟悉空间；晚段只跨越一个视觉明确的门槛，保持两人共同进入的证据。",
+      "manifest_path": "cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/manifest.json",
+      "summary_path": "cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/SUMMARY.md",
+      "source_path": "cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/source.json",
+      "creative_dna_path": "cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/preview.gif",
+        "poster": "cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/poster.webp",
+        "mp4": "media/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/protector-led-route-to-threshold",
+      "template_id": "t8-case-protector-led-route-to-threshold-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "protector",
+        "led",
+        "route",
+        "to",
+        "threshold"
+      ],
+      "quality_score": 4.679,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1",
+      "slug": "reconstruct-flat-geometry-poster",
+      "title": "平面重组｜角色海报到嘉年华版式",
+      "status": "released",
+      "summary": "角色与角形平面模块先建立固定图形族，再通过高密信息重组、短暂中性复位和终版版式回收完成一条视觉回路；只作为既有平面几何重组模板的证据变体。",
+      "manifest_path": "cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/manifest.json",
+      "summary_path": "cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/SUMMARY.md",
+      "source_path": "cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/source.json",
+      "creative_dna_path": "cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/preview.gif",
+        "poster": "cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/poster.webp",
+        "mp4": "media/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/reconstruct-flat-geometry-poster",
+      "template_id": "t8-case-flat-geometry-reconstruction-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "flat",
+        "geometry",
+        "reconstruction"
+      ],
+      "quality_score": 4.698,
+      "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1",
+      "slug": "reconstruct-flat-geometry-poster",
+      "title": "平面重组｜讲解人物与纸片信息节拍",
+      "status": "released",
+      "summary": "固定讲解者轮廓与纸片图形族，通过信息卡、人物复制和版式密度变化逐步重组，最后用已建立的纸片与轮廓收束为终版；与官方纸拼贴能力及既有平面模板重合，因此只作证据变体。",
+      "manifest_path": "cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/manifest.json",
+      "summary_path": "cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/SUMMARY.md",
+      "source_path": "cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/source.json",
+      "creative_dna_path": "cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/preview.gif",
+        "poster": "cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/poster.webp",
+        "mp4": "media/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/reconstruct-flat-geometry-poster",
+      "template_id": "t8-case-flat-geometry-reconstruction-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "flat",
+        "geometry",
+        "reconstruction"
+      ],
+      "quality_score": 4.698,
+      "updated_at": "2026-08-14T13:10:15+08:00"
     }
   ]
 }

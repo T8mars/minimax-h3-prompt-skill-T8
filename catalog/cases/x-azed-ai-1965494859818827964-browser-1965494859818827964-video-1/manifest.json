@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1",
+  "slug": "route-continuity-through-world-conversion",
+  "title": "世界换材｜主体不断线穿过环境突变",
+  "source_title": "世界换材｜连续路线穿过材质崩解",
+  "summary": "先用稳定地形和连续跟拍锁定主体路线，在一次明确冲击点让周围世界整体换成另一套物质规则；主体运动、方向和速度连续不断，最终用新世界中的可读出口证明不是普通转场。",
+  "status": "released",
+  "source_duration_seconds": 10.1,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/route-continuity-through-world-conversion",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-azed-ai-1965494859818827964-browser-1965494859818827964-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-route-continuity-through-world-conversion-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "连续移动主体 + 原世界基线 + 单次全局换材 + 方向速度不断线 + 新世界终点",
+  "recommended_input": "原创地图工坊里，黄铜发条种子沿奶油色纸面的一条靛蓝河线滚动，远处蓝线信标保持在同一轴线上；到达折痕顶点时，周围纸地图只转换一次为深织物峡谷，墨线变成缝线山脊，种子路线不重置；种子接近蓝线信标，织物峡谷完整保留，不恢复开场平面地图",
+  "required_anchors": [
+    "Establish one subject, one travel axis and one ordinary environmental rule before conversion.",
+    "Keep subject identity, direction and motion continuous through the decisive instant.",
+    "Use passing geometry or material response to prove the new world persists around the same route.",
+    "End on continued travel toward a readable destination under the converted rule, not a reset to the opening world."
+  ],
+  "tags": [
+    "route",
+    "continuity",
+    "through",
+    "world",
+    "conversion"
+  ],
+  "quality": {
+    "weighted_score": 4.687,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:46+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

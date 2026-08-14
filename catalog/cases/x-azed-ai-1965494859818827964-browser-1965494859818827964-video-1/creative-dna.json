@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Lock one moving subject to a legible route, perform one global environmental material conversion around that uninterrupted motion, then prove persistence by continuing toward a visible destination under the new world's rules.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one subject, one travel axis and one ordinary environmental rule before conversion.",
+      "purpose": "Creates a baseline against which the world change can be measured.",
+      "ablation_failure": "Beginning inside the converted world removes the causal contrast.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep subject identity, direction and motion continuous through the decisive instant.",
+      "purpose": "Makes the environment, rather than the traveler, the changing system.",
+      "ablation_failure": "A motion reset makes the change read as an unrelated scene cut.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Convert the environment only once with a visibly global material change.",
+      "purpose": "Concentrates the spectacle into one legible causal event.",
+      "ablation_failure": "Several unrelated transformations weaken the governing rule.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use passing geometry or material response to prove the new world persists around the same route.",
+      "purpose": "Provides continuing spatial evidence after the conversion.",
+      "ablation_failure": "A single flash frame cannot prove a persistent new world.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on continued travel toward a readable destination under the converted rule, not a reset to the opening world.",
+      "purpose": "Turns persistence into the terminal result.",
+      "ablation_failure": "Returning to the original environment cancels the conversion consequence.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source mountain biker",
+    "rocky alpine ridge and dirt jump",
+    "transparent glass shard maze",
+    "the source rider wardrobe and bicycle",
+    "the exact cliff-to-glass spectacle and framing"
+  ],
+  "instantiations": [
+    {
+      "concept": "A clockwork seed skims across a paper map; one fold impact converts the map into a deep fabric canyon while the seed keeps rolling toward a stitched beacon.",
+      "prompt_seed": "A clockwork seed skims across a paper map; one fold impact converts the map into a deep fabric canyon while the seed keeps rolling toward a stitched beacon."
+    },
+    {
+      "concept": "A maintenance puck glides through a clean ceramic conduit; one electromagnetic pulse turns the surrounding walls into suspended iron filings while the puck continues toward a stable service light.",
+      "prompt_seed": "A maintenance puck glides through a clean ceramic conduit; one electromagnetic pulse turns the surrounding walls into suspended iron filings while the puck continues toward a stable service light."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Beginning inside the converted world removes the causal contrast.",
+      "repair": "Establish one subject, one travel axis and one ordinary environmental rule before conversion."
+    },
+    {
+      "failure": "A motion reset makes the change read as an unrelated scene cut.",
+      "repair": "Keep subject identity, direction and motion continuous through the decisive instant."
+    },
+    {
+      "failure": "Several unrelated transformations weaken the governing rule.",
+      "repair": "Convert the environment only once with a visibly global material change."
+    },
+    {
+      "failure": "A single flash frame cannot prove a persistent new world.",
+      "repair": "Use passing geometry or material response to prove the new world persists around the same route."
+    },
+    {
+      "failure": "Returning to the original environment cancels the conversion consequence.",
+      "repair": "End on continued travel toward a readable destination under the converted rule, not a reset to the opening world."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A clockwork seed skims across a paper map; one fold impact converts the map into a deep fabric canyon while the seed keeps rolling toward a stitched beacon.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A maintenance puck glides through a clean ceramic conduit; one electromagnetic pulse turns the surrounding walls into suspended iron filings while the puck continues toward a stable service light.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

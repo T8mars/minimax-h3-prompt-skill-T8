@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-hey-am-jasmine-2085940554379182530-browser-2085940554379182530-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "d6b8e98f5d59696edf04483816118d58411ed71a2fbf7b049ddf615e0ad47fc6",
+    "creative_dna_sha256": "edcd37b17bfc1354602302c05f60831a31b8f66c2a3b9bc4df17c95c99cc9a64"
+  },
+  "content": {
+    "title": "Observer Follow | Old-City Walk to a Restrained Acknowledgment",
+    "summary": "The photographer discovers and follows the characters in the daily life of the old city, stabilizing the spatial anchors to connect baskets, dogs, flowers and distant views; the characters only respond slightly once and continue to leave. As new evidence for the existing documentary encounter template, no new selector is added.",
+    "quick_start": {
+      "input_format": "Continuous side tracking + narrow starting point + space revealed while traveling + an accidental crossing + a restrained response + continue to leave",
+      "recommended_input": "In the original snow station, the photographer found that the elderly watchmaker was already walking with a brass box, and did not look at the camera in the opening scene; the starting bell rang and the steam passed over the platform, he stopped checking and looked towards the arch, the camera took a short breath to focus; he left, the snow exposure slightly overflowed, and the focus was late on the empty platform",
+      "required_anchors": [
+        "Begin with discovery of a subject already in an ordinary route.",
+        "Use recurring landmarks to maintain one geography.",
+        "Allow exactly one restrained acknowledgment.",
+        "End with departure and mild operator imperfection."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "The photographer discovers and follows the characters in the daily life of the old city, stabilizing the spatial anchors to connect baskets, dogs, flowers and distant views; the characters only respond slightly once and continue to leave. As new evidence for the existing documentary encounter template, no new selector is added.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Approach one subject as an unplanned discovery, follow an ordinary route through recurring spatial landmarks, let one visible cue redirect attention, receive one restrained acknowledgment, then preserve operator imperfection during continued departure.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Begin with discovery of a subject already in an ordinary route.",
+          "purpose": "Prevents staging.",
+          "ablation_failure": "A hero pose removes discovery.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use recurring landmarks to maintain one geography.",
+          "purpose": "Connects small events.",
+          "ablation_failure": "Unrelated close-ups lose place.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Let one visible cue redirect attention.",
+          "purpose": "Creates causal change.",
+          "ablation_failure": "An unexplained reaction has no trigger.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Allow exactly one restrained acknowledgment.",
+          "purpose": "Changes the observer relation.",
+          "ablation_failure": "Repeated gestures become performance.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with departure and mild operator imperfection.",
+          "purpose": "Preserves memory character.",
+          "ablation_failure": "A flawless finish erases the observer.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source woman, basket and wardrobe",
+        "the source dog and flowers",
+        "the exact old-European town",
+        "the source acknowledgment gesture",
+        "the exact vintage-camera defects"
+      ],
+      "instantiations": [
+        {
+          "concept": "A consumer camera finds an elderly clock keeper already crossing a snowed station with a brass case; a departure bell redirects him, he nods once and exits as exposure blooms.",
+          "prompt_seed": "A consumer camera finds an elderly clock keeper already crossing a snowed station with a brass case; a departure bell redirects him, he nods once and exits as exposure blooms."
+        },
+        {
+          "concept": "A felt field recorder follows a young canal botanist already measuring reeds; a lock gate opens, she taps one lens-side marker once, then walks out as focus lags.",
+          "prompt_seed": "A felt field recorder follows a young canal botanist already measuring reeds; a lock gate opens, she taps one lens-side marker once, then walks out as focus lags."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "A hero pose removes discovery.",
+          "repair": "Begin with discovery of a subject already in an ordinary route."
+        },
+        {
+          "failure": "Unrelated close-ups lose place.",
+          "repair": "Use recurring landmarks to maintain one geography."
+        },
+        {
+          "failure": "An unexplained reaction has no trigger.",
+          "repair": "Let one visible cue redirect attention."
+        },
+        {
+          "failure": "Repeated gestures become performance.",
+          "repair": "Allow exactly one restrained acknowledgment."
+        },
+        {
+          "failure": "A flawless finish erases the observer.",
+          "repair": "End with departure and mild operator imperfection."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A consumer camera finds an elderly clock keeper already crossing a snowed station with a brass case; a departure bell redirects him, he nods once and exits as exposure blooms.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A felt field recorder follows a young canal botanist already measuring reeds; a lock gate opens, she taps one lens-side marker once, then walks out as focus lags.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

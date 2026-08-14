@@ -11,10 +11,10 @@
     "title": "Dialogue Reaction | Calm to Laughter Trigger",
     "summary": "Start in a stable two-person setup and establish the first speaking turn in a shared frame. After a readable pause, give the second character one short reply in a closer shot, then return to the first character's longer nonverbal reaction.",
     "quick_start": {
-      "input_format": "Stable two-person geography + complete first speaking turn + readable pause + short second reply + longer silent physical reaction",
-      "recommended_input": "Two lunar geologists first establish their geography in a two-shot as Person A completes one short line. After a readable pause, Person B gives one brief reply in a closer shot; the camera then returns to Person A for a longer silent reaction—hugging the helmet and leaning back—with no third speaking turn.",
+      "input_format": "Stable two-person spatial relationship + complete first speaking turn + readable pause + short second reply + longer silent physical reaction",
+      "recommended_input": "Two lunar geologists first establish their shared spatial relationship in a two-shot as Person A completes one short line. After a readable pause, Person B gives one brief reply in a closer shot; the camera then returns to Person A for a longer silent reaction—hugging the helmet and leaning back—with no third speaking turn.",
       "required_anchors": [
-        "Establish both subjects and their seating geography before moving to singles.",
+        "Establish both subjects and their seating relationship before moving to singles.",
         "Keep the second speaking turn concise and visibly complete.",
         "Return to the first subject for a longer non-speaking physical reaction.",
         "End on a changed held posture with no additional speaking turn."
@@ -26,7 +26,7 @@
         "Check duration, event order, camera continuity, sound and anti-copy constraints before generation."
       ],
       "applicable_scope": [
-        "Two-person dialogue scenes with stable geography: complete the first speaking turn, give the second subject one compact reply, then return to an extended silent reaction from the first subject.",
+        "Two-person dialogue scenes with a stable spatial relationship: complete the first speaking turn, give the second subject one compact reply, then return to an extended silent reaction from the first subject.",
         "Original 4–15 second concepts that can preserve every required anchor.",
         "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
       ],

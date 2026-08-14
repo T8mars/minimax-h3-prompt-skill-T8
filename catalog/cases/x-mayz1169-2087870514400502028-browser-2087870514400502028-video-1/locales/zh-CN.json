@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "0e17406c42f05a27cfd3260974a9d0832714995d061ae20b21459f268f857b77",
+    "creative_dna_sha256": "4514a59c3783a9b884c2d8edaf70fa83c2335fa117519616f6f5e972bff1d2dc"
+  },
+  "content": {
+    "title": "平面重组｜角色海报到嘉年华版式",
+    "summary": "角色与角形平面模块先建立固定图形族，再通过高密信息重组、短暂中性复位和终版版式回收完成一条视觉回路；只作为既有平面几何重组模板的证据变体。",
+    "quick_start": {
+      "input_format": "紧凑图标 + 稳定角色/配色 + 密度递增模块 + 孤立状态停顿 + 几何锁定",
+      "recommended_input": "原创剪纸植物档案页上，纸艺策展员轮廓与三枚苔绿赭黄三角种子标签建立在奶油色纤维网格；再加入两个非对称面板和植物线图，但不引入新图形族，主体身份持续；同一轮廓、标签和网格重建为非对称矩形植物志封面，不加入新母题",
+      "required_anchors": [
+        "建立一个稳定的轮廓和一个主要的图形锚点。",
+        "仅使用既定的图案和调色板来增加布局密度。",
+        "在最终构建之前使用一次简短的低信息重置。",
+        "将已建立的母题家族解析为持有的最终锁定。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "角色与角形平面模块先建立固定图形族，再通过高密信息重组、短暂中性复位和终版版式回收完成一条视觉回路；只作为既有平面几何重组模板的证据变体。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "建立稳定主体轮廓和小型图形母题家族，逐步把既有元素重组成密度更高的平面布局；插入一次短暂低信息复位，再只用已经建立的图形家族构成稳定终态版式。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个稳定的轮廓和一个主要的图形锚点。",
+          "purpose": "创建可重用族。",
+          "ablation_failure": "未固定的拼贴画没有身份。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "仅使用既定的图案和调色板来增加布局密度。",
+          "purpose": "无需任意资产即可构建进度。",
+          "ablation_failure": "新的不相关图形打破了连续性。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "通过至少一项重大重组来保留主体身份。",
+          "purpose": "测试图形系统。",
+          "ablation_failure": "替换主体会将其变成蒙太奇。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在最终构建之前使用一次简短的低信息重置。",
+          "purpose": "创建可读的重建阈值。",
+          "ablation_failure": "连续密度没有结构转向。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将已建立的母题家族解析为持有的最终锁定。",
+          "purpose": "关闭图形循环。",
+          "ablation_failure": "不相关的结束卡会丢弃之前的历史记录。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源动漫角色",
+        "精确的角度面板和标题副本",
+        "嘉年华拼贴图像",
+        "源调色板和排版",
+        "精确的灰色重置和最终海报"
+      ],
+      "instantiations": [
+        {
+          "concept": "植物纸策展人和三角形种子标签重新组织成四个样本面板，短暂地清除为空白纤维纸，然后解析为一个不对称的植物标本室封面。",
+          "prompt_seed": "植物纸策展人和三角形种子标签重新组织成四个样本面板，短暂地清除为空白纤维纸，然后解析为一个不对称的植物标本室封面。"
+        },
+        {
+          "concept": "陶瓷天气信使和弧形压力标记重新组织成分层的预报瓷砖，停在平原粘土田上，然后重建为非圆形车站标语牌。",
+          "prompt_seed": "陶瓷天气信使和弧形压力标记重新组织成分层的预报瓷砖，停在平原粘土田上，然后重建为非圆形车站标语牌。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "未固定的拼贴画没有身份。",
+          "repair": "建立一个稳定的轮廓和一个主要的图形锚点。"
+        },
+        {
+          "failure": "新的不相关图形打破了连续性。",
+          "repair": "仅使用既定的图案和调色板来增加布局密度。"
+        },
+        {
+          "failure": "替换主体会将其变成蒙太奇。",
+          "repair": "通过至少一项重大重组来保留主体身份。"
+        },
+        {
+          "failure": "连续密度没有结构转向。",
+          "repair": "在最终构建之前使用一次简短的低信息重置。"
+        },
+        {
+          "failure": "不相关的结束卡会丢弃之前的历史记录。",
+          "repair": "将已建立的母题家族解析为持有的最终锁定。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "植物纸策展人和三角形种子标签重新组织成四个样本面板，短暂地清除为空白纤维纸，然后解析为一个不对称的植物标本室封面。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "陶瓷天气信使和弧形压力标记重新组织成分层的预报瓷砖，停在平原粘土田上，然后重建为非圆形车站标语牌。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

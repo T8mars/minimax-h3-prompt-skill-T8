@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aqsahere-2087386090315616601-browser-2087386090315616601-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "0882382d6900250c62789034af72d14ff36238d94bf41d81d359620de1592823",
+    "creative_dna_sha256": "b2710c15c1d57d72b05152ce006411289a63450be0539b1fb236db0dac26d79b"
+  },
+  "content": {
+    "title": "Progressive Render Band | Local Conversion Accumulates into a Complete Result",
+    "summary": "Let an active band with clear boundaries move along the subject. The converted media will be displayed immediately within the band, and the original state will be retained outside the band. The whole will be covered through accumulation multiple times, and finally the scanning band will exit to prove the complete and stable conversion result.",
+    "quick_start": {
+      "input_format": "Stable subject + clear boundary transition zone + old and new states in the same frame + one-way cumulative coverage + complete results after the carrier exits",
+      "recommended_input": "In the original cultural relic restoration room, a weathered wooden theatrical mask is fixed on a charcoal stand, with a luminous vertical ruler stopped outside the mask, and the opening is kept entirely in wood; the second time it passes through the center, the eyes, nose and mouth remain consistent on the border between wood and glass, and the completed area does not retreat; the vertical ruler slides out completely, and the complete glass mask remains independently on the original stand, with only one change in natural exhibition hall light.",
+      "required_anchors": [
+        "Establish a stable subject and composition before the first conversion pass.",
+        "Keep one readable moving boundary with old and new states visible at the same time.",
+        "Accumulate converted coverage in an ordered progression rather than resetting each pass.",
+        "Remove or deactivate the carrier only after the whole target region is converted and hold the stable result."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Let an active band with clear boundaries move along the subject. The converted media will be displayed immediately within the band, and the original state will be retained outside the band. The whole will be covered through accumulation multiple times, and finally the scanning band will exit to prove the complete and stable conversion result.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Move one sharply bounded rendering carrier across a stable subject; convert only the area inside it, preserve alignment across both edges, accumulate coverage through distinct passes, then remove the carrier and hold the fully converted result.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish a stable subject and composition before the first conversion pass.",
+          "purpose": "Supplies a trustworthy source-state reference.",
+          "ablation_failure": "Starting mid-conversion hides what changed.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Keep one readable moving boundary with old and new states visible at the same time.",
+          "purpose": "Makes the carrier's local responsibility directly observable.",
+          "ablation_failure": "A full-frame dissolve removes the bounded comparison.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Preserve identity, pose and spatial alignment across every boundary crossing.",
+          "purpose": "Proves medium conversion instead of subject replacement.",
+          "ablation_failure": "Misregistered features look like morphing or a new subject.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Accumulate converted coverage in an ordered progression rather than resetting each pass.",
+          "purpose": "Gives each pass measurable completion value.",
+          "ablation_failure": "Resetting the prior area destroys the build toward a whole result.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Remove or deactivate the carrier only after the whole target region is converted and hold the stable result.",
+          "purpose": "Shows that the converted state survives independently.",
+          "ablation_failure": "Ending with the carrier active leaves completion ambiguous.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source young woman",
+        "the exact bedroom or studio interior",
+        "the anime portrait style",
+        "the horizontal hand-carried render strip",
+        "the exact face-to-body conversion order"
+      ],
+      "instantiations": [
+        {
+          "concept": "A translucent embroidery hoop moves over a clay museum bird; only the enclosed zone becomes stitched textile, then the hoop exits and the complete textile bird remains.",
+          "prompt_seed": "A translucent embroidery hoop moves over a clay museum bird; only the enclosed zone becomes stitched textile, then the hoop exits and the complete textile bird remains."
+        },
+        {
+          "concept": "A vertical frost-light scanner crosses a greenhouse facade; panes inside the strip become paper-cut layers while untouched panes remain glass, ending on one complete paper conservatory.",
+          "prompt_seed": "A vertical frost-light scanner crosses a greenhouse facade; panes inside the strip become paper-cut layers while untouched panes remain glass, ending on one complete paper conservatory."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Starting mid-conversion hides what changed.",
+          "repair": "Establish a stable subject and composition before the first conversion pass."
+        },
+        {
+          "failure": "A full-frame dissolve removes the bounded comparison.",
+          "repair": "Keep one readable moving boundary with old and new states visible at the same time."
+        },
+        {
+          "failure": "Misregistered features look like morphing or a new subject.",
+          "repair": "Preserve identity, pose and spatial alignment across every boundary crossing."
+        },
+        {
+          "failure": "Resetting the prior area destroys the build toward a whole result.",
+          "repair": "Accumulate converted coverage in an ordered progression rather than resetting each pass."
+        },
+        {
+          "failure": "Ending with the carrier active leaves completion ambiguous.",
+          "repair": "Remove or deactivate the carrier only after the whole target region is converted and hold the stable result."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A translucent embroidery hoop moves over a clay museum bird; only the enclosed zone becomes stitched textile, then the hoop exits and the complete textile bird remains.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A vertical frost-light scanner crosses a greenhouse facade; panes inside the strip become paper-cut layers while untouched panes remain glass, ending on one complete paper conservatory.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

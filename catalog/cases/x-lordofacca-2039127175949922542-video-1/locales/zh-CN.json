@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-lordofacca-2039127175949922542-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "1599d09ddcf40490c7215be94f94eef50bce35522cd48ea2c5bc0c248f5fdfc5",
+    "creative_dna_sha256": "389974c185bf5cbd7b696b227cf1b6b205a66469b2c11fe73297767b1713bb7a"
+  },
+  "content": {
+    "title": "尺度球局｜共享球体串联反差挑战",
+    "summary": "用一个持续可见的球体把尺度反差对手、固定目标和动作阶段串在同一场地：控球建立规则、巨体封锁空间、小体型改变路线、抛物线把挑战推向目标，最后以双方可见反应收束但不臆测得分。",
+    "quick_start": {
+      "input_format": "两种明显尺度 + 共享球体或令牌 + 固定目标 + 可见变线 + 单一轨迹 + 不虚构结果的反应终态",
+      "recommended_input": "硬币大小的配送机器人控制发光珠，巨型充气守门体封锁桌面通道；机器人变线并把珠子抛向悬空铜环，结尾保持双方和目标同框，不在未确认时宣称成功。",
+      "required_anchors": [
+        "在同一领域建立两种明显不同的规模，一种共享代币和一种固定目标。",
+        "使用重复的令牌控制来证明当前谁拥有该操作。",
+        "显示朝向固定目标的一个可读标记轨迹。",
+        "以可见的共享反应状态结束，并且仅在直接显示目标结果时才声明成功。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用一个持续可见的球体把尺度反差对手、固定目标和动作阶段串在同一场地：控球建立规则、巨体封锁空间、小体型改变路线、抛物线把挑战推向目标，最后以双方可见反应收束但不臆测得分。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让一个共享球体在控球、阻挡、变线和朝固定目标的尝试中始终可见，从而维持尺度反差挑战的连续性。场地标记必须保留空间关系；结尾可以呈现反应或悬念，但不得声称未被画面证明的结果。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在同一领域建立两种明显不同的规模，一种共享代币和一种固定目标。",
+          "purpose": "使挑战变得可衡量。",
+          "ablation_failure": "隐藏任何一个元素都会使场景变得不相关的奇观。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用重复的令牌控制来证明当前谁拥有该操作。",
+          "purpose": "通过比例对比保持连续性。",
+          "ablation_failure": "消失的代币打破了因果链。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "让较大的身体阻碍空间，而较小的身体改变路线而不是匹配尺寸。",
+          "purpose": "保持规模功能相关。",
+          "ablation_failure": "均衡运动使尺寸对比美观。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "显示朝向固定目标的一个可读标记轨迹。",
+          "purpose": "将机动转化为明确的尝试。",
+          "ablation_failure": "直接切入反应隐藏了挑战的决定性行动。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以可见的共享反应状态结束，并且仅在直接显示目标结果时才声明成功。",
+          "purpose": "保留证据保真度和悬念。",
+          "ablation_failure": "不受支持的分数主张发明了收束。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "篮球场",
+        "小男玩家",
+        "巨型女后卫",
+        "篮球和篮筐舞台",
+        "来源人群和反应特写"
+      ],
+      "instantiations": [
+        {
+          "concept": "在桌面磁性竞技场上，一个硬币大小的送货机器人控制着一颗发光的珠子，而一个巨大的充气守门人则扫荡了广阔的区域。机器人改变车道并将珠子发射到悬挂的铜环上；结局同时包含反应和环，除非珠子明显穿过，否则不会宣告成功。",
+          "prompt_seed": "在桌面磁性竞技场上，一个硬币大小的送货机器人控制着一颗发光的珠子，而一个巨大的充气守门人则扫荡了广阔的区域。机器人改变车道并将珠子发射到悬挂的铜环上；结局同时包含反应和环，除非珠子明显穿过，否则不会宣告成功。"
+        },
+        {
+          "concept": "在圆形零重力温室中，一个小型维护舱引导一个水球围绕着一片巨大的缓慢机器人叶子。底板环和固定种子漏斗可保护空间关系；吊舱将球体重新导向漏斗，而影片则记录了未解决的到达时刻。",
+          "prompt_seed": "在圆形零重力温室中，一个小型维护舱引导一个水球围绕着一片巨大的缓慢机器人叶子。底板环和固定种子漏斗可保护空间关系；吊舱将球体重新导向漏斗，而影片则记录了未解决的到达时刻。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "隐藏任何一个元素都会使场景变得不相关的奇观。",
+          "repair": "在同一领域建立两种明显不同的规模，一种共享代币和一种固定目标。"
+        },
+        {
+          "failure": "消失的代币打破了因果链。",
+          "repair": "使用重复的令牌控制来证明当前谁拥有该操作。"
+        },
+        {
+          "failure": "均衡运动使尺寸对比美观。",
+          "repair": "让较大的身体阻碍空间，而较小的身体改变路线而不是匹配尺寸。"
+        },
+        {
+          "failure": "直接切入反应隐藏了挑战的决定性行动。",
+          "repair": "显示朝向固定目标的一个可读标记轨迹。"
+        },
+        {
+          "failure": "不受支持的分数主张发明了收束。",
+          "repair": "以可见的共享反应状态结束，并且仅在直接显示目标结果时才声明成功。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在桌面磁性竞技场上，一个硬币大小的送货机器人控制着一颗发光的珠子，而一个巨大的充气守门人则扫荡了广阔的区域。机器人改变车道并将珠子发射到悬挂的铜环上；结局同时包含反应和环，除非珠子明显穿过，否则不会宣告成功。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在圆形零重力温室中，一个小型维护舱引导一个水球围绕着一片巨大的缓慢机器人叶子。底板环和固定种子漏斗可保护空间关系；吊舱将球体重新导向漏斗，而影片则记录了未解决的到达时刻。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "930f7bba39643b3238e043683009594619c14660683ab28725de56db39e4f5cc",
+    "creative_dna_sha256": "302c6707cdec94a3ec83194147d73ffc2413e28dfacec6abf4e6cc504a987443"
+  },
+  "content": {
+    "title": "护送穿行｜关系确认到发光门槛",
+    "summary": "先用近距离动作建立保护者与需要护送者的关系，再让保护者转身确认路线、持续保持可见接触并穿过熟悉空间；晚段只跨越一个视觉明确的门槛，保持两人共同进入的证据。",
+    "quick_start": {
+      "input_format": "保护者与被护送者 + 关系基线 + 路线确认 + 持续引导接触 + 共同跨越单一门槛",
+      "recommended_input": "原创机械档案馆里，黄铜图书管理员自动机用一只关节臂护住小纸鸟，并在两者之间系好蓝色引导带；两者穿过两道折叠档案架，蓝带持续绷直，自动机始终位于小鸟与移动书架之间；自动机先跨过并在同一动作中引导小鸟进入，最终两者在暖色书库内同框，蓝带与接触不变",
+      "required_anchors": [
+        "旅行前通过可见的接触建立保护者和依赖角色。",
+        "​​向保护者展示护送前选择或确认的一条路线。",
+        "保持身份和重复出现的地标可追溯。",
+        "一起跨越一个不同的门槛并保持联系。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用近距离动作建立保护者与需要护送者的关系，再让保护者转身确认路线、持续保持可见接触并穿过熟悉空间；晚段只跨越一个视觉明确的门槛，保持两人共同进入的证据。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在移动前建立保护者与被护送者的依赖关系，让保护者主动选择并引导一条连续路线；全程保持双方身份与可见联系，最后共同跨越一个视觉上不同的边界，并在进入后继续保持联系。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "旅行前通过可见的接触建立保护者和依赖角色。",
+          "purpose": "定义谁领导以及原因。",
+          "ablation_failure": "开始运动会掩盖这种关系。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "​​向保护者展示护送前选择或确认的一条路线。",
+          "purpose": "使运动具有目标导向。",
+          "ablation_failure": "原因不明的旅行削减消除了代理机构。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "保持路线上可读的物理或空间指导。",
+          "purpose": "证明护送行为。",
+          "ablation_failure": "独立行走削弱保护。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "保持身份和重复出现的地标可追溯。",
+          "purpose": "保持连续性。",
+          "ablation_failure": "失去一个科目就会中断路线。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "一起跨越一个不同的门槛并保持联系。",
+          "purpose": "完成护送行动。",
+          "ablation_failure": "单独交叉或过早切断都会导致结果不明朗。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源父子",
+        "确切的公寓和衣柜",
+        "源拥抱护送编排",
+        "精确的发光传送门外观",
+        "来源家族身份"
+      ],
+      "instantiations": [
+        {
+          "concept": "一台黄铜图书管理员自动机通过拉紧一条引导带，引导一只小纸鸟穿过档案通道，然后两者一起穿过月光下的书库虹膜。",
+          "prompt_seed": "一台黄铜图书管理员自动机通过拉紧一条引导带，引导一只小纸鸟穿过档案通道，然后两者一起穿过月光下的书库虹膜。"
+        },
+        {
+          "concept": "珊瑚护林员使用一根发光绳引导一架幼年维护无人机穿过水下花园环，然后两者进入同一框架中的温暖压力室。",
+          "prompt_seed": "珊瑚护林员使用一根发光绳引导一架幼年维护无人机穿过水下花园环，然后两者进入同一框架中的温暖压力室。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "开始运动会掩盖这种关系。",
+          "repair": "旅行前通过可见的接触建立保护者和依赖角色。"
+        },
+        {
+          "failure": "原因不明的旅行削减消除了代理机构。",
+          "repair": "​​向保护者展示护送前选择或确认的一条路线。"
+        },
+        {
+          "failure": "独立行走削弱保护。",
+          "repair": "保持路线上可读的物理或空间指导。"
+        },
+        {
+          "failure": "失去一个科目就会中断路线。",
+          "repair": "保持身份和重复出现的地标可追溯。"
+        },
+        {
+          "failure": "单独交叉或过早切断都会导致结果不明朗。",
+          "repair": "一起跨越一个不同的门槛并保持联系。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一台黄铜图书管理员自动机通过拉紧一条引导带，引导一只小纸鸟穿过档案通道，然后两者一起穿过月光下的书库虹膜。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "珊瑚护林员使用一根发光绳引导一架幼年维护无人机穿过水下花园环，然后两者进入同一框架中的温暖压力室。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

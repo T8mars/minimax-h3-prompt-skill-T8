@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-azed-ai-2085034121844396472-browser-2085034121844396472-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "32bf44082ab465af95d10a4b57588bd14c2d799247210bae13afe1297fd3501c",
+    "creative_dna_sha256": "73b1211773ae659bdf5ca33c9047af923dab89a024bf241f9fd5cf3c47d0d4f3"
+  },
+  "content": {
+    "title": "世界悬停｜持续靠近到末端复流",
+    "summary": "先让一个本应高速运动的复杂环境整体悬停，以连续第一视角推进和重复地标证明时间仍被锁住；局部手部只负责对齐与观察，最后只在片尾发生一次全局复流和速度跃迁。",
+    "quick_start": {
+      "input_format": "复杂环境整体悬停 + 第一视角连续移动 + 至少3个冻结地标 + 局部对齐但不强称接触 + 末端只复流一次",
+      "recommended_input": "头盔视角穿过整体悬停的轨道装配舱，货运环、机械臂、螺栓和冷却液珠始终冻结；探针只与校准棱镜对齐但不接触，片尾所有机构与相机通道只恢复一次。",
+      "required_anchors": [
+        "在复杂的环境中开放，其正常移动的元素明显悬浮。",
+        "连续移动一名具体观察者，同时至少三个环境地标保持冻结状态。",
+        "保持暂停比较足够长的时间，以表明许多独立元素共享相同的状态。",
+        "在最后仅恢复一次世界，分布式对象运动和相机速度变化同时发生。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让一个本应高速运动的复杂环境整体悬停，以连续第一视角推进和重复地标证明时间仍被锁住；局部手部只负责对齐与观察，最后只在片尾发生一次全局复流和速度跃迁。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先把本应充满运动的复杂环境整体冻结，再让一个明确观察者在其中连续前进；重复出现的物体持续证明世界仍被锁定。加入一次无需接触的局部对准检查，最后只进行一次全局恢复，让多个独立元素与镜头同时重新运动。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在复杂的环境中开放，其正常移动的元素明显悬浮。",
+          "purpose": "创建一个明确无误的停止世界基线。",
+          "ablation_failure": "安静空旷的环境并不能证明暂停。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "连续移动一名具体观察者，同时至少三个环境地标保持冻结状态。",
+          "purpose": "将观察者运动与世界时间分开。",
+          "ablation_failure": "削减或改变地标使状态变得模糊。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用一个局部对准或检查焦点，但不需要未经证实的物理接触。",
+          "purpose": "集中注意力而不发明因果关系。",
+          "ablation_failure": "强制触摸声明超出了可见机制。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "保持暂停比较足够长的时间，以表明许多独立元素共享相同的状态。",
+          "purpose": "为版本建立对比。",
+          "ablation_failure": "短暂的定格看起来像是一种编辑技巧。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在最后仅恢复一次世界，分布式对象运动和相机速度变化同时发生。",
+          "purpose": "提供全球终端收益。",
+          "ablation_failure": "多次恢复稀释了状态转换。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源雨天的城市路口和霓虹灯店面",
+        "源码第一人称徒手",
+        "源头拦住了汽车、行人和鸟类",
+        "橙色碰撞碎片画面来源",
+        "源头交通恢复布置及标识"
+      ],
+      "instantiations": [
+        {
+          "concept": "在原创的轨道装配舱内，一名头盔摄像头技术人员在停止的机器人手臂、浮动的螺栓、暂停的冷却液珠和停止的货物环之间行走。戴手套的探头与一个校准棱镜对准但不接触它；只有到最后，所有机器、珠子和摄像机走廊才会一起恢复。",
+          "prompt_seed": "在原创的轨道装配舱内，一名头盔摄像头技术人员在停止的机器人手臂、浮动的螺栓、暂停的冷却液珠和停止的货物环之间行走。戴手套的探头与一个校准棱镜对准但不接触它；只有到最后，所有机器、珠子和摄像机走廊才会一起恢复。"
+        },
+        {
+          "concept": "在定格纸张印刷中，一名微小的检查员走过印刷机，而滚筒、纸屑、墨滴和齿轮仍保持悬浮状态。放大镜与单个配准点对齐，保持持续，然后整个印刷机前进一次并将相机拉入成品纸中。",
+          "prompt_seed": "在定格纸张印刷中，一名微小的检查员走过印刷机，而滚筒、纸屑、墨滴和齿轮仍保持悬浮状态。放大镜与单个配准点对齐，保持持续，然后整个印刷机前进一次并将相机拉入成品纸中。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "安静空旷的环境并不能证明暂停。",
+          "repair": "在复杂的环境中开放，其正常移动的元素明显悬浮。"
+        },
+        {
+          "failure": "削减或改变地标使状态变得模糊。",
+          "repair": "连续移动一名具体观察者，同时至少三个环境地标保持冻结状态。"
+        },
+        {
+          "failure": "强制触摸声明超出了可见机制。",
+          "repair": "使用一个局部对准或检查焦点，但不需要未经证实的物理接触。"
+        },
+        {
+          "failure": "短暂的定格看起来像是一种编辑技巧。",
+          "repair": "保持暂停比较足够长的时间，以表明许多独立元素共享相同的状态。"
+        },
+        {
+          "failure": "多次恢复稀释了状态转换。",
+          "repair": "在最后仅恢复一次世界，分布式对象运动和相机速度变化同时发生。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在原创的轨道装配舱内，一名头盔摄像头技术人员在停止的机器人手臂、浮动的螺栓、暂停的冷却液珠和停止的货物环之间行走。戴手套的探头与一个校准棱镜对准但不接触它；只有到最后，所有机器、珠子和摄像机走廊才会一起恢复。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在定格纸张印刷中，一名微小的检查员走过印刷机，而滚筒、纸屑、墨滴和齿轮仍保持悬浮状态。放大镜与单个配准点对齐，保持持续，然后整个印刷机前进一次并将相机拉入成品纸中。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

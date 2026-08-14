@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1",
+  "slug": "small-guide-route-destination-echo",
+  "title": "微型引路｜重复现身到终点材质回声",
+  "source_title": "微型引路｜小向导串联路线并兑现终点",
+  "summary": "用一个小型非语言向导先吸引注意，再让它在不同空间孔洞或路标处重复现身，带动主体与镜头沿连续路线深入；最终向导进入的目的地以同一材质、形状或色彩回声兑现前段承诺。",
+  "status": "released",
+  "source_duration_seconds": 10.125,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/small-guide-route-destination-echo",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-azed-ai-1979547337077981268-browser-1979547337077981268-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-small-guide-route-destination-echo-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "小型非语言向导 + 连续跟随路线 + 至少两次孔洞现身 + 向导先入终点 + 材质或图形回声",
+  "recommended_input": "原创纸艺档案馆里，年轻档案员在胡桃木书架旁停下，一只掌心大小的靛蓝发光纸蛾出现在手边，前方第一个圆形书架窗可见；纸蛾从第二个圆孔再次出现并越过一扇折叠目录门，档案员保持原方向跟进；墙图只亮起一次，与纸蛾翅膀相同的靛蓝分枝纹样展开，向导、地图和档案员同框保持",
+  "required_anchors": [
+    "Establish one small moving guide and its scale relation before the destination is known.",
+    "Keep guide, follower and route direction spatially connected during movement.",
+    "Let the guide enter or indicate the final destination before the follower arrives.",
+    "Echo one established guide property in the destination result."
+  ],
+  "tags": [
+    "small",
+    "guide",
+    "route",
+    "destination",
+    "echo"
+  ],
+  "quality": {
+    "weighted_score": 4.687,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:47+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

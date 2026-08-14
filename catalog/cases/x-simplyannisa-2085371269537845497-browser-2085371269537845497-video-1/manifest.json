@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1",
+  "slug": "unstable-support-failed-transfer",
+  "title": "动态承载｜平衡升级到失败落点",
+  "source_title": "动态障碍赛｜滚筒平衡到落水反应",
+  "summary": "先让参与者在固定路线和稳定踏板上建立能力，再把她交给一个会滚动的动态承载面；用多机位持续证明平衡与位移，随后只做一次离开承载面的转移尝试，以清楚的腾空、落水和本人反应完成失败证明。",
+  "status": "released",
+  "source_duration_seconds": 15.136,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/unstable-support-failed-transfer",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2085371269537845497-browser-2085371269537845497-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-unstable-support-failed-transfer-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "主体/路线/危险介质/终点 + 稳定穿越基线 + 动态承载面 + 持续平衡证明 + 单次转移失败 + 本人反应",
+  "recommended_input": "种子甲虫先稳定走过三块叶片，再踏上沿树皮轨道滚动的苔藓鼓并持续调整平衡；它只跳一次，未命中干燥盘而落入花粉床，随后自行翻正并闪一次绿灯。",
+  "required_anchors": [
+    "Establish one participant, route direction, hazard medium and destination before the hard section.",
+    "Show a stable traversal phase before the moving support.",
+    "Sustain balance long enough to prove repeated body correction while preserving support and destination in shared geography.",
+    "Use one terminal transfer attempt and show miss, impact medium and the participant's reaction without an invented outcome claim."
+  ],
+  "tags": [
+    "unstable",
+    "support",
+    "failed",
+    "transfer"
+  ],
+  "quality": {
+    "weighted_score": 4.666,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-13T20:02:02+08:00",
+  "updated_at": "2026-08-13T20:38:54+08:00"
+}

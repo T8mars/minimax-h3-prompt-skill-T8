@@ -1,0 +1,223 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-umesh-ai-2041561378495082582-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "1bd3606407734231a6405f798de560141a8cf4fb54a344cfadc9b33ed72f6e74",
+    "creative_dna_sha256": "392dd29355bba37e5e2922a6a65b4d9351ab177e2aedd9dba18742b1b8829fdb"
+  },
+  "content": {
+    "title": "踏面异变｜重复触点到基底破裂",
+    "summary": "先让稳定步伐反复触发同一种局部表面反应，以可数接触建立规则；随后一次更强的接触让承载面发生不可逆破裂，镜头越过同一边界进入下层世界并以新介质状态收束。",
+    "quick_start": {
+      "input_format": "单一主体与连续承载面 + 至少3次可数触点反应 + 1次不可逆破裂 + 同一边界穿越 + 下层介质终态",
+      "recommended_input": "真菌快递员走过透明花粉膜，前四次落脚产生局部分枝叶脉，第五次让膜面折叠撕裂；镜头从同一破口跟随进入发光根系腔室并保持新介质。",
+      "required_anchors": [
+        "建立一个主体、一个行进方向和一个连续的支撑面。",
+        "Repeat the same localized response at multiple contact points.",
+        "Make one contact irreversibly breach the previously proven support rule.",
+        "Carry the camera through the same boundary and hold the new medium."
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让稳定步伐反复触发同一种局部表面反应，以可数接触建立规则；随后一次更强的接触让承载面发生不可逆破裂，镜头越过同一边界进入下层世界并以新介质状态收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先通过多次可数触点证明同一局部接触规则，再用一次更强接触打破这条规则，使承载面不可逆破裂。镜头必须穿过同一物理边界，让下层环境成为清楚结果，并停留在新的材质状态而不是立即复位。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个主体、一个行进方向和一个连续的支撑面。",
+          "purpose": "定义将测试其规则的几何图形。",
+          "ablation_failure": "没有稳定的表面，后期破裂感觉随意。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Repeat the same localized response at multiple contact points.",
+          "purpose": "Turns footfalls or touches into counted proof.",
+          "ablation_failure": "One decorative reaction cannot establish a rule.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Increase response density while preserving subject identity and route.",
+          "purpose": "在不改变前提的情况下制造压力。",
+          "ablation_failure": "不相关的效果用蒙太奇取代升级。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Make one contact irreversibly breach the previously proven support rule.",
+          "purpose": "提供因果转换。",
+          "ablation_failure": "A random cut below has no physical handoff.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Carry the camera through the same boundary and hold the new medium.",
+          "purpose": "确认空间连续性和后果。",
+          "ablation_failure": "Immediate reset erases the transformation.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "黑衣男行者",
+        "宇宙反光水飞机",
+        "星空地平线",
+        "源足纹波设计",
+        "水下粒子场源"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名孤独的真菌信使走过温室圆顶中的半透明花粉膜。 Four footsteps send branching veins through the membrane;第五个将其向内折叠，信使下降到发光的根室中，而相机则跟随穿过同一条裂缝。",
+          "prompt_seed": "一名孤独的真菌信使走过温室圆顶中的半透明花粉膜。 Four footsteps send branching veins through the membrane;第五个将其向内折叠，信使下降到发光的根室中，而相机则跟随穿过同一条裂缝。"
+        },
+        {
+          "concept": "磁性检查球体在线圈实验室内的拉紧的铁磁膜上滚动。四次通过留下定向山脊图案而不是脚印； the fifth high-torque contact punctures the membrane, and a rotating inspection camera follows the sphere through the same opening into a lower induction-coil chamber.",
+          "prompt_seed": "磁性检查球体在线圈实验室内的拉紧的铁磁膜上滚动。四次通过留下定向山脊图案而不是脚印； the fifth high-torque contact punctures the membrane, and a rotating inspection camera follows the sphere through the same opening into a lower induction-coil chamber."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有稳定的表面，后期破裂感觉随意。",
+          "repair": "建立一个主体、一个行进方向和一个连续的支撑面。"
+        },
+        {
+          "failure": "One decorative reaction cannot establish a rule.",
+          "repair": "Repeat the same localized response at multiple contact points."
+        },
+        {
+          "failure": "不相关的效果用蒙太奇取代升级。",
+          "repair": "Increase response density while preserving subject identity and route."
+        },
+        {
+          "failure": "A random cut below has no physical handoff.",
+          "repair": "Make one contact irreversibly breach the previously proven support rule."
+        },
+        {
+          "failure": "Immediate reset erases the transformation.",
+          "repair": "Carry the camera through the same boundary and hold the new medium."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名孤独的真菌信使走过温室圆顶中的半透明花粉膜。 Four footsteps send branching veins through the membrane;第五个将其向内折叠，信使下降到发光的根室中，而相机则跟随穿过同一条裂缝。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "磁性检查球体在线圈实验室内的拉紧的铁磁膜上滚动。四次通过留下定向山脊图案而不是脚印； the fifth high-torque contact punctures the membrane, and a rotating inspection camera follows the sphere through the same opening into a lower induction-coil chamber.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "locomotion_mode",
+            "contact_geometry",
+            "setting",
+            "material_system",
+            "camera_grammar",
+            "breach_physics",
+            "lower_medium",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

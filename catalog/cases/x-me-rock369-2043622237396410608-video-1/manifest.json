@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-me-rock369-2043622237396410608-video-1",
+  "slug": "mobility-route-to-human-benefit",
+  "title": "移动兑现｜载具跃迁到生活结果",
+  "source_title": "移动兑现｜载具跃迁到生活结果",
+  "summary": "用极短篇幅把载具身份、出发、性能跃迁、地理抵达和人的最终使用结果串成一条因果链；技术奇观必须被具体生活结果兑现，结尾不能停在无目的飞驰。",
+  "status": "released",
+  "source_duration_seconds": 10.19356,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/mobility-route-to-human-benefit",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-me-rock369-2043622237396410608-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-me-rock369-2043622237396410608-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-mobility-route-to-human-benefit-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "载具与起点 + 1次改变通行方式的能力跃迁 + 可追踪路线 + 抵达物微距 + 人物实际使用结果",
+  "recommended_input": "河上医疗小艇离开太阳能诊所，展开水翼穿越芦苇浅水区，抵达淹水村庄；微距展示冷却药剂胶囊，最后由护士把胶囊装入受损幼苗培养器。",
+  "required_anchors": [
+    "Establish the carrier and departure point before accelerating the route.",
+    "Use one visible capability upgrade that changes how the carrier traverses space.",
+    "Present the delivered object or service in tactile close detail at arrival.",
+    "End with a beneficiary visibly using the result."
+  ],
+  "tags": [
+    "mobility",
+    "route",
+    "to",
+    "human",
+    "benefit"
+  ],
+  "quality": {
+    "weighted_score": 4.587,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-13T12:24:41+08:00",
+  "updated_at": "2026-08-13T13:02:28+08:00"
+}

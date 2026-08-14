@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-kimikoosugi-2036241060763148376-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "6c4dbfe5d2c3306080fd28a040b8234442e480ba6edea28f1f614301ab219082",
+    "creative_dna_sha256": "addaf5875329150ad339180e58f34312de480a8aff7675fc5f51dc29ca932a71"
+  },
+  "content": {
+    "title": "类型预告｜同一主角跨场景升级到片名",
+    "summary": "以同一核心人物和少数关系锚点贯穿多场景预告：先建立关系，再扩展城市活动与私人压力，随后把冲突升级到公共危险和大尺度奇观，最终用独立片名卡封口；不依赖未转写对白意义。",
+    "quick_start": {
+      "input_format": "固定主角与关系锚点 + 公共世界扩展 + 私人脆弱阶段 + 物理危险升级 + 独立原创片名终卡",
+      "recommended_input": "毛毡植物学家预告从温室友情、河上市集远行与种子库危机，升级到机械果园救援和发光花粉爆发，最后切到独立的原创无字叶片徽记。",
+      "required_anchors": [
+        "在地点数量扩大之前引入一名主角和一名关系主播。",
+        "回归主角，同时扩大公共场景和群体规模。",
+        "从人际压力升级为可见的公共人身危险。",
+        "将最大的奇观与保留的原始标题锁定分开。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "以同一核心人物和少数关系锚点贯穿多场景预告：先建立关系，再扩展城市活动与私人压力，随后把冲突升级到公共危险和大尺度奇观，最终用独立片名卡封口；不依赖未转写对白意义。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让同一主角贯穿一支无对白证据的短预告，并依次扩展五个因果层级：人物关系、公共活动、私人脆弱性、身体危险和最大奇观。重复面孔与物体维持连续性，最后用独立原创片名卡收束。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在地点数量扩大之前引入一名主角和一名关系主播。",
+          "purpose": "赋予蒙太奇人类身份的脊柱。",
+          "ablation_failure": "不相关的开口面创建通用的剪辑卷轴。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "回归主角，同时扩大公共场景和群体规模。",
+          "purpose": "在不失去身份的情况下扩大流派范围。",
+          "ablation_failure": "纯粹的外景蒙太奇失去了叙事主导权。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在行动升级之前插入一个更安静的私人或临床脆弱阶段。",
+          "purpose": "创造对比和利害关系。",
+          "ablation_failure": "持续的行动不会导致情绪压力变化。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "从人际压力升级为可见的公共人身危险。",
+          "purpose": "让奇观感觉值得。",
+          "ablation_failure": "任意爆炸没有戏剧性的阶梯。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将最大的奇观与保留的原始标题锁定分开。",
+          "purpose": "预告片的结束是一个承诺，而不是一个未解决的场景。",
+          "ablation_failure": "没有标题闭合让蒙太奇感觉像是摘录。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "日本真人演员阵容",
+        "来源出租车夜生活医院和拳击蒙太奇",
+        "内部燃烧和爆炸高潮",
+        "来源日文标题排版",
+        "源关系和动作顺序"
+      ],
+      "instantiations": [
+        {
+          "concept": "毛毡动画植物学家预告片跟随一位年轻的实地研究人员从温室友谊，经过河流市场探险，进入安静的种子库紧急情况，然后是机械果园救援和一阵发光花粉；它以原创的无字叶子标志结束。",
+          "prompt_seed": "毛毡动画植物学家预告片跟随一位年轻的实地研究人员从温室友谊，经过河流市场探险，进入安静的种子库紧急情况，然后是机械果园救援和一阵发光花粉；它以原创的无字叶子标志结束。"
+        },
+        {
+          "concept": "一辆单色粘土无线电操作拖车以兄弟般的承诺开始，扩展到一个拥挤的漂浮站，在寂静的医务室中放慢速度，升级为风暴疏散，最后在原始浮雕信号标记上出现闪电奇观后结束。",
+          "prompt_seed": "一辆单色粘土无线电操作拖车以兄弟般的承诺开始，扩展到一个拥挤的漂浮站，在寂静的医务室中放慢速度，升级为风暴疏散，最后在原始浮雕信号标记上出现闪电奇观后结束。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "不相关的开口面创建通用的剪辑卷轴。",
+          "repair": "在地点数量扩大之前引入一名主角和一名关系主播。"
+        },
+        {
+          "failure": "纯粹的外景蒙太奇失去了叙事主导权。",
+          "repair": "回归主角，同时扩大公共场景和群体规模。"
+        },
+        {
+          "failure": "持续的行动不会导致情绪压力变化。",
+          "repair": "在行动升级之前插入一个更安静的私人或临床脆弱阶段。"
+        },
+        {
+          "failure": "任意爆炸没有戏剧性的阶梯。",
+          "repair": "从人际压力升级为可见的公共人身危险。"
+        },
+        {
+          "failure": "没有标题闭合让蒙太奇感觉像是摘录。",
+          "repair": "将最大的奇观与保留的原始标题锁定分开。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "毛毡动画植物学家预告片跟随一位年轻的实地研究人员从温室友谊，经过河流市场探险，进入安静的种子库紧急情况，然后是机械果园救援和一阵发光花粉；它以原创的无字叶子标志结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一辆单色粘土无线电操作拖车以兄弟般的承诺开始，扩展到一个拥挤的漂浮站，在寂静的医务室中放慢速度，升级为风暴疏散，最后在原始浮雕信号标记上出现闪电奇观后结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

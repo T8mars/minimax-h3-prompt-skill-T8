@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ix00ai-2040784936316338316-video-1",
+  "slug": "passive-anchor-to-extraordinary-exit",
+  "title": "静态伏击｜从被动锚点升级到异能出口",
+  "source_title": "午睡被打断｜校园科幻动作的30秒反转",
+  "summary": "先用长停留把主角固定在一个可读地点，再让威胁进入同一空间并逐次压缩活动余地；主角通过连续恢复和环境锚点维持身份与方向，最后只允许一次超常出口改变冲突状态。",
+  "status": "released",
+  "source_duration_seconds": 30.139501,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/passive-anchor-to-extraordinary-exit",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ix00ai-2040784936316338316-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ix00ai-2040784936316338316-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-passive-anchor-to-extraordinary-exit-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "被动主角与固定地点 + 威胁进入同一空间 + 连续受挫与恢复 + 至少2个环境锚点 + 仅1次超常出口",
+  "recommended_input": "纸艺档案管理员在目录桌旁休息，三只墨迹飞蛾进入同一房间；人物围绕两座编号书架受挫、恢复，最后只出现一次弹出式索引门进入折叠地图走廊。",
+  "required_anchors": [
+    "Hold one passive protagonist and a stable location long enough to establish a true calm baseline.",
+    "Let threats enter the already established geography rather than cutting to a new arena.",
+    "Keep at least two environmental anchors readable through the action.",
+    "Reserve one extraordinary device or exit for the final state change."
+  ],
+  "tags": [
+    "passive",
+    "anchor",
+    "to",
+    "extraordinary",
+    "exit"
+  ],
+  "quality": {
+    "weighted_score": 4.555,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-13T12:24:41+08:00",
+  "updated_at": "2026-08-13T13:02:28+08:00"
+}

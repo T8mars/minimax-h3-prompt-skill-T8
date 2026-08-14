@@ -9,20 +9,20 @@ T8 Prompt Library 是本地只读案例查看器。应用默认：
 - 不读取浏览器 Cookie、登录状态或历史记录；
 - 不扫描用户其他文件夹；
 - 不上传用户复制、编辑或搜索的提示词；
-- 不调用付费视频生成或提示词增强 API。
+- 不自动调用付费视频生成 API；提示词增强 API 只在用户完成渠道配置、查看确认单并对当次请求明确确认后调用。
 
 ## 网络请求
 
 应用只在以下用户可理解的场景访问网络：
 
 - Windows 检查本仓库 GitHub Releases 的应用更新；macOS 预览版点击更新按钮时打开 Releases 页面；
-- 用户点击“查看原帖”后，由系统默认浏览器打开来源 URL。
+- 用户点击“查看原帖”后，由系统默认浏览器打开来源 URL；`n- 用户在 API 工作台逐次确认后，主进程才向所选平价小屋、AI 工坊或 OpenAI 兼容 HTTPS 端点发送增强请求；只有用户显式选择的参考素材会随该次请求发送。
 
 原平台可能按照自己的隐私政策处理访问。仅在点击外链后，用户才离开本地应用。
 
 ## 本地数据
 
-v1.1.2 在本地 `localStorage` 保存显示语言，以及用户主动创建的收藏、合集与最近 100 条浏览历史。个人资料库只记录公开条目的稳定 ID、合集名称和时间戳；不复制提示词正文、来源页面内容、账号或媒体文件，不上传、不同步，也不进入 Git 仓库。搜索词和筛选条件仍不持久保存。删除合集不会删除公共内容；清空应用站点数据会恢复默认语言并移除全部个人资料库数据。
+v1.1.3 在本地 `localStorage` 保存显示语言，以及用户主动创建的收藏、合集与最近 100 条浏览历史。API Workbench 的默认渠道与非秘密设置保存在本机；用户选择长期保存的 Key 仅通过 Electron `safeStorage` 加密保存，不进入渲染进程、命令行、日志、项目导出或案例目录。个人资料库只记录公开条目的稳定 ID、合集名称和时间戳；不复制提示词正文、来源页面内容、账号或媒体文件，不上传、不同步，也不进入 Git 仓库。搜索词和筛选条件仍不持久保存。删除合集不会删除公共内容；清空应用站点数据会恢复默认语言并移除全部个人资料库数据。
 
 完整案例视频随安装包写入应用资源目录。Windows 更新程序可能按照 Electron updater 的标准行为在系统应用数据区域暂存已下载的安装包；未签名 macOS 预览版不自动下载或安装更新。
 
@@ -36,4 +36,4 @@ v1.1.2 在本地 `localStorage` 保存显示语言，以及用户主动创建的
 
 ---
 
-**English summary:** The desktop viewer is local-first, account-free, and telemetry-free. It never reads browser sessions, uploads prompts, or calls paid generation APIs. Local storage holds the selected locale plus user-created favorites, collection names/memberships, and up to 100 recent item views; none of this is synced. Network access is limited to GitHub releases and user-initiated source links.
+**English summary:** The desktop viewer is local-first, account-free, and telemetry-free. It never reads browser sessions or calls paid video-generation APIs. Prompt-enhancement requests occur only after the user configures a provider, reviews the plan, and explicitly confirms that run; only explicitly selected reference media is sent. Local storage holds display and personal-library preferences, while persisted API keys use Electron `safeStorage`; none of this is synced. Other network access is limited to GitHub releases and user-initiated source links.

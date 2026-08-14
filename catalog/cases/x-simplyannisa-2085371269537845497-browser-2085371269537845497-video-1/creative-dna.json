@@ -1,0 +1,178 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one participant, a visible route and a stable traversal baseline before introducing a support surface that moves beneath the participant. Prove balance through several views that keep body, moving support and fixed landmarks together, then allow exactly one transfer attempt off the support. Close on the visible miss, impact medium and the participant's own reaction without inventing injury, score or victory.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one participant, route direction, hazard medium and destination before the hard section.",
+      "purpose": "Makes success and failure spatially measurable.",
+      "ablation_failure": "Without route geography, later imbalance has no clear consequence.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Show a stable traversal phase before the moving support.",
+      "purpose": "Creates a competence baseline.",
+      "ablation_failure": "Starting directly on the hard obstacle removes escalation.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Transfer the participant onto one support whose motion is visible against fixed landmarks.",
+      "purpose": "Makes instability physical rather than performative.",
+      "ablation_failure": "A stationary prop cannot explain the balance corrections.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Sustain balance long enough to prove repeated body correction while preserving support and destination in shared geography.",
+      "purpose": "Builds credible tension before the exit.",
+      "ablation_failure": "Fragmentary close-ups hide whether the participant actually traverses.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Use one terminal transfer attempt and show miss, impact medium and the participant's reaction without an invented outcome claim.",
+      "purpose": "Turns failure into complete evidence rather than humiliation montage.",
+      "ablation_failure": "Omitting impact or reaction makes the ending ambiguous.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source live-action young woman and black athletic outfit",
+    "the source RoboNeo obstacle-course venue and audience",
+    "the source red-white-blue padded course",
+    "the source large red rolling cylinder over water",
+    "the source missed platform jump and pool reaction staging",
+    "RoboNeo watermark"
+  ],
+  "instantiations": [
+    {
+      "concept": "In a miniature botanical sorter, one autonomous seed beetle crosses three fixed leaf tiles, mounts a rotating moss drum and corrects its legs as the drum rolls toward a drying tray. It attempts one jump, misses into a soft pollen bed, then rights itself and flashes a green status light.",
+      "prompt_seed": "In a miniature botanical sorter, one autonomous seed beetle crosses three fixed leaf tiles, mounts a rotating moss drum and corrects its legs as the drum rolls toward a drying tray. It attempts one jump, misses into a soft pollen bed, then rights itself and flashes a green status light."
+    },
+    {
+      "concept": "In stop-motion paper theatre, one felt courier walks fixed book-tabs, steps onto a turning cardboard spool and balances as it rolls across a gap. One leap toward a stamp platform misses into a basket of wool scraps; the courier sits up and waves once.",
+      "prompt_seed": "In stop-motion paper theatre, one felt courier walks fixed book-tabs, steps onto a turning cardboard spool and balances as it rolls across a gap. One leap toward a stamp platform misses into a basket of wool scraps; the courier sits up and waves once."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without route geography, later imbalance has no clear consequence.",
+      "repair": "Establish one participant, route direction, hazard medium and destination before the hard section."
+    },
+    {
+      "failure": "Starting directly on the hard obstacle removes escalation.",
+      "repair": "Show a stable traversal phase before the moving support."
+    },
+    {
+      "failure": "A stationary prop cannot explain the balance corrections.",
+      "repair": "Transfer the participant onto one support whose motion is visible against fixed landmarks."
+    },
+    {
+      "failure": "Fragmentary close-ups hide whether the participant actually traverses.",
+      "repair": "Sustain balance long enough to prove repeated body correction while preserving support and destination in shared geography."
+    },
+    {
+      "failure": "Omitting impact or reaction makes the ending ambiguous.",
+      "repair": "Use one terminal transfer attempt and show miss, impact medium and the participant's reaction without an invented outcome claim."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In a miniature botanical sorter, one autonomous seed beetle crosses three fixed leaf tiles, mounts a rotating moss drum and corrects its legs as the drum rolls toward a drying tray. It attempts one jump, misses into a soft pollen bed, then rights itself and flashes a green status light.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In stop-motion paper theatre, one felt courier walks fixed book-tabs, steps onto a turning cardboard spool and balances as it rolls across a gap. One leap toward a stamp platform misses into a basket of wool scraps; the courier sits up and waves once.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

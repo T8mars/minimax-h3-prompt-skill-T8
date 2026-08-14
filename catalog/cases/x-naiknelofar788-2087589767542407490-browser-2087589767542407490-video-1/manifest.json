@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1",
+  "slug": "protector-led-route-to-threshold",
+  "title": "护送穿行｜关系确认到发光门槛",
+  "source_title": "护送穿行｜保护者带领同伴越过门槛",
+  "summary": "先用近距离动作建立保护者与需要护送者的关系，再让保护者转身确认路线、持续保持可见接触并穿过熟悉空间；晚段只跨越一个视觉明确的门槛，保持两人共同进入的证据。",
+  "status": "released",
+  "source_duration_seconds": 30.144,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/protector-led-route-to-threshold",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-protector-led-route-to-threshold-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "保护者与被护送者 + 关系基线 + 路线确认 + 持续引导接触 + 共同跨越单一门槛",
+  "recommended_input": "原创机械档案馆里，黄铜图书管理员自动机用一只关节臂护住小纸鸟，并在两者之间系好蓝色引导带；两者穿过两道折叠档案架，蓝带持续绷直，自动机始终位于小鸟与移动书架之间；自动机先跨过并在同一动作中引导小鸟进入，最终两者在暖色书库内同框，蓝带与接触不变",
+  "required_anchors": [
+    "Establish the protector and dependent role through visible contact before travel.",
+    "Show the protector choose or confirm one route before escorting.",
+    "Keep both identities and recurring landmarks traceable.",
+    "Cross one distinct threshold together and hold connection."
+  ],
+  "tags": [
+    "protector",
+    "led",
+    "route",
+    "to",
+    "threshold"
+  ],
+  "quality": {
+    "weighted_score": 4.679,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:48+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

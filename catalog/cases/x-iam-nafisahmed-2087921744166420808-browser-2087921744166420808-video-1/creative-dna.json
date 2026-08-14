@@ -1,0 +1,179 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin with a private record that is visibly dated or sourced from a future version of the subject. Keep its message bounded inside the proof device, then make the present subject move to one stable external aperture for verification. Reveal a familiar environment in an impossible future state, and only after that first confirmation introduce a much larger external anomaly that reframes the warning as an immediate unresolved threat.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one private proof record with a visibly impossible future origin.",
+      "purpose": "Creates a falsifiable information anomaly.",
+      "ablation_failure": "A vague mysterious message lacks temporal proof.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Bind the record to a future version or unmistakable continuation of the present subject.",
+      "purpose": "Makes verification personally motivated.",
+      "ablation_failure": "An unrelated messenger weakens the identity bridge.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Move the present subject from the private record to one stable external aperture.",
+      "purpose": "Turns information into an observable test.",
+      "ablation_failure": "A cut directly to spectacle removes the verification action.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "First reveal a familiar environment in a clearly altered future state.",
+      "purpose": "Provides a local confirmation before escalation.",
+      "ablation_failure": "Skipping local confirmation makes the warning ungrounded.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Introduce one larger external anomaly only after the environment confirms the time shift, and end unresolved.",
+      "purpose": "Escalates evidence into threat without overexplaining it.",
+      "ablation_failure": "An early giant reveal consumes the evidence ladder.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source smartphone and MESSAGE FROM 2100 interface",
+    "the source young and elderly men",
+    "Dubai apartment and futuristic Dubai skyline",
+    "Burj Khalifa",
+    "the source enormous hovering object",
+    "the source exact future-video-to-window shot order",
+    "Seedance 2.5 and BudgetPixel attribution"
+  ],
+  "instantiations": [
+    {
+      "concept": "At an original polar observatory, a young cartographer opens a sealed frost-cylinder stamped with a date eighty years ahead and sees an elderly version of herself in a tiny volumetric archive. She crosses to the dome slit, finds the familiar ice shelf replaced by luminous towers, then a continent-scale ring shadow rotates across the aurora.",
+      "prompt_seed": "At an original polar observatory, a young cartographer opens a sealed frost-cylinder stamped with a date eighty years ahead and sees an elderly version of herself in a tiny volumetric archive. She crosses to the dome slit, finds the familiar ice shelf replaced by luminous towers, then a continent-scale ring shadow rotates across the aurora."
+    },
+    {
+      "concept": "In handcrafted paper stop motion, an orchard keeper receives a seed envelope printed with her own future portrait and a harvest year not yet reached. She opens the barn shutter, sees mature glass trees occupying the valley, then their crowns align into one enormous mechanical canopy above the farm.",
+      "prompt_seed": "In handcrafted paper stop motion, an orchard keeper receives a seed envelope printed with her own future portrait and a harvest year not yet reached. She opens the barn shutter, sees mature glass trees occupying the valley, then their crowns align into one enormous mechanical canopy above the farm."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A vague mysterious message lacks temporal proof.",
+      "repair": "Establish one private proof record with a visibly impossible future origin."
+    },
+    {
+      "failure": "An unrelated messenger weakens the identity bridge.",
+      "repair": "Bind the record to a future version or unmistakable continuation of the present subject."
+    },
+    {
+      "failure": "A cut directly to spectacle removes the verification action.",
+      "repair": "Move the present subject from the private record to one stable external aperture."
+    },
+    {
+      "failure": "Skipping local confirmation makes the warning ungrounded.",
+      "repair": "First reveal a familiar environment in a clearly altered future state."
+    },
+    {
+      "failure": "An early giant reveal consumes the evidence ladder.",
+      "repair": "Introduce one larger external anomaly only after the environment confirms the time shift, and end unresolved."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "At an original polar observatory, a young cartographer opens a sealed frost-cylinder stamped with a date eighty years ahead and sees an elderly version of herself in a tiny volumetric archive. She crosses to the dome slit, finds the familiar ice shelf replaced by luminous towers, then a continent-scale ring shadow rotates across the aurora.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In handcrafted paper stop motion, an orchard keeper receives a seed envelope printed with her own future portrait and a harvest year not yet reached. She opens the barn shutter, sees mature glass trees occupying the valley, then their crowns align into one enormous mechanical canopy above the farm.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

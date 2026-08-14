@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-juliaclarky-2087748648981745821-browser-2087748648981745821-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "909b8fada66a54e3102ada2f69fd35d557d549f63f5c717cbc18fc7359b0b9f5",
+    "creative_dna_sha256": "308ffe0d60a811ec7d1ce1dfc8189e2b6e175484b6a6f4d0cddc2a07f7de4ed7"
+  },
+  "content": {
+    "title": "Repeated Reset | Small Mishaps Escalate Across Multiple Scenes",
+    "summary": "Repeatedly perform normal preparations, active actions, visible consequences, witness reactions, and scene resets for the same character relationship; changing physical issues and increasing consequence intensity each round.",
+    "quick_start": {
+      "input_format": "Fixed role relationship + three rounds of preparation/action/consequence/reaction + scene reset + consequence upgrade round by round + maximum result in the same frame",
+      "recommended_input": "The first scene of the original freeze-frame workshop, the copper apprentice robot pulls the loose spring, and the washers spread out in front of the same green supervision light; the magnetic brush pulls the paint beads into an enlarged trajectory, and the green light clearly tilts back, with greater consequences than the first scene; the copper robot, the tilted green light and the largest gear field are stopped in the same frame, without adding dialogue or repair results",
+      "required_anchors": [
+        "Keep the same active-role and witness relationship readable across every reset.",
+        "Establish an ordinary object and action before each mishap.",
+        "Increase consequence scale or spatial reach across rounds.",
+        "Hold both roles and the largest consequence together."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Repeatedly perform normal preparations, active actions, visible consequences, witness reactions, and scene resets for the same character relationship; changing physical issues and increasing consequence intensity each round.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Repeat a compact vignette grammar across different spaces: ordinary setup, one autonomous action by the same active role, one visible material consequence, one reaction by the recurring witness, then a clean reset. Change the physical problem each round and increase consequence scale before a held final reaction.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Keep the same active-role and witness relationship readable across every reset.",
+          "purpose": "Makes separate rooms feel like one anthology.",
+          "ablation_failure": "Changing both roles turns the sequence into unrelated clips.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Establish an ordinary object and action before each mishap.",
+          "purpose": "Preserves visible cause and effect.",
+          "ablation_failure": "Opening on a mess removes responsibility and timing.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use a different material consequence in each round.",
+          "purpose": "Creates variation rather than duplicate gags.",
+          "ablation_failure": "Repeating one mishap adds no proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Increase consequence scale or spatial reach across rounds.",
+          "purpose": "Builds measurable escalation.",
+          "ablation_failure": "Random intensity without a ladder feels arbitrary.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Hold both roles and the largest consequence together.",
+          "purpose": "Completes relationship and escalation.",
+          "ablation_failure": "Cutting before the reaction loses the payoff.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source toddler and mother",
+        "the exact household rooms",
+        "the source food, furniture or domestic props",
+        "the exact mishap order and reactions",
+        "the source wardrobe and family identity"
+      ],
+      "instantiations": [
+        {
+          "concept": "Three stop-motion workshop vignettes follow one apprentice robot and one supervisor lamp: loose springs, runaway paint beads and a final avalanche of paper gears each reset to a new bench.",
+          "prompt_seed": "Three stop-motion workshop vignettes follow one apprentice robot and one supervisor lamp: loose springs, runaway paint beads and a final avalanche of paper gears each reset to a new bench."
+        },
+        {
+          "concept": "A miniature cloud keeper and one weather vane repeat three rooftop experiments: a fog puff, a rain ribbon and a final room-filling snow burst.",
+          "prompt_seed": "A miniature cloud keeper and one weather vane repeat three rooftop experiments: a fog puff, a rain ribbon and a final room-filling snow burst."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Changing both roles turns the sequence into unrelated clips.",
+          "repair": "Keep the same active-role and witness relationship readable across every reset."
+        },
+        {
+          "failure": "Opening on a mess removes responsibility and timing.",
+          "repair": "Establish an ordinary object and action before each mishap."
+        },
+        {
+          "failure": "Repeating one mishap adds no proof.",
+          "repair": "Use a different material consequence in each round."
+        },
+        {
+          "failure": "Random intensity without a ladder feels arbitrary.",
+          "repair": "Increase consequence scale or spatial reach across rounds."
+        },
+        {
+          "failure": "Cutting before the reaction loses the payoff.",
+          "repair": "Hold both roles and the largest consequence together."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "Three stop-motion workshop vignettes follow one apprentice robot and one supervisor lamp: loose springs, runaway paint beads and a final avalanche of paper gears each reset to a new bench.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A miniature cloud keeper and one weather vane repeat three rooftop experiments: a fog puff, a rain ribbon and a final room-filling snow burst.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

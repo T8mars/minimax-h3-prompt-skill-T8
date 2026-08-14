@@ -1,0 +1,222 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-johnagi168-2087432258693001579-browser-2087432258693001579-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7ad113c25208584b84647f104da5a924bb1bf66345511ae860f9f13d3cd252ed",
+    "creative_dna_sha256": "852e2fba7b7e0000f97cc7aa63a37d6053cf4f9a7341fd0ed354ebe1018ef5ad"
+  },
+  "content": {
+    "title": "外部装配｜逐件安装到整机动作验收",
+    "summary": "让大尺度外部操作手逐件改变一个稳定主体，每次安装都先用近景证明接合，再回到全身状态确认累积结果；完成细节校准后，必须用一段完整动作测试证明所有部件能共同工作。",
+    "quick_start": {
+      "input_format": "稳定基础主体 + 分阶段外部装配 + 接合近景与全身复核 + 细节校准 + 整机动作验收",
+      "recommended_input": "原创轨道仪器工坊内，一具掌心大小的铜质躯干立在空白校准标记上，两只大型象牙色维修手套安装双腿行走底座；主轮廓完成后，手套安装一支压力探针，并让面罩对齐三条刻度，不新增大型结构；自动机走三步、只展开一次双翼并用探针测量一条可见气流带，所有部件保持连接，最后完整定格",
+      "required_anchors": [
+        "建立一个稳定的主体、装配站和未修改的基线。",
+        "一次安装一个主要组件，并在每个阶段后返回整体检查。",
+        "在测试运动之前完成所有小型功能或装饰组件。",
+        "以一个综合动作试听和保持完整状态结束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让大尺度外部操作手逐件改变一个稳定主体，每次安装都先用近景证明接合，再回到全身状态确认累积结果；完成细节校准后，必须用一段完整动作测试证明所有部件能共同工作。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让主体和装配站保持固定，由明显更大的外部操作者按明确顺序安装部件。局部接触特写与全身复查交替出现，使每次新增都可累积验证；主体轮廓完成后再做精细校准，最后用一次完整动作验收证明所有部件协同工作。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个稳定的主体、装配站和未修改的基线。",
+          "purpose": "为每次添加提供状态参考。",
+          "ablation_failure": "没有基线，后面的部分就无法归属于操作者。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一次安装一个主要组件，并在每个阶段后返回整体检查。",
+          "purpose": "使积累可检查。",
+          "ablation_failure": "特写蒙太奇隐藏了各个部分是否共存。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "仅在主体结构完成后才使用局部接触验证进行精细校准。",
+          "purpose": "将结构装配与细节调整分开。",
+          "ablation_failure": "早期的细节削弱了状态阶梯。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在测试运动之前完成所有小型功能或装饰组件。",
+          "purpose": "防止最终动作验收暴露出无法解释的变化。",
+          "ablation_failure": "后期未见的添加打破了因果关系。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以一个综合动作试听和保持完整状态结束。",
+          "purpose": "证明组装的系统可以协同工作。",
+          "ablation_failure": "静态美容姿势无法验证集成。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源娃娃般的少妇",
+        "巨大的修剪整齐的女性手",
+        "奶油色客厅及展示台",
+        "米色裙子、西部靴子、草帽、褶饰手提包",
+        "化妆品、项链、项链、戒指和手链",
+        "来源 GRWM 着装顺序和最终旋转"
+      ],
+      "instantiations": [
+        {
+          "concept": "在原创的轨道车间工作台上，两只大型机器人服务手套组装了一个手掌大小的天气自动机：步行底座、折叠翼板、护目镜、压力棒和传感器环。每个连接都本地显示并全图检查；完整的自动机会行走，打开双翼并在保持之前测量一股气流。",
+          "prompt_seed": "在原创的轨道车间工作台上，两只大型机器人服务手套组装了一个手掌大小的天气自动机：步行底座、折叠翼板、护目镜、压力棒和传感器环。每个连接都本地显示并全图检查；完整的自动机会行走，打开双翼并在保持之前测量一股气流。"
+        },
+        {
+          "concept": "在手工制作的粘土剧场中，一位大型木偶制作者用木腿、纸质配重、线滑轮和一盏灯组装了一个微型舞台起重机。每个模块之后都会显示整个起重机；最后的校准收紧结，然后起重机举起一个支柱并安全地旋转一整圈。",
+          "prompt_seed": "在手工制作的粘土剧场中，一位大型木偶制作者用木腿、纸质配重、线滑轮和一盏灯组装了一个微型舞台起重机。每个模块之后都会显示整个起重机；最后的校准收紧结，然后起重机举起一个支柱并安全地旋转一整圈。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后面的部分就无法归属于操作者。",
+          "repair": "建立一个稳定的主体、装配站和未修改的基线。"
+        },
+        {
+          "failure": "特写蒙太奇隐藏了各个部分是否共存。",
+          "repair": "一次安装一个主要组件，并在每个阶段后返回整体检查。"
+        },
+        {
+          "failure": "早期的细节削弱了状态阶梯。",
+          "repair": "仅在主体结构完成后才使用局部接触验证进行精细校准。"
+        },
+        {
+          "failure": "后期未见的添加打破了因果关系。",
+          "repair": "在测试运动之前完成所有小型功能或装饰组件。"
+        },
+        {
+          "failure": "静态美容姿势无法验证集成。",
+          "repair": "以一个综合动作试听和保持完整状态结束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在原创的轨道车间工作台上，两只大型机器人服务手套组装了一个手掌大小的天气自动机：步行底座、折叠翼板、护目镜、压力棒和传感器环。每个连接都本地显示并全图检查；完整的自动机会行走，打开双翼并在保持之前测量一股气流。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在手工制作的粘土剧场中，一位大型木偶制作者用木腿、纸质配重、线滑轮和一盏灯组装了一个微型舞台起重机。每个模块之后都会显示整个起重机；最后的校准收紧结，然后起重机举起一个支柱并安全地旋转一整圈。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

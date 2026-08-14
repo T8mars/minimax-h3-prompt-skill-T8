@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-dheepanratnam-2042910477320114293-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "b40c5a5f3249a7df5fda4005117d40d513ed5f0fff95b433e8d3842d4969bc77",
+    "creative_dna_sha256": "f7c5fd2889b1b6692f98608eeb9f2e4370cc107b331b433ca40633a4e92ed6ab"
+  },
+  "content": {
+    "title": "载具启程｜微观检查累积到离场证明",
+    "summary": "先建立载具与操作者，再用多个局部检查镜头逐项证明准备状态；一次明确激活把静态部件转成联动运动，最后以远景离场证明整套系统已投入使用。",
+    "quick_start": {
+      "input_format": "原创操作者与载具 + 至少3项不同准备检查 + 1次明确激活 + 至少2个组件联动 + 广角持续离场证明",
+      "recommended_input": "花粉技术员在轨道温室依次检查风标、种子鼓锁扣和磁力脚板，只激活一次巡检车；轮舱与种子鼓联动后沿玻璃轨道启程，并以穿越两段种植舱的高位广角收束。",
+      "required_anchors": [
+        "在共享框架中建立1个载体和1个非活动载体。",
+        "给每个闭合插入不同的准备工作，而不是重复美丽的细节。",
+        "激活后，显示至少两个组件在相同的因果方向上做出响应。",
+        "以更广阔的空间证明中的持续旅行结束，而不是另一个静态特写镜头。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先建立载具与操作者，再用多个局部检查镜头逐项证明准备状态；一次明确激活把静态部件转成联动运动，最后以远景离场证明整套系统已投入使用。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把出发准备组织成因果证明阶梯：先建立载具与操作员，再分别展示多项功能不同的准备检查；一次明确启动让多个组件产生联动，最后用足够宽、足够持续的离场镜头证明整套载具已经投入运行。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在共享框架中建立1个载体和1个非活动载体。",
+          "purpose": "在详细覆盖之前创建稳定的身份基线。",
+          "ablation_failure": "如果没有基线，后面的插入可能看起来像不相关的机器。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "给每个闭合插入不同的准备工作，而不是重复美丽的细节。",
+          "purpose": "将蒙太奇变成积累的证据。",
+          "ablation_failure": "重复的装饰性特写镜头并不能证明已经准备就绪。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用一种决定性的可见激活提示来改变载体状态。",
+          "purpose": "将检查与操作分开。",
+          "ablation_failure": "如果没有状态改变，序列仍然是陈列室蒙太奇。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "激活后，显示至少两个组件在相同的因果方向上做出响应。",
+          "purpose": "使机制感觉完整。",
+          "ablation_failure": "单个发光部件不能证明系统运行。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以更广阔的空间证明中的持续旅行结束，而不是另一个静态特写镜头。",
+          "purpose": "确认部署并给出梯子的物理结果。",
+          "ablation_failure": "最后的细节镜头尚未证实出发点。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "温暖的沙漠橙色环境",
+        "连帽男骑手",
+        "骷髅摩托车剪影",
+        "橙光机械底盘",
+        "源轮和手插订单"
+      ],
+      "instantiations": [
+        {
+          "concept": "在明亮的轨道温室中，一名花粉技术人员检查紧凑型轨道撇渣器：压力叶片、种子鼓闩锁和磁性踏板。绿色状态丝带点燃，三个组件接合，撇渣器沿着悬挂的玻璃导轨离开，而高广角镜头证明了连续行进。",
+          "prompt_seed": "在明亮的轨道温室中，一名花粉技术人员检查紧凑型轨道撇渣器：压力叶片、种子鼓闩锁和磁性踏板。绿色状态丝带点燃，三个组件接合，撇渣器沿着悬挂的玻璃导轨离开，而高广角镜头证明了连续行进。"
+        },
+        {
+          "concept": "在定格动画剧院工作室中，一名毛毡舞台工作人员通过刹车销、配重和轨道开关检查微型布景车。一面黄铜钟旗升起，手推车展开两个支撑臂，然后在一张宽轮廓样张中穿过纸质舞台。",
+          "prompt_seed": "在定格动画剧院工作室中，一名毛毡舞台工作人员通过刹车销、配重和轨道开关检查微型布景车。一面黄铜钟旗升起，手推车展开两个支撑臂，然后在一张宽轮廓样张中穿过纸质舞台。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有基线，后面的插入可能看起来像不相关的机器。",
+          "repair": "在共享框架中建立1个载体和1个非活动载体。"
+        },
+        {
+          "failure": "重复的装饰性特写镜头并不能证明已经准备就绪。",
+          "repair": "给每个闭合插入不同的准备工作，而不是重复美丽的细节。"
+        },
+        {
+          "failure": "如果没有状态改变，序列仍然是陈列室蒙太奇。",
+          "repair": "使用一种决定性的可见激活提示来改变载体状态。"
+        },
+        {
+          "failure": "单个发光部件不能证明系统运行。",
+          "repair": "激活后，显示至少两个组件在相同的因果方向上做出响应。"
+        },
+        {
+          "failure": "最后的细节镜头尚未证实出发点。",
+          "repair": "以更广阔的空间证明中的持续旅行结束，而不是另一个静态特写镜头。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在明亮的轨道温室中，一名花粉技术人员检查紧凑型轨道撇渣器：压力叶片、种子鼓闩锁和磁性踏板。绿色状态丝带点燃，三个组件接合，撇渣器沿着悬挂的玻璃导轨离开，而高广角镜头证明了连续行进。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在定格动画剧院工作室中，一名毛毡舞台工作人员通过刹车销、配重和轨道开关检查微型布景车。一面黄铜钟旗升起，手推车展开两个支撑臂，然后在一张宽轮廓样张中穿过纸质舞台。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

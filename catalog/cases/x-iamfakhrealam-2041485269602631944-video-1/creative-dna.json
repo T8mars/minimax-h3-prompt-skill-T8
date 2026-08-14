@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "An asymmetric-scale exchange is readable when one large body repeatedly commits slow, space-consuming movements and a smaller body answers with precise route changes through visible negative space. Continuous shared geography, not impact spectacle, proves the tactical relationship, and the ending must not claim a victory the image does not show.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish the full scale difference and a common ground plane before the first exchange.",
+      "purpose": "Lets viewers judge mass and available space.",
+      "ablation_failure": "Tight fragments hide the central asymmetry.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Give the large body one slow committed movement that visibly occupies a route.",
+      "purpose": "Creates a readable spatial problem.",
+      "ablation_failure": "Random flailing produces noise instead of pressure.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Answer with a smaller subject's route change through a visible gap rather than equal-force collision.",
+      "purpose": "Makes agility, not implausible strength, the counter-rule.",
+      "ablation_failure": "A head-on match erases the scale premise.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Preserve both participants and the ground axis through each recovery.",
+      "purpose": "Maintains causal and spatial continuity.",
+      "ablation_failure": "Reframing either participant out breaks the exchange logic.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Hold the final shared state without inventing defeat, rescue or alliance.",
+      "purpose": "Keeps the source-derived mechanism evidence-bounded.",
+      "ablation_failure": "An unsupported win condition overstates the visible ending.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "light-clothed human fighter",
+    "large dark rock-like humanoid",
+    "misty wet shoreline plane",
+    "source circling combat blocking",
+    "source body proportions and attack choreography"
+  ],
+  "instantiations": [
+    {
+      "concept": "A palm-sized inspection rover crosses a bright paper mill floor while a slow overhead bale arm sweeps across marked lanes. The rover waits, slips through a visible gap, pivots under a second sweep and ends facing the still-active arm in one continuous lateral shot.",
+      "prompt_seed": "A palm-sized inspection rover crosses a bright paper mill floor while a slow overhead bale arm sweeps across marked lanes. The rover waits, slips through a visible gap, pivots under a second sweep and ends facing the still-active arm in one continuous lateral shot."
+    },
+    {
+      "concept": "A small ceramic crab moves across a circular tide laboratory while a massive rotating water gate closes broad sectors. An overhead camera keeps the ring geometry visible as the crab changes lanes through three shrinking openings and reaches a neutral holding zone without defeating the gate.",
+      "prompt_seed": "A small ceramic crab moves across a circular tide laboratory while a massive rotating water gate closes broad sectors. An overhead camera keeps the ring geometry visible as the crab changes lanes through three shrinking openings and reaches a neutral holding zone without defeating the gate."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Tight fragments hide the central asymmetry.",
+      "repair": "Establish the full scale difference and a common ground plane before the first exchange."
+    },
+    {
+      "failure": "Random flailing produces noise instead of pressure.",
+      "repair": "Give the large body one slow committed movement that visibly occupies a route."
+    },
+    {
+      "failure": "A head-on match erases the scale premise.",
+      "repair": "Answer with a smaller subject's route change through a visible gap rather than equal-force collision."
+    },
+    {
+      "failure": "Reframing either participant out breaks the exchange logic.",
+      "repair": "Preserve both participants and the ground axis through each recovery."
+    },
+    {
+      "failure": "An unsupported win condition overstates the visible ending.",
+      "repair": "Hold the final shared state without inventing defeat, rescue or alliance."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A palm-sized inspection rover crosses a bright paper mill floor while a slow overhead bale arm sweeps across marked lanes. The rover waits, slips through a visible gap, pivots under a second sweep and ends facing the still-active arm in one continuous lateral shot.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A small ceramic crab moves across a circular tide laboratory while a massive rotating water gate closes broad sectors. An overhead camera keeps the ring geometry visible as the crab changes lanes through three shrinking openings and reaches a neutral holding zone without defeating the gate.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

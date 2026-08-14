@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A readiness-to-departure sequence works as a causal proof ladder: establish one operator-carrier pair, isolate several different readiness checks, trigger one visible activation, show components responding together, then leave enough wide travel evidence to prove the carrier has entered service.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one operator and one inactive carrier in a shared frame.",
+      "purpose": "Creates a stable identity baseline before detail coverage.",
+      "ablation_failure": "Without the baseline, later inserts can look like unrelated machines.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Give each close insert a different readiness job rather than repeating beauty details.",
+      "purpose": "Turns montage into accumulated evidence.",
+      "ablation_failure": "Repeated decorative close-ups do not prove increasing readiness.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use one decisive visible activation cue that changes the carrier state.",
+      "purpose": "Separates checking from operation.",
+      "ablation_failure": "Without a state change the sequence remains a showroom montage.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "After activation, show at least two components responding in the same causal direction.",
+      "purpose": "Makes the mechanism feel integrated.",
+      "ablation_failure": "A single glowing part does not prove system operation.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with sustained travel in a wider spatial proof, not another static close-up.",
+      "purpose": "Confirms deployment and gives the ladder a physical result.",
+      "ablation_failure": "A final detail shot leaves departure unproven.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "warm desert-orange environment",
+    "hooded male rider",
+    "skeletal motorcycle silhouette",
+    "orange-lit mechanical chassis",
+    "source wheel and hand insert order"
+  ],
+  "instantiations": [
+    {
+      "concept": "In a bright orbital greenhouse, a single pollen technician checks a compact rail skimmer: pressure vane, seed-drum latch and magnetic footplate. A green status ribbon ignites, three assemblies engage, and the skimmer departs along a suspended glass rail while a high wide shot proves continuous travel.",
+      "prompt_seed": "In a bright orbital greenhouse, a single pollen technician checks a compact rail skimmer: pressure vane, seed-drum latch and magnetic footplate. A green status ribbon ignites, three assemblies engage, and the skimmer departs along a suspended glass rail while a high wide shot proves continuous travel."
+    },
+    {
+      "concept": "In a stop-motion theatre workshop, one felt stagehand checks a miniature scenery trolley through a brake pin, counterweight and track switch. A brass bell flag rises, the trolley unfolds two support arms, then crosses a paper stage in one wide profile proof.",
+      "prompt_seed": "In a stop-motion theatre workshop, one felt stagehand checks a miniature scenery trolley through a brake pin, counterweight and track switch. A brass bell flag rises, the trolley unfolds two support arms, then crosses a paper stage in one wide profile proof."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without the baseline, later inserts can look like unrelated machines.",
+      "repair": "Establish one operator and one inactive carrier in a shared frame."
+    },
+    {
+      "failure": "Repeated decorative close-ups do not prove increasing readiness.",
+      "repair": "Give each close insert a different readiness job rather than repeating beauty details."
+    },
+    {
+      "failure": "Without a state change the sequence remains a showroom montage.",
+      "repair": "Use one decisive visible activation cue that changes the carrier state."
+    },
+    {
+      "failure": "A single glowing part does not prove system operation.",
+      "repair": "After activation, show at least two components responding in the same causal direction."
+    },
+    {
+      "failure": "A final detail shot leaves departure unproven.",
+      "repair": "End with sustained travel in a wider spatial proof, not another static close-up."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In a bright orbital greenhouse, a single pollen technician checks a compact rail skimmer: pressure vane, seed-drum latch and magnetic footplate. A green status ribbon ignites, three assemblies engage, and the skimmer departs along a suspended glass rail while a high wide shot proves continuous travel.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In a stop-motion theatre workshop, one felt stagehand checks a miniature scenery trolley through a brake pin, counterweight and track switch. A brass bell flag rises, the trolley unfolds two support arms, then crosses a paper stage in one wide profile proof.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

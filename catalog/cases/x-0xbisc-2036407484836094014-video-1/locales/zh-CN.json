@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-0xbisc-2036407484836094014-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "a2b526f8950b901cc3ae8eaafc29666e75067fe55187738108fb4d116c0f4659",
+    "creative_dna_sha256": "dc345eac3485c29b0f3ce968583c4563d634e620178e2fcffcee8b9a2f7353ed"
+  },
+  "content": {
+    "title": "技艺递进｜原料变形到成品特写",
+    "summary": "先给出单一原料，再用功能不同且难度递增的手部操作连续改变其形态；一次明确热处理完成不可逆转折，随后快速装盘，并用成品微距证明前面所有动作得到结果。",
+    "quick_start": {
+      "input_format": "单一原料 + 至少3种功能不同的形变操作 + 1次不可逆加工 + 成品组装 + 保留前序痕迹的微距终证",
+      "recommended_input": "太阳帆修复师把同一束植物纤维拉伸、分条、编织并张紧到六边形框，只热压一次完成封合，最后用微距证明成品膜仍保留拉伸、编织和封合痕迹。",
+      "required_anchors": [
+        "在复杂的操作之前建立一种原材料及其制造商。",
+        "使用至少三种功能不同的操作来明显改变相同的材质。",
+        "在结果组装之前跨越一个可见的不可逆处理阈值。",
+        "以微距完成状态证明结束，保留早期转换的可见证据。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先给出单一原料，再用功能不同且难度递增的手部操作连续改变其形态；一次明确热处理完成不可逆转折，随后快速装盘，并用成品微距证明前面所有动作得到结果。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把工艺过程组织成可见的证明阶梯：先建立单一原料，再用功能不同、难度递增的操作持续改变其长度、拓扑或组织；经过一次不可逆处理，完成组装，并以保留前序工艺痕迹的微距成品镜头收束。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在复杂的操作之前建立一种原材料及其制造商。",
+          "purpose": "给观众一个稳定的之前状态。",
+          "ablation_failure": "在眼镜上打开会移除变换基线。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用至少三种功能不同的操作来明显改变相同的材质。",
+          "purpose": "使技能累积而不是重复。",
+          "ablation_failure": "反复折腾，没有明显的材质效果，只是蓬勃发展。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在操纵梯上保持材料特性和工作表面空间关系连续。",
+          "purpose": "让观众将每个阶段因果联系起来。",
+          "ablation_failure": "无动机的材料替换打破了证明。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在结果组装之前跨越一个可见的不可逆处理阈值。",
+          "purpose": "将准备与完成分开。",
+          "ablation_failure": "一个没有门槛的成品物体感觉被替换了。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以微距完成状态证明结束，保留早期转换的可见证据。",
+          "purpose": "以可验证的结果关闭因果阶梯。",
+          "ablation_failure": "仅凭一张广角美丽镜头就掩盖了材料工作是否重要。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-08",
+            "obs-09",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源筋肉面厨师",
+        "来源面皮和虾碗",
+        "来源深色木厨房",
+        "源码开锅火焰",
+        "来源面条循环编排和食物微距完成"
+      ],
+      "instantiations": [
+        {
+          "concept": "太阳帆保护器从一束半透明植物纤维开始，将其拉成丝带，劈开并编织成格子，将其拉紧在框架上，热封一次，然后以成品滤光膜的微距证明作为结束。",
+          "prompt_seed": "太阳帆保护器从一束半透明植物纤维开始，将其拉成丝带，劈开并编织成格子，将其拉紧在框架上，热封一次，然后以成品滤光膜的微距证明作为结束。"
+        },
+        {
+          "concept": "定格版画制作者从一张手工纸开始，将其折叠、扇形、卷绕并联锁成浮雕矩阵，将其压在压板下一次，然后露出微距浮雕印刷品，其脊线保留了折叠逻辑。",
+          "prompt_seed": "定格版画制作者从一张手工纸开始，将其折叠、扇形、卷绕并联锁成浮雕矩阵，将其压在压板下一次，然后露出微距浮雕印刷品，其脊线保留了折叠逻辑。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "在眼镜上打开会移除变换基线。",
+          "repair": "在复杂的操作之前建立一种原材料及其制造商。"
+        },
+        {
+          "failure": "反复折腾，没有明显的材质效果，只是蓬勃发展。",
+          "repair": "使用至少三种功能不同的操作来明显改变相同的材质。"
+        },
+        {
+          "failure": "无动机的材料替换打破了证明。",
+          "repair": "在操纵梯上保持材料特性和工作表面空间关系连续。"
+        },
+        {
+          "failure": "一个没有门槛的成品物体感觉被替换了。",
+          "repair": "在结果组装之前跨越一个可见的不可逆处理阈值。"
+        },
+        {
+          "failure": "仅凭一张广角美丽镜头就掩盖了材料工作是否重要。",
+          "repair": "以微距完成状态证明结束，保留早期转换的可见证据。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "太阳帆保护器从一束半透明植物纤维开始，将其拉成丝带，劈开并编织成格子，将其拉紧在框架上，热封一次，然后以成品滤光膜的微距证明作为结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "定格版画制作者从一张手工纸开始，将其折叠、扇形、卷绕并联锁成浮雕矩阵，将其压在压板下一次，然后露出微距浮雕印刷品，其脊线保留了折叠逻辑。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

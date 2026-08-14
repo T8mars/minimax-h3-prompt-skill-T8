@@ -1,0 +1,183 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A calm-to-extraordinary encounter gains force by first anchoring one passive subject in a stable space, then admitting threats into that same geography, escalating through recoverable exchanges, and reserving one extraordinary transition for the final state change. Repeated environmental anchors prevent action coverage from becoming spatially anonymous.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Hold one passive protagonist and a stable location long enough to establish a true calm baseline.",
+      "purpose": "Creates contrast for later intrusion.",
+      "ablation_failure": "Immediate action removes the transformation arc.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Let threats enter the already established geography rather than cutting to a new arena.",
+      "purpose": "Makes intrusion visible and causal.",
+      "ablation_failure": "A location reset breaks the passive anchor.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use sequential exchanges with visible recovery, not uninterrupted effortless dominance.",
+      "purpose": "Preserves progression and bodily stakes.",
+      "ablation_failure": "A single overpowering move collapses the middle ladder.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Keep at least two environmental anchors readable through the action.",
+      "purpose": "Maintains identity and spatial continuity.",
+      "ablation_failure": "Abstract effect coverage loses the encounter geometry.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Reserve one extraordinary device or exit for the final state change.",
+      "purpose": "Gives the escalation a unique endpoint.",
+      "ablation_failure": "Repeated portals or powers make the final transition ordinary.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-08",
+        "obs-09",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "school rooftop",
+    "young female student on a bench",
+    "source opponents and fight choreography",
+    "purple energy weapons and portals",
+    "source school-uniform silhouettes"
+  ],
+  "instantiations": [
+    {
+      "concept": "A coastal maintenance worker quietly calibrates a fixed sensor platform in a circular tide pool. Three contiguous algae bands enter the already established pool and progressively compress the route around two numbered stone arches. The worker repeatedly restores a usable path without fighting anything; only at the end does one shell iris lower the entire platform into a clean-water layer.",
+      "prompt_seed": "A coastal maintenance worker quietly calibrates a fixed sensor platform in a circular tide pool. Three contiguous algae bands enter the already established pool and progressively compress the route around two numbered stone arches. The worker repeatedly restores a usable path without fighting anything; only at the end does one shell iris lower the entire platform into a clean-water layer."
+    },
+    {
+      "concept": "A lone observatory gardener performs a calm light-meter check at a fixed mosaic plinth. Wind-driven shadow vines enter the same glass court and successively close three floor routes around two brass columns. The gardener reroutes one instrument cart after each closure, and exactly one floor diaphragm lowers the plinth and cart into a protected seed vault at the end.",
+      "prompt_seed": "A lone observatory gardener performs a calm light-meter check at a fixed mosaic plinth. Wind-driven shadow vines enter the same glass court and successively close three floor routes around two brass columns. The gardener reroutes one instrument cart after each closure, and exactly one floor diaphragm lowers the plinth and cart into a protected seed vault at the end."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Immediate action removes the transformation arc.",
+      "repair": "Hold one passive protagonist and a stable location long enough to establish a true calm baseline."
+    },
+    {
+      "failure": "A location reset breaks the passive anchor.",
+      "repair": "Let threats enter the already established geography rather than cutting to a new arena."
+    },
+    {
+      "failure": "A single overpowering move collapses the middle ladder.",
+      "repair": "Use sequential exchanges with visible recovery, not uninterrupted effortless dominance."
+    },
+    {
+      "failure": "Abstract effect coverage loses the encounter geometry.",
+      "repair": "Keep at least two environmental anchors readable through the action."
+    },
+    {
+      "failure": "Repeated portals or powers make the final transition ordinary.",
+      "repair": "Reserve one extraordinary device or exit for the final state change."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A coastal maintenance worker quietly calibrates a fixed sensor platform in a circular tide pool. Three contiguous algae bands enter the already established pool and progressively compress the route around two numbered stone arches. The worker repeatedly restores a usable path without fighting anything; only at the end does one shell iris lower the entire platform into a clean-water layer.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "baseline_task",
+        "pressure_form",
+        "action_physics",
+        "setting",
+        "spatial_anchors",
+        "camera_grammar",
+        "terminal_device",
+        "ending_state",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A lone observatory gardener performs a calm light-meter check at a fixed mosaic plinth. Wind-driven shadow vines enter the same glass court and successively close three floor routes around two brass columns. The gardener reroutes one instrument cart after each closure, and exactly one floor diaphragm lowers the plinth and cart into a protected seed vault at the end.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "baseline_task",
+        "pressure_form",
+        "action_physics",
+        "setting",
+        "spatial_anchors",
+        "camera_grammar",
+        "terminal_device",
+        "ending_state",
+        "sound_family"
+      ]
+    }
+  ]
+}

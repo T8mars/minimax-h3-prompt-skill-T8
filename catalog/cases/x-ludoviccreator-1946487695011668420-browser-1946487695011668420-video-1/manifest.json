@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1",
+  "slug": "frontal-retreat-collapsing-corridor",
+  "title": "正面撤退｜通道坍缩逼向唯一庇护",
+  "source_title": "正面撤退｜持续逼近的坍缩走廊",
+  "summary": "让主体面向威胁、背向目标持续后退，镜头以匹配速度倒退保持脸和来袭环境同框；危险从远端向前逐段占据通道，余量不断缩小，最终主体跨入唯一可见庇护并由边界闭合结束。",
+  "status": "released",
+  "source_duration_seconds": 5.875,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/frontal-retreat-collapsing-corridor",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-frontal-retreat-collapsing-corridor-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "主体面向威胁后退 + 同轴危险逼近 + 分阶段空间压缩 + 唯一庇护门槛 + 单次边界闭合",
+  "recommended_input": "原创纸影灯桥上，奶油色关节木偶面对镜头向后走，远端拱门出现一道黑墨裂纹，近处白色折纸神龛清楚可见；两块纸栏板向内折叠，木偶周围的干净路径被压窄，但主体身份和步态连续；木偶只跨入一次，白纸门在黑墨到达前折合关闭，镜头保持关闭边界，不声称后续结果",
+  "required_anchors": [
+    "Establish a subject facing the threat while moving backward toward a visible route.",
+    "Advance the environmental hazard along the same corridor axis as the retreat.",
+    "Keep one protective threshold readable behind the subject before the final crossing.",
+    "Use one terminal crossing and visible boundary separation from the hazard."
+  ],
+  "tags": [
+    "frontal",
+    "retreat",
+    "collapsing",
+    "corridor"
+  ],
+  "quality": {
+    "weighted_score": 4.687,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-14T11:43:47+08:00",
+  "updated_at": "2026-08-14T13:10:15+08:00"
+}

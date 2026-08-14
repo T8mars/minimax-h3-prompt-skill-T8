@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Lock one treatment surface and orientation, apply distinct tools or materials where each step changes the state needed by the next, accumulate a readable covering layer, perform one late removal or rinse, then use a separate inspection action to verify the stable finished surface.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one stable treatment surface and baseline before application.",
+      "purpose": "Makes later changes comparable.",
+      "ablation_failure": "Starting mid-process hides the initial condition.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Give each tool or material a distinct visible duty.",
+      "purpose": "Turns montage into a causal procedure.",
+      "ablation_failure": "Random tools provide no process logic.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep intermediate layers relevant to the next step.",
+      "purpose": "Builds cumulative preparation.",
+      "ablation_failure": "Resetting the surface destroys progression.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one late covering-layer removal as the decisive reveal.",
+      "purpose": "Concentrates accumulated work.",
+      "ablation_failure": "Several repeated peels weaken the event.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Verify the finished surface with a separate inspection action.",
+      "purpose": "Proves a stable result.",
+      "ablation_failure": "Ending during removal leaves completion untested.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source woman's face and beauty identity",
+    "skincare cream, serum and cosmetic device",
+    "facial mask and exact peel",
+    "the source treatment setting",
+    "mirror, mist and source treatment order"
+  ],
+  "instantiations": [
+    {
+      "concept": "A ceramic conservator cleans, fills, scans and coats a cracked theatre mask, removes one protective film, then verifies it under raking light and a magnifying mirror.",
+      "prompt_seed": "A ceramic conservator cleans, fills, scans and coats a cracked theatre mask, removes one protective film, then verifies it under raking light and a magnifying mirror."
+    },
+    {
+      "concept": "A greenhouse technician brushes mineral gel, injects resin and applies a mesh sleeve to one pipe, removes the sleeve once, then pressure-tests it.",
+      "prompt_seed": "A greenhouse technician brushes mineral gel, injects resin and applies a mesh sleeve to one pipe, removes the sleeve once, then pressure-tests it."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Starting mid-process hides the initial condition.",
+      "repair": "Establish one stable treatment surface and baseline before application."
+    },
+    {
+      "failure": "Random tools provide no process logic.",
+      "repair": "Give each tool or material a distinct visible duty."
+    },
+    {
+      "failure": "Resetting the surface destroys progression.",
+      "repair": "Keep intermediate layers relevant to the next step."
+    },
+    {
+      "failure": "Several repeated peels weaken the event.",
+      "repair": "Use one late covering-layer removal as the decisive reveal."
+    },
+    {
+      "failure": "Ending during removal leaves completion untested.",
+      "repair": "Verify the finished surface with a separate inspection action."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A ceramic conservator cleans, fills, scans and coats a cracked theatre mask, removes one protective film, then verifies it under raking light and a magnifying mirror.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A greenhouse technician brushes mineral gel, injects resin and applies a mesh sleeve to one pipe, removes the sleeve once, then pressure-tests it.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

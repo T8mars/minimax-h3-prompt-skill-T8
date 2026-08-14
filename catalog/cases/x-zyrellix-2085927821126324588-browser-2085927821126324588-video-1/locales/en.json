@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "0c389d212b4a4e4321d2e56daec21a16ad8801e3c69dfc3a658988c4c8b4a6ba",
+    "creative_dna_sha256": "b9dc52748dd762ca40a4fd6d3f41830de0c2234119c2b7a2a5885800a38143e3"
+  },
+  "content": {
+    "title": "Procedure Ladder | Layered Processing to Peel-Off Inspection",
+    "summary": "Fix the same treatment surface and let different tools or materials gradually change the required state in the next step; only remove the covering layer once in the later stage, and finally use independent inspection actions to prove the stable results.",
+    "quick_start": {
+      "input_format": "Fixed processing surface + multi-tool single responsibility + layer-by-layer accumulation + single removal + two independent acceptances",
+      "recommended_input": "On the restoration table of the original museum, the cracked ivory ceramic mask is fixed on the charcoal frame. The restorer first dry brushes to remove dust from the crack mesh; the scanner passes through the repair area, and the transparent protective coating is only brushed along the verified cracks, and each tool is only responsible for one action; the oblique grazing light scans the ceramic, and the restorer uses a small magnifying glass to inspect it from a second angle. After two certifications, the repair surface remains stable.",
+      "required_anchors": [
+        "Establish one stable treatment surface and baseline before application.",
+        "Give each tool or material a distinct visible duty.",
+        "Use one late covering-layer removal as the decisive reveal.",
+        "Verify the finished surface with a separate inspection action."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Fix the same treatment surface and let different tools or materials gradually change the required state in the next step; only remove the covering layer once in the later stage, and finally use independent inspection actions to prove the stable results.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Lock one treatment surface and orientation, apply distinct tools or materials where each step changes the state needed by the next, accumulate a readable covering layer, perform one late removal or rinse, then use a separate inspection action to verify the stable finished surface.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one stable treatment surface and baseline before application.",
+          "purpose": "Makes later changes comparable.",
+          "ablation_failure": "Starting mid-process hides the initial condition.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Give each tool or material a distinct visible duty.",
+          "purpose": "Turns montage into a causal procedure.",
+          "ablation_failure": "Random tools provide no process logic.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Keep intermediate layers relevant to the next step.",
+          "purpose": "Builds cumulative preparation.",
+          "ablation_failure": "Resetting the surface destroys progression.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Use one late covering-layer removal as the decisive reveal.",
+          "purpose": "Concentrates accumulated work.",
+          "ablation_failure": "Several repeated peels weaken the event.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Verify the finished surface with a separate inspection action.",
+          "purpose": "Proves a stable result.",
+          "ablation_failure": "Ending during removal leaves completion untested.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source woman's face and beauty identity",
+        "skincare cream, serum and cosmetic device",
+        "facial mask and exact peel",
+        "the source treatment setting",
+        "mirror, mist and source treatment order"
+      ],
+      "instantiations": [
+        {
+          "concept": "A ceramic conservator cleans, fills, scans and coats a cracked theatre mask, removes one protective film, then verifies it under raking light and a magnifying mirror.",
+          "prompt_seed": "A ceramic conservator cleans, fills, scans and coats a cracked theatre mask, removes one protective film, then verifies it under raking light and a magnifying mirror."
+        },
+        {
+          "concept": "A greenhouse technician brushes mineral gel, injects resin and applies a mesh sleeve to one pipe, removes the sleeve once, then pressure-tests it.",
+          "prompt_seed": "A greenhouse technician brushes mineral gel, injects resin and applies a mesh sleeve to one pipe, removes the sleeve once, then pressure-tests it."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Starting mid-process hides the initial condition.",
+          "repair": "Establish one stable treatment surface and baseline before application."
+        },
+        {
+          "failure": "Random tools provide no process logic.",
+          "repair": "Give each tool or material a distinct visible duty."
+        },
+        {
+          "failure": "Resetting the surface destroys progression.",
+          "repair": "Keep intermediate layers relevant to the next step."
+        },
+        {
+          "failure": "Several repeated peels weaken the event.",
+          "repair": "Use one late covering-layer removal as the decisive reveal."
+        },
+        {
+          "failure": "Ending during removal leaves completion untested.",
+          "repair": "Verify the finished surface with a separate inspection action."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A ceramic conservator cleans, fills, scans and coats a cracked theatre mask, removes one protective film, then verifies it under raking light and a magnifying mirror.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A greenhouse technician brushes mineral gel, injects resin and applies a mesh sleeve to one pipe, removes the sleeve once, then pressure-tests it.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

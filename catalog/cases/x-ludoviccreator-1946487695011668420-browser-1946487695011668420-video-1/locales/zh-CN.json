@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ludoviccreator-1946487695011668420-browser-1946487695011668420-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "76661fe0cebb619e716231f1489629163882388e33330774ef18a83b11770620",
+    "creative_dna_sha256": "adc0d63592d868cdcafd8b8fce61bfd24ad55681acf8d4d627861330bf5fd71d"
+  },
+  "content": {
+    "title": "正面撤退｜通道坍缩逼向唯一庇护",
+    "summary": "让主体面向威胁、背向目标持续后退，镜头以匹配速度倒退保持脸和来袭环境同框；危险从远端向前逐段占据通道，余量不断缩小，最终主体跨入唯一可见庇护并由边界闭合结束。",
+    "quick_start": {
+      "input_format": "主体面向威胁后退 + 同轴危险逼近 + 分阶段空间压缩 + 唯一庇护门槛 + 单次边界闭合",
+      "recommended_input": "原创纸影灯桥上，奶油色关节木偶面对镜头向后走，远端拱门出现一道黑墨裂纹，近处白色折纸神龛清楚可见；两块纸栏板向内折叠，木偶周围的干净路径被压窄，但主体身份和步态连续；木偶只跨入一次，白纸门在黑墨到达前折合关闭，镜头保持关闭边界，不声称后续结果",
+      "required_anchors": [
+        "建立一个面对威胁的主体，同时向后移动到一条可见的路线。",
+        "沿着与撤退相同的走廊轴线推进环境危害。",
+        "在最终穿越之前，在对象身后保留一个可读的保护阈值。",
+        "使用一个终端交叉口并与危险区进行明显的边界隔离。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让主体面向威胁、背向目标持续后退，镜头以匹配速度倒退保持脸和来袭环境同框；危险从远端向前逐段占据通道，余量不断缩小，最终主体跨入唯一可见庇护并由边界闭合结束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让后退主体始终面对不断逼近的危险，镜头以匹配速度同步后移；沿共享轴线分阶段压缩通道空隙，并在主体身后保留唯一可见庇护入口，最后只完成一次穿越和边界闭合。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个面对威胁的主体，同时向后移动到一条可见的路线。",
+          "purpose": "定义前退关系。",
+          "ablation_failure": "转身会取消同步面部和威胁防护。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "沿着与撤退相同的走廊轴线推进环境危害。",
+          "purpose": "创建可测量的近距离问题。",
+          "ablation_failure": "随机的离轴碎片变得普遍混乱。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在不改变对象身份或路线的情况下，至少在两个阶段减少可见间隙。",
+          "purpose": "通过空间压缩构建升级。",
+          "ablation_failure": "一次突然的爆炸不会提供渐进压力。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在最终穿越之前，在对象身后保留一个可读的保护阈值。",
+          "purpose": "为静修提供一个明确的可行目的地。",
+          "ablation_failure": "意外的退出似乎是一次不劳而获的救援。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "使用一个终端交叉口并与危险区进行明显的边界隔离。",
+          "purpose": "解决走廊问题而不要求看不见的生存。",
+          "ablation_failure": "在边界之前剪辑，未证实收益。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源宇航员",
+        "金属飞船走廊",
+        "太空碎片与工业崩溃",
+        "来源头盔和套装",
+        "精确的孵化和折叠编排"
+      ],
+      "instantiations": [
+        {
+          "concept": "纸质木偶沿着灯笼桥向后退去，而黑色的墨水裂缝则追赶着它穿过连续的拱门；镜头正面后退，直到进入一个白色的折叠神龛和最后的纸门封条。",
+          "prompt_seed": "纸质木偶沿着灯笼桥向后退去，而黑色的墨水裂缝则追赶着它穿过连续的拱门；镜头正面后退，直到进入一个白色的折叠神龛和最后的纸门封条。"
+        },
+        {
+          "concept": "当冰裂缝从深处推进时，一只小型维护蟹在透明冷却剂管道内向后行走；它穿过一个温暖的服务虹膜，虹膜在断裂前沿到达之前关闭。",
+          "prompt_seed": "当冰裂缝从深处推进时，一只小型维护蟹在透明冷却剂管道内向后行走；它穿过一个温暖的服务虹膜，虹膜在断裂前沿到达之前关闭。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "转身会取消同步面部和威胁防护。",
+          "repair": "建立一个面对威胁的主体，同时向后移动到一条可见的路线。"
+        },
+        {
+          "failure": "随机的离轴碎片变得普遍混乱。",
+          "repair": "沿着与撤退相同的走廊轴线推进环境危害。"
+        },
+        {
+          "failure": "一次突然的爆炸不会提供渐进压力。",
+          "repair": "在不改变对象身份或路线的情况下，至少在两个阶段减少可见间隙。"
+        },
+        {
+          "failure": "意外的退出似乎是一次不劳而获的救援。",
+          "repair": "在最终穿越之前，在对象身后保留一个可读的保护阈值。"
+        },
+        {
+          "failure": "在边界之前剪辑，未证实收益。",
+          "repair": "使用一个终端交叉口并与危险区进行明显的边界隔离。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "纸质木偶沿着灯笼桥向后退去，而黑色的墨水裂缝则追赶着它穿过连续的拱门；镜头正面后退，直到进入一个白色的折叠神龛和最后的纸门封条。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "当冰裂缝从深处推进时，一只小型维护蟹在透明冷却剂管道内向后行走；它穿过一个温暖的服务虹膜，虹膜在断裂前沿到达之前关闭。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-zyrellix-2085927821126324588-browser-2085927821126324588-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "0c389d212b4a4e4321d2e56daec21a16ad8801e3c69dfc3a658988c4c8b4a6ba",
+    "creative_dna_sha256": "b9dc52748dd762ca40a4fd6d3f41830de0c2234119c2b7a2a5885800a38143e3"
+  },
+  "content": {
+    "title": "工序递进｜多层处理到揭膜验收",
+    "summary": "固定同一处理表面，让不同工具或材料逐步改变下一步所需状态；晚段只揭除一次覆盖层，最后用独立检查动作证明稳定结果。",
+    "quick_start": {
+      "input_format": "固定处理表面 + 多工具单一职责 + 层层累积 + 单次揭除 + 两种独立验收",
+      "recommended_input": "原创博物馆修复台上，裂纹象牙色陶瓷面具固定在炭灰支架，修复师先干刷清除裂纹网灰尘；扫描器经过修复区，透明保护涂层只沿已验证裂纹刷开，每件工具只负责一种动作；斜掠光扫过陶瓷，修复师再用小放大镜从第二角度检查，两个证明后保持稳定修复面",
+      "required_anchors": [
+        "使用前建立稳定的治疗表面和基线。",
+        "赋予每种工具或材料独特的可见职责。",
+        "使用后期覆盖层去除作为决定性的揭示。",
+        "通过单独的检查操作验证成品表面。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定同一处理表面，让不同工具或材料逐步改变下一步所需状态；晚段只揭除一次覆盖层，最后用独立检查动作证明稳定结果。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "锁定同一处理表面和方向，让不同工具或材料分别完成单一职责，并使每一步都生成下一步所需状态；覆盖层按顺序累积，后段只进行一次揭膜或冲洗，最后用独立检查动作证明成品表面稳定。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "使用前建立稳定的治疗表面和基线。",
+          "purpose": "使以后的更改具有可比性。",
+          "ablation_failure": "在过程中启动会隐藏初始条件。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "赋予每种工具或材料独特的可见职责。",
+          "purpose": "将蒙太奇变成因果过程。",
+          "ablation_failure": "随机工具不提供流程逻辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "保持中间层与下一步相关。",
+          "purpose": "建立累积准备。",
+          "ablation_failure": "重置表面会破坏进程。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "使用后期覆盖层去除作为决定性的揭示。",
+          "purpose": "集中积累的工作。",
+          "ablation_failure": "多次重复剥离会削弱该事件。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "通过单独的检查操作验证成品表面。",
+          "purpose": "证明结果稳定。",
+          "ablation_failure": "移除期间结束，未测试完成情况。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚、可辨认的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源女人的脸和美丽的身份",
+        "护肤霜、精华液和美容仪",
+        "面膜和精确剥离",
+        "源处理场景",
+        "镜子、雾气和源处理顺序"
+      ],
+      "instantiations": [
+        {
+          "concept": "陶瓷保管员清洁、填充、扫描和涂覆破裂的剧院面具，去除一层保护膜，然后在耙光和放大镜下对其进行验证。",
+          "prompt_seed": "陶瓷保管员清洁、填充、扫描和涂覆破裂的剧院面具，去除一层保护膜，然后在耙光和放大镜下对其进行验证。"
+        },
+        {
+          "concept": "温室技术人员刷矿物凝胶，注入树脂，并将网套套在一根管道上，将网套取下一次，然后进行压力测试。",
+          "prompt_seed": "温室技术人员刷矿物凝胶，注入树脂，并将网套套在一根管道上，将网套取下一次，然后进行压力测试。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "在过程中启动会隐藏初始条件。",
+          "repair": "使用前建立稳定的治疗表面和基线。"
+        },
+        {
+          "failure": "随机工具不提供流程逻辑。",
+          "repair": "赋予每种工具或材料独特的可见职责。"
+        },
+        {
+          "failure": "重置表面会破坏进程。",
+          "repair": "保持中间层与下一步相关。"
+        },
+        {
+          "failure": "多次重复剥离会削弱该事件。",
+          "repair": "使用后期覆盖层去除作为决定性的揭示。"
+        },
+        {
+          "failure": "移除期间结束，未测试完成情况。",
+          "repair": "通过单独的检查操作验证成品表面。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "陶瓷保管员清洁、填充、扫描和涂覆破裂的剧院面具，去除一层保护膜，然后在耙光和放大镜下对其进行验证。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "温室技术人员刷矿物凝胶，注入树脂，并将网套套在一根管道上，将网套取下一次，然后进行压力测试。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}
