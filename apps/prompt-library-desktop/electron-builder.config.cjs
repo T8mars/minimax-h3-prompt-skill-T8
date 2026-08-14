@@ -46,6 +46,7 @@ module.exports = {
     "main.cjs",
     "preload.cjs",
     "lib/**/*",
+    "music3-official/**/*",
     "src/**/*",
     "package.json"
   ],

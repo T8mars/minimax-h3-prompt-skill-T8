@@ -96,9 +96,9 @@
     activeStep: "goal"
   };
 
-  function loadProviderPreferences() {
+  function loadProviderPreferences(storageKey = "t8-workbench-provider-options") {
     try {
-      const value = JSON.parse(localStorage.getItem("t8-workbench-provider-options") || "{}");
+      const value = JSON.parse(localStorage.getItem(storageKey) || "{}");
       const clean = {};
       for (const id of Object.keys(PROVIDER_FALLBACKS)) {
         const entry = value?.[id];
@@ -110,14 +110,25 @@
   }
 
   state.providerPreferences = loadProviderPreferences();
+  state.music3ProviderPreferences = loadProviderPreferences("t8-music3-provider-options");
 
-  function saveProviderPreferences() {
-    localStorage.setItem("t8-workbench-provider-options", JSON.stringify(state.providerPreferences));
+  function music3CapabilityActive() {
+    return elements.promptWorkbenchDialog.dataset.capability === "music3";
+  }
+
+  function activeProviderPreferences() {
+    return music3CapabilityActive() ? state.music3ProviderPreferences : state.providerPreferences;
+  }
+
+  function saveProviderPreferences(preferences = activeProviderPreferences()) {
+    if (music3CapabilityActive()) localStorage.setItem("t8-music3-provider-options", JSON.stringify(preferences));
+    else localStorage.setItem("t8-workbench-provider-options", JSON.stringify(preferences));
   }
 
   function storeCurrentProviderOptions() {
-    state.providerPreferences[state.providerId] = { model: elements.workbenchModel.value.slice(0, 160), baseUrl: elements.workbenchBaseUrl.value.slice(0, 2048) };
-    saveProviderPreferences();
+    const preferences = activeProviderPreferences();
+    preferences[state.providerId] = { model: elements.workbenchModel.value.slice(0, 160), baseUrl: elements.workbenchBaseUrl.value.slice(0, 2048) };
+    saveProviderPreferences(preferences);
     invalidatePlan();
   }
 
@@ -226,9 +237,14 @@
     if (!item) return;
     const display = templateDisplay(item);
     const anchors = display.quick.required_anchors || item.requiredAnchors || [];
-    const imageUrl = item.media?.gifUrl || item.media?.posterUrl || "";
-    const isGif = Boolean(item.media?.gifUrl);
+    const gifUrl = item.media?.gifUrl || "";
+    const posterUrl = item.media?.posterUrl || "";
+    const imageUrl = gifUrl || posterUrl;
+    const isGif = Boolean(gifUrl);
     const image = elements.workbenchPreviewImage;
+    const previewRequest = String(Number(image.dataset.previewRequest || 0) + 1);
+    image.dataset.previewRequest = previewRequest;
+    image._t8GifPreloader = null;
     image.onload = null;
     image.onerror = null;
     image.hidden = true;
@@ -248,9 +264,34 @@
     elements.workbenchPreviewTemplateId.textContent = templateKey(item);
     if (!imageUrl) return;
     image.alt = display.title;
-    image.onload = () => { image.hidden = false; elements.workbenchPreviewPlaceholder.classList.add("hidden"); elements.workbenchPreviewMedia.dataset.state = "ready"; };
-    image.onerror = () => { image.hidden = true; elements.workbenchPreviewPlaceholder.classList.remove("hidden"); elements.workbenchPreviewPlaceholder.querySelector("small").textContent = t("previewUnavailable"); elements.workbenchPreviewMedia.dataset.state = "error"; };
-    image.src = imageUrl;
+    const show = (url, readyState, keepPosterOnError = false) => {
+      image.onload = () => {
+        if (image.dataset.previewRequest !== previewRequest) return;
+        image.hidden = false;
+        elements.workbenchPreviewPlaceholder.classList.add("hidden");
+        elements.workbenchPreviewMedia.dataset.state = readyState;
+      };
+      image.onerror = () => {
+        if (image.dataset.previewRequest !== previewRequest || keepPosterOnError) return;
+        image.hidden = true;
+        elements.workbenchPreviewPlaceholder.classList.remove("hidden");
+        elements.workbenchPreviewPlaceholder.querySelector("small").textContent = t("previewUnavailable");
+        elements.workbenchPreviewMedia.dataset.state = "error";
+      };
+      image.src = url;
+    };
+    if (gifUrl && posterUrl) {
+      show(posterUrl, "poster");
+      const preloader = new Image();
+      image._t8GifPreloader = preloader;
+      preloader.onload = () => {
+        if (image.dataset.previewRequest !== previewRequest) return;
+        show(gifUrl, "ready", true);
+      };
+      preloader.src = gifUrl;
+    } else {
+      show(imageUrl, isGif ? "ready" : "poster");
+    }
   }
 
   function renderTemplateSummary() {
@@ -352,7 +393,7 @@
       label.classList.toggle("ready", Boolean(status?.configured));
     }
     const selected = providerConfig();
-    const preferences = state.providerPreferences[state.providerId] || {};
+    const preferences = activeProviderPreferences()[state.providerId] || {};
     elements.workbenchCredentialTitle.textContent = `${t("credential")} · ${selected.label}`;
     elements.openApiSettingsLabel.textContent = `${t("apiSettings")} · ${selected.label}`;
     elements.workbenchModel.value = preferences.model || selected.defaultModel || "";
@@ -773,6 +814,7 @@
   elements.workbenchClearKey.addEventListener("click", () => void clearCredential());
   elements.workbenchModel.addEventListener("input", storeCurrentProviderOptions);
   elements.workbenchBaseUrl.addEventListener("input", storeCurrentProviderOptions);
+  window.addEventListener("t8:workbench-capability-change", renderProviders);
   for (const element of [elements.workbenchIntent, elements.workbenchTarget, elements.workbenchOutputLanguage, elements.workbenchDuration, elements.workbenchMode, elements.workbenchConstraints]) {
     element.addEventListener("input", invalidatePlan);
     element.addEventListener("change", invalidatePlan);

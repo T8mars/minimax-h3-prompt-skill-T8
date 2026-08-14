@@ -76,6 +76,8 @@ const elements = {
   updateStatus: document.querySelector("#update-status"),
   globalLocaleEn: document.querySelector("#global-locale-en"),
   globalLocaleZh: document.querySelector("#global-locale-zh"),
+  workbenchLocaleEn: document.querySelector("#workbench-locale-en"),
+  workbenchLocaleZh: document.querySelector("#workbench-locale-zh"),
   detailLocaleEn: document.querySelector("#detail-locale-en"),
   detailLocaleZh: document.querySelector("#detail-locale-zh"),
   copyFullItem: document.querySelector("#copy-full-item"),
@@ -1168,7 +1170,7 @@ function updateDetailChrome() {
   elements.detailMedia.setAttribute("aria-label", zh ? "案例媒体" : "Case media");
   document.querySelector("#detail-prompts .prompt-tabs").setAttribute("aria-label", zh ? "模型提示词" : "Model prompt");
   document.documentElement.lang = state.locale;
-  for (const [button, active] of [[elements.globalLocaleEn, state.locale === "en"], [elements.globalLocaleZh, state.locale === "zh-CN"], [elements.detailLocaleEn, state.locale === "en"], [elements.detailLocaleZh, state.locale === "zh-CN"]]) {
+  for (const [button, active] of [[elements.globalLocaleEn, state.locale === "en"], [elements.globalLocaleZh, state.locale === "zh-CN"], [elements.workbenchLocaleEn, state.locale === "en"], [elements.workbenchLocaleZh, state.locale === "zh-CN"], [elements.detailLocaleEn, state.locale === "en"], [elements.detailLocaleZh, state.locale === "zh-CN"]]) {
     button.classList.toggle("active", active);
     button.setAttribute("aria-pressed", String(active));
   }
@@ -1549,6 +1551,8 @@ elements.tabSeedance.addEventListener("click", () => choosePrompt("seedance20"))
 }));
 elements.globalLocaleEn.addEventListener("click", () => setLocale("en"));
 elements.globalLocaleZh.addEventListener("click", () => setLocale("zh-CN"));
+elements.workbenchLocaleEn.addEventListener("click", () => setLocale("en"));
+elements.workbenchLocaleZh.addEventListener("click", () => setLocale("zh-CN"));
 elements.detailLocaleEn.addEventListener("click", () => setLocale("en"));
 elements.detailLocaleZh.addEventListener("click", () => setLocale("zh-CN"));
 elements.detailNav.addEventListener("click", (event) => {

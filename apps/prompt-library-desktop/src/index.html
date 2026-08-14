@@ -13,6 +13,7 @@
     <script src="personal-library.js" defer></script>
     <script src="app.js" defer></script>
     <script src="workbench.js" defer></script>
+    <script src="music3-workbench.js" defer></script>
   </head>
   <body>
     <header class="topbar">
@@ -284,6 +285,14 @@
             </div>
           </div>
           <div class="workbench-header-actions">
+            <div id="workbench-locale-toggle" class="locale-toggle workbench-locale-toggle" role="group" aria-label="工作台显示语言">
+              <button id="workbench-locale-en" class="locale-button" type="button" aria-pressed="false">EN</button>
+              <button id="workbench-locale-zh" class="locale-button active" type="button" aria-pressed="true">中文</button>
+            </div>
+            <div id="workbench-capability-switch" class="workbench-capability-switch" role="group" aria-label="工作台能力">
+              <button id="workbench-capability-video" class="active" type="button" data-workbench-capability="video_prompt" aria-pressed="true">视频提示词</button>
+              <button id="workbench-capability-music" type="button" data-workbench-capability="music3" aria-pressed="false">Music 3</button>
+            </div>
             <button id="open-api-settings" class="button api-settings-button" type="button" aria-haspopup="dialog" aria-controls="api-settings-dialog">
               <span class="api-settings-icon" aria-hidden="true">⚙</span><span id="open-api-settings-label">API 设置</span><em id="workbench-api-settings-status">0/3</em>
             </button>
@@ -318,7 +327,7 @@
 
           <section id="workbench-panel-target" class="workbench-section" data-workbench-panel="target" role="tabpanel" aria-labelledby="workbench-step-target" hidden>
             <div class="section-heading"><div><p class="eyebrow">2 · TARGET</p><h3 id="workbench-plan-title">目标与硬约束</h3></div></div>
-            <div class="workbench-grid">
+            <div id="workbench-video-parameters" class="workbench-grid">
               <label class="workbench-field"><span id="workbench-target-label">目标模型</span><select id="workbench-target"><option value="minimaxH3">MiniMax H3</option><option value="seedance20">Seedance 2.0</option></select></label>
               <label class="workbench-field"><span id="workbench-output-language-label">输出语言</span><select id="workbench-output-language"><option id="workbench-output-language-zh" value="zh-CN" selected>中文（默认）</option><option id="workbench-output-language-en" value="en">English</option></select></label>
               <label class="workbench-field"><span id="workbench-duration-label">时长</span><select id="workbench-duration"><option value="5">5 秒</option><option value="10">10 秒</option><option value="15" selected>15 秒</option></select></label>
@@ -329,6 +338,37 @@
                 <div class="media-picker-heading"><strong id="workbench-media-title">参考图片 / 视频</strong><div><button id="workbench-add-media" class="button copy-secondary" type="button">添加素材</button><button id="workbench-clear-media" class="button ghost" type="button">清空</button></div></div>
                 <p id="workbench-media-note">图片最多9张，视频最多3个，单个不超过50 MiB。素材只由 Electron 主进程读取。</p>
                 <div id="workbench-media-list" class="media-chip-list" aria-live="polite"></div>
+              </div>
+            </div>
+            <div id="music3-parameters" class="music3-parameters hidden">
+              <div class="music3-basic-grid">
+                <label class="workbench-field"><span>歌词模式</span><select id="music3-lyrics-mode"><option value="auto" selected>AUTO（有词保留，无词按意图）</option><option value="generate">生成新歌词（T8 非官方）</option><option value="preserve">严格保留歌词</option><option value="edit">按要求润色（T8 非官方）</option><option value="instrumental">纯器乐</option></select></label>
+                <label class="workbench-field"><span>歌词语言</span><select id="music3-lyrics-language"><option value="auto" selected>AUTO（按用户输入）</option><option value="zh">中文</option><option value="en">English</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="custom">Custom（自定义）</option></select></label>
+                <label class="workbench-field"><span>质量模式</span><select id="music3-quality-mode"><option value="full" selected>官方完整（2–4 次请求，推荐）</option><option value="fast">快速核心（1–2 次请求）</option></select></label>
+                <label class="workbench-field"><span>Music 3 描述语言</span><select id="music3-caption-language"><option value="zh-CN" selected>中文（默认）</option><option value="en">English（官方默认）</option></select></label>
+                <label id="music3-lyrics-field" class="workbench-field workbench-field-full"><span>歌词（可选）</span><textarea id="music3-lyrics" rows="7" maxlength="60000" placeholder="可粘贴带 [Verse] [Chorus] 等标签的歌词；严格保留模式不会让 LLM 重写歌词。"></textarea></label>
+                <label id="music3-edit-request-field" class="workbench-field workbench-field-full hidden"><span>歌词润色要求</span><textarea id="music3-edit-request" rows="3" maxlength="6000" placeholder="例如：只润色 [Verse]，保留 Chorus 原文。"></textarea></label>
+                <label class="workbench-field workbench-field-full"><span>硬性要求 / 排除项</span><textarea id="music3-constraints" rows="3" maxlength="12000" placeholder="例如：不要说唱；副歌必须扩大声场；不使用过度自动调音。"></textarea></label>
+              </div>
+              <button id="music3-toggle-advanced" class="button ghost music3-advanced-toggle" type="button" aria-expanded="false" aria-controls="music3-advanced-fields">展开高级参数</button>
+              <div id="music3-advanced-fields" class="music3-advanced-grid hidden">
+                <label class="workbench-field"><span>目标时长（0=AUTO）</span><input id="music3-duration" type="number" min="0" max="300" step="5" value="0"></label>
+                <label class="workbench-field"><span>创作幅度</span><select id="music3-rewrite-mode"><option value="strict">strict</option><option value="balanced" selected>balanced</option><option value="creative">creative</option></select></label>
+                <label class="workbench-field"><span>歌曲结构</span><select id="music3-structure"><option value="auto" selected>AUTO（按风格与时长）</option><option value="verse_chorus">Verse → Chorus</option><option value="pop">Verse → Pre-Chorus → Chorus → Bridge</option><option value="custom">Custom（自定义）</option></select></label>
+                <label id="music3-custom-structure-field" class="workbench-field hidden"><span>自定义结构标签</span><input id="music3-custom-structure" type="text" maxlength="1000" placeholder="[Intro] [Verse] [Chorus] [Outro]"></label>
+                <label id="music3-custom-language-field" class="workbench-field hidden"><span>自定义歌词语言</span><input id="music3-custom-language" type="text" maxlength="120"></label>
+                <label class="workbench-field"><span>固定 BPM（0=AUTO）</span><input id="music3-bpm" type="number" min="0" max="300" step="1" value="0"></label>
+                <label class="workbench-field"><span>调式（空=AUTO）</span><input id="music3-key-scale" type="text" maxlength="120"></label>
+                <label class="workbench-field"><span>拍号</span><select id="music3-meter"><option value="auto" selected>AUTO</option><option value="4/4">4/4</option><option value="3/4">3/4</option><option value="6/8">6/8</option><option value="custom">Custom（自定义）</option></select></label>
+                <label id="music3-custom-meter-field" class="workbench-field hidden"><span>自定义拍号</span><input id="music3-custom-meter" type="text" maxlength="80"></label>
+                <label class="workbench-field"><span>描述词数（0=官方 250–450）</span><input id="music3-caption-words" type="number" min="0" max="1000" step="25" value="0"></label>
+                <label class="workbench-field"><span>歌词润色范围</span><select id="music3-edit-scope"><option value="auto" selected>AUTO（从要求识别）</option><option value="all">全文</option><option value="section">指定段落（全部同名段）</option><option value="occurrence">指定段落（第 N 次）</option></select></label>
+                <label class="workbench-field"><span>目标歌词段落</span><select id="music3-edit-section"><option>Intro</option><option selected>Verse</option><option>Pre-Chorus</option><option>Chorus</option><option>Post-Chorus</option><option>Bridge</option><option>Instrumental</option><option>Solo</option><option>Outro</option></select></label>
+                <label class="workbench-field"><span>段落序号（0=全部）</span><input id="music3-edit-occurrence" type="number" min="0" max="99" value="0"></label>
+                <label class="workbench-field"><span>歌词语义画像</span><select id="music3-semantic-profile"><option value="privacy" selected>隐私隔离（不发送歌词给 Caption 阶段）</option><option value="manual">手动宽泛画像（不增加请求）</option><option value="llm">LLM 宽泛分析（会发送歌词并可能增加请求）</option></select></label>
+                <label id="music3-manual-profile-field" class="workbench-field workbench-field-full hidden"><span>手动宽泛歌词画像</span><textarea id="music3-manual-profile" rows="3" maxlength="4000" placeholder="只写宽泛情绪、强度与能量弧，不要粘贴歌词原句。"></textarea></label>
+                <label class="workbench-field"><span>阶段续跑缓存</span><select id="music3-stage-cache"><option value="on" selected>开启（内存 10 分钟，推荐）</option><option value="off">关闭（每次重新请求）</option></select></label>
+                <label class="workbench-field"><span>随机种子</span><input id="music3-seed" type="number" min="0" step="1" value="0"></label>
               </div>
             </div>
             <button id="workbench-preflight" class="button source workbench-primary-action" type="button">生成调用确认单</button>
@@ -345,9 +385,18 @@
           <section id="workbench-panel-result" class="workbench-section workbench-result-section" data-workbench-panel="result" role="tabpanel" aria-labelledby="workbench-step-result" hidden>
             <div class="section-heading">
               <div><p class="eyebrow">3 · RESULT & CHECK</p><h3 id="workbench-result-title">增强结果与机制验收</h3></div>
+              <div class="workbench-result-actions">
+                <button id="music3-copy-all" class="button copy-secondary hidden" type="button" disabled>复制全部</button>
               <button id="workbench-copy-result" class="button copy-secondary" type="button" disabled>复制结果</button>
+              </div>
             </div>
             <div id="workbench-run-status" class="run-status">尚未运行</div>
+            <div id="music3-result-tabs" class="music3-result-tabs hidden" role="tablist" aria-label="Music 3 输出">
+              <button class="active" type="button" role="tab" aria-selected="true" data-music3-output="lyrics">歌词</button>
+              <button type="button" role="tab" aria-selected="false" data-music3-output="musicCaption">结构化描述</button>
+              <button type="button" role="tab" aria-selected="false" data-music3-output="music3PayloadJson">Payload JSON</button>
+              <button type="button" role="tab" aria-selected="false" data-music3-output="enhancementReportJson">报告 JSON</button>
+            </div>
             <pre id="workbench-output" class="prompt-text workbench-output" tabindex="0"></pre>
             <div id="workbench-validation" class="validation-report"></div>
             <div class="project-panel">

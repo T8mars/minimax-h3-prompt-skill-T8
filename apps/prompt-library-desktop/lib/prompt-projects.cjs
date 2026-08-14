@@ -3,7 +3,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const MAX_PROJECTS = 100;
-const PROJECT_SCHEMA = "t8-prompt-project/v1";
+const PROJECT_SCHEMA = "t8-prompt-project/v2";
 
 function clean(value, limit = 200000) {
   return String(value || "").replace(/\r\n/gu, "\n").trim().slice(0, limit);
@@ -13,11 +13,12 @@ function safeFilename(value) {
   return clean(value, 80).replace(/[<>:"/\\|?*\u0000-\u001f]/gu, "-").replace(/\s+/gu, " ").trim() || "T8-prompt-project";
 }
 
-function sanitizeProject(input, { id = crypto.randomUUID(), now = new Date().toISOString() } = {}) {
+function sanitizeVideoProject(input, { id = crypto.randomUUID(), now = new Date().toISOString() } = {}) {
   const receipt = input?.receipt && typeof input.receipt === "object" ? input.receipt : {};
   const validation = input?.validation && typeof input.validation === "object" ? input.validation : null;
   return {
     schemaVersion: PROJECT_SCHEMA,
+    capability: "video_prompt",
     projectId: String(id),
     createdAt: clean(input?.createdAt || now, 64),
     updatedAt: now,
@@ -62,7 +63,84 @@ function sanitizeProject(input, { id = crypto.randomUUID(), now = new Date().toI
   };
 }
 
+function sanitizeMusicProject(input, { id = crypto.randomUUID(), now = new Date().toISOString() } = {}) {
+  const outputs = input?.outputs && typeof input.outputs === "object" ? input.outputs : {};
+  const receipt = input?.receipt && typeof input.receipt === "object" ? input.receipt : {};
+  return {
+    schemaVersion: PROJECT_SCHEMA,
+    capability: "music3",
+    projectId: String(id),
+    createdAt: clean(input?.createdAt || now, 64),
+    updatedAt: now,
+    title: clean(input?.title || input?.musicIdea || "T8 Music 3 Project", 240),
+    musicIdea: clean(input?.musicIdea, 12000),
+    inputLyrics: clean(input?.inputLyrics ?? input?.lyrics, 200000),
+    lyricsMode: clean(input?.lyricsMode, 40),
+    effectiveLyricsMode: clean(input?.effectiveLyricsMode, 40),
+    lyricsLanguage: clean(input?.lyricsLanguage, 40),
+    customLyricsLanguage: clean(input?.customLyricsLanguage, 120),
+    targetDurationSeconds: Number(input?.targetDurationSeconds || 0),
+    rewriteMode: clean(input?.rewriteMode, 40),
+    qualityMode: clean(input?.qualityMode, 40),
+    structurePreset: clean(input?.structurePreset, 40),
+    customStructure: clean(input?.customStructure, 1000),
+    lyricsEditRequest: clean(input?.lyricsEditRequest, 6000),
+    constraints: clean(input?.constraints, 12000),
+    fixedBpm: Number(input?.fixedBpm || 0),
+    keyScale: clean(input?.keyScale, 120),
+    meter: clean(input?.meter, 40),
+    customMeter: clean(input?.customMeter, 80),
+    captionLanguage: input?.captionLanguage === "en" ? "en" : "zh-CN",
+    captionTargetWords: Number(input?.captionTargetWords || 0),
+    lyricsEditScope: clean(input?.lyricsEditScope, 40),
+    lyricsEditSection: clean(input?.lyricsEditSection, 40),
+    lyricsEditOccurrence: Number(input?.lyricsEditOccurrence || 0),
+    semanticProfileMode: clean(input?.semanticProfileMode, 40),
+    manualLyricsProfile: clean(input?.manualLyricsProfile, 4000),
+    stageCache: clean(input?.stageCache, 20),
+    seed: Number(input?.seed || 0),
+    provider: {
+      id: clean(input?.providerId, 80),
+      label: clean(input?.providerLabel, 160),
+      endpointHost: clean(input?.endpointHost, 240),
+      model: clean(input?.model, 160)
+    },
+    outputs: {
+      lyrics: clean(outputs.lyrics, 200000),
+      musicCaption: clean(outputs.musicCaption, 200000),
+      music3PayloadJson: clean(outputs.music3PayloadJson, 400000),
+      enhancementReportJson: clean(outputs.enhancementReportJson, 400000)
+    },
+    validation: input?.validation && typeof input.validation === "object" ? input.validation : null,
+    receipt: {
+      logicalRequestCount: Number(receipt.logicalRequestCount || 0),
+      cacheHits: Number(receipt.cacheHits || 0),
+      stages: Array.isArray(receipt.stages) ? receipt.stages.slice(0, 20) : [],
+      outputHashes: receipt.outputHashes && typeof receipt.outputHashes === "object" ? receipt.outputHashes : {}
+    },
+    notes: clean(input?.notes, 12000)
+  };
+}
+
+function sanitizeProject(input, options = {}) {
+  return input?.capability === "music3" ? sanitizeMusicProject(input, options) : sanitizeVideoProject({ ...input, capability: "video_prompt" }, options);
+}
 function projectMarkdown(project) {
+  if (project.capability === "music3") {
+    return [
+      `# ${project.title}`, "", "- Capability: MiniMax Music 3",
+      `- Provider: ${project.provider.label} / ${project.provider.model}`,
+      `- Lyrics mode: ${project.effectiveLyricsMode}`,
+      `- Caption language: ${project.captionLanguage}`,
+      `- Validation: ${project.validation?.status || "not recorded"}`, "",
+      "## Music idea", "", project.musicIdea, "",
+      "## Lyrics", "", "```text", project.outputs.lyrics, "```", "",
+      "## Structured caption", "", "```text", project.outputs.musicCaption, "```", "",
+      "## Music 3 payload", "", "```json", project.outputs.music3PayloadJson, "```", "",
+      "## Enhancement report", "", "```json", project.outputs.enhancementReportJson, "```", "",
+      "## Notes", "", project.notes || "None", ""
+    ].join("\n");
+  }
   const validation = project.validation?.status || "not recorded";
   return [
     `# ${project.title}`,
@@ -122,6 +200,7 @@ class PromptProjectStore {
   list() {
     return this.readAll().map((project) => ({
       projectId: project.projectId,
+      capability: project.capability || "video_prompt",
       title: project.title,
       updatedAt: project.updatedAt,
       templateTitle: project.template?.title,

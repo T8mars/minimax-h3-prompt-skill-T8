@@ -338,7 +338,12 @@ async function callProvider(plan, apiKey, options = {}) {
       response = await fetchImpl(plan.endpoint, {
         method: "POST",
         headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ model: plan.model, messages, temperature: REWRITE_MODES[plan.rewriteMode], stream: false }),
+        body: JSON.stringify({
+          model: plan.model,
+          messages,
+          temperature: Number.isFinite(plan.temperature) ? plan.temperature : REWRITE_MODES[plan.rewriteMode],
+          stream: false
+        }),
         signal: controller.signal,
         redirect: "error"
       });

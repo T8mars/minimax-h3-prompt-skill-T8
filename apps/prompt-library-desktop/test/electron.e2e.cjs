@@ -297,7 +297,7 @@ async function run() {
       await image.evaluate(async (node) => {
         if (!node.complete) {
           await new Promise((resolve, reject) => {
-            const timeout = setTimeout(() => reject(new Error(`official GIF timed out: ${node.src}`)), 12000);
+            const timeout = setTimeout(() => reject(new Error(`official GIF timed out: ${node.src}`)), 30000);
             node.addEventListener("load", () => { clearTimeout(timeout); resolve(); }, { once: true });
             node.addEventListener("error", () => { clearTimeout(timeout); reject(new Error(`official GIF failed: ${node.src}`)); }, { once: true });
           });

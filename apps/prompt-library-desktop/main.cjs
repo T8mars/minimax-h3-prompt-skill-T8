@@ -19,6 +19,7 @@ const { automaticUpdateDelay } = require("./lib/update-policy.cjs");
 const { createFileResponse } = require("./lib/media-response.cjs");
 const { CredentialVault } = require("./lib/credential-vault.cjs");
 const { PromptOrchestrator } = require("./lib/prompt-orchestrator.cjs");
+const { Music3Orchestrator } = require("./lib/music3-orchestrator.cjs");
 const { PromptMediaStore } = require("./lib/prompt-media.cjs");
 const { PromptProjectStore } = require("./lib/prompt-projects.cjs");
 const RELEASES_URL = "https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases";
@@ -43,6 +44,7 @@ let assetRoots = null;
 let updateStatus = { state: "idle" };
 let updateInFlight = false;
 let promptOrchestrator = null;
+let music3Orchestrator = null;
 let promptProjectStore = null;
 
 function resolveRoots() {
@@ -207,6 +209,25 @@ function configureIpc() {
     requireTrustedSender(event);
     return promptOrchestrator.preflight(input || {});
   });
+  ipcMain.handle("music3:preflight", (event, input) => {
+    requireTrustedSender(event);
+    return music3Orchestrator.preflight(input || {});
+  });
+
+  ipcMain.handle("music3:start", (event, input) => {
+    requireTrustedSender(event);
+    return music3Orchestrator.start(input || {});
+  });
+
+  ipcMain.handle("music3:status", (event, runId) => {
+    requireTrustedSender(event);
+    return music3Orchestrator.status(runId);
+  });
+
+  ipcMain.handle("music3:cancel", (event, runId) => {
+    requireTrustedSender(event);
+    return music3Orchestrator.cancel(runId);
+  });
 
   ipcMain.handle("prompt:media:pick", async (event) => {
     requireTrustedSender(event);
@@ -243,7 +264,8 @@ function configureIpc() {
   ipcMain.handle("prompt:project:save", (event, input) => {
     requireTrustedSender(event);
     const request = input || {};
-    const base = request.runId ? promptOrchestrator.projectSnapshot(request.runId) : promptProjectStore.get(request.projectId);
+    const runner = request.capability === "music3" ? music3Orchestrator : promptOrchestrator;
+    const base = request.runId ? runner.projectSnapshot(request.runId) : promptProjectStore.get(request.projectId);
     if (!base) throw new Error("Prompt project not found.");
     return promptProjectStore.save({ ...base, projectId: request.projectId || undefined, title: request.title || base.title, notes: request.notes ?? base.notes });
   });
@@ -371,14 +393,13 @@ app.whenReady().then(() => {
   assetRoots = resolveRoots();
   const mediaStore = new PromptMediaStore();
   promptProjectStore = new PromptProjectStore({ userDataDir: app.getPath("userData") });
-  promptOrchestrator = new PromptOrchestrator({
-    mediaStore,
-    credentialVault: new CredentialVault({
-      userDataDir: app.getPath("userData"),
-      safeStorage,
-      env: process.env
-    })
+  const credentialVault = new CredentialVault({
+    userDataDir: app.getPath("userData"),
+    safeStorage,
+    env: process.env
   });
+  promptOrchestrator = new PromptOrchestrator({ mediaStore, credentialVault });
+  music3Orchestrator = new Music3Orchestrator({ credentialVault });
   configureMediaProtocol();
   configureUpdater();
   configureIpc();
