@@ -19,7 +19,7 @@
 Windows 校验示例：
 
 ```powershell
-Get-FileHash .\T8-Prompt-Library-Setup-v1.1.3.exe -Algorithm SHA256
+Get-FileHash .\T8-Prompt-Library-Setup-v1.1.4.exe -Algorithm SHA256
 ```
 
 将结果与 `SHA256SUMS.txt` 中对应文件比较。
@@ -27,7 +27,7 @@ Get-FileHash .\T8-Prompt-Library-Setup-v1.1.3.exe -Algorithm SHA256
 macOS 校验示例：
 
 ```bash
-shasum -a 256 T8-Prompt-Library-v1.1.3-mac-universal.dmg
+shasum -a 256 T8-Prompt-Library-v1.1.4-mac-universal.dmg
 ```
 
 macOS 包同时提供 DMG 与 ZIP，均为 universal（Intel + Apple Silicon）。当前公开版没有 Apple Developer ID，因此**未签名、未公证**：请先核对 `SHA256SUMS.txt`，再打开 DMG 并把应用拖入 Applications。首次启动优先在 Finder 中右键应用并选择“打开”；若系统仍阻止且你已确认哈希，可自行执行：

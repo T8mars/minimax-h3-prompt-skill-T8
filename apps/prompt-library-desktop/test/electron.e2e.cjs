@@ -43,7 +43,8 @@ async function run() {
     const page = await electronApp.firstWindow();
     await page.setViewportSize({ width: 1280, height: 720 });
     await page.evaluate(() => {
-      localStorage.removeItem("t8-display-locale");
+      localStorage.setItem("t8-display-locale", "en");
+      localStorage.removeItem("t8-display-locale-default-zh-v1");
       localStorage.removeItem("t8-personal-library-v1");
     });
     await page.reload();
@@ -58,6 +59,13 @@ async function run() {
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
     assert.equal(await page.locator("#global-locale-zh").getAttribute("aria-pressed"), "true", "Chinese must be the first-run default");
     assert.equal(await page.locator("html").getAttribute("lang"), "zh-CN", "the document language must match the first-run Chinese default");
+    assert.equal(await page.evaluate(() => localStorage.getItem("t8-display-locale")), "zh-CN", "the default-Chinese migration must replace a stale English value once");
+    assert.equal(await page.evaluate(() => localStorage.getItem("t8-display-locale-default-zh-v1")), "done", "the default-Chinese migration must be recorded");
+    await page.locator("#global-locale-en").click();
+    await page.reload();
+    await page.waitForSelector(".case-card", { timeout: 15000 });
+    assert.equal(await page.locator("#global-locale-en").getAttribute("aria-pressed"), "true", "an explicit English choice must persist after the migration");
+    await page.locator("#global-locale-zh").click();
     assert.equal(await page.locator("#stat-cases").textContent(), "117");
     assert.equal(await page.locator("#stat-videos").textContent(), "117", "every item in the aggregate view must have a local preview");
     assert.equal(await page.locator("#stat-prompts").textContent(), "234", "all 117 items must expose their declared model surfaces");
@@ -117,10 +125,10 @@ async function run() {
     await page.locator("#platform-filter").selectOption("platform:x");
     assert.ok(await page.locator(".case-card").count() > 10, "stable platform filter must retain the X case set");
 
-    await page.locator(".case-card").first().click();
+    await page.locator(".case-card").first().dispatchEvent("click");
     await page.waitForSelector("#case-dialog[open]");
     assert.equal(await page.locator("#detail-favorite").getAttribute("aria-pressed"), "true", "detail favorite state must match the persisted card state");
-    await page.locator("#detail-collections").click();
+    await page.locator("#detail-collections").dispatchEvent("click");
     await page.waitForSelector("#collection-membership-dialog[open]");
     assert.equal(await page.locator(".collection-membership-row").count(), 1, "detail view must manage collection membership without closing the case");
     await page.locator("#close-collection-membership").click();

@@ -129,6 +129,18 @@ const elements = {
   closeCollectionMembership: document.querySelector("#close-collection-membership")
 };
 
+const DISPLAY_LOCALE_KEY = "t8-display-locale";
+const DISPLAY_LOCALE_DEFAULT_ZH_MIGRATION_KEY = "t8-display-locale-default-zh-v1";
+
+function initialDisplayLocale(storage = localStorage) {
+  if (storage.getItem(DISPLAY_LOCALE_DEFAULT_ZH_MIGRATION_KEY) !== "done") {
+    storage.setItem(DISPLAY_LOCALE_KEY, "zh-CN");
+    storage.setItem(DISPLAY_LOCALE_DEFAULT_ZH_MIGRATION_KEY, "done");
+    return "zh-CN";
+  }
+  return storage.getItem(DISPLAY_LOCALE_KEY) === "en" ? "en" : "zh-CN";
+}
+
 const state = {
   catalog: { cases: [], officialSkills: [], communitySkills: [], warnings: [] },
   activeView: "all",
@@ -141,7 +153,7 @@ const state = {
   collectionEditorMode: "create",
   collectionEditorReturnToMembership: false,
   membershipItem: null,
-  locale: localStorage.getItem("t8-display-locale") === "en" ? "en" : "zh-CN",
+  locale: initialDisplayLocale(),
   updateStatus: { state: "idle" },
   toastTimer: null
 };
@@ -1292,7 +1304,7 @@ function setLocale(locale) {
   const scrollTop = elements.dialog.open ? elements.dialogShell.scrollTop : 0;
   const filters = { platform: elements.platform.value, model: elements.model.value, tag: elements.tag.value };
   state.locale = locale;
-  localStorage.setItem("t8-display-locale", locale);
+  localStorage.setItem(DISPLAY_LOCALE_KEY, locale);
   updateGlobalChrome();
   populateFilters();
   elements.platform.value = filters.platform;
