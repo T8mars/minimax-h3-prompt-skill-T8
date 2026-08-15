@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1",
+  "slug": "continuous-outer-shot-inner-screen-montage",
+  "title": "屏中蒙太奇｜外层连续内屏切换",
+  "source_title": "屏中蒙太奇｜连续手持外景与内屏人物切换",
+  "summary": "让一台带屏设备始终占据前景并保持外层镜头连续，只允许设备内屏在不同人物或状态间切换；外层背景、手部微调和真实视差持续证明同一现场，最后让内外两层的群体能量形成可读呼应。",
+  "status": "released",
+  "source_duration_seconds": 15.11681,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/continuous-outer-shot-inner-screen-montage",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-outer-shot-inner-screen-montage-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "实体显示设备 + 连续外层镜头 + 至少三种内屏状态 + 外层独立视差/遮挡 + 内外两层终态同框",
+  "recommended_input": "原创夜间雨林实验区内，植物学家打开石墨色折叠热成像监视器，屏幕与边框清晰，湿叶、琥珀工作灯和小型团队在后方虚化；薄雾与叶片只在外层移动，监视器内部依次切换蛾翼扫描和花朵开放，显示边界始终完整；最终内屏把蛙、蛾、花和孢子四项读数并列，实体设备、手套和同一虚化温室仍共同可见",
+  "required_anchors": [
+    "Introduce one physical display carrier and clearly separate its inner image from the outer world.",
+    "Keep the outer shot continuous with stable device, operator contact and environmental anchors.",
+    "Accumulate at least three distinguishable inner states without losing the display boundary.",
+    "End with the inner result, physical carrier and outer context readable together."
+  ],
+  "tags": [
+    "continuous",
+    "outer",
+    "shot",
+    "inner",
+    "screen",
+    "montage"
+  ],
+  "quality": {
+    "weighted_score": 4.728,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-15T14:09:28+08:00",
+  "updated_at": "2026-08-15T14:39:49+08:00"
+}

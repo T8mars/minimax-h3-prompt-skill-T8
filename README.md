@@ -172,6 +172,9 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![护送穿行｜关系确认到发光门槛](catalog/cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/preview.gif)](https://x.com/Naiknelofar788/status/2087589767542407490) | **[护送穿行｜关系确认到发光门槛](catalog/cases/x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1/SUMMARY.md)**<br><sub>x-naiknelofar788-2087589767542407490-browser-2087589767542407490-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![平面重组｜角色海报到嘉年华版式](catalog/cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/preview.gif)](https://x.com/Mayz1169/status/2087870514400502028) | **[平面重组｜角色海报到嘉年华版式](catalog/cases/x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1/SUMMARY.md)**<br><sub>x-mayz1169-2087870514400502028-browser-2087870514400502028-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![平面重组｜讲解人物与纸片信息节拍](catalog/cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/preview.gif)](https://x.com/aziz4ai/status/2084775075656466886) | **[平面重组｜讲解人物与纸片信息节拍](catalog/cases/x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1/SUMMARY.md)**<br><sub>x-aziz4ai-2084775075656466886-browser-2084775075656466886-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![屏中蒙太奇｜外层连续内屏切换](catalog/cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/preview.gif)](https://x.com/bmx_ai13/status/2081350068280631801) | **[屏中蒙太奇｜外层连续内屏切换](catalog/cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/SUMMARY.md)**<br><sub>x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![逐物改写｜局部对象到整片环境](catalog/cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/preview.gif)](https://x.com/Naiknelofar788/status/2077382054275436584) | **[逐物改写｜局部对象到整片环境](catalog/cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/SUMMARY.md)**<br><sub>x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![尺度展开｜微小材质扩张后原样回收](catalog/cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/preview.gif)](https://x.com/noorwithwifi/status/2051983365688242324) | **[尺度展开｜微小材质扩张后原样回收](catalog/cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/SUMMARY.md)**<br><sub>x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -180,7 +183,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 下载 `T8-Prompt-Library-Setup-v1.1.5.exe`；macOS 下载 `T8-Prompt-Library-v1.1.5-mac-universal.dmg`。
+2. Windows 下载 `T8-Prompt-Library-Setup-v1.1.6.exe`；macOS 下载 `T8-Prompt-Library-v1.1.6-mac-universal.dmg`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
 
@@ -239,7 +242,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.1.5**。项目使用十进制进位：
+当前目标版本是 **v1.1.6**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0

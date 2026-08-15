@@ -3,6 +3,12 @@ const os = require("node:os");
 const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
 
+const catalogManifest = require(path.resolve(__dirname, "../../..", "catalog", "manifest.json"));
+const expectedCaseCount = catalogManifest.case_count;
+const expectedOfficialSkillCount = catalogManifest.official_skill_count;
+const expectedCommunitySkillCount = catalogManifest.community_skill_count;
+const expectedAggregateCount = expectedCaseCount + expectedOfficialSkillCount + expectedCommunitySkillCount;
+
 async function waitForClipboard(electronApp, predicate, message, timeoutMs = 3000) {
   const deadline = Date.now() + timeoutMs;
   let value = "";
@@ -55,7 +61,7 @@ async function run() {
     });
     await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
     const allCount = await page.locator(".case-card").count();
-    assert.equal(allCount, 117, "default all-content view must render 106 cases + 9 official Skills + 2 non-official Skills");
+    assert.equal(allCount, expectedAggregateCount, "default all-content view must match the catalog and Skill manifests");
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
     assert.equal(await page.locator("#global-locale-zh").getAttribute("aria-pressed"), "true", "Chinese must be the first-run default");
     assert.equal(await page.locator("html").getAttribute("lang"), "zh-CN", "the document language must match the first-run Chinese default");
@@ -66,9 +72,9 @@ async function run() {
     await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
     assert.equal(await page.locator("#global-locale-en").getAttribute("aria-pressed"), "true", "an explicit English choice must persist after the migration");
     await page.locator("#global-locale-zh").click();
-    assert.equal(await page.locator("#stat-cases").textContent(), "117");
-    assert.equal(await page.locator("#stat-videos").textContent(), "117", "every item in the aggregate view must have a local preview");
-    assert.equal(await page.locator("#stat-prompts").textContent(), "234", "all 117 items must expose their declared model surfaces");
+    assert.equal(await page.locator("#stat-cases").textContent(), String(expectedAggregateCount));
+    assert.equal(await page.locator("#stat-videos").textContent(), String(expectedAggregateCount), "every item in the aggregate view must have a local preview");
+    assert.equal(await page.locator("#stat-prompts").textContent(), String(expectedAggregateCount * 2), "all items must expose their declared model surfaces");
     assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "official Skills must use local GIF previews in the aggregate view");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "aggregate view must not expose case-only comparison controls");
     assert.equal(await page.locator("#view-favorite-count").textContent(), "0");
@@ -118,10 +124,10 @@ async function run() {
     await page.screenshot({ path: screenshotPath, animations: "disabled" });
 
     await page.locator("#view-cases").click();
-    await page.waitForFunction(() => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === 106);
+    await page.waitForFunction((count) => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === count, expectedCaseCount);
     const caseCount = await page.locator(".case-card").count();
-    assert.equal(caseCount, 106, "viewer must render all 106 public cases");
-    assert.equal(await page.locator("#stat-videos").textContent(), "106", "development media pack must bind 106 case MP4s");
+    assert.equal(caseCount, expectedCaseCount, "viewer must render every public case in the manifest");
+    assert.equal(await page.locator("#stat-videos").textContent(), String(expectedCaseCount), "development media pack must bind every case MP4");
     await page.locator("#platform-filter").selectOption("platform:x");
     assert.ok(await page.locator(".case-card").count() > 10, "stable platform filter must retain the X case set");
 
@@ -220,7 +226,11 @@ async function run() {
     await electronApp.evaluate(({ clipboard }) => clipboard.writeText("repeat-copy-sentinel"));
     await page.locator("#copy-overview").click();
     await waitForClipboard(electronApp, (value) => /^# .+\n/u.test(value), "copy button must remain reusable while success feedback is visible");
-    await page.waitForTimeout(1700);
+    await page.waitForFunction(
+      () => document.querySelector("#copy-overview")?.textContent === "Copy overview",
+      undefined,
+      { timeout: 5000 }
+    );
     assert.equal(await page.locator("#copy-overview").textContent(), "Copy overview", "copy button must restore its idle label after feedback");
     assert.equal(await page.locator("#copy-overview").getAttribute("data-copy-state"), null);
     await page.locator("#copy-source-link").click();

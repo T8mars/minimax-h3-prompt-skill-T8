@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1",
+  "slug": "local-object-conversion-to-environment-rewrite",
+  "title": "逐物改写｜局部对象到整片环境",
+  "source_title": "逐物改写｜真实物体逐个转成二维形态",
+  "summary": "保持同一第一视角和真实环境，使用一个持续可见的触发工具依次选中不同尺度对象；每次只改写一个局部对象并保留其位置关系，最后把相同转换规则扩大到整片环境。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/local-object-conversion-to-environment-rewrite",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-local-object-conversion-to-environment-rewrite-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "连续真实环境 + 可见选择工具 + 至少三次局部对象改写 + 原位空间配准 + 一次整片环境改写",
+  "recommended_input": "原创精密洁净室内，戴手套技术员举起小型琥珀检查发射器，对准石墨色阀门，白色墙板、地面网格和传送设备保持真实；光束触及底盘后只有机器人变成分层示意图，轮位、路线和周围机器保持空间配准；光束指向顶棚网格，相同转换边界自上而下扩展，让顶棚、机器和地面成为统一青色洁净室剖面，发射器仍在前景",
+  "required_anchors": [
+    "Establish one continuous real environment and one visible selection tool.",
+    "Align the tool with one object before each local conversion.",
+    "Repeat the rule across at least three materially different object scales while keeping geography traceable.",
+    "Apply the established rule once to a whole environmental region and hold the boundary."
+  ],
+  "tags": [
+    "local",
+    "object",
+    "conversion",
+    "to",
+    "environment",
+    "rewrite"
+  ],
+  "quality": {
+    "weighted_score": 4.748,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-15T14:09:28+08:00",
+  "updated_at": "2026-08-15T14:39:49+08:00"
+}

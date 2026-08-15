@@ -2,7 +2,7 @@
 
 ## Skill 是什么
 
-`skills/` 中共有三类可安装产物：91 个独立案例机制 Skill（106 个案例中有 15 个证据变体复用既有稳定模板）、为 MiniMax 官方仓库 9 个 H3 Skills 独立编写的 9 个 Seedance 2.0 伴侣 Skills，以及 2 个明确标注“非官方 · 用户贡献”的高质量双模型 Skills。v1.1.3 共 102 个可安装目录。每个目录都有 `SKILL.md`、`references/summary.md`、`references/template.md` 和 Agent 元数据。
+`skills/` 中共有三类可安装产物：94 个独立案例机制 Skill（109 个案例中有 15 个证据变体复用既有稳定模板）、为 MiniMax 官方仓库 9 个 H3 Skills 独立编写的 9 个 Seedance 2.0 伴侣 Skills，以及 2 个明确标注“非官方 · 用户贡献”的高质量双模型 Skills。v1.1.6 共 105 个可安装目录。每个目录都有 `SKILL.md`、`references/summary.md`、`references/template.md` 和 Agent 元数据。
 
 公开案例 Skill 与本项目内部的采集/审核 Skill 完全分离；安装公开 Skill 不会获得搜索、登录、下载或内部自动化能力。
 

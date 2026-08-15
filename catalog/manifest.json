@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
   "catalog_version": "1.1.3",
-  "generated_at": "2026-08-14T14:32:24+08:00",
-  "case_count": 106,
+  "generated_at": "2026-08-15T14:58:14+08:00",
+  "case_count": 109,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -3714,6 +3714,117 @@
       ],
       "quality_score": 4.698,
       "updated_at": "2026-08-14T13:10:15+08:00"
+    },
+    {
+      "case_id": "x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1",
+      "slug": "continuous-outer-shot-inner-screen-montage",
+      "title": "屏中蒙太奇｜外层连续内屏切换",
+      "status": "released",
+      "summary": "让一台带屏设备始终占据前景并保持外层镜头连续，只允许设备内屏在不同人物或状态间切换；外层背景、手部微调和真实视差持续证明同一现场，最后让内外两层的群体能量形成可读呼应。",
+      "manifest_path": "cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/manifest.json",
+      "summary_path": "cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/SUMMARY.md",
+      "source_path": "cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/source.json",
+      "creative_dna_path": "cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/preview.gif",
+        "poster": "cases/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/poster.webp",
+        "mp4": "media/x-bmx-ai13-2081350068280631801-browser-2081350068280631801-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/continuous-outer-shot-inner-screen-montage",
+      "template_id": "t8-case-continuous-outer-shot-inner-screen-montage-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "continuous",
+        "outer",
+        "shot",
+        "inner",
+        "screen",
+        "montage"
+      ],
+      "quality_score": 4.728,
+      "updated_at": "2026-08-15T14:39:49+08:00"
+    },
+    {
+      "case_id": "x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1",
+      "slug": "local-object-conversion-to-environment-rewrite",
+      "title": "逐物改写｜局部对象到整片环境",
+      "status": "released",
+      "summary": "保持同一第一视角和真实环境，使用一个持续可见的触发工具依次选中不同尺度对象；每次只改写一个局部对象并保留其位置关系，最后把相同转换规则扩大到整片环境。",
+      "manifest_path": "cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/manifest.json",
+      "summary_path": "cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/SUMMARY.md",
+      "source_path": "cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/source.json",
+      "creative_dna_path": "cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/preview.gif",
+        "poster": "cases/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/poster.webp",
+        "mp4": "media/x-naiknelofar788-2077382054275436584-browser-2077382054275436584-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/local-object-conversion-to-environment-rewrite",
+      "template_id": "t8-case-local-object-conversion-to-environment-rewrite-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "local",
+        "object",
+        "conversion",
+        "to",
+        "environment",
+        "rewrite"
+      ],
+      "quality_score": 4.748,
+      "updated_at": "2026-08-15T14:39:49+08:00"
+    },
+    {
+      "case_id": "x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1",
+      "slug": "material-scale-expansion-exact-return-loop",
+      "title": "尺度展开｜微小材质扩张后原样回收",
+      "status": "released",
+      "summary": "先锁定一个可辨认的微小材质锚点与触发动作，让同一材质逐级扩张为更大结构和完整世界，再沿可追踪的反向路径把所有尺度层收回，最终回到与开场一致的原始锚点。",
+      "manifest_path": "cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/manifest.json",
+      "summary_path": "cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/SUMMARY.md",
+      "source_path": "cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/source.json",
+      "creative_dna_path": "cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/preview.gif",
+        "poster": "cases/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/poster.webp",
+        "mp4": "media/x-noorwithwifi-2051983365688242324-browser-2051983365688242324-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/material-scale-expansion-exact-return-loop",
+      "template_id": "t8-case-material-scale-expansion-exact-return-loop-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "material",
+        "scale",
+        "expansion",
+        "exact",
+        "return",
+        "loop"
+      ],
+      "quality_score": 4.729,
+      "updated_at": "2026-08-15T14:39:49+08:00"
     }
   ]
 }

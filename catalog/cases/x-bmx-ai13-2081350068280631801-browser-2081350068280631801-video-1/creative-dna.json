@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one physical display carrier in a continuous outer shot, keep its bezel, operator contact and surrounding geography visibly stable, and confine every montage cut or state change to the inner screen. Use independent outer-layer parallax or occlusion to keep proving that the exterior take has not cut, then finish by bringing the inner result and the persistent outer context into one readable held relationship.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Introduce one physical display carrier and clearly separate its inner image from the outer world.",
+      "purpose": "Creates two auditable image layers.",
+      "ablation_failure": "An unbounded fullscreen insert removes the screen-within-screen mechanism.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep the outer shot continuous with stable device, operator contact and environmental anchors.",
+      "purpose": "Makes inner cuts legible as bounded events.",
+      "ablation_failure": "Outer cuts turn the sequence into an ordinary montage.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Allow meaningful content changes only inside the display while the outer layer supplies independent parallax or occlusion.",
+      "purpose": "Proves that the two layers have different temporal rules.",
+      "ablation_failure": "Matching both layers shot-for-shot destroys the contrast.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Accumulate at least three distinguishable inner states without losing the display boundary.",
+      "purpose": "Builds progression inside one carrier.",
+      "ablation_failure": "One inner clip does not establish a montage system.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with the inner result, physical carrier and outer context readable together.",
+      "purpose": "Closes the nested evidence structure.",
+      "ablation_failure": "Ending on an isolated insert discards the continuous outer proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source silver early-2000s MiniDV camcorder",
+    "the source nighttime fashion crowd and old stone street",
+    "the source party portraits, sunglasses and tan fur coat",
+    "the source REC and timecode screen graphics",
+    "the source exact inner portrait order and electroclash campaign styling"
+  ],
+  "instantiations": [
+    {
+      "concept": "In an original nocturnal rainforest lab, a field botanist holds a rugged folding thermal monitor in one continuous outer shot. Mist, leaves and her gloved hands drift around the sharp device while only its screen cuts among a frog, a moth, a flower opening and airborne spores; the final monitor view gathers all four readings while the same wet greenhouse remains blurred behind it.",
+      "prompt_seed": "In an original nocturnal rainforest lab, a field botanist holds a rugged folding thermal monitor in one continuous outer shot. Mist, leaves and her gloved hands drift around the sharp device while only its screen cuts among a frog, a moth, a flower opening and airborne spores; the final monitor view gathers all four readings while the same wet greenhouse remains blurred behind it."
+    },
+    {
+      "concept": "In stop-motion felt craft, a clockmaker carries a brass diagnostic tablet through one continuous workshop aisle. Hanging gears and wool dust provide outer parallax while the tablet alone switches between four animated mechanism cross-sections; the final cross-section aligns with the unchanged physical clock behind the tablet.",
+      "prompt_seed": "In stop-motion felt craft, a clockmaker carries a brass diagnostic tablet through one continuous workshop aisle. Hanging gears and wool dust provide outer parallax while the tablet alone switches between four animated mechanism cross-sections; the final cross-section aligns with the unchanged physical clock behind the tablet."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "An unbounded fullscreen insert removes the screen-within-screen mechanism.",
+      "repair": "Introduce one physical display carrier and clearly separate its inner image from the outer world."
+    },
+    {
+      "failure": "Outer cuts turn the sequence into an ordinary montage.",
+      "repair": "Keep the outer shot continuous with stable device, operator contact and environmental anchors."
+    },
+    {
+      "failure": "Matching both layers shot-for-shot destroys the contrast.",
+      "repair": "Allow meaningful content changes only inside the display while the outer layer supplies independent parallax or occlusion."
+    },
+    {
+      "failure": "One inner clip does not establish a montage system.",
+      "repair": "Accumulate at least three distinguishable inner states without losing the display boundary."
+    },
+    {
+      "failure": "Ending on an isolated insert discards the continuous outer proof.",
+      "repair": "End with the inner result, physical carrier and outer context readable together."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In an original nocturnal rainforest lab, a field botanist holds a rugged folding thermal monitor in one continuous outer shot. Mist, leaves and her gloved hands drift around the sharp device while only its screen cuts among a frog, a moth, a flower opening and airborne spores; the final monitor view gathers all four readings while the same wet greenhouse remains blurred behind it.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In stop-motion felt craft, a clockmaker carries a brass diagnostic tablet through one continuous workshop aisle. Hanging gears and wool dust provide outer parallax while the tablet alone switches between four animated mechanism cross-sections; the final cross-section aligns with the unchanged physical clock behind the tablet.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}
