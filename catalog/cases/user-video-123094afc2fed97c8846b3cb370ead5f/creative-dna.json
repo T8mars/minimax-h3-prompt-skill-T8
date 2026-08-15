@@ -1,0 +1,181 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Open with one oversized total that calibrates scale, unfold into itemized records that prove the claim, refold those records into an aggregate result, pivot through one intermediate milestone to a current-state value, then use one restrained manual annotation to lock the conclusion.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Open with one dominant total and a compact label before showing its evidence.",
+      "purpose": "Creates immediate scale and a clear question about how the total was earned.",
+      "ablation_failure": "Starting with many small records removes the hook and hierarchy.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Unfold the claim into at least two itemized records with visible category separation.",
+      "purpose": "Turns a large headline into checkable evidence.",
+      "ablation_failure": "A second big number without records feels like another unsupported claim.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Compress the detailed records into one aggregate result before changing metric family.",
+      "purpose": "Rewards the detail pass with a simplified summary state.",
+      "ablation_failure": "Jumping directly from records to the final value leaves the proof unresolved.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one physically legible panel or carrier change to reveal an intermediate milestone from a different but related metric family.",
+      "purpose": "Makes the information pivot feel causal rather than arbitrary.",
+      "ablation_failure": "A plain cut between unrelated metrics obscures their relationship.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on the current-state value and add only one restrained annotation after the value is readable.",
+      "purpose": "Separates the conclusion from the evidence and gives it a memorable hold.",
+      "ablation_failure": "Many marks compete with the value; annotating before readability hides the conclusion.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "headline_total",
+      "constraint": "One original, truthful or explicitly fictional dominant total with a short label."
+    },
+    {
+      "name": "record_set",
+      "constraint": "At least two distinct records whose categories visibly support the headline."
+    },
+    {
+      "name": "aggregate_result",
+      "constraint": "One summary value derived from the record set."
+    },
+    {
+      "name": "milestone_metric",
+      "constraint": "One related intermediate milestone shown through a physical carrier change."
+    },
+    {
+      "name": "current_state",
+      "constraint": "One final current value, not a duplicate of the opening total."
+    },
+    {
+      "name": "material_system",
+      "constraint": "An original medium whose folds, slides, hinges or layer changes explain information transitions."
+    },
+    {
+      "name": "annotation",
+      "constraint": "One brief non-brand manual mark added only after the final value is readable."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "Original tactile cues tied to each information-state change."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "50+",
+    "期数教程",
+    "1.5W",
+    "17.7",
+    "3.8W",
+    "4.3W",
+    "source café photographs and crossed red strips",
+    "source black-white-red paper system and final red brush oval"
+  ],
+  "instantiations": [
+    {
+      "concept": "A navy-and-cream river-restoration board opens on '24 RESTORED SEGMENTS', unfolds into two transparent field-record cards, compresses to '127K L SAVED', pivots through a baseline efficiency panel and ends on 'CURRENT 92%' with one copper grease-pencil check.",
+      "prompt_seed": "Tactile river-restoration data story: oversized total, two field-record proofs, one aggregate saving, one hinged milestone and a current-state value with a single manual check."
+    },
+    {
+      "concept": "A translucent museum-conservation light table starts with '80 OBJECTS STABILIZED', fans out humidity and UV exposure records on acetate, stacks them into one reduced-risk index, flips a frosted milestone pane and ends on the current safe-storage rate sealed with one wax thumbprint.",
+      "prompt_seed": "Museum conservation evidence hierarchy on acetate and frosted glass, progressing from total to records to aggregate to milestone to current state, ending with one wax mark."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The opening contains several equal-sized figures.",
+      "repair": "Choose one dominant total and one compact label."
+    },
+    {
+      "failure": "The detail state is decorative rather than evidentiary.",
+      "repair": "Give each record a distinct category and a visible relation to the headline."
+    },
+    {
+      "failure": "The sequence skips the aggregate summary.",
+      "repair": "Compress records into one result before switching metric family."
+    },
+    {
+      "failure": "The milestone arrives through an arbitrary cut.",
+      "repair": "Use one hinge, fold, slide or layer change to carry the pivot."
+    },
+    {
+      "failure": "The final annotation obscures or repeats the value.",
+      "repair": "Wait until the current value is readable, then add one restrained mark."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A navy-and-cream river-restoration board opens on '24 RESTORED SEGMENTS', unfolds into two transparent field-record cards, compresses to '127K L SAVED', pivots through a baseline efficiency panel and ends on 'CURRENT 92%' with one copper grease-pencil check.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "headline_total",
+        "record_set",
+        "aggregate_result",
+        "milestone_metric",
+        "current_state",
+        "material_system",
+        "annotation",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A translucent museum-conservation light table starts with '80 OBJECTS STABILIZED', fans out humidity and UV exposure records on acetate, stacks them into one reduced-risk index, flips a frosted milestone pane and ends on the current safe-storage rate sealed with one wax thumbprint.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "headline_total",
+        "record_set",
+        "aggregate_result",
+        "milestone_metric",
+        "current_state",
+        "material_system",
+        "annotation",
+        "sound_family"
+      ]
+    }
+  ]
+}

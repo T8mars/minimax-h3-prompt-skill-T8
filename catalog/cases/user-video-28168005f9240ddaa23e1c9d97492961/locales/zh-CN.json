@@ -1,0 +1,224 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-28168005f9240ddaa23e1c9d97492961",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d039464c7c5dade2eb14f9915492250e1a09d83ef164875ad2aa57b5bdea7566",
+    "creative_dna_sha256": "2fc76040d5328baa80aed317c79db0f47eaddd43a9ab639bf7419f08f9a67524"
+  },
+  "content": {
+    "title": "手势对齐｜前景动作触发后景状态",
+    "summary": "固定分层构图先给出一个后景基准状态，前景动作沿清楚路径完成视线对齐，只触发一次状态变化，再通过保持、清开与回指确认结果持续。",
+    "quick_start": {
+      "input_format": "固定前后景 + 可读基准状态 + 单一前景动作路径 + 一次对齐触发 + 状态保持 + 清开后确认",
+      "recommended_input": "黄铜天文馆木偶抬起细指示杆，与后景月盘清楚对齐；月盘只转一次，机械标签从 PARKED 翻成 TRACKING。木偶先保持共同证明，再放下指示杆，最后只点亮一个绿色确认灯。",
+      "required_anchors": [
+        "前景动作载体进入前，先建立稳定的主体—目标空间关系与可读的基准状态。",
+        "让一个清楚无歧义的前景动作路径，最终与后景目标形成精确的视觉对齐。",
+        "在对齐期间或紧随其后，只改变一个目标状态；不得臆断画面没有显示的实体接触。",
+        "以持续保持的改变后状态收尾，只加入一次简短确认或回指动作，不触发第二次状态变化。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定分层构图先给出一个后景基准状态，前景动作沿清楚路径完成视线对齐，只触发一次状态变化，再通过保持、清开与回指确认结果持续。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在固定的分层构图中，先建立一个可读的后景基准状态；让一个前景动作载体沿清楚路径移动，直到它在视觉上与目标对齐；对齐期间只改变一个目标状态，并保持到足以读清；随后让前景动作载体移开，最后用一次回指或确认动作证明结果仍持续存在。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "前景动作载体进入前，先建立稳定的主体—目标空间关系与可读的基准状态。",
+          "purpose": "给观众一个之前的状态和一个精确的交互目的地。",
+          "ablation_failure": "如果目标已经被覆盖或发生变化，则后面的手势没有可测量的效果。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "让一个清楚无歧义的前景动作路径，最终与后景目标形成精确的视觉对齐。",
+          "purpose": "将深度不匹配转变为清晰可见的交互。",
+          "ablation_failure": "一个徘徊的手势或几个候选目标使因果关系变得难以理解。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在对齐期间或紧随其后，只改变一个目标状态；不得臆断画面没有显示的实体接触。",
+          "purpose": "提供单一因果收束，同时保留技巧的视觉本质。",
+          "ablation_failure": "多项更改感觉就像是通用界面演示；没有任何变化使手势具有装饰性。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-04",
+            "obs-07"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "将对齐的效应器和更改的状态保持在一起，然后在结果仍然存在的情况下清除效应器。",
+          "purpose": "先把动作与结果绑定，再让结果在动作载体移开后独立成立。",
+          "ablation_failure": "变化后立即剪辑隐藏了新状态是否稳定。",
+          "evidence_ids": [
+            "beat-03",
+            "beat-04",
+            "obs-06",
+            "obs-11"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以持续保持的改变后状态收尾，只加入一次简短确认或回指动作，不触发第二次状态变化。",
+          "purpose": "收束这次交互，并形成一个改变后状态的循环端点。",
+          "ablation_failure": "重置到基准状态会抹掉证据；再加入新状态会削弱单次动作机制。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-12",
+            "obs-17"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "foreground_subject",
+          "constraint": "一个原创且身份稳定的主体，具有清楚可读的前景动作载体。"
+        },
+        {
+          "name": "background_target",
+          "constraint": "一个原创目标，其基准状态与改变后状态在视觉上明显不同。"
+        },
+        {
+          "name": "effector_path",
+          "constraint": "一条干净轨迹，以精确的视觉对齐结束。"
+        },
+        {
+          "name": "state_pair",
+          "constraint": "一个前状态和一个后状态；不再加入第三种状态。"
+        },
+        {
+          "name": "depth_grammar",
+          "constraint": "一种保持前景效应器、主体和后方目标同时清晰的构图。"
+        },
+        {
+          "name": "confirmation_hold",
+          "constraint": "有足够的时间来读取对齐的操作和更改的结果。"
+        },
+        {
+          "name": "release_or_recall",
+          "constraint": "让前景动作载体离开目标一次，随后可选择确认仍未改变的结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "用于接近、状态改变、保持与移开的原创物理声和画内提示。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "T8star-艾克斯",
+        "+关注",
+        "已关注",
+        "来源画面中的个人主页计数与平台标签",
+        "来源人物的脸、发型和棕色衬衫",
+        "来源粉白色个人主页界面与精确指向位置"
+      ],
+      "instantiations": [
+        {
+          "concept": "定格动画黄铜天文馆讲解员站在深机械星形面板前。当面板从“PARKED”翻转到“TRACKING”时，其细长的指针与月亮表盘对齐；木偶降低指针，然后将其返回到未更改的确认灯旁边。",
+          "prompt_seed": "黄铜天文馆木偶、固定分层立体模型、一次指示杆与表盘对齐、一次 PARKED 到 TRACKING 的状态变化、共同确认停留、动作载体移开后的独立证明，以及最终回指确认。"
+        },
+        {
+          "concept": "一架水下检查无人机悬停在压力窗光圈前。一个操纵器与凹进的闩锁对齐，虹膜从狭窄的红色狭缝变成开放的绿色环，无人机后退以显示稳定的光圈，最后将一束聚光灯扫过它。",
+          "prompt_seed": "水下无人机与压力窗光圈、斜向机械臂对齐、一次机械状态变化、后退以独立证明结果，以及最终聚光灯确认。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "手势之前目标状态不可读。",
+          "repair": "在效应器进入之前保持一种高对比度基线状态。"
+        },
+        {
+          "failure": "效应器与多个控件重叠或遵循不明确的路径。",
+          "repair": "使用一个目标和一个干净的向量以精确对齐结束。"
+        },
+        {
+          "failure": "几个背景元素一起变化。",
+          "repair": "精确更改一个声明的状态对并冻结所有其他锚点。"
+        },
+        {
+          "failure": "手或工具永远不会清除结果。",
+          "repair": "联合确认保持后，将其收回，以便可以独立读取更改后的状态。"
+        },
+        {
+          "failure": "结局触发第二次状态变化。",
+          "repair": "仅使用确认手势或轻扫，同时保留确认状态。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "定格动画黄铜天文馆讲解员站在深机械星形面板前。当面板从“PARKED”翻转到“TRACKING”时，其细长的指针与月亮表盘对齐；木偶降低指针，然后将其返回到未更改的确认灯旁边。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "foreground_subject",
+            "background_target",
+            "effector_path",
+            "state_pair",
+            "depth_grammar",
+            "confirmation_hold",
+            "release_or_recall",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一架水下检查无人机悬停在压力窗光圈前。一个操纵器与凹进的闩锁对齐，虹膜从狭窄的红色狭缝变成开放的绿色环，无人机后退以显示稳定的光圈，最后将一束聚光灯扫过它。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "foreground_subject",
+            "background_target",
+            "effector_path",
+            "state_pair",
+            "depth_grammar",
+            "confirmation_hold",
+            "release_or_recall",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-8cc6ac74d1d823cc7d99d90451f6214e",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "5d3635a4018b65b54321ea19705365329c74b0d23482975144c93bf36f932bc8",
+    "creative_dna_sha256": "ef45d1521b5be61228ebfc4c69ce2f24c743390d96f7e7cec4c7b038a755d9df"
+  },
+  "content": {
+    "title": "双人递进｜共享接触从地面升到空中峰值",
+    "summary": "先建立两个主体的深度差，再让同一次共享接触从低位逐级升高到唯一空中峰值，最后回到地面并停留在可读的关系终态。",
+    "quick_start": {
+      "input_format": "两个身份稳定的主体 + 初始距离差 + 低位共同接触 + 至少1次中段升高 + 共享空中峰值 + 落地关系停留",
+      "recommended_input": "两台木偶修理机从不同深度靠近，在低位共同托起一枚发光环，经过腰部与头顶两次交接后一起跃到最高点，落回地面并并肩稳住发光环。",
+      "required_anchors": [
+        "接触发生前，先建立两个身份稳定的角色，以及清楚可读的深度或距离差。",
+        "以一次明确投入的接近动作，建立第一个低位共享接触状态。",
+        "把一次共同腾空或其他明显最高的联合动作保留为唯一顶点。",
+        "让两个角色回到地面或基准平面，并保持峰值后的关系；不得臆断来源未支持的结果。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先建立两个主体的深度差，再让同一次共享接触从低位逐级升高到唯一空中峰值，最后回到地面并停留在可读的关系终态。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先在不同纵深建立两个视觉上可区分的角色；由较近的角色发起一次连续交接，让双方共享接触的高度从地面经清楚阶段逐级升到唯一空中顶点；随后让两个角色回到地面并保持可读的关系终态，不臆造胜负。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "接触发生前，先建立两个身份稳定的角色，以及清楚可读的深度或距离差。",
+          "purpose": "让发起动作的明确投入以及后续汇合都清楚可读。",
+          "ablation_failure": "从混乱的交流开始会消除基线，并使升级变得难以阅读。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "以一次明确投入的接近动作，建立第一个低位共享接触状态。",
+          "purpose": "提供可测量的接触基线而不是随机动作。",
+          "ablation_failure": "如果第一个事件没有共享接触，则后续的高度变化没有参考点。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在角色身份保持稳定的情况下，通过至少一次中间交换提高接触幅度或高度。",
+          "purpose": "将重复变成可见的升级阶梯。",
+          "ablation_failure": "在一个不变的高度上的接触感觉是重复的而不是渐进的。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-12"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "把一次共同腾空或其他明显最高的联合动作保留为唯一顶点。",
+          "purpose": "给阶梯一个明确无误的峰值。",
+          "ablation_failure": "多个同等高度的峰值会压平层级并削弱高潮。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "让两个角色回到地面或基准平面，并保持峰值后的关系；不得臆断来源未支持的结果。",
+          "purpose": "收束高度弧线，同时保留来源结果的不确定性。",
+          "ablation_failure": "顶点的结局感觉被截断了；宣布获胜者发明了证据。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "role_pair",
+          "constraint": "两个原创的稳定角色，具有明显不同的轮廓或功能。"
+        },
+        {
+          "name": "initial_gap",
+          "constraint": "第一个共享操作之前的可读深度、距离或水平间隔。"
+        },
+        {
+          "name": "contact_carrier",
+          "constraint": "一个由双方角色共同影响的原创物体、信号或任务。"
+        },
+        {
+          "name": "height_ladder",
+          "constraint": "至少具有连续因果切换的低、中和峰值共享状态。"
+        },
+        {
+          "name": "apex_realization",
+          "constraint": "一次明确无误的最高联合动作，不能用多个重复奇观替代。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "以验证为目的的景别设计，清楚比较基线、中段上升、顶点与回落。"
+        },
+        {
+          "name": "end_relationship",
+          "constraint": "一个稳定保持的峰值后关系，不臆断没有证据支持的胜者或诊断。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创画内线索，用声音或动作提示区分低位、上升、顶点与稳定阶段。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "两个穿着黑白连衣裙的幻想女性",
+        "金色和青色发光剑",
+        "月光云殿松台",
+        "精确的剑术编排和最后的低姿态"
+      ],
+      "instantiations": [
+        {
+          "concept": "在原创的风洞实验室内，两名发条风筝技术人员在不同的平台深度交替抓住并重定向一个上升高度的织物校准环，将其稳定在天花板顶点，然后降落在相对的标记平台上，环悬挂在它们之间。",
+          "prompt_seed": "两名原创发条风筝技术人员使用共享的织物校准环在风洞内构建一个从低到高的接触梯，最终形成一个联合天花板顶点和一个接地的两个平台支撑。"
+        },
+        {
+          "concept": "在一座被水淹没的植物穹顶中，两架两栖维护无人机从不同水位开始，轮流轻推同一个漂浮传感浮标，使其沿溢洪道台阶逐级升高；它们在最高水级上方会合并共同稳定浮标，随后分别落在两侧河岸，浮标保持在中央。",
+          "prompt_seed": "两架原创两栖维护无人机在阶段性水位中升起一个传感器浮标，共享一个空中稳定顶点，并在不同的河岸上完成，没有比赛结果。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "这两个角色开始纠缠在一起。",
+          "repair": "在第一个共享操作之前显示稳定的身份和可读的间隙。"
+        },
+        {
+          "failure": "第一次接触已经是最大的了。",
+          "repair": "从一次低基线接触开始，以便后续状态可以明显上升。"
+        },
+        {
+          "failure": "重复的事件停留在一个高度。",
+          "repair": "为每个交换分配更高的接触级别或更大的共享幅度。"
+        },
+        {
+          "failure": "几个平等的空中山峰争夺注意力。",
+          "repair": "只保留一次明确无误的最高联合动作。"
+        },
+        {
+          "failure": "结局发明了胜利者或跳过返回。",
+          "repair": "将两个角色返回到基线平面并保持中立的顶点后关系。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在原创的风洞实验室内，两名发条风筝技术人员在不同的平台深度交替抓住并重定向一个上升高度的织物校准环，将其稳定在天花板顶点，然后降落在相对的标记平台上，环悬挂在它们之间。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "role_pair",
+            "initial_gap",
+            "contact_carrier",
+            "height_ladder",
+            "apex_realization",
+            "camera_grammar",
+            "end_relationship",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在一座被水淹没的植物穹顶中，两架两栖维护无人机从不同水位开始，轮流轻推同一个漂浮传感浮标，使其沿溢洪道台阶逐级升高；它们在最高水级上方会合并共同稳定浮标，随后分别落在两侧河岸，浮标保持在中央。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "role_pair",
+            "initial_gap",
+            "contact_carrier",
+            "height_ladder",
+            "apex_realization",
+            "camera_grammar",
+            "end_relationship",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

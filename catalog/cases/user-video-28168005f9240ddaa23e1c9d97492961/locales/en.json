@@ -1,0 +1,224 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-28168005f9240ddaa23e1c9d97492961",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "d039464c7c5dade2eb14f9915492250e1a09d83ef164875ad2aa57b5bdea7566",
+    "creative_dna_sha256": "2fc76040d5328baa80aed317c79db0f47eaddd43a9ab639bf7419f08f9a67524"
+  },
+  "content": {
+    "title": "Foreground Alignment | One Gesture Changes the Background State",
+    "summary": "Establish a fixed foreground-background composition and a readable baseline state. Move one foreground effector along a clear path, trigger exactly one aligned background change, then prove persistence through a hold, a clear-away, and a final confirmation.",
+    "quick_start": {
+      "input_format": "Fixed front and rear foreground + readable reference state + single foreground action path + one alignment trigger + state retention + confirmation after clearing",
+      "recommended_input": "The brass planetarium puppet raises its thin indicator rod to clearly align with the moon disk in the background; the moon disk only rotates once and the mechanical label reads from PARKED to TRACKING. The puppet first maintains the joint proof, then lowers the indicator rod, and finally lights up only a green confirmation light.",
+      "required_anchors": [
+        "Establish one stable subject-target geography and one readable baseline state before the effector enters.",
+        "Use one unambiguous effector path that ends in a clean foreground-to-background alignment with the target.",
+        "Change exactly one target state during or immediately after the alignment, without asserting literal contact that is not shown.",
+        "End on the persistent changed state with one brief acknowledgment or recall gesture, not a second state change."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Establish a fixed foreground-background composition and a readable baseline state. Move one foreground effector along a clear path, trigger exactly one aligned background change, then prove persistence through a hold, a clear-away, and a final confirmation.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "In a fixed layered composition, establish one readable background state, move one foreground effector along a clean path until it visually aligns with the target, change exactly one target state during that alignment, hold the new state long enough to read, then clear the effector and finish by recalling or acknowledging the persistent result.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one stable subject-target geography and one readable baseline state before the effector enters.",
+          "purpose": "Gives the viewer a before-state and a precise interaction destination.",
+          "ablation_failure": "If the target is already covered or changing, the later gesture has no measurable effect.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use one unambiguous effector path that ends in a clean foreground-to-background alignment with the target.",
+          "purpose": "Turns depth mismatch into a legible apparent interaction.",
+          "ablation_failure": "A wandering gesture or several candidate targets makes causality unreadable.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-08"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Change exactly one target state during or immediately after the alignment, without asserting literal contact that is not shown.",
+          "purpose": "Provides a single causal payoff while preserving the visual nature of the trick.",
+          "ablation_failure": "Multiple changes feel like a generic interface demo; no change makes the gesture decorative.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-04",
+            "obs-07"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Hold the aligned effector and changed state together, then clear the effector while the result persists.",
+          "purpose": "First binds action to result, then proves the result independently.",
+          "ablation_failure": "Cutting immediately after the change hides whether the new state is stable.",
+          "evidence_ids": [
+            "beat-03",
+            "beat-04",
+            "obs-06",
+            "obs-11"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End on the persistent changed state with one brief acknowledgment or recall gesture, not a second state change.",
+          "purpose": "Closes the interaction and can create a changed-state loop endpoint.",
+          "ablation_failure": "Resetting to baseline erases the proof; adding another state dilutes the single-action mechanism.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-12",
+            "obs-17"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "foreground_subject",
+          "constraint": "One original subject with a clearly readable effector and stable identity."
+        },
+        {
+          "name": "background_target",
+          "constraint": "One original target whose baseline and changed states are visually distinct."
+        },
+        {
+          "name": "effector_path",
+          "constraint": "One clean trajectory ending at a precise apparent alignment."
+        },
+        {
+          "name": "state_pair",
+          "constraint": "One before state and one after state; no additional state family."
+        },
+        {
+          "name": "depth_grammar",
+          "constraint": "A composition that keeps foreground effector, subject and rear target simultaneously legible."
+        },
+        {
+          "name": "confirmation_hold",
+          "constraint": "Enough time to read both aligned action and changed result."
+        },
+        {
+          "name": "release_or_recall",
+          "constraint": "Clear the target once, then optionally acknowledge the unchanged result."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "Original physical cues for approach, state change, hold and release."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "T8star-Aix",
+        "+关注",
+        "已关注",
+        "source profile counts and platform labels",
+        "source face, hairstyle and brown shirt",
+        "source pink-white profile interface and exact pointing placement"
+      ],
+      "instantiations": [
+        {
+          "concept": "A stop-motion brass planetarium docent stands before a deep mechanical star panel. Its slender pointer aligns with a moon dial as the panel flips from 'PARKED' to 'TRACKING'; the puppet lowers the pointer, then returns it beside the unchanged confirmation lamp.",
+          "prompt_seed": "Brass planetarium puppet, fixed layered diorama, one pointer-to-dial alignment, one PARKED-to-TRACKING change, confirmation hold, clear proof and changed-state recall."
+        },
+        {
+          "concept": "An underwater inspection drone hovers in front of a pressure-window iris. One manipulator aligns with a recessed latch, the iris changes from a narrow red slit to an open green ring, the drone backs away to reveal the stable aperture and finally sweeps one spotlight across it.",
+          "prompt_seed": "Underwater drone and pressure iris, diagonal manipulator alignment, one mechanical state change, retreat for proof and final spotlight acknowledgment."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "The target state is not readable before the gesture.",
+          "repair": "Hold one high-contrast baseline state before the effector enters."
+        },
+        {
+          "failure": "The effector overlaps several controls or follows an ambiguous path.",
+          "repair": "Use one target and one clean vector ending in precise alignment."
+        },
+        {
+          "failure": "Several background elements change together.",
+          "repair": "Change exactly one declared state pair and freeze all other anchors."
+        },
+        {
+          "failure": "The hand or tool never clears the result.",
+          "repair": "After the joint confirmation hold, retract it so the changed state can be read independently."
+        },
+        {
+          "failure": "The ending triggers a second state change.",
+          "repair": "Use only an acknowledgment gesture or light sweep while preserving the confirmed state."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A stop-motion brass planetarium docent stands before a deep mechanical star panel. Its slender pointer aligns with a moon dial as the panel flips from 'PARKED' to 'TRACKING'; the puppet lowers the pointer, then returns it beside the unchanged confirmation lamp.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "foreground_subject",
+            "background_target",
+            "effector_path",
+            "state_pair",
+            "depth_grammar",
+            "confirmation_hold",
+            "release_or_recall",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An underwater inspection drone hovers in front of a pressure-window iris. One manipulator aligns with a recessed latch, the iris changes from a narrow red slit to an open green ring, the drone backs away to reveal the stable aperture and finally sweeps one spotlight across it.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "foreground_subject",
+            "background_target",
+            "effector_path",
+            "state_pair",
+            "depth_grammar",
+            "confirmation_hold",
+            "release_or_recall",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

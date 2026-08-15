@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-28168005f9240ddaa23e1c9d97492961",
+  "slug": "trigger-background-state-with-foreground-alignment",
+  "title": "手势对齐｜前景动作触发后景状态",
+  "source_title": "手势对齐｜前景指尖触发后景状态变化",
+  "summary": "固定分层构图先给出一个后景基准状态，前景动作沿清楚路径完成视线对齐，只触发一次状态变化，再通过保持、清开与回指确认结果持续。",
+  "status": "released",
+  "source_duration_seconds": 6.95,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/trigger-background-state-with-foreground-alignment",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-28168005f9240ddaa23e1c9d97492961/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-28168005f9240ddaa23e1c9d97492961/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-foreground-effector-background-state-change-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "固定前后景 + 可读基准状态 + 单一前景动作路径 + 一次对齐触发 + 状态保持 + 清开后确认",
+  "recommended_input": "黄铜天文馆木偶抬起细指示杆，与后景月盘清楚对齐；月盘只转一次，机械标签从 PARKED 翻成 TRACKING。木偶先保持共同证明，再放下指示杆，最后只点亮一个绿色确认灯。",
+  "required_anchors": [
+    "Establish one stable subject-target geography and one readable baseline state before the effector enters.",
+    "Use one unambiguous effector path that ends in a clean foreground-to-background alignment with the target.",
+    "Change exactly one target state during or immediately after the alignment, without asserting literal contact that is not shown.",
+    "End on the persistent changed state with one brief acknowledgment or recall gesture, not a second state change."
+  ],
+  "tags": [
+    "foreground",
+    "effector",
+    "background",
+    "state",
+    "change"
+  ],
+  "quality": {
+    "weighted_score": 4.729,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-12T13:30:55+08:00",
+  "updated_at": "2026-08-12T13:59:31+08:00"
+}

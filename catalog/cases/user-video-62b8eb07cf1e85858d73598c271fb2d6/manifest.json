@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-62b8eb07cf1e85858d73598c271fb2d6",
+  "slug": "alternate-graphic-reset-and-action-proof",
+  "title": "图形复位｜身份卡与动作证明交替",
+  "source_title": "图形复位｜角色身份卡与动作证明交替",
+  "summary": "从一次紧凑的身份激活开始，让稳定的图形身份复位与短促的实拍动作证明交替出现；后段提高动作难度，最后把峰值动作轮廓收回到一帧完整主体锁定图中。",
+  "status": "released",
+  "source_duration_seconds": 15.083333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/alternate-graphic-reset-and-action-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-62b8eb07cf1e85858d73598c271fb2d6/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-62b8eb07cf1e85858d73598c271fb2d6/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-graphic-reset-action-proof-hero-lockup-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "同一原创角色或机器 + 固定图形身份卡 + 至少2段不同动作证明 + 图形复位分隔 + 后段能力升级 + 动作轮廓回收到最终全身锁定",
+  "recommended_input": "一台原创折叠式轨道救援无人机先以白色陶瓷装甲、铜色关节和单一红色图标完成身份激活；石墨灰技术卡复位身份，再分别用抓取漂浮器材和抬起外部护板证明两项能力；最后把无人机与护板的斜向轮廓收回到最终全身技术卡中。",
+  "required_anchors": [
+    "Begin with one compact identity activation before showing the complete subject.",
+    "Establish one clearly different graphic reset mode that preserves subject silhouette and proportions.",
+    "Raise physical demand in the later action proof while keeping the same defining silhouette and direction cues.",
+    "Carry the peak action contour into the final graphic state and hold a complete-subject lockup."
+  ],
+  "tags": [
+    "graphic",
+    "reset",
+    "action",
+    "proof",
+    "hero",
+    "lockup"
+  ],
+  "quality": {
+    "weighted_score": 4.737,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-16T01:52:51+08:00",
+  "updated_at": "2026-08-16T02:13:18+08:00"
+}
