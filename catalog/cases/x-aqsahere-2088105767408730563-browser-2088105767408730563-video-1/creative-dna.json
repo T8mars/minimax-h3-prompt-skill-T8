@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin with an external observer discovering and following one subject through a readable environment. Let the subject complete one site-specific exchange while the observer still owns the view, then provide one wider location proof. Use one motivated continuity bridge such as occlusion, equipment installation, mounting or carrier handoff before switching exactly once to a subject-controlled capture that still preserves subject identity and environmental context.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one subject through an external trailing or observational camera.",
+      "purpose": "Defines initial camera ownership and spatial relationship.",
+      "ablation_failure": "Opening in selfie mode removes the handoff.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one site-specific exchange while the observer still owns the view; the exchange may be adjustment, response, installation, activation or material contact and must not require picking up or presenting an object.",
+      "purpose": "Connects subject and setting before camera ownership changes.",
+      "ablation_failure": "A generic pose or decontextualized gesture provides no environmental exchange.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Provide one wider location proof with stable identity before the ownership switch.",
+      "purpose": "Makes the final background and subject auditable.",
+      "ablation_failure": "Continuous face close-ups leave the setting unproven.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one motivated continuity bridge immediately before the switch, such as occlusion, equipment installation, mounting or carrier handoff.",
+      "purpose": "Makes the ownership change causal without prescribing source staging.",
+      "ablation_failure": "An unrelated cut to subject-controlled footage breaks continuity.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Switch exactly once to a subject-controlled capture and keep stable identity plus environmental context readable.",
+      "purpose": "Completes the change in camera ownership.",
+      "ablation_failure": "Returning to observer coverage or losing all location evidence weakens the terminal handoff.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source young woman with long dark hair and pale beach outfit",
+    "the source tropical foliage, turquoise bay and white sand",
+    "the source sandals and small shell-like found object",
+    "the source exact crouch, seated portrait, shoreline walk and selfie order",
+    "the source beauty-vlog facial presentation and beach composition"
+  ],
+  "instantiations": [
+    {
+      "concept": "In an original solar greenhouse, a ceiling-rail camera follows a compact clay inspection robot through hanging vines. The robot calibrates three irrigation louvers and the resulting light bands sweep across the crop bed; a wide observer view proves the full greenhouse response. Under an opaque maintenance gantry the robot docks with a detachable camera cradle, then emerges carrying that camera in a subject-controlled front-facing status view with the calibrated louvers behind it.",
+      "prompt_seed": "In an original solar greenhouse, a ceiling-rail camera follows a compact clay inspection robot through hanging vines. The robot calibrates three irrigation louvers and the resulting light bands sweep across the crop bed; a wide observer view proves the full greenhouse response. Under an opaque maintenance gantry the robot docks with a detachable camera cradle, then emerges carrying that camera in a subject-controlled front-facing status view with the calibrated louvers behind it."
+    },
+    {
+      "concept": "In paper-cut undersea research, a fixed reef drone observes a felt diver entering a kelp corridor. The diver taps an acoustic beacon and waits while three light rings propagate through the reef; a wide current map proves the environmental response. A bubble curtain then occludes the diver while she unclips the drone's tethered inspection camera, and the image returns once as her controlled inward-facing field note with beacon rings still visible behind her.",
+      "prompt_seed": "In paper-cut undersea research, a fixed reef drone observes a felt diver entering a kelp corridor. The diver taps an acoustic beacon and waits while three light rings propagate through the reef; a wide current map proves the environmental response. A bubble curtain then occludes the diver while she unclips the drone's tethered inspection camera, and the image returns once as her controlled inward-facing field note with beacon rings still visible behind her."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Opening in selfie mode removes the handoff.",
+      "repair": "Establish one subject through an external trailing or observational camera."
+    },
+    {
+      "failure": "A generic pose or decontextualized gesture provides no environmental exchange.",
+      "repair": "Use one site-specific exchange while the observer still owns the view; the exchange may be adjustment, response, installation, activation or material contact and must not require picking up or presenting an object."
+    },
+    {
+      "failure": "Continuous face close-ups leave the setting unproven.",
+      "repair": "Provide one wider location proof with stable identity before the ownership switch."
+    },
+    {
+      "failure": "An unrelated cut to subject-controlled footage breaks continuity.",
+      "repair": "Use one motivated continuity bridge immediately before the switch, such as occlusion, equipment installation, mounting or carrier handoff."
+    },
+    {
+      "failure": "Returning to observer coverage or losing all location evidence weakens the terminal handoff.",
+      "repair": "Switch exactly once to a subject-controlled capture and keep stable identity plus environmental context readable."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In an original solar greenhouse, a ceiling-rail camera follows a compact clay inspection robot through hanging vines. The robot calibrates three irrigation louvers and the resulting light bands sweep across the crop bed; a wide observer view proves the full greenhouse response. Under an opaque maintenance gantry the robot docks with a detachable camera cradle, then emerges carrying that camera in a subject-controlled front-facing status view with the calibrated louvers behind it.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In paper-cut undersea research, a fixed reef drone observes a felt diver entering a kelp corridor. The diver taps an acoustic beacon and waits while three light rings propagate through the reef; a wide current map proves the environmental response. A bubble curtain then occludes the diver while she unclips the drone's tethered inspection camera, and the image returns once as her controlled inward-facing field note with beacon rings still visible behind her.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

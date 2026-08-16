@@ -179,6 +179,9 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![数据折叠｜总量下钻到当前值](catalog/cases/user-video-123094afc2fed97c8846b3cb370ead5f/preview.gif)](https://local.t8/user-supplied/123094afc2fed97c8846b3cb370ead5f) | **[数据折叠｜总量下钻到当前值](catalog/cases/user-video-123094afc2fed97c8846b3cb370ead5f/SUMMARY.md)**<br><sub>user-video-123094afc2fed97c8846b3cb370ead5f</sub> | MiniMax H3 · Seedance 2.0 |
 | [![手势对齐｜前景动作触发后景状态](catalog/cases/user-video-28168005f9240ddaa23e1c9d97492961/preview.gif)](https://local.t8/user-supplied/28168005f9240ddaa23e1c9d97492961) | **[手势对齐｜前景动作触发后景状态](catalog/cases/user-video-28168005f9240ddaa23e1c9d97492961/SUMMARY.md)**<br><sub>user-video-28168005f9240ddaa23e1c9d97492961</sub> | MiniMax H3 · Seedance 2.0 |
 | [![图形复位｜身份卡与动作证明交替](catalog/cases/user-video-62b8eb07cf1e85858d73598c271fb2d6/preview.gif)](https://local.t8/user-supplied/62b8eb07cf1e85858d73598c271fb2d6) | **[图形复位｜身份卡与动作证明交替](catalog/cases/user-video-62b8eb07cf1e85858d73598c271fb2d6/SUMMARY.md)**<br><sub>user-video-62b8eb07cf1e85858d73598c271fb2d6</sub> | MiniMax H3 · Seedance 2.0 |
+| [![计划对照｜固定分镜条见证执行升级](catalog/cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/preview.gif)](https://x.com/beginnersblog1/status/2088312289405673506) | **[计划对照｜固定分镜条见证执行升级](catalog/cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/SUMMARY.md)**<br><sub>x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![日程闭环｜重复锚点串联整日任务](catalog/cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/preview.gif)](https://x.com/aimikoda/status/2088569547494199485) | **[日程闭环｜重复锚点串联整日任务](catalog/cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![镜头交接｜外部观察转为主体掌镜](catalog/cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/preview.gif)](https://x.com/Aqsahere_/status/2088105767408730563) | **[镜头交接｜外部观察转为主体掌镜](catalog/cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/SUMMARY.md)**<br><sub>x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -187,7 +190,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 下载 `T8-Prompt-Library-Setup-v1.1.6.exe`；macOS 下载 `T8-Prompt-Library-v1.1.6-mac-universal.dmg`。
+2. Windows 下载 `T8-Prompt-Library-Setup-v1.1.7.exe`；macOS 下载 `T8-Prompt-Library-v1.1.7-mac-universal.dmg`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
 
@@ -246,7 +249,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.1.6**。项目使用十进制进位：
+当前目标版本是 **v1.1.7**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0

@@ -131,7 +131,7 @@ async function run() {
     await page.locator("#platform-filter").selectOption("platform:x");
     assert.ok(await page.locator(".case-card").count() > 10, "stable platform filter must retain the X case set");
 
-    await page.locator(".case-card").first().dispatchEvent("click");
+    await page.locator(".case-card").first().click();
     await page.waitForSelector("#case-dialog[open]");
     assert.equal(await page.locator("#detail-favorite").getAttribute("aria-pressed"), "true", "detail favorite state must match the persisted card state");
     await page.locator("#detail-collections").dispatchEvent("click");

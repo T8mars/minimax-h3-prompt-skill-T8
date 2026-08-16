@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "446ab5f5750f865a12fd8ff5f03cc50d6c26c8e192c814347de57ba58cfcf719",
+    "creative_dna_sha256": "976d7f5ee34bb5b24f132b184e657f4b24701cc222f6efdb0f904953a393f90a"
+  },
+  "content": {
+    "title": "Bounded Day Loop | Recurring Anchors Across Daily Duties",
+    "summary": "Begin at an inactive base, carry stable identity and object anchors through preparation, departure, transit and one destination duty, then return those same anchors to a resting state that closes the day.",
+    "quick_start": {
+      "input_format": "Stationary base and time reminder + at least three preparation tasks + identity/carrying anchor points + commuting and destination tasks + return to base for rest",
+      "recommended_input": "At dawn in an original miniature seed archive, a felt librarian rests in a leaf hammock beside a brass dew clock, three empty seed slots and a moss satchel. One chime wakes the librarian, who prepares three seed envelopes, leaves the alcove with the satchel and one envelope corner still visible, completes one catalogue duty, then returns the envelopes and satchel to their original places and settles back into the same hammock.",
+      "required_anchors": [
+        "Open on one inactive base state with a visible time or wake cue.",
+        "Build a readable readiness package through at least three distinct preparation duties.",
+        "Complete one visible destination duty before beginning the return.",
+        "Return the same identity and object anchors to the original base and settle into a resting state."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Compact daily-loop stories that preserve recurring identity and object anchors across preparation, transit, one destination task and a visible return.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Open on one inactive home state, build a visible readiness package through several compact preparation duties, carry recurring identity and object anchors through departure, transit and one productive destination duty, then return those same anchors to the original base and settle into a resting state that visibly closes the day loop.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Open on one inactive base state with a visible time or wake cue.",
+          "purpose": "Defines the start of a bounded day cycle.",
+          "ablation_failure": "An already active opening removes the loop baseline.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Build a readable readiness package through at least three distinct preparation duties.",
+          "purpose": "Makes departure causally earned.",
+          "ablation_failure": "Unrelated grooming inserts create montage without progression.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Carry stable identity and at least one recurring object anchor from the base into transit.",
+          "purpose": "Preserves the subject through dense location changes.",
+          "ablation_failure": "Changing identity or losing all anchors breaks the day route.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Complete one visible destination duty before beginning the return.",
+          "purpose": "Gives the commute a concrete purpose.",
+          "ablation_failure": "Travel without a task leaves the middle unresolved.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Return the same identity and object anchors to the original base and settle into a resting state.",
+          "purpose": "Closes the day as a visible cycle.",
+          "ablation_failure": "Ending elsewhere turns the sequence into an open travel montage.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source black-haired anime woman with red glasses and S cardigan",
+        "the source smartphone alarm, toast, toothbrush and shoulder bag",
+        "the source apartment, subway platform, office and bedroom return",
+        "the source exact morning routine and commute order",
+        "the source clothing marks, laptop interface and room layout"
+      ],
+      "instantiations": [
+        {
+          "concept": "In an original miniature seed archive, a felt librarian wakes beside a brass dew clock, cleans its viewing lens, packs three labeled seed envelopes and fastens a moss satchel, rides a leaf elevator to catalogue one glowing pod, then returns the same satchel and envelopes to its alcove and folds into a hammock beside the dew clock.",
+          "prompt_seed": "In an original miniature seed archive, a felt librarian wakes beside a brass dew clock, cleans its viewing lens, packs three labeled seed envelopes and fastens a moss satchel, rides a leaf elevator to catalogue one glowing pod, then returns the same satchel and envelopes to its alcove and folds into a hammock beside the dew clock."
+        },
+        {
+          "concept": "In realistic orbital maintenance, one compact inspection drone wakes on a charging cradle, clears its optic, loads a sealant cartridge and unlocks two stabilizers, travels through a tube junction to patch one radiator seam, then returns with the same cartridge shell and status light to dock and power down.",
+          "prompt_seed": "In realistic orbital maintenance, one compact inspection drone wakes on a charging cradle, clears its optic, loads a sealant cartridge and unlocks two stabilizers, travels through a tube junction to patch one radiator seam, then returns with the same cartridge shell and status light to dock and power down."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "An already active opening removes the loop baseline.",
+          "repair": "Open on one inactive base state with a visible time or wake cue."
+        },
+        {
+          "failure": "Unrelated grooming inserts create montage without progression.",
+          "repair": "Build a readable readiness package through at least three distinct preparation duties."
+        },
+        {
+          "failure": "Changing identity or losing all anchors breaks the day route.",
+          "repair": "Carry stable identity and at least one recurring object anchor from the base into transit."
+        },
+        {
+          "failure": "Travel without a task leaves the middle unresolved.",
+          "repair": "Complete one visible destination duty before beginning the return."
+        },
+        {
+          "failure": "Ending elsewhere turns the sequence into an open travel montage.",
+          "repair": "Return the same identity and object anchors to the original base and settle into a resting state."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "In an original miniature seed archive, a felt librarian wakes beside a brass dew clock, cleans its viewing lens, packs three labeled seed envelopes and fastens a moss satchel, rides a leaf elevator to catalogue one glowing pod, then returns the same satchel and envelopes to its alcove and folds into a hammock beside the dew clock.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "In realistic orbital maintenance, one compact inspection drone wakes on a charging cradle, clears its optic, loads a sealant cartridge and unlocks two stabilizers, travels through a tube junction to patch one radiator seam, then returns with the same cartridge shell and status light to dock and power down.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

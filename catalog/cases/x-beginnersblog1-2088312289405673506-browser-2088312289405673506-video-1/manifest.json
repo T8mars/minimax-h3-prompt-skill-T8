@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1",
+  "slug": "persistent-plan-strip-execution-escalation",
+  "title": "计划对照｜固定分镜条见证执行升级",
+  "source_title": "计划对照｜固定分镜条与追逐执行同屏推进",
+  "summary": "让一条静态计划板持续可读，执行区按计划顺序逐步完成动作，并用不断累积的现场变化证明执行正在推进；最后让实际结果与计划末项形成可读闭合。",
+  "status": "released",
+  "source_duration_seconds": 15.253333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/persistent-plan-strip-execution-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-persistent-plan-strip-execution-escalation-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "持续可读的计划板 + 独立执行区 + 计划顺序推进 + 至少三项可见状态变化 + 计划与终态同框",
+  "recommended_input": "原创极地微缩观测站内，左侧五格黄铜任务计划条始终完整可读，右侧较大执行区建立陶瓷勘测自动机、三座冰晶站、倾斜透镜和折叠信标；自动机支撑身体并把透镜旋到正确轴线，冰面出现一条细琥珀反射；左侧计划条仍固定；信标发出一道稳定蓝白光柱并与计划条最后一格对齐；自动机、三座完成站和完整计划条同框停留",
+  "required_anchors": [
+    "Establish one persistent planning artifact and one separate execution field in the opening.",
+    "Advance the execution field while keeping the planning artifact unchanged and readable.",
+    "Accumulate at least two further state changes while preserving subject identity, route and plan visibility.",
+    "Hold a terminal result with the persistent plan still visible for direct comparison."
+  ],
+  "tags": [
+    "persistent",
+    "plan",
+    "strip",
+    "execution",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.752,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-16T09:23:36+08:00",
+  "updated_at": "2026-08-16T09:55:24+08:00"
+}

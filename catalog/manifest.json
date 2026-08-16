@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.1.6",
-  "generated_at": "2026-08-16T02:21:23+08:00",
-  "case_count": 113,
+  "catalog_version": "1.1.7",
+  "generated_at": "2026-08-16T10:02:39+08:00",
+  "case_count": 116,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -3969,6 +3969,114 @@
       ],
       "quality_score": 4.737,
       "updated_at": "2026-08-16T02:13:18+08:00"
+    },
+    {
+      "case_id": "x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1",
+      "slug": "persistent-plan-strip-execution-escalation",
+      "title": "计划对照｜固定分镜条见证执行升级",
+      "status": "released",
+      "summary": "让一条静态计划板持续可读，执行区按计划顺序逐步完成动作，并用不断累积的现场变化证明执行正在推进；最后让实际结果与计划末项形成可读闭合。",
+      "manifest_path": "cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/manifest.json",
+      "summary_path": "cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/SUMMARY.md",
+      "source_path": "cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/source.json",
+      "creative_dna_path": "cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/preview.gif",
+        "poster": "cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/poster.webp",
+        "mp4": "media/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/persistent-plan-strip-execution-escalation",
+      "template_id": "t8-case-persistent-plan-strip-execution-escalation-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "persistent",
+        "plan",
+        "strip",
+        "execution",
+        "escalation"
+      ],
+      "quality_score": 4.752,
+      "updated_at": "2026-08-16T09:55:24+08:00"
+    },
+    {
+      "case_id": "x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1",
+      "slug": "bounded-day-loop-recurring-anchor",
+      "title": "日程闭环｜重复锚点串联整日任务",
+      "status": "released",
+      "summary": "从一个静止起点出发，用重复人物特征和随身物串联准备、出发、通勤与工作，并在片尾回到与开场相呼应的休息状态；高密度切换仍保持一天的因果顺序。",
+      "manifest_path": "cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/manifest.json",
+      "summary_path": "cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/SUMMARY.md",
+      "source_path": "cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/source.json",
+      "creative_dna_path": "cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/preview.gif",
+        "poster": "cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/poster.webp",
+        "mp4": "media/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/bounded-day-loop-recurring-anchor",
+      "template_id": "t8-case-bounded-day-loop-recurring-anchor-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "bounded",
+        "day",
+        "loop",
+        "recurring",
+        "anchor"
+      ],
+      "quality_score": 4.721,
+      "updated_at": "2026-08-16T09:55:24+08:00"
+    },
+    {
+      "case_id": "x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1",
+      "slug": "observer-to-subject-camera-handoff",
+      "title": "镜头交接｜外部观察转为主体掌镜",
+      "status": "released",
+      "summary": "先由外部观察镜头发现并跟随主体，让主体完成一次地点专属的环境交互，再给出环境尺度证明；随后使用遮挡、设备安装或载体交接等有动机的连续桥，片尾只把拍摄权交给主体一次。",
+      "manifest_path": "cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/manifest.json",
+      "summary_path": "cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/SUMMARY.md",
+      "source_path": "cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/source.json",
+      "creative_dna_path": "cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/preview.gif",
+        "poster": "cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/poster.webp",
+        "mp4": "media/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/observer-to-subject-camera-handoff",
+      "template_id": "t8-case-observer-to-subject-camera-handoff-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "observer",
+        "to",
+        "subject",
+        "camera",
+        "handoff"
+      ],
+      "quality_score": 4.725,
+      "updated_at": "2026-08-16T09:55:24+08:00"
     }
   ]
 }

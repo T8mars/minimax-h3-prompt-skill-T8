@@ -124,6 +124,8 @@ $manifestJson = $manifest | ConvertTo-Json -Depth 8
 New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
 $manifestOutput = Join-Path $OutputDir "media-pack-manifest.json"
 [System.IO.File]::WriteAllText($manifestOutput, $manifestJson + [Environment]::NewLine, [System.Text.UTF8Encoding]::new($false))
+$stagedManifest = Join-Path $InputDir "media-pack-manifest.json"
+[System.IO.File]::WriteAllText($stagedManifest, $manifestJson + [Environment]::NewLine, [System.Text.UTF8Encoding]::new($false))
 $zipPath = Join-Path $OutputDir "prompt-library-media-v$Version.zip"
 if (Test-Path -LiteralPath $zipPath) { Remove-Item -LiteralPath $zipPath -Force }
 

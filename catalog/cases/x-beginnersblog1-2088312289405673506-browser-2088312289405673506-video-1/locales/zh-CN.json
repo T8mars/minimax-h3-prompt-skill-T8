@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "b69b43871280553e18891bd7ea040f156e8bd83489d0c0f1cdfef6e53f0f3a12",
+    "creative_dna_sha256": "c6ae37847ca37acae349b92a0b34f9d11c749dd23afef3b98fedf62513f45cac"
+  },
+  "content": {
+    "title": "计划对照｜固定分镜条见证执行升级",
+    "summary": "让一条静态计划板持续可读，执行区按计划顺序逐步完成动作，并用不断累积的现场变化证明执行正在推进；最后让实际结果与计划末项形成可读闭合。",
+    "quick_start": {
+      "input_format": "持续可读的计划板 + 独立执行区 + 计划顺序推进 + 至少三项可见状态变化 + 计划与终态同框",
+      "recommended_input": "原创极地微缩观测站内，左侧五格黄铜任务计划条始终完整可读，右侧较大执行区建立陶瓷勘测自动机、三座冰晶站、倾斜透镜和折叠信标；自动机支撑身体并把透镜旋到正确轴线，冰面出现一条细琥珀反射；左侧计划条仍固定；信标发出一道稳定蓝白光柱并与计划条最后一格对齐；自动机、三座完成站和完整计划条同框停留",
+      "required_anchors": [
+        "开场同时建立一块持续可见的计划板和一个独立执行区。",
+        "执行区继续推进，而计划板始终保持不变且清楚可读。",
+        "至少再累积两项状态变化，同时保持主体身份、行进路线和计划板可见。",
+        "最终结果停留时仍让计划板可见，以便直接对照。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让一条静态计划板持续可读，执行区按计划顺序逐步完成动作，并用不断累积的现场变化证明执行正在推进；最后让实际结果与计划末项形成可读闭合。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让一块紧凑的计划板始终可见、位置稳定，同时较大的执行区按计划顺序逐项行动。计划板保持不变，执行区则不断累积真实状态变化和更强后果，最后停在一个可与计划末项直接对照的终态。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "开场同时建立一块持续可见的计划板和一个独立执行区。",
+          "purpose": "建立清楚的计划—结果对照关系。",
+          "ablation_failure": "计划板若被隐藏或太晚出现，整段就会退化为普通动作镜头。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "执行区继续推进，而计划板始终保持不变且清楚可读。",
+          "purpose": "让每一步进展都能依据稳定参照来衡量。",
+          "ablation_failure": "计划板与执行区若同时变化，就会破坏可核对关系。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "把一项计划动作转化为执行区内可见的物理结果。",
+          "purpose": "证明计划正在被实际完成，而不是只被展示。",
+          "ablation_failure": "只有装饰性动作却没有结果，无法证明执行已经发生。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "至少再累积两项状态变化，同时保持主体身份、行进路线和计划板可见。",
+          "purpose": "在不丢失对照关系的前提下提升规模与后果。",
+          "ablation_failure": "彼此割裂的奇观会让计划与结果无法比较。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终结果停留时仍让计划板可见，以便直接对照。",
+          "purpose": "闭合从计划到执行的证据链。",
+          "ablation_failure": "若在结果出现前移除计划板，结尾就失去明确的验证依据。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创且身份稳定的主体，或一对关系清楚的角色。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点、且不复用来源表面的原创场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个按可见阶段逐步变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一套克制的表演或运动规则，确保机制清楚可读。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "按信息顺序证明每种状态，但不复制来源的镜头边界。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个明确的物理、信息或社会终态。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "一套原创的画内线索层级；不得声称来源中存在未经证实的声音。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源作品中的灰猫与棕鼠",
+        "来源作品中被破坏的室内房间、家具和纸箱",
+        "来源作品持续显示的九格 CAT/MOUSE 铅笔分镜板",
+        "来源作品的精确追逐路线与家具破坏顺序",
+        "FRAGILE、THIS SIDE UP 和 Beginnersblog.org 水印"
+      ],
+      "instantiations": [
+        {
+          "concept": "在原创微距冰原观测站中，五格黄铜任务图固定在左侧边缘；微型陶瓷勘测自动机在右侧较大的执行区穿过三座冰晶站，校正倾斜透镜、升起信标，最后让信标与任务图末格对齐。",
+          "prompt_seed": "在原创微距冰原观测站中，五格黄铜任务图固定在左侧边缘；微型陶瓷勘测自动机在右侧较大的执行区穿过三座冰晶站，校正倾斜透镜、升起信标，最后让信标与任务图末格对齐。"
+        },
+        {
+          "concept": "在纸艺定格物流仓中，狭长的高架路线卡固定在画面上方；毛毡包裹无人机依次取封签、穿过折叠桥、调整滚动货箱方向并把它送入标记升降机，最后让升降机完成状态与未变化的路线卡同框。",
+          "prompt_seed": "在纸艺定格物流仓中，狭长的高架路线卡固定在画面上方；毛毡包裹无人机依次取封签、穿过折叠桥、调整滚动货箱方向并把它送入标记升降机，最后让升降机完成状态与未变化的路线卡同框。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "计划板若被隐藏或太晚出现，整段就会退化为普通动作镜头。",
+          "repair": "开场同时建立一块持续可见的计划板和一个独立执行区。"
+        },
+        {
+          "failure": "计划板与执行区若同时变化，就会破坏可核对关系。",
+          "repair": "执行区继续推进，而计划板始终保持不变且清楚可读。"
+        },
+        {
+          "failure": "只有装饰性动作却没有结果，无法证明执行已经发生。",
+          "repair": "把一项计划动作转化为执行区内可见的物理结果。"
+        },
+        {
+          "failure": "彼此割裂的奇观会让计划与结果无法比较。",
+          "repair": "至少再累积两项状态变化，同时保持主体身份、行进路线和计划板可见。"
+        },
+        {
+          "failure": "若在结果出现前移除计划板，结尾就失去明确的验证依据。",
+          "repair": "最终结果停留时仍让计划板可见，以便直接对照。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "在原创微距冰原观测站中，五格黄铜任务图固定在左侧边缘；微型陶瓷勘测自动机在右侧较大的执行区穿过三座冰晶站，校正倾斜透镜、升起信标，最后让信标与任务图末格对齐。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在纸艺定格物流仓中，狭长的高架路线卡固定在画面上方；毛毡包裹无人机依次取封签、穿过折叠桥、调整滚动货箱方向并把它送入标记升降机，最后让升降机完成状态与未变化的路线卡同框。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}
