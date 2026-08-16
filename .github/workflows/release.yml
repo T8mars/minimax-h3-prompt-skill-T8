@@ -226,7 +226,7 @@ jobs:
           if (-not (Test-Path (Join-Path $assets "T8-Prompt-Library-v$version-mac-universal.zip.blockmap"))) { throw "macOS ZIP blockmap is missing." }
 
       - name: Upload verified platform assets
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: t8-prompt-library-v${{ inputs.version }}-${{ matrix.platform }}
           path: .release-input/assets-${{ matrix.platform }}/*
