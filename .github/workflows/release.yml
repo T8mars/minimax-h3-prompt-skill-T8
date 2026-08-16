@@ -241,7 +241,7 @@ jobs:
       GH_REPO: ${{ github.repository }}
     steps:
       - name: Download both verified platform asset sets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           pattern: t8-prompt-library-v${{ inputs.version }}-*
           path: release-assets
