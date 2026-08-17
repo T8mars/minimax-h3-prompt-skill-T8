@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-hailuo-539984531455201282",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "9fdc4c77ab9ecdcfd73ba654753458b8cc29933edd616cce99a340e66ed234d7",
+    "creative_dna_sha256": "31db724a6dd6dad9fa34e3269a3590676e0afdce918927d8cd2cdf92c6229930"
+  },
+  "content": {
+    "title": "Style Carousel｜Identity Locked in a Cross-Style World",
+    "summary": "Lock the same high-position figure, face and core proportions, and allow the background system, color, clothing accessories and props to be switched in stages; at least two style channels are changed in each round but the identity anchor point is retained, and the density is gradually upgraded before returning to the final state of a readable portrait.",
+    "quick_start": {
+      "input_format": "Fixed subject identity and lens relationship + at least four style worlds with different materials/formats + changing two style channels at each stage + increasing density + readable identity final state",
+      "recommended_input": "In the original parchment warehouse, a brass clockwork courier establishes his identity with an oval panel, a crescent badge and a folding tool belt; the world changes to a pink plant console, the route ring is replaced by two transparent seed meters, the forearms become pink armor, and the face, body shape and badge remain unchanged; after passing briefly through the amber instrument cabin, he enters a restrained purple acoustic cabin, the courier retains the oval face plate and crescent badge, wears a listening disk and only reaches out to the camera once before staying",
+      "required_anchors": [
+        "Establish one stable identity, lens relation and recurring accessory against a low-density opening world.",
+        "Change the surrounding style world while keeping face, silhouette and camera axis stable.",
+        "Use at least one additional world with different layout logic rather than a palette swap alone.",
+        "Reach a denser terminal world but preserve a readable portrait-scale identity proof."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Lock the same high-position figure, face and core proportions, and allow the background system, color, clothing accessories and props to be switched in stages; at least two style channels are changed in each round but the identity anchor point is retained, and the density is gradually upgraded before returning to the final state of a readable portrait.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Lock one subject identity, lens position and performance scale before cycling through several materially different style worlds. Change at least two coordinated channels per phase—such as backdrop system, palette, graphic density, props or wardrobe accents—while preserving face, silhouette and one recurring accessory. Escalate world density, then return to a readable portrait-scale terminal state that proves identity survived the carousel.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one stable identity, lens relation and recurring accessory against a low-density opening world.",
+          "purpose": "Creates a comparison baseline for later style changes.",
+          "ablation_failure": "Beginning with maximal clutter hides identity continuity.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Change the surrounding style world while keeping face, silhouette and camera axis stable.",
+          "purpose": "Proves environment can vary independently of the subject.",
+          "ablation_failure": "Simultaneous identity and camera replacement prevents comparison.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Escalate to a second complete world by changing at least two coordinated style channels.",
+          "purpose": "Makes the carousel a system rather than a color filter.",
+          "ablation_failure": "Changing only hue leaves the phase materially redundant.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Use at least one additional world with different layout logic rather than a palette swap alone.",
+          "purpose": "Demonstrates materially different instantiation states.",
+          "ablation_failure": "Repeated near-identical chambers become a slideshow of skins.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Reach a denser terminal world but preserve a readable portrait-scale identity proof.",
+          "purpose": "Closes the style cycle on the subject rather than the decoration.",
+          "ablation_failure": "Ending on props or an anonymous silhouette loses the identity contract.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source blonde braided fashion woman",
+        "the source white, blue, pink, green, orange and violet Y2K chambers",
+        "the source sunglasses, heart jewelry, flip phones, discs, controllers and headphones",
+        "the source exact outfit-color order and high-fisheye poses",
+        "CYBER POP, loading/score UI and MiniMax/Hailuo marks"
+      ],
+      "instantiations": [
+        {
+          "concept": "An original clockwork courier stands beneath a fixed overhead lens with one crescent chest badge. A quiet parchment depot changes into a cobalt navigation chamber, a pink horticulture console, a green repair atlas and an amber listening booth; tools and armor accents change with each duty while the same faceplate, body proportions and badge remain locked, ending on a calm violet portrait.",
+          "prompt_seed": "An original clockwork courier stands beneath a fixed overhead lens with one crescent chest badge. A quiet parchment depot changes into a cobalt navigation chamber, a pink horticulture console, a green repair atlas and an amber listening booth; tools and armor accents change with each duty while the same faceplate, body proportions and badge remain locked, ending on a calm violet portrait."
+        },
+        {
+          "concept": "A felt deep-sea archivist remains under one high circular lens while its room cycles from blank canvas to woven tide map, brass specimen grid, translucent current diagram and dense indigo label wall. Each stage changes material and layout logic, but the same stitched face, shell clasp and hand rhythm persist before a final low-density portrait return.",
+          "prompt_seed": "A felt deep-sea archivist remains under one high circular lens while its room cycles from blank canvas to woven tide map, brass specimen grid, translucent current diagram and dense indigo label wall. Each stage changes material and layout logic, but the same stitched face, shell clasp and hand rhythm persist before a final low-density portrait return."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Beginning with maximal clutter hides identity continuity.",
+          "repair": "Establish one stable identity, lens relation and recurring accessory against a low-density opening world."
+        },
+        {
+          "failure": "Simultaneous identity and camera replacement prevents comparison.",
+          "repair": "Change the surrounding style world while keeping face, silhouette and camera axis stable."
+        },
+        {
+          "failure": "Changing only hue leaves the phase materially redundant.",
+          "repair": "Escalate to a second complete world by changing at least two coordinated style channels."
+        },
+        {
+          "failure": "Repeated near-identical chambers become a slideshow of skins.",
+          "repair": "Use at least one additional world with different layout logic rather than a palette swap alone."
+        },
+        {
+          "failure": "Ending on props or an anonymous silhouette loses the identity contract.",
+          "repair": "Reach a denser terminal world but preserve a readable portrait-scale identity proof."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An original clockwork courier stands beneath a fixed overhead lens with one crescent chest badge. A quiet parchment depot changes into a cobalt navigation chamber, a pink horticulture console, a green repair atlas and an amber listening booth; tools and armor accents change with each duty while the same faceplate, body proportions and badge remain locked, ending on a calm violet portrait.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A felt deep-sea archivist remains under one high circular lens while its room cycles from blank canvas to woven tide map, brass specimen grid, translucent current diagram and dense indigo label wall. Each stage changes material and layout logic, but the same stitched face, shell clasp and hand rhythm persist before a final low-density portrait return.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

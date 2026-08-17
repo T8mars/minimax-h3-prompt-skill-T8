@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-hailuo-423900387218210818",
+  "slug": "identity-motif-mobility-class-escalation",
+  "title": "身份机体跃迁｜同一特征跨陆空载具升级",
+  "source_title": "身份机体跃迁｜动物特征融入陆空载具",
+  "summary": "先建立一个可辨认身份，再让其核心特征连续嵌入功能等级逐步提升的移动机体；每一阶段都同时保留身份锚点和新机体的可见功能，最后跨入新的运动类别并以完整混合体收束。",
+  "status": "released",
+  "source_duration_seconds": 18.0,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/identity-motif-mobility-class-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-423900387218210818/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-423900387218210818/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-identity-motif-mobility-class-escalation-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "身份锚点 + 至少三种移动机体 + 每阶段保留身份并增加可见功能 + 跨运动类别升级 + 完整混合体终态",
+  "recommended_input": "原创极地研究舱内，一枚石墨色传感圆盘放在冰面，正面三角琥珀标记和侧面三点签名同时亮起一次；采样器在窄裂隙前压缩并接入双滚轮缆车，身份标记保持朝前，滚轮沿张紧钢索横越裂隙；最终气象探针以宽风翼、稳定翼和原传感面完整滑翔，琥珀身份锚点与空中功能同时可读",
+  "required_anchors": [
+    "Establish one identity motif with at least two stable visual anchors before machine integration begins.",
+    "Show the motif physically merging with the first mobility body rather than cutting to a finished replacement.",
+    "Escalate through another mobility realization with a visibly different affordance.",
+    "Finish with one larger mobility-class change and hold identity plus function together."
+  ],
+  "tags": [
+    "identity",
+    "motif",
+    "mobility",
+    "class",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.736,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-17T11:02:50+08:00",
+  "updated_at": "2026-08-17T12:31:31+08:00"
+}

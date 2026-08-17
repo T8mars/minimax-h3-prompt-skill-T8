@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Use an embodied observer and one responsive subject to author a diegetic drawing layer through visible real-world actions. Each interaction must add one new surface-anchored symbol that echoes the local object or motion, and later symbols must reuse or connect earlier marks. Escalate from single icon to route, hidden figure and local reflection, then end wide enough to prove the accumulated drawings have become one coherent environment-wide system.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one embodied observer, one responsive subject and the first surface-bound drawing triggered by visible interaction.",
+      "purpose": "Defines who authors the graphic layer and where it belongs.",
+      "ablation_failure": "Unmotivated floating stickers make the effect decorative.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use a second real action to extend the drawing rule onto a different local surface or route.",
+      "purpose": "Proves that the graphic response follows physical behavior.",
+      "ablation_failure": "Repeating the same icon over the same hand never builds a world.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Let accumulated drawings direct attention toward one hidden or newly opened area.",
+      "purpose": "Turns symbols into spatial storytelling.",
+      "ablation_failure": "Random icons with no search function cannot hand off to discovery.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Reveal one new local figure or motif that visibly inherits an earlier line family.",
+      "purpose": "Creates graphic continuity across separate interactions.",
+      "ablation_failure": "A completely unrelated illustration breaks the accumulated system.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a wider view where prior symbols connect into one coherent environment-wide drawing layer.",
+      "purpose": "Pays off local marks as a transformed world.",
+      "ablation_failure": "Ending on a single sticker or close-up leaves the escalation incomplete.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source small shaggy dog and first-person human hand",
+    "the source domestic hallway, cabinet, rug, ball, bowl and paw prints",
+    "the source glowing question mark plus banana, paw, bone, bird and dachshund doodles",
+    "the source exact dog search route and final hallway drawing layout",
+    "AI生成 mark"
+  ],
+  "instantiations": [
+    {
+      "concept": "In an original glasshouse, a first-person botanist follows a brass maintenance beetle. Touching a dew valve creates one cyan leaf glyph, the beetle rolling a seed capsule draws a route line, opening a propagation drawer reveals an ink moth, and the final wide links leaves, routes, valves and weather symbols across the entire greenhouse skeleton.",
+      "prompt_seed": "In an original glasshouse, a first-person botanist follows a brass maintenance beetle. Touching a dew valve creates one cyan leaf glyph, the beetle rolling a seed capsule draws a route line, opening a propagation drawer reveals an ink moth, and the final wide links leaves, routes, valves and weather symbols across the entire greenhouse skeleton."
+    },
+    {
+      "concept": "Inside a felt spacecraft nursery, a gloved operator guides a small clay rover. A tap on a star block creates a stitched orbit mark, the rover's wheel draws a constellation path, opening a supply pouch reveals a paper fish motif, and the final cabin wide connects all marks into a navigable story-world map.",
+      "prompt_seed": "Inside a felt spacecraft nursery, a gloved operator guides a small clay rover. A tap on a star block creates a stitched orbit mark, the rover's wheel draws a constellation path, opening a supply pouch reveals a paper fish motif, and the final cabin wide connects all marks into a navigable story-world map."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Unmotivated floating stickers make the effect decorative.",
+      "repair": "Establish one embodied observer, one responsive subject and the first surface-bound drawing triggered by visible interaction."
+    },
+    {
+      "failure": "Repeating the same icon over the same hand never builds a world.",
+      "repair": "Use a second real action to extend the drawing rule onto a different local surface or route."
+    },
+    {
+      "failure": "Random icons with no search function cannot hand off to discovery.",
+      "repair": "Let accumulated drawings direct attention toward one hidden or newly opened area."
+    },
+    {
+      "failure": "A completely unrelated illustration breaks the accumulated system.",
+      "repair": "Reveal one new local figure or motif that visibly inherits an earlier line family."
+    },
+    {
+      "failure": "Ending on a single sticker or close-up leaves the escalation incomplete.",
+      "repair": "End on a wider view where prior symbols connect into one coherent environment-wide drawing layer."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In an original glasshouse, a first-person botanist follows a brass maintenance beetle. Touching a dew valve creates one cyan leaf glyph, the beetle rolling a seed capsule draws a route line, opening a propagation drawer reveals an ink moth, and the final wide links leaves, routes, valves and weather symbols across the entire greenhouse skeleton.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Inside a felt spacecraft nursery, a gloved operator guides a small clay rover. A tap on a star block creates a stitched orbit mark, the rover's wheel draws a constellation path, opening a supply pouch reveals a paper fish motif, and the final cabin wide connects all marks into a navigable story-world map.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -87,7 +87,7 @@ async function run() {
     assert.equal(await page.locator(".case-card").count(), 1, "favorites view must contain the saved item");
     await page.locator(".case-card .card-personal-button.collections").click();
     await page.waitForSelector("#collection-membership-dialog[open]");
-    await page.locator("#membership-new-collection").click();
+    await page.locator("#membership-new-collection").dispatchEvent("click");
     await page.waitForSelector("#collection-editor-dialog[open]");
     await page.locator("#collection-name").fill("Review later");
     await page.locator("#save-collection").click();

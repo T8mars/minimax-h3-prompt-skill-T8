@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-hailuo-540189229734940672",
+  "slug": "diegetic-doodle-response-escalation",
+  "title": "画内涂鸦｜现实互动逐步绘出隐藏世界",
+  "source_title": "画内涂鸦｜宠物互动触发图标到整屋绘制",
+  "summary": "用第一视角真实互动作为涂鸦触发器：每次手、宠物或物件完成一个可见动作，新的线描符号就锚定在对应现实表面；符号从单个提示升级为动作回声、隐藏对象和路线，最后整套图形连接成覆盖环境的可读世界。",
+  "status": "released",
+  "source_duration_seconds": 15.136,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/diegetic-doodle-response-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-540189229734940672/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-540189229734940672/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-diegetic-doodle-response-escalation-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "现实第一视角互动 + 首个画内线稿回应 + 连续表面路径 + 至少三类响应图形 + 真实空间与完整绘制世界同框",
+  "recommended_input": "原创玻璃温室内，植物学家的手套触碰一枚露水阀，一只黄铜维修甲虫靠近；阀门玻璃外壳出现一枚青色叶片线稿并停留；路线分成三条叶脉支线，其中一条以小型三角指向标记对准关闭抽屉；植物学家只打开一次，同一青色叶脉沿金属门面铺开；叶片、土槽路线、抽屉叶脉和飞蛾与新出现的阀门、云、水线符号连接到玻璃肋架和地面沟槽；甲虫、手和真实结构全部可读",
+  "required_anchors": [
+    "Establish one embodied observer, one responsive subject and the first surface-bound drawing triggered by visible interaction.",
+    "Use a second real action to extend the drawing rule onto a different local surface or route.",
+    "Reveal one new local figure or motif that visibly inherits an earlier line family.",
+    "End on a wider view where prior symbols connect into one coherent environment-wide drawing layer."
+  ],
+  "tags": [
+    "diegetic",
+    "doodle",
+    "response",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.755,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-16T17:41:00+08:00",
+  "updated_at": "2026-08-17T12:31:31+08:00"
+}

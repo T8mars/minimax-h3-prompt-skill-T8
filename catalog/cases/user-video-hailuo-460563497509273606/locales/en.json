@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-hailuo-460563497509273606",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "7f201764427308f21993d965e2dcc1469ddecedd22a83c4465b967bd89761d1b",
+    "creative_dna_sha256": "7fce5d7d7de50ea9ebba09cabb9b43a3b2a9c9cb3c4e90c335272a53c33023fa"
+  },
+  "content": {
+    "title": "Style Carousel｜Identity Locked in a Cross-Style World",
+    "summary": "Lock the face, frontal posture, and high optical axis of the same character, and use controlled overexposure as a stage door to switch the environment, clothing, and theme world in sets; retain the identity anchor point in each round, and return to the opening portrait along the same door after completing the multi-world upgrade.",
+    "quick_start": {
+      "input_format": "Fixed subject identity and lens relationship + at least four style worlds with different materials/formats + changing two style channels at each stage + increasing density + readable identity final state",
+      "recommended_input": "In the original white underwater calibration cabin, a translucent jellyfish navigator is suspended frontally, with the bell's crescent notch and three amber tentacles clear, and the background is a neutral grid; the environment becomes a cyan ice archive, the black rock is replaced with a transparent ice drawer, and two silver reading fins are added; the three amber tentacles and the crescent notch are continuously trackable; all world-exclusive accessories are removed, and the white calibration cabin, neutral grid, crescent notch, and three amber tentacles are restored, maintaining the front-facing portrait relationship in the opening scene",
+      "required_anchors": [
+        "Establish one stable portrait with face, body proportions, orientation and camera axis readable before the first switch.",
+        "Use one repeatable transition gate while preserving the subject's facial identity and registration.",
+        "Pass through at least three materially different worlds while retaining the same identity anchors.",
+        "Return through the same gate to the opening world and portrait relationship."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Lock the face, frontal posture, and high optical axis of the same character, and use controlled overexposure as a stage door to switch the environment, clothing, and theme world in sets; retain the identity anchor point in each round, and return to the opening portrait along the same door after completing the multi-world upgrade.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Lock one subject's face, core proportions, frontal orientation and camera axis in a stable portrait. Use one consistent transition gate to replace at least two coordinated style channels per stage—environment, wardrobe, material, props or light—while preserving the identity anchors. Escalate through visibly different worlds, then use the same gate to return to the exact opening world and portrait relationship.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one stable portrait with face, body proportions, orientation and camera axis readable before the first switch.",
+          "purpose": "Creates the identity baseline.",
+          "ablation_failure": "An immediate montage gives no stable comparison state.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use one repeatable transition gate while preserving the subject's facial identity and registration.",
+          "purpose": "Makes world changes comparable.",
+          "ablation_failure": "Unrelated cuts can hide identity drift.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Change at least two coordinated style channels in each new world.",
+          "purpose": "Proves full world replacement rather than recoloring.",
+          "ablation_failure": "A palette swap alone is not a world carousel.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Pass through at least three materially different worlds while retaining the same identity anchors.",
+          "purpose": "Stress-tests identity continuity.",
+          "ablation_failure": "Near-duplicate sets provide weak evidence.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Return through the same gate to the opening world and portrait relationship.",
+          "purpose": "Closes an exact identity loop.",
+          "ablation_failure": "A new final glamour portrait cannot verify the baseline.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source young woman in a black office suit",
+        "the source cat-ear event styling, armored battlefield, underwater goggles, pastoral cloak and red carpet",
+        "the source cool white office and paparazzi crowd",
+        "the source white-blue overexposure transition",
+        "the source exact world order, frontal fashion portrait staging and Hailuo/MiniMax marks"
+      ],
+      "instantiations": [
+        {
+          "concept": "An original translucent jellyfish navigator floats frontally inside a white calibration tank, identified by one crescent bell notch and three amber tendrils. A circular caustic flare carries it through a volcanic archive, a cyan ice library, a moss observatory and a black velvet signal chamber, changing environment and accessories while the notch, tendrils and scale stay fixed before returning to the white tank.",
+          "prompt_seed": "An original translucent jellyfish navigator floats frontally inside a white calibration tank, identified by one crescent bell notch and three amber tendrils. A circular caustic flare carries it through a volcanic archive, a cyan ice library, a moss observatory and a black velvet signal chamber, changing environment and accessories while the notch, tendrils and scale stay fixed before returning to the white tank."
+        },
+        {
+          "concept": "In tactile paper stop motion, one masked courier puppet is locked to a front-facing registration stand. A folding iris moves it through a red print shop, silver lunar depot, green rain shelter and blue acoustic theatre; paper costume layers and props change in pairs while one split mask and triangular badge persist, then the iris returns to the plain stand.",
+          "prompt_seed": "In tactile paper stop motion, one masked courier puppet is locked to a front-facing registration stand. A folding iris moves it through a red print shop, silver lunar depot, green rain shelter and blue acoustic theatre; paper costume layers and props change in pairs while one split mask and triangular badge persist, then the iris returns to the plain stand."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "An immediate montage gives no stable comparison state.",
+          "repair": "Establish one stable portrait with face, body proportions, orientation and camera axis readable before the first switch."
+        },
+        {
+          "failure": "Unrelated cuts can hide identity drift.",
+          "repair": "Use one repeatable transition gate while preserving the subject's facial identity and registration."
+        },
+        {
+          "failure": "A palette swap alone is not a world carousel.",
+          "repair": "Change at least two coordinated style channels in each new world."
+        },
+        {
+          "failure": "Near-duplicate sets provide weak evidence.",
+          "repair": "Pass through at least three materially different worlds while retaining the same identity anchors."
+        },
+        {
+          "failure": "A new final glamour portrait cannot verify the baseline.",
+          "repair": "Return through the same gate to the opening world and portrait relationship."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An original translucent jellyfish navigator floats frontally inside a white calibration tank, identified by one crescent bell notch and three amber tendrils. A circular caustic flare carries it through a volcanic archive, a cyan ice library, a moss observatory and a black velvet signal chamber, changing environment and accessories while the notch, tendrils and scale stay fixed before returning to the white tank.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "In tactile paper stop motion, one masked courier puppet is locked to a front-facing registration stand. A folding iris moves it through a red print shop, silver lunar depot, green rain shelter and blue acoustic theatre; paper costume layers and props change in pairs while one split mask and triangular badge persist, then the iris returns to the plain stand.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

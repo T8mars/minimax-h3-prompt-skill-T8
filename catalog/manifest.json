@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.1.7",
-  "generated_at": "2026-08-16T10:02:39+08:00",
-  "case_count": 116,
+  "catalog_version": "1.1.8",
+  "generated_at": "2026-08-17T12:35:13+08:00",
+  "case_count": 128,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -4077,6 +4077,435 @@
       ],
       "quality_score": 4.725,
       "updated_at": "2026-08-16T09:55:24+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-449361583639670787",
+      "slug": "sensory-seal-location-swap-resumption",
+      "title": "感官封闭｜人群静止点到异地恢复",
+      "status": "released",
+      "summary": "先让稳定主体成为高速群流中的静止参照，再用一次主动封闭感官的动作建立触发；镜头持续靠近并让环境运动加压，只在主体完全静止时发生一次全画幅换境，最后用同一身份、轴线和恢复动作证明空间已改变。",
+      "manifest_path": "cases/user-video-hailuo-449361583639670787/manifest.json",
+      "summary_path": "cases/user-video-hailuo-449361583639670787/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-449361583639670787/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-449361583639670787/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-449361583639670787/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-449361583639670787/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-449361583639670787/preview.gif",
+        "poster": "cases/user-video-hailuo-449361583639670787/poster.webp",
+        "mp4": "media/user-video-hailuo-449361583639670787/preview.mp4"
+      },
+      "skill_path": "../skills/sensory-seal-location-swap-resumption",
+      "template_id": "t8-case-sensory-seal-location-swap-resumption-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "sensory",
+        "seal",
+        "location",
+        "swap",
+        "resumption"
+      ],
+      "quality_score": 4.733,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-539597726151069704",
+      "slug": "dual-support-elastic-character-control",
+      "title": "双支座弹性偶｜控制器驱动形变复位",
+      "status": "released",
+      "summary": "让两个图形角色分别绑定到持续可见的物理支座；每轮只改变一种可读控制参数，以共同响应、独立响应和第三种关系测试证明绑定规则，最后让两支座重新稳定并恢复可辨双角色终态。",
+      "manifest_path": "cases/user-video-hailuo-539597726151069704/manifest.json",
+      "summary_path": "cases/user-video-hailuo-539597726151069704/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-539597726151069704/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-539597726151069704/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-539597726151069704/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-539597726151069704/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-539597726151069704/preview.gif",
+        "poster": "cases/user-video-hailuo-539597726151069704/poster.webp",
+        "mp4": "media/user-video-hailuo-539597726151069704/preview.mp4"
+      },
+      "skill_path": "../skills/dual-support-elastic-character-control",
+      "template_id": "t8-case-dual-support-elastic-character-control-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "dual",
+        "support",
+        "elastic",
+        "character",
+        "control"
+      ],
+      "quality_score": 4.75,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-539455495249870848",
+      "slug": "optical-search-evidence-contraction",
+      "title": "光学搜索｜远景线索递进到细节确认",
+      "status": "released",
+      "summary": "让同一受限光学视野承担完整搜索：先锁定远处地点，再沿一个可见异常逐级收紧到结构、主体和局部细节；每次靠近都回答一个更具体的问题，最后用极近特征完成确认而不是再切到全知镜头。",
+      "manifest_path": "cases/user-video-hailuo-539455495249870848/manifest.json",
+      "summary_path": "cases/user-video-hailuo-539455495249870848/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-539455495249870848/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-539455495249870848/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-539455495249870848/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-539455495249870848/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-539455495249870848/preview.gif",
+        "poster": "cases/user-video-hailuo-539455495249870848/poster.webp",
+        "mp4": "media/user-video-hailuo-539455495249870848/preview.mp4"
+      },
+      "skill_path": "../skills/optical-search-evidence-contraction",
+      "template_id": "t8-case-optical-search-evidence-contraction-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "optical",
+        "search",
+        "evidence",
+        "contraction"
+      ],
+      "quality_score": 4.751,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-539548087632777219",
+      "slug": "identity-locked-style-world-carousel",
+      "title": "造型轮播变体｜同装束跨海报版式",
+      "status": "released",
+      "summary": "同一高机位人物与服装持续锁定，背景从纯色肖像逐步切换到黑白字版、报刊拼贴和彩色剪贴；人物只做小幅姿态变化，每轮用更高的版式密度验证身份不丢失。作为同一身份锁定式风格世界轮播的短时长证据变体，不新增选择器。",
+      "manifest_path": "cases/user-video-hailuo-539548087632777219/manifest.json",
+      "summary_path": "cases/user-video-hailuo-539548087632777219/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-539548087632777219/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-539548087632777219/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-539548087632777219/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-539548087632777219/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-539548087632777219/preview.gif",
+        "poster": "cases/user-video-hailuo-539548087632777219/poster.webp",
+        "mp4": "media/user-video-hailuo-539548087632777219/preview.mp4"
+      },
+      "skill_path": "../skills/identity-locked-style-world-carousel",
+      "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "identity",
+        "locked",
+        "style",
+        "world",
+        "carousel"
+      ],
+      "quality_score": 4.736,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-540189229734940672",
+      "slug": "diegetic-doodle-response-escalation",
+      "title": "画内涂鸦｜现实互动逐步绘出隐藏世界",
+      "status": "released",
+      "summary": "用第一视角真实互动作为涂鸦触发器：每次手、宠物或物件完成一个可见动作，新的线描符号就锚定在对应现实表面；符号从单个提示升级为动作回声、隐藏对象和路线，最后整套图形连接成覆盖环境的可读世界。",
+      "manifest_path": "cases/user-video-hailuo-540189229734940672/manifest.json",
+      "summary_path": "cases/user-video-hailuo-540189229734940672/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-540189229734940672/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-540189229734940672/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-540189229734940672/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-540189229734940672/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-540189229734940672/preview.gif",
+        "poster": "cases/user-video-hailuo-540189229734940672/poster.webp",
+        "mp4": "media/user-video-hailuo-540189229734940672/preview.mp4"
+      },
+      "skill_path": "../skills/diegetic-doodle-response-escalation",
+      "template_id": "t8-case-diegetic-doodle-response-escalation-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "diegetic",
+        "doodle",
+        "response",
+        "escalation"
+      ],
+      "quality_score": 4.755,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-539984531455201282",
+      "slug": "identity-locked-style-world-carousel",
+      "title": "造型轮播｜身份锁定跨风格世界",
+      "status": "released",
+      "summary": "锁定同一高机位人物、脸部与核心比例，让背景系统、色彩、服装配件和道具按阶段成套切换；每轮至少改变两个风格通道但保留身份锚点，密度逐步升级后回到可读人像终态。",
+      "manifest_path": "cases/user-video-hailuo-539984531455201282/manifest.json",
+      "summary_path": "cases/user-video-hailuo-539984531455201282/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-539984531455201282/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-539984531455201282/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-539984531455201282/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-539984531455201282/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-539984531455201282/preview.gif",
+        "poster": "cases/user-video-hailuo-539984531455201282/poster.webp",
+        "mp4": "media/user-video-hailuo-539984531455201282/preview.mp4"
+      },
+      "skill_path": "../skills/identity-locked-style-world-carousel",
+      "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "identity",
+        "locked",
+        "style",
+        "world",
+        "carousel"
+      ],
+      "quality_score": 4.753,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-423900387218210818",
+      "slug": "identity-motif-mobility-class-escalation",
+      "title": "身份机体跃迁｜同一特征跨陆空载具升级",
+      "status": "released",
+      "summary": "先建立一个可辨认身份，再让其核心特征连续嵌入功能等级逐步提升的移动机体；每一阶段都同时保留身份锚点和新机体的可见功能，最后跨入新的运动类别并以完整混合体收束。",
+      "manifest_path": "cases/user-video-hailuo-423900387218210818/manifest.json",
+      "summary_path": "cases/user-video-hailuo-423900387218210818/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-423900387218210818/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-423900387218210818/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-423900387218210818/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-423900387218210818/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-423900387218210818/preview.gif",
+        "poster": "cases/user-video-hailuo-423900387218210818/poster.webp",
+        "mp4": "media/user-video-hailuo-423900387218210818/preview.mp4"
+      },
+      "skill_path": "../skills/identity-motif-mobility-class-escalation",
+      "template_id": "t8-case-identity-motif-mobility-class-escalation-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "identity",
+        "motif",
+        "mobility",
+        "class",
+        "escalation"
+      ],
+      "quality_score": 4.736,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-448227283749875713",
+      "slug": "animate-fixed-frame-construction",
+      "title": "固定工坊｜平面珠阵逐层立体成型",
+      "status": "released",
+      "summary": "锁定同一工坊桌面与材料边界，让平面珠阵按不可逆阶段先形成局部图案、再升起主立体、补出次级物件与承托底座，最终以同一构图中的完整立体组合验收。",
+      "manifest_path": "cases/user-video-hailuo-448227283749875713/manifest.json",
+      "summary_path": "cases/user-video-hailuo-448227283749875713/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-448227283749875713/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-448227283749875713/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-448227283749875713/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-448227283749875713/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-448227283749875713/preview.gif",
+        "poster": "cases/user-video-hailuo-448227283749875713/poster.webp",
+        "mp4": "media/user-video-hailuo-448227283749875713/preview.mp4"
+      },
+      "skill_path": "../skills/animate-fixed-frame-construction",
+      "template_id": "t8c002-fixed-composition-medium-ladder",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "t8c002",
+        "fixed",
+        "composition",
+        "medium",
+        "ladder"
+      ],
+      "quality_score": 4.733,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-394176964477943816",
+      "slug": "solo-form-material-adversary-clash",
+      "title": "独演成敌｜动作材质凝成对手后碰撞",
+      "status": "released",
+      "summary": "先用单一主体的完整动作建立可辨招式与材质签名，再让环境材质积累并凝成独立对手；中后段通过一次空间跃迁把双方拉入正面对抗，最后引入第二能量材质完成碰撞并回到主体可读终态。",
+      "manifest_path": "cases/user-video-hailuo-394176964477943816/manifest.json",
+      "summary_path": "cases/user-video-hailuo-394176964477943816/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-394176964477943816/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-394176964477943816/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-394176964477943816/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-394176964477943816/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-394176964477943816/preview.gif",
+        "poster": "cases/user-video-hailuo-394176964477943816/poster.webp",
+        "mp4": "media/user-video-hailuo-394176964477943816/preview.mp4"
+      },
+      "skill_path": "../skills/solo-form-material-adversary-clash",
+      "template_id": "t8-case-solo-form-material-adversary-clash-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "solo",
+        "form",
+        "material",
+        "adversary",
+        "clash"
+      ],
+      "quality_score": 4.738,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-460563497509273606",
+      "slug": "identity-locked-style-world-carousel",
+      "title": "造型轮播｜身份锁定跨风格世界",
+      "status": "released",
+      "summary": "锁定同一人物的脸部、正面姿态与高位光轴，利用受控过曝作为阶段门，让环境、服装和题材世界成套切换；每轮都保留身份锚点，完成多世界升级后沿同一门返回开场人像。",
+      "manifest_path": "cases/user-video-hailuo-460563497509273606/manifest.json",
+      "summary_path": "cases/user-video-hailuo-460563497509273606/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-460563497509273606/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-460563497509273606/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-460563497509273606/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-460563497509273606/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-460563497509273606/preview.gif",
+        "poster": "cases/user-video-hailuo-460563497509273606/poster.webp",
+        "mp4": "media/user-video-hailuo-460563497509273606/preview.mp4"
+      },
+      "skill_path": "../skills/identity-locked-style-world-carousel",
+      "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "identity",
+        "locked",
+        "style",
+        "world",
+        "carousel"
+      ],
+      "quality_score": 4.733,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-418751301536092163",
+      "slug": "animate-fixed-frame-construction",
+      "title": "固定空间｜毛坯阶段生成完成室内",
+      "status": "released",
+      "summary": "在完全锁定的室内广角中保留门洞、窗户和墙体几何，用清理、表面完成、地板、家具与照明等不可逆阶段逐层兑现同一空间，最后让完成状态仍与开场结构直接对照。",
+      "manifest_path": "cases/user-video-hailuo-418751301536092163/manifest.json",
+      "summary_path": "cases/user-video-hailuo-418751301536092163/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-418751301536092163/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-418751301536092163/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-418751301536092163/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-418751301536092163/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-418751301536092163/preview.gif",
+        "poster": "cases/user-video-hailuo-418751301536092163/poster.webp",
+        "mp4": "media/user-video-hailuo-418751301536092163/preview.mp4"
+      },
+      "skill_path": "../skills/animate-fixed-frame-construction",
+      "template_id": "t8c002-fixed-composition-medium-ladder",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "t8c002",
+        "fixed",
+        "composition",
+        "medium",
+        "ladder"
+      ],
+      "quality_score": 4.732,
+      "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-hailuo-437298335184588801",
+      "slug": "exemplar-triggered-output-multiplication",
+      "title": "样本倍增｜机器开启后连续输出同类群体",
+      "status": "released",
+      "summary": "先让一个可辨样本与封闭机器同框，经过一次外部触发后打开独立输出阈值；同类实例从阈值连续出现并在机器周围累积，而原样本始终留在顶部作为身份对照，最终同框证明倍增结果。",
+      "manifest_path": "cases/user-video-hailuo-437298335184588801/manifest.json",
+      "summary_path": "cases/user-video-hailuo-437298335184588801/SUMMARY.md",
+      "source_path": "cases/user-video-hailuo-437298335184588801/source.json",
+      "creative_dna_path": "cases/user-video-hailuo-437298335184588801/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-hailuo-437298335184588801/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-hailuo-437298335184588801/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-hailuo-437298335184588801/preview.gif",
+        "poster": "cases/user-video-hailuo-437298335184588801/poster.webp",
+        "mp4": "media/user-video-hailuo-437298335184588801/preview.mp4"
+      },
+      "skill_path": "../skills/exemplar-triggered-output-multiplication",
+      "template_id": "t8-case-exemplar-triggered-output-multiplication-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "exemplar",
+        "triggered",
+        "output",
+        "multiplication"
+      ],
+      "quality_score": 4.737,
+      "updated_at": "2026-08-17T12:31:31+08:00"
     }
   ]
 }

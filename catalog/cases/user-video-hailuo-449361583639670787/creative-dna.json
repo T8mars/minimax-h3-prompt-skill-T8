@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one stable subject as a quiet center inside a visibly active environment. Let the subject perform one deliberate self-sealing gesture, keep external motion escalating while the subject becomes still, then use one full-frame perceptual wash to replace the environment. Restore the same identity and optical axis in a materially different location and require one visible resumption action that proves the new space persists.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one stable subject against independently moving surroundings before the trigger.",
+      "purpose": "Creates a measurable calm-versus-flow baseline.",
+      "ablation_failure": "A quiet or empty opening provides no pressure to isolate from.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one deliberate bilateral or otherwise complete self-sealing gesture without changing location yet.",
+      "purpose": "Makes the transition voluntary and countable.",
+      "ablation_failure": "An unexplained flash removes causal ownership.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Continue environmental motion while the sealed subject reaches a visibly still state.",
+      "purpose": "Builds separation before the decisive swap.",
+      "ablation_failure": "Stopping everything together erases the subject-environment contrast.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Replace the whole environment only once through a bounded full-frame perceptual wash while preserving the subject axis.",
+      "purpose": "Makes the swap decisive without a montage of portals.",
+      "ablation_failure": "Multiple partial swaps or a new camera axis break continuity.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Restore the same identity in a materially different location and show one resumption action under the new physics.",
+      "purpose": "Proves that the destination persists after the transition.",
+      "ablation_failure": "Ending in white light or on a static portrait leaves the spatial change unverified.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source platinum-haired woman in white shirt and black tie",
+    "the source crowded urban zebra crossing and green rice field",
+    "the source oversized black headphones",
+    "the source exact city-whiteout-field order and arm-spread ending",
+    "MiniMax and Hailuo AI watermarks"
+  ],
+  "instantiations": [
+    {
+      "concept": "In an original deep-sea service bay, a compact ceramic diver stands centered while maintenance drones streak around the dock. The diver closes a transparent pressure visor with both hands, surrounding motion continues as the body becomes still, a single bioluminescent wash fills the frame, and the same diver reappears on a quiet kelp nursery floor to release one tethered seed pod into the current.",
+      "prompt_seed": "In an original deep-sea service bay, a compact ceramic diver stands centered while maintenance drones streak around the dock. The diver closes a transparent pressure visor with both hands, surrounding motion continues as the body becomes still, a single bioluminescent wash fills the frame, and the same diver reappears on a quiet kelp nursery floor to release one tethered seed pod into the current."
+    },
+    {
+      "concept": "In a paper observatory, a felt astronomer remains fixed while star charts and assistants slide around a circular worktable. The astronomer folds two hinged eye shields into place, the charts continue moving, one white paper eclipse replaces the room, and the same figure resumes by raising a brass wind vane on a snowy rooftop garden.",
+      "prompt_seed": "In a paper observatory, a felt astronomer remains fixed while star charts and assistants slide around a circular worktable. The astronomer folds two hinged eye shields into place, the charts continue moving, one white paper eclipse replaces the room, and the same figure resumes by raising a brass wind vane on a snowy rooftop garden."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A quiet or empty opening provides no pressure to isolate from.",
+      "repair": "Establish one stable subject against independently moving surroundings before the trigger."
+    },
+    {
+      "failure": "An unexplained flash removes causal ownership.",
+      "repair": "Use one deliberate bilateral or otherwise complete self-sealing gesture without changing location yet."
+    },
+    {
+      "failure": "Stopping everything together erases the subject-environment contrast.",
+      "repair": "Continue environmental motion while the sealed subject reaches a visibly still state."
+    },
+    {
+      "failure": "Multiple partial swaps or a new camera axis break continuity.",
+      "repair": "Replace the whole environment only once through a bounded full-frame perceptual wash while preserving the subject axis."
+    },
+    {
+      "failure": "Ending in white light or on a static portrait leaves the spatial change unverified.",
+      "repair": "Restore the same identity in a materially different location and show one resumption action under the new physics."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In an original deep-sea service bay, a compact ceramic diver stands centered while maintenance drones streak around the dock. The diver closes a transparent pressure visor with both hands, surrounding motion continues as the body becomes still, a single bioluminescent wash fills the frame, and the same diver reappears on a quiet kelp nursery floor to release one tethered seed pod into the current.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In a paper observatory, a felt astronomer remains fixed while star charts and assistants slide around a circular worktable. The astronomer folds two hinged eye shields into place, the charts continue moving, one white paper eclipse replaces the room, and the same figure resumes by raising a brass wind vane on a snowy rooftop garden.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

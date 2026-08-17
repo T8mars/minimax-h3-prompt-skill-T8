@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-hailuo-460563497509273606",
+  "slug": "identity-locked-style-world-carousel",
+  "title": "造型轮播｜身份锁定跨风格世界",
+  "source_title": "身份轮播｜同一人像跨场景切换后回到办公室",
+  "summary": "锁定同一人物的脸部、正面姿态与高位光轴，利用受控过曝作为阶段门，让环境、服装和题材世界成套切换；每轮都保留身份锚点，完成多世界升级后沿同一门返回开场人像。",
+  "status": "released",
+  "source_duration_seconds": 12.833333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/identity-locked-style-world-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-460563497509273606/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-460563497509273606/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "user-video-hailuo-539984531455201282",
+  "input_format": "固定主体身份与镜头关系 + 至少四个材质/版式不同的风格世界 + 每阶段改变两项风格通道 + 递增密度 + 可读身份终态",
+  "recommended_input": "原创白色水下校准舱内，一只半透明水母导航员正面悬浮，钟罩月牙缺口和三条琥珀触须清楚，背景是中性网格；环境变成青色冰档案库，黑岩换成透明冰抽屉，并新增两片银色阅读鳍；三条琥珀触须和月牙缺口持续可追踪；移除所有世界专属配件，恢复白色校准舱、中性网格、月牙缺口和三条琥珀触须，保持开场正面人像关系",
+  "required_anchors": [
+    "Establish one stable portrait with face, body proportions, orientation and camera axis readable before the first switch.",
+    "Use one repeatable transition gate while preserving the subject's facial identity and registration.",
+    "Pass through at least three materially different worlds while retaining the same identity anchors.",
+    "Return through the same gate to the opening world and portrait relationship."
+  ],
+  "tags": [
+    "identity",
+    "locked",
+    "style",
+    "world",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.733,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-17T11:02:50+08:00",
+  "updated_at": "2026-08-17T12:31:31+08:00"
+}

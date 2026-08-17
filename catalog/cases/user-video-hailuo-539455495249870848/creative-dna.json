@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Keep one constrained optical observer interface visible throughout. Begin on a distant geographic anchor, find one anomalous structural cue, contract the field of view to a subject linked to that cue, stabilize a closer identity proof, then end on one micro-detail that visibly echoes the opening location. Every optical step must answer a narrower evidence question without switching to an omniscient camera.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one persistent constrained optical interface and a distant geographic anchor.",
+      "purpose": "Defines observer ownership and the search origin.",
+      "ablation_failure": "An unrestricted establishing shot removes the optical-investigation premise.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Identify one unusual structural cue inside the same observed geography.",
+      "purpose": "Provides a reason to contract the view.",
+      "ablation_failure": "A random zoom without a discovered cue becomes decorative.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Move from place evidence to one subject or active carrier linked to the cue.",
+      "purpose": "Turns environment search into a specific target search.",
+      "ablation_failure": "Jumping to an unrelated person breaks the evidence chain.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Stabilize one closer identity or function proof before the terminal detail.",
+      "purpose": "Prevents the final close-up from becoming contextless.",
+      "ablation_failure": "Skipping directly from distant place to detail hides the target relationship.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on one micro-detail that visibly echoes or verifies the opening geographic anchor.",
+      "purpose": "Closes the contraction ladder with proof rather than proximity alone.",
+      "ablation_failure": "A close face with no retained location evidence does not resolve the search.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source binocular mask and red field-note interface",
+    "MINIMAX storefront, tower banner and building marks",
+    "the source tan-suited rooftop woman with red bag",
+    "the source red angular sunglasses and reflected building",
+    "the source exact storefront-banner-woman-glasses search order and AI生成 mark"
+  ],
+  "instantiations": [
+    {
+      "concept": "Through an original circular inspection scope, an orbital horticulturist first locks a distant greenhouse ring, detects one pulsing frost seam, tracks the seam to a small maintenance automaton, stabilizes its identification plate and finishes on a glass gasket whose reflection shows the opening ring still leaking.",
+      "prompt_seed": "Through an original circular inspection scope, an orbital horticulturist first locks a distant greenhouse ring, detects one pulsing frost seam, tracks the seam to a small maintenance automaton, stabilizes its identification plate and finishes on a glass gasket whose reflection shows the opening ring still leaking."
+    },
+    {
+      "concept": "A paper periscope scans a miniature harbor, isolates a row of misaligned signal flags, follows their rope to a felt lighthouse keeper, confirms the keeper's brass key and ends on the key's polished face reflecting the same crooked flag row.",
+      "prompt_seed": "A paper periscope scans a miniature harbor, isolates a row of misaligned signal flags, follows their rope to a felt lighthouse keeper, confirms the keeper's brass key and ends on the key's polished face reflecting the same crooked flag row."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "An unrestricted establishing shot removes the optical-investigation premise.",
+      "repair": "Establish one persistent constrained optical interface and a distant geographic anchor."
+    },
+    {
+      "failure": "A random zoom without a discovered cue becomes decorative.",
+      "repair": "Identify one unusual structural cue inside the same observed geography."
+    },
+    {
+      "failure": "Jumping to an unrelated person breaks the evidence chain.",
+      "repair": "Move from place evidence to one subject or active carrier linked to the cue."
+    },
+    {
+      "failure": "Skipping directly from distant place to detail hides the target relationship.",
+      "repair": "Stabilize one closer identity or function proof before the terminal detail."
+    },
+    {
+      "failure": "A close face with no retained location evidence does not resolve the search.",
+      "repair": "End on one micro-detail that visibly echoes or verifies the opening geographic anchor."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Through an original circular inspection scope, an orbital horticulturist first locks a distant greenhouse ring, detects one pulsing frost seam, tracks the seam to a small maintenance automaton, stabilizes its identification plate and finishes on a glass gasket whose reflection shows the opening ring still leaking.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A paper periscope scans a miniature harbor, isolates a row of misaligned signal flags, follows their rope to a felt lighthouse keeper, confirms the keeper's brass key and ends on the key's polished face reflecting the same crooked flag row.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

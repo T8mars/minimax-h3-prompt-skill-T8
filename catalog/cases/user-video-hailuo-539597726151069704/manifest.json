@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-hailuo-539597726151069704",
+  "slug": "dual-support-elastic-character-control",
+  "title": "双支座弹性偶｜控制器驱动形变复位",
+  "source_title": "掌上双偶｜双手位置驱动卡通角色拉伸回弹",
+  "summary": "让两个图形角色分别绑定到持续可见的物理支座；每轮只改变一种可读控制参数，以共同响应、独立响应和第三种关系测试证明绑定规则，最后让两支座重新稳定并恢复可辨双角色终态。",
+  "status": "released",
+  "source_duration_seconds": 14.366667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/dual-support-elastic-character-control",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-539597726151069704/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-539597726151069704/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-dual-support-elastic-character-control-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "两个可见支座绑定双角色 + 共享响应 + 独立响应 + 第三种关系测试 + 所有权不互换 + 配对终态",
+  "recommended_input": "原创磁悬观测室内，两座黄铜万向节底座位于独立同心环；A座系青色方眼种荚，B座系琥珀月牙眼种荚；两座底座沿不同半径绕中央校准标记运行一圈，两枚种荚形成耦合环绕但系绳始终分离；两座底座进入并排插槽，斜向张力释放，两枚种荚恢复成紧凑可辨形态；眼标、系绳和停靠灯同框停留",
+  "required_anchors": [
+    "Establish two distinct graphic characters, each visibly bound to one stable physical support.",
+    "Change one measurable support parameter and make both characters answer through a readable shared response.",
+    "Apply a third materially different support relation or controller path without repeating the prior response.",
+    "Synchronize both supports and finish with two legible characters still attached to their original sides."
+  ],
+  "tags": [
+    "dual",
+    "support",
+    "elastic",
+    "character",
+    "control"
+  ],
+  "quality": {
+    "weighted_score": 4.75,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-16T17:40:59+08:00",
+  "updated_at": "2026-08-17T12:31:31+08:00"
+}

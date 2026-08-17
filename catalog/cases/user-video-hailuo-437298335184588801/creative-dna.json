@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Place one unmistakable exemplar beside or on a closed production device and keep both readable. Use one visible trigger, then require the device to expose a separate output threshold before any result appears. Release matching instances one at a time through that same threshold while the exemplar remains unchanged as a comparison anchor. Accumulate the outputs in visible space and finish with exemplar, device, threshold and group readable together.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one identity exemplar and one closed production device in the same readable frame.",
+      "purpose": "Defines what the outputs must match and where they originate.",
+      "ablation_failure": "Without an exemplar, repeated outputs have no identity reference.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one visible trigger and show a distinct output threshold opening before the first result.",
+      "purpose": "Creates an auditable machine-state transition.",
+      "ablation_failure": "Results appearing before the threshold opens look arbitrary.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Release one matching instance through the threshold while keeping the exemplar unchanged.",
+      "purpose": "Proves the first multiplication event.",
+      "ablation_failure": "Replacing the exemplar with the output is transformation, not multiplication.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Repeat one-at-a-time outputs through the same threshold and accumulate them in visible space.",
+      "purpose": "Makes quantity growth countable and causal.",
+      "ablation_failure": "A sudden crowd cut hides the repeated production rule.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Hold exemplar, device, open threshold and accumulated outputs together.",
+      "purpose": "Closes identity and scale verification in one frame.",
+      "ablation_failure": "Ending on the crowd alone discards origin proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source orange-and-white cats",
+    "the source large office copier and scanner bed",
+    "the source human hand pressing the control panel",
+    "the source lower paper-output hatch",
+    "the source exact cat-on-top and cats-exiting accumulation gag plus Hailuo/MiniMax marks"
+  ],
+  "instantiations": [
+    {
+      "concept": "In an original paper astronomy studio, one brass origami star rests on top of a vertical folding loom. A single foot-pedal press opens a side slot; matching brass paper stars emerge one at a time onto separate hanging threads until a small constellation surrounds the loom while the original star remains above.",
+      "prompt_seed": "In an original paper astronomy studio, one brass origami star rests on top of a vertical folding loom. A single foot-pedal press opens a side slot; matching brass paper stars emerge one at a time onto separate hanging threads until a small constellation surrounds the loom while the original star remains above."
+    },
+    {
+      "concept": "In a cold materials lab, one hexagonal blue ice token sits in a clear comparator cradle beside a sealed frost chamber. One lever opens a lower cold gate, and matching hexagonal crystals slide out sequentially into numbered grooves; the exemplar, gate and accumulated row remain visible together.",
+      "prompt_seed": "In a cold materials lab, one hexagonal blue ice token sits in a clear comparator cradle beside a sealed frost chamber. One lever opens a lower cold gate, and matching hexagonal crystals slide out sequentially into numbered grooves; the exemplar, gate and accumulated row remain visible together."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without an exemplar, repeated outputs have no identity reference.",
+      "repair": "Establish one identity exemplar and one closed production device in the same readable frame."
+    },
+    {
+      "failure": "Results appearing before the threshold opens look arbitrary.",
+      "repair": "Use one visible trigger and show a distinct output threshold opening before the first result."
+    },
+    {
+      "failure": "Replacing the exemplar with the output is transformation, not multiplication.",
+      "repair": "Release one matching instance through the threshold while keeping the exemplar unchanged."
+    },
+    {
+      "failure": "A sudden crowd cut hides the repeated production rule.",
+      "repair": "Repeat one-at-a-time outputs through the same threshold and accumulate them in visible space."
+    },
+    {
+      "failure": "Ending on the crowd alone discards origin proof.",
+      "repair": "Hold exemplar, device, open threshold and accumulated outputs together."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In an original paper astronomy studio, one brass origami star rests on top of a vertical folding loom. A single foot-pedal press opens a side slot; matching brass paper stars emerge one at a time onto separate hanging threads until a small constellation surrounds the loom while the original star remains above.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In a cold materials lab, one hexagonal blue ice token sits in a clear comparator cradle beside a sealed frost chamber. One lever opens a lower cold gate, and matching hexagonal crystals slide out sequentially into numbered grooves; the exemplar, gate and accumulated row remain visible together.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

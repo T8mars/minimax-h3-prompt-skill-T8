@@ -182,6 +182,18 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![计划对照｜固定分镜条见证执行升级](catalog/cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/preview.gif)](https://x.com/beginnersblog1/status/2088312289405673506) | **[计划对照｜固定分镜条见证执行升级](catalog/cases/x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1/SUMMARY.md)**<br><sub>x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![日程闭环｜重复锚点串联整日任务](catalog/cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/preview.gif)](https://x.com/aimikoda/status/2088569547494199485) | **[日程闭环｜重复锚点串联整日任务](catalog/cases/x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2088569547494199485-browser-2088569547494199485-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![镜头交接｜外部观察转为主体掌镜](catalog/cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/preview.gif)](https://x.com/Aqsahere_/status/2088105767408730563) | **[镜头交接｜外部观察转为主体掌镜](catalog/cases/x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1/SUMMARY.md)**<br><sub>x-aqsahere-2088105767408730563-browser-2088105767408730563-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![感官封闭｜人群静止点到异地恢复](catalog/cases/user-video-hailuo-449361583639670787/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-449361583639670787) | **[感官封闭｜人群静止点到异地恢复](catalog/cases/user-video-hailuo-449361583639670787/SUMMARY.md)**<br><sub>user-video-hailuo-449361583639670787</sub> | MiniMax H3 · Seedance 2.0 |
+| [![双支座弹性偶｜控制器驱动形变复位](catalog/cases/user-video-hailuo-539597726151069704/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-539597726151069704) | **[双支座弹性偶｜控制器驱动形变复位](catalog/cases/user-video-hailuo-539597726151069704/SUMMARY.md)**<br><sub>user-video-hailuo-539597726151069704</sub> | MiniMax H3 · Seedance 2.0 |
+| [![光学搜索｜远景线索递进到细节确认](catalog/cases/user-video-hailuo-539455495249870848/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-539455495249870848) | **[光学搜索｜远景线索递进到细节确认](catalog/cases/user-video-hailuo-539455495249870848/SUMMARY.md)**<br><sub>user-video-hailuo-539455495249870848</sub> | MiniMax H3 · Seedance 2.0 |
+| [![造型轮播变体｜同装束跨海报版式](catalog/cases/user-video-hailuo-539548087632777219/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-539548087632777219) | **[造型轮播变体｜同装束跨海报版式](catalog/cases/user-video-hailuo-539548087632777219/SUMMARY.md)**<br><sub>user-video-hailuo-539548087632777219</sub> | MiniMax H3 · Seedance 2.0 |
+| [![画内涂鸦｜现实互动逐步绘出隐藏世界](catalog/cases/user-video-hailuo-540189229734940672/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-540189229734940672) | **[画内涂鸦｜现实互动逐步绘出隐藏世界](catalog/cases/user-video-hailuo-540189229734940672/SUMMARY.md)**<br><sub>user-video-hailuo-540189229734940672</sub> | MiniMax H3 · Seedance 2.0 |
+| [![造型轮播｜身份锁定跨风格世界](catalog/cases/user-video-hailuo-539984531455201282/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-539984531455201282) | **[造型轮播｜身份锁定跨风格世界](catalog/cases/user-video-hailuo-539984531455201282/SUMMARY.md)**<br><sub>user-video-hailuo-539984531455201282</sub> | MiniMax H3 · Seedance 2.0 |
+| [![身份机体跃迁｜同一特征跨陆空载具升级](catalog/cases/user-video-hailuo-423900387218210818/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-423900387218210818) | **[身份机体跃迁｜同一特征跨陆空载具升级](catalog/cases/user-video-hailuo-423900387218210818/SUMMARY.md)**<br><sub>user-video-hailuo-423900387218210818</sub> | MiniMax H3 · Seedance 2.0 |
+| [![固定工坊｜平面珠阵逐层立体成型](catalog/cases/user-video-hailuo-448227283749875713/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-448227283749875713) | **[固定工坊｜平面珠阵逐层立体成型](catalog/cases/user-video-hailuo-448227283749875713/SUMMARY.md)**<br><sub>user-video-hailuo-448227283749875713</sub> | MiniMax H3 · Seedance 2.0 |
+| [![独演成敌｜动作材质凝成对手后碰撞](catalog/cases/user-video-hailuo-394176964477943816/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-394176964477943816) | **[独演成敌｜动作材质凝成对手后碰撞](catalog/cases/user-video-hailuo-394176964477943816/SUMMARY.md)**<br><sub>user-video-hailuo-394176964477943816</sub> | MiniMax H3 · Seedance 2.0 |
+| [![造型轮播｜身份锁定跨风格世界](catalog/cases/user-video-hailuo-460563497509273606/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-460563497509273606) | **[造型轮播｜身份锁定跨风格世界](catalog/cases/user-video-hailuo-460563497509273606/SUMMARY.md)**<br><sub>user-video-hailuo-460563497509273606</sub> | MiniMax H3 · Seedance 2.0 |
+| [![固定空间｜毛坯阶段生成完成室内](catalog/cases/user-video-hailuo-418751301536092163/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-418751301536092163) | **[固定空间｜毛坯阶段生成完成室内](catalog/cases/user-video-hailuo-418751301536092163/SUMMARY.md)**<br><sub>user-video-hailuo-418751301536092163</sub> | MiniMax H3 · Seedance 2.0 |
+| [![样本倍增｜机器开启后连续输出同类群体](catalog/cases/user-video-hailuo-437298335184588801/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-437298335184588801) | **[样本倍增｜机器开启后连续输出同类群体](catalog/cases/user-video-hailuo-437298335184588801/SUMMARY.md)**<br><sub>user-video-hailuo-437298335184588801</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -190,7 +202,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 下载 `T8-Prompt-Library-Setup-v1.1.7.exe`；macOS 下载 `T8-Prompt-Library-v1.1.7-mac-universal.dmg`。
+2. Windows 下载 `T8-Prompt-Library-Setup-v1.1.8.exe`；macOS 下载 `T8-Prompt-Library-v1.1.8-mac-universal.dmg`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
 
@@ -249,7 +261,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.1.7**。项目使用十进制进位：
+当前目标版本是 **v1.1.8**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0

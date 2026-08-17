@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-hailuo-437298335184588801",
+  "slug": "exemplar-triggered-output-multiplication",
+  "title": "样本倍增｜机器开启后连续输出同类群体",
+  "source_title": "样本倍增｜机器以顶部样本连续输出同类",
+  "summary": "先让一个可辨样本与封闭机器同框，经过一次外部触发后打开独立输出阈值；同类实例从阈值连续出现并在机器周围累积，而原样本始终留在顶部作为身份对照，最终同框证明倍增结果。",
+  "status": "released",
+  "source_duration_seconds": 10.1,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/exemplar-triggered-output-multiplication",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-437298335184588801/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-437298335184588801/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-exemplar-triggered-output-multiplication-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "样本与封闭机器同框 + 一次外部触发 + 独立输出阈值打开 + 同类实例连续输出累积 + 原样本保留为身份对照",
+  "recommended_input": "原创纸艺天文工坊内，一台黑黄铜立式折叠织机保持关闭，一枚清晰黄铜折纸星放在顶部对照托架，奶油色脚踏板同时可见；第一枚匹配的黄铜折纸星从侧槽折出并挂到一根空线，顶部原样本仍留在独立托架；顶部原样本、中央织机、仍开启的侧槽和四枚不同深度的匹配星同时可见，形成完整小型星座",
+  "required_anchors": [
+    "Establish one identity exemplar and one closed production device in the same readable frame.",
+    "Use one visible trigger and show a distinct output threshold opening before the first result.",
+    "Repeat one-at-a-time outputs through the same threshold and accumulate them in visible space.",
+    "Hold exemplar, device, open threshold and accumulated outputs together."
+  ],
+  "tags": [
+    "exemplar",
+    "triggered",
+    "output",
+    "multiplication"
+  ],
+  "quality": {
+    "weighted_score": 4.737,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-17T11:02:50+08:00",
+  "updated_at": "2026-08-17T12:31:31+08:00"
+}

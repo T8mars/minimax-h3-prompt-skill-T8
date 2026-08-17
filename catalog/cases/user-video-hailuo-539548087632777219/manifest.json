@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-hailuo-539548087632777219",
+  "slug": "identity-locked-style-world-carousel",
+  "title": "造型轮播变体｜同装束跨海报版式",
+  "source_title": "造型轮播变体｜同一人物穿过多套杂志拼贴背景",
+  "summary": "同一高机位人物与服装持续锁定，背景从纯色肖像逐步切换到黑白字版、报刊拼贴和彩色剪贴；人物只做小幅姿态变化，每轮用更高的版式密度验证身份不丢失。作为同一身份锁定式风格世界轮播的短时长证据变体，不新增选择器。",
+  "status": "released",
+  "source_duration_seconds": 10.125,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/identity-locked-style-world-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-539548087632777219/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-539548087632777219/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "user-video-hailuo-539984531455201282",
+  "input_format": "固定主体身份与镜头关系 + 至少四个材质/版式不同的风格世界 + 每阶段改变两项风格通道 + 递增密度 + 可读身份终态",
+  "recommended_input": "原创羊皮纸仓库内，一名黄铜发条快递员以椭圆面板、月牙胸章和折叠工具带建立身份；同一快递员进入粉色植物控制台，路线环换成两枚透明种子仪表，前臂变为粉色护甲，脸板、体型和胸章不变；环境收束成克制紫色声学舱，快递员佩戴小型听音盘和紫色领片，移除多余图表，椭圆脸板、月牙胸章和姿态完整保留",
+  "required_anchors": [
+    "Establish one stable identity, lens relation and recurring accessory against a low-density opening world.",
+    "Change the surrounding style world while keeping face, silhouette and camera axis stable.",
+    "Use at least one additional world with different layout logic rather than a palette swap alone.",
+    "Return to a readable portrait-scale terminal state with the original identity anchors intact."
+  ],
+  "tags": [
+    "identity",
+    "locked",
+    "style",
+    "world",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.736,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-16T17:41:00+08:00",
+  "updated_at": "2026-08-17T12:31:31+08:00"
+}

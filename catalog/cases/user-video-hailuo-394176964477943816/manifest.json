@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-hailuo-394176964477943816",
+  "slug": "solo-form-material-adversary-clash",
+  "title": "独演成敌｜动作材质凝成对手后碰撞",
+  "source_title": "水墨对决｜独演招式到材质敌手碰撞",
+  "summary": "先用单一主体的完整动作建立可辨招式与材质签名，再让环境材质积累并凝成独立对手；中后段通过一次空间跃迁把双方拉入正面对抗，最后引入第二能量材质完成碰撞并回到主体可读终态。",
+  "status": "released",
+  "source_duration_seconds": 16.57,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/solo-form-material-adversary-clash",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-394176964477943816/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-hailuo-394176964477943816/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-solo-form-material-adversary-clash-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "单体招式与材质签名 + 环境材质凝成独立对手 + 空间跃迁建立对抗 + 第二能量材质碰撞 + 主体可读终态",
+  "recommended_input": "原创玻璃沙漠黎明，一名气流工程师站在悬空窑桥旁，用黄铜共振环完成一整套螺旋动作，透明压力折射沿路径留下清楚轨迹；团块凝成透明四足晶体对手，沿一端接近悬桥；工程师从另一端进入，双方路线、桥面和距离共同可读；碎片与钴蓝光退去，工程师落在远端平台，以开场可读方向握住共振环，并稳定最后一圈透明压力轮廓",
+  "required_anchors": [
+    "Establish one subject's complete movement signature and its material trace before an opponent appears.",
+    "Accumulate the same environmental material around the subject before it gains agency.",
+    "Reserve a contrasting second material for one late clash peak.",
+    "After the collision, restore one readable subject state with the signature action or tool still identifiable."
+  ],
+  "tags": [
+    "solo",
+    "form",
+    "material",
+    "adversary",
+    "clash"
+  ],
+  "quality": {
+    "weighted_score": 4.738,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-17T11:02:49+08:00",
+  "updated_at": "2026-08-17T12:31:31+08:00"
+}
