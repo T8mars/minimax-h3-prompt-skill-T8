@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one dominant external threat, isolate a responsible actor through a dedicated preparation phase, make the decision legible through a visible calibration or commitment cue, execute exactly one decisive action, show its material consequence, then return to the responsible actor or outcome owner before a final lockup. The mechanism depends on causal proof, not on combat, weapons or destruction.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one dominant external threat or failure state before the actor commits.",
+      "purpose": "Gives the sequence one legible problem.",
+      "ablation_failure": "Without an opening threat, preparation becomes generic spectacle.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Separate preparation from execution with one visible readiness action.",
+      "purpose": "Makes commitment auditable.",
+      "ablation_failure": "Immediate action removes the feeling of a deliberate decision.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Insert one calibration, alignment or confirmation cue immediately before the decisive action.",
+      "purpose": "Proves why the action occurs at that moment.",
+      "ablation_failure": "A missing confirmation cue turns execution into an arbitrary cut.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Execute one decisive action and show one directly attributable material consequence.",
+      "purpose": "Completes the causal promise.",
+      "ablation_failure": "Multiple unrelated actions or an unseen result dissolve accountability.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return to the actor or outcome owner and hold a final lockup after the consequence.",
+      "purpose": "Confirms who owns the result and closes the arc.",
+      "ablation_failure": "Ending only on the effect abandons the decision-maker and weakens closure.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source armored woman and shoulder launcher",
+    "the source ruined futuristic warzone and approaching aircraft",
+    "the source eye-targeting HUD and projectile-follow shot",
+    "the source aircraft fireball and burning skyline",
+    "the source SKYFALL title card and exact threat-preparation-launch-impact order"
+  ],
+  "instantiations": [
+    {
+      "concept": "At an original alpine avalanche observatory, a glaciologist sees one unstable snow cornice above a research outpost, locks a resonant anchor into a marked ice plate, confirms one mechanical tension ring, releases a single low-frequency pulse and watches the cornice settle into a prepared catch basin before lowering the tool beside a wordless safety emblem.",
+      "prompt_seed": "At an original alpine avalanche observatory, a glaciologist sees one unstable snow cornice above a research outpost, locks a resonant anchor into a marked ice plate, confirms one mechanical tension ring, releases a single low-frequency pulse and watches the cornice settle into a prepared catch basin before lowering the tool beside a wordless safety emblem."
+    },
+    {
+      "concept": "In tactile stop-motion theatre maintenance, a stage engineer notices one suspended chandelier swinging toward a painted set, engages a hand brake, aligns a brass plumb marker, drops one counterweight and watches the chandelier settle precisely before returning beside the stable rigging diagram.",
+      "prompt_seed": "In tactile stop-motion theatre maintenance, a stage engineer notices one suspended chandelier swinging toward a painted set, engages a hand brake, aligns a brass plumb marker, drops one counterweight and watches the chandelier settle precisely before returning beside the stable rigging diagram."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without an opening threat, preparation becomes generic spectacle.",
+      "repair": "Establish one dominant external threat or failure state before the actor commits."
+    },
+    {
+      "failure": "Immediate action removes the feeling of a deliberate decision.",
+      "repair": "Separate preparation from execution with one visible readiness action."
+    },
+    {
+      "failure": "A missing confirmation cue turns execution into an arbitrary cut.",
+      "repair": "Insert one calibration, alignment or confirmation cue immediately before the decisive action."
+    },
+    {
+      "failure": "Multiple unrelated actions or an unseen result dissolve accountability.",
+      "repair": "Execute one decisive action and show one directly attributable material consequence."
+    },
+    {
+      "failure": "Ending only on the effect abandons the decision-maker and weakens closure.",
+      "repair": "Return to the actor or outcome owner and hold a final lockup after the consequence."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "At an original alpine avalanche observatory, a glaciologist sees one unstable snow cornice above a research outpost, locks a resonant anchor into a marked ice plate, confirms one mechanical tension ring, releases a single low-frequency pulse and watches the cornice settle into a prepared catch basin before lowering the tool beside a wordless safety emblem.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In tactile stop-motion theatre maintenance, a stage engineer notices one suspended chandelier swinging toward a painted set, engages a hand brake, aligns a brass plumb marker, drops one counterweight and watches the chandelier settle precisely before returning beside the stable rigging diagram.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

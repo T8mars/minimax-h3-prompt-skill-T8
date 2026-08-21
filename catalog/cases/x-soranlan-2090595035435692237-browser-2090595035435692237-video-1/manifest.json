@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-soranlan-2090595035435692237-browser-2090595035435692237-video-1",
+  "slug": "ensemble-dyad-position-realignment",
+  "title": "关系重排｜群体建立—双人收紧—前后站位",
+  "source_title": "云台关系重排｜群体建立、双人收紧与前后站位",
+  "summary": "先用公开群体画面建立人物关系，再把注意力收紧到其中两人；通过可见发言轮次、目光和微动作持续更新两人关系，最后让一人越过原轴线、另一人跟随，形成新的前后站位。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/ensemble-dyad-position-realignment",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-ensemble-dyad-position-realignment-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "公开群体三角色 + 双人隔离 + 逐级收紧的可见交流与微动作 + 单次越轴 + 新前后关系终态",
+  "recommended_input": "原创毛毡潮汐钟工坊内，红围巾学徒、黄铜面罩评估员和蓝围裙守钟人站在同一条检查线上，后方修复完成的大型时钟门固定空间轴线；学徒检查刻度盘缺口并看向评估员，评估员放下测量臂并只做一次轻微点头，人物、围巾和工具身份稳定；学徒拿着闭合刻度盘走在前方，评估员落后一步跟随，远处守钟人仍留在校准台旁，时钟叶片只开始一次缓慢同步旋转",
+  "required_anchors": [
+    "Establish at least three readable public roles in one shared spatial axis before isolating a pair.",
+    "Isolate one dyad while keeping enough background context to remember the larger group.",
+    "Use one motivated crossing of the established axis to convert the exchange into a visible position change.",
+    "End with both members readable in a new lead-follow or front-back relationship."
+  ],
+  "tags": [
+    "ensemble",
+    "dyad",
+    "position",
+    "realignment"
+  ],
+  "quality": {
+    "weighted_score": 4.675,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-21T10:21:21+08:00",
+  "updated_at": "2026-08-21T12:40:05+08:00"
+}

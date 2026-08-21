@@ -1,0 +1,183 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one stable carrier and the first concise readable message state, then advance a related sequence of short messages through at least three materially different physical or graphical media. Each new phrase must progress the informational state rather than repeat arbitrary slogans, every handoff must be motivated by carrier movement, contact or an explicit spatial transition, and each medium must demonstrate distinct physics rather than only a new font. Vary camera duty to prove those physics, preserve the carrier or its consequence, and finish on a clear terminal message in a new medium without returning to the opening state. Source wording, performer design and exact media order are not reusable.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one stable carrier and the first concise original message state before the first medium change.",
+      "purpose": "Defines the identity and informational starting point of the relay.",
+      "ablation_failure": "Without a stable carrier and initial message state, later scenes become unrelated typography shots.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Advance a related sequence of short messages through at least three media with visibly different material behavior.",
+      "purpose": "Proves a coherent informational progression and cross-medium continuity.",
+      "ablation_failure": "Repeating one word without progression, or swapping only color and font, does not form the observed evolving-message relay.",
+      "evidence_ids": [
+        "beat-01",
+        "beat-02",
+        "beat-03",
+        "beat-04",
+        "beat-05",
+        "obs-14",
+        "obs-26",
+        "obs-27",
+        "obs-28",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Make each handoff causal through carrier movement, contact or a readable spatial boundary.",
+      "purpose": "Connects the media changes into one forward process.",
+      "ablation_failure": "Arbitrary montage cuts remove the sense of transfer.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Change camera duty to prove each medium's physics while keeping the carrier or consequence traceable.",
+      "purpose": "Makes material differences inspectable without losing continuity.",
+      "ablation_failure": "Repeating one frontal beauty frame hides whether the media behave differently.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Resolve the final message state in a new terminal medium and hold it without returning to the opening state.",
+      "purpose": "Gives the informational relay an irreversible finish.",
+      "ablation_failure": "A loop back to the first treatment or an unheld slogan collapses the forward progression.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source pale-haired woman, black eye graphic, plaid outfit and magenta-black fashion palette",
+    "the source LIGHT YOUR OWN WAY, TYPETURE, generated CHANGE FORUMLA-like and DREAM YOUR DIRECTION-like phrases",
+    "the source BREAK THE, MAKE IT YOURS, OPEN YOUR THE NEXT CHAPTER, EDIT STORY and CHOOSE YOUR LIFE wording",
+    "the source giant keyboard terrain, cloud lettering, domino-like slab circle, bubbles, zipper, editing interface and eye close-up",
+    "the source exact performer-led text-medium order and final neon title-card treatment"
+  ],
+  "instantiations": [
+    {
+      "concept": "An original cobalt inspection rover advances SCAN to TRACE to NORTH to VERIFIED through an arctic mapping lab: a floor light-grid establishes SCAN, a punched paper strip produces TRACE, ferrofluid raises NORTH into relief, frost etches VERIFIED across a glass survey plate and the rover stops beside the held terminal result.",
+      "prompt_seed": "An original cobalt inspection rover advances SCAN to TRACE to NORTH to VERIFIED through an arctic mapping lab: a floor light-grid establishes SCAN, a punched paper strip produces TRACE, ferrofluid raises NORTH into relief, frost etches VERIFIED across a glass survey plate and the rover stops beside the held terminal result."
+    },
+    {
+      "concept": "In tactile stop-motion ceramics, a kiln cart advances MARK to PRESS to FIRE to MENDED from chalk guide, clay stamp blocks, woven heat tape and glaze-crackle reflection into a finished fired tile; every station uses a new camera proof and the cart remains traceable to the held terminal result.",
+      "prompt_seed": "In tactile stop-motion ceramics, a kiln cart advances MARK to PRESS to FIRE to MENDED from chalk guide, clay stamp blocks, woven heat tape and glaze-crackle reflection into a finished fired tile; every station uses a new camera proof and the cart remains traceable to the held terminal result."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a stable carrier and initial message state, later scenes become unrelated typography shots.",
+      "repair": "Establish one stable carrier and the first concise original message state before the first medium change."
+    },
+    {
+      "failure": "Repeating one word without progression, or swapping only color and font, does not form the observed evolving-message relay.",
+      "repair": "Advance a related sequence of short messages through at least three media with visibly different material behavior."
+    },
+    {
+      "failure": "Arbitrary montage cuts remove the sense of transfer.",
+      "repair": "Make each handoff causal through carrier movement, contact or a readable spatial boundary."
+    },
+    {
+      "failure": "Repeating one frontal beauty frame hides whether the media behave differently.",
+      "repair": "Change camera duty to prove each medium's physics while keeping the carrier or consequence traceable."
+    },
+    {
+      "failure": "A loop back to the first treatment or an unheld slogan collapses the forward progression.",
+      "repair": "Resolve the final message state in a new terminal medium and hold it without returning to the opening state."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An original cobalt inspection rover advances SCAN to TRACE to NORTH to VERIFIED through an arctic mapping lab: a floor light-grid establishes SCAN, a punched paper strip produces TRACE, ferrofluid raises NORTH into relief, frost etches VERIFIED across a glass survey plate and the rover stops beside the held terminal result.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In tactile stop-motion ceramics, a kiln cart advances MARK to PRESS to FIRE to MENDED from chalk guide, clay stamp blocks, woven heat tape and glaze-crackle reflection into a finished fired tile; every station uses a new camera proof and the cart remains traceable to the held terminal result.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

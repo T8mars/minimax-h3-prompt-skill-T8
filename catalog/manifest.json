@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.1.8",
-  "generated_at": "2026-08-17T12:35:13+08:00",
-  "case_count": 128,
+  "catalog_version": "1.1.9",
+  "generated_at": "2026-08-21T14:22:08+08:00",
+  "case_count": 135,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -4506,6 +4506,259 @@
       ],
       "quality_score": 4.737,
       "updated_at": "2026-08-17T12:31:31+08:00"
+    },
+    {
+      "case_id": "user-video-a3110e84c7e432b0cef18edfe0b99c30",
+      "slug": "rule-acquisition-dimensional-course-escalation",
+      "title": "规则闯关｜吸收能力后从平面赛道升维",
+      "status": "released",
+      "summary": "让一个外来主体进入规则清晰的平面路线，先用移动、避障和收集建立关卡语法，再通过一次可见能力获取改变运动方式；临近终点时让同一路线整体升为三维，主体方向、身份和目标连续不断，最终抵达可读终点。",
+      "manifest_path": "cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/manifest.json",
+      "summary_path": "cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/SUMMARY.md",
+      "source_path": "cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/source.json",
+      "creative_dna_path": "cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/preview.gif",
+        "poster": "cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/poster.webp",
+        "mp4": "media/user-video-a3110e84c7e432b0cef18edfe0b99c30/preview.mp4"
+      },
+      "skill_path": "../skills/rule-acquisition-dimensional-course-escalation",
+      "template_id": "t8-case-rule-acquisition-dimensional-course-escalation-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "rule",
+        "acquisition",
+        "dimensional",
+        "course",
+        "escalation"
+      ],
+      "quality_score": 4.729,
+      "updated_at": "2026-08-17T12:49:29+08:00"
+    },
+    {
+      "case_id": "x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1",
+      "slug": "single-decision-impact-return-lockup",
+      "title": "单次决策兑现｜准备—执行—后果—回归",
+      "status": "released",
+      "summary": "先把单一高压威胁建立清楚，再把准备、校准和一次不可逆决策拆开证明；动作发生后必须显示可见后果，并回到执行者或责任主体完成结果确认与终版锁定。",
+      "manifest_path": "cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/manifest.json",
+      "summary_path": "cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/SUMMARY.md",
+      "source_path": "cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/source.json",
+      "creative_dna_path": "cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/preview.gif",
+        "poster": "cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/poster.webp",
+        "mp4": "media/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/single-decision-impact-return-lockup",
+      "template_id": "t8-case-single-decision-impact-return-lockup-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "single",
+        "decision",
+        "impact",
+        "return",
+        "lockup"
+      ],
+      "quality_score": 4.694,
+      "updated_at": "2026-08-20T13:24:43+08:00"
+    },
+    {
+      "case_id": "x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1",
+      "slug": "trusted-carrier-delayed-interior-release",
+      "title": "延迟载体释放｜进入—静置—开启—扩散",
+      "status": "released",
+      "summary": "让一个密封载体通过外部流程进入可信空间，并在一段清楚的静置或时间变化后从内部开启；隐藏内容物随后扩散，并在整个环境尺度留下可见后果。",
+      "manifest_path": "cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/manifest.json",
+      "summary_path": "cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/SUMMARY.md",
+      "source_path": "cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/source.json",
+      "creative_dna_path": "cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/preview.gif",
+        "poster": "cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/poster.webp",
+        "mp4": "media/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/trusted-carrier-delayed-interior-release",
+      "template_id": "t8-case-trusted-carrier-delayed-interior-release-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "trusted",
+        "carrier",
+        "delayed",
+        "interior",
+        "release"
+      ],
+      "quality_score": 4.71,
+      "updated_at": "2026-08-20T13:24:43+08:00"
+    },
+    {
+      "case_id": "x-promptsin-2090166948239909375-browser-2090166948239909375-video-1",
+      "slug": "offscreen-cue-progressive-tightening-unrevealed-source",
+      "title": "画外定位悬念｜反应递进但不揭示来源",
+      "status": "released",
+      "summary": "在有界空间中只呈现反应者，让画外线索改变其注意方向；每次线索后都以更近的景别和更小的动作更新定位，始终不揭示来源，最后用停顿或黑场保留悬念。",
+      "manifest_path": "cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/manifest.json",
+      "summary_path": "cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/SUMMARY.md",
+      "source_path": "cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/source.json",
+      "creative_dna_path": "cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/preview.gif",
+        "poster": "cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/poster.webp",
+        "mp4": "media/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/offscreen-cue-progressive-tightening-unrevealed-source",
+      "template_id": "t8-case-offscreen-cue-progressive-tightening-unrevealed-source-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "offscreen",
+        "cue",
+        "progressive",
+        "tightening",
+        "unrevealed",
+        "source"
+      ],
+      "quality_score": 4.709,
+      "updated_at": "2026-08-20T13:24:43+08:00"
+    },
+    {
+      "case_id": "x-soranlan-2090595035435692237-browser-2090595035435692237-video-1",
+      "slug": "ensemble-dyad-position-realignment",
+      "title": "关系重排｜群体建立—双人收紧—前后站位",
+      "status": "released",
+      "summary": "先用公开群体画面建立人物关系，再把注意力收紧到其中两人；通过可见发言轮次、目光和微动作持续更新两人关系，最后让一人越过原轴线、另一人跟随，形成新的前后站位。",
+      "manifest_path": "cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/manifest.json",
+      "summary_path": "cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/SUMMARY.md",
+      "source_path": "cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/source.json",
+      "creative_dna_path": "cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/preview.gif",
+        "poster": "cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/poster.webp",
+        "mp4": "media/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/ensemble-dyad-position-realignment",
+      "template_id": "t8-case-ensemble-dyad-position-realignment-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "ensemble",
+        "dyad",
+        "position",
+        "realignment"
+      ],
+      "quality_score": 4.675,
+      "updated_at": "2026-08-21T12:40:05+08:00"
+    },
+    {
+      "case_id": "x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1",
+      "slug": "enclosure-witness-release-scale-dual-proof",
+      "title": "见证释放｜封闭近景—外部尺度—双视图证明",
+      "status": "released",
+      "summary": "先在封闭空间中用近距离见证者建立异常，再让见证者的指向或动作把镜头释放到外部；完整展示环境尺度现象后，以不同于来源表面的双视图同时保留见证者和现象，形成尺度与反应的共同证明。",
+      "manifest_path": "cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/manifest.json",
+      "summary_path": "cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/SUMMARY.md",
+      "source_path": "cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/source.json",
+      "creative_dna_path": "cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/preview.gif",
+        "poster": "cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/poster.webp",
+        "mp4": "media/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/enclosure-witness-release-scale-dual-proof",
+      "template_id": "t8-case-enclosure-witness-release-scale-dual-proof-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "enclosure",
+        "witness",
+        "release",
+        "scale",
+        "dual",
+        "proof"
+      ],
+      "quality_score": 4.713,
+      "updated_at": "2026-08-21T12:40:05+08:00"
+    },
+    {
+      "case_id": "x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1",
+      "slug": "message-medium-relay-stable-carrier",
+      "title": "信息接力｜稳定载体穿越多种实体媒介",
+      "status": "released",
+      "summary": "固定一个可追踪人物或载体，让一组相关但不断推进的短信息依次进入性质明显不同的实体媒介；每次转换都由人物动作或镜头路线触发，并用新的材质物理证明信息链连续，最终在新的终端媒介中完成清楚锁定，而不是回到起点。",
+      "manifest_path": "cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/manifest.json",
+      "summary_path": "cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/SUMMARY.md",
+      "source_path": "cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/source.json",
+      "creative_dna_path": "cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/preview.gif",
+        "poster": "cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/poster.webp",
+        "mp4": "media/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/message-medium-relay-stable-carrier",
+      "template_id": "t8-case-message-medium-relay-stable-carrier-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "message",
+        "medium",
+        "relay",
+        "stable",
+        "carrier"
+      ],
+      "quality_score": 4.656,
+      "updated_at": "2026-08-21T12:40:05+08:00"
     }
   ]
 }

@@ -1,0 +1,227 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "dbccda9419250f494fdd8ba91db5654cb02187d4ecf1561b87efac74c2253287",
+    "creative_dna_sha256": "7fec61c1d5ea9301310f3f1837acfcc5c2b21b732834390fcee36b1f8dcf5c56"
+  },
+  "content": {
+    "title": "信息接力｜稳定载体穿越多种实体媒介",
+    "summary": "固定一个可追踪人物或载体，让一组相关但不断推进的短信息依次进入性质明显不同的实体媒介；每次转换都由人物动作或镜头路线触发，并用新的材质物理证明信息链连续，最终在新的终端媒介中完成清楚锁定，而不是回到起点。",
+    "quick_start": {
+      "input_format": "稳定载体 + 相关且递进的原创短信息序列 + 至少三种物理媒介 + 载体触发的因果交接 + 各媒介镜头证明 + 新终端媒介定格",
+      "recommended_input": "原创北极测绘实验室内，一辆手掌高钴蓝巡检车驶入浅色地面光栅，四条白色轨迹依次亮起并在车下拼成准确英文大写单词 SCAN；纸带进入黑色铁磁流体台，巡检车按下一枚钴蓝触点，五组流体脊线升起并组成准确英文大写单词 NORTH，磁性峰值与倒影可见；巡检车停在淡色天窗下的玻璃板旁，准确英文大写单词 VERIFIED 以青色霜刻清晰保持，后方光栅、纸带和流体站作为已完成步骤可辨",
+      "required_anchors": [
+        "在第一次媒介转换前，先建立一个稳定载体和第一个简洁的原创信息状态。",
+        "让一组相关短信息依次穿过至少三种材质行为明显不同的实体媒介。",
+        "调整镜头职责以证明每种媒介的物理特性，同时保持载体或其后果可追踪。",
+        "在新的终端媒介中清楚呈现并保持最终信息状态，不回到开场状态。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定一个可追踪人物或载体，让一组相关但不断推进的短信息依次进入性质明显不同的实体媒介；每次转换都由人物动作或镜头路线触发，并用新的材质物理证明信息链连续，最终在新的终端媒介中完成清楚锁定，而不是回到起点。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "建立一个稳定载体和第一个简洁可读的信息状态，再让一组相关短信息依次穿过至少三种物理或图形特性明显不同的媒介。每条新信息都要推进信息状态，而不是重复任意口号；每次转换都必须由载体移动、接触或清楚的空间交接触发，每种媒介都要展示独特的材质行为，而不只是换一种字体。调整镜头职责来证明这些物理特性，持续保留载体或其后果，并在新媒介中完成清楚的终端信息，不返回开场状态。来源措辞、表演者设计和确切媒介顺序均不可复用。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在第一次媒介转换前，先建立一个稳定载体和第一个简洁的原创信息状态。",
+          "purpose": "定义中继的身份和信息起点。",
+          "ablation_failure": "没有稳定的载体和初始的消息状态，后面的场景就变成了无关的排版镜头。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "让一组相关短信息依次穿过至少三种材质行为明显不同的实体媒介。",
+          "purpose": "证明连贯的信息进展和跨媒体连续性。",
+          "ablation_failure": "无进展地重复一个单词，或仅交换颜色和字体，不会形成观察到的不断演变的消息中继。",
+          "evidence_ids": [
+            "beat-01",
+            "beat-02",
+            "beat-03",
+            "beat-04",
+            "beat-05",
+            "obs-14",
+            "obs-26",
+            "obs-27",
+            "obs-28",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "通过载体移动、接触或可读的空间边界使每次切换具有因果关系。",
+          "purpose": "将媒体更改连接到一个转发过程。",
+          "ablation_failure": "任意的蒙太奇剪辑消除了转移感。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "调整镜头职责以证明每种媒介的物理特性，同时保持载体或其后果可追踪。",
+          "purpose": "在不失去连续性的情况下检查材料差异。",
+          "ablation_failure": "重复一张正面美图，隐藏了媒体是否有不同的表现。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在新的终端媒介中清楚呈现并保持最终信息状态，不回到开场状态。",
+          "purpose": "给信息传递一个不可逆转的结束。",
+          "ablation_failure": "回到第一次治疗或未坚持的口号会破坏前进的进程。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "一个原创的稳定主体或具有可读角色的配对。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一种通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "保持机制清晰易读的克制的作用或运动规则。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源：浅色头发的女人，黑眼圈图形，格子服装和洋红色-黑色时尚调色板",
+        "源LIGHT YOUR OWN WAY、TYPETURE，生成类似CHANGE FORUMLA和DREAM YOUR DIRECTION的短语",
+        "源码BREAK THE、MAKE IT YOURS、OPEN YOUR THE NEXT CHAPTER、EDIT STORY和CHOOSE YOUR LIFE的写法",
+        "源码巨型键盘地形、云字、多米诺骨牌圆、气泡、拉链、编辑界面和眼睛特写",
+        "源精确表演者主导的文本媒体顺序和最终霓虹灯标题卡处理"
+      ],
+      "instantiations": [
+        {
+          "concept": "原始钴探测车通过北极测绘实验室将 SCAN 推进至 TRACE、NORTH、VERIFIED：地面光栅建立 SCAN，打孔纸条产生 TRACE，铁磁流体将 NORTH 提升为浮雕、霜冻在玻璃测量板上蚀刻 VERIFIED，流动站停在所保存的终端结果旁边。",
+          "prompt_seed": "原始钴探测车通过北极测绘实验室将 SCAN 推进至 TRACE、NORTH、VERIFIED：地面光栅建立 SCAN，打孔纸条产生 TRACE，铁磁流体将 NORTH 提升为浮雕、霜冻在玻璃测量板上蚀刻 VERIFIED，流动站停在所保存的终端结果旁边。"
+        },
+        {
+          "concept": "在触觉定格陶瓷中，窑车将 MARK 推进至 PRESS、FIRE、MENDED，从粉笔导轨、粘土印章块、编织加热带和釉裂纹反射到成品烧制瓷砖；每个站点都使用新的相机验证，并且购物车仍然可以追溯到所持有的终端结果。",
+          "prompt_seed": "在触觉定格陶瓷中，窑车将 MARK 推进至 PRESS、FIRE、MENDED，从粉笔导轨、粘土印章块、编织加热带和釉裂纹反射到成品烧制瓷砖；每个站点都使用新的相机验证，并且购物车仍然可以追溯到所持有的终端结果。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有稳定的载体和初始的消息状态，后面的场景就变成了无关的排版镜头。",
+          "repair": "在第一次媒介转换前，先建立一个稳定载体和第一个简洁的原创信息状态。"
+        },
+        {
+          "failure": "无进展地重复一个单词，或仅交换颜色和字体，不会形成观察到的不断演变的消息中继。",
+          "repair": "让一组相关短信息依次穿过至少三种材质行为明显不同的实体媒介。"
+        },
+        {
+          "failure": "任意的蒙太奇剪辑消除了转移感。",
+          "repair": "通过载体移动、接触或可读的空间边界使每次切换具有因果关系。"
+        },
+        {
+          "failure": "重复一张正面美图，隐藏了媒体是否有不同的表现。",
+          "repair": "调整镜头职责以证明每种媒介的物理特性，同时保持载体或其后果可追踪。"
+        },
+        {
+          "failure": "回到第一次治疗或未坚持的口号会破坏前进的进程。",
+          "repair": "在新的终端媒介中清楚呈现并保持最终信息状态，不回到开场状态。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "原始钴探测车通过北极测绘实验室将 SCAN 推进至 TRACE、NORTH、VERIFIED：地面光栅建立 SCAN，打孔纸条产生 TRACE，铁磁流体将 NORTH 提升为浮雕、霜冻在玻璃测量板上蚀刻 VERIFIED，流动站停在所保存的终端结果旁边。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "在触觉定格陶瓷中，窑车将 MARK 推进至 PRESS、FIRE、MENDED，从粉笔导轨、粘土印章块、编织加热带和釉裂纹反射到成品烧制瓷砖；每个站点都使用新的相机验证，并且购物车仍然可以追溯到所持有的终端结果。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

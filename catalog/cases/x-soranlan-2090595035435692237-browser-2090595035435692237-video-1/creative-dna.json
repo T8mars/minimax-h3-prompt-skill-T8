@@ -1,0 +1,180 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish a public ensemble and the initial spatial roles of at least three figures, then isolate one dyad while the larger group remains contextual evidence. Progressively tighten coverage through visible speaking turns, gaze and small physical responses without assigning unsupported dialogue meaning. Resolve the exchange through one motivated axis crossing, then reopen the frame on a new lead-follow or front-back relationship. The reusable mechanism is spatial relationship realignment, not a specific costume drama or conversation premise.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish at least three readable public roles in one shared spatial axis before isolating a pair.",
+      "purpose": "Provides a relationship baseline that can later change.",
+      "ablation_failure": "Beginning directly on two faces removes proof that the pair was extracted from a larger public arrangement.",
+      "evidence_ids": [
+        "beat-01",
+        "beat-02",
+        "obs-01",
+        "obs-02",
+        "obs-03",
+        "obs-04",
+        "obs-18"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Isolate one dyad while keeping enough background context to remember the larger group.",
+      "purpose": "Transfers attention without erasing the social frame.",
+      "ablation_failure": "A context-free close-up makes the exchange private and loses the public-position mechanism.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-18"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Tighten from paired body-scale coverage to smaller gaze, mouth or head changes without inventing dialogue meaning.",
+      "purpose": "Makes the relationship update inspectable through visible performance.",
+      "ablation_failure": "Constant shot scale or inferred semantics turns the middle into unsupported explanation.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-18"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one motivated crossing of the established axis to convert the exchange into a visible position change.",
+      "purpose": "Turns interpersonal change into spatial evidence.",
+      "ablation_failure": "A cut to an unrelated pose cannot prove how the relation was reorganized.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-18"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with both members readable in a new lead-follow or front-back relationship.",
+      "purpose": "Closes the sequence on an inspectable new arrangement.",
+      "ablation_failure": "Ending on an isolated face leaves the spatial result unresolved.",
+      "evidence_ids": [
+        "beat-06",
+        "obs-11",
+        "obs-12",
+        "obs-18"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source cloud-top Chinese fantasy platform, monumental gate and distant floating architecture",
+    "the source white-robed and green-robed women, older white-haired man, swords and public formation",
+    "the source exact two-woman speaking and eye-contact order",
+    "the source cheek mark, hair ornaments, robe palette and sword staging",
+    "the source exact foreground walk-past and white-robed follower ending"
+  ],
+  "instantiations": [
+    {
+      "concept": "In original felt stop-motion at a tidal-clock workshop, three harbor artisans begin in one inspection line. A red-scarf apprentice and a brass-mask assessor separate beside a calibration table, exchange two silent inspection gestures as the view tightens, then the apprentice crosses the marked floor line and the assessor follows behind into the repaired clock passage.",
+      "prompt_seed": "In original felt stop-motion at a tidal-clock workshop, three harbor artisans begin in one inspection line. A red-scarf apprentice and a brass-mask assessor separate beside a calibration table, exchange two silent inspection gestures as the view tightens, then the apprentice crosses the marked floor line and the assessor follows behind into the repaired clock passage."
+    },
+    {
+      "concept": "In a clean robotics lab, three palm-sized service robots start at aligned charging bays. Two roll into a shared test lane, trade short light and arm responses under progressively closer views, then the smaller unit crosses the lane marker and the taller unit follows into a new front-back docking order.",
+      "prompt_seed": "In a clean robotics lab, three palm-sized service robots start at aligned charging bays. Two roll into a shared test lane, trade short light and arm responses under progressively closer views, then the smaller unit crosses the lane marker and the taller unit follows into a new front-back docking order."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Beginning directly on two faces removes proof that the pair was extracted from a larger public arrangement.",
+      "repair": "Establish at least three readable public roles in one shared spatial axis before isolating a pair."
+    },
+    {
+      "failure": "A context-free close-up makes the exchange private and loses the public-position mechanism.",
+      "repair": "Isolate one dyad while keeping enough background context to remember the larger group."
+    },
+    {
+      "failure": "Constant shot scale or inferred semantics turns the middle into unsupported explanation.",
+      "repair": "Tighten from paired body-scale coverage to smaller gaze, mouth or head changes without inventing dialogue meaning."
+    },
+    {
+      "failure": "A cut to an unrelated pose cannot prove how the relation was reorganized.",
+      "repair": "Use one motivated crossing of the established axis to convert the exchange into a visible position change."
+    },
+    {
+      "failure": "Ending on an isolated face leaves the spatial result unresolved.",
+      "repair": "End with both members readable in a new lead-follow or front-back relationship."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In original felt stop-motion at a tidal-clock workshop, three harbor artisans begin in one inspection line. A red-scarf apprentice and a brass-mask assessor separate beside a calibration table, exchange two silent inspection gestures as the view tightens, then the apprentice crosses the marked floor line and the assessor follows behind into the repaired clock passage.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In a clean robotics lab, three palm-sized service robots start at aligned charging bays. Two roll into a shared test lane, trade short light and arm responses under progressively closer views, then the smaller unit crosses the lane marker and the taller unit follows into a new front-back docking order.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1",
+  "slug": "enclosure-witness-release-scale-dual-proof",
+  "title": "见证释放｜封闭近景—外部尺度—双视图证明",
+  "source_title": "风暴见证｜车内自拍释放到龙卷风尺度证明",
+  "summary": "先在封闭空间中用近距离见证者建立异常，再让见证者的指向或动作把镜头释放到外部；完整展示环境尺度现象后，以不同于来源表面的双视图同时保留见证者和现象，形成尺度与反应的共同证明。",
+  "status": "released",
+  "source_duration_seconds": 15.082667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/enclosure-witness-release-scale-dual-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-enclosure-witness-release-scale-dual-proof-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "封闭近景见证者 + 固定开口中的局部现象 + 指向动作 + 可见边界释放镜头 + 独立环境宽景 + 新几何双视图",
+  "recommended_input": "原创深海观测舱内，一名潜水员靠近圆形承压舷窗，窗外暗钴蓝海水中只有一条细青色发光生物丝带可见，琥珀仪表和凝露建立封闭环境；潜水员把摄影舱锁入机械套筒并推动滑架，镜头穿过干式套筒、越过透明承压边界后固定到外部导轨，不穿越实体墙面；主体画面继续显示完整管水母带和观测舱，右下小圆窗同步显示潜水员扶住控制台并观看，两个尺度同时停留，不使用竖向分屏",
+  "required_anchors": [
+    "Establish one close witness inside a bounded enclosure and one partially visible external phenomenon through a fixed opening.",
+    "Use one visible directional action by the witness to transfer attention toward the external phenomenon.",
+    "Give the phenomenon one unobstructed environment-scale view without the witness dominating it.",
+    "End with a simultaneous dual proof of witness response and environmental phenomenon using a new composite geometry."
+  ],
+  "tags": [
+    "enclosure",
+    "witness",
+    "release",
+    "scale",
+    "dual",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.713,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-21T10:21:23+08:00",
+  "updated_at": "2026-08-21T12:40:05+08:00"
+}

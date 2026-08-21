@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin with a close witness-owned view inside a bounded enclosure while an external phenomenon is partially visible through a fixed opening. Use one visible directional action to motivate a camera release from the enclosure, then give the phenomenon an independent wide-scale proof. Finish with a simultaneous dual-view device that keeps witness response and environmental magnitude readable together; the dual proof may use an inset, reflection or monitor and must not copy the source's exact split layout.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one close witness inside a bounded enclosure and one partially visible external phenomenon through a fixed opening.",
+      "purpose": "Creates an immediate scale question with a stable near-far relation.",
+      "ablation_failure": "An open wide beginning removes the witness-to-scale reveal.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one visible directional action by the witness to transfer attention toward the external phenomenon.",
+      "purpose": "Motivates the coming camera release.",
+      "ablation_failure": "An unmotivated cut outside separates reaction from what is being witnessed.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Release the viewpoint from the enclosure through one readable physical boundary or carrier handoff.",
+      "purpose": "Turns subjective evidence into independently inspectable space.",
+      "ablation_failure": "Teleporting to a wide shot loses the experiential transition.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Give the phenomenon one unobstructed environment-scale view without the witness dominating it.",
+      "purpose": "Proves magnitude beyond the close reaction frame.",
+      "ablation_failure": "Remaining in selfie scale never validates the phenomenon's spatial extent.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with a simultaneous dual proof of witness response and environmental phenomenon using a new composite geometry.",
+      "purpose": "Keeps human-scale and environment-scale evidence available together.",
+      "ablation_failure": "Alternating them again weakens the final comparison and closure.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source wet-haired male storm chaser, black jacket and close distressed selfie performance",
+    "the source vehicle cabin, dashboard, windshield, door frame and wet road",
+    "the source tornado, lightning and storm-cloud imagery",
+    "the source exact car-selfie to door-exit to tornado-wide progression",
+    "the source left-witness/right-tornado vertical split and kinovi AI watermark"
+  ],
+  "instantiations": [
+    {
+      "concept": "Inside an original deep-sea observation pod, a diver records a close helmet view with a thin luminous organism visible through one porthole, points to its expanding chain, sends a magnetic camera pod through a round maintenance lock, reveals the full siphonophore ribbon outside and finishes with a small circular diver inset over the wide ocean view.",
+      "prompt_seed": "Inside an original deep-sea observation pod, a diver records a close helmet view with a thin luminous organism visible through one porthole, points to its expanding chain, sends a magnetic camera pod through a round maintenance lock, reveals the full siphonophore ribbon outside and finishes with a small circular diver inset over the wide ocean view."
+    },
+    {
+      "concept": "In a miniature seed vault, a palm-sized survey robot is seen close inside a drawer chamber while an amber root pulse shows through a mesh slot. Its lamp arm indicates the pulse, an overhead rail carries the camera through the slot, a wide reveals a building-scale fungal lattice, and a polished steel gauge reflection retains the robot beside the full lattice.",
+      "prompt_seed": "In a miniature seed vault, a palm-sized survey robot is seen close inside a drawer chamber while an amber root pulse shows through a mesh slot. Its lamp arm indicates the pulse, an overhead rail carries the camera through the slot, a wide reveals a building-scale fungal lattice, and a polished steel gauge reflection retains the robot beside the full lattice."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "An open wide beginning removes the witness-to-scale reveal.",
+      "repair": "Establish one close witness inside a bounded enclosure and one partially visible external phenomenon through a fixed opening."
+    },
+    {
+      "failure": "An unmotivated cut outside separates reaction from what is being witnessed.",
+      "repair": "Use one visible directional action by the witness to transfer attention toward the external phenomenon."
+    },
+    {
+      "failure": "Teleporting to a wide shot loses the experiential transition.",
+      "repair": "Release the viewpoint from the enclosure through one readable physical boundary or carrier handoff."
+    },
+    {
+      "failure": "Remaining in selfie scale never validates the phenomenon's spatial extent.",
+      "repair": "Give the phenomenon one unobstructed environment-scale view without the witness dominating it."
+    },
+    {
+      "failure": "Alternating them again weakens the final comparison and closure.",
+      "repair": "End with a simultaneous dual proof of witness response and environmental phenomenon using a new composite geometry."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Inside an original deep-sea observation pod, a diver records a close helmet view with a thin luminous organism visible through one porthole, points to its expanding chain, sends a magnetic camera pod through a round maintenance lock, reveals the full siphonophore ribbon outside and finishes with a small circular diver inset over the wide ocean view.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In a miniature seed vault, a palm-sized survey robot is seen close inside a drawer chamber while an amber root pulse shows through a mesh slot. Its lamp arm indicates the pulse, an overhead rail carries the camera through the slot, a wide reveals a building-scale fungal lattice, and a polished steel gauge reflection retains the robot beside the full lattice.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

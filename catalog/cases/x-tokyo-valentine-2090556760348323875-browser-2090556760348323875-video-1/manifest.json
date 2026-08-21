@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1",
+  "slug": "message-medium-relay-stable-carrier",
+  "title": "信息接力｜稳定载体穿越多种实体媒介",
+  "source_title": "文字媒介接力｜稳定人物穿越键盘、云层、立体字与界面",
+  "summary": "固定一个可追踪人物或载体，让一组相关但不断推进的短信息依次进入性质明显不同的实体媒介；每次转换都由人物动作或镜头路线触发，并用新的材质物理证明信息链连续，最终在新的终端媒介中完成清楚锁定，而不是回到起点。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/message-medium-relay-stable-carrier",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-message-medium-relay-stable-carrier-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "稳定载体 + 相关且递进的原创短信息序列 + 至少三种物理媒介 + 载体触发的因果交接 + 各媒介镜头证明 + 新终端媒介定格",
+  "recommended_input": "原创北极测绘实验室内，一辆手掌高钴蓝巡检车驶入浅色地面光栅，四条白色轨迹依次亮起并在车下拼成准确英文大写单词 SCAN；纸带进入黑色铁磁流体台，巡检车按下一枚钴蓝触点，五组流体脊线升起并组成准确英文大写单词 NORTH，磁性峰值与倒影可见；巡检车停在淡色天窗下的玻璃板旁，准确英文大写单词 VERIFIED 以青色霜刻清晰保持，后方光栅、纸带和流体站作为已完成步骤可辨",
+  "required_anchors": [
+    "Establish one stable carrier and the first concise original message state before the first medium change.",
+    "Advance a related sequence of short messages through at least three media with visibly different material behavior.",
+    "Change camera duty to prove each medium's physics while keeping the carrier or consequence traceable.",
+    "Resolve the final message state in a new terminal medium and hold it without returning to the opening state."
+  ],
+  "tags": [
+    "message",
+    "medium",
+    "relay",
+    "stable",
+    "carrier"
+  ],
+  "quality": {
+    "weighted_score": 4.656,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-21T10:21:25+08:00",
+  "updated_at": "2026-08-21T12:40:05+08:00"
+}

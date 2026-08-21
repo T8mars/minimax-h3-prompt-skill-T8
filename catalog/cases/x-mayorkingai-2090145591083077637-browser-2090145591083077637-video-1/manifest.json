@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1",
+  "slug": "trusted-carrier-delayed-interior-release",
+  "title": "延迟载体释放｜进入—静置—开启—扩散",
+  "source_title": "纸雕特洛伊｜密封载体进入后延迟释放",
+  "summary": "让一个密封载体通过外部流程进入可信空间，并在一段清楚的静置或时间变化后从内部开启；隐藏内容物随后扩散，并在整个环境尺度留下可见后果。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/trusted-carrier-delayed-interior-release",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-trusted-carrier-delayed-interior-release-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "可信边界 + 密封载体 + 可见入场流程 + 延迟状态变化 + 无可见操作者的开启 + 隐藏内容释放 + 环境尺度后果",
+  "recommended_input": "原创玻璃温室接收区，黄铜地面输送带把一个密封哑光陶瓷种子库送过透明气闸，后方是整齐闭合的植物行列；生长灯从黄昏切换为紫色夜间模式，种子库位置、接缝、地面轨道和闭合植物全部保持一致；无人机沿三条分支路径扩散，花朵从种子库向远处玻璃墙依次开放，打开的载体始终留在起点",
+  "required_anchors": [
+    "Use a visible external process to admit one sealed carrier through a trusted boundary.",
+    "Establish the carrier intact and inert inside the bounded destination.",
+    "Open the carrier only after the delay, show no opening operator and let concealed contents emerge.",
+    "Let the released contents produce one visible environment-scale consequence."
+  ],
+  "tags": [
+    "trusted",
+    "carrier",
+    "delayed",
+    "interior",
+    "release"
+  ],
+  "quality": {
+    "weighted_score": 4.71,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-20T12:45:33+08:00",
+  "updated_at": "2026-08-20T13:24:43+08:00"
+}

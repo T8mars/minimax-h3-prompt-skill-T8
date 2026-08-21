@@ -194,6 +194,13 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![造型轮播｜身份锁定跨风格世界](catalog/cases/user-video-hailuo-460563497509273606/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-460563497509273606) | **[造型轮播｜身份锁定跨风格世界](catalog/cases/user-video-hailuo-460563497509273606/SUMMARY.md)**<br><sub>user-video-hailuo-460563497509273606</sub> | MiniMax H3 · Seedance 2.0 |
 | [![固定空间｜毛坯阶段生成完成室内](catalog/cases/user-video-hailuo-418751301536092163/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-418751301536092163) | **[固定空间｜毛坯阶段生成完成室内](catalog/cases/user-video-hailuo-418751301536092163/SUMMARY.md)**<br><sub>user-video-hailuo-418751301536092163</sub> | MiniMax H3 · Seedance 2.0 |
 | [![样本倍增｜机器开启后连续输出同类群体](catalog/cases/user-video-hailuo-437298335184588801/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-hailuo-437298335184588801) | **[样本倍增｜机器开启后连续输出同类群体](catalog/cases/user-video-hailuo-437298335184588801/SUMMARY.md)**<br><sub>user-video-hailuo-437298335184588801</sub> | MiniMax H3 · Seedance 2.0 |
+| [![规则闯关｜吸收能力后从平面赛道升维](catalog/cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-a3110e84c7e432b0cef18edfe0b99c30) | **[规则闯关｜吸收能力后从平面赛道升维](catalog/cases/user-video-a3110e84c7e432b0cef18edfe0b99c30/SUMMARY.md)**<br><sub>user-video-a3110e84c7e432b0cef18edfe0b99c30</sub> | MiniMax H3 · Seedance 2.0 |
+| [![单次决策兑现｜准备—执行—后果—回归](catalog/cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/preview.gif)](https://x.com/Lily_collins3/status/2090096886405591532) | **[单次决策兑现｜准备—执行—后果—回归](catalog/cases/x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1/SUMMARY.md)**<br><sub>x-lily-collins3-2090096886405591532-browser-2090096886405591532-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![延迟载体释放｜进入—静置—开启—扩散](catalog/cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/preview.gif)](https://x.com/MayorKingAI/status/2090145591083077637) | **[延迟载体释放｜进入—静置—开启—扩散](catalog/cases/x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1/SUMMARY.md)**<br><sub>x-mayorkingai-2090145591083077637-browser-2090145591083077637-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![画外定位悬念｜反应递进但不揭示来源](catalog/cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/preview.gif)](https://x.com/PromptSin/status/2090166948239909375) | **[画外定位悬念｜反应递进但不揭示来源](catalog/cases/x-promptsin-2090166948239909375-browser-2090166948239909375-video-1/SUMMARY.md)**<br><sub>x-promptsin-2090166948239909375-browser-2090166948239909375-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![关系重排｜群体建立—双人收紧—前后站位](catalog/cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/preview.gif)](https://x.com/Soranlan/status/2090595035435692237) | **[关系重排｜群体建立—双人收紧—前后站位](catalog/cases/x-soranlan-2090595035435692237-browser-2090595035435692237-video-1/SUMMARY.md)**<br><sub>x-soranlan-2090595035435692237-browser-2090595035435692237-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![见证释放｜封闭近景—外部尺度—双视图证明](catalog/cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/preview.gif)](https://x.com/kinovi_ai/status/2090557730318881014) | **[见证释放｜封闭近景—外部尺度—双视图证明](catalog/cases/x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1/SUMMARY.md)**<br><sub>x-kinovi-ai-2090557730318881014-browser-2090557730318881014-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![信息接力｜稳定载体穿越多种实体媒介](catalog/cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/preview.gif)](https://x.com/tokyo_Valentine/status/2090556760348323875) | **[信息接力｜稳定载体穿越多种实体媒介](catalog/cases/x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1/SUMMARY.md)**<br><sub>x-tokyo-valentine-2090556760348323875-browser-2090556760348323875-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -202,7 +209,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 下载 `T8-Prompt-Library-Setup-v1.1.8.exe`；macOS 下载 `T8-Prompt-Library-v1.1.8-mac-universal.dmg`。
+2. Windows 下载 `T8-Prompt-Library-Setup-v1.1.9.exe`；macOS 下载 `T8-Prompt-Library-v1.1.9-mac-universal.dmg`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
 
@@ -261,7 +268,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.1.8**。项目使用十进制进位：
+当前目标版本是 **v1.1.9**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0

@@ -1,0 +1,181 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one bounded subject-space relationship with a clearly hidden offscreen region and progressively tighten from body-scale reorientation to micro-reaction without revealing a source. The creator states that sound supplies spatial information, while local ASR proves narration but not exact cue direction or synchronization; therefore each new transfer must explicitly design its own directional offscreen cues rather than treating source cue timing as observed fact. End on a held response, residual instrument state or blackout.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one reaction subject and one bounded offscreen region without showing a source.",
+      "purpose": "Creates a stable localization problem.",
+      "ablation_failure": "An unbounded or already visible source removes the suspense mechanism.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "For each new instance, explicitly design a directional offscreen cue for a visible reorientation while the subject stays in the same bounded area; source cue timing remains inferred.",
+      "purpose": "Connects newly authored unseen space to observable behavior without overclaiming source synchronization.",
+      "ablation_failure": "Large relocation or an unspecified cue breaks localization continuity.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16",
+        "obs-15",
+        "obs-26"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Tighten the camera after each visible reorientation and reduce motion from body turn to gaze or facial adjustment.",
+      "purpose": "Converts spatial suspense into performance detail using directly visible source structure.",
+      "ablation_failure": "Constant shot scale prevents escalation.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16",
+        "obs-15",
+        "obs-26"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Keep the cue source outside every frame and avoid explanatory inserts.",
+      "purpose": "Preserves the audience's active spatial inference.",
+      "ablation_failure": "Showing the source converts suspense into ordinary coverage.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a held reaction, residual instrument state or blackout without a source reveal.",
+      "purpose": "Leaves a precise unresolved afterimage.",
+      "ablation_failure": "A final reveal cancels the central withholding rule.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source woman, keys and dim residential corridor",
+    "the source wall-dominant foreground and single wall lamp",
+    "the source exact rear silhouette to tight face order",
+    "the source implied monster, voice, whisper and knock wording",
+    "the source black ending and exact corridor reaction staging"
+  ],
+  "instantiations": [
+    {
+      "concept": "In an original orbital greenhouse, one maintenance technician at a fixed sensor bench hears designed pressure ticks migrate through overhead irrigation pipes. She reorients from ceiling manifold to side vent while the camera tightens from medium to eye-and-ear profile; a fixed gauge needle twitches once, the source remains unseen and the chamber falls to black.",
+      "prompt_seed": "In an original orbital greenhouse, one maintenance technician at a fixed sensor bench hears designed pressure ticks migrate through overhead irrigation pipes. She reorients from ceiling manifold to side vent while the camera tightens from medium to eye-and-ear profile; a fixed gauge needle twitches once, the source remains unseen and the chamber falls to black."
+    },
+    {
+      "concept": "In tactile miniature museum conservation, one clockwork curator beside a glass display follows three designed chime directions through the floor grid. The camera progresses from full figure to painted eye close-up, a row of dust flags bends without showing a cause, and the scene ends on one vibrating brass label holder.",
+      "prompt_seed": "In tactile miniature museum conservation, one clockwork curator beside a glass display follows three designed chime directions through the floor grid. The camera progresses from full figure to painted eye close-up, a row of dust flags bends without showing a cause, and the scene ends on one vibrating brass label holder."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "An unbounded or already visible source removes the suspense mechanism.",
+      "repair": "Establish one reaction subject and one bounded offscreen region without showing a source."
+    },
+    {
+      "failure": "Large relocation or an unspecified cue breaks localization continuity.",
+      "repair": "For each new instance, explicitly design a directional offscreen cue for a visible reorientation while the subject stays in the same bounded area; source cue timing remains inferred."
+    },
+    {
+      "failure": "Constant shot scale prevents escalation.",
+      "repair": "Tighten the camera after each visible reorientation and reduce motion from body turn to gaze or facial adjustment."
+    },
+    {
+      "failure": "Showing the source converts suspense into ordinary coverage.",
+      "repair": "Keep the cue source outside every frame and avoid explanatory inserts."
+    },
+    {
+      "failure": "A final reveal cancels the central withholding rule.",
+      "repair": "End on a held reaction, residual instrument state or blackout without a source reveal."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In an original orbital greenhouse, one maintenance technician at a fixed sensor bench hears designed pressure ticks migrate through overhead irrigation pipes. She reorients from ceiling manifold to side vent while the camera tightens from medium to eye-and-ear profile; a fixed gauge needle twitches once, the source remains unseen and the chamber falls to black.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In tactile miniature museum conservation, one clockwork curator beside a glass display follows three designed chime directions through the floor grid. The camera progresses from full figure to painted eye close-up, a row of dust flags bends without showing a cause, and the scene ends on one vibrating brass label holder.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}
