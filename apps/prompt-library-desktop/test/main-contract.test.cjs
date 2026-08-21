@@ -30,6 +30,15 @@ test("builder and release workflow require universal macOS DMG and ZIP artifacts
   assert.match(workflow, /GH_REPO: \$\{\{ github\.repository \}\}/u, "the checkout-free publish job must bind gh to this repository");
 });
 
+test("release packages a compact dynamic catalog without changing the public catalog archive", () => {
+  assert.match(fs.readFileSync(path.resolve(__dirname, "..", "electron-builder.config.cjs"), "utf8"), /process\.env\.T8_CATALOG_DIR/u);
+  assert.ok(workflow.includes("prepare-app-catalog.mjs"));
+  assert.ok(workflow.includes("T8_CATALOG_DIR"));
+  assert.ok(workflow.includes("Packaged and repository catalog manifests differ"));
+  assert.ok(workflow.includes("Compress-Archive -Path catalog"), "the standalone catalog asset must retain the original previews");
+  assert.ok(workflow.includes("2147483648"), "the workflow must fail before upload when any asset reaches GitHub's 2 GiB limit");
+});
+
 test("media protocol resolves canonical paths and delegates range responses", () => {
   assert.match(main, /fs\.realpathSync\(root\)/u);
   assert.match(main, /fs\.realpathSync\(target\)/u);

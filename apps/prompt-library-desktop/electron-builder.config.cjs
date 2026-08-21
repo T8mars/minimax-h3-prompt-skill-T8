@@ -3,7 +3,9 @@ const path = require("node:path");
 
 const appDir = __dirname;
 const repoRoot = path.resolve(appDir, "../..");
-const catalogDir = path.join(repoRoot, "catalog");
+const catalogDir = process.env.T8_CATALOG_DIR
+  ? path.resolve(repoRoot, process.env.T8_CATALOG_DIR)
+  : path.join(repoRoot, "catalog");
 const skillsDir = path.join(repoRoot, "skills");
 const configuredMediaDir = process.env.T8_MEDIA_DIR
   ? path.resolve(repoRoot, process.env.T8_MEDIA_DIR)

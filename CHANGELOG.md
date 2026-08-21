@@ -21,11 +21,13 @@
 - 公开目录增至 135 个案例、116 个稳定案例机制和 19 个证据变体；连同 9 个官方 Seedance 伴侣 Skill 与 2 个社区 Skill，共 127 个可安装目录。
 - Electron“全部”入口增至 146 项；正式媒体包包含 135 个案例视频与 2 个社区 Skill 样片，共 137 份完整视频。
 - 新增案例补齐人工审校的中英文显示侧车；用户提供案例继续采用脱敏公开来源绑定。
+- Release 构建新增单线程、逐文件的安装包 GIF 紧凑化：保留 146 项动态预览、完整 MP4 和原始目录 ZIP，只缩小 Electron 内嵌预览副本，避免 universal macOS 资产超过 GitHub 单文件 2 GiB 上限。
 
 ### Validation
 
 - 公共边界、135 案目录、146×2 双语侧车、127 个 Skill、README 画廊和公共合同测试全部通过。
 - 桌面端单元/合同测试、静态应用校验与 137 份媒体的单线程完整遍历通过；Windows 与 universal macOS 打包后 E2E 由 Release 工作流强制执行。
+- 打包目录 manifest 与仓库 manifest 必须逐字节一致；紧凑 GIF 仍须全部存在并可解码，公开 `prompt-library-catalog` 资产继续保留仓库原始预览。
 
 ## [1.1.8] - 2026-08-17
 

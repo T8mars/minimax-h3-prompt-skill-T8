@@ -127,6 +127,16 @@ jobs:
           npm test --prefix apps/prompt-library-desktop
           if ($LASTEXITCODE -ne 0) { throw "Electron tests failed." }
 
+      - name: Prepare compact dynamic previews for the packaged application
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          node scripts/public/prepare-app-catalog.mjs --source catalog --output .release-input/app-catalog --ffmpeg "$env:T8_FFMPEG_PATH"
+          if ($LASTEXITCODE -ne 0) { throw "Packaged catalog preparation failed." }
+          $catalogDir = (Resolve-Path ".release-input/app-catalog").Path
+          $utf8 = [System.Text.UTF8Encoding]::new($false)
+          [System.IO.File]::AppendAllText($env:GITHUB_ENV, "T8_CATALOG_DIR=$catalogDir`n", $utf8)
+
       - name: Build Windows NSIS package
         if: matrix.platform == 'windows'
         shell: pwsh
@@ -168,6 +178,15 @@ jobs:
           $packagedManifest = Join-Path $packagedMedia "media-pack-manifest.json"
           if (-not (Test-Path -LiteralPath $packagedManifest -PathType Leaf)) { throw "Packaged media manifest is missing." }
           if ((Get-FileHash $sourceManifest -Algorithm SHA256).Hash -ne (Get-FileHash $packagedManifest -Algorithm SHA256).Hash) { throw "Packaged and staged media manifests differ." }
+          if ("${{ matrix.platform }}" -eq "windows") {
+            $packagedCatalog = "apps/prompt-library-desktop/dist/win-unpacked/resources/catalog"
+          } else {
+            $packagedCatalog = Join-Path $appBundle.FullName "Contents/Resources/catalog"
+          }
+          $sourceCatalogManifest = "catalog/manifest.json"
+          $packagedCatalogManifest = Join-Path $packagedCatalog "manifest.json"
+          if (-not (Test-Path -LiteralPath $packagedCatalogManifest -PathType Leaf)) { throw "Packaged catalog manifest is missing." }
+          if ((Get-FileHash $sourceCatalogManifest -Algorithm SHA256).Hash -ne (Get-FileHash $packagedCatalogManifest -Algorithm SHA256).Hash) { throw "Packaged and repository catalog manifests differ." }
           node scripts/public/validate-media-pack.mjs --media-dir $packagedMedia --manifest $packagedManifest --ffprobe "$env:T8_FFPROBE_PATH" --ffmpeg "$env:T8_FFMPEG_PATH"
           if ($LASTEXITCODE -ne 0) { throw "Packaged media validation failed." }
 
@@ -205,6 +224,7 @@ jobs:
           $dist = "apps/prompt-library-desktop/dist"
           $installer = Join-Path $dist "T8-Prompt-Library-Setup-v$version.exe"
           if (-not (Test-Path $installer -PathType Leaf)) { throw "Expected Windows installer is missing." }
+          if ((Get-Item -LiteralPath $installer).Length -ge 2147483648) { throw "Windows installer exceeds GitHub's per-asset size limit." }
           Copy-Item $installer $assets
           Get-ChildItem $dist -File | Where-Object { $_.Name -eq "latest.yml" -or $_.Extension -eq ".blockmap" } | Copy-Item -Destination $assets
           if (-not (Test-Path (Join-Path $assets "latest.yml"))) { throw "latest.yml is missing." }
@@ -220,6 +240,7 @@ jobs:
           foreach ($name in @("T8-Prompt-Library-v$version-mac-universal.dmg", "T8-Prompt-Library-v$version-mac-universal.zip", "latest-mac.yml")) {
             $path = Join-Path $dist $name
             if (-not (Test-Path $path -PathType Leaf)) { throw "Expected macOS asset is missing: $name" }
+            if ((Get-Item -LiteralPath $path).Length -ge 2147483648) { throw "$name exceeds GitHub's per-asset size limit." }
             Copy-Item $path $assets
           }
           Get-ChildItem $dist -File -Filter "*.blockmap" | Copy-Item -Destination $assets
@@ -267,6 +288,9 @@ jobs:
           )
           foreach ($name in $required) {
             if (-not (Test-Path (Join-Path "release-assets" $name) -PathType Leaf)) { throw "Release contract is missing $name" }
+          }
+          foreach ($asset in Get-ChildItem release-assets -File) {
+            if ($asset.Length -ge 2147483648) { throw "$($asset.Name) exceeds GitHub's per-asset size limit." }
           }
           $checksumLines = Get-ChildItem release-assets -File | Sort-Object Name | ForEach-Object {
             $hash = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()

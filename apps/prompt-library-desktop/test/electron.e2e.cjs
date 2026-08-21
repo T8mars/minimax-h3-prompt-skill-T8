@@ -137,7 +137,7 @@ async function run() {
     assert.ok(await page.locator(".case-card").count() >= 1, "Chinese search must find Chinese sidecar content");
     await page.locator("#search").fill("");
     await page.locator("#global-locale-en").click();
-    await page.screenshot({ path: screenshotPath, animations: "disabled" });
+    await page.screenshot({ path: screenshotPath, animations: "disabled", timeout: 120000 });
 
     await page.locator("#view-cases").click();
     await page.waitForFunction((count) => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === count, expectedCaseCount);

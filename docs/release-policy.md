@@ -32,6 +32,8 @@
 
 GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 MP4 会迅速放大 Git 历史，所以从本地 `.release-input/media/` 单独构建媒体包，上传为 Release 资产，并在正式 Electron 构建时作为 `extraResources` 加入安装包。
 
+为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个缩放和降帧，但仍保留动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。Git 仓库与独立的 `prompt-library-catalog-v<version>.zip` 始终使用原始公开目录，完整 MP4 也不会被这一过程重编码。
+
 ### 本地准备媒体包
 
 媒体目录结构：
@@ -63,7 +65,7 @@ npm run media:pack -- -Version 1.1.9
 6. 手动运行 `.github/workflows/release.yml`，输入不带 `v` 的版本与媒体 SHA-256。
 7. 工作流定位或安装 `ffmpeg`/`ffprobe`，从 Draft Release 下载指定媒体资产、校验 ZIP 哈希并解压。
 8. 每个 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨；`audio_mode=present` 的媒体还必须完整遍历音频轨，来源本身无音轨的媒体必须明确记录 `audio_mode=source_silent` 与 `audio_codec=null`。探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、声明存在的轨道、进程退出或完整遍历失败仍会阻断发布。
-9. Windows runner 构建完整 NSIS；macOS runner 构建 unsigned universal DMG + ZIP。两端都逐 path、size 与 SHA-256 对账安装包内媒体，并按上述容错标准完整遍历视频及实际存在的音频轨。
+9. Windows runner 与 macOS runner 分别用单线程 FFmpeg 生成安装包专用的紧凑动态 GIF 副本，并核对其 manifest 与仓库完全一致；随后 Windows 构建完整 NSIS，macOS 构建 unsigned universal DMG + ZIP。两端都逐 path、size 与 SHA-256 对账安装包内媒体，并按上述容错标准完整遍历视频及实际存在的音频轨。
 10. 两个平台都以打包后的应用运行 E2E，证明 135 个案例、9 个官方仓库条目、2 个非官方 Skills、137 份完整来源视频、收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用。
 11. 最终发布 Job 必须同时收到 Windows 与 macOS 已验证产物，核对精确资产集合后统一生成 `SHA256SUMS.txt`。
 12. 只有以上门禁通过，才上传全部目录包、Skills 包、媒体包、Windows 安装包和 macOS 安装包；`publish=true` 时才把 Draft 设为正式 Release。
