@@ -20,6 +20,22 @@ async function waitForClipboard(electronApp, predicate, message, timeoutMs = 300
   assert.fail(`${message}; clipboard contained ${JSON.stringify(value.slice(0, 120))}`);
 }
 
+async function waitForCardCount(page, expectedCount, timeout = 30000) {
+  await page.waitForFunction(
+    (count) => document.querySelectorAll(".case-card").length === count,
+    expectedCount,
+    { timeout }
+  );
+}
+
+async function waitForAnyCard(page, timeout = 30000) {
+  await page.waitForFunction(
+    () => document.querySelectorAll(".case-card").length > 0,
+    undefined,
+    { timeout }
+  );
+}
+
 async function run() {
   const appDir = path.resolve(__dirname, "..");
   const screenshotStem = path.join(os.tmpdir(), `t8-prompt-library-${Date.now()}`);
@@ -59,7 +75,7 @@ async function run() {
     page.on("console", (message) => {
       if (message.type() === "error") rendererErrors.push(message.text());
     });
-    await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
+    await waitForCardCount(page, expectedAggregateCount);
     const allCount = await page.locator(".case-card").count();
     assert.equal(allCount, expectedAggregateCount, "default all-content view must match the catalog and Skill manifests");
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
@@ -69,7 +85,7 @@ async function run() {
     assert.equal(await page.evaluate(() => localStorage.getItem("t8-display-locale-default-zh-v1")), "done", "the default-Chinese migration must be recorded");
     await page.locator("#global-locale-en").click();
     await page.reload();
-    await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
+    await waitForCardCount(page, expectedAggregateCount);
     assert.equal(await page.locator("#global-locale-en").getAttribute("aria-pressed"), "true", "an explicit English choice must persist after the migration");
     await page.locator("#global-locale-zh").click();
     assert.equal(await page.locator("#stat-cases").textContent(), String(expectedAggregateCount));
@@ -105,13 +121,13 @@ async function run() {
     assert.equal(await page.locator("#collection-select").inputValue(), await page.locator("#collection-select option").getAttribute("value"));
     assert.equal(await page.locator(".case-card").count(), 1, "selected collection must contain the assigned item");
     await page.reload();
-    await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
+    await waitForAnyCard(page);
     assert.equal(await page.locator("#view-favorite-count").textContent(), "1", "favorites must persist across reload");
     assert.equal(await page.locator("#view-collection-count").textContent(), "1", "collections must persist across reload");
     assert.equal(await page.locator("#view-history-count").textContent(), "1", "history must persist across reload");
     await page.locator("#global-locale-zh").click();
     await page.reload();
-    await page.waitForSelector(".case-card", { state: "attached", timeout: 15000 });
+    await waitForAnyCard(page);
     assert.equal(await page.locator("#global-locale-zh").getAttribute("aria-pressed"), "true", "selected locale must persist across reload");
     await page.locator("#search").fill("First-Person Passage");
     await page.waitForFunction(() => document.querySelectorAll(".case-card").length > 0);

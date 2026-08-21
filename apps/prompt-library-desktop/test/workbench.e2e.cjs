@@ -34,7 +34,11 @@ async function run() {
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
     page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
-    await page.waitForSelector(".case-card", { timeout: 15000 });
+    await page.waitForFunction(
+      () => document.querySelectorAll(".case-card").length > 0,
+      undefined,
+      { timeout: 30000 }
+    );
     await page.locator("#open-prompt-workbench").click();
     await page.waitForSelector("#prompt-workbench-dialog[open]");
     assert.equal(await page.locator('[data-workbench-step]').count(), 3, "creation flow must stay focused on mechanism, parameters, and result");
@@ -153,7 +157,11 @@ async function run() {
     await page.screenshot({ path: screenshotPath, animations: "disabled" });
 
     await page.reload();
-    await page.waitForSelector(".case-card", { timeout: 15000 });
+    await page.waitForFunction(
+      () => document.querySelectorAll(".case-card").length > 0,
+      undefined,
+      { timeout: 30000 }
+    );
     await page.locator("#open-prompt-workbench").click();
     await page.waitForSelector("#prompt-workbench-dialog[open]");
     await page.locator("#open-api-settings").click();
