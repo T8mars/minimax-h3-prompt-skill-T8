@@ -13,6 +13,7 @@ const allowedRootFiles = new Set([
   "LICENSE",
   "LICENSE-CONTENT",
   "README.md",
+  "README_EN.md",
   "SECURITY.md",
   "package-lock.json",
   "package.json"

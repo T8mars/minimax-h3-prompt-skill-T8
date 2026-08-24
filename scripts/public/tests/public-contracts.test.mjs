@@ -9,8 +9,9 @@ import { durationMatches, mediaEntryAudioContractErrors, probeAndDecodeMedia, ve
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const catalog = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "manifest.json"), "utf8"));
 const readme = fs.readFileSync(path.join(repoRoot, "README.md"), "utf8");
+const englishReadme = fs.readFileSync(path.join(repoRoot, "README_EN.md"), "utf8");
 
-test("creative-case gallery contains every catalog-relative GIF and summary link", () => {
+test("Chinese default and English README galleries contain every case", () => {
   const version = JSON.parse(fs.readFileSync(path.join(repoRoot, "package.json"), "utf8")).version;
   if (version === "1.0.0") assert.equal(catalog.cases.length, 7);
   for (const entry of catalog.cases) {
@@ -18,10 +19,25 @@ test("creative-case gallery contains every catalog-relative GIF and summary link
     assert.match(entry.summary_path, /^cases\//);
     assert.ok(readme.includes(`catalog/${entry.preview_paths.gif}`), `${entry.case_id} GIF link missing from README`);
     assert.ok(readme.includes(`catalog/${entry.summary_path}`), `${entry.case_id} summary link missing from README`);
+    assert.ok(englishReadme.includes(`catalog/${entry.preview_paths.gif}`), `${entry.case_id} GIF link missing from English README`);
+    assert.ok(englishReadme.includes(`catalog/${entry.summary_path}`), `${entry.case_id} summary link missing from English README`);
+    const englishLocale = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "cases", entry.case_id, "locales", "en.json"), "utf8"));
+    assert.ok(englishReadme.includes(englishLocale.content.title.replace(/\|/g, "\\|")), `${entry.case_id} localized English title missing from English README`);
   }
   const galleryBlock = readme.split("<!-- CASE_GALLERY:START -->")[1]?.split("<!-- CASE_GALLERY:END -->")[0] || "";
+  const englishGalleryBlock = englishReadme.split("<!-- CASE_GALLERY:START -->")[1]?.split("<!-- CASE_GALLERY:END -->")[0] || "";
   const galleryRows = galleryBlock.split(/\r?\n/).filter((line) => line.startsWith("| [!["));
+  const englishGalleryRows = englishGalleryBlock.split(/\r?\n/).filter((line) => line.startsWith("| [!["));
   assert.equal(galleryRows.length, catalog.cases.length);
+  assert.equal(englishGalleryRows.length, catalog.cases.length);
+});
+
+test("README language switch keeps Simplified Chinese as the GitHub default", () => {
+  assert.ok(readme.startsWith("# T8 Creative DNA Prompt Library"));
+  assert.ok(readme.includes("**简体中文** | [English](./README_EN.md)"));
+  assert.ok(readme.includes("## 五种内容，互相对应"));
+  assert.ok(englishReadme.includes("[简体中文](./README.md) | **English**"));
+  assert.ok(englishReadme.includes("## Five connected content layers"));
 });
 
 test("indexes nine upstream MiniMax Skills, nine independent Seedance companions, and two non-official Skills", () => {
@@ -42,6 +58,7 @@ test("indexes nine upstream MiniMax Skills, nine independent Seedance companions
     assert.ok(fs.existsSync(path.join(repoRoot, "skills", entry.companion_seedance_ref)));
     assert.ok(fs.existsSync(path.join(repoRoot, "catalog", entry.local_preview_ref)));
     assert.ok(readme.includes(`catalog/${entry.local_preview_ref}`), `${entry.id} official GIF missing from README`);
+    assert.ok(englishReadme.includes(`catalog/${entry.local_preview_ref}`), `${entry.id} official GIF missing from English README`);
   }
   const skillDirectories = fs.readdirSync(path.join(repoRoot, "skills"), { withFileTypes: true }).filter((entry) => entry.isDirectory());
   const caseSkillCount = new Set(catalog.cases.map((entry) => entry.slug)).size;

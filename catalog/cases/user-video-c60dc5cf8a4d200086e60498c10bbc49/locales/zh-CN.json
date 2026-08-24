@@ -1,0 +1,252 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-c60dc5cf8a4d200086e60498c10bbc49",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "61e3a5253bb697e8fbadd1fcdbb126ad5830406933c231eb102e5d39e909f93c",
+    "creative_dna_sha256": "b3367d0df444a3cc1ca4c66c49b80185da0d66b2c17d0e274bad21096f61ca18"
+  },
+  "content": {
+    "title": "时尚密度复位｜身份锁定、拼贴回顾与英雄主标",
+    "summary": "锁定同一名明确成年角色，用前景载体轮转多个协调造型模块；密度升至峰值后切入白场减负，再把旧造型拼贴回顾并收束到简洁英雄主标。",
+    "quick_start": {
+      "input_format": "成年原创角色三项身份锚点 + 至少四个双通道造型模块 + 可见转场载体 + 一个密度峰值 + 一个低密度完整人物复位 + 至少三项旧状态回顾 + 简洁英雄主标",
+      "recommended_input": "一名剃光头、右脸有细铜色标记的成年男性时尚表演者，依次经过矿物剪裁、交通图、档案纸和工业信号四个模块；黑铜红密度峰值后进入象牙白两步秀场，再穿过三张旧造型接触表，最终停在原创 AXIS NOIR 主标。",
+      "required_anchors": [
+        "第一轮切换前先锁定一名明确成年原创角色的至少三项身份锚点，并在全部模块中保持一致。",
+        "每个造型模块至少同时改变服装、版式、道具、色彩或镜头职责中的两个通道；纯换色不算新模块。",
+        "所有模块切换都由前景物、图形边、布料或角色手势完成可见交接，并在一个峰值后插入显著低密度的完整人物段落。",
+        "复位后必须回顾至少三个此前已经出现的状态，再清场到人物、原创名称和一句主张都清楚的英雄主标。"
+      ],
+      "usage_steps": [
+        "把示例主体、品牌与表层元素替换为原创概念。",
+        "让身份锚点、模块交接、密度复位、回顾来源与终局主标都可见。",
+        "分别选择 MiniMax H3 或 Seedance 2.0 模板，只填写声明的变量槽位。",
+        "生成前检查身份连续性、文字可读性、节奏对比、声音和反复制边界。"
+      ],
+      "applicable_scope": [
+        "锁定同一名明确成年角色，用前景载体轮转多个协调造型模块；密度升至峰值后切入白场减负，再把旧造型拼贴回顾并收束到简洁英雄主标。",
+        "能够在 4–15 秒内保留全部身份、密度与回顾锚点的原创广告。",
+        "需要强烈节奏对比与终局主标的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、品牌、口号、服装、配色或精确分镜的任务。",
+        "无法设置显著低密度复位段或无法让回顾引用此前状态的概念。",
+        "不需要身份连续性与广告式结尾的松散多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "complex",
+      "mechanism": "同一名明确成年角色的身份始终锁定；由动作驱动的前景载体轮转多个协调的时尚与图形世界，视觉密度逐步升至过载后突然复位到低密度完整人物段落，再以紧凑拼贴回顾此前状态，最终用一个简洁英雄主标收束广告。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "第一次风格切换前，用至少三项稳定身份锚点锁定一名明确成年的原创角色，并在每个服装与版式模块中持续保留。",
+          "evidence_ids": [
+            "obs-01",
+            "obs-09",
+            "beat-01",
+            "beat-03"
+          ],
+          "ablation_failure": "如果脸、成年年龄感、轮廓或标志锚点漂移，蒙太奇就会变成互不相关的模特，而不是同一广告身份对风格跨度的证明。"
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个风格模块必须在服装、配色、版式、道具系统和镜头职责中至少协调改变两个通道；只换配色不算新模块。",
+          "evidence_ids": [
+            "obs-03",
+            "obs-04",
+            "obs-07",
+            "beat-02",
+            "beat-04"
+          ],
+          "ablation_failure": "如果只改变颜色，推进就会像滤镜轮播，失去不同完整时尚世界的区分度。"
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用可见的前景物、图形边缘或角色手势作为模块间的动机交接，让动作、镜头和图形转场发生在同一节拍。",
+          "evidence_ids": [
+            "obs-08",
+            "obs-15",
+            "beat-01",
+            "beat-02"
+          ],
+          "ablation_failure": "如果模块只靠任意硬切连接，序列虽然保留表面变化，却会失去因果流动和可触感的动势。"
+        },
+        {
+          "id": "inv-04",
+          "rule": "把视觉与文字密度提升到一个峰值，再在回顾前插入一个显著更稀疏的完整人物段落。",
+          "evidence_ids": [
+            "obs-05",
+            "obs-06",
+            "obs-11",
+            "beat-04",
+            "beat-06"
+          ],
+          "ablation_failure": "没有低密度复位，持续满负荷会压平节奏，让最终升能看起来并不比中段更强。"
+        },
+        {
+          "id": "inv-05",
+          "rule": "复位后，以图像碎片或对齐面板清楚回顾至少三个此前状态，再收束到一个简洁英雄主标。",
+          "evidence_ids": [
+            "obs-10",
+            "obs-13",
+            "beat-07",
+            "beat-08"
+          ],
+          "ablation_failure": "如果英雄卡没有回顾铺垫，结尾会像一张断开的海报，而不是汇总此前广告证据的兑现。"
+        },
+        {
+          "id": "inv-06",
+          "rule": "每个模块只使用一个原创短文案单位，并保持清楚的人物—文字层级，尤其是最终停留帧。",
+          "evidence_ids": [
+            "obs-12",
+            "obs-13",
+            "beat-08"
+          ],
+          "ablation_failure": "过密或畸形的文字会与角色争夺注意力、损害可读性，并重复来源提示词自己指出的字体弱点。"
+        }
+      ],
+      "slots": [
+        {
+          "name": "adult_identity",
+          "description": "一名明确成年原创主体，具有至少三项稳定的脸部、发型、轮廓或配饰锚点。"
+        },
+        {
+          "name": "style_modules",
+          "description": "至少四个风格世界，每个世界都协调改变两个以上通道，而不只是换配色。"
+        },
+        {
+          "name": "transition_carriers",
+          "description": "用于驱动每次交接的前景道具、图形边缘、布料、手势或对齐面板。"
+        },
+        {
+          "name": "density_peak",
+          "description": "动作、文案和图形层汇聚但不遮住身份的最高负荷模块。"
+        },
+        {
+          "name": "sparse_reset",
+          "description": "一个镜头与特效都更克制的低密度完整人物段落。"
+        },
+        {
+          "name": "recap_system",
+          "description": "清楚引用至少三个此前状态的接触表、样本卡、面板或碎片。"
+        },
+        {
+          "name": "copy_units",
+          "description": "每个模块一个原创短词或短句，外加一个简洁的最终名称层级。"
+        },
+        {
+          "name": "hero_lockup",
+          "description": "一个稳定停留的终局帧，同时解决稳定主体、广告名称和一句简明主张。"
+        },
+        {
+          "name": "sound_arc",
+          "description": "原创模块化节拍族、克制的复位声场和明确的回归提示；完全静音可选而非必需。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "不得使用 SOLVÉRA、KAWAII IS POWER、任何来源日文/中文口号、Ima Studio 或容易混淆的相似文字。",
+        "不得复制来源女主角的脸、发型、身体比例、动漫造型或精确服装顺序。",
+        "不得复用来源的原宿可爱配饰清单、粉/青/薰衣草/黑/白/亮粉精确顺序或精确文字版式。",
+        "不得复现来源的精确时序、三联画设计、拼贴几何、姿势、镜头路径或配乐。",
+        "不得把用户提示词中的自评句当作生成指令或已观察证据。"
+      ],
+      "instantiations": [
+        {
+          "concept": "AXIS NOIR 矿物剪裁广告",
+          "description": "一名明确成年的原创男性时尚表演者经过矿物、交通图、档案剪裁和工业信号模块，随后进入白色秀场复位、接触表回顾和原创 AXIS NOIR 英雄主标。"
+        },
+        {
+          "concept": "LUMA FIELD 运动鞋发布",
+          "description": "一名明确成年的原创非二元跑者保持脸部与轮廓锚点，同时让鞋履、地形图、反光面料和动态图形以协调模块变化，之后进入低密度测试跑道与证据墙回顾。"
+        },
+        {
+          "concept": "ORBITAL INK 香氛短片",
+          "description": "一名明确成年的原创女性调香师经过玻璃、植物墨水、金属蒸汽和单色实验室模块，随后进入低密度白色台面行走、样本卡回顾和克制的最终产品名英雄帧。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "角色身份在风格模块之间漂移。",
+          "repair": "声明三项身份锚点，在每个模块重申，并在密度峰值前加入一次明确的多面板验真。"
+        },
+        {
+          "failure": "模块之间只有颜色不同。",
+          "repair": "每次切换都要求服装、版式、道具系统、媒介和镜头职责中至少两项协调变化。"
+        },
+        {
+          "failure": "随机硬切打断动势。",
+          "repair": "为每次交接指定一个可见载体，并让它的运动跨越剪辑边界。"
+        },
+        {
+          "failure": "所有时刻都保持相同密度。",
+          "repair": "在回顾前预留一个特效更少、镜头更平静的低密度完整人物段落。"
+        },
+        {
+          "failure": "回顾与英雄帧彼此无关。",
+          "repair": "用此前已经展示的状态填充回顾面板，再让这些面板通过物理运动清场到最终名称区域。"
+        },
+        {
+          "failure": "文字变得难读或畸形。",
+          "repair": "每个模块只使用一个已声明的短文案单位、简洁大字形，并让最终主标停留且不增加文字。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "LUMA FIELD 运动鞋发布",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "adult_identity",
+            "style_modules",
+            "transition_carriers",
+            "density_peak",
+            "sparse_reset",
+            "recap_system",
+            "copy_units",
+            "hero_lockup",
+            "sound_arc"
+          ],
+          "finding": "运动产品广告在更换角色、动作词汇、环境、道具、文案和视觉媒介的同时，保留身份证明、协调模块、密度复位与回顾。"
+        },
+        {
+          "concept": "ORBITAL INK 香氛短片",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "adult_identity",
+            "style_modules",
+            "transition_carriers",
+            "density_peak",
+            "sparse_reset",
+            "recap_system",
+            "copy_units",
+            "hero_lockup",
+            "sound_arc"
+          ],
+          "finding": "节奏更慢的奢侈香氛语境可以用玻璃、蒸汽和样本卡替代可爱时尚表面，同时保留同一因果架构。"
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

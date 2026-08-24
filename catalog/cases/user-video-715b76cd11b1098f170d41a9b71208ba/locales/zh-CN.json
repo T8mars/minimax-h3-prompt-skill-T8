@@ -1,0 +1,255 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-715b76cd11b1098f170d41a9b71208ba",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "bda313c939e8f675838fa2600f98ad3cd621c60b50bd721682cdfa9dc2f77210",
+    "creative_dna_sha256": "03a711d19cd9936d352ebc644b3bf57e04ec8a3f473e738e35949ba5dd2057a6"
+  },
+  "content": {
+    "title": "手势边界换媒｜局部窗口、多形态验真与回归",
+    "summary": "双手先画出可控边界，只让框内区域切换媒介；多种几何反复证明注册规则，后段扩大覆盖后主动收回并回到原状态。",
+    "quick_start": {
+      "input_format": "明确成年原创控制者 + 稳定环境锚点 + 可见双手边界 + 替代媒介 + 至少三种几何/覆盖区 + 晚段大覆盖峰值 + 回归确认",
+      "recommended_input": "一名成年温室研究员在固定机位中用双手拉出琥珀色窗口；只有窗口内部变成青色植物剖面线稿，窗口依次变成横框、竖框和斜框，后段覆盖半张脸与叶片，再收成一条细线消失，真实白花张开一片花瓣。",
+      "required_anchors": [
+        "激活前先建立一名明确成年原创控制者、稳定环境和可见的空闲双手。",
+        "双手几何必须先于换媒形成，活动边缘始终绑定指尖或手部边线。",
+        "替代媒介严格限制在移动边界内部，边界两侧空间精确注册，外部保持基线状态。",
+        "至少用三种几何或覆盖区证明同一规则；最大覆盖留到后段，再主动收回并以原媒介反应或残留确认结束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景、边界材质和替代媒介替换为原创概念。",
+        "先建立基线，再让双手几何触发严格局部换媒。",
+        "分别选择 MiniMax H3 或 Seedance 2.0 模板，只填写声明的变量槽位。",
+        "生成前检查边缘注册、几何差异、峰值位置、完整回归、声音和反复制距离。"
+      ],
+      "applicable_scope": [
+        "双手先画出可控边界，只让框内区域切换媒介；多种几何反复证明注册规则，后段扩大覆盖后主动收回并回到原状态。",
+        "适合 4–15 秒内能清楚建立基线、至少三次局部验真和完整回归的原创视觉机制短片。",
+        "适合需要固定机位或稳定注册来证明局部媒介切换的 MiniMax H3 与 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、造型、精确手势、边界外观或原始插画设计的任务。",
+        "无法保持边界内外空间注册，或希望直接进行全画面风格替换的概念。",
+        "没有可见双手控制、没有几何证明或不需要回归原状态的松散效果展示。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "稳定的写实基线成为一块互动验真面：两只清楚可见的手先定义有界窗口，只有移动几何内部且与外部注册一致的区域切换媒介；尺寸与方向的反复变化证明同一规则，后段大覆盖状态形成峰值，最后主动收回边界并回到基线，用一次反应或残留完成确认。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "边界激活前，先建立一名明确成年的原创主体、一个稳定环境，以及清楚可见的空闲或未激活双手。",
+          "evidence_ids": [
+            "obs-01",
+            "obs-04",
+            "beat-01"
+          ],
+          "ablation_failure": "如果缺少基线，观众就无法判断这是局部转换，还是从一开始就存在的全画面滤镜。"
+        },
+        {
+          "id": "inv-02",
+          "rule": "先让双手几何清楚成形，再发生媒介切换；发光或实体边界始终连接控制它的指尖或手部边线。",
+          "evidence_ids": [
+            "obs-04",
+            "obs-05",
+            "beat-01",
+            "beat-02"
+          ],
+          "ablation_failure": "如果区域脱离双手独立出现，最核心的因果与控制关系就会失效。"
+        },
+        {
+          "id": "inv-03",
+          "rule": "替代媒介必须严格限制在移动边界内部，同时保持边缘两侧连续注册，并让外部维持基线状态。",
+          "evidence_ids": [
+            "obs-06",
+            "obs-09",
+            "obs-18",
+            "beat-02",
+            "beat-04"
+          ],
+          "ablation_failure": "如果转换泄漏到外部或注册发生滑移，窗口就不再像一个可控的局部边界。"
+        },
+        {
+          "id": "inv-04",
+          "rule": "至少使用三种有实质差异的窗口几何或方向；每个状态覆盖新区域，同时遵守同一剪裁规则。",
+          "evidence_ids": [
+            "obs-05",
+            "obs-11",
+            "beat-03",
+            "beat-05"
+          ],
+          "ablation_failure": "一个静态矩形只是滤镜展示；只有多次遵守同一规则的几何变化，才能证明这种控制可以复用。"
+        },
+        {
+          "id": "inv-05",
+          "rule": "把最大或最涉及身份的覆盖留到后段峰值，再让边界清楚收缩或退出，不能演变成失控的全场换媒。",
+          "evidence_ids": [
+            "obs-10",
+            "obs-11",
+            "beat-04",
+            "beat-05"
+          ],
+          "ablation_failure": "没有晚段峰值和受控释放，序列就缺少递进，结尾状态也会含糊。"
+        },
+        {
+          "id": "inv-06",
+          "rule": "以原始媒介和原空间注册结束，并用一次简短人物反应或物理残留确认效果已经停止。",
+          "evidence_ids": [
+            "obs-08",
+            "obs-13",
+            "beat-06"
+          ],
+          "ablation_failure": "如果影片停在替代媒介里，就无法证明控制性与可逆性。"
+        }
+      ],
+      "slots": [
+        {
+          "name": "adult_subject",
+          "description": "一名明确成年的原创控制者，具有三项稳定外观锚点和清楚可见的双手。"
+        },
+        {
+          "name": "base_environment",
+          "description": "一个稳定、易注册的空间，其线条与光线能让局部转换清楚可验。"
+        },
+        {
+          "name": "boundary_material",
+          "description": "一条发光、绘制、机械或实体边缘，并且清楚连接双手。"
+        },
+        {
+          "name": "alternate_medium",
+          "description": "一种渲染物理明显不同的媒介，例如科学线稿、纸质蓝图、彩色玻璃或黏土浮雕。"
+        },
+        {
+          "name": "proof_regions",
+          "description": "至少三个形状或方向不同的局部区域，并且全部遵守同一剪裁与注册规则。"
+        },
+        {
+          "name": "apex_region",
+          "description": "后段最大覆盖区域，最好跨过涉及身份或信息密集的部位。"
+        },
+        {
+          "name": "ending_confirmation",
+          "description": "边界退出后的一次克制反应或物理残留。"
+        },
+        {
+          "name": "sound_family",
+          "description": "原创的描边、拉伸、锁定、换媒与释放声响；不复用来源音频语义。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "不得复制任何来源特定人物身份、外观、服装或比例。",
+        "不得复用来源环境、边界造型、替代媒介中的角色设计或精确转换表面。",
+        "不得复制精确手势、几何顺序、时序、反应、构图或声音轨。",
+        "不得声称存在来源提示词、创作者身份或生成模型；这些事实没有提供。"
+      ],
+      "instantiations": [
+        {
+          "concept": "温室植物剖面窗口",
+          "description": "一名明确成年的田野研究员在潮湿温室里画出琥珀色手势窗口；只有框内叶片和服装切换成青色科学剖面线稿，窗口退出后，研究员看着一朵真实花朵开放。",
+          "changed_slots": [
+            "adult_subject",
+            "base_environment",
+            "boundary_material",
+            "alternate_medium",
+            "proof_regions",
+            "apex_region",
+            "ending_confirmation",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "甜点工坊糖玻璃蓝图",
+          "description": "一名明确成年的甜点师框住铜光工作台；只有框内面团、工具和围裙变成分层配方蓝图纸，外部保持写实，最后边界收拢并留下一处真实釉面高光。",
+          "changed_slots": [
+            "adult_subject",
+            "base_environment",
+            "boundary_material",
+            "alternate_medium",
+            "proof_regions",
+            "apex_region",
+            "ending_confirmation",
+            "sound_family"
+          ]
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "替代媒介扩散到窗口之外。",
+          "repair": "明确手势边缘的硬剪裁，并重申所有外部像素都维持基线媒介。"
+        },
+        {
+          "failure": "效果脱离指尖漂移。",
+          "repair": "把每个角或活动边缘绑定到清楚可见的指尖，并让几何变化跟随手部轨迹。"
+        },
+        {
+          "failure": "边界内外不再对齐同一主体或空间。",
+          "repair": "锁定机位、姿态、轮廓和背景线条；只改变渲染，不改变几何或身份。"
+        },
+        {
+          "failure": "重复形状看起来像随意滤镜。",
+          "repair": "让每种几何承担不同的验真区域，并在所有状态中保持同一边界物理。"
+        },
+        {
+          "failure": "峰值过早出现，或一直没有收束。",
+          "repair": "把最大覆盖推迟到后段，短暂保持，再在基线确认前清楚展示收缩。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "温室植物剖面窗口",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "adult_subject",
+            "base_environment",
+            "boundary_material",
+            "alternate_medium",
+            "proof_regions",
+            "apex_region",
+            "ending_confirmation",
+            "sound_family"
+          ],
+          "finding": "在更换身份、场景、配色、媒介、验真区域、声音和结果后，手势控制的剪裁与释放机制仍然清楚。"
+        },
+        {
+          "concept": "甜点工坊糖玻璃蓝图",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "adult_subject",
+            "base_environment",
+            "boundary_material",
+            "alternate_medium",
+            "proof_regions",
+            "apex_region",
+            "ending_confirmation",
+            "sound_family"
+          ],
+          "finding": "工艺场景与纸质蓝图媒介保留了窗口因果规则，同时不保留来源人物的时尚造型或插画表面。"
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

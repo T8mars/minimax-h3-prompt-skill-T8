@@ -9,6 +9,25 @@
 - 首批持续扩充的 MiniMax H3 与 Seedance 2.0 Creative DNA 案例。
 - Linux 桌面发行评估。
 
+## [1.2.4] - 2026-08-25
+
+### Added
+
+- 新增完整英文 `README_EN.md`，中英文 README 顶部可双向切换；GitHub 默认入口 `README.md` 继续使用简体中文。
+- 双语案例画廊生成器分别读取每个案例已审校的 `zh-CN` 与 `en` 标题，并同步维护两份 README，防止后续目录重建覆盖语言入口或产生陈旧画廊。
+- 新增 2 个用户原创并明确授权公开分发的完整视频案例：`时尚密度复位｜身份锁定、拼贴回顾与英雄主标`、`手势边界换媒｜局部窗口、多形态验真与回归`。
+- 新增 2 个稳定案例机制 Skill：`identity-locked-density-reset-recap-hero` 与 `hand-bounded-local-medium-window`。
+
+### Changed
+
+- 公开目录增至 218 个案例、188 个稳定案例机制和 30 个证据变体；连同 9 个官方 Seedance 伴侣 Skill 与 2 个社区 Skill，共 199 个可安装目录。
+- Electron“全部”入口增至 229 项；正式媒体包包含 218 个案例视频与 2 个社区 Skill 样片，共 220 份完整视频。
+
+### Validation
+
+- README 语言切换、两份 218 行案例画廊、英文审校标题和官方 Skill 预览均加入公共合同测试。
+- 公共边界、218 案目录、229×2 双语侧车、199 个 Skill、桌面端测试与静态应用校验全部作为 v1.2.4 发布门禁。
+
 ## [1.2.3] - 2026-08-24
 
 ### Fixed

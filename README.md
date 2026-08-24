@@ -1,5 +1,7 @@
 # T8 Creative DNA Prompt Library
 
+**简体中文** | [English](./README_EN.md)
+
 [![CI](https://github.com/T8mars/minimax-h3-prompt-skill-T8/actions/workflows/ci.yml/badge.svg)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/T8mars/minimax-h3-prompt-skill-T8?include_prereleases&label=release)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)
 [![License: MIT + CC BY 4.0](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-blue)](./LICENSE)
@@ -64,7 +66,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 
 <!-- CASE_GALLERY:START -->
 
-| 预览 / Preview | 案例 / Case | 模型 / Models |
+| 预览 | 案例 | 模型 |
 | --- | --- | --- |
 | [![产品广告｜功能证据递进](catalog/cases/x-abulu8-2085626141759709286-browser-2085626141759709286-video-1/preview.gif)](https://x.com/abulu8/status/2085626141759709286) | **[产品广告｜功能证据递进](catalog/cases/x-abulu8-2085626141759709286-browser-2085626141759709286-video-1/SUMMARY.md)**<br><sub>x-abulu8-2085626141759709286-browser-2085626141759709286-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![固定机位｜从线稿生成成品](catalog/cases/x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1/preview.gif)](https://x.com/Dheepanratnam/status/2086312209919963371) | **[固定机位｜从线稿生成成品](catalog/cases/x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1/SUMMARY.md)**<br><sub>x-dheepanratnam-2086312209919963371-browser-2086312209919963371-video-1</sub> | MiniMax H3 · Seedance 2.0 |
@@ -90,12 +92,12 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![单目标逃生｜前后灾害交替逼近](catalog/cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/preview.gif)](https://x.com/DeCat2025/status/2086379637874078201) | **[单目标逃生｜前后灾害交替逼近](catalog/cases/x-decat2025-2086379637874078201-browser-2086379637874078201-video-1/SUMMARY.md)**<br><sub>x-decat2025-2086379637874078201-browser-2086379637874078201-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![对决节奏｜静止密战一击定局](catalog/cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/preview.gif)](https://x.com/CharaspowerAI/status/2086105326978281608) | **[对决节奏｜静止密战一击定局](catalog/cases/x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1/SUMMARY.md)**<br><sub>x-charaspowerai-2086105326978281608-browser-2086105326978281608-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![路线坍塌｜安全空间逐段消失](catalog/cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/preview.gif)](https://x.com/DeCat2025/status/2086287667948396933) | **[路线坍塌｜安全空间逐段消失](catalog/cases/x-decat2025-2086287667948396933-browser-2086287667948396933-video-1/SUMMARY.md)**<br><sub>x-decat2025-2086287667948396933-browser-2086287667948396933-video-1</sub> | MiniMax H3 · Seedance 2.0 |
-| [![程序错位｜扫描到实物双确认](catalog/cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/preview.gif)](https://x.com/DeCat2025/status/2086134168992236013) | **[程序错位｜扫描到实物双确认](catalog/cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/SUMMARY.md)**<br><sub>x-decat2025-2086134168992236013-browser-2086134168992236013-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![流程错位｜扫描到实物双确认](catalog/cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/preview.gif)](https://x.com/DeCat2025/status/2086134168992236013) | **[流程错位｜扫描到实物双确认](catalog/cases/x-decat2025-2086134168992236013-browser-2086134168992236013-video-1/SUMMARY.md)**<br><sub>x-decat2025-2086134168992236013-browser-2086134168992236013-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![技能展示｜基础动作串联升级](catalog/cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/preview.gif)](https://x.com/TechieBySA/status/2086089483682734427) | **[技能展示｜基础动作串联升级](catalog/cases/x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2086089483682734427-browser-2086089483682734427-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![微缩介入｜外部物只进入一次](catalog/cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/preview.gif)](https://x.com/nicolasmariar/status/2086226500538273920) | **[微缩介入｜外部物只进入一次](catalog/cases/x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1/SUMMARY.md)**<br><sub>x-nicolasmariar-2086226500538273920-browser-2086226500538273920-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![微缩闯关｜同一材质连续变形](catalog/cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/preview.gif)](https://x.com/Arzoo12sh/status/2086407184309792852) | **[微缩闯关｜同一材质连续变形](catalog/cases/x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1/SUMMARY.md)**<br><sub>x-arzoo12sh-2086407184309792852-browser-2086407184309792852-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![升级讽刺｜新物登场旧爱被移走](catalog/cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/preview.gif)](https://x.com/Dheepanratnam/status/2086493087707086919) | **[升级讽刺｜新物登场旧爱被移走](catalog/cases/x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1/SUMMARY.md)**<br><sub>x-dheepanratnam-2086493087707086919-browser-2086493087707086919-video-1</sub> | MiniMax H3 · Seedance 2.0 |
-| [![角色板节拍｜环境切换不丢身份](catalog/cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/preview.gif)](https://x.com/aimikoda/status/2086553240448241802) | **[角色板节拍｜环境切换不丢身份](catalog/cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![身份板｜环境变化，身份不变](catalog/cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/preview.gif)](https://x.com/aimikoda/status/2086553240448241802) | **[身份板｜环境变化，身份不变](catalog/cases/x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2086553240448241802-browser-2086553240448241802-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![相机记忆｜固定取景框串联日常](catalog/cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/preview.gif)](https://x.com/aripratama293/status/2058715926451896397) | **[相机记忆｜固定取景框串联日常](catalog/cases/x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1/SUMMARY.md)**<br><sub>x-aripratama293-2058715926451896397-browser-2058715926451896397-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![舞台表演｜远景起势到倒地复起](catalog/cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/preview.gif)](https://x.com/aimikoda/status/2053053922332262547) | **[舞台表演｜远景起势到倒地复起](catalog/cases/x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2053053922332262547-browser-2053053922332262547-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![UGC测评｜开箱到一口实证](catalog/cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/preview.gif)](https://x.com/oggii_0/status/2083436822085165289) | **[UGC测评｜开箱到一口实证](catalog/cases/x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1/SUMMARY.md)**<br><sub>x-oggii-0-2083436822085165289-browser-2083436822085165289-video-1</sub> | MiniMax H3 · Seedance 2.0 |
@@ -104,13 +106,13 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![力量反差｜小体型用杠杆反制](catalog/cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/preview.gif)](https://x.com/craftian_keskin/status/2082658222247137433) | **[力量反差｜小体型用杠杆反制](catalog/cases/x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1/SUMMARY.md)**<br><sub>x-craftian-keskin-2082658222247137433-browser-2082658222247137433-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![材质字效｜霜花成字再归位](catalog/cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/preview.gif)](https://x.com/CharaspowerAI/status/2085622021812039920) | **[材质字效｜霜花成字再归位](catalog/cases/x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1/SUMMARY.md)**<br><sub>x-charaspowerai-2085622021812039920-browser-2085622021812039920-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![纪实跟拍｜行进中偶遇再离开](catalog/cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/preview.gif)](https://x.com/techhalla/status/2081333381401334006) | **[纪实跟拍｜行进中偶遇再离开](catalog/cases/x-techhalla-2081333381401334006-browser-2081333381401334006-video-1/SUMMARY.md)**<br><sub>x-techhalla-2081333381401334006-browser-2081333381401334006-video-1</sub> | MiniMax H3 · Seedance 2.0 |
-| [![对话喜剧｜双轮停顿无声反应](catalog/cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/preview.gif)](https://x.com/TechieBySA/status/2084600512180113820) | **[对话喜剧｜双轮停顿无声反应](catalog/cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![对话喜剧｜双人镜头、停顿与无声反应](catalog/cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/preview.gif)](https://x.com/TechieBySA/status/2084600512180113820) | **[对话喜剧｜双人镜头、停顿与无声反应](catalog/cases/x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2084600512180113820-browser-2084600512180113820-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![第一视角查岗｜遮挡失效到摆烂收口](catalog/cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/preview.gif)](https://x.com/john87445528/status/2086787356556685419) | **[第一视角查岗｜遮挡失效到摆烂收口](catalog/cases/x-john87445528-2086787356556685419-browser-2086787356556685419-video-1/SUMMARY.md)**<br><sub>x-john87445528-2086787356556685419-browser-2086787356556685419-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![雨夜追逐｜街巷近战到机车脱身](catalog/cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/preview.gif)](https://x.com/I_amShiti/status/2086828210457604364) | **[雨夜追逐｜街巷近战到机车脱身](catalog/cases/x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1/SUMMARY.md)**<br><sub>x-i-amshiti-2086828210457604364-browser-2086828210457604364-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![对话反应｜冷静回答引爆大笑](catalog/cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/preview.gif)](https://x.com/aimikoda/status/2086782084723405173) | **[对话反应｜冷静回答引爆大笑](catalog/cases/x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2086782084723405173-browser-2086782084723405173-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![对话喜剧｜双轮停顿与无声回击](catalog/cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/preview.gif)](https://x.com/TechieBySA/status/2086773163870871656) | **[对话喜剧｜双轮停顿与无声回击](catalog/cases/x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2086773163870871656-browser-2086773163870871656-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![角色板验真｜跨栏全程身份锁定](catalog/cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/preview.gif)](https://x.com/TechieBySA/status/2086815556930281726) | **[角色板验真｜跨栏全程身份锁定](catalog/cases/x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1/SUMMARY.md)**<br><sub>x-techiebysa-2086815556930281726-browser-2086815556930281726-video-1</sub> | MiniMax H3 · Seedance 2.0 |
-| [![单人表演弧｜坐起前倾再释放](catalog/cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/preview.gif)](https://x.com/gizakdag/status/2086774589426643034) | **[单人表演弧｜坐起前倾再释放](catalog/cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/SUMMARY.md)**<br><sub>x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![单人表演弧｜坐起、前倾，再松弛回落](catalog/cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/preview.gif)](https://x.com/gizakdag/status/2086774589426643034) | **[单人表演弧｜坐起、前倾，再松弛回落](catalog/cases/x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1/SUMMARY.md)**<br><sub>x-gizakdag-2086774589426643034-browser-2086774589426643034-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![材质字效｜云层成字再见光](catalog/cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/preview.gif)](https://x.com/CharaspowerAI/status/2086754531698725200) | **[材质字效｜云层成字再见光](catalog/cases/x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1/SUMMARY.md)**<br><sub>x-charaspowerai-2086754531698725200-browser-2086754531698725200-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![多功能救援线｜跨裂隙送补给再撤离](catalog/cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/preview.gif)](https://x.com/NVTDanh/status/2086774974921200055) | **[多功能救援线｜跨裂隙送补给再撤离](catalog/cases/x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1/SUMMARY.md)**<br><sub>x-nvtdanh-2086774974921200055-browser-2086774974921200055-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![微缩逃亡｜巨物追赶到资源补给](catalog/cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/preview.gif)](https://x.com/FutureVibesAi/status/2086777152666796255) | **[微缩逃亡｜巨物追赶到资源补给](catalog/cases/x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1/SUMMARY.md)**<br><sub>x-futurevibesai-2086777152666796255-browser-2086777152666796255-video-1</sub> | MiniMax H3 · Seedance 2.0 |
@@ -282,6 +284,8 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![微型载体FPV产品回环｜桌面障碍、生态穿越与包装复归](catalog/cases/x-gilangr90760584-2091004987023454599-browser-2091004987023454599-video-1/preview.gif)](https://x.com/GilangR90760584/status/2091004987023454599) | **[微型载体FPV产品回环｜桌面障碍、生态穿越与包装复归](catalog/cases/x-gilangr90760584-2091004987023454599-browser-2091004987023454599-video-1/SUMMARY.md)**<br><sub>x-gilangr90760584-2091004987023454599-browser-2091004987023454599-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![威胁动作被亲昵打断｜升级再打断后转成双人撤离](catalog/cases/x-tanluai-2091004028180431097-browser-2091004028180431097-video-1/preview.gif)](https://x.com/TanLuAI/status/2091004028180431097) | **[威胁动作被亲昵打断｜升级再打断后转成双人撤离](catalog/cases/x-tanluai-2091004028180431097-browser-2091004028180431097-video-1/SUMMARY.md)**<br><sub>x-tanluai-2091004028180431097-browser-2091004028180431097-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![指尖控制｜四向同拍全身响应](catalog/cases/user-video-094e45c4f44a2cb1b9170c0689af8327/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-094e45c4f44a2cb1b9170c0689af8327) | **[指尖控制｜四向同拍全身响应](catalog/cases/user-video-094e45c4f44a2cb1b9170c0689af8327/SUMMARY.md)**<br><sub>user-video-094e45c4f44a2cb1b9170c0689af8327</sub> | MiniMax H3 · Seedance 2.0 |
+| [![时尚密度复位｜身份锁定、拼贴回顾与英雄主标](catalog/cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-c60dc5cf8a4d200086e60498c10bbc49) | **[时尚密度复位｜身份锁定、拼贴回顾与英雄主标](catalog/cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/SUMMARY.md)**<br><sub>user-video-c60dc5cf8a4d200086e60498c10bbc49</sub> | MiniMax H3 · Seedance 2.0 |
+| [![手势边界换媒｜局部窗口、多形态验真与回归](catalog/cases/user-video-715b76cd11b1098f170d41a9b71208ba/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-715b76cd11b1098f170d41a9b71208ba) | **[手势边界换媒｜局部窗口、多形态验真与回归](catalog/cases/user-video-715b76cd11b1098f170d41a9b71208ba/SUMMARY.md)**<br><sub>user-video-715b76cd11b1098f170d41a9b71208ba</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -290,7 +294,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 下载 `T8-Prompt-Library-Setup-v1.2.3.exe`；macOS 下载 `T8-Prompt-Library-v1.2.3-mac-universal.dmg`。
+2. Windows 下载 `T8-Prompt-Library-Setup-v1.2.4.exe`；macOS 下载 `T8-Prompt-Library-v1.2.4-mac-universal.dmg`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
 
@@ -351,7 +355,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.2.3**。项目使用十进制进位：
+当前目标版本是 **v1.2.4**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -359,6 +363,7 @@ v1.1.9 -> v1.2.0
 v1.2.0 -> v1.2.1
 v1.2.1 -> v1.2.2
 v1.2.2 -> v1.2.3
+v1.2.3 -> v1.2.4
 v1.9.9 -> v2.0.0
 ```
 

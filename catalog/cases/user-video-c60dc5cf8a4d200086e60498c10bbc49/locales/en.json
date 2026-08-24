@@ -1,0 +1,252 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-c60dc5cf8a4d200086e60498c10bbc49",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "61e3a5253bb697e8fbadd1fcdbb126ad5830406933c231eb102e5d39e909f93c",
+    "creative_dna_sha256": "b3367d0df444a3cc1ca4c66c49b80185da0d66b2c17d0e274bad21096f61ca18"
+  },
+  "content": {
+    "title": "Fashion Density Reset | Identity Lock, Recap Collage, Hero Mark",
+    "summary": "Lock one clearly adult identity across coordinated fashion modules, escalate to a density peak, reset in a sparse full-character field, recap earlier states as a collage, then resolve to one clean hero mark.",
+    "quick_start": {
+      "input_format": "Clearly adult original character with three identity anchors + at least four multi-channel style modules + visible transition carriers + one density peak + one sparse full-character reset + recap of at least three prior states + one clean hero lockup",
+      "recommended_input": "A clearly adult male fashion performer with a shaved head and thin copper cheek stripe moves through mineral tailoring, transit-map, archival-paper, and industrial-signal modules. After a black-copper-red density peak, he enters a sparse ivory two-step runway, passes three prior-look contact sheets, and settles into an original AXIS NOIR hero mark.",
+      "required_anchors": [
+        "Before the first switch, establish at least three identity anchors for one clearly adult original character and preserve them in every module.",
+        "Each style module must change at least two coordinated channels among wardrobe, layout, props, palette, and camera duty; a palette swap alone is not a new module.",
+        "Every module handoff must be visibly carried by a foreground object, graphic edge, fabric, or gesture, and one density peak must be followed by a substantially sparser full-character interval.",
+        "After the reset, recap at least three previously shown states, then clear to a hero frame where the character, original name, and one proposition are all readable."
+      ],
+      "usage_steps": [
+        "Replace the example subject, brand, and surface details with an original concept.",
+        "Keep identity anchors, module handoffs, the density reset, recap provenance, and final hero mark visibly causal.",
+        "Choose the MiniMax H3 or Seedance 2.0 template and fill only the declared variable slots.",
+        "Before generation, check identity continuity, copy legibility, rhythm contrast, sound, and anti-copy distance."
+      ],
+      "applicable_scope": [
+        "Lock one clearly adult identity across coordinated fashion modules, escalate to a density peak, reset in a sparse full-character field, recap earlier states as a collage, then resolve to one clean hero mark.",
+        "Original 4–15 second campaigns that can preserve every identity, density, recap, and hero-lockup anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need strong rhythmic contrast and a resolved campaign ending."
+      ],
+      "not_suitable_for": [
+        "Requests to copy the source identity, brand, slogans, wardrobe, palette, or exact storyboard.",
+        "Concepts that cannot support a clearly sparse reset or cannot make the recap quote earlier states.",
+        "Loose multi-location narratives that do not need identity continuity or an advertising lockup."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "complex",
+      "mechanism": "A clearly adult identity remains locked while action-led foreground carriers rotate through multiple coordinated fashion-and-graphic worlds; visual density climbs to overload, abruptly resets to a sparse full-character interval, then prior states return as a compact collage recap before one simple hero wordmark closes the campaign.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Lock one clearly adult original character with at least three stable identity anchors before the first style switch, and preserve those anchors through every wardrobe and layout module.",
+          "evidence_ids": [
+            "obs-01",
+            "obs-09",
+            "beat-01",
+            "beat-03"
+          ],
+          "ablation_failure": "If face, age read, silhouette or signature anchors drift, the montage becomes unrelated models instead of one campaign identity proving range."
+        },
+        {
+          "id": "inv-02",
+          "rule": "Every style module must change at least two coordinated channels among wardrobe, palette, layout, prop system and camera duty; a palette swap alone does not count.",
+          "evidence_ids": [
+            "obs-03",
+            "obs-04",
+            "obs-07",
+            "beat-02",
+            "beat-04"
+          ],
+          "ablation_failure": "If only color changes, the progression feels like a filter reel and loses the sense of distinct fashion worlds."
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use visible foreground objects, graphic edges or character gestures as motivated handoffs between modules so action, camera and graphic transition occur in the same beat.",
+          "evidence_ids": [
+            "obs-08",
+            "obs-15",
+            "beat-01",
+            "beat-02"
+          ],
+          "ablation_failure": "If modules are connected by arbitrary cuts, the sequence keeps surface variety but loses causal flow and tactile momentum."
+        },
+        {
+          "id": "inv-04",
+          "rule": "Escalate visual and typographic density to one peak, then insert a substantially sparser full-character interval before the recap.",
+          "evidence_ids": [
+            "obs-05",
+            "obs-06",
+            "obs-11",
+            "beat-04",
+            "beat-06"
+          ],
+          "ablation_failure": "Without the sparse reset, constant maximal density flattens the rhythm and makes the final escalation feel no stronger than the middle."
+        },
+        {
+          "id": "inv-05",
+          "rule": "After the reset, visibly recap at least three earlier states as image fragments or registered panels before resolving to one simple hero lockup.",
+          "evidence_ids": [
+            "obs-10",
+            "obs-13",
+            "beat-07",
+            "beat-08"
+          ],
+          "ablation_failure": "If the hero card arrives without a recap, the ending reads as a disconnected poster rather than a payoff that gathers the campaign's prior evidence."
+        },
+        {
+          "id": "inv-06",
+          "rule": "Limit each module to one short original copy unit and preserve a clear subject-copy hierarchy, especially in the held final frame.",
+          "evidence_ids": [
+            "obs-12",
+            "obs-13",
+            "beat-08"
+          ],
+          "ablation_failure": "Dense or malformed copy competes with the character, harms legibility and repeats the source prompt's own stated typography weakness."
+        }
+      ],
+      "slots": [
+        {
+          "name": "adult_identity",
+          "description": "One original clearly adult subject with at least three stable face, hair, silhouette or accessory anchors."
+        },
+        {
+          "name": "style_modules",
+          "description": "At least four worlds that each change two or more coordinated channels, not palette alone."
+        },
+        {
+          "name": "transition_carriers",
+          "description": "Foreground props, graphic edges, fabric, gestures or registered panels that motivate each handoff."
+        },
+        {
+          "name": "density_peak",
+          "description": "The highest-load module where movement, copy and graphic layers converge without hiding identity."
+        },
+        {
+          "name": "sparse_reset",
+          "description": "A full-character low-density interval with restrained camera and effects."
+        },
+        {
+          "name": "recap_system",
+          "description": "Contact sheets, specimen cards, panels or fragments that visibly quote at least three earlier states."
+        },
+        {
+          "name": "copy_units",
+          "description": "One original short word or phrase per module, plus one simple final name hierarchy."
+        },
+        {
+          "name": "hero_lockup",
+          "description": "A held final frame that resolves the stable subject, campaign name and one concise proposition."
+        },
+        {
+          "name": "sound_arc",
+          "description": "Original modular beat families, a restrained reset texture and a decisive return cue; complete silence is optional, not required."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "Do not use SOLVÉRA, KAWAII IS POWER, any source Japanese/Chinese slogans, Ima Studio or confusingly similar wording.",
+        "Do not reproduce the source heroine's face, hairstyle, body proportions, anime design or exact outfit sequence.",
+        "Do not reuse the Harajuku kawaii accessory inventory, exact pink/cyan/lavender/black/white/hot-pink order or exact source typography layouts.",
+        "Do not reproduce the exact source timing, triptych design, collage geometry, poses, camera path or soundtrack.",
+        "Do not treat the user prompt's self-evaluation sentences as generation instructions or observed evidence."
+      ],
+      "instantiations": [
+        {
+          "concept": "AXIS NOIR mineral tailoring campaign",
+          "description": "A clearly adult original male fashion performer moves through mineral, transit-map, archival-tailoring and industrial-signal modules, then a white runway reset, contact-sheet recap and original AXIS NOIR hero lockup."
+        },
+        {
+          "concept": "LUMA FIELD athletic footwear launch",
+          "description": "A clearly adult original nonbinary runner keeps face and silhouette anchors while footwear, terrain diagrams, reflective fabrics and motion graphics change as coordinated modules before a sparse testing lane and evidence-wall recap."
+        },
+        {
+          "concept": "ORBITAL INK fragrance film",
+          "description": "A clearly adult original female perfumer moves through glass, botanical ink, metallic vapor and monochrome laboratory modules, followed by a low-density white table walk, specimen-card recap and restrained final product-name hero frame."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Character identity drifts between style modules.",
+          "repair": "Declare three identity anchors, restate them in every module and include one explicit multi-panel verification before the density peak."
+        },
+        {
+          "failure": "Modules differ only by color.",
+          "repair": "Require at least two coordinated changes among wardrobe, layout, prop system, medium and camera duty for each switch."
+        },
+        {
+          "failure": "Random hard cuts break momentum.",
+          "repair": "Assign a visible carrier to every handoff and make its movement cross the cut boundary."
+        },
+        {
+          "failure": "Every moment stays equally dense.",
+          "repair": "Reserve one full-character low-density interval with fewer effects and calmer camera before the recap."
+        },
+        {
+          "failure": "Recap and hero frame feel unrelated.",
+          "repair": "Populate recap panels from previously shown states, then let those panels physically clear toward the final name field."
+        },
+        {
+          "failure": "Typography becomes unreadable or malformed.",
+          "repair": "Use one declared short copy unit per module, large simple letterforms and a held final lockup with no extra text."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "LUMA FIELD athletic footwear launch",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "adult_identity",
+            "style_modules",
+            "transition_carriers",
+            "density_peak",
+            "sparse_reset",
+            "recap_system",
+            "copy_units",
+            "hero_lockup",
+            "sound_arc"
+          ],
+          "finding": "A sports-product campaign preserves identity proof, coordinated modules, density reset and recap while changing character, action vocabulary, environments, props, copy and visual medium."
+        },
+        {
+          "concept": "ORBITAL INK fragrance film",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "adult_identity",
+            "style_modules",
+            "transition_carriers",
+            "density_peak",
+            "sparse_reset",
+            "recap_system",
+            "copy_units",
+            "hero_lockup",
+            "sound_arc"
+          ],
+          "finding": "A slower luxury fragrance context can retain the same causal architecture using glass, vapor and specimen cards instead of kawaii fashion surfaces."
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

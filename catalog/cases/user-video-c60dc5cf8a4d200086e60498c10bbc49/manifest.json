@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "user-video-c60dc5cf8a4d200086e60498c10bbc49",
+  "slug": "identity-locked-density-reset-recap-hero",
+  "title": "时尚密度复位｜身份锁定、拼贴回顾与英雄主标",
+  "source_title": "可爱即力量｜角色锁定的风格爆切时尚广告",
+  "summary": "锁定同一名明确成年角色，用前景载体轮转多个协调造型模块；密度升至峰值后切入白场减负，再把旧造型拼贴回顾并收束到简洁英雄主标。",
+  "status": "released",
+  "source_duration_seconds": 10.125,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/identity-locked-density-reset-recap-hero",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-c60dc5cf8a4d200086e60498c10bbc49/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/user-video-c60dc5cf8a4d200086e60498c10bbc49/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-identity-locked-density-reset-recap-hero-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "成年原创角色三项身份锚点 + 至少四个双通道造型模块 + 可见转场载体 + 一个密度峰值 + 一个低密度完整人物复位 + 至少三项旧状态回顾 + 简洁英雄主标",
+  "recommended_input": "一名剃光头、右脸有细铜色标记的成年男性时尚表演者，依次经过矿物剪裁、交通图、档案纸和工业信号四个模块；黑铜红密度峰值后进入象牙白两步秀场，再穿过三张旧造型接触表，最终停在原创 AXIS NOIR 主标。",
+  "required_anchors": [
+    "第一轮切换前先锁定一名明确成年原创角色的至少三项身份锚点，并在全部模块中保持一致。",
+    "每个造型模块至少同时改变服装、版式、道具、色彩或镜头职责中的两个通道；纯换色不算新模块。",
+    "所有模块切换都由前景物、图形边、布料或角色手势完成可见交接，并在一个峰值后插入显著低密度的完整人物段落。",
+    "复位后必须回顾至少三个此前已经出现的状态，再清场到人物、原创名称和一句主张都清楚的英雄主标。"
+  ],
+  "tags": [
+    "identity",
+    "fashion",
+    "density",
+    "reset",
+    "recap",
+    "hero"
+  ],
+  "quality": {
+    "weighted_score": 4.773,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-25T00:21:03+08:00",
+  "updated_at": "2026-08-25T00:21:03+08:00"
+}

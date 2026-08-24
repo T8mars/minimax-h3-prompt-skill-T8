@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.2.3",
-  "generated_at": "2026-08-24T20:21:27+08:00",
-  "case_count": 216,
+  "catalog_version": "1.2.4",
+  "generated_at": "2026-08-25T00:48:15+08:00",
+  "case_count": 218,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -7709,6 +7709,64 @@
       ],
       "quality_score": 4.673,
       "updated_at": "2026-08-24T14:42:09+08:00"
+    },
+    {
+      "case_id": "user-video-c60dc5cf8a4d200086e60498c10bbc49",
+      "slug": "identity-locked-density-reset-recap-hero",
+      "title": "时尚密度复位｜身份锁定、拼贴回顾与英雄主标",
+      "status": "released",
+      "summary": "锁定同一名明确成年角色，用前景载体轮转多个协调造型模块；密度升至峰值后切入白场减负，再把旧造型拼贴回顾并收束到简洁英雄主标。",
+      "manifest_path": "cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/manifest.json",
+      "summary_path": "cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/SUMMARY.md",
+      "source_path": "cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/source.json",
+      "creative_dna_path": "cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/preview.gif",
+        "poster": "cases/user-video-c60dc5cf8a4d200086e60498c10bbc49/poster.webp",
+        "mp4": "media/user-video-c60dc5cf8a4d200086e60498c10bbc49/preview.mp4"
+      },
+      "skill_path": "../skills/identity-locked-density-reset-recap-hero",
+      "template_id": "t8-case-identity-locked-density-reset-recap-hero-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "quality_score": 4.773,
+      "updated_at": "2026-08-25T00:21:03+08:00"
+    },
+    {
+      "case_id": "user-video-715b76cd11b1098f170d41a9b71208ba",
+      "slug": "hand-bounded-local-medium-window",
+      "title": "手势边界换媒｜局部窗口、多形态验真与回归",
+      "status": "released",
+      "summary": "双手先画出可控边界，只让框内区域切换媒介；多种几何反复证明注册规则，后段扩大覆盖后主动收回并回到原状态。",
+      "manifest_path": "cases/user-video-715b76cd11b1098f170d41a9b71208ba/manifest.json",
+      "summary_path": "cases/user-video-715b76cd11b1098f170d41a9b71208ba/SUMMARY.md",
+      "source_path": "cases/user-video-715b76cd11b1098f170d41a9b71208ba/source.json",
+      "creative_dna_path": "cases/user-video-715b76cd11b1098f170d41a9b71208ba/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-715b76cd11b1098f170d41a9b71208ba/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-715b76cd11b1098f170d41a9b71208ba/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-715b76cd11b1098f170d41a9b71208ba/preview.gif",
+        "poster": "cases/user-video-715b76cd11b1098f170d41a9b71208ba/poster.webp",
+        "mp4": "media/user-video-715b76cd11b1098f170d41a9b71208ba/preview.mp4"
+      },
+      "skill_path": "../skills/hand-bounded-local-medium-window",
+      "template_id": "t8-case-hand-bounded-local-medium-window-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "quality_score": 4.831,
+      "updated_at": "2026-08-25T00:48:15+08:00"
     }
   ]
 }

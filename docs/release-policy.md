@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.2.3`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.2.3`。
+当前版本是 `v1.2.4`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.2.4`。
 
 版本采用十进制进位：
 
@@ -12,6 +12,7 @@
 1.2.0 -> 1.2.1
 1.2.1 -> 1.2.2
 1.2.2 -> 1.2.3
+1.2.3 -> 1.2.4
 1.9.9 -> 2.0.0
 ```
 
@@ -53,10 +54,10 @@ GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 M
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.2.3
+npm run media:pack -- -Version 1.2.4
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.2.3.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.2.4.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 
@@ -69,7 +70,7 @@ npm run media:pack -- -Version 1.2.3
 7. 工作流定位或安装 `ffmpeg`/`ffprobe`，从 Draft Release 下载指定媒体资产、校验 ZIP 哈希并解压。
 8. 每个 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨；`audio_mode=present` 的媒体还必须完整遍历音频轨，来源本身无音轨的媒体必须明确记录 `audio_mode=source_silent` 与 `audio_codec=null`。探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、声明存在的轨道、进程退出或完整遍历失败仍会阻断发布。
 9. Windows runner 与 macOS runner 分别用单线程 FFmpeg 生成安装包专用的紧凑动态 GIF 副本，并核对其 manifest 与仓库完全一致；随后 Windows 构建完整 NSIS，macOS 构建 unsigned universal DMG + ZIP。两端都逐 path、size 与 SHA-256 对账安装包内媒体，并按上述容错标准完整遍历视频及实际存在的音频轨。
-10. 两个平台都以打包后的应用运行 E2E，证明 216 个案例、9 个官方仓库条目、2 个非官方 Skills、218 份完整来源视频、收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用。
+10. 两个平台都以打包后的应用运行 E2E，证明 218 个案例、9 个官方仓库条目、2 个非官方 Skills、220 份完整来源视频、收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用。
 11. 最终发布 Job 必须同时收到 Windows 与 macOS 已验证产物，核对精确资产集合后统一生成 `SHA256SUMS.txt`。
 12. 只有以上门禁通过，才上传全部目录包、Skills 包、媒体包、Windows 安装包和 macOS 安装包；`publish=true` 时才把 Draft 设为正式 Release。
 
