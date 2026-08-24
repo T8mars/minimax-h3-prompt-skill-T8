@@ -57,7 +57,7 @@ function ensureGif(filePath) {
   }
 }
 
-export function prepareAppCatalog({ source, output, ffmpeg, maxDimension = 360, fps = 5, colors = 128 }) {
+export function prepareAppCatalog({ source, output, ffmpeg, maxDimension = 288, fps = 4, colors = 64 }) {
   const sourceRoot = resolveFromRepo(source);
   const outputRoot = resolveFromRepo(output);
   const releaseInputRoot = path.join(repoRoot, ".release-input");
@@ -140,9 +140,9 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       source: argumentValue("--source", "catalog"),
       output: argumentValue("--output", ".release-input/app-catalog"),
       ffmpeg: argumentValue("--ffmpeg"),
-      maxDimension: Number(argumentValue("--max-dimension", "360")),
-      fps: Number(argumentValue("--fps", "5")),
-      colors: Number(argumentValue("--colors", "128"))
+      maxDimension: Number(argumentValue("--max-dimension", "288")),
+      fps: Number(argumentValue("--fps", "4")),
+      colors: Number(argumentValue("--colors", "64"))
     });
   } catch (error) {
     console.error(`ERROR ${error.message}`);

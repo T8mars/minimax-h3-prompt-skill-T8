@@ -33,6 +33,8 @@ test("builder and release workflow require universal macOS DMG and ZIP artifacts
 test("release packages a compact dynamic catalog without changing the public catalog archive", () => {
   assert.match(fs.readFileSync(path.resolve(__dirname, "..", "electron-builder.config.cjs"), "utf8"), /process\.env\.T8_CATALOG_DIR/u);
   assert.ok(workflow.includes("prepare-app-catalog.mjs"));
+  assert.ok(workflow.includes("--max-dimension 288 --fps 4 --colors 64"), "the installer preview budget must use the validated compact GIF profile");
+  assert.ok(workflow.includes("367001600"), "the compact app catalog must stay below its 350 MiB release budget");
   assert.ok(workflow.includes("T8_CATALOG_DIR"));
   assert.ok(workflow.includes("Packaged and repository catalog manifests differ"));
   assert.ok(workflow.includes("Compress-Archive -Path catalog"), "the standalone catalog asset must retain the original previews");

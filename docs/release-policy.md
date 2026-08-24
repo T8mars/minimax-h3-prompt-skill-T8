@@ -32,7 +32,7 @@
 
 GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 MP4 会迅速放大 Git 历史，所以从本地 `.release-input/media/` 单独构建媒体包，上传为 Release 资产，并在正式 Electron 构建时作为 `extraResources` 加入安装包。
 
-为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个缩放和降帧，但仍保留动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。Git 仓库与独立的 `prompt-library-catalog-v<version>.zip` 始终使用原始公开目录，完整 MP4 也不会被这一过程重编码。
+为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个压到最长边 288 px、4 fps、64 色，但仍保留动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。紧凑目录另有 350 MiB 硬门禁，超过即停止发布。Git 仓库与独立的 `prompt-library-catalog-v<version>.zip` 始终使用原始公开目录，完整 MP4 也不会被这一过程重编码。
 
 ### 本地准备媒体包
 
