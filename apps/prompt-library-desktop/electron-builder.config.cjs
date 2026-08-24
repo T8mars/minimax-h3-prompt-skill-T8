@@ -12,12 +12,13 @@ const configuredMediaDir = process.env.T8_MEDIA_DIR
   : null;
 
 const extraResources = [];
+const localModelExclusions = ["!**/*.gguf", "!**/*.gguf.part", "!**/*.safetensors", "!**/*.ckpt", "!**/*.onnx", "!**/runtime/local_qwen/**/*", "!**/.cache/huggingface/**/*"];
 
 if (fs.existsSync(catalogDir)) {
   extraResources.push({
     from: catalogDir,
     to: "catalog",
-    filter: ["**/*"]
+    filter: ["**/*", ...localModelExclusions]
   });
 }
 
@@ -25,7 +26,7 @@ if (fs.existsSync(skillsDir)) {
   extraResources.push({
     from: skillsDir,
     to: "skills",
-    filter: ["**/*"]
+    filter: ["**/*", ...localModelExclusions]
   });
 }
 
@@ -50,7 +51,8 @@ module.exports = {
     "lib/**/*",
     "music3-official/**/*",
     "src/**/*",
-    "package.json"
+    "package.json",
+    ...localModelExclusions
   ],
   extraResources,
   win: {

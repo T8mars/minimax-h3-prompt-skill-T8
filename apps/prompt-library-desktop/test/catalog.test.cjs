@@ -41,6 +41,8 @@ function fixture() {
     status: "released",
     source_duration_seconds: 10.154,
     target_duration_seconds: 15,
+    created_at: "2026-08-10T09:00:00+08:00",
+    updated_at: "2026-08-11T10:00:00+08:00",
     source_ref: "source.json",
     creative_dna_ref: "creative-dna.json",
     prompt_refs: { minimax_h3: "prompts/minimax-h3.md", seedance_2_0: "prompts/seedance-2.0.md" },
@@ -69,6 +71,9 @@ test("loads a released case and prefers the external media pack", (t) => {
   assert.equal(item.prompts.seedance20, "Seedance prompt body");
   assert.deepEqual(item.media.video, { scope: "media", relativePath: "case-one/preview.mp4" });
   assert.equal(item.sourceUrl, "https://x.com/tester/status/1");
+  assert.equal(item.catalogAddedAt, "2026-08-10T09:00:00+08:00");
+  assert.equal(item.updatedAt, "2026-08-11T10:00:00+08:00");
+  assert.equal(item.catalogOrder, 0);
 });
 
 test("loads both display locales and rejects stale source bindings", (t) => {
@@ -125,6 +130,8 @@ test("loads pinned upstream H3 access and local Seedance companion without embed
     official_skills_manifest: "official-skills/manifest.json"
   }));
   fs.writeFileSync(path.join(catalogRoot, "official-skills", "manifest.json"), JSON.stringify({
+    catalog_added_at: "2026-08-09T21:10:00+08:00",
+    preview_assets_updated_at: "2026-08-09T23:05:00+08:00",
     pinned_commit: "a".repeat(40),
     skill_count: 1,
     upstream_content_embedded: false,
@@ -160,6 +167,8 @@ test("loads pinned upstream H3 access and local Seedance companion without embed
   assert.equal(item.comfyuiImport, false);
   assert.deepEqual(item.media.gif, { scope: "catalog", relativePath: "official-skills/previews/h3-prompt-writing.gif" });
   assert.equal(item.previewLabel, "官方 T2VA 示例 · GIF");
+  assert.equal(item.catalogAddedAt, "2026-08-09T21:10:00+08:00");
+  assert.equal(item.updatedAt, "2026-08-09T23:05:00+08:00");
   assert.match(item.prompts.minimaxH3, /Install the official H3 Skill/u);
   assert.match(item.localizedPromptHelp.minimaxH3.en, /This entry points to the MiniMax-AI/u);
   assert.match(item.localizedPromptHelp.minimaxH3["zh-CN"], /安装官方 H3 Skill/u);
@@ -189,6 +198,8 @@ test("loads a non-official user-contributed Skill with dual-model templates and 
   }));
   fs.writeFileSync(path.join(catalogRoot, "community-skills", id, "manifest.json"), JSON.stringify({
     id,
+    catalog_added_at: "2026-08-09T22:36:38+08:00",
+    updated_at: "2026-08-10T00:00:00+08:00",
     title_zh: "自然街拍互动",
     summary: "连续路线上的自然交流",
     official: false,
@@ -220,6 +231,8 @@ test("loads a non-official user-contributed Skill with dual-model templates and 
   assert.equal(item.kind, "communitySkill");
   assert.equal(item.sourceClassification, "user-contributed");
   assert.equal(item.comfyuiImport, false);
+  assert.equal(item.catalogAddedAt, "2026-08-09T22:36:38+08:00");
+  assert.equal(item.updatedAt, "2026-08-10T00:00:00+08:00");
   assert.deepEqual(item.media.video, { scope: "media", relativePath: `community-skills/${id}/preview.mp4` });
   assert.match(item.prompts.minimaxH3, /subject_definitions/u);
   assert.match(item.prompts.seedance20, /自然街拍/u);

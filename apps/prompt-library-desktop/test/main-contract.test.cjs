@@ -53,3 +53,11 @@ test("packaged and development roots include the installable Skill library", () 
   assert.match(main, /officialSkills: catalog\.officialSkills\.map\(serializeMediaItem\)/u);
   assert.match(main, /communitySkills: catalog\.communitySkills\.map\(serializeMediaItem\)/u);
 });
+
+test("desktop releases explicitly exclude local model weights and runtime caches", () => {
+  const source = fs.readFileSync(path.resolve(__dirname, "..", "electron-builder.config.cjs"), "utf8");
+  for (const pattern of ["*.gguf", "*.safetensors", "*.ckpt", "*.onnx", "runtime/local_qwen"]) {
+    assert.ok(source.includes(pattern), `missing local-model release exclusion ${pattern}`);
+  }
+  assert.ok(builder.files.some((entry) => entry.includes("*.gguf")));
+});

@@ -148,7 +148,8 @@ h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1; letter-spacin
 
 .filters {
   display: grid;
-  grid-template-columns: minmax(300px, 2.6fr) repeat(3, minmax(130px, 1fr)) auto;
+  grid-template-areas: "search source model tag sort clear";
+  grid-template-columns: minmax(280px, 2.4fr) repeat(4, minmax(118px, 1fr)) auto;
   gap: 11px;
   align-items: end;
   margin-bottom: 24px;
@@ -157,6 +158,13 @@ h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1; letter-spacin
   border-radius: var(--radius);
   background: rgba(17, 20, 18, 0.88);
 }
+
+.filters .search-field { grid-area: search; }
+.filters .filter-source { grid-area: source; }
+.filters .filter-model { grid-area: model; }
+.filters .filter-tag { grid-area: tag; }
+.filters .filter-sort { grid-area: sort; }
+.filters .clear { grid-area: clear; white-space: nowrap; }
 
 .filters label > span { display: block; margin: 0 0 7px 2px; color: #aeb5af; font-size: 11px; }
 .filters input, .filters select {
@@ -348,8 +356,12 @@ h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1; letter-spacin
 .compare-copy { width: 100%; }
 
 @media (max-width: 1100px) {
-  .filters { grid-template-columns: 2fr repeat(2, 1fr); }
-  .filters label:nth-of-type(4) { grid-column: span 2; }
+  .filters {
+    grid-template-areas:
+      "search source model"
+      "tag sort clear";
+    grid-template-columns: 2fr 1fr 1fr;
+  }
   .detail-hero { grid-template-columns: 1fr; }
   .detail-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
   .detail-summary .button { align-self: end; justify-self: start; }
@@ -363,9 +375,15 @@ h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1; letter-spacin
   .stats { grid-template-columns: 1fr 1fr; }
   .stats div:nth-child(2) { border-right: 0; }
   .stats div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-  .filters { grid-template-columns: 1fr 1fr; }
-  .filters .search-field { grid-column: 1 / -1; }
-  .filters label:nth-of-type(4) { grid-column: auto; }
+  .filters {
+    grid-template-areas:
+      "search search"
+      "source model"
+      "tag sort"
+      "clear clear";
+    grid-template-columns: 1fr 1fr;
+  }
+  .filters .clear { width: 100%; }
   .detail-summary { display: block; }
   .dna-grid { grid-template-columns: 1fr; }
   .dialog-header-actions { max-width: 55%; }
@@ -376,6 +394,10 @@ h1 { margin: 0; font-size: clamp(32px, 5vw, 58px); line-height: 1; letter-spacin
 }
 
 @media (max-width: 560px) {
+  .filters {
+    grid-template-areas: "search" "source" "model" "tag" "sort" "clear";
+    grid-template-columns: 1fr;
+  }
   .update-area { align-items: flex-end; flex-direction: column; }
   .dialog-header { padding: 17px; }
   .dialog-header-actions { max-width: 100%; }

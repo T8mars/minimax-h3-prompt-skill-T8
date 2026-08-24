@@ -2,12 +2,20 @@ const assert = require("node:assert/strict");
 const os = require("node:os");
 const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
+const { loadCatalog } = require("../lib/catalog.cjs");
+const { itemKey, sortItems } = require("../src/catalog-sort.js");
 
-const catalogManifest = require(path.resolve(__dirname, "../../..", "catalog", "manifest.json"));
+const repoRoot = path.resolve(__dirname, "../../..");
+const catalogManifest = require(path.join(repoRoot, "catalog", "manifest.json"));
 const expectedCaseCount = catalogManifest.case_count;
 const expectedOfficialSkillCount = catalogManifest.official_skill_count;
 const expectedCommunitySkillCount = catalogManifest.community_skill_count;
 const expectedAggregateCount = expectedCaseCount + expectedOfficialSkillCount + expectedCommunitySkillCount;
+const normalizedCatalog = loadCatalog({ catalogRoot: path.join(repoRoot, "catalog"), skillsRoot: path.join(repoRoot, "skills") });
+const normalizedItems = [...normalizedCatalog.cases, ...normalizedCatalog.communitySkills, ...normalizedCatalog.officialSkills];
+const expectedNewestItemKey = itemKey(sortItems(normalizedItems, { mode: "newest-added", locale: "zh-CN" })[0]);
+const expectedOldestItemKey = itemKey(sortItems(normalizedItems, { mode: "oldest-added", locale: "zh-CN" })[0]);
+const expectedNewestXItemKey = itemKey(sortItems(normalizedCatalog.cases.filter((item) => String(item.platform).toLocaleLowerCase() === "x"), { mode: "newest-added", locale: "zh-CN" })[0]);
 
 async function waitForClipboard(electronApp, predicate, message, timeoutMs = 3000) {
   const deadline = Date.now() + timeoutMs;
@@ -68,6 +76,7 @@ async function run() {
       localStorage.setItem("t8-display-locale", "en");
       localStorage.removeItem("t8-display-locale-default-zh-v1");
       localStorage.removeItem("t8-personal-library-v1");
+      localStorage.removeItem("t8-catalog-sort-v1");
     });
     await page.reload();
     const rendererErrors = [];
@@ -83,6 +92,21 @@ async function run() {
     assert.equal(await page.locator("html").getAttribute("lang"), "zh-CN", "the document language must match the first-run Chinese default");
     assert.equal(await page.evaluate(() => localStorage.getItem("t8-display-locale")), "zh-CN", "the default-Chinese migration must replace a stale English value once");
     assert.equal(await page.evaluate(() => localStorage.getItem("t8-display-locale-default-zh-v1")), "done", "the default-Chinese migration must be recorded");
+    assert.equal(await page.locator("#sort-order").inputValue(), "newest-added", "newest-added must be the default sort mode");
+    assert.equal(await page.locator(".case-card").first().getAttribute("data-item-key"), expectedNewestItemKey, "the first card must be the newest catalog addition");
+    await page.locator("#sort-order").selectOption("oldest-added");
+    assert.equal(await page.locator(".case-card").first().getAttribute("data-item-key"), expectedOldestItemKey, "oldest-added must put the earliest catalog item first");
+    await page.reload();
+    await waitForCardCount(page, expectedAggregateCount);
+    assert.equal(await page.locator("#sort-order").inputValue(), "oldest-added", "an explicit sort choice must persist across reload");
+    await page.locator("#sort-order").selectOption("newest-added");
+    assert.equal(await page.locator(".case-card").first().getAttribute("data-item-key"), expectedNewestItemKey);
+    for (const width of [720, 520]) {
+      await page.setViewportSize({ width, height: 720 });
+      assert.equal(await page.locator("#sort-order").isVisible(), true, `sort control must remain visible at ${width}px`);
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth), true, `sorting layout must not create horizontal overflow at ${width}px`);
+    }
+    await page.setViewportSize({ width: 1280, height: 720 });
     await page.locator("#global-locale-en").click();
     await page.reload();
     await waitForCardCount(page, expectedAggregateCount);
@@ -96,7 +120,10 @@ async function run() {
     assert.equal(await page.locator("#view-favorite-count").textContent(), "0");
     assert.equal(await page.locator("#view-collection-count").textContent(), "0");
     assert.equal(await page.locator("#view-history-count").textContent(), "0");
-    await page.locator(".case-card .card-personal-button.favorite").first().click();
+    const favoriteItemKey = expectedNewestXItemKey;
+    const favoriteSourceUrl = normalizedItems.find((item) => itemKey(item) === favoriteItemKey)?.sourceUrl;
+    assert.match(favoriteSourceUrl || "", /^https:\/\//u, "the newest item must retain an exact HTTPS source URL");
+    await page.locator(`.case-card[data-item-key="${favoriteItemKey}"] .card-personal-button.favorite`).click();
     assert.equal(await page.locator("#case-dialog").getAttribute("open"), null, "favorite button must not open the card");
     assert.equal(await page.locator("#view-favorite-count").textContent(), "1");
     await page.locator("#view-favorites").click();
@@ -117,7 +144,11 @@ async function run() {
     await page.keyboard.press("Escape");
     await page.locator("#view-history").click();
     assert.equal(await page.locator(".case-card").count(), 1, "history view must contain the opened item");
+    assert.equal(await page.locator("#sort-order").inputValue(), "recently-viewed", "history must keep its own most-recently-viewed order");
+    assert.equal(await page.locator("#sort-order").isDisabled(), true, "history ordering must not be replaced by catalog date sorting");
     await page.locator("#view-collections").click();
+    assert.equal(await page.locator("#sort-order").inputValue(), "newest-added", "leaving history must restore the selected catalog sort");
+    assert.equal(await page.locator("#sort-order").isEnabled(), true);
     assert.equal(await page.locator("#collection-select").inputValue(), await page.locator("#collection-select option").getAttribute("value"));
     assert.equal(await page.locator(".case-card").count(), 1, "selected collection must contain the assigned item");
     await page.reload();
@@ -136,6 +167,12 @@ async function run() {
     await page.waitForFunction(() => document.querySelectorAll(".case-card").length > 0);
     assert.ok(await page.locator(".case-card").count() >= 1, "Chinese search must find Chinese sidecar content");
     await page.locator("#search").fill("");
+    await page.locator("#sort-order").selectOption("recently-updated");
+    await page.locator("#search").fill("空气净化");
+    await page.locator("#clear-filters").click();
+    assert.equal(await page.locator("#search").inputValue(), "", "clear filters must clear the search field");
+    assert.equal(await page.locator("#sort-order").inputValue(), "recently-updated", "clear filters must preserve the explicit sort choice");
+    await page.locator("#sort-order").selectOption("newest-added");
     await page.locator("#global-locale-en").click();
     await page.screenshot({ path: screenshotPath, animations: "disabled", timeout: 120000 });
 
@@ -147,7 +184,8 @@ async function run() {
     await page.locator("#platform-filter").selectOption("platform:x");
     assert.ok(await page.locator(".case-card").count() > 10, "stable platform filter must retain the X case set");
 
-    await page.locator(".case-card").first().click();
+    assert.equal(await page.locator(".case-card").first().getAttribute("data-item-key"), favoriteItemKey, "newest-added must remain stable inside the X filter");
+    await page.locator(`.case-card[data-item-key="${favoriteItemKey}"]`).click();
     await page.waitForSelector("#case-dialog[open]");
     assert.equal(await page.locator("#detail-favorite").getAttribute("aria-pressed"), "true", "detail favorite state must match the persisted card state");
     await page.locator("#detail-collections").dispatchEvent("click");
@@ -250,7 +288,7 @@ async function run() {
     assert.equal(await page.locator("#copy-overview").textContent(), "Copy overview", "copy button must restore its idle label after feedback");
     assert.equal(await page.locator("#copy-overview").getAttribute("data-copy-state"), null);
     await page.locator("#copy-source-link").click();
-    await waitForClipboard(electronApp, (value) => /^https:\/\/(?:x\.com|www\.reddit\.com)\//u.test(value), "source copy must preserve the exact HTTPS post URL");
+    await waitForClipboard(electronApp, (value) => value === favoriteSourceUrl, "source copy must preserve the current item's exact HTTPS source URL");
     await page.locator("#copy-quick-start").click();
     await waitForClipboard(electronApp, (value) => /## Quick start[\s\S]+## Recommended input format/u.test(value), "quick-start copy must include its reviewed fields");
     await page.locator("#copy-dna").click();
@@ -372,7 +410,7 @@ async function run() {
     assert.equal(await page.locator("#stat-prompts").textContent(), "4");
     assert.equal(await page.locator(".compare-toggle").count(), 0, "community Skills do not enter case comparison");
     await page.screenshot({ path: communityScreenshotPath, animations: "disabled" });
-    await page.locator(".case-card.community-skill").first().click();
+    await page.locator('.case-card.community-skill[data-item-key="communitySkill:direct-street-interview-video"]').click();
     await page.waitForSelector("#case-dialog[open]");
     const communityVideo = page.locator("#detail-media video");
     await communityVideo.waitFor({ state: "visible" });
@@ -397,7 +435,7 @@ async function run() {
 
     await page.keyboard.press("Escape");
     await page.locator("#case-dialog").waitFor({ state: "hidden" });
-    await page.locator(".case-card.community-skill").nth(1).click();
+    await page.locator('.case-card.community-skill[data-item-key="communitySkill:stage-startle-to-truce-encounter"]').click();
     await page.waitForSelector("#case-dialog[open]");
     const secondCommunityVideo = page.locator("#detail-media video");
     await secondCommunityVideo.waitFor({ state: "visible" });

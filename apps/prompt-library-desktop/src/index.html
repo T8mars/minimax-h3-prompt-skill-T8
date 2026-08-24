@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="workbench.css">
     <script src="personal-library.js" defer></script>
+    <script src="catalog-sort.js" defer></script>
     <script src="app.js" defer></script>
     <script src="workbench.js" defer></script>
     <script src="music3-workbench.js" defer></script>
@@ -87,24 +88,34 @@
         <div><span id="stat-results-label">Current results</span><strong id="stat-results">0</strong></div>
       </section>
 
-      <section class="filters" aria-label="Filter cases">
+      <section class="filters" aria-label="筛选与排序内容">
         <label class="search-field">
           <span aria-hidden="true">⌕</span>
           <input id="search" type="search" placeholder="Search mechanism, style, camera, tags, author or ID" autocomplete="off">
         </label>
-        <label>
+        <label class="filter-source">
           <span id="platform-filter-label">Platform</span>
           <select id="platform-filter"><option value="">All platforms</option></select>
         </label>
-        <label>
+        <label class="filter-model">
           <span id="model-filter-label">Model</span>
           <select id="model-filter"><option value="">All models</option></select>
         </label>
-        <label>
+        <label class="filter-tag">
           <span id="tag-filter-label">Tag</span>
           <select id="tag-filter"><option value="">All tags</option></select>
         </label>
-        <button id="clear-filters" class="button clear" type="button">Clear</button>
+        <label class="filter-sort">
+          <span id="sort-order-label">排序</span>
+          <select id="sort-order">
+            <option value="newest-added">最新收录</option>
+            <option value="recently-updated">最近更新</option>
+            <option value="oldest-added">最早收录</option>
+            <option value="title-asc">标题 A–Z</option>
+            <option value="title-desc">标题 Z–A</option>
+          </select>
+        </label>
+        <button id="clear-filters" class="button clear" type="button">清除筛选</button>
       </section>
 
       <div id="catalog-warning" class="catalog-warning hidden" role="status"></div>
@@ -462,8 +473,11 @@
               <button class="provider-card" type="button" data-provider-id="openai_compatible" aria-pressed="false">
                 <strong>OpenAI 兼容接口</strong><span>自定义 HTTPS Base URL 与模型</span><em data-provider-state="openai_compatible">未配置</em>
               </button>
+              <button class="provider-card" type="button" data-provider-id="local_qwen" aria-pressed="false">
+                <strong id="local-qwen-card-title">本地 Qwen3.8-27B</strong><span id="local-qwen-card-subtitle">离线 GGUF · 无需 API Key</span><em data-provider-state="local_qwen">未配置</em>
+              </button>
             </div>
-            <div class="provider-registration-row" aria-label="API 注册入口">
+            <div id="provider-registration-row" class="provider-registration-row" aria-label="API 注册入口">
               <button class="button registration-link" type="button" data-provider-registration="seedance_nz">注册平价小屋 API ↗</button>
               <button class="button registration-link" type="button" data-provider-registration="t8star_workshop">注册 AI 工坊 API ↗</button>
             </div>
@@ -485,6 +499,45 @@
                 <button id="workbench-save-key" class="button source" type="button">保存 Key</button>
                 <button id="workbench-clear-key" class="button ghost" type="button">清除 Key</button>
                 <button id="workbench-register-selected" class="button registration-link" type="button">没有 Key？立即注册 ↗</button>
+              </div>
+            </div>
+            <div id="workbench-local-qwen-panel" class="credential-panel local-qwen-panel hidden">
+              <div class="local-qwen-heading">
+                <div>
+                  <strong id="local-qwen-title">配置本地 Qwen3.8-27B</strong>
+                  <p id="local-qwen-note">模型不会包含在安装包中，也不会自动下载。选择你自己的模型目录并完成一次完整校验。</p>
+                </div>
+                <span id="local-qwen-readiness" class="status-pill">未配置</span>
+              </div>
+              <label class="workbench-field workbench-field-full">
+                <span id="local-qwen-directory-label">模型目录</span>
+                <div class="path-picker-row"><input id="local-qwen-directory" type="text" readonly spellcheck="false" placeholder="选择包含 GGUF 与 mmproj 的目录"><button id="local-qwen-pick-directory" class="button copy-secondary" type="button">选择目录</button></div>
+              </label>
+              <label class="workbench-field">
+                <span id="local-qwen-model-label">本地模型</span>
+                <select id="local-qwen-model"><option value="Qwen3.8-27B-Q4_K_M.gguf">Qwen3.8-27B Q4_K_M（官方，推荐）</option><option value="qwen3.8-27b-uncensored-fp8-q4_k_m.gguf">Qwen3.8-27B Uncensored FP8 Q4_K_M</option></select>
+              </label>
+              <label class="workbench-field">
+                <span id="local-qwen-runtime-label">llama-server 运行文件</span>
+                <div class="path-picker-row"><input id="local-qwen-runtime" type="text" readonly spellcheck="false" placeholder="选择 llama-server 可执行文件"><button id="local-qwen-pick-runtime" class="button copy-secondary" type="button">选择运行文件</button></div>
+              </label>
+              <label class="workbench-field workbench-field-full">
+                <span id="local-qwen-ffmpeg-label">FFmpeg（仅本地视频需要）</span>
+                <div class="path-picker-row"><input id="local-qwen-ffmpeg" type="text" readonly spellcheck="false" placeholder="可选：选择 FFmpeg 可执行文件"><button id="local-qwen-pick-ffmpeg" class="button copy-secondary" type="button">选择 FFmpeg</button></div>
+              </label>
+              <div class="local-qwen-options">
+                <label class="workbench-field"><span id="local-qwen-context-label">上下文</span><select id="local-qwen-context"><option value="8192">8K</option><option value="16384">16K</option><option value="32768" selected>32K（推荐）</option><option value="65536">64K</option></select></label>
+                <label class="workbench-field"><span id="local-qwen-max-tokens-label">最大输出</span><select id="local-qwen-max-tokens"><option value="512">512（短输出）</option><option value="1024">1024</option><option value="2048">2048</option><option value="4096" selected>4096（节点默认）</option><option value="8192">8192</option></select></label>
+                <label class="workbench-field"><span id="local-qwen-think-label">思考模式</span><select id="local-qwen-think"><option value="off" selected>关闭（推荐）</option><option value="on">开启</option></select></label>
+                <label class="workbench-field"><span id="local-qwen-reasoning-label">推理强度</span><select id="local-qwen-reasoning"><option value="low">low</option><option value="medium" selected>medium</option><option value="xhigh">xhigh</option></select></label>
+                <label class="workbench-field"><span id="local-qwen-video-fps-label">视频采样率</span><input id="local-qwen-video-fps" type="number" min="0.25" max="8" step="0.25" value="2"></label>
+                <label class="workbench-field"><span id="local-qwen-unload-label">显存策略</span><select id="local-qwen-unload"><option value="after_run" selected>执行后卸载（推荐）</option><option value="keep_warm">保持驻留</option><option value="idle_10m">空闲10分钟后卸载</option></select></label>
+              </div>
+              <div class="local-qwen-file-status" id="local-qwen-file-status" aria-live="polite"></div>
+              <div class="credential-actions">
+                <button id="local-qwen-save" class="button copy-secondary" type="button">保存设置</button>
+                <button id="local-qwen-verify" class="button source" type="button">完整校验</button>
+                <button id="local-qwen-release" class="button ghost" type="button">释放模型</button>
               </div>
             </div>
           </section>

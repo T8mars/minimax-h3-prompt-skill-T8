@@ -16,8 +16,12 @@ const requiredFiles = [
   "lib/security.cjs",
   "lib/update-policy.cjs",
   "lib/media-response.cjs",
+  "lib/local-qwen-config.cjs",
+  "lib/local-qwen-media.cjs",
+  "lib/local-qwen-runtime.cjs",
   "src/index.html",
   "src/styles.css",
+  "src/workbench.js",
   "src/app.js"
 ];
 

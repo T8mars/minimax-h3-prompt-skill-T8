@@ -27,6 +27,8 @@ if (!fs.existsSync(manifestPath)) {
   if (!/^\d+\.\d+\.\d+$/u.test(index.catalog_version || "")) failures.push("official Skill index catalog_version must be semver");
   if (index.repository !== "MiniMax-AI/MiniMax-H3") failures.push("official Skill index repository must be MiniMax-AI/MiniMax-H3");
   if (!/^[0-9a-f]{40}$/u.test(index.pinned_commit || "")) failures.push("official Skill index pinned_commit must be a full Git commit");
+  if (!Number.isFinite(Date.parse(String(index.catalog_added_at || "")))) failures.push("official Skill index catalog_added_at must be a valid timestamp");
+  if (!Number.isFinite(Date.parse(String(index.preview_assets_updated_at || "")))) failures.push("official Skill index preview_assets_updated_at must be a valid timestamp");
   if (index.skill_count !== 9 || entries.length !== 9) failures.push("official Skill index must contain exactly 9 entries");
   if (index.upstream_content_embedded !== false) failures.push("upstream Skill bodies must not be embedded in this public repository");
   if (index.comfyui_import !== false) failures.push("official repository Skills must remain excluded from ComfyUI import");

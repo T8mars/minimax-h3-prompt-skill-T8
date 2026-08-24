@@ -42,6 +42,15 @@ SHA256SUMS.txt
 latest.yml
 *.blockmap
 
+# Local inference weights, runtimes and machine-specific caches
+*.gguf
+*.gguf.part
+*.safetensors
+*.ckpt
+*.onnx
+**/runtime/local_qwen/
+**/.cache/huggingface/
+
 # Editors and operating systems
 .DS_Store
 Thumbs.db

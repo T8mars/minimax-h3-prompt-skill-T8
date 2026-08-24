@@ -18,6 +18,7 @@ async function run() {
   ]).size;
   const screenshotPath = path.join(os.tmpdir(), `t8-prompt-workbench-${Date.now()}.png`);
   const musicScreenshotPath = path.join(os.tmpdir(), `t8-music3-workbench-${Date.now()}.png`);
+  const localSettingsScreenshotPath = path.join(os.tmpdir(), `t8-local-qwen-settings-${Date.now()}.png`);
   const e2eUserDataDir = fs.mkdtempSync(path.join(os.tmpdir(), "t8-workbench-e2e-userdata-"));
   const packagedExecutable = process.env.T8_E2E_EXECUTABLE ? path.resolve(process.env.T8_E2E_EXECUTABLE) : null;
   const electronApp = await electron.launch({
@@ -45,8 +46,15 @@ async function run() {
     assert.equal(await page.locator('[data-workbench-step="provider"]').count(), 0, "API configuration must not consume a creation step");
     await page.locator("#open-api-settings").click();
     await page.waitForSelector("#api-settings-dialog[open]");
-    assert.equal(await page.locator("#workbench-provider-cards .provider-card").count(), 3);
+    assert.equal(await page.locator("#workbench-provider-cards .provider-card").count(), 4);
     assert.equal(await page.locator("[data-provider-registration]").count(), 2);
+    await page.locator('[data-provider-id="local_qwen"]').click();
+    assert.equal(await page.locator("#workbench-local-qwen-panel").isVisible(), true, "local Qwen must use its own settings panel");
+    assert.equal(await page.locator("#workbench-credential-panel").isVisible(), false, "local Qwen must not ask for an API key");
+    assert.equal(await page.locator("#local-qwen-model option").count(), 2, "only the two node-verified models may be advertised");
+    const localSettingsOverflow = await page.locator(".api-settings-content").evaluate((node) => ({ scrollHeight: node.scrollHeight, clientHeight: node.clientHeight }));
+    assert.ok(localSettingsOverflow.scrollHeight <= localSettingsOverflow.clientHeight + 1, `local Qwen settings must fit one 1280x800 screen (${localSettingsOverflow.scrollHeight} > ${localSettingsOverflow.clientHeight})`);
+    await page.screenshot({ path: localSettingsScreenshotPath, animations: "disabled" });
     assert.equal(await page.locator("#workbench-template option").count(), expectedTemplateCount, "workbench selector count must be derived from the current manifest and evidence-variant lineage");
     await page.locator("#workbench-template").selectOption("t8-case-earnest-upgrade-displacement-v1");
     try {
@@ -173,7 +181,7 @@ async function run() {
     await page.locator("#workbench-clear-key").click();
     await page.waitForFunction(() => !document.querySelector('[data-provider-state="t8star_workshop"]').textContent.includes("session"));
     assert.deepEqual(errors, [], `workbench renderer errors: ${errors.join(" | ")}`);
-    console.log(`PASS workbench E2E; templates=${expectedTemplateCount}; providers=3; confirmation=explicit; screenshot=${screenshotPath}; musicScreenshot=${musicScreenshotPath}`);
+    console.log(`PASS workbench E2E; templates=${expectedTemplateCount}; providers=4; confirmation=explicit; screenshot=${screenshotPath}; musicScreenshot=${musicScreenshotPath}; localSettingsScreenshot=${localSettingsScreenshotPath}`);
   } finally {
     await electronApp.close();
     fs.rmSync(e2eUserDataDir, { recursive: true, force: true });

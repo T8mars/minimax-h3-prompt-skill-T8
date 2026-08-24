@@ -174,7 +174,7 @@ function normalizeMusicPlan(input = {}) {
   const normalized = {
     schemaVersion: SCHEMA_VERSION,
     providerId: provider.id,
-    endpoint: provider.configurableEndpoint ? normalizeOpenAiChatUrl(input.baseUrl) : provider.chatUrl,
+    endpoint: provider.local ? "local://qwen" : provider.configurableEndpoint ? normalizeOpenAiChatUrl(input.baseUrl) : provider.chatUrl,
     model: normalizeModel(input.model, provider),
     musicIdea,
     lyricsMode,
@@ -202,7 +202,7 @@ function normalizeMusicPlan(input = {}) {
     stageCache: option(input.stageCache, STAGE_CACHE_MODES, "on"),
     seed: Math.max(0, Math.floor(Number(input.seed || 0)))
   };
-  normalized.endpointHost = new URL(normalized.endpoint).host;
+  normalized.endpointHost = provider.local ? "local" : new URL(normalized.endpoint).host;
   if (!Number.isFinite(normalized.targetDurationSeconds) || normalized.targetDurationSeconds < 0 || normalized.targetDurationSeconds > 300) throw new PromptProviderError("Target duration must be 0–300 seconds.", { code: "invalid_duration", phase: "preflight" });
   if (!Number.isFinite(normalized.captionTargetWords) || normalized.captionTargetWords < 0 || normalized.captionTargetWords > 1000) throw new PromptProviderError("Caption target words must be 0–1000.", { code: "invalid_caption_length", phase: "preflight" });
   normalized.effectiveLyricsMode = effectiveLyricsMode(lyricsMode, lyrics, musicIdea);

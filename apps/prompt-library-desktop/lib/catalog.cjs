@@ -326,6 +326,7 @@ function normalizeCase(manifestPath, catalogRoot, mediaRoot, warnings) {
       video: assetDescriptor(videoScope === "media" ? mediaRoot : catalogRoot, videoPath, videoScope),
       hasFullVideo: Boolean(videoPath)
     },
+    catalogAddedAt: firstString(manifest.catalog_added_at, manifest.created_at, manifest.updated_at, rootUpdatedAt(manifest)),
     updatedAt: firstString(manifest.updated_at, rootUpdatedAt(manifest), manifest.created_at)
   };
 }
@@ -409,7 +410,9 @@ function normalizeOfficialSkill(entry, index, indexPath, catalogRoot, skillsRoot
     },
     localizedPromptHelp: { minimaxH3: { en: h3AccessEn, "zh-CN": h3AccessZh } },
     promptLanguages: { minimaxH3: "Installation metadata", seedance20: "Chinese" },
-    promptSha256: { minimaxH3: sha256Text(h3AccessEn), seedance20: sha256Text(readText(templatePath).trim()) }
+    promptSha256: { minimaxH3: sha256Text(h3AccessEn), seedance20: sha256Text(readText(templatePath).trim()) },
+    catalogAddedAt: firstString(entry.catalog_added_at, index.catalog_added_at, index.observed_at),
+    updatedAt: firstString(entry.updated_at, index.preview_assets_updated_at, index.observed_at, index.catalog_added_at)
   };
 }
 
@@ -502,7 +505,8 @@ function normalizeCommunitySkill(entry, index, catalogRoot, mediaRoot, skillsRoo
       video: assetDescriptor(mediaRoot, videoPath, "media"),
       hasFullVideo: Boolean(videoPath && fs.existsSync(videoPath))
     },
-    updatedAt: firstString(entry.updated_at, index.updated_at)
+    catalogAddedAt: firstString(entry.catalog_added_at, entry.created_at, entry.updated_at, index.catalog_added_at, index.created_at, index.updated_at),
+    updatedAt: firstString(entry.updated_at, index.updated_at, entry.catalog_added_at, entry.created_at)
   };
 }
 
@@ -554,6 +558,12 @@ function loadCatalog({ catalogRoot, mediaRoot = null, skillsRoot = null }) {
     skillsRoot ? path.resolve(skillsRoot) : null,
     warnings
   );
+
+  let catalogOrder = 0;
+  for (const item of [...cases, ...communitySkills, ...officialSkills]) {
+    item.catalogOrder = catalogOrder;
+    catalogOrder += 1;
+  }
 
   return {
     schemaVersion: firstString(rootManifest.schema_version, "1.0.0"),

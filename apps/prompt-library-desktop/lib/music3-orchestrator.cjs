@@ -23,6 +23,18 @@ const STAGE_CACHE_SALT = crypto.randomBytes(32);
 const GATEWAY_RETRY_CODES = new Set(["upstream_gateway_failure", "upstream_unavailable", "upstream_timeout", "provider_server_error"]);
 
 function hash(value) { return crypto.createHash("sha256").update(String(value), "utf8").digest("hex"); }
+function localExecutionFingerprint(localQwen, status) {
+  if (typeof localQwen?.executionFingerprint === "function") return localQwen.executionFingerprint();
+  return sha256Canonical({
+    modelFilename: status?.modelFilename,
+    contextSize: status?.contextSize,
+    maxTokens: status?.maxTokens,
+    thinkMode: status?.thinkMode,
+    reasoningEffort: status?.reasoningEffort,
+    videoSampleFps: status?.videoSampleFps,
+    unloadPolicy: status?.unloadPolicy
+  });
+}
 function sleep(ms, signal) {
   return new Promise((resolve, reject) => {
     const timer = setTimeout(resolve, ms);
@@ -109,7 +121,7 @@ class StageRunner {
 
   cacheKey(stage) {
     const credentialHash = crypto.createHmac("sha256", STAGE_CACHE_SALT).update(this.apiKey, "utf8").digest("hex");
-    return sha256Canonical({ providerId: stage.providerId, endpoint: stage.endpoint, model: stage.model, stage: stage.stage, messages: stage.messages, credentialHash });
+    return sha256Canonical({ providerId: stage.providerId, endpoint: stage.endpoint, model: stage.model, stage: stage.stage, messages: stage.messages, credentialHash, localConfigHash: this.run.localConfigHash || null });
   }
 
   async complete(stage, { selector = false } = {}) {
@@ -126,7 +138,9 @@ class StageRunner {
       attempt += 1;
       this.requestCount += 1;
       try {
-        const result = await callProvider(stage, this.apiKey, { fetchImpl: this.orchestrator.fetchImpl, signal: this.controller.signal });
+        const result = this.run.localSession
+          ? await this.run.localSession.complete(stage)
+          : await callProvider(stage, this.apiKey, { fetchImpl: this.orchestrator.fetchImpl, signal: this.controller.signal });
         const receipt = { stage: stage.stage, cache_hit: false, attempts: attempt, request_id: result.receipt.requestId, usage: result.receipt.usage, duration_ms: result.receipt.durationMs };
         this.stages.push(receipt);
         if (this.run.plan.stageCache === "on") this.orchestrator.stageCachePut(cacheKey, result.output);
@@ -144,8 +158,9 @@ class StageRunner {
 }
 
 class Music3Orchestrator {
-  constructor({ credentialVault, fetchImpl = globalThis.fetch, now = () => Date.now(), randomUUID = crypto.randomUUID }) {
+  constructor({ credentialVault, localQwen = null, fetchImpl = globalThis.fetch, now = () => Date.now(), randomUUID = crypto.randomUUID }) {
     this.credentialVault = credentialVault;
+    this.localQwen = localQwen;
     this.fetchImpl = fetchImpl;
     this.now = now;
     this.randomUUID = randomUUID;
@@ -185,10 +200,13 @@ class Music3Orchestrator {
   preflight(input) {
     this.cleanup();
     const plan = normalizeMusicPlan(input);
-    const credential = this.credentialVault.status(plan.providerId);
-    if (!credential.configured) throw new PromptProviderError("This provider has no configured API key.", { code: "credential_missing", phase: "preflight" });
+    const local = plan.providerId === "local_qwen";
+    const credential = local ? this.localQwen?.status() : this.credentialVault.status(plan.providerId);
+    if (!credential?.configured) throw new PromptProviderError(local ? "Local Qwen is not ready. Verify it in API settings." : "This provider has no configured API key.", { code: local ? "local_not_ready" : "credential_missing", phase: "preflight" });
+    if (local && plan.model !== credential.modelFilename) throw new PromptProviderError("The selected local model changed; reopen API settings and generate a new plan.", { code: "local_model_changed", phase: "preflight" });
     const issuedAtMs = this.now();
-    this.plans.set(plan.planHash, { plan, issuedAt: issuedAtMs, expiresAt: issuedAtMs + PLAN_TTL_MS, consumedAt: null });
+    const localConfigHash = local ? localExecutionFingerprint(this.localQwen, credential) : null;
+    this.plans.set(plan.planHash, { plan, issuedAt: issuedAtMs, expiresAt: issuedAtMs + PLAN_TTL_MS, consumedAt: null, localConfigHash });
     const logical = plan.requestBudget;
     const physicalMaximum = plan.providerId === "seedance_nz"
       ? logical.stages.reduce((sum, stage) => sum + (stage === "select" ? 6 : stage === "language-repair-if-needed" ? 3 : 3), 0)
@@ -212,26 +230,37 @@ class Music3Orchestrator {
       logicalCallsMaximum: logical.maximum,
       physicalAttemptsMaximum: physicalMaximum,
       stageCache: plan.stageCache,
-      cost: "unknown",
-      confirmationRequired: true
+      cost: local ? "0" : "unknown",
+      confirmationRequired: true,
+      confirmationKind: local ? "local_compute" : "paid_remote"
     };
   }
 
   start({ planHash, confirmed }) {
     this.cleanup();
-    if (confirmed !== true) throw new PromptProviderError("Explicit paid-call confirmation is required.", { code: "confirmation_required", phase: "preflight" });
+    if (confirmed !== true) throw new PromptProviderError("Explicit run confirmation is required.", { code: "confirmation_required", phase: "preflight" });
     const record = this.plans.get(String(planHash || ""));
     if (!record || record.expiresAt <= this.now()) throw new PromptProviderError("The Music 3 preflight plan is missing or expired.", { code: "plan_expired", phase: "preflight" });
     if (record.consumedAt) throw new PromptProviderError("This Music 3 preflight plan has already been consumed.", { code: "plan_already_consumed", phase: "preflight" });
-    const credential = this.credentialVault.resolve(record.plan.providerId);
-    if (!credential.key) throw new PromptProviderError("The provider credential is no longer available.", { code: "credential_missing", phase: "preflight" });
+    const local = record.plan.providerId === "local_qwen";
+    if (local) {
+      const current = this.localQwen?.status();
+      if (!current?.configured || localExecutionFingerprint(this.localQwen, current) !== record.localConfigHash) {
+        throw new PromptProviderError("Local Qwen settings changed after confirmation. Generate a new confirmation plan.", {
+          code: "local_config_changed",
+          phase: "preflight"
+        });
+      }
+    }
+    const credential = local ? { key: "", source: "local" } : this.credentialVault.resolve(record.plan.providerId);
+    if (!local && !credential.key) throw new PromptProviderError("The provider credential is no longer available.", { code: "credential_missing", phase: "preflight" });
     record.consumedAt = new Date(this.now()).toISOString();
     const runId = this.randomUUID();
     const controller = new AbortController();
     const run = {
       runId, state: "running", plan: record.plan, createdAt: record.consumedAt, startedAt: record.consumedAt,
       finishedAt: null, cancellationRequestedAt: null, cancellationMessage: null, outputs: null,
-      receipt: null, validation: null, error: null
+      receipt: null, validation: null, error: null, localConfigHash: record.localConfigHash, localSession: null
     };
     this.runs.set(runId, run);
     this.controllers.set(runId, controller);
@@ -240,8 +269,12 @@ class Music3Orchestrator {
   }
 
   async execute(run, apiKey, controller) {
-    const stageRunner = new StageRunner(this, run, apiKey, controller);
     try {
+      if (run.plan.providerId === "local_qwen") run.localSession = await this.localQwen.beginSession({
+        signal: controller.signal,
+        expectedConfigFingerprint: run.localConfigHash
+      });
+      const stageRunner = new StageRunner(this, run, apiKey, controller);
       let lyrics = run.plan.effectiveLyricsMode === "instrumental" ? "" : run.plan.lyrics;
       if (["generate", "edit"].includes(run.plan.effectiveLyricsMode)) {
         const candidate = (await stageRunner.complete(lyricStage(run.plan))).trim();
@@ -302,8 +335,15 @@ class Music3Orchestrator {
     } catch (error) {
       run.error = publicError(error);
       run.state = controller.signal.aborted ? "cancel_requested" : "failed";
-      if (controller.signal.aborted) run.cancellationMessage = "Cancellation was requested after submission; remote completion and billing status may be unknown.";
+      if (controller.signal.aborted) run.cancellationMessage = run.plan.providerId === "local_qwen"
+        ? "Local inference was cancelled and has no remote billing effect."
+        : "Cancellation was requested after submission; remote completion and billing status may be unknown.";
     } finally {
+      if (run.localSession) {
+        try { await run.localSession.close({ force: run.state !== "completed" }); }
+        catch { /* Cleanup must not replace a completed result or the original failure. */ }
+        run.localSession = null;
+      }
       run.finishedAt = new Date(this.now()).toISOString();
       this.controllers.delete(run.runId);
       apiKey = "";
@@ -322,7 +362,9 @@ class Music3Orchestrator {
     if (!run) throw new PromptProviderError("Music 3 run not found.", { code: "run_not_found", phase: "cancel" });
     if (run.state !== "running") return runSummary(run, run.state === "completed");
     run.cancellationRequestedAt = new Date(this.now()).toISOString();
-    run.cancellationMessage = "Cancellation requested. The remote completion or billing state is unknown until the local request reaches a terminal state.";
+    run.cancellationMessage = run.plan.providerId === "local_qwen"
+      ? "Cancellation requested. Local inference will stop and has no remote billing effect."
+      : "Cancellation requested. The remote completion or billing state is unknown until the local request reaches a terminal state.";
     this.controllers.get(run.runId)?.abort(new Error("user_cancelled"));
     return runSummary(run);
   }

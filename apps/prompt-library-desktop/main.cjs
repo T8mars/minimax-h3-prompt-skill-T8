@@ -7,6 +7,7 @@ const {
   clipboard,
   dialog,
   ipcMain,
+  nativeImage,
   protocol,
   safeStorage,
   session,
@@ -22,6 +23,8 @@ const { PromptOrchestrator } = require("./lib/prompt-orchestrator.cjs");
 const { Music3Orchestrator } = require("./lib/music3-orchestrator.cjs");
 const { PromptMediaStore } = require("./lib/prompt-media.cjs");
 const { PromptProjectStore } = require("./lib/prompt-projects.cjs");
+const { LocalQwenConfigStore } = require("./lib/local-qwen-config.cjs");
+const { LocalQwenManager } = require("./lib/local-qwen-runtime.cjs");
 const RELEASES_URL = "https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases";
 
 protocol.registerSchemesAsPrivileged([
@@ -46,6 +49,24 @@ let updateInFlight = false;
 let promptOrchestrator = null;
 let music3Orchestrator = null;
 let promptProjectStore = null;
+let localQwen = null;
+
+async function convertLocalReferenceImage(filePath, { sourceBytes, signal } = {}) {
+  if (signal?.aborted) throw signal.reason || new Error("cancelled");
+  let image = Buffer.isBuffer(sourceBytes) ? nativeImage.createFromBuffer(sourceBytes) : nativeImage.createFromPath(filePath);
+  if (image.isEmpty()) throw new Error("Reference image could not be decoded.");
+  const size = image.getSize();
+  const longest = Math.max(size.width, size.height);
+  if (longest > 1024) {
+    const scale = 1024 / longest;
+    image = image.resize({
+      width: Math.max(1, Math.round(size.width * scale)),
+      height: Math.max(1, Math.round(size.height * scale)),
+      quality: "good"
+    });
+  }
+  return { bytes: image.toJPEG(86), mimeType: "image/jpeg" };
+}
 
 function resolveRoots() {
   const catalogRoot = app.isPackaged
@@ -205,6 +226,61 @@ function configureIpc() {
     return promptOrchestrator.clearCredential(providerId);
   });
 
+  ipcMain.handle("prompt:local:status", (event) => {
+    requireTrustedSender(event);
+    return localQwen.status();
+  });
+
+  ipcMain.handle("prompt:local:configure", (event, input) => {
+    requireTrustedSender(event);
+    const source = input && typeof input === "object" ? input : {};
+    const allowed = {};
+    for (const key of ["modelFilename", "contextSize", "maxTokens", "thinkMode", "reasoningEffort", "videoSampleFps", "unloadPolicy", "cpuThreads"]) {
+      if (Object.hasOwn(source, key)) allowed[key] = source[key];
+    }
+    return localQwen.setConfig(allowed);
+  });
+
+  ipcMain.handle("prompt:local:verify", async (event) => {
+    requireTrustedSender(event);
+    return localQwen.verify();
+  });
+
+  ipcMain.handle("prompt:local:release", async (event) => {
+    requireTrustedSender(event);
+    await localQwen.stop();
+    return localQwen.status();
+  });
+
+  ipcMain.handle("prompt:local:pick-model-directory", async (event) => {
+    requireTrustedSender(event);
+    const result = await dialog.showOpenDialog(mainWindow, { title: "Choose the folder containing supported Qwen GGUF files", properties: ["openDirectory"] });
+    if (result.canceled || !result.filePaths[0]) return localQwen.status();
+    return localQwen.setConfig({ modelDirectory: result.filePaths[0] });
+  });
+
+  ipcMain.handle("prompt:local:pick-runtime", async (event) => {
+    requireTrustedSender(event);
+    const result = await dialog.showOpenDialog(mainWindow, {
+      title: "Choose llama-server executable",
+      properties: ["openFile"],
+      filters: process.platform === "win32" ? [{ name: "llama-server", extensions: ["exe"] }] : []
+    });
+    if (result.canceled || !result.filePaths[0]) return localQwen.status();
+    return localQwen.setConfig({ runtimeExecutable: result.filePaths[0] });
+  });
+
+  ipcMain.handle("prompt:local:pick-ffmpeg", async (event) => {
+    requireTrustedSender(event);
+    const result = await dialog.showOpenDialog(mainWindow, {
+      title: "Choose FFmpeg executable for local video sampling",
+      properties: ["openFile"],
+      filters: process.platform === "win32" ? [{ name: "FFmpeg", extensions: ["exe"] }] : []
+    });
+    if (result.canceled || !result.filePaths[0]) return localQwen.status();
+    return localQwen.setConfig({ ffmpegExecutable: result.filePaths[0] });
+  });
+
   ipcMain.handle("prompt:preflight", (event, input) => {
     requireTrustedSender(event);
     return promptOrchestrator.preflight(input || {});
@@ -234,7 +310,7 @@ function configureIpc() {
     const result = await dialog.showOpenDialog(mainWindow, {
       title: "Choose reference images or videos",
       properties: ["openFile", "multiSelections"],
-      filters: [{ name: "Reference media", extensions: ["png", "jpg", "jpeg", "webp", "mp4", "mov", "webm"] }]
+      filters: [{ name: "Reference media", extensions: ["png", "jpg", "jpeg", "webp", "mp4", "mov", "webm", "mkv", "avi"] }]
     });
     if (result.canceled) return promptOrchestrator.mediaList();
     promptOrchestrator.addMediaPaths(result.filePaths);
@@ -398,8 +474,13 @@ app.whenReady().then(() => {
     safeStorage,
     env: process.env
   });
-  promptOrchestrator = new PromptOrchestrator({ mediaStore, credentialVault });
-  music3Orchestrator = new Music3Orchestrator({ credentialVault });
+  const localQwenConfigStore = new LocalQwenConfigStore({ userDataDir: app.getPath("userData") });
+  localQwen = new LocalQwenManager({
+    configStore: localQwenConfigStore,
+    imageConverter: convertLocalReferenceImage
+  });
+  promptOrchestrator = new PromptOrchestrator({ mediaStore, credentialVault, localQwen });
+  music3Orchestrator = new Music3Orchestrator({ credentialVault, localQwen });
   configureMediaProtocol();
   configureUpdater();
   configureIpc();
@@ -414,3 +495,5 @@ app.whenReady().then(() => {
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit();
 });
+
+app.on("before-quit", () => { void localQwen?.stop(); });

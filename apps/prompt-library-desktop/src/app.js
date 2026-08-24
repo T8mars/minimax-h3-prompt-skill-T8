@@ -1,5 +1,6 @@
 const api = window.promptLibrary;
 const personalLibraryApi = window.T8PersonalLibrary;
+const catalogSortApi = window.T8CatalogSort;
 const GITHUB_REPOSITORIES = Object.freeze({
   library: "https://github.com/T8mars/minimax-h3-prompt-skill-T8",
   node: "https://github.com/T8mars/comfyui-minimax-h3-prompt-enhancer-T8"
@@ -32,6 +33,9 @@ const elements = {
   platformLabel: document.querySelector("#platform-filter-label"),
   model: document.querySelector("#model-filter"),
   tag: document.querySelector("#tag-filter"),
+  filters: document.querySelector(".filters"),
+  sortOrder: document.querySelector("#sort-order"),
+  sortOrderLabel: document.querySelector("#sort-order-label"),
   clear: document.querySelector("#clear-filters"),
   statCases: document.querySelector("#stat-cases"),
   statCasesLabel: document.querySelector("#stat-cases-label"),
@@ -133,6 +137,7 @@ const elements = {
 
 const DISPLAY_LOCALE_KEY = "t8-display-locale";
 const DISPLAY_LOCALE_DEFAULT_ZH_MIGRATION_KEY = "t8-display-locale-default-zh-v1";
+const CATALOG_SORT_KEY = "t8-catalog-sort-v1";
 
 function initialDisplayLocale(storage = localStorage) {
   if (storage.getItem(DISPLAY_LOCALE_DEFAULT_ZH_MIGRATION_KEY) !== "done") {
@@ -141,6 +146,10 @@ function initialDisplayLocale(storage = localStorage) {
     return "zh-CN";
   }
   return storage.getItem(DISPLAY_LOCALE_KEY) === "en" ? "en" : "zh-CN";
+}
+
+function initialSortMode(storage = localStorage) {
+  return catalogSortApi.normalizeMode(storage.getItem(CATALOG_SORT_KEY));
 }
 
 const state = {
@@ -156,6 +165,7 @@ const state = {
   collectionEditorReturnToMembership: false,
   membershipItem: null,
   locale: initialDisplayLocale(),
+  sortMode: initialSortMode(),
   updateStatus: { state: "idle" },
   toastTimer: null
 };
@@ -163,7 +173,8 @@ const state = {
 const UI = {
   en: {
     all: "All", cases: "Creative Cases", official: "MiniMax Official Skills", community: "Community Skills", favorites: "Favorites", collections: "Collections", history: "History",
-    platform: "Platform", source: "Source", model: "Model", tag: "Tag", clear: "Clear", results: "Current results",
+    platform: "Platform", source: "Source", model: "Model", tag: "Tag", sort: "Sort", filterAndSort: "Filter and sort content", clear: "Clear filters", results: "Current results",
+    newestAdded: "Newest added", recentlyUpdated: "Recently updated", oldestAdded: "Oldest added", titleAsc: "Title A–Z", titleDesc: "Title Z–A", recentlyViewed: "Most recently viewed",
     allPlatforms: "All platforms", allSources: "All sources", allModels: "All models", allTags: "All tags",
     unknownDuration: "Unknown duration", seconds: "seconds", unknownPlatform: "Unknown platform",
     completeVideo: "Complete source video", gifPreview: "GIF preview", addCompare: "Add to compare", compared: "Added ✓",
@@ -191,7 +202,8 @@ const UI = {
   },
   "zh-CN": {
     all: "全部", cases: "创意案例", official: "MiniMax 官方仓库 Skills", community: "非官方 Skills", favorites: "收藏", collections: "合集", history: "浏览历史",
-    platform: "平台", source: "来源", model: "模型", tag: "标签", clear: "清空", results: "当前结果",
+    platform: "平台", source: "来源", model: "模型", tag: "标签", sort: "排序", filterAndSort: "筛选与排序内容", clear: "清除筛选", results: "当前结果",
+    newestAdded: "最新收录", recentlyUpdated: "最近更新", oldestAdded: "最早收录", titleAsc: "标题 A–Z", titleDesc: "标题 Z–A", recentlyViewed: "最近浏览",
     allPlatforms: "全部平台", allSources: "全部来源", allModels: "全部模型", allTags: "全部标签",
     unknownDuration: "未知时长", seconds: "秒", unknownPlatform: "未知平台",
     completeVideo: "完整来源视频", gifPreview: "GIF 预览", addCompare: "加入对比", compared: "已加入对比 ✓",
@@ -382,7 +394,7 @@ function allItems() {
 }
 
 function itemKey(item) {
-  return `${item.kind || "case"}:${item.id}`;
+  return catalogSortApi.itemKey(item);
 }
 
 function itemMap() {
@@ -478,6 +490,23 @@ function populateFilters() {
   [...platforms.entries()].sort((a, b) => a[1].localeCompare(b[1], state.locale)).forEach(([value, label]) => elements.platform.append(option(value, label)));
   models.forEach((value) => elements.model.append(option(value)));
   tags.forEach((value) => elements.tag.append(option(value)));
+  populateSortOptions();
+}
+
+function populateSortOptions() {
+  const history = state.activeView === "history";
+  const options = history
+    ? [["recently-viewed", t("recentlyViewed")]]
+    : [
+        ["newest-added", t("newestAdded")],
+        ["recently-updated", t("recentlyUpdated")],
+        ["oldest-added", t("oldestAdded")],
+        ["title-asc", t("titleAsc")],
+        ["title-desc", t("titleDesc")]
+      ];
+  elements.sortOrder.replaceChildren(...options.map(([value, label]) => option(value, label)));
+  elements.sortOrder.value = history ? "recently-viewed" : state.sortMode;
+  elements.sortOrder.disabled = history;
 }
 
 function searchDocument(item) {
@@ -507,7 +536,7 @@ function filteredItems() {
   const platform = elements.platform.value;
   const model = elements.model.value;
   const tag = elements.tag.value;
-  return activeItems().filter((item) => {
+  const filtered = activeItems().filter((item) => {
     if (query && !searchDocument(item).includes(query)) return false;
     const itemSource = sourceFilterKey(item);
     if (platform && itemSource !== platform) return false;
@@ -515,11 +544,14 @@ function filteredItems() {
     if (tag && !item.tags.includes(tag)) return false;
     return true;
   });
+  if (state.activeView === "history") return filtered;
+  return catalogSortApi.sortItems(filtered, { mode: state.sortMode, locale: state.locale });
 }
 
 function renderCard(item) {
   const display = localized(item);
   const card = el("article", "case-card");
+  card.dataset.itemKey = itemKey(item);
   card.classList.toggle("comparing", state.compareIds.includes(item.id));
   card.tabIndex = 0;
   card.setAttribute("aria-label", `${t("openPlay")} ${display.title}`);
@@ -603,6 +635,7 @@ function renderOfficialSkillCard(item) {
   const display = localized(item);
   const previewLabel = state.locale === "zh-CN" ? (item.previewLabel || t("gifPreview")) : t("gifPreview");
   const card = el("article", "case-card official-skill");
+  card.dataset.itemKey = itemKey(item);
   card.tabIndex = 0;
   card.setAttribute("aria-label", `${t("openModels")} ${display.title}`);
 
@@ -660,6 +693,7 @@ function renderOfficialSkillCard(item) {
 function renderCommunitySkillCard(item) {
   const display = localized(item);
   const card = el("article", "case-card community-skill");
+  card.dataset.itemKey = itemKey(item);
   card.tabIndex = 0;
   card.setAttribute("aria-label", `${t("openPlay")} ${display.title}`);
 
@@ -761,6 +795,8 @@ function updateViewChrome(resultCount) {
   elements.platformLabel.textContent = cases ? t("platform") : t("source");
   elements.modelFilterLabel.textContent = t("model");
   elements.tagFilterLabel.textContent = t("tag");
+  elements.filters.setAttribute("aria-label", t("filterAndSort"));
+  elements.sortOrderLabel.textContent = t("sort");
   elements.clear.textContent = t("clear");
   elements.emptyTitle.textContent = favorites ? t("emptyFavorites") : collections ? t("emptyCollections") : history ? t("emptyHistory") : zh ? (all ? "没有匹配的内容" : cases ? "没有匹配的案例" : "没有匹配的 Skill") : (all ? "No matching content" : cases ? "No matching cases" : "No matching Skills");
   elements.emptyCopy.textContent = personal ? (zh ? "你可以随时从任意内容卡片或详情页管理个人资料库。" : "Manage the personal library from any content card or detail page.") : zh ? "调整搜索词或清空筛选条件后再试。" : "Adjust the search or clear the filters.";
@@ -1495,6 +1531,12 @@ elements.viewFavorites.addEventListener("click", () => switchView("favorites"));
 elements.viewCollections.addEventListener("click", () => switchView("collections"));
 elements.viewHistory.addEventListener("click", () => switchView("history"));
 [elements.search, elements.platform, elements.model, elements.tag].forEach((control) => control.addEventListener("input", render));
+elements.sortOrder.addEventListener("change", () => {
+  if (state.activeView === "history") return;
+  state.sortMode = catalogSortApi.normalizeMode(elements.sortOrder.value);
+  localStorage.setItem(CATALOG_SORT_KEY, state.sortMode);
+  render();
+});
 elements.clear.addEventListener("click", () => {
   elements.search.value = "";
   elements.platform.value = "";

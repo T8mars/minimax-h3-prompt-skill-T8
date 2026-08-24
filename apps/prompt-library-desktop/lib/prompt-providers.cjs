@@ -37,6 +37,20 @@ const PROVIDERS = Object.freeze({
     configurableEndpoint: true,
     configurableModel: true,
     mediaMode: "inline"
+  }),
+  local_qwen: Object.freeze({
+    id: "local_qwen",
+    label: "本地 Qwen3.8-27B",
+    registrationUrl: null,
+    chatUrl: null,
+    uploadUrl: null,
+    defaultModel: "Qwen3.8-27B-Q4_K_M.gguf",
+    environmentKey: null,
+    configurableEndpoint: false,
+    configurableModel: true,
+    mediaMode: "local-sampled",
+    local: true,
+    requiresCredential: false
   })
 });
 
@@ -187,13 +201,13 @@ function normalizePlan(input = {}) {
   if (!Number.isFinite(durationSeconds) || durationSeconds < 2 || durationSeconds > 15) {
     throw new PromptProviderError("Duration must be between 2 and 15 seconds.", { code: "invalid_duration", phase: "preflight" });
   }
-  const endpoint = provider.configurableEndpoint ? normalizeOpenAiChatUrl(input.baseUrl) : provider.chatUrl;
+  const endpoint = provider.local ? "local://qwen" : provider.configurableEndpoint ? normalizeOpenAiChatUrl(input.baseUrl) : provider.chatUrl;
   const model = normalizeModel(input.model, provider);
   const normalized = {
     schemaVersion: "t8-prompt-enhance-request/v1",
     providerId: provider.id,
     endpoint,
-    endpointHost: new URL(endpoint).host,
+    endpointHost: provider.local ? "local" : new URL(endpoint).host,
     model,
     target,
     outputLanguage,
@@ -317,6 +331,9 @@ function messagesWithMedia(messages, parts) {
 }
 
 async function callProvider(plan, apiKey, options = {}) {
+  if (plan.providerId === "local_qwen") {
+    throw new PromptProviderError("Local Qwen requires the Electron Main local runtime adapter.", { code: "local_adapter_missing", phase: "local" });
+  }
   const fetchImpl = options.fetchImpl || globalThis.fetch;
   if (typeof fetchImpl !== "function") throw new PromptProviderError("Fetch is unavailable.", { code: "transport_unavailable", phase: "transport" });
   const key = cleanText(apiKey, 4096, "API key");

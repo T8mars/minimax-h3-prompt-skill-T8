@@ -76,6 +76,7 @@ for (const { absolute, relative } of files) {
   if (lowerBasename.startsWith(".env.") && lowerBasename !== ".env.example") failures.push(`${relative}: environment files must not be published`);
   if (/\.(?:har|p12|pem|pfx)$/i.test(lowerBasename)) failures.push(`${relative}: credentials/browser-state file type is forbidden`);
   if (/\.mp4$/i.test(lowerBasename)) failures.push(`${relative}: full MP4 files belong in versioned Release media packs, not Git history`);
+  if (/\.(?:gguf|safetensors|ckpt|onnx)$/i.test(lowerBasename) || /\.gguf\.part$/i.test(lowerBasename)) failures.push(`${relative}: local model weights must never enter Git history or a Release source tree`);
 
   if (basename === "SKILL.md" && !/^skills\/[a-z0-9]+(?:-[a-z0-9]+)*\/SKILL\.md$/.test(relative)) {
     failures.push(`${relative}: public SKILL.md is only allowed directly under skills/<skill-name>/`);

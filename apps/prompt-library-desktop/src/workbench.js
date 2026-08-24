@@ -10,7 +10,7 @@
     "workbench-preview-heading", "workbench-preview-badge", "workbench-preview-media", "workbench-preview-image",
     "workbench-preview-placeholder", "workbench-preview-kind", "workbench-preview-models", "workbench-preview-title",
     "workbench-preview-summary", "workbench-preview-anchors-label", "workbench-preview-anchors", "workbench-preview-template-id",
-    "workbench-provider-title", "workbench-provider-readiness", "workbench-provider-cards", "workbench-credential-panel",
+    "workbench-provider-title", "workbench-provider-readiness", "workbench-provider-cards", "provider-registration-row", "workbench-credential-panel",
     "workbench-credential-title", "workbench-credential-note", "workbench-api-key-label", "workbench-api-key",
     "workbench-remember-key", "workbench-remember-label", "workbench-save-key", "workbench-clear-key",
     "workbench-register-selected", "workbench-plan-title", "workbench-target-label", "workbench-target", "workbench-output-language-label", "workbench-output-language", "workbench-output-language-zh", "workbench-output-language-en",
@@ -22,7 +22,13 @@
     "workbench-validation", "workbench-media-title", "workbench-add-media", "workbench-clear-media", "workbench-media-note",
     "workbench-media-list", "workbench-project-title", "workbench-project-name-label", "workbench-project-name",
     "workbench-project-list-label", "workbench-project-list", "workbench-project-notes-label", "workbench-project-notes",
-    "workbench-save-project", "workbench-export-project", "workbench-delete-project"
+    "workbench-save-project", "workbench-export-project", "workbench-delete-project",
+    "workbench-local-qwen-panel", "local-qwen-card-title", "local-qwen-card-subtitle", "local-qwen-title", "local-qwen-note", "local-qwen-readiness",
+    "local-qwen-directory-label", "local-qwen-directory", "local-qwen-pick-directory", "local-qwen-model-label", "local-qwen-model",
+    "local-qwen-runtime-label", "local-qwen-runtime", "local-qwen-pick-runtime", "local-qwen-ffmpeg-label", "local-qwen-ffmpeg", "local-qwen-pick-ffmpeg",
+    "local-qwen-context-label", "local-qwen-context", "local-qwen-max-tokens-label", "local-qwen-max-tokens", "local-qwen-think-label", "local-qwen-think",
+    "local-qwen-reasoning-label", "local-qwen-reasoning", "local-qwen-video-fps-label", "local-qwen-video-fps", "local-qwen-unload-label", "local-qwen-unload",
+    "local-qwen-file-status", "local-qwen-save", "local-qwen-verify", "local-qwen-release"
   ].map((id) => [id.replace(/-([a-z])/gu, (_match, letter) => letter.toUpperCase()), document.getElementById(id)]));
 
   const COPY_RESET_MS = 1600;
@@ -31,7 +37,8 @@
   const PROVIDER_FALLBACKS = Object.freeze({
     seedance_nz: { label: "贞贞的平价小屋", registrationUrl: "https://api.seedance.nz/sign-up?aff=5f4w", defaultModel: "bytedance/doubao-seed-evolving", configurableEndpoint: false, configurableModel: false },
     t8star_workshop: { label: "贞贞的 AI 工坊", registrationUrl: "https://ai.t8star.org/register?aff=dP7j", defaultModel: "gemini-3.5-flash", configurableEndpoint: false, configurableModel: true },
-    openai_compatible: { label: "OpenAI 兼容接口", registrationUrl: null, defaultModel: "", configurableEndpoint: true, configurableModel: true }
+    openai_compatible: { label: "OpenAI 兼容接口", registrationUrl: null, defaultModel: "", configurableEndpoint: true, configurableModel: true },
+    local_qwen: { label: "本地 Qwen3.8-27B", registrationUrl: null, defaultModel: "Qwen3.8-27B-Q4_K_M.gguf", configurableEndpoint: false, configurableModel: true, local: true, requiresCredential: false }
   });
 
   const COPY = {
@@ -46,7 +53,7 @@
       baseUrl: "OpenAI 兼容 Base URL", constraints: "额外硬约束", preflight: "生成调用确认单", confirm: "我确认：提交1次对话请求；平价小屋还会按素材数上传。费用未知，全部不自动重试。",
       start: "确认并开始增强", cancel: "请求取消", result: "增强结果与机制验收", copy: "复制结果", copied: "✓ 已复制",
       idle: "尚未运行", routingEmpty: "请先写清楚创作目标。", noMatch: "未找到明显匹配；请选择一个模板继续。",
-      why: "匹配依据", anchors: "必需锚点", mechanism: "核心机制", configuredCount: (count) => `${count}/3 个渠道已配置`,
+      why: "匹配依据", anchors: "必需锚点", mechanism: "核心机制", configuredCount: (count) => `${count}/3 个云端渠道已配置`, providerReadiness: (count, local) => `${count}/3 个云端渠道已配置 · 本地${local}`,
       keySaved: "Key 已安全保存；输入框已清空。", keyCleared: "Key 已清除。", keyMissing: "请先配置当前渠道的 API Key。",
       preflightReady: "确认单已生成；修改任意字段后需重新预检。", running: "正在增强，请勿重复提交…", completed: "增强完成",
       failed: "增强失败", cancelRequested: "已请求取消；远端完成与计费状态可能未知。", validationPass: "静态机制检查通过",
@@ -55,7 +62,8 @@
       planExpired: "确认单已失效，请重新预检。", selectTemplate: "请选择模板", routerSelect: "使用此机制", close: "关闭工作台",
       mediaTitle: "参考图片 / 视频", addMedia: "添加素材", clearMedia: "清空", mediaNote: "图片最多9张，视频最多3个，单个不超过50 MiB；路径不会发给渲染器或写入项目。", noMedia: "尚未添加参考素材", mediaFact: "参考素材", uploadsFact: "额外上传",
       projectTitle: "实验项目与复盘", projectName: "项目名称", projectList: "已保存项目", projectNotes: "人工复盘备注", saveProject: "保存实验项目", projectSaved: "实验项目已保存", exportProject: "导出 JSON + Markdown", projectExported: "项目已导出", deleteProject: "删除项目", projectDeleted: "项目已删除", noProjects: "暂无项目",
-      stepsLabel: "工作台步骤", stepGoal: "选择机制", stepGoalHint: "目标与模板", stepTarget: "生成参数", stepTargetHint: "模型与约束", stepResult: "结果验收", stepResultHint: "复制与复盘", previous: "上一步", nextStep: (label) => "下一步：" + label, stepProgress: (current, total) => "第 " + current + " / " + total + " 步", previewTitle: "当前模板预览", previewGif: "GIF 动态预览", previewPoster: "静态预览", previewUnavailable: "该模板暂无可用预览", previewLoading: "正在加载预览…", previewAnchors: "关键锚点", previewCase: "案例模板", previewCommunity: "非官方 Skill", apiSettings: "API 设置", apiSettingsTitle: "API 设置", apiSettingsSubtitle: "选择默认渠道并保存一次 Key，之后可直接生成。", apiSettingsDone: "完成", apiSettingsFooter: "默认渠道保存在本机；Key 由 Electron 主进程和系统安全存储管理。", providerCurrent: "当前渠道"
+      stepsLabel: "工作台步骤", stepGoal: "选择机制", stepGoalHint: "目标与模板", stepTarget: "生成参数", stepTargetHint: "模型与约束", stepResult: "结果验收", stepResultHint: "复制与复盘", previous: "上一步", nextStep: (label) => "下一步：" + label, stepProgress: (current, total) => "第 " + current + " / " + total + " 步", previewTitle: "当前模板预览", previewGif: "GIF 动态预览", previewPoster: "静态预览", previewUnavailable: "该模板暂无可用预览", previewLoading: "正在加载预览…", previewAnchors: "关键锚点", previewCase: "案例模板", previewCommunity: "非官方 Skill", apiSettings: "API 设置", apiSettingsTitle: "API 设置", apiSettingsSubtitle: "选择云端 API 或本地 Qwen 渠道；设置一次后可持续使用。", apiSettingsDone: "完成", apiSettingsFooter: "默认渠道与本地路径保存在本机；Key 仍由系统安全存储管理。", providerCurrent: "当前渠道",
+      localCard: "本地 Qwen3.8-27B", localCardNote: "离线 GGUF · 无需 API Key", localTitle: "配置本地 Qwen3.8-27B", localNote: "模型不会包含在安装包中，也不会自动下载。选择你自己的模型目录并完成一次完整校验。", localMissing: "未配置", localTextReady: "仅文字可用", localVisionReady: "图片可用", localVideoReady: "图片与视频可用", localDirectory: "模型目录", localPickDirectory: "选择目录", localModel: "本地模型", localRuntime: "llama-server 运行文件", localPickRuntime: "选择运行文件", localFfmpeg: "FFmpeg（仅本地视频需要）", localPickFfmpeg: "选择 FFmpeg", localContext: "上下文", localMaxTokens: "最大输出", localThink: "思考模式", localReasoning: "推理强度", localVideoFps: "视频采样率", localUnload: "显存策略", localSave: "保存设置", localVerify: "完整校验", localRelease: "释放模型", localSaved: "本地设置已保存。", localVerified: "本地模型完整校验通过。", localReleased: "本地模型已释放。", localVerifying: "正在逐个校验大文件，请勿关闭应用…", localComputeConfirm: "我确认：仅使用本机算力，不调用外部 API、不上传素材、不产生 API 费用。", localComputeStart: "开始本地增强", localComputeCalls: "1 次本地推理，无网络请求", localRuntimeSource: "本机运行时"
     },
     en: {
       launch: "✦ API Workbench", kicker: "T8 INSTANCE WORKBENCH", title: "Prompt instantiation and API enhancement",
@@ -68,7 +76,7 @@
       baseUrl: "OpenAI-compatible Base URL", constraints: "Additional hard constraints", preflight: "Create call confirmation", confirm: "I confirm one chat request; Seedance adds one upload per media item. Cost is unknown and no request is automatically retried.",
       start: "Confirm and enhance", cancel: "Request cancellation", result: "Enhanced result and mechanism check", copy: "Copy result", copied: "✓ Copied",
       idle: "Not started", routingEmpty: "Describe the creative goal first.", noMatch: "No strong match found; choose a template manually.",
-      why: "Why it matches", anchors: "Required anchors", mechanism: "Core mechanism", configuredCount: (count) => `${count}/3 providers configured`,
+      why: "Why it matches", anchors: "Required anchors", mechanism: "Core mechanism", configuredCount: (count) => `${count}/3 cloud providers configured`, providerReadiness: (count, local) => `${count}/3 cloud providers configured · local ${local}`,
       keySaved: "Key saved securely; the input has been cleared.", keyCleared: "Key cleared.", keyMissing: "Configure the current provider key first.",
       preflightReady: "Confirmation created. Any field change requires a new preflight.", running: "Enhancing; duplicate submission is blocked…", completed: "Enhancement completed",
       failed: "Enhancement failed", cancelRequested: "Cancellation requested; remote completion and billing may be unknown.", validationPass: "Static mechanism checks passed",
@@ -77,7 +85,8 @@
       planExpired: "Confirmation expired. Run preflight again.", selectTemplate: "Select a template", routerSelect: "Use this mechanism", close: "Close workbench",
       mediaTitle: "Reference images / videos", addMedia: "Add media", clearMedia: "Clear", mediaNote: "Up to 9 images and 3 videos, 50 MiB each. Paths never enter the renderer or saved projects.", noMedia: "No reference media selected", mediaFact: "Reference media", uploadsFact: "Extra uploads",
       projectTitle: "Experiment project and review", projectName: "Project name", projectList: "Saved projects", projectNotes: "Human review notes", saveProject: "Save experiment", projectSaved: "Experiment saved", exportProject: "Export JSON + Markdown", projectExported: "Project exported", deleteProject: "Delete project", projectDeleted: "Project deleted", noProjects: "No saved projects",
-      stepsLabel: "Workbench steps", stepGoal: "Mechanism", stepGoalHint: "Goal and template", stepTarget: "Parameters", stepTargetHint: "Model and constraints", stepResult: "Review result", stepResultHint: "Copy and evaluate", previous: "Previous", nextStep: (label) => "Next: " + label, stepProgress: (current, total) => "Step " + current + " of " + total, previewTitle: "Current template preview", previewGif: "Animated GIF preview", previewPoster: "Static preview", previewUnavailable: "No preview is available for this template", previewLoading: "Loading preview…", previewAnchors: "Key anchors", previewCase: "Case template", previewCommunity: "Community Skill", apiSettings: "API settings", apiSettingsTitle: "API settings", apiSettingsSubtitle: "Choose a default provider and save its key once for future runs.", apiSettingsDone: "Done", apiSettingsFooter: "The default provider stays on this device. Electron Main and OS secure storage manage keys.", providerCurrent: "Current provider"
+      stepsLabel: "Workbench steps", stepGoal: "Mechanism", stepGoalHint: "Goal and template", stepTarget: "Parameters", stepTargetHint: "Model and constraints", stepResult: "Review result", stepResultHint: "Copy and evaluate", previous: "Previous", nextStep: (label) => "Next: " + label, stepProgress: (current, total) => "Step " + current + " of " + total, previewTitle: "Current template preview", previewGif: "Animated GIF preview", previewPoster: "Static preview", previewUnavailable: "No preview is available for this template", previewLoading: "Loading preview…", previewAnchors: "Key anchors", previewCase: "Case template", previewCommunity: "Community Skill", apiSettings: "API settings", apiSettingsTitle: "API settings", apiSettingsSubtitle: "Choose a cloud API or local Qwen provider. Configure it once for future runs.", apiSettingsDone: "Done", apiSettingsFooter: "The default provider and local paths stay on this device. OS secure storage still manages API keys.", providerCurrent: "Current provider",
+      localCard: "Local Qwen3.8-27B", localCardNote: "Offline GGUF · no API key", localTitle: "Configure local Qwen3.8-27B", localNote: "Models are never bundled or downloaded automatically. Choose your own model folder and complete one full verification.", localMissing: "Not configured", localTextReady: "Text ready", localVisionReady: "Images ready", localVideoReady: "Images and video ready", localDirectory: "Model folder", localPickDirectory: "Choose folder", localModel: "Local model", localRuntime: "llama-server executable", localPickRuntime: "Choose runtime", localFfmpeg: "FFmpeg (local video only)", localPickFfmpeg: "Choose FFmpeg", localContext: "Context", localMaxTokens: "Max output", localThink: "Thinking", localReasoning: "Reasoning effort", localVideoFps: "Video sample rate", localUnload: "Memory policy", localSave: "Save settings", localVerify: "Full verification", localRelease: "Unload model", localSaved: "Local settings saved.", localVerified: "Local model verification passed.", localReleased: "Local model unloaded.", localVerifying: "Verifying large files one at a time. Keep the app open…", localComputeConfirm: "I confirm this uses local compute only, calls no external API, uploads no media, and incurs no API fee.", localComputeStart: "Start local enhancement", localComputeCalls: "1 local inference, no network request", localRuntimeSource: "Local runtime"
     }
   };
 
@@ -93,7 +102,8 @@
     media: [],
     projects: [],
     selectedProjectId: null,
-    activeStep: "goal"
+    activeStep: "goal",
+    localQwen: null
   };
 
   function loadProviderPreferences(storageKey = "t8-workbench-provider-options") {
@@ -378,29 +388,91 @@
 
   function providerConfig(id = state.providerId) { return state.providers.find((provider) => provider.id === id) || PROVIDER_FALLBACKS[id]; }
 
+  function localReadinessLabel(status = state.localQwen) {
+    if (!status?.textReady) return t("localMissing");
+    if (status.videoReady) return t("localVideoReady");
+    if (status.visionReady) return t("localVisionReady");
+    return t("localTextReady");
+  }
+
+  function fileState(item) {
+    if (item?.verified) return locale() === "en" ? "verified" : "已验证";
+    if (item?.sizeMatch) return locale() === "en" ? "awaiting full verification" : "待完整校验";
+    if (item?.present) return locale() === "en" ? "incompatible file" : "文件不兼容";
+    return locale() === "en" ? "missing" : "缺失";
+  }
+
+  function renderLocalQwen(status = state.localQwen) {
+    if (!status) return;
+    elements.localQwenDirectory.value = status.modelDirectory || "";
+    elements.localQwenRuntime.value = status.runtimeExecutable || "";
+    elements.localQwenFfmpeg.value = status.ffmpegExecutable || "";
+    elements.localQwenModel.value = status.modelFilename || "Qwen3.8-27B-Q4_K_M.gguf";
+    elements.localQwenContext.value = String(status.contextSize || 32768);
+    elements.localQwenMaxTokens.value = String(status.maxTokens || 4096);
+    elements.localQwenThink.value = status.thinkMode || "off";
+    elements.localQwenReasoning.value = status.reasoningEffort || "medium";
+    elements.localQwenVideoFps.value = String(status.videoSampleFps || 2);
+    elements.localQwenUnload.value = status.unloadPolicy || "after_run";
+    const readiness = localReadinessLabel(status);
+    elements.localQwenReadiness.textContent = readiness;
+    elements.localQwenReadiness.classList.toggle("ready", Boolean(status.textReady));
+    const rows = [
+      [locale() === "en" ? "Selected model" : "当前模型", fileState(status.model)],
+      ["mmproj-F16.gguf", fileState(status.mmproj)],
+      ["llama-server b10436", fileState(status.runtime)],
+      ["FFmpeg + FFprobe", status.ffmpegPresent && status.ffprobePresent
+        ? (locale() === "en" ? "ready for local video" : "本地视频可用")
+        : status.ffmpegExecutable
+          ? (locale() === "en" ? "FFprobe is missing beside FFmpeg" : "FFmpeg 同目录缺少 FFprobe")
+          : (locale() === "en" ? "optional; required for video" : "可选；视频必需")]
+    ];
+    elements.localQwenFileStatus.replaceChildren(...rows.map(([label, value]) => {
+      const row = document.createElement("span");
+      const strong = document.createElement("strong"); strong.textContent = label;
+      const em = document.createElement("em"); em.textContent = value;
+      row.append(strong, em);
+      return row;
+    }));
+  }
+
   function renderProviders() {
-    const configured = state.providers.filter((provider) => provider.credential?.configured).length;
-    elements.workbenchProviderReadiness.textContent = t("configuredCount")(configured);
-    elements.workbenchApiSettingsStatus.textContent = configured + "/3";
+    const configured = state.providers.filter((provider) => !provider.local && provider.credential?.configured).length;
+    const localProvider = state.providers.find((provider) => provider.id === "local_qwen");
+    state.localQwen = localProvider?.localStatus || localProvider?.credential || state.localQwen;
+    const localLabel = localReadinessLabel();
+    elements.workbenchProviderReadiness.textContent = t("providerReadiness")(configured, localLabel);
+    elements.workbenchApiSettingsStatus.textContent = `${configured}/3 · ${localLabel}`;
     for (const button of elements.workbenchProviderCards.querySelectorAll("[data-provider-id]")) {
       const id = button.dataset.providerId;
       const active = id === state.providerId;
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
-      const status = state.providers.find((provider) => provider.id === id)?.credential;
+      const provider = state.providers.find((item) => item.id === id);
+      const status = provider?.credential;
       const label = button.querySelector(`[data-provider-state="${id}"]`);
-      label.textContent = status?.configured ? `${t("ready")} · ${status.source}` : t("missing");
+      label.textContent = id === "local_qwen" ? localReadinessLabel(provider?.localStatus || status) : status?.configured ? `${t("ready")} · ${status.source}` : t("missing");
       label.classList.toggle("ready", Boolean(status?.configured));
     }
     const selected = providerConfig();
     const preferences = activeProviderPreferences()[state.providerId] || {};
+    const local = state.providerId === "local_qwen";
     elements.workbenchCredentialTitle.textContent = `${t("credential")} · ${selected.label}`;
     elements.openApiSettingsLabel.textContent = `${t("apiSettings")} · ${selected.label}`;
-    elements.workbenchModel.value = preferences.model || selected.defaultModel || "";
+    elements.workbenchModel.value = local ? (state.localQwen?.modelFilename || selected.defaultModel) : preferences.model || selected.defaultModel || "";
     elements.workbenchBaseUrl.value = preferences.baseUrl || "";
     elements.workbenchModel.disabled = !selected.configurableModel;
     elements.workbenchBaseUrlField.classList.toggle("hidden", !selected.configurableEndpoint);
     elements.workbenchRegisterSelected.classList.toggle("hidden", !selected.registrationUrl);
+    elements.workbenchCredentialPanel.classList.toggle("hidden", local);
+    elements.workbenchLocalQwenPanel.classList.toggle("hidden", !local);
+    elements.providerRegistrationRow.classList.toggle("hidden", local);
+    elements.workbenchConfirmLabel.textContent = local ? t("localComputeConfirm") : t("confirm");
+    elements.workbenchStart.textContent = local ? t("localComputeStart") : t("start");
+    if (!music3CapabilityActive()) elements.workbenchSubtitle.textContent = local
+      ? (locale() === "en" ? "Choose a mechanism, complete its structure, then enhance it entirely on this device." : "先选机制，再补齐结构，最后完全使用本机模型增强。")
+      : t("subtitle");
+    if (state.localQwen) renderLocalQwen();
     invalidatePlan();
   }
 
@@ -446,6 +518,58 @@
       await refreshProviders();
       setRunStatus(t("keyCleared"), "success");
     } catch (error) { setRunStatus(error.message, "error"); }
+  }
+
+  function localConfigInput() {
+    return {
+      modelFilename: elements.localQwenModel.value,
+      contextSize: Number(elements.localQwenContext.value),
+      maxTokens: Number(elements.localQwenMaxTokens.value),
+      thinkMode: elements.localQwenThink.value,
+      reasoningEffort: elements.localQwenReasoning.value,
+      videoSampleFps: Number(elements.localQwenVideoFps.value),
+      unloadPolicy: elements.localQwenUnload.value
+    };
+  }
+
+  async function applyLocalStatus(promise, successMessage = "") {
+    try {
+      state.localQwen = await promise;
+      await refreshProviders();
+      if (successMessage) setRunStatus(successMessage, "success");
+    } catch (error) { setRunStatus(error.message, "error"); }
+  }
+
+  async function saveLocalQwen() {
+    await applyLocalStatus(api.configureLocalQwen(localConfigInput()), t("localSaved"));
+  }
+
+  async function pickLocalModelDirectory() {
+    await applyLocalStatus(api.pickLocalQwenModelDirectory());
+  }
+
+  async function pickLocalRuntime() {
+    await applyLocalStatus(api.pickLocalQwenRuntime());
+  }
+
+  async function pickLocalFfmpeg() {
+    await applyLocalStatus(api.pickLocalQwenFfmpeg());
+  }
+
+  async function verifyLocalQwen() {
+    elements.localQwenVerify.disabled = true;
+    setRunStatus(t("localVerifying"), "warning");
+    try {
+      await api.configureLocalQwen(localConfigInput());
+      state.localQwen = await api.verifyLocalQwen();
+      await refreshProviders();
+      setRunStatus(t("localVerified"), "success");
+    } catch (error) { setRunStatus(error.message, "error"); }
+    finally { elements.localQwenVerify.disabled = false; }
+  }
+
+  async function releaseLocalQwen() {
+    await applyLocalStatus(api.releaseLocalQwen(), t("localReleased"));
   }
 
   function templateContract(item) {
@@ -596,10 +720,11 @@
 
   function renderPreflight(plan) {
     elements.workbenchPreflightFacts.replaceChildren();
+    const local = plan.confirmationKind === "local_compute";
     const facts = [
-      [t("endpoint"), plan.endpointHost], [t("model"), plan.model], [t("target"), plan.target], [t("outputLanguage"), plan.outputLanguage === "en" ? t("languageEnglish") : t("languageChinese")],
-      [t("anchors"), plan.requiredAnchorCount], [t("mediaFact"), plan.mediaCount], [t("plannedCalls"), `${plan.plannedChatCalls} chat + ${plan.plannedUploadCalls} upload`], [t("cost"), t("costUnknown")],
-      [t("credentialSource"), plan.credentialSource]
+      [t("endpoint"), local ? t("localRuntimeSource") : plan.endpointHost], [t("model"), plan.model], [t("target"), plan.target], [t("outputLanguage"), plan.outputLanguage === "en" ? t("languageEnglish") : t("languageChinese")],
+      [t("anchors"), plan.requiredAnchorCount], [t("mediaFact"), plan.mediaCount], [t("plannedCalls"), local ? t("localComputeCalls") : `${plan.plannedChatCalls} chat + ${plan.plannedUploadCalls} upload`], [t("cost"), local ? "0" : t("costUnknown")],
+      [t("credentialSource"), local ? t("localRuntimeSource") : plan.credentialSource]
     ];
     for (const [term, value] of facts) {
       const dt = document.createElement("dt"); dt.textContent = term;
@@ -607,6 +732,8 @@
       elements.workbenchPreflightFacts.append(dt, dd);
     }
     elements.workbenchPreflightCard.classList.remove("hidden");
+    elements.workbenchConfirmLabel.textContent = local ? t("localComputeConfirm") : t("confirm");
+    elements.workbenchStart.textContent = local ? t("localComputeStart") : t("start");
     elements.workbenchConfirmPaid.checked = false;
     elements.workbenchStart.disabled = true;
     setRunStatus(t("preflightReady"), "success");
@@ -732,6 +859,20 @@
     registrations[0].textContent = t("registerSeedance"); registrations[1].textContent = t("registerWorkshop");
     elements.workbenchCredentialNote.textContent = t("credentialNote"); elements.workbenchApiKeyLabel.textContent = t("apiKey"); elements.workbenchRememberLabel.textContent = t("remember");
     elements.workbenchSaveKey.textContent = t("saveKey"); elements.workbenchClearKey.textContent = t("clearKey"); elements.workbenchRegisterSelected.textContent = t("registerSelected");
+    elements.localQwenCardTitle.textContent = t("localCard"); elements.localQwenCardSubtitle.textContent = t("localCardNote"); elements.localQwenTitle.textContent = t("localTitle"); elements.localQwenNote.textContent = t("localNote");
+    elements.localQwenDirectoryLabel.textContent = t("localDirectory"); elements.localQwenPickDirectory.textContent = t("localPickDirectory"); elements.localQwenModelLabel.textContent = t("localModel");
+    elements.localQwenRuntimeLabel.textContent = t("localRuntime"); elements.localQwenPickRuntime.textContent = t("localPickRuntime"); elements.localQwenFfmpegLabel.textContent = t("localFfmpeg"); elements.localQwenPickFfmpeg.textContent = t("localPickFfmpeg");
+    elements.localQwenContextLabel.textContent = t("localContext"); elements.localQwenMaxTokensLabel.textContent = t("localMaxTokens"); elements.localQwenThinkLabel.textContent = t("localThink"); elements.localQwenReasoningLabel.textContent = t("localReasoning"); elements.localQwenVideoFpsLabel.textContent = t("localVideoFps"); elements.localQwenUnloadLabel.textContent = t("localUnload");
+    elements.localQwenSave.textContent = t("localSave"); elements.localQwenVerify.textContent = t("localVerify"); elements.localQwenRelease.textContent = t("localRelease");
+    elements.localQwenThink.querySelector('[value="off"]').textContent = locale() === "en" ? "Off (recommended)" : "关闭（推荐）";
+    elements.localQwenThink.querySelector('[value="on"]').textContent = locale() === "en" ? "On" : "开启";
+    elements.localQwenModel.querySelector('[value="Qwen3.8-27B-Q4_K_M.gguf"]').textContent = locale() === "en" ? "Qwen3.8-27B Q4_K_M (official, recommended)" : "Qwen3.8-27B Q4_K_M（官方，推荐）";
+    elements.localQwenContext.querySelector('[value="32768"]').textContent = locale() === "en" ? "32K (recommended)" : "32K（推荐）";
+    elements.localQwenMaxTokens.querySelector('[value="512"]').textContent = locale() === "en" ? "512 (short output)" : "512（短输出）";
+    elements.localQwenMaxTokens.querySelector('[value="4096"]').textContent = locale() === "en" ? "4096 (node default)" : "4096（节点默认）";
+    elements.localQwenUnload.querySelector('[value="after_run"]').textContent = locale() === "en" ? "Unload after run (recommended)" : "执行后卸载（推荐）";
+    elements.localQwenUnload.querySelector('[value="keep_warm"]').textContent = locale() === "en" ? "Keep loaded" : "保持驻留";
+    elements.localQwenUnload.querySelector('[value="idle_10m"]').textContent = locale() === "en" ? "Unload after 10 idle minutes" : "空闲10分钟后卸载";
     elements.workbenchPlanTitle.textContent = t("targetSection"); elements.workbenchTargetLabel.textContent = t("target"); elements.workbenchDurationLabel.textContent = t("duration");
     elements.workbenchOutputLanguageLabel.textContent = t("outputLanguage"); elements.workbenchOutputLanguageZh.textContent = t("languageChinese"); elements.workbenchOutputLanguageEn.textContent = t("languageEnglish");
     elements.workbenchModeLabel.textContent = t("mode"); elements.workbenchModelLabel.textContent = t("model"); elements.workbenchBaseUrlLabel.textContent = t("baseUrl");
@@ -812,6 +953,12 @@
   elements.workbenchRegisterSelected.addEventListener("click", () => void openRegistration(state.providerId));
   elements.workbenchSaveKey.addEventListener("click", () => void saveCredential());
   elements.workbenchClearKey.addEventListener("click", () => void clearCredential());
+  elements.localQwenPickDirectory.addEventListener("click", () => void pickLocalModelDirectory());
+  elements.localQwenPickRuntime.addEventListener("click", () => void pickLocalRuntime());
+  elements.localQwenPickFfmpeg.addEventListener("click", () => void pickLocalFfmpeg());
+  elements.localQwenSave.addEventListener("click", () => void saveLocalQwen());
+  elements.localQwenVerify.addEventListener("click", () => void verifyLocalQwen());
+  elements.localQwenRelease.addEventListener("click", () => void releaseLocalQwen());
   elements.workbenchModel.addEventListener("input", storeCurrentProviderOptions);
   elements.workbenchBaseUrl.addEventListener("input", storeCurrentProviderOptions);
   window.addEventListener("t8:workbench-capability-change", renderProviders);

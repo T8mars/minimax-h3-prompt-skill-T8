@@ -42,6 +42,8 @@ for (const entry of entries) {
   if (manifest.schema_version !== "public-community-skill/v1") failures.push(`${id}: unsupported manifest schema_version`);
   if (manifest.id !== id) failures.push(`${id}: manifest id must match directory`);
   if (manifest.official !== false) failures.push(`${id}: manifest must declare official=false`);
+  if (!Number.isFinite(Date.parse(String(manifest.catalog_added_at || "")))) failures.push(`${id}: catalog_added_at must be a valid timestamp`);
+  if (!Number.isFinite(Date.parse(String(manifest.updated_at || "")))) failures.push(`${id}: updated_at must be a valid timestamp`);
   if (manifest.source_classification !== "user-contributed") failures.push(`${id}: source_classification must be user-contributed`);
   if (!String(manifest.source_label || "").includes("非官方")) failures.push(`${id}: source_label must visibly identify the Skill as non-official`);
   if (!String(manifest.source_attribution || "").trim()) failures.push(`${id}: source_attribution is required`);

@@ -40,6 +40,16 @@ test("renderer defaults to an aggregate all-content view", () => {
   }
 });
 
+test("renderer exposes persistent bilingual sorting with newest-added as the safe default", () => {
+  for (const id of ["sort-order", "sort-order-label"]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`), `missing sorting control: ${id}`);
+  }
+  for (const token of ["T8CatalogSort", "CATALOG_SORT_KEY", "initialSortMode", "populateSortOptions", "newest-added", "recently-updated", "oldest-added", "title-asc", "title-desc", "最近浏览"]) {
+    assert.ok(renderer.includes(token) || html.includes(token), `missing sorting behavior: ${token}`);
+  }
+  assert.match(html, /<script src="catalog-sort\.js" defer><\/script>/u);
+});
+
 test("renderer exposes persistent on-device favorites, collections and browsing history", () => {
   for (const id of ["view-favorites", "view-collections", "view-history", "personal-toolbar", "collection-select", "new-collection", "clear-history", "detail-favorite", "detail-collections", "collection-editor-dialog", "collection-membership-dialog"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`), `missing personal-library control: ${id}`);

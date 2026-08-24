@@ -11,6 +11,19 @@ const { validateEnhancedPrompt } = require("./prompt-validation.cjs");
 const PLAN_TTL_MS = 10 * 60 * 1000;
 const MAX_RUNS = 100;
 
+function localExecutionFingerprint(localQwen, status) {
+  if (typeof localQwen?.executionFingerprint === "function") return localQwen.executionFingerprint();
+  return sha256Canonical({
+    modelFilename: status?.modelFilename,
+    contextSize: status?.contextSize,
+    maxTokens: status?.maxTokens,
+    thinkMode: status?.thinkMode,
+    reasoningEffort: status?.reasoningEffort,
+    videoSampleFps: status?.videoSampleFps,
+    unloadPolicy: status?.unloadPolicy
+  });
+}
+
 function publicError(error) {
   if (error instanceof PromptProviderError) {
     return {
@@ -46,7 +59,10 @@ function providerPublicConfig(provider, credentialStatus) {
     configurableEndpoint: provider.configurableEndpoint,
     configurableModel: provider.configurableModel,
     mediaMode: provider.mediaMode,
-    credential: credentialStatus
+    local: Boolean(provider.local),
+    requiresCredential: provider.requiresCredential !== false,
+    credential: credentialStatus,
+    localStatus: provider.local ? credentialStatus : null
   };
 }
 
@@ -77,8 +93,9 @@ function runSummary(run, includeOutput = false) {
 }
 
 class PromptOrchestrator {
-  constructor({ credentialVault, mediaStore = null, fetchImpl = globalThis.fetch, now = () => Date.now(), randomUUID = crypto.randomUUID }) {
+  constructor({ credentialVault, localQwen = null, mediaStore = null, fetchImpl = globalThis.fetch, now = () => Date.now(), randomUUID = crypto.randomUUID }) {
     this.credentialVault = credentialVault;
+    this.localQwen = localQwen;
     this.mediaStore = mediaStore;
     this.fetchImpl = fetchImpl;
     this.now = now;
@@ -104,7 +121,12 @@ class PromptOrchestrator {
   }
 
   providerStatuses() {
-    return Object.values(PROVIDERS).map((provider) => providerPublicConfig(provider, this.credentialVault.status(provider.id)));
+    return Object.values(PROVIDERS).map((provider) => providerPublicConfig(
+      provider,
+      provider.local
+        ? (this.localQwen?.status() || { providerId: provider.id, configured: false, source: null, readiness: "missing" })
+        : this.credentialVault.status(provider.id)
+    ));
   }
 
   setCredential({ providerId, apiKey, remember = false }) {
@@ -129,16 +151,23 @@ class PromptOrchestrator {
     const mediaRecords = this.mediaStore ? this.mediaStore.resolve(input.mediaIds) : [];
     const media = mediaRecords.map(({ filePath: _filePath, extension: _extension, ...item }) => item);
     const plan = normalizePlan({ ...input, media });
-    const credential = this.credentialVault.status(plan.providerId);
-    if (!credential.configured) {
-      throw new PromptProviderError("This provider has no configured API key.", {
-        code: "credential_missing",
+    const local = plan.providerId === "local_qwen";
+    const credential = local ? this.localQwen?.status() : this.credentialVault.status(plan.providerId);
+    if (!credential?.configured) {
+      throw new PromptProviderError(local ? "Local Qwen is not ready. Verify it in API settings." : "This provider has no configured API key.", {
+        code: local ? "local_not_ready" : "credential_missing",
         phase: "preflight"
       });
     }
+    if (local) {
+      if (plan.model !== credential.modelFilename) throw new PromptProviderError("The selected local model changed; reopen API settings and generate a new plan.", { code: "local_model_changed", phase: "preflight" });
+      if (mediaRecords.length && !credential.visionReady) throw new PromptProviderError("Local visual prompting requires a verified mmproj-F16.gguf projector.", { code: "local_vision_not_ready", phase: "preflight" });
+      if (mediaRecords.some((item) => item.kind === "video") && !credential.videoReady) throw new PromptProviderError("Local video prompting requires a configured FFmpeg executable.", { code: "local_video_not_ready", phase: "preflight" });
+    }
     const issuedAt = new Date(this.now()).toISOString();
     const expiresAt = this.now() + PLAN_TTL_MS;
-    this.plans.set(plan.planHash, { plan, mediaRecords, issuedAt, expiresAt, consumedAt: null });
+    const localConfigFingerprint = local ? localExecutionFingerprint(this.localQwen, credential) : null;
+    this.plans.set(plan.planHash, { plan, mediaRecords, issuedAt, expiresAt, consumedAt: null, localConfigFingerprint });
     return {
       schemaVersion: "t8-prompt-preflight/v1",
       planHash: plan.planHash,
@@ -156,20 +185,22 @@ class PromptOrchestrator {
       templateTitle: plan.template.title,
       requiredAnchorCount: plan.template.requiredAnchors.length,
       credentialSource: credential.source,
-      plannedProviderCalls: 1,
+      plannedProviderCalls: local ? 0 : 1,
+      plannedLocalCalls: local ? 1 : 0,
       plannedChatCalls: 1,
       plannedUploadCalls: plan.providerId === "seedance_nz" ? mediaRecords.length : 0,
       mediaCount: mediaRecords.length,
       automaticRetries: 0,
-      cost: "unknown",
-      confirmationRequired: true
+      cost: local ? "0" : "unknown",
+      confirmationRequired: true,
+      confirmationKind: local ? "local_compute" : "paid_remote"
     };
   }
 
   start({ planHash, confirmed }) {
     this.cleanup();
     if (confirmed !== true) {
-      throw new PromptProviderError("Explicit paid-call confirmation is required.", {
+      throw new PromptProviderError("Explicit run confirmation is required.", {
         code: "confirmation_required",
         phase: "preflight"
       });
@@ -187,8 +218,18 @@ class PromptOrchestrator {
         phase: "preflight"
       });
     }
-    const credential = this.credentialVault.resolve(record.plan.providerId);
-    if (!credential.key) {
+    const local = record.plan.providerId === "local_qwen";
+    if (local) {
+      const current = this.localQwen?.status();
+      if (!current?.configured || localExecutionFingerprint(this.localQwen, current) !== record.localConfigFingerprint) {
+        throw new PromptProviderError("Local Qwen settings changed after confirmation. Generate a new confirmation plan.", {
+          code: "local_config_changed",
+          phase: "preflight"
+        });
+      }
+    }
+    const credential = local ? { key: "", source: "local" } : this.credentialVault.resolve(record.plan.providerId);
+    if (!local && !credential.key) {
       throw new PromptProviderError("The provider credential is no longer available.", {
         code: "credential_missing",
         phase: "preflight"
@@ -212,6 +253,7 @@ class PromptOrchestrator {
       receipt: null,
       validation: null,
       error: null,
+      localConfigFingerprint: record.localConfigFingerprint,
       mediaRecords: record.mediaRecords || []
     };
     this.runs.set(runId, run);
@@ -221,12 +263,24 @@ class PromptOrchestrator {
   }
 
   async execute(run, apiKey, controller) {
+    let localSession = null;
     try {
-      const result = await callProvider(run.plan, apiKey, {
-        fetchImpl: this.fetchImpl,
-        signal: controller.signal,
-        mediaRecords: run.mediaRecords
-      });
+      let result;
+      if (run.plan.providerId === "local_qwen") {
+        localSession = await this.localQwen.beginSession({
+          vision: run.mediaRecords.length > 0,
+          video: run.mediaRecords.some((item) => item.kind === "video"),
+          signal: controller.signal,
+          expectedConfigFingerprint: run.localConfigFingerprint
+        });
+        result = await localSession.complete(run.plan, { mediaRecords: run.mediaRecords });
+      } else {
+        result = await callProvider(run.plan, apiKey, {
+          fetchImpl: this.fetchImpl,
+          signal: controller.signal,
+          mediaRecords: run.mediaRecords
+        });
+      }
       run.output = result.output;
       run.receipt = result.receipt;
       run.validation = validateEnhancedPrompt({
@@ -241,11 +295,17 @@ class PromptOrchestrator {
       run.error = publicError(error);
       run.state = controller.signal.aborted ? "cancel_requested" : "failed";
       if (controller.signal.aborted) {
-        run.cancellationMessage = "Cancellation was requested after submission; provider completion and billing status may be unknown.";
+        run.cancellationMessage = run.plan.providerId === "local_qwen"
+          ? "Local inference was cancelled and has no remote billing effect."
+          : "Cancellation was requested after submission; provider completion and billing status may be unknown.";
       }
     } finally {
       run.finishedAt = new Date(this.now()).toISOString();
       this.controllers.delete(run.runId);
+      if (localSession) {
+        try { await localSession.close({ force: run.state !== "completed" }); }
+        catch { /* Cleanup must not replace a completed result or the original failure. */ }
+      }
       apiKey = "";
       this.cleanup();
     }
@@ -262,7 +322,9 @@ class PromptOrchestrator {
     if (!run) throw new PromptProviderError("Prompt run not found.", { code: "run_not_found", phase: "cancel" });
     if (run.state !== "running") return runSummary(run, run.state === "completed");
     run.cancellationRequestedAt = new Date(this.now()).toISOString();
-    run.cancellationMessage = "Cancellation requested. The remote completion or billing state is unknown until the local request reaches a terminal state.";
+    run.cancellationMessage = run.plan.providerId === "local_qwen"
+      ? "Cancellation requested. Local inference will stop and has no remote billing effect."
+      : "Cancellation requested. The remote completion or billing state is unknown until the local request reaches a terminal state.";
     this.controllers.get(run.runId)?.abort(new Error("user_cancelled"));
     return runSummary(run, false);
   }

@@ -80,6 +80,8 @@ for (const entry of entries) {
   const status = caseManifest.status ?? caseManifest.release_status;
   if (status !== "released") failures.push(`catalog/cases/${id}/manifest.json: status must be 'released', got '${String(status)}'`);
   if (caseManifest.case_id && caseManifest.case_id !== id) failures.push(`catalog/cases/${id}/manifest.json: case_id must match directory`);
+  if (!Number.isFinite(Date.parse(String(caseManifest.created_at || "")))) failures.push(`catalog/cases/${id}/manifest.json: created_at must be a valid catalog-addition timestamp`);
+  if (!Number.isFinite(Date.parse(String(caseManifest.updated_at || "")))) failures.push(`catalog/cases/${id}/manifest.json: updated_at must be a valid content-update timestamp`);
   if (!(Number(caseManifest.source_duration_seconds) > 0)) failures.push(`catalog/cases/${id}/manifest.json: source_duration_seconds must preserve the positive decoded source duration`);
   const targetDuration = Number(caseManifest.target_duration_seconds);
   if (!Number.isFinite(targetDuration) || targetDuration < 4 || targetDuration > 15) {

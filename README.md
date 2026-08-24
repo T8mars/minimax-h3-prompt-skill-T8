@@ -23,7 +23,7 @@ A curated Creative DNA library, installable Skills, and a video-first Electron d
 | `skills/` | 安装到支持 Skills 的 Agent，直接复用案例机制 | Skill 引用同一案例与来源 |
 | `catalog/official-skills/` | 固定索引 MiniMax 官方仓库收录的 9 个 Skills | 本地官方示例 GIF；H3 打开上游固定版本；Seedance 使用本库原创伴侣 Skill |
 | `catalog/community-skills/` | 浏览非官方、用户贡献的高质量提示词 Skills | GitHub 有 GIF/海报；Electron 包含完整有声样片 |
-| Electron 桌面版 | 中英文搜索与详情、筛选、播放、收藏、合集、浏览历史、对比、分区复制和整案复制 | Windows 与 universal macOS 安装包包含完整 MP4，支持声音和离线播放 |
+| Electron 桌面版 | 中英文搜索与详情、默认最新和多种排序、筛选、播放、收藏、合集、浏览历史、对比、分区复制和整案复制 | Windows 与 universal macOS 安装包包含完整 MP4，支持声音和离线播放 |
 
 GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作者、平台及原始帖子引用地址；Electron 详情页同时提供“查看原帖”。
 
@@ -290,7 +290,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 下载 `T8-Prompt-Library-Setup-v1.2.1.exe`；macOS 下载 `T8-Prompt-Library-v1.2.1-mac-universal.dmg`。
+2. Windows 下载 `T8-Prompt-Library-Setup-v1.2.2.exe`；macOS 下载 `T8-Prompt-Library-v1.2.2-mac-universal.dmg`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
 
@@ -298,13 +298,15 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 
 ### API 增强工作台
 
-主界面的“API 增强工作台”现在包含两个隔离能力：原有视频提示词模式继续提供本地 Top-3 机制推荐、模板实例化、MiniMax H3 / Seedance 2.0、参考图片/视频与静态锚点验收；新增 MiniMax Music 3 模式按官方 Skill 渐进读取最多 2 个索引和 3 份模板，输出歌词、结构化描述、Payload JSON 与安全报告。
+主界面的“API 增强工作台”包含两个隔离能力：视频提示词模式提供本地 Top-3 机制推荐、模板实例化、MiniMax H3 / Seedance 2.0、参考图片/视频与静态锚点验收；MiniMax Music 3 模式按官方 Skill 渐进读取最多 2 个索引和 3 份模板，输出歌词、结构化描述、Payload JSON 与安全报告。
+
+工作台现有 4 个增强渠道：贞贞的平价小屋、贞贞的 AI 工坊、OpenAI 兼容接口，以及本地 Qwen3.8-27B。本地渠道只允许 ComfyUI 节点已验证的两个 27B GGUF，支持视频提示词和 Music 3；用户在 API 设置中自行选择模型目录、`llama-server` 与可选 FFmpeg 路径。模型和本地运行时不会打包进 Release，也不会自动下载。
 
 - 贞贞的平价小屋：[注册地址](https://api.seedance.nz/sign-up?aff=5f4w)
 - 贞贞的 AI 工坊：[注册地址](https://ai.t8star.org/register?aff=dP7j)
 - OpenAI 兼容接口：用户填写 HTTPS Base URL 与模型
 
-Renderer 保持离线；公网请求、素材读取、Key、一次性确认和错误归一化只在 Electron Main。每次真实调用都需要当次确认，不静默换渠道；视频保持 0 retry，Music 3 只对平价小屋可确定的网关失败执行确认单已披露的有界重试。详见 [API 增强工作台](./docs/api-workbench.md)。
+Renderer 保持离线；公网请求、素材读取、Key、本地模型路径、一次性确认和错误归一化只在 Electron Main。每次远端调用或本地计算都需要当次确认，不静默换渠道；视频保持 0 retry，Music 3 只对平价小屋可确定的网关失败执行确认单已披露的有界重试。详见 [API 增强工作台](./docs/api-workbench.md)。
 
 ### 安装单个 Skill
 
@@ -349,12 +351,13 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.2.1**。项目使用十进制进位：
+当前目标版本是 **v1.2.2**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
 v1.1.9 -> v1.2.0
 v1.2.0 -> v1.2.1
+v1.2.1 -> v1.2.2
 v1.9.9 -> v2.0.0
 ```
 

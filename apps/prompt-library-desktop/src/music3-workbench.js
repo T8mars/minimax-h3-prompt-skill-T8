@@ -50,7 +50,8 @@
       provider: "渠道", calls: "逻辑请求", attempts: "最坏物理尝试", stages: "阶段", cache: "阶段缓存", cost: "费用", unknown: "未知",
       confirm: (min, max, attempts) => `我确认：本次计划 ${min}–${max} 次逻辑请求，网关最坏最多 ${attempts} 次物理尝试；费用未知。读取超时不自动重试。`,
       validationPass: "Music 3 静态合同通过", validationFail: "Music 3 输出需要修复", warnings: "人工复核项", noProjects: "暂无 Music 3 项目",
-      projectSaved: "Music 3 项目已保存", projectDeleted: "Music 3 项目已删除", projectExported: "Music 3 项目已导出", expand: "展开高级参数", collapse: "收起高级参数"
+      projectSaved: "Music 3 项目已保存", projectDeleted: "Music 3 项目已删除", projectExported: "Music 3 项目已导出", expand: "展开高级参数", collapse: "收起高级参数",
+      localStart: "开始本地 Music 3 增强", localSubtitle: "写音乐创意，按需生成或保护歌词，再使用本机 Qwen 完成分阶段增强。", localConfirm: (min, max) => `我确认：本次使用本机 Qwen 完成 ${min}–${max} 个阶段，不调用外部 API、不上传内容、不产生 API 费用。`, localEndpoint: "本机 llama-server", localCost: "0"
     },
     en: {
       video: "Video prompts", music: "Music 3", title: "MiniMax Music 3 lyrics and structured caption", subtitle: "Describe the music, generate or protect lyrics, then explicitly confirm the staged paid calls.",
@@ -64,7 +65,8 @@
       provider: "Provider", calls: "Logical calls", attempts: "Worst-case physical attempts", stages: "Stages", cache: "Stage cache", cost: "Cost", unknown: "Unknown",
       confirm: (min, max, attempts) => `I confirm ${min}–${max} logical calls and up to ${attempts} physical attempts in the gateway worst case. Cost is unknown; read timeouts are not retried.`,
       validationPass: "Music 3 static contract passed", validationFail: "Music 3 output needs repair", warnings: "Human review", noProjects: "No Music 3 projects",
-      projectSaved: "Music 3 project saved", projectDeleted: "Music 3 project deleted", projectExported: "Music 3 project exported", expand: "Show advanced parameters", collapse: "Hide advanced parameters"
+      projectSaved: "Music 3 project saved", projectDeleted: "Music 3 project deleted", projectExported: "Music 3 project exported", expand: "Show advanced parameters", collapse: "Hide advanced parameters",
+      localStart: "Start local Music 3 enhancement", localSubtitle: "Describe the music, generate or protect lyrics, then run the staged enhancement with local Qwen.", localConfirm: (min, max) => `I confirm ${min}–${max} stages will use local Qwen only, call no external API, upload no content, and incur no API fee.`, localEndpoint: "Local llama-server", localCost: "0"
     }
   };
   const FORM_COPY = {
@@ -209,9 +211,10 @@
     hide(elements.route, music); hide(elements.routerResults, music); hide(elements.template.closest("label"), music); hide(elements.templateSummary, music);
     const steps = [...document.querySelectorAll("[data-workbench-step]")];
     if (music) {
-      elements.title.textContent = t("title"); elements.subtitle.textContent = t("subtitle");
+      const local = providerId() === "local_qwen";
+      elements.title.textContent = t("title"); elements.subtitle.textContent = local ? t("localSubtitle") : t("subtitle");
       elements.intentTitle.textContent = t("goal"); elements.intentLabel.textContent = t("goalLabel"); elements.intent.placeholder = t("placeholder");
-      elements.planTitle.textContent = t("plan"); elements.resultTitle.textContent = t("result"); elements.preflight.textContent = t("preflight"); elements.start.textContent = t("start");
+      elements.planTitle.textContent = t("plan"); elements.resultTitle.textContent = t("result"); elements.preflight.textContent = t("preflight"); elements.start.textContent = local ? t("localStart") : t("start");
       elements.copyCurrent.textContent = t("copy"); elements.copyAll.textContent = t("copyAll");
       const musicSteps = english ? [["Music idea", "Brief"], ["Lyrics & parameters", "Structure"], ["Results", "Copy & review"]] : [["音乐创意", "创作简报"], ["歌词与参数", "结构约束"], ["结果验收", "复制与复盘"]];
       steps.forEach((button, index) => { button.querySelector("strong").textContent = musicSteps[index][0]; button.querySelector("small").textContent = musicSteps[index][1]; });
@@ -288,13 +291,15 @@
 
   function renderPreflight(plan) {
     elements.preflightFacts.replaceChildren();
+    const local = plan.confirmationKind === "local_compute";
     const facts = [
-      [t("provider"), plan.providerLabel], ["Model", plan.model], ["Endpoint", plan.endpointHost],
+      [t("provider"), plan.providerLabel], ["Model", plan.model], ["Endpoint", local ? t("localEndpoint") : plan.endpointHost],
       [t("calls"), `${plan.logicalCallsMinimum}–${plan.logicalCallsMaximum}`], [t("attempts"), plan.physicalAttemptsMaximum],
-      [t("stages"), plan.plannedStages.join(" → ")], [t("cache"), plan.stageCache], [t("cost"), t("unknown")]
+      [t("stages"), plan.plannedStages.join(" → ")], [t("cache"), plan.stageCache], [t("cost"), local ? t("localCost") : t("unknown")]
     ];
     for (const [term, value] of facts) { const dt = document.createElement("dt"); dt.textContent = term; const dd = document.createElement("dd"); dd.textContent = String(value); elements.preflightFacts.append(dt, dd); }
-    elements.confirmLabel.textContent = t("confirm")(plan.logicalCallsMinimum, plan.logicalCallsMaximum, plan.physicalAttemptsMaximum);
+    elements.confirmLabel.textContent = local ? t("localConfirm")(plan.logicalCallsMinimum, plan.logicalCallsMaximum) : t("confirm")(plan.logicalCallsMinimum, plan.logicalCallsMaximum, plan.physicalAttemptsMaximum);
+    elements.start.textContent = local ? t("localStart") : t("start");
     elements.preflightCard.classList.remove("hidden"); elements.confirm.checked = false; elements.start.disabled = true;
     status(locale() === "en" ? "Music 3 confirmation is ready. Any edit invalidates it." : "Music 3 确认单已生成；修改任意字段后需重新预检。", "success");
     renderMusicPreview();
@@ -447,6 +452,7 @@
   }
 
   elements.capabilitySwitch.addEventListener("click", (event) => { const button = event.target.closest("[data-workbench-capability]"); if (button) switchCapability(button.dataset.workbenchCapability); });
+  elements.providerCards.addEventListener("click", () => { if (isMusic()) queueMicrotask(renderCapability); });
   elements.preflight.addEventListener("click", (event) => void preflight(event), true);
   elements.start.addEventListener("click", (event) => void start(event), true);
   elements.cancel.addEventListener("click", (event) => void cancel(event), true);

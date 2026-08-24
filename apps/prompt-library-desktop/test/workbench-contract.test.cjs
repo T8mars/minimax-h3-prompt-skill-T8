@@ -10,7 +10,7 @@ const renderer = fs.readFileSync(path.join(appDir, "src", "workbench.js"), "utf8
 const preload = fs.readFileSync(path.join(appDir, "preload.cjs"), "utf8");
 const main = fs.readFileSync(path.join(appDir, "main.cjs"), "utf8");
 
-test("workbench exposes a three-step creator flow plus persistent API settings and explicit paid confirmation", () => {
+test("workbench exposes a three-step creator flow plus persistent provider settings and explicit run confirmation", () => {
   for (const id of [
     "open-prompt-workbench", "prompt-workbench-dialog", "workbench-intent", "workbench-route", "workbench-router-results",
     "workbench-template", "open-api-settings", "api-settings-dialog", "workbench-provider-cards", "workbench-api-key", "workbench-remember-key", "workbench-output-language", "workbench-preflight",
@@ -20,6 +20,19 @@ test("workbench exposes a three-step creator flow plus persistent API settings a
   for (const token of ["routeTemplates", "requiredAnchors", "creativeDna", "preflightPrompt", "startPrompt", "promptStatus", "anchorCoverage", "renderTemplatePreview", "setWorkbenchStep", "openApiSettings", "t8-workbench-provider"]) {
     assert.ok(renderer.includes(token), `missing workbench behavior ${token}`);
   }
+});
+
+test("API settings add a fourth local Qwen channel without exposing model paths through generic IPC", () => {
+  assert.equal((html.match(/<button class="provider-card\b/g) || []).length, 4);
+  for (const id of ["workbench-local-qwen-panel", "local-qwen-directory", "local-qwen-model", "local-qwen-runtime", "local-qwen-ffmpeg", "local-qwen-verify", "local-qwen-release"]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`), `missing local Qwen control ${id}`);
+  }
+  for (const channel of ["prompt:local:status", "prompt:local:configure", "prompt:local:verify", "prompt:local:release", "prompt:local:pick-model-directory", "prompt:local:pick-runtime", "prompt:local:pick-ffmpeg"]) {
+    assert.ok(main.includes(`ipcMain.handle("${channel}"`), `missing Main IPC ${channel}`);
+    assert.ok(preload.includes(`ipcRenderer.invoke("${channel}"`), `missing preload IPC ${channel}`);
+  }
+  assert.match(main, /for \(const key of \["modelFilename", "contextSize"/u, "renderer settings IPC must whitelist non-path fields");
+  assert.doesNotMatch(renderer, /localStorage\.setItem\([^\n]+(?:modelDirectory|runtimeExecutable|ffmpegExecutable)/u);
 });
 
 test("generation parameters expose Chinese and English output with Chinese as the default", () => {
