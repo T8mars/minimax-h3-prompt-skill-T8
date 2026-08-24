@@ -4,7 +4,7 @@
   "resource_id": "user-video-c60dc5cf8a4d200086e60498c10bbc49",
   "locale": "zh-CN",
   "source_bindings": {
-    "manifest_sha256": "a84db11b17bacd4eae058cff8cfcfd2a1b8df59bfc88b054b7c38fa51a7da1e7",
+    "manifest_sha256": "e34bf9c0c919601007420dfc3ecec3a15b2f7e564efba4a3ebe472319d345a61",
     "creative_dna_sha256": "b3367d0df444a3cc1ca4c66c49b80185da0d66b2c17d0e274bad21096f61ca18"
   },
   "content": {
@@ -43,68 +43,37 @@
         {
           "id": "inv-01",
           "rule": "第一次风格切换前，用至少三项稳定身份锚点锁定一名明确成年的原创角色，并在每个服装与版式模块中持续保留。",
-          "evidence_ids": [
-            "obs-01",
-            "obs-09",
-            "beat-01",
-            "beat-03"
-          ],
+          "evidence_ids": ["obs-01", "obs-09", "beat-01", "beat-03"],
           "ablation_failure": "如果脸、成年年龄感、轮廓或标志锚点漂移，蒙太奇就会变成互不相关的模特，而不是同一广告身份对风格跨度的证明。"
         },
         {
           "id": "inv-02",
           "rule": "每个风格模块必须在服装、配色、版式、道具系统和镜头职责中至少协调改变两个通道；只换配色不算新模块。",
-          "evidence_ids": [
-            "obs-03",
-            "obs-04",
-            "obs-07",
-            "beat-02",
-            "beat-04"
-          ],
+          "evidence_ids": ["obs-03", "obs-04", "obs-07", "beat-02", "beat-04"],
           "ablation_failure": "如果只改变颜色，推进就会像滤镜轮播，失去不同完整时尚世界的区分度。"
         },
         {
           "id": "inv-03",
           "rule": "使用可见的前景物、图形边缘或角色手势作为模块间的动机交接，让动作、镜头和图形转场发生在同一节拍。",
-          "evidence_ids": [
-            "obs-08",
-            "obs-15",
-            "beat-01",
-            "beat-02"
-          ],
+          "evidence_ids": ["obs-08", "obs-15", "beat-01", "beat-02"],
           "ablation_failure": "如果模块只靠任意硬切连接，序列虽然保留表面变化，却会失去因果流动和可触感的动势。"
         },
         {
           "id": "inv-04",
           "rule": "把视觉与文字密度提升到一个峰值，再在回顾前插入一个显著更稀疏的完整人物段落。",
-          "evidence_ids": [
-            "obs-05",
-            "obs-06",
-            "obs-11",
-            "beat-04",
-            "beat-06"
-          ],
+          "evidence_ids": ["obs-05", "obs-06", "obs-11", "beat-04", "beat-06"],
           "ablation_failure": "没有低密度复位，持续满负荷会压平节奏，让最终升能看起来并不比中段更强。"
         },
         {
           "id": "inv-05",
           "rule": "复位后，以图像碎片或对齐面板清楚回顾至少三个此前状态，再收束到一个简洁英雄主标。",
-          "evidence_ids": [
-            "obs-10",
-            "obs-13",
-            "beat-07",
-            "beat-08"
-          ],
+          "evidence_ids": ["obs-10", "obs-13", "beat-07", "beat-08"],
           "ablation_failure": "如果英雄卡没有回顾铺垫，结尾会像一张断开的海报，而不是汇总此前广告证据的兑现。"
         },
         {
           "id": "inv-06",
           "rule": "每个模块只使用一个原创短文案单位，并保持清楚的人物—文字层级，尤其是最终停留帧。",
-          "evidence_ids": [
-            "obs-12",
-            "obs-13",
-            "beat-08"
-          ],
+          "evidence_ids": ["obs-12", "obs-13", "beat-08"],
           "ablation_failure": "过密或畸形的文字会与角色争夺注意力、损害可读性，并重复来源提示词自己指出的字体弱点。"
         }
       ],

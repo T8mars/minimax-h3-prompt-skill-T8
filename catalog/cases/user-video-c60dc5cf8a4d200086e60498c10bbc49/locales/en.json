@@ -4,7 +4,7 @@
   "resource_id": "user-video-c60dc5cf8a4d200086e60498c10bbc49",
   "locale": "en",
   "source_bindings": {
-    "manifest_sha256": "a84db11b17bacd4eae058cff8cfcfd2a1b8df59bfc88b054b7c38fa51a7da1e7",
+    "manifest_sha256": "e34bf9c0c919601007420dfc3ecec3a15b2f7e564efba4a3ebe472319d345a61",
     "creative_dna_sha256": "b3367d0df444a3cc1ca4c66c49b80185da0d66b2c17d0e274bad21096f61ca18"
   },
   "content": {
@@ -43,68 +43,37 @@
         {
           "id": "inv-01",
           "rule": "Lock one clearly adult original character with at least three stable identity anchors before the first style switch, and preserve those anchors through every wardrobe and layout module.",
-          "evidence_ids": [
-            "obs-01",
-            "obs-09",
-            "beat-01",
-            "beat-03"
-          ],
+          "evidence_ids": ["obs-01", "obs-09", "beat-01", "beat-03"],
           "ablation_failure": "If face, age read, silhouette or signature anchors drift, the montage becomes unrelated models instead of one campaign identity proving range."
         },
         {
           "id": "inv-02",
           "rule": "Every style module must change at least two coordinated channels among wardrobe, palette, layout, prop system and camera duty; a palette swap alone does not count.",
-          "evidence_ids": [
-            "obs-03",
-            "obs-04",
-            "obs-07",
-            "beat-02",
-            "beat-04"
-          ],
+          "evidence_ids": ["obs-03", "obs-04", "obs-07", "beat-02", "beat-04"],
           "ablation_failure": "If only color changes, the progression feels like a filter reel and loses the sense of distinct fashion worlds."
         },
         {
           "id": "inv-03",
           "rule": "Use visible foreground objects, graphic edges or character gestures as motivated handoffs between modules so action, camera and graphic transition occur in the same beat.",
-          "evidence_ids": [
-            "obs-08",
-            "obs-15",
-            "beat-01",
-            "beat-02"
-          ],
+          "evidence_ids": ["obs-08", "obs-15", "beat-01", "beat-02"],
           "ablation_failure": "If modules are connected by arbitrary cuts, the sequence keeps surface variety but loses causal flow and tactile momentum."
         },
         {
           "id": "inv-04",
           "rule": "Escalate visual and typographic density to one peak, then insert a substantially sparser full-character interval before the recap.",
-          "evidence_ids": [
-            "obs-05",
-            "obs-06",
-            "obs-11",
-            "beat-04",
-            "beat-06"
-          ],
+          "evidence_ids": ["obs-05", "obs-06", "obs-11", "beat-04", "beat-06"],
           "ablation_failure": "Without the sparse reset, constant maximal density flattens the rhythm and makes the final escalation feel no stronger than the middle."
         },
         {
           "id": "inv-05",
           "rule": "After the reset, visibly recap at least three earlier states as image fragments or registered panels before resolving to one simple hero lockup.",
-          "evidence_ids": [
-            "obs-10",
-            "obs-13",
-            "beat-07",
-            "beat-08"
-          ],
+          "evidence_ids": ["obs-10", "obs-13", "beat-07", "beat-08"],
           "ablation_failure": "If the hero card arrives without a recap, the ending reads as a disconnected poster rather than a payoff that gathers the campaign's prior evidence."
         },
         {
           "id": "inv-06",
           "rule": "Limit each module to one short original copy unit and preserve a clear subject-copy hierarchy, especially in the held final frame.",
-          "evidence_ids": [
-            "obs-12",
-            "obs-13",
-            "beat-08"
-          ],
+          "evidence_ids": ["obs-12", "obs-13", "beat-08"],
           "ablation_failure": "Dense or malformed copy competes with the character, harms legibility and repeats the source prompt's own stated typography weakness."
         }
       ],

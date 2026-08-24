@@ -4,7 +4,7 @@
   "resource_id": "user-video-715b76cd11b1098f170d41a9b71208ba",
   "locale": "zh-CN",
   "source_bindings": {
-    "manifest_sha256": "435770e2848883b6cd108c2915c096abcc857a9486014f4088d4b9854c3b01f9",
+    "manifest_sha256": "c003c963f78a032611b4fc33b1d8e2a446cb0b450698a57c6f9a5455ad629120",
     "creative_dna_sha256": "03a711d19cd9936d352ebc644b3bf57e04ec8a3f473e738e35949ba5dd2057a6"
   },
   "content": {
@@ -43,66 +43,37 @@
         {
           "id": "inv-01",
           "rule": "边界激活前，先建立一名明确成年的原创主体、一个稳定环境，以及清楚可见的空闲或未激活双手。",
-          "evidence_ids": [
-            "obs-01",
-            "obs-04",
-            "beat-01"
-          ],
+          "evidence_ids": ["obs-01", "obs-04", "beat-01"],
           "ablation_failure": "如果缺少基线，观众就无法判断这是局部转换，还是从一开始就存在的全画面滤镜。"
         },
         {
           "id": "inv-02",
           "rule": "先让双手几何清楚成形，再发生媒介切换；发光或实体边界始终连接控制它的指尖或手部边线。",
-          "evidence_ids": [
-            "obs-04",
-            "obs-05",
-            "beat-01",
-            "beat-02"
-          ],
+          "evidence_ids": ["obs-04", "obs-05", "beat-01", "beat-02"],
           "ablation_failure": "如果区域脱离双手独立出现，最核心的因果与控制关系就会失效。"
         },
         {
           "id": "inv-03",
           "rule": "替代媒介必须严格限制在移动边界内部，同时保持边缘两侧连续注册，并让外部维持基线状态。",
-          "evidence_ids": [
-            "obs-06",
-            "obs-09",
-            "obs-18",
-            "beat-02",
-            "beat-04"
-          ],
+          "evidence_ids": ["obs-06", "obs-09", "obs-18", "beat-02", "beat-04"],
           "ablation_failure": "如果转换泄漏到外部或注册发生滑移，窗口就不再像一个可控的局部边界。"
         },
         {
           "id": "inv-04",
           "rule": "至少使用三种有实质差异的窗口几何或方向；每个状态覆盖新区域，同时遵守同一剪裁规则。",
-          "evidence_ids": [
-            "obs-05",
-            "obs-11",
-            "beat-03",
-            "beat-05"
-          ],
+          "evidence_ids": ["obs-05", "obs-11", "beat-03", "beat-05"],
           "ablation_failure": "一个静态矩形只是滤镜展示；只有多次遵守同一规则的几何变化，才能证明这种控制可以复用。"
         },
         {
           "id": "inv-05",
           "rule": "把最大或最涉及身份的覆盖留到后段峰值，再让边界清楚收缩或退出，不能演变成失控的全场换媒。",
-          "evidence_ids": [
-            "obs-10",
-            "obs-11",
-            "beat-04",
-            "beat-05"
-          ],
+          "evidence_ids": ["obs-10", "obs-11", "beat-04", "beat-05"],
           "ablation_failure": "没有晚段峰值和受控释放，序列就缺少递进，结尾状态也会含糊。"
         },
         {
           "id": "inv-06",
           "rule": "以原始媒介和原空间注册结束，并用一次简短人物反应或物理残留确认效果已经停止。",
-          "evidence_ids": [
-            "obs-08",
-            "obs-13",
-            "beat-06"
-          ],
+          "evidence_ids": ["obs-08", "obs-13", "beat-06"],
           "ablation_failure": "如果影片停在替代媒介里，就无法证明控制性与可逆性。"
         }
       ],

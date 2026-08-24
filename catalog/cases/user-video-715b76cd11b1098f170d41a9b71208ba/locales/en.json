@@ -4,7 +4,7 @@
   "resource_id": "user-video-715b76cd11b1098f170d41a9b71208ba",
   "locale": "en",
   "source_bindings": {
-    "manifest_sha256": "435770e2848883b6cd108c2915c096abcc857a9486014f4088d4b9854c3b01f9",
+    "manifest_sha256": "c003c963f78a032611b4fc33b1d8e2a446cb0b450698a57c6f9a5455ad629120",
     "creative_dna_sha256": "03a711d19cd9936d352ebc644b3bf57e04ec8a3f473e738e35949ba5dd2057a6"
   },
   "content": {
@@ -43,66 +43,37 @@
         {
           "id": "inv-01",
           "rule": "Establish one clearly adult original subject, one stable environment and visibly empty or inactive hands before the boundary activates.",
-          "evidence_ids": [
-            "obs-01",
-            "obs-04",
-            "beat-01"
-          ],
+          "evidence_ids": ["obs-01", "obs-04", "beat-01"],
           "ablation_failure": "If the baseline is missing, viewers cannot distinguish the transformation from an already-stylized full-frame filter."
         },
         {
           "id": "inv-02",
           "rule": "Make the two-hand geometry visibly form before the medium switch, and keep the luminous or material boundary attached to the controlling fingertips or hand edges.",
-          "evidence_ids": [
-            "obs-04",
-            "obs-05",
-            "beat-01",
-            "beat-02"
-          ],
+          "evidence_ids": ["obs-04", "obs-05", "beat-01", "beat-02"],
           "ablation_failure": "If the region appears independently of the hands, the central cause-and-control relationship collapses."
         },
         {
           "id": "inv-03",
           "rule": "Confine the alternate medium strictly inside the moving boundary while preserving continuous registration across the edge and leaving the exterior in its baseline state.",
-          "evidence_ids": [
-            "obs-06",
-            "obs-09",
-            "obs-18",
-            "beat-02",
-            "beat-04"
-          ],
+          "evidence_ids": ["obs-06", "obs-09", "obs-18", "beat-02", "beat-04"],
           "ablation_failure": "If conversion leaks outside or registration slides, the aperture stops reading as a controllable local window."
         },
         {
           "id": "inv-04",
           "rule": "Use at least three materially different aperture geometries or orientations, with each state revealing a new region while obeying the same clipping rule.",
-          "evidence_ids": [
-            "obs-05",
-            "obs-11",
-            "beat-03",
-            "beat-05"
-          ],
+          "evidence_ids": ["obs-05", "obs-11", "beat-03", "beat-05"],
           "ablation_failure": "One static rectangle is only a filter demo; repeated rule-consistent geometry is what proves reusable control."
         },
         {
           "id": "inv-05",
           "rule": "Reserve the largest or most identity-sensitive coverage for a late apex, then visibly contract or dismiss the boundary instead of allowing an uncontrolled full-scene takeover.",
-          "evidence_ids": [
-            "obs-10",
-            "obs-11",
-            "beat-04",
-            "beat-05"
-          ],
+          "evidence_ids": ["obs-10", "obs-11", "beat-04", "beat-05"],
           "ablation_failure": "Without a late apex and controlled release, the sequence lacks escalation and the ending state becomes ambiguous."
         },
         {
           "id": "inv-06",
           "rule": "End in the original medium and spatial registration with one short subject reaction or physical residue that confirms the effect has ended.",
-          "evidence_ids": [
-            "obs-08",
-            "obs-13",
-            "beat-06"
-          ],
+          "evidence_ids": ["obs-08", "obs-13", "beat-06"],
           "ablation_failure": "If the film ends inside the alternate medium, control and reversibility are not proven."
         }
       ],
