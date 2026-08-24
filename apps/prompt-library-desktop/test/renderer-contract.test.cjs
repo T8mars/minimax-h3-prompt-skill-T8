@@ -75,6 +75,15 @@ test("detail dialog cancel and close paths clean up video playback", () => {
   assert.match(renderer, /video\.removeAttribute\("src"\)/u);
 });
 
+test("catalog cards create hover players lazily and release them immediately", () => {
+  assert.match(renderer, /function installLazyHoverPreview/u);
+  assert.match(renderer, /function releaseCardPreviewVideos/u);
+  assert.match(renderer, /pointerenter[\s\S]+document\.createElement\("video"\)/u);
+  assert.match(renderer, /pointerleave", release/u);
+  assert.match(renderer, /releaseVideoElement\(video, \{ remove: true \}\)/u);
+  assert.doesNotMatch(renderer, /media\.append\(video\);\s*card\.addEventListener\("pointerenter"/u, "cards must not attach every player before hover");
+});
+
 test("detail view exposes bilingual, section copy and full-item copy controls", () => {
   for (const id of ["global-locale-en", "global-locale-zh", "detail-locale-en", "detail-locale-zh", "copy-full-item", "copy-overview", "copy-quick-start", "copy-dna", "copy-validation", "quick-start", "validation-grid"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`), `missing bilingual/copy control: ${id}`);

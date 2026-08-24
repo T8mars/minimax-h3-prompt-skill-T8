@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.2.6`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.2.6`。
+当前版本是 `v1.2.7`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.2.7`。
 
 版本采用十进制进位：
 
@@ -15,6 +15,7 @@
 1.2.3 -> 1.2.4
 1.2.4 -> 1.2.5
 1.2.5 -> 1.2.6
+1.2.6 -> 1.2.7
 1.9.9 -> 2.0.0
 ```
 
@@ -59,10 +60,10 @@ Git 仓库继续保留原始 GIF。由于 229 个原始动态预览合计已超�
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.2.6
+npm run media:pack -- -Version 1.2.7
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.2.6.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.2.7.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 

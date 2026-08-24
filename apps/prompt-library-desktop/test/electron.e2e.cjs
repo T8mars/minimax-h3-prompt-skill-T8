@@ -87,6 +87,12 @@ async function run() {
     await waitForCardCount(page, expectedAggregateCount);
     const allCount = await page.locator(".case-card").count();
     assert.equal(allCount, expectedAggregateCount, "default all-content view must match the catalog and Skill manifests");
+    assert.equal(await page.locator(".case-card video.card-hover-video").count(), 0, "catalog startup must not allocate one WebMediaPlayer per card");
+    await page.locator(".case-card:not(.official-skill)").first().hover();
+    await page.waitForSelector(".case-card video.card-hover-video");
+    assert.equal(await page.locator(".case-card video.card-hover-video").count(), 1, "hover must allocate only the active card player");
+    await page.locator("#page-title").hover();
+    await page.waitForFunction(() => document.querySelectorAll(".case-card video.card-hover-video").length === 0);
     assert.equal(await page.locator("#view-all").getAttribute("aria-pressed"), "true");
     assert.equal(await page.locator("#global-locale-zh").getAttribute("aria-pressed"), "true", "Chinese must be the first-run default");
     assert.equal(await page.locator("html").getAttribute("lang"), "zh-CN", "the document language must match the first-run Chinese default");

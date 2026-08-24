@@ -548,6 +548,45 @@ function filteredItems() {
   return catalogSortApi.sortItems(filtered, { mode: state.sortMode, locale: state.locale });
 }
 
+function releaseVideoElement(video, { remove = false } = {}) {
+  if (!video) return;
+  video.pause();
+  video.removeAttribute("src");
+  video.load();
+  if (remove) video.remove();
+}
+
+function releaseCardPreviewVideos() {
+  elements.caseGrid.querySelectorAll("video.card-hover-video").forEach((video) => {
+    releaseVideoElement(video, { remove: true });
+  });
+  elements.caseGrid.querySelectorAll(".case-card.previewing").forEach((card) => card.classList.remove("previewing"));
+}
+
+function installLazyHoverPreview(card, media, videoUrl) {
+  if (!videoUrl) return;
+  let video = null;
+  const release = () => {
+    if (video) releaseVideoElement(video, { remove: true });
+    video = null;
+    card.classList.remove("previewing");
+  };
+  card.addEventListener("pointerenter", () => {
+    if (!window.matchMedia("(hover: hover)").matches || video) return;
+    video = document.createElement("video");
+    video.className = "card-hover-video";
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.preload = "metadata";
+    video.src = videoUrl;
+    media.append(video);
+    card.classList.add("previewing");
+    void video.play().catch(release);
+  });
+  card.addEventListener("pointerleave", release);
+}
+
 function renderCard(item) {
   const display = localized(item);
   const card = el("article", "case-card");
@@ -569,26 +608,7 @@ function renderCard(item) {
     media.append(el("div", "card-placeholder", "VP"));
   }
 
-  if (item.media.videoUrl) {
-    const video = document.createElement("video");
-    video.className = "card-hover-video";
-    video.src = item.media.videoUrl;
-    video.muted = true;
-    video.loop = true;
-    video.playsInline = true;
-    video.preload = "metadata";
-    media.append(video);
-    card.addEventListener("pointerenter", () => {
-      if (!window.matchMedia("(hover: hover)").matches) return;
-      card.classList.add("previewing");
-      void video.play().catch(() => card.classList.remove("previewing"));
-    });
-    card.addEventListener("pointerleave", () => {
-      video.pause();
-      video.currentTime = 0;
-      card.classList.remove("previewing");
-    });
-  }
+  installLazyHoverPreview(card, media, item.media.videoUrl);
 
   const mediaBadge = el("span", `media-badge${item.media.hasFullVideo ? " local" : ""}`, item.media.hasFullVideo ? t("completeVideo") : t("gifPreview"));
   const compareToggle = el("button", `compare-toggle${state.compareIds.includes(item.id) ? " selected" : ""}`, state.compareIds.includes(item.id) ? t("compared") : t("addCompare"));
@@ -709,26 +729,7 @@ function renderCommunitySkillCard(item) {
   } else {
     media.append(el("div", "card-placeholder", "US"));
   }
-  if (item.media.videoUrl) {
-    const video = document.createElement("video");
-    video.className = "card-hover-video";
-    video.src = item.media.videoUrl;
-    video.muted = true;
-    video.loop = true;
-    video.playsInline = true;
-    video.preload = "metadata";
-    media.append(video);
-    card.addEventListener("pointerenter", () => {
-      if (!window.matchMedia("(hover: hover)").matches) return;
-      card.classList.add("previewing");
-      void video.play().catch(() => card.classList.remove("previewing"));
-    });
-    card.addEventListener("pointerleave", () => {
-      video.pause();
-      video.currentTime = 0;
-      card.classList.remove("previewing");
-    });
-  }
+  installLazyHoverPreview(card, media, item.media.videoUrl);
   media.append(el("span", `media-badge${item.media.hasFullVideo ? " local" : ""}`, item.media.hasFullVideo ? t("completeVideo") : t("gifPreview")));
   appendPersonalCardActions(media, item);
   card.append(media);
@@ -840,6 +841,7 @@ function updateViewChrome(resultCount) {
 function render() {
   const items = filteredItems();
   const renderer = (item) => item.kind === "officialSkill" ? renderOfficialSkillCard(item) : item.kind === "communitySkill" ? renderCommunitySkillCard(item) : renderCard(item);
+  releaseCardPreviewVideos();
   elements.caseGrid.replaceChildren(...items.map(renderer));
   elements.caseGrid.setAttribute("aria-busy", "false");
   elements.empty.classList.toggle("hidden", items.length > 0);
@@ -1282,6 +1284,7 @@ function renderActiveCase({ preserveMedia = false } = {}) {
 }
 
 function openCase(item) {
+  releaseCardPreviewVideos();
   state.activeCase = item;
   personalLibraryApi.recordHistory(state.personalLibrary, itemKey(item));
   savePersonalLibrary();
@@ -1357,11 +1360,7 @@ function setLocale(locale) {
 
 function cleanupDetailMedia() {
   const video = elements.detailMedia.querySelector("video");
-  if (video) {
-    video.pause();
-    video.removeAttribute("src");
-    video.load();
-  }
+  releaseVideoElement(video);
   state.activeCase = null;
 }
 
