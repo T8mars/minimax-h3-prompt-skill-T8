@@ -219,7 +219,38 @@ jobs:
           $ErrorActionPreference = "Stop"
           $version = "${{ inputs.version }}"
           $assets = New-Item -ItemType Directory -Force -Path ".release-input/assets-windows"
-          Compress-Archive -Path catalog -DestinationPath (Join-Path $assets "prompt-library-catalog-v$version.zip") -CompressionLevel Optimal
+          $catalogRoot = (Resolve-Path "catalog").Path
+          $catalogStage = ".release-input/catalog-release"
+          $coreCatalog = Join-Path $catalogStage "core/catalog"
+          $previewCatalogs = @(
+            (Join-Path $catalogStage "previews-part1/catalog"),
+            (Join-Path $catalogStage "previews-part2/catalog")
+          )
+          New-Item -ItemType Directory -Force -Path $coreCatalog, $previewCatalogs[0], $previewCatalogs[1] | Out-Null
+
+          function Add-CatalogHardLink([System.IO.FileInfo] $file, [string] $destinationCatalog) {
+            $relative = [System.IO.Path]::GetRelativePath($catalogRoot, $file.FullName)
+            $target = Join-Path $destinationCatalog $relative
+            New-Item -ItemType Directory -Force -Path (Split-Path -Parent $target) | Out-Null
+            New-Item -ItemType HardLink -Path $target -Target $file.FullName | Out-Null
+          }
+
+          $catalogFiles = @(Get-ChildItem -LiteralPath $catalogRoot -Recurse -File)
+          foreach ($file in $catalogFiles | Where-Object { $_.Extension -ne ".gif" } | Sort-Object FullName) {
+            Add-CatalogHardLink $file $coreCatalog
+          }
+          $previewBytes = [long[]]@(0, 0)
+          $previewFiles = @($catalogFiles | Where-Object { $_.Extension -eq ".gif" } | Sort-Object @{ Expression = "Length"; Descending = $true }, @{ Expression = "FullName"; Ascending = $true })
+          foreach ($file in $previewFiles) {
+            $bucket = if ($previewBytes[0] -le $previewBytes[1]) { 0 } else { 1 }
+            Add-CatalogHardLink $file $previewCatalogs[$bucket]
+            $previewBytes[$bucket] += $file.Length
+          }
+          if ($previewFiles.Count -eq 0) { throw "No original GIF previews were found for the release." }
+
+          Compress-Archive -Path $coreCatalog -DestinationPath (Join-Path $assets "prompt-library-catalog-v$version.zip") -CompressionLevel Optimal
+          Compress-Archive -Path $previewCatalogs[0] -DestinationPath (Join-Path $assets "prompt-library-previews-v$version-part1.zip") -CompressionLevel Optimal
+          Compress-Archive -Path $previewCatalogs[1] -DestinationPath (Join-Path $assets "prompt-library-previews-v$version-part2.zip") -CompressionLevel Optimal
           Compress-Archive -Path skills -DestinationPath (Join-Path $assets "prompt-library-skills-v$version.zip") -CompressionLevel Optimal
           Copy-Item ".release-input/download/prompt-library-media-v$version.zip" $assets
           Copy-Item ".release-input/media/media-pack-manifest.json" $assets
@@ -230,6 +261,9 @@ jobs:
           Copy-Item $installer $assets
           Get-ChildItem $dist -File | Where-Object { $_.Name -eq "latest.yml" -or $_.Extension -eq ".blockmap" } | Copy-Item -Destination $assets
           if (-not (Test-Path (Join-Path $assets "latest.yml"))) { throw "latest.yml is missing." }
+          foreach ($asset in Get-ChildItem $assets -File) {
+            if ($asset.Length -ge 2147483648) { throw "$($asset.Name) exceeds GitHub's per-asset size limit." }
+          }
 
       - name: Assemble macOS assets
         if: matrix.platform == 'macos'
@@ -277,6 +311,8 @@ jobs:
           $version = "${{ inputs.version }}"
           $required = @(
             "prompt-library-catalog-v$version.zip",
+            "prompt-library-previews-v$version-part1.zip",
+            "prompt-library-previews-v$version-part2.zip",
             "prompt-library-skills-v$version.zip",
             "prompt-library-media-v$version.zip",
             "media-pack-manifest.json",

@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.2.5`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.2.5`。
+当前版本是 `v1.2.6`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.2.6`。
 
 版本采用十进制进位：
 
@@ -14,6 +14,7 @@
 1.2.2 -> 1.2.3
 1.2.3 -> 1.2.4
 1.2.4 -> 1.2.5
+1.2.5 -> 1.2.6
 1.9.9 -> 2.0.0
 ```
 
@@ -29,6 +30,7 @@
 - `T8-Prompt-Library-v<version>-mac-universal.zip`、`latest-mac.yml` 与 ZIP blockmap；
 - `prompt-library-media-v<version>.zip`；
 - `prompt-library-catalog-v<version>.zip`；
+- `prompt-library-previews-v<version>-part1.zip` 与 `prompt-library-previews-v<version>-part2.zip`；
 - `prompt-library-skills-v<version>.zip`；
 - `media-pack-manifest.json`；
 - `SHA256SUMS.txt`。
@@ -37,7 +39,9 @@
 
 GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 MP4 会迅速放大 Git 历史，所以从本地 `.release-input/media/` 单独构建媒体包，上传为 Release 资产，并在正式 Electron 构建时作为 `extraResources` 加入安装包。
 
-为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个压到最长边 288 px、4 fps、64 色，但仍保留动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。紧凑目录另有 350 MiB 硬门禁，超过即停止发布。Git 仓库与独立的 `prompt-library-catalog-v<version>.zip` 始终使用原始公开目录，完整 MP4 也不会被这一过程重编码。
+为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个压到最长边 288 px、4 fps、64 色，但仍保留动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。紧凑目录另有 350 MiB 硬门禁，超过即停止发布。完整 MP4 不会被这一过程重编码。
+
+Git 仓库继续保留原始 GIF。由于 229 个原始动态预览合计已超过 GitHub 单资产 2 GiB 上限，独立公开目录按用途分为三个无损 ZIP：`prompt-library-catalog` 保存 JSON、Markdown 与 Poster，两个 `prompt-library-previews` 分卷保存原始 GIF 并保留 `catalog/...` 相对路径。需要完整离线原始目录时，将三个 ZIP 解压到同一父目录即可还原；分卷只解决平台文件上限，不降低 GIF 质量或减少条目。
 
 ### 本地准备媒体包
 
@@ -55,10 +59,10 @@ GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 M
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.2.5
+npm run media:pack -- -Version 1.2.6
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.2.5.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.2.6.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录案例 `files` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 

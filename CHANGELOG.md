@@ -9,6 +9,21 @@
 - 首批持续扩充的 MiniMax H3 与 Seedance 2.0 Creative DNA 案例。
 - Linux 桌面发行评估。
 
+## [1.2.6] - 2026-08-25
+
+### Fixed
+
+- 将超过 GitHub 单资产 2 GiB 上限的原始公开目录拆为轻量 catalog 主包与两个按体积均衡的原始 GIF 预览分卷；两份预览分卷解压到同一目录即可无损还原完整公开目录。
+- Release 暂存使用同卷硬链接，不额外复制 2.1 GiB GIF；最终发布合同明确要求两个预览分卷并继续为每个资产生成 SHA-256。
+
+### Unchanged
+
+- Windows/macOS 安装包继续携带经验证的紧凑动态预览和 220 份完整视频；Git 仓库、README 双语画廊、原始 GIF、Poster、JSON、Markdown 与 Skills 内容均不降级。
+
+### Validation
+
+- v1.2.6 重新执行公共仓库、双语 README、199 个 Skills、桌面端测试、220 份媒体完整遍历、Windows/macOS 打包后媒体校验和成品 E2E，再由最终 Job 核对分卷资产合同后发布。
+
 ## [1.2.5] - 2026-08-25
 
 ### Fixed

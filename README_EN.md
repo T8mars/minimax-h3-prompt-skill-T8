@@ -292,7 +292,7 @@ This section is generated from `catalog/manifest.json`, each case's reviewed Eng
 ### Use the desktop viewer
 
 1. Open [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases).
-2. On Windows, download `T8-Prompt-Library-Setup-v1.2.5.exe`; on macOS, download `T8-Prompt-Library-v1.2.5-mac-universal.dmg`.
+2. On Windows, download `T8-Prompt-Library-Setup-v1.2.6.exe`; on macOS, download `T8-Prompt-Library-v1.2.6-mac-universal.dmg`.
 3. Install and open the app. Case videos, analysis, and both model prompts appear together.
 4. Windows can check for later releases and install only after user confirmation. The current unsigned macOS build opens the Releases page and must be updated manually.
 
@@ -353,7 +353,7 @@ CI checks the public boundary, secrets, paths, directory layout, case status, an
 
 ## Versioning and updates
 
-The current target version is **v1.2.5**. Releases use decimal carry:
+The current target version is **v1.2.6**. Releases use decimal carry:
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -363,6 +363,7 @@ v1.2.1 -> v1.2.2
 v1.2.2 -> v1.2.3
 v1.2.3 -> v1.2.4
 v1.2.4 -> v1.2.5
+v1.2.5 -> v1.2.6
 v1.9.9 -> v2.0.0
 ```
 
