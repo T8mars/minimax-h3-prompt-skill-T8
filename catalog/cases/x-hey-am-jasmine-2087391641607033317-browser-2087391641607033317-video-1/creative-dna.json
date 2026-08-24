@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Follow one clearly adult original subject from behind through a coherent public route using imperfect handheld framing. Establish recurring landmarks, allow one incidental person or object to force a real path correction, then observe one or two compact social microevents without converting them into staged coverage. Preserve delayed reframing, awkward pauses and environmental interruptions as evidence of observation. End with the subject continuing along the same route while one independent background event completes the scene. The reusable mechanism is continuous observer relation, incidental encounter, imperfect recovery, compact social reaction and continued departure—not the source woman, clothing, drink, Japanese town, older pedestrian, cafe, ice cream, bridge, train, vertical prompt wording, camera timing, creator identity or Seedance 2.5 claim.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one clearly adult subject, one observer-follow axis and recurring route landmarks before the first interruption.",
+      "purpose": "Keeps the footage legible as one observed journey.",
+      "ablation_failure": "Unrelated locations make an ordinary montage rather than a follow encounter.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Let one incidental person, object or route event force a visible path correction without a reset.",
+      "purpose": "Provides an unplanned-looking encounter and causal camera response.",
+      "ablation_failure": "A perfectly blocked pass removes the observational evidence.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Retain small framing errors, delayed recentering and awkward pauses while preserving subject identity.",
+      "purpose": "Creates candid credibility without sacrificing continuity.",
+      "ablation_failure": "Perfect stabilized coverage reads as a staged commercial.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Observe at least one compact social microevent with a readable reaction and recovery.",
+      "purpose": "Gives the route a human change rather than scenery alone.",
+      "ablation_failure": "A reaction-free walk lacks reusable narrative progression.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return to route continuation and end with one independent environmental event rather than a posed finale.",
+      "purpose": "Closes the journey while preserving the observer relationship.",
+      "ablation_failure": "Stopping for a hero pose breaks the candid contract.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source woman's likeness, hair, clothing, drink, gestures and exact backward glances",
+    "the source Japanese mountain town, street, pedestrian, vending machine, storefront, cafe, bridge, railway and red train",
+    "the source companions, ice-cream activity, dropped item, reactions and relationship staging",
+    "the source camera route, 3:4 instruction, framing errors, timing, color and exact event order",
+    "the source creator identity, Seedance 2.5 claim, platform overlay, watermark and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "Follow an adult night-shift radio technician through a coastal weather station; a rolling cable cart forces a sidestep, two colleagues share a mislabeled sample in the control room, a paper cup spills harmlessly, and the technician continues toward an antenna deck as a warning beacon rotates on.",
+      "prompt_seed": "Follow an adult night-shift radio technician through a coastal weather station; a rolling cable cart forces a sidestep, two colleagues share a mislabeled sample in the control room, a paper cup spills harmlessly, and the technician continues toward an antenna deck as a warning beacon rotates on."
+    },
+    {
+      "concept": "Follow an adult ceramics restorer through an old industrial courtyard; a delivery dolly interrupts the route, coworkers examine one repaired tile, a wrapping strip catches on a railing, and the restorer continues toward a kiln hall as its roof vent opens independently.",
+      "prompt_seed": "Follow an adult ceramics restorer through an old industrial courtyard; a delivery dolly interrupts the route, coworkers examine one repaired tile, a wrapping strip catches on a railing, and the restorer continues toward a kiln hall as its roof vent opens independently."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Unrelated locations make an ordinary montage rather than a follow encounter.",
+      "repair": "Establish one clearly adult subject, one observer-follow axis and recurring route landmarks before the first interruption."
+    },
+    {
+      "failure": "A perfectly blocked pass removes the observational evidence.",
+      "repair": "Let one incidental person, object or route event force a visible path correction without a reset."
+    },
+    {
+      "failure": "Perfect stabilized coverage reads as a staged commercial.",
+      "repair": "Retain small framing errors, delayed recentering and awkward pauses while preserving subject identity."
+    },
+    {
+      "failure": "A reaction-free walk lacks reusable narrative progression.",
+      "repair": "Observe at least one compact social microevent with a readable reaction and recovery."
+    },
+    {
+      "failure": "Stopping for a hero pose breaks the candid contract.",
+      "repair": "Return to route continuation and end with one independent environmental event rather than a posed finale."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Follow an adult night-shift radio technician through a coastal weather station; a rolling cable cart forces a sidestep, two colleagues share a mislabeled sample in the control room, a paper cup spills harmlessly, and the technician continues toward an antenna deck as a warning beacon rotates on.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Follow an adult ceramics restorer through an old industrial courtyard; a delivery dolly interrupts the route, coworkers examine one repaired tile, a wrapping strip catches on a railing, and the restorer continues toward a kiln hall as its roof vent opens independently.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

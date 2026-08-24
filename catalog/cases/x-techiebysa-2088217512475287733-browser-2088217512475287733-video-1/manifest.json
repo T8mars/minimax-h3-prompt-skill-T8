@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-techiebysa-2088217512475287733-browser-2088217512475287733-video-1",
+  "slug": "recurring-route-original-tableau-reveal-montage",
+  "title": "路线揭幕｜重复通道依次亮出原创反应场景",
+  "source_title": "模因幕后｜街道回场、车辆遮挡与反应场景接力",
+  "summary": "让同一条移动通道反复回场，每次用经过物形成完整遮挡，再在同一空间位置揭出一个独立原创反应场景；每个场景只保留一次清楚关系变化和短暂停顿，随后回到通道继续接力，最后用新的原创场景收束。",
+  "status": "released",
+  "source_duration_seconds": 30.112,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/recurring-route-original-tableau-reveal-montage",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techiebysa-2088217512475287733-browser-2088217512475287733-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techiebysa-2088217512475287733-browser-2088217512475287733-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-recurring-route-original-tableau-reveal-montage-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "重复通行路线 + 固定揭幕区 + 每次完整移动遮挡 + 不同全成年原创反应场景 + 场景之间回到同一路线 + 完整终态反应",
+  "recommended_input": "原创博物馆走廊、铜色地面标记和石墨灰自动展务车从左向右行驶；第二次遮挡后，两名成年建筑师交换一件白色折叠模型，其中一人反向展开，两人出现不同期待并停顿；最后一次车辆通过后，三名成年人共同检查安全的导览器，只完成一次共享惊讶确认并停留",
+  "required_anchors": [
+    "Establish one recurring route and one repeatable reveal zone before the first tableau.",
+    "Use a physically motivated object to create a complete visual occlusion before every reveal.",
+    "Return to the same route between tableaux while preserving direction and environmental anchors.",
+    "End on a fully readable original reaction with no unfinished wipe."
+  ],
+  "tags": [
+    "recurring",
+    "route",
+    "original",
+    "tableau",
+    "reveal",
+    "montage"
+  ],
+  "quality": {
+    "weighted_score": 4.854,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T15:56:56+08:00",
+  "updated_at": "2026-08-23T16:16:05+08:00"
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original product and at least three clearly adult characters in a persistent registered reference board that remains visible while the main image changes. Give every adult at least three stable identity anchors and give the product stable package geometry, proportion, color allocation and mark position. In the main image, relay attention between solo presentation, coordinated group movement, one visible use action, one material or result macro and a final group payoff; after every scene or character change, the persistent board must allow immediate visual comparison. End by handing the group composition to a clean isolated product lockup. The reusable mechanism is a constant visual audit baseline, multi-character role relay, product continuity across environments, material proof and group-to-pack closure—not the source people, faces, hair, clothing, snack, package text, corridor, garden, food layers, palette, layouts, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Register one persistent reference board containing the original product and at least three clearly adult character identities before the first scene change.",
+      "purpose": "Creates a fixed audit baseline for every later character and product appearance.",
+      "ablation_failure": "Without a simultaneous baseline, continuity claims depend on memory and cannot be visually verified.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Give each adult at least three stable identity anchors and give the product stable geometry, proportion, color allocation and mark position.",
+      "purpose": "Separates intentional role changes from identity or package drift.",
+      "ablation_failure": "A shared wardrobe color alone cannot prove who or what remained consistent.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Relay the main image through solo presentation, coordinated group movement and one visible product-use action while keeping the board registered.",
+      "purpose": "Tests identity and package continuity under materially different staging duties.",
+      "ablation_failure": "Repeated static portraits do not prove consistency during motion or interaction.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Insert one macro material or result proof that is causally linked to the same product.",
+      "purpose": "Explains what the product delivers rather than offering only character spectacle.",
+      "ablation_failure": "A decorative macro with no package handoff breaks the commercial evidence chain.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Reunite all adults before handing off to one clean isolated product lockup and readable hold.",
+      "purpose": "Closes both the ensemble and product identity promises.",
+      "ablation_failure": "Ending on another character insert leaves the advertised object unresolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source three adult women, faces, hair, bodies, teal clothing and exact styling",
+    "the source KRU snack package, wording, red-and-white layout, food appearance and branding",
+    "the source persistent lower contact sheet, portrait arrangement, full-body lineup and package-angle layout",
+    "the source corridor, peephole, teal room, garden, eating action, group pose, overhead composition and camera path",
+    "the source creator identity, Seedream 5.0 Pro and Seedance 2.5 claims, same-author thread wording and 30-second timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "Three adult expedition cooks with distinct hair, apron and accessory anchors move through pantry, camp table and firepit scenes while a registered lower board verifies the same fictional tea tin; a leaf infusion macro precedes a group toast and clean tin lockup.",
+      "prompt_seed": "Three adult expedition cooks with distinct hair, apron and accessory anchors move through pantry, camp table and firepit scenes while a registered lower board verifies the same fictional tea tin; a leaf infusion macro precedes a group toast and clean tin lockup."
+    },
+    {
+      "concept": "Three adult urban cyclists with distinct helmets, jackets and glasses relay one fictional safety-light package through workshop, street and tunnel scenes while a fixed side board verifies identities and casing geometry; an LED lens macro precedes a group arrival and product end frame.",
+      "prompt_seed": "Three adult urban cyclists with distinct helmets, jackets and glasses relay one fictional safety-light package through workshop, street and tunnel scenes while a fixed side board verifies identities and casing geometry; an LED lens macro precedes a group arrival and product end frame."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a simultaneous baseline, continuity claims depend on memory and cannot be visually verified.",
+      "repair": "Register one persistent reference board containing the original product and at least three clearly adult character identities before the first scene change."
+    },
+    {
+      "failure": "A shared wardrobe color alone cannot prove who or what remained consistent.",
+      "repair": "Give each adult at least three stable identity anchors and give the product stable geometry, proportion, color allocation and mark position."
+    },
+    {
+      "failure": "Repeated static portraits do not prove consistency during motion or interaction.",
+      "repair": "Relay the main image through solo presentation, coordinated group movement and one visible product-use action while keeping the board registered."
+    },
+    {
+      "failure": "A decorative macro with no package handoff breaks the commercial evidence chain.",
+      "repair": "Insert one macro material or result proof that is causally linked to the same product."
+    },
+    {
+      "failure": "Ending on another character insert leaves the advertised object unresolved.",
+      "repair": "Reunite all adults before handing off to one clean isolated product lockup and readable hold."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Three adult expedition cooks with distinct hair, apron and accessory anchors move through pantry, camp table and firepit scenes while a registered lower board verifies the same fictional tea tin; a leaf infusion macro precedes a group toast and clean tin lockup.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Three adult urban cyclists with distinct helmets, jackets and glasses relay one fictional safety-light package through workshop, street and tunnel scenes while a fixed side board verifies identities and casing geometry; an LED lens macro precedes a group arrival and product end frame.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

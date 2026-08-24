@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish two characters sharing one desirable prop and one synchronized activity. Let a third party visibly remove the prop and end that activity. Assign materially different reactions to the pair: one shows frustration while the other receives or offers one brief consolation gesture. Reveal that the second character had an already motivated hidden recovery location, retrieve an equivalent functional prop without theft or unexplained appearance, then restore the original shared activity and hold the partnership payoff. The reusable mechanism is shared possession, external loss, asymmetric reaction, consolation, motivated hidden recovery and restored joint use—not the source dogs, breeds, bed, smartphone, woman, paw pose, exact timing, creator identity, watermark or model branding.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show two characters jointly using one desirable prop before it is removed.",
+      "purpose": "Makes both possession and relationship stakes legible.",
+      "ablation_failure": "A prop held by only one character weakens the shared-loss premise.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one visible third-party action to remove the prop and stop the shared activity.",
+      "purpose": "Provides an attributable interruption without ambiguity.",
+      "ablation_failure": "An off-screen disappearance cannot support the causal beat.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Give the pair different readable reactions and exactly one consolation gesture.",
+      "purpose": "Turns the loss into a relationship change rather than a simple object gag.",
+      "ablation_failure": "Identical reactions or repeated comforting flatten role contrast.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Recover an equivalent functional prop from a previously plausible hidden location controlled by the partner.",
+      "purpose": "Makes the reversal earned and attributable.",
+      "ablation_failure": "A prop appearing from nowhere becomes arbitrary magic.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return both characters to the original joint activity and hold the restored relationship.",
+      "purpose": "Closes the prop and social arcs together.",
+      "ablation_failure": "Ending at discovery leaves the shared-use payoff incomplete.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source dogs, breeds, animal likenesses, fur patterns and exact body poses",
+    "the source bed, room, smartphone, woman and exact removal choreography",
+    "the source side-look, head-lowering, paw consolation and hidden-phone reveal timing",
+    "the source framing, color treatment, comic cadence and character scale relationship",
+    "the source creator identity, Dola AI mark, platform overlay, watermark and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "Two adult lunar survey robots jointly study one route slate until a supervisor removes it. The smaller robot flashes an error pattern, the larger robot steadies its shoulder, then retrieves a backup slate from a previously visible chest compartment and both resume route planning.",
+      "prompt_seed": "Two adult lunar survey robots jointly study one route slate until a supervisor removes it. The smaller robot flashes an error pattern, the larger robot steadies its shoulder, then retrieves a backup slate from a previously visible chest compartment and both resume route planning."
+    },
+    {
+      "concept": "Two adult archive conservators share one magnifying lamp until a curator carries it away. One conservator slumps, the other offers a quiet hand squeeze, then opens a previously established drawer to reveal a fold-out lens and both resume examining the same manuscript.",
+      "prompt_seed": "Two adult archive conservators share one magnifying lamp until a curator carries it away. One conservator slumps, the other offers a quiet hand squeeze, then opens a previously established drawer to reveal a fold-out lens and both resume examining the same manuscript."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A prop held by only one character weakens the shared-loss premise.",
+      "repair": "Show two characters jointly using one desirable prop before it is removed."
+    },
+    {
+      "failure": "An off-screen disappearance cannot support the causal beat.",
+      "repair": "Use one visible third-party action to remove the prop and stop the shared activity."
+    },
+    {
+      "failure": "Identical reactions or repeated comforting flatten role contrast.",
+      "repair": "Give the pair different readable reactions and exactly one consolation gesture."
+    },
+    {
+      "failure": "A prop appearing from nowhere becomes arbitrary magic.",
+      "repair": "Recover an equivalent functional prop from a previously plausible hidden location controlled by the partner."
+    },
+    {
+      "failure": "Ending at discovery leaves the shared-use payoff incomplete.",
+      "repair": "Return both characters to the original joint activity and hold the restored relationship."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Two adult lunar survey robots jointly study one route slate until a supervisor removes it. The smaller robot flashes an error pattern, the larger robot steadies its shoulder, then retrieves a backup slate from a previously visible chest compartment and both resume route planning.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Two adult archive conservators share one magnifying lamp until a curator carries it away. One conservator slumps, the other offers a quiet hand squeeze, then opens a previously established drawer to reveal a fold-out lens and both resume examining the same manuscript.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

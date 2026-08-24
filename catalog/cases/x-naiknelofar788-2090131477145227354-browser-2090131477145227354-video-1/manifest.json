@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-naiknelofar788-2090131477145227354-browser-2090131477145227354-video-1",
+  "slug": "selfie-route-local-find-taste-resume",
+  "title": "自拍路线小发现｜街行、侧看、品尝与带物继续",
+  "source_title": "街区旅行Vlog｜连续自拍行走、店窗发现与真实品尝反应",
+  "summary": "先用稳定成年人物、街道方向和持续自拍步态建立真实路线；人物的目光和身体转向把镜头带到一个本地发现，随后用可见食物、一次完整品尝和自然反应完成体验证明，最后重新进入同一街道方向并携带消费结果继续走。",
+  "status": "released",
+  "source_duration_seconds": 30.08,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/selfie-route-local-find-taste-resume",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naiknelofar788-2090131477145227354-browser-2090131477145227354-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naiknelofar788-2090131477145227354-browser-2090131477145227354-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-selfie-route-local-find-taste-resume-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "同一成年自拍主体与固定路线 + 一次目光或转头动机发现 + 一个地方物品的完整嗅闻或品尝动作 + 克制身体反应且无广告台词 + 手持结果继续原路线",
+  "recommended_input": "成年植物学家持手机以固定手臂距离沿港口栈道向前，护栏、船只和行人产生连续后退视差；同一成年人接过透明杯，先闻一次，再完整喝一口；摊位和港口仍可作为背景定位；人物手持同一杯沿原栈道方向继续走，夕阳仍在同一侧肩后，背景视差恢复",
+  "required_anchors": [
+    "Keep one adult traveler, selfie distance, route direction and background parallax stable before the discovery.",
+    "Use a visible gaze or body turn to motivate the local discovery.",
+    "Preserve one readable bodily reaction without depending on exact dialogue.",
+    "Resume the same route while carrying a changed state or takeaway object."
+  ],
+  "tags": [
+    "selfie",
+    "route",
+    "local",
+    "find",
+    "taste",
+    "resume"
+  ],
+  "quality": {
+    "weighted_score": 4.899,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T22:21:57+08:00",
+  "updated_at": "2026-08-23T22:43:47+08:00"
+}

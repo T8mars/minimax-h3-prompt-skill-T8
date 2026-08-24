@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-tanluai-2091004028180431097-browser-2091004028180431097-video-1",
+  "slug": "playful-threat-soft-interrupt-escalate-partnered-exit",
+  "title": "威胁动作被亲昵打断｜升级再打断后转成双人撤离",
+  "source_title": "竹林打闹一镜到底｜剑招被轻触化解后两人并肩跑开",
+  "summary": "在一镜式双人关系场景中，先让明确成年角色以可控道具动作提出威胁，再让熟悉伙伴只用一次轻触或亲昵动作越过武器语义；被打断者以表情和更大但安全的动作升级，伙伴第二次柔性化解，最终双方把冲突能量转成同向跑离。",
+  "status": "released",
+  "source_duration_seconds": 21.849977,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/playful-threat-soft-interrupt-escalate-partnered-exit",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tanluai-2091004028180431097-browser-2091004028180431097-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tanluai-2091004028180431097-browser-2091004028180431097-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-playful-threat-soft-interrupt-escalate-partnered-exit-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "两名明确成年原创角色、熟悉关系和连续路径先建立 + 一个受控道具威胁始终与脸和身体保持安全距离 + 伙伴用一次无伤害的人际动作打断并停留展示反应 + 被打断者只升级一次安全大动作且伙伴用第二种不同柔性动作再次化解 + 双方自愿转成同一方向并共同离场把冲突重写为关系打闹",
+  "recommended_input": "两名成年修复员沿长展厅通道同行，奶油工作服持柔软长刷，海军蓝伙伴在旁；奶油服转动带轮梯子，软刷只扫过空处；两名成年人自愿同向，共同抓梯子沿通道跑开",
+  "required_anchors": [
+    "Establish two clearly adult original characters, a familiar relationship and one continuous shared path.",
+    "Introduce one controlled prop threat with clear physical separation from bodies and faces.",
+    "Escalate once through a larger safe movement, then answer with a second distinct soft interruption.",
+    "End with both adults voluntarily aligned and moving together along the established path."
+  ],
+  "tags": [
+    "playful",
+    "threat",
+    "soft",
+    "interrupt",
+    "escalate",
+    "partnered"
+  ],
+  "quality": {
+    "weighted_score": 4.96,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T03:36:17+08:00",
+  "updated_at": "2026-08-24T03:40:35+08:00"
+}

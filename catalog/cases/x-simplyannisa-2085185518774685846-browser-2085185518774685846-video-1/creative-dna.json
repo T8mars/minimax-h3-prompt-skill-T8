@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one stable user and one complete experience object in the same frame. Before showing approval, isolate a tactile, material or functional close-up that visibly proves what the object does. Return to the same user for a complete first-use reaction chain, include one readable reset or relief action, then add a different detail for a second proof. End by repeating the opening relation with a clearly changed terminal object state and a settled user. The mechanism is objective proof to embodied reaction to terminal-state confirmation, not the source person, dish, market or exact food-vlog coverage.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one stable user and the complete experience object together before the first trial.",
+      "purpose": "Defines who is testing what and provides an initial state.",
+      "ablation_failure": "Opening on a macro detail alone removes identity and completion context.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Show one independent close tactile, material or functional proof before relying on the user's reaction.",
+      "purpose": "Makes the claim inspectable rather than testimonial.",
+      "ablation_failure": "A reaction without object proof can feel staged or unsupported.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Return to the same user for a complete first-use action, visible physical response and one reset or relief behavior.",
+      "purpose": "Turns material evidence into embodied consequence.",
+      "ablation_failure": "Cutting away before the response or omitting the reset leaves the experience incomplete.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Add a second proof that uses a different object component, scale or action.",
+      "purpose": "Broadens the demonstration and prevents one-gimmick repetition.",
+      "ablation_failure": "Repeating the first insert at the same scale adds no new evidence.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Repeat the opening user-object relation with a visibly changed terminal object state and a settled user.",
+      "purpose": "Closes the test through before-after evidence.",
+      "ablation_failure": "Ending on a bite, hand or isolated smile does not prove what happened to the object.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source young light-skinned woman, beige blouse, hair, facial identity and smartwatch",
+    "the source Korean night-market stall, visible Korean signage, plastic drink tower and blue stools",
+    "the source red tteokbokki-like skillet, melted cheese, metal chopsticks and exact side dishes",
+    "the source exact cheese-pull, hot-mouth fan, drink, second bite and empty-pan coverage",
+    "the source handheld food-vlog lens relation, facial reactions, color treatment and any visible marks"
+  ],
+  "instantiations": [
+    {
+      "concept": "At an original desert night market, an adult traveler receives a glazed root-vegetable platter, lifts one honeyed ribbon to prove stretch, tastes and cools the mouth with mint water, samples a crisp seed cake and ends beside a visibly empty copper pan.",
+      "prompt_seed": "At an original desert night market, an adult traveler receives a glazed root-vegetable platter, lifts one honeyed ribbon to prove stretch, tastes and cools the mouth with mint water, samples a crisp seed cake and ends beside a visibly empty copper pan."
+    },
+    {
+      "concept": "In an original craft studio, an adult printmaker opens a complete block-print ink set, uses a macro brayer pass to prove smooth coverage, makes one test print and cleans a fingertip with citrus cloth, tries a second textured plate and ends beside a fully filled drying rack and empty mixing tile.",
+      "prompt_seed": "In an original craft studio, an adult printmaker opens a complete block-print ink set, uses a macro brayer pass to prove smooth coverage, makes one test print and cleans a fingertip with citrus cloth, tries a second textured plate and ends beside a fully filled drying rack and empty mixing tile."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Opening on a macro detail alone removes identity and completion context.",
+      "repair": "Establish one stable user and the complete experience object together before the first trial."
+    },
+    {
+      "failure": "A reaction without object proof can feel staged or unsupported.",
+      "repair": "Show one independent close tactile, material or functional proof before relying on the user's reaction."
+    },
+    {
+      "failure": "Cutting away before the response or omitting the reset leaves the experience incomplete.",
+      "repair": "Return to the same user for a complete first-use action, visible physical response and one reset or relief behavior."
+    },
+    {
+      "failure": "Repeating the first insert at the same scale adds no new evidence.",
+      "repair": "Add a second proof that uses a different object component, scale or action."
+    },
+    {
+      "failure": "Ending on a bite, hand or isolated smile does not prove what happened to the object.",
+      "repair": "Repeat the opening user-object relation with a visibly changed terminal object state and a settled user."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "At an original desert night market, an adult traveler receives a glazed root-vegetable platter, lifts one honeyed ribbon to prove stretch, tastes and cools the mouth with mint water, samples a crisp seed cake and ends beside a visibly empty copper pan.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "In an original craft studio, an adult printmaker opens a complete block-print ink set, uses a macro brayer pass to prove smooth coverage, makes one test print and cleans a fingertip with citrus cloth, tries a second textured plate and ends beside a fully filled drying rack and empty mixing tile.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

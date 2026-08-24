@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin with one clearly adult subject already moving through an ordinary route and preserve two recurring landmarks. Allow exactly one small animal encounter to interrupt the path. Compress approach through visible stages—notice, slow, crouch, extend one hand and accept one restrained contact—without changing identities or location. Let the animal briefly take the forward route cue, then return both subjects to motion in the established geography. The reusable mechanism is observer-follow continuity, one bounded encounter and shared departure, not the source woman, clothing, tabby cat, golden alley, blue wall, bicycle, exact gestures, warm grade, creator wording or model label.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Begin with one adult subject already moving along an ordinary route.",
+      "purpose": "Creates routine momentum before the encounter.",
+      "ablation_failure": "A posed introduction removes the interruption contrast.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Preserve at least two recurring landmarks while the subject notices and approaches one animal.",
+      "purpose": "Keeps the encounter inside one verifiable geography.",
+      "ablation_failure": "Unrelated locations turn it into montage.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use staged proximity and only one restrained contact event.",
+      "purpose": "Makes trust or acknowledgment readable without overloading the short duration.",
+      "ablation_failure": "Repeated petting or multiple animals dilutes the single encounter.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Let the encountered animal briefly supply the next direction cue.",
+      "purpose": "Converts the interruption into a route handoff rather than a static insert.",
+      "ablation_failure": "If the animal vanishes, the meeting has no consequence.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with the adult and animal moving through the established route together or clearly separating from it.",
+      "purpose": "Restores motion and closes the encounter.",
+      "ablation_failure": "Ending on a face close-up leaves the route unresolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source adult woman, face, hair, yellow top, denim clothing, body proportions and exact identity",
+    "the source tabby cat, fur pattern, behavior, contact choreography and exact animal identity",
+    "the source golden narrow alley, blue wall, bicycle, architecture, shadow pattern and geography",
+    "the source rear-follow timing, crouch, hand extension, smile, leg brush and terminal walk composition",
+    "the source creator identity, model label, warm grade, watermark and exact prompt wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult ferry mechanic in an original teal raincoat walks along a wet covered pier with a red hose cabinet and white mooring ladder recurring; one white duck blocks the route, the mechanic crouches and lets it tap one glove, then follows as it waddles toward a brass service bell before both continue in a wide moving hold.",
+      "prompt_seed": "An adult ferry mechanic in an original teal raincoat walks along a wet covered pier with a red hose cabinet and white mooring ladder recurring; one white duck blocks the route, the mechanic crouches and lets it tap one glove, then follows as it waddles toward a brass service bell before both continue in a wide moving hold."
+    },
+    {
+      "concept": "An adult greenhouse custodian pushes an empty cart through a glass corridor with a yellow valve and stone basin recurring; one small tortoise crosses, the custodian stops and offers one leaf, then resumes while the tortoise leads toward the open potting-room door.",
+      "prompt_seed": "An adult greenhouse custodian pushes an empty cart through a glass corridor with a yellow valve and stone basin recurring; one small tortoise crosses, the custodian stops and offers one leaf, then resumes while the tortoise leads toward the open potting-room door."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A posed introduction removes the interruption contrast.",
+      "repair": "Begin with one adult subject already moving along an ordinary route."
+    },
+    {
+      "failure": "Unrelated locations turn it into montage.",
+      "repair": "Preserve at least two recurring landmarks while the subject notices and approaches one animal."
+    },
+    {
+      "failure": "Repeated petting or multiple animals dilutes the single encounter.",
+      "repair": "Use staged proximity and only one restrained contact event."
+    },
+    {
+      "failure": "If the animal vanishes, the meeting has no consequence.",
+      "repair": "Let the encountered animal briefly supply the next direction cue."
+    },
+    {
+      "failure": "Ending on a face close-up leaves the route unresolved.",
+      "repair": "End with the adult and animal moving through the established route together or clearly separating from it."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult ferry mechanic in an original teal raincoat walks along a wet covered pier with a red hose cabinet and white mooring ladder recurring; one white duck blocks the route, the mechanic crouches and lets it tap one glove, then follows as it waddles toward a brass service bell before both continue in a wide moving hold.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult greenhouse custodian pushes an empty cart through a glass corridor with a yellow valve and stone basin recurring; one small tortoise crosses, the custodian stops and offers one leaf, then resumes while the tortoise leads toward the open potting-room door.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

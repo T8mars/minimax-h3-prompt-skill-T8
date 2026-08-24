@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original clearly adult stylized character through at least three stable identity anchors and a compact original name mark. Rotate through at least four visually distinct graphic modules; introduce no more than one new short word or identity field per module, and bind each word to one character action that crosses, strikes, occupies or reveals the typography. Preserve the same silhouette, face anchors, palette and mark geometry while layout depth and card structure change. Before the final lockup, include one explicit identity-verification module such as numbered portraits or a fixed character strip. End when one final action places the character inside the complete original name-and-symbol mark and all motion stops. The reusable mechanism is identity-locked module rotation, action-to-word binding, recurring graphic anchors and character-to-wordmark closure—not the source boxer, face, hair, clothes, words, logo, gym, poster layouts, palette, choreography, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one clearly adult stylized character with at least three identity anchors and one compact original name mark.",
+      "purpose": "Creates a stable subject before rapid layout changes begin.",
+      "ablation_failure": "A generic character cannot survive a dense module carousel.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use at least four distinct graphic modules but introduce no more than one new short word or identity field in each.",
+      "purpose": "Keeps every beat readable despite fast editing.",
+      "ablation_failure": "Multiple new phrases per card create an illegible typography reel.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Bind every module's word to one semantic character action that crosses, strikes, occupies or reveals it.",
+      "purpose": "Makes typography and performance share one cause.",
+      "ablation_failure": "Unrelated character motion leaves the words decorative.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Preserve silhouette, face anchors, palette and mark geometry across flat cards and spatial modules.",
+      "purpose": "Maintains identity while the graphic language changes.",
+      "ablation_failure": "Changing several identity channels at once makes each module look like a new character.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Verify identity once, then place the character inside the complete original mark and hold.",
+      "purpose": "Converts the carousel into a finished title system.",
+      "ablation_failure": "Ending on another transient card provides no terminal brand or identity proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source stylized boxer, face, hair, beard, body proportions, shorts, gloves and exact poses",
+    "the source TOBILLO KID name, NO REACH NO FEAR, KICK, FAST and all visible source wording",
+    "the source bell mark, kick graphic, triptych silhouettes, numbered fighter posters and exact logo layout",
+    "the source gym, ring, punching bag, paper cards, palette, camera path, actions and nine-cut timing",
+    "the source creator identity, WakeUpGFX marks, MiniMax H3 claim, watermark and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "An original adult bicycle courier named ARC MIRA appears through a cyan helmet stripe, square glasses and orange jacket; short cards read ROUTE, BRAKE, CLIMB and DELIVER, each activated by one matching action, before numbered route portraits and a final landing inside the ARC MIRA pin mark.",
+      "prompt_seed": "An original adult bicycle courier named ARC MIRA appears through a cyan helmet stripe, square glasses and orange jacket; short cards read ROUTE, BRAKE, CLIMB and DELIVER, each activated by one matching action, before numbered route portraits and a final landing inside the ARC MIRA pin mark."
+    },
+    {
+      "concept": "An original adult ceramic artist named KILN JO uses a cobalt apron, silver round glasses and one clay-red glove; cards read CENTER, PRESS, TURN and FIRE, each word becomes the surface of one studio action, then an identity strip resolves into the KILN JO kiln mark.",
+      "prompt_seed": "An original adult ceramic artist named KILN JO uses a cobalt apron, silver round glasses and one clay-red glove; cards read CENTER, PRESS, TURN and FIRE, each word becomes the surface of one studio action, then an identity strip resolves into the KILN JO kiln mark."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A generic character cannot survive a dense module carousel.",
+      "repair": "Establish one clearly adult stylized character with at least three identity anchors and one compact original name mark."
+    },
+    {
+      "failure": "Multiple new phrases per card create an illegible typography reel.",
+      "repair": "Use at least four distinct graphic modules but introduce no more than one new short word or identity field in each."
+    },
+    {
+      "failure": "Unrelated character motion leaves the words decorative.",
+      "repair": "Bind every module's word to one semantic character action that crosses, strikes, occupies or reveals it."
+    },
+    {
+      "failure": "Changing several identity channels at once makes each module look like a new character.",
+      "repair": "Preserve silhouette, face anchors, palette and mark geometry across flat cards and spatial modules."
+    },
+    {
+      "failure": "Ending on another transient card provides no terminal brand or identity proof.",
+      "repair": "Verify identity once, then place the character inside the complete original mark and hold."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An original adult bicycle courier named ARC MIRA appears through a cyan helmet stripe, square glasses and orange jacket; short cards read ROUTE, BRAKE, CLIMB and DELIVER, each activated by one matching action, before numbered route portraits and a final landing inside the ARC MIRA pin mark.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An original adult ceramic artist named KILN JO uses a cobalt apron, silver round glasses and one clay-red glove; cards read CENTER, PRESS, TURN and FIRE, each word becomes the surface of one studio action, then an identity strip resolves into the KILN JO kiln mark.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

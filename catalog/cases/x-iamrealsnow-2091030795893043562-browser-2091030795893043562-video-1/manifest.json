@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-iamrealsnow-2091030795893043562-browser-2091030795893043562-video-1",
+  "slug": "still-group-anomaly-displacement-direct-threat",
+  "title": "静态群像异常升级｜表情异变、空间击穿与贴脸威胁",
+  "source_title": "黑瞳附身｜安静群像被空间失控与贴脸威胁击穿",
+  "summary": "从安静群像与单一普通人物开始，用局部表情异常把注意力锁到同一身份；随后让摄影机和群体空间发生一次强制位移，短暂留出空场作为后果证据，最后让已异变人物以相同身份锚点从深处逼近并占满镜头，完成从社会安全到直接威胁的四级升级。",
+  "status": "released",
+  "source_duration_seconds": 20.128,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/still-group-anomaly-displacement-direct-threat",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-iamrealsnow-2091030795893043562-browser-2091030795893043562-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-iamrealsnow-2091030795893043562-browser-2091030795893043562-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-still-group-anomaly-displacement-direct-threat-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "安静成年群体、焦点身份和稳定空间先建立 + 局部特征异常但至少三项身份锚点不变 + 一次可追踪空间冲击打破秩序 + 同一环境短暂空场并隐藏焦点人物 + 同一异变身份从既定纵深轴逼近镜头并保持",
+  "recommended_input": "四名成年研究员围坐钢桌，苔绿夹克、透明面罩和橙色右腕标锁定焦点技术员；压力脉冲让椅子和摄影机沿地面线侧移一次；不透明面罩的同一技术员从远端走近，直到面罩占满画面",
+  "required_anchors": [
+    "Establish a calm adult group, one focal identity and stable room geometry before any anomaly.",
+    "Change one localized feature while preserving at least three identity anchors.",
+    "Hold the established environment briefly while withholding the focal adult.",
+    "Return the same altered adult from depth and end on increasing proximity rather than a new effect."
+  ],
+  "tags": [
+    "still",
+    "group",
+    "anomaly",
+    "displacement",
+    "direct",
+    "threat"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T02:52:25+08:00",
+  "updated_at": "2026-08-24T03:04:12+08:00"
+}

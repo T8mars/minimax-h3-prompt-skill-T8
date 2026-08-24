@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Choose one original observer boundary such as a window, booth or balcony and use it to establish two clearly adult participants, a collision lane and at least one environmental consequence surface. Keep that boundary recoverable through the sequence. After a readable confrontation baseline, cause one participant to cross the gap and displace the other into the consequence surface; then return both participants to the same arena with the damage retained. Build two opposed charge states across the original axis and let the final collision expand into or obscure the observer boundary. The reusable mechanism is bounded witness geography, displacement-to-damage causality, arena return and opposed collision—not the source school, students, copyrighted characters, hairstyles, costumes, crowd, powers, wall, camera position, style, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one observer boundary, two adult participants, the collision lane and a consequence surface before escalation.",
+      "purpose": "Gives every impossible action a measurable shared arena.",
+      "ablation_failure": "Without a baseline, displacement and scale cannot be verified.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Carry the first gap closure into one visible environmental damage result.",
+      "purpose": "Makes the attack legible through a destination and residue.",
+      "ablation_failure": "A fast blur without a consequence reads as a missing shot.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Return both participants to the original arena while retaining the damage state.",
+      "purpose": "Preserves event continuity and cumulative consequence.",
+      "ablation_failure": "Resetting the wall or changing location breaks the causal chain.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Build two distinct opposed charge states across the established collision axis.",
+      "purpose": "Prepares a readable terminal interaction rather than arbitrary effects.",
+      "ablation_failure": "Unoriented energy makes the final impact spatially ambiguous.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Let the final collision transform or obscure the same observer boundary.",
+      "purpose": "Closes participant action, environment and witness perspective together.",
+      "ablation_failure": "A detached explosion insert abandons the promised viewpoint.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source school-age or young-looking fighters, faces, bodies, hair, clothing, bags and poses",
+    "the source school courtyard, classroom window, basketball hoop, students, crowd and architecture",
+    "the source copyrighted anime-fighter resemblance, power colors, attacks, wall breach and explosion design",
+    "the source vertical observer composition, camera motion, timing, choreography and photoreal treatment",
+    "the source creator identity, GPT Image 2 and Seedance 2.5 claims, watermark, overlay and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "Two clearly adult kinetic-safety engineers test opposing pressure fields in an orbital training yard viewed through one control-room window. A first shove dents a marked foam barrier, the yard resets with the dent retained, and blue versus amber field states collide into a harmless vapor bloom against the window.",
+      "prompt_seed": "Two clearly adult kinetic-safety engineers test opposing pressure fields in an orbital training yard viewed through one control-room window. A first shove dents a marked foam barrier, the yard resets with the dent retained, and blue versus amber field states collide into a harmless vapor bloom against the window."
+    },
+    {
+      "concept": "Two adult ceremonial percussionists face across a quarry stage viewed from a ticket-booth hatch. One drum pulse pushes the other into a hanging dust membrane, both return to their marks, then opposed rhythm waves meet and coat the hatch in mineral mist.",
+      "prompt_seed": "Two adult ceremonial percussionists face across a quarry stage viewed from a ticket-booth hatch. One drum pulse pushes the other into a hanging dust membrane, both return to their marks, then opposed rhythm waves meet and coat the hatch in mineral mist."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a baseline, displacement and scale cannot be verified.",
+      "repair": "Establish one observer boundary, two adult participants, the collision lane and a consequence surface before escalation."
+    },
+    {
+      "failure": "A fast blur without a consequence reads as a missing shot.",
+      "repair": "Carry the first gap closure into one visible environmental damage result."
+    },
+    {
+      "failure": "Resetting the wall or changing location breaks the causal chain.",
+      "repair": "Return both participants to the original arena while retaining the damage state."
+    },
+    {
+      "failure": "Unoriented energy makes the final impact spatially ambiguous.",
+      "repair": "Build two distinct opposed charge states across the established collision axis."
+    },
+    {
+      "failure": "A detached explosion insert abandons the promised viewpoint.",
+      "repair": "Let the final collision transform or obscure the same observer boundary."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Two clearly adult kinetic-safety engineers test opposing pressure fields in an orbital training yard viewed through one control-room window. A first shove dents a marked foam barrier, the yard resets with the dent retained, and blue versus amber field states collide into a harmless vapor bloom against the window.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Two adult ceremonial percussionists face across a quarry stage viewed from a ticket-booth hatch. One drum pulse pushes the other into a hanging dust membrane, both return to their marks, then opposed rhythm waves meet and coat the hatch in mineral mist.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

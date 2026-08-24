@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original micro-scale flying carrier, one product anchor and a human-scale environment in the same frame so relative size is immediate. Maintain a continuous forward FPV route through at least three obstacle chapters that change navigation rule—such as low tabletop weave, soft environmental corridor and enclosed organic tunnel—while every chapter retains a visible exit gap. Use one repeated shape, color or opening to redirect the carrier back toward the original product geography. Decelerate before the product return, then let the carrier land or hover in a stable relation to the package before one restrained product-state effect and concise name lockup. The reusable mechanism is micro scale, continuous FPV, changing obstacle grammar, visible exits, motif-guided return, deceleration and product reunion—not the source bee, picnic, people, child, dog, foods, flowers, fruit, cans, branding, exact route, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show one micro carrier, one product and human-scale objects together before flight.",
+      "purpose": "Makes scale and terminal objective measurable.",
+      "ablation_failure": "Starting in abstract flight loses product context.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use at least three forward obstacle chapters with different navigation rules and visible exits.",
+      "purpose": "Creates progression without disorienting the route.",
+      "ablation_failure": "Identical weaving becomes repetitive; hidden exits feel random.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep carrier identity, heading logic and near-miss clearance physically continuous.",
+      "purpose": "Makes speed thrilling but readable.",
+      "ablation_failure": "Teleporting or intersecting objects breaks FPV credibility.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Repeat one shape, color or opening to redirect the route toward original product geography.",
+      "purpose": "Turns the return into designed recall rather than coincidence.",
+      "ablation_failure": "An unrelated cut back to the package breaks the journey.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Decelerate, reunite carrier and product, then use one restrained effect and concise name.",
+      "purpose": "Lets motion resolve into a legible commercial payoff.",
+      "ablation_failure": "A high-speed logo collision makes the product unreadable.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source bee, body, stripes, wings, scale and exact flight behavior",
+    "the source adults, child, dog, faces, hands and picnic participants",
+    "the source picnic cloth, AKOOL cans, berries, bread, honey, flowers, petals and fruit interiors",
+    "the source brand name, logo, slogan, energy plume, package design and all typography",
+    "the source FPV route, transitions, creator identity, Seedance 2.5 wording and 30-second timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "A thumb-size inspection drone launches beside an original tool battery, threads screws and cable loops, enters a cooling-fin tunnel and returns along a repeated hexagonal vent to dock above the battery before one charge-ring lockup.",
+      "prompt_seed": "A thumb-size inspection drone launches beside an original tool battery, threads screws and cable loops, enters a cooling-fin tunnel and returns along a repeated hexagonal vent to dock above the battery before one charge-ring lockup."
+    },
+    {
+      "concept": "A paper moth launches beside an original perfume bottle, flies through ribbon loops, dry flowers and a translucent paper cylinder, follows a recurring crescent opening back to the bottle and settles on the cap before one vapor halo and name reveal.",
+      "prompt_seed": "A paper moth launches beside an original perfume bottle, flies through ribbon loops, dry flowers and a translucent paper cylinder, follows a recurring crescent opening back to the bottle and settles on the cap before one vapor halo and name reveal."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Starting in abstract flight loses product context.",
+      "repair": "Show one micro carrier, one product and human-scale objects together before flight."
+    },
+    {
+      "failure": "Identical weaving becomes repetitive; hidden exits feel random.",
+      "repair": "Use at least three forward obstacle chapters with different navigation rules and visible exits."
+    },
+    {
+      "failure": "Teleporting or intersecting objects breaks FPV credibility.",
+      "repair": "Keep carrier identity, heading logic and near-miss clearance physically continuous."
+    },
+    {
+      "failure": "An unrelated cut back to the package breaks the journey.",
+      "repair": "Repeat one shape, color or opening to redirect the route toward original product geography."
+    },
+    {
+      "failure": "A high-speed logo collision makes the product unreadable.",
+      "repair": "Decelerate, reunite carrier and product, then use one restrained effect and concise name."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A thumb-size inspection drone launches beside an original tool battery, threads screws and cable loops, enters a cooling-fin tunnel and returns along a repeated hexagonal vent to dock above the battery before one charge-ring lockup.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A paper moth launches beside an original perfume bottle, flies through ribbon loops, dry flowers and a translucent paper cylinder, follows a recurring crescent opening back to the bottle and settles on the cap before one vapor halo and name reveal.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

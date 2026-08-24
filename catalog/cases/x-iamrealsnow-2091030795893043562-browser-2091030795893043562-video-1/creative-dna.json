@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Open on one stable social group of clearly adult original characters in a readable room and identify one focal adult through at least three persistent visual anchors. Introduce one localized facial anomaly without changing identity, then escalate exactly once into a traceable displacement of the group, camera or room state. Hold the same environment briefly without the focal adult so the audience reads aftermath and anticipates a return. Reintroduce the same altered adult from an established depth axis and let proximity, not extra effects, drive the final escalation until the face occupies the frame. The reusable mechanism is ordinary group baseline, identity-preserving facial anomaly, one spatial rupture, empty-space consequence gap and same-identity direct approach—not the source people, faces, couch, room, black eyes, hair, exact expressions, motion, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish a calm adult group, one focal identity and stable room geometry before any anomaly.",
+      "purpose": "Creates a measurable safety baseline.",
+      "ablation_failure": "Starting in chaos removes the escalation contrast.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Change one localized feature while preserving at least three identity anchors.",
+      "purpose": "Makes the anomaly belong to the same person.",
+      "ablation_failure": "A redesigned face reads as a new subject or continuity error.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use one spatially traceable group or camera displacement as the major rupture.",
+      "purpose": "Converts private unease into physical consequence.",
+      "ablation_failure": "Repeated random shakes become noise rather than progression.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Hold the established environment briefly while withholding the focal adult.",
+      "purpose": "Creates aftermath evidence and a directional question.",
+      "ablation_failure": "Immediate reappearance gives no consequence gap.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return the same altered adult from depth and end on increasing proximity rather than a new effect.",
+      "purpose": "Turns preserved identity into the final threat.",
+      "ablation_failure": "A different attacker or unrelated jump cut breaks the causal chain.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source adult group, woman, faces, hair, clothing, couch and exact expressions",
+    "the source domestic room, furniture, walls, floor, openings and exact staging",
+    "the source solid black eyes, possession appearance and hair transformation",
+    "the source camera displacement, group motion, low angles, approach and terminal close-up",
+    "the source creator identity, Seedance 2.5 wording and 20-second timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "A group of adult researchers pauses in a quiet greenhouse; one technician's safety visor fogs from inside, a pressure pulse knocks the camera off axis, the empty aisle holds, then the same technician walks down that aisle until the opaque visor fills frame.",
+      "prompt_seed": "A group of adult researchers pauses in a quiet greenhouse; one technician's safety visor fogs from inside, a pressure pulse knocks the camera off axis, the empty aisle holds, then the same technician walks down that aisle until the opaque visor fills frame."
+    },
+    {
+      "concept": "Adult musicians wait silently in a rehearsal hall; one cellist's reflected face stops matching her movement, the stands and chairs slide in one coordinated rupture, the empty stage holds, then the same cellist approaches from backstage while the delayed reflection remains visible.",
+      "prompt_seed": "Adult musicians wait silently in a rehearsal hall; one cellist's reflected face stops matching her movement, the stands and chairs slide in one coordinated rupture, the empty stage holds, then the same cellist approaches from backstage while the delayed reflection remains visible."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Starting in chaos removes the escalation contrast.",
+      "repair": "Establish a calm adult group, one focal identity and stable room geometry before any anomaly."
+    },
+    {
+      "failure": "A redesigned face reads as a new subject or continuity error.",
+      "repair": "Change one localized feature while preserving at least three identity anchors."
+    },
+    {
+      "failure": "Repeated random shakes become noise rather than progression.",
+      "repair": "Use one spatially traceable group or camera displacement as the major rupture."
+    },
+    {
+      "failure": "Immediate reappearance gives no consequence gap.",
+      "repair": "Hold the established environment briefly while withholding the focal adult."
+    },
+    {
+      "failure": "A different attacker or unrelated jump cut breaks the causal chain.",
+      "repair": "Return the same altered adult from depth and end on increasing proximity rather than a new effect."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A group of adult researchers pauses in a quiet greenhouse; one technician's safety visor fogs from inside, a pressure pulse knocks the camera off axis, the empty aisle holds, then the same technician walks down that aisle until the opaque visor fills frame.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Adult musicians wait silently in a rehearsal hall; one cellist's reflected face stops matching her movement, the stands and chairs slide in one coordinated rupture, the empty stage holds, then the same cellist approaches from backstage while the delayed reflection remains visible.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

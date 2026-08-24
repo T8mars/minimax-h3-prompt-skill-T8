@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-heyabhishek-2073676993875575170-browser-2073676993875575170-video-1",
+  "slug": "follow-one-encounter-and-departure",
+  "title": "日常偶遇｜路线中断、克制接触再结伴离开",
+  "source_title": "金色巷道｜日常行进、动物接触与结伴离开",
+  "summary": "用稳定跟拍先建立人物、路线和反复地标；途中只发生一次小动物偶遇，人物通过减速、蹲下、伸手和一次克制接触逐步缩短距离，随后回到原路线并让偶遇对象短暂同行。作为既有纪实行进偶遇模板的新证据，不新增选择器。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-one-encounter-and-departure",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-heyabhishek-2073676993875575170-browser-2073676993875575170-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-heyabhishek-2073676993875575170-browser-2073676993875575170-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-observer-follow-encounter-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-techhalla-2081333381401334006-browser-2081333381401334006-video-1",
+  "input_format": "侧面连续跟拍 + 狭窄起点 + 行进中空间揭示 + 一次偶发横穿 + 一次克制回应 + 继续离开",
+  "recommended_input": "原创成年渡轮维修员穿青绿色雨衣沿潮湿有顶码头行走，红色软管柜和白色系泊梯反复可见；维修员伸出一只手套，白鸭靠近并只用鸭嘴轻触一次；成年维修员和白鸭一起经过白色系泊梯走向服务铃，两者与同一码头地理同时可见",
+  "required_anchors": [
+    "Begin with one adult subject already moving along an ordinary route.",
+    "Preserve at least two recurring landmarks while the subject notices and approaches one animal.",
+    "Let the encountered animal briefly supply the next direction cue.",
+    "End with the adult and animal moving through the established route together or clearly separating from it."
+  ],
+  "tags": [
+    "observer",
+    "follow",
+    "encounter"
+  ],
+  "quality": {
+    "weighted_score": 4.828,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T15:18:44+08:00",
+  "updated_at": "2026-08-23T15:39:01+08:00"
+}

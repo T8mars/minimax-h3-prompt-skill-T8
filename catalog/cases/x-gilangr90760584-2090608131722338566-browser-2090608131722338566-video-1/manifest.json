@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-gilangr90760584-2090608131722338566-browser-2090608131722338566-video-1",
+  "slug": "continuous-forward-gauntlet-elevated-symbolic-finish",
+  "title": "连续前进闯阵｜防守闸门升级到高点标志",
+  "source_title": "废墟一镜闯阵｜连续突破多层敌线并登高立标",
+  "summary": "用一次不切镜的前向跟随，把明确成年主角、可读目标方向和重复地标锁在同一废墟路线；敌人以逐层闸门进入，每一层必须用不同身体策略解决，并让上一动作的方向直接交给下一次接触。主角不能回到安全起点，最终离开地面冲突、沿已建立建筑登高，把原创标志安放在高点并以远景证明路线完成。",
+  "status": "released",
+  "source_duration_seconds": 32.322177,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/continuous-forward-gauntlet-elevated-symbolic-finish",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-gilangr90760584-2090608131722338566-browser-2090608131722338566-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-gilangr90760584-2090608131722338566-browser-2090608131722338566-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-forward-gauntlet-elevated-symbolic-finish-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "明确成年主角、便携动作工具、前进目标轴和至少两个重复地标 + 全程一次连续前向摄影且至少三层防守闸门从不同方向进入 + 每层使用不同身体策略并把出力方向直接交给下一次推进 + 不重置路线或身份 + 最后沿先前建立的垂直通道登高 + 安放原创高点标志并用远景同时证明完整路线",
+  "recommended_input": "成年维修员携折叠扭力杆沿受损对接脊柱前进，两扇蓝色检修门和远处垂直梯始终可辨；维修员支撑并改向滑动面板，沿反作用力低步前移，再俯身穿过旋转维护臂；维修员把原创绿色安全靠泊灯锁入屋顶导轨，拉宽同时显示点亮信标和下方完整路线",
+  "required_anchors": [
+    "Establish one clearly adult protagonist, one portable action tool, a forward objective axis and at least two recurring route landmarks.",
+    "Keep one continuous forward camera with no reveal cut while at least three defensive gates enter from different spatial directions.",
+    "Allow slowing or displacement but never return the protagonist to the starting state or erase accumulated route progress.",
+    "After the final ground gate, follow an already established vertical route and place one original symbolic object at a high point before a wide proof hold."
+  ],
+  "tags": [
+    "continuous",
+    "forward",
+    "gauntlet",
+    "elevated",
+    "symbolic",
+    "finish"
+  ],
+  "quality": {
+    "weighted_score": 4.946,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T01:01:53+08:00",
+  "updated_at": "2026-08-24T01:14:31+08:00"
+}

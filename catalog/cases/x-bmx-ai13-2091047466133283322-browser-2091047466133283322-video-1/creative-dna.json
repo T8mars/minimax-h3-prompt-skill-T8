@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Lock one original clearly adult subject in a stable arm-length smartphone close frame, one low-light environment and one direct lens relationship. Begin from a readable affiliative smile and increase positive affect through at least two continuous microexpression stages until a held crest is clear in cheeks, eyes and mouth. Introduce one restrained offscreen directional cue without showing a new person or cutting away; let the same adult open the eyes, redirect attention and release the smile in a continuous transition. Use one breath or small posture adjustment to settle into a neutral or mildly concerned terminal state, then hold long enough to distinguish it from a blink. The reusable mechanism is fixed selfie identity, graded affect rise, measurable crest, offscreen interruption, continuous release and neutral emotional residue—not the source face, blue hair, jacket, hood, night palette, exact expressions, smartphone framing, creator identity, prompt wording or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Lock one clearly adult original subject, arm-length selfie geometry, low-light environment and direct lens relationship before affect changes.",
+      "purpose": "Makes later facial states comparable under one stable identity and camera distance.",
+      "ablation_failure": "Reframing or identity drift can mimic an emotional change.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Raise positive affect through at least two continuous microexpression stages.",
+      "purpose": "Builds a readable emotional curve rather than toggling between presets.",
+      "ablation_failure": "A single jump to laughter removes progression.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Hold one measurable crest in cheeks, eyes and mouth before interruption.",
+      "purpose": "Creates a clear peak state against which release can be judged.",
+      "ablation_failure": "Without a held crest, the later neutral state lacks contrast.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one restrained offscreen directional cue to cause eye opening, attention shift and smile release without adding a visible person.",
+      "purpose": "Supplies narrative causality while preserving the one-face frame.",
+      "ablation_failure": "An unexplained cut or visible second character changes the mechanism.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Settle through breath or small posture regulation into a sustained neutral or mildly concerned terminal hold.",
+      "purpose": "Proves emotional residue rather than a transient blink.",
+      "ablation_failure": "Ending during the transition leaves the final state ambiguous.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source adult face, short bright-blue curls, eye shape, nose jewelry and exact expressions",
+    "the source plum hooded quilted jacket, orange lining, constellation stitching and black inner collar",
+    "the source dim red-green night lighting, dark background and exact vertical phone framing",
+    "the source exact smile progression, closed-eye laughter, wide-eye interruption, neutral settling and microtiming",
+    "the source creator identity, Seedance 2.5 wording, truncated prompt text and 15-second timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult overnight radio host records a close booth selfie, smiles at a successful message, reaches a quiet laugh, hears one offscreen console alert and settles into focused neutrality while keeping the same lens relationship.",
+      "prompt_seed": "An adult overnight radio host records a close booth selfie, smiles at a successful message, reaches a quiet laugh, hears one offscreen console alert and settles into focused neutrality while keeping the same lens relationship."
+    },
+    {
+      "concept": "An adult campsite medic films a lantern-lit check-in, moves from reassuring smile to warm laughter, hears one directional zipper cue and settles into mild concern after one controlled breath.",
+      "prompt_seed": "An adult campsite medic films a lantern-lit check-in, moves from reassuring smile to warm laughter, hears one directional zipper cue and settles into mild concern after one controlled breath."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Reframing or identity drift can mimic an emotional change.",
+      "repair": "Lock one clearly adult original subject, arm-length selfie geometry, low-light environment and direct lens relationship before affect changes."
+    },
+    {
+      "failure": "A single jump to laughter removes progression.",
+      "repair": "Raise positive affect through at least two continuous microexpression stages."
+    },
+    {
+      "failure": "Without a held crest, the later neutral state lacks contrast.",
+      "repair": "Hold one measurable crest in cheeks, eyes and mouth before interruption."
+    },
+    {
+      "failure": "An unexplained cut or visible second character changes the mechanism.",
+      "repair": "Use one restrained offscreen directional cue to cause eye opening, attention shift and smile release without adding a visible person."
+    },
+    {
+      "failure": "Ending during the transition leaves the final state ambiguous.",
+      "repair": "Settle through breath or small posture regulation into a sustained neutral or mildly concerned terminal hold."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult overnight radio host records a close booth selfie, smiles at a successful message, reaches a quiet laugh, hears one offscreen console alert and settles into focused neutrality while keeping the same lens relationship.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult campsite medic films a lantern-lit check-in, moves from reassuring smile to warm laughter, hears one directional zipper cue and settles into mild concern after one controlled breath.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

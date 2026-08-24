@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one adult subject, both visibly empty hands and one stable environment before any effect. Use exactly one attributable trigger to assemble one functional object in readable stages between the same hands; keep subject identity, hand ownership and geography continuous. Require immediate functional use, then let one environmental variable accumulate in response to that use. End with the object still present and one secondary state change visibly tied to the completed action. The reusable mechanism is empty-hand proof, staged materialization, functional payoff and terminal callback, not the source man, suit, guitar, electricity, roses, fog, petals, exact orbit, creator wording or model branding.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show both hands empty long enough to establish one unambiguous baseline.",
+      "purpose": "Makes later materialization visually provable.",
+      "ablation_failure": "Beginning with effects or a hidden hand turns appearance into an assumption.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one visible trigger and one staged assembly path for a single object.",
+      "purpose": "Gives object formation an attributable cause and readable continuity.",
+      "ablation_failure": "Instant replacement or multiple unexplained objects becomes a generic transformation montage.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep the same subject, hand ownership and environment continuous while the object forms.",
+      "purpose": "Prevents identity or prop swapping from faking the mechanism.",
+      "ablation_failure": "A cut to another holder breaks causal ownership.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Make the completed object perform its defining function immediately.",
+      "purpose": "Converts materialization into narrative utility.",
+      "ablation_failure": "A formed but unused prop is only spectacle.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with the object still present and one function-linked secondary state change.",
+      "purpose": "Provides persistent proof and a terminal callback.",
+      "ablation_failure": "Making the object vanish or adding an unrelated makeover abandons the causal chain.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source adult man, face, black-to-white business suit, poses and exact identity",
+    "the source black-and-white electric guitar, blue electrical assembly, hand choreography and playing gestures",
+    "the source foggy field of small white roses, swirling petals and exact environmental response",
+    "the source orbital timing, flower-density curve, suit recoloring and terminal composition",
+    "the source creator identity, model branding, watermark and exact prompt wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult observatory technician begins with empty gloved hands; one wrist tap assembles a folding brass wind harp from amber magnetic plates, the technician turns its calibrated wheel, nearby black-sand rings rise in measured bands, and copper dust finally marks one stripe on the same slate coat while the harp remains held.",
+      "prompt_seed": "An adult observatory technician begins with empty gloved hands; one wrist tap assembles a folding brass wind harp from amber magnetic plates, the technician turns its calibrated wheel, nearby black-sand rings rise in measured bands, and copper dust finally marks one stripe on the same slate coat while the harp remains held."
+    },
+    {
+      "concept": "An adult canal engineer shows empty hands beside a dry lock gauge; one boot press assembles a ceramic pressure key from floating blue segments, the engineer inserts and turns it, water climbs through three marked chambers, and a single wet cobalt line remains across the apron while the key stays locked in place.",
+      "prompt_seed": "An adult canal engineer shows empty hands beside a dry lock gauge; one boot press assembles a ceramic pressure key from floating blue segments, the engineer inserts and turns it, water climbs through three marked chambers, and a single wet cobalt line remains across the apron while the key stays locked in place."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Beginning with effects or a hidden hand turns appearance into an assumption.",
+      "repair": "Show both hands empty long enough to establish one unambiguous baseline."
+    },
+    {
+      "failure": "Instant replacement or multiple unexplained objects becomes a generic transformation montage.",
+      "repair": "Use one visible trigger and one staged assembly path for a single object."
+    },
+    {
+      "failure": "A cut to another holder breaks causal ownership.",
+      "repair": "Keep the same subject, hand ownership and environment continuous while the object forms."
+    },
+    {
+      "failure": "A formed but unused prop is only spectacle.",
+      "repair": "Make the completed object perform its defining function immediately."
+    },
+    {
+      "failure": "Making the object vanish or adding an unrelated makeover abandons the causal chain.",
+      "repair": "End with the object still present and one function-linked secondary state change."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult observatory technician begins with empty gloved hands; one wrist tap assembles a folding brass wind harp from amber magnetic plates, the technician turns its calibrated wheel, nearby black-sand rings rise in measured bands, and copper dust finally marks one stripe on the same slate coat while the harp remains held.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult canal engineer shows empty hands beside a dry lock gauge; one boot press assembles a ceramic pressure key from floating blue segments, the engineer inserts and turns it, water climbs through three marked chambers, and a single wet cobalt line remains across the apron while the key stays locked in place.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

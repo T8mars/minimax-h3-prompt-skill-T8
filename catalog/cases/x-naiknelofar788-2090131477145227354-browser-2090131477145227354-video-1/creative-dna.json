@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Maintain one original adult traveler in a plausible handheld selfie relationship with continuous route direction, face scale and background parallax. Let one visible gaze or head turn motivate a local discovery within the same environment. Show the acquired object clearly, complete exactly one use or taste action and hold an unforced bodily reaction long enough to read without prescribed speech. Return the traveler to the same route carrying a changed state or takeaway object. The reusable mechanism is selfie-route continuity, gaze-motivated local discovery, sensory proof and resumed travel—not the source woman, face, clothing, city, bakery, pastry, street, dialogue, gestures, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Keep one adult traveler, selfie distance, route direction and background parallax stable before the discovery.",
+      "purpose": "Establishes authentic continuous UGC geography.",
+      "ablation_failure": "An unmotivated location jump makes the clip feel assembled rather than lived.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use a visible gaze or body turn to motivate the local discovery.",
+      "purpose": "Connects environment attention to the next subject.",
+      "ablation_failure": "A detached storefront insert has no traveler-driven cause.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Show the acquired object and complete exactly one use or taste action.",
+      "purpose": "Provides direct experience proof instead of promotional assertion.",
+      "ablation_failure": "Holding an object without using it leaves the discovery unresolved.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Preserve one readable bodily reaction without depending on exact dialogue.",
+      "purpose": "Makes the sensory result observable and evidence-backed.",
+      "ablation_failure": "Prescribed words or exaggerated reaction can replace rather than prove the experience.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Resume the same route while carrying a changed state or takeaway object.",
+      "purpose": "Closes the detour and returns the traveler to forward motion.",
+      "ablation_failure": "Ending at the product close-up loses the travel structure.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source adult woman, face, body, hair, clothing, jewelry, expressions and exact gestures",
+    "the source Dearborn street, storefronts, cars, pedestrians, bakery display and location identity",
+    "the source triangular pastry, cup or phone, bite, chewing performance and reaction timing",
+    "the source iPhone selfie path, golden-hour composition, exact speech implication and 30-second rhythm",
+    "the source creator identity, Seedance 2.5 claim, watermark, overlay and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult harbor botanist walks a quay in selfie view, notices a tea cart through one gaze turn, smells and sips one sea-herb infusion, reacts to the saline aroma and resumes the same quay carrying the cup.",
+      "prompt_seed": "An adult harbor botanist walks a quay in selfie view, notices a tea cart through one gaze turn, smells and sips one sea-herb infusion, reacts to the saline aroma and resumes the same quay carrying the cup."
+    },
+    {
+      "concept": "An adult night-market repairer walks a lantern lane, notices a copper stamp booth, presses one leather tag, reacts to the warm embossed result and continues the same lane with the finished tag clipped to a bag.",
+      "prompt_seed": "An adult night-market repairer walks a lantern lane, notices a copper stamp booth, presses one leather tag, reacts to the warm embossed result and continues the same lane with the finished tag clipped to a bag."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "An unmotivated location jump makes the clip feel assembled rather than lived.",
+      "repair": "Keep one adult traveler, selfie distance, route direction and background parallax stable before the discovery."
+    },
+    {
+      "failure": "A detached storefront insert has no traveler-driven cause.",
+      "repair": "Use a visible gaze or body turn to motivate the local discovery."
+    },
+    {
+      "failure": "Holding an object without using it leaves the discovery unresolved.",
+      "repair": "Show the acquired object and complete exactly one use or taste action."
+    },
+    {
+      "failure": "Prescribed words or exaggerated reaction can replace rather than prove the experience.",
+      "repair": "Preserve one readable bodily reaction without depending on exact dialogue."
+    },
+    {
+      "failure": "Ending at the product close-up loses the travel structure.",
+      "repair": "Resume the same route while carrying a changed state or takeaway object."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult harbor botanist walks a quay in selfie view, notices a tea cart through one gaze turn, smells and sips one sea-herb infusion, reacts to the saline aroma and resumes the same quay carrying the cup.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult night-market repairer walks a lantern lane, notices a copper stamp booth, presses one leather tag, reacts to the warm embossed result and continues the same lane with the finished tag clipped to a bag.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

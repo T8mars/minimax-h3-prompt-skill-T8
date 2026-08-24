@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nett0eth-2090267753915498925-browser-2090267753915498925-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "95a80df7cde1a92751639efae5b1f0a13ec914f8afb1da844b24d342b56c426d",
+    "creative_dna_sha256": "869491daea77cc78fd261c34d60a58e23c6abaf79c0df0f25c6e4e252d77a85b"
+  },
+  "content": {
+    "title": "扁平角色字卡轮转｜同一企鹅贯穿多种运动语法",
+    "summary": "同一扁平角色以稳定轮廓、配色和名称结构贯穿扁平字标、眼部宏观、三联剪影、环形字带、长词地面、语义短词卡、网格空间和终局字标；每段只让一个版式动作承担信息功能，最后回到完整角色与名称锁定。",
+    "quick_start": {
+      "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+      "recommended_input": "黑与奶油色场组装准确【FOLIO】书本字标，揭示奶油机身、青绿面罩和红色书脊灯的成年比例机器人；准确立体【SORT】沿对角线延伸，三个缩小的同一机器人沿字面单向移动；青绿面罩与红色书脊灯短暂宏观，拉回同一完整机器人并落入【FOLIO】书本标志",
+      "required_anchors": [
+        "用稳定轮廓、配色、面部标记和紧凑原创名称字段建立一个风格化角色。",
+        "使用至少四个版式逻辑真正不同的模块，同时限制每个模块只增加一个新短词或字段。",
+        "在扁平卡片、宏观尺度和浅 3D 空间中保持身份，并包含一次重复或核验阶段。",
+        "从碎片或细节回到完整角色和原名称字段，并稳定停留。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一扁平角色以稳定轮廓、配色和名称结构贯穿扁平字标、眼部宏观、三联剪影、环形字带、长词地面、语义短词卡、网格空间和终局字标；每段只让一个版式动作承担信息功能，最后回到完整角色与名称锁定。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "通过稳定轮廓、配色、面部标记和紧凑原创名称字段，建立一个原创风格化角色。轮转至少四种改变版式逻辑的图形模块，例如三联画、环形文字、立体长词轨道、单词动作卡和浅景深网格空间；每个模块最多引入一个新短词或身份字段。每个含字模块都要绑定一个可读角色动作，并在尺度、扁平度和景深变化中保留相同身份锚点。加入一次明确的重复或身份核验阶段，再从细节碎片回到完整角色和原名称字段。可复用机制是身份锁定的模块轮转、动作与文字绑定、重复图形锚点和角色归入字标的收束，而不是来源作品中的企鹅、头冠、背心、条纹、文字、标志、配色、布局、动作编排、水印、创作者身份或时间安排。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "用稳定轮廓、配色、面部标记和紧凑原创名称字段建立一个风格化角色。",
+          "purpose": "为激进的图形变化提供足够身份锚点。",
+          "ablation_failure": "单一颜色或通用身体形状无法维持连续。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用至少四个版式逻辑真正不同的模块，同时限制每个模块只增加一个新短词或字段。",
+          "purpose": "在不牺牲阅读速度的情况下创造变化。",
+          "ablation_failure": "只换配色不会形成结构进展；密集文案会变成噪声。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "把每个含字模块绑定到角色在文字上或穿过文字的一次可读动作。",
+          "purpose": "把表演者连接到信息系统。",
+          "ablation_failure": "角色漂浮在无关文字旁边，不会形成因果设计。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在扁平卡片、微距尺度和浅 3D 空间中保持身份，并包含一次重复或核验阶段。",
+          "purpose": "证明同一角色能够跨越不同格式。",
+          "ablation_failure": "缺乏动机的重设计或省略核验，会让连续性变得不确定。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "从碎片或细节回到完整角色和原名称字段，并稳定停留。",
+          "purpose": "把模块轮转收束成一个身份陈述。",
+          "ablation_failure": "停在抽象插入画面上，会让角色和标题都没有结果。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "原始稳定的主体或与可读角色的配对。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源作品中的企鹅状角色、粉色头冠和条纹肢体、绿色填充背心、面孔和比例",
+        "来源作品中的小写名称标志和所有可见文字、环形文字与微型文案",
+        "来源作品中的绿粉黑白配色、阴阳眼图形、剪影、网格和准确卡片布局",
+        "来源作品中的重复滚动角色、长词轨道运动、姿势、转场、摄影路线和 13.7 秒时间安排",
+        "来源创作者身份、Lil Pudgys 身份、MiniMax H3 声明、水印和品牌"
+      ],
+      "instantiations": [
+        {
+          "concept": "原创成年比例机器人图书管理员 FOLIO 使用奶油色机身、青绿面罩和红色书脊灯；它穿过 INDEX、SORT、STACK 和 RETURN 模块，在编号书架卡片中重复，最后归入紧凑 FOLIO 书本标志。",
+          "prompt_seed": "原创成年比例机器人图书管理员 FOLIO 使用奶油色机身、青绿面罩和红色书脊灯；它穿过 INDEX、SORT、STACK 和 RETURN 模块，在编号书架卡片中重复，最后归入紧凑 FOLIO 书本标志。"
+        },
+        {
+          "concept": "原创卡通天气侦察员 CIRRA 使用圆形靛蓝身体、黄色兜帽和白色面颊螺栓；环形云层文字、立体 FORECAST 轨道、SIGNAL 与 SHELTER 卡片和网格地图房最终都回到 CIRRA 指南针标志。",
+          "prompt_seed": "原创卡通天气侦察员 CIRRA 使用圆形靛蓝身体、黄色兜帽和白色面颊螺栓；环形云层文字、立体 FORECAST 轨道、SIGNAL 与 SHELTER 卡片和网格地图房最终都回到 CIRRA 指南针标志。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "单一颜色或通用身体形状无法维持连续。",
+          "repair": "用稳定轮廓、配色、面部标记和紧凑原创名称字段建立一个风格化角色。"
+        },
+        {
+          "failure": "只换配色不会形成结构进展；密集文案会变成噪声。",
+          "repair": "使用至少四个版式逻辑真正不同的模块，同时限制每个模块只增加一个新短词或字段。"
+        },
+        {
+          "failure": "角色漂浮在无关文字旁边，不会形成因果设计。",
+          "repair": "把每个含字模块绑定到角色在文字上或穿过文字的一次可读动作。"
+        },
+        {
+          "failure": "缺乏动机的重设计或省略核验，会让连续性变得不确定。",
+          "repair": "在扁平卡片、微距尺度和浅 3D 空间中保持身份，并包含一次重复或核验阶段。"
+        },
+        {
+          "failure": "停在抽象插入画面上，会让角色和标题都没有结果。",
+          "repair": "从碎片或细节回到完整角色和原名称字段，并稳定停留。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "原创成年比例机器人图书管理员 FOLIO 使用奶油色机身、青绿面罩和红色书脊灯；它穿过 INDEX、SORT、STACK 和 RETURN 模块，在编号书架卡片中重复，最后归入紧凑 FOLIO 书本标志。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "原创卡通天气侦察员 CIRRA 使用圆形靛蓝身体、黄色兜帽和白色面颊螺栓；环形云层文字、立体 FORECAST 轨道、SIGNAL 与 SHELTER 卡片和网格地图房最终都回到 CIRRA 指南针标志。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

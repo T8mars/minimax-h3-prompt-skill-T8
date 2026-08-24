@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Lock one observational camera on a bounded work area, the adult performer and the unfinished task. Begin after prior effort with visible fatigue in posture and breathing. Allow one short recovery action using a small object, then require the performer to put that object away and voluntarily re-engage the same task. Show at least two directly comparable controlled repetitions, make the final repetition visibly harder without unsafe form, then release the load safely. End with one restrained self-evaluation, a deliberate exit and an empty held workspace. The reusable mechanism is fatigue proof, bounded reset, voluntary return, comparable repetition, difficult last effort, safe release and empty-frame closure—not the source woman, gym, black sportswear, bottle, bench, cable machine, exact exercise, body, autofocus behavior, camera height, timing, creator identity or unsupported model mapping.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Lock one observational camera on an adult performer, bounded workspace and unfinished task.",
+      "purpose": "Creates a fair before-and-after carrier without editorial assistance.",
+      "ablation_failure": "Changing views can hide resets or skipped work.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Prove prior fatigue through posture and breathing before one bounded recovery action.",
+      "purpose": "Gives the return meaningful effort cost.",
+      "ablation_failure": "A fresh performer makes the final task ordinary.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Put the recovery object away and visibly re-engage the same task by choice.",
+      "purpose": "Marks the causal boundary between rest and renewed work.",
+      "ablation_failure": "Remaining in rest or cutting into action removes agency.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Show at least two comparable controlled repetitions and one visibly harder final repetition without unsafe form.",
+      "purpose": "Builds a readable exertion ladder and terminal challenge.",
+      "ablation_failure": "Uncountable montage or dangerous strain weakens proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Release safely, perform one restrained self-check, exit and hold the empty workspace.",
+      "purpose": "Closes effort, evaluation and departure in one observable chain.",
+      "ablation_failure": "Camera follow or celebration removes the quiet completion evidence.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source woman's facial and body identity, hair, black sportswear and exact fatigue performance",
+    "the source gym, blue cable racks, bench, water bottle, towel, floor, mirrors and equipment arrangement",
+    "the source exercise handle, repetition form, hydration behavior, glances, standing and exit timing",
+    "the source fixed phone height, lens, autofocus shifts, crop, lighting and exact 30-second rhythm",
+    "the source creator identity, Seedance 2.5 claim, platform overlay, watermark and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult stage technician rests on a flight case after rigging, takes one measured drink, puts the bottle away, returns to the same cable reel, completes two controlled pulls and a difficult final lock, checks one green tension indicator, exits and leaves the fixed backstage bay empty.",
+      "prompt_seed": "An adult stage technician rests on a flight case after rigging, takes one measured drink, puts the bottle away, returns to the same cable reel, completes two controlled pulls and a difficult final lock, checks one green tension indicator, exits and leaves the fixed backstage bay empty."
+    },
+    {
+      "concept": "An adult ceramic worker rests beside a pug mill, cools their hands with one damp cloth, folds it away, returns to the same clay lever, completes two measured presses and one harder final compression, checks the finished clay block, exits and leaves the fixed workbench empty.",
+      "prompt_seed": "An adult ceramic worker rests beside a pug mill, cools their hands with one damp cloth, folds it away, returns to the same clay lever, completes two measured presses and one harder final compression, checks the finished clay block, exits and leaves the fixed workbench empty."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Changing views can hide resets or skipped work.",
+      "repair": "Lock one observational camera on an adult performer, bounded workspace and unfinished task."
+    },
+    {
+      "failure": "A fresh performer makes the final task ordinary.",
+      "repair": "Prove prior fatigue through posture and breathing before one bounded recovery action."
+    },
+    {
+      "failure": "Remaining in rest or cutting into action removes agency.",
+      "repair": "Put the recovery object away and visibly re-engage the same task by choice."
+    },
+    {
+      "failure": "Uncountable montage or dangerous strain weakens proof.",
+      "repair": "Show at least two comparable controlled repetitions and one visibly harder final repetition without unsafe form."
+    },
+    {
+      "failure": "Camera follow or celebration removes the quiet completion evidence.",
+      "repair": "Release safely, perform one restrained self-check, exit and hold the empty workspace."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult stage technician rests on a flight case after rigging, takes one measured drink, puts the bottle away, returns to the same cable reel, completes two controlled pulls and a difficult final lock, checks one green tension indicator, exits and leaves the fixed backstage bay empty.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult ceramic worker rests beside a pug mill, cools their hands with one damp cloth, folds it away, returns to the same clay lever, completes two measured presses and one harder final compression, checks the finished clay block, exits and leaves the fixed workbench empty.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

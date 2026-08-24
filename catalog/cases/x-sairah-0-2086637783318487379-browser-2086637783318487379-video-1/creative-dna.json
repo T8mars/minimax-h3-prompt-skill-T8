@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Lock one bounded workspace, one primary object and one visible contact tool. Every time the tool touches the object or its immediate support, toggle the registered region between photoreal action and a materially distinct illustrated medium. Preserve object orientation, support geometry and surrounding anchors across each toggle, while advancing one irreversible construction or preparation state after every transition. End by returning to photoreal reality with the completed object and all accumulated evidence visible. The reusable mechanism is attributable contact, registered medium toggle, irreversible progress, anchor continuity and real finished payoff—not the source hand, blue stylus, bread, egg, pan, French toast, berries, syrup, black-yellow drawing style, exact camera, timing, creator identity or model labels.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one bounded workspace, one primary object and one visible contact tool in reality.",
+      "purpose": "Defines the registered region and causal trigger.",
+      "ablation_failure": "An unseen trigger makes the medium switch arbitrary.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Toggle medium only at visible tool contact and preserve object registration across the boundary.",
+      "purpose": "Makes every transformation attributable and comparable.",
+      "ablation_failure": "Cuts between unrelated layouts lose contact causality.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Alternate between photoreal and one clearly different illustrated medium at least twice.",
+      "purpose": "Proves a repeatable two-way system rather than a single effect.",
+      "ablation_failure": "One-way conversion does not establish a toggle grammar.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Advance one irreversible build or preparation state after every toggle without resetting earlier progress.",
+      "purpose": "Turns medium change into narrative progress.",
+      "ablation_failure": "Cosmetic switching alone is a filter demo.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return to photoreal reality with the completed object and original anchors visible.",
+      "purpose": "Closes both medium and progress arcs.",
+      "ablation_failure": "Ending in illustration leaves real completion unproven.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source hand, light-blue stylus and exact contact positions",
+    "the source kitchen, plate, pan, bread, egg, French toast, berries, sugar and syrup",
+    "the source black-and-yellow illustration style, line density and drawing marks",
+    "the source camera positions, object orientation, transition timing and plating sequence",
+    "the source creator identity, GPT Image 2 and Seedance 2.0 labels, platform overlay, watermark and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "On a watchmaker's bench, a white chalk stylus toggles one brass clock module between photoreal parts and cobalt technical line art; each contact adds a gear, spring and hand until the completed real clock begins ticking.",
+      "prompt_seed": "On a watchmaker's bench, a white chalk stylus toggles one brass clock module between photoreal parts and cobalt technical line art; each contact adds a gear, spring and hand until the completed real clock begins ticking."
+    },
+    {
+      "concept": "At a greenhouse potting table, a copper probe toggles one clay planter between real soil and cut-paper botanical diagrams; each contact adds roots, stem, leaves and bloom until the real finished plant opens one flower.",
+      "prompt_seed": "At a greenhouse potting table, a copper probe toggles one clay planter between real soil and cut-paper botanical diagrams; each contact adds roots, stem, leaves and bloom until the real finished plant opens one flower."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "An unseen trigger makes the medium switch arbitrary.",
+      "repair": "Establish one bounded workspace, one primary object and one visible contact tool in reality."
+    },
+    {
+      "failure": "Cuts between unrelated layouts lose contact causality.",
+      "repair": "Toggle medium only at visible tool contact and preserve object registration across the boundary."
+    },
+    {
+      "failure": "One-way conversion does not establish a toggle grammar.",
+      "repair": "Alternate between photoreal and one clearly different illustrated medium at least twice."
+    },
+    {
+      "failure": "Cosmetic switching alone is a filter demo.",
+      "repair": "Advance one irreversible build or preparation state after every toggle without resetting earlier progress."
+    },
+    {
+      "failure": "Ending in illustration leaves real completion unproven.",
+      "repair": "Return to photoreal reality with the completed object and original anchors visible."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "On a watchmaker's bench, a white chalk stylus toggles one brass clock module between photoreal parts and cobalt technical line art; each contact adds a gear, spring and hand until the completed real clock begins ticking.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "At a greenhouse potting table, a copper probe toggles one clay planter between real soil and cut-paper botanical diagrams; each contact adds roots, stem, leaves and bloom until the real finished plant opens one flower.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

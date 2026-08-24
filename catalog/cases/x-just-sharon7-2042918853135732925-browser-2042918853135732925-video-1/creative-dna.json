@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one clearly adult carrier moving through a complex environment while at least three independent motion classes are visibly active. Use one attributable trigger to suspend all environmental motion while the carrier alone remains mobile. Continue past recurring frozen anchors, permit at most one restrained observation, then use one terminal trigger to resume distributed motion across the same geography and continue the route. The reusable mechanism is active baseline, global suspension, single mobile exception, sustained comparison and one terminal resumption—not the source woman, clothing, city, pigeons, red dress, snap design, white shockwave, exact interaction, camera route, watermark or prompt wording.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show at least three independent environmental motion classes before suspension.",
+      "purpose": "Makes the global stop visually provable.",
+      "ablation_failure": "A mostly static baseline cannot demonstrate a state change.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one visible trigger and keep one adult carrier as the only mobile exception.",
+      "purpose": "Provides clear causal ownership and comparison.",
+      "ablation_failure": "Multiple mobile exceptions or an unseen trigger weaken the rule.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Preserve recurring frozen anchors while the carrier continues through the same geography.",
+      "purpose": "Sustains the shared suspended state over time.",
+      "ablation_failure": "Changing location or replacing anchors turns the effect into montage.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Allow at most one restrained observation without locally restarting the world.",
+      "purpose": "Adds relationship evidence while preserving the global rule.",
+      "ablation_failure": "Repeated touching or partial restarts create unrelated sub-events.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Resume distributed motion only once near the end and continue the carrier route.",
+      "purpose": "Closes the state interval with a verifiable terminal transition.",
+      "ablation_failure": "Multiple resumptions or a static ending leave the rule ambiguous.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source woman, face, hair, leather jacket, backpack, body presentation and exact performance",
+    "the source city plaza, buildings, pedestrians, pigeons, leaves, dust and red flowing dress",
+    "the source finger snaps, white spherical shockwave, frozen poses, near-touch and restoration choreography",
+    "the source camera track, aerial pullback, daylight grade, timing and terminal fade",
+    "the source creator identity, watermark, platform overlay and exact same-post prompt wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult transit dispatcher walks through a moving maintenance concourse where carts, fabric flags, mist droplets and rotating signs establish activity; one clasp gesture freezes all four classes, the dispatcher aligns beside one suspended tag without contact, then one release restores the entire concourse before departure.",
+      "prompt_seed": "An adult transit dispatcher walks through a moving maintenance concourse where carts, fabric flags, mist droplets and rotating signs establish activity; one clasp gesture freezes all four classes, the dispatcher aligns beside one suspended tag without contact, then one release restores the entire concourse before departure."
+    },
+    {
+      "concept": "An adult greenhouse inspector crosses a busy pollination hall with fans, falling water, insect drones and swaying leaves; one wrist pulse suspends the hall while the inspector checks one frozen droplet, then one terminal pulse restores every layer and the route continues.",
+      "prompt_seed": "An adult greenhouse inspector crosses a busy pollination hall with fans, falling water, insect drones and swaying leaves; one wrist pulse suspends the hall while the inspector checks one frozen droplet, then one terminal pulse restores every layer and the route continues."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A mostly static baseline cannot demonstrate a state change.",
+      "repair": "Show at least three independent environmental motion classes before suspension."
+    },
+    {
+      "failure": "Multiple mobile exceptions or an unseen trigger weaken the rule.",
+      "repair": "Use one visible trigger and keep one adult carrier as the only mobile exception."
+    },
+    {
+      "failure": "Changing location or replacing anchors turns the effect into montage.",
+      "repair": "Preserve recurring frozen anchors while the carrier continues through the same geography."
+    },
+    {
+      "failure": "Repeated touching or partial restarts create unrelated sub-events.",
+      "repair": "Allow at most one restrained observation without locally restarting the world."
+    },
+    {
+      "failure": "Multiple resumptions or a static ending leave the rule ambiguous.",
+      "repair": "Resume distributed motion only once near the end and continue the carrier route."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult transit dispatcher walks through a moving maintenance concourse where carts, fabric flags, mist droplets and rotating signs establish activity; one clasp gesture freezes all four classes, the dispatcher aligns beside one suspended tag without contact, then one release restores the entire concourse before departure.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult greenhouse inspector crosses a busy pollination hall with fans, falling water, insect drones and swaying leaves; one wrist pulse suspends the hall while the inspector checks one frozen droplet, then one terminal pulse restores every layer and the route continues.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

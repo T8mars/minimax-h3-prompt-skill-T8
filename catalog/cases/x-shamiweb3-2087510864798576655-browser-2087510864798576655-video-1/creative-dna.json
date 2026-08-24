@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Open on one unmistakably extraordinary but original visitor at a familiar domestic threshold. Preserve the same identity anchors across a one-way daytime route of at least four visually different mundane responsibilities. Each chapter must contain one familiar tool or exchange, one complete action and one visible result; surrounding people and environments respond normally rather than explaining the visitor. Use object or hand-state handoffs to keep the montage causal, then change the time of day once and return the visitor to the opening boundary for a restrained final acknowledgment. The reusable mechanism is extraordinary identity normalized by cumulative ordinary competence and a same-place day return—not the source alien design, suburban house, car, service window, drink, grill, manicure, garden, clothing, exact tasks, camera positions, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one original extraordinary visitor at an ordinary threshold before the route begins.",
+      "purpose": "Creates an immediate contrast question without requiring exposition.",
+      "ablation_failure": "A conventional subject removes the normalization tension; a random location removes the social baseline.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep the same identity anchors across at least four non-repeating mundane tasks.",
+      "purpose": "Turns the premise into a coherent day rather than a novelty reel.",
+      "ablation_failure": "Identity drift or repeated duties break cumulative familiarity.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Give every task one familiar tool or exchange, a complete action and a visible result.",
+      "purpose": "Lets the audience understand competence without narration.",
+      "ablation_failure": "Poses or incomplete motions leave only costume spectacle.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Let the world respond normally and avoid explaining the visitor's origin.",
+      "purpose": "Normalization is produced through behavior and social acceptance.",
+      "ablation_failure": "Exposition or panic changes the mechanism into lore or threat.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Use one day-to-night transition and return to the opening boundary with a restrained acknowledgment.",
+      "purpose": "Converts multiple errands into a bounded daily loop.",
+      "ablation_failure": "A random final location leaves the route episodic and unresolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source gray alien head, eyes, body proportions, shirt, hands and exact greeting performance",
+    "the source suburban porch, car interior, road, drive-through window, drink and payment exchange",
+    "the source grill, meat, manicure interaction, garden hose, plants and residential night background",
+    "the source shot order, lenses, framing, lighting progression, exact 30-second rhythm and transitions",
+    "the source creator identity, platform overlay, watermark, model claim and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "A translucent municipal maintenance automaton arrives at a coastal apartment lobby, rides a cargo tricycle, collects one library parcel, repairs a courtyard wind vane, sorts communal mail, waters a roof planter and returns to the same lobby charging niche at dusk while residents treat it as routine.",
+      "prompt_seed": "A translucent municipal maintenance automaton arrives at a coastal apartment lobby, rides a cargo tricycle, collects one library parcel, repairs a courtyard wind vane, sorts communal mail, waters a roof planter and returns to the same lobby charging niche at dusk while residents treat it as routine."
+    },
+    {
+      "concept": "A hand-cut paper cloud creature enters a miniature rail station, validates a ticket, carries tea to a platform worker, folds a damaged route map, stamps parcels, trims a window-box plant and returns to the opening bench under a paper moon.",
+      "prompt_seed": "A hand-cut paper cloud creature enters a miniature rail station, validates a ticket, carries tea to a platform worker, folds a damaged route map, stamps parcels, trims a window-box plant and returns to the opening bench under a paper moon."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A conventional subject removes the normalization tension; a random location removes the social baseline.",
+      "repair": "Establish one original extraordinary visitor at an ordinary threshold before the route begins."
+    },
+    {
+      "failure": "Identity drift or repeated duties break cumulative familiarity.",
+      "repair": "Keep the same identity anchors across at least four non-repeating mundane tasks."
+    },
+    {
+      "failure": "Poses or incomplete motions leave only costume spectacle.",
+      "repair": "Give every task one familiar tool or exchange, a complete action and a visible result."
+    },
+    {
+      "failure": "Exposition or panic changes the mechanism into lore or threat.",
+      "repair": "Let the world respond normally and avoid explaining the visitor's origin."
+    },
+    {
+      "failure": "A random final location leaves the route episodic and unresolved.",
+      "repair": "Use one day-to-night transition and return to the opening boundary with a restrained acknowledgment."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A translucent municipal maintenance automaton arrives at a coastal apartment lobby, rides a cargo tricycle, collects one library parcel, repairs a courtyard wind vane, sorts communal mail, waters a roof planter and returns to the same lobby charging niche at dusk while residents treat it as routine.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A hand-cut paper cloud creature enters a miniature rail station, validates a ticket, carries tea to a platform worker, folds a damaged route map, stamps parcels, trims a window-box plant and returns to the opening bench under a paper moon.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

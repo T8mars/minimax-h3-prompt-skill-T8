@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-shamiweb3-2087510864798576655-browser-2087510864798576655-video-1",
+  "slug": "extraordinary-visitor-mundane-day-return",
+  "title": "异客日常化｜多项普通任务累积到黄昏返回",
+  "source_title": "陌生访客的一天｜门廊问候、城市杂务与夜归闭环",
+  "summary": "先用一个一眼可识别的非常规访客制造钩子，随后不解释其来历，而让同一身份锚点依次完成驾驶、取物、烹饪、护理和园艺等互不重复的普通任务；每段都以可见结果落地，最后回到与开场相同的住宅边界和夜间静止状态，让荒诞前提被日常秩序逐步正常化。",
+  "status": "released",
+  "source_duration_seconds": 30.116281,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/extraordinary-visitor-mundane-day-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-shamiweb3-2087510864798576655-browser-2087510864798576655-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-shamiweb3-2087510864798576655-browser-2087510864798576655-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-extraordinary-visitor-mundane-day-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "原创非常规访客与普通门槛 + 稳定身份锚点 + 至少4项非重复日常任务 + 每项熟悉工具/完整动作/可见结果 + 世界正常响应 + 仅1次日夜变化 + 回到开场门槛并克制回应",
+  "recommended_input": "半透明维护机器人带稳定琥珀胸灯和三指机械手抵达门槛，向管理员克制示意，货运三轮车在旁；机器人用小扳手校正风向标直到箭头随风自由转动，再把三封信分别放入三个匹配格口；机器人停好同一车辆，把密封包裹放上管理员桌，进入充电壁龛并向观察者闪烁一次琥珀胸灯后静止",
+  "required_anchors": [
+    "Establish one original extraordinary visitor at an ordinary threshold before the route begins.",
+    "Keep the same identity anchors across at least four non-repeating mundane tasks.",
+    "Let the world respond normally and avoid explaining the visitor's origin.",
+    "Use one day-to-night transition and return to the opening boundary with a restrained acknowledgment."
+  ],
+  "tags": [
+    "extraordinary",
+    "visitor",
+    "mundane",
+    "day",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.896,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T18:34:23+08:00",
+  "updated_at": "2026-08-23T21:18:40+08:00"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-strength04-x-2086311675456823296-browser-2086311675456823296-video-1",
+  "slug": "selfie-carrier-rapid-group-memory-montage",
+  "title": "群体随拍｜自拍锚点、快切活动到共同收束",
+  "source_title": "尾箱派对｜自拍人物贯穿烧烤、欢呼与群体合影",
+  "summary": "让同一成年自拍者成为快速手机记忆蒙太奇的身份锚点，在同一活动地理中依次经过准备、食物、朋友聚集、欢呼和共同动作；每段只保留一个清楚群体变化，最后回到更完整的群体自拍并自然停住。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/selfie-carrier-rapid-group-memory-montage",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-strength04-x-2086311675456823296-browser-2086311675456823296-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-strength04-x-2086311675456823296-browser-2086311675456823296-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-selfie-carrier-rapid-group-memory-montage-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "同一成年自拍者贯穿 + 单一活动地理与重复地标 + 活动插入和自拍回场交替 + 群体分阶段扩大 + 不完美手机快切 + 最大群体完成共同动作",
+  "recommended_input": "成年海洋生物学家穿青绿防水夹克，黄色设备箱、蓝色系泊柱和两名成年队友建立码头活动；更多成年队友分两阶段进入并一边工作一边自然回应手机；人数最多的成年团队围绕同一自拍者、黄色箱和蓝色柱，完成一次戴手套碰拳圆环并放松",
+  "required_anchors": [
+    "Keep one clearly adult original selfie carrier recognizable across every phase.",
+    "Stay within one coherent gathering and repeat at least two environmental anchors.",
+    "Increase the readable group state through at least three stages while retaining natural imperfect phone behavior.",
+    "End on the largest group state and one complete shared action."
+  ],
+  "tags": [
+    "selfie",
+    "carrier",
+    "rapid",
+    "group",
+    "memory",
+    "montage"
+  ],
+  "quality": {
+    "weighted_score": 4.879,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-09T13:59:27+08:00",
+  "updated_at": "2026-08-23T17:17:16+08:00"
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Build one self-contained fictional scene with a stable performer, emotionally legible objective and a practical light or prop anchor. Hold the fiction long enough to earn belief, then let the performer make one small physical approach toward that anchor while the camera begins one continuous retreat. Preserve performer, prop and action as registration anchors while the frame crosses the set boundary and reveals at least three production cues. Continue to a monitoring layer that visibly contains the original fiction, then end with one short audience-facing perception question. The reusable mechanism is belief, anchored retreat, physical production reveal, mediated recursion and judgment—not the source historical drama, Chinese corridor, green costume, lantern, actress, green screen arrangement, monitors, exact wording, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Earn belief through one coherent fictional scene and emotionally legible performer before exposing construction.",
+      "purpose": "Makes the later reveal reclassify real prior evidence.",
+      "ablation_failure": "An immediate backstage view removes surprise and emotional investment.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one practical prop or light and one performer action as continuous registration anchors during the retreat.",
+      "purpose": "Proves that the fiction and production space are the same event.",
+      "ablation_failure": "An unrelated cut can be dismissed as a different location.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Reveal at least three distinct production cues beyond the set boundary.",
+      "purpose": "Turns a vague pullback into falsifiable making-of evidence.",
+      "ablation_failure": "One stray light stand is too ambiguous to reclassify the world.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Show the original fictional image inside a monitoring or capture layer after the physical set reveal.",
+      "purpose": "Adds a second level of mediation and verifies the constructed frame.",
+      "ablation_failure": "Stopping at the set edge loses the recursive proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Finish with one compact audience-facing judgment prompt and no new exposition.",
+      "purpose": "Transfers the viewer from story consumption to perception audit.",
+      "ablation_failure": "A long explanation dilutes the reveal and dictates the conclusion.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source woman's identity, facial performance, hair, green historical costume and exact emotional beats",
+    "the source Chinese palace corridor, red columns, paving, hanging lantern and architecture",
+    "the source green backing, lights, crew, floor equipment, monitor arrangement and exact reveal path",
+    "the source end-card phrase, timing, aspect, color treatment, shot rhythm and creator framing",
+    "the source creator identity, Seedance 2.5 claim, watermark, platform overlay and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "An astronaut steadies a glowing navigation disc inside an apparently real ice-cave rescue scene; a continuous retreat reveals a miniature cave volume, motion-control rig and snow fans, then the same rescue image on a colorist monitor before a two-word perception question.",
+      "prompt_seed": "An astronaut steadies a glowing navigation disc inside an apparently real ice-cave rescue scene; a continuous retreat reveals a miniature cave volume, motion-control rig and snow fans, then the same rescue image on a colorist monitor before a two-word perception question."
+    },
+    {
+      "concept": "A stop-motion paper detective follows a red desk lamp through a noir office; the camera withdraws through the paper wall to reveal animator hands, peg bars and overhead capture lights, then the live frame inside a tablet capture interface before a brief viewer question.",
+      "prompt_seed": "A stop-motion paper detective follows a red desk lamp through a noir office; the camera withdraws through the paper wall to reveal animator hands, peg bars and overhead capture lights, then the live frame inside a tablet capture interface before a brief viewer question."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "An immediate backstage view removes surprise and emotional investment.",
+      "repair": "Earn belief through one coherent fictional scene and emotionally legible performer before exposing construction."
+    },
+    {
+      "failure": "An unrelated cut can be dismissed as a different location.",
+      "repair": "Use one practical prop or light and one performer action as continuous registration anchors during the retreat."
+    },
+    {
+      "failure": "One stray light stand is too ambiguous to reclassify the world.",
+      "repair": "Reveal at least three distinct production cues beyond the set boundary."
+    },
+    {
+      "failure": "Stopping at the set edge loses the recursive proof.",
+      "repair": "Show the original fictional image inside a monitoring or capture layer after the physical set reveal."
+    },
+    {
+      "failure": "A long explanation dilutes the reveal and dictates the conclusion.",
+      "repair": "Finish with one compact audience-facing judgment prompt and no new exposition."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An astronaut steadies a glowing navigation disc inside an apparently real ice-cave rescue scene; a continuous retreat reveals a miniature cave volume, motion-control rig and snow fans, then the same rescue image on a colorist monitor before a two-word perception question.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A stop-motion paper detective follows a red desk lamp through a noir office; the camera withdraws through the paper wall to reveal animator hands, peg bars and overhead capture lights, then the live frame inside a tablet capture interface before a brief viewer question.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

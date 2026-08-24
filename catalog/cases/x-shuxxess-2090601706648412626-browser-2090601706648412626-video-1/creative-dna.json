@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish two original clearly adult roles in one quiet space, one visible garment or equipment irregularity and one stable shared camera axis. Let the helper perform exactly one continuous, functionally legible adjustment with both hands while the receiving adult remains responsive but restrained. Show the adjusted item reaching a measurable finished state before the helper pauses and withdraws. Give each adult one distinct microreaction after contact ends, without relying on unverified dialogue semantics, then return to a shared composition where the finished item and both stable postures prove readiness. The reusable mechanism is practical contact, continuous adjustment, completion pause, separation, reciprocal microreaction and nonverbal readiness confirmation—not the source named characters, faces, hair, uniforms, emblems, neckwear color, franchise, military setting, exact expressions, dialogue, composition, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish two clearly adult original roles, one visible irregularity and one stable shared camera axis.",
+      "purpose": "Makes the practical need and relationship geometry legible before contact.",
+      "ablation_failure": "Without a visible issue, touching can read as arbitrary or purely romantic.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use exactly one continuous, functionally clear two-hand adjustment.",
+      "purpose": "Concentrates attention on a verifiable act of care and preparation.",
+      "ablation_failure": "Multiple unrelated touches dilute the causal action.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Show a measurable finished state before the helper pauses and withdraws.",
+      "purpose": "Proves the task succeeded and creates a transition from action to emotion.",
+      "ablation_failure": "Withdrawing before completion leaves both readiness and motivation unresolved.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Give both adults different restrained microreactions only after contact ends.",
+      "purpose": "Lets reciprocity emerge from the completed action rather than overt exposition.",
+      "ablation_failure": "Large simultaneous reactions overpower the quiet relational mechanism.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return to a shared composition where the finished item and stable postures remain visible.",
+      "purpose": "Closes practical and relational evidence together.",
+      "ablation_failure": "Ending on an isolated face can hide whether the adjustment persisted.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source named copyrighted characters, faces, hair, body designs and exact expressions",
+    "the source brown military uniforms, insignia, red necktie and franchise-specific wardrobe",
+    "the source military mission context, interior architecture, window, curtains and warm lighting design",
+    "the source exact tie-adjustment choreography, facial shot order, camera framing and dialogue performance",
+    "the source creator identity, MiniMax H3 wording, franchise reference and 15-second timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult stage manager clips and aligns an adult singer's lapel microphone, steps back after the cable lies flat, then two restrained reactions and a shared wing-side frame confirm readiness.",
+      "prompt_seed": "An adult stage manager clips and aligns an adult singer's lapel microphone, steps back after the cable lies flat, then two restrained reactions and a shared wing-side frame confirm readiness."
+    },
+    {
+      "concept": "An adult rescue diver tightens an adult partner's chest strap, checks the buckle line, withdraws, then reciprocal eye movements and a shared hatch-side posture confirm the equipment state.",
+      "prompt_seed": "An adult rescue diver tightens an adult partner's chest strap, checks the buckle line, withdraws, then reciprocal eye movements and a shared hatch-side posture confirm the equipment state."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a visible issue, touching can read as arbitrary or purely romantic.",
+      "repair": "Establish two clearly adult original roles, one visible irregularity and one stable shared camera axis."
+    },
+    {
+      "failure": "Multiple unrelated touches dilute the causal action.",
+      "repair": "Use exactly one continuous, functionally clear two-hand adjustment."
+    },
+    {
+      "failure": "Withdrawing before completion leaves both readiness and motivation unresolved.",
+      "repair": "Show a measurable finished state before the helper pauses and withdraws."
+    },
+    {
+      "failure": "Large simultaneous reactions overpower the quiet relational mechanism.",
+      "repair": "Give both adults different restrained microreactions only after contact ends."
+    },
+    {
+      "failure": "Ending on an isolated face can hide whether the adjustment persisted.",
+      "repair": "Return to a shared composition where the finished item and stable postures remain visible."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult stage manager clips and aligns an adult singer's lapel microphone, steps back after the cable lies flat, then two restrained reactions and a shared wing-side frame confirm readiness.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult rescue diver tightens an adult partner's chest strap, checks the buckle line, withdraws, then reciprocal eye movements and a shared hatch-side posture confirm the equipment state.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

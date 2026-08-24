@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-john-my07-2071977017474789557-browser-2071977017474789557-video-1",
+  "slug": "follow-one-encounter-and-departure",
+  "title": "日常跟拍｜巷道小事到回眸离开",
+  "source_title": "旧 DV 生活流｜日常动作、一次回应与继续离开",
+  "summary": "拍摄者在普通住区里发现并跟随同一人物，用稳定地理锚点串联几项小动作和一次偶遇；人物只对观察者做一次克制回应，随后继续离开。作为既有纪实跟拍模板的新证据，不新增选择器。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-one-encounter-and-departure",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-john-my07-2071977017474789557-browser-2071977017474789557-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-john-my07-2071977017474789557-browser-2071977017474789557-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-observer-follow-encounter-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-techhalla-2081333381401334006-browser-2081333381401334006-video-1",
+  "input_format": "侧面连续跟拍 + 狭窄起点 + 行进中空间揭示 + 一次偶发横穿 + 一次克制回应 + 继续离开",
+  "recommended_input": "原创成年屋顶花园管理员已经坐在低墙上戴紧两只手套，同一件褪色蓝工作衫、绿色水管和白色工具门从开场可见；同一管理员把一块沙色遮阳布挂到两个框架之间，只完成一次家务动作；管理员只向观察者小幅点头一次，随后转身拿着同一杯子走进白色楼梯门",
+  "required_anchors": [
+    "Begin with the subject already performing an ordinary action rather than posing for introduction.",
+    "Use recurring landmarks and stable identity anchors to connect every small action.",
+    "Allow only one restrained acknowledgment of the observer after routine evidence is established.",
+    "End with the same subject continuing through the established route."
+  ],
+  "tags": [
+    "observer",
+    "follow",
+    "encounter"
+  ],
+  "quality": {
+    "weighted_score": 4.752,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T14:08:42+08:00",
+  "updated_at": "2026-08-23T14:23:35+08:00"
+}

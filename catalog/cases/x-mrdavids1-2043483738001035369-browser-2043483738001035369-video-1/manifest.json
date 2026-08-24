@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mrdavids1-2043483738001035369-browser-2043483738001035369-video-1",
+  "slug": "empty-hand-functional-object-materialization-payoff",
+  "title": "显物兑现｜空手基线到道具功能与终态回扣",
+  "source_title": "空手显物｜能量装配、立即使用与终态回扣",
+  "summary": "先用清楚的空手和稳定人物建立不可争议的基线；单一触发后让关键道具通过可追踪的分段装配出现，人物立即用它完成可验证功能，环境随使用逐步回应，结尾让道具持续存在并留下一个与功能相关的终态变化。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/empty-hand-functional-object-materialization-payoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mrdavids1-2043483738001035369-browser-2043483738001035369-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mrdavids1-2043483738001035369-browser-2043483738001035369-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-empty-hand-functional-object-materialization-payoff-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "明确成年主体 + 双手空无一物基线 + 单次触发 + 单一道具分段装配 + 立即功能兑现 + 环境累积回应 + 道具持续存在与终态回扣",
+  "recommended_input": "原创成年天文台技术员站在深色矿物平台，双手张开并清楚空无一物，铜质腕扣和三圈平整黑砂可见；完整测量器锁入双手，技术员立即转动刻度轮，第一圈黑砂同步升起；刻度轮到达终点，铜粉只在同一件石板灰工作服上形成一条窄标记；完整测量器仍握在手中，三圈黑砂稳定",
+  "required_anchors": [
+    "Show both hands empty long enough to establish one unambiguous baseline.",
+    "Use one visible trigger and one staged assembly path for a single object.",
+    "Make the completed object perform its defining function immediately.",
+    "End with the object still present and one function-linked secondary state change."
+  ],
+  "tags": [
+    "empty",
+    "hand",
+    "functional",
+    "object",
+    "materialization",
+    "payoff"
+  ],
+  "quality": {
+    "weighted_score": 4.851,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T15:18:44+08:00",
+  "updated_at": "2026-08-23T15:39:01+08:00"
+}

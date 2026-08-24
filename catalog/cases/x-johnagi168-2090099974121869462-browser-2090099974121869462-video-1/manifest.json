@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-johnagi168-2090099974121869462-browser-2090099974121869462-video-1",
+  "slug": "continuous-obstacle-route-fall-state-recovery-reunion",
+  "title": "连续闯关赴约｜湿身残留、障碍升级与终点重逢",
+  "source_title": "水庭连续闯关｜漂浮踏板、摆荡转接与终点相会",
+  "summary": "用持续跟拍把一名明确成年参与者、终点方向和同一水庭绑定；依次让柔性漂浮踏板、滚动平衡物、悬吊抓点和离散落脚点改变身体运动类别，一次落水或跌倒必须留下湿身状态并在镜头内恢复，最后以环境群体响应和终点人物相会证明整条路线完成。",
+  "status": "released",
+  "source_duration_seconds": 30.141673,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/continuous-obstacle-route-fall-state-recovery-reunion",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-johnagi168-2090099974121869462-browser-2090099974121869462-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-johnagi168-2090099974121869462-browser-2090099974121869462-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-obstacle-route-fall-state-recovery-reunion-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年参与者与固定终点方向 + 至少三种要求不同身体策略的材质障碍 + 一次可恢复跌倒或浸水 + 湿痕/泥尘等失败状态持续保留 + 在路线内恢复且不重置地点身份 + 环境抵达信号与等待成年人或交付目标共同收束",
+  "recommended_input": "成年种子递送员携带银色胶囊，沿温室浅水区朝远处门边等待的成年植物学家前进；人物走过一根旋转维护管，随后依次抓住三条悬挂检修带完成转接；最后一根桩前，小型授粉无人机集体升起并露出等待的成年植物学家；递送员到达并把同一胶囊交到对方手中",
+  "required_anchors": [
+    "Establish one adult participant, one destination direction and a shared obstacle environment before the first crossing.",
+    "Use at least three material obstacle classes that require different body strategies.",
+    "Show recovery inside the route and continue without resetting location or identity.",
+    "Resolve the destination through an environmental arrival cue and a waiting adult or delivery target."
+  ],
+  "tags": [
+    "continuous",
+    "obstacle",
+    "route",
+    "fall",
+    "state",
+    "recovery"
+  ],
+  "quality": {
+    "weighted_score": 4.929,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T23:44:10+08:00",
+  "updated_at": "2026-08-24T00:02:21+08:00"
+}

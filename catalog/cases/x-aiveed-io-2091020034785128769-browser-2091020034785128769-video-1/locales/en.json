@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiveed-io-2091020034785128769-browser-2091020034785128769-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "fb0fe36d81fcdcead9783d0a558e4a9b9ac767fbab6cf2d14f7ae674f0cc0799",
+    "creative_dna_sha256": "34b348ce01c70c021d5e8f6375db41f2dc5bacfdb3f9a5adaff590112e3d01b0"
+  },
+  "content": {
+    "title": "Sunlit Skincare Proof | Pack, Texture, Use, Application, Result",
+    "summary": "Bind sealed packaging, exposed material, measured pickup, skin application, and the closing still life with the same warm sunlight, leaf shadow, and hand identity. Let each shot answer one product question, always showing physical proof before its short copy.",
+    "quick_start": {
+      "input_format": "outcome-first image + original product identity + assembly or state proof + wearing or use proof + environmental result state",
+      "recommended_input": "An adult hand holds a graphite glass jar in diagonal studio light, with a copper ring and accurate ARC MEND label. A steel spatula lifts one measured mineral-paste ribbon; close on the sealed jar beside a repaired ceramic tile with only FILL · LEVEL · CURE.",
+      "required_anchors": [
+        "Establish one closed original product, one hand identity and one lighting signature.",
+        "Open the same container and reveal untouched contents before manipulation.",
+        "Transfer the measured amount to one application surface and show the complete spread.",
+        "Return to the complete closed pack and add only concise text supported by prior stages."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Bind sealed packaging, exposed material, measured pickup, skin application, and the closing still life with the same warm sunlight, leaf shadow, and hand identity. Let each shot answer one product question, always showing physical proof before its short copy.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Use one original product identity, one stable hand identity and one persistent lighting signature to connect a compact proof sequence. Establish the closed pack and one promise, open the same container to reveal untouched contents, use one tool action to demonstrate material texture, transfer one measured amount onto a clear application surface, and show one complete spread result. Let each stage answer exactly one new product question and place any short text only after the supporting action becomes visible. Return to the complete closed pack in the same light for a restrained name-and-benefit lockup. The reusable mechanism is product identity, reveal, texture proof, measured use, application result and final benefit closure—not the source jar, label, hands, cream, spatula, wall, leaf shadow, exact copy, layout, creator identity or timing.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one closed original product, one hand identity and one lighting signature.",
+          "purpose": "Creates a trustworthy baseline across macro scale changes.",
+          "ablation_failure": "Changing pack or hands weakens product continuity.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Open the same container and reveal untouched contents before manipulation.",
+          "purpose": "Answers what is inside before making performance claims.",
+          "ablation_failure": "Beginning with a scoop removes packaging-to-material proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use one tool action to show material response and a single measured quantity.",
+          "purpose": "Turns appearance into tactile evidence.",
+          "ablation_failure": "Repeated arbitrary stirring obscures texture.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Transfer the measured amount to one application surface and show the complete spread.",
+          "purpose": "Connects material proof to actual use.",
+          "ablation_failure": "A beauty close-up without application is unsupported.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Return to the complete closed pack and add only concise text supported by prior stages.",
+          "purpose": "Consolidates evidence into a usable product message.",
+          "ablation_failure": "New claims at the end break the proof chain.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source cosmetic jar, label, brand wording and exact package design",
+        "the source hands, nail color, cream, spatula and exact application gestures",
+        "the source beige wall, leaf shadows, sunlight pattern and vertical composition",
+        "the source visible skincare claims, product name, call-to-action and typography layout",
+        "the source creator identity, MiniMax H3 claim and 17-second timing"
+      ],
+      "instantiations": [
+        {
+          "concept": "An original ceramic repair paste is shown sealed, opened to reveal clay, lifted once by a steel blade, spread across one cracked tile and returned as a closed pack beside the visibly repaired seam.",
+          "prompt_seed": "An original ceramic repair paste is shown sealed, opened to reveal clay, lifted once by a steel blade, spread across one cracked tile and returned as a closed pack beside the visibly repaired seam."
+        },
+        {
+          "concept": "An original plant-based cooking glaze is shown in a dark bottle, opened, poured once to prove viscosity, brushed on one roasted vegetable and returned with a concise flavor-and-finish lockup.",
+          "prompt_seed": "An original plant-based cooking glaze is shown in a dark bottle, opened, poured once to prove viscosity, brushed on one roasted vegetable and returned with a concise flavor-and-finish lockup."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Changing pack or hands weakens product continuity.",
+          "repair": "Establish one closed original product, one hand identity and one lighting signature."
+        },
+        {
+          "failure": "Beginning with a scoop removes packaging-to-material proof.",
+          "repair": "Open the same container and reveal untouched contents before manipulation."
+        },
+        {
+          "failure": "Repeated arbitrary stirring obscures texture.",
+          "repair": "Use one tool action to show material response and a single measured quantity."
+        },
+        {
+          "failure": "A beauty close-up without application is unsupported.",
+          "repair": "Transfer the measured amount to one application surface and show the complete spread."
+        },
+        {
+          "failure": "New claims at the end break the proof chain.",
+          "repair": "Return to the complete closed pack and add only concise text supported by prior stages."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An original ceramic repair paste is shown sealed, opened to reveal clay, lifted once by a steel blade, spread across one cracked tile and returned as a closed pack beside the visibly repaired seam.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An original plant-based cooking glaze is shown in a dark bottle, opened, poured once to prove viscosity, brushed on one roasted vegetable and returned with a concise flavor-and-finish lockup.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

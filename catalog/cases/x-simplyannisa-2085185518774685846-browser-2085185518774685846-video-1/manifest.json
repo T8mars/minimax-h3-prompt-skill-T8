@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-simplyannisa-2085185518774685846-browser-2085185518774685846-video-1",
+  "slug": "sensory-trial-proof-reaction-terminal-state",
+  "title": "感官体验｜对象建立—质感证明—试用反应—终态兑现",
+  "source_title": "夜市美食体验｜拉丝证明、品尝反应与空盘兑现",
+  "summary": "先让体验者与完整对象同框建立期待，再用独立微距证明质感；第一次试用后保留身体反应与缓冲动作，随后用第二个细节补充体验，最后以对象耗尽和体验者稳定状态共同兑现。",
+  "status": "released",
+  "source_duration_seconds": 15.136,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/sensory-trial-proof-reaction-terminal-state",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2085185518774685846-browser-2085185518774685846-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2085185518774685846-browser-2085185518774685846-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-sensory-trial-proof-reaction-terminal-state-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "稳定体验者与完整对象 + 独立微距质感证明 + 第一次试用/身体反应/缓冲 + 不同第二证明 + 改变后的对象终态",
+  "recommended_input": "暖灯笼夜市中，穿青绿色亚麻衬衫的成年旅行者与一整锅蜜汁根茎蔬菜同框；先低头观察，再看一次镜头并拿起黄铜夹；同一旅行者完成第一口，咀嚼后抿嘴呼气、用手扇口两次，再从透明杯只喝一口薄荷水；铜锅只剩一条蜜汁痕迹，两只小碗仍在原位；同一旅行者放下透明杯、放松并向镜头微笑一次",
+  "required_anchors": [
+    "Establish one stable user and the complete experience object together before the first trial.",
+    "Show one independent close tactile, material or functional proof before relying on the user's reaction.",
+    "Add a second proof that uses a different object component, scale or action.",
+    "Repeat the opening user-object relation with a visibly changed terminal object state and a settled user."
+  ],
+  "tags": [
+    "sensory",
+    "trial",
+    "proof",
+    "reaction",
+    "terminal",
+    "state"
+  ],
+  "quality": {
+    "weighted_score": 4.726,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T13:14:15+08:00",
+  "updated_at": "2026-08-23T13:25:54+08:00"
+}

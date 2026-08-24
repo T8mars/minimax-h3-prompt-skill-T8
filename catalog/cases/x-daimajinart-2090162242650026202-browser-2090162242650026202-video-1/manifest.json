@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-daimajinart-2090162242650026202-browser-2090162242650026202-video-1",
+  "slug": "social-arrival-delayed-baggage-anomaly-return",
+  "title": "入住迟到异样｜先完成社交接纳再揭示行李异常",
+  "source_title": "安全屋新室友｜礼貌抵达、群体接纳与箱体异样插镜",
+  "summary": "先让新来者以礼貌动作和普通行李完成可信抵达，再让既有成员在同一室内形成正常接纳基线；等社交关系成立后，才用连续的行李局部插镜揭示彼此呼应但不同的异常痕迹，最后返回仍未察觉的群体，让信息差成为结尾张力。",
+  "status": "released",
+  "source_duration_seconds": 16.64,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/social-arrival-delayed-baggage-anomaly-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-daimajinart-2090162242650026202-browser-2090162242650026202-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-daimajinart-2090162242650026202-browser-2090162242650026202-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-social-arrival-delayed-baggage-anomaly-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "成年新来者携至少2个普通容器完成礼貌抵达 + 与至少2名既有成员形成接纳基线 + 接纳后才出现至少3种相关但不同的容器异常线索 + 不完整揭示原因且不攻击 + 返回仍未察觉的群体",
+  "recommended_input": "成年快递员站在三只密封样本舱之间，单手按胸并完整鞠躬；样本舱此时都保持普通关闭状态；珊瑚色舱盖下冷凝水鼓动两次；银色封条下只压出一根紫色细丝并收回；回到完全相同的三人宽景，他们继续入住说明，样本舱仍在视线外",
+  "required_anchors": [
+    "Complete one polite arrival action before displaying any abnormal container detail.",
+    "Show the newcomer accepted by at least two established residents in one stable shared space.",
+    "Withhold the complete hidden cause and avoid a direct attack or confrontation.",
+    "Return to the same group while the secret remains outside their attention."
+  ],
+  "tags": [
+    "social",
+    "arrival",
+    "delayed",
+    "baggage",
+    "anomaly",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.919,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T21:53:23+08:00",
+  "updated_at": "2026-08-23T22:08:50+08:00"
+}

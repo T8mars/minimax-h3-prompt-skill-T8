@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-leelinai123-2088099733550096717-browser-2088099733550096717-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "2ef397f03b86a29e5721bd9f0f9213540e982364233c65c192feaf4ccdfdeaea",
+    "creative_dna_sha256": "6b87f448f688f9ba3f11747443a0d3fce3cfe0ef0ef9197c601048e0ce1e94f9"
+  },
+  "content": {
+    "title": "Locked Microperformance | Gaze, Half-Smile, Downward Pause, Open Recovery",
+    "summary": "Hold one uninterrupted close-up on a clearly adult original performer and build the scene from restrained facial changes rather than cuts. Progress through direct gaze, a contained half-smile, a downward glance and quiet pause, then return to an open, stable expression while preserving identity, eyeline, lighting, and framing.",
+    "quick_start": {
+      "input_format": "clearly adult original performer + locked uninterrupted close-up + direct-gaze baseline + restrained half-smile + downward glance and pause + open stable recovery",
+      "recommended_input": "A clearly adult night-shift radio engineer with an original face sits in a locked chest-up portrait beside a dim amber console. They meet the lens steadily, allow one restrained half-smile, lower their eyes toward a silent waveform meter, hold a two-beat breath, then look back up with one natural blink and a warmer settled smile. Preserve the same identity, lens height, cool window edge light, amber fill, and uninterrupted framing throughout.",
+      "required_anchors": [
+        "Establish one clearly adult subject and stable direct gaze in a locked close-up.",
+        "Use one restrained half-smile as the first countable peak.",
+        "Return to the same gaze axis with an open attentive expression.",
+        "Settle through one small blink or smile into a relaxed terminal hold."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Hold one uninterrupted close-up on a clearly adult original performer and build the scene from restrained facial changes rather than cuts. Progress through direct gaze, a contained half-smile, a downward glance and quiet pause, then return to an open, stable expression while preserving identity, eyeline, lighting, and framing.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Hold one clearly adult original subject in a stable close-up and establish direct gaze before any emotional peak. Build the performance from countable microchanges: one restrained half-smile, one downward glance with a short eyelid pause, one return to the same gaze axis and one relaxed open recovery. Preserve face, wardrobe, background, exposure and camera position; do not use cuts or large gestures. The reusable mechanism is gaze-based microexpression accumulation and recovery—not the source likeness, hair, earrings, gray garment, pale room, exact lip movement, off-camera partner, timing, creator identity or model claim.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one clearly adult subject and stable direct gaze in a locked close-up.",
+          "purpose": "Creates a facial baseline with no editorial cover.",
+          "ablation_failure": "Beginning mid-expression makes later changes hard to compare.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use one restrained half-smile as the first countable peak.",
+          "purpose": "Introduces emotional change without abandoning microperformance scale.",
+          "ablation_failure": "A broad grin or body gesture turns it into overt acting.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Lower gaze and hold one short eyelid pause without cutting.",
+          "purpose": "Creates a controlled energy drop and proves facial continuity.",
+          "ablation_failure": "A cut or long head turn hides the transition.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Return to the same gaze axis with an open attentive expression.",
+          "purpose": "Reestablishes the social relation after the pause.",
+          "ablation_failure": "Looking elsewhere leaves the performance direction unresolved.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Settle through one small blink or smile into a relaxed terminal hold.",
+          "purpose": "Provides recovery rather than ending on the peak.",
+          "ablation_failure": "A frozen peak or abrupt cut prevents emotional closure.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source face, blonde hairstyle, blue eyes, earrings, skin details and exact identity",
+        "the source gray garment, pale interior, blurred partner shoulder and exact conversational setup",
+        "the source direct gaze, half-smile, downward glance, eyelid timing, lip movement and facial performance",
+        "the source locked framing, exposure, color treatment and exact fifteen-second timing",
+        "the source creator identity, platform overlay, model discussion and any watermark"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult paper conservator in an original indigo work coat studies an off-camera colleague, gives one restrained half-smile, glances down at a repaired map edge with a short eyelid pause, returns to the same gaze axis and settles into an attentive neutral hold in one locked archive close-up.",
+          "prompt_seed": "An adult paper conservator in an original indigo work coat studies an off-camera colleague, gives one restrained half-smile, glances down at a repaired map edge with a short eyelid pause, returns to the same gaze axis and settles into an attentive neutral hold in one locked archive close-up."
+        },
+        {
+          "concept": "An adult ceramic engineer in an original ochre apron listens across a workbench, lets one corner-smile appear, looks down at a cooling glaze tile, closes the eyes for one breath, returns gaze to the same partner and recovers to a calm open expression without a cut.",
+          "prompt_seed": "An adult ceramic engineer in an original ochre apron listens across a workbench, lets one corner-smile appear, looks down at a cooling glaze tile, closes the eyes for one breath, returns gaze to the same partner and recovers to a calm open expression without a cut."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Beginning mid-expression makes later changes hard to compare.",
+          "repair": "Establish one clearly adult subject and stable direct gaze in a locked close-up."
+        },
+        {
+          "failure": "A broad grin or body gesture turns it into overt acting.",
+          "repair": "Use one restrained half-smile as the first countable peak."
+        },
+        {
+          "failure": "A cut or long head turn hides the transition.",
+          "repair": "Lower gaze and hold one short eyelid pause without cutting."
+        },
+        {
+          "failure": "Looking elsewhere leaves the performance direction unresolved.",
+          "repair": "Return to the same gaze axis with an open attentive expression."
+        },
+        {
+          "failure": "A frozen peak or abrupt cut prevents emotional closure.",
+          "repair": "Settle through one small blink or smile into a relaxed terminal hold."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult paper conservator in an original indigo work coat studies an off-camera colleague, gives one restrained half-smile, glances down at a repaired map edge with a short eyelid pause, returns to the same gaze axis and settles into an attentive neutral hold in one locked archive close-up.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult ceramic engineer in an original ochre apron listens across a workbench, lets one corner-smile appear, looks down at a cooling glaze tile, closes the eyes for one breath, returns gaze to the same partner and recovers to a calm open expression without a cut.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

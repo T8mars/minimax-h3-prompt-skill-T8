@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiveed-io-2091020034785128769-browser-2091020034785128769-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "阳影护肤品证据链｜封装、质地、取用、涂抹与结果",
+  "source_title": "护肤霜阳影广告｜固定光影串起五段产品证据",
+  "summary": "用同一暖阳、叶影和手部身份把封闭包装、开盖内料、质地取样、皮肤涂抹和最终静物串成一条证明链；每段只回答一个产品问题，所有实物动作先于对应短文案，结尾回到未移动的完整包装与清楚功能层级。",
+  "status": "released",
+  "source_duration_seconds": 17.344,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiveed-io-2091020034785128769-browser-2091020034785128769-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiveed-io-2091020034785128769-browser-2091020034785128769-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "成年手在斜向工作室光中托住石墨玻璃罐，铜环、准确【ARC MEND】和【FILL THE LINE】清楚；钢刮刀只提取一道定量矿物膏，罐体仍在边缘；封闭 ARC MEND 与修复瓷砖同框，只显示【ARC MEND】和【FILL · LEVEL · CURE】",
+  "required_anchors": [
+    "Establish one closed original product, one hand identity and one lighting signature.",
+    "Open the same container and reveal untouched contents before manipulation.",
+    "Transfer the measured amount to one application surface and show the complete spread.",
+    "Return to the complete closed pack and add only concise text supported by prior stages."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T03:16:57+08:00",
+  "updated_at": "2026-08-24T03:23:45+08:00"
+}

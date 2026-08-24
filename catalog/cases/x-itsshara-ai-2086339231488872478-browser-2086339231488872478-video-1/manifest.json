@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-itsshara-ai-2086339231488872478-browser-2086339231488872478-video-1",
+  "slug": "single-accent-scale-activation-relay",
+  "title": "单色激活｜唯一色彩信号跨尺度接力",
+  "source_title": "冰封巨构｜金色眼光沿城市网络扩散",
+  "summary": "先把世界压到近单色并建立多个清楚尺度，再只允许一种高饱和强调色从一个局部激活点出现；强调色必须沿可见载体逐级跨越人物、巨构和环境网络，最终形成更大范围但仍受控的系统状态，其他颜色不得争夺注意力。",
+  "status": "released",
+  "source_duration_seconds": 20.117333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/single-accent-scale-activation-relay",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-itsshara-ai-2086339231488872478-browser-2086339231488872478-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-itsshara-ai-2086339231488872478-browser-2086339231488872478-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-single-accent-scale-activation-relay-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "近单色低饱和世界 + 至少3级可比较尺度 + 唯一高饱和激活色与局部源点 + 同色沿可见载体跨尺度接力 + 保留早期锚点 + 最大环境网络稳定映射",
+  "recommended_input": "成年技师、房间大小螺旋阀、长管廊和远端蓄水池形成四级尺度，尚无高饱和色；同一琥珀脉冲沿检修缝进入巨型螺旋阀；同一琥珀色映射完整连通水网并稳定停留",
+  "required_anchors": [
+    "Reserve the world to one narrow low-saturation color family before any activation.",
+    "Establish at least three measurable scales with persistent comparison anchors.",
+    "Relay the same hue through a visible physical or informational carrier while earlier anchors remain recognizable.",
+    "Resolve the accent as a stable environment-scale network or system state with no new competing color."
+  ],
+  "tags": [
+    "single",
+    "accent",
+    "scale",
+    "activation",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.917,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T17:54:43+08:00",
+  "updated_at": "2026-08-23T18:04:39+08:00"
+}

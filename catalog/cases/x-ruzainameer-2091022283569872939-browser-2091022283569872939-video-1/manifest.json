@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ruzainameer-2091022283569872939-browser-2091022283569872939-video-1",
+  "slug": "tactile-climb-risk-release-summit-scale",
+  "title": "触觉攀登风险递增｜近身工具证据到峰顶尺度释放",
+  "source_title": "冰壁登顶｜工具咬合、濒失抓点与峰顶尺度释放",
+  "summary": "用远景先交代单人目标和压倒性高度，再在近身视角中逐级展示工具咬合、抓点失稳和身体恢复；每次风险后保留相同装备与地理方向，最后由近身动作突然释放到稳定峰顶远景，让完成感来自尺度变化而非庆祝表演。",
+  "status": "released",
+  "source_duration_seconds": 15.136,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/tactile-climb-risk-release-summit-scale",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ruzainameer-2091022283569872939-browser-2091022283569872939-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ruzainameer-2091022283569872939-browser-2091022283569872939-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-tactile-climb-risk-release-summit-scale-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名成年攀登者作为巨大竖向目标前的小型主体 + 至少三种负重接触以近景证明 + 一次接触失效、可见损失与同地理明确制动恢复 + 至少三项装备身份锚点跨尺度保持 + 近身越过最终边缘后稳定拉远证明顶点尺度且不庆祝",
+  "recommended_input": "成年技术员在云上海拔的竖直风机叶片前显得很小，机舱是唯一目标；手垫脱开，成年人下坠旋转，橙绳在同一画面明确制动并重新落脚；摄影机平稳拉远，同一成年人站在风机轮毂旁，云海与完整叶片可读",
+  "required_anchors": [
+    "Establish one adult climber as a small figure against one dominant vertical objective.",
+    "Show at least three distinct load-bearing contacts in tactile close evidence.",
+    "Preserve at least three equipment or costume anchors across every scale change.",
+    "Cross the ridge close, then end on one stable wide proving arrival without celebration."
+  ],
+  "tags": [
+    "tactile",
+    "climb",
+    "risk",
+    "release",
+    "summit",
+    "scale"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T03:07:23+08:00",
+  "updated_at": "2026-08-24T03:14:22+08:00"
+}

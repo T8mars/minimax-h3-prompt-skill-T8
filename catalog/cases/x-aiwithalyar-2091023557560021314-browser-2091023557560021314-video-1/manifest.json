@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithalyar-2091023557560021314-browser-2091023557560021314-video-1",
+  "slug": "fixed-witness-window-world-state-descent",
+  "title": "固定见证框架世界降级｜车厢不变、窗外状态逐级坠落",
+  "source_title": "通勤列车坠入地狱｜固定车厢见证窗外世界逐级失控",
+  "summary": "把移动载体内部、窗框与同一组成年见证者锁成稳定现实锚点，只让窗外世界按可辨识状态逐级降级；每一级先由景观证明，再让乘客反应滞后一拍并逐步增强，最终让载体仍继续运行而外部抵达不可逆异域状态。",
+  "status": "released",
+  "source_duration_seconds": 25.890249,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/fixed-witness-window-world-state-descent",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithalyar-2091023557560021314-browser-2091023557560021314-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithalyar-2091023557560021314-browser-2091023557560021314-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-fixed-witness-window-world-state-descent-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "载体内部固定摄影机、窗框与至少两名成年见证者持续不变 + 载体方向固定而窗外至少四种世界状态顺序降级 + 每个外部状态先清楚可见再升级人物反应 + 外部光色物理回照同一内舱 + 最终新世界与同一载体见证者共同保持",
+  "recommended_input": "黄铜深潜舱、圆形舷窗、三盏蓝灯与两名成年研究员先建立，外部是普通清澈海水；发光生物分布多层纵深，绿蓝光照到同一黄铜框和面孔，一人抓稳控制台；成年人无声凝视干燥深渊，观察舱和外部终态共同保持",
+  "required_anchors": [
+    "Lock one camera inside a moving carrier with stable window, interior and at least two adult witness anchors.",
+    "Transform only the exterior through at least four ordered world states while carrier direction remains constant.",
+    "Couple exterior escalation to changing light spill across the unchanged interior.",
+    "End with a qualitatively new terminal world and the same witnesses still inside the carrier."
+  ],
+  "tags": [
+    "fixed",
+    "witness",
+    "window",
+    "world",
+    "state",
+    "descent"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T03:07:23+08:00",
+  "updated_at": "2026-08-24T03:14:22+08:00"
+}

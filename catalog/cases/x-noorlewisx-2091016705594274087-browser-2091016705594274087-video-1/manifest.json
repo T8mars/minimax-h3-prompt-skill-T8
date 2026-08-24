@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-noorlewisx-2091016705594274087-browser-2091016705594274087-video-1",
+  "slug": "identity-locked-style-world-carousel",
+  "title": "同人城市天气轮转｜面部锚点不变、造型与环境成组切换",
+  "source_title": "一人穿越三城｜同一面孔带着天气、造型和食物章节切换",
+  "summary": "用稳定面部、自拍距离、说话节奏和一个小型饰品锁定同一名明确成年人物，再把地点、天气、外套与当地食物作为成组变量轮转；每座城市先以人物自拍建立，再用一次食物互动和一个地标证明，最后通过遮镜或手势匹配切入下一章。",
+  "status": "released",
+  "source_duration_seconds": 29.466122,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/identity-locked-style-world-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noorlewisx-2091016705594274087-browser-2091016705594274087-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noorlewisx-2091016705594274087-browser-2091016705594274087-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "user-video-hailuo-539548087632777219",
+  "input_format": "固定主体身份与镜头关系 + 至少四个材质/版式不同的风格世界 + 每阶段改变两项风格通道 + 递增密度 + 可读身份终态",
+  "recommended_input": "气候审计员固定自拍距离，月牙脸记、钴蓝头盔条、琥珀耳钉稳定，太阳能场中触测温热面板；一条水痕擦过镜头，同一人物与脸距进入降雪，外套变白色保温款；第三章证明后同一成年人放下手机",
+  "required_anchors": [
+    "Lock one adult identity with three anchors, stable phone distance and repeatable camera-address behavior.",
+    "Use at least three chapters and vary weather, outerwear and one tactile interaction as a coordinated set.",
+    "Hide major swaps inside one brief occlusion or matched gesture and resume the same face scale.",
+    "Close from the same narrator position after the final verified chapter."
+  ],
+  "tags": [
+    "identity",
+    "locked",
+    "style",
+    "world",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.955,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T03:26:37+08:00",
+  "updated_at": "2026-08-24T03:33:41+08:00"
+}

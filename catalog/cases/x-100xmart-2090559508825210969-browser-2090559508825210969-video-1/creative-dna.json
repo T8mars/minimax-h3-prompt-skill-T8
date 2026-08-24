@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Reveal one original monumental destination in full at the opening together with a clearly readable approach route and at least three clearly adult travelers or carriers in the foreground. Preserve one objective direction and one stable destination identity for the entire shot. Use repeated group anchors such as flags, garments, lights or carrier forms to turn ordinary forward movement into a processional rhythm. Combine traveler motion with one restrained camera push and slight elevation change so the destination gains architectural or environmental scale layers monotonically while foreground figures reduce. End on a held destination-dominant wide that retains at least two small traveler or route anchors, proving continued relationship rather than replacing the journey with a disconnected postcard. The reusable mechanism is destination-first promise, processional repetition, continuous approach, monotonic landmark scale gain and traveler-retaining terminal grandeur—not the source Camelot premise, knights, horses, heraldry, castle, valley, flags, route, sunset palette, exact composition, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Show one monumental destination, one readable route and at least three clearly adult travelers or carriers together in the opening.",
+      "purpose": "Creates a destination-first promise with measurable scale and direction.",
+      "ablation_failure": "Hiding the destination changes the mechanism into a reveal.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Preserve one objective direction and one stable destination identity throughout.",
+      "purpose": "Makes all motion contribute to the same approach.",
+      "ablation_failure": "Direction reversals or landmark substitution break journey continuity.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use one repeated group anchor to create processional rhythm across the moving foreground.",
+      "purpose": "Turns generic travel into a collective ceremonial action.",
+      "ablation_failure": "Unrelated travelers read as traffic rather than a procession.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Combine forward travel with a restrained push and slight elevation change so destination scale layers increase monotonically.",
+      "purpose": "Builds grandeur without cuts, transformations or surprise events.",
+      "ablation_failure": "Aggressive orbiting or scale regression makes the geography unstable.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Hold a destination-dominant final view while retaining at least two traveler or route anchors.",
+      "purpose": "Proves the journey relationship survives the scale payoff.",
+      "ablation_failure": "Removing every traveler turns the ending into a disconnected landscape image.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source mounted knights, faces, blue garments, armor, horses and formation",
+    "the source heraldic lion flags, banners, medieval weapon associations and royal procession",
+    "the source fantasy walled city, central castle, river valley, bridges and mountain geography",
+    "the source exact descending route, rear rider arrangement, sunset light, camera push and framing",
+    "the source creator identity, Seedance 2.0 wording, Camelot premise and 12-second timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "Three adult polar researchers drive tracked sleds toward a luminous ice observatory visible from the opening; orange mast lights repeat across the convoy while the camera rises to reveal terraces, bridges and the same travelers below.",
+      "prompt_seed": "Three adult polar researchers drive tracked sleds toward a luminous ice observatory visible from the opening; orange mast lights repeat across the convoy while the camera rises to reveal terraces, bridges and the same travelers below."
+    },
+    {
+      "concept": "A group of adult orchard workers cycles toward a hilltop seed bank; yellow panniers repeat along the road as the camera glides upward and ends with the seed-bank terraces dominant but cyclists still visible.",
+      "prompt_seed": "A group of adult orchard workers cycles toward a hilltop seed bank; yellow panniers repeat along the road as the camera glides upward and ends with the seed-bank terraces dominant but cyclists still visible."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Hiding the destination changes the mechanism into a reveal.",
+      "repair": "Show one monumental destination, one readable route and at least three clearly adult travelers or carriers together in the opening."
+    },
+    {
+      "failure": "Direction reversals or landmark substitution break journey continuity.",
+      "repair": "Preserve one objective direction and one stable destination identity throughout."
+    },
+    {
+      "failure": "Unrelated travelers read as traffic rather than a procession.",
+      "repair": "Use one repeated group anchor to create processional rhythm across the moving foreground."
+    },
+    {
+      "failure": "Aggressive orbiting or scale regression makes the geography unstable.",
+      "repair": "Combine forward travel with a restrained push and slight elevation change so destination scale layers increase monotonically."
+    },
+    {
+      "failure": "Removing every traveler turns the ending into a disconnected landscape image.",
+      "repair": "Hold a destination-dominant final view while retaining at least two traveler or route anchors."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Three adult polar researchers drive tracked sleds toward a luminous ice observatory visible from the opening; orange mast lights repeat across the convoy while the camera rises to reveal terraces, bridges and the same travelers below.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A group of adult orchard workers cycles toward a hilltop seed bank; yellow panniers repeat along the road as the camera glides upward and ends with the seed-bank terraces dominant but cyclists still visible.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

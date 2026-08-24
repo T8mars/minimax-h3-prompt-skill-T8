@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-manuagi01-2091022062404137221-browser-2091022062404137221-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "0fd7d5810f73151820d4fdfdbe3d831f10a8a42252f6ebaa0ed15dc986f78290",
+    "creative_dna_sha256": "3c8c8713e053531003ef461aa01afe17e753f575f706bc981255de15ebd9fa39"
+  },
+  "content": {
+    "title": "Held Character Trailer | Gaze, Brush Title, One Action, Emblem",
+    "summary": "Build identity and emotion through a portrait held longer than normal trailer cutting. Let one material stroke carry one short concept, return to a wide waiting state, release exactly one complete action, then resolve as a stable character poster with an original name and emblem.",
+    "quick_start": {
+      "input_format": "clearly adult original character established by three identity anchors and a held portrait + one material stroke carries one short word + environmental wide moves while character waits + exactly one full-body action releases and stops + same full character, one original name, and at most one identity line form a stable emblem poster",
+      "recommended_input": "Adult orbital botanist MARA holds in helmet close-up with a silver cheek scar, teal collar, and orange seed case. After one ink title and a waiting greenhouse wide, she completes one precise seed-cast action; a cream poster closes on MARA inside a circular leaf emblem.",
+      "required_anchors": [
+        "Hold one adult character portrait with three identity anchors until one micro-action becomes salient.",
+        "Use one restrained material mark with no more than one short exact phrase.",
+        "Release exactly one committed full-body action and settle immediately afterward.",
+        "Convert the settled identity into a stable poster with one name and at most one identity line."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Build identity and emotion through a portrait held longer than normal trailer cutting. Let one material stroke carry one short concept, return to a wide waiting state, release exactly one complete action, then resolve as a stable character poster with an original name and emblem.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Establish one original clearly adult stylized character with at least three stable identity anchors in a held portrait that lasts long enough for one micro-action to matter. Replace the character once with a restrained brush or material mark carrying no more than one short exact phrase, then return to a wide environmental hold where weather or ambient motion continues but the adult waits. Release exactly one committed full-body action after the pause and let its path create a clean graphic bridge into a terminal emblem. End on a stable poster containing the unchanged full character, one original name and at most one short identity line. The reusable mechanism is held identity, micro-action, minimal brush-title anticipation, environmental waiting, single action release and emblematic poster closure—not the source woman, face, hair, robes, sword, words, title, ink circle, landscape, exact choreography, creator identity or timing.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Hold one adult character portrait with three identity anchors until one micro-action becomes salient.",
+          "purpose": "Builds attention through stillness rather than cut frequency.",
+          "ablation_failure": "Immediate motion removes the retention contrast.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use one restrained material mark with no more than one short exact phrase.",
+          "purpose": "Turns typography into anticipation instead of exposition.",
+          "ablation_failure": "Dense copy breaks the pause rhythm.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Return to a wide environment where ambient motion continues but the adult waits.",
+          "purpose": "Transfers tension from face to world scale.",
+          "ablation_failure": "Constant character action spends the stored energy too early.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Release exactly one committed full-body action and settle immediately afterward.",
+          "purpose": "Concentrates payoff into one readable event.",
+          "ablation_failure": "Multiple attacks convert the mechanism into an action montage.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Convert the settled identity into a stable poster with one name and at most one identity line.",
+          "purpose": "Closes character and concept into a memorable emblem.",
+          "ablation_failure": "Another narrative beat after the poster weakens closure.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source anime adult woman, face, violet hair, robes and exact expressions",
+        "the source sword, luminous slash, rain plain, rocks and storm environment",
+        "the source FIRST LIGHT, THE TIDE TURNS, NO WITNESS, SUZURI and KEEPER OF THE QUIET HOUR wording",
+        "the source brush mark, ink circle, poster layout, action choreography and exact edit timing",
+        "the source creator identity, MiniMax H3 claim and anime identity"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult orbital botanist holds one breath inside a fogged helmet, a single condensation line writes 'WAKE', a silent greenhouse wide waits, one seed pod opens in a full-body gesture, and the same figure resolves into the original name poster 'MARA'.",
+          "prompt_seed": "An adult orbital botanist holds one breath inside a fogged helmet, a single condensation line writes 'WAKE', a silent greenhouse wide waits, one seed pod opens in a full-body gesture, and the same figure resolves into the original name poster 'MARA'."
+        },
+        {
+          "concept": "An adult jazz drummer remains still with one lifted stick, a brush of spilled silver forms 'HUSH', the empty club holds, one cymbal strike releases light, and the musician settles into an original 'NOVA' identity card.",
+          "prompt_seed": "An adult jazz drummer remains still with one lifted stick, a brush of spilled silver forms 'HUSH', the empty club holds, one cymbal strike releases light, and the musician settles into an original 'NOVA' identity card."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Immediate motion removes the retention contrast.",
+          "repair": "Hold one adult character portrait with three identity anchors until one micro-action becomes salient."
+        },
+        {
+          "failure": "Dense copy breaks the pause rhythm.",
+          "repair": "Use one restrained material mark with no more than one short exact phrase."
+        },
+        {
+          "failure": "Constant character action spends the stored energy too early.",
+          "repair": "Return to a wide environment where ambient motion continues but the adult waits."
+        },
+        {
+          "failure": "Multiple attacks convert the mechanism into an action montage.",
+          "repair": "Release exactly one committed full-body action and settle immediately afterward."
+        },
+        {
+          "failure": "Another narrative beat after the poster weakens closure.",
+          "repair": "Convert the settled identity into a stable poster with one name and at most one identity line."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult orbital botanist holds one breath inside a fogged helmet, a single condensation line writes 'WAKE', a silent greenhouse wide waits, one seed pod opens in a full-body gesture, and the same figure resolves into the original name poster 'MARA'.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult jazz drummer remains still with one lifted stick, a brush of spilled silver forms 'HUSH', the empty club holds, one cymbal strike releases light, and the musician settles into an original 'NOVA' identity card.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

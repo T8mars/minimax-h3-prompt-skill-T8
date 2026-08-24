@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original clearly adult climber as a small readable figure against a single overwhelming vertical objective. Alternate environmental scale views with tactile close evidence of at least three different load-bearing contacts such as tool bite, foot placement and rope tension. Introduce one recoverable contact failure that visibly lowers or rotates the adult, then show the arrest and a new valid placement in the same geography before ascent continues. Preserve at least three equipment and costume anchors throughout. Cross the final ridge in close view, then release into one stable wide that proves summit arrival and completed scale without celebration. The reusable mechanism is scale objective, tactile contact evidence, one recoverable failure, continuity-bearing equipment, ridge crossing and summit-scale release—not the source woman, face, clothing, ice axes, mountain, K2 claim, exact stunt, camera, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one adult climber as a small figure against one dominant vertical objective.",
+      "purpose": "Makes height and direction measurable.",
+      "ablation_failure": "Close action without scale has no destination.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Show at least three distinct load-bearing contacts in tactile close evidence.",
+      "purpose": "Makes progress physical rather than decorative.",
+      "ablation_failure": "Generic arm motion cannot prove climbing.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Include one recoverable contact failure, visible loss and explicit arrest in the same geography.",
+      "purpose": "Creates risk while preserving causal continuity.",
+      "ablation_failure": "A cut from slip to safety erases the recovery mechanism.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Preserve at least three equipment or costume anchors across every scale change.",
+      "purpose": "Maintains adult identity and route continuity.",
+      "ablation_failure": "Changing gear makes the summit figure uncertain.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Cross the ridge close, then end on one stable wide proving arrival without celebration.",
+      "purpose": "Converts tactile effort into scale payoff.",
+      "ablation_failure": "A close victory pose substitutes emotion for spatial proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source adult woman, face, mustard jacket, black clothing and exact performance",
+    "the source ice axes, crampons, rope, snow and climbing equipment",
+    "the source K2-like mountain, ice wall, ridge, surrounding peaks and sunrise",
+    "the source slips, tool strikes, framing, route, camera order and 15-second timing",
+    "the source creator identity, Seedance 2.5 wording and mountain claim"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult maintenance climber scales a giant wind-turbine blade using magnetic pads, tether and boot clamps; one pad releases, the tether arrests the fall, and a final pullback reveals the adult at the nacelle above the cloud layer.",
+      "prompt_seed": "An adult maintenance climber scales a giant wind-turbine blade using magnetic pads, tether and boot clamps; one pad releases, the tether arrests the fall, and a final pullback reveals the adult at the nacelle above the cloud layer."
+    },
+    {
+      "concept": "An adult cave surveyor ascends a vertical crystal shaft using anchors, knee braces and a haul line; one anchor cracks, a lower brace catches the body, and the final wide reveals the surveyor at a daylight sinkhole rim.",
+      "prompt_seed": "An adult cave surveyor ascends a vertical crystal shaft using anchors, knee braces and a haul line; one anchor cracks, a lower brace catches the body, and the final wide reveals the surveyor at a daylight sinkhole rim."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Close action without scale has no destination.",
+      "repair": "Establish one adult climber as a small figure against one dominant vertical objective."
+    },
+    {
+      "failure": "Generic arm motion cannot prove climbing.",
+      "repair": "Show at least three distinct load-bearing contacts in tactile close evidence."
+    },
+    {
+      "failure": "A cut from slip to safety erases the recovery mechanism.",
+      "repair": "Include one recoverable contact failure, visible loss and explicit arrest in the same geography."
+    },
+    {
+      "failure": "Changing gear makes the summit figure uncertain.",
+      "repair": "Preserve at least three equipment or costume anchors across every scale change."
+    },
+    {
+      "failure": "A close victory pose substitutes emotion for spatial proof.",
+      "repair": "Cross the ridge close, then end on one stable wide proving arrival without celebration."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult maintenance climber scales a giant wind-turbine blade using magnetic pads, tether and boot clamps; one pad releases, the tether arrests the fall, and a final pullback reveals the adult at the nacelle above the cloud layer.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult cave surveyor ascends a vertical crystal shaft using anchors, knee braces and a haul line; one anchor cracks, a lower brace catches the body, and the final wide reveals the surveyor at a daylight sinkhole rim.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

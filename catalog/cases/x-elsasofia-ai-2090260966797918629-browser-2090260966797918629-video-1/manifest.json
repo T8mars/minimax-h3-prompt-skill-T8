@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-elsasofia-ai-2090260966797918629-browser-2090260966797918629-video-1",
+  "slug": "tactile-travel-chapters-scale-ascent",
+  "title": "触觉旅行章法｜近物接触到高位全景递进",
+  "source_title": "旅行档案感｜门、市场、水岸与高处终景",
+  "summary": "用同一人物、服装与行进方向穿过四个空间章节，每章先让手接触一种本地材质或对象，再把景别从窄巷近物逐步扩到市场、人水关系和高处城市全景；统一的模拟胶片缺陷把离散地点压成一段可回忆的旅行档案。",
+  "status": "released",
+  "source_duration_seconds": 30.144,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/tactile-travel-chapters-scale-ascent",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-elsasofia-ai-2090260966797918629-browser-2090260966797918629-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-elsasofia-ai-2090260966797918629-browser-2090260966797918629-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-tactile-travel-chapters-scale-ascent-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "稳定旅行者身份/服装/方向 + 至少4个地理章节 + 每章1次本地材质接触 + 窄巷近物→社会场→移动地理→攀升全景 + 统一档案介质 + 高位稳定终景",
+  "recommended_input": "成年植物学家穿铁锈色夹克、背帆布挎包、留深色长辫，保持向前并用左手一次划过波纹铁皮站门；她抓住一根粗缆绳，白色调查船从后方左向右通过；船越过肩线后她才松手；她抵达高位观景点稳定停留，同一夹克、挎包和长辫在岛屿海岸全景前可读",
+  "required_anchors": [
+    "Keep one traveler identity, wardrobe anchor and forward route direction across all chapters.",
+    "Give every location one brief physical contact with a local material or object.",
+    "Use one consistent archival-medium rule across all chapters.",
+    "Resolve the route through a climb and stable high-position hold."
+  ],
+  "tags": [
+    "tactile",
+    "travel",
+    "chapters",
+    "scale",
+    "ascent"
+  ],
+  "quality": {
+    "weighted_score": 4.912,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T18:34:24+08:00",
+  "updated_at": "2026-08-23T21:18:40+08:00"
+}

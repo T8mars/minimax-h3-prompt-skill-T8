@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-hbcoop-2087539373420228818-browser-2087539373420228818-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "c3fb9ce400fb5581949456b2959bf0c3ef2b762667c284d669a345d91e5fa360",
+    "creative_dna_sha256": "8b9c953ab3370e378024a704a01eb11df575f4804679590e913868367e674c69"
+  },
+  "content": {
+    "title": "Material Credit Vignettes | Recurring Motif to a Held Master Title",
+    "summary": "Assign one concise original credit to each of at least three materially distinct object vignettes, and let each material perform one motion that frames the copy. Carry one motif across the sequence, return to an established material family, and gather everything into one fully readable held master title.",
+    "quick_start": {
+      "input_format": "three materially distinct credit vignettes + one original short credit and material-specific framing motion per vignette + recurring motif across scenes + return to an established material family + large held original master title",
+      "recommended_input": "A polar-research title sequence moves through frost-cracked slate, braided copper wire, and a brass compass lens, each carrying one original credit. The same amber locator bead recurs in every scene, rolls through a returned slate route map, and locks into the final carved title NORTH SIGNAL, which holds cleanly.",
+      "required_anchors": [
+        "Use at least three materially distinct object vignettes, each with one short readable original credit.",
+        "Bind each credit to one visible material-specific motion that never covers the text.",
+        "Return to one earlier material family before the master title and use the motif as the bridge.",
+        "Resolve one large master title and hold it fully readable with no further event."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Assign one concise original credit to each of at least three materially distinct object vignettes, and let each material perform one motion that frames the copy. Carry one motif across the sequence, return to an established material family, and gather everything into one fully readable held master title.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Build a short title sequence from at least three materially different object vignettes. Give each vignette one concise original credit and one material-specific motion that frames rather than obscures the text. Repeat one color, geometric or token motif across the vignettes, then return to an established material family and let the recurring motif bridge into one large master title. Hold the final title without further transformation. The reusable mechanism is material-specific credit relay, recurring motif, gathered transition and master-title lockup—not the source ancient setting, names, relief map, red channel, green stones, mirror vessel, fire figure, pyramid forms, green sphere, exact title, typeface, scene order, creator identity or MiniMax H3 branding.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Use at least three materially distinct object vignettes, each with one short readable original credit.",
+          "purpose": "Creates a credit relay rather than a single decorative title.",
+          "ablation_failure": "Repeating one surface makes the middle states interchangeable.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Bind each credit to one visible material-specific motion that never covers the text.",
+          "purpose": "Makes typography part of the physical scene while preserving readability.",
+          "ablation_failure": "Generic crossfades or occluded copy remove the tactile proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Carry one color, shape or token motif through every vignette.",
+          "purpose": "Provides continuity across incompatible materials.",
+          "ablation_failure": "No recurring motif turns the sequence into unrelated product shots.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Return to one earlier material family before the master title and use the motif as the bridge.",
+          "purpose": "Gathers prior evidence into a motivated finale.",
+          "ablation_failure": "An unrelated final background makes the title feel appended.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Resolve one large master title and hold it fully readable with no further event.",
+          "purpose": "Provides the terminal information state.",
+          "ablation_failure": "Continuing transformations prevent title retention.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source names, credits, title wording, typeface and exact typographic hierarchy",
+        "the source ancient relief map, red and turquoise channels, pyramid-like blocks and terrain layout",
+        "the source green stone ring, black textile, mirror vessel, clay pot, flame and miniature figure",
+        "the source green sphere, title sculpture, exact material order, camera moves and lighting cues",
+        "the source creator identity, MiniMax H3 claim, platform overlay, watermark and branding"
+      ],
+      "instantiations": [
+        {
+          "concept": "A polar research drama uses frost-cracked slate, braided signal wire, a brass compass lens and blue ice channels to carry three original credits; one amber locator bead recurs across all materials and locks into the final carved title.",
+          "prompt_seed": "A polar research drama uses frost-cracked slate, braided signal wire, a brass compass lens and blue ice channels to carry three original credits; one amber locator bead recurs across all materials and locks into the final carved title."
+        },
+        {
+          "concept": "A botanical mystery uses pressed leaves, seed mosaics, a glass specimen dome and irrigation-map channels for three credits; one white seed token crosses every vignette and becomes the dot of the final original title.",
+          "prompt_seed": "A botanical mystery uses pressed leaves, seed mosaics, a glass specimen dome and irrigation-map channels for three credits; one white seed token crosses every vignette and becomes the dot of the final original title."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Repeating one surface makes the middle states interchangeable.",
+          "repair": "Use at least three materially distinct object vignettes, each with one short readable original credit."
+        },
+        {
+          "failure": "Generic crossfades or occluded copy remove the tactile proof.",
+          "repair": "Bind each credit to one visible material-specific motion that never covers the text."
+        },
+        {
+          "failure": "No recurring motif turns the sequence into unrelated product shots.",
+          "repair": "Carry one color, shape or token motif through every vignette."
+        },
+        {
+          "failure": "An unrelated final background makes the title feel appended.",
+          "repair": "Return to one earlier material family before the master title and use the motif as the bridge."
+        },
+        {
+          "failure": "Continuing transformations prevent title retention.",
+          "repair": "Resolve one large master title and hold it fully readable with no further event."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A polar research drama uses frost-cracked slate, braided signal wire, a brass compass lens and blue ice channels to carry three original credits; one amber locator bead recurs across all materials and locks into the final carved title.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A botanical mystery uses pressed leaves, seed mosaics, a glass specimen dome and irrigation-map channels for three credits; one white seed token crosses every vignette and becomes the dot of the final original title.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

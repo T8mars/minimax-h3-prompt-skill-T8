@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ciri-ai-2086672264712556614-browser-2086672264712556614-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "af9babb4b846f6e2f486dbf056f73e5960d7dbbd65cf1553a4d16f7434285031",
+    "creative_dna_sha256": "dec17f8334aa31df8ebd1a6471ee7d61137a73112e48a1f11ddd2c999f6a5b9f"
+  },
+  "content": {
+    "title": "Continuous Emotion Pressure Curve | Restraint, Peak, Concealment, Residue",
+    "summary": "Lock one adult portrait, background, lens distance and light. Accumulate at least three non-resetting facial or breathing pressure indicators, resolve once into a maximum expression, use one brief protective concealment after the peak, then reveal the face and hold visible emotional residue instead of restoring neutrality.",
+    "quick_start": {
+      "input_format": "locked adult close portrait, background, light and lens + calibrated neutral baseline + at least three cumulative pressure indicators + exactly one emotional peak + brief post-peak protective concealment + revealed face with persistent emotional residue",
+      "recommended_input": "In one locked control-room close-up, an adult rescue dispatcher accumulates jaw tension, controlled blinks, reddening eyes and a trapped inhale. One safe-return chime releases a single crying peak; she briefly covers her mouth, lowers her hand, steadies her breath and ends with wet eyes still fixed on the status monitor.",
+      "required_anchors": [
+        "Lock one adult portrait, background, lens distance and light for the complete performance.",
+        "Accumulate at least three readable tension indicators without resetting earlier evidence.",
+        "Place one brief self-protective concealment gesture after the peak and then reveal the face again.",
+        "Hold visible emotional residue such as wet eyes, altered breath or gaze in the terminal state."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Lock one adult portrait, background, lens distance and light. Accumulate at least three non-resetting facial or breathing pressure indicators, resolve once into a maximum expression, use one brief protective concealment after the peak, then reveal the face and hold visible emotional residue instead of restoring neutrality.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Lock one adult portrait, background, lens distance and light so that performance changes remain directly comparable. Begin from a controlled emotional baseline, accumulate at least three small facial or breathing indicators without resetting them, resolve once into a single maximum expression, then use one brief self-protective concealment gesture. Reveal the face again and end with visible physiological or behavioral residue rather than restored neutrality. The reusable mechanism is calibrated baseline, cumulative restraint, single peak, protective concealment and residual recovery—not the source woman, face, earrings, grey garment, field background, tear pattern, exact expression, camera, timing, creator identity or unsupported model mapping.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Lock one adult portrait, background, lens distance and light for the complete performance.",
+          "purpose": "Makes microchanges comparable against a stable baseline.",
+          "ablation_failure": "Camera or lighting changes can impersonate emotional progression.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Accumulate at least three readable tension indicators without resetting earlier evidence.",
+          "purpose": "Builds a continuous pressure curve rather than disconnected expressions.",
+          "ablation_failure": "Independent face poses become an expression test.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use exactly one maximum expression after the restrained build.",
+          "purpose": "Provides a clear emotional apex.",
+          "ablation_failure": "Repeated peaks flatten the arc into cycling.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Place one brief self-protective concealment gesture after the peak and then reveal the face again.",
+          "purpose": "Adds behavioral consequence while preserving proof of recovery.",
+          "ablation_failure": "Ending fully hidden removes the final performance evidence.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Hold visible emotional residue such as wet eyes, altered breath or gaze in the terminal state.",
+          "purpose": "Makes recovery physically credible.",
+          "ablation_failure": "Instant neutrality erases the cost of the peak.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source woman's facial identity, hair, hoop earrings, grey garment and exact tear pattern",
+        "the source open field background, overcast light, wind behavior, lens and crop",
+        "the source lip, eye, cheek, crying, garment-cover and gaze sequence or exact timing",
+        "the source beauty rendering, skin texture, framing, performance identity and character likeness",
+        "the source creator identity, Seedance 2.5 claim, platform overlay, watermark and branding"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult rescue dispatcher in a fixed fluorescent control-room portrait holds composure through jaw tension, rapid blinking and a trapped breath, breaks once after hearing a safe-return confirmation, covers her mouth with one hand, then lowers it and ends with wet eyes and steadier breathing.",
+          "prompt_seed": "An adult rescue dispatcher in a fixed fluorescent control-room portrait holds composure through jaw tension, rapid blinking and a trapped breath, breaks once after hearing a safe-return confirmation, covers her mouth with one hand, then lowers it and ends with wet eyes and steadier breathing."
+        },
+        {
+          "concept": "An adult stage actor in a locked dressing-room mirror portrait suppresses laughter through cheek tension, nostril movement and a trembling lip, releases one full laugh, briefly hides behind a costume collar, then returns with flushed cheeks and residual smile breaths.",
+          "prompt_seed": "An adult stage actor in a locked dressing-room mirror portrait suppresses laughter through cheek tension, nostril movement and a trembling lip, releases one full laugh, briefly hides behind a costume collar, then returns with flushed cheeks and residual smile breaths."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Camera or lighting changes can impersonate emotional progression.",
+          "repair": "Lock one adult portrait, background, lens distance and light for the complete performance."
+        },
+        {
+          "failure": "Independent face poses become an expression test.",
+          "repair": "Accumulate at least three readable tension indicators without resetting earlier evidence."
+        },
+        {
+          "failure": "Repeated peaks flatten the arc into cycling.",
+          "repair": "Use exactly one maximum expression after the restrained build."
+        },
+        {
+          "failure": "Ending fully hidden removes the final performance evidence.",
+          "repair": "Place one brief self-protective concealment gesture after the peak and then reveal the face again."
+        },
+        {
+          "failure": "Instant neutrality erases the cost of the peak.",
+          "repair": "Hold visible emotional residue such as wet eyes, altered breath or gaze in the terminal state."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult rescue dispatcher in a fixed fluorescent control-room portrait holds composure through jaw tension, rapid blinking and a trapped breath, breaks once after hearing a safe-return confirmation, covers her mouth with one hand, then lowers it and ends with wet eyes and steadier breathing.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult stage actor in a locked dressing-room mirror portrait suppresses laughter through cheek tension, nostril movement and a trembling lip, releases one full laugh, briefly hides behind a costume collar, then returns with flushed cheeks and residual smile breaths.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

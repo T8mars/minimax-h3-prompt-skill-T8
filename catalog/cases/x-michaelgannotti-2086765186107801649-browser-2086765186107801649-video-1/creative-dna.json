@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Bring one group carrier to a clearly visible environmental boundary. Keep a lead subject identifiable as that subject performs the first complete crossing and establishes a viable direction beyond the boundary. Use the leader's continued advance as the cue for an ordered follower release, then widen or elevate the view until carrier, crossing path, leader and group destination are readable together. The reusable mechanism is carrier arrival, pioneer proof, queue release and spatial confirmation, not the source longship, warriors, weapons, shields, storm or historical identity.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one group carrier, one environmental boundary and one identifiable lead subject in the same opening geography.",
+      "purpose": "Defines origin, obstacle and agent before movement.",
+      "ablation_failure": "A close action opening cannot prove where the group came from or what must be crossed.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Let the lead subject complete the first crossing before the follower group begins its release.",
+      "purpose": "Makes the route proof causal and attributable.",
+      "ablation_failure": "Simultaneous mass movement removes the pioneer function.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep the lead subject moving beyond the boundary while the first follower enters the proven path.",
+      "purpose": "Turns solo success into a release signal.",
+      "ablation_failure": "If the leader stops or disappears, the queue lacks directional ownership.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Release followers in one ordered flow while keeping the carrier and boundary traceable.",
+      "purpose": "Makes group transfer legible instead of chaotic.",
+      "ablation_failure": "Detached crowd inserts or reversed flow break the spatial handoff.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End from a wider or higher view that shows changed occupancy across carrier, path and destination.",
+      "purpose": "Provides objective completion evidence.",
+      "ablation_failure": "Ending on a single hero pose cannot prove the group has transferred.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source Viking-like warriors, faces, armor, swords, round shields and group identity",
+    "the source dark longship, black sail, emblem, beach, storm clouds and lightning",
+    "the source exact leap, weapon raise, disembark order, shoreline angle and crane movement",
+    "the source gray-blue historical-war palette and any marks or heraldry",
+    "the source audio, battle vocalization, wave timing and creator post wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "An original flood-response barge reaches a submerged orchard road. A lead medic steps onto a stable pallet bridge, signals forward, and guides three responders with silver cases before a high view proves the barge-to-clinic supply line.",
+      "prompt_seed": "An original flood-response barge reaches a submerged orchard road. A lead medic steps onto a stable pallet bridge, signals forward, and guides three responders with silver cases before a high view proves the barge-to-clinic supply line."
+    },
+    {
+      "concept": "An original lunar freight crawler reaches a crater rim. A lead survey robot tests one articulated ramp, advances to a beacon and releases six small sensor units; an overhead view confirms the crawler, ramp and distributed array.",
+      "prompt_seed": "An original lunar freight crawler reaches a crater rim. A lead survey robot tests one articulated ramp, advances to a beacon and releases six small sensor units; an overhead view confirms the crawler, ramp and distributed array."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A close action opening cannot prove where the group came from or what must be crossed.",
+      "repair": "Establish one group carrier, one environmental boundary and one identifiable lead subject in the same opening geography."
+    },
+    {
+      "failure": "Simultaneous mass movement removes the pioneer function.",
+      "repair": "Let the lead subject complete the first crossing before the follower group begins its release."
+    },
+    {
+      "failure": "If the leader stops or disappears, the queue lacks directional ownership.",
+      "repair": "Keep the lead subject moving beyond the boundary while the first follower enters the proven path."
+    },
+    {
+      "failure": "Detached crowd inserts or reversed flow break the spatial handoff.",
+      "repair": "Release followers in one ordered flow while keeping the carrier and boundary traceable."
+    },
+    {
+      "failure": "Ending on a single hero pose cannot prove the group has transferred.",
+      "repair": "End from a wider or higher view that shows changed occupancy across carrier, path and destination."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An original flood-response barge reaches a submerged orchard road. A lead medic steps onto a stable pallet bridge, signals forward, and guides three responders with silver cases before a high view proves the barge-to-clinic supply line.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An original lunar freight crawler reaches a crater rim. A lead survey robot tests one articulated ramp, advances to a beacon and releases six small sensor units; an overhead view confirms the crawler, ramp and distributed array.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

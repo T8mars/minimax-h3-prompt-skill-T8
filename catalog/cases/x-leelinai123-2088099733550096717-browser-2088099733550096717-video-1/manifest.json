@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-leelinai123-2088099733550096717-browser-2088099733550096717-video-1",
+  "slug": "build-microexpression-greeting-arc",
+  "title": "微表情表演｜直视、半笑、垂眼到开放回稳",
+  "source_title": "锁定近景｜眼神、半笑、垂眼与停顿累积表演",
+  "summary": "用几乎锁定的单人近景先建立稳定直视，再通过半笑、垂眼、闭眼停顿、重新抬眼和开放回稳累积一段微表演；不靠切镜、换景或大动作遮盖连续性。作为既有微表情问候模板的新证据，不新增选择器。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/build-microexpression-greeting-arc",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-leelinai123-2088099733550096717-browser-2088099733550096717-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-leelinai123-2088099733550096717-browser-2088099733550096717-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-microexpression-greeting-arc-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-alone1moon-2087282913410764864-browser-2087282913410764864-video-1",
+  "input_format": "单一人像 + 侧身开始 + 稳定直视 + 垂眼停顿 + 1次峰值表情 + 开放表情回稳",
+  "recommended_input": "原创成年纸张修复师穿靛蓝工作外套，画面右侧保留虚化同事肩部，先稳定直视；修复师低头看画面下方修复地图边缘，只闭眼一口气；修复师短暂眨眼，较小的笑意回落到平静中性表情",
+  "required_anchors": [
+    "Establish one clearly adult subject and stable direct gaze in a locked close-up.",
+    "Use one restrained half-smile as the first countable peak.",
+    "Return to the same gaze axis with an open attentive expression.",
+    "Settle through one small blink or smile into a relaxed terminal hold."
+  ],
+  "tags": [
+    "microexpression",
+    "greeting",
+    "arc"
+  ],
+  "quality": {
+    "weighted_score": 4.855,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T16:03:44+08:00",
+  "updated_at": "2026-08-23T16:16:05+08:00"
+}

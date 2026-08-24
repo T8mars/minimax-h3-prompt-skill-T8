@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithnomi-2091033183789912451-browser-2091033183789912451-video-1",
+  "slug": "foreground-fixation-background-hazard-escalation",
+  "title": "前景执念对抗背景灾难｜危险升级但微小任务不断线",
+  "source_title": "箭雨中刷手机｜固定前景任务与战场危险持续错位",
+  "summary": "把一名明确成年原创人物和一个微小、可持续操作的前景任务锁在画面中心，让背景危险从人群混乱、横穿武器、爆炸到贴脸擦过逐级升级；人物只做必要闪避并始终返回同一任务，结尾危险退去而注意力依旧不变，以尺度与行为反差形成喜剧。",
+  "status": "released",
+  "source_duration_seconds": 15.274667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/foreground-fixation-background-hazard-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithnomi-2091033183789912451-browser-2091033183789912451-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithnomi-2091033183789912451-browser-2091033183789912451-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-foreground-fixation-background-hazard-escalation-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "明确成年原创主体和一个小型可重复前景任务先建立 + 背景危险至少经过三档接近等级升级且方向可读 + 每次危险后双手与视线都回到同一任务物 + 早期只做最小避让并把最大身体位移保留给一次近接峰值 + 危险过去后重新执行原任务而非庆祝或击败威胁",
+  "recommended_input": "成年温室技术员在中央校准琥珀湿度计，仪表屏幕、双手和低头视线清楚；空推车横穿中景，技术员只转一个肩膀避让，然后恢复同一正面任务；技术员恢复站直、低头并继续校准，湿地与远处喷淋逐渐稳定",
+  "required_anchors": [
+    "Establish one clearly adult original protagonist and one small repeatable foreground task before hazards escalate.",
+    "Escalate at least three hazards from background activity to near contact while keeping their direction legible.",
+    "Use the minimum avoidance needed until one near-contact peak causes the largest body displacement.",
+    "End with the adult resuming the task after danger passes, not celebrating or defeating the threat."
+  ],
+  "tags": [
+    "foreground",
+    "fixation",
+    "background",
+    "hazard",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.955,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T02:37:38+08:00",
+  "updated_at": "2026-08-24T02:46:52+08:00"
+}

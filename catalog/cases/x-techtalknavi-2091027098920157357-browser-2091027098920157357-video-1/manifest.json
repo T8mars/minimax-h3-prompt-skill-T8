@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-techtalknavi-2091027098920157357-browser-2091027098920157357-video-1",
+  "slug": "depth-layer-carriers-destination-light-reveal",
+  "title": "纵深载体引导目的光｜稳定结构中逐级扩大出口",
+  "source_title": "深海光之圣堂｜水母纵深引导月光出口",
+  "summary": "在封闭暗空间里先建立一条清楚的纵向运动轴，让重复慢速载体分布在前中后景，固定建筑肋骨持续提供比例和位移参照；摄影机沿同一轴平稳推进或上升，远端目的光逐步增大并提高占比，最终以光口压倒结构完成空间释放。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/depth-layer-carriers-destination-light-reveal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techtalknavi-2091027098920157357-browser-2091027098920157357-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techtalknavi-2091027098920157357-browser-2091027098920157357-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-depth-layer-carriers-destination-light-reveal-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "封闭空间中唯一远端目的光与运动轴先建立 + 同族慢速载体分布至少三层纵深并产生不同视差 + 固定肋骨持续提供比例与方向证据 + 同一目的光单调增大且只被短暂遮挡 + 光口主导终局同时保留边缘结构证明同一空间",
+  "recommended_input": "黑暗圆形档案塔低处，唯一白色天窗位于远上方中央，书架肋骨形成竖向笼架；书架肋骨与阅读平台依次掠过，天窗逐步增大但仍被结构框住；白色天窗占满大部分画面，暗色书架仍留在边缘证明同一空间",
+  "required_anchors": [
+    "Establish one distant destination light and one unambiguous movement axis inside an enclosure.",
+    "Place related slow carriers on at least three depth planes with different apparent speeds.",
+    "Grow the same destination light monotonically while carriers may briefly occlude it.",
+    "End when light dominates but leave edge anchors long enough to prove arrival from the original enclosure."
+  ],
+  "tags": [
+    "depth",
+    "layer",
+    "carriers",
+    "destination",
+    "light",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.958,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T02:52:26+08:00",
+  "updated_at": "2026-08-24T03:04:12+08:00"
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original clearly adult participant, one continuous destination direction and one shared obstacle environment before the first crossing. Chain at least three materially different obstacle classes so each requires a different body strategy, and preserve camera, wardrobe and environmental continuity between them. Include one recoverable fall or immersion that leaves an observable state such as wet clothing, mud or dust; show the adult recovering inside the route and retain that state through all later obstacles. End only after an environmental response marks arrival and a waiting adult or concrete delivery target resolves the promised destination. The reusable mechanism is continuous route, locomotion-class escalation, failure-state persistence, in-route recovery and terminal reunion—not the source woman, man, faces, costumes, water garden, lotus pads, log, ropes, stones, birds, romance, mythology, choreography, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one adult participant, one destination direction and a shared obstacle environment before the first crossing.",
+      "purpose": "Turns separate stunts into one coherent route with a measurable goal.",
+      "ablation_failure": "Without route geography, the sequence reads as unrelated obstacle inserts.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use at least three material obstacle classes that require different body strategies.",
+      "purpose": "Creates genuine escalation through motion change rather than visual decoration.",
+      "ablation_failure": "Repeating the same jump cannot prove adaptive progress.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Include one recoverable fall or immersion and preserve its visible state afterward.",
+      "purpose": "Gives failure a cumulative physical consequence.",
+      "ablation_failure": "Instantly dry or clean continuity erases the route history.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Show recovery inside the route and continue without resetting location or identity.",
+      "purpose": "Keeps the failure causally connected to later effort.",
+      "ablation_failure": "A recovery cut to a new scene breaks the one-route promise.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Resolve the destination through an environmental arrival cue and a waiting adult or delivery target.",
+      "purpose": "Provides both spatial and narrative proof of completion.",
+      "ablation_failure": "Ending on the last obstacle leaves the motive unresolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source adult woman and man, faces, bodies, hair, clothing, styling, expressions and relationship",
+    "the source Chinese-fantasy water garden, bamboo, pavilion, red lanterns, sunrise and exact route layout",
+    "the source lotus pads, log, hanging ropes, stones, birds and obstacle choreography",
+    "the source wet-costume appearance, falls, crawling, gestures, meeting pose, camera path and 30-second timing",
+    "the source creator identity, mythic reunion premise, Seedance 2.5 claim, watermark, prompt text and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult greenhouse courier crosses buoyant irrigation mats, a rotating maintenance pipe, hanging service straps and separated concrete pylons; a fall leaves the jacket wet, and an opening flock of drone pollinators reveals the colleague receiving a sealed seed capsule.",
+      "prompt_seed": "An adult greenhouse courier crosses buoyant irrigation mats, a rotating maintenance pipe, hanging service straps and separated concrete pylons; a fall leaves the jacket wet, and an opening flock of drone pollinators reveals the colleague receiving a sealed seed capsule."
+    },
+    {
+      "concept": "An adult harbor medic crosses flexible net floats, a rolling fender, swinging rescue loops and spaced dock posts; salt spray remains on the uniform until warning gulls lift and expose the waiting triage partner.",
+      "prompt_seed": "An adult harbor medic crosses flexible net floats, a rolling fender, swinging rescue loops and spaced dock posts; salt spray remains on the uniform until warning gulls lift and expose the waiting triage partner."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without route geography, the sequence reads as unrelated obstacle inserts.",
+      "repair": "Establish one adult participant, one destination direction and a shared obstacle environment before the first crossing."
+    },
+    {
+      "failure": "Repeating the same jump cannot prove adaptive progress.",
+      "repair": "Use at least three material obstacle classes that require different body strategies."
+    },
+    {
+      "failure": "Instantly dry or clean continuity erases the route history.",
+      "repair": "Include one recoverable fall or immersion and preserve its visible state afterward."
+    },
+    {
+      "failure": "A recovery cut to a new scene breaks the one-route promise.",
+      "repair": "Show recovery inside the route and continue without resetting location or identity."
+    },
+    {
+      "failure": "Ending on the last obstacle leaves the motive unresolved.",
+      "repair": "Resolve the destination through an environmental arrival cue and a waiting adult or delivery target."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult greenhouse courier crosses buoyant irrigation mats, a rotating maintenance pipe, hanging service straps and separated concrete pylons; a fall leaves the jacket wet, and an opening flock of drone pollinators reveals the colleague receiving a sealed seed capsule.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult harbor medic crosses flexible net floats, a rolling fender, swinging rescue loops and spaced dock posts; salt spray remains on the uniform until warning gulls lift and expose the waiting triage partner.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

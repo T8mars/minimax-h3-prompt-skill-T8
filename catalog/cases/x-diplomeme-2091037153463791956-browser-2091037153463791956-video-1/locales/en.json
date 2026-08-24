@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-diplomeme-2091037153463791956-browser-2091037153463791956-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "162132075a6ed52e49ddc6bcdf8e6d545e90665e7610e3a7c1cf5afe71424443",
+    "creative_dna_sha256": "6f23fa13b666cb8f19104ac3a3ca107a5757c94bf3c4acdac3c47fbf6ca1a458"
+  },
+  "content": {
+    "title": "Public Recognition | Table Anticipation to Stage Lockup",
+    "summary": "Establish expectation through a large formal venue and a calm table group, then let one public reveal convert private relationships into a shared reaction. Release the emotion through an embrace and a continuous route through the crowd, ending with the recognized subject locked at the stage destination.",
+    "quick_start": {
+      "input_format": "public venue and destination + calm small-group baseline + single public reveal + shared release and continuous route + subject-and-recognition-object terminal lockup",
+      "recommended_input": "An amber-lit glass auditorium faces a single illuminated specimen podium, with deep teal seawater and distant coral structures beyond the windows. A projection shows only an original reef-restoration diagram and four simple portraits. Back at the same table, all four people register surprise together while the lead engineer briefly holds one breath. The same engineer opens a box and raises a small living-coral capsule beside the microphone as a live reef image behind them reveals new polyps. Preserve visible speaking motion without prescribing dialogue.",
+      "required_anchors": [
+        "Establish the full public venue and terminal recognition destination before isolating a peer group.",
+        "Create a calm, readable small-group baseline inside the larger event.",
+        "Keep the recognized subject spatially traceable through group release and movement toward the destination.",
+        "End with the same subject, a concrete recognition object and the public destination readable together."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Establish expectation through a large formal venue and a calm table group, then let one public reveal convert private relationships into a shared reaction. Release the emotion through an embrace and a continuous route through the crowd, ending with the recognized subject locked at the stage destination.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Establish a public recognition venue and its terminal stage before narrowing to one small peer group with a calm relational baseline. Use one public announcement or display to trigger a connected, visible group reaction. Keep the recognized subject traceable through an uninterrupted chain of embraces, standing and movement across the venue, then finish with the same subject isolated at the public destination holding a concrete recognition object. The mechanism is private baseline to public-status transformation, not a celebrity, award brand or specific speech.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish the full public venue and terminal recognition destination before isolating a peer group.",
+          "purpose": "Defines the stakes and route in advance.",
+          "ablation_failure": "Opening only at the table makes the later stage feel unrelated.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Create a calm, readable small-group baseline inside the larger event.",
+          "purpose": "Provides a relationship state that can visibly change.",
+          "ablation_failure": "Immediate celebration removes contrast and causal anticipation.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use one public announcement or display to trigger reactions within that same group.",
+          "purpose": "Binds public information to private emotional consequence.",
+          "ablation_failure": "A detached reaction montage cannot prove who received the news.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Keep the recognized subject spatially traceable through group release and movement toward the destination.",
+          "purpose": "Turns status change into a continuous physical journey.",
+          "ablation_failure": "Teleporting directly to stage loses the communal payoff and route.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with the same subject, a concrete recognition object and the public destination readable together.",
+          "purpose": "Provides unambiguous terminal proof.",
+          "ablation_failure": "Ending in the aisle or on unrelated applause leaves recognition unresolved.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source Hollywood awards venue, black-tie tables, golden stage and Academy-like statuette",
+        "the source recognizable celebrity-like faces, identities, wardrobe and table grouping",
+        "the source nominee portrait wall, generated names and exact announcement graphics",
+        "the source exact surprise, embrace, aisle-walk and acceptance-speech staging",
+        "the source warm gold-and-black ceremony palette, microphone framing and documentary surface"
+      ],
+      "instantiations": [
+        {
+          "concept": "In an original underwater research dome, a wide establishes the glass auditorium and illuminated specimen platform, then four marine engineers wait at one table. A projection reveals their reef-restoration design, the team embraces the lead engineer, she walks through a corridor of colleagues and ends on the platform holding a small living-coral capsule beside the restored reef feed.",
+          "prompt_seed": "In an original underwater research dome, a wide establishes the glass auditorium and illuminated specimen platform, then four marine engineers wait at one table. A projection reveals their reef-restoration design, the team embraces the lead engineer, she walks through a corridor of colleagues and ends on the platform holding a small living-coral capsule beside the restored reef feed."
+        },
+        {
+          "concept": "In an original rural night-school festival, a wide establishes a lantern courtyard and timber presentation porch, then three adult learners and their teacher wait at a bench. A hand-painted results board reveals the selected solar-pump design, the group releases into embraces, the designer crosses the applauding courtyard and ends on the porch holding the working brass valve as water begins flowing in the background.",
+          "prompt_seed": "In an original rural night-school festival, a wide establishes a lantern courtyard and timber presentation porch, then three adult learners and their teacher wait at a bench. A hand-painted results board reveals the selected solar-pump design, the group releases into embraces, the designer crosses the applauding courtyard and ends on the porch holding the working brass valve as water begins flowing in the background."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Opening only at the table makes the later stage feel unrelated.",
+          "repair": "Establish the full public venue and terminal recognition destination before isolating a peer group."
+        },
+        {
+          "failure": "Immediate celebration removes contrast and causal anticipation.",
+          "repair": "Create a calm, readable small-group baseline inside the larger event."
+        },
+        {
+          "failure": "A detached reaction montage cannot prove who received the news.",
+          "repair": "Use one public announcement or display to trigger reactions within that same group."
+        },
+        {
+          "failure": "Teleporting directly to stage loses the communal payoff and route.",
+          "repair": "Keep the recognized subject spatially traceable through group release and movement toward the destination."
+        },
+        {
+          "failure": "Ending in the aisle or on unrelated applause leaves recognition unresolved.",
+          "repair": "End with the same subject, a concrete recognition object and the public destination readable together."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "In an original underwater research dome, a wide establishes the glass auditorium and illuminated specimen platform, then four marine engineers wait at one table. A projection reveals their reef-restoration design, the team embraces the lead engineer, she walks through a corridor of colleagues and ends on the platform holding a small living-coral capsule beside the restored reef feed.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "In an original rural night-school festival, a wide establishes a lantern courtyard and timber presentation porch, then three adult learners and their teacher wait at a bench. A hand-painted results board reveals the selected solar-pump design, the group releases into embraces, the designer crosses the applauding courtyard and ends on the porch holding the working brass valve as water begins flowing in the background.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

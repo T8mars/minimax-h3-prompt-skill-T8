@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-kollab-ai-2072214959866646811-browser-2072214959866646811-video-1",
+  "slug": "persistent-plan-strip-execution-escalation",
+  "title": "计划对照｜固定分镜条见证材质制作链",
+  "source_title": "熔岩巧克力｜固定分镜条见证制作、切开与成品兑现",
+  "summary": "让静态分镜条在下方持续可读，上方执行区严格按计划顺序推进原料处理、材质变化、成型、切开和终态；每一步都在同一布局中留下可比结果，最后用成品特写和计划末项闭合。作为既有固定计划条模板的新证据，不新增选择器。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/persistent-plan-strip-execution-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kollab-ai-2072214959866646811-browser-2072214959866646811-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kollab-ai-2072214959866646811-browser-2072214959866646811-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-persistent-plan-strip-execution-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-beginnersblog1-2088312289405673506-browser-2088312289405673506-video-1",
+  "input_format": "持续可读的计划板 + 独立执行区 + 计划顺序推进 + 至少三项可见状态变化 + 计划与终态同框",
+  "recommended_input": "下方五分之一完整显示五格无文字图标计划条，上方执行区建立原创白陶瓷根系舱、钴蓝凝胶瓶和苔藓托盘；窄铜加热器只沿接缝通过一次完成热封，同一根系舱随后翻入苔藓托盘，封线和凝胶仍可追踪；成品根系舱、封线、钴蓝凝胶和苔藓托盘与下方未变化的最后一格图标同时可见",
+  "required_anchors": [
+    "Establish one complete static plan strip and a separate live execution field at the opening.",
+    "Keep the plan strip unchanged and readable while every live state advances in its order.",
+    "Reserve one decisive reveal that verifies an internal or completed property.",
+    "End with the finished result and the unchanged terminal plan cell visible together."
+  ],
+  "tags": [
+    "persistent",
+    "plan",
+    "strip",
+    "execution",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.789,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T14:43:02+08:00",
+  "updated_at": "2026-08-23T14:58:00+08:00"
+}

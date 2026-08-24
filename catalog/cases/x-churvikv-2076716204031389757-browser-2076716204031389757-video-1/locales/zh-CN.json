@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-churvikv-2076716204031389757-browser-2076716204031389757-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "197f2ff7ed48dab08801904e5f4f59f6b77f1c18f1f46290e2f5185910cd8248",
+    "creative_dna_sha256": "80d5113f8376284698add1b760f535e015cb09a1b2ef797d499ea9d37c2173f2"
+  },
+  "content": {
+    "title": "破界航线｜主体不断线穿过材质世界到达终点",
+    "summary": "先用稳定主体和明确行进方向建立路线，单一破界动作把平面材质改写成可穿越环境；主体的朝向、速度和镜头跟随不中断，随后在新世界里经过可读地标并完成一次终点停驻。作为既有世界换材路线模板的新证据，不新增选择器。",
+    "quick_start": {
+      "input_format": "连续移动主体 + 原世界基线 + 单次全局换材 + 方向速度不断线 + 新世界终点",
+      "recommended_input": "原创三角陶瓷勘测滑翔器带单一琥珀核心，沿深灰炭笔地图膜稳定向右飞行；同一滑翔器穿过卷曲黑雾和漂浮石墨碎片，琥珀核心始终可见；滑翔器展开两片陶瓷制动翼，完成一次对齐并锁入六边形接收槽，停留证明抵达",
+      "required_anchors": [
+        "在边界变化之前建立一个稳定的载体、路线方向和相机关系。",
+        "使用一个可见的边界事件来因果地打开新的物质环境。",
+        "在新世界变得可读后揭示并保留一个目的地。",
+        "以一个显式到达动作和保持的终端状态结束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用稳定主体和明确行进方向建立路线，单一破界动作把平面材质改写成可穿越环境；主体的朝向、速度和镜头跟随不中断，随后在新世界里经过可读地标并完成一次终点停驻。作为既有世界换材路线模板的新证据，不新增选择器。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "转换前锁定1个原始承运人、1个航线方向、1个前向跟踪关系。使用因果触发的边界突破来转换周围的物质世界，同时载体的身份、航向和运动保持连续。通过新的空间关系位置保留一个可读的目的地，并以明确的到达动作结束，然后稳定等待。可重复使用的机制是通过世界转换和终点到达的路线连续性，而不是源海鸟、瓷砖墙、海洋涡流、灯塔、日落、确切的飞行路径、水印或提示措辞。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在边界变化之前建立一个稳定的载体、路线方向和相机关系。",
+          "purpose": "创建在世界转换后仍然存在的连续性基线。",
+          "ablation_failure": "从转变后的世界开始，使得转变无法被证明。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用一个可见的边界事件来因果地打开新的物质环境。",
+          "purpose": "通过可归因的动作连接两个世界。",
+          "ablation_failure": "不相关的剪辑变成普通的蒙太奇。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在动荡的中间状态中保持载体身份、航向和前进进度。",
+          "purpose": "防止转换替换主体或路线。",
+          "ablation_failure": "方向反转或身份漂移会破坏旅行逻辑。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在新世界变得可读后揭示并保留一个目的地。",
+          "purpose": "为转换后的路线提供具体目标。",
+          "ablation_failure": "每次拍摄都会改变地标，无需导航即可创造奇观。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以一个显式到达动作和保持的终端状态结束。",
+          "purpose": "证明路线已完成，而不仅仅是继续。",
+          "ablation_failure": "飞行途中结束会使机制打开。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "原始稳定的主体或与可读角色的配对。"
+        },
+        {
+          "name": "setting",
+          "constraint": "具有固定空间锚点且没有特定源表面的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段发生变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "克制的表演或运动规则，使机制保持清晰。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "一种信息顺序，无需复制源镜头边界即可证明每个状态。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "干净的最终物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创的叙事线索层次结构；没有不受支持的源音频声明。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源白色海鸟、羽毛、解剖结构、飞行姿势和确切身份",
+        "来源灰白色的瓷砖墙，裂纹图案，飞扬的白色碎片和纸状碎片",
+        "来源蓝色海洋漩涡、灯塔、岩石、日落、灯笼和准确的目的地构图",
+        "源拍摄时间、路线、摄像机轨道、着陆编排和冷暖等级",
+        "来源churvikv和DreaminaAI水印、模型标签和创作者提示文字"
+      ],
+      "instantiations": [
+        {
+          "concept": "一架原创的三角形陶瓷勘测滑翔机穿过破裂的木炭地图薄膜，继续穿过悬浮的墨水风暴峡谷并停靠在铜制气象桅杆上；不使用鸟类、海洋、灯塔或白瓷砖图像。",
+          "prompt_seed": "一架原创的三角形陶瓷勘测滑翔机穿过破裂的木炭地图薄膜，继续穿过悬浮的墨水风暴峡谷并停靠在铜制气象桅杆上；不使用鸟类、海洋、灯塔或白瓷砖图像。"
+        },
+        {
+          "concept": "原创的磁性种子​​传送器突破冷冻树脂密封，保持相同的向下螺旋穿过发光的根室，并锁定在六角形灌溉接收器中，然后保持静止。",
+          "prompt_seed": "原创的磁性种子​​传送器突破冷冻树脂密封，保持相同的向下螺旋穿过发光的根室，并锁定在六角形灌溉接收器中，然后保持静止。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "从转变后的世界开始，使得转变无法被证明。",
+          "repair": "在边界变化之前建立一个稳定的载体、路线方向和相机关系。"
+        },
+        {
+          "failure": "不相关的剪辑变成普通的蒙太奇。",
+          "repair": "使用一个可见的边界事件来因果地打开新的物质环境。"
+        },
+        {
+          "failure": "方向反转或身份漂移会破坏旅行逻辑。",
+          "repair": "在动荡的中间状态中保持载体身份、航向和前进进度。"
+        },
+        {
+          "failure": "每次拍摄都会改变地标，无需导航即可创造奇观。",
+          "repair": "在新世界变得可读后揭示并保留一个目的地。"
+        },
+        {
+          "failure": "飞行途中结束会使机制打开。",
+          "repair": "以一个显式到达动作和保持的终端状态结束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一架原创的三角形陶瓷勘测滑翔机穿过破裂的木炭地图薄膜，继续穿过悬浮的墨水风暴峡谷并停靠在铜制气象桅杆上；不使用鸟类、海洋、灯塔或白瓷砖图像。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "原创的磁性种子​​传送器突破冷冻树脂密封，保持相同的向下螺旋穿过发光的根室，并锁定在六角形灌溉接收器中，然后保持静止。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

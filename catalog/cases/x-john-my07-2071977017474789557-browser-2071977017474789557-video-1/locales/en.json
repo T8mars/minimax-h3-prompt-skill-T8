@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-john-my07-2071977017474789557-browser-2071977017474789557-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "ef0115fcf2182916e1a9a842bc18fb77b80ea0cd923cf49a12f6acce2812592e",
+    "creative_dna_sha256": "8f3519202d220cb41232cadd6866f776ef5e671ee07f08357e5146f7970da7dc"
+  },
+  "content": {
+    "title": "Observational Follow | Small Routine, One Acknowledgment, Departure",
+    "summary": "Discover one stable subject already inside an ordinary routine and follow through a connected local geography. Use recurring landmarks, one bounded encounter, one restrained acknowledgment, and a continuing departure. This is evidence for the existing observer-follow selector.",
+    "quick_start": {
+      "input_format": "in-progress ordinary action + connected landmarks + stable identity anchors + one bounded encounter + one restrained acknowledgment + continuing departure",
+      "recommended_input": "An original rooftop-garden caretaker in a faded blue work shirt tightens two gloves, follows one green pipe to reset an irrigation dripper, hangs a sand-colored shade cloth, rests with an enamel cup, gives the observer one small nod, and exits through the stair gate.",
+      "required_anchors": [
+        "Begin with the subject already performing an ordinary action rather than posing for introduction.",
+        "Use recurring landmarks and stable identity anchors to connect every small action.",
+        "Allow only one restrained acknowledgment of the observer after routine evidence is established.",
+        "End with the same subject continuing through the established route."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Discover one stable subject already inside an ordinary routine and follow through a connected local geography. Use recurring landmarks, one bounded encounter, one restrained acknowledgment, and a continuing departure. This is evidence for the existing observer-follow selector.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Let an observer discover one stable subject already inside an ordinary routine, then follow the subject through a small connected geography. Use recurring landmarks and wardrobe or prop anchors to join several modest actions; include at most one short encounter and one restrained acknowledgment of the observer. End by letting the subject continue away through the established route rather than performing for camera. The mechanism is observational discovery, connected daily actions, one acknowledgment and departure—not the source woman's identity, clothing, cat, laundry, rooftop, cup or exact lens behavior.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Begin with the subject already performing an ordinary action rather than posing for introduction.",
+          "purpose": "Creates the feeling of observational discovery.",
+          "ablation_failure": "A direct hero entrance makes the scene staged.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use recurring landmarks and stable identity anchors to connect every small action.",
+          "purpose": "Keeps the geography and person traceable.",
+          "ablation_failure": "Unrelated rooms or wardrobe drift become a lifestyle montage.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Limit the route to one brief encounter that resolves before movement continues.",
+          "purpose": "Adds lived texture without taking over the film.",
+          "ablation_failure": "Multiple encounters turn the sequence into an anthology.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Allow only one restrained acknowledgment of the observer after routine evidence is established.",
+          "purpose": "Changes the social relation without breaking documentary tone.",
+          "ablation_failure": "Repeated smiles or direct performance erase the observer-subject distance.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with the same subject continuing through the established route.",
+          "purpose": "Preserves life beyond the recording and closes directionally.",
+          "ablation_failure": "A logo or frozen portrait replaces departure with promotion.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "the source young woman's face, hairstyle, gray cropped top, pale jeans, shoes and exact body presentation",
+        "the source cat, bicycles, courtyard wall, residential lane, white laundry, rooftop chair, cup and skyline",
+        "the source hair tying, petting, laundry adjustment, seated pose, smile, wave and exact departure order",
+        "the source camera distance, focus behavior, framing, color grade and early-consumer-video look",
+        "any source watermark, creator-specific identity, neighborhood identifiers or visible brands"
+      ],
+      "instantiations": [
+        {
+          "concept": "An original rooftop-garden caretaker tightens gloves, walks past the same water tank, resets one irrigation dripper, hangs shade cloth, rests with an enamel cup, gives one nod to the observer and exits through the stair gate.",
+          "prompt_seed": "An original rooftop-garden caretaker tightens gloves, walks past the same water tank, resets one irrigation dripper, hangs shade cloth, rests with an enamel cup, gives one nod to the observer and exits through the stair gate."
+        },
+        {
+          "concept": "An original harbor book courier secures a satchel, follows one pier railing, briefly returns a loose gull tag to a keeper, clips two parcel slips, pauses on a bench, raises one hand once and continues toward the ferry ramp.",
+          "prompt_seed": "An original harbor book courier secures a satchel, follows one pier railing, briefly returns a loose gull tag to a keeper, clips two parcel slips, pauses on a bench, raises one hand once and continues toward the ferry ramp."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "A direct hero entrance makes the scene staged.",
+          "repair": "Begin with the subject already performing an ordinary action rather than posing for introduction."
+        },
+        {
+          "failure": "Unrelated rooms or wardrobe drift become a lifestyle montage.",
+          "repair": "Use recurring landmarks and stable identity anchors to connect every small action."
+        },
+        {
+          "failure": "Multiple encounters turn the sequence into an anthology.",
+          "repair": "Limit the route to one brief encounter that resolves before movement continues."
+        },
+        {
+          "failure": "Repeated smiles or direct performance erase the observer-subject distance.",
+          "repair": "Allow only one restrained acknowledgment of the observer after routine evidence is established."
+        },
+        {
+          "failure": "A logo or frozen portrait replaces departure with promotion.",
+          "repair": "End with the same subject continuing through the established route."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An original rooftop-garden caretaker tightens gloves, walks past the same water tank, resets one irrigation dripper, hangs shade cloth, rests with an enamel cup, gives one nod to the observer and exits through the stair gate.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An original harbor book courier secures a satchel, follows one pier railing, briefly returns a loose gull tag to a keeper, clips two parcel slips, pauses on a bench, raises one hand once and continues toward the ferry ramp.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sairah-0-2086637783318487379-browser-2086637783318487379-video-1",
+  "slug": "contact-triggered-medium-toggle-progress",
+  "title": "触控换媒｜接触触发、状态推进与成品回归",
+  "source_title": "线稿料理｜手写笔触发写实与二维状态往返",
+  "summary": "锁定同一对象和制作台，让一支可见工具每次接触都触发写实与二维线稿之间的媒介切换；每次切换必须同时推进一个不可逆制作状态，最终回到写实成品并保持空间注册关系。",
+  "status": "released",
+  "source_duration_seconds": 9.102222,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/contact-triggered-medium-toggle-progress",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sairah-0-2086637783318487379-browser-2086637783318487379-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sairah-0-2086637783318487379-browser-2086637783318487379-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-contact-triggered-medium-toggle-progress-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "锁定工作台与对象 + 可见工具接触触发 + 写实与插画至少往返两次 + 每次切换推进不可逆制作状态 + 固定注册锚点 + 写实成品回归",
+  "recommended_input": "未完成黄铜钟表模块位于三颗固定钢螺钉之间，白色粉笔触控笔明确接触底板；第二次接触恢复写实黄铜，齿轮组真实存在并继续增加发条；最后一次接触恢复完整真实时钟，底板、齿轮、发条、指针和表镜齐全，秒针开始稳定走时",
+  "required_anchors": [
+    "Establish one bounded workspace, one primary object and one visible contact tool in reality.",
+    "Toggle medium only at visible tool contact and preserve object registration across the boundary.",
+    "Advance one irreversible build or preparation state after every toggle without resetting earlier progress.",
+    "Return to photoreal reality with the completed object and original anchors visible."
+  ],
+  "tags": [
+    "contact",
+    "triggered",
+    "medium",
+    "toggle",
+    "progress"
+  ],
+  "quality": {
+    "weighted_score": 4.901,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T17:08:38+08:00",
+  "updated_at": "2026-08-23T17:17:16+08:00"
+}

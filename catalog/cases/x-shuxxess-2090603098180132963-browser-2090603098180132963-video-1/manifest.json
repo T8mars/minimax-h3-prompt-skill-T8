@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-shuxxess-2090603098180132963-browser-2090603098180132963-video-1",
+  "slug": "performed-competence-single-mishap-social-recovery",
+  "title": "帅气展示瞬间失手｜单次事故与社交收尾",
+  "source_title": "动作表演失手｜被观看意图在摔倒后反转",
+  "summary": "先让一名明确成年角色在熟人面前主动摆出可读的自我展示意图，再用一段连续动作把自信逐级抬高。只允许一次清楚的物理失误打断表演，必须完整展示失衡、落地与后果；旁观者先作克制反应，表演者随后以一个简短恢复动作承认尴尬，笑点由社会关系闭合而不是只靠摔倒。",
+  "status": "released",
+  "source_duration_seconds": 10.208,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/performed-competence-single-mishap-social-recovery",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-shuxxess-2090603098180132963-browser-2090603098180132963-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-shuxxess-2090603098180132963-browser-2090603098180132963-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performed-competence-single-mishap-social-recovery-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "两名明确成年原创角色、共享视线与主动展示意图先建立 + 一个连续动作短语逐步提高幅度或难度 + 只发生一次有可见原因的失误且完整显示失衡、落地与后果 + 旁观者先作克制反应 + 表演者用一个简短尴尬恢复动作承认失败 + 双方保持空间连接并稳定收尾",
+  "recommended_input": "成年快递员在自行车旁面对成年调度员，调度员视线清楚落在表演者身上；前轮碰到柔软停车挡块，半转动作直接变成侧向失衡；快递员接受帮助、单膝起身并整理肩带，调度员克制微笑",
+  "required_anchors": [
+    "Establish two clearly adult original roles, a shared sightline and the performer's deliberate competence-display intent before the risky move.",
+    "Build one continuous movement phrase whose amplitude or difficulty visibly increases.",
+    "Let the observer react before the performer begins the social recovery.",
+    "End on one restrained recovery gesture that acknowledges failure while both roles remain spatially connected."
+  ],
+  "tags": [
+    "performed",
+    "competence",
+    "single",
+    "mishap",
+    "social",
+    "recovery"
+  ],
+  "quality": {
+    "weighted_score": 4.946,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T02:03:00+08:00",
+  "updated_at": "2026-08-24T02:16:27+08:00"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-diplomeme-2091037153463791956-browser-2091037153463791956-video-1",
+  "slug": "public-recognition-table-to-stage-payoff",
+  "title": "公共兑现｜席间期待—揭晓—群体释放—登台锁定",
+  "source_title": "公共认可兑现｜席间期待、揭晓、拥抱与登台锁定",
+  "summary": "先用大型正式场合和席间小群体建立期待，再让公开揭晓把私人关系瞬间转成共同反应；通过拥抱和穿越人群的连续路线释放情绪，最终把被认可者锁定在舞台终点。",
+  "status": "released",
+  "source_duration_seconds": 30.144,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/public-recognition-table-to-stage-payoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-diplomeme-2091037153463791956-browser-2091037153463791956-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-diplomeme-2091037153463791956-browser-2091037153463791956-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-public-recognition-table-to-stage-payoff-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "公共场合与终点 + 小群体平静基线 + 单次公开揭晓 + 共同释放与连续路线 + 人物和认可物终点锁定",
+  "recommended_input": "承压玻璃礼堂内布满琥珀桌灯，前方只有一个发光标本台，窗外深青海水与远处珊瑚结构可见；投影只显示原创珊瑚礁修复图与四个简洁头像，回到同桌时四人同步显出惊讶，首席工程师用手停住一次呼吸；同一工程师打开盒子、在麦克风旁举起一枚小型活珊瑚胶囊，后方实时珊瑚画面亮起新生息肉；只保留可见说话动作，不指定台词",
+  "required_anchors": [
+    "Establish the full public venue and terminal recognition destination before isolating a peer group.",
+    "Create a calm, readable small-group baseline inside the larger event.",
+    "Keep the recognized subject spatially traceable through group release and movement toward the destination.",
+    "End with the same subject, a concrete recognition object and the public destination readable together."
+  ],
+  "tags": [
+    "public",
+    "recognition",
+    "table",
+    "to",
+    "stage",
+    "payoff"
+  ],
+  "quality": {
+    "weighted_score": 4.706,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-22T15:31:40+08:00",
+  "updated_at": "2026-08-22T16:16:07+08:00"
+}

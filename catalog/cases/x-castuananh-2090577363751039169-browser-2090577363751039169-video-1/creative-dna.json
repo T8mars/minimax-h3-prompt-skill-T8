@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original clearly adult vulnerable protagonist, one first-order threat and a visible rescue direction inside a stable environment. Let a materially larger second-order threat enter the same geography and directly remove the first threat, but immediately inherit pursuit of the protagonist. Show the protagonist carrying a visible injury or exhaustion state toward at least two clearly adult rescuers; their first intervention creates only a temporary suppression and exposes one usable tool. The protagonist acquires that tool and joins the rescuers, then the second-order threat visibly resumes movement or re-enters before the end. The reusable mechanism is threat substitution, inherited pursuit, physically continuous escape, provisional rescue, tool acquisition and renewed collective defense—not the source survivor, creatures, forest, flame, weapons, uniforms, choreography, gore, watermark, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one clearly adult vulnerable protagonist, a first-order threat and a visible rescue direction in one geography.",
+      "purpose": "Gives later threat substitution and escape a measurable baseline.",
+      "ablation_failure": "Without a rescue direction, each creature encounter reads as an unrelated insert.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Let a larger second-order threat directly remove the first threat and immediately inherit pursuit of the same protagonist.",
+      "purpose": "Turns apparent rescue into an escalation rather than a reset.",
+      "ablation_failure": "If the larger threat ignores the protagonist, the danger chain ends instead of transferring.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Carry one visible injury or exhaustion state through the protagonist's movement toward at least two adult rescuers.",
+      "purpose": "Preserves the cost of the first conflict and makes rescue urgency legible.",
+      "ablation_failure": "A fully reset sprint erases causal continuity.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Make the rescuers' first intervention only temporarily suppress the larger threat while exposing one usable tool.",
+      "purpose": "Creates a short reversal that enables the protagonist to change role.",
+      "ablation_failure": "An instant permanent defeat leaves no reason for tool acquisition or cooperation.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Let the protagonist acquire the tool and join collective defense before the larger threat resumes movement or re-enters.",
+      "purpose": "Pays off the rescue as capability transfer while retaining threat escalation.",
+      "ablation_failure": "Ending on the collapsed threat falsely resolves the core mechanism.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source adult survivor, face, body, clothing, injuries, expressions and exact performance",
+    "the source spider-like creature, larger forest monster, anatomy, attacks, mouth, limbs and gore",
+    "the source bioluminescent jungle, cyan plants, mud, roots, flame and exact lighting",
+    "the source soldiers, rifles, uniforms, shooting, crawling, combat choreography and camera path",
+    "the source creator identity, Topview challenge mark, Seedance 2.5 claim, watermark and 30-second timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult polar researcher flees a small ice burrower; a larger translucent shelf predator swallows it and continues pursuit, two adult station guards briefly pin the predator with light cables, and the researcher grabs a fallen emitter before the creature breaks free.",
+      "prompt_seed": "An adult polar researcher flees a small ice burrower; a larger translucent shelf predator swallows it and continues pursuit, two adult station guards briefly pin the predator with light cables, and the researcher grabs a fallen emitter before the creature breaks free."
+    },
+    {
+      "concept": "An adult orbital gardener is cornered by a maintenance drone; a larger cable swarm crushes the drone and pursues, two adult technicians briefly overload it, and the gardener retrieves a grounding wand before the swarm reforms around them.",
+      "prompt_seed": "An adult orbital gardener is cornered by a maintenance drone; a larger cable swarm crushes the drone and pursues, two adult technicians briefly overload it, and the gardener retrieves a grounding wand before the swarm reforms around them."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a rescue direction, each creature encounter reads as an unrelated insert.",
+      "repair": "Establish one clearly adult vulnerable protagonist, a first-order threat and a visible rescue direction in one geography."
+    },
+    {
+      "failure": "If the larger threat ignores the protagonist, the danger chain ends instead of transferring.",
+      "repair": "Let a larger second-order threat directly remove the first threat and immediately inherit pursuit of the same protagonist."
+    },
+    {
+      "failure": "A fully reset sprint erases causal continuity.",
+      "repair": "Carry one visible injury or exhaustion state through the protagonist's movement toward at least two adult rescuers."
+    },
+    {
+      "failure": "An instant permanent defeat leaves no reason for tool acquisition or cooperation.",
+      "repair": "Make the rescuers' first intervention only temporarily suppress the larger threat while exposing one usable tool."
+    },
+    {
+      "failure": "Ending on the collapsed threat falsely resolves the core mechanism.",
+      "repair": "Let the protagonist acquire the tool and join collective defense before the larger threat resumes movement or re-enters."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult polar researcher flees a small ice burrower; a larger translucent shelf predator swallows it and continues pursuit, two adult station guards briefly pin the predator with light cables, and the researcher grabs a fallen emitter before the creature breaks free.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult orbital gardener is cornered by a maintenance drone; a larger cable swarm crushes the drone and pursues, two adult technicians briefly overload it, and the gardener retrieves a grounding wand before the swarm reforms around them.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

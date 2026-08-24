@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-simplyannisa-2090268350693687564-browser-2090268350693687564-video-1",
+  "slug": "fiction-to-production-layer-monitor-reveal",
+  "title": "叙事拆幕｜情绪场景连续退到片场与监看层",
+  "source_title": "长廊幻象拆幕｜表演、布景边界与监看递归",
+  "summary": "先让一个完整情绪表演和可触碰道具建立可信虚构世界，再以同一动作锚点开始连续退镜；画面依次露出布景边界、灯架与工作人员，随后让同一场景进入监看屏幕，最后用极短问题卡把观众从剧情接受切换到媒介判断。",
+  "status": "released",
+  "source_duration_seconds": 30.176,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/fiction-to-production-layer-monitor-reveal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2090268350693687564-browser-2090268350693687564-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2090268350693687564-browser-2090268350693687564-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-fiction-to-production-layer-monitor-reveal-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "完整可信虚构场景与成年表演者 + 1个实用光或道具锚点 + 表演动作不丢失的连续后退 + 至少3项制作线索 + 原画面进入监看层 + 1句极短原创判断终卡",
+  "recommended_input": "成年白灰宇航员穿过重复冰肋走向一枚青色导航圆盘，呼吸和戒备视线可读，片场设备完全不可见；手套尚未接触时镜头持续后退，宇航员、圆盘和抬手关系不变；越过破损舱壁后露出微缩冰洞、两台造雪风机和运动控制轨道；切为纯黑，只显示原创短问句“REAL ENOUGH?”并停留",
+  "required_anchors": [
+    "Earn belief through one coherent fictional scene and emotionally legible performer before exposing construction.",
+    "Use one practical prop or light and one performer action as continuous registration anchors during the retreat.",
+    "Show the original fictional image inside a monitoring or capture layer after the physical set reveal.",
+    "Finish with one compact audience-facing judgment prompt and no new exposition."
+  ],
+  "tags": [
+    "fiction",
+    "to",
+    "production",
+    "layer",
+    "monitor",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.917,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T18:34:23+08:00",
+  "updated_at": "2026-08-23T21:18:40+08:00"
+}

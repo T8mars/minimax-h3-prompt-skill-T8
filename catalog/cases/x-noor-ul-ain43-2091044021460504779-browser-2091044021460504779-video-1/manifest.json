@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-noor-ul-ain43-2091044021460504779-browser-2091044021460504779-video-1",
+  "slug": "pursuit-route-collapse-remote-survivor-reframe",
+  "title": "追逐路线崩塌再解释｜逃生载体毁灭后目标异地重现",
+  "source_title": "末班车追逐｜逃生路线被摧毁后用异地幸存者重写目标",
+  "summary": "先让一名明确成年原创人物在空旷交通节点发现逼近者，并把最后一班载体建立为唯一可读逃生路线；连续追逐把人物送入载体后，路线在离站阶段遭到一次不可逆破坏。随后从烟尘与残骸切到远处安全高位，让同一成年人物稳定重现并直视来向，以空间分离重新解释前段追逐，但不复制原片人物、地铁、爆炸、台词或结尾文字。",
+  "status": "released",
+  "source_duration_seconds": 30.144,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/pursuit-route-collapse-remote-survivor-reframe",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noor-ul-ain43-2091044021460504779-browser-2091044021460504779-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noor-ul-ain43-2091044021460504779-browser-2091044021460504779-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-pursuit-route-collapse-remote-survivor-reframe-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "明确成年原创主角、逼近群体和唯一可见逃生载体在可读出发地理中同现 + 同向追逐持续到主角登上载体 + 登载后短暂停留形成虚假脱险 + 一次不可逆事件移除原路线并通过遮挡暂时隐藏主角状态 + 同一成年人带至少三项身份锚点在异地安全高位重现并稳定回望",
+  "recommended_input": "暴风码头上，成年信使、后三名搜寻者与前方敞门悬浮渡船处在同一可读地理；信使进入舱门，渡船离岸，码头后退并短暂停留确认；海湾另一侧灯塔阳台上，同一成年人带相同三项锚点出现并回望断路",
+  "required_anchors": [
+    "Open with one clearly adult original protagonist, one approaching group and one visible escape carrier in a readable departure geography.",
+    "Keep pursuit direction continuous until the protagonist boards the carrier.",
+    "Use exactly one irreversible event to remove the route while withholding the protagonist's state.",
+    "Reintroduce the same adult at a separate safe vantage with three identity anchors and one held look back."
+  ],
+  "tags": [
+    "pursuit",
+    "route",
+    "collapse",
+    "remote",
+    "survivor",
+    "reframe"
+  ],
+  "quality": {
+    "weighted_score": 4.948,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T02:37:38+08:00",
+  "updated_at": "2026-08-24T02:46:52+08:00"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-techiebysa-2090130971823612281-browser-2090130971823612281-video-1",
+  "slug": "persistent-matchup-strip-causal-rally-payoff",
+  "title": "对阵条不掉线｜小球方向连续到决胜反应",
+  "source_title": "乒乓高密度对打｜固定身份条、球路接力与终局释放",
+  "summary": "让固定对阵信息条持续占据画面一部分，作为高速剪辑中的身份和阵营锚点；动态区域则按发球、接球、相持、险球和决胜顺序推进，每次切镜都用球的入射方向、击球手或身体重心完成接力，最后必须给出同一球的落点结果和双方不同反应。",
+  "status": "released",
+  "source_duration_seconds": 15.046531,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/persistent-matchup-strip-causal-rally-payoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techiebysa-2090130971823612281-browser-2090130971823612281-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-techiebysa-2090130971823612281-browser-2090130971823612281-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-persistent-matchup-strip-causal-rally-payoff-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "固定双人对阵信息条 + 先交代动作轴线 + 同一小物体发出/接回/反击/决胜 + 每次切镜继承方向/击打侧/重心 + 1次俯视重校 + 可见得分结果和双方反应",
+  "recommended_input": "上方动作区同时交代成年钴蓝ORBIT、琥珀TIDE、两端球门和球台轴线；下方四分之一固定两侧剪影、队名和0-0比分；只在同一未决分中交替一次球拍近景、一次面部反应和一次低位球台视角；TIDE伸展反击，ORBIT回中；冰球完整越过ORBIT球门线，固定对阵条只把比分改为0-1；TIDE克制举拳，ORBIT放低球拍",
+  "required_anchors": [
+    "Keep one fixed two-competitor identity strip registered throughout the sequence.",
+    "Establish the play axis and both starting positions before the rally accelerates.",
+    "Use at least one overhead recalibration before the decisive exchange.",
+    "Show the scoring outcome and contrasting reactions before ending, with the identity strip still visible."
+  ],
+  "tags": [
+    "persistent",
+    "matchup",
+    "strip",
+    "causal",
+    "rally",
+    "payoff"
+  ],
+  "quality": {
+    "weighted_score": 4.917,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T21:31:26+08:00",
+  "updated_at": "2026-08-23T21:41:31+08:00"
+}

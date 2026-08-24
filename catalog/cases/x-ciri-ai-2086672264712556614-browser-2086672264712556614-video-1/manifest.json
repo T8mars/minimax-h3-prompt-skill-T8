@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ciri-ai-2086672264712556614-browser-2086672264712556614-video-1",
+  "slug": "continuous-emotion-escalation-conceal-residue",
+  "title": "情绪压力曲线｜压抑、峰值、遮挡与残余",
+  "source_title": "单人哭戏｜固定近景中的连续情绪升级与回落",
+  "summary": "锁定同一人像、背景和镜头距离，以可累计的眼神、嘴部、呼吸与泪痕变化把中性状态连续推向一次情绪峰值；峰值后允许一个短暂遮挡动作，但必须重新露出面部，并保留可读的情绪残余，而不是瞬间恢复。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/continuous-emotion-escalation-conceal-residue",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ciri-ai-2086672264712556614-browser-2086672264712556614-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ciri-ai-2086672264712556614-browser-2086672264712556614-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-emotion-escalation-conceal-residue-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "固定成年单人近景、背景、光线与焦段 + 中性校准 + 至少3项不重置的压力信号 + 仅1次情绪峰值 + 峰值后短暂保护性遮挡 + 重新露面并保留情绪残余",
+  "recommended_input": "原创成年救援调度员看向镜头旁状态屏，以专业中性状态建立基线；原创安全归队提示音后，她只出现一次释然哭泣峰值，泪液和呼吸自然；她放下手，看向状态屏，湿眼、泛红皮肤与下颌余张力仍存在",
+  "required_anchors": [
+    "Lock one adult portrait, background, lens distance and light for the complete performance.",
+    "Accumulate at least three readable tension indicators without resetting earlier evidence.",
+    "Place one brief self-protective concealment gesture after the peak and then reveal the face again.",
+    "Hold visible emotional residue such as wet eyes, altered breath or gaze in the terminal state."
+  ],
+  "tags": [
+    "continuous",
+    "emotion",
+    "escalation",
+    "conceal",
+    "residue"
+  ],
+  "quality": {
+    "weighted_score": 4.915,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T17:28:49+08:00",
+  "updated_at": "2026-08-23T17:42:56+08:00"
+}

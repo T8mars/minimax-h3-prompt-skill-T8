@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Build one original planar handmade-story stage with a persistent material grammar, one grounded discoverer, one sealed luminous container, one central adult figure and one celestial destination. Let the discoverer approach and open the container so the central figure unfolds from the same material. Reconfigure the existing layers into a community chapter where at least two witnesses bring symbolic objects that establish social recognition. Accumulate those objects, then use one controlled full-frame material rupture to expose the night layer and previously recoverable celestial goal. Carry the same adult figure upward along a visible material path while ground witnesses remain legible, and end in an emblematic wide that contains the destination plus at least two earlier spatial anchors. The reusable mechanism is planar discovery, material birth, chapter-fold transition, social recognition, material rupture, vertical departure and total-story tableau—not the source Kaguya-hime identity, Japanese folktale, bamboo, garments, gifts, house, moon composition, silhouettes, exact paper craft, color sequence, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one coherent planar material grammar, a discoverer, sealed luminous container, central adult figure and celestial destination system.",
+      "purpose": "Gives every later transformation shared spatial and material rules.",
+      "ablation_failure": "Without a common stage and goal system, the chapters become unrelated illustrations.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Open the sealed object and unfold the central figure from that same material without replacing identity.",
+      "purpose": "Makes the protagonist's arrival physically causal.",
+      "ablation_failure": "Cutting directly to a person removes the discovery-to-birth handoff.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Reconfigure existing layers into a community chapter where at least two witnesses deliver symbolic objects.",
+      "purpose": "Moves the story from private discovery to visible social recognition.",
+      "ablation_failure": "A solitary pose cannot establish the community phase.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use accumulated objects in one controlled material rupture that exposes the night layer and celestial goal.",
+      "purpose": "Turns social abundance into the physical cause of departure.",
+      "ablation_failure": "An unrelated sky cut breaks the chapter transition.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Show the same adult figure ascend along a visible material path and finish wide with the destination, ground witnesses and at least two prior setting anchors.",
+      "purpose": "Preserves identity and closes the entire story geography.",
+      "ablation_failure": "An isolated moon portrait cannot prove departure from the established world.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source Kaguya-hime identity, Japanese folktale roles, faces, hair and exact costumes",
+    "the source bamboo forest, glowing bamboo stalk, village house, gifts, nest bundle and attendants",
+    "the source cream-green-blue paper palette, full moon, white ribbons and silhouette styling",
+    "the source exact discovery, birth, offering, paper-burst, moon ascent and final tableau compositions",
+    "the source creator identity, Seedance 2.5 wording and 30-second timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "A paper-cut desert archivist opens a luminous seed vault, an adult wind cartographer unfolds, market witnesses bring compass tiles, the tiles burst into a star map and paper currents lift the cartographer to a fixed north-star seal above the town.",
+      "prompt_seed": "A paper-cut desert archivist opens a luminous seed vault, an adult wind cartographer unfolds, market witnesses bring compass tiles, the tiles burst into a star map and paper currents lift the cartographer to a fixed north-star seal above the town."
+    },
+    {
+      "concept": "A layered felt marsh keeper opens a glowing reed cocoon, an adult rain singer emerges, island witnesses offer glass droplets, the droplets become a storm window and woven mist carries the singer to an established cloud-ring emblem.",
+      "prompt_seed": "A layered felt marsh keeper opens a glowing reed cocoon, an adult rain singer emerges, island witnesses offer glass droplets, the droplets become a storm window and woven mist carries the singer to an established cloud-ring emblem."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a common stage and goal system, the chapters become unrelated illustrations.",
+      "repair": "Establish one coherent planar material grammar, a discoverer, sealed luminous container, central adult figure and celestial destination system."
+    },
+    {
+      "failure": "Cutting directly to a person removes the discovery-to-birth handoff.",
+      "repair": "Open the sealed object and unfold the central figure from that same material without replacing identity."
+    },
+    {
+      "failure": "A solitary pose cannot establish the community phase.",
+      "repair": "Reconfigure existing layers into a community chapter where at least two witnesses deliver symbolic objects."
+    },
+    {
+      "failure": "An unrelated sky cut breaks the chapter transition.",
+      "repair": "Use accumulated objects in one controlled material rupture that exposes the night layer and celestial goal."
+    },
+    {
+      "failure": "An isolated moon portrait cannot prove departure from the established world.",
+      "repair": "Show the same adult figure ascend along a visible material path and finish wide with the destination, ground witnesses and at least two prior setting anchors."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A paper-cut desert archivist opens a luminous seed vault, an adult wind cartographer unfolds, market witnesses bring compass tiles, the tiles burst into a star map and paper currents lift the cartographer to a fixed north-star seal above the town.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A layered felt marsh keeper opens a glowing reed cocoon, an adult rain singer emerges, island witnesses offer glass droplets, the droplets become a storm window and woven mist carries the singer to an established cloud-ring emblem.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

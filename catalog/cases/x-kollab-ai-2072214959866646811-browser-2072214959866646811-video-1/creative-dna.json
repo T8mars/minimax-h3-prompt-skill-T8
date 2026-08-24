@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Keep one static nonverbal plan strip fully visible in a dedicated zone while a larger execution field changes above it. Advance the execution field in the plan's order through functionally distinct, irreversible states; never edit, reorder or replace the reference strip. Reserve one decisive reveal for the finished-state proof, then hold the actual result together with the unchanged terminal plan cell. The reusable mechanism is persistent-plan verification and ordered execution escalation, not the source chocolate, cake, marble, storyboard artwork, title, twelve-cell layout, utensils, garnish, render style or exact process.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one complete static plan strip and a separate live execution field at the opening.",
+      "purpose": "Makes intended and actual states simultaneously comparable.",
+      "ablation_failure": "Showing the plan only once turns it into an intro card.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Keep the plan strip unchanged and readable while every live state advances in its order.",
+      "purpose": "Preserves the plan as a stable verification artifact.",
+      "ablation_failure": "Animating or reordering the plan destroys direct comparison.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use at least three functionally different execution states with visible irreversible progress.",
+      "purpose": "Proves actual work instead of decorative cutting.",
+      "ablation_failure": "Repeated close-ups without state change do not execute the plan.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Reserve one decisive reveal that verifies an internal or completed property.",
+      "purpose": "Turns the chain into a payoff rather than a list of operations.",
+      "ablation_failure": "A generic beauty shot cannot prove the preceding process succeeded.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with the finished result and the unchanged terminal plan cell visible together.",
+      "purpose": "Closes planned versus achieved state.",
+      "ablation_failure": "Cropping away the plan at the end abandons the verification mechanism.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source chocolate bars, cream, eggs, cocoa, vanilla, salt, gold leaf and exact ingredient arrangement",
+    "the source white marble, copper bowls, double boiler, spatula, ramekin, oven, white glove, spoon and dark plate",
+    "the source molten lava cake, raspberry garnish, cocoa dust, chocolate flow and exact food choreography",
+    "the source twelve-cell food storyboard artwork, CHOCOLATE SYMPHONY title, small labels, icons and fixed lower-strip design",
+    "the source glossy animated-food rendering, warm amber grade, shot timing, logo, creator identity and prompt wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "A fixed five-cell pictogram strip remains below an original lunar greenhouse repair: the upper field aligns a ceramic root capsule, injects blue nutrient gel, heat-seals it, flips it into a tray and opens one witness window to prove new roots before the finished capsule and terminal pictogram hold together.",
+      "prompt_seed": "A fixed five-cell pictogram strip remains below an original lunar greenhouse repair: the upper field aligns a ceramic root capsule, injects blue nutrient gel, heat-seals it, flips it into a tray and opens one witness window to prove new roots before the finished capsule and terminal pictogram hold together."
+    },
+    {
+      "concept": "A fixed six-cell icon rail remains beside an original weather-vane assembly: the live field cuts one brass sheet, bends separate fins, rivets the hub, applies one heat patina and spins the finished vane while the final icon and moving result remain paired.",
+      "prompt_seed": "A fixed six-cell icon rail remains beside an original weather-vane assembly: the live field cuts one brass sheet, bends separate fins, rivets the hub, applies one heat patina and spins the finished vane while the final icon and moving result remain paired."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Showing the plan only once turns it into an intro card.",
+      "repair": "Establish one complete static plan strip and a separate live execution field at the opening."
+    },
+    {
+      "failure": "Animating or reordering the plan destroys direct comparison.",
+      "repair": "Keep the plan strip unchanged and readable while every live state advances in its order."
+    },
+    {
+      "failure": "Repeated close-ups without state change do not execute the plan.",
+      "repair": "Use at least three functionally different execution states with visible irreversible progress."
+    },
+    {
+      "failure": "A generic beauty shot cannot prove the preceding process succeeded.",
+      "repair": "Reserve one decisive reveal that verifies an internal or completed property."
+    },
+    {
+      "failure": "Cropping away the plan at the end abandons the verification mechanism.",
+      "repair": "End with the finished result and the unchanged terminal plan cell visible together."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A fixed five-cell pictogram strip remains below an original lunar greenhouse repair: the upper field aligns a ceramic root capsule, injects blue nutrient gel, heat-seals it, flips it into a tray and opens one witness window to prove new roots before the finished capsule and terminal pictogram hold together.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A fixed six-cell icon rail remains beside an original weather-vane assembly: the live field cuts one brass sheet, bends separate fins, rivets the hub, applies one heat patina and spins the finished vane while the final icon and moving result remain paired.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

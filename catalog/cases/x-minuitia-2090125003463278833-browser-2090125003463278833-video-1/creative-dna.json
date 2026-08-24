@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original clearly adult ground caller, one distant aerial group and a stable terrain anchor before any close pass. Let one visible gesture, stance or nonverbal signal change the group's topology from dispersed approach to an ordered orbit or repeated route. Select one dominant carrier for a reciprocal close acknowledgment, then show its complete descent, stable landing and lowered mount posture. Keep hand or body contact readable as the adult mounts, and end only after the pair takes off and joins the broader aerial route. The reusable mechanism is ground-to-sky ordering, group-to-leader acknowledgment, carrier selection, mounting and shared departure—not the source dragons, warrior, armor, staff, coast, choreography, faces, camera route, fantasy style, music, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one adult ground caller, a distant aerial group and one terrain anchor before close passes.",
+      "purpose": "Makes the initial vertical separation and later response measurable.",
+      "ablation_failure": "Beginning in a chaotic swarm hides who is calling whom.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one visible nonverbal signal to change the aerial topology from dispersed approach to ordered orbit or route.",
+      "purpose": "Turns spectacle into a causal group response.",
+      "ablation_failure": "Unchanged random flight does not prove command or coordination.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Select one dominant carrier through reciprocal close acknowledgment.",
+      "purpose": "Narrows group energy into a specific transport relationship.",
+      "ablation_failure": "A random mount arriving without recognition feels disconnected.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Show complete descent, stable landing, lowered posture and readable mounting contact.",
+      "purpose": "Makes the transport transition physically usable.",
+      "ablation_failure": "Teleporting onto the carrier skips the critical handoff.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End after the mounted pair takes off and joins the broader aerial route.",
+      "purpose": "Closes ground leadership as shared movement through the sky.",
+      "ablation_failure": "Ending at the mount leaves the promised departure incomplete.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source warrior, face, body, helmet, armor, cloak, staff and exact gestures",
+    "the source dragons, anatomy, scales, wings, red fissures, faces and group choreography",
+    "the source rocky coast, castle, mountains, shoreline and terrain layout",
+    "the source landing, mounting, takeoff, camera route, palette, fantasy treatment and 28-second timing",
+    "the source creator identity, Midjourney, GPT Image 2, Seedance 2, Suno and CapCut claims, watermark and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult polar weather marshal on an ice shelf raises one signal vane, turning scattered autonomous gliders into a spiral. One large rescue glider descends, lowers a boarding rail, the marshal clips in and the group departs along an aurora corridor.",
+      "prompt_seed": "An adult polar weather marshal on an ice shelf raises one signal vane, turning scattered autonomous gliders into a spiral. One large rescue glider descends, lowers a boarding rail, the marshal clips in and the group departs along an aurora corridor."
+    },
+    {
+      "concept": "An adult desert seed keeper rings one ceramic disk, aligning scattered wind-sails into an ordered loop. A broad manta sail lands, folds low, receives the keeper and carries the formation across dunes.",
+      "prompt_seed": "An adult desert seed keeper rings one ceramic disk, aligning scattered wind-sails into an ordered loop. A broad manta sail lands, folds low, receives the keeper and carries the formation across dunes."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Beginning in a chaotic swarm hides who is calling whom.",
+      "repair": "Establish one adult ground caller, a distant aerial group and one terrain anchor before close passes."
+    },
+    {
+      "failure": "Unchanged random flight does not prove command or coordination.",
+      "repair": "Use one visible nonverbal signal to change the aerial topology from dispersed approach to ordered orbit or route."
+    },
+    {
+      "failure": "A random mount arriving without recognition feels disconnected.",
+      "repair": "Select one dominant carrier through reciprocal close acknowledgment."
+    },
+    {
+      "failure": "Teleporting onto the carrier skips the critical handoff.",
+      "repair": "Show complete descent, stable landing, lowered posture and readable mounting contact."
+    },
+    {
+      "failure": "Ending at the mount leaves the promised departure incomplete.",
+      "repair": "End after the mounted pair takes off and joins the broader aerial route."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult polar weather marshal on an ice shelf raises one signal vane, turning scattered autonomous gliders into a spiral. One large rescue glider descends, lowers a boarding rail, the marshal clips in and the group departs along an aurora corridor.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult desert seed keeper rings one ceramic disk, aligning scattered wind-sails into an ordered loop. A broad manta sail lands, folds low, receives the keeper and carries the formation across dunes.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

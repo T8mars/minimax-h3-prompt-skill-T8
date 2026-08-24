@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-hbcoop-2087539373420228818-browser-2087539373420228818-video-1",
+  "slug": "material-credit-vignettes-to-master-title",
+  "title": "材质片头｜多件物证承载职员表到总标题",
+  "source_title": "古代剧片头｜建筑、宝石、器皿与地貌接力职员表",
+  "summary": "用四个材质完全不同的物件场景依次承载短职员表，每一幕都让文字和该材质的物理动作绑定；随后回到一个已建立的主色与几何体系，把前面线索汇入清晰、稳定、可读的总标题。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/material-credit-vignettes-to-master-title",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hbcoop-2087539373420228818-browser-2087539373420228818-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hbcoop-2087539373420228818-browser-2087539373420228818-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-credit-vignettes-to-master-title-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "至少三种独立材质职员表场景 + 每幕一条原创短职员表与材质动作 + 跨幕重复色形或标记 + 回到已建立材质族汇聚 + 大型原创总标题稳定停留",
+  "recommended_input": "霜晶围绕原创职员表 PRODUCED BY MIRA VALE 蔓延，琥珀定位珠停在边缘；镜片内极光移动，原创职员表 CREATED BY NOA KERR 稳定停留，定位珠只反射一次；琥珀珠嵌入原创雕刻总标题 NORTH SIGNAL，深度和字距清楚",
+  "required_anchors": [
+    "Use at least three materially distinct object vignettes, each with one short readable original credit.",
+    "Bind each credit to one visible material-specific motion that never covers the text.",
+    "Return to one earlier material family before the master title and use the motif as the bridge.",
+    "Resolve one large master title and hold it fully readable with no further event."
+  ],
+  "tags": [
+    "material",
+    "credit",
+    "vignettes",
+    "to",
+    "master",
+    "title"
+  ],
+  "quality": {
+    "weighted_score": 4.892,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T17:08:38+08:00",
+  "updated_at": "2026-08-23T17:17:16+08:00"
+}

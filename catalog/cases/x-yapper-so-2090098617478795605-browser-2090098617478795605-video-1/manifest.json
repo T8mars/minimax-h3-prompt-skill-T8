@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-yapper-so-2090098617478795605-browser-2090098617478795605-video-1",
+  "slug": "continuous-retreat-scale-anchor-expanding-hazard",
+  "title": "连续拉远尺度揭危｜小型载体、扩张暗区与临界停留",
+  "source_title": "孤舟逼近巨涡｜连续升高拉远与危险尺度揭示",
+  "summary": "先用一个持续前进的小型载体作为尺度锚点，镜头不切地逐步升高并后退；一个起初像普通暗纹的环境异常必须保持中心关系并不断占据更大画幅，载体的航迹、速度和尺寸持续可读，最终在进入不可逆临界区之前停留，让尺度和危险都由同一连续镜头证明。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/continuous-retreat-scale-anchor-expanding-hazard",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yapper-so-2090098617478795605-browser-2090098617478795605-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yapper-so-2090098617478795605-browser-2090098617478795605-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-retreat-scale-anchor-expanding-hazard-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "小型移动载体先建立方向速度与轨迹 + 摄影机全程不切地持续升高后退 + 载体与异常保持同一坐标关系 + 异常从模糊纹理成长为占据主要画幅的清楚危险 + 撞击或消失前停留且载体仍可读",
+  "recommended_input": "高位近距后跟小型橙色维护车沿银色轨道前进，身后留下细窄蓝色检测灯带；前方暗色圆区起初像反射错位，随后边缘和深度逐渐连成清楚结构；极远景保持，维护车仍在内部暗缘之外继续前进，不展示撞击、消失或新视角",
+  "required_anchors": [
+    "Establish one small moving carrier with heading, speed cue and trail before the anomaly is legible.",
+    "Use one uninterrupted camera retreat and elevation change with no reveal cut.",
+    "Grow the anomaly from ambiguous texture into a coherent hazard occupying more of the frame.",
+    "Hold before impact or disappearance with the carrier still readable."
+  ],
+  "tags": [
+    "continuous",
+    "retreat",
+    "scale",
+    "anchor",
+    "expanding",
+    "hazard"
+  ],
+  "quality": {
+    "weighted_score": 4.945,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T23:44:10+08:00",
+  "updated_at": "2026-08-24T00:02:21+08:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ryo05m-2091019054597431652-browser-2091019054597431652-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "9f5ae6b1d5b42c26502ec5a863534eeb8c9160a4993c70ecbde9d15c3a113598",
+    "creative_dna_sha256": "ae2cc59a54979f2989f6dc86b1c4f88840d997a2701851ca41a8dad1a5d9f5cb"
+  },
+  "content": {
+    "title": "成品先现的组件语法｜首秒爆拆、材质章节与符号化复归",
+    "summary": "首帧先展示完整成品并在第一秒做最大速度爆拆，随后不急着复原，而是让每个核心组件进入一种独立的材质或制造语法；完整成品作为记忆锚点间歇回归，最终所有组件从实体层压缩成简化轮廓并组成原创标记。",
+    "quick_start": {
+      "input_format": "第0帧完整原创构造物先出现 + 第一秒完成唯一最大速度爆拆且组件顺序不变 + 各主要组件分别获得一种较慢且不同的材料或制造语法 + 至少两章之间短暂回到完整成品刷新装配记忆 + 组件逐步符号化并重组为原创身份标记而非简单恢复开场产品",
+      "recommended_input": "完整奶油钴蓝露营灯立即出现，第一秒灯罩、透镜、电池、底座横向高速分离；透镜只折射一道琥珀光，完整灯体短暂回归后电池精确充满三格；简化部件组成 LUMA 信标标记，结尾只出现准确【LUMA】",
+      "required_anchors": [
+        "在任何部分分离之前，从第一帧开始展示完整的原始对象。",
+        "让前一秒成为最快的分解，并保持组件顺序。",
+        "在至少两个章节之间简短回顾整体，同时保持颜色和顺序不变。",
+        "将抽象和重组的组件整合成一个原始标记，而不仅仅是开头的对象。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "首帧先展示完整成品并在第一秒做最大速度爆拆，随后不急着复原，而是让每个核心组件进入一种独立的材质或制造语法；完整成品作为记忆锚点间歇回归，最终所有组件从实体层压缩成简化轮廓并组成原创标记。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "第0帧先展示完整原创构造物，并在第一秒完成全片唯一最大速度爆拆，保持组件顺序和空间逻辑。随后不立即复原，而让每个主要组件进入一种较慢且彼此不同的材料或制造语法；至少两章之间短暂回到完整成品刷新装配记忆。终局让组件逐步简化为轮廓并重组为原创身份标记，而不是简单恢复开场产品。可复用的是成品先现、高速拆分、组件章节、记忆回环与符号化复归；不得复制来源产品、零件、品牌、准确动作、创作者身份或时间。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在任何部分分离之前，从第一帧开始展示完整的原始对象。",
+          "purpose": "给观众一个集体记忆和即时的吸引力。",
+          "ablation_failure": "从片段开始会延迟识别。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "让前一秒成为最快的分解，并保持组件顺序。",
+          "purpose": "集中注意力的同时保持系统可读性。",
+          "ablation_failure": "重复同样快速的爆炸会产生噪音。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "为每个主要组件分配一种不同的较慢材料或语法。",
+          "purpose": "将部件变成有意义的章节，而不是碎片。",
+          "ablation_failure": "为每个部件重复使用一种动作会平化身份。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在至少两个章节之间简短回顾整体，同时保持颜色和顺序不变。",
+          "purpose": "刷新抽象层次的记忆地图。",
+          "ablation_failure": "没有回顾，后期的图形部分会失去其对象关系。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将抽象和重组的组件整合成一个原始标记，而不仅仅是开头的对象。",
+          "purpose": "将演示转化为品牌级别的闭合。",
+          "ablation_failure": "一个字面的循环不会带来最终的概念性收获。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "原始汉堡的面包、肉饼、奶酪、生菜、酱料、种子和精确形状",
+        "原始的日文文本、标志、口号和所有排版布局",
+        "源奶油，红色、黄色、绿色和黑色调色板，点、条纹、环和图案",
+        "源爆炸，倾倒、滴落、成分章节、摄像机序列和15秒时长",
+        "源创作者身份，MiniMax H3声明和引用的提示片段"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个模块化的露营手电筒出现完整，爆发出阴影，镜头、电池和底座，探索折叠、折射、充电和磁性锁定，然后将简化层转换为原创的LUMA信标标记。",
+          "prompt_seed": "一个模块化的露营手电筒出现完整，爆发出阴影，镜头、电池和底座，探索折叠、折射、充电和磁性锁定，然后将简化层转换为原创的LUMA信标标记。"
+        },
+        {
+          "concept": "一个分层的声学面板出现完整，分离为织物、泡沫、框架和夹子，为每个赋予纺织、压缩、挤出和卡合章节，然后重新组合它们的轮廓形成原创的QUIET GRID符号。",
+          "prompt_seed": "一个分层的声学面板出现完整，分离为织物、泡沫、框架和夹子，为每个赋予纺织、压缩、挤出和卡合章节，然后重新组合它们的轮廓形成原创的QUIET GRID符号。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "从片段开始会延迟识别。",
+          "repair": "在任何部分分离之前，从第一帧开始展示完整的原始对象。"
+        },
+        {
+          "failure": "重复同样快速的爆炸会产生噪音。",
+          "repair": "让前一秒成为最快的分解，并保持组件顺序。"
+        },
+        {
+          "failure": "为每个部件重复使用一种动作会平化身份。",
+          "repair": "为每个主要组件分配一种不同的较慢材料或语法。"
+        },
+        {
+          "failure": "没有回顾，后期的图形部分会失去其对象关系。",
+          "repair": "在至少两个章节之间简短回顾整体，同时保持颜色和顺序不变。"
+        },
+        {
+          "failure": "一个字面的循环不会带来最终的概念性收获。",
+          "repair": "将抽象和重组的组件整合成一个原始标记，而不仅仅是开头的对象。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个模块化的露营手电筒出现完整，爆发出阴影，镜头、电池和底座，探索折叠、折射、充电和磁性锁定，然后将简化层转换为原创的LUMA信标标记。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个分层的声学面板出现完整，分离为织物、泡沫、框架和夹子，为每个赋予纺织、压缩、挤出和卡合章节，然后重新组合它们的轮廓形成原创的QUIET GRID符号。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

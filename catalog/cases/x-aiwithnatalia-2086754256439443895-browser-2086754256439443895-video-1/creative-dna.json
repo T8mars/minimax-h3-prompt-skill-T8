@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Present one stable subject in an ordinary, externally legible setback that invites another party to approach under a false assumption of vulnerability. Before the decisive response, show two or three small preparation proofs that visibly change readiness without revealing the full capability. Resolve the pressure through one coherent, attributable ability chain, then return the same subject to the interrupted vehicle, tool or route and visibly resume the original goal. The mechanism is apparent vulnerability, readiness microproof, competence reversal and route resumption—not the source woman, roadside styling, attackers, leather costume, fight choreography or car.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one stable subject, interrupted goal and readable setback before external pressure enters.",
+      "purpose": "Makes the vulnerability assumption understandable.",
+      "ablation_failure": "A threat without a prior goal becomes generic conflict.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Let the external party approach because of the visible setback rather than appearing at random.",
+      "purpose": "Connects pressure to the false assumption.",
+      "ablation_failure": "An unrelated arrival breaks causality.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Show at least two restrained readiness microproofs before the decisive response.",
+      "purpose": "Reframes the subject while withholding full capability.",
+      "ablation_failure": "An instant counterattack removes the reversal setup.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use one coherent capability chain with attributable causes and visible consequences.",
+      "purpose": "Turns reversal into proof instead of spectacle.",
+      "ablation_failure": "Unrelated powers or cuts make success unearned.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return the same subject to the original goal carrier and visibly resume the route.",
+      "purpose": "Closes the interruption as a completed state change.",
+      "ablation_failure": "Ending on defeated pressure leaves the original goal unresolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source woman's face, red-black hair, leather jacket, burgundy top, jeans, glasses and exact styling",
+    "the source late-1990s coupe, black van, golden highway, dry hills and exact roadside composition",
+    "the source male attackers, implied intentions, weapons if any, physical strikes, throws and exact fight choreography",
+    "the source hair-tying performance, facial expressions, camera angles, vehicle return and departure timing",
+    "the source creator caption wording, visible plate marks, brands, logos and watermark"
+  ],
+  "instantiations": [
+    {
+      "concept": "An original polar cartographer's rover stalls beside a snow trench; unauthorized salvagers approach, she seals her sleeves and calibrates a wrist magnet, uses the rover's anchor line to immobilize their loose equipment, then restarts the rover and resumes the survey route.",
+      "prompt_seed": "An original polar cartographer's rover stalls beside a snow trench; unauthorized salvagers approach, she seals her sleeves and calibrates a wrist magnet, uses the rover's anchor line to immobilize their loose equipment, then restarts the rover and resumes the survey route."
+    },
+    {
+      "concept": "An original elderly greenhouse engineer appears trapped by a jammed service lift; opportunistic scrap drones descend, he tightens one glove and aligns a handheld prism, redirects the drones into charging docks, repairs the lift and continues upward with the same seed case.",
+      "prompt_seed": "An original elderly greenhouse engineer appears trapped by a jammed service lift; opportunistic scrap drones descend, he tightens one glove and aligns a handheld prism, redirects the drones into charging docks, repairs the lift and continues upward with the same seed case."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A threat without a prior goal becomes generic conflict.",
+      "repair": "Establish one stable subject, interrupted goal and readable setback before external pressure enters."
+    },
+    {
+      "failure": "An unrelated arrival breaks causality.",
+      "repair": "Let the external party approach because of the visible setback rather than appearing at random."
+    },
+    {
+      "failure": "An instant counterattack removes the reversal setup.",
+      "repair": "Show at least two restrained readiness microproofs before the decisive response."
+    },
+    {
+      "failure": "Unrelated powers or cuts make success unearned.",
+      "repair": "Use one coherent capability chain with attributable causes and visible consequences."
+    },
+    {
+      "failure": "Ending on defeated pressure leaves the original goal unresolved.",
+      "repair": "Return the same subject to the original goal carrier and visibly resume the route."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An original polar cartographer's rover stalls beside a snow trench; unauthorized salvagers approach, she seals her sleeves and calibrates a wrist magnet, uses the rover's anchor line to immobilize their loose equipment, then restarts the rover and resumes the survey route.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An original elderly greenhouse engineer appears trapped by a jammed service lift; opportunistic scrap drones descend, he tightens one glove and aligns a handheld prism, redirects the drones into charging docks, repairs the lift and continues upward with the same seed case.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ladywasabee-2090114253839863934-browser-2090114253839863934-video-1",
+  "slug": "symbolic-layout-single-move-embodied-consequence",
+  "title": "符号布局单步改写｜空间揭示、手部决策与实体后果",
+  "source_title": "巨构棋境｜低位穿行、单步决策与王者苏醒",
+  "summary": "从贴近符号阵列的低位穿行开始，让观众先把小型布局当作世界；随后揭示一个与布局绑定的巨大实体，一只外部之手只改变一个关键标记，最后用实体的单一状态变化证明这一小步已改写更大系统。",
+  "status": "released",
+  "source_duration_seconds": 15.104,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/symbolic-layout-single-move-embodied-consequence",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ladywasabee-2090114253839863934-browser-2090114253839863934-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ladywasabee-2090114253839863934-browser-2090114253839863934-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-symbolic-layout-single-move-embodied-consequence-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "从原创符号阵列内部低位穿行 + 揭示与阵列绑定的更大实体或系统 + 外部手或操纵器进入且周围标记保持稳定 + 只移动一个可识别标记并显示接触 + 以更大系统的单一克制状态变化证明后果",
+  "recommended_input": "镜头贴近桌面，在磨砂玻璃透镜标记之间低位前行，远处全尺寸灯塔引擎保持沉睡；一名明确成年技术员的绝缘手套从上方进入，悬停在一枚黑曜石透镜盘上，其余标记完全不动；全尺寸灯塔引擎只打开一只光圈，向同一室内投射一束白光，并保持改变后的状态",
+  "required_anchors": [
+    "Travel through an original symbolic layout at marker height before revealing its larger system.",
+    "Bind the layout to one much larger entity, machine or environment in a single wide reveal.",
+    "Change exactly one clearly identifiable marker and show contact.",
+    "End on one restrained state change in the bound system."
+  ],
+  "tags": [
+    "symbolic",
+    "layout",
+    "single",
+    "move",
+    "embodied",
+    "consequence"
+  ],
+  "quality": {
+    "weighted_score": 4.935,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T23:12:39+08:00",
+  "updated_at": "2026-08-23T23:26:32+08:00"
+}

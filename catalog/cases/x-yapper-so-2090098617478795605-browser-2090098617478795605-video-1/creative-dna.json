@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original small moving carrier with a readable heading, speed cue and trail before an environmental anomaly is legible. Use one continuous camera retreat and elevation change with no reveal cut, keeping the carrier and anomaly in the same coordinate relationship as more environment enters the frame. Let the anomaly evolve from an ambiguous dark or geometric texture into a coherent hazard that occupies progressively more of the composition, while the carrier remains the stable scale unit. End on a held pre-impact or threshold state before the carrier disappears. The reusable mechanism is moving scale anchor, uninterrupted context expansion, ambiguity-to-hazard reveal and critical-distance hold—not the source wooden ship, sail, ocean, whirlpool, Odyssey claim, exact camera path, water physics, palette, watermark, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one small moving carrier with heading, speed cue and trail before the anomaly is legible.",
+      "purpose": "Provides a stable comparison unit for every later scale reveal.",
+      "ablation_failure": "Without a moving anchor, the hazard's size and distance remain abstract.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one uninterrupted camera retreat and elevation change with no reveal cut.",
+      "purpose": "Lets scale emerge from added context rather than editorial substitution.",
+      "ablation_failure": "A cut can fake scale and break the promised continuous observation.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep carrier and anomaly in one coordinate relationship as the frame expands.",
+      "purpose": "Makes approach distance and danger continuously measurable.",
+      "ablation_failure": "Reframing them independently removes spatial causality.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Grow the anomaly from ambiguous texture into a coherent hazard occupying more of the frame.",
+      "purpose": "Turns curiosity into threat through visual evidence alone.",
+      "ablation_failure": "Showing the full hazard immediately removes the escalation.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Hold before impact or disappearance with the carrier still readable.",
+      "purpose": "Preserves the final scale comparison and avoids replacing tension with destruction.",
+      "ablation_failure": "Losing the carrier prevents verification of the critical distance.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source wooden single-mast ship, sail, hull, wake and exact heading",
+    "the source ocean surface, sunlight, circular whirlpool, water depression, rim and flow physics",
+    "the source Odyssey premise, maritime iconography, implied voyage and threat meaning",
+    "the source aerial rear retreat, altitude curve, framing, timing and cinematic color treatment",
+    "the source creator identity, Yapper AI and Seedance 2.5 marks, watermark, text and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "A small orange maintenance tram crosses an orbital mirror field while the camera rises; a dark circular eclipse aperture grows from a reflection anomaly into the dominant destination, and the tram remains visible at the threshold.",
+      "prompt_seed": "A small orange maintenance tram crosses an orbital mirror field while the camera rises; a dark circular eclipse aperture grows from a reflection anomaly into the dominant destination, and the tram remains visible at the threshold."
+    },
+    {
+      "concept": "A single adult geologist's crawler traverses a white salt flat with a dust trail; continuous aerial retreat reveals a vast rotating shadow basin around the route and holds before the crawler reaches its inner rim.",
+      "prompt_seed": "A single adult geologist's crawler traverses a white salt flat with a dust trail; continuous aerial retreat reveals a vast rotating shadow basin around the route and holds before the crawler reaches its inner rim."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without a moving anchor, the hazard's size and distance remain abstract.",
+      "repair": "Establish one small moving carrier with heading, speed cue and trail before the anomaly is legible."
+    },
+    {
+      "failure": "A cut can fake scale and break the promised continuous observation.",
+      "repair": "Use one uninterrupted camera retreat and elevation change with no reveal cut."
+    },
+    {
+      "failure": "Reframing them independently removes spatial causality.",
+      "repair": "Keep carrier and anomaly in one coordinate relationship as the frame expands."
+    },
+    {
+      "failure": "Showing the full hazard immediately removes the escalation.",
+      "repair": "Grow the anomaly from ambiguous texture into a coherent hazard occupying more of the frame."
+    },
+    {
+      "failure": "Losing the carrier prevents verification of the critical distance.",
+      "repair": "Hold before impact or disappearance with the carrier still readable."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A small orange maintenance tram crosses an orbital mirror field while the camera rises; a dark circular eclipse aperture grows from a reflection anomaly into the dominant destination, and the tram remains visible at the threshold.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A single adult geologist's crawler traverses a white salt flat with a dust trail; continuous aerial retreat reveals a vast rotating shadow basin around the route and holds before the crawler reaches its inner rim.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

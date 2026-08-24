@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one enclosed original environment with a single distant destination light on a clear movement axis. Populate at least three depth planes with repeated slow carriers that share a visual family but vary scale and lateral drift. Move the camera continuously toward the same destination while fixed structural ribs, frames or columns pass as parallax and scale evidence. Let carriers intermittently cross the light without changing its location, and make the aperture grow monotonically until it becomes the dominant field while edge structures still prove continuity. The reusable mechanism is destination-locked traversal, layered slow carriers, fixed scale ribs, monotonic light growth and enclosure-to-release payoff—not the source cathedral, underwater setting, jellyfish, coral, moonlight, architecture, colors, exact camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one distant destination light and one unambiguous movement axis inside an enclosure.",
+      "purpose": "Gives the traversal a measurable objective.",
+      "ablation_failure": "Multiple competing lights make progress unreadable.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Place related slow carriers on at least three depth planes with different apparent speeds.",
+      "purpose": "Makes parallax and scale visible without fast action.",
+      "ablation_failure": "One flat layer cannot communicate volume.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Retain fixed ribs, frames or columns as orientation and scale anchors throughout the move.",
+      "purpose": "Proves continuous travel through one space.",
+      "ablation_failure": "Removing all structure turns the sequence into an abstract dissolve.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Grow the same destination light monotonically while carriers may briefly occlude it.",
+      "purpose": "Creates a clear progress clock and anticipation.",
+      "ablation_failure": "A shrinking or relocated light breaks the destination contract.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End when light dominates but leave edge anchors long enough to prove arrival from the original enclosure.",
+      "purpose": "Delivers release without a disconnected white frame.",
+      "ablation_failure": "A hard unrelated cut loses the spatial payoff.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source underwater cathedral, arches, columns, windows, coral and exact architecture",
+    "the source jellyfish bodies, tentacles, colors, paths and depth arrangement",
+    "the source moonlike aperture, white-blue shaft and exact illumination progression",
+    "the source camera ascent, frame order, compositions, palette and 15-second timing",
+    "the source creator identity, MiniMax H3 claim, watermark and wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "A camera rises through a dark archival tower toward one circular roof lantern; translucent paper kites drift on three depth planes, shelf ribs mark scale and the lantern gradually fills the frame.",
+      "prompt_seed": "A camera rises through a dark archival tower toward one circular roof lantern; translucent paper kites drift on three depth planes, shelf ribs mark scale and the lantern gradually fills the frame."
+    },
+    {
+      "concept": "A probe advances through an abandoned turbine tunnel toward an amber maintenance hatch; slow floating inspection balloons cross near and far, ring braces pass as scale markers and the hatch light becomes the final field.",
+      "prompt_seed": "A probe advances through an abandoned turbine tunnel toward an amber maintenance hatch; slow floating inspection balloons cross near and far, ring braces pass as scale markers and the hatch light becomes the final field."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Multiple competing lights make progress unreadable.",
+      "repair": "Establish one distant destination light and one unambiguous movement axis inside an enclosure."
+    },
+    {
+      "failure": "One flat layer cannot communicate volume.",
+      "repair": "Place related slow carriers on at least three depth planes with different apparent speeds."
+    },
+    {
+      "failure": "Removing all structure turns the sequence into an abstract dissolve.",
+      "repair": "Retain fixed ribs, frames or columns as orientation and scale anchors throughout the move."
+    },
+    {
+      "failure": "A shrinking or relocated light breaks the destination contract.",
+      "repair": "Grow the same destination light monotonically while carriers may briefly occlude it."
+    },
+    {
+      "failure": "A hard unrelated cut loses the spatial payoff.",
+      "repair": "End when light dominates but leave edge anchors long enough to prove arrival from the original enclosure."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A camera rises through a dark archival tower toward one circular roof lantern; translucent paper kites drift on three depth planes, shelf ribs mark scale and the lantern gradually fills the frame.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A probe advances through an abandoned turbine tunnel toward an amber maintenance hatch; slow floating inspection balloons cross near and far, ring braces pass as scale markers and the hatch light becomes the final field.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

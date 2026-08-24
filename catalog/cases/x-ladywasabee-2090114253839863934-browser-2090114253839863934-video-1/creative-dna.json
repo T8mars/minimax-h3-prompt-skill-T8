@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Begin inside an original symbolic layout at object height so its markers read as spatial architecture before revealing a much larger entity or machine causally bound to that layout. Introduce one external hand or manipulator, keep the surrounding configuration stable, and change exactly one clearly identifiable marker. Do not add a second move. End with one restrained, observable state change in the bound full-scale entity or environment that proves the small intervention altered a larger system. The reusable mechanism is layout-as-world, scale reveal, single deliberate intervention and embodied consequence—not the source chess pieces, king, board, armored hand, crown, palace, fantasy design, exact move, camera route, color treatment, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Travel through an original symbolic layout at marker height before revealing its larger system.",
+      "purpose": "Lets the audience experience the abstract arrangement as a physical world.",
+      "ablation_failure": "A top-down diagram alone cannot establish the later scale reversal.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Bind the layout to one much larger entity, machine or environment in a single wide reveal.",
+      "purpose": "Makes later symbolic intervention consequential beyond the tabletop.",
+      "ablation_failure": "Without a bound system, moving a marker remains decorative.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Introduce one external hand or manipulator while surrounding markers remain stable.",
+      "purpose": "Identifies a deliberate decision-maker and preserves comparison context.",
+      "ablation_failure": "Many simultaneous changes obscure agency and causality.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Change exactly one clearly identifiable marker and show contact.",
+      "purpose": "Creates one readable strategic cause instead of a montage of operations.",
+      "ablation_failure": "A hidden or multiple move cannot be mapped to the final result.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on one restrained state change in the bound system.",
+      "purpose": "Confirms the larger consequence without replacing the idea with spectacle.",
+      "ablation_failure": "No response leaves the symbolic action unresolved; excessive action hides the causal link.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source black and white chess pieces, board squares, exact arrangement, move and checkmate implication",
+    "the source seated king-like ruler, face, crown, armor, cloak, throne, hand and glowing-eye treatment",
+    "the source palace-scale chess world, armies, architecture, snow or particles and fantasy iconography",
+    "the source low chess traversal, central reveal, macro hand move, facial close-up, timing and cinematic rendering",
+    "the source creator identity, LouieVerse naming, NANOCINEMA text, watermark, prompt-sharing claim and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "A technician moves one obsidian lens disk inside a miniature lighthouse-optics array; the full-scale dormant lighthouse across the chamber opens one iris and projects a single beam.",
+      "prompt_seed": "A technician moves one obsidian lens disk inside a miniature lighthouse-optics array; the full-scale dormant lighthouse across the chamber opens one iris and projects a single beam."
+    },
+    {
+      "concept": "A gloved archivist relocates one brass index tile inside a city-scale paper map; one distant mechanical archive tower rotates and exposes a sealed illuminated door.",
+      "prompt_seed": "A gloved archivist relocates one brass index tile inside a city-scale paper map; one distant mechanical archive tower rotates and exposes a sealed illuminated door."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A top-down diagram alone cannot establish the later scale reversal.",
+      "repair": "Travel through an original symbolic layout at marker height before revealing its larger system."
+    },
+    {
+      "failure": "Without a bound system, moving a marker remains decorative.",
+      "repair": "Bind the layout to one much larger entity, machine or environment in a single wide reveal."
+    },
+    {
+      "failure": "Many simultaneous changes obscure agency and causality.",
+      "repair": "Introduce one external hand or manipulator while surrounding markers remain stable."
+    },
+    {
+      "failure": "A hidden or multiple move cannot be mapped to the final result.",
+      "repair": "Change exactly one clearly identifiable marker and show contact."
+    },
+    {
+      "failure": "No response leaves the symbolic action unresolved; excessive action hides the causal link.",
+      "repair": "End on one restrained state change in the bound system."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A technician moves one obsidian lens disk inside a miniature lighthouse-optics array; the full-scale dormant lighthouse across the chamber opens one iris and projects a single beam.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A gloved archivist relocates one brass index tile inside a city-scale paper map; one distant mechanical archive tower rotates and exposes a sealed illuminated door.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-hey-am-jasmine-2087391641607033317-browser-2087391641607033317-video-1",
+  "slug": "follow-one-encounter-and-departure",
+  "title": "纪实随拍｜偶发干扰、群体片段与继续离开",
+  "source_title": "假日随拍｜背后跟随、路人干扰与多次自然停顿",
+  "summary": "用背后手持跟拍建立一条连续公共路线，让主体自然回望并依次遇到路人绕行、店铺停留、群体小活动和轻微失误；保留不完美构图与尴尬停顿，最后让主体继续离开并以新的环境事件收束。作为既有观察者跟拍模板的新证据，不新增选择器。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-one-encounter-and-departure",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hey-am-jasmine-2087391641607033317-browser-2087391641607033317-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hey-am-jasmine-2087391641607033317-browser-2087391641607033317-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-observer-follow-encounter-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-techhalla-2081333381401334006-browser-2081333381401334006-video-1",
+  "input_format": "侧面连续跟拍 + 狭窄起点 + 行进中空间揭示 + 一次偶发横穿 + 一次克制回应 + 继续离开",
+  "recommended_input": "成年夜班无线电技术员穿锈红工具夹克走过海岸气象站，蓝色栏杆和远处天线平台反复出现；两名成年同事查看一份无品牌贴错标签的样本，技术员出现一次小反应；技术员继续走向天线平台，只回望一次，远处警示灯独立开始旋转",
+  "required_anchors": [
+    "Establish one clearly adult subject, one observer-follow axis and recurring route landmarks before the first interruption.",
+    "Let one incidental person, object or route event force a visible path correction without a reset.",
+    "Observe at least one compact social microevent with a readable reaction and recovery.",
+    "Return to route continuation and end with one independent environmental event rather than a posed finale."
+  ],
+  "tags": [
+    "observer",
+    "follow",
+    "encounter"
+  ],
+  "quality": {
+    "weighted_score": 4.859,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T16:32:09+08:00",
+  "updated_at": "2026-08-23T16:57:21+08:00"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-nett0eth-2090267753915498925-browser-2090267753915498925-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "扁平角色字卡轮转｜同一企鹅贯穿多种运动语法",
+  "source_title": "企鹅动态图形片｜同一角色穿过字环、长词与网格空间",
+  "summary": "同一扁平角色以稳定轮廓、配色和名称结构贯穿扁平字标、眼部宏观、三联剪影、环形字带、长词地面、语义短词卡、网格空间和终局字标；每段只让一个版式动作承担信息功能，最后回到完整角色与名称锁定。",
+  "status": "released",
+  "source_duration_seconds": 13.722993,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nett0eth-2090267753915498925-browser-2090267753915498925-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nett0eth-2090267753915498925-browser-2090267753915498925-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-wakeupgfx-2090565921580425588-browser-2090565921580425588-video-1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "黑与奶油色场组装准确【FOLIO】书本字标，揭示奶油机身、青绿面罩和红色书脊灯的成年比例机器人；准确立体【SORT】沿对角线延伸，三个缩小的同一机器人沿字面单向移动；青绿面罩与红色书脊灯短暂宏观，拉回同一完整机器人并落入【FOLIO】书本标志",
+  "required_anchors": [
+    "Establish one stylized character with stable silhouette, palette, face marks and a compact original name field.",
+    "Use at least four modules with genuinely different layout logic while limiting each to one new short word or field.",
+    "Preserve identity through flat cards, macro scale and shallow 3D space, including one repetition or verification phase.",
+    "Return from fragments or details to the full character and original name field for a stable hold."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.945,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T00:20:47+08:00",
+  "updated_at": "2026-08-24T00:35:56+08:00"
+}

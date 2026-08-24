@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original stylized character through stable silhouette, palette, face marks and a compact original name field. Rotate through at least four graphic modules that change layout logic—such as triptych, circular text, extruded word track, single-word action card and shallow grid space—while introducing no more than one new short word or identity field per module. Bind each word-bearing module to one readable character action and preserve the same identity anchors through scale, flatness and depth changes. Include one explicit repetition or identity-verification phase, then return from detail fragments to the full character and the original name field. The reusable mechanism is identity-locked module rotation, action-to-word binding, recurring graphic anchors and character-to-wordmark closure—not the source penguin, crest, vest, stripes, words, logo, palette, layouts, choreography, watermark, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one stylized character with stable silhouette, palette, face marks and a compact original name field.",
+      "purpose": "Provides enough identity anchors for aggressive graphic variation.",
+      "ablation_failure": "A single color or generic body shape cannot sustain continuity.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use at least four modules with genuinely different layout logic while limiting each to one new short word or field.",
+      "purpose": "Creates variety without sacrificing reading speed.",
+      "ablation_failure": "Palette-only changes add no structural progression; dense copy becomes noise.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Bind every word-bearing module to one readable character action on or through the typography.",
+      "purpose": "Connects the performer to the information system.",
+      "ablation_failure": "A floating character beside unrelated text produces no causal design.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Preserve identity through flat cards, macro scale and shallow 3D space, including one repetition or verification phase.",
+      "purpose": "Proves the same character survives format changes.",
+      "ablation_failure": "Unmotivated redesign or missing verification makes continuity uncertain.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return from fragments or details to the full character and original name field for a stable hold.",
+      "purpose": "Closes the module carousel into one identity statement.",
+      "ablation_failure": "Ending on an abstract insert leaves the character and title unresolved.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source penguin-like character, pink crest and striped limbs, green padded vest, face and proportions",
+    "the source lowercase name mark and all visible source words, circular text and microcopy",
+    "the source green-pink-black-white palette, yin-yang eye graphic, silhouettes, grids and exact card layouts",
+    "the source repeated rolling characters, word-track movement, poses, transitions, camera path and 13.7-second timing",
+    "the source creator identity, Lil Pudgys identity, MiniMax H3 claim, watermark and branding"
+  ],
+  "instantiations": [
+    {
+      "concept": "An original adult-shaped robot librarian named FOLIO uses a cream chassis, teal visor and red spine light; it crosses INDEX, SORT, STACK and RETURN modules, repeats through numbered shelf cards, then resolves inside the compact FOLIO book mark.",
+      "prompt_seed": "An original adult-shaped robot librarian named FOLIO uses a cream chassis, teal visor and red spine light; it crosses INDEX, SORT, STACK and RETURN modules, repeats through numbered shelf cards, then resolves inside the compact FOLIO book mark."
+    },
+    {
+      "concept": "An original cartoon weather scout named CIRRA uses a round indigo body, yellow hood and white cheek bolts; circular cloud text, an extruded FORECAST track, SIGNAL and SHELTER cards and a grid-map room all return to the CIRRA compass mark.",
+      "prompt_seed": "An original cartoon weather scout named CIRRA uses a round indigo body, yellow hood and white cheek bolts; circular cloud text, an extruded FORECAST track, SIGNAL and SHELTER cards and a grid-map room all return to the CIRRA compass mark."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "A single color or generic body shape cannot sustain continuity.",
+      "repair": "Establish one stylized character with stable silhouette, palette, face marks and a compact original name field."
+    },
+    {
+      "failure": "Palette-only changes add no structural progression; dense copy becomes noise.",
+      "repair": "Use at least four modules with genuinely different layout logic while limiting each to one new short word or field."
+    },
+    {
+      "failure": "A floating character beside unrelated text produces no causal design.",
+      "repair": "Bind every word-bearing module to one readable character action on or through the typography."
+    },
+    {
+      "failure": "Unmotivated redesign or missing verification makes continuity uncertain.",
+      "repair": "Preserve identity through flat cards, macro scale and shallow 3D space, including one repetition or verification phase."
+    },
+    {
+      "failure": "Ending on an abstract insert leaves the character and title unresolved.",
+      "repair": "Return from fragments or details to the full character and original name field for a stable hold."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An original adult-shaped robot librarian named FOLIO uses a cream chassis, teal visor and red spine light; it crosses INDEX, SORT, STACK and RETURN modules, repeats through numbered shelf cards, then resolves inside the compact FOLIO book mark.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An original cartoon weather scout named CIRRA uses a round indigo body, yellow hood and white cheek bolts; circular cloud text, an extruded FORECAST track, SIGNAL and SHELTER cards and a grid-map room all return to the CIRRA compass mark.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

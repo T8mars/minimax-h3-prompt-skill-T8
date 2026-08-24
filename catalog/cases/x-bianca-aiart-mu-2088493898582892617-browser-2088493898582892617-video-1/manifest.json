@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-bianca-aiart-mu-2088493898582892617-browser-2088493898582892617-video-1",
+  "slug": "motion-contact-paint-trail-accumulation",
+  "title": "动作留痕｜接触旋转逐步绘出群舞色场",
+  "source_title": "墨迹街舞｜群舞接触、旋转留痕与色场收束",
+  "summary": "先用全景建立明确表演区域和多名成年表演者，再把动作从站立组合升级到地面支撑与旋转；每次可读接触只留下属于该表演者的连续色彩轨迹，轨迹逐步累积成可验证图形，最后回到完整队形并让色场成为表演结果。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/motion-contact-paint-trail-accumulation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bianca-aiart-mu-2088493898582892617-browser-2088493898582892617-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bianca-aiart-mu-2088493898582892617-browser-2088493898582892617-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-motion-contact-paint-trail-accumulation-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "有边界表演区 + 明确成年多主体基线 + 站立到地面接触升级 + 每人独立留痕家族 + 轨迹只增不减 + 俯拍路径证明 + 完整队形收束",
+  "recommended_input": "废弃涡轮大厅圆形区域内，三名明确成年维护杂技员穿炭灰、象牙白和铁锈色原创工业连体服站成三角；炭灰表演者手撑低扫、象牙白表演者单膝旋转、铁锈色表演者完成一次肩部支撑旋转；铜色、粉笔白和钴蓝轨迹只从对应接触点开始；三名成年人回到稳定三角站姿，脚下互锁矿物色场保持不变并完整可读",
+  "required_anchors": [
+    "Establish one bounded floor and stable adult performer identities before marks appear.",
+    "Escalate from upright coordination to at least two readable floor-contact or rotation actions.",
+    "Accumulate marks monotonically and reveal the combined path history from above.",
+    "End with all performers back in a complete formation while the accumulated field remains."
+  ],
+  "tags": [
+    "motion",
+    "contact",
+    "paint",
+    "trail",
+    "accumulation"
+  ],
+  "quality": {
+    "weighted_score": 4.83,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T15:18:44+08:00",
+  "updated_at": "2026-08-23T15:39:01+08:00"
+}

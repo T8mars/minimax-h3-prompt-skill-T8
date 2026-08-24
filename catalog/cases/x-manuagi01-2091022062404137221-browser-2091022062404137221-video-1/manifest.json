@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-manuagi01-2091022062404137221-browser-2091022062404137221-video-1",
+  "slug": "held-character-brush-title-action-release-emblem",
+  "title": "停顿型角色预告｜凝视、书法字卡、一次动作释放与徽记收束",
+  "source_title": "静候系动画预告｜长停顿蓄力后只释放一次动作",
+  "summary": "先用长于常规剪辑的角色凝视建立身份与情绪，再让一条墨迹和极少文字承担概念转场；回到远景继续等待，随后只释放一次清楚动作，把此前静止蓄积的能量兑现，最后以角色全身、原创名称和单一徽记组成稳定海报。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/held-character-brush-title-action-release-emblem",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-manuagi01-2091022062404137221-browser-2091022062404137221-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-manuagi01-2091022062404137221-browser-2091022062404137221-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-held-character-brush-title-action-release-emblem-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "明确成年原创角色以三项身份锚点和长停顿肖像建立 + 一次材料笔触只承载一个短词 + 回到环境远景时氛围移动但角色继续等待 + 只释放一次完整身体动作并立即收住 + 同一角色、一个原创名称和最多一行身份文字组成稳定徽记海报",
+  "recommended_input": "成年轨道植物学家 MARA 的头盔近景保持，银色脸疤、青绿衣领、橙色种子盒固定，只睁开眼睛；同一成年人站在轨道温室远景，叶片和玻璃雨痕移动，人物不行动；奶油海报上，同一完整成年人位于圆形叶片徽记内，准确【MARA】和【ORBITAL KEEPER】出现",
+  "required_anchors": [
+    "Hold one adult character portrait with three identity anchors until one micro-action becomes salient.",
+    "Use one restrained material mark with no more than one short exact phrase.",
+    "Release exactly one committed full-body action and settle immediately afterward.",
+    "Convert the settled identity into a stable poster with one name and at most one identity line."
+  ],
+  "tags": [
+    "held",
+    "character",
+    "brush",
+    "title",
+    "action",
+    "release"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-24T03:07:23+08:00",
+  "updated_at": "2026-08-24T03:14:22+08:00"
+}

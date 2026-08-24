@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-umesh-ai-2083909535593644291-browser-2083909535593644291-video-1",
+  "slug": "semantic-phrase-physics-escalation-lockup",
+  "title": "语义字效｜短语物理逐级升级到整句锁定",
+  "source_title": "语义文字物理｜火花、涟漪、破壁与整句锁定",
+  "summary": "把一条原创短句拆成连续语义段，每段用不同但相连的材质、空间和动势解释含义；能量与尺度逐级提高，最终停止运动并把完整句子重新组装成可读终态。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/semantic-phrase-physics-escalation-lockup",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-umesh-ai-2083909535593644291-browser-2083909535593644291-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-umesh-ai-2083909535593644291-browser-2083909535593644291-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-semantic-phrase-physics-escalation-lockup-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "原创完整短句 + 固定语义分段 + 每段可读文字与独立物理行为 + 连续载体交接 + 逐级升能 + 整句静止锁定",
+  "recommended_input": "深炭黑背景中央出现一枚信号绿导航点，白色窄体大写字【SMALL SIGNALS】逐字准确组装；波纹延伸成三条发光路线穿过半透明矿物地图，【SHARED】随分散路线连接到字母而逐渐加粗；所有路线停止，完整短句【Small signals become shared direction.】居中出现，signals 与 direction 为信号绿，其余为黑色",
+  "required_anchors": [
+    "Begin with one original sentence divided into a fixed semantic order; reveal the first phrase from a minimal baseline.",
+    "Give every new phrase one readable typographic state and one physical behavior tied to its semantic role.",
+    "Escalate at least two of scale, contrast, spatial depth or motion energy in a controlled sequence.",
+    "Stop the escalation and reassemble the complete sentence in a stable readable final hold."
+  ],
+  "tags": [
+    "semantic",
+    "phrase",
+    "physics",
+    "escalation",
+    "lockup"
+  ],
+  "quality": {
+    "weighted_score": 4.746,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-23T13:12:39+08:00",
+  "updated_at": "2026-08-23T13:25:54+08:00"
+}

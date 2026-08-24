@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original clearly adult agile protagonist and one original heavy opponent on a stable ground axis with a visible environmental impact surface behind them. Make every heavy attack fully commit to a readable trajectory before the agile adult evades; preserve the opponent's mass through slower turns, longer recovery and environmental displacement. Let the agile adult win position through footwork, vaulting or redirected momentum rather than matching force. Include one partial contact or forced slide that the adult converts into recovery. End when the maximum committed attack misses the adult and permanently damages the previously established impact surface, then reveal the same adult outside the attack line. The reusable mechanism is asymmetric body design, committed force trajectory, speed-based evasion, one risk contact, environmental power proof and off-axis survival—not the source woman, face, black suit, armored giant, warehouse, crates, punches, wall break, choreography, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one adult agile body, one heavy opponent, one ground axis and one impact surface.",
+      "purpose": "Makes both abilities and later consequences measurable.",
+      "ablation_failure": "Without anchors the duel becomes generic motion.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Let every heavy attack commit to a visible trajectory before evasion.",
+      "purpose": "Allows speed to be proven against a real risk.",
+      "ablation_failure": "Dodging before commitment looks preplanned rather than fast.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Preserve mass through slower turns, recovery time and environmental displacement.",
+      "purpose": "Keeps power physically credible.",
+      "ablation_failure": "A weightless heavy opponent erases the contrast.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use position, vaulting or redirected momentum for the agile response, including one recoverable partial contact.",
+      "purpose": "Proves speed without turning the adult into another brute.",
+      "ablation_failure": "Equal-force punches collapse the asymmetric design.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Let the maximum missed strike damage the established surface and reveal the adult outside its line.",
+      "purpose": "Proves both power and survival in one consequence.",
+      "ablation_failure": "A clean miss with no damage undersells the opponent.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "the source adult woman, face, ponytail, black suit and exact stunt performance",
+    "the source massive armored humanoid, armor design, fists, scale and motion",
+    "the source warehouse, crates, walls, windows, dust and exact impact surface",
+    "the source punches, flips, slides, wall break, camera path and 15-second timing",
+    "the source creator identity, Seedance 2.5 wording and truncated prompt"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult parkour courier faces a slow hydraulic loader in a shipyard; the loader's committed clamp swings drive the courier over rails, one glancing hit becomes a slide, and the final clamp crushes a marked container after the courier clears the line.",
+      "prompt_seed": "An adult parkour courier faces a slow hydraulic loader in a shipyard; the loader's committed clamp swings drive the courier over rails, one glancing hit becomes a slide, and the final clamp crushes a marked container after the courier clears the line."
+    },
+    {
+      "concept": "An adult ceremonial dancer confronts a massive stone guardian in a temple; committed arms create readable arcs, one shoulder brush spins the dancer to safety, and the final strike breaks an established gate while the dancer appears beside a column.",
+      "prompt_seed": "An adult ceremonial dancer confronts a massive stone guardian in a temple; committed arms create readable arcs, one shoulder brush spins the dancer to safety, and the final strike breaks an established gate while the dancer appears beside a column."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without anchors the duel becomes generic motion.",
+      "repair": "Establish one adult agile body, one heavy opponent, one ground axis and one impact surface."
+    },
+    {
+      "failure": "Dodging before commitment looks preplanned rather than fast.",
+      "repair": "Let every heavy attack commit to a visible trajectory before evasion."
+    },
+    {
+      "failure": "A weightless heavy opponent erases the contrast.",
+      "repair": "Preserve mass through slower turns, recovery time and environmental displacement."
+    },
+    {
+      "failure": "Equal-force punches collapse the asymmetric design.",
+      "repair": "Use position, vaulting or redirected momentum for the agile response, including one recoverable partial contact."
+    },
+    {
+      "failure": "A clean miss with no damage undersells the opponent.",
+      "repair": "Let the maximum missed strike damage the established surface and reveal the adult outside its line."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult parkour courier faces a slow hydraulic loader in a shipyard; the loader's committed clamp swings drive the courier over rails, one glancing hit becomes a slide, and the final clamp crushes a marked container after the courier clears the line.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult ceremonial dancer confronts a massive stone guardian in a temple; committed arms create readable arcs, one shoulder brush spins the dancer to safety, and the final strike breaks an established gate while the dancer appears beside a column.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}
