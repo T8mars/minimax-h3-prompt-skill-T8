@@ -294,7 +294,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 下载 `T8-Prompt-Library-Setup-v1.2.4.exe`；macOS 下载 `T8-Prompt-Library-v1.2.4-mac-universal.dmg`。
+2. Windows 下载 `T8-Prompt-Library-Setup-v1.2.5.exe`；macOS 下载 `T8-Prompt-Library-v1.2.5-mac-universal.dmg`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
 
@@ -355,7 +355,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.2.4**。项目使用十进制进位：
+当前目标版本是 **v1.2.5**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -364,6 +364,7 @@ v1.2.0 -> v1.2.1
 v1.2.1 -> v1.2.2
 v1.2.2 -> v1.2.3
 v1.2.3 -> v1.2.4
+v1.2.4 -> v1.2.5
 v1.9.9 -> v2.0.0
 ```
 

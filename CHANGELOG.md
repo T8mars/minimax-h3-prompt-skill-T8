@@ -9,6 +9,16 @@
 - 首批持续扩充的 MiniMax H3 与 Seedance 2.0 Creative DNA 案例。
 - Linux 桌面发行评估。
 
+## [1.2.5] - 2026-08-25
+
+### Fixed
+
+- 将两份新增案例 manifest 规范化为跨平台一致的 LF 字节，并重新绑定四份中英文侧车 SHA-256，修复 Windows 工作区 CRLF 与 Git/macOS LF 不一致造成的发布前置校验失败。
+
+### Validation
+
+- 发布标签继续只绑定单一提交；v1.2.5 在 Windows 与 macOS runner 上重新执行仓库、媒体、安装包和打包后 E2E 全部门禁。
+
 ## [1.2.4] - 2026-08-25
 
 ### Added
