@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.2.0",
-  "generated_at": "2026-08-24T04:13:39+08:00",
-  "case_count": 215,
+  "catalog_version": "1.2.1",
+  "generated_at": "2026-08-24T14:46:24+08:00",
+  "case_count": 216,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -7672,6 +7672,43 @@
       ],
       "quality_score": 4.96,
       "updated_at": "2026-08-24T03:40:35+08:00"
+    },
+    {
+      "case_id": "user-video-094e45c4f44a2cb1b9170c0689af8327",
+      "slug": "visible-four-axis-controller-same-beat-response",
+      "title": "指尖控制｜四向同拍全身响应",
+      "status": "released",
+      "summary": "前景控制器用固定上下左右屏幕映射逐拍驱动同框响应者做清楚全身动作；纵横轴重复验证后才允许一次短收尾。",
+      "manifest_path": "cases/user-video-094e45c4f44a2cb1b9170c0689af8327/manifest.json",
+      "summary_path": "cases/user-video-094e45c4f44a2cb1b9170c0689af8327/SUMMARY.md",
+      "source_path": "cases/user-video-094e45c4f44a2cb1b9170c0689af8327/source.json",
+      "creative_dna_path": "cases/user-video-094e45c4f44a2cb1b9170c0689af8327/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-094e45c4f44a2cb1b9170c0689af8327/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-094e45c4f44a2cb1b9170c0689af8327/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-094e45c4f44a2cb1b9170c0689af8327/preview.gif",
+        "poster": "cases/user-video-094e45c4f44a2cb1b9170c0689af8327/poster.webp",
+        "mp4": "media/user-video-094e45c4f44a2cb1b9170c0689af8327/preview.mp4"
+      },
+      "skill_path": "../skills/visible-four-axis-controller-same-beat-response",
+      "template_id": "t8-case-visible-four-axis-controller-same-beat-response-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "visible",
+        "four",
+        "axis",
+        "controller",
+        "same",
+        "beat"
+      ],
+      "quality_score": 4.673,
+      "updated_at": "2026-08-24T14:42:09+08:00"
     }
   ]
 }

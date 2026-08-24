@@ -1,0 +1,228 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-094e45c4f44a2cb1b9170c0689af8327",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "2fae579f61bc7a32555c8f3007fb8d0034c6c1ff99e05c08374e45b101bfa0f1",
+    "creative_dna_sha256": "2d1fe774b234eb6dbc2ce18b1261a1ff9cc2d7821ab778d7360a651375f7293f"
+  },
+  "content": {
+    "title": "Finger Control | Four-Axis Same-Beat Full-Body Response",
+    "summary": "Keep a small foreground controller and a complete responder readable in one continuous frame. Map up, down, left, and right to fixed full-body responses, execute one cue and one matching response per beat, repeat both axes to prove the rule, then allow one brief release.",
+    "quick_start": {
+        "input_format": "Stable continuous take + co-visible foreground controller and complete responder + fixed four-direction mapping + one command and one same-beat full-body response per beat + repeated vertical and horizontal axis tests + one brief final release",
+        "recommended_input": "In a bright robotics laboratory, a light-gray-gloved technician keeps only a small luminous stylus in the lower-right foreground. An original full-size robot follows the ten-beat sequence UP, DOWN, LEFT, RIGHT, LEFT, RIGHT, UP, DOWN, LEFT, RIGHT with synchronized rises, lowers, or full-body lateral shifts, then ends with one amber light pulse and arm lift.",
+      "required_anchors": [
+        "第一条指令前，控制器和完整响应者已经同框且都可读。",
+        "屏幕方向固定：上=升、下=降、左=整体左移、右=整体右移。",
+        "每个指令只对应一个同拍响应；无提前、延迟、轴向翻转或独立即兴。",
+        "横向是可见全身位移，纵向改变重心；纵横轴都至少重复一次再收尾。"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Keep a small foreground controller and a complete responder readable in one continuous frame. Map up, down, left, and right to fixed full-body responses, execute one cue and one matching response per beat, repeat both axes to prove the rule, then allow one brief release.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A visible foreground controller establishes a fixed four-direction screen-space language; a co-visible responder begins one matching full-body movement within the same beat for every cue, and repeated axis alternation lets the audience learn and verify the causal rule inside one continuous frame.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "The visible controller and full responder must be co-visible before the first command and remain jointly readable throughout.",
+          "evidence_ids": [
+            "obs-01",
+            "obs-07",
+            "beat-01"
+          ],
+          "ablation_failure": "If either party leaves frame or the hand covers the responder, the audience cannot verify causality and the hook becomes an ordinary dance or mime."
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use one fixed screen-coordinate mapping: up means rise, down means lower, left means shift left and right means shift right.",
+          "evidence_ids": [
+            "obs-04",
+            "obs-05",
+            "beat-02",
+            "beat-03"
+          ],
+          "ablation_failure": "If axes invert, rotate or change meaning, the learned visual rule collapses and repeated commands feel random."
+        },
+        {
+          "id": "inv-03",
+          "rule": "Each deliberate cue receives one immediate beat-level response; the responder does not freestyle between commands.",
+          "evidence_ids": [
+            "obs-04",
+            "obs-05",
+            "obs-11",
+            "beat-02",
+            "beat-03"
+          ],
+          "ablation_failure": "Delay, anticipation or unrelated choreography breaks the controller illusion even when individual poses look attractive."
+        },
+        {
+          "id": "inv-04",
+          "rule": "Horizontal commands produce whole-body displacement and vertical commands change center of gravity, keeping response amplitude unmistakable.",
+          "evidence_ids": [
+            "obs-04",
+            "obs-05",
+            "beat-03",
+            "beat-04"
+          ],
+          "ablation_failure": "Tiny wrist, shoulder or hip twitches are too ambiguous to read as directional control."
+        },
+        {
+          "id": "inv-05",
+          "rule": "Alternate and repeat both axes in one continuous take, then end with a brief release only after the rule has been proven.",
+          "evidence_ids": [
+            "obs-08",
+            "obs-10",
+            "obs-11",
+            "beat-05"
+          ],
+          "ablation_failure": "A single demonstration cannot teach and verify the mapping; cuts or an early freestyle ending remove the proof."
+        }
+      ],
+      "slots": [
+        {
+          "name": "responder",
+          "description": "Adult performer, original robot, puppet or other clearly readable full-body responder."
+        },
+        {
+          "name": "controller",
+          "description": "Finger, stylus, baton, wand or other small foreground directional instrument."
+        },
+        {
+          "name": "setting",
+          "description": "Room, studio, lab, stage or miniature theatre with a stable spatial baseline."
+        },
+        {
+          "name": "command_sequence",
+          "description": "A beat-aligned order containing vertical and horizontal commands with at least one repeated axis test."
+        },
+        {
+          "name": "response_vocabulary",
+          "description": "Rise/lower center-of-gravity changes plus visible full-body left/right shifts."
+        },
+        {
+          "name": "camera",
+          "description": "One continuous view that preserves both cue and response; angle and lens may change by instantiation."
+        },
+        {
+          "name": "sound_family",
+          "description": "Original beat or diegetic cue family that clearly marks each command without copying source audio."
+        },
+        {
+          "name": "release",
+          "description": "A brief final flourish after the mapping has been proven."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "Do not reproduce the source woman's face, hairstyle, body proportions or recognizable likeness.",
+        "Do not reproduce the black cutout bodysuit or its exact silhouette.",
+        "Do not reproduce the source blue-gray room, wall-mounted television, door placement, ceiling-light layout or floor arrangement.",
+        "Do not reproduce the source foreground hand's exact appearance, scale path or framing errors.",
+        "Do not reuse the exact observed dance surface, exact source command timing or source audio; preserve only the abstract causal grammar."
+      ],
+      "instantiations": [
+        {
+          "concept": "Luminous stylus controls a studio robot",
+          "description": "In a bright robotics lab, a gloved technician's lower-right luminous stylus directs an original full-size articulated studio robot through the same four-axis response grammar in one uncut take."
+        },
+        {
+          "concept": "Conductor baton controls an adult mime",
+          "description": "On a white cyc stage, a small foreground conductor baton directs an original adult mime in a saffron rehearsal outfit through rise, lower and full-body side shifts without musical freelancing."
+        },
+        {
+          "concept": "Magnetic wand controls a paper puppet",
+          "description": "In a handcrafted tabletop theatre, a foreground magnetic wand directs a large articulated paper puppet through the same four screen-direction responses while both remain visible."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "The controller crosses the center or covers the responder.",
+          "repair": "Keep the controller inside a reserved foreground quadrant and cap its apparent area before rendering."
+        },
+        {
+          "failure": "The responder uses tiny ambiguous twitches.",
+          "repair": "Require visible center-of-gravity change for vertical cues and whole-body displacement for horizontal cues."
+        },
+        {
+          "failure": "The responder anticipates, lags or freestyles.",
+          "repair": "Use one cue per beat, start cue and response together, and prohibit unrelated movement between commands."
+        },
+        {
+          "failure": "The camera or responder scale drifts until one party becomes unreadable.",
+          "repair": "Lock a continuous framing corridor and keep both controller and responder legible for all commands."
+        },
+        {
+          "failure": "Left/right mapping flips across the take.",
+          "repair": "Define screen coordinates once and restate them as a hard continuity constraint."
+        },
+        {
+          "failure": "Complex choreography obscures causality.",
+          "repair": "Reduce the vocabulary to rise, lower and full-body side shifts; reserve one flourish for the final release."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "Luminous stylus controls a studio robot",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "responder",
+            "controller",
+            "setting",
+            "response_vocabulary",
+            "sound_family",
+            "release"
+          ],
+          "finding": "The mapping stays legible with a nonhuman responder and new industrial surface; the hook does not depend on the source dancer, wardrobe or room."
+        },
+        {
+          "concept": "Conductor baton controls an adult mime",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "responder",
+            "controller",
+            "setting",
+            "camera",
+            "sound_family",
+            "release"
+          ],
+          "finding": "A stage-performance transfer preserves the controller-responder proof while changing costume, palette, instrument and performance genre."
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

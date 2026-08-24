@@ -281,6 +281,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![速度对蛮力的非对称证明｜重击承诺、连续闪避与环境撞击](catalog/cases/x-synthesarah-2091007759130988559-browser-2091007759130988559-video-1/preview.gif)](https://x.com/SyntheSarah/status/2091007759130988559) | **[速度对蛮力的非对称证明｜重击承诺、连续闪避与环境撞击](catalog/cases/x-synthesarah-2091007759130988559-browser-2091007759130988559-video-1/SUMMARY.md)**<br><sub>x-synthesarah-2091007759130988559-browser-2091007759130988559-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![微型载体FPV产品回环｜桌面障碍、生态穿越与包装复归](catalog/cases/x-gilangr90760584-2091004987023454599-browser-2091004987023454599-video-1/preview.gif)](https://x.com/GilangR90760584/status/2091004987023454599) | **[微型载体FPV产品回环｜桌面障碍、生态穿越与包装复归](catalog/cases/x-gilangr90760584-2091004987023454599-browser-2091004987023454599-video-1/SUMMARY.md)**<br><sub>x-gilangr90760584-2091004987023454599-browser-2091004987023454599-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![威胁动作被亲昵打断｜升级再打断后转成双人撤离](catalog/cases/x-tanluai-2091004028180431097-browser-2091004028180431097-video-1/preview.gif)](https://x.com/TanLuAI/status/2091004028180431097) | **[威胁动作被亲昵打断｜升级再打断后转成双人撤离](catalog/cases/x-tanluai-2091004028180431097-browser-2091004028180431097-video-1/SUMMARY.md)**<br><sub>x-tanluai-2091004028180431097-browser-2091004028180431097-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![指尖控制｜四向同拍全身响应](catalog/cases/user-video-094e45c4f44a2cb1b9170c0689af8327/preview.gif)](https://github.com/T8mars/minimax-h3-prompt-skill-T8/tree/main/catalog/cases/user-video-094e45c4f44a2cb1b9170c0689af8327) | **[指尖控制｜四向同拍全身响应](catalog/cases/user-video-094e45c4f44a2cb1b9170c0689af8327/SUMMARY.md)**<br><sub>user-video-094e45c4f44a2cb1b9170c0689af8327</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -289,7 +290,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 下载 `T8-Prompt-Library-Setup-v1.2.0.exe`；macOS 下载 `T8-Prompt-Library-v1.2.0-mac-universal.dmg`。
+2. Windows 下载 `T8-Prompt-Library-Setup-v1.2.1.exe`；macOS 下载 `T8-Prompt-Library-v1.2.1-mac-universal.dmg`。
 3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
 4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
 
@@ -348,11 +349,12 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.2.0**。项目使用十进制进位：
+当前目标版本是 **v1.2.1**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
 v1.1.9 -> v1.2.0
+v1.2.0 -> v1.2.1
 v1.9.9 -> v2.0.0
 ```
 
