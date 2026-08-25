@@ -5,7 +5,9 @@ import { failWith, readJson, repoRoot } from "./lib.mjs";
 
 const failures = [];
 const requiredLocales = ["en", "zh-CN"];
-const sha = (file) => crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+const sha = (file) => crypto.createHash("sha256")
+  .update(fs.readFileSync(file, "utf8").replaceAll("\r\n", "\n"))
+  .digest("hex");
 const isProtected = (value) => /^(?:pass|fail|moderate|simple|complex|low|medium|high|released|published)$/u.test(value)
   || /^(?:inv|beat|obs)-\d+$/u.test(value)
   || /^[a-z][a-z0-9]*(?:_[a-z0-9]+)+$/u.test(value);
