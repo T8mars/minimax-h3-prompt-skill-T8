@@ -113,7 +113,9 @@ function serializeCatalog(catalog) {
       gifUrl: assetUrl(item.media.gif),
       posterUrl: assetUrl(item.media.poster),
       videoUrl: assetUrl(item.media.video),
-      hasFullVideo: item.media.hasFullVideo
+      hasFullVideo: item.media.hasFullVideo,
+      previewKind: item.media.previewKind || "source_preview",
+      previewStatus: item.media.previewStatus || {}
     }
   });
   return {

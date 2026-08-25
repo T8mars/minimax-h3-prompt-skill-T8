@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { failWith, findFirstStringByKeys, listDirectories, readJson, repoRoot, resolveRepoPath, toPosix } from "./lib.mjs";
+import { MECHANISM_GIF_STATUS, MECHANISM_POSTER_STATUS, mechanismPreviewFailures } from "./gif-inspection.mjs";
 
 const failures = [];
 const catalogPath = path.join(repoRoot, "catalog", "manifest.json");
@@ -90,6 +91,13 @@ for (const entry of entries) {
   const logicalMp4 = caseManifest.preview_refs?.mp4 ?? caseManifest.preview_paths?.mp4;
   if (logicalMp4 !== `media/${id}/preview.mp4`) failures.push(`catalog/cases/${id}/manifest.json: MP4 release mapping must be 'media/${id}/preview.mp4'`);
 
+  const previewStatus = caseManifest.preview_status && typeof caseManifest.preview_status === "object" ? caseManifest.preview_status : {};
+  const indexedPreviewStatus = entry.preview_status && typeof entry.preview_status === "object" ? entry.preview_status : {};
+  if (entry.preview_status !== undefined && JSON.stringify(indexedPreviewStatus) !== JSON.stringify(previewStatus)) failures.push(`catalog/manifest.json: ${id} preview_status must match the case manifest`);
+  if (previewStatus.gif === "derived_placeholder_no_source_media" || previewStatus.poster === "derived_placeholder_no_source_media") {
+    failures.push(`catalog/cases/${id}: released cases may not use a text-only placeholder preview`);
+  }
+
   for (const [label, filePath] of requiredDefaults) {
     if (!fs.existsSync(filePath)) failures.push(`catalog/cases/${id}: missing ${label} at ${toPosix(path.relative(repoRoot, filePath))}`);
     else if (fs.statSync(filePath).size === 0) failures.push(`catalog/cases/${id}: ${label} is empty`);
@@ -105,6 +113,17 @@ for (const entry of entries) {
   if (source) {
     const sourceUrl = findFirstStringByKeys(source, ["canonical_source_url", "canonical_url", "source_post_url", "post_url", "source_url"]);
     if (!sourceUrl || !/^https:\/\//i.test(sourceUrl)) failures.push(`catalog/cases/${id}/source.json: canonical HTTPS source URL is required`);
+    if (previewStatus.mp4 === "private_local_only_not_exported") {
+      if (entry.preview_status === undefined) failures.push(`catalog/manifest.json: ${id} rights-limited preview_status must be indexed`);
+      if (previewStatus.gif !== MECHANISM_GIF_STATUS) failures.push(`catalog/cases/${id}: rights-limited released cases must use ${MECHANISM_GIF_STATUS}`);
+      if (previewStatus.poster !== MECHANISM_POSTER_STATUS) failures.push(`catalog/cases/${id}: rights-limited released cases must use ${MECHANISM_POSTER_STATUS}`);
+      if (previewStatus.source_visuals_used !== false) failures.push(`catalog/cases/${id}: rights-safe mechanism previews must declare source_visuals_used=false`);
+      if (source.video_reference?.preview_kind !== "original_mechanism_animation") failures.push(`catalog/cases/${id}/source.json: rights-limited preview_kind must be original_mechanism_animation`);
+      if (JSON.stringify(source.video_reference?.preview_status || {}) !== JSON.stringify(previewStatus)) failures.push(`catalog/cases/${id}/source.json: preview_status must match the case manifest`);
+      failures.push(...mechanismPreviewFailures(path.join(caseDir, "preview.gif")));
+      const posterPath = path.join(caseDir, "poster.webp");
+      if (!fs.existsSync(posterPath) || fs.statSync(posterPath).size < 8000) failures.push(`catalog/cases/${id}/poster.webp: mechanism poster must be a non-trivial WebP asset`);
+    }
   }
 
   const models = Array.isArray(entry.models) ? entry.models.map((value) => String(value).toLowerCase()) : [];

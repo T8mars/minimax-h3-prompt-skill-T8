@@ -202,10 +202,12 @@ async function run() {
     assert.ok(await page.locator(".case-card").count() > 10, "stable platform filter must retain the X case set");
 
     assert.equal(await page.locator(".case-card").first().getAttribute("data-item-key"), expectedNewestXItemKey, "newest-added must remain stable inside the X filter");
+    assert.equal(await page.locator(`.case-card[data-item-key="${expectedFallbackXItemKey}"] .media-badge`).textContent(), "Original mechanism animation", "rights-limited cases must identify the generated mechanism animation instead of claiming source GIF footage");
     await page.locator(`.case-card[data-item-key="${expectedFallbackXItemKey}"]`).click();
     await page.waitForSelector("#case-dialog[open]");
     assert.equal(await page.locator("#detail-media video").count(), 0, "rights-limited cases must not fabricate a packaged source video");
     assert.equal(await page.locator("#detail-media img").count(), 1, "rights-limited cases must keep the catalog GIF fallback");
+    assert.match(await page.locator("#detail-media .media-fallback").textContent(), /original mechanism animation.*no frames from the creator post/iu, "detail view must explain the preview/source boundary in plain language");
     await page.keyboard.press("Escape");
     await page.locator("#case-dialog").waitFor({ state: "hidden" });
     await page.locator(`.case-card[data-item-key="${favoriteItemKey}"]`).click();

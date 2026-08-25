@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.2.8`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.2.8`。
+当前版本是 `v1.2.9`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.2.9`。
 
 版本采用十进制进位：
 
@@ -17,6 +17,7 @@
 1.2.5 -> 1.2.6
 1.2.6 -> 1.2.7
 1.2.7 -> 1.2.8
+1.2.8 -> 1.2.9
 1.9.9 -> 2.0.0
 ```
 
@@ -47,6 +48,14 @@ Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHu
 
 媒体包只收录案例 manifest 中 `preview_status.mp4=available_in_electron_media_pack` 的 MP4。标记为 `private_local_only_not_exported` 的案例必须进入 manifest 的 `unavailable_cases`，安装包使用仓库内 GIF/Poster 和原帖链接；若媒体暂存目录中出现这类来源 MP4，打包脚本和验证器都会失败。`files` 与 `unavailable_cases` 必须无重叠、无遗漏地覆盖全部公开案例。
 
+### 正式案例预览质量门（强制）
+
+- 正式收录的案例不得使用纯文字、双帧换色或“请打开原帖”占位 GIF。缺少可分发来源视频不是降低封面质量的理由。
+- `preview_status.mp4=private_local_only_not_exported` 时，只允许使用不含任何来源画面的原创机制动画：`gif=generated_mechanism_animation_no_source_media`、`poster=generated_mechanism_poster_no_source_media`、`source_visuals_used=false`，并在 `source.json` 明确 `preview_kind=original_mechanism_animation`。
+- 原创机制动画必须真实表现案例的因果阶段、运动路径或状态变化，并满足原始 GIF 至少 640×360、24 帧、1.8 秒、120 KiB；安装包紧凑副本至少 280×150、8 帧、1.8 秒、20 KiB。仅修改元数据不能绕过门禁。
+- 界面必须把这类资产显示为“原创机制动画”，不得标成“完整来源视频”或笼统的“GIF 预览”；详情页必须说明动画不含原帖画面，并保留作者原帖入口。
+- 每批正式收录、目录合并与 Release 前都运行 `npm run validate`。校验器发现旧状态 `derived_placeholder_no_source_media`、帧数/时长/尺寸/体积不足、状态不一致或来源画面边界缺失时必须停止发布。
+
 ### 本地准备媒体包
 
 媒体目录结构：
@@ -63,10 +72,10 @@ Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHu
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.2.8
+npm run media:pack -- -Version 1.2.9
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个允许分发文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.2.8.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录可分发案例 `files`、权利受限案例 `unavailable_cases` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个允许分发文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.2.9.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录可分发案例 `files`、权利受限案例 `unavailable_cases` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 

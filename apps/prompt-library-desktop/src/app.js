@@ -177,7 +177,7 @@ const UI = {
     newestAdded: "Newest added", recentlyUpdated: "Recently updated", oldestAdded: "Oldest added", titleAsc: "Title A–Z", titleDesc: "Title Z–A", recentlyViewed: "Most recently viewed",
     allPlatforms: "All platforms", allSources: "All sources", allModels: "All models", allTags: "All tags",
     unknownDuration: "Unknown duration", seconds: "seconds", unknownPlatform: "Unknown platform",
-    completeVideo: "Complete source video", gifPreview: "GIF preview", addCompare: "Add to compare", compared: "Added ✓",
+    completeVideo: "Complete source video", gifPreview: "GIF preview", mechanismPreview: "Original mechanism animation", addCompare: "Add to compare", compared: "Added ✓",
     published: "PUBLISHED", openPlay: "View and play →", openModels: "View H3 / Seedance →",
     copy: "Copy", copied: "Copied", copyFailed: "Copy failed; select the text manually", copyFailedShort: "Copy failed",
     copyOverview: "Copy overview", copySource: "Copy source link", copySection: "Copy section", copyDna: "Copy Creative DNA", copyFull: "Copy full item", copyPrompt: "Copy current prompt",
@@ -188,7 +188,7 @@ const UI = {
     passed: "Passed", approved: "Approved", notImported: "Not imported; the official capability is already built into the node", packaged: "Packaged", notPackaged: "Installable Skill; not bundled into the node",
     languageLocked: "The executable prompt keeps its validated native language and is not translated by the display switch.",
     noPrompt: "No template is available for this model.", maxCompare: "You can compare up to 3 cases.", needCompare: "Select at least 2 cases to compare.",
-    sourceLink: "Open source ↗", officialPreview: "Open official preview ↗", localFull: "Complete local source MP4", fallbackMedia: "GIF/poster fallback only",
+    sourceLink: "Open source ↗", officialPreview: "Open official preview ↗", localFull: "Complete local source MP4", fallbackMedia: "GIF/poster fallback only", mechanismFallback: "Original mechanism animation · source video stays on the creator post",
     mechanism: "Core mechanism", invariants: "Invariants", slots: "Variable slots", anti_copy_exclusions: "Anti-copy exclusions", instantiations: "Instantiations", failure_modes: "Failure modes", transfer_tests: "Transfer tests",
     complexity: "Complexity", rule: "Rule", purpose: "Purpose", ablation_failure: "Ablation failure", evidence_ids: "Evidence IDs", name: "Name", constraint: "Constraint", concept: "Concept", prompt_seed: "Prompt seed", failure: "Failure", repair: "Repair", result: "Result", preserved_invariant_ids: "Preserved invariant IDs", changed_slots: "Changed slots",
     usage_scope: "Usage scope", source_boundary: "Source boundary", comfyui_boundary: "ComfyUI boundary", applicable_scope: "Applicable scope", not_suitable_for: "Not suitable for", usage_steps: "Usage steps", quality_repairs: "Quality repairs",
@@ -206,7 +206,7 @@ const UI = {
     newestAdded: "最新收录", recentlyUpdated: "最近更新", oldestAdded: "最早收录", titleAsc: "标题 A–Z", titleDesc: "标题 Z–A", recentlyViewed: "最近浏览",
     allPlatforms: "全部平台", allSources: "全部来源", allModels: "全部模型", allTags: "全部标签",
     unknownDuration: "未知时长", seconds: "秒", unknownPlatform: "未知平台",
-    completeVideo: "完整来源视频", gifPreview: "GIF 预览", addCompare: "加入对比", compared: "已加入对比 ✓",
+    completeVideo: "完整来源视频", gifPreview: "GIF 预览", mechanismPreview: "原创机制动画", addCompare: "加入对比", compared: "已加入对比 ✓",
     published: "已发布", openPlay: "查看并播放 →", openModels: "查看 H3 / Seedance →",
     copy: "复制", copied: "已复制", copyFailed: "复制失败，请手动选择文本", copyFailedShort: "复制失败",
     copyOverview: "复制概览", copySource: "复制来源链接", copySection: "复制本节", copyDna: "复制 Creative DNA", copyFull: "复制完整案例", copyPrompt: "复制当前提示词",
@@ -217,7 +217,7 @@ const UI = {
     passed: "通过", approved: "已审核", notImported: "不导入；节点已内置官方能力", packaged: "已打包", notPackaged: "Skill 可独立安装；未打包进节点",
     languageLocked: "可执行提示词保持已验证的原生语言，界面切换不会翻译或改写提示词。",
     noPrompt: "此案例暂未提供该模型的模板。", maxCompare: "最多同时对比 3 个案例。", needCompare: "至少选择 2 个案例才能对比。",
-    sourceLink: "查看来源 ↗", officialPreview: "打开官方示例 ↗", localFull: "本地完整来源 MP4", fallbackMedia: "仅 GIF/海报降级预览",
+    sourceLink: "查看来源 ↗", officialPreview: "打开官方示例 ↗", localFull: "本地完整来源 MP4", fallbackMedia: "仅 GIF/海报降级预览", mechanismFallback: "原创机制动画 · 来源视频保留在作者原帖",
     mechanism: "核心机制", invariants: "不可变条件", slots: "可替换插槽", anti_copy_exclusions: "反复制排除", instantiations: "实例化方式", failure_modes: "失败模式", transfer_tests: "迁移测试",
     complexity: "复杂度", rule: "规则", purpose: "作用", ablation_failure: "删减后果", evidence_ids: "证据 ID", name: "名称", constraint: "约束", concept: "概念", prompt_seed: "提示词种子", failure: "失败表现", repair: "修复方法", result: "结果", preserved_invariant_ids: "保留的不可变条件", changed_slots: "已替换插槽",
     usage_scope: "使用范围", source_boundary: "来源边界", comfyui_boundary: "ComfyUI 边界", applicable_scope: "适用范围", not_suitable_for: "不适用范围", usage_steps: "使用方法", quality_repairs: "质量修复",
@@ -232,6 +232,15 @@ const UI = {
 };
 
 function t(key) { return UI[state.locale]?.[key] || UI.en[key] || key; }
+
+function mediaPreviewLabel(item) {
+  if (item?.media?.hasFullVideo) return t("completeVideo");
+  return item?.media?.previewKind === "original_mechanism_animation" ? t("mechanismPreview") : t("gifPreview");
+}
+
+function mediaPreviewDescription(item) {
+  return item?.media?.previewKind === "original_mechanism_animation" ? t("mechanismFallback") : t("fallbackMedia");
+}
 function promptLanguageLabel(value) {
   if (state.locale !== "zh-CN") return value || "Original";
   return ({ English: "英文", Chinese: "中文", "Installation metadata": "安装入口元数据", Original: "原始语言" })[value] || value || "原始语言";
@@ -600,7 +609,7 @@ function renderCard(item) {
   if (imageUrl) {
     const image = document.createElement("img");
     image.src = imageUrl;
-    image.alt = `${display.title} ${t("gifPreview")}`;
+    image.alt = `${display.title} ${mediaPreviewLabel(item)}`;
     image.loading = "lazy";
     image.decoding = "async";
     media.append(image);
@@ -610,7 +619,7 @@ function renderCard(item) {
 
   installLazyHoverPreview(card, media, item.media.videoUrl);
 
-  const mediaBadge = el("span", `media-badge${item.media.hasFullVideo ? " local" : ""}`, item.media.hasFullVideo ? t("completeVideo") : t("gifPreview"));
+  const mediaBadge = el("span", `media-badge${item.media.hasFullVideo ? " local" : ""}`, mediaPreviewLabel(item));
   const compareToggle = el("button", `compare-toggle${state.compareIds.includes(item.id) ? " selected" : ""}`, state.compareIds.includes(item.id) ? t("compared") : t("addCompare"));
   compareToggle.type = "button";
   compareToggle.setAttribute("aria-pressed", String(state.compareIds.includes(item.id)));
@@ -722,7 +731,7 @@ function renderCommunitySkillCard(item) {
   if (imageUrl) {
     const image = document.createElement("img");
     image.src = imageUrl;
-    image.alt = `${display.title} ${t("gifPreview")}`;
+    image.alt = `${display.title} ${mediaPreviewLabel(item)}`;
     image.loading = "lazy";
     image.decoding = "async";
     media.append(image);
@@ -730,7 +739,7 @@ function renderCommunitySkillCard(item) {
     media.append(el("div", "card-placeholder", "US"));
   }
   installLazyHoverPreview(card, media, item.media.videoUrl);
-  media.append(el("span", `media-badge${item.media.hasFullVideo ? " local" : ""}`, item.media.hasFullVideo ? t("completeVideo") : t("gifPreview")));
+  media.append(el("span", `media-badge${item.media.hasFullVideo ? " local" : ""}`, mediaPreviewLabel(item)));
   appendPersonalCardActions(media, item);
   card.append(media);
 
@@ -1109,7 +1118,7 @@ function renderDetailMedia(item) {
     if (item.media.gifUrl) {
       const image = document.createElement("img");
       image.src = item.media.gifUrl;
-      image.alt = `${display.title} ${t("gifPreview")}`;
+      image.alt = `${display.title} ${mediaPreviewLabel(item)}`;
       elements.detailMedia.append(image);
     } else {
       const art = el("div", "official-skill-art");
@@ -1134,12 +1143,15 @@ function renderDetailMedia(item) {
   if (fallbackUrl) {
     const image = document.createElement("img");
     image.src = fallbackUrl;
-    image.alt = `${display.title} ${t("gifPreview")}`;
+    image.alt = `${display.title} ${mediaPreviewLabel(item)}`;
     elements.detailMedia.append(image);
   } else {
     elements.detailMedia.append(el("div", "card-placeholder", "VP"));
   }
-  elements.detailMedia.append(el("p", "media-fallback", state.locale === "zh-CN" ? "此环境未包含完整 MP4；当前仅显示静音 GIF/海报。可通过来源链接观看原视频。" : "This environment does not include the complete MP4. A silent GIF/poster is shown; use the source link for the original video."));
+  const mechanismPreview = item.media.previewKind === "original_mechanism_animation";
+  elements.detailMedia.append(el("p", "media-fallback", mechanismPreview
+    ? (state.locale === "zh-CN" ? "来源视频未包含在安装包；当前显示原创机制动画，不含原帖画面。点击来源链接观看原视频。" : "The source video is not bundled. This is an original mechanism animation with no frames from the creator post; open the source link to watch the original.")
+    : (state.locale === "zh-CN" ? "此环境未包含完整 MP4；当前仅显示静音 GIF/海报。可通过来源链接观看原视频。" : "This environment does not include the complete MP4. A silent GIF/poster is shown; use the source link for the original video.")));
 }
 
 function activePrompt(item, model, locale = state.locale) {
@@ -1257,7 +1269,7 @@ function renderActiveCase({ preserveMedia = false } = {}) {
     addMeta(t("sourceDuration"), formatDuration(item.sourceDurationSeconds));
     addMeta(zh ? "目标范围" : "Target range", `${item.targetDurationRangeSeconds[0]}–${item.targetDurationRangeSeconds[1]} ${t("seconds")}`);
     addMeta(t("models"), item.models.join(" / "));
-    addMeta(t("videoStatus"), item.media.hasFullVideo ? t("localFull") : t("fallbackMedia"));
+    addMeta(t("videoStatus"), item.media.hasFullVideo ? t("localFull") : mediaPreviewDescription(item));
     addMeta(t("comfyui"), item.comfyuiImport ? t("packaged") : t("notPackaged"));
     addMeta(t("tags"), item.tags.join(" · ") || "—");
     elements.detailMechanismKicker.textContent = "REUSABLE MECHANISM · QUALITY REPAIRS";
@@ -1269,7 +1281,7 @@ function renderActiveCase({ preserveMedia = false } = {}) {
     addMeta(t("sourceDuration"), formatDuration(item.sourceDurationSeconds));
     addMeta(t("targetDuration"), formatDuration(item.targetDurationSeconds));
     addMeta(t("models"), item.models.join(" / ") || "—");
-    addMeta(t("videoStatus"), item.media.hasFullVideo ? t("localFull") : t("fallbackMedia"));
+    addMeta(t("videoStatus"), item.media.hasFullVideo ? t("localFull") : mediaPreviewDescription(item));
     addMeta(t("templateId"), item.templateId || "—");
     addMeta(t("tags"), item.tags.join(" · ") || "—");
     elements.detailMechanismKicker.textContent = "REUSABLE MECHANISM";
@@ -1386,7 +1398,7 @@ function createCompareColumn(item) {
   if (imageUrl) {
     const image = document.createElement("img");
     image.src = imageUrl;
-    image.alt = `${display.title} ${t("gifPreview")}`;
+    image.alt = `${display.title} ${mediaPreviewLabel(item)}`;
     media.append(image);
   } else {
     media.append(el("div", "card-placeholder", "VP"));

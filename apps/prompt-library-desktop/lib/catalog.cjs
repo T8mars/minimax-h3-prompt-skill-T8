@@ -21,7 +21,8 @@ function readText(filePath, fallback = "") {
 }
 
 function sha256File(filePath) {
-  return crypto.createHash("sha256").update(fs.readFileSync(filePath)).digest("hex");
+  const normalizedText = fs.readFileSync(filePath, "utf8").replaceAll("\r\n", "\n");
+  return crypto.createHash("sha256").update(normalizedText).digest("hex");
 }
 
 function sha256Text(value) {
@@ -252,6 +253,10 @@ function normalizeCase(manifestPath, catalogRoot, mediaRoot, warnings) {
   };
 
   const previewRefs = manifest.preview_refs || manifest.preview_paths || {};
+  const previewStatus = manifest.preview_status && typeof manifest.preview_status === "object" ? manifest.preview_status : {};
+  const previewKind = previewStatus.gif === "generated_mechanism_animation_no_source_media"
+    ? "original_mechanism_animation"
+    : "source_preview";
   const gifPath = resolveExisting(caseDir, [firstReference(previewRefs, ["gif", "preview_gif"]), "preview.gif"]);
   const posterPath = resolveExisting(caseDir, [firstReference(previewRefs, ["poster", "image", "thumbnail"]), "poster.webp", "poster.png", "poster.jpg"]);
   const releaseVideoPath = mediaRoot
@@ -324,7 +329,9 @@ function normalizeCase(manifestPath, catalogRoot, mediaRoot, warnings) {
       gif: assetDescriptor(catalogRoot, gifPath, "catalog"),
       poster: assetDescriptor(catalogRoot, posterPath, "catalog"),
       video: assetDescriptor(videoScope === "media" ? mediaRoot : catalogRoot, videoPath, videoScope),
-      hasFullVideo: Boolean(videoPath)
+      hasFullVideo: Boolean(videoPath),
+      previewKind,
+      previewStatus
     },
     catalogAddedAt: firstString(manifest.catalog_added_at, manifest.created_at, manifest.updated_at, rootUpdatedAt(manifest)),
     updatedAt: firstString(manifest.updated_at, rootUpdatedAt(manifest), manifest.created_at)
