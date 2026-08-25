@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1",
+  "slug": "single-accent-scale-activation-relay",
+  "title": "共享色彩信号变体｜保护物先改变两人，再以同心波恢复城市",
+  "source_title": "蓝伞恢复城市｜共享动作触发单色信号从脚下扩散到人群",
+  "summary": "灰色城市中只允许一个彩色保护物作为信号源；两名明确成年人先完成共享动作，颜色才从接触区沿同心边界扩散，并逐级激活周边同类物体与更大环境。作为既有单色跨尺度激活接力的关系触发证据，不新增下拉项。",
+  "status": "released",
+  "source_duration_seconds": 30.041667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/single-accent-scale-activation-relay",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "derived_placeholder_no_source_media",
+    "poster": "derived_placeholder_no_source_media",
+    "mp4": "private_local_only_not_exported"
+  },
+  "template_id": "t8-case-single-accent-scale-activation-relay-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-itsshara-ai-2086339231488872478-browser-2086339231488872478-video-1",
+  "input_format": "近单色低饱和世界 + 至少3级可比较尺度 + 唯一高饱和激活色与局部源点 + 同色沿可见载体跨尺度接力 + 保留早期锚点 + 最大环境网络稳定映射",
+  "recommended_input": "原创单色夜间铁路场在细雨中建立，两名明确成年夜班工人分开站在暗色站台灯之间；只有一盏便携加热灯呈琥珀色。；两人在灯的小型暖光区停一拍，琥珀色只保留在灯与共同手套上，雨和铁路场仍为中性色。；宽景保持琥珀灯与标线已激活，但同一两名成年人和原加热灯仍在中心可读；不复制雨伞、广场、水印和挑战文字。",
+  "required_anchors": [
+    "Establish a neutral environment and exactly one colored aid object.",
+    "Require two clearly adult original people to complete one sharing or joint-use action before activation.",
+    "Use repeated surrounding objects as an intermediate scale before architecture or environment changes.",
+    "End with the originating pair and aid object still readable inside the changed environment."
+  ],
+  "tags": [
+    "single",
+    "accent",
+    "scale",
+    "activation",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.96,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-25T16:57:11+08:00",
+  "updated_at": "2026-08-25T17:40:53+08:00"
+}

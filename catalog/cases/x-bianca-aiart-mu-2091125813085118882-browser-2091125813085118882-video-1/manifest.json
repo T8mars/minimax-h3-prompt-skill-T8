@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1",
+  "slug": "continuous-locomotion-carrier-escalation-sky-payoff",
+  "title": "连续载具升级｜滑行、冲浪、生物接力到高空释放",
+  "source_title": "海岸运动接力｜滑板转冲浪、海豚再到鲸跃的连续升级",
+  "summary": "同一明确成年主体沿一个前进方向连续移动，每次只在速度、表面或高度达到阈值后，把运动完整交给下一种原创载具或伙伴；身份、方向和动量不重置。由地面、浪面、生物背部逐级升高，最后用高空释放兑现升级。",
+  "status": "released",
+  "source_duration_seconds": 30.066667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/continuous-locomotion-carrier-escalation-sky-payoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "derived_placeholder_no_source_media",
+    "poster": "derived_placeholder_no_source_media",
+    "mp4": "private_local_only_not_exported"
+  },
+  "template_id": "t8-case-continuous-locomotion-carrier-escalation-sky-payoff-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "同一明确成年原创主体、至少三项身份锚点与单一前进方向先建立 + 至少四种移动状态都在可见边缘、接触、尾迹或发射阈值发生交接 + 每次至少继承速度、姿态或尾迹之一 + 接触表面、载体尺度或高度单调升级 + 终局同一成年人在最高层级完成短促空中释放",
+  "recommended_input": "原创明确成年沙漠信使佩戴钴蓝围巾，沿标记沙脊从左向右滑沙，先建立成年面部、围巾和前进速度。；风帆艇从原创四足气象行走机下方经过，成年人抓住低位把手向上交接，艇尾沙迹、身体倾斜与左向右方向连续。；气象球越过岩台，让同一成年人沿短促可控滑翔弧进入开阔天空；钴蓝围巾与成年轮廓清楚，短暂停留，不复制来源骑手、板类、海洋动物和海岸。",
+  "required_anchors": [
+    "Lock one clearly adult original identity and one forward movement direction before the first handoff.",
+    "Trigger every carrier change at a visible physical threshold such as an edge, wake, contact or launch.",
+    "Escalate surface, carrier scale or height monotonically across at least four states.",
+    "End with the same adult silhouette released at the highest scale or altitude."
+  ],
+  "tags": [
+    "continuous",
+    "locomotion",
+    "carrier",
+    "escalation",
+    "sky",
+    "payoff"
+  ],
+  "quality": {
+    "weighted_score": 4.96,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-25T16:57:20+08:00",
+  "updated_at": "2026-08-25T17:40:53+08:00"
+}

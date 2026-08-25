@@ -40,13 +40,39 @@ if (-not (Test-Path -LiteralPath $InputDir -PathType Container)) { throw "Media 
 
 $ffprobe = Get-Command $FfprobePath -ErrorAction Stop
 $catalog = [System.IO.File]::ReadAllText((Join-Path $repoRoot "catalog\manifest.json"), [System.Text.Encoding]::UTF8) | ConvertFrom-Json
-$caseIds = @($catalog.cases | ForEach-Object { [string]$_.case_id } | Sort-Object)
+$caseEntries = @($catalog.cases | Sort-Object case_id)
+$caseIds = @($caseEntries | ForEach-Object { [string]$_.case_id })
 if ($caseIds.Count -eq 0) { throw "Catalog contains no released cases." }
 
 $files = [System.Collections.Generic.List[object]]::new()
-foreach ($caseId in $caseIds) {
+$unavailableCases = [System.Collections.Generic.List[object]]::new()
+$catalogRoot = [System.IO.Path]::GetFullPath((Join-Path $repoRoot "catalog"))
+foreach ($caseEntry in $caseEntries) {
+    $caseId = [string]$caseEntry.case_id
     if ($caseId -notmatch '^[a-z0-9]+(?:-[a-z0-9]+)*$') { throw "Invalid case_id '$caseId'." }
+    $caseManifestRelative = [string]$caseEntry.manifest_path
+    if (-not $caseManifestRelative) { throw "Catalog case '$caseId' has no manifest_path." }
+    $caseManifestPath = [System.IO.Path]::GetFullPath((Join-Path $catalogRoot $caseManifestRelative))
+    if (-not $caseManifestPath.StartsWith($catalogRoot + [System.IO.Path]::DirectorySeparatorChar, [System.StringComparison]::OrdinalIgnoreCase)) {
+        throw "Catalog case '$caseId' manifest escapes catalog/."
+    }
+    if (-not (Test-Path -LiteralPath $caseManifestPath -PathType Leaf)) { throw "Catalog case '$caseId' manifest is missing." }
+    $caseManifest = [System.IO.File]::ReadAllText($caseManifestPath, [System.Text.Encoding]::UTF8) | ConvertFrom-Json
+    $mediaStatus = [string]$caseManifest.preview_status.mp4
     $videoPath = Join-Path (Join-Path $InputDir $caseId) "preview.mp4"
+    if ($mediaStatus -eq "private_local_only_not_exported") {
+        if (Test-Path -LiteralPath $videoPath -PathType Leaf) { throw "Rights-restricted case '$caseId' must not be staged in release media." }
+        $unavailableCases.Add([ordered]@{
+            case_id = $caseId
+            status = $mediaStatus
+            reason = "source_media_not_redistributable"
+            fallback = "catalog_placeholder_and_source_post"
+        })
+        continue
+    }
+    if ($mediaStatus -ne "available_in_electron_media_pack") {
+        throw "Catalog case '$caseId' has unsupported preview_status.mp4 '$mediaStatus'."
+    }
     if (-not (Test-Path -LiteralPath $videoPath -PathType Leaf)) { throw "Missing complete MP4 for case '$caseId'." }
     $probeRaw = & $ffprobe.Source -v error -show_entries "format=duration:stream=codec_type,codec_name" -of json -- $videoPath
     if ($LASTEXITCODE -ne 0) { throw "ffprobe failed for case '$caseId'." }
@@ -111,11 +137,14 @@ if ($extraMp4.Count -gt 0) { throw "Media input contains MP4 files not listed by
 if ($Version -eq "1.0.0" -and ($files.Count -ne 7 -or $communityFiles.Count -ne 0)) { throw "v1.0.0 requires exactly 7 case MP4 files and no community Skill media." }
 
 $manifest = [ordered]@{
-    schema_version = "1.1.0"
+    schema_version = "1.2.0"
     version = $Version
     generated_at = [DateTime]::UtcNow.ToString("o")
+    catalog_case_count = $caseIds.Count
     case_count = $files.Count
     files = $files
+    unavailable_case_count = $unavailableCases.Count
+    unavailable_cases = $unavailableCases
     community_skill_count = $communityFiles.Count
     community_skill_files = $communityFiles
 }
@@ -152,4 +181,5 @@ Write-Output "Media pack: $zipPath"
 Write-Output "Manifest: $manifestOutput"
 Write-Output "SHA256: $zipHash"
 Write-Output "Cases: $($files.Count)"
+Write-Output "Rights-limited cases using catalog fallback: $($unavailableCases.Count)"
 Write-Output "Community Skills: $($communityFiles.Count)"

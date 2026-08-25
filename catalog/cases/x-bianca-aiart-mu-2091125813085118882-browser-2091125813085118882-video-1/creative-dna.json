@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Keep one original clearly adult protagonist moving continuously along one established direction. Use at least four locomotion states whose carrier, contact surface or scale changes, but require every change to occur at a visible physical threshold and inherit the previous velocity, body posture or wake. Escalate monotonically from ground contact to water surface, larger living or mechanical support, and finally increased height. Never reset the adult identity or movement axis between states. End with a brief elevated release that still preserves the same silhouette. The reusable mechanism is continuous motion inheritance, threshold-based carrier handoff, monotonic scale-and-height escalation and airborne payoff—not the source woman, island styling, skateboard, surfboard, animals, ocean, choreography, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Lock one clearly adult original identity and one forward movement direction before the first handoff.",
+      "purpose": "Creates continuity across carrier changes.",
+      "ablation_failure": "Changing identity or direction makes separate clips rather than one route.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Trigger every carrier change at a visible physical threshold such as an edge, wake, contact or launch.",
+      "purpose": "Gives each transition a causal bridge.",
+      "ablation_failure": "Open morphs or arbitrary cuts break motion inheritance.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Carry at least one velocity, posture or wake cue through every transition.",
+      "purpose": "Proves that movement continues rather than restarts.",
+      "ablation_failure": "A stationary incoming carrier resets momentum.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Escalate surface, carrier scale or height monotonically across at least four states.",
+      "purpose": "Builds a readable progression.",
+      "ablation_failure": "Randomly shrinking or returning to earlier states weakens the payoff.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with the same adult silhouette released at the highest scale or altitude.",
+      "purpose": "Completes the ladder while preserving identity.",
+      "ablation_failure": "An anonymous landscape or different rider loses the route.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source adult woman, face, hair, outfit and body proportions",
+    "source skateboard, surfboard, dolphin, whale and exact carrier order",
+    "source tropical coast, ocean, waves and sky",
+    "source jumps, riding postures, wake shapes and launch choreography",
+    "source watermark, creator identity, Seedance 2.5 wording, camera and timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult desert courier moves from sandboard to wind-skiff, giant walking machine and weather balloon, inheriting direction and posture at each threshold before an aerial release.",
+      "prompt_seed": "An adult desert courier moves from sandboard to wind-skiff, giant walking machine and weather balloon, inheriting direction and posture at each threshold before an aerial release."
+    },
+    {
+      "concept": "An adult polar researcher moves from ice skates to sled, autonomous snow crawler and rescue airship, with each handoff preserving speed and a cobalt scarf anchor.",
+      "prompt_seed": "An adult polar researcher moves from ice skates to sled, autonomous snow crawler and rescue airship, with each handoff preserving speed and a cobalt scarf anchor."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Changing identity or direction makes separate clips rather than one route.",
+      "repair": "Lock one clearly adult original identity and one forward movement direction before the first handoff."
+    },
+    {
+      "failure": "Open morphs or arbitrary cuts break motion inheritance.",
+      "repair": "Trigger every carrier change at a visible physical threshold such as an edge, wake, contact or launch."
+    },
+    {
+      "failure": "A stationary incoming carrier resets momentum.",
+      "repair": "Carry at least one velocity, posture or wake cue through every transition."
+    },
+    {
+      "failure": "Randomly shrinking or returning to earlier states weakens the payoff.",
+      "repair": "Escalate surface, carrier scale or height monotonically across at least four states."
+    },
+    {
+      "failure": "An anonymous landscape or different rider loses the route.",
+      "repair": "End with the same adult silhouette released at the highest scale or altitude."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult desert courier moves from sandboard to wind-skiff, giant walking machine and weather balloon, inheriting direction and posture at each threshold before an aerial release.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult polar researcher moves from ice skates to sled, autonomous snow crawler and rescue airship, with each handoff preserving speed and a cobalt scarf anchor.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

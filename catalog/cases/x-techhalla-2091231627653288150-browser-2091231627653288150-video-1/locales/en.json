@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techhalla-2091231627653288150-browser-2091231627653288150-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "865261585e27cd8336d8d71e2a1650a1e6449ea73aad88907c983c6d868e7e80",
+    "creative_dna_sha256": "feb4e145f9c7714887503877aed2fd6efd61a7fbcdf048df6476c8f470dbb937"
+  },
+  "content": {
+    "title": "Designed Ellipsis | Visible Buildup, Authored Interruption, Aftermath",
+    "summary": "Establish two original clearly adult-scale opposing figures and one stable confrontation geography. Escalate through at least three fully visible action beats, then at the maximum threshold deliberately replace the picture with an unmistakably authored original interruption card or graphic blackout. Do not depict, describe or infer the missing action. During the ellipse, use only restrained temporal evidence such as distant sound, rain or a counter. Return to the same geography and reveal only observable aftermath states of the same figures and environment.",
+    "quick_start": {
+      "input_format": "Establish two clearly adult-scale original figures and stable geography before escalation. + Show at least three complete visible action beats before the interruption. + Use an unmistakably authored original interruption card at the maximum threshold. + Never depict, narrate or infer hidden action during the interruption. + Return to the same geography and reveal only observable aftermath states.",
+      "recommended_input": "Open in an original industrial test kitchen: two clearly adult rival chefs face opposite stainless stations under one visible countdown lamp; establish knives, ingredients and the center service hatch. Both adults reach for the lids at the same instant and the countdown lamp turns red. Tighten toward the handles but stop before either lid opens. Return to the exact kitchen geometry. Smoke has settled, two finished original plates sit at the hatch, both same adults remain at their stations and no winner is explained. Hold the observable aftermath only; no source fighters, armor, alley or CENSORED wording.",
+      "required_anchors": [
+        "Establish two clearly adult-scale original figures and stable geography before escalation.",
+        "Show at least three complete visible action beats before the interruption.",
+        "Never depict, narrate or infer hidden action during the interruption.",
+        "Return to the same geography and reveal only observable aftermath states."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Establish two original clearly adult-scale opposing figures and one stable confrontation geography. Escalate through at least three fully visible action beats, then at the maximum threshold deliberately replace the picture with an unmistakably authored original interruption card or graphic blackout. Do not depict, describe or infer the missing action. During the ellipse, use only restrained temporal evidence such as distant sound, rain or a counter. Return to the same geography and reveal only observable aftermath states of the same figures and environment.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Establish two original clearly adult-scale opposing figures and one stable confrontation geography. Escalate through at least three fully visible action beats, then at the maximum threshold deliberately replace the picture with an unmistakably authored original interruption card or graphic blackout. Do not depict, describe or infer the missing action. During the ellipse, use only restrained temporal evidence such as distant sound, rain or a counter. Return to the same geography and reveal only observable aftermath states of the same figures and environment. The reusable mechanism is legible buildup, explicit authored censorship-as-ellipsis, non-invention and aftermath reveal—not the source fighters, armor, alley, rain palette, CENSORED word, choreography, hidden content, creator identity or timing.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish two clearly adult-scale original figures and stable geography before escalation.",
+          "purpose": "Makes pre/post comparison possible.",
+          "ablation_failure": "An undefined space prevents aftermath verification.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Show at least three complete visible action beats before the interruption.",
+          "purpose": "Earns the narrative threshold.",
+          "ablation_failure": "An early blackout feels like missing media rather than intentional form.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use an unmistakably authored original interruption card at the maximum threshold.",
+          "purpose": "Labels absence as deliberate ellipsis.",
+          "ablation_failure": "A corrupt-looking cut can be mistaken for decode failure.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Never depict, narrate or infer hidden action during the interruption.",
+          "purpose": "Preserves evidence honesty and audience imagination.",
+          "ablation_failure": "Invented combat falsely claims source support.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Return to the same geography and reveal only observable aftermath states.",
+          "purpose": "Closes the comparison without solving the missing interval.",
+          "ablation_failure": "A new location or explanatory flashback breaks the ellipse.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source red-coated fighter, armored opponent, faces, costumes and body designs",
+        "source Kowloon-like neon alley, rain, signs and haze",
+        "source strikes, blocks, weapons and exact choreography",
+        "source black CENSORED cards and exact interruption timing",
+        "source anamorphic camera, Seedance 2.5 thread claim and creator identity"
+      ],
+      "instantiations": [
+        {
+          "concept": "Two adult rival chefs escalate a timed kitchen duel through chopping, plating and a lid slam; an original CHECK IN PROGRESS card interrupts the decisive reveal, then the same kitchen returns with smoke cleared and two finished plates visible.",
+          "prompt_seed": "Two adult rival chefs escalate a timed kitchen duel through chopping, plating and a lid slam; an original CHECK IN PROGRESS card interrupts the decisive reveal, then the same kitchen returns with smoke cleared and two finished plates visible."
+        },
+        {
+          "concept": "An adult salvage pilot and original crane machine escalate a dockyard recovery; a SIGNAL LOST BY DESIGN card covers the maximum lift, then returns to the same dock with the load grounded and cable still moving.",
+          "prompt_seed": "An adult salvage pilot and original crane machine escalate a dockyard recovery; a SIGNAL LOST BY DESIGN card covers the maximum lift, then returns to the same dock with the load grounded and cable still moving."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "An undefined space prevents aftermath verification.",
+          "repair": "Establish two clearly adult-scale original figures and stable geography before escalation."
+        },
+        {
+          "failure": "An early blackout feels like missing media rather than intentional form.",
+          "repair": "Show at least three complete visible action beats before the interruption."
+        },
+        {
+          "failure": "A corrupt-looking cut can be mistaken for decode failure.",
+          "repair": "Use an unmistakably authored original interruption card at the maximum threshold."
+        },
+        {
+          "failure": "Invented combat falsely claims source support.",
+          "repair": "Never depict, narrate or infer hidden action during the interruption."
+        },
+        {
+          "failure": "A new location or explanatory flashback breaks the ellipse.",
+          "repair": "Return to the same geography and reveal only observable aftermath states."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "Two adult rival chefs escalate a timed kitchen duel through chopping, plating and a lid slam; an original CHECK IN PROGRESS card interrupts the decisive reveal, then the same kitchen returns with smoke cleared and two finished plates visible.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult salvage pilot and original crane machine escalate a dockyard recovery; a SIGNAL LOST BY DESIGN card covers the maximum lift, then returns to the same dock with the load grounded and cable still moving.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

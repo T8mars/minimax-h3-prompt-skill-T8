@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "This is an evidence variant of the existing character-action typography module carousel. Lock one original clearly adult performer with face, hair, costume and handheld-prop anchors. Rotate at least four original short-word modules; each word may orbit, enlarge, split or become a stage plane only when one corresponding performance action drives that change. Keep type readable and let foreground/background crossings test but never erase adult identity. End with the same performer and one original short mark. Do not copy the source performer, wording, fashion styling, microphone, typography, layouts or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Lock one clearly adult performer with at least four stable identity and prop anchors.",
+      "purpose": "Protects identity through text density.",
+      "ablation_failure": "Unstable anchors turn modules into different performers.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one new original short word and one corresponding performance action per module.",
+      "purpose": "Keeps semantic choreography readable.",
+      "ablation_failure": "Several words per action create noise.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Allow type to cross foreground and background but never fully erase the adult face and body identity.",
+      "purpose": "Adds depth while preserving continuity.",
+      "ablation_failure": "Full coverage becomes a hidden character swap.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Repeat prop, palette and stage axis while word geometry changes.",
+      "purpose": "Connects aggressive type modes.",
+      "ablation_failure": "Unrelated cards lose the carousel system.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with the same adult and one original short mark in a still composition.",
+      "purpose": "Resolves performance into identity.",
+      "ablation_failure": "A moving word cloud has no closure.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source pink-haired adult performer, face, makeup, outfit and microphone",
+    "source words including SEXY, CUTE, BAD GIRL, BIG TROUBLE and other visible phrases",
+    "source helix bands, typefaces, colors and exact word layouts",
+    "source gestures, expressions, poses and timing",
+    "source MiniMax H3 wording, creator identity and camera path"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult spoken-word artist uses one brass pointer to drive the original words TRACE, CUT, TURN and LAND through helical and planar type modules.",
+      "prompt_seed": "An adult spoken-word artist uses one brass pointer to drive the original words TRACE, CUT, TURN and LAND through helical and planar type modules."
+    },
+    {
+      "concept": "An adult runway drummer uses a white mallet to drive PULSE, LIFT, BREAK and HOLD while monochrome text moves between foreground and stage floor.",
+      "prompt_seed": "An adult runway drummer uses a white mallet to drive PULSE, LIFT, BREAK and HOLD while monochrome text moves between foreground and stage floor."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Unstable anchors turn modules into different performers.",
+      "repair": "Lock one clearly adult performer with at least four stable identity and prop anchors."
+    },
+    {
+      "failure": "Several words per action create noise.",
+      "repair": "Use one new original short word and one corresponding performance action per module."
+    },
+    {
+      "failure": "Full coverage becomes a hidden character swap.",
+      "repair": "Allow type to cross foreground and background but never fully erase the adult face and body identity."
+    },
+    {
+      "failure": "Unrelated cards lose the carousel system.",
+      "repair": "Repeat prop, palette and stage axis while word geometry changes."
+    },
+    {
+      "failure": "A moving word cloud has no closure.",
+      "repair": "End with the same adult and one original short mark in a still composition."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult spoken-word artist uses one brass pointer to drive the original words TRACE, CUT, TURN and LAND through helical and planar type modules.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult runway drummer uses a white mallet to drive PULSE, LIFT, BREAK and HOLD while monochrome text moves between foreground and stage floor.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

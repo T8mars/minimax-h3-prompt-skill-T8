@@ -1,0 +1,256 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "user-video-c317cd9648205026eef7ad47e61b5bc4",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "bc1842feef7a86e9dfcf0f871b3132a7b3acb1624419e8421a85db676c0c7734",
+    "creative_dna_sha256": "4498f6801bdca630459c148b303e64a8524fc649f5b4a38bb509dceb17a8fd61"
+  },
+  "content": {
+    "title": "四角框域｜手势扩场、箭头峰值与收束",
+    "summary": "双手先定义四个受控角点，让注册框域从掌间逐级扩展到房间尺度；最大状态才加入方向图形与地面响应，随后由同一双手收束并恢复普通环境。",
+    "quick_start": {
+      "input_format": "明确成年原创控制者 + 稳定注册环境 + 四个手势角点 + 至少三种框域尺寸 + 晚段有界信息峰值 + 主动收束与基线回归",
+      "recommended_input": "成年博物馆修复师在胡桃木地图桌前用四枚黄铜磷光角点拉出框域；只有框内纸张变成象牙色黏土等高线浮雕，框域从地图扩到档案柜，后段路线向量达到峰值，再收回掌心并让真实标本标签翻动一次。",
+      "required_anchors": [
+        "激活前先建立一名明确成年原创控制者、稳定注册环境和未激活的双手。",
+        "手部几何必须先于活动角点形成，每个角或边始终绑定清楚可见的指尖或手部轨迹。",
+        "变化严格限制在注册框域内，人物身份、空间锚点和边界两侧位置不得漂移。",
+        "至少用三种框域尺寸证明同一规则；最大信息密度留到后段，再主动收束并完整回到基线。"
+      ],
+      "usage_steps": [
+        "保留用户给出的主体与目标，补齐环境、角点系统、框域状态、尺寸证明、峰值和回归。",
+        "先建立基线，再让双手几何触发四角框域。",
+        "分别选择 MiniMax H3 或 Seedance 2.0 模板，只填写声明的变量槽位。",
+        "生成前检查角点耦合、边界注册、尺寸差异、晚段峰值、完整回归、声音和反复制距离。"
+      ],
+      "applicable_scope": [
+        "双手先定义四个受控角点，让注册框域从掌间逐级扩展到房间尺度；最大状态才加入方向图形与地面响应，随后由同一双手收束并恢复普通环境。",
+        "适合 4–15 秒内能清楚建立基线、至少三次框域验真、晚段峰值和完整回归的原创视觉机制短片。",
+        "适合需要稳定注册证明局部变化规则的 MiniMax H3 与 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、房间、服装、角点配色、箭头、泼彩或精确手势的任务。",
+        "无法保持框域内外空间注册，或希望直接进行无边界全画面换风格的概念。",
+        "没有可见手势控制、没有尺寸证明或不需要回归原状态的松散效果展示。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "稳定写实基线变成一块可逆验真面：清楚可见的双手先指定四个耦合角点，注册框域在保持控制者与环境不变的前提下经过多种尺寸逐级扩张；最大晚段状态增加更密集的方向或材质信息，最后由同一双手收束并恢复基线。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "有界框域激活前，先建立一名明确成年的原创控制者、一个稳定注册环境，以及清楚可见的未激活双手。",
+          "evidence_ids": [
+            "obs-01",
+            "obs-04",
+            "beat-01"
+          ],
+          "ablation_failure": "缺少中性基线时，后续框域无法证明环境变化确实受控制者支配。"
+        },
+        {
+          "id": "inv-02",
+          "rule": "让手部几何先于每个活动角点形成，并让每个角或边始终清楚绑定指尖或手部轨迹。",
+          "evidence_ids": [
+            "obs-04",
+            "obs-05",
+            "beat-02"
+          ],
+          "ablation_failure": "如果角点独立出现，核心的手势到框域因果关系就会从可操作机制退化为装饰。"
+        },
+        {
+          "id": "inv-03",
+          "rule": "把转换或强化状态严格限制在一个注册移动框域内，同时保持身份以及边界两侧空间锚点不变。",
+          "evidence_ids": [
+            "obs-06",
+            "obs-09",
+            "beat-03",
+            "beat-04"
+          ],
+          "ablation_failure": "如果变化泄漏到框域之外或注册漂移，效果就不再像一个可控的局部窗口。"
+        },
+        {
+          "id": "inv-04",
+          "rule": "至少展示三种有实质差异的框域尺寸或角点配置，并让它们遵守同一耦合与包含规则。",
+          "evidence_ids": [
+            "obs-05",
+            "obs-11",
+            "beat-02",
+            "beat-03",
+            "beat-05"
+          ],
+          "ablation_failure": "一个静态矩形只是叠加层；只有逐级变化且始终遵守规则的状态，才能证明控制可复用。"
+        },
+        {
+          "id": "inv-05",
+          "rule": "在包含规则已经清楚后，才把最大、信息最密集的图形状态留给晚段峰值。",
+          "evidence_ids": [
+            "obs-10",
+            "obs-14",
+            "obs-18",
+            "beat-04"
+          ],
+          "ablation_failure": "如果最大视觉奇观早于规则出现，机制会变得嘈杂，递进也失去空间。"
+        },
+        {
+          "id": "inv-06",
+          "rule": "清楚收缩或关闭框域，并以同一控制者和同一环境恢复基线媒介结束。",
+          "evidence_ids": [
+            "obs-08",
+            "obs-09",
+            "obs-13",
+            "beat-05",
+            "beat-06"
+          ],
+          "ablation_failure": "没有受控回归，就无法证明可逆性与完整结束。"
+        }
+      ],
+      "slots": [
+        {
+          "name": "adult_controller",
+          "description": "一名明确成年的原创控制者，具有三项稳定外观锚点和清楚可见的双手。"
+        },
+        {
+          "name": "registered_environment",
+          "description": "一个原创稳定空间，其线条和物体能让框域注册易于验证。"
+        },
+        {
+          "name": "corner_system",
+          "description": "四个原创标记或实体角点，并且清楚连接控制它们的双手。"
+        },
+        {
+          "name": "bounded_state",
+          "description": "一种可以逐步增强、但不会泄漏到既定框域之外的局部视觉或信息状态。"
+        },
+        {
+          "name": "proof_sizes",
+          "description": "至少三种不同的框域尺寸或配置，并且全部遵守同一因果规则。"
+        },
+        {
+          "name": "apex_content",
+          "description": "后段最大的覆盖范围，具有更高信息密度但仍保持有界的验真状态。"
+        },
+        {
+          "name": "return_confirmation",
+          "description": "一次干净收束，随后给出一个稳定的基线确认。"
+        },
+        {
+          "name": "sound_family",
+          "description": "原创激活、拉伸、锁定、峰值与释放声响；不复用来源音频语义。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "不得复制来源表演者、面孔、发型、服装或身体比例。",
+        "不得复用来源卧室、海报、家具或构图调度。",
+        "不得复制青色/洋红角点设计、箭头、放射线、地面泼彩或精确手势顺序。",
+        "不得声称存在来源提示词、创作者身份、生成模型或语义声音轨，因为这些证据均未提供。"
+      ],
+      "instantiations": [
+        {
+          "concept": "档案浮雕检视窗口",
+          "description": "一名明确成年的博物馆修复师在地图档案室里画出四个黄铜磷光角点；只有框内书架和文献桌变成动态黏土等高线浮雕，框域经过三种尺寸扩张后收束，并让一张真实纸标签轻轻翻动。",
+          "changed_slots": [
+            "adult_controller",
+            "registered_environment",
+            "corner_system",
+            "bounded_state",
+            "proof_sizes",
+            "apex_content",
+            "return_confirmation",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "陶瓷窑炉热力蓝图",
+          "description": "一名明确成年的陶瓷工程师在安静窑炉大厅里绑定四个陶瓷光片；只有框内窑炉和器皿区域变成分层热力蓝图玻璃，晚段达到热流峰值，再收回到未改变的工坊，并让一个真实窑炉仪表归稳。",
+          "changed_slots": [
+            "adult_controller",
+            "registered_environment",
+            "corner_system",
+            "bounded_state",
+            "proof_sizes",
+            "apex_content",
+            "return_confirmation",
+            "sound_family"
+          ]
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "双手尚未定义框域，效果就提前激活。",
+          "repair": "先完整展示双手与角点的关系，再让有界状态出现。"
+        },
+        {
+          "failure": "框域脱离控制者漂移。",
+          "repair": "在所有尺寸变化中，把每个角绑定到清楚可见的指尖或手部边线轨迹。"
+        },
+        {
+          "failure": "转换状态泄漏到整个场景。",
+          "repair": "在移动边界保持硬性包含，并维持框外基线。"
+        },
+        {
+          "failure": "尺寸变化看起来像互不相关的叠加层。",
+          "repair": "至少用三种渐进尺寸，并始终保持同一角点物理与注册环境。"
+        },
+        {
+          "failure": "峰值无法收束。",
+          "repair": "把最大信息密度推迟到后段，并在基线确认前清楚收缩。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "档案浮雕检视窗口",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "adult_controller",
+            "registered_environment",
+            "corner_system",
+            "bounded_state",
+            "proof_sizes",
+            "apex_content",
+            "return_confirmation",
+            "sound_family"
+          ],
+          "finding": "档案室、黄铜磷光角点、黏土浮雕、文献验真、标签残留和原创声音家族更换了全部表面，同时手势框域扩张、峰值与回归机制仍然清楚。"
+        },
+        {
+          "concept": "陶瓷窑炉热力蓝图",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05",
+            "inv-06"
+          ],
+          "changed_slots": [
+            "adult_controller",
+            "registered_environment",
+            "corner_system",
+            "bounded_state",
+            "proof_sizes",
+            "apex_content",
+            "return_confirmation",
+            "sound_family"
+          ],
+          "finding": "窑炉、陶瓷光片、热力玻璃、热流验真、仪表结果和声音家族保留了因果拓扑，同时不保留来源身份、房间、图形或手势。"
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

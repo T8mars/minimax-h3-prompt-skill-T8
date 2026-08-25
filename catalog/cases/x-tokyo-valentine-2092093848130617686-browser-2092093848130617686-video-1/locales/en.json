@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "2c1e035c7ca7ea8676ab04bd3c65ba2edeef984476cedafbc04855814f1b4207",
+    "creative_dna_sha256": "7b40e4b69c3d295af38be7de20c0977e32f5f439be483c88b15d7beb1decb7cc"
+  },
+  "content": {
+    "title": "Celebration Word Physics | One Word, Prop, Action, Material Result",
+    "summary": "Lock one original clearly adult host through face, hair or costume anchors and one repeatable stage axis. Rotate at least four celebration modules. Each module may introduce only one original short word, one prop and one host action; the action must visibly transform the word into a matching physical state such as extinguished smoke, inflated volume, unfolded paper, scattered confetti or illumination. Repeat two identity or layout anchors while material scale grows from handheld to stage-wide. End by gathering the host, selected prop residue and one original greeting mark.",
+    "quick_start": {
+      "input_format": "Lock one clearly adult original host with at least three identity anchors and one stable stage axis. + Use exactly one new original short word, one prop and one action per module. + Make the host action physically transform the word into a matching material state. + Repeat at least two host or layout anchors while material scale grows. + End with host, selected material residue and one original greeting mark together.",
+      "recommended_input": "Open on one original clearly adult science-fair host with silver side braid, cobalt lapel and hexagonal amber badge, centered on a black-and-cream stage with one prism. The word FLOAT sits on folded paper strips. The same adult starts one tabletop fan, and the strips lift into the letter volume while the face, braid and badge stay visible. Gather the same host, one prism spectrum, paper petal and metal ring around the original greeting OPEN NIGHT; hold cleanly with no source words, performer, props or celebration layouts.",
+      "required_anchors": [
+        "Lock one clearly adult original host with at least three identity anchors and one stable stage axis.",
+        "Use exactly one new original short word, one prop and one action per module.",
+        "Repeat at least two host or layout anchors while material scale grows.",
+        "End with host, selected material residue and one original greeting mark together."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Lock one original clearly adult host through face, hair or costume anchors and one repeatable stage axis. Rotate at least four celebration modules. Each module may introduce only one original short word, one prop and one host action; the action must visibly transform the word into a matching physical state such as extinguished smoke, inflated volume, unfolded paper, scattered confetti or illumination. Repeat two identity or layout anchors while material scale grows from handheld to stage-wide. End by gathering the host, selected prop residue and one original greeting mark.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Lock one original clearly adult host through face, hair or costume anchors and one repeatable stage axis. Rotate at least four celebration modules. Each module may introduce only one original short word, one prop and one host action; the action must visibly transform the word into a matching physical state such as extinguished smoke, inflated volume, unfolded paper, scattered confetti or illumination. Repeat two identity or layout anchors while material scale grows from handheld to stage-wide. End by gathering the host, selected prop residue and one original greeting mark. The reusable mechanism is one-word-one-prop-one-action materialization, scale escalation and host-led lockup—not the source performer, pink hair, words, props, stage layouts, typography, creator identity or timing.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Lock one clearly adult original host with at least three identity anchors and one stable stage axis.",
+          "purpose": "Keeps a narrator through rapid modules.",
+          "ablation_failure": "Changing host identity makes disconnected cards.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use exactly one new original short word, one prop and one action per module.",
+          "purpose": "Protects causality and readability.",
+          "ablation_failure": "Several words or props in one beat create visual clutter.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Make the host action physically transform the word into a matching material state.",
+          "purpose": "Turns typography into an event.",
+          "ablation_failure": "Static text beside performance remains decorative.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Repeat at least two host or layout anchors while material scale grows.",
+          "purpose": "Connects handheld and stage-wide chapters.",
+          "ablation_failure": "Unrelated layouts lose escalation.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with host, selected material residue and one original greeting mark together.",
+          "purpose": "Collects modules into a final identity.",
+          "ablation_failure": "A text-only card loses the performer and prior events.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source pink-haired performer, face, costume, microphone and cane",
+        "source words CHEER, HURRAY, SURPRISE, WISH, HAPPY, PARTY, SHINE, FUN and CONGRATS",
+        "source candles, balloons, party cannon, flowers and theater props",
+        "source typefaces, colors, layouts and exact action-to-word pairings",
+        "source MiniMax H3 thread prompt, music, timing and creator identity"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult science-fair host activates GLOW with a prism, FLOAT with a fan, BLOOM with folded paper and RING with a tuning fork, ending on original mark OPEN NIGHT.",
+          "prompt_seed": "An adult science-fair host activates GLOW with a prism, FLOAT with a fan, BLOOM with folded paper and RING with a tuning fork, ending on original mark OPEN NIGHT."
+        },
+        {
+          "concept": "An adult winter-market announcer activates WARM with a lantern, SHARE with a ribbon, SPARK with a hand crank and RISE with a paper star, ending on original greeting NIGHT KIND.",
+          "prompt_seed": "An adult winter-market announcer activates WARM with a lantern, SHARE with a ribbon, SPARK with a hand crank and RISE with a paper star, ending on original greeting NIGHT KIND."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Changing host identity makes disconnected cards.",
+          "repair": "Lock one clearly adult original host with at least three identity anchors and one stable stage axis."
+        },
+        {
+          "failure": "Several words or props in one beat create visual clutter.",
+          "repair": "Use exactly one new original short word, one prop and one action per module."
+        },
+        {
+          "failure": "Static text beside performance remains decorative.",
+          "repair": "Make the host action physically transform the word into a matching material state."
+        },
+        {
+          "failure": "Unrelated layouts lose escalation.",
+          "repair": "Repeat at least two host or layout anchors while material scale grows."
+        },
+        {
+          "failure": "A text-only card loses the performer and prior events.",
+          "repair": "End with host, selected material residue and one original greeting mark together."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult science-fair host activates GLOW with a prism, FLOAT with a fan, BLOOM with folded paper and RING with a tuning fork, ending on original mark OPEN NIGHT.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult winter-market announcer activates WARM with a lantern, SHARE with a ribbon, SPARK with a hand crank and RISE with a paper star, ending on original greeting NIGHT KIND.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

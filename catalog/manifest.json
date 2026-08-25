@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.2.7",
-  "generated_at": "2026-08-25T00:48:15+08:00",
-  "case_count": 218,
+  "catalog_version": "1.2.8",
+  "generated_at": "2026-08-25T18:26:08+08:00",
+  "case_count": 239,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -7767,6 +7767,869 @@
       ],
       "quality_score": 4.831,
       "updated_at": "2026-08-25T00:48:15+08:00"
+    },
+    {
+      "case_id": "user-video-c317cd9648205026eef7ad47e61b5bc4",
+      "slug": "hand-bounded-local-medium-window",
+      "title": "四角框域｜手势扩场、箭头峰值与收束",
+      "status": "released",
+      "summary": "双手先定义四个受控角点，让注册框域从掌间逐级扩展到房间尺度；最大状态才加入方向图形与地面响应，随后由同一双手收束并恢复普通环境。",
+      "manifest_path": "cases/user-video-c317cd9648205026eef7ad47e61b5bc4/manifest.json",
+      "summary_path": "cases/user-video-c317cd9648205026eef7ad47e61b5bc4/SUMMARY.md",
+      "source_path": "cases/user-video-c317cd9648205026eef7ad47e61b5bc4/source.json",
+      "creative_dna_path": "cases/user-video-c317cd9648205026eef7ad47e61b5bc4/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/user-video-c317cd9648205026eef7ad47e61b5bc4/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/user-video-c317cd9648205026eef7ad47e61b5bc4/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/user-video-c317cd9648205026eef7ad47e61b5bc4/preview.gif",
+        "poster": "cases/user-video-c317cd9648205026eef7ad47e61b5bc4/poster.webp",
+        "mp4": "media/user-video-c317cd9648205026eef7ad47e61b5bc4/preview.mp4"
+      },
+      "skill_path": "../skills/hand-bounded-local-medium-window",
+      "template_id": "t8-case-hand-bounded-local-medium-window-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "hand-bound",
+        "four-corner",
+        "registered-field",
+        "graphic-apex",
+        "controlled-return"
+      ],
+      "quality_score": 4.853,
+      "updated_at": "2026-08-25T04:54:15+08:00"
+    },
+    {
+      "case_id": "x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1",
+      "slug": "contact-triggered-transient-energy-feedback",
+      "title": "接触后放电｜真实格斗先成立、短促能量只做结果反馈",
+      "status": "released",
+      "summary": "先用清楚成年格斗动作建立质量、轨迹和接触，再让白蓝能量、尘屑、头发与灯光只在真实命中后短促响应；效果不得提前替动作制造命中。由单次接触逐级升级到多人围攻，最终回到同一人物稳定站立。",
+      "manifest_path": "cases/x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1/manifest.json",
+      "summary_path": "cases/x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1/SUMMARY.md",
+      "source_path": "cases/x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1/source.json",
+      "creative_dna_path": "cases/x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1/preview.gif",
+        "poster": "cases/x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1/poster.webp",
+        "mp4": "media/x-doctorwasif-2091388398153994395-browser-2091388398153994395-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/contact-triggered-transient-energy-feedback",
+      "template_id": "t8-case-contact-triggered-transient-energy-feedback-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "contact",
+        "triggered",
+        "transient",
+        "energy",
+        "feedback"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1",
+      "slug": "disadvantage-recovery-ability-escalation-ring-clear",
+      "title": "弱势反攻清场｜贴地恢复、水盾承压到环形冲击",
+      "status": "released",
+      "summary": "先让明确成年主体处于多人包围的可读弱势，随后用贴地低扫争取站位、近身水盾承受一次冲击，再把同一水体升级为定向水炮与环形冲击；每一级都由前一级状态留下连续水迹，终局以对手倒地和主体平静站立证明清场。",
+      "manifest_path": "cases/x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1/manifest.json",
+      "summary_path": "cases/x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1/SUMMARY.md",
+      "source_path": "cases/x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1/source.json",
+      "creative_dna_path": "cases/x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1/preview.gif",
+        "poster": "cases/x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1/poster.webp",
+        "mp4": "media/x-pyona-ai-2091862645720879213-browser-2091862645720879213-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/disadvantage-recovery-ability-escalation-ring-clear",
+      "template_id": "t8-case-disadvantage-recovery-ability-escalation-ring-clear-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "disadvantage",
+        "recovery",
+        "ability",
+        "escalation",
+        "ring",
+        "clear"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1",
+      "slug": "single-thread-material-world-construction-wordmark-resolution",
+      "title": "单线织世｜一根材料分叉建景再回收到原创标记",
+      "status": "released",
+      "summary": "先把一根材料线和承载面锁定，再让它连续分叉、染色并把沿途结构建成可读地貌；所有新元素必须从仍可追踪的同一线束生长，不能凭空换景。密度达到峰值后，让支线按相反顺序回收并组成全新原创名称或徽记。",
+      "manifest_path": "cases/x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1/manifest.json",
+      "summary_path": "cases/x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1/SUMMARY.md",
+      "source_path": "cases/x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1/source.json",
+      "creative_dna_path": "cases/x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1/preview.gif",
+        "poster": "cases/x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1/poster.webp",
+        "mp4": "media/x-aimikoda-2091893350748025010-browser-2091893350748025010-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/single-thread-material-world-construction-wordmark-resolution",
+      "template_id": "t8-case-single-thread-material-world-construction-wordmark-resolution-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "single",
+        "thread",
+        "material",
+        "world",
+        "construction",
+        "wordmark"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1",
+      "slug": "character-action-typography-module-carousel",
+      "title": "舞姿字卡变体｜单人剪影让短词与几何随节拍响应",
+      "status": "released",
+      "summary": "同一剪影角色以稳定轮廓和中心轴贯穿多组高对比字卡；每个模块只让一个全新短词与一次舞姿发生遮挡、击中或空间响应，背景几何沿同一节拍变化。作为既有角色动作字卡轮转的舞蹈证据，不新增下拉项。",
+      "manifest_path": "cases/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/manifest.json",
+      "summary_path": "cases/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/SUMMARY.md",
+      "source_path": "cases/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/source.json",
+      "creative_dna_path": "cases/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/preview.gif",
+        "poster": "cases/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/poster.webp",
+        "mp4": "media/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/character-action-typography-module-carousel",
+      "template_id": "t8-case-character-action-typography-module-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "character",
+        "action",
+        "typography",
+        "module",
+        "carousel"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1",
+      "slug": "multi-medium-character-module-ensemble-convergence",
+      "title": "跨媒介角色集结｜五个独立风格模块最终共享同一舞台",
+      "status": "released",
+      "summary": "每章用一个原创角色、一个明确媒介规则和一个短动作证明该风格，避免仅靠滤镜换色；固定构图位置、徽记或运动方向在章节间接力。所有角色最后必须以各自材质完整进入同一中性舞台，而不是被统一成同一种风格。",
+      "manifest_path": "cases/x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1/manifest.json",
+      "summary_path": "cases/x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1/SUMMARY.md",
+      "source_path": "cases/x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1/source.json",
+      "creative_dna_path": "cases/x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1/preview.gif",
+        "poster": "cases/x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1/poster.webp",
+        "mp4": "media/x-nvtdanh-2091114406839251020-browser-2091114406839251020-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/multi-medium-character-module-ensemble-convergence",
+      "template_id": "t8-case-multi-medium-character-module-ensemble-convergence-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "multi",
+        "medium",
+        "character",
+        "module",
+        "ensemble",
+        "convergence"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1",
+      "slug": "input-screen-result-reaction-causal-loop",
+      "title": "输入—屏幕—结果—反应｜实体操作与虚拟反馈逐拍闭环",
+      "status": "released",
+      "summary": "先建立成年玩家、实体控制器和屏幕同框关系；每个虚拟动作前必须先看见一次具体输入，屏幕反馈随后发生，玩家再给出清楚可辨的人物反应。用选角、移动、反击和胜负四级闭环升级，终局只确认结果与人物，不补写来源中未出现的再开一局。",
+      "manifest_path": "cases/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/manifest.json",
+      "summary_path": "cases/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/SUMMARY.md",
+      "source_path": "cases/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/source.json",
+      "creative_dna_path": "cases/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/preview.gif",
+        "poster": "cases/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/poster.webp",
+        "mp4": "media/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/input-screen-result-reaction-causal-loop",
+      "template_id": "t8-case-input-screen-result-reaction-causal-loop-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "input",
+        "screen",
+        "result",
+        "reaction",
+        "causal",
+        "loop"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1",
+      "slug": "single-accent-scale-activation-relay",
+      "title": "共享色彩信号变体｜保护物先改变两人，再以同心波恢复城市",
+      "status": "released",
+      "summary": "灰色城市中只允许一个彩色保护物作为信号源；两名明确成年人先完成共享动作，颜色才从接触区沿同心边界扩散，并逐级激活周边同类物体与更大环境。作为既有单色跨尺度激活接力的关系触发证据，不新增下拉项。",
+      "manifest_path": "cases/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/manifest.json",
+      "summary_path": "cases/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/SUMMARY.md",
+      "source_path": "cases/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/source.json",
+      "creative_dna_path": "cases/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/preview.gif",
+        "poster": "cases/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/poster.webp",
+        "mp4": "media/x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/single-accent-scale-activation-relay",
+      "template_id": "t8-case-single-accent-scale-activation-relay-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "single",
+        "accent",
+        "scale",
+        "activation",
+        "relay"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1",
+      "slug": "continuous-locomotion-carrier-escalation-sky-payoff",
+      "title": "连续载具升级｜滑行、冲浪、生物接力到高空释放",
+      "status": "released",
+      "summary": "同一明确成年主体沿一个前进方向连续移动，每次只在速度、表面或高度达到阈值后，把运动完整交给下一种原创载具或伙伴；身份、方向和动量不重置。由地面、浪面、生物背部逐级升高，最后用高空释放兑现升级。",
+      "manifest_path": "cases/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/manifest.json",
+      "summary_path": "cases/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/SUMMARY.md",
+      "source_path": "cases/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/source.json",
+      "creative_dna_path": "cases/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/preview.gif",
+        "poster": "cases/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/poster.webp",
+        "mp4": "media/x-bianca-aiart-mu-2091125813085118882-browser-2091125813085118882-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/continuous-locomotion-carrier-escalation-sky-payoff",
+      "template_id": "t8-case-continuous-locomotion-carrier-escalation-sky-payoff-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "continuous",
+        "locomotion",
+        "carrier",
+        "escalation",
+        "sky",
+        "payoff"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-techhalla-2091231627653288150-browser-2091231627653288150-video-1",
+      "slug": "action-buildup-censored-ellipse-aftermath-reveal",
+      "title": "刻意遮断省略｜动作升级后以审查卡跳到余波结果",
+      "status": "released",
+      "summary": "先用明确成年角色和原创对手完成可读动作升级；到最大冲突前主动切入可辨识的原创遮断卡，让缺失成为叙事省略而不是伪造动作。遮断期间只保留克制声画提示，随后回到同一空间、同一人物与可验证余波，不推断被遮内容。",
+      "manifest_path": "cases/x-techhalla-2091231627653288150-browser-2091231627653288150-video-1/manifest.json",
+      "summary_path": "cases/x-techhalla-2091231627653288150-browser-2091231627653288150-video-1/SUMMARY.md",
+      "source_path": "cases/x-techhalla-2091231627653288150-browser-2091231627653288150-video-1/source.json",
+      "creative_dna_path": "cases/x-techhalla-2091231627653288150-browser-2091231627653288150-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techhalla-2091231627653288150-browser-2091231627653288150-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techhalla-2091231627653288150-browser-2091231627653288150-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techhalla-2091231627653288150-browser-2091231627653288150-video-1/preview.gif",
+        "poster": "cases/x-techhalla-2091231627653288150-browser-2091231627653288150-video-1/poster.webp",
+        "mp4": "media/x-techhalla-2091231627653288150-browser-2091231627653288150-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/action-buildup-censored-ellipse-aftermath-reveal",
+      "template_id": "t8-case-action-buildup-censored-ellipse-aftermath-reveal-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "action",
+        "buildup",
+        "censored",
+        "ellipse",
+        "aftermath",
+        "reveal"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-varts-works-2092069676272832714-browser-2092069676272832714-video-1",
+      "slug": "verify-recurring-identity-board",
+      "title": "角色板时装变体｜固定参考条与舞台动作持续验真",
+      "status": "released",
+      "summary": "固定角色参考条持续占据同一位置，主舞台依次用正面步态、俯拍、旋转下降、面部近景和伸手遮镜验证同一成年身份；作为既有角色板验真模板的时装舞台证据，不新增下拉项。",
+      "manifest_path": "cases/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/manifest.json",
+      "summary_path": "cases/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/SUMMARY.md",
+      "source_path": "cases/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/source.json",
+      "creative_dna_path": "cases/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/preview.gif",
+        "poster": "cases/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/poster.webp",
+        "mp4": "media/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/verify-recurring-identity-board",
+      "template_id": "t8-case-recurring-identity-board-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "recurring",
+        "identity",
+        "board"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1",
+      "slug": "celebration-word-prop-action-materialization",
+      "title": "庆典词语实体化｜一词一动作一材质结果的逐章升级",
+      "status": "released",
+      "summary": "同一明确成年主持人贯穿多个庆典模块，每章只引入一个原创短词、一件道具和一次动作；动作必须让文字发生对应的物理变化，如吹灭、膨胀、展开或点亮。通过重复舞台轴与配色保持身份，最后把所有庆典状态汇入一个原创祝福主标。",
+      "manifest_path": "cases/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/manifest.json",
+      "summary_path": "cases/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/SUMMARY.md",
+      "source_path": "cases/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/source.json",
+      "creative_dna_path": "cases/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/preview.gif",
+        "poster": "cases/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/poster.webp",
+        "mp4": "media/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/celebration-word-prop-action-materialization",
+      "template_id": "t8-case-celebration-word-prop-action-materialization-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "celebration",
+        "word",
+        "prop",
+        "action",
+        "materialization"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1",
+      "slug": "accessory-detail-material-motif-fashion-relay",
+      "title": "配饰材质接力｜细节证据、全身回连与原创品牌收束",
+      "status": "released",
+      "summary": "同一明确成年模特与一种原创材质高光贯穿四类配饰证据；每章先用一次触觉动作证明结构，再让同一高光或纹理从当前物件匹配到下一物件。终局回到全身步态和所有配饰关系，并只显示全新原创名称，彻底移除来源品牌。",
+      "manifest_path": "cases/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/manifest.json",
+      "summary_path": "cases/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/SUMMARY.md",
+      "source_path": "cases/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/source.json",
+      "creative_dna_path": "cases/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/preview.gif",
+        "poster": "cases/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/poster.webp",
+        "mp4": "media/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/accessory-detail-material-motif-fashion-relay",
+      "template_id": "t8-case-accessory-detail-material-motif-fashion-relay-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "accessory",
+        "detail",
+        "material",
+        "motif",
+        "fashion",
+        "relay"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1",
+      "slug": "irreversible-cooking-state-chain-serving-proof",
+      "title": "不可逆烹饪状态链｜食材、工具、锅体、成品与品尝连续证明",
+      "status": "released",
+      "summary": "同一明确成年厨师、厨房、主食材与关键工具持续锁定，每镜只推动一次不可逆食品状态变化，并让上一状态残留成为下一步原料；用颜色、容器和手部锚点防止食材跳变。成品装盘后必须由同一人物完成一次克制品尝。",
+      "manifest_path": "cases/x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1/manifest.json",
+      "summary_path": "cases/x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1/SUMMARY.md",
+      "source_path": "cases/x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1/source.json",
+      "creative_dna_path": "cases/x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1/preview.gif",
+        "poster": "cases/x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1/poster.webp",
+        "mp4": "media/x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/irreversible-cooking-state-chain-serving-proof",
+      "template_id": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "irreversible",
+        "cooking",
+        "state",
+        "chain",
+        "serving",
+        "proof"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-harboriis-2092131570908065852-browser-2092131570908065852-video-1",
+      "slug": "object-handoff-festival-vlog-escalation",
+      "title": "节庆物件接力｜品尝、游戏、奖品到高空景观逐级升级",
+      "status": "released",
+      "summary": "同一明确成年自拍视频主体沿一个节庆路线前进，每章用上一章获得或使用的物件触发下一活动：食物证明到场，游戏动作产生奖品，奖品抬起引导视线到高空终景，最后人物带着累积物件告别。由近物触觉逐级扩展到群体与天空。",
+      "manifest_path": "cases/x-harboriis-2092131570908065852-browser-2092131570908065852-video-1/manifest.json",
+      "summary_path": "cases/x-harboriis-2092131570908065852-browser-2092131570908065852-video-1/SUMMARY.md",
+      "source_path": "cases/x-harboriis-2092131570908065852-browser-2092131570908065852-video-1/source.json",
+      "creative_dna_path": "cases/x-harboriis-2092131570908065852-browser-2092131570908065852-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-harboriis-2092131570908065852-browser-2092131570908065852-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-harboriis-2092131570908065852-browser-2092131570908065852-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-harboriis-2092131570908065852-browser-2092131570908065852-video-1/preview.gif",
+        "poster": "cases/x-harboriis-2092131570908065852-browser-2092131570908065852-video-1/poster.webp",
+        "mp4": "media/x-harboriis-2092131570908065852-browser-2092131570908065852-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/object-handoff-festival-vlog-escalation",
+      "template_id": "t8-case-object-handoff-festival-vlog-escalation-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "object",
+        "handoff",
+        "festival",
+        "vlog",
+        "escalation"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1",
+      "slug": "observer-imperfection-route-discovery-closure",
+      "title": "被拍到的一天｜观察者瑕疵伴随路线，人物最终发现镜头",
+      "status": "released",
+      "summary": "同一明确成年人沿一条普通日常路线完成至少四件小事，摄影保持可控的迟跟、遮挡、构图偏差与呼吸式晃动，让观察者存在但不抢叙事；人物早期不看镜头，终局才通过一次清楚视线与靠近动作发现仍在拍摄。",
+      "manifest_path": "cases/x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1/manifest.json",
+      "summary_path": "cases/x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1/SUMMARY.md",
+      "source_path": "cases/x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1/source.json",
+      "creative_dna_path": "cases/x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1/preview.gif",
+        "poster": "cases/x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1/poster.webp",
+        "mp4": "media/x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/observer-imperfection-route-discovery-closure",
+      "template_id": "t8-case-observer-imperfection-route-discovery-closure-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "observer",
+        "imperfection",
+        "route",
+        "discovery",
+        "closure"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1",
+      "slug": "character-action-typography-module-carousel",
+      "title": "环绕字带时装变体｜同一成年表演者被原创短词逐拍编舞",
+      "status": "released",
+      "summary": "同一明确成年表演者以面部、发型、麦克风与服装锚点贯穿，环绕字带和巨型短词只随一次对应表演动作进入；每章一个原创词，人物与文字互相遮挡但不丢身份。作为既有角色动作字卡轮转的时装现场证据，不新增下拉项。",
+      "manifest_path": "cases/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/manifest.json",
+      "summary_path": "cases/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/SUMMARY.md",
+      "source_path": "cases/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/source.json",
+      "creative_dna_path": "cases/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/preview.gif",
+        "poster": "cases/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/poster.webp",
+        "mp4": "media/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/character-action-typography-module-carousel",
+      "template_id": "t8-case-character-action-typography-module-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "character",
+        "action",
+        "typography",
+        "module",
+        "carousel"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1",
+      "slug": "direct-imperfect-memory-farewell",
+      "title": "一日记忆变体｜同一成年人物跨咖啡、交通、球场、雨夜与归途",
+      "status": "released",
+      "summary": "同一明确成年人以服装、背包和步态贯穿一天，多个日常地点通过一个携带物、天气变化或相同运动方向接力；保留轻微构图偏差、焦点寻找和手持呼吸作为记忆质感，最后在更安静的归途淡出。作为既有复古手持日常记忆模板的新证据，不新增下拉项。",
+      "manifest_path": "cases/x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1/manifest.json",
+      "summary_path": "cases/x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1/SUMMARY.md",
+      "source_path": "cases/x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1/source.json",
+      "creative_dna_path": "cases/x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1/preview.gif",
+        "poster": "cases/x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1/poster.webp",
+        "mp4": "media/x-joescannelladhq-2092124942825599358-browser-2092124942825599358-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/direct-imperfect-memory-farewell",
+      "template_id": "t8-case-imperfect-memory-farewell-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "imperfect",
+        "memory",
+        "farewell"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-viniai-2092137445051744285-browser-2092137445051744285-video-1",
+      "slug": "showy-effort-quiet-skill-social-status-reversal",
+      "title": "炫技预期反转｜高调费力铺垫、安静难动作与社交重排",
+      "status": "released",
+      "summary": "先让明确成年炫技者通过准备仪式、巨大努力与主动索取目光建立社会预期；安静对手不争抢镜头，只完整完成一次更难且更干净的动作。围观者的眼线、站位与表情随后从前者转向后者，终局用双方克制反应证明地位重排。",
+      "manifest_path": "cases/x-viniai-2092137445051744285-browser-2092137445051744285-video-1/manifest.json",
+      "summary_path": "cases/x-viniai-2092137445051744285-browser-2092137445051744285-video-1/SUMMARY.md",
+      "source_path": "cases/x-viniai-2092137445051744285-browser-2092137445051744285-video-1/source.json",
+      "creative_dna_path": "cases/x-viniai-2092137445051744285-browser-2092137445051744285-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-viniai-2092137445051744285-browser-2092137445051744285-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-viniai-2092137445051744285-browser-2092137445051744285-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-viniai-2092137445051744285-browser-2092137445051744285-video-1/preview.gif",
+        "poster": "cases/x-viniai-2092137445051744285-browser-2092137445051744285-video-1/poster.webp",
+        "mp4": "media/x-viniai-2092137445051744285-browser-2092137445051744285-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/showy-effort-quiet-skill-social-status-reversal",
+      "template_id": "t8-case-showy-effort-quiet-skill-social-status-reversal-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "showy",
+        "effort",
+        "quiet",
+        "skill",
+        "social",
+        "status"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-caliraval-2092124735081738349-browser-2092124735081738349-video-1",
+      "slug": "ordinary-task-to-breathing-reset-exit",
+      "title": "日常任务到呼吸复位｜前景过渡、静坐微动与继续离场",
+      "status": "released",
+      "summary": "同一明确成年人先完成一个普通触觉任务，再由前景物或建筑边界把动作段过渡到静坐段；人物只做一次慢呼吸、微笑与细微头发衣料变化，摄影克制推进。复位完成后，人物沿既定方向重新起身离场，证明静默不是终点。",
+      "manifest_path": "cases/x-caliraval-2092124735081738349-browser-2092124735081738349-video-1/manifest.json",
+      "summary_path": "cases/x-caliraval-2092124735081738349-browser-2092124735081738349-video-1/SUMMARY.md",
+      "source_path": "cases/x-caliraval-2092124735081738349-browser-2092124735081738349-video-1/source.json",
+      "creative_dna_path": "cases/x-caliraval-2092124735081738349-browser-2092124735081738349-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-caliraval-2092124735081738349-browser-2092124735081738349-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-caliraval-2092124735081738349-browser-2092124735081738349-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-caliraval-2092124735081738349-browser-2092124735081738349-video-1/preview.gif",
+        "poster": "cases/x-caliraval-2092124735081738349-browser-2092124735081738349-video-1/poster.webp",
+        "mp4": "media/x-caliraval-2092124735081738349-browser-2092124735081738349-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/ordinary-task-to-breathing-reset-exit",
+      "template_id": "t8-case-ordinary-task-to-breathing-reset-exit-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "ordinary",
+        "task",
+        "to",
+        "breathing",
+        "reset",
+        "exit"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
+    },
+    {
+      "case_id": "x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1",
+      "slug": "irreversible-cooking-state-chain-serving-proof",
+      "title": "烘焙状态链变体｜面团、铺料、入炉、成品与分享连续证明",
+      "status": "released",
+      "summary": "同一明确成年人物、晨光厨房、面团与烤盘持续锁定，每镜只推动一次不可逆食品状态变化；面团形状、酱料覆盖、配料分布与烤盘位置逐步累积，出炉后同一成品被端上并品尝。作为既有不可逆烹饪状态链的烘焙证据，不新增下拉项。",
+      "manifest_path": "cases/x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1/manifest.json",
+      "summary_path": "cases/x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1/SUMMARY.md",
+      "source_path": "cases/x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1/source.json",
+      "creative_dna_path": "cases/x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1/preview.gif",
+        "poster": "cases/x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1/poster.webp",
+        "mp4": "media/x-zoeybennettai-2092124356709388475-browser-2092124356709388475-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/irreversible-cooking-state-chain-serving-proof",
+      "template_id": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "irreversible",
+        "cooking",
+        "state",
+        "chain",
+        "serving",
+        "proof"
+      ],
+      "quality_score": 4.96,
+      "updated_at": "2026-08-25T17:40:53+08:00",
+      "preview_status": {
+        "gif": "derived_placeholder_no_source_media",
+        "poster": "derived_placeholder_no_source_media",
+        "mp4": "private_local_only_not_exported"
+      }
     }
   ]
 }

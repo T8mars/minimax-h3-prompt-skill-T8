@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "90cb2267d7fb298d2a95e5f292a40fc2e577c5ad24d80e2ceb53913a1d97bb77",
+    "creative_dna_sha256": "9e02e82e53c0a240107827e05acfecb3b60a80f866e96c59945e96a798b84000"
+  },
+  "content": {
+    "title": "舞姿字卡变体｜单人剪影让短词与几何随节拍响应",
+    "summary": "同一剪影角色以稳定轮廓和中心轴贯穿多组高对比字卡；每个模块只让一个全新短词与一次舞姿发生遮挡、击中或空间响应，背景几何沿同一节拍变化。作为既有角色动作字卡轮转的舞蹈证据，不新增下拉项。",
+    "quick_start": {
+      "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+      "recommended_input": "原创明确成年打击乐手剪影登场，圆框眼镜、高领与双鼓槌轮廓稳定，奶油底上只有一个钴蓝圆环。；短词 ROLL 围绕同一剪影弯曲，单次手腕滚动驱动同心记谱线；侧脸、眼镜与高领保持不变。；同一成年剪影、钴蓝圆环与原创短标 PULSE KIT 合成居中静止标记；不复制来源文字、舞者、配色与动作。",
+      "required_anchors": [
+        "锁定一个明显成年的表演者，具有稳定的轮廓、调色板和中心轴。",
+        "每个模块最多引入一个新短词。",
+        "在几何形状变化时，至少重复两个图形锚点。",
+        "以表演者和原始标志一起结束，保持锁定。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一剪影角色以稳定轮廓和中心轴贯穿多组高对比字卡；每个模块只让一个全新短词与一次舞姿发生遮挡、击中或空间响应，背景几何沿同一节拍变化。作为既有角色动作字卡轮转的舞蹈证据，不新增下拉项。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一剪影角色以稳定轮廓和中心轴贯穿多组高对比字卡；每个模块只让一个全新短词与一次舞姿发生遮挡、击中或空间响应，背景几何沿同一节拍变化。作为既有角色动作字卡轮转的舞蹈证据，不新增下拉项。 必须满足：沿用既有角色动作字卡轮转：明确成年原创角色以至少三项身份锚点锁定 + 至少四个视觉模块且每个只新增一个短词 + 每个词必须被角色动作击中、跨过、遮挡或揭示 + 重复配色、轮廓或标记结构连接模块 + 最后动作把角色与原创名称收进稳定主标。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "锁定一个明显成年的表演者，具有稳定的轮廓、调色板和中心轴。",
+          "purpose": "在激烈的卡片中保持身份。",
+          "ablation_failure": "改变比例使每张卡片变成不同的角色。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个模块最多引入一个新短词。",
+          "purpose": "在快节奏下保护可读性。",
+          "ablation_failure": "密集短语变得不可读，成为装饰。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "将每个词绑定到一个语义表演者动作或遮挡。",
+          "purpose": "使类型和表现共享一个原因。",
+          "ablation_failure": "无关的舞蹈使排版成为装饰。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在几何形状变化时，至少重复两个图形锚点。",
+          "purpose": "将模块连接成一个系统。",
+          "ablation_failure": "完全不相关的卡片感觉像是一集。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以表演者和原始标志一起结束，保持锁定。",
+          "purpose": "将动作收归身份。",
+          "ablation_failure": "一个动感的抽象结尾失去了角色。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源舞者的剪影、身体比例、发型和编舞",
+        "源黄色、青色、洋红色和黑色调色板",
+        "源词DANCE、MOVE、BEAT和确切的字体",
+        "源环、速度线和精确的卡片布局",
+        "源 MiniMax H3 提示词、时序和创作者身份"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个成年博物馆导游的剪影通过手电筒手势触发原始词 LOOK、TRACE、TURN 和 HOLD，同时建筑网格作出响应。",
+          "prompt_seed": "一个成年博物馆导游的剪影通过手电筒手势触发原始词 LOOK、TRACE、TURN 和 HOLD，同时建筑网格作出响应。"
+        },
+        {
+          "concept": "一个成年打击乐手的剪影通过棍子动作激活 TAP、ROLL、DROP 和 REST，同时圆形记号字段每拍变化。",
+          "prompt_seed": "一个成年打击乐手的剪影通过棍子动作激活 TAP、ROLL、DROP 和 REST，同时圆形记号字段每拍变化。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "改变比例使每张卡片变成不同的角色。",
+          "repair": "锁定一个明显成年的表演者，具有稳定的轮廓、调色板和中心轴。"
+        },
+        {
+          "failure": "密集短语变得不可读，成为装饰。",
+          "repair": "每个模块最多引入一个新短词。"
+        },
+        {
+          "failure": "无关的舞蹈使排版成为装饰。",
+          "repair": "将每个词绑定到一个语义表演者动作或遮挡。"
+        },
+        {
+          "failure": "完全不相关的卡片感觉像是一集。",
+          "repair": "在几何形状变化时，至少重复两个图形锚点。"
+        },
+        {
+          "failure": "一个动感的抽象结尾失去了角色。",
+          "repair": "以表演者和原始标志一起结束，保持锁定。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个成年博物馆导游的剪影通过手电筒手势触发原始词 LOOK、TRACE、TURN 和 HOLD，同时建筑网格作出响应。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个成年打击乐手的剪影通过棍子动作激活 TAP、ROLL、DROP 和 REST，同时圆形记号字段每拍变化。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

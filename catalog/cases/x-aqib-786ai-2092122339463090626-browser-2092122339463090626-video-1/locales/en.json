@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aqib-786ai-2092122339463090626-browser-2092122339463090626-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "4da91a23dbcd4bbd7410d8fe0d68c12e0a179038ef4390746f930b5f0588d98a",
+    "creative_dna_sha256": "cc1ecd8f9835d1aefdefe82c8a83638befc9b9ca78f41f6f869cb081dfd03a63"
+  },
+  "content": {
+    "title": "Observed Ordinary Day | Controlled Imperfection and Camera Discovery",
+    "summary": "Follow one original clearly adult subject through at least four ordinary route chapters with stable clothing, carried-object or gait anchors. Maintain deliberate but bounded observer imperfections—slightly late pans, short foreground occlusions, modest focus recovery and breathing-scale sway—while always returning to the subject and route. The subject must avoid direct camera acknowledgment until the final chapter. End with one unmistakable eye-line change and short approach that reveals awareness of the recorder.",
+    "quick_start": {
+      "input_format": "Lock one clearly adult original subject with at least three clothing, object or gait anchors across four ordinary chapters. + Use only bounded observer imperfections and always recover the subject and route. + Carry one object, direction or completed action from each chapter into the next. + Do not let the subject directly acknowledge the camera before the final chapter. + End with one clear eye-line change and short approach toward the lens.",
+      "recommended_input": "Open on one original clearly adult marine biologist in a navy deck coat, brass key clip and white boot stripe leaving a research bunk with a blue sample bag; the handheld camera begins half a beat late and catches up. At a tide pool, the adult tags one sample, rests beside a gull and drinks water. Use modest focus recovery and breathing sway, but the adult never looks directly at camera. Only now the adult hears the recorder, turns eyes directly to lens and takes two short steps closer with a questioning expression. Hold before touch; no source man, market, orange, cat, rooftop or exact framing.",
+      "required_anchors": [
+        "Lock one clearly adult original subject with at least three clothing, object or gait anchors across four ordinary chapters.",
+        "Use only bounded observer imperfections and always recover the subject and route.",
+        "Do not let the subject directly acknowledge the camera before the final chapter.",
+        "End with one clear eye-line change and short approach toward the lens."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Follow one original clearly adult subject through at least four ordinary route chapters with stable clothing, carried-object or gait anchors. Maintain deliberate but bounded observer imperfections—slightly late pans, short foreground occlusions, modest focus recovery and breathing-scale sway—while always returning to the subject and route. The subject must avoid direct camera acknowledgment until the final chapter. End with one unmistakable eye-line change and short approach that reveals awareness of the recorder.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Follow one original clearly adult subject through at least four ordinary route chapters with stable clothing, carried-object or gait anchors. Maintain deliberate but bounded observer imperfections—slightly late pans, short foreground occlusions, modest focus recovery and breathing-scale sway—while always returning to the subject and route. The subject must avoid direct camera acknowledgment until the final chapter. End with one unmistakable eye-line change and short approach that reveals awareness of the recorder. The reusable mechanism is ordinary route continuity, controlled observer imperfection, delayed acknowledgment and camera-discovery closure—not the source man, apartment, market, fruit, cat, rooftop, exact framing, creator identity or timing.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Lock one clearly adult original subject with at least three clothing, object or gait anchors across four ordinary chapters.",
+          "purpose": "Maintains identity through everyday cuts.",
+          "ablation_failure": "Unanchored chapter changes suggest different people or days.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use only bounded observer imperfections and always recover the subject and route.",
+          "purpose": "Creates authentic home-video presence without losing readability.",
+          "ablation_failure": "Continuous random shake or focus loss becomes unusable footage.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Carry one object, direction or completed action from each chapter into the next.",
+          "purpose": "Links small events into a day.",
+          "ablation_failure": "Independent activities form a loose montage.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Do not let the subject directly acknowledge the camera before the final chapter.",
+          "purpose": "Preserves the observer relationship and delayed reveal.",
+          "ablation_failure": "Early eye contact removes the ending's meaning.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with one clear eye-line change and short approach toward the lens.",
+          "purpose": "Makes camera discovery observable.",
+          "ablation_failure": "A generic wave or cut cannot prove the subject noticed recording.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source adult man, face, hair, clothing, bag and reactions",
+        "source apartment, streets, market, bench and rooftop",
+        "source orange, drink, cat and exact interactions",
+        "source handheld delays, occlusions, camera discovery and approach",
+        "source Seedance 2.5 same-post wording, timing and creator identity"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult marine biologist leaves a bunk, checks dock ropes, buys ice, tags one tide pool, rests by a gull and reaches a lighthouse balcony before noticing the field camera.",
+          "prompt_seed": "An adult marine biologist leaves a bunk, checks dock ropes, buys ice, tags one tide pool, rests by a gull and reaches a lighthouse balcony before noticing the field camera."
+        },
+        {
+          "concept": "An adult night janitor leaves the supply room, collects a dropped ticket, pauses at a vending machine, meets a stray dog and reaches a theater roof before recognizing the recorder.",
+          "prompt_seed": "An adult night janitor leaves the supply room, collects a dropped ticket, pauses at a vending machine, meets a stray dog and reaches a theater roof before recognizing the recorder."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Unanchored chapter changes suggest different people or days.",
+          "repair": "Lock one clearly adult original subject with at least three clothing, object or gait anchors across four ordinary chapters."
+        },
+        {
+          "failure": "Continuous random shake or focus loss becomes unusable footage.",
+          "repair": "Use only bounded observer imperfections and always recover the subject and route."
+        },
+        {
+          "failure": "Independent activities form a loose montage.",
+          "repair": "Carry one object, direction or completed action from each chapter into the next."
+        },
+        {
+          "failure": "Early eye contact removes the ending's meaning.",
+          "repair": "Do not let the subject directly acknowledge the camera before the final chapter."
+        },
+        {
+          "failure": "A generic wave or cut cannot prove the subject noticed recording.",
+          "repair": "End with one clear eye-line change and short approach toward the lens."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult marine biologist leaves a bunk, checks dock ropes, buys ice, tags one tide pool, rests by a gull and reaches a lighthouse balcony before noticing the field camera.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult night janitor leaves the supply room, collects a dropped ticket, pauses at a vending machine, meets a stray dog and reaches a theater roof before recognizing the recorder.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

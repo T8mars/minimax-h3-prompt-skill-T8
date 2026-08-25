@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-varts-works-2092069676272832714-browser-2092069676272832714-video-1",
+  "slug": "verify-recurring-identity-board",
+  "title": "角色板时装变体｜固定参考条与舞台动作持续验真",
+  "source_title": "角色板时装 PV｜底部参考条不动，上方舞台用多机位反复验真",
+  "summary": "固定角色参考条持续占据同一位置，主舞台依次用正面步态、俯拍、旋转下降、面部近景和伸手遮镜验证同一成年身份；作为既有角色板验真模板的时装舞台证据，不新增下拉项。",
+  "status": "released",
+  "source_duration_seconds": 19.566667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/verify-recurring-identity-board",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-varts-works-2092069676272832714-browser-2092069676272832714-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "derived_placeholder_no_source_media",
+    "poster": "derived_placeholder_no_source_media",
+    "mp4": "private_local_only_not_exported"
+  },
+  "template_id": "t8-case-recurring-identity-board-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1",
+  "input_format": "固定角色板 + 同一原创主体 + 至少4种不同验证职责 + 广角/近景双证明 + 最终对照",
+  "recommended_input": "原创航天机械师参考条固定在左侧：成年正侧脸、钴蓝连体服缝线、铜色腕带与白色头盔条；活动舞台中同一成年人进入中性灰机库。；进入受控俯拍吊带旋转，参考条完全不变；困难角度中头盔条、肩宽与工具手关系保持。；遮挡后揭示完整同一成年人和原创短标 BAY FOUR，未改变的参考条仍可见；不复制来源角色、黄色舞台、服装、字母与标志。",
+  "required_anchors": [
+    "Keep one original reference board fixed in the same screen region throughout.",
+    "Separate the fixed board from an active performance stage.",
+    "After any occlusion or camera stress, return to the same board anchors and adult identity.",
+    "End with complete adult character and board visible together."
+  ],
+  "tags": [
+    "recurring",
+    "identity",
+    "board"
+  ],
+  "quality": {
+    "weighted_score": 4.96,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-25T16:58:40+08:00",
+  "updated_at": "2026-08-25T17:40:53+08:00"
+}

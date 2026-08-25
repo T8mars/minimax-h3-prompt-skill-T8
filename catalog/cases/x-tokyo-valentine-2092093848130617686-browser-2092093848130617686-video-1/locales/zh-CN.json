@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "2c1e035c7ca7ea8676ab04bd3c65ba2edeef984476cedafbc04855814f1b4207",
+    "creative_dna_sha256": "7b40e4b69c3d295af38be7de20c0977e32f5f439be483c88b15d7beb1decb7cc"
+  },
+  "content": {
+    "title": "庆典词语实体化｜一词一动作一材质结果的逐章升级",
+    "summary": "同一明确成年主持人贯穿多个庆典模块，每章只引入一个原创短词、一件道具和一次动作；动作必须让文字发生对应的物理变化，如吹灭、膨胀、展开或点亮。通过重复舞台轴与配色保持身份，最后把所有庆典状态汇入一个原创祝福主标。",
+    "quick_start": {
+      "input_format": "一名明确成年原创主持人以至少三项身份锚点和稳定舞台轴贯穿 + 至少四个模块且每章只引入一个原创短词、一件道具和一次动作 + 动作必须把文字变成对应物理状态 + 重复至少两个身份或版式锚点并让尺度从手持升到舞台 + 终局主持人、材料余迹和原创祝福主标共同稳定可读",
+      "recommended_input": "原创明确成年科学展主持人登场：银色侧辫、钴蓝翻领、六边形琥珀徽章，居中站在黑米舞台并拿一块棱镜。；短词 FLOAT 位于折纸条上；同一成年人启动一台桌面风扇，纸条升起构成字母体积，脸、侧辫与徽章可见。；同一主持人、一道棱镜光谱、一片纸花瓣和金属圆环围绕原创祝福 OPEN NIGHT 汇合，清楚停留，不复制来源文字、人物、道具和庆典版式。",
+      "required_anchors": [
+        "锁定一个清晰的成年原创主持人，至少三个身份锚点和一个稳定的舞台轴。",
+        "每个模块使用一个全新的原创短词、一个道具和一个动作。",
+        "在材料规模增长时，至少重复两个主持人或布局锚点。",
+        "以主持人、选中的材料残余和一个原创的问候标记一起结尾。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一明确成年主持人贯穿多个庆典模块，每章只引入一个原创短词、一件道具和一次动作；动作必须让文字发生对应的物理变化，如吹灭、膨胀、展开或点亮。通过重复舞台轴与配色保持身份，最后把所有庆典状态汇入一个原创祝福主标。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一明确成年主持人贯穿多个庆典模块，每章只引入一个原创短词、一件道具和一次动作；动作必须让文字发生对应的物理变化，如吹灭、膨胀、展开或点亮。通过重复舞台轴与配色保持身份，最后把所有庆典状态汇入一个原创祝福主标。 必须满足：一名明确成年原创主持人以至少三项身份锚点和稳定舞台轴贯穿 + 至少四个模块且每章只引入一个原创短词、一件道具和一次动作 + 动作必须把文字变成对应物理状态 + 重复至少两个身份或版式锚点并让尺度从手持升到舞台 + 终局主持人、材料余迹和原创祝福主标共同稳定可读。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "锁定一个清晰的成年原创主持人，至少三个身份锚点和一个稳定的舞台轴。",
+          "purpose": "通过快速模块保持旁白。",
+          "ablation_failure": "更换主持人身份会使断开的卡片。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个模块使用一个全新的原创短词、一个道具和一个动作。",
+          "purpose": "保护因果关系和可读性。",
+          "ablation_failure": "一个节拍中使用多个单词或道具会创建视觉杂乱。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "让主持人通过物理动作将单词转化为匹配的物质状态。",
+          "purpose": "将排版转化为一个事件。",
+          "ablation_failure": "静态文本旁边的性能仍然是装饰性的。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在材料规模增长时，至少重复两个主持人或布局锚点。",
+          "purpose": "连接手持和舞台宽章节。",
+          "ablation_failure": "不相关的布局失去升级。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以主持人、选中的材料残余和一个原创的问候标记一起结尾。",
+          "purpose": "将模块整合成最终的身份。",
+          "ablation_failure": "只有文字的卡片会失去表演者和之前的事件。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源粉色头发的表演者、脸、服装、麦克风和手杖",
+        "源词汇 CHEER, HURRAY, SURPRISE, WISH, HAPPY, PARTY, SHINE, FUN 和 CONGRATS",
+        "源蜡烛、气球、烟花、花朵和剧场道具",
+        "源字体、颜色、布局和精确的动作-文字配对",
+        "源 MiniMax H3 线程提示、音乐、时序和创作者身份"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年科学展览主持人用棱镜激活GLOW，用风扇激活FLOAT，用折纸激活BLOOM，用调音叉激活RING，最后回到原始标记OPEN NIGHT。",
+          "prompt_seed": "一位成年科学展览主持人用棱镜激活GLOW，用风扇激活FLOAT，用折纸激活BLOOM，用调音叉激活RING，最后回到原始标记OPEN NIGHT。"
+        },
+        {
+          "concept": "一位成年冬季市场 announcer用灯笼激活WARM，用丝带激活SHARE，用手摇发电机激活SPARK，用纸星星激活RISE，最后回到原始问候NIGHT KIND。",
+          "prompt_seed": "一位成年冬季市场 announcer用灯笼激活WARM，用丝带激活SHARE，用手摇发电机激活SPARK，用纸星星激活RISE，最后回到原始问候NIGHT KIND。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "更换主持人身份会使断开的卡片。",
+          "repair": "锁定一个清晰的成年原创主持人，至少三个身份锚点和一个稳定的舞台轴。"
+        },
+        {
+          "failure": "一个节拍中使用多个单词或道具会创建视觉杂乱。",
+          "repair": "每个模块使用一个全新的原创短词、一个道具和一个动作。"
+        },
+        {
+          "failure": "静态文本旁边的性能仍然是装饰性的。",
+          "repair": "让主持人通过物理动作将单词转化为匹配的物质状态。"
+        },
+        {
+          "failure": "不相关的布局失去升级。",
+          "repair": "在材料规模增长时，至少重复两个主持人或布局锚点。"
+        },
+        {
+          "failure": "只有文字的卡片会失去表演者和之前的事件。",
+          "repair": "以主持人、选中的材料残余和一个原创的问候标记一起结尾。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年科学展览主持人用棱镜激活GLOW，用风扇激活FLOAT，用折纸激活BLOOM，用调音叉激活RING，最后回到原始标记OPEN NIGHT。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年冬季市场 announcer用灯笼激活WARM，用丝带激活SHARE，用手摇发电机激活SPARK，用纸星星激活RISE，最后回到原始问候NIGHT KIND。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

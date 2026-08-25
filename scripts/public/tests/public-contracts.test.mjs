@@ -4,7 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { durationMatches, mediaEntryAudioContractErrors, probeAndDecodeMedia, versionContractErrors } from "../validate-media-pack.mjs";
+import { caseMediaDisposition, durationMatches, mediaEntryAudioContractErrors, probeAndDecodeMedia, versionContractErrors } from "../validate-media-pack.mjs";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const catalog = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", "manifest.json"), "utf8"));
@@ -133,6 +133,18 @@ test("media manifest binds its schema/version and requires an explicit per-file 
   assert.deepEqual(mediaEntryAudioContractErrors({ audio_mode: "source_silent", audio_codec: null }), []);
   assert.ok(mediaEntryAudioContractErrors({ audio_codec: null })[0].includes("audio_mode"));
   assert.ok(mediaEntryAudioContractErrors({ audio_mode: "source_silent", audio_codec: null }, { allowSourceSilent: false })[0].includes("must be 'present'"));
+});
+
+test("release media follows each case's explicit redistribution status", () => {
+  assert.deepEqual(caseMediaDisposition({ preview_status: { mp4: "available_in_electron_media_pack" } }), {
+    status: "available_in_electron_media_pack",
+    requiresMedia: true
+  });
+  assert.deepEqual(caseMediaDisposition({ preview_status: { mp4: "private_local_only_not_exported" } }), {
+    status: "private_local_only_not_exported",
+    requiresMedia: false
+  });
+  assert.equal(caseMediaDisposition({}).requiresMedia, null);
 });
 
 test("media validation fails closed on a full-decode error", () => {

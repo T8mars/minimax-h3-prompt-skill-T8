@@ -19,7 +19,7 @@
 Windows 校验示例：
 
 ```powershell
-Get-FileHash .\T8-Prompt-Library-Setup-v1.2.7.exe -Algorithm SHA256
+Get-FileHash .\T8-Prompt-Library-Setup-v1.2.8.exe -Algorithm SHA256
 ```
 
 将结果与 `SHA256SUMS.txt` 中对应文件比较。
@@ -27,7 +27,7 @@ Get-FileHash .\T8-Prompt-Library-Setup-v1.2.7.exe -Algorithm SHA256
 macOS 校验示例：
 
 ```bash
-shasum -a 256 T8-Prompt-Library-v1.2.7-mac-universal.dmg
+shasum -a 256 T8-Prompt-Library-v1.2.8-mac-universal.dmg
 ```
 
 macOS 包同时提供 DMG 与 ZIP，均为 universal（Intel + Apple Silicon）。当前公开版没有 Apple Developer ID，因此**未签名、未公证**：请先核对 `SHA256SUMS.txt`，再打开 DMG 并把应用拖入 Applications。首次启动优先在 Finder 中右键应用并选择“打开”；若系统仍阻止且你已确认哈希，可自行执行：
@@ -42,7 +42,7 @@ xattr -dr com.apple.quarantine "/Applications/T8 Prompt Library.app"
 
 Git 仓库只保存轻量 GIF/Poster。完整 MP4 位于对应 GitHub Release 的 `prompt-library-media-v<version>.zip`，并在正式构建时作为 Electron `extraResources` 打入完整安装包。因此：
 
-- 安装完成后可直接播放完整视频和声音；
+- 明确允许公开分发的案例在安装完成后可直接播放完整视频和声音；权利受限案例显示本地 GIF/Poster 并提供原帖入口；
 - 不需要登录 X、Reddit 或 YouTube 才能查看本地视频；
 - 有原始帖子地址的案例保留来源按钮；用户提供但未附外部地址的非官方 Skill 不会伪造链接；
 - 普通源代码 CI 只验证无完整媒体构建，不会假装包含 MP4。
@@ -77,4 +77,4 @@ npm run app:pack
 
 ---
 
-**English summary:** Download either the Windows NSIS installer or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. Full releases bundle the MP4 media pack. Windows supports explicit-confirmation updates; the unsigned macOS preview updates manually from Releases.
+**English summary:** Download either the Windows NSIS installer or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. Full releases bundle every rights-cleared MP4; rights-limited cases keep an offline GIF/Poster and an original-post link without redistributing source media. Windows supports explicit-confirmation updates; the unsigned macOS preview updates manually from Releases.

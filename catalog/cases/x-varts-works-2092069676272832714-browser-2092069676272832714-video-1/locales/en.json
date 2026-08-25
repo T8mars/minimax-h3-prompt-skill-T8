@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-varts-works-2092069676272832714-browser-2092069676272832714-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "3dba342b237846aba6a0e435c8ca37f1a0771822a0cb3a11082f1121fcd5b009",
+    "creative_dna_sha256": "a71a423f2d43f4b19daaf2b3c6d564756107526273751fc06c3da8bdd608dbf2"
+  },
+  "content": {
+    "title": "Identity Board Variant | Fixed Reference, Multi-Angle Stage Proof",
+    "summary": "This is an evidence variant of the existing recurring identity board. Keep one original reference board or strip fixed in one screen region while an original clearly adult character performs in a separate active stage. Use at least four genuinely different identity proofs—full-body walk, side or overhead geometry, face close-up, hand-object relation or one customized action—while the board remains unchanged. Major transitions may use one lens occlusion but must return to the same anchors. End with board and complete character visible together. Do not copy source character, sheet, outfit, yellow set, typography, choreography or timing.",
+    "quick_start": {
+      "input_format": "Keep one original reference board fixed in the same screen region throughout. + Separate the fixed board from an active performance stage. + Use at least four different proof classes including full body, hard angle, face and gesture or object relation. + After any occlusion or camera stress, return to the same board anchors and adult identity. + End with complete adult character and board visible together.",
+      "recommended_input": "Keep one original aerospace-mechanic reference strip fixed along the left edge: adult face front and profile, cobalt coverall seams, copper wrist band and white helmet stripe. On the active stage, the same adult enters a neutral gray hangar. Move to a controlled overhead harness rotation while the strip never changes; preserve helmet stripe, shoulder width and tool-hand relation through the difficult angle. After occlusion, reveal the complete same adult beside one original short mark BAY FOUR while the unchanged reference strip remains visible; no source character, yellow stage, costume, letters or logo.",
+      "required_anchors": [
+        "Keep one original reference board fixed in the same screen region throughout.",
+        "Separate the fixed board from an active performance stage.",
+        "After any occlusion or camera stress, return to the same board anchors and adult identity.",
+        "End with complete adult character and board visible together."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "This is an evidence variant of the existing recurring identity board. Keep one original reference board or strip fixed in one screen region while an original clearly adult character performs in a separate active stage. Use at least four genuinely different identity proofs—full-body walk, side or overhead geometry, face close-up, hand-object relation or one customized action—while the board remains unchanged. Major transitions may use one lens occlusion but must return to the same anchors. End with board and complete character visible together. Do not copy source character, sheet, outfit, yellow set, typography, choreography or timing.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "This is an evidence variant of the existing recurring identity board. Keep one original reference board or strip fixed in one screen region while an original clearly adult character performs in a separate active stage. Use at least four genuinely different identity proofs—full-body walk, side or overhead geometry, face close-up, hand-object relation or one customized action—while the board remains unchanged. Major transitions may use one lens occlusion but must return to the same anchors. End with board and complete character visible together. Do not copy source character, sheet, outfit, yellow set, typography, choreography or timing.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Keep one original reference board fixed in the same screen region throughout.",
+          "purpose": "Provides a persistent comparison anchor.",
+          "ablation_failure": "Moving or replacing the board weakens identity verification.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Separate the fixed board from an active performance stage.",
+          "purpose": "Lets evidence and execution coexist.",
+          "ablation_failure": "Overlaying them unreadably hides both.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use at least four different proof classes including full body, hard angle, face and gesture or object relation.",
+          "purpose": "Tests identity beyond repeated portraits.",
+          "ablation_failure": "One pose repeated cannot prove continuity.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "After any occlusion or camera stress, return to the same board anchors and adult identity.",
+          "purpose": "Makes transitions verifiable.",
+          "ablation_failure": "Unanchored returns permit hidden identity swaps.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with complete adult character and board visible together.",
+          "purpose": "Closes the comparison explicitly.",
+          "ablation_failure": "A logo-only ending drops the evidence.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source character sheet, adult model, face, red outfit and body proportions",
+        "source yellow stage, floor and backdrop",
+        "source walk, pose, top-down descent and lens-reaching choreography",
+        "source large letters, creator logo and terminal mark",
+        "source MiniMax H3 thread prompt, camera path, timing and creator identity"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult aerospace mechanic performs tool checks, a ladder climb, overhead harness rotation and visor close-up beside a fixed original equipment-and-face board.",
+          "prompt_seed": "An adult aerospace mechanic performs tool checks, a ladder climb, overhead harness rotation and visor close-up beside a fixed original equipment-and-face board."
+        },
+        {
+          "concept": "An adult contemporary dancer performs floor, side silhouette, top-down spin and hand-to-lens tests while a fixed costume and facial-anchor strip remains below.",
+          "prompt_seed": "An adult contemporary dancer performs floor, side silhouette, top-down spin and hand-to-lens tests while a fixed costume and facial-anchor strip remains below."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Moving or replacing the board weakens identity verification.",
+          "repair": "Keep one original reference board fixed in the same screen region throughout."
+        },
+        {
+          "failure": "Overlaying them unreadably hides both.",
+          "repair": "Separate the fixed board from an active performance stage."
+        },
+        {
+          "failure": "One pose repeated cannot prove continuity.",
+          "repair": "Use at least four different proof classes including full body, hard angle, face and gesture or object relation."
+        },
+        {
+          "failure": "Unanchored returns permit hidden identity swaps.",
+          "repair": "After any occlusion or camera stress, return to the same board anchors and adult identity."
+        },
+        {
+          "failure": "A logo-only ending drops the evidence.",
+          "repair": "End with complete adult character and board visible together."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult aerospace mechanic performs tool checks, a ladder climb, overhead harness rotation and visor close-up beside a fixed original equipment-and-face board.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult contemporary dancer performs floor, side silhouette, top-down spin and hand-to-lens tests while a fixed costume and facial-anchor strip remains below.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

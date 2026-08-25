@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-soyo1538986soyo-2092129848298762326-browser-2092129848298762326-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d26d2dbb308e89236e1f96fea35014a5067843683d79821526c9028433ae2e86",
+    "creative_dna_sha256": "f4034189eda80814e77fd76642c6898afe19a0f87ea6939099cef4d7f6554523"
+  },
+  "content": {
+    "title": "共享色彩信号变体｜保护物先改变两人，再以同心波恢复城市",
+    "summary": "灰色城市中只允许一个彩色保护物作为信号源；两名明确成年人先完成共享动作，颜色才从接触区沿同心边界扩散，并逐级激活周边同类物体与更大环境。作为既有单色跨尺度激活接力的关系触发证据，不新增下拉项。",
+    "quick_start": {
+      "input_format": "近单色低饱和世界 + 至少3级可比较尺度 + 唯一高饱和激活色与局部源点 + 同色沿可见载体跨尺度接力 + 保留早期锚点 + 最大环境网络稳定映射",
+      "recommended_input": "原创单色夜间铁路场在细雨中建立，两名明确成年夜班工人分开站在暗色站台灯之间；只有一盏便携加热灯呈琥珀色。；两人在灯的小型暖光区停一拍，琥珀色只保留在灯与共同手套上，雨和铁路场仍为中性色。；宽景保持琥珀灯与标线已激活，但同一两名成年人和原加热灯仍在中心可读；不复制雨伞、广场、水印和挑战文字。",
+      "required_anchors": [
+        "建立一个中立环境，并且只有一个彩色辅助对象。",
+        "要求两名明显成年的人在激活前完成一次分享或共同使用行动。",
+        "在建筑或环境变化之前，使用重复的周围物体作为中间尺度。",
+        "以起始的配对和援助对象仍然在改变的环境中可读。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "灰色城市中只允许一个彩色保护物作为信号源；两名明确成年人先完成共享动作，颜色才从接触区沿同心边界扩散，并逐级激活周边同类物体与更大环境。作为既有单色跨尺度激活接力的关系触发证据，不新增下拉项。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "灰色城市中只允许一个彩色保护物作为信号源；两名明确成年人先完成共享动作，颜色才从接触区沿同心边界扩散，并逐级激活周边同类物体与更大环境。作为既有单色跨尺度激活接力的关系触发证据，不新增下拉项。 必须满足：沿用既有单色跨尺度激活接力：中性环境中只保留一个彩色援助物 + 两名明确成年原创人物先完成共享、交付或共同使用 + 激活从共享接触区沿可见单调边界扩展 + 重复周边物体先承担中间尺度接力再改变环境 + 终局原人物与援助物仍在已改变世界中清楚可读。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个中立环境，并且只有一个彩色辅助对象。",
+          "purpose": "创建一个独特的激活源。",
+          "ablation_failure": "多种早期颜色使信号源模糊。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "要求两名明显成年的人在激活前完成一次分享或共同使用行动。",
+          "purpose": "将世界变化与人类关系事件联系起来。",
+          "ablation_failure": "自动颜色波失去了人际原因。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "从共享接触区域开始变化，并通过一个可见的单调边界扩展。",
+          "purpose": "使传播变得可测量。",
+          "ablation_failure": "散射随机重新着色会破坏中继。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在建筑或环境变化之前，使用重复的周围物体作为中间尺度。",
+          "purpose": "创建一个清晰的小到大的阶梯。",
+          "ablation_failure": "直接跳到城市规模会移除传播的证据。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以起始的配对和援助对象仍然在改变的环境中可读。",
+          "purpose": "将 spectacle 返回到其人类原因。",
+          "ablation_failure": "一个匿名的宽忘记谁启动了变化。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源的年轻人和老年人，面部，服装和确切的关系手势",
+        "蓝色雨伞和精确的打开或转移动作",
+        "雨中的广场，行人和雨伞分发",
+        "蓝色环，重新着色顺序和城市调色板",
+        "TOPVIEW挑战水印，创作者身份，Seedance 2.5文字和时间"
+      ],
+      "instantiations": [
+        {
+          "concept": "两名成年夜班工人共享一个琥珀色加热灯笼，在无色的铁路 yard 中；温暖激活附近的安全灯，然后是平台线路和选定的车站表面。",
+          "prompt_seed": "两名成年夜班工人共享一个琥珀色加热灯笼，在无色的铁路 yard 中；温暖激活附近的安全灯，然后是平台线路和选定的车站表面。"
+        },
+        {
+          "concept": "一名成年现场医疗人员递给一名疲惫的成年跑步者一块绿色的降温布，在灰色的体育场内；绿色的环激活水瓶、赛道标记和选定的座位区域。",
+          "prompt_seed": "一名成年现场医疗人员递给一名疲惫的成年跑步者一块绿色的降温布，在灰色的体育场内；绿色的环激活水瓶、赛道标记和选定的座位区域。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "多种早期颜色使信号源模糊。",
+          "repair": "建立一个中立环境，并且只有一个彩色辅助对象。"
+        },
+        {
+          "failure": "自动颜色波失去了人际原因。",
+          "repair": "要求两名明显成年的人在激活前完成一次分享或共同使用行动。"
+        },
+        {
+          "failure": "散射随机重新着色会破坏中继。",
+          "repair": "从共享接触区域开始变化，并通过一个可见的单调边界扩展。"
+        },
+        {
+          "failure": "直接跳到城市规模会移除传播的证据。",
+          "repair": "在建筑或环境变化之前，使用重复的周围物体作为中间尺度。"
+        },
+        {
+          "failure": "一个匿名的宽忘记谁启动了变化。",
+          "repair": "以起始的配对和援助对象仍然在改变的环境中可读。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两名成年夜班工人共享一个琥珀色加热灯笼，在无色的铁路 yard 中；温暖激活附近的安全灯，然后是平台线路和选定的车站表面。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年现场医疗人员递给一名疲惫的成年跑步者一块绿色的降温布，在灰色的体育场内；绿色的环激活水瓶、赛道标记和选定的座位区域。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

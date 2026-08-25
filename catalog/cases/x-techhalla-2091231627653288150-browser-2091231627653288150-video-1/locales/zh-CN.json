@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techhalla-2091231627653288150-browser-2091231627653288150-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "865261585e27cd8336d8d71e2a1650a1e6449ea73aad88907c983c6d868e7e80",
+    "creative_dna_sha256": "feb4e145f9c7714887503877aed2fd6efd61a7fbcdf048df6476c8f470dbb937"
+  },
+  "content": {
+    "title": "刻意遮断省略｜动作升级后以审查卡跳到余波结果",
+    "summary": "先用明确成年角色和原创对手完成可读动作升级；到最大冲突前主动切入可辨识的原创遮断卡，让缺失成为叙事省略而不是伪造动作。遮断期间只保留克制声画提示，随后回到同一空间、同一人物与可验证余波，不推断被遮内容。",
+    "quick_start": {
+      "input_format": "两名明确成年原创对立主体和稳定地理先建立 + 至少三次完整可见动作逐级升级 + 最大阈值切入可辨识的原创遮断卡而非故障画面 + 遮断期间绝不展示、描述或推断隐藏动作 + 回到同一地理只呈现可观察余波并保持结果不解释",
+      "recommended_input": "原创工业测试厨房内，两名明确成年对手厨师站在相对不锈钢工作台，先建立刀具、食材、中间出餐口和可见倒计时灯。；两人同时伸手抓盖，倒计时灯转红；镜头收紧到把手，但在任何盖子打开前停止。；回到完全相同的厨房地理，烟已落下，两份原创成品在出餐口，同一两名成年人仍在工作台旁，不解释胜负；只停留可观察余波，不复制战士、装甲、雨巷和 CENSORED 字样。",
+      "required_anchors": [
+        "在升级之前，建立两个明确的成年人规模的原创角色和稳定的空间关系环境。",
+        "在中断之前，至少展示三个完整的可见行动高潮。",
+        "在中断期间，永远不要描绘、叙述或推断隐藏的动作。",
+        "回到相同的空间关系区域，只揭示可观察到的后果状态。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用明确成年角色和原创对手完成可读动作升级；到最大冲突前主动切入可辨识的原创遮断卡，让缺失成为叙事省略而不是伪造动作。遮断期间只保留克制声画提示，随后回到同一空间、同一人物与可验证余波，不推断被遮内容。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先用明确成年角色和原创对手完成可读动作升级；到最大冲突前主动切入可辨识的原创遮断卡，让缺失成为叙事省略而不是伪造动作。遮断期间只保留克制声画提示，随后回到同一空间、同一人物与可验证余波，不推断被遮内容。 必须满足：两名明确成年原创对立主体和稳定空间关系先建立 + 至少三次完整可见动作逐级升级 + 最大阈值切入可辨识的原创遮断卡而非故障画面 + 遮断期间绝不展示、描述或推断隐藏动作 + 回到同一空间关系只呈现可观察余波并保持结果不解释。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。来源画面文字 CENSORED 仅作为禁止复制项记录。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在升级之前，建立两个明确的成年人规模的原创角色和稳定的空间关系环境。",
+          "purpose": "使预/后比较成为可能。",
+          "ablation_failure": "一个未定义的空间防止了后续验证。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在中断之前，至少展示三个完整的可见行动高潮。",
+          "purpose": "达到叙事阈值。",
+          "ablation_failure": "早期的黑屏感觉像是错过媒体内容，而不是故意的形式。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在最大阈值时使用一个 unmistakably authored 的原创中断卡片。",
+          "purpose": "将缺席标记为故意省略。",
+          "ablation_failure": "一个看起来腐败的切口可能会被误认为是解码失败。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在中断期间，永远不要描绘、叙述或推断隐藏的动作。",
+          "purpose": "保留证据的诚实和观众的想象力。",
+          "ablation_failure": "发明的战斗错误地声称了来源的支持。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "回到相同的空间关系区域，只揭示可观察到的后果状态。",
+          "purpose": "关闭比较，但未解决缺失的区间。",
+          "ablation_failure": "新的地点或解释性闪回打断了椭圆。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源红装战斗机，装甲对手，面部，服装和身体设计",
+        "源地类似九份的霓虹巷，雨，标志和雾霾",
+        "源地打击，街区，武器和精确的编舞",
+        "源地黑色 CENSORED 卡片和精确的中断时机",
+        "源地变形镜头，Seedance 2.5 线索声明和创作者身份"
+      ],
+      "instantiations": [
+        {
+          "concept": "两位成年对手厨师通过切菜、摆盘和盖锅来升级一场限时厨房决斗；一张原创的 CHECK IN PROGRESS 卡片打断了决定性的揭晓，然后同一厨房重新出现，烟雾散去，两道完成的菜肴可见。",
+          "prompt_seed": "两位成年对手厨师通过切菜、摆盘和盖锅来升级一场限时厨房决斗；一张原创的 CHECK IN PROGRESS 卡片打断了决定性的揭晓，然后同一厨房重新出现，烟雾散去，两道完成的菜肴可见。"
+        },
+        {
+          "concept": "一位成年 salvage 飞行员和原始起重机升级了一次船坞回收；一张 SIGNAL LOST BY DESIGN 卡片覆盖了最大提升能力，然后返回到同一船坞，负载已着陆，但缆线仍在移动。",
+          "prompt_seed": "一位成年 salvage 飞行员和原始起重机升级了一次船坞回收；一张 SIGNAL LOST BY DESIGN 卡片覆盖了最大提升能力，然后返回到同一船坞，负载已着陆，但缆线仍在移动。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "一个未定义的空间防止了后续验证。",
+          "repair": "在升级之前，建立两个明确的成年人规模的原创角色和稳定的空间关系环境。"
+        },
+        {
+          "failure": "早期的黑屏感觉像是错过媒体内容，而不是故意的形式。",
+          "repair": "在中断之前，至少展示三个完整的可见行动高潮。"
+        },
+        {
+          "failure": "一个看起来腐败的切口可能会被误认为是解码失败。",
+          "repair": "在最大阈值时使用一个 unmistakably authored 的原创中断卡片。"
+        },
+        {
+          "failure": "发明的战斗错误地声称了来源的支持。",
+          "repair": "在中断期间，永远不要描绘、叙述或推断隐藏的动作。"
+        },
+        {
+          "failure": "新的地点或解释性闪回打断了椭圆。",
+          "repair": "回到相同的空间关系区域，只揭示可观察到的后果状态。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两位成年对手厨师通过切菜、摆盘和盖锅来升级一场限时厨房决斗；一张原创的 CHECK IN PROGRESS 卡片打断了决定性的揭晓，然后同一厨房重新出现，烟雾散去，两道完成的菜肴可见。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年 salvage 飞行员和原始起重机升级了一次船坞回收；一张 SIGNAL LOST BY DESIGN 卡片覆盖了最大提升能力，然后返回到同一船坞，负载已着陆，但缆线仍在移动。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

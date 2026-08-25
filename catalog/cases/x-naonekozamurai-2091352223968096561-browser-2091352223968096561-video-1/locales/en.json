@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "90cb2267d7fb298d2a95e5f292a40fc2e577c5ad24d80e2ceb53913a1d97bb77",
+    "creative_dna_sha256": "9e02e82e53c0a240107827e05acfecb3b60a80f866e96c59945e96a798b84000"
+  },
+  "content": {
+    "title": "Dance Type Variant | One Silhouette Drives One Word per Beat",
+    "summary": "This is an evidence variant of the existing character-action typography module carousel. Lock one original clearly adult stylized performer through a stable silhouette, palette and center axis. Rotate at least four high-contrast cards; each card introduces only one original short word and binds it to one readable pose, step, strike, occlusion or reveal. Let geometric backgrounds respond to that same action while preserving identity anchors. End by combining the performer and a new original mark in a still lockup. Do not copy the source performer, words, colors, typography, choreography or timing.",
+    "quick_start": {
+      "input_format": "Lock one clearly adult performer with at least four stable identity and prop anchors. + Use one new original short word and one corresponding performance action per module. + Allow type to cross foreground and background but never fully erase the adult face and body identity. + Repeat prop, palette and stage axis while word geometry changes. + End with the same adult and one original short mark in a still composition.",
+      "recommended_input": "Open on one original clearly adult percussionist silhouette, stable round glasses, high collar and twin drumstick outline against a cream field with one cobalt ring. The word ROLL curves around the same silhouette as one controlled wrist roll drives concentric notation lines; keep face profile, glasses and collar stable. Combine the same adult silhouette, cobalt ring and the original short mark PULSE KIT in a centered still lockup; no source words, dancer, colors or choreography.",
+      "required_anchors": [
+        "Lock one clearly adult performer with a stable silhouette, palette and center axis.",
+        "Introduce no more than one new original short word per module.",
+        "Repeat at least two graphic anchors while geometry changes.",
+        "End with performer and original mark together in a held lockup."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "This is an evidence variant of the existing character-action typography module carousel. Lock one original clearly adult stylized performer through a stable silhouette, palette and center axis. Rotate at least four high-contrast cards; each card introduces only one original short word and binds it to one readable pose, step, strike, occlusion or reveal. Let geometric backgrounds respond to that same action while preserving identity anchors. End by combining the performer and a new original mark in a still lockup. Do not copy the source performer, words, colors, typography, choreography or timing.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "This is an evidence variant of the existing character-action typography module carousel. Lock one original clearly adult stylized performer through a stable silhouette, palette and center axis. Rotate at least four high-contrast cards; each card introduces only one original short word and binds it to one readable pose, step, strike, occlusion or reveal. Let geometric backgrounds respond to that same action while preserving identity anchors. End by combining the performer and a new original mark in a still lockup. Do not copy the source performer, words, colors, typography, choreography or timing.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Lock one clearly adult performer with a stable silhouette, palette and center axis.",
+          "purpose": "Maintains identity across aggressive cards.",
+          "ablation_failure": "Changing proportions turns each card into a different character.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Introduce no more than one new original short word per module.",
+          "purpose": "Protects legibility at fast tempo.",
+          "ablation_failure": "Dense phrases become unreadable decoration.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Bind every word to one semantic performer action or occlusion.",
+          "purpose": "Makes type and performance share one cause.",
+          "ablation_failure": "Unrelated dance leaves typography ornamental.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Repeat at least two graphic anchors while geometry changes.",
+          "purpose": "Connects modules into one system.",
+          "ablation_failure": "Fully unrelated cards feel like a compilation.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "End with performer and original mark together in a held lockup.",
+          "purpose": "Closes action into identity.",
+          "ablation_failure": "A moving abstract ending loses the character.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source dancer silhouette, body proportions, hairstyle and choreography",
+        "source yellow, cyan, magenta and black palette",
+        "source words DANCE, MOVE, BEAT and exact typefaces",
+        "source rings, speed lines and exact card layouts",
+        "source MiniMax H3 prompt wording, timing and creator identity"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult museum guide silhouette triggers the original words LOOK, TRACE, TURN and HOLD through flashlight gestures while architectural grids respond.",
+          "prompt_seed": "An adult museum guide silhouette triggers the original words LOOK, TRACE, TURN and HOLD through flashlight gestures while architectural grids respond."
+        },
+        {
+          "concept": "An adult percussionist silhouette activates TAP, ROLL, DROP and REST through stick actions, with circular notation fields changing per beat.",
+          "prompt_seed": "An adult percussionist silhouette activates TAP, ROLL, DROP and REST through stick actions, with circular notation fields changing per beat."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Changing proportions turns each card into a different character.",
+          "repair": "Lock one clearly adult performer with a stable silhouette, palette and center axis."
+        },
+        {
+          "failure": "Dense phrases become unreadable decoration.",
+          "repair": "Introduce no more than one new original short word per module."
+        },
+        {
+          "failure": "Unrelated dance leaves typography ornamental.",
+          "repair": "Bind every word to one semantic performer action or occlusion."
+        },
+        {
+          "failure": "Fully unrelated cards feel like a compilation.",
+          "repair": "Repeat at least two graphic anchors while geometry changes."
+        },
+        {
+          "failure": "A moving abstract ending loses the character.",
+          "repair": "End with performer and original mark together in a held lockup."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult museum guide silhouette triggers the original words LOOK, TRACE, TURN and HOLD through flashlight gestures while architectural grids respond.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult percussionist silhouette activates TAP, ROLL, DROP and REST through stick actions, with circular notation fields changing per beat.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

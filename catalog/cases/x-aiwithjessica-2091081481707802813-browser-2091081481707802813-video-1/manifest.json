@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1",
+  "slug": "accessory-detail-material-motif-fashion-relay",
+  "title": "配饰材质接力｜细节证据、全身回连与原创品牌收束",
+  "source_title": "奢华配饰广告｜同一材质高光从眼镜、耳饰、包袋传到鞋履",
+  "summary": "同一明确成年模特与一种原创材质高光贯穿四类配饰证据；每章先用一次触觉动作证明结构，再让同一高光或纹理从当前物件匹配到下一物件。终局回到全身步态和所有配饰关系，并只显示全新原创名称，彻底移除来源品牌。",
+  "status": "released",
+  "source_duration_seconds": 30.066667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/accessory-detail-material-motif-fashion-relay",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "derived_placeholder_no_source_media",
+    "poster": "derived_placeholder_no_source_media",
+    "mp4": "private_local_only_not_exported"
+  },
+  "template_id": "t8-case-accessory-detail-material-motif-fashion-relay-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创模特、至少三项身份锚点和一种原创材质母题先建立 + 至少四类不同配饰且每章先完成一次触觉或结构证明 + 同一高光、纹理、边缘或声音逐件匹配接力 + 细节模块最终回连同一成年人的完整姿态与步态 + 只以完全原创短品牌收束且不得保留来源标志与产品轮廓",
+  "recommended_input": "原创炭灰影棚内，一名明确成年城市建筑师登场：银色短发、三角脸颊雀斑、钴蓝衣领；一条细青色边缘高光定义原创烟灰玻璃眼镜。；耳夹边缘匹配到模块化石墨文件箱；成年人释放一个磁吸扣、打开单一隔层并提起箱体，避开所有来源奢侈品造型与标记。；四类配饰轮廓围绕同一成年人汇合，以朴素白字显示完全原创短名 VEILFORM；不使用来源品牌、花纹、产品造型、模特和广告构图。",
+  "required_anchors": [
+    "Lock one clearly adult original model and one original material motif before product close-ups.",
+    "Use at least four different accessory classes and one tactile structural proof per class.",
+    "Reconnect detail modules to the same adult's full-body posture and gait.",
+    "Finish with a completely original short brand name and no source product silhouette or mark."
+  ],
+  "tags": [
+    "accessory",
+    "detail",
+    "material",
+    "motif",
+    "fashion",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.96,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-25T17:00:02+08:00",
+  "updated_at": "2026-08-25T17:40:53+08:00"
+}

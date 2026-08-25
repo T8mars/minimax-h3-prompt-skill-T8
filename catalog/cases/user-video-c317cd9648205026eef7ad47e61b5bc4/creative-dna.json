@@ -1,0 +1,212 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A stable photoreal baseline becomes a reversible proof surface: visible hands first assign four coupled corners, a registered bounded field grows through multiple sizes while preserving the controller and environment, the largest late state gains denser directional or material information, and the same hands collapse the field to restore the baseline.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one clearly adult original controller, one stable registered environment and visibly inactive hands before the bounded field activates.",
+      "evidence_ids": [
+        "obs-01",
+        "obs-04",
+        "beat-01"
+      ],
+      "ablation_failure": "Without a neutral baseline, the later frame cannot prove that the environment changed under user control."
+    },
+    {
+      "id": "inv-02",
+      "rule": "Make hand geometry precede every active corner and keep each corner or edge visibly coupled to fingertips or hand trajectories.",
+      "evidence_ids": [
+        "obs-04",
+        "obs-05",
+        "beat-02"
+      ],
+      "ablation_failure": "If corners appear independently, the central hand-to-field causality becomes decorative rather than operational."
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep the transformed or intensified state bounded by one registered moving field while preserving identity and spatial anchors across its edge.",
+      "evidence_ids": [
+        "obs-06",
+        "obs-09",
+        "beat-03",
+        "beat-04"
+      ],
+      "ablation_failure": "If the change leaks beyond the field or registration drifts, the effect stops reading as a controllable local window."
+    },
+    {
+      "id": "inv-04",
+      "rule": "Show at least three materially different field sizes or corner configurations that obey the same coupling and containment rule.",
+      "evidence_ids": [
+        "obs-05",
+        "obs-11",
+        "beat-02",
+        "beat-03",
+        "beat-05"
+      ],
+      "ablation_failure": "One static rectangle is merely an overlay; progressive rule-consistent states prove reusable control."
+    },
+    {
+      "id": "inv-05",
+      "rule": "Reserve the largest and most information-dense graphic state for a late apex after the containment rule is already legible.",
+      "evidence_ids": [
+        "obs-10",
+        "obs-14",
+        "obs-18",
+        "beat-04"
+      ],
+      "ablation_failure": "If maximum spectacle arrives before the rule, the mechanism becomes noisy and the escalation has nowhere to go."
+    },
+    {
+      "id": "inv-06",
+      "rule": "Visibly contract or dismiss the field and end with the same controller and environment restored in the baseline medium.",
+      "evidence_ids": [
+        "obs-08",
+        "obs-09",
+        "obs-13",
+        "beat-05",
+        "beat-06"
+      ],
+      "ablation_failure": "Without a controlled return, reversibility and completion are not demonstrated."
+    }
+  ],
+  "slots": [
+    {
+      "name": "adult_controller",
+      "description": "One clearly adult original controller with three stable appearance anchors and readable hands."
+    },
+    {
+      "name": "registered_environment",
+      "description": "A stable original space with lines and objects that make field registration easy to verify."
+    },
+    {
+      "name": "corner_system",
+      "description": "Four original markers or material corners visibly attached to the controlling hands."
+    },
+    {
+      "name": "bounded_state",
+      "description": "A local visual or informational state that can intensify without leaking beyond the declared field."
+    },
+    {
+      "name": "proof_sizes",
+      "description": "At least three distinct field sizes or configurations, each obeying the same causal rule."
+    },
+    {
+      "name": "apex_content",
+      "description": "The largest late-stage coverage with a more information-dense but still bounded proof state."
+    },
+    {
+      "name": "return_confirmation",
+      "description": "A clean collapse followed by one stable baseline confirmation."
+    },
+    {
+      "name": "sound_family",
+      "description": "Original activation, stretch, lock, apex and release cues; source audio semantics are not reused."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "Do not reproduce the source performer, face, hair, wardrobe or body proportions.",
+    "Do not reuse the source bedroom, posters, furniture or framing choreography.",
+    "Do not copy the cyan/magenta corner design, arrows, radial strokes, floor splashes or exact gesture sequence.",
+    "Do not claim a source prompt, creator identity, generating model or semantic soundtrack because none was supplied."
+  ],
+  "instantiations": [
+    {
+      "concept": "Archive relief-inspection window",
+      "description": "A clearly adult museum conservator in a map archive draws four brass-phosphor corners; only the enclosed shelves and document table become animated clay topographic relief, expanding through three field sizes before collapsing and leaving one real paper label gently flipped.",
+      "changed_slots": [
+        "adult_controller",
+        "registered_environment",
+        "corner_system",
+        "bounded_state",
+        "proof_sizes",
+        "apex_content",
+        "return_confirmation",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Ceramic kiln thermal blueprint",
+      "description": "A clearly adult ceramic engineer in a quiet kiln hall binds four ceramic light tabs; only the bounded kiln and vessel region becomes layered thermal blueprint glass, reaches a late heat-flow apex, then retracts to the untouched workshop as one real kiln gauge settles.",
+      "changed_slots": [
+        "adult_controller",
+        "registered_environment",
+        "corner_system",
+        "bounded_state",
+        "proof_sizes",
+        "apex_content",
+        "return_confirmation",
+        "sound_family"
+      ]
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The effect activates before the hands define the field.",
+      "repair": "Show the complete hand/corner relationship first, then let the bounded state appear."
+    },
+    {
+      "failure": "The field floats away from its controllers.",
+      "repair": "Bind every corner to a visible fingertip or hand-edge trajectory through all scale changes."
+    },
+    {
+      "failure": "The transformed state leaks into the full scene.",
+      "repair": "Keep hard containment at the moving boundary and preserve the exterior baseline."
+    },
+    {
+      "failure": "Scale changes feel like unrelated overlays.",
+      "repair": "Use the same corner physics and registered environment across at least three progressive sizes."
+    },
+    {
+      "failure": "The apex cannot resolve.",
+      "repair": "Delay maximum information density until late, then visibly contract before the baseline confirmation."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Archive relief-inspection window",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05",
+        "inv-06"
+      ],
+      "changed_slots": [
+        "adult_controller",
+        "registered_environment",
+        "corner_system",
+        "bounded_state",
+        "proof_sizes",
+        "apex_content",
+        "return_confirmation",
+        "sound_family"
+      ],
+      "finding": "The archive, brass-phosphor corners, clay relief, document proofs, label residue and original sound family change every surface while the hand-bound growth/apex/return mechanism remains legible."
+    },
+    {
+      "concept": "Ceramic kiln thermal blueprint",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05",
+        "inv-06"
+      ],
+      "changed_slots": [
+        "adult_controller",
+        "registered_environment",
+        "corner_system",
+        "bounded_state",
+        "proof_sizes",
+        "apex_content",
+        "return_confirmation",
+        "sound_family"
+      ],
+      "finding": "The kiln, ceramic tabs, thermal glass, heat-flow proof, gauge payoff and sound family preserve the causal topology without retaining source identity, room, graphics or gestures."
+    }
+  ]
+}

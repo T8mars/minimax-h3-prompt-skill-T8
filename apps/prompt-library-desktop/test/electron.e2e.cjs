@@ -1,4 +1,5 @@
 const assert = require("node:assert/strict");
+const fs = require("node:fs");
 const os = require("node:os");
 const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
@@ -13,6 +14,16 @@ const expectedCommunitySkillCount = catalogManifest.community_skill_count;
 const expectedAggregateCount = expectedCaseCount + expectedOfficialSkillCount + expectedCommunitySkillCount;
 const normalizedCatalog = loadCatalog({ catalogRoot: path.join(repoRoot, "catalog"), skillsRoot: path.join(repoRoot, "skills") });
 const normalizedItems = [...normalizedCatalog.cases, ...normalizedCatalog.communitySkills, ...normalizedCatalog.officialSkills];
+const caseMediaStatuses = new Map(catalogManifest.cases.map((entry) => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(repoRoot, "catalog", ...entry.manifest_path.split("/")), "utf8"));
+  return [entry.case_id, manifest?.preview_status?.mp4 || ""];
+}));
+const expectedPlayableCaseCount = [...caseMediaStatuses.values()].filter((status) => status === "available_in_electron_media_pack").length;
+const stablePlayableCaseId = "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1";
+const playableXItem = normalizedCatalog.cases.find((item) => item.id === stablePlayableCaseId && caseMediaStatuses.get(item.id) === "available_in_electron_media_pack");
+const fallbackXItem = sortItems(normalizedCatalog.cases.filter((item) => String(item.platform).toLocaleLowerCase() === "x" && caseMediaStatuses.get(item.id) === "private_local_only_not_exported"), { mode: "newest-added", locale: "zh-CN" })[0];
+const expectedPlayableXItemKey = itemKey(playableXItem);
+const expectedFallbackXItemKey = itemKey(fallbackXItem);
 const expectedNewestItemKey = itemKey(sortItems(normalizedItems, { mode: "newest-added", locale: "zh-CN" })[0]);
 const expectedOldestItemKey = itemKey(sortItems(normalizedItems, { mode: "oldest-added", locale: "zh-CN" })[0]);
 const expectedNewestXItemKey = itemKey(sortItems(normalizedCatalog.cases.filter((item) => String(item.platform).toLocaleLowerCase() === "x"), { mode: "newest-added", locale: "zh-CN" })[0]);
@@ -88,7 +99,7 @@ async function run() {
     const allCount = await page.locator(".case-card").count();
     assert.equal(allCount, expectedAggregateCount, "default all-content view must match the catalog and Skill manifests");
     assert.equal(await page.locator(".case-card video.card-hover-video").count(), 0, "catalog startup must not allocate one WebMediaPlayer per card");
-    await page.locator(".case-card:not(.official-skill)").first().hover();
+    await page.locator(`.case-card[data-item-key="${expectedPlayableXItemKey}"]`).hover();
     await page.waitForSelector(".case-card video.card-hover-video");
     assert.equal(await page.locator(".case-card video.card-hover-video").count(), 1, "hover must allocate only the active card player");
     await page.locator("#page-title").hover();
@@ -126,7 +137,7 @@ async function run() {
     assert.equal(await page.locator("#view-favorite-count").textContent(), "0");
     assert.equal(await page.locator("#view-collection-count").textContent(), "0");
     assert.equal(await page.locator("#view-history-count").textContent(), "0");
-    const favoriteItemKey = expectedNewestXItemKey;
+    const favoriteItemKey = expectedPlayableXItemKey;
     const favoriteSourceUrl = normalizedItems.find((item) => itemKey(item) === favoriteItemKey)?.sourceUrl;
     assert.match(favoriteSourceUrl || "", /^https:\/\//u, "the newest item must retain an exact HTTPS source URL");
     await page.locator(`.case-card[data-item-key="${favoriteItemKey}"] .card-personal-button.favorite`).click();
@@ -186,11 +197,17 @@ async function run() {
     await page.waitForFunction((count) => document.querySelectorAll(".case-card:not(.official-skill):not(.community-skill)").length === count, expectedCaseCount);
     const caseCount = await page.locator(".case-card").count();
     assert.equal(caseCount, expectedCaseCount, "viewer must render every public case in the manifest");
-    assert.equal(await page.locator("#stat-videos").textContent(), String(expectedCaseCount), "development media pack must bind every case MP4");
+    assert.equal(await page.locator("#stat-videos").textContent(), String(expectedPlayableCaseCount), "case video count must include only explicitly redistributable MP4 files");
     await page.locator("#platform-filter").selectOption("platform:x");
     assert.ok(await page.locator(".case-card").count() > 10, "stable platform filter must retain the X case set");
 
-    assert.equal(await page.locator(".case-card").first().getAttribute("data-item-key"), favoriteItemKey, "newest-added must remain stable inside the X filter");
+    assert.equal(await page.locator(".case-card").first().getAttribute("data-item-key"), expectedNewestXItemKey, "newest-added must remain stable inside the X filter");
+    await page.locator(`.case-card[data-item-key="${expectedFallbackXItemKey}"]`).click();
+    await page.waitForSelector("#case-dialog[open]");
+    assert.equal(await page.locator("#detail-media video").count(), 0, "rights-limited cases must not fabricate a packaged source video");
+    assert.equal(await page.locator("#detail-media img").count(), 1, "rights-limited cases must keep the catalog GIF fallback");
+    await page.keyboard.press("Escape");
+    await page.locator("#case-dialog").waitFor({ state: "hidden" });
     await page.locator(`.case-card[data-item-key="${favoriteItemKey}"]`).click();
     await page.waitForSelector("#case-dialog[open]");
     assert.equal(await page.locator("#detail-favorite").getAttribute("aria-pressed"), "true", "detail favorite state must match the persisted card state");

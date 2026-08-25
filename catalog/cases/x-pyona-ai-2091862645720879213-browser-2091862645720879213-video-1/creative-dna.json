@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Place one original clearly adult protagonist at a measurable disadvantage inside a ring of adult opponents. The recovery must progress through four distinct but materially continuous ability states: a grounded positional escape, a compact guard that visibly deforms under one close hit, a focused counter that uses the retained material, and one floor-bound radial release that moves opponents outward. Preserve the same water, light, dust or other medium between stages and keep bodies readable through every effect. End on a quiet center-versus-ring tableau. The reusable mechanism is disadvantage baseline, grounded recovery, deforming guard, retained-material counter, radial clearing proof and calm center—not the source school setting, youthful styling, people, uniforms, water design, exact choreography, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Use clearly adult original characters in a non-school setting and establish a measurable center-versus-ring disadvantage.",
+      "purpose": "Removes ambiguous age and makes the reversal spatially legible.",
+      "ablation_failure": "Without adult identity and group geometry, the sequence becomes unsafe or abstract.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Begin recovery with one grounded positional action before any large ability.",
+      "purpose": "Gives the protagonist earned space and a physical first step.",
+      "ablation_failure": "Immediate spectacle skips the disadvantage-to-agency transition.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Make one compact guard visibly deform under a close committed hit while both bodies remain readable.",
+      "purpose": "Proves defense rather than decorative shielding.",
+      "ablation_failure": "An opaque bubble hides contact and consequence.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Reuse the same retained medium for the focused counter and radial release.",
+      "purpose": "Creates material continuity across ability stages.",
+      "ablation_failure": "Fresh unrelated effects feel like a disconnected power reel.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with opponents displaced outward and the same adult calm at the unchanged center.",
+      "purpose": "Provides geometric proof of the clear.",
+      "ablation_failure": "A close-up ending cannot verify the radial result.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source young-looking protagonist, peers, faces, bodies and school uniforms",
+    "source school gym, benches, walls and exact floor markings",
+    "source sweep, guard, water cannon, ring shockwave and palm choreography",
+    "source water color, shape, particles and exact impact directions",
+    "source camera, timing, creator identity and Seedance 2.5 prompt wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult mine-rescue engineer surrounded by malfunctioning survey drones uses floor dust: a boot sweep, compact dust shield, focused pressure jet and radial clearing pulse end with drones outside a marked circle.",
+      "prompt_seed": "An adult mine-rescue engineer surrounded by malfunctioning survey drones uses floor dust: a boot sweep, compact dust shield, focused pressure jet and radial clearing pulse end with drones outside a marked circle."
+    },
+    {
+      "concept": "An adult glassblower encircled by original kiln automatons uses glowing glass threads: low pivot, deforming filament guard, narrow ribbon counter and circular floor bloom leave the adult calm at center.",
+      "prompt_seed": "An adult glassblower encircled by original kiln automatons uses glowing glass threads: low pivot, deforming filament guard, narrow ribbon counter and circular floor bloom leave the adult calm at center."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without adult identity and group geometry, the sequence becomes unsafe or abstract.",
+      "repair": "Use clearly adult original characters in a non-school setting and establish a measurable center-versus-ring disadvantage."
+    },
+    {
+      "failure": "Immediate spectacle skips the disadvantage-to-agency transition.",
+      "repair": "Begin recovery with one grounded positional action before any large ability."
+    },
+    {
+      "failure": "An opaque bubble hides contact and consequence.",
+      "repair": "Make one compact guard visibly deform under a close committed hit while both bodies remain readable."
+    },
+    {
+      "failure": "Fresh unrelated effects feel like a disconnected power reel.",
+      "repair": "Reuse the same retained medium for the focused counter and radial release."
+    },
+    {
+      "failure": "A close-up ending cannot verify the radial result.",
+      "repair": "End with opponents displaced outward and the same adult calm at the unchanged center."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult mine-rescue engineer surrounded by malfunctioning survey drones uses floor dust: a boot sweep, compact dust shield, focused pressure jet and radial clearing pulse end with drones outside a marked circle.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult glassblower encircled by original kiln automatons uses glowing glass threads: low pivot, deforming filament guard, narrow ribbon counter and circular floor bloom leave the adult calm at center.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

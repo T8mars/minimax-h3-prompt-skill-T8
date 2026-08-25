@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "This is an evidence variant of the existing imperfect memory farewell. Lock one original clearly adult subject with at least three clothing, carried-object or gait anchors across at least five ordinary chapters. Use one object, route direction, weather transition or repeated movement to connect each chapter. Preserve bounded handheld imperfections—late pans, partial occlusions, focus recovery and uneven horizons—without losing the subject. Let activity density decrease after one weather or emotional crest and end on a quieter departure or hold. Do not copy source person, city, streetcar, basketball, storm, diner, rooftop, exact camera or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Lock one clearly adult original subject with at least three stable anchors across five ordinary chapters.",
+      "purpose": "Maintains one-day memory continuity.",
+      "ablation_failure": "Changing subject or wardrobe makes separate stories.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Connect each chapter with one object, route direction, weather change or repeated motion.",
+      "purpose": "Creates a day rather than random clips.",
+      "ablation_failure": "Unmotivated cuts weaken memory flow.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use bounded handheld imperfections but always recover subject and anchor.",
+      "purpose": "Provides authored home-video texture.",
+      "ablation_failure": "Uncontrolled error makes evidence unreadable.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Place one weather or emotional crest before decreasing activity density.",
+      "purpose": "Gives the day a temporal shape.",
+      "ablation_failure": "Uniform energy prevents a felt ending.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End on a quiet departure or hold with the same adult and at least one anchor visible.",
+      "purpose": "Completes the memory as farewell.",
+      "ablation_failure": "A new spectacle resets rather than closes the day.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source young adult man, face, clothes, backpack and gait",
+    "source coffee, streetcar, basketball and diner actions",
+    "source New Orleans-like streets, court, storm and rooftop",
+    "source exact handheld errors, focus recovery and chapter order",
+    "source creator identity, Seedance 2.5 wording, timing and camera"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult harbor courier moves from dawn tea to ferry, repair yard, sudden fog, canteen and a quiet breakwater walk, preserving a red thermos and canvas satchel.",
+      "prompt_seed": "An adult harbor courier moves from dawn tea to ferry, repair yard, sudden fog, canteen and a quiet breakwater walk, preserving a red thermos and canvas satchel."
+    },
+    {
+      "concept": "An adult museum intern moves from morning badge check to tram, archive room, power outage, café and an evening courtyard departure, preserving a yellow notebook and scarf.",
+      "prompt_seed": "An adult museum intern moves from morning badge check to tram, archive room, power outage, café and an evening courtyard departure, preserving a yellow notebook and scarf."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Changing subject or wardrobe makes separate stories.",
+      "repair": "Lock one clearly adult original subject with at least three stable anchors across five ordinary chapters."
+    },
+    {
+      "failure": "Unmotivated cuts weaken memory flow.",
+      "repair": "Connect each chapter with one object, route direction, weather change or repeated motion."
+    },
+    {
+      "failure": "Uncontrolled error makes evidence unreadable.",
+      "repair": "Use bounded handheld imperfections but always recover subject and anchor."
+    },
+    {
+      "failure": "Uniform energy prevents a felt ending.",
+      "repair": "Place one weather or emotional crest before decreasing activity density."
+    },
+    {
+      "failure": "A new spectacle resets rather than closes the day.",
+      "repair": "End on a quiet departure or hold with the same adult and at least one anchor visible."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult harbor courier moves from dawn tea to ferry, repair yard, sudden fog, canteen and a quiet breakwater walk, preserving a red thermos and canvas satchel.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult museum intern moves from morning badge check to tram, archive room, power outage, café and an evening courtyard departure, preserving a yellow notebook and scarf.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

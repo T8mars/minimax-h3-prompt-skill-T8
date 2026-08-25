@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1",
+  "slug": "celebration-word-prop-action-materialization",
+  "title": "庆典词语实体化｜一词一动作一材质结果的逐章升级",
+  "source_title": "庆典字效轮播｜麦克风、蜡烛、气球与礼炮把短词变成实体事件",
+  "summary": "同一明确成年主持人贯穿多个庆典模块，每章只引入一个原创短词、一件道具和一次动作；动作必须让文字发生对应的物理变化，如吹灭、膨胀、展开或点亮。通过重复舞台轴与配色保持身份，最后把所有庆典状态汇入一个原创祝福主标。",
+  "status": "released",
+  "source_duration_seconds": 15.121333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/celebration-word-prop-action-materialization",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tokyo-valentine-2092093848130617686-browser-2092093848130617686-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "derived_placeholder_no_source_media",
+    "poster": "derived_placeholder_no_source_media",
+    "mp4": "private_local_only_not_exported"
+  },
+  "template_id": "t8-case-celebration-word-prop-action-materialization-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创主持人以至少三项身份锚点和稳定舞台轴贯穿 + 至少四个模块且每章只引入一个原创短词、一件道具和一次动作 + 动作必须把文字变成对应物理状态 + 重复至少两个身份或版式锚点并让尺度从手持升到舞台 + 终局主持人、材料余迹和原创祝福主标共同稳定可读",
+  "recommended_input": "原创明确成年科学展主持人登场：银色侧辫、钴蓝翻领、六边形琥珀徽章，居中站在黑米舞台并拿一块棱镜。；短词 FLOAT 位于折纸条上；同一成年人启动一台桌面风扇，纸条升起构成字母体积，脸、侧辫与徽章可见。；同一主持人、一道棱镜光谱、一片纸花瓣和金属圆环围绕原创祝福 OPEN NIGHT 汇合，清楚停留，不复制来源文字、人物、道具和庆典版式。",
+  "required_anchors": [
+    "Lock one clearly adult original host with at least three identity anchors and one stable stage axis.",
+    "Use exactly one new original short word, one prop and one action per module.",
+    "Repeat at least two host or layout anchors while material scale grows.",
+    "End with host, selected material residue and one original greeting mark together."
+  ],
+  "tags": [
+    "celebration",
+    "word",
+    "prop",
+    "action",
+    "materialization"
+  ],
+  "quality": {
+    "weighted_score": 4.96,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-25T16:58:50+08:00",
+  "updated_at": "2026-08-25T17:40:53+08:00"
+}

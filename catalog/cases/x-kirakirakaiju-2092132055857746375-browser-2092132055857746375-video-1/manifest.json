@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "环绕字带时装变体｜同一成年表演者被原创短词逐拍编舞",
+  "source_title": "字体时装表演｜螺旋字带、巨型短词与人物动作共同换章",
+  "summary": "同一明确成年表演者以面部、发型、麦克风与服装锚点贯穿，环绕字带和巨型短词只随一次对应表演动作进入；每章一个原创词，人物与文字互相遮挡但不丢身份。作为既有角色动作字卡轮转的时装现场证据，不新增下拉项。",
+  "status": "released",
+  "source_duration_seconds": 15.083333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kirakirakaiju-2092132055857746375-browser-2092132055857746375-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "derived_placeholder_no_source_media",
+    "poster": "derived_placeholder_no_source_media",
+    "mp4": "private_local_only_not_exported"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-wakeupgfx-2090565921580425588-browser-2090565921580425588-video-1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "原创明确成年口语表演者登场：银色短辫、琥珀脸颊点、钴蓝夹克和黄铜指示棒，居中站在竖向黑米舞台。；表演者用指示棒向下利落切一次，原创短词 CUT 沿该线分开；随后侧移一步，TURN 旋转成地面平面。；所有文字回到同一平面，同一成年人站在原创短标 LINE FOUR 旁稳定停留；不复制来源人物、粉发、麦克风、可见文字、时装版式和字体。",
+  "required_anchors": [
+    "Lock one clearly adult performer with at least four stable identity and prop anchors.",
+    "Use one new original short word and one corresponding performance action per module.",
+    "Repeat prop, palette and stage axis while word geometry changes.",
+    "End with the same adult and one original short mark in a still composition."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.96,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-25T17:01:14+08:00",
+  "updated_at": "2026-08-25T17:40:53+08:00"
+}

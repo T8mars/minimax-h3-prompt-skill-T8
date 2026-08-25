@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithjessica-2091081481707802813-browser-2091081481707802813-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "39c4211e0a04425cffe92394faf09df44927d3644badc2f73a265692d37ddaf6",
+    "creative_dna_sha256": "bf75921e924e0ee7d213ebdd08003af66d4fe03b7ed043dc8c49b0aeaad721c6"
+  },
+  "content": {
+    "title": "配饰材质接力｜细节证据、全身回连与原创品牌收束",
+    "summary": "同一明确成年模特与一种原创材质高光贯穿四类配饰证据；每章先用一次触觉动作证明结构，再让同一高光或纹理从当前物件匹配到下一物件。终局回到全身步态和所有配饰关系，并只显示全新原创名称，彻底移除来源品牌。",
+    "quick_start": {
+      "input_format": "一名明确成年原创模特、至少三项身份锚点和一种原创材质母题先建立 + 至少四类不同配饰且每章先完成一次触觉或结构证明 + 同一高光、纹理、边缘或声音逐件匹配接力 + 细节模块最终回连同一成年人的完整姿态与步态 + 只以完全原创短品牌收束且不得保留来源标志与产品轮廓",
+      "recommended_input": "原创炭灰影棚内，一名明确成年城市建筑师登场：银色短发、三角脸颊雀斑、钴蓝衣领；一条细青色边缘高光定义原创烟灰玻璃眼镜。；耳夹边缘匹配到模块化石墨文件箱；成年人释放一个磁吸扣、打开单一隔层并提起箱体，避开所有来源奢侈品造型与标记。；四类配饰轮廓围绕同一成年人汇合，以朴素白字显示完全原创短名 VEILFORM；不使用来源品牌、花纹、产品造型、模特和广告构图。",
+      "required_anchors": [
+        "在产品特写前，明确锁定一个成年原始模型和一个原始材料母题。",
+        "至少使用四种不同的配件类别，并且每个类别提供一个触觉结构证明。",
+        "将细节模块重新连接到同一成年人的全身姿态和步态。",
+        "以完全原创的短品牌名称结束，不包含任何源产品轮廓或标志。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一明确成年模特与一种原创材质高光贯穿四类配饰证据；每章先用一次触觉动作证明结构，再让同一高光或纹理从当前物件匹配到下一物件。终局回到全身步态和所有配饰关系，并只显示全新原创名称，彻底移除来源品牌。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一明确成年模特与一种原创材质高光贯穿四类配饰证据；每章先用一次触觉动作证明结构，再让同一高光或纹理从当前物件匹配到下一物件。终局回到全身步态和所有配饰关系，并只显示全新原创名称，彻底移除来源品牌。 必须满足：一名明确成年原创模特、至少三项身份锚点和一种原创材质母题先建立 + 至少四类不同配饰且每章先完成一次触觉或结构证明 + 同一高光、纹理、边缘或声音逐件匹配接力 + 细节模块最终回连同一成年人的完整姿态与步态 + 只以完全原创短品牌收束且不得保留来源标志与产品轮廓。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在产品特写前，明确锁定一个成年原始模型和一个原始材料母题。",
+          "purpose": "提供人和视觉的连续性。",
+          "ablation_failure": "无关的手和产品感觉像是一本目录的拼贴。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "至少使用四种不同的配件类别，并且每个类别提供一个触觉结构证明。",
+          "purpose": "展示了广度和功能。",
+          "ablation_failure": "仅限于美容的特写缺乏物体行为的证据。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "将每个项目的相同亮点、纹理、边缘或声音匹配到下一个。",
+          "purpose": "创建因果视觉中继。",
+          "ablation_failure": "不相关的对象之间的硬切会失去活动的连贯性。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "将细节模块重新连接到同一成年人的全身姿态和步态。",
+          "purpose": "展示物体如何形成一种外观。",
+          "ablation_failure": "以孤立的产品结尾会失去佩戴者。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以完全原创的短品牌名称结束，不包含任何源产品轮廓或标志。",
+          "purpose": "创造可分发的身份闭合。",
+          "ablation_failure": "源品牌或相似形状违反了反抄袭边界。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源成人模特、面部、头发、身体、姿势和造型",
+        "源古驰名称、单字标志、标志和活动排版",
+        "源太阳镜、耳环、手提包、高跟鞋和确切的产品设计",
+        "源白工作室，金色调色板和精确的高光路径",
+        "源 Seedance 2.5 词句，摄像顺序，时间安排和创作者身份"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年都市建筑师展示一套原创烟玻璃眼镜，钛制耳环，模块化文件夹和磁靴；一条青色边缘高光传递到新标志 VEILFORM。",
+          "prompt_seed": "一位成年都市建筑师展示一套原创烟玻璃眼镜，钛制耳环，模块化文件夹和磁靴；一条青色边缘高光传递到新标志 VEILFORM。"
+        },
+        {
+          "concept": "一位成年探险设计师展示琥珀陶瓷面罩，扣环，可折叠野战包和防滑鞋；一条裂纹釉图案传递到原始名称 TERRAKIND。",
+          "prompt_seed": "一位成年探险设计师展示琥珀陶瓷面罩，扣环，可折叠野战包和防滑鞋；一条裂纹釉图案传递到原始名称 TERRAKIND。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "无关的手和产品感觉像是一本目录的拼贴。",
+          "repair": "在产品特写前，明确锁定一个成年原始模型和一个原始材料母题。"
+        },
+        {
+          "failure": "仅限于美容的特写缺乏物体行为的证据。",
+          "repair": "至少使用四种不同的配件类别，并且每个类别提供一个触觉结构证明。"
+        },
+        {
+          "failure": "不相关的对象之间的硬切会失去活动的连贯性。",
+          "repair": "将每个项目的相同亮点、纹理、边缘或声音匹配到下一个。"
+        },
+        {
+          "failure": "以孤立的产品结尾会失去佩戴者。",
+          "repair": "将细节模块重新连接到同一成年人的全身姿态和步态。"
+        },
+        {
+          "failure": "源品牌或相似形状违反了反抄袭边界。",
+          "repair": "以完全原创的短品牌名称结束，不包含任何源产品轮廓或标志。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年都市建筑师展示一套原创烟玻璃眼镜，钛制耳环，模块化文件夹和磁靴；一条青色边缘高光传递到新标志 VEILFORM。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年探险设计师展示琥珀陶瓷面罩，扣环，可折叠野战包和防滑鞋；一条裂纹釉图案传递到原始名称 TERRAKIND。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1",
+  "slug": "input-screen-result-reaction-causal-loop",
+  "title": "输入—屏幕—结果—反应｜实体操作与虚拟反馈逐拍闭环",
+  "source_title": "街机因果链｜选角、操作、屏幕动作、胜负与玩家反应一一对应",
+  "summary": "先建立成年玩家、实体控制器和屏幕同框关系；每个虚拟动作前必须先看见一次具体输入，屏幕反馈随后发生，玩家再给出清楚可辨的人物反应。用选角、移动、反击和胜负四级闭环升级，终局只确认结果与人物，不补写来源中未出现的再开一局。",
+  "status": "released",
+  "source_duration_seconds": 30.041667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/input-screen-result-reaction-causal-loop",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2091095890144395358-browser-2091095890144395358-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "derived_placeholder_no_source_media",
+    "poster": "derived_placeholder_no_source_media",
+    "mp4": "private_local_only_not_exported"
+  },
+  "template_id": "t8-case-input-screen-result-reaction-causal-loop-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "明确成年原创操作者、实体输入设备和响应屏幕或机器同一地理先建立 + 每个重要虚拟或机械事件前先展示一个具体物理输入 + 至少三组不同输入—响应对应且输出不得提前 + 从选择、导航或防御升级到一个决定性结果 + 终局把结果重新连接到同一成年人物的清楚可辨的人物反应",
+  "recommended_input": "原创夜间温室控制室内，一名明确成年技术员、触觉控制台和展示三条种植区的玻璃墙同框建立。；依次展示三组不同对应：拉杆向下后通风口关闭，摇杆向左后机械臂左摇，按下带护罩按钮后授粉扫描器下降；绝不让输出先于输入。；回到同一成年人松开控制器并克制地舒一口气，绿色通道仍可见；不复制来源街机、游戏、机柜、角色与品牌。",
+  "required_anchors": [
+    "Establish one clearly adult operator, physical controls and response display together.",
+    "Show each important physical input before its matching virtual response.",
+    "Escalate from setup and navigation to one decisive result state.",
+    "End by reconnecting the result to the same adult's readable reaction."
+  ],
+  "tags": [
+    "input",
+    "screen",
+    "result",
+    "reaction",
+    "causal",
+    "loop"
+  ],
+  "quality": {
+    "weighted_score": 4.96,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-25T16:56:47+08:00",
+  "updated_at": "2026-08-25T17:40:53+08:00"
+}

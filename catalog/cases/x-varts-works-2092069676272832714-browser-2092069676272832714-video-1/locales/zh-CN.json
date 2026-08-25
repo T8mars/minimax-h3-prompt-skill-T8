@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-varts-works-2092069676272832714-browser-2092069676272832714-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "3dba342b237846aba6a0e435c8ca37f1a0771822a0cb3a11082f1121fcd5b009",
+    "creative_dna_sha256": "a71a423f2d43f4b19daaf2b3c6d564756107526273751fc06c3da8bdd608dbf2"
+  },
+  "content": {
+    "title": "角色板时装变体｜固定参考条与舞台动作持续验真",
+    "summary": "固定角色参考条持续占据同一位置，主舞台依次用正面步态、俯拍、旋转下降、面部近景和伸手遮镜验证同一成年身份；作为既有角色板验真模板的时装舞台证据，不新增下拉项。",
+    "quick_start": {
+      "input_format": "固定角色板 + 同一原创主体 + 至少4种不同验证职责 + 广角/近景双证明 + 最终对照",
+      "recommended_input": "原创航天机械师参考条固定在左侧：成年正侧脸、钴蓝连体服缝线、铜色腕带与白色头盔条；活动舞台中同一成年人进入中性灰机库。；进入受控俯拍吊带旋转，参考条完全不变；困难角度中头盔条、肩宽与工具手关系保持。；遮挡后揭示完整同一成年人和原创短标 BAY FOUR，未改变的参考条仍可见；不复制来源角色、黄色舞台、服装、字母与标志。",
+      "required_anchors": [
+        "在整个屏幕区域保持一个原始参考板固定。",
+        "将固定板子与活跃的表演舞台分离。",
+        "在任何遮挡或相机压力后，返回到相同的板锚点和成年人身份。",
+        "以完整的成人角色和棋盘一起结束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定角色参考条持续占据同一位置，主舞台依次用正面步态、俯拍、旋转下降、面部近景和伸手遮镜验证同一成年身份；作为既有角色板验真模板的时装舞台证据，不新增下拉项。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定角色参考条持续占据同一位置，主舞台依次用正面步态、俯拍、旋转下降、面部近景和伸手遮镜验证同一成年身份；作为既有角色板验真模板的时装舞台证据，不新增下拉项。 必须满足：沿用既有角色板验真：固定原创参考板或参考条持续占据同一屏幕区域 + 明确成年原创角色在独立活动舞台表演 + 至少用全身步态、困难机位、面部近景、手部或道具关系四类证据验真 + 遮挡后必须回到同一参考锚点 + 终局完整角色与参考板共同可见。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在整个屏幕区域保持一个原始参考板固定。",
+          "purpose": "提供一个持久的比较锚点。",
+          "ablation_failure": "移动或更换板子会削弱身份验证。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "将固定板子与活跃的表演舞台分离。",
+          "purpose": "让证据和执行共存。",
+          "ablation_failure": "将它们重叠得无法阅读会隐藏两者。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "至少使用四种不同的证明类别，包括全身、硬角度、面部和手势或物体关系。",
+          "purpose": "测试身份超越重复的肖像。",
+          "ablation_failure": "一个姿势的重复不能证明连续性。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在任何遮挡或相机压力后，返回到相同的板锚点和成年人身份。",
+          "purpose": "使过渡可验证。",
+          "ablation_failure": "未锚定的返回允许隐藏的身份交换。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以完整的成人角色和棋盘一起结束。",
+          "purpose": "明确关闭比较。",
+          "ablation_failure": "只有标志结尾会掉落证据。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源角色表，成年模特，面部，红色服装和身体比例",
+        "源黄色舞台，地板和背景",
+        "源行走，姿势，顶部下降和镜头触及的编舞",
+        "源大写字母、创作者标志和终端标记",
+        "源 MiniMax H3 线索提示、摄像机路径、时序和创作者身份"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年航空航天机械师进行工具检查、登梯、吊带旋转和护目镜特写，旁边是固定设备和面部板。",
+          "prompt_seed": "一位成年航空航天机械师进行工具检查、登梯、吊带旋转和护目镜特写，旁边是固定设备和面部板。"
+        },
+        {
+          "concept": "一位成年当代舞者进行地面、侧影、顶部旋转和手到镜头测试，下方固定有服装和面部锚带条。",
+          "prompt_seed": "一位成年当代舞者进行地面、侧影、顶部旋转和手到镜头测试，下方固定有服装和面部锚带条。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "移动或更换板子会削弱身份验证。",
+          "repair": "在整个屏幕区域保持一个原始参考板固定。"
+        },
+        {
+          "failure": "将它们重叠得无法阅读会隐藏两者。",
+          "repair": "将固定板子与活跃的表演舞台分离。"
+        },
+        {
+          "failure": "一个姿势的重复不能证明连续性。",
+          "repair": "至少使用四种不同的证明类别，包括全身、硬角度、面部和手势或物体关系。"
+        },
+        {
+          "failure": "未锚定的返回允许隐藏的身份交换。",
+          "repair": "在任何遮挡或相机压力后，返回到相同的板锚点和成年人身份。"
+        },
+        {
+          "failure": "只有标志结尾会掉落证据。",
+          "repair": "以完整的成人角色和棋盘一起结束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年航空航天机械师进行工具检查、登梯、吊带旋转和护目镜特写，旁边是固定设备和面部板。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年当代舞者进行地面、侧影、顶部旋转和手到镜头测试，下方固定有服装和面部锚带条。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

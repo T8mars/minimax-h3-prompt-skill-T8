@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "This is an evidence variant of the existing recurring identity board. Keep one original reference board or strip fixed in one screen region while an original clearly adult character performs in a separate active stage. Use at least four genuinely different identity proofs—full-body walk, side or overhead geometry, face close-up, hand-object relation or one customized action—while the board remains unchanged. Major transitions may use one lens occlusion but must return to the same anchors. End with board and complete character visible together. Do not copy source character, sheet, outfit, yellow set, typography, choreography or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Keep one original reference board fixed in the same screen region throughout.",
+      "purpose": "Provides a persistent comparison anchor.",
+      "ablation_failure": "Moving or replacing the board weakens identity verification.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Separate the fixed board from an active performance stage.",
+      "purpose": "Lets evidence and execution coexist.",
+      "ablation_failure": "Overlaying them unreadably hides both.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Use at least four different proof classes including full body, hard angle, face and gesture or object relation.",
+      "purpose": "Tests identity beyond repeated portraits.",
+      "ablation_failure": "One pose repeated cannot prove continuity.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "After any occlusion or camera stress, return to the same board anchors and adult identity.",
+      "purpose": "Makes transitions verifiable.",
+      "ablation_failure": "Unanchored returns permit hidden identity swaps.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "End with complete adult character and board visible together.",
+      "purpose": "Closes the comparison explicitly.",
+      "ablation_failure": "A logo-only ending drops the evidence.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source character sheet, adult model, face, red outfit and body proportions",
+    "source yellow stage, floor and backdrop",
+    "source walk, pose, top-down descent and lens-reaching choreography",
+    "source large letters, creator logo and terminal mark",
+    "source MiniMax H3 thread prompt, camera path, timing and creator identity"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult aerospace mechanic performs tool checks, a ladder climb, overhead harness rotation and visor close-up beside a fixed original equipment-and-face board.",
+      "prompt_seed": "An adult aerospace mechanic performs tool checks, a ladder climb, overhead harness rotation and visor close-up beside a fixed original equipment-and-face board."
+    },
+    {
+      "concept": "An adult contemporary dancer performs floor, side silhouette, top-down spin and hand-to-lens tests while a fixed costume and facial-anchor strip remains below.",
+      "prompt_seed": "An adult contemporary dancer performs floor, side silhouette, top-down spin and hand-to-lens tests while a fixed costume and facial-anchor strip remains below."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Moving or replacing the board weakens identity verification.",
+      "repair": "Keep one original reference board fixed in the same screen region throughout."
+    },
+    {
+      "failure": "Overlaying them unreadably hides both.",
+      "repair": "Separate the fixed board from an active performance stage."
+    },
+    {
+      "failure": "One pose repeated cannot prove continuity.",
+      "repair": "Use at least four different proof classes including full body, hard angle, face and gesture or object relation."
+    },
+    {
+      "failure": "Unanchored returns permit hidden identity swaps.",
+      "repair": "After any occlusion or camera stress, return to the same board anchors and adult identity."
+    },
+    {
+      "failure": "A logo-only ending drops the evidence.",
+      "repair": "End with complete adult character and board visible together."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult aerospace mechanic performs tool checks, a ladder climb, overhead harness rotation and visor close-up beside a fixed original equipment-and-face board.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult contemporary dancer performs floor, side silhouette, top-down spin and hand-to-lens tests while a fixed costume and facial-anchor strip remains below.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

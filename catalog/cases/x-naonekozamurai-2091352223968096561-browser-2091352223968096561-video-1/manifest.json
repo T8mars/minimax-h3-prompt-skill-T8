@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "舞姿字卡变体｜单人剪影让短词与几何随节拍响应",
+  "source_title": "黑影舞者｜DANCE、MOVE、BEAT式字卡由动作逐拍驱动",
+  "summary": "同一剪影角色以稳定轮廓和中心轴贯穿多组高对比字卡；每个模块只让一个全新短词与一次舞姿发生遮挡、击中或空间响应，背景几何沿同一节拍变化。作为既有角色动作字卡轮转的舞蹈证据，不新增下拉项。",
+  "status": "released",
+  "source_duration_seconds": 15.083333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naonekozamurai-2091352223968096561-browser-2091352223968096561-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "derived_placeholder_no_source_media",
+    "poster": "derived_placeholder_no_source_media",
+    "mp4": "private_local_only_not_exported"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-wakeupgfx-2090565921580425588-browser-2090565921580425588-video-1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "原创明确成年打击乐手剪影登场，圆框眼镜、高领与双鼓槌轮廓稳定，奶油底上只有一个钴蓝圆环。；短词 ROLL 围绕同一剪影弯曲，单次手腕滚动驱动同心记谱线；侧脸、眼镜与高领保持不变。；同一成年剪影、钴蓝圆环与原创短标 PULSE KIT 合成居中静止标记；不复制来源文字、舞者、配色与动作。",
+  "required_anchors": [
+    "Lock one clearly adult performer with a stable silhouette, palette and center axis.",
+    "Introduce no more than one new original short word per module.",
+    "Repeat at least two graphic anchors while geometry changes.",
+    "End with performer and original mark together in a held lockup."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.96,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-25T16:52:07+08:00",
+  "updated_at": "2026-08-25T17:40:53+08:00"
+}

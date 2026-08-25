@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Build at least four self-contained style modules. Each module must introduce one original character, one material or line-behavior rule, and one short action that could not be explained by color grading alone. Connect modules with one repeated composition slot, emblem position or motion direction. In the final beat, bring the intact characters into one neutral shared stage while preserving each character's original medium, edge behavior and surface response. The reusable mechanism is medium-specific proof, matched modular handoff and heterogeneous ensemble convergence—not the source characters, named styles, exact order, cards, text, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Give every module one different original character and one medium-specific material rule.",
+      "purpose": "Separates genuine style construction from palette swapping.",
+      "ablation_failure": "The same render with filters cannot prove cross-medium design.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Include one short action that visibly demonstrates each medium's behavior.",
+      "purpose": "Makes style observable through motion.",
+      "ablation_failure": "Static portraits provide weak transfer evidence.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Repeat one composition slot, emblem position or motion direction across modules.",
+      "purpose": "Creates continuity despite radical surface changes.",
+      "ablation_failure": "Unmatched cards read as unrelated samples.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Keep each outgoing character readable until the next module's anchor arrives.",
+      "purpose": "Makes transitions attributable rather than abrupt.",
+      "ablation_failure": "Hard replacement loses the connection.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Converge intact heterogeneous characters on one neutral stage without restyling them uniformly.",
+      "purpose": "Proves co-presence and completes the system.",
+      "ablation_failure": "A final common filter erases the central difference.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source warriors and representative character designs",
+    "source clay, painted, ink, storybook and comic executions in their exact order",
+    "source captions, style labels, logos and typography",
+    "source module layouts, transitions and final ensemble staging",
+    "source MiniMax H3 creator identity, prompt thread and timing"
+  ],
+  "instantiations": [
+    {
+      "concept": "Four original transit mascots appear as ceramic stop-motion, charcoal rubbings, cut-paper relief and wireframe light, then keep those materials while sharing one station platform.",
+      "prompt_seed": "Four original transit mascots appear as ceramic stop-motion, charcoal rubbings, cut-paper relief and wireframe light, then keep those materials while sharing one station platform."
+    },
+    {
+      "concept": "Five original research drones appear as woodblock, frosted glass, embroidered patch, mechanical pencil and neon tube modules, then assemble around one neutral lab table.",
+      "prompt_seed": "Five original research drones appear as woodblock, frosted glass, embroidered patch, mechanical pencil and neon tube modules, then assemble around one neutral lab table."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "The same render with filters cannot prove cross-medium design.",
+      "repair": "Give every module one different original character and one medium-specific material rule."
+    },
+    {
+      "failure": "Static portraits provide weak transfer evidence.",
+      "repair": "Include one short action that visibly demonstrates each medium's behavior."
+    },
+    {
+      "failure": "Unmatched cards read as unrelated samples.",
+      "repair": "Repeat one composition slot, emblem position or motion direction across modules."
+    },
+    {
+      "failure": "Hard replacement loses the connection.",
+      "repair": "Keep each outgoing character readable until the next module's anchor arrives."
+    },
+    {
+      "failure": "A final common filter erases the central difference.",
+      "repair": "Converge intact heterogeneous characters on one neutral stage without restyling them uniformly."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Four original transit mascots appear as ceramic stop-motion, charcoal rubbings, cut-paper relief and wireframe light, then keep those materials while sharing one station platform.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Five original research drones appear as woodblock, frosted glass, embroidered patch, mechanical pencil and neon tube modules, then assemble around one neutral lab table.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}
