@@ -24,11 +24,11 @@
     "workbench-project-list-label", "workbench-project-list", "workbench-project-notes-label", "workbench-project-notes",
     "workbench-save-project", "workbench-export-project", "workbench-delete-project",
     "workbench-local-qwen-panel", "local-qwen-card-title", "local-qwen-card-subtitle", "local-qwen-title", "local-qwen-note", "local-qwen-readiness",
-    "local-qwen-directory-label", "local-qwen-directory", "local-qwen-pick-directory", "local-qwen-model-label", "local-qwen-model",
+    "local-qwen-directory-label", "local-qwen-directory", "local-qwen-pick-directory", "local-qwen-model-label", "local-qwen-model", "local-qwen-projector-label", "local-qwen-projector",
     "local-qwen-runtime-label", "local-qwen-runtime", "local-qwen-pick-runtime", "local-qwen-ffmpeg-label", "local-qwen-ffmpeg", "local-qwen-pick-ffmpeg",
     "local-qwen-context-label", "local-qwen-context", "local-qwen-max-tokens-label", "local-qwen-max-tokens", "local-qwen-think-label", "local-qwen-think",
     "local-qwen-reasoning-label", "local-qwen-reasoning", "local-qwen-video-fps-label", "local-qwen-video-fps", "local-qwen-unload-label", "local-qwen-unload",
-    "local-qwen-file-status", "local-qwen-save", "local-qwen-verify", "local-qwen-release"
+    "local-qwen-file-status", "local-qwen-save", "local-qwen-rescan", "local-qwen-verify", "local-qwen-release"
   ].map((id) => [id.replace(/-([a-z])/gu, (_match, letter) => letter.toUpperCase()), document.getElementById(id)]));
 
   const COPY_RESET_MS = 1600;
@@ -38,7 +38,7 @@
     seedance_nz: { label: "贞贞的平价小屋", registrationUrl: "https://api.seedance.nz/sign-up?aff=5f4w", defaultModel: "bytedance/doubao-seed-evolving", configurableEndpoint: false, configurableModel: false },
     t8star_workshop: { label: "贞贞的 AI 工坊", registrationUrl: "https://ai.t8star.org/register?aff=dP7j", defaultModel: "gemini-3.5-flash", configurableEndpoint: false, configurableModel: true },
     openai_compatible: { label: "OpenAI 兼容接口", registrationUrl: null, defaultModel: "", configurableEndpoint: true, configurableModel: true },
-    local_qwen: { label: "本地 Qwen3.8-27B", registrationUrl: null, defaultModel: "Qwen3.8-27B-Q4_K_M.gguf", configurableEndpoint: false, configurableModel: true, local: true, requiresCredential: false }
+    local_qwen: { label: "本地 GGUF", registrationUrl: null, defaultModel: "Qwen3.8-27B-Q4_K_M.gguf", configurableEndpoint: false, configurableModel: true, local: true, requiresCredential: false }
   });
 
   const COPY = {
@@ -62,8 +62,8 @@
       planExpired: "确认单已失效，请重新预检。", selectTemplate: "请选择模板", routerSelect: "使用此机制", close: "关闭工作台",
       mediaTitle: "参考图片 / 视频", addMedia: "添加素材", clearMedia: "清空", mediaNote: "图片最多9张，视频最多3个，单个不超过50 MiB；路径不会发给渲染器或写入项目。", noMedia: "尚未添加参考素材", mediaFact: "参考素材", uploadsFact: "额外上传",
       projectTitle: "实验项目与复盘", projectName: "项目名称", projectList: "已保存项目", projectNotes: "人工复盘备注", saveProject: "保存实验项目", projectSaved: "实验项目已保存", exportProject: "导出 JSON + Markdown", projectExported: "项目已导出", deleteProject: "删除项目", projectDeleted: "项目已删除", noProjects: "暂无项目",
-      stepsLabel: "工作台步骤", stepGoal: "选择机制", stepGoalHint: "目标与模板", stepTarget: "生成参数", stepTargetHint: "模型与约束", stepResult: "结果验收", stepResultHint: "复制与复盘", previous: "上一步", nextStep: (label) => "下一步：" + label, stepProgress: (current, total) => "第 " + current + " / " + total + " 步", previewTitle: "当前模板预览", previewGif: "GIF 动态预览", previewPoster: "静态预览", previewUnavailable: "该模板暂无可用预览", previewLoading: "正在加载预览…", previewAnchors: "关键锚点", previewCase: "案例模板", previewCommunity: "非官方 Skill", apiSettings: "API 设置", apiSettingsTitle: "API 设置", apiSettingsSubtitle: "选择云端 API 或本地 Qwen 渠道；设置一次后可持续使用。", apiSettingsDone: "完成", apiSettingsFooter: "默认渠道与本地路径保存在本机；Key 仍由系统安全存储管理。", providerCurrent: "当前渠道",
-      localCard: "本地 Qwen3.8-27B", localCardNote: "离线 GGUF · 无需 API Key", localTitle: "配置本地 Qwen3.8-27B", localNote: "模型不会包含在安装包中，也不会自动下载。选择你自己的模型目录并完成一次完整校验。", localMissing: "未配置", localTextReady: "仅文字可用", localVisionReady: "图片可用", localVideoReady: "图片与视频可用", localDirectory: "模型目录", localPickDirectory: "选择目录", localModel: "本地模型", localRuntime: "llama-server 运行文件", localPickRuntime: "选择运行文件", localFfmpeg: "FFmpeg（仅本地视频需要）", localPickFfmpeg: "选择 FFmpeg", localContext: "上下文", localMaxTokens: "最大输出", localThink: "思考模式", localReasoning: "推理强度", localVideoFps: "视频采样率", localUnload: "显存策略", localSave: "保存设置", localVerify: "完整校验", localRelease: "释放模型", localSaved: "本地设置已保存。", localVerified: "本地模型完整校验通过。", localReleased: "本地模型已释放。", localVerifying: "正在逐个校验大文件，请勿关闭应用…", localComputeConfirm: "我确认：仅使用本机算力，不调用外部 API、不上传素材、不产生 API 费用。", localComputeStart: "开始本地增强", localComputeCalls: "1 次本地推理，无网络请求", localRuntimeSource: "本机运行时"
+      stepsLabel: "工作台步骤", stepGoal: "选择机制", stepGoalHint: "目标与模板", stepTarget: "生成参数", stepTargetHint: "模型与约束", stepResult: "结果验收", stepResultHint: "复制与复盘", previous: "上一步", nextStep: (label) => "下一步：" + label, stepProgress: (current, total) => "第 " + current + " / " + total + " 步", previewTitle: "当前模板预览", previewGif: "GIF 动态预览", previewPoster: "静态预览", previewUnavailable: "该模板暂无可用预览", previewLoading: "正在加载预览…", previewAnchors: "关键锚点", previewCase: "案例模板", previewCommunity: "非官方 Skill", apiSettings: "API 设置", apiSettingsTitle: "API 设置", apiSettingsSubtitle: "选择云端 API 或本地 GGUF 渠道；设置一次后可持续使用。", apiSettingsDone: "完成", apiSettingsFooter: "默认渠道与本地路径保存在本机；Key 仍由系统安全存储管理。", providerCurrent: "当前渠道",
+      localCard: "本地 GGUF", localCardNote: "llama.cpp / Qwen · 无需 API Key", localTitle: "配置本地 GGUF", localNote: "递归扫描模型目录；已实测型号会标为已验收，其他 llama.cpp 兼容 GGUF 会标为用户模型。", localMissing: "未配置", localTextReady: "仅文字可用", localVisionReady: "图片可用", localVideoReady: "图片与视频可用", localDirectory: "GGUF 根目录", localPickDirectory: "选择目录", localModel: "本地模型", localProjector: "视觉投影器", localProjectorAuto: "AUTO（自动匹配）", localRuntime: "llama-server 运行文件", localPickRuntime: "选择运行文件", localFfmpeg: "FFmpeg（仅本地视频需要）", localPickFfmpeg: "选择 FFmpeg", localContext: "上下文", localMaxTokens: "最大输出", localThink: "思考模式", localReasoning: "推理强度", localVideoFps: "视频采样率", localUnload: "显存策略", localSave: "保存设置", localRescan: "扫描 GGUF", localVerify: "完整校验", localRelease: "释放模型", localSaved: "本地设置已保存。", localScanned: "GGUF 目录已重新扫描。", localVerified: "本地模型完整校验通过。", localReleased: "本地模型已释放。", localVerifying: "正在逐个校验大文件，请勿关闭应用…", localComputeConfirm: "我确认：仅使用本机算力，不调用外部 API、不上传素材、不产生 API 费用。", localComputeStart: "开始本地增强", localComputeCalls: "1 次本地推理，无网络请求", localRuntimeSource: "本机运行时"
     },
     en: {
       launch: "✦ API Workbench", kicker: "T8 INSTANCE WORKBENCH", title: "Prompt instantiation and API enhancement",
@@ -85,8 +85,8 @@
       planExpired: "Confirmation expired. Run preflight again.", selectTemplate: "Select a template", routerSelect: "Use this mechanism", close: "Close workbench",
       mediaTitle: "Reference images / videos", addMedia: "Add media", clearMedia: "Clear", mediaNote: "Up to 9 images and 3 videos, 50 MiB each. Paths never enter the renderer or saved projects.", noMedia: "No reference media selected", mediaFact: "Reference media", uploadsFact: "Extra uploads",
       projectTitle: "Experiment project and review", projectName: "Project name", projectList: "Saved projects", projectNotes: "Human review notes", saveProject: "Save experiment", projectSaved: "Experiment saved", exportProject: "Export JSON + Markdown", projectExported: "Project exported", deleteProject: "Delete project", projectDeleted: "Project deleted", noProjects: "No saved projects",
-      stepsLabel: "Workbench steps", stepGoal: "Mechanism", stepGoalHint: "Goal and template", stepTarget: "Parameters", stepTargetHint: "Model and constraints", stepResult: "Review result", stepResultHint: "Copy and evaluate", previous: "Previous", nextStep: (label) => "Next: " + label, stepProgress: (current, total) => "Step " + current + " of " + total, previewTitle: "Current template preview", previewGif: "Animated GIF preview", previewPoster: "Static preview", previewUnavailable: "No preview is available for this template", previewLoading: "Loading preview…", previewAnchors: "Key anchors", previewCase: "Case template", previewCommunity: "Community Skill", apiSettings: "API settings", apiSettingsTitle: "API settings", apiSettingsSubtitle: "Choose a cloud API or local Qwen provider. Configure it once for future runs.", apiSettingsDone: "Done", apiSettingsFooter: "The default provider and local paths stay on this device. OS secure storage still manages API keys.", providerCurrent: "Current provider",
-      localCard: "Local Qwen3.8-27B", localCardNote: "Offline GGUF · no API key", localTitle: "Configure local Qwen3.8-27B", localNote: "Models are never bundled or downloaded automatically. Choose your own model folder and complete one full verification.", localMissing: "Not configured", localTextReady: "Text ready", localVisionReady: "Images ready", localVideoReady: "Images and video ready", localDirectory: "Model folder", localPickDirectory: "Choose folder", localModel: "Local model", localRuntime: "llama-server executable", localPickRuntime: "Choose runtime", localFfmpeg: "FFmpeg (local video only)", localPickFfmpeg: "Choose FFmpeg", localContext: "Context", localMaxTokens: "Max output", localThink: "Thinking", localReasoning: "Reasoning effort", localVideoFps: "Video sample rate", localUnload: "Memory policy", localSave: "Save settings", localVerify: "Full verification", localRelease: "Unload model", localSaved: "Local settings saved.", localVerified: "Local model verification passed.", localReleased: "Local model unloaded.", localVerifying: "Verifying large files one at a time. Keep the app open…", localComputeConfirm: "I confirm this uses local compute only, calls no external API, uploads no media, and incurs no API fee.", localComputeStart: "Start local enhancement", localComputeCalls: "1 local inference, no network request", localRuntimeSource: "Local runtime"
+      stepsLabel: "Workbench steps", stepGoal: "Mechanism", stepGoalHint: "Goal and template", stepTarget: "Parameters", stepTargetHint: "Model and constraints", stepResult: "Review result", stepResultHint: "Copy and evaluate", previous: "Previous", nextStep: (label) => "Next: " + label, stepProgress: (current, total) => "Step " + current + " of " + total, previewTitle: "Current template preview", previewGif: "Animated GIF preview", previewPoster: "Static preview", previewUnavailable: "No preview is available for this template", previewLoading: "Loading preview…", previewAnchors: "Key anchors", previewCase: "Case template", previewCommunity: "Community Skill", apiSettings: "API settings", apiSettingsTitle: "API settings", apiSettingsSubtitle: "Choose a cloud API or local GGUF provider. Configure it once for future runs.", apiSettingsDone: "Done", apiSettingsFooter: "The default provider and local paths stay on this device. OS secure storage still manages API keys.", providerCurrent: "Current provider",
+      localCard: "Local GGUF", localCardNote: "llama.cpp / Qwen · no API key", localTitle: "Configure local GGUF", localNote: "The model root is scanned recursively. Tested models are marked validated; other llama.cpp-compatible GGUFs are marked user models.", localMissing: "Not configured", localTextReady: "Text ready", localVisionReady: "Images ready", localVideoReady: "Images and video ready", localDirectory: "GGUF root", localPickDirectory: "Choose folder", localModel: "Local model", localProjector: "Vision projector", localProjectorAuto: "AUTO (match automatically)", localRuntime: "llama-server executable", localPickRuntime: "Choose runtime", localFfmpeg: "FFmpeg (local video only)", localPickFfmpeg: "Choose FFmpeg", localContext: "Context", localMaxTokens: "Max output", localThink: "Thinking", localReasoning: "Reasoning effort", localVideoFps: "Video sample rate", localUnload: "Memory policy", localSave: "Save settings", localRescan: "Scan GGUF", localVerify: "Full verification", localRelease: "Unload model", localSaved: "Local settings saved.", localScanned: "The GGUF folder was rescanned.", localVerified: "Local model verification passed.", localReleased: "Local model unloaded.", localVerifying: "Verifying large files one at a time. Keep the app open…", localComputeConfirm: "I confirm this uses local compute only, calls no external API, uploads no media, and incurs no API fee.", localComputeStart: "Start local enhancement", localComputeCalls: "1 local inference, no network request", localRuntimeSource: "Local runtime"
     }
   };
 
@@ -396,10 +396,47 @@
   }
 
   function fileState(item) {
-    if (item?.verified) return locale() === "en" ? "verified" : "已验证";
+    if (item?.verified && item?.projectValidated) return locale() === "en" ? "verified · project validated" : "已验证 · 项目已验收";
+    if (item?.verified) return locale() === "en" ? "integrity verified · compatibility unreviewed" : "完整性已验证 · 兼容性未验收";
     if (item?.sizeMatch) return locale() === "en" ? "awaiting full verification" : "待完整校验";
-    if (item?.present) return locale() === "en" ? "incompatible file" : "文件不兼容";
+    if (item?.present) return item?.projectValidated
+      ? (locale() === "en" ? "pinned file mismatch" : "已验收文件不匹配")
+      : (locale() === "en" ? "awaiting integrity verification" : "待完整性校验");
     return locale() === "en" ? "missing" : "缺失";
+  }
+
+  function localModelOptionLabel(item) {
+    const label = item.label || item.name || item.identifier;
+    if (item.projectValidated) return `${label} · ${locale() === "en" ? "validated" : "已验收"}`;
+    return `${label} · ${locale() === "en" ? "user model (unreviewed)" : "用户模型（未验收）"}`;
+  }
+
+  function populateLocalGgufOptions(status) {
+    const modelOptions = [...(status.modelOptions || [])];
+    if (status.modelFilename && !modelOptions.some((item) => item.identifier === status.modelFilename)) {
+      modelOptions.unshift({ identifier: status.modelFilename, label: status.modelFilename, projectValidated: false });
+    }
+    elements.localQwenModel.replaceChildren(...modelOptions.map((item) => {
+      const option = document.createElement("option");
+      option.value = item.identifier;
+      option.textContent = localModelOptionLabel(item);
+      return option;
+    }));
+    elements.localQwenModel.value = status.modelFilename || "Qwen3.8-27B-Q4_K_M.gguf";
+
+    const auto = document.createElement("option");
+    auto.value = "AUTO";
+    auto.textContent = t("localProjectorAuto");
+    const projectorOptions = (status.projectorOptions || []).map((item) => {
+      const option = document.createElement("option");
+      option.value = item.identifier;
+      option.textContent = `${item.label || item.identifier} · ${item.projectValidated
+        ? (locale() === "en" ? "validated" : "已验收")
+        : (locale() === "en" ? "user projector" : "用户投影器")}`;
+      return option;
+    });
+    elements.localQwenProjector.replaceChildren(auto, ...projectorOptions);
+    elements.localQwenProjector.value = status.projectorFilename || "AUTO";
   }
 
   function renderLocalQwen(status = state.localQwen) {
@@ -407,7 +444,7 @@
     elements.localQwenDirectory.value = status.modelDirectory || "";
     elements.localQwenRuntime.value = status.runtimeExecutable || "";
     elements.localQwenFfmpeg.value = status.ffmpegExecutable || "";
-    elements.localQwenModel.value = status.modelFilename || "Qwen3.8-27B-Q4_K_M.gguf";
+    populateLocalGgufOptions(status);
     elements.localQwenContext.value = String(status.contextSize || 32768);
     elements.localQwenMaxTokens.value = String(status.maxTokens || 4096);
     elements.localQwenThink.value = status.thinkMode || "off";
@@ -417,9 +454,13 @@
     const readiness = localReadinessLabel(status);
     elements.localQwenReadiness.textContent = readiness;
     elements.localQwenReadiness.classList.toggle("ready", Boolean(status.textReady));
+    const counts = status.catalogCounts || { models: 0, projectors: 0 };
+    elements.localQwenNote.textContent = locale() === "en"
+      ? `Recursive scan: ${counts.models} model(s), ${counts.projectors} projector(s). Tested files are labelled validated; other GGUFs remain unreviewed.`
+      : `递归扫描到 ${counts.models} 个模型、${counts.projectors} 个投影器；实测文件标为已验收，其他 GGUF 保持未验收标签。`;
     const rows = [
       [locale() === "en" ? "Selected model" : "当前模型", fileState(status.model)],
-      ["mmproj-F16.gguf", fileState(status.mmproj)],
+      [status.resolvedProjectorFilename || (locale() === "en" ? "Vision projector" : "视觉投影器"), status.resolvedProjectorFilename ? fileState(status.mmproj) : (locale() === "en" ? "no automatic match" : "未自动匹配")],
       ["llama-server b10436", fileState(status.runtime)],
       ["FFmpeg + FFprobe", status.ffmpegPresent && status.ffprobePresent
         ? (locale() === "en" ? "ready for local video" : "本地视频可用")
@@ -523,6 +564,7 @@
   function localConfigInput() {
     return {
       modelFilename: elements.localQwenModel.value,
+      projectorFilename: elements.localQwenProjector.value,
       contextSize: Number(elements.localQwenContext.value),
       maxTokens: Number(elements.localQwenMaxTokens.value),
       thinkMode: elements.localQwenThink.value,
@@ -542,6 +584,10 @@
 
   async function saveLocalQwen() {
     await applyLocalStatus(api.configureLocalQwen(localConfigInput()), t("localSaved"));
+  }
+
+  async function rescanLocalQwen() {
+    await applyLocalStatus(api.rescanLocalQwen(), t("localScanned"));
   }
 
   async function pickLocalModelDirectory() {
@@ -860,13 +906,12 @@
     elements.workbenchCredentialNote.textContent = t("credentialNote"); elements.workbenchApiKeyLabel.textContent = t("apiKey"); elements.workbenchRememberLabel.textContent = t("remember");
     elements.workbenchSaveKey.textContent = t("saveKey"); elements.workbenchClearKey.textContent = t("clearKey"); elements.workbenchRegisterSelected.textContent = t("registerSelected");
     elements.localQwenCardTitle.textContent = t("localCard"); elements.localQwenCardSubtitle.textContent = t("localCardNote"); elements.localQwenTitle.textContent = t("localTitle"); elements.localQwenNote.textContent = t("localNote");
-    elements.localQwenDirectoryLabel.textContent = t("localDirectory"); elements.localQwenPickDirectory.textContent = t("localPickDirectory"); elements.localQwenModelLabel.textContent = t("localModel");
+    elements.localQwenDirectoryLabel.textContent = t("localDirectory"); elements.localQwenPickDirectory.textContent = t("localPickDirectory"); elements.localQwenModelLabel.textContent = t("localModel"); elements.localQwenProjectorLabel.textContent = t("localProjector");
     elements.localQwenRuntimeLabel.textContent = t("localRuntime"); elements.localQwenPickRuntime.textContent = t("localPickRuntime"); elements.localQwenFfmpegLabel.textContent = t("localFfmpeg"); elements.localQwenPickFfmpeg.textContent = t("localPickFfmpeg");
     elements.localQwenContextLabel.textContent = t("localContext"); elements.localQwenMaxTokensLabel.textContent = t("localMaxTokens"); elements.localQwenThinkLabel.textContent = t("localThink"); elements.localQwenReasoningLabel.textContent = t("localReasoning"); elements.localQwenVideoFpsLabel.textContent = t("localVideoFps"); elements.localQwenUnloadLabel.textContent = t("localUnload");
-    elements.localQwenSave.textContent = t("localSave"); elements.localQwenVerify.textContent = t("localVerify"); elements.localQwenRelease.textContent = t("localRelease");
+    elements.localQwenSave.textContent = t("localSave"); elements.localQwenRescan.textContent = t("localRescan"); elements.localQwenVerify.textContent = t("localVerify"); elements.localQwenRelease.textContent = t("localRelease");
     elements.localQwenThink.querySelector('[value="off"]').textContent = locale() === "en" ? "Off (recommended)" : "关闭（推荐）";
     elements.localQwenThink.querySelector('[value="on"]').textContent = locale() === "en" ? "On" : "开启";
-    elements.localQwenModel.querySelector('[value="Qwen3.8-27B-Q4_K_M.gguf"]').textContent = locale() === "en" ? "Qwen3.8-27B Q4_K_M (official, recommended)" : "Qwen3.8-27B Q4_K_M（官方，推荐）";
     elements.localQwenContext.querySelector('[value="32768"]').textContent = locale() === "en" ? "32K (recommended)" : "32K（推荐）";
     elements.localQwenMaxTokens.querySelector('[value="512"]').textContent = locale() === "en" ? "512 (short output)" : "512（短输出）";
     elements.localQwenMaxTokens.querySelector('[value="4096"]').textContent = locale() === "en" ? "4096 (node default)" : "4096（节点默认）";
@@ -957,6 +1002,7 @@
   elements.localQwenPickRuntime.addEventListener("click", () => void pickLocalRuntime());
   elements.localQwenPickFfmpeg.addEventListener("click", () => void pickLocalFfmpeg());
   elements.localQwenSave.addEventListener("click", () => void saveLocalQwen());
+  elements.localQwenRescan.addEventListener("click", () => void rescanLocalQwen());
   elements.localQwenVerify.addEventListener("click", () => void verifyLocalQwen());
   elements.localQwenRelease.addEventListener("click", () => void releaseLocalQwen());
   elements.workbenchModel.addEventListener("input", storeCurrentProviderOptions);

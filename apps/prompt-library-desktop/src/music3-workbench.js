@@ -51,7 +51,7 @@
       confirm: (min, max, attempts) => `我确认：本次计划 ${min}–${max} 次逻辑请求，网关最坏最多 ${attempts} 次物理尝试；费用未知。读取超时不自动重试。`,
       validationPass: "Music 3 静态合同通过", validationFail: "Music 3 输出需要修复", warnings: "人工复核项", noProjects: "暂无 Music 3 项目",
       projectSaved: "Music 3 项目已保存", projectDeleted: "Music 3 项目已删除", projectExported: "Music 3 项目已导出", expand: "展开高级参数", collapse: "收起高级参数",
-      localStart: "开始本地 Music 3 增强", localSubtitle: "写音乐创意，按需生成或保护歌词，再使用本机 Qwen 完成分阶段增强。", localConfirm: (min, max) => `我确认：本次使用本机 Qwen 完成 ${min}–${max} 个阶段，不调用外部 API、不上传内容、不产生 API 费用。`, localEndpoint: "本机 llama-server", localCost: "0"
+      localStart: "开始本地 Music 3 增强", localSubtitle: "写音乐创意，按需生成或保护歌词，再使用本机 GGUF 模型完成分阶段增强。", localConfirm: (min, max) => `我确认：本次使用本机 GGUF 模型完成 ${min}–${max} 个阶段，不调用外部 API、不上传内容、不产生 API 费用。`, localEndpoint: "本机 llama-server", localCost: "0"
     },
     en: {
       video: "Video prompts", music: "Music 3", title: "MiniMax Music 3 lyrics and structured caption", subtitle: "Describe the music, generate or protect lyrics, then explicitly confirm the staged paid calls.",
@@ -66,7 +66,7 @@
       confirm: (min, max, attempts) => `I confirm ${min}–${max} logical calls and up to ${attempts} physical attempts in the gateway worst case. Cost is unknown; read timeouts are not retried.`,
       validationPass: "Music 3 static contract passed", validationFail: "Music 3 output needs repair", warnings: "Human review", noProjects: "No Music 3 projects",
       projectSaved: "Music 3 project saved", projectDeleted: "Music 3 project deleted", projectExported: "Music 3 project exported", expand: "Show advanced parameters", collapse: "Hide advanced parameters",
-      localStart: "Start local Music 3 enhancement", localSubtitle: "Describe the music, generate or protect lyrics, then run the staged enhancement with local Qwen.", localConfirm: (min, max) => `I confirm ${min}–${max} stages will use local Qwen only, call no external API, upload no content, and incur no API fee.`, localEndpoint: "Local llama-server", localCost: "0"
+      localStart: "Start local Music 3 enhancement", localSubtitle: "Describe the music, generate or protect lyrics, then run the staged enhancement with a local GGUF model.", localConfirm: (min, max) => `I confirm ${min}–${max} stages will use a local GGUF model only, call no external API, upload no content, and incur no API fee.`, localEndpoint: "Local llama-server", localCost: "0"
     }
   };
   const FORM_COPY = {

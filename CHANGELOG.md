@@ -9,6 +9,24 @@
 - 首批持续扩充的 MiniMax H3 与 Seedance 2.0 Creative DNA 案例。
 - Linux 桌面发行评估。
 
+## [1.3.3] - 2026-08-27
+
+### Added
+
+- API 增强工作台的本地渠道升级为通用 GGUF 目录：递归发现用户选择目录中的 llama.cpp 兼容文字模型，并支持 `AUTO` 自动匹配或手动选择视觉 `mmproj`。
+- 在两款已验收 Qwen3.8-27B 之外，新增轻量 `Qwen3.8-9B Heretic Uncensored i1-Q6_K` 及其视觉投影器的固定大小、SHA-256 与真实运行验收合同。
+
+### Changed
+
+- 本地渠道在中英文界面统一显示为“本地 GGUF / Local GGUF”，并明确区分“项目已验收”与“用户模型（未验收）”，不把格式可读取冒充为效果或兼容性验收。
+- 旧版两模型配置会自动迁移；模型根目录可使用 `ComfyUI/models/LLM` 及其安全子目录。GGUF、投影器、llama-server 和 FFmpeg 继续只读取用户指定本机路径，不进入 Git 或 Release。
+- 图片与视频仍必须具有匹配的视觉投影器；视频采样继续使用单解码线程和允许少量可恢复坏帧的既有标准，三个远端 API 渠道和 Music 3 能力保持不变。
+
+### Validation
+
+- 在实际 ComfyUI `models/LLM` 目录中识别 11 个模型与 7 个视觉投影器，并验证 9B/27B 自动配对、目录穿越拒绝、旧配置迁移与用户模型完整性标记。
+- 桌面端 107 项测试、静态目录校验、API Workbench Electron E2E、260 案公共目录与根项目发布合同全部通过。
+
 ## [1.3.2] - 2026-08-26
 
 ### Added

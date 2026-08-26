@@ -27,6 +27,8 @@ function localExecutionFingerprint(localQwen, status) {
   if (typeof localQwen?.executionFingerprint === "function") return localQwen.executionFingerprint();
   return sha256Canonical({
     modelFilename: status?.modelFilename,
+    projectorFilename: status?.projectorFilename,
+    resolvedProjectorFilename: status?.resolvedProjectorFilename,
     contextSize: status?.contextSize,
     maxTokens: status?.maxTokens,
     thinkMode: status?.thinkMode,
@@ -202,7 +204,7 @@ class Music3Orchestrator {
     const plan = normalizeMusicPlan(input);
     const local = plan.providerId === "local_qwen";
     const credential = local ? this.localQwen?.status() : this.credentialVault.status(plan.providerId);
-    if (!credential?.configured) throw new PromptProviderError(local ? "Local Qwen is not ready. Verify it in API settings." : "This provider has no configured API key.", { code: local ? "local_not_ready" : "credential_missing", phase: "preflight" });
+    if (!credential?.configured) throw new PromptProviderError(local ? "Local GGUF is not ready. Verify it in API settings." : "This provider has no configured API key.", { code: local ? "local_not_ready" : "credential_missing", phase: "preflight" });
     if (local && plan.model !== credential.modelFilename) throw new PromptProviderError("The selected local model changed; reopen API settings and generate a new plan.", { code: "local_model_changed", phase: "preflight" });
     const issuedAtMs = this.now();
     const localConfigHash = local ? localExecutionFingerprint(this.localQwen, credential) : null;
@@ -246,7 +248,7 @@ class Music3Orchestrator {
     if (local) {
       const current = this.localQwen?.status();
       if (!current?.configured || localExecutionFingerprint(this.localQwen, current) !== record.localConfigHash) {
-        throw new PromptProviderError("Local Qwen settings changed after confirmation. Generate a new confirmation plan.", {
+        throw new PromptProviderError("Local GGUF settings changed after confirmation. Generate a new confirmation plan.", {
           code: "local_config_changed",
           phase: "preflight"
         });

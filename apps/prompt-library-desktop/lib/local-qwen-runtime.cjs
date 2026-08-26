@@ -43,7 +43,7 @@ function outputText(data) {
     content = content.filter((part) => part && (part.type === "text" || !part.type)).map((part) => part.text || "").join("");
   }
   if (typeof content !== "string" || !content.trim()) {
-    throw new PromptProviderError("Local Qwen returned no final answer. Disable thinking or increase the output token limit.", {
+    throw new PromptProviderError("Local GGUF returned no final answer. Disable thinking or increase the output token limit.", {
       code: "local_empty_response", phase: "response"
     });
   }
@@ -110,7 +110,7 @@ class LocalQwenSession {
   }
 
   complete(plan, options = {}) {
-    if (this.closed) throw new PromptProviderError("Local Qwen session is closed.", { code: "local_session_closed", phase: "local" });
+    if (this.closed) throw new PromptProviderError("Local GGUF session is closed.", { code: "local_session_closed", phase: "local" });
     return this.manager.complete(this, plan, options);
   }
 
@@ -137,14 +137,14 @@ class LocalQwenManager {
   status() { return this.configStore.status(); }
   executionFingerprint() { return this.configStore.executionFingerprint(); }
   async setConfig(input) {
-    if (this.gate.locked) throw new Error("Wait for the active local Qwen run to finish or cancel it before changing settings.");
+    if (this.gate.locked) throw new Error("Wait for the active local GGUF run to finish or cancel it before changing settings.");
     const before = this.executionFingerprint();
     const status = this.configStore.set(input);
     if (this.server && this.executionFingerprint() !== before) await this.stop();
     return status;
   }
   async verify() {
-    if (this.gate.locked) throw new Error("Wait for the active local Qwen run to finish or cancel it before verifying files.");
+    if (this.gate.locked) throw new Error("Wait for the active local GGUF run to finish or cancel it before verifying files.");
     if (this.server) await this.stop();
     return this.configStore.verify();
   }
@@ -155,7 +155,7 @@ class LocalQwenManager {
       await this.gate.acquire(signal);
       acquired = true;
       if (expectedConfigFingerprint && this.executionFingerprint() !== expectedConfigFingerprint) {
-        throw new Error("Local Qwen settings changed after confirmation. Generate a new confirmation plan.");
+        throw new Error("Local GGUF settings changed after confirmation. Generate a new confirmation plan.");
       }
       const settings = this.configStore.requireReady({ vision, video });
       await this.ensureServer(settings, { vision, signal });
@@ -164,7 +164,7 @@ class LocalQwenManager {
       if (acquired) this.gate.release();
       if (error instanceof PromptProviderError) throw error;
       const cancelled = Boolean(signal?.aborted || error?.name === "AbortError");
-      throw new PromptProviderError(cancelled ? "Local Qwen startup was cancelled." : error.message, {
+      throw new PromptProviderError(cancelled ? "Local GGUF startup was cancelled." : error.message, {
         code: cancelled ? "local_cancelled" : "local_not_ready", phase: "local"
       });
     }
@@ -251,7 +251,7 @@ class LocalQwenManager {
 
   async complete(session, plan, { mediaRecords = [] } = {}) {
     const server = this.server;
-    if (!server?.process || server.process.exitCode !== null) throw new PromptProviderError("Local Qwen is not running.", { code: "local_runtime_stopped", phase: "local" });
+    if (!server?.process || server.process.exitCode !== null) throw new PromptProviderError("Local GGUF is not running.", { code: "local_runtime_stopped", phase: "local" });
     const startedAt = this.now();
     let messages = plan.messages;
     let visualPartCount = 0;
@@ -270,7 +270,7 @@ class LocalQwenManager {
     }
     const estimatedInputTokens = estimatedTextTokens(messages) + visualPartCount * 1024;
     if (estimatedInputTokens + session.settings.maxTokens + 1024 >= session.settings.contextSize) {
-      throw new PromptProviderError("Local Qwen context is too small for this request. Reduce media/output length or raise the local context setting.", {
+      throw new PromptProviderError("Local GGUF context is too small for this request. Reduce media/output length or raise the local context setting.", {
         code: "local_context_overflow",
         phase: "local"
       });
@@ -332,7 +332,7 @@ class LocalQwenManager {
     } catch (error) {
       if (error instanceof PromptProviderError) throw error;
       const cancelled = session.signal?.aborted;
-      throw new PromptProviderError(cancelled ? "Local Qwen generation was cancelled." : controller.signal.aborted ? "Local Qwen generation timed out." : "Local Qwen request failed locally.", {
+      throw new PromptProviderError(cancelled ? "Local GGUF generation was cancelled." : controller.signal.aborted ? "Local GGUF generation timed out." : "Local GGUF request failed locally.", {
         code: cancelled ? "local_cancelled" : controller.signal.aborted ? "local_timeout" : "local_request_failed",
         phase: "local",
         outcomeCertainty: "definite_failure"

@@ -346,7 +346,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 
 主界面的“API 增强工作台”包含两个隔离能力：视频提示词模式提供本地 Top-3 机制推荐、模板实例化、MiniMax H3 / Seedance 2.0、参考图片/视频与静态锚点验收；MiniMax Music 3 模式按官方 Skill 渐进读取最多 2 个索引和 3 份模板，输出歌词、结构化描述、Payload JSON 与安全报告。
 
-工作台现有 4 个增强渠道：贞贞的平价小屋、贞贞的 AI 工坊、OpenAI 兼容接口，以及本地 Qwen3.8-27B。本地渠道只允许 ComfyUI 节点已验证的两个 27B GGUF，支持视频提示词和 Music 3；用户在 API 设置中自行选择模型目录、`llama-server` 与可选 FFmpeg 路径。模型和本地运行时不会打包进 Release，也不会自动下载。
+工作台现有 4 个增强渠道：贞贞的平价小屋、贞贞的 AI 工坊、OpenAI 兼容接口，以及本地 GGUF。本地渠道会递归扫描用户选择的模型根目录，支持 ComfyUI 节点已实测的两个 Qwen3.8-27B 与轻量 Qwen3.8-9B，也允许选择其他 llama.cpp 兼容文字 GGUF；已验收型号和用户自备未验收型号会明确分开标记。图片/视频需要匹配的 mmproj，视频另需 FFmpeg。模型和本地运行时不会打包进 Release，也不会自动下载。
 
 - 贞贞的平价小屋：[注册地址](https://api.seedance.nz/sign-up?aff=5f4w)
 - 贞贞的 AI 工坊：[注册地址](https://ai.t8star.org/register?aff=dP7j)

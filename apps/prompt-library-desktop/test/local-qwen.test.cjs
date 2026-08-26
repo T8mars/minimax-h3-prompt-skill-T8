@@ -10,7 +10,10 @@ const {
   COMPATIBILITY_SOURCE_COMMIT,
   DEFAULT_MMPROJ_FILENAME,
   DEFAULT_MODEL_FILENAME,
+  HERETIC_9B_MMPROJ_FILENAME,
+  HERETIC_9B_MODEL_FILENAME,
   LocalQwenConfigStore,
+  SUPPORTED_PROJECTORS,
   SUPPORTED_MODELS,
   UNCENSORED_MODEL_FILENAME
 } = require("../lib/local-qwen-config.cjs");
@@ -34,12 +37,34 @@ async function finished(orchestrator, runId) {
   throw new Error("local run did not finish");
 }
 
-test("local provider pins exactly the two node-verified 27B models and projector", () => {
-  assert.deepEqual(Object.keys(SUPPORTED_MODELS), [DEFAULT_MODEL_FILENAME, UNCENSORED_MODEL_FILENAME]);
+test("local provider preserves both verified 27B models and adds the verified lightweight 9B model", () => {
+  assert.deepEqual(Object.keys(SUPPORTED_MODELS), [DEFAULT_MODEL_FILENAME, UNCENSORED_MODEL_FILENAME, HERETIC_9B_MODEL_FILENAME]);
   assert.equal(SUPPORTED_MODELS[DEFAULT_MODEL_FILENAME].size, 17_106_775_008);
   assert.equal(SUPPORTED_MODELS[UNCENSORED_MODEL_FILENAME].size, 16_810_714_976);
+  assert.equal(SUPPORTED_MODELS[HERETIC_9B_MODEL_FILENAME].size, 7_359_260_416);
   assert.equal(DEFAULT_MMPROJ_FILENAME, "mmproj-F16.gguf");
-  assert.equal(COMPATIBILITY_SOURCE_COMMIT, "4aa4339bb58fd62610cea2f9eec640adada1c42e");
+  assert.equal(SUPPORTED_PROJECTORS[HERETIC_9B_MMPROJ_FILENAME].size, 921_704_448);
+  assert.equal(COMPATIBILITY_SOURCE_COMMIT, "a8164eafd6c89c7437e1a9255b8684fb569b226f");
+});
+
+test("existing v1 local Qwen settings migrate to automatic projector matching without losing the selected 27B model", () => {
+  const root = temporaryRoot();
+  try {
+    fs.mkdirSync(root, { recursive: true });
+    fs.writeFileSync(path.join(root, "local-qwen-provider-v1.json"), JSON.stringify({
+      schemaVersion: "t8-local-qwen-config/v1",
+      modelFilename: UNCENSORED_MODEL_FILENAME,
+      contextSize: 32768,
+      maxTokens: 4096,
+      verifiedFiles: {},
+      runtimeVerification: {}
+    }));
+    const status = new LocalQwenConfigStore({ userDataDir: root }).status();
+    assert.equal(status.modelFilename, UNCENSORED_MODEL_FILENAME);
+    assert.equal(status.projectorFilename, "AUTO");
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
 });
 
 test("local model paths stay in Main-owned user data and become ready only after full verification", async () => {
@@ -48,8 +73,8 @@ test("local model paths stay in Main-owned user data and become ready only after
     const userDataDir = path.join(root, "user-data");
     const modelDirectory = path.join(root, "models");
     fs.mkdirSync(modelDirectory);
-    const modelBytes = Buffer.from("small deterministic model fixture");
-    const projectorBytes = Buffer.from("small deterministic projector fixture");
+    const modelBytes = Buffer.from("GGUFsmall deterministic model fixture");
+    const projectorBytes = Buffer.from("GGUFsmall deterministic projector fixture");
     fs.writeFileSync(path.join(modelDirectory, DEFAULT_MODEL_FILENAME), modelBytes);
     fs.writeFileSync(path.join(modelDirectory, DEFAULT_MMPROJ_FILENAME), projectorBytes);
     const runtimeExecutable = path.join(root, process.platform === "win32" ? "llama-server.exe" : "llama-server");
@@ -77,7 +102,41 @@ test("local model paths stay in Main-owned user data and become ready only after
     assert.equal(status.videoReady, true);
     assert.equal(status.runtime.verified, true);
     assert.equal(JSON.parse(fs.readFileSync(path.join(userDataDir, "local-qwen-provider-v1.json"), "utf8")).modelDirectory, modelDirectory);
-    assert.equal(store.set({ modelFilename: "unreviewed-model.gguf" }).modelFilename, DEFAULT_MODEL_FILENAME);
+    assert.equal(store.set({ modelFilename: "unreviewed-model.gguf" }).modelFilename, "unreviewed-model.gguf");
+    assert.throws(() => store.set({ modelFilename: "../escape.gguf" }), /relative \.gguf path/u);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test("local provider recursively discovers and integrity-verifies user GGUF models with an automatic projector", async () => {
+  const root = temporaryRoot();
+  try {
+    const userDataDir = path.join(root, "user-data");
+    const modelDirectory = path.join(root, "models");
+    const nested = path.join(modelDirectory, "Custom", "Qwen3-4B");
+    fs.mkdirSync(nested, { recursive: true });
+    const modelIdentifier = "Custom/Qwen3-4B/Qwen3-4B-Q4_K_M.gguf";
+    const projectorIdentifier = "Custom/Qwen3-4B/mmproj-Qwen3-4B-F16.gguf";
+    fs.writeFileSync(path.join(modelDirectory, ...modelIdentifier.split("/")), Buffer.from("GGUF-user-model"));
+    fs.writeFileSync(path.join(modelDirectory, ...projectorIdentifier.split("/")), Buffer.from("GGUF-user-projector"));
+    const runtimeExecutable = path.join(root, process.platform === "win32" ? "llama-server.exe" : "llama-server");
+    fs.writeFileSync(runtimeExecutable, "runtime");
+    const store = new LocalQwenConfigStore({
+      userDataDir,
+      runtimeVerifier: async () => ({ versionOutput: "version: 0.1.0-dev (build 10436, commit 6fed9f6ff)" })
+    });
+    let status = store.set({ modelDirectory, modelFilename: modelIdentifier, projectorFilename: "AUTO", runtimeExecutable });
+    assert.equal(status.catalogCounts.models, 1);
+    assert.equal(status.catalogCounts.projectors, 1);
+    assert.equal(status.resolvedProjectorFilename, projectorIdentifier);
+    assert.equal(status.modelOptions[0].projectValidated, false);
+    status = await store.verify();
+    assert.equal(status.textReady, true);
+    assert.equal(status.visionReady, true);
+    assert.equal(status.model.integrityVerified, true);
+    assert.equal(status.model.projectValidated, false);
+    assert.equal(store.requireReady({ vision: true }).mmprojPath, path.join(modelDirectory, ...projectorIdentifier.split("/")));
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }

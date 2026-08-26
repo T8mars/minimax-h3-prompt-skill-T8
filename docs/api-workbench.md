@@ -9,18 +9,21 @@ T8 Prompt Library 的 API 工作台在同一窗口提供两项互不污染的能
 | 贞贞的平价小屋 | `https://api.seedance.nz/v1/chat/completions` | `bytedance/doubao-seed-evolving` | [注册平价小屋 API](https://api.seedance.nz/sign-up?aff=5f4w) |
 | 贞贞的 AI 工坊 | `https://ai.t8star.org/v1/chat/completions` | `gemini-3.5-flash` | [注册 AI 工坊 API](https://ai.t8star.org/register?aff=dP7j) |
 | OpenAI 兼容接口 | 用户确认的 HTTPS Base URL | 用户填写 | 由接口提供方提供 |
-| 本地 Qwen3.8-27B | `local://qwen`（仅回环 llama-server） | 下列两个已验证 GGUF 之一 | 不提供下载；用户选择本机路径 |
+| 本地 GGUF | `local://qwen`（仅回环 llama-server） | 3 个已验收 Qwen3.8 型号，或用户自备的 llama.cpp 兼容 GGUF | 不提供下载；用户选择本机路径 |
 
 两个贞贞渠道的注册按钮同时出现在工作台渠道区和当前渠道凭据区。OpenAI 兼容 Base URL 只允许干净的 HTTPS URL，拒绝账号密码、query、fragment 和回环地址。
 
-### 本地 Qwen3.8-27B 渠道
+### 本地 GGUF 渠道
 
-本地渠道对齐 ComfyUI 节点提交 `4aa4339bb58fd62610cea2f9eec640adada1c42e`，同时支持视频提示词和 MiniMax Music 3。它不需要 API Key、不产生远端请求，也不会把模型、运行时或用户路径写入项目导出。可选择的模型严格限定为：
+本地渠道对齐 ComfyUI 节点提交 `a8164eafd6c89c7437e1a9255b8684fb569b226f`，同时支持视频提示词和 MiniMax Music 3。它不需要 API Key、不产生远端请求，也不会把模型、运行时或用户路径写入项目导出。工作台会递归扫描用户选择的 GGUF 根目录并读取轻量元数据，区分主模型与 mmproj。当前项目已完成固定文件大小、SHA-256 与真实兼容验收的模型为：
 
 - `Qwen3.8-27B-Q4_K_M.gguf`；
-- `qwen3.8-27b-uncensored-fp8-q4_k_m.gguf`。
+- `qwen3.8-27b-uncensored-fp8-q4_k_m.gguf`；
+- `Qwen3.8-9B-heretic-uncensored.i1-Q6_K.gguf`。
 
-图片/视频还需同目录 `mmproj-F16.gguf`；视频另需同目录成对存在的 FFmpeg 与 FFprobe。运行时必须通过节点兼容版本 `llama.cpp b10436`（commit `6fed9f6ff`）检查。首次使用会完整核对模型大小和 SHA-256，模型或运行文件变化后必须重新校验。
+两个 27B 型号自动匹配 `mmproj-F16.gguf`。9B 纯文字增强与 Music 3 不需要投影器；图片/视频可自动匹配或手动选择用户另行放置的 `mmproj-Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-BF16.gguf`。视频另需同目录成对存在的 FFmpeg 与 FFprobe。运行时必须通过节点兼容版本 `llama.cpp b10436`（commit `6fed9f6ff`）检查。
+
+其他被扫描到的文字 GGUF 可以选择并交给当前 llama-server 加载，但界面明确标记为“用户模型（未验收）”；完整校验只证明文件是未变化的 GGUF，并不冒充项目兼容验收。用户模型用于图片/视频时还必须存在匹配的 mmproj。AUTO 依据模型名称、参数规模、目录和文件名匹配，也可显式选择投影器。已验收文件继续严格核对固定大小与 SHA-256；文件或运行时发生变化后必须重新校验。
 
 模型和 llama.cpp **不会打包进 Release、不会自动下载、不会复制进仓库**。用户只通过系统文件选择器指定绝对路径，路径仅保存在 Electron Main 的本机用户数据目录。运行时绑定随机 `127.0.0.1` 端口和随机临时令牌，关闭 Web UI，单路执行；默认任务结束即卸载，也可选择保持驻留或空闲 10 分钟后卸载。
 
@@ -63,7 +66,7 @@ Music 3 v1 是纯文本能力，不显示或发送参考图片、视频、音频
 - AI 工坊：图片内联为 `image_url`；完整视频也按已审计节点行为内联为 `image_url`，防止该网关忽略视频视觉事实。
 - OpenAI 兼容：图片内联为 `image_url`，视频内联为 `video_url`。
 - 每个请求都带节点合同使用的 `<Picture N>` / `<Video N>` 说明。素材发送前会重新计算 SHA-256；文件在选择后发生变化会中止请求。
-- 本地 Qwen：图片在 Main 内解码，最长边收至 1024 后转 JPEG；视频以 FFprobe 读取时长，并由单线程 FFmpeg 逐帧抽取最多 16 个有序 JPEG 样本。允许少量损坏帧，只要至少取得一帧；界面和提示词不会冒充完整视频、音频或转写已被读取。
+- 本地 GGUF：图片在 Main 内解码，最长边收至 1024 后转 JPEG；视频以 FFprobe 读取时长，并由单线程 FFmpeg 逐帧抽取最多 16 个有序 JPEG 样本。允许少量损坏帧，只要至少取得一帧；界面和提示词不会冒充完整视频、音频或转写已被读取。
 
 ## 取消、超时和费用
 
@@ -89,6 +92,6 @@ Remove-Item Env:T8STAR_API_KEY
 
 平价小屋使用 `SEEDANCE_API_KEY`，OpenAI 兼容使用 `OPENAI_API_KEY`，并需另行提供 Base URL 与模型。每次 live smoke 都会产生一次真实提示词增强请求，必须显式加入 `--confirm-paid`。
 
-远端三渠道不调用 FFmpeg，也不解码或转码用户选择的参考媒体。本地 Qwen 只有在视频提示词明确带入视频时才启动用户指定的 FFmpeg，并固定为单文件、单帧、单解码线程顺序采样；不做全速遍历和转码。Music 3 纯文本模式完全不接收媒体。
+远端三渠道不调用 FFmpeg，也不解码或转码用户选择的参考媒体。本地 GGUF 只有在视频提示词明确带入视频时才启动用户指定的 FFmpeg，并固定为单文件、单帧、单解码线程顺序采样；不做全速遍历和转码。Music 3 纯文本模式完全不接收媒体。
 
 输出语言是调用计划的一部分，会进入确认单、计划哈希、结果验证和实验项目；修改语言后必须重新生成确认单，避免旧计划继续按另一种语言执行。

@@ -238,7 +238,7 @@ function configureIpc() {
     requireTrustedSender(event);
     const source = input && typeof input === "object" ? input : {};
     const allowed = {};
-    for (const key of ["modelFilename", "contextSize", "maxTokens", "thinkMode", "reasoningEffort", "videoSampleFps", "unloadPolicy", "cpuThreads"]) {
+    for (const key of ["modelFilename", "projectorFilename", "contextSize", "maxTokens", "thinkMode", "reasoningEffort", "videoSampleFps", "unloadPolicy", "cpuThreads"]) {
       if (Object.hasOwn(source, key)) allowed[key] = source[key];
     }
     return localQwen.setConfig(allowed);
@@ -255,9 +255,14 @@ function configureIpc() {
     return localQwen.status();
   });
 
+  ipcMain.handle("prompt:local:rescan", (event) => {
+    requireTrustedSender(event);
+    return localQwen.status();
+  });
+
   ipcMain.handle("prompt:local:pick-model-directory", async (event) => {
     requireTrustedSender(event);
-    const result = await dialog.showOpenDialog(mainWindow, { title: "Choose the folder containing supported Qwen GGUF files", properties: ["openDirectory"] });
+    const result = await dialog.showOpenDialog(mainWindow, { title: "Choose a GGUF model root (for example ComfyUI/models/LLM)", properties: ["openDirectory"] });
     if (result.canceled || !result.filePaths[0]) return localQwen.status();
     return localQwen.setConfig({ modelDirectory: result.filePaths[0] });
   });

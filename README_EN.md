@@ -344,7 +344,7 @@ The project ships Windows x64 and universal macOS packages for Intel and Apple S
 
 The main-screen API Enhancement Workbench contains two isolated modes. Video Prompt mode provides local Top-3 mechanism recommendations, template instantiation, MiniMax H3 / Seedance 2.0 output, reference image/video support, and static-anchor acceptance checks. MiniMax Music 3 mode progressively reads at most two official indexes and three templates, then produces lyrics, a structured description, Payload JSON, and a safety report.
 
-Four enhancement channels are available: Zhenzhen Affordable API, Zhenzhen AI Workshop, an OpenAI-compatible endpoint, and local Qwen3.8-27B. The local channel accepts only the two 27B GGUF variants verified by the ComfyUI node, supports Video Prompt and Music 3, and lets users choose their own model directory, `llama-server`, and optional FFmpeg path. Models and local runtimes are never bundled into a Release and are never downloaded automatically.
+Four enhancement channels are available: Zhenzhen Affordable API, Zhenzhen AI Workshop, an OpenAI-compatible endpoint, and local GGUF. The local channel recursively scans the user-selected model root, supports the two Qwen3.8-27B variants and the lightweight Qwen3.8-9B variant validated by the ComfyUI node, and also lets users select other llama.cpp-compatible text GGUFs. Project-validated files and unreviewed user models are labelled separately. Images and video require a matching mmproj; video additionally requires FFmpeg. Models and local runtimes are never bundled into a Release and are never downloaded automatically.
 
 - Zhenzhen Affordable API: [register](https://api.seedance.nz/sign-up?aff=5f4w)
 - Zhenzhen AI Workshop: [register](https://ai.t8star.org/register?aff=dP7j)

@@ -88,6 +88,7 @@ async function run() {
       localStorage.removeItem("t8-catalog-sort-v1");
     });
     await page.reload();
+    await page.locator("#page-title").hover();
     const rendererErrors = [];
     page.on("pageerror", (error) => rendererErrors.push(error.message));
     page.on("console", (message) => {

@@ -22,16 +22,16 @@ test("workbench exposes a three-step creator flow plus persistent provider setti
   }
 });
 
-test("API settings add a fourth local Qwen channel without exposing model paths through generic IPC", () => {
+test("API settings add a fourth recursive local GGUF channel without exposing model paths through generic IPC", () => {
   assert.equal((html.match(/<button class="provider-card\b/g) || []).length, 4);
-  for (const id of ["workbench-local-qwen-panel", "local-qwen-directory", "local-qwen-model", "local-qwen-runtime", "local-qwen-ffmpeg", "local-qwen-verify", "local-qwen-release"]) {
-    assert.match(html, new RegExp(`id=["']${id}["']`), `missing local Qwen control ${id}`);
+  for (const id of ["workbench-local-qwen-panel", "local-qwen-directory", "local-qwen-model", "local-qwen-projector", "local-qwen-runtime", "local-qwen-ffmpeg", "local-qwen-rescan", "local-qwen-verify", "local-qwen-release"]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`), `missing local GGUF control ${id}`);
   }
-  for (const channel of ["prompt:local:status", "prompt:local:configure", "prompt:local:verify", "prompt:local:release", "prompt:local:pick-model-directory", "prompt:local:pick-runtime", "prompt:local:pick-ffmpeg"]) {
+  for (const channel of ["prompt:local:status", "prompt:local:configure", "prompt:local:verify", "prompt:local:release", "prompt:local:rescan", "prompt:local:pick-model-directory", "prompt:local:pick-runtime", "prompt:local:pick-ffmpeg"]) {
     assert.ok(main.includes(`ipcMain.handle("${channel}"`), `missing Main IPC ${channel}`);
     assert.ok(preload.includes(`ipcRenderer.invoke("${channel}"`), `missing preload IPC ${channel}`);
   }
-  assert.match(main, /for \(const key of \["modelFilename", "contextSize"/u, "renderer settings IPC must whitelist non-path fields");
+  assert.match(main, /for \(const key of \["modelFilename", "projectorFilename", "contextSize"/u, "renderer settings IPC must whitelist non-path fields");
   assert.doesNotMatch(renderer, /localStorage\.setItem\([^\n]+(?:modelDirectory|runtimeExecutable|ffmpegExecutable)/u);
 });
 

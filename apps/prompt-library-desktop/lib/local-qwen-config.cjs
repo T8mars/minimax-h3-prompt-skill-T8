@@ -3,14 +3,23 @@ const fs = require("node:fs");
 const fsp = require("node:fs/promises");
 const path = require("node:path");
 const { spawn } = require("node:child_process");
+const {
+  AUTO_PROJECTOR,
+  resolvedCatalogPath,
+  safeIdentifier,
+  scanGgufCatalog,
+  selectProjector
+} = require("./local-gguf-catalog.cjs");
 
 const FILE_NAME = "local-qwen-provider-v1.json";
 const LOCAL_PROVIDER_ID = "local_qwen";
 const LOCAL_MODEL_ALIAS = "qwen3.8-27b";
 const DEFAULT_MODEL_FILENAME = "Qwen3.8-27B-Q4_K_M.gguf";
 const UNCENSORED_MODEL_FILENAME = "qwen3.8-27b-uncensored-fp8-q4_k_m.gguf";
+const HERETIC_9B_MODEL_FILENAME = "Qwen3.8-9B-heretic-uncensored.i1-Q6_K.gguf";
 const DEFAULT_MMPROJ_FILENAME = "mmproj-F16.gguf";
-const COMPATIBILITY_SOURCE_COMMIT = "4aa4339bb58fd62610cea2f9eec640adada1c42e";
+const HERETIC_9B_MMPROJ_FILENAME = "mmproj-Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-BF16.gguf";
+const COMPATIBILITY_SOURCE_COMMIT = "a8164eafd6c89c7437e1a9255b8684fb569b226f";
 
 const SUPPORTED_MODELS = Object.freeze({
   [DEFAULT_MODEL_FILENAME]: Object.freeze({
@@ -26,6 +35,13 @@ const SUPPORTED_MODELS = Object.freeze({
     filename: UNCENSORED_MODEL_FILENAME,
     size: 16_810_714_976,
     sha256: "66bb238d41de38b11dd406d932d8fb97433d529022cef60f2f422b9221cae743"
+  }),
+  [HERETIC_9B_MODEL_FILENAME]: Object.freeze({
+    id: "heretic-9b",
+    label: "Qwen3.8-9B Heretic Uncensored i1-Q6_K（轻量，已验收）",
+    filename: HERETIC_9B_MODEL_FILENAME,
+    size: 7_359_260_416,
+    sha256: "dfedf8412ee4a7f1200916783d224ebedb87044784434b75f4068b4b5e25f780"
   })
 });
 
@@ -35,10 +51,22 @@ const VISION_PROJECTOR = Object.freeze({
   sha256: "cbb841a9ee0636b2ec172f5bb8df2ea8dfeb01e90fe7c6126581d662a0b4e43e"
 });
 
+const HERETIC_9B_VISION_PROJECTOR = Object.freeze({
+  filename: HERETIC_9B_MMPROJ_FILENAME,
+  size: 921_704_448,
+  sha256: "05f662501f8bd45607b079723a3e238a4e888fd085a10a53f4057a0e250f6934"
+});
+
+const SUPPORTED_PROJECTORS = Object.freeze({
+  [DEFAULT_MMPROJ_FILENAME]: VISION_PROJECTOR,
+  [HERETIC_9B_MMPROJ_FILENAME]: HERETIC_9B_VISION_PROJECTOR
+});
+
 const DEFAULTS = Object.freeze({
   schemaVersion: "t8-local-qwen-config/v1",
   modelDirectory: "",
   modelFilename: DEFAULT_MODEL_FILENAME,
+  projectorFilename: AUTO_PROJECTOR,
   runtimeExecutable: "",
   ffmpegExecutable: "",
   contextSize: 32768,
@@ -67,14 +95,15 @@ function boundedNumber(value, fallback, minimum, maximum) {
 function absolutePath(value) {
   const text = String(value || "").trim();
   if (!text) return "";
-  if (text.includes("\0") || !path.isAbsolute(text)) throw new Error("Local Qwen paths must be absolute local paths.");
+  if (text.includes("\0") || !path.isAbsolute(text)) throw new Error("Local GGUF paths must be absolute local paths.");
   return path.normalize(text);
 }
 
 function normalizeConfig(input = {}) {
-  const modelFilename = Object.hasOwn(SUPPORTED_MODELS, input.modelFilename)
-    ? input.modelFilename
-    : DEFAULT_MODEL_FILENAME;
+  const modelFilename = safeIdentifier(input.modelFilename || DEFAULT_MODEL_FILENAME, { label: "Local model" });
+  const projectorFilename = input.projectorFilename && input.projectorFilename !== AUTO_PROJECTOR
+    ? safeIdentifier(input.projectorFilename, { label: "Vision projector" })
+    : AUTO_PROJECTOR;
   const contextSize = boundedInteger(input.contextSize, DEFAULTS.contextSize, 8192, 65536);
   const maxTokens = boundedInteger(input.maxTokens, DEFAULTS.maxTokens, 256, 8192);
   if (maxTokens + 1024 >= contextSize) throw new Error("Local output token limit leaves no usable input context.");
@@ -82,6 +111,7 @@ function normalizeConfig(input = {}) {
     schemaVersion: DEFAULTS.schemaVersion,
     modelDirectory: absolutePath(input.modelDirectory),
     modelFilename,
+    projectorFilename,
     runtimeExecutable: absolutePath(input.runtimeExecutable),
     ffmpegExecutable: absolutePath(input.ffmpegExecutable),
     contextSize,
@@ -97,13 +127,7 @@ function normalizeConfig(input = {}) {
 }
 
 function resolvedChild(rootValue, filename) {
-  const root = path.resolve(rootValue);
-  const target = path.resolve(root, filename);
-  const relative = path.relative(root, target);
-  if (!relative || relative === ".." || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) {
-    throw new Error("Local model files must remain directly inside the selected model directory.");
-  }
-  return target;
+  return resolvedCatalogPath(rootValue, filename, { label: "Local GGUF" });
 }
 
 function fileIdentity(filePath, stat) {
@@ -159,10 +183,16 @@ function quickFileStatus(filePath, specification, verifiedFiles) {
     const stat = fs.statSync(filePath);
     if (!stat.isFile()) return { present: false, sizeMatch: false, verified: false };
     const identity = fileIdentity(filePath, stat);
+    const storedDigest = verifiedFiles[identity];
+    const projectValidated = Boolean(specification);
     return {
       present: true,
-      sizeMatch: stat.size === specification.size,
-      verified: stat.size === specification.size && verifiedFiles[identity] === specification.sha256,
+      sizeMatch: projectValidated ? stat.size === specification.size : true,
+      verified: projectValidated
+        ? stat.size === specification.size && storedDigest === specification.sha256
+        : /^[a-f0-9]{64}$/u.test(String(storedDigest || "")),
+      integrityVerified: /^[a-f0-9]{64}$/u.test(String(storedDigest || "")),
+      projectValidated,
       sizeBytes: stat.size
     };
   } catch {
@@ -173,7 +203,19 @@ function quickFileStatus(filePath, specification, verifiedFiles) {
 function safeRuntimeConfigCandidate(modelDirectory) {
   if (!modelDirectory) return "";
   try {
-    const comfyRoot = path.resolve(modelDirectory, "..", "..", "..");
+    let cursor = path.resolve(modelDirectory);
+    let llmRoot = "";
+    while (true) {
+      if (path.basename(cursor).toLowerCase() === "llm" && path.basename(path.dirname(cursor)).toLowerCase() === "models") {
+        llmRoot = cursor;
+        break;
+      }
+      const parent = path.dirname(cursor);
+      if (parent === cursor) break;
+      cursor = parent;
+    }
+    if (!llmRoot) return "";
+    const comfyRoot = path.dirname(path.dirname(llmRoot));
     const runtimeRoot = path.join(
       comfyRoot,
       "custom_nodes",
@@ -194,10 +236,19 @@ function safeRuntimeConfigCandidate(modelDirectory) {
 }
 
 class LocalQwenConfigStore {
-  constructor({ userDataDir, modelSpecifications = SUPPORTED_MODELS, visionProjector = VISION_PROJECTOR, sha256Impl = sha256File, runtimeVerifier = verifyRuntimeExecutable }) {
+  constructor({
+    userDataDir,
+    modelSpecifications = SUPPORTED_MODELS,
+    projectorSpecifications = SUPPORTED_PROJECTORS,
+    visionProjector,
+    sha256Impl = sha256File,
+    runtimeVerifier = verifyRuntimeExecutable
+  }) {
     this.userDataDir = path.resolve(userDataDir);
     this.modelSpecifications = modelSpecifications;
-    this.visionProjector = visionProjector;
+    this.projectorSpecifications = visionProjector
+      ? { ...projectorSpecifications, [visionProjector.filename]: visionProjector }
+      : projectorSpecifications;
     this.sha256Impl = sha256Impl;
     this.runtimeVerifier = runtimeVerifier;
     this.filePath = path.join(this.userDataDir, FILE_NAME);
@@ -229,7 +280,7 @@ class LocalQwenConfigStore {
       verifiedFiles: this.config.verifiedFiles
     });
     if (!next.runtimeExecutable) next.runtimeExecutable = safeRuntimeConfigCandidate(next.modelDirectory);
-    if (next.modelDirectory !== this.config.modelDirectory || next.modelFilename !== this.config.modelFilename) {
+    if (next.modelDirectory !== this.config.modelDirectory) {
       next.verifiedFiles = {};
     }
     if (next.runtimeExecutable !== this.config.runtimeExecutable) next.runtimeVerification = {};
@@ -242,17 +293,31 @@ class LocalQwenConfigStore {
     return config.modelDirectory ? resolvedChild(config.modelDirectory, config.modelFilename) : "";
   }
 
+  catalog(config = this.config) {
+    return scanGgufCatalog(config.modelDirectory);
+  }
+
+  selectedProjector(config = this.config, catalog = this.catalog(config)) {
+    return selectProjector(catalog, config.modelFilename, config.projectorFilename);
+  }
+
   mmprojPath(config = this.config) {
-    return config.modelDirectory ? resolvedChild(config.modelDirectory, this.visionProjector.filename) : "";
+    if (!config.modelDirectory) return "";
+    const projector = this.selectedProjector(config);
+    return projector ? resolvedChild(config.modelDirectory, projector.identifier) : "";
   }
 
   status() {
     const config = this.config;
-    const modelSpec = this.modelSpecifications[config.modelFilename];
+    const catalog = this.catalog(config);
+    const selectedModel = catalog.models.find((entry) => entry.identifier === config.modelFilename) || null;
+    const selectedProjector = this.selectedProjector(config, catalog);
+    const modelSpec = this.modelSpecifications[path.basename(config.modelFilename)];
+    const projectorSpec = selectedProjector ? this.projectorSpecifications[path.basename(selectedProjector.identifier)] : null;
     const modelPath = config.modelDirectory ? this.modelPath(config) : "";
-    const mmprojPath = config.modelDirectory ? this.mmprojPath(config) : "";
+    const mmprojPath = selectedProjector ? resolvedChild(config.modelDirectory, selectedProjector.identifier) : "";
     const model = modelPath ? quickFileStatus(modelPath, modelSpec, config.verifiedFiles) : { present: false, sizeMatch: false, verified: false };
-    const mmproj = mmprojPath ? quickFileStatus(mmprojPath, this.visionProjector, config.verifiedFiles) : { present: false, sizeMatch: false, verified: false };
+    const mmproj = mmprojPath ? quickFileStatus(mmprojPath, projectorSpec, config.verifiedFiles) : { present: false, sizeMatch: false, verified: false };
     let runtimeStat = null;
     try { runtimeStat = config.runtimeExecutable ? fs.statSync(config.runtimeExecutable) : null; } catch {}
     const runtimePresent = Boolean(runtimeStat?.isFile());
@@ -271,6 +336,8 @@ class LocalQwenConfigStore {
       videoReady: Boolean(model.verified && mmproj.verified && runtimeVerified && ffmpegPresent && ffprobePresent),
       modelDirectory: config.modelDirectory,
       modelFilename: config.modelFilename,
+      projectorFilename: config.projectorFilename,
+      resolvedProjectorFilename: selectedProjector?.identifier || "",
       runtimeExecutable: config.runtimeExecutable,
       ffmpegExecutable: config.ffmpegExecutable,
       contextSize: config.contextSize,
@@ -291,8 +358,33 @@ class LocalQwenConfigStore {
       ffprobePresent,
       model,
       mmproj,
+      modelInfo: selectedModel,
+      projectorInfo: selectedProjector,
+      modelOptions: (catalog.models.length ? catalog.models : Object.values(this.modelSpecifications).map((specification) => ({
+        identifier: specification.filename,
+        filename: specification.filename,
+        sizeBytes: specification.size,
+        metadataReadable: false,
+        textCapable: true
+      }))).map((entry) => {
+        const specification = this.modelSpecifications[path.basename(entry.identifier)];
+        return {
+          ...entry,
+          id: specification?.id || "discovered",
+          label: specification?.label || entry.name || entry.identifier,
+          projectValidated: Boolean(specification)
+        };
+      }),
+      projectorOptions: catalog.projectors.map((entry) => {
+        const specification = this.projectorSpecifications[path.basename(entry.identifier)];
+        return {
+          ...entry,
+          label: entry.name || entry.identifier,
+          projectValidated: Boolean(specification)
+        };
+      }),
       supportedModels: Object.values(this.modelSpecifications).map(({ id, label, filename, size }) => ({ id, label, filename, sizeBytes: size })),
-      projectorFilename: this.visionProjector.filename,
+      catalogCounts: { models: catalog.models.length, projectors: catalog.projectors.length },
       compatibilitySourceCommit: COMPATIBILITY_SOURCE_COMMIT
     };
   }
@@ -302,6 +394,8 @@ class LocalQwenConfigStore {
     return crypto.createHash("sha256").update(JSON.stringify([
       status.modelDirectory,
       status.modelFilename,
+      status.projectorFilename,
+      status.resolvedProjectorFilename,
       status.runtimeExecutable,
       status.ffmpegExecutable,
       status.contextSize,
@@ -321,26 +415,47 @@ class LocalQwenConfigStore {
 
   async verify() {
     const config = this.config;
-    if (!config.modelDirectory) throw new Error("Choose a local Qwen model directory first.");
+    if (!config.modelDirectory) throw new Error("Choose a local GGUF model directory first.");
     if (!config.runtimeExecutable || !fs.existsSync(config.runtimeExecutable)) throw new Error("Choose a valid llama-server executable first.");
+    const catalog = this.catalog(config);
+    if (!catalog.models.some((entry) => entry.identifier === config.modelFilename)) {
+      throw new Error(`The selected local GGUF is missing or is not a main model: ${config.modelFilename}`);
+    }
+    if (config.projectorFilename !== AUTO_PROJECTOR && !catalog.projectors.some((entry) => entry.identifier === config.projectorFilename)) {
+      throw new Error(`The selected vision projector is missing or is not an mmproj: ${config.projectorFilename}`);
+    }
     const runtimeStat = await fsp.stat(config.runtimeExecutable);
     if (!runtimeStat.isFile()) throw new Error("Choose a valid llama-server executable first.");
     const runtimeResult = await this.runtimeVerifier(config.runtimeExecutable);
+    const modelPath = this.modelPath(config);
+    const projectorPath = this.mmprojPath(config);
     const targets = [
-      { path: this.modelPath(config), spec: this.modelSpecifications[config.modelFilename], required: true },
-      { path: this.mmprojPath(config), spec: this.visionProjector, required: false }
+      { path: modelPath, spec: this.modelSpecifications[path.basename(config.modelFilename)], required: true, label: config.modelFilename },
+      ...(projectorPath ? [{
+        path: projectorPath,
+        spec: this.projectorSpecifications[path.basename(projectorPath)],
+        required: false,
+        label: path.relative(config.modelDirectory, projectorPath).split(path.sep).join("/")
+      }] : [])
     ];
     const verifiedFiles = { ...config.verifiedFiles };
     for (const target of targets) {
       let stat;
       try { stat = await fsp.stat(target.path); }
       catch {
-        if (target.required) throw new Error(`Missing supported local model: ${target.spec.filename}`);
+        if (target.required) throw new Error(`Missing local GGUF model: ${target.label}`);
         continue;
       }
-      if (!stat.isFile() || stat.size !== target.spec.size) throw new Error(`${target.spec.filename} has an unexpected file size.`);
+      if (!stat.isFile()) throw new Error(`${target.label} is not a regular file.`);
+      if (target.spec && stat.size !== target.spec.size) throw new Error(`${target.label} has an unexpected file size.`);
+      const handle = await fsp.open(target.path, "r");
+      try {
+        const magic = Buffer.alloc(4);
+        const { bytesRead } = await handle.read(magic, 0, 4, 0);
+        if (bytesRead !== 4 || !magic.equals(Buffer.from("GGUF"))) throw new Error(`${target.label} is not a valid GGUF file.`);
+      } finally { await handle.close(); }
       const sha256 = await this.sha256Impl(target.path);
-      if (sha256 !== target.spec.sha256) throw new Error(`${target.spec.filename} failed SHA-256 verification.`);
+      if (target.spec && sha256 !== target.spec.sha256) throw new Error(`${target.label} failed SHA-256 verification.`);
       verifiedFiles[fileIdentity(target.path, stat)] = sha256;
     }
     this.config = normalizeConfig({
@@ -357,8 +472,8 @@ class LocalQwenConfigStore {
 
   requireReady({ vision = false, video = false } = {}) {
     const status = this.status();
-    if (!status.textReady) throw new Error("Local Qwen is not ready. Verify a supported GGUF model and llama-server in API settings.");
-    if (vision && !status.visionReady) throw new Error("Local visual prompting requires the verified mmproj-F16.gguf projector.");
+    if (!status.textReady) throw new Error("Local GGUF is not ready. Verify the selected model and llama-server in API settings.");
+    if (vision && !status.visionReady) throw new Error("Local visual prompting requires a verified projector matched to the selected model.");
     if (video && !status.videoReady) throw new Error("Local video prompting requires FFmpeg and FFprobe in the same selected directory.");
     return {
       ...this.config,
@@ -374,9 +489,13 @@ module.exports = {
   DEFAULT_MODEL_FILENAME,
   DEFAULTS,
   FILE_NAME,
+  HERETIC_9B_MMPROJ_FILENAME,
+  HERETIC_9B_MODEL_FILENAME,
+  HERETIC_9B_VISION_PROJECTOR,
   LOCAL_MODEL_ALIAS,
   LOCAL_PROVIDER_ID,
   LocalQwenConfigStore,
+  SUPPORTED_PROJECTORS,
   SUPPORTED_MODELS,
   UNCENSORED_MODEL_FILENAME,
   VISION_PROJECTOR,

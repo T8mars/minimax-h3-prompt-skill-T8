@@ -11,6 +11,7 @@ const api = Object.freeze({
   configureLocalQwen: (input) => ipcRenderer.invoke("prompt:local:configure", input),
   verifyLocalQwen: () => ipcRenderer.invoke("prompt:local:verify"),
   releaseLocalQwen: () => ipcRenderer.invoke("prompt:local:release"),
+  rescanLocalQwen: () => ipcRenderer.invoke("prompt:local:rescan"),
   pickLocalQwenModelDirectory: () => ipcRenderer.invoke("prompt:local:pick-model-directory"),
   pickLocalQwenRuntime: () => ipcRenderer.invoke("prompt:local:pick-runtime"),
   pickLocalQwenFfmpeg: () => ipcRenderer.invoke("prompt:local:pick-ffmpeg"),

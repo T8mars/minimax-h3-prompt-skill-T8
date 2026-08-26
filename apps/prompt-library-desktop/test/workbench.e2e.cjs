@@ -51,7 +51,8 @@ async function run() {
     await page.locator('[data-provider-id="local_qwen"]').click();
     assert.equal(await page.locator("#workbench-local-qwen-panel").isVisible(), true, "local Qwen must use its own settings panel");
     assert.equal(await page.locator("#workbench-credential-panel").isVisible(), false, "local Qwen must not ask for an API key");
-    assert.equal(await page.locator("#local-qwen-model option").count(), 2, "only the two node-verified models may be advertised");
+    assert.equal(await page.locator("#local-qwen-model option").count(), 3, "all three node-validated models must be advertised before a folder is selected");
+    assert.equal(await page.locator("#local-qwen-projector option").count(), 1, "projector selection must start in safe automatic matching mode");
     const localSettingsOverflow = await page.locator(".api-settings-content").evaluate((node) => ({ scrollHeight: node.scrollHeight, clientHeight: node.clientHeight }));
     assert.ok(localSettingsOverflow.scrollHeight <= localSettingsOverflow.clientHeight + 1, `local Qwen settings must fit one 1280x800 screen (${localSettingsOverflow.scrollHeight} > ${localSettingsOverflow.clientHeight})`);
     await page.screenshot({ path: localSettingsScreenshotPath, animations: "disabled" });

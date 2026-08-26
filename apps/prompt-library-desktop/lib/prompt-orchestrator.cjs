@@ -15,6 +15,8 @@ function localExecutionFingerprint(localQwen, status) {
   if (typeof localQwen?.executionFingerprint === "function") return localQwen.executionFingerprint();
   return sha256Canonical({
     modelFilename: status?.modelFilename,
+    projectorFilename: status?.projectorFilename,
+    resolvedProjectorFilename: status?.resolvedProjectorFilename,
     contextSize: status?.contextSize,
     maxTokens: status?.maxTokens,
     thinkMode: status?.thinkMode,
@@ -154,14 +156,14 @@ class PromptOrchestrator {
     const local = plan.providerId === "local_qwen";
     const credential = local ? this.localQwen?.status() : this.credentialVault.status(plan.providerId);
     if (!credential?.configured) {
-      throw new PromptProviderError(local ? "Local Qwen is not ready. Verify it in API settings." : "This provider has no configured API key.", {
+      throw new PromptProviderError(local ? "Local GGUF is not ready. Verify it in API settings." : "This provider has no configured API key.", {
         code: local ? "local_not_ready" : "credential_missing",
         phase: "preflight"
       });
     }
     if (local) {
       if (plan.model !== credential.modelFilename) throw new PromptProviderError("The selected local model changed; reopen API settings and generate a new plan.", { code: "local_model_changed", phase: "preflight" });
-      if (mediaRecords.length && !credential.visionReady) throw new PromptProviderError("Local visual prompting requires a verified mmproj-F16.gguf projector.", { code: "local_vision_not_ready", phase: "preflight" });
+      if (mediaRecords.length && !credential.visionReady) throw new PromptProviderError("Local visual prompting requires a verified projector matched to the selected model.", { code: "local_vision_not_ready", phase: "preflight" });
       if (mediaRecords.some((item) => item.kind === "video") && !credential.videoReady) throw new PromptProviderError("Local video prompting requires a configured FFmpeg executable.", { code: "local_video_not_ready", phase: "preflight" });
     }
     const issuedAt = new Date(this.now()).toISOString();
@@ -222,7 +224,7 @@ class PromptOrchestrator {
     if (local) {
       const current = this.localQwen?.status();
       if (!current?.configured || localExecutionFingerprint(this.localQwen, current) !== record.localConfigFingerprint) {
-        throw new PromptProviderError("Local Qwen settings changed after confirmation. Generate a new confirmation plan.", {
+        throw new PromptProviderError("Local GGUF settings changed after confirmation. Generate a new confirmation plan.", {
           code: "local_config_changed",
           phase: "preflight"
         });

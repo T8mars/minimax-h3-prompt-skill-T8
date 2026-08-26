@@ -40,7 +40,7 @@ const PROVIDERS = Object.freeze({
   }),
   local_qwen: Object.freeze({
     id: "local_qwen",
-    label: "本地 Qwen3.8-27B",
+    label: "本地 GGUF",
     registrationUrl: null,
     chatUrl: null,
     uploadUrl: null,
@@ -332,7 +332,7 @@ function messagesWithMedia(messages, parts) {
 
 async function callProvider(plan, apiKey, options = {}) {
   if (plan.providerId === "local_qwen") {
-    throw new PromptProviderError("Local Qwen requires the Electron Main local runtime adapter.", { code: "local_adapter_missing", phase: "local" });
+    throw new PromptProviderError("Local GGUF requires the Electron Main local runtime adapter.", { code: "local_adapter_missing", phase: "local" });
   }
   const fetchImpl = options.fetchImpl || globalThis.fetch;
   if (typeof fetchImpl !== "function") throw new PromptProviderError("Fetch is unavailable.", { code: "transport_unavailable", phase: "transport" });

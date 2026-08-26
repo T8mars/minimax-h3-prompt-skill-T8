@@ -474,7 +474,7 @@
                 <strong>OpenAI 兼容接口</strong><span>自定义 HTTPS Base URL 与模型</span><em data-provider-state="openai_compatible">未配置</em>
               </button>
               <button class="provider-card" type="button" data-provider-id="local_qwen" aria-pressed="false">
-                <strong id="local-qwen-card-title">本地 Qwen3.8-27B</strong><span id="local-qwen-card-subtitle">离线 GGUF · 无需 API Key</span><em data-provider-state="local_qwen">未配置</em>
+                <strong id="local-qwen-card-title">本地 GGUF</strong><span id="local-qwen-card-subtitle">llama.cpp / Qwen · 无需 API Key</span><em data-provider-state="local_qwen">未配置</em>
               </button>
             </div>
             <div id="provider-registration-row" class="provider-registration-row" aria-label="API 注册入口">
@@ -504,24 +504,28 @@
             <div id="workbench-local-qwen-panel" class="credential-panel local-qwen-panel hidden">
               <div class="local-qwen-heading">
                 <div>
-                  <strong id="local-qwen-title">配置本地 Qwen3.8-27B</strong>
-                  <p id="local-qwen-note">模型不会包含在安装包中，也不会自动下载。选择你自己的模型目录并完成一次完整校验。</p>
+                  <strong id="local-qwen-title">配置本地 GGUF</strong>
+                  <p id="local-qwen-note">递归扫描模型目录；三个实测型号会标为已验收，其他 llama.cpp 兼容 GGUF 会标为用户模型。</p>
                 </div>
                 <span id="local-qwen-readiness" class="status-pill">未配置</span>
               </div>
               <label class="workbench-field workbench-field-full">
                 <span id="local-qwen-directory-label">模型目录</span>
-                <div class="path-picker-row"><input id="local-qwen-directory" type="text" readonly spellcheck="false" placeholder="选择包含 GGUF 与 mmproj 的目录"><button id="local-qwen-pick-directory" class="button copy-secondary" type="button">选择目录</button></div>
+                <div class="path-picker-row"><input id="local-qwen-directory" type="text" readonly spellcheck="false" placeholder="选择 ComfyUI/models/LLM 或其他 GGUF 根目录"><button id="local-qwen-pick-directory" class="button copy-secondary" type="button">选择目录</button></div>
               </label>
               <label class="workbench-field">
                 <span id="local-qwen-model-label">本地模型</span>
-                <select id="local-qwen-model"><option value="Qwen3.8-27B-Q4_K_M.gguf">Qwen3.8-27B Q4_K_M（官方，推荐）</option><option value="qwen3.8-27b-uncensored-fp8-q4_k_m.gguf">Qwen3.8-27B Uncensored FP8 Q4_K_M</option></select>
+                <select id="local-qwen-model"><option value="Qwen3.8-27B-Q4_K_M.gguf">Qwen3.8-27B Q4_K_M（官方，推荐）</option><option value="qwen3.8-27b-uncensored-fp8-q4_k_m.gguf">Qwen3.8-27B Uncensored FP8 Q4_K_M</option><option value="Qwen3.8-9B-heretic-uncensored.i1-Q6_K.gguf">Qwen3.8-9B Heretic（轻量，已验收）</option></select>
+              </label>
+              <label class="workbench-field">
+                <span id="local-qwen-projector-label">视觉投影器</span>
+                <select id="local-qwen-projector"><option value="AUTO">AUTO（自动匹配）</option></select>
               </label>
               <label class="workbench-field">
                 <span id="local-qwen-runtime-label">llama-server 运行文件</span>
                 <div class="path-picker-row"><input id="local-qwen-runtime" type="text" readonly spellcheck="false" placeholder="选择 llama-server 可执行文件"><button id="local-qwen-pick-runtime" class="button copy-secondary" type="button">选择运行文件</button></div>
               </label>
-              <label class="workbench-field workbench-field-full">
+              <label class="workbench-field">
                 <span id="local-qwen-ffmpeg-label">FFmpeg（仅本地视频需要）</span>
                 <div class="path-picker-row"><input id="local-qwen-ffmpeg" type="text" readonly spellcheck="false" placeholder="可选：选择 FFmpeg 可执行文件"><button id="local-qwen-pick-ffmpeg" class="button copy-secondary" type="button">选择 FFmpeg</button></div>
               </label>
@@ -536,6 +540,7 @@
               <div class="local-qwen-file-status" id="local-qwen-file-status" aria-live="polite"></div>
               <div class="credential-actions">
                 <button id="local-qwen-save" class="button copy-secondary" type="button">保存设置</button>
+                <button id="local-qwen-rescan" class="button copy-secondary" type="button">扫描 GGUF</button>
                 <button id="local-qwen-verify" class="button source" type="button">完整校验</button>
                 <button id="local-qwen-release" class="button ghost" type="button">释放模型</button>
               </div>
