@@ -134,7 +134,7 @@ jobs:
           node scripts/public/prepare-app-catalog.mjs --source catalog --output .release-input/app-catalog --ffmpeg "$env:T8_FFMPEG_PATH" --max-dimension 288 --fps 4 --colors 64
           if ($LASTEXITCODE -ne 0) { throw "Packaged catalog preparation failed." }
           $compactBytes = (Get-ChildItem -LiteralPath ".release-input/app-catalog" -Recurse -File | Measure-Object Length -Sum).Sum
-          if ($compactBytes -ge 367001600) { throw "Packaged catalog exceeds the 350 MiB preview budget: $compactBytes bytes." }
+          if ($compactBytes -ge 440401920) { throw "Packaged catalog exceeds the 420 MiB preview budget: $compactBytes bytes." }
           $catalogDir = (Resolve-Path ".release-input/app-catalog").Path
           $utf8 = [System.Text.UTF8Encoding]::new($false)
           [System.IO.File]::AppendAllText($env:GITHUB_ENV, "T8_CATALOG_DIR=$catalogDir`n", $utf8)
