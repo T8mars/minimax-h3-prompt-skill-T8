@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-t-st-love-love-2091535156687655371-browser-2091535156687655371-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "真人字舞变体｜成年表演者动作驱动巨型短词与彩色模块",
+  "source_title": "糖果字舞｜人物与巨型字母同屏弹跳",
+  "summary": "同一明确成年表演者以稳定身份贯穿彩色模块，每段只用一个短词和一次动作；文字在前后景中弹跳、绕行或成为台阶，最终把人物、名称与标志收成同一字卡。",
+  "status": "released",
+  "source_duration_seconds": 15.061333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-t-st-love-love-2091535156687655371-browser-2091535156687655371-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-t-st-love-love-2091535156687655371-browser-2091535156687655371-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-wakeupgfx-2090565921580425588-browser-2090565921580425588-video-1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "深蓝场中，建立一名明确成年非裔拉丁裔手语表演者，铜色短发、青绿色夹克和一个原创手形小徽记；锁定脸、头发与服装。；经过珊瑚色【TURN】房间和青色【REACH】房间；她各做一次转身和伸手，每个词只穿过前景或地面之一。；同一成年人走进深蓝标题卡；手形徽记置于准确【MARA SIGNS】上方，所有文字与身体运动停止并停住。",
+  "required_anchors": [
+    "Establish one clearly adult original performer with stable face, hair, outfit anchors and one compact identity symbol.",
+    "Introduce no more than one exact short word per graphic module and pair it with one readable action.",
+    "Escalate word scale and action amplitude without adding uncontrolled text or changing the module grammar.",
+    "End by placing the same adult and original identity symbol inside one complete readable title card."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T17:01:50+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

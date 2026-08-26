@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-weeleey6-2092237693849575494-browser-2092237693849575494-video-1",
+  "slug": "personal-device-state-switch-ordinary-world-performance",
+  "title": "个人设备状态开关｜普通环境在佩戴后进入表演模式再归稳",
+  "source_title": "耳机触发主角模式｜街道随音乐转为MV舞台",
+  "summary": "先建立明确成年人、个人设备和普通公共环境；一次清楚佩戴或启动动作改变人物步态、环境节奏和摄影能量，但地理与身份不变，最终通过关闭或静止证明状态切换。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/personal-device-state-switch-ordinary-world-performance",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-weeleey6-2092237693849575494-browser-2092237693849575494-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-weeleey6-2092237693849575494-browser-2092237693849575494-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-personal-device-state-switch-ordinary-world-performance-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "Establish one clearly adult original subject, one personal device and an ordinary environment baseline. + Use one visible device-wear or activation action as the sole switch into the heightened state. + Change performance, camera rhythm and bounded environmental accents while preserving identity and geography. + Keep surrounding public behavior plausible so the private state remains legible by contrast. + Return camera and subject motion to a stable baseline in the same environment, with device state visibly resolved.",
+  "recommended_input": "原创清晨渡轮总站内，一名明确成年南亚通勤者穿苔绿色外套，手持小黄铜节拍器；后方人群正常行走。；接下来四步与克制琥珀地面倒影和一次前景立柱擦镜对齐；总站、脸、外套和周围行人路线不变。；她合上节拍器；光带停止，摄影机落稳，同一成年人恢复正常行走，环境不变；不加文字品牌并停住。",
+  "required_anchors": [
+    "Establish one clearly adult original subject, one personal device and an ordinary environment baseline.",
+    "Use one visible device-wear or activation action as the sole switch into the heightened state.",
+    "Keep surrounding public behavior plausible so the private state remains legible by contrast.",
+    "Return camera and subject motion to a stable baseline in the same environment, with device state visibly resolved."
+  ],
+  "tags": [
+    "personal",
+    "device",
+    "state",
+    "switch",
+    "ordinary",
+    "world"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T17:03:05+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

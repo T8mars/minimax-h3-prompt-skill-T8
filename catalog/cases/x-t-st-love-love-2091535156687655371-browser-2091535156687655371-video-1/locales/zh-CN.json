@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-t-st-love-love-2091535156687655371-browser-2091535156687655371-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "07edffb803ee5ef7963805f4228f560880615f9d24e345fab1f7925689ec5cba",
+    "creative_dna_sha256": "c15d325b93d73667d020b4e4bd89e58a8a4bfb187dc0894891aa62a56abc5052"
+  },
+  "content": {
+    "title": "真人字舞变体｜成年表演者动作驱动巨型短词与彩色模块",
+    "summary": "同一明确成年表演者以稳定身份贯穿彩色模块，每段只用一个短词和一次动作；文字在前后景中弹跳、绕行或成为台阶，最终把人物、名称与标志收成同一字卡。",
+    "quick_start": {
+      "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+      "recommended_input": "深蓝场中，建立一名明确成年非裔拉丁裔手语表演者，铜色短发、青绿色夹克和一个原创手形小徽记；锁定脸、头发与服装。；经过珊瑚色【TURN】房间和青色【REACH】房间；她各做一次转身和伸手，每个词只穿过前景或地面之一。；同一成年人走进深蓝标题卡；手形徽记置于准确【MARA SIGNS】上方，所有文字与身体运动停止并停住。",
+      "required_anchors": [
+        "建立一个清晰的成年原创表演者，具有稳定的面部、头发、服装锚点和一个紧凑的身份符号。",
+        "每个图形模块最多介绍一个确切的短词，并与一个可读的动作配对。",
+        "在不添加不受控制的文本或改变模块语法的情况下，增加文字规模和动作幅度。",
+        "以一个完整的可读标题卡结束，其中包含相同的成年人和原始身份符号。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一明确成年表演者以稳定身份贯穿彩色模块，每段只用一个短词和一次动作；文字在前后景中弹跳、绕行或成为台阶，最终把人物、名称与标志收成同一字卡。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一明确成年表演者以稳定身份贯穿彩色模块，每段只用一个短词和一次动作；文字在前后景中弹跳、绕行或成为台阶，最终把人物、名称与标志收成同一字卡。 必须满足：Establish one clearly adult original performer with stable face, hair, outfit anchors and one compact identity symbol. + Introduce no more than one exact short word per graphic module and pair it with one readable action. + Let typography occupy foreground, floor, doorway or orbit while preserving the performer's identity. + Escalate word scale and action amplitude without adding uncontrolled text or changing the module grammar. + End by placing the same adult and original identity symbol inside one complete readable title card.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个清晰的成年原创表演者，具有稳定的面部、头发、服装锚点和一个紧凑的身份符号。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个图形模块最多介绍一个确切的短词，并与一个可读的动作配对。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "让排版占据前景、地面、门框或轨道，同时保留表演者的身份。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在不添加不受控制的文本或改变模块语法的情况下，增加文字规模和动作幅度。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以一个完整的可读标题卡结束，其中包含相同的成年人和原始身份符号。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "年轻舞者，面部，头发，服装和姿势",
+        "糖果色房间，门，楼梯和舞台",
+        "源 HEY, WHO, FLY, JUMP, RUN, STEP, GLOW 和名称文字",
+        "精确的舞蹈编排，字体运动，摄像机路径和时间",
+        "源创作者身份，MiniMax H3声明，水印和品牌"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年手语表演者驾驶OPEN、TURN、REACH和HOLD穿过模块化的展览房间，并在手写标题内结束。",
+          "prompt_seed": "一位成年手语表演者驾驶OPEN、TURN、REACH和HOLD穿过模块化的展览房间，并在手写标题内结束。"
+        },
+        {
+          "concept": "一位成年有氧操教练驾驶STEP、SWAY、LIFT和LAND穿过几何工作室模块，并以原创课程徽章结束。",
+          "prompt_seed": "一位成年有氧操教练驾驶STEP、SWAY、LIFT和LAND穿过几何工作室模块，并以原创课程徽章结束。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "建立一个清晰的成年原创表演者，具有稳定的面部、头发、服装锚点和一个紧凑的身份符号。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "每个图形模块最多介绍一个确切的短词，并与一个可读的动作配对。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "让排版占据前景、地面、门框或轨道，同时保留表演者的身份。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "在不添加不受控制的文本或改变模块语法的情况下，增加文字规模和动作幅度。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "以一个完整的可读标题卡结束，其中包含相同的成年人和原始身份符号。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年手语表演者驾驶OPEN、TURN、REACH和HOLD穿过模块化的展览房间，并在手写标题内结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年有氧操教练驾驶STEP、SWAY、LIFT和LAND穿过几何工作室模块，并以原创课程徽章结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

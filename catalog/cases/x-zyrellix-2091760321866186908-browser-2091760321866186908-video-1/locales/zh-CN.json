@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-zyrellix-2091760321866186908-browser-2091760321866186908-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "010de912bc189ec34d500666824afe6c19e80ffa183893f4e2ef4db06391b78f",
+    "creative_dna_sha256": "a60f5271f134d05b4bdb8373da7433044b813e44c9f1690511d2ffd040bc4c81"
+  },
+  "content": {
+    "title": "产品环境提取回环｜材质微距、原料世界、喷雾门户与透明球归返",
+    "summary": "从产品材质极近景建立身份，沿核心原料进入环境世界，再由功能动作打开空间门户；环境被压缩进透明体并回到同一产品英雄镜，形成产品—世界—产品闭环。",
+    "quick_start": {
+      "input_format": "Establish one original product through macro material anchors before showing the complete object. + Connect at least two visible ingredient or design details to one coherent environment identity. + Use one functional product action as the sole optical transition into the environment. + Expand the environment, then enclose its recognizable geometry inside one transparent carrier. + Return the carrier and environment to the same complete product with stable shape, label-free identity and hero proof.",
+      "recommended_input": "从原创无标签方形矿物台灯的一处斜面内部开始：微距透明石英、拉丝黄铜环和淡蓝内透镜；拉远揭示石台上的完整台灯。；一只明确成年人的手只转动一次同一台灯开关；淡蓝透镜产生一次受控折射光，成为进入峡谷的光学通道，不替换产品。；透明球收缩进台灯淡蓝透镜；回到石台上同一完整方形台灯，石英斜面、黄铜环和比例稳定，不加品牌文字并停住。",
+      "required_anchors": [
+        "通过微距材料锚点建立一个原创产品，然后再展示完整的产品。",
+        "将至少两个可见的成分或设计细节连接到一个连贯的环境身份。",
+        "扩展环境，然后将其可识别的几何形状包含在一个透明载体内。",
+        "将载体和环境恢复为具有稳定形状、无标签身份和英雄证明的完整产品。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "从产品材质极近景建立身份，沿核心原料进入环境世界，再由功能动作打开空间门户；环境被压缩进透明体并回到同一产品英雄镜，形成产品—世界—产品闭环。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "从产品材质极近景建立身份，沿核心原料进入环境世界，再由功能动作打开空间门户；环境被压缩进透明体并回到同一产品英雄镜，形成产品—世界—产品闭环。 必须满足：Establish one original product through macro material anchors before showing the complete object. + Connect at least two visible ingredient or design details to one coherent environment identity. + Use one functional product action as the sole optical transition into the environment. + Expand the environment, then enclose its recognizable geometry inside one transparent carrier. + Return the carrier and environment to the same complete product with stable shape, label-free identity and hero proof.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "通过微距材料锚点建立一个原创产品，然后再展示完整的产品。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "将至少两个可见的成分或设计细节连接到一个连贯的环境身份。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "使用一个功能产品动作作为唯一视觉过渡进入环境。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "扩展环境，然后将其可识别的几何形状包含在一个透明载体内。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将载体和环境恢复为具有稳定形状、无标签身份和英雄证明的完整产品。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "原始香水瓶、奖章、瓶盖和品牌标识",
+        "原始橄榄、白花、地中海海岸和确切成分",
+        "原始喷雾器、液体、透明球和光学效果",
+        "源代码精确宏，飞行镜头，摄像机路径和时间",
+        "源创作者身份，Seedance 2.0 声明，平台标志和提示词"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个矿物台灯宏揭示了石英和黄铜，其开关打开了一扇峡谷之光的门户，峡谷返回到灯泡内部。",
+          "prompt_seed": "一个矿物台灯宏揭示了石英和黄铜，其开关打开了一扇峡谷之光的门户，峡谷返回到灯泡内部。"
+        },
+        {
+          "concept": "一个茶具宏揭示了粘土和蒸汽，倒水打开了一片山雾世界，风景返回到一个透明盖珠中。",
+          "prompt_seed": "一个茶具宏揭示了粘土和蒸汽，倒水打开了一片山雾世界，风景返回到一个透明盖珠中。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "通过微距材料锚点建立一个原创产品，然后再展示完整的产品。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "将至少两个可见的成分或设计细节连接到一个连贯的环境身份。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "使用一个功能产品动作作为唯一视觉过渡进入环境。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "扩展环境，然后将其可识别的几何形状包含在一个透明载体内。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "将载体和环境恢复为具有稳定形状、无标签身份和英雄证明的完整产品。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个矿物台灯宏揭示了石英和黄铜，其开关打开了一扇峡谷之光的门户，峡谷返回到灯泡内部。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个茶具宏揭示了粘土和蒸汽，倒水打开了一片山雾世界，风景返回到一个透明盖珠中。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

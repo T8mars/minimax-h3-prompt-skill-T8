@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.3.1`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.3.1`。
+当前版本是 `v1.3.2`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.3.2`。
 
 版本采用十进制进位：
 
@@ -20,6 +20,7 @@
 1.2.8 -> 1.2.9
 1.2.9 -> 1.3.0
 1.3.0 -> 1.3.1
+1.3.1 -> 1.3.2
 1.9.9 -> 2.0.0
 ```
 
@@ -73,10 +74,10 @@ Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHu
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.3.1
+npm run media:pack -- -Version 1.3.2
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个正式案例和社区 Skill 媒体的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.3.1.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 的 `files` 必须覆盖全部正式案例，`unavailable_cases` 必须为空，`community_skill_files` 单独记录非官方 Skill 样片；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个正式案例和社区 Skill 媒体的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.3.2.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 的 `files` 必须覆盖全部正式案例，`unavailable_cases` 必须为空，`community_skill_files` 单独记录非官方 Skill 样片；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 
@@ -89,7 +90,7 @@ npm run media:pack -- -Version 1.3.1
 7. 工作流定位或安装 `ffmpeg`/`ffprobe`，从 Draft Release 下载指定媒体资产、校验 ZIP 哈希并解压。
 8. 每个 `files` 或 `community_skill_files` 中的 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨；`audio_mode=present` 的媒体还必须完整遍历音频轨，来源本身无音轨的媒体必须明确记录 `audio_mode=source_silent` 与 `audio_codec=null`。探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、声明存在的轨道、进程退出或完整遍历失败仍会阻断发布。`unavailable_cases` 必须为空。
 9. Windows runner 与 macOS runner 分别用单线程 FFmpeg 生成安装包专用的紧凑动态 GIF 副本，并核对其 manifest 与仓库完全一致；随后 Windows 构建不重复内嵌 MP4 的 NSIS，macOS 构建不重复内嵌 MP4 的 unsigned universal DMG + ZIP。门禁会阻止 `resources/media` 意外进入安装包。
-10. 两个平台都以打包后的应用挂载同一份已校验外置媒体包运行 E2E，证明 239 个案例、9 个官方仓库条目、2 个非官方 Skills、239 个可分发案例视频、2 个社区 Skill 视频、0 个不可用案例，以及收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用。
+10. 两个平台都以打包后的应用挂载同一份已校验外置媒体包运行 E2E，证明 260 个案例、9 个官方仓库条目、2 个非官方 Skills、260 个可分发案例视频、2 个社区 Skill 视频、0 个不可用案例，以及收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用。
 11. 最终发布 Job 必须同时收到 Windows 与 macOS 已验证产物，核对精确资产集合后统一生成 `SHA256SUMS.txt`。
 12. 只有以上门禁通过，才上传全部目录包、Skills 包、媒体包、Windows 安装包和 macOS 安装包；`publish=true` 时才把 Draft 设为正式 Release。
 

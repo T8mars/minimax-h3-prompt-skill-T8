@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-studio-oneroom-2092220604309205341-browser-2092220604309205341-video-1",
+  "slug": "letterform-structure-motion-system-lockup",
+  "title": "字形结构运动系统｜组件组字、分栏、物理碰撞与双行锁定",
+  "source_title": "单镜头文字分区｜H字母切屏与九词联动",
+  "summary": "用首个标题的字形组件生成分栏与运动骨架，后续短词分别承担冲击、网格、卡片与碰撞动作；限定调色和文字集合，最终所有层同时停止在双行锁定。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/letterform-structure-motion-system-lockup",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-studio-oneroom-2092220604309205341-browser-2092220604309205341-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-studio-oneroom-2092220604309205341-browser-2092220604309205341-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-letterform-structure-motion-system-lockup-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "Declare a small exact text set, one restricted palette and one primary title before animation begins. + Build the primary title from visible components and reuse one of its letterform structures as the layout carrier. + Give each secondary word one distinct readable physical action inside the inherited structure. + Compress prior cards or grids into one central collision while preserving exact spelling. + Resolve all fragments into one complete terminal lockup and stop background, decoration and foreground together.",
+  "recommended_input": "只用米白、墨黑和一种钴蓝点色；散落线段向中心旋入并组装为准确主标题【NORTH LAB】。；轨道内只引入准确短词【ORBIT】【FIELD】【SIGNAL】：ORBIT 环绕一次，FIELD 在透视网格上复制，SIGNAL 正面撞入并停住。；碎片清场后把准确【LAB】置于准确【NORTH】上方，中间一条钴蓝横线；背景、刻度与前景同时停住1.2秒。",
+  "required_anchors": [
+    "Declare a small exact text set, one restricted palette and one primary title before animation begins.",
+    "Build the primary title from visible components and reuse one of its letterform structures as the layout carrier.",
+    "Compress prior cards or grids into one central collision while preserving exact spelling.",
+    "Resolve all fragments into one complete terminal lockup and stop background, decoration and foreground together."
+  ],
+  "tags": [
+    "letterform",
+    "structure",
+    "motion",
+    "system",
+    "lockup"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T16:51:24+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

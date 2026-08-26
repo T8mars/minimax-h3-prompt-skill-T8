@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-imastudio-ai-2092457346526241208-browser-2092457346526241208-video-1",
+  "slug": "material-typography-world-pass-through",
+  "title": "材质字构穿行｜同一成年人物跨九类物质语义空间",
+  "source_title": "暗黑时装字构空间｜九材质文字环绕人物",
+  "summary": "让同一明确成年人物穿过由烟、铬、植物、电流、阴影、纸张与丝带构成的语义空间；每种材质只承担一个短词和一个物理行为，最终汇入单一身份结论。",
+  "status": "released",
+  "source_duration_seconds": 14.326712,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/material-typography-world-pass-through",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-imastudio-ai-2092457346526241208-browser-2092457346526241208-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-imastudio-ai-2092457346526241208-browser-2092457346526241208-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-typography-world-pass-through-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "Establish one clearly adult original subject and a fixed dark spatial axis before material typography appears. + Assign each module one short original word, one material family and one physical behavior. + Keep the subject identity and travel direction continuous while material physics change. + Compress prior modules through a bounded aperture, ribbon or paper relay rather than random cuts. + Converge all material channels into one stable terminal portrait and readable original title.",
+  "recommended_input": "黑色画廊内，一名明确成年栗发建筑师穿深灰长外套沿固定左右路径出现；她身后准确短词【FORM】由磨砂玻璃构成。；同一成年人进入由细琥珀光束构成的【LIGHT】和由悬挂象牙线绳构成的【THREAD】；脸、外套和移动方向稳定。；所有碎片沉降成原创编辑肖像；同一成年人面对镜头，旁边只显示准确标题【BUILT BY HAND】，完全停住。",
+  "required_anchors": [
+    "Establish one clearly adult original subject and a fixed dark spatial axis before material typography appears.",
+    "Assign each module one short original word, one material family and one physical behavior.",
+    "Compress prior modules through a bounded aperture, ribbon or paper relay rather than random cuts.",
+    "Converge all material channels into one stable terminal portrait and readable original title."
+  ],
+  "tags": [
+    "material",
+    "typography",
+    "world",
+    "pass",
+    "through"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T16:52:07+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one fixed cell matrix, one exact short word and a neutral unflipped baseline. Propagate local cell activation until the complete flat word is readable without misspelling. Grow registered letter depth, layers and one accent while preserving every character position. Use bounded extrusion and recoil so modules return to a stable aligned state. Compress the resolved dimensional word into one clean card and hold the exact lockup. The reusable mechanism is the ordered baseline, trigger, continuity, controlled escalation and terminal proof—not the source identities, brands, wording, locations, props, exact styling, choreography, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one fixed cell matrix, one exact short word and a neutral unflipped baseline.",
+      "purpose": "Makes the baseline measurable before the mechanism changes it.",
+      "ablation_failure": "Without the baseline, later change has no trustworthy reference state.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Propagate local cell activation until the complete flat word is readable without misspelling.",
+      "purpose": "Binds the first visible change to a specific cause rather than decoration.",
+      "ablation_failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Grow registered letter depth, layers and one accent while preserving every character position.",
+      "purpose": "Preserves identity, material or spatial continuity through the middle transition.",
+      "ablation_failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use bounded extrusion and recoil so modules return to a stable aligned state.",
+      "purpose": "Raises intensity or information while retaining the same readable grammar.",
+      "ablation_failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Compress the resolved dimensional word into one clean card and hold the exact lockup.",
+      "purpose": "Provides a terminal proof that resolves the mechanism instead of merely stopping.",
+      "ablation_failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source FLIP word, logo geometry and exact letter design",
+    "source mechanical flip cells, burgundy layers and orange accent",
+    "source ivory wall, shadows and final card treatment",
+    "source exact activation order, extrusion, camera path and timing",
+    "source creator identity, MiniMax H3 claim, platform marks and thread wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "A transit board flips to ROUTE, extrudes colored platform blocks, recoils and resolves into a station wayfinding card.",
+      "prompt_seed": "A transit board flips to ROUTE, extrudes colored platform blocks, recoils and resolves into a station wayfinding card."
+    },
+    {
+      "concept": "A ceramic tile wall assembles MAKER, grows relief and glaze accents, then settles into a workshop seal.",
+      "prompt_seed": "A ceramic tile wall assembles MAKER, grows relief and glaze accents, then settles into a workshop seal."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without the baseline, later change has no trustworthy reference state.",
+      "repair": "Establish one fixed cell matrix, one exact short word and a neutral unflipped baseline."
+    },
+    {
+      "failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "repair": "Propagate local cell activation until the complete flat word is readable without misspelling."
+    },
+    {
+      "failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "repair": "Grow registered letter depth, layers and one accent while preserving every character position."
+    },
+    {
+      "failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "repair": "Use bounded extrusion and recoil so modules return to a stable aligned state."
+    },
+    {
+      "failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "repair": "Compress the resolved dimensional word into one clean card and hold the exact lockup."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A transit board flips to ROUTE, extrudes colored platform blocks, recoils and resolves into a station wayfinding card.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A ceramic tile wall assembles MAKER, grows relief and glaze accents, then settles into a workshop seal.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

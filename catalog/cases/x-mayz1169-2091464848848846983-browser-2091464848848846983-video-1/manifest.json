@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mayz1169-2091464848848846983-browser-2091464848848846983-video-1",
+  "slug": "verify-recurring-identity-board",
+  "title": "角色板验真变体｜眼部钩子、全身转面、细节宏观与英雄卡",
+  "source_title": "哥特娃娃视线揭幕｜角色锁定与平面图形舞台",
+  "summary": "以虚构非人偶角色的眼部极近景建立身份，再通过正侧背转面、服装和道具细节、全身舞台及英雄卡重复核验；所有模块改变版式而不改变角色锚点。",
+  "status": "released",
+  "source_duration_seconds": 13.235374,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/verify-recurring-identity-board",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2091464848848846983-browser-2091464848848846983-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2091464848848846983-browser-2091464848848846983-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-recurring-identity-board-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-imastudio-ai-2086429537127297091-browser-2086429537127297091-video-1",
+  "input_format": "固定角色板 + 同一原创主体 + 至少4种不同验证职责 + 广角/近景双证明 + 最终对照",
+  "recommended_input": "以原创明确非人发条飞蛾信使的一枚青绿色六边形镜眼极近景开场；锁定镜眼、靛蓝翅缘和一个铜色触角关节。；准确展示同一非人设计的正面、左侧和背面转台视图；翅膀数量、镜眼形状、铜关节、信封和比例不变。；回到象牙卡上完整不变的飞蛾和信封；只显示准确原创名称【NIX COURIER】并停住。",
+  "required_anchors": [
+    "Establish one original fictional nonhuman doll character with at least three stable visual anchors in an extreme detail.",
+    "Pull back to a complete silhouette and repeat the same anchors inside a clear identity card.",
+    "Use detail macros and one stage transformation to test the same identity across scale and lighting.",
+    "Return to the complete unchanged character and one original name field in a stable hero card."
+  ],
+  "tags": [
+    "recurring",
+    "identity",
+    "board"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T17:03:25+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

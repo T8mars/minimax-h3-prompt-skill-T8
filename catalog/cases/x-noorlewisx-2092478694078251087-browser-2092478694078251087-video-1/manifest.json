@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-noorlewisx-2092478694078251087-browser-2092478694078251087-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "美容功效证据变体｜成年用户基线、取量、使用、触感与持瓶回扣",
+  "source_title": "晨间毛躁到顺亮｜一步喷涂三段功效演示",
+  "summary": "同一明确成年用户先展示问题基线和产品，再用可见取量、单次使用、触感与动作结果逐级证明功效；最后回到同一脸、同一产品和稳定结果，避免只靠口播。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noorlewisx-2092478694078251087-browser-2092478694078251087-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noorlewisx-2092478694078251087-browser-2092478694078251087-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "原创窗光下，一名明确成年皮革工匠与一只干燥开裂棕色工作靴、一个无标签磨砂护理瓶同时出现；脸、靴子和光线方向稳定。；不做跳切重置，她用保留的同一剂量连续三次擦过靴子左侧鞋头和侧片。；回到同一成年人持同一护理瓶站在靴子旁，处理区与未处理区同框可读；无标志、宣称和额外文字并停住。",
+  "required_anchors": [
+    "Establish one clearly adult original user, one label-free product and a visible pre-use state in the same light.",
+    "Show a measured dose leaving the same product and arriving on a visible hand or tool.",
+    "Prove the result through touch, movement and consistent lighting rather than a disconnected beauty cut.",
+    "Return the same adult, product and treated state in one stable closing frame."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T17:03:48+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

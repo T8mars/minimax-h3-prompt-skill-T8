@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ruzainameer-2092195435385630983-browser-2092195435385630983-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "23cf1609a27e80e0efc9b5477f3e8421c284972b09f6e0585f72cb2e84237af3",
+    "creative_dna_sha256": "107b47b61c3931800c57d8776481b31dcafaf0fd750b030f71444f762c43b509"
+  },
+  "content": {
+    "title": "接触触发尺度生长｜小型陪伴物入介质后长成巨体",
+    "summary": "先建立明确成年人、小型非人陪伴物和可测量环境尺度；陪伴物接触介质后，涟漪、体积和水体位移连续升级，原身份特征保留，最终由同框巨体完成尺度证明。",
+    "quick_start": {
+      "input_format": "Establish one clearly adult original person, one small nonhuman companion and measurable environment scale. + Use one visible contact with a declared medium as the sole transformation trigger. + Keep recognizable companion features and displaced medium continuously visible during growth. + Make environment reaction scale with body growth while preserving the adult's position and geography. + End with the same adult and transformed companion in one readable frame that proves final scale.",
+      "recommended_input": "黎明原创浅盐池旁，一名明确成年北非植物学家穿赭色野外外套，手里托着掌心大小的黄铜种子机器，带三片蓝色叶翼。；三片叶翼和中央黄铜核心保持可见，身体在透明水下扩大；盐粒与水从原接触点连续向外位移。；拉成广角并停住，明确成年植物学家与完整变形生物同框，掌心装置身份仍可辨，不加文字和品牌。",
+      "required_anchors": [
+        "建立一个明确的成年人原初角色、一个小型非人类伙伴和可测量的环境规模。",
+        "使用一个可见的接触点和声明的媒介作为唯一的变形触发器。",
+        "在环境反应随身体增长而变化的同时，保持成人的位置和空间关系不变。",
+        "以一个可读的帧结束，证明最终的规模，其中包含相同的成年人和变形的伴生。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先建立明确成年人、小型非人陪伴物和可测量环境尺度；陪伴物接触介质后，涟漪、体积和水体位移连续升级，原身份特征保留，最终由同框巨体完成尺度证明。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先建立明确成年人、小型非人陪伴物和可测量环境尺度；陪伴物接触介质后，涟漪、体积和水体位移连续升级，原身份特征保留，最终由同框巨体完成尺度证明。 必须满足：Establish one clearly adult original person, one small nonhuman companion and measurable environment scale. + Use one visible contact with a declared medium as the sole transformation trigger. + Keep recognizable companion features and displaced medium continuously visible during growth. + Make environment reaction scale with body growth while preserving the adult's position and geography. + End with the same adult and transformed companion in one readable frame that proves final scale.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个明确的成年人原初角色、一个小型非人类伙伴和可测量的环境规模。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用一个可见的接触点和声明的媒介作为唯一的变形触发器。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在成长过程中保持可识别的伴生特征和位移的媒介持续可见。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在环境反应随身体增长而变化的同时，保持成人的位置和空间关系不变。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以一个可读的帧结束，证明最终的规模，其中包含相同的成年人和变形的伴生。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源女性，面部，头发，服装和姿势",
+        "源小型龙，巨龙设计和精确解剖",
+        "源森林河流，苔藓，光线和水彩",
+        "源精确手势动作，生长形状，摄像机路径和时间",
+        "源创作者身份，Seedance 2.0 声明，平台标志和提示词"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年沙漠植物学家在沙中种植了一台拇指大小的种子机；它的铜叶身份长成了一座遮蔽物大小的太阳能生物体。",
+          "prompt_seed": "一位成年沙漠植物学家在沙中种植了一台拇指大小的种子机；它的铜叶身份长成了一座遮蔽物大小的太阳能生物体。"
+        },
+        {
+          "concept": "一位成年冰川研究员在融雪中放置了一台手掌大小的热力无人机；它膨胀成了一座桥梁大小的晶体飞鱼，同时保留了其红色传感器图案。",
+          "prompt_seed": "一位成年冰川研究员在融雪中放置了一台手掌大小的热力无人机；它膨胀成了一座桥梁大小的晶体飞鱼，同时保留了其红色传感器图案。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "建立一个明确的成年人原初角色、一个小型非人类伙伴和可测量的环境规模。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "使用一个可见的接触点和声明的媒介作为唯一的变形触发器。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "在成长过程中保持可识别的伴生特征和位移的媒介持续可见。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "在环境反应随身体增长而变化的同时，保持成人的位置和空间关系不变。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "以一个可读的帧结束，证明最终的规模，其中包含相同的成年人和变形的伴生。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年沙漠植物学家在沙中种植了一台拇指大小的种子机；它的铜叶身份长成了一座遮蔽物大小的太阳能生物体。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年冰川研究员在融雪中放置了一台手掌大小的热力无人机；它膨胀成了一座桥梁大小的晶体飞鱼，同时保留了其红色传感器图案。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-laviniavelle-2091812173391790374-browser-2091812173391790374-video-1",
+  "slug": "impossible-luxury-pose-detail-ladder",
+  "title": "不可能奢华姿态｜极远尺度钩子、连续推进与配饰细节阶梯",
+  "source_title": "云海漂浮奢华｜黑色时装与金色夕照对置",
+  "summary": "以不可能但静稳的成年时装姿态作为远景钩子，持续推进依次验证脸、手中动作、主配饰与鞋履细节；环境和姿态保持连续，最终以材质特写完成奢华证明。",
+  "status": "released",
+  "source_duration_seconds": 11.424218,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/impossible-luxury-pose-detail-ladder",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-laviniavelle-2091812173391790374-browser-2091812173391790374-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-laviniavelle-2091812173391790374-browser-2091812173391790374-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-impossible-luxury-pose-detail-ladder-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "Establish one clearly adult original luxury subject in an impossible but readable pose against measurable vast scale. + Use one continuous approach or coherent lens ladder to verify the same body, outfit and environment. + Allow one restrained hand action to create a small controlled accent without disturbing the pose. + Give face and one primary accessory separate readable material-proof intervals. + Finish on a lower-body or product macro that retains the same light and environment rather than cutting to an unrelated packshot.",
+  "recommended_input": "玫瑰色黎明原创镜面盐原上空极远景：一名明确成年中东腕表设计师穿炭灰长西装，像失重般坐着，持细黄铜资料夹并佩戴一枚可见原创钢表。；她只转动一次表冠；一圈微小晨光沿表圈运行，一滴悬浮盐水升起后落稳。；以炭灰靴和它悬在盐镜上方的倒影收尾，资料夹边缘仍可见；同一环境停住，不加品牌文字。",
+  "required_anchors": [
+    "Establish one clearly adult original luxury subject in an impossible but readable pose against measurable vast scale.",
+    "Use one continuous approach or coherent lens ladder to verify the same body, outfit and environment.",
+    "Give face and one primary accessory separate readable material-proof intervals.",
+    "Finish on a lower-body or product macro that retains the same light and environment rather than cutting to an unrelated packshot."
+  ],
+  "tags": [
+    "impossible",
+    "luxury",
+    "pose",
+    "detail",
+    "ladder"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T17:03:18+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

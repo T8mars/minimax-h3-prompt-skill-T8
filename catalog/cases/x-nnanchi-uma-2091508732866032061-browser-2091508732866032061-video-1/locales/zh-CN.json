@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nnanchi-uma-2091508732866032061-browser-2091508732866032061-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "a957c6e1fb0998f497dc3abb771e79369618a39abdaaacf635807e3245b3099e",
+    "creative_dna_sha256": "cb7893dd6841683c3683eda69fe1d502deb3d3ac17609598af3239a1972c50bb"
+  },
+  "content": {
+    "title": "拉面状态链变体｜原料、切配、汤锅、沥水、装碗与品尝连续证明",
+    "summary": "同一明确成年原创厨师和同一厨房中，原料经过切配、入锅、试味、煮面、沥水和装碗不可逆推进；每一步保留上一状态痕迹，最终以完整成品和成年人品尝证明闭环。",
+    "quick_start": {
+      "input_format": "一名明确成年原创操作者、固定空间、主材料组、主要容器与手部或工具锚点先建立 + 至少五个不可逆状态且每镜只执行一次清楚操作 + 上一状态的残留、形状、颜色、蒸汽或容器连续成为下一步输入 + 不得回到已消失的早期状态并保持数量合理 + 同一成品由同一成年人完成一次克制使用或品尝证明",
+      "recommended_input": "原创阳光海岸厨房内，一名明确成年女厨师穿深蓝围裙；同框建立一个空蓝碗、生荞麦面、切片蘑菇、海藻、汤底和一枚鸡蛋，各工位可读。；同一成年人只试味一次正在煨煮的汤，同时同一荞麦面在右锅变软；两口锅位置和空蓝碗保持。；她把汤倒在面上，加入保留的蘑菇、海藻和鸡蛋，再夹起一口并展示完整面碗；同一成年人、厨房和成品停住，不加品牌文字。",
+      "required_anchors": [
+        "建立一个明确的成年原创厨师，一个厨房，一个食材库存和一个空的餐具。",
+        "通过可见的工具接触和保留的食材展示每个不可逆的材料变化。",
+        "将煮熟的面条沥干并转移到之前建立的餐具中，无需重置。",
+        "添加保留的配料，并以相同的成年人展示或品尝完整的菜肴。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一明确成年原创厨师和同一厨房中，原料经过切配、入锅、试味、煮面、沥水和装碗不可逆推进；每一步保留上一状态痕迹，最终以完整成品和成年人品尝证明闭环。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一明确成年原创厨师和同一厨房中，原料经过切配、入锅、试味、煮面、沥水和装碗不可逆推进；每一步保留上一状态痕迹，最终以完整成品和成年人品尝证明闭环。 必须满足：Establish one clearly adult original cook, one kitchen, one ingredient inventory and empty serving vessel. + Show each irreversible material change through visible tool contact and retained ingredients. + Keep pot, noodles, broth, cook and serving vessel traceable through parallel cooking duties. + Drain and transfer the same cooked noodles into the previously established vessel without reset. + Add retained toppings and end with the same adult presenting or tasting the complete dish.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个明确的成年原创厨师，一个厨房，一个食材库存和一个空的餐具。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "通过可见的工具接触和保留的食材展示每个不可逆的材料变化。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "通过并行的烹饪职责保持锅、面条、汤、厨师和餐具的可追踪性。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "将煮熟的面条沥干并转移到之前建立的餐具中，无需重置。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "添加保留的配料，并以相同的成年人展示或品尝完整的菜肴。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源动漫狐耳角色，面部，头发，服装和比例",
+        "源日本厨房，拉面配料，工具和碗设计",
+        "源确切的切、倒、品尝、煮、排水和摆盘动作",
+        "源素材、拍摄角度、照明、时长和食物摆盘",
+        "源创作者身份、MiniMax H3声明、平台标识和帖子文字"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年人在海边烹饪，将生海藻、谷物和汤料变成一道完成的汤，通过可追踪的剪辑、炖煮、过滤和上桌。",
+          "prompt_seed": "一位成年人在海边烹饪，将生海藻、谷物和汤料变成一道完成的汤，通过可追踪的剪辑、炖煮、过滤和上桌。"
+        },
+        {
+          "concept": "一位成年人在实验室烘焙，将量化的燕麦面糊变成蒸包子，通过搅拌、发酵、蒸制、填充和最终的共享品尝。",
+          "prompt_seed": "一位成年人在实验室烘焙，将量化的燕麦面糊变成蒸包子，通过搅拌、发酵、蒸制、填充和最终的共享品尝。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "建立一个明确的成年原创厨师，一个厨房，一个食材库存和一个空的餐具。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "通过可见的工具接触和保留的食材展示每个不可逆的材料变化。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "通过并行的烹饪职责保持锅、面条、汤、厨师和餐具的可追踪性。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "将煮熟的面条沥干并转移到之前建立的餐具中，无需重置。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "添加保留的配料，并以相同的成年人展示或品尝完整的菜肴。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年人在海边烹饪，将生海藻、谷物和汤料变成一道完成的汤，通过可追踪的剪辑、炖煮、过滤和上桌。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年人在实验室烘焙，将量化的燕麦面糊变成蒸包子，通过搅拌、发酵、蒸制、填充和最终的共享品尝。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

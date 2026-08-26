@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-laviniavelle-2091812173391790374-browser-2091812173391790374-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "e1687d19ba72a3e152979fb1b6860512a244498bf0170628fca9f5fb1ef0e790",
+    "creative_dna_sha256": "b313312fb53e530acf4e6008fee5b250071d4108b6cadc033e1c491224cb496f"
+  },
+  "content": {
+    "title": "不可能奢华姿态｜极远尺度钩子、连续推进与配饰细节阶梯",
+    "summary": "以不可能但静稳的成年时装姿态作为远景钩子，持续推进依次验证脸、手中动作、主配饰与鞋履细节；环境和姿态保持连续，最终以材质特写完成奢华证明。",
+    "quick_start": {
+      "input_format": "Establish one clearly adult original luxury subject in an impossible but readable pose against measurable vast scale. + Use one continuous approach or coherent lens ladder to verify the same body, outfit and environment. + Allow one restrained hand action to create a small controlled accent without disturbing the pose. + Give face and one primary accessory separate readable material-proof intervals. + Finish on a lower-body or product macro that retains the same light and environment rather than cutting to an unrelated packshot.",
+      "recommended_input": "玫瑰色黎明原创镜面盐原上空极远景：一名明确成年中东腕表设计师穿炭灰长西装，像失重般坐着，持细黄铜资料夹并佩戴一枚可见原创钢表。；她只转动一次表冠；一圈微小晨光沿表圈运行，一滴悬浮盐水升起后落稳。；以炭灰靴和它悬在盐镜上方的倒影收尾，资料夹边缘仍可见；同一环境停住，不加品牌文字。",
+      "required_anchors": [
+        "建立一个清晰的成年人原版奢侈品主体，以一种不可能但可读的姿态，面对可测量的广阔规模。",
+        "使用一种连续的方法或连贯的镜头阶梯来验证同一主体、服装和环境。",
+        "为面部和一个主要配饰提供独立的可读材料证明间隔。",
+        "以低角度或产品特写结束，保持相同的光线和环境，而不是切换到不相关的包装照。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "以不可能但静稳的成年时装姿态作为远景钩子，持续推进依次验证脸、手中动作、主配饰与鞋履细节；环境和姿态保持连续，最终以材质特写完成奢华证明。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "以不可能但静稳的成年时装姿态作为远景钩子，持续推进依次验证脸、手中动作、主配饰与鞋履细节；环境和姿态保持连续，最终以材质特写完成奢华证明。 必须满足：Establish one clearly adult original luxury subject in an impossible but readable pose against measurable vast scale. + Use one continuous approach or coherent lens ladder to verify the same body, outfit and environment. + Allow one restrained hand action to create a small controlled accent without disturbing the pose. + Give face and one primary accessory separate readable material-proof intervals. + Finish on a lower-body or product macro that retains the same light and environment rather than cutting to an unrelated packshot.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个清晰的成年人原版奢侈品主体，以一种不可能但可读的姿态，面对可测量的广阔规模。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用一种连续的方法或连贯的镜头阶梯来验证同一主体、服装和环境。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "允许一个克制的手部动作，以创建一个小的受控亮点，而不会干扰姿势。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "为面部和一个主要配饰提供独立的可读材料证明间隔。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "以低角度或产品特写结束，保持相同的光线和环境，而不是切换到不相关的包装照。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源女性，面部，黑色紧身衣，太阳镜和姿势",
+        "源品牌手提包，珠宝，靴子和饮料",
+        "源云海，粉金色日落和悬浮座椅的错觉",
+        "源精确推入，溅水，细节顺序和时机",
+        "源创作者身份，Seedance 2.0 声明，平台标志和提示词"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年手表设计师漂浮在盐湖上方；连续的推拉验证了表盘、表冠、手表、手套和靴子的材料。",
+          "prompt_seed": "一位成年手表设计师漂浮在盐湖上方；连续的推拉验证了表盘、表冠、手表、手套和靴子的材料。"
+        },
+        {
+          "concept": "一位成年建筑师斜靠在垂直瀑布旁；一张蓝图的折叠、眼镜、文件夹和鞋的细节构成了一种完整的奢华体验。",
+          "prompt_seed": "一位成年建筑师斜靠在垂直瀑布旁；一张蓝图的折叠、眼镜、文件夹和鞋的细节构成了一种完整的奢华体验。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "建立一个清晰的成年人原版奢侈品主体，以一种不可能但可读的姿态，面对可测量的广阔规模。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "使用一种连续的方法或连贯的镜头阶梯来验证同一主体、服装和环境。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "允许一个克制的手部动作，以创建一个小的受控亮点，而不会干扰姿势。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "为面部和一个主要配饰提供独立的可读材料证明间隔。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "以低角度或产品特写结束，保持相同的光线和环境，而不是切换到不相关的包装照。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年手表设计师漂浮在盐湖上方；连续的推拉验证了表盘、表冠、手表、手套和靴子的材料。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年建筑师斜靠在垂直瀑布旁；一张蓝图的折叠、眼镜、文件夹和鞋的细节构成了一种完整的奢华体验。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-dthew1995-2091783920467456468-browser-2091783920467456468-video-1",
+  "slug": "hazard-gauntlet-to-scale-threat",
+  "title": "连续脱险变体｜追车、铁轨倒计时、遮挡假安全与更大威胁",
+  "source_title": "铁轨三向夹击｜鳄兽追车与列车反转",
+  "summary": "明确成年人在共享地理中同时面对尾随威胁、前方障碍和侧向倒计时；一次大遮挡制造假安全，但遮挡清除后同一威胁以更大尺度或更近位置重现。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/hazard-gauntlet-to-scale-threat",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-dthew1995-2091783920467456468-browser-2091783920467456468-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-dthew1995-2091783920467456468-browser-2091783920467456468-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-hazard-gauntlet-to-scale-threat-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-noor-ul-ain43-2087774014957850843-browser-2087774014957850843-video-1",
+  "input_format": "同一逃生方向 + 至少两种局部危险 + 可见恢复 + 临时安全载具 + 更大尺度终端威胁",
+  "recommended_input": "原创暴风山地维修路上，一名明确成年扫雪车司机坐在橙色驾驶室内，沿同一下坡轴逃离滚动黑色冰体。；成年人加速越过第一条轨道，冰体从后方逼近、电车从侧面逼近；清楚显示三段距离同时缩短，不用任意跳切。；最后一节车厢离开后，保留的冰体在车库屋顶上方以更大尺度出现并滑向停车；撞击前让驾驶室里的同一成年人可见并停住。",
+  "required_anchors": [
+    "Establish one clearly adult original subject, one pursuing threat and a readable escape axis.",
+    "Add a second physical hazard from a different direction without abandoning the shared geography.",
+    "Use one large moving occluder to create a plausible but temporary safety assumption.",
+    "Clear the occluder and reveal the retained threat at a larger or closer scale in relation to the same adult."
+  ],
+  "tags": [
+    "hazard",
+    "gauntlet",
+    "to",
+    "scale",
+    "threat"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T17:01:33+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish a flat original story world with one emblematic object that reveals the protagonist. Use a distinct background color and one object duty for each chapter. Carry one recognizable object across chapters to recruit or connect the ensemble. Compress travel and confrontation into readable silhouettes without changing the graphic grammar. Return the group and transformed object to a simple final emblem that proves resolution. The reusable mechanism is the ordered baseline, trigger, continuity, controlled escalation and terminal proof—not the source identities, brands, wording, locations, props, exact styling, choreography, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish a flat original story world with one emblematic object that reveals the protagonist.",
+      "purpose": "Makes the baseline measurable before the mechanism changes it.",
+      "ablation_failure": "Without the baseline, later change has no trustworthy reference state.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use a distinct background color and one object duty for each chapter.",
+      "purpose": "Binds the first visible change to a specific cause rather than decoration.",
+      "ablation_failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Carry one recognizable object across chapters to recruit or connect the ensemble.",
+      "purpose": "Preserves identity, material or spatial continuity through the middle transition.",
+      "ablation_failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Compress travel and confrontation into readable silhouettes without changing the graphic grammar.",
+      "purpose": "Raises intensity or information while retaining the same readable grammar.",
+      "ablation_failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return the group and transformed object to a simple final emblem that proves resolution.",
+      "purpose": "Provides a terminal proof that resolves the mechanism instead of merely stopping.",
+      "ablation_failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source Momotaro characters, childlike proportions and costumes",
+    "source peach, dumplings, animals, island, oni and treasure cart",
+    "source Japanese wording, flag and folk symbols",
+    "source exact color chapters, actions, timing and layouts",
+    "source creator identity, MiniMax H3 claim, platform marks and prompt wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "A seedpod reveals an adult botanist, carries specimen tags to three field partners, crosses a river, solves a blight and ends as a restored garden emblem.",
+      "prompt_seed": "A seedpod reveals an adult botanist, carries specimen tags to three field partners, crosses a river, solves a blight and ends as a restored garden emblem."
+    },
+    {
+      "concept": "A brass compass introduces an adult courier, recruits three specialists, crosses an ice shelf, repairs a beacon and ends as a lit route crest.",
+      "prompt_seed": "A brass compass introduces an adult courier, recruits three specialists, crosses an ice shelf, repairs a beacon and ends as a lit route crest."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without the baseline, later change has no trustworthy reference state.",
+      "repair": "Establish a flat original story world with one emblematic object that reveals the protagonist."
+    },
+    {
+      "failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "repair": "Use a distinct background color and one object duty for each chapter."
+    },
+    {
+      "failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "repair": "Carry one recognizable object across chapters to recruit or connect the ensemble."
+    },
+    {
+      "failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "repair": "Compress travel and confrontation into readable silhouettes without changing the graphic grammar."
+    },
+    {
+      "failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "repair": "Return the group and transformed object to a simple final emblem that proves resolution."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A seedpod reveals an adult botanist, carries specimen tags to three field partners, crosses a river, solves a blight and ends as a restored garden emblem.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A brass compass introduces an adult courier, recruits three specialists, crosses an ice shelf, repairs a beacon and ends as a lit route crest.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

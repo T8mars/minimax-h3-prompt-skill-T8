@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-studio-oneroom-2092220604309205341-browser-2092220604309205341-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "551d1afe6df250f2d363a4319136cbdc74b8cf3df2c9c12c54376aea5c507e48",
+    "creative_dna_sha256": "1cb5d657998960883fb12a9ef787966914da54412ad4aa58970e6c7e90dca7fb"
+  },
+  "content": {
+    "title": "字形结构运动系统｜组件组字、分栏、物理碰撞与双行锁定",
+    "summary": "用首个标题的字形组件生成分栏与运动骨架，后续短词分别承担冲击、网格、卡片与碰撞动作；限定调色和文字集合，最终所有层同时停止在双行锁定。",
+    "quick_start": {
+      "input_format": "Declare a small exact text set, one restricted palette and one primary title before animation begins. + Build the primary title from visible components and reuse one of its letterform structures as the layout carrier. + Give each secondary word one distinct readable physical action inside the inherited structure. + Compress prior cards or grids into one central collision while preserving exact spelling. + Resolve all fragments into one complete terminal lockup and stop background, decoration and foreground together.",
+      "recommended_input": "只用米白、墨黑和一种钴蓝点色；散落线段向中心旋入并组装为准确主标题【NORTH LAB】。；轨道内只引入准确短词【ORBIT】【FIELD】【SIGNAL】：ORBIT 环绕一次，FIELD 在透视网格上复制，SIGNAL 正面撞入并停住。；碎片清场后把准确【LAB】置于准确【NORTH】上方，中间一条钴蓝横线；背景、刻度与前景同时停住1.2秒。",
+      "required_anchors": [
+        "在动画开始前，声明一组小而精确的文本、一个受限的调色板和一个主要标题。",
+        "从可见组件构建主要标题，并重用其中一个字母结构作为布局载体。",
+        "将之前的卡片或网格压缩成一个中心碰撞点，同时保留拼写完全不变。",
+        "将所有碎片整合成一个完整的终端锁定，并同时停止背景、装饰和前景。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用首个标题的字形组件生成分栏与运动骨架，后续短词分别承担冲击、网格、卡片与碰撞动作；限定调色和文字集合，最终所有层同时停止在双行锁定。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用首个标题的字形组件生成分栏与运动骨架，后续短词分别承担冲击、网格、卡片与碰撞动作；限定调色和文字集合，最终所有层同时停止在双行锁定。 必须满足：Declare a small exact text set, one restricted palette and one primary title before animation begins. + Build the primary title from visible components and reuse one of its letterform structures as the layout carrier. + Give each secondary word one distinct readable physical action inside the inherited structure. + Compress prior cards or grids into one central collision while preserving exact spelling. + Resolve all fragments into one complete terminal lockup and stop background, decoration and foreground together.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在动画开始前，声明一组小而精确的文本、一个受限的调色板和一个主要标题。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "从可见组件构建主要标题，并重用其中一个字母结构作为布局载体。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "为每个次要单词赋予一个独特的、可读的身体动作，保持在继承的结构内。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "将之前的卡片或网格压缩成一个中心碰撞点，同时保留拼写完全不变。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将所有碎片整合成一个完整的终端锁定，并同时停止背景、装饰和前景。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "保留源MiniMax H3、ONEROOM和AI STUDIO的措辞和确切的九个字符串。",
+        "原色橙黑灰调和几何字体",
+        "源自H的列、条形码带、网格、卡片和冲击波",
+        "精确九帧时序、构图和相机模拟",
+        "创作者身份、DomoAI标志、MiniMax H3声明和提示词"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个科学标题使用精确的词语ORBIT、FIELD、SIGNAL和NORTH；O变成轨道框架，所有层锁定到NORTH / LAB。",
+          "prompt_seed": "一个科学标题使用精确的词语ORBIT、FIELD、SIGNAL和NORTH；O变成轨道框架，所有层锁定到NORTH / LAB。"
+        },
+        {
+          "concept": "一个工艺电影开头使用FOLD、CUT、PRESS和BIND；F变成折叠面板系统，以PAPER / WORKS结束。",
+          "prompt_seed": "一个工艺电影开头使用FOLD、CUT、PRESS和BIND；F变成折叠面板系统，以PAPER / WORKS结束。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "在动画开始前，声明一组小而精确的文本、一个受限的调色板和一个主要标题。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "从可见组件构建主要标题，并重用其中一个字母结构作为布局载体。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "为每个次要单词赋予一个独特的、可读的身体动作，保持在继承的结构内。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "将之前的卡片或网格压缩成一个中心碰撞点，同时保留拼写完全不变。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "将所有碎片整合成一个完整的终端锁定，并同时停止背景、装饰和前景。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个科学标题使用精确的词语ORBIT、FIELD、SIGNAL和NORTH；O变成轨道框架，所有层锁定到NORTH / LAB。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个工艺电影开头使用FOLD、CUT、PRESS和BIND；F变成折叠面板系统，以PAPER / WORKS结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

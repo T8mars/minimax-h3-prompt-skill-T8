@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-nnanchi-uma-2091508732866032061-browser-2091508732866032061-video-1",
+  "slug": "irreversible-cooking-state-chain-serving-proof",
+  "title": "拉面状态链变体｜原料、切配、汤锅、沥水、装碗与品尝连续证明",
+  "source_title": "拉面直线制作｜角色连续手作与成品收束",
+  "summary": "同一明确成年原创厨师和同一厨房中，原料经过切配、入锅、试味、煮面、沥水和装碗不可逆推进；每一步保留上一状态痕迹，最终以完整成品和成年人品尝证明闭环。",
+  "status": "released",
+  "source_duration_seconds": 15.872,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/irreversible-cooking-state-chain-serving-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nnanchi-uma-2091508732866032061-browser-2091508732866032061-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nnanchi-uma-2091508732866032061-browser-2091508732866032061-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "x-elsasofia-ai-2091483398972080172-browser-2091483398972080172-video-1",
+  "input_format": "一名明确成年原创操作者、固定空间、主材料组、主要容器与手部或工具锚点先建立 + 至少五个不可逆状态且每镜只执行一次清楚操作 + 上一状态的残留、形状、颜色、蒸汽或容器连续成为下一步输入 + 不得回到已消失的早期状态并保持数量合理 + 同一成品由同一成年人完成一次克制使用或品尝证明",
+  "recommended_input": "原创阳光海岸厨房内，一名明确成年女厨师穿深蓝围裙；同框建立一个空蓝碗、生荞麦面、切片蘑菇、海藻、汤底和一枚鸡蛋，各工位可读。；同一成年人只试味一次正在煨煮的汤，同时同一荞麦面在右锅变软；两口锅位置和空蓝碗保持。；她把汤倒在面上，加入保留的蘑菇、海藻和鸡蛋，再夹起一口并展示完整面碗；同一成年人、厨房和成品停住，不加品牌文字。",
+  "required_anchors": [
+    "Establish one clearly adult original cook, one kitchen, one ingredient inventory and empty serving vessel.",
+    "Show each irreversible material change through visible tool contact and retained ingredients.",
+    "Drain and transfer the same cooked noodles into the previously established vessel without reset.",
+    "Add retained toppings and end with the same adult presenting or tasting the complete dish."
+  ],
+  "tags": [
+    "irreversible",
+    "cooking",
+    "state",
+    "chain",
+    "serving",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T17:03:56+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

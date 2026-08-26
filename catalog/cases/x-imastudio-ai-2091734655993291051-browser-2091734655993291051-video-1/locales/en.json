@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-imastudio-ai-2091734655993291051-browser-2091734655993291051-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "f82fcf3c3c4805c196cf13233be14cfc440fb9ff8f580a4465612452ce21b6fb",
+    "creative_dna_sha256": "4fdd799ff9ef1fa7ad29f105efb396a2892c9258f3eece954b8c548b0776e7a0"
+  },
+  "content": {
+    "title": "Identity-Locked Fashion Carousel | Style Rotation, Silence, Hero Return",
+    "summary": "Establish one clearly adult original fashion subject with at least three stable identity anchors. Rotate distinct style modules while changing only declared wardrobe, accessory, palette and typography variables. Bind every module to subject action, camera movement and foreground motion while preserving identity. Insert one authored low-density pause after the maximum-intensity phase. Return prior modules as a compressed recall and finish on the same adult in one stable hero frame.",
+    "quick_start": {
+      "input_format": "Establish one clearly adult original fashion subject with at least three stable identity anchors. + Rotate distinct style modules while changing only declared wardrobe, accessory, palette and typography variables. + Bind every module to subject action, camera movement and foreground motion while preserving identity. + Insert one authored low-density pause after the maximum-intensity phase. + Return prior modules as a compressed recall and finish on the same adult in one stable hero frame.",
+      "recommended_input": "Lock one clearly adult silver-haired streetwear designer in a cobalt studio with stable face, bob haircut and tall proportions; an oversized translucent buckle wipes across the lens and reveals her direct gaze. Use a three-panel identity check, then a dark ultraviolet module where short original words orbit behind her; keep the same face, hair and body ratios. Fly through a collage of prior original material swatches and settle on the same adult in a refined cobalt hero look; show only the exact final words 'MAKE IT YOURS' and hold.",
+      "required_anchors": [
+        "Establish one clearly adult original fashion subject with at least three stable identity anchors.",
+        "Rotate distinct style modules while changing only declared wardrobe, accessory, palette and typography variables.",
+        "Insert one authored low-density pause after the maximum-intensity phase.",
+        "Return prior modules as a compressed recall and finish on the same adult in one stable hero frame."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Establish one clearly adult original fashion subject with at least three stable identity anchors. Rotate distinct style modules while changing only declared wardrobe, accessory, palette and typography variables. Bind every module to subject action, camera movement and foreground motion while preserving identity. Insert one authored low-density pause after the maximum-intensity phase. Return prior modules as a compressed recall and finish on the same adult in one stable hero frame.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Establish one clearly adult original fashion subject with at least three stable identity anchors. Rotate distinct style modules while changing only declared wardrobe, accessory, palette and typography variables. Bind every module to subject action, camera movement and foreground motion while preserving identity. Insert one authored low-density pause after the maximum-intensity phase. Return prior modules as a compressed recall and finish on the same adult in one stable hero frame. The reusable mechanism is the ordered baseline, trigger, continuity, controlled escalation and terminal proof—not the source identities, brands, wording, locations, props, exact styling, choreography, camera path, creator identity or timing.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one clearly adult original fashion subject with at least three stable identity anchors.",
+          "purpose": "Makes the baseline measurable before the mechanism changes it.",
+          "ablation_failure": "Without the baseline, later change has no trustworthy reference state.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Rotate distinct style modules while changing only declared wardrobe, accessory, palette and typography variables.",
+          "purpose": "Binds the first visible change to a specific cause rather than decoration.",
+          "ablation_failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Bind every module to subject action, camera movement and foreground motion while preserving identity.",
+          "purpose": "Preserves identity, material or spatial continuity through the middle transition.",
+          "ablation_failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Insert one authored low-density pause after the maximum-intensity phase.",
+          "purpose": "Raises intensity or information while retaining the same readable grammar.",
+          "ablation_failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Return prior modules as a compressed recall and finish on the same adult in one stable hero frame.",
+          "purpose": "Provides a terminal proof that resolves the mechanism instead of merely stopping.",
+          "ablation_failure": "Without terminal proof, the promised result or reversal remains unverified.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source woman, face, hair, body proportions and all fashion looks",
+        "source Harajuku, Y2K, cyber-kawaii and punk accessories and sets",
+        "source KAWAII, Japanese wording, SOLVERA identity and all typography",
+        "source exact split screens, wipes, collage, timing and camera paths",
+        "source creator identity, platform marks, MiniMax H3 wording and prompt text"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult museum curator crosses five exhibition-design eras, pauses in a blank conservation room, then returns inside a catalog-cover hero frame.",
+          "prompt_seed": "An adult museum curator crosses five exhibition-design eras, pauses in a blank conservation room, then returns inside a catalog-cover hero frame."
+        },
+        {
+          "concept": "An adult electronic musician moves through five instrument-material worlds, reaches silence in an empty booth, then closes in one original album lockup.",
+          "prompt_seed": "An adult electronic musician moves through five instrument-material worlds, reaches silence in an empty booth, then closes in one original album lockup."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without the baseline, later change has no trustworthy reference state.",
+          "repair": "Establish one clearly adult original fashion subject with at least three stable identity anchors."
+        },
+        {
+          "failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+          "repair": "Rotate distinct style modules while changing only declared wardrobe, accessory, palette and typography variables."
+        },
+        {
+          "failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+          "repair": "Bind every module to subject action, camera movement and foreground motion while preserving identity."
+        },
+        {
+          "failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+          "repair": "Insert one authored low-density pause after the maximum-intensity phase."
+        },
+        {
+          "failure": "Without terminal proof, the promised result or reversal remains unverified.",
+          "repair": "Return prior modules as a compressed recall and finish on the same adult in one stable hero frame."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult museum curator crosses five exhibition-design eras, pauses in a blank conservation room, then returns inside a catalog-cover hero frame.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult electronic musician moves through five instrument-material worlds, reaches silence in an empty booth, then closes in one original album lockup.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

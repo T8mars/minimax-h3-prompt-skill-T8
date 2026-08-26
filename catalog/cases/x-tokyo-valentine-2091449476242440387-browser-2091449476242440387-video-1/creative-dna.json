@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one clearly adult original subject, three identity anchors and one continuous world axis. Bind each decisive action to exactly one short original semantic word that appears only after the action begins. Make each word occupy, divide, reflect or redirect the physical environment rather than float as a subtitle. Escalate typography scale and spatial depth while preserving identity, travel direction and readable action. Return to the same adult face or full-body anchor and resolve the word sequence into one terminal identity proof. The reusable mechanism is the ordered baseline, trigger, continuity, controlled escalation and terminal proof—not the source identities, brands, wording, locations, props, exact styling, choreography, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one clearly adult original subject, three identity anchors and one continuous world axis.",
+      "purpose": "Makes the baseline measurable before the mechanism changes it.",
+      "ablation_failure": "Without the baseline, later change has no trustworthy reference state.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Bind each decisive action to exactly one short original semantic word that appears only after the action begins.",
+      "purpose": "Binds the first visible change to a specific cause rather than decoration.",
+      "ablation_failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Make each word occupy, divide, reflect or redirect the physical environment rather than float as a subtitle.",
+      "purpose": "Preserves identity, material or spatial continuity through the middle transition.",
+      "ablation_failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Escalate typography scale and spatial depth while preserving identity, travel direction and readable action.",
+      "purpose": "Raises intensity or information while retaining the same readable grammar.",
+      "ablation_failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return to the same adult face or full-body anchor and resolve the word sequence into one terminal identity proof.",
+      "purpose": "Provides a terminal proof that resolves the mechanism instead of merely stopping.",
+      "ablation_failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source anime woman, face, hair, clothing and bright weapon",
+    "source Tokyo streets, cars, roofs and city architecture",
+    "source Japanese characters, English words, fonts and brush designs",
+    "source exact action choreography, camera paths, transitions and timing",
+    "source creator identity, MiniMax H3 claim, platform marks and prompt wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult cave cartographer's steps generate DEPTH, ECHO, TURN and HOME as stone structures along one cavern route.",
+      "prompt_seed": "An adult cave cartographer's steps generate DEPTH, ECHO, TURN and HOME as stone structures along one cavern route."
+    },
+    {
+      "concept": "An adult stage carpenter's actions create CUT, JOIN, LIFT and HOLD as wooden scenic architecture, ending on a stable portrait.",
+      "prompt_seed": "An adult stage carpenter's actions create CUT, JOIN, LIFT and HOLD as wooden scenic architecture, ending on a stable portrait."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without the baseline, later change has no trustworthy reference state.",
+      "repair": "Establish one clearly adult original subject, three identity anchors and one continuous world axis."
+    },
+    {
+      "failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "repair": "Bind each decisive action to exactly one short original semantic word that appears only after the action begins."
+    },
+    {
+      "failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "repair": "Make each word occupy, divide, reflect or redirect the physical environment rather than float as a subtitle."
+    },
+    {
+      "failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "repair": "Escalate typography scale and spatial depth while preserving identity, travel direction and readable action."
+    },
+    {
+      "failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "repair": "Return to the same adult face or full-body anchor and resolve the word sequence into one terminal identity proof."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult cave cartographer's steps generate DEPTH, ECHO, TURN and HOME as stone structures along one cavern route.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult stage carpenter's actions create CUT, JOIN, LIFT and HOLD as wooden scenic architecture, ending on a stable portrait.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one clearly adult original luxury subject in an impossible but readable pose against measurable vast scale. Use one continuous approach or coherent lens ladder to verify the same body, outfit and environment. Allow one restrained hand action to create a small controlled accent without disturbing the pose. Give face and one primary accessory separate readable material-proof intervals. Finish on a lower-body or product macro that retains the same light and environment rather than cutting to an unrelated packshot. The reusable mechanism is the ordered baseline, trigger, continuity, controlled escalation and terminal proof—not the source identities, brands, wording, locations, props, exact styling, choreography, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one clearly adult original luxury subject in an impossible but readable pose against measurable vast scale.",
+      "purpose": "Makes the baseline measurable before the mechanism changes it.",
+      "ablation_failure": "Without the baseline, later change has no trustworthy reference state.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Use one continuous approach or coherent lens ladder to verify the same body, outfit and environment.",
+      "purpose": "Binds the first visible change to a specific cause rather than decoration.",
+      "ablation_failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Allow one restrained hand action to create a small controlled accent without disturbing the pose.",
+      "purpose": "Preserves identity, material or spatial continuity through the middle transition.",
+      "ablation_failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Give face and one primary accessory separate readable material-proof intervals.",
+      "purpose": "Raises intensity or information while retaining the same readable grammar.",
+      "ablation_failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Finish on a lower-body or product macro that retains the same light and environment rather than cutting to an unrelated packshot.",
+      "purpose": "Provides a terminal proof that resolves the mechanism instead of merely stopping.",
+      "ablation_failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source woman, face, black bodysuit, sunglasses and pose",
+    "source branded handbag, jewelry, boots and drink",
+    "source cloud sea, pink-gold sunset and floating-seat illusion",
+    "source exact push-in, splash, detail order and timing",
+    "source creator identity, Seedance 2.0 claim, platform marks and prompt wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult watch designer sits weightlessly above a salt flat; a continuous push verifies face, crown adjustment, watch, glove and boot materials.",
+      "prompt_seed": "An adult watch designer sits weightlessly above a salt flat; a continuous push verifies face, crown adjustment, watch, glove and boot materials."
+    },
+    {
+      "concept": "An adult architect reclines beside a vertical waterfall; one blueprint fold, glasses, folio and shoe details close a single unbroken luxury approach.",
+      "prompt_seed": "An adult architect reclines beside a vertical waterfall; one blueprint fold, glasses, folio and shoe details close a single unbroken luxury approach."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without the baseline, later change has no trustworthy reference state.",
+      "repair": "Establish one clearly adult original luxury subject in an impossible but readable pose against measurable vast scale."
+    },
+    {
+      "failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "repair": "Use one continuous approach or coherent lens ladder to verify the same body, outfit and environment."
+    },
+    {
+      "failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "repair": "Allow one restrained hand action to create a small controlled accent without disturbing the pose."
+    },
+    {
+      "failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "repair": "Give face and one primary accessory separate readable material-proof intervals."
+    },
+    {
+      "failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "repair": "Finish on a lower-body or product macro that retains the same light and environment rather than cutting to an unrelated packshot."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult watch designer sits weightlessly above a salt flat; a continuous push verifies face, crown adjustment, watch, glove and boot materials.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult architect reclines beside a vertical waterfall; one blueprint fold, glasses, folio and shoe details close a single unbroken luxury approach.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

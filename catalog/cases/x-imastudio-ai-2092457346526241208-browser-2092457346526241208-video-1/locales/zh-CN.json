@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-imastudio-ai-2092457346526241208-browser-2092457346526241208-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "dcd6f90f7ac9082d3a644f752cef565dd9d46f25d7c08d0315b3e959e72120eb",
+    "creative_dna_sha256": "92e7b29416f1a4559aae16c90ed1be5518a904c691d6aa8bbedca1d4e825f92d"
+  },
+  "content": {
+    "title": "材质字构穿行｜同一成年人物跨九类物质语义空间",
+    "summary": "让同一明确成年人物穿过由烟、铬、植物、电流、阴影、纸张与丝带构成的语义空间；每种材质只承担一个短词和一个物理行为，最终汇入单一身份结论。",
+    "quick_start": {
+      "input_format": "Establish one clearly adult original subject and a fixed dark spatial axis before material typography appears. + Assign each module one short original word, one material family and one physical behavior. + Keep the subject identity and travel direction continuous while material physics change. + Compress prior modules through a bounded aperture, ribbon or paper relay rather than random cuts. + Converge all material channels into one stable terminal portrait and readable original title.",
+      "recommended_input": "黑色画廊内，一名明确成年栗发建筑师穿深灰长外套沿固定左右路径出现；她身后准确短词【FORM】由磨砂玻璃构成。；同一成年人进入由细琥珀光束构成的【LIGHT】和由悬挂象牙线绳构成的【THREAD】；脸、外套和移动方向稳定。；所有碎片沉降成原创编辑肖像；同一成年人面对镜头，旁边只显示准确标题【BUILT BY HAND】，完全停住。",
+      "required_anchors": [
+        "在材料排版出现之前，建立一个明确的成年原始主体和一个固定黑暗的空间轴。",
+        "为每个模块分配一个短的原始单词、一个材料家族和一种物理行为。",
+        "通过有限的孔径、带子或纸带中继压缩先前的模块，而不是随机剪辑。",
+        "将所有材料通道汇聚到一个稳定的终端肖像和可读的原始标题。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让同一明确成年人物穿过由烟、铬、植物、电流、阴影、纸张与丝带构成的语义空间；每种材质只承担一个短词和一个物理行为，最终汇入单一身份结论。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让同一明确成年人物穿过由烟、铬、植物、电流、阴影、纸张与丝带构成的语义空间；每种材质只承担一个短词和一个物理行为，最终汇入单一身份结论。 必须满足：Establish one clearly adult original subject and a fixed dark spatial axis before material typography appears. + Assign each module one short original word, one material family and one physical behavior. + Keep the subject identity and travel direction continuous while material physics change. + Compress prior modules through a bounded aperture, ribbon or paper relay rather than random cuts. + Converge all material channels into one stable terminal portrait and readable original title.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在材料排版出现之前，建立一个明确的成年原创主体和一个固定黑暗的空间轴。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "为每个模块分配一个短的原始单词、一个材料家族和一种物理行为。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "保持主体身份和旅行方向连续，同时改变材料的物理状态。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "通过有限的孔径、带子或纸带中继压缩先前的模块，而不是随机剪辑。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将所有材料通道汇聚到一个稳定的终端肖像和可读的原始标题。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源时尚女性，面部，黑色风格和姿势",
+        "烟雾、霓虹、铬、植物、电力、阴影、纸张和丝带设计",
+        "源文字、标志、品牌文案和字体",
+        "源精确隧道、光圈、眼睛、过渡、时序和摄像机运动",
+        "源创作者身份、MiniMax H3声明、平台标志和提示词"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年人建筑师在GLASS、CLAY、STEEL和LIGHT房间中行走，这些房间的单词像建筑材料一样起作用，最终以一个原创工作室标题结束。",
+          "prompt_seed": "一位成年人建筑师在GLASS、CLAY、STEEL和LIGHT房间中行走，这些房间的单词像建筑材料一样起作用，最终以一个原创工作室标题结束。"
+        },
+        {
+          "concept": "一位成年人舞者穿过WATER、DUST、THREAD和MIRROR舞台，每个单词变成一个物理障碍，最终在一个单一的海报肖像中结束。",
+          "prompt_seed": "一位成年人舞者穿过WATER、DUST、THREAD和MIRROR舞台，每个单词变成一个物理障碍，最终在一个单一的海报肖像中结束。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "在材料排版出现之前，建立一个明确的成年原创主体和一个固定黑暗的空间轴。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "为每个模块分配一个短的原始单词、一个材料家族和一种物理行为。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "保持主体身份和旅行方向连续，同时改变材料的物理状态。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "通过有限的孔径、带子或纸带中继压缩先前的模块，而不是随机剪辑。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "将所有材料通道汇聚到一个稳定的终端肖像和可读的原始标题。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年人建筑师在GLASS、CLAY、STEEL和LIGHT房间中行走，这些房间的单词像建筑材料一样起作用，最终以一个原创工作室标题结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年人舞者穿过WATER、DUST、THREAD和MIRROR舞台，每个单词变成一个物理障碍，最终在一个单一的海报肖像中结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

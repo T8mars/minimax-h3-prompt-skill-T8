@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-akemiwork-2092242385141219589-browser-2092242385141219589-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "2f185e598c1c979d9128d045e0d1d178eca1fd6b445cc18d7c1ad770aa926256",
+    "creative_dna_sha256": "248d71ecb33789f24d10d16cfc53c654b9e5c65449bbc49a2946e35dfd4bad5f"
+  },
+  "content": {
+    "title": "墨烟试装升级｜日常基线、遮挡换装与黑白合流",
+    "summary": "先以日常全身造型建立一名明确成年人物，再让同一条可追踪流体载体反复遮挡并揭示受控造型变化；服装密度从休闲逐级升至礼服，中段用面部近景重新核验身份，结尾让两种载体分支合流为一套清楚的双色英雄造型。",
+    "quick_start": {
+      "input_format": "Establish one clearly adult original subject, a readable everyday full-body baseline and one continuously traceable transformation carrier before the first style change. + Use each carrier crossing as the visible cause of exactly one declared styling change while preserving face, age, body proportions, pose axis and studio geography. + Escalate styling in ordered density levels from practical clothing to tailored and sculptural looks without changing every visual channel at once. + Insert one bounded portrait checkpoint that re-verifies stable identity anchors before the terminal full-body phase. + Split the carrier into two visibly distinct branches, then recombine them into one stable two-part hero design and hold the completed result.",
+      "recommended_input": "象牙色无影棚内，一名明确成年栗发展览设计师穿沙色工具连体服正面站立；椭圆脸、齐肩卷发与修长比例稳定，一条宽钴蓝织物带从画面左侧进入，并始终作为唯一换装载体。；同一织物带只增加一条铜色边缘，并在人物后方扩成清楚空间层；依次揭示原创钴蓝雕塑晚装与铜色点缀礼服，只提升轮廓体积，不改变成年身份和影棚轴线。；载体分成钴蓝与铜色两支，两支都必须围绕同一成年人连续可追踪；它们在中心合流并形成一套原创非对称钴蓝铜色英雄套装。织物带清场，完整全身结果停留一秒，不出现标志和文字。",
+      "required_anchors": [
+        "在第一次风格转变之前建立一个清晰的成人原创主体、一个可读的日常全身基线和一个持续可追溯的转型载体。",
+        "使用每个载体交叉作为确切一个声明的造型变化的可见原因，同时保留面部、年龄、身体比例、姿势轴和工作室空间关系。",
+        "插入一个有界肖像检查点，在终端全身阶段之前重新验证稳定的身份锚点。",
+        "将载体分成两个明显不同的分支，然后将它们重新组合成一个稳定的两部分英雄设计并保存完成的结果。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先以日常全身造型建立一名明确成年人物，再让同一条可追踪流体载体反复遮挡并揭示受控造型变化；服装密度从休闲逐级升至礼服，中段用面部近景重新核验身份，结尾让两种载体分支合流为一套清楚的双色英雄造型。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先以日常全身造型建立一名明确成年人物，再让同一条可追踪流体载体反复遮挡并揭示受控造型变化；服装密度从休闲逐级升至礼服，中段用面部近景重新核验身份，结尾让两种载体分支合流为一套清楚的双色英雄造型。 必须满足：Establish one clearly adult original subject, a readable everyday full-body baseline and one continuously traceable transformation carrier before the first style change. + Use each carrier crossing as the visible cause of exactly one declared styling change while preserving face, age, body proportions, pose axis and studio geography. + Escalate styling in ordered density levels from practical clothing to tailored and sculptural looks without changing every visual channel at once. + Insert one bounded portrait checkpoint that re-verifies stable identity anchors before the terminal full-body phase. + Split the carrier into two visibly distinct branches, then recombine them into one stable two-part hero design and hold the completed result.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在第一次风格转变之前建立一个清晰的成人原创主体、一个可读的日常全身基线和一个持续可追溯的转型载体。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "使用每个载体交叉作为确切一个声明的造型变化的可见原因，同时保留面部、年龄、身体比例、姿势轴和工作室空间关系。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "以有序的密度级别升级造型，从实用服装到定制和雕塑外观，而无需立即改变每个视觉通道。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "插入一个有界肖像检查点，在终端全身阶段之前重新验证稳定的身份锚点。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将载体分成两个明显不同的分支，然后将它们重新组合成一个稳定的两部分英雄设计并保存完成的结果。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源成年女性的脸部、身体、头发变化、姿势以及所有休闲或高级定制服装",
+        "源黑色和灰色墨烟外观、羽毛形状、水池、翅膀轮廓和精确的变形过渡",
+        "源白色工作室，岩石，透明块，灯光图案和黑白银调色板",
+        "源T恤字母、CapCut AI水印及其他任何可见标记或文字",
+        "源精确的拍摄顺序、面部特写、肩部转体、服装设计、时间、创作者身份和引用的提示上下文"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年展览设计师从实用安装制服开始；流动的纸带触发工作坊、开幕夜和雕塑晚宴的造型，一个肖像检查点验证同一个人脸，钴和铜带合并成一件最终的不对称策展人套装。",
+          "prompt_seed": "一位成年展览设计师从实用安装制服开始；流动的纸带触发工作坊、开幕夜和雕塑晚宴的造型，一个肖像检查点验证同一个人脸，钴和铜带合并成一件最终的不对称策展人套装。"
+        },
+        {
+          "concept": "一位成年舞台音乐家从排练服开始；两条连续的光带逐步揭示正式的表演服装，暂停进行身份检查肖像，然后合并成一件分色的音乐会英雄造型，不复制任何源服装或墨水效果。",
+          "prompt_seed": "一位成年舞台音乐家从排练服开始；两条连续的光带逐步揭示正式的表演服装，暂停进行身份检查肖像，然后合并成一件分色的音乐会英雄造型，不复制任何源服装或墨水效果。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "在第一次风格转变之前建立一个清晰的成人原创主体、一个可读的日常全身基线和一个持续可追溯的转型载体。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "使用每个载体交叉作为确切一个声明的造型变化的可见原因，同时保留面部、年龄、身体比例、姿势轴和工作室空间关系。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "以有序的密度级别升级造型，从实用服装到定制和雕塑外观，而无需立即改变每个视觉通道。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "插入一个有界肖像检查点，在终端全身阶段之前重新验证稳定的身份锚点。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "将载体分成两个明显不同的分支，然后将它们重新组合成一个稳定的两部分英雄设计并保存完成的结果。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年展览设计师从实用安装制服开始；流动的纸带触发工作坊、开幕夜和雕塑晚宴的造型，一个肖像检查点验证同一个人脸，钴和铜带合并成一件最终的不对称策展人套装。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年舞台音乐家从排练服开始；两条连续的光带逐步揭示正式的表演服装，暂停进行身份检查肖像，然后合并成一件分色的音乐会英雄造型，不复制任何源服装或墨水效果。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

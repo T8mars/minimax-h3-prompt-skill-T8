@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Declare a small exact text set, one restricted palette and one primary title before animation begins. Build the primary title from visible components and reuse one of its letterform structures as the layout carrier. Give each secondary word one distinct readable physical action inside the inherited structure. Compress prior cards or grids into one central collision while preserving exact spelling. Resolve all fragments into one complete terminal lockup and stop background, decoration and foreground together. The reusable mechanism is the ordered baseline, trigger, continuity, controlled escalation and terminal proof—not the source identities, brands, wording, locations, props, exact styling, choreography, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Declare a small exact text set, one restricted palette and one primary title before animation begins.",
+      "purpose": "Makes the baseline measurable before the mechanism changes it.",
+      "ablation_failure": "Without the baseline, later change has no trustworthy reference state.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Build the primary title from visible components and reuse one of its letterform structures as the layout carrier.",
+      "purpose": "Binds the first visible change to a specific cause rather than decoration.",
+      "ablation_failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Give each secondary word one distinct readable physical action inside the inherited structure.",
+      "purpose": "Preserves identity, material or spatial continuity through the middle transition.",
+      "ablation_failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Compress prior cards or grids into one central collision while preserving exact spelling.",
+      "purpose": "Raises intensity or information while retaining the same readable grammar.",
+      "ablation_failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Resolve all fragments into one complete terminal lockup and stop background, decoration and foreground together.",
+      "purpose": "Provides a terminal proof that resolves the mechanism instead of merely stopping.",
+      "ablation_failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source MiniMax H3, ONEROOM and AI STUDIO wording and exact nine strings",
+    "source orange-black-off-white palette and geometric fonts",
+    "source H-derived columns, barcode bands, grids, cards and shockwaves",
+    "source exact nine-shot timing, compositions and camera simulation",
+    "source creator identity, DomoAI marks, MiniMax H3 claim and prompt wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "A science title uses the exact words ORBIT, FIELD, SIGNAL and NORTH; the O becomes an orbital frame and all layers lock into NORTH / LAB.",
+      "prompt_seed": "A science title uses the exact words ORBIT, FIELD, SIGNAL and NORTH; the O becomes an orbital frame and all layers lock into NORTH / LAB."
+    },
+    {
+      "concept": "A craft-film opener uses FOLD, CUT, PRESS and BIND; the F becomes a folding panel system and ends on PAPER / WORKS.",
+      "prompt_seed": "A craft-film opener uses FOLD, CUT, PRESS and BIND; the F becomes a folding panel system and ends on PAPER / WORKS."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without the baseline, later change has no trustworthy reference state.",
+      "repair": "Declare a small exact text set, one restricted palette and one primary title before animation begins."
+    },
+    {
+      "failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "repair": "Build the primary title from visible components and reuse one of its letterform structures as the layout carrier."
+    },
+    {
+      "failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "repair": "Give each secondary word one distinct readable physical action inside the inherited structure."
+    },
+    {
+      "failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "repair": "Compress prior cards or grids into one central collision while preserving exact spelling."
+    },
+    {
+      "failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "repair": "Resolve all fragments into one complete terminal lockup and stop background, decoration and foreground together."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A science title uses the exact words ORBIT, FIELD, SIGNAL and NORTH; the O becomes an orbital frame and all layers lock into NORTH / LAB.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A craft-film opener uses FOLD, CUT, PRESS and BIND; the F becomes a folding panel system and ends on PAPER / WORKS.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-hbcoop-2091616500440572217-browser-2091616500440572217-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "18b4f1d981574200b9842b61487b0906c29d47859c3748e89a6cf2bda9f205da",
+    "creative_dna_sha256": "0f7a847ea9f61d9d2644fc151edfefc7930167d1e4224a8f6f2f133c714fbc83"
+  },
+  "content": {
+    "title": "翻片矩阵字标组装｜像素激活、平面组字、厚度长出与卡片收束",
+    "summary": "固定翻片矩阵从局部激活扩散成完整单词，平面字形随后长出厚度、分层和少量点色，所有组件保持注册并回弹落稳，最后缩入简洁品牌卡。",
+    "quick_start": {
+      "input_format": "Establish one fixed cell matrix, one exact short word and a neutral unflipped baseline. + Propagate local cell activation until the complete flat word is readable without misspelling. + Grow registered letter depth, layers and one accent while preserving every character position. + Use bounded extrusion and recoil so modules return to a stable aligned state. + Compress the resolved dimensional word into one clean card and hold the exact lockup.",
+      "recommended_input": "展示原创小方形陶瓷砖墙，全部哑光象牙色并固定在正交网格；预先声明准确单词【MAKER】，但尚不显示字母。；所有瓷砖注册不变，字母砖长成浅陶瓷浮雕；只在字母 A 上方增加一个小琥珀方块。；拉远，完整浮雕字变成锈色背景上的小象牙工坊卡；准确【MAKER】与一个琥珀方块停住，不加其他文字。",
+      "required_anchors": [
+        "建立一个固定单元矩阵，一个确切的短词和一个中立的未翻转基线。",
+        "将局部单元激活传播，直到整个平铺的单词可读且无拼写错误。",
+        "使用有界推挤和回缩，使模块返回到稳定对齐的状态。",
+        "将解决的尺寸单词压缩成一张干净的卡片，并保持精确的锁定。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定翻片矩阵从局部激活扩散成完整单词，平面字形随后长出厚度、分层和少量点色，所有组件保持注册并回弹落稳，最后缩入简洁品牌卡。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定翻片矩阵从局部激活扩散成完整单词，平面字形随后长出厚度、分层和少量点色，所有组件保持注册并回弹落稳，最后缩入简洁品牌卡。 必须满足：Establish one fixed cell matrix, one exact short word and a neutral unflipped baseline. + Propagate local cell activation until the complete flat word is readable without misspelling. + Grow registered letter depth, layers and one accent while preserving every character position. + Use bounded extrusion and recoil so modules return to a stable aligned state. + Compress the resolved dimensional word into one clean card and hold the exact lockup.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个固定单元矩阵，一个确切的短词和一个中立的未翻转基线。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "将局部单元激活传播，直到整个平铺的单词可读且无拼写错误。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "增加注册字母的深度、层数和一个重音符号，同时保持每个字符的位置不变。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "使用有界推挤和回缩，使模块返回到稳定对齐的状态。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将解决的尺寸单词压缩成一张干净的卡片，并保持精确的锁定。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源 FLIP 单词、标志几何形状和确切的字母设计",
+        "源机械翻转单元格、紫红色层和橙色点缀",
+        "源象牙色墙、阴影和最终卡片处理",
+        "源确切的激活顺序、挤出、相机路径和时间",
+        "源创作者身份、MiniMax H3声明、平台标志和线程文字"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个交通指示牌翻转到 ROUTE，然后伸出彩色平台块，收回并最终化为一个车站导向卡。",
+          "prompt_seed": "一个交通指示牌翻转到 ROUTE，然后伸出彩色平台块，收回并最终化为一个车站导向卡。"
+        },
+        {
+          "concept": "一面陶瓷瓷砖墙组装成 MAKER，然后长出浮雕和釉面装饰，最后固定成一个工作室的封条。",
+          "prompt_seed": "一面陶瓷瓷砖墙组装成 MAKER，然后长出浮雕和釉面装饰，最后固定成一个工作室的封条。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "建立一个固定单元矩阵，一个确切的短词和一个中立的未翻转基线。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "将局部单元激活传播，直到整个平铺的单词可读且无拼写错误。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "增加注册字母的深度、层数和一个重音符号，同时保持每个字符的位置不变。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "使用有界推挤和回缩，使模块返回到稳定对齐的状态。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "将解决的尺寸单词压缩成一张干净的卡片，并保持精确的锁定。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个交通指示牌翻转到 ROUTE，然后伸出彩色平台块，收回并最终化为一个车站导向卡。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一面陶瓷瓷砖墙组装成 MAKER，然后长出浮雕和釉面装饰，最后固定成一个工作室的封条。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

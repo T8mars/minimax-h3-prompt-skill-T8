@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one original fictional nonhuman doll character with at least three stable visual anchors in an extreme detail. Pull back to a complete silhouette and repeat the same anchors inside a clear identity card. Provide front, side and back verification without redesigning proportions, hair, outfit or companion prop. Use detail macros and one stage transformation to test the same identity across scale and lighting. Return to the complete unchanged character and one original name field in a stable hero card. The reusable mechanism is the ordered baseline, trigger, continuity, controlled escalation and terminal proof—not the source identities, brands, wording, locations, props, exact styling, choreography, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one original fictional nonhuman doll character with at least three stable visual anchors in an extreme detail.",
+      "purpose": "Makes the baseline measurable before the mechanism changes it.",
+      "ablation_failure": "Without the baseline, later change has no trustworthy reference state.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Pull back to a complete silhouette and repeat the same anchors inside a clear identity card.",
+      "purpose": "Binds the first visible change to a specific cause rather than decoration.",
+      "ablation_failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Provide front, side and back verification without redesigning proportions, hair, outfit or companion prop.",
+      "purpose": "Preserves identity, material or spatial continuity through the middle transition.",
+      "ablation_failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Use detail macros and one stage transformation to test the same identity across scale and lighting.",
+      "purpose": "Raises intensity or information while retaining the same readable grammar.",
+      "ablation_failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Return to the complete unchanged character and one original name field in a stable hero card.",
+      "purpose": "Provides a terminal proof that resolves the mechanism instead of merely stopping.",
+      "ablation_failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source doll character, childlike proportions, face, hair and outfit",
+    "source cat companion, bows, striped stockings and gothic motifs",
+    "source MIDNIGHT DOLL and other lettering",
+    "source exact model sheet, macros, stage, camera path and timing",
+    "source creator identity, MiniMax H3 claim, platform marks and thread wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "A nonhuman clockwork moth courier is verified by lens eye, wing silhouette, front-side-back board, gear details and a final courier card.",
+      "prompt_seed": "A nonhuman clockwork moth courier is verified by lens eye, wing silhouette, front-side-back board, gear details and a final courier card."
+    },
+    {
+      "concept": "A coral exploration robot is verified by visor macro, full chassis, turntable board, tool details and a final mission identity plate.",
+      "prompt_seed": "A coral exploration robot is verified by visor macro, full chassis, turntable board, tool details and a final mission identity plate."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without the baseline, later change has no trustworthy reference state.",
+      "repair": "Establish one original fictional nonhuman doll character with at least three stable visual anchors in an extreme detail."
+    },
+    {
+      "failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "repair": "Pull back to a complete silhouette and repeat the same anchors inside a clear identity card."
+    },
+    {
+      "failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "repair": "Provide front, side and back verification without redesigning proportions, hair, outfit or companion prop."
+    },
+    {
+      "failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "repair": "Use detail macros and one stage transformation to test the same identity across scale and lighting."
+    },
+    {
+      "failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "repair": "Return to the complete unchanged character and one original name field in a stable hero card."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A nonhuman clockwork moth courier is verified by lens eye, wing silhouette, front-side-back board, gear details and a final courier card.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A coral exploration robot is verified by visor macro, full chassis, turntable board, tool details and a final mission identity plate.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

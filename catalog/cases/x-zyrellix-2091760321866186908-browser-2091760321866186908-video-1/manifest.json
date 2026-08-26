@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-zyrellix-2091760321866186908-browser-2091760321866186908-video-1",
+  "slug": "product-macro-environment-extraction-sphere-return",
+  "title": "产品环境提取回环｜材质微距、原料世界、喷雾门户与透明球归返",
+  "source_title": "地中海香氛英雄镜｜微距、喷雾与水晶球收束",
+  "summary": "从产品材质极近景建立身份，沿核心原料进入环境世界，再由功能动作打开空间门户；环境被压缩进透明体并回到同一产品英雄镜，形成产品—世界—产品闭环。",
+  "status": "released",
+  "source_duration_seconds": 14.953651,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/product-macro-environment-extraction-sphere-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-zyrellix-2091760321866186908-browser-2091760321866186908-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-zyrellix-2091760321866186908-browser-2091760321866186908-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-product-macro-environment-extraction-sphere-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "Establish one original product through macro material anchors before showing the complete object. + Connect at least two visible ingredient or design details to one coherent environment identity. + Use one functional product action as the sole optical transition into the environment. + Expand the environment, then enclose its recognizable geometry inside one transparent carrier. + Return the carrier and environment to the same complete product with stable shape, label-free identity and hero proof.",
+  "recommended_input": "从原创无标签方形矿物台灯的一处斜面内部开始：微距透明石英、拉丝黄铜环和淡蓝内透镜；拉远揭示石台上的完整台灯。；一只明确成年人的手只转动一次同一台灯开关；淡蓝透镜产生一次受控折射光，成为进入峡谷的光学通道，不替换产品。；透明球收缩进台灯淡蓝透镜；回到石台上同一完整方形台灯，石英斜面、黄铜环和比例稳定，不加品牌文字并停住。",
+  "required_anchors": [
+    "Establish one original product through macro material anchors before showing the complete object.",
+    "Connect at least two visible ingredient or design details to one coherent environment identity.",
+    "Expand the environment, then enclose its recognizable geometry inside one transparent carrier.",
+    "Return the carrier and environment to the same complete product with stable shape, label-free identity and hero proof."
+  ],
+  "tags": [
+    "product",
+    "macro",
+    "environment",
+    "extraction",
+    "sphere",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T17:01:40+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

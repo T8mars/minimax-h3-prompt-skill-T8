@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ruzainameer-2092195435385630983-browser-2092195435385630983-video-1",
+  "slug": "contact-triggered-toy-scale-creature-reveal",
+  "title": "接触触发尺度生长｜小型陪伴物入介质后长成巨体",
+  "source_title": "玩具入水巨龙化｜触水触发尺度升级",
+  "summary": "先建立明确成年人、小型非人陪伴物和可测量环境尺度；陪伴物接触介质后，涟漪、体积和水体位移连续升级，原身份特征保留，最终由同框巨体完成尺度证明。",
+  "status": "released",
+  "source_duration_seconds": 15.136,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/contact-triggered-toy-scale-creature-reveal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ruzainameer-2092195435385630983-browser-2092195435385630983-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ruzainameer-2092195435385630983-browser-2092195435385630983-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-contact-triggered-toy-scale-creature-reveal-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "Establish one clearly adult original person, one small nonhuman companion and measurable environment scale. + Use one visible contact with a declared medium as the sole transformation trigger. + Keep recognizable companion features and displaced medium continuously visible during growth. + Make environment reaction scale with body growth while preserving the adult's position and geography. + End with the same adult and transformed companion in one readable frame that proves final scale.",
+  "recommended_input": "黎明原创浅盐池旁，一名明确成年北非植物学家穿赭色野外外套，手里托着掌心大小的黄铜种子机器，带三片蓝色叶翼。；三片叶翼和中央黄铜核心保持可见，身体在透明水下扩大；盐粒与水从原接触点连续向外位移。；拉成广角并停住，明确成年植物学家与完整变形生物同框，掌心装置身份仍可辨，不加文字和品牌。",
+  "required_anchors": [
+    "Establish one clearly adult original person, one small nonhuman companion and measurable environment scale.",
+    "Use one visible contact with a declared medium as the sole transformation trigger.",
+    "Make environment reaction scale with body growth while preserving the adult's position and geography.",
+    "End with the same adult and transformed companion in one readable frame that proves final scale."
+  ],
+  "tags": [
+    "contact",
+    "triggered",
+    "toy",
+    "scale",
+    "creature",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.952,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-26T17:00:54+08:00",
+  "updated_at": "2026-08-26T18:46:15+08:00"
+}

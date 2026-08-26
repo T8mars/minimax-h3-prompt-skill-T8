@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tanabe-fragm-2092118482129420785-browser-2092118482129420785-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "c4a6d8b00fb528acc1f769ca7859a0fb69504f5e8f01832905485809ac4bf1f8",
+    "creative_dna_sha256": "6c7f88df3a8725c6718fb276f1393440f26612199f444ca1ec16dc6ab5fb4b8e"
+  },
+  "content": {
+    "title": "扁平民间故事变体｜章节换色、物件接力与结局回收",
+    "summary": "同一扁平图形语法用背景换色切分五个故事职责，关键物件跨章接力人物、伙伴、对抗和归返，最后用成组角色与终局符号完成压缩叙事。",
+    "quick_start": {
+      "input_format": "统一平面手工材质舞台、发现者、封闭发光容器、成年主角与天体目标先建立 + 主角从同一材质容器展开 + 原有层面折叠为社区章节且至少两组见证者送来象征物 + 累积物只触发一次受控全画面材质爆展并露出夜层 + 主角沿可见材质路径升向既定目标 + 终局大全景同时保留目标、地面见证者与至少两个前序空间锚点",
+      "recommended_input": "扁平赭色场中，原创黄铜罗盘像小书一样打开，揭示身穿青绿色外套的明确成年极地信使；保持简洁剪纸形状。；背景依次切青绿、紫罗兰和绿色；同一路线片逐一招募成年无线电工程师、成年雪橇机械师和成年医护，每段只加入一名伙伴。；信标转为暖金色；回到赭色，四名成年人站在打开的罗盘旁，罗盘显示完整发光路线徽记；不加文字并停住。",
+      "required_anchors": [
+        "建立一个平面的原始故事世界，其中有一个象征性物体揭示主角。",
+        "每章使用一种不同的背景颜色和一个物体职责。",
+        "将旅行和对抗压缩成可读的剪影，而不改变图形语法。",
+        "将角色和变形的对象返回到一个简单的最终徽章，证明了解决方案。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一扁平图形语法用背景换色切分五个故事职责，关键物件跨章接力人物、伙伴、对抗和归返，最后用成组角色与终局符号完成压缩叙事。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一扁平图形语法用背景换色切分五个故事职责，关键物件跨章接力人物、伙伴、对抗和归返，最后用成组角色与终局符号完成压缩叙事。 必须满足：Establish a flat original story world with one emblematic object that reveals the protagonist. + Use a distinct background color and one object duty for each chapter. + Carry one recognizable object across chapters to recruit or connect the ensemble. + Compress travel and confrontation into readable silhouettes without changing the graphic grammar. + Return the group and transformed object to a simple final emblem that proves resolution.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个平面的原始故事世界，其中有一个象征性物体揭示主角。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每章使用一种不同的背景颜色和一个物体职责。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在各章节中携带一个 recognizable 对象，以招募或连接角色。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "将旅行和对抗压缩成可读的剪影，而不改变图形语法。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "将角色和变形的对象返回到一个简单的最终徽章，证明了解决方案。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "使用 source Momotaro 角色、童真比例和服装",
+        "源桃子、饺子、动物、岛屿、鬼怪和宝藏车",
+        "源日语措辞、旗帜和民间符号",
+        "源精确颜色章节、动作、时序和布局",
+        "源创作者身份、MiniMax H3声明、平台标志和提示词"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个种子荚揭示了一位成年植物学家，带着标本标签到三位田野伙伴那里，渡过了一条河，解决了病害，并以修复的花园徽章结束。",
+          "prompt_seed": "一个种子荚揭示了一位成年植物学家，带着标本标签到三位田野伙伴那里，渡过了一条河，解决了病害，并以修复的花园徽章结束。"
+        },
+        {
+          "concept": "一个铜质指南针介绍了一位成年快递员，招募了三位专家，穿越了一片冰架，修复了一个信标，并以一个点亮的路线顶峰结束。",
+          "prompt_seed": "一个铜质指南针介绍了一位成年快递员，招募了三位专家，穿越了一片冰架，修复了一个信标，并以一个点亮的路线顶峰结束。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "建立一个平面的原始故事世界，其中有一个象征性物体揭示主角。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "每章使用一种不同的背景颜色和一个物体职责。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "在各章节中携带一个 recognizable 对象，以招募或连接角色。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "将旅行和对抗压缩成可读的剪影，而不改变图形语法。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "将角色和变形的对象返回到一个简单的最终徽章，证明了解决方案。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个种子荚揭示了一位成年植物学家，带着标本标签到三位田野伙伴那里，渡过了一条河，解决了病害，并以修复的花园徽章结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个铜质指南针介绍了一位成年快递员，招募了三位专家，穿越了一片冰架，修复了一个信标，并以一个点亮的路线顶峰结束。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

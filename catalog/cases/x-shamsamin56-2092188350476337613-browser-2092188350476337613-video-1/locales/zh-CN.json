@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-shamsamin56-2092188350476337613-browser-2092188350476337613-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "c00748b4231c07e224a0b4b839658f7fb666eb0603aa64f34089b85bd282bc3b",
+    "creative_dna_sha256": "7633ccafc943d84db2b034f27130cbac6a4377b2759c2b7f2f817456464b063c"
+  },
+  "content": {
+    "title": "可见光标选择器变体｜固定网页控件同步切换产品与世界",
+    "summary": "固定网页结构和可见光标保持不变，每次只选择一个新选项，并同步替换英雄产品、配色、纹理与少量说明；最后回到完整选择界面证明所有状态属于同一系统。",
+    "quick_start": {
+      "input_format": "固定选择菜单 + 固定数据区 + 固定主视窗 + 至少4个原创对象 + 每次可见选择 + 同步字段更新 + 一个定义动作",
+      "recommended_input": "展示原创模块化台灯桌面配置器；固定左侧选项栏、中央台灯视口、右侧材质说明和一个可见光标。；依次悬停【PAPER】与【METAL】；灯罩材质、环境色和一种背景图案同步改变，灯座、摄影机和界面网格固定。；拉回完整四选项界面，保持【STONE】明确选中，同一台灯以最终状态停住。",
+      "required_anchors": [
+        "建立一个持久的界面，一个可见的指针和一个默认的主体状态。",
+        "允许一次选择一个指针，并一起更改所有声明的状态通道。",
+        "改变调色板、材质、环境点缀和简洁标签，不添加不受控制的频道。",
+        "返回完整界面并保持一个清晰选择的最终状态。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定网页结构和可见光标保持不变，每次只选择一个新选项，并同步替换英雄产品、配色、纹理与少量说明；最后回到完整选择界面证明所有状态属于同一系统。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定网页结构和可见光标保持不变，每次只选择一个新选项，并同步替换英雄产品、配色、纹理与少量说明；最后回到完整选择界面证明所有状态属于同一系统。 必须满足：Establish one persistent interface, one visible pointer and one default subject state. + Allow one pointer selection at a time and change all declared state channels together. + Keep layout, control positions and subject identity registered through every swap. + Vary palette, material, environment accent and concise label without adding uncontrolled channels. + Return to the complete interface and hold one clearly selected final state.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个持久的界面，一个可见的指针和一个默认的主体状态。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "允许一次选择一个指针，并一起更改所有声明的状态通道。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "通过每次交换保持布局、控制位置和主体身份的注册。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "改变调色板、材质、环境点缀和简洁标签，不添加不受控制的频道。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "返回完整界面并保持一个清晰选择的最终状态。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "来源冰淇淋锥、口味、配料和食物摆拍。",
+        "来源网站布局、缩略图位置和光标路径。",
+        "源风味名称、标志、产品标签和字体",
+        "源精确调色板、过渡效果、相机裁剪和时间设置",
+        "源创作者身份、MiniMax H3声明、平台标志和线程提示词"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个灯泡配置器在切换玻璃、纸张、金属和石头灯罩时，页面网格和指针保持固定。",
+          "prompt_seed": "一个灯泡配置器在切换玻璃、纸张、金属和石头灯罩时，页面网格和指针保持固定。"
+        },
+        {
+          "concept": "一个植物种子选择器在悬停时会改变温室中的英雄植物、土壤、光线和标签，而控制则保持注册。",
+          "prompt_seed": "一个植物种子选择器在悬停时会改变温室中的英雄植物、土壤、光线和标签，而控制则保持注册。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "建立一个持久的界面，一个可见的指针和一个默认的主体状态。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "允许一次选择一个指针，并一起更改所有声明的状态通道。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "通过每次交换保持布局、控制位置和主体身份的注册。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "改变调色板、材质、环境点缀和简洁标签，不添加不受控制的频道。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "返回完整界面并保持一个清晰选择的最终状态。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个灯泡配置器在切换玻璃、纸张、金属和石头灯罩时，页面网格和指针保持固定。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个植物种子选择器在悬停时会改变温室中的英雄植物、土壤、光线和标签，而控制则保持注册。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

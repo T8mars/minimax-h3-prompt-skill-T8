@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-noorlewisx-2092478694078251087-browser-2092478694078251087-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "ef5dffa139028eaaa019d329625c6006ab17456ff2dfdfbcc3c43303dde946aa",
+    "creative_dna_sha256": "e438575c85f28d9efcf523e516208a7a7289d496508024a5f517ca8d09a0bc08"
+  },
+  "content": {
+    "title": "美容功效证据变体｜成年用户基线、取量、使用、触感与持瓶回扣",
+    "summary": "同一明确成年用户先展示问题基线和产品，再用可见取量、单次使用、触感与动作结果逐级证明功效；最后回到同一脸、同一产品和稳定结果，避免只靠口播。",
+    "quick_start": {
+      "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+      "recommended_input": "原创窗光下，一名明确成年皮革工匠与一只干燥开裂棕色工作靴、一个无标签磨砂护理瓶同时出现；脸、靴子和光线方向稳定。；不做跳切重置，她用保留的同一剂量连续三次擦过靴子左侧鞋头和侧片。；回到同一成年人持同一护理瓶站在靴子旁，处理区与未处理区同框可读；无标志、宣称和额外文字并停住。",
+      "required_anchors": [
+        "建立一个清晰的成年原始用户，一个无标签的产品和一个可见的预使用状态，所有元素在相同的光线条件下展示。",
+        "展示一个经过测量的剂量从同一产品中离开，并到达一个可见的手或工具。",
+        "通过触摸、移动和一致的光线来证明结果，而不是孤立的美丽剪辑。",
+        "在稳定的结尾画面中，返回相同的成年人、产品和治疗状态。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一明确成年用户先展示问题基线和产品，再用可见取量、单次使用、触感与动作结果逐级证明功效；最后回到同一脸、同一产品和稳定结果，避免只靠口播。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一明确成年用户先展示问题基线和产品，再用可见取量、单次使用、触感与动作结果逐级证明功效；最后回到同一脸、同一产品和稳定结果，避免只靠口播。 必须满足：Establish one clearly adult original user, one label-free product and a visible pre-use state in the same light. + Show a measured dose leaving the same product and arriving on a visible hand or tool. + Apply the retained dose through one continuous readable action to one declared area. + Prove the result through touch, movement and consistent lighting rather than a disconnected beauty cut. + Return the same adult, product and treated state in one stable closing frame.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "建立一个清晰的成年原始用户，一个无标签的产品和一个可见的预使用状态，所有元素在相同的光线条件下展示。",
+          "purpose": "在机制改变之前，确保基线是可测量的。",
+          "ablation_failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "展示一个经过测量的剂量从同一产品中离开，并到达一个可见的手或工具。",
+          "purpose": "将第一个可见的变化绑定到特定原因，而不是装饰。",
+          "ablation_failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "通过一个连续可读的动作将保留的剂量应用到一个声明的区域。",
+          "purpose": "通过中间过渡保持身份、材质或空间连续性。",
+          "ablation_failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "通过触摸、移动和一致的光线来证明结果，而不是孤立的美丽剪辑。",
+          "purpose": "在保持相同可读语法的同时，提高强度或信息量。",
+          "ablation_failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在稳定的结尾画面中，返回相同的成年人、产品和治疗状态。",
+          "purpose": "提供一个终端证明，以解决机制，而不仅仅是停止。",
+          "ablation_failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "源女性、面部、头发、服装和手势",
+        "源化妆品瓶、泵、液体和品牌展示",
+        "源家庭室内，窗户，植物和精确的自然光",
+        "源屏幕声明，精确应用，摄像机裁剪和时间",
+        "源创作者身份，Seedance 2.0 声明，平台标志和提示词"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年人的皮革工人演示从干燥靴子基线到测量布料剂量、应用、弯曲测试和产品退货的无标签调理剂。",
+          "prompt_seed": "一位成年人的皮革工人演示从干燥靴子基线到测量布料剂量、应用、弯曲测试和产品退货的无标签调理剂。"
+        },
+        {
+          "concept": "一位成年人的陶瓷师演示从昏暗瓷砖基线到测量刷子负载、应用、光角测试和瓶盖的釉料增强剂。",
+          "prompt_seed": "一位成年人的陶瓷师演示从昏暗瓷砖基线到测量刷子负载、应用、光角测试和瓶盖的釉料增强剂。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有基线，后续的改变就没有可信的参考状态。",
+          "repair": "建立一个清晰的成年原始用户，一个无标签的产品和一个可见的预使用状态，所有元素在相同的光线条件下展示。"
+        },
+        {
+          "failure": "没有可见的触发器，过渡看起来像是任意编辑。",
+          "repair": "展示一个经过测量的剂量从同一产品中离开，并到达一个可见的手或工具。"
+        },
+        {
+          "failure": "没有连续性，序列会变成无关的剪辑或身份漂移。",
+          "repair": "通过一个连续可读的动作将保留的剂量应用到一个声明的区域。"
+        },
+        {
+          "failure": "如果没有受控的升级，中间部分要么停滞不前，要么变成噪音。",
+          "repair": "通过触摸、移动和一致的光线来证明结果，而不是孤立的美丽剪辑。"
+        },
+        {
+          "failure": "没有终端证明，承诺的结果或逆转仍然是未验证的。",
+          "repair": "在稳定的结尾画面中，返回相同的成年人、产品和治疗状态。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年人的皮革工人演示从干燥靴子基线到测量布料剂量、应用、弯曲测试和产品退货的无标签调理剂。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年人的陶瓷师演示从昏暗瓷砖基线到测量刷子负载、应用、光角测试和瓶盖的釉料增强剂。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

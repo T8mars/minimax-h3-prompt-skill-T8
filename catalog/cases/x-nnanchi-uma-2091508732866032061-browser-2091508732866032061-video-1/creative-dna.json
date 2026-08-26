@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Establish one clearly adult original cook, one kitchen, one ingredient inventory and empty serving vessel. Show each irreversible material change through visible tool contact and retained ingredients. Keep pot, noodles, broth, cook and serving vessel traceable through parallel cooking duties. Drain and transfer the same cooked noodles into the previously established vessel without reset. Add retained toppings and end with the same adult presenting or tasting the complete dish. The reusable mechanism is the ordered baseline, trigger, continuity, controlled escalation and terminal proof—not the source identities, brands, wording, locations, props, exact styling, choreography, camera path, creator identity or timing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish one clearly adult original cook, one kitchen, one ingredient inventory and empty serving vessel.",
+      "purpose": "Makes the baseline measurable before the mechanism changes it.",
+      "ablation_failure": "Without the baseline, later change has no trustworthy reference state.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Show each irreversible material change through visible tool contact and retained ingredients.",
+      "purpose": "Binds the first visible change to a specific cause rather than decoration.",
+      "ablation_failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Keep pot, noodles, broth, cook and serving vessel traceable through parallel cooking duties.",
+      "purpose": "Preserves identity, material or spatial continuity through the middle transition.",
+      "ablation_failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Drain and transfer the same cooked noodles into the previously established vessel without reset.",
+      "purpose": "Raises intensity or information while retaining the same readable grammar.",
+      "ablation_failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "Add retained toppings and end with the same adult presenting or tasting the complete dish.",
+      "purpose": "Provides a terminal proof that resolves the mechanism instead of merely stopping.",
+      "ablation_failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "source anime fox-eared character, face, hair, outfit and proportions",
+    "source Japanese kitchen, ramen ingredients, tools and bowl design",
+    "source exact chopping, pouring, tasting, boiling, draining and plating actions",
+    "source composition, camera angles, lighting, timing and food styling",
+    "source creator identity, MiniMax H3 claim, platform marks and post wording"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult coastal cook turns raw seaweed, grain and broth into a finished soup through traceable cutting, simmering, straining and serving.",
+      "prompt_seed": "An adult coastal cook turns raw seaweed, grain and broth into a finished soup through traceable cutting, simmering, straining and serving."
+    },
+    {
+      "concept": "An adult laboratory baker turns measured oat batter into steamed buns through mixing, proofing, steaming, filling and final shared tasting.",
+      "prompt_seed": "An adult laboratory baker turns measured oat batter into steamed buns through mixing, proofing, steaming, filling and final shared tasting."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without the baseline, later change has no trustworthy reference state.",
+      "repair": "Establish one clearly adult original cook, one kitchen, one ingredient inventory and empty serving vessel."
+    },
+    {
+      "failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+      "repair": "Show each irreversible material change through visible tool contact and retained ingredients."
+    },
+    {
+      "failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+      "repair": "Keep pot, noodles, broth, cook and serving vessel traceable through parallel cooking duties."
+    },
+    {
+      "failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+      "repair": "Drain and transfer the same cooked noodles into the previously established vessel without reset."
+    },
+    {
+      "failure": "Without terminal proof, the promised result or reversal remains unverified.",
+      "repair": "Add retained toppings and end with the same adult presenting or tasting the complete dish."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult coastal cook turns raw seaweed, grain and broth into a finished soup through traceable cutting, simmering, straining and serving.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult laboratory baker turns measured oat batter into steamed buns through mixing, proofing, steaming, filling and final shared tasting.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

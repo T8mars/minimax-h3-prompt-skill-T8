@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-noorlewisx-2092478694078251087-browser-2092478694078251087-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "ef5dffa139028eaaa019d329625c6006ab17456ff2dfdfbcc3c43303dde946aa",
+    "creative_dna_sha256": "e438575c85f28d9efcf523e516208a7a7289d496508024a5f517ca8d09a0bc08"
+  },
+  "content": {
+    "title": "Product Proof Variant | Baseline, Dose, Use, Motion Result, Return",
+    "summary": "Establish one clearly adult original user, one label-free product and a visible pre-use state in the same light. Show a measured dose leaving the same product and arriving on a visible hand or tool. Apply the retained dose through one continuous readable action to one declared area. Prove the result through touch, movement and consistent lighting rather than a disconnected beauty cut. Return the same adult, product and treated state in one stable closing frame.",
+    "quick_start": {
+      "input_format": "Establish one clearly adult original user, one label-free product and a visible pre-use state in the same light. + Show a measured dose leaving the same product and arriving on a visible hand or tool. + Apply the retained dose through one continuous readable action to one declared area. + Prove the result through touch, movement and consistent lighting rather than a disconnected beauty cut. + Return the same adult, product and treated state in one stable closing frame.",
+      "recommended_input": "In original window light, establish one clearly adult leather craftsperson with a dry cracked brown work boot and one label-free frosted conditioner bottle visible together; keep face, boot and light direction stable. Without a cutaway reset, she rubs the retained dose across only the boot's left toe and side panel in three continuous strokes. Return to the same adult holding the same bottle beside the boot, with treated and untreated areas readable in one frame. Hold with no logo, claims or extra text.",
+      "required_anchors": [
+        "Establish one clearly adult original user, one label-free product and a visible pre-use state in the same light.",
+        "Show a measured dose leaving the same product and arriving on a visible hand or tool.",
+        "Prove the result through touch, movement and consistent lighting rather than a disconnected beauty cut.",
+        "Return the same adult, product and treated state in one stable closing frame."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Establish one clearly adult original user, one label-free product and a visible pre-use state in the same light. Show a measured dose leaving the same product and arriving on a visible hand or tool. Apply the retained dose through one continuous readable action to one declared area. Prove the result through touch, movement and consistent lighting rather than a disconnected beauty cut. Return the same adult, product and treated state in one stable closing frame.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Establish one clearly adult original user, one label-free product and a visible pre-use state in the same light. Show a measured dose leaving the same product and arriving on a visible hand or tool. Apply the retained dose through one continuous readable action to one declared area. Prove the result through touch, movement and consistent lighting rather than a disconnected beauty cut. Return the same adult, product and treated state in one stable closing frame. The reusable mechanism is the ordered baseline, trigger, continuity, controlled escalation and terminal proof—not the source identities, brands, wording, locations, props, exact styling, choreography, camera path, creator identity or timing.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one clearly adult original user, one label-free product and a visible pre-use state in the same light.",
+          "purpose": "Makes the baseline measurable before the mechanism changes it.",
+          "ablation_failure": "Without the baseline, later change has no trustworthy reference state.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Show a measured dose leaving the same product and arriving on a visible hand or tool.",
+          "purpose": "Binds the first visible change to a specific cause rather than decoration.",
+          "ablation_failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Apply the retained dose through one continuous readable action to one declared area.",
+          "purpose": "Preserves identity, material or spatial continuity through the middle transition.",
+          "ablation_failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Prove the result through touch, movement and consistent lighting rather than a disconnected beauty cut.",
+          "purpose": "Raises intensity or information while retaining the same readable grammar.",
+          "ablation_failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Return the same adult, product and treated state in one stable closing frame.",
+          "purpose": "Provides a terminal proof that resolves the mechanism instead of merely stopping.",
+          "ablation_failure": "Without terminal proof, the promised result or reversal remains unverified.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "source woman, face, hair, clothing and gestures",
+        "source cosmetic bottle, pump, liquid and brand presentation",
+        "source home interior, window, plants and exact daylight",
+        "source on-screen claims, exact application, camera crop and timing",
+        "source creator identity, Seedance 2.0 claim, platform marks and prompt wording"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult leather worker demonstrates a label-free conditioner from dry boot baseline through measured cloth dose, application, flex proof and product return.",
+          "prompt_seed": "An adult leather worker demonstrates a label-free conditioner from dry boot baseline through measured cloth dose, application, flex proof and product return."
+        },
+        {
+          "concept": "An adult ceramicist demonstrates a glaze enhancer from dull tile baseline through measured brush load, application, light-angle proof and bottle closure.",
+          "prompt_seed": "An adult ceramicist demonstrates a glaze enhancer from dull tile baseline through measured brush load, application, light-angle proof and bottle closure."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without the baseline, later change has no trustworthy reference state.",
+          "repair": "Establish one clearly adult original user, one label-free product and a visible pre-use state in the same light."
+        },
+        {
+          "failure": "Without a visible trigger, the transition reads as an arbitrary edit.",
+          "repair": "Show a measured dose leaving the same product and arriving on a visible hand or tool."
+        },
+        {
+          "failure": "Without continuity, the sequence becomes unrelated montage or identity drift.",
+          "repair": "Apply the retained dose through one continuous readable action to one declared area."
+        },
+        {
+          "failure": "Without controlled escalation, the middle either plateaus or turns into noise.",
+          "repair": "Prove the result through touch, movement and consistent lighting rather than a disconnected beauty cut."
+        },
+        {
+          "failure": "Without terminal proof, the promised result or reversal remains unverified.",
+          "repair": "Return the same adult, product and treated state in one stable closing frame."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult leather worker demonstrates a label-free conditioner from dry boot baseline through measured cloth dose, application, flex proof and product return.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult ceramicist demonstrates a glaze enhancer from dull tile baseline through measured brush load, application, light-angle proof and bottle closure.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}
