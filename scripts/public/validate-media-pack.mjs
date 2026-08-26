@@ -120,7 +120,6 @@ export function versionContractErrors({ manifest, catalogVersion, rootVersion, a
 export function caseMediaDisposition(caseManifest) {
   const status = caseManifest?.preview_status?.mp4;
   if (status === "available_in_electron_media_pack") return { status, requiresMedia: true };
-  if (status === "private_local_only_not_exported") return { status, requiresMedia: false };
   return { status: typeof status === "string" ? status : "", requiresMedia: null };
 }
 
@@ -166,7 +165,6 @@ function main() {
     return { id: entry.case_id, manifestRef, disposition: caseMediaDisposition(caseManifest) };
   }).sort((left, right) => left.id.localeCompare(right.id));
   const expectedIds = caseExpectations.filter((entry) => entry.disposition.requiresMedia === true).map((entry) => entry.id);
-  const expectedUnavailable = caseExpectations.filter((entry) => entry.disposition.requiresMedia === false);
   const unavailableEntries = Array.isArray(manifest.unavailable_cases) ? manifest.unavailable_cases : [];
   const unavailableById = new Map(unavailableEntries.map((entry) => [entry.case_id, entry]));
   const expectedCommunity = (communityIndex.skills ?? []).map((entry) => ({
@@ -184,8 +182,8 @@ function main() {
   if (manifest.unavailable_case_count !== unavailableEntries.length) failures.push(`media manifest unavailable_case_count must equal unavailable_cases.length (${unavailableEntries.length})`);
   if (manifest.community_skill_count !== communityEntries.length) failures.push(`media manifest community_skill_count must equal community_skill_files.length (${communityEntries.length})`);
   if (entries.length !== expectedIds.length) failures.push(`media manifest has ${entries.length} distributable case files; catalog requires ${expectedIds.length}`);
-  if (unavailableEntries.length !== expectedUnavailable.length) failures.push(`media manifest has ${unavailableEntries.length} unavailable cases; catalog requires ${expectedUnavailable.length}`);
-  if (entries.length + unavailableEntries.length !== caseExpectations.length) failures.push("media manifest distributable and unavailable cases must partition the full catalog");
+  if (unavailableEntries.length !== 0) failures.push("released media manifest must not contain unavailable cases");
+  if (entries.length !== caseExpectations.length) failures.push("every released catalog case must have a distributable media file");
   if (communityEntries.length !== expectedCommunity.length) failures.push(`media manifest has ${communityEntries.length} community Skill files; catalog requires ${expectedCommunity.length}`);
   if (new Set(entries.map((entry) => entry.case_id)).size !== entries.length) failures.push("media manifest contains duplicate case_id values");
   if (new Set(unavailableEntries.map((entry) => entry.case_id)).size !== unavailableEntries.length) failures.push("media manifest contains duplicate unavailable case_id values");
@@ -229,20 +227,6 @@ function main() {
     } catch (error) {
       failures.push(`${expectedRelative}: ${error.message}`);
     }
-  }
-
-  for (const expected of expectedUnavailable) {
-    const entry = unavailableById.get(expected.id);
-    if (!entry) {
-      failures.push(`${expected.id}: missing from unavailable_cases`);
-      continue;
-    }
-    if (entry.status !== "private_local_only_not_exported") failures.push(`${expected.id}: unavailable status must preserve private_local_only_not_exported`);
-    if (entry.reason !== "source_media_not_redistributable") failures.push(`${expected.id}: unavailable reason must be source_media_not_redistributable`);
-    if (entry.fallback !== "catalog_placeholder_and_source_post") failures.push(`${expected.id}: unavailable fallback must be catalog_placeholder_and_source_post`);
-    if (byId.has(expected.id)) failures.push(`${expected.id}: rights-restricted case must not also appear in files`);
-    const forbiddenPath = path.join(mediaDir, expected.id, "preview.mp4");
-    if (fs.existsSync(forbiddenPath)) failures.push(`${expected.id}: rights-restricted MP4 must not exist in release media`);
   }
 
   for (const expected of expectedCommunity) {
@@ -289,11 +273,10 @@ function main() {
   }
   for (const id of byId.keys()) {
     if (!catalogById.has(id)) failures.push(`${id}: media manifest case is not released in catalog`);
-    if (!expectedIds.includes(id)) failures.push(`${id}: media manifest includes a case whose rights status forbids release media`);
+    if (!expectedIds.includes(id)) failures.push(`${id}: media manifest includes a case not authorized by the released catalog`);
   }
   for (const id of unavailableById.keys()) {
-    if (!catalogById.has(id)) failures.push(`${id}: unavailable media case is not released in catalog`);
-    if (!expectedUnavailable.some((item) => item.id === id)) failures.push(`${id}: unavailable media case is not rights-limited in catalog`);
+    failures.push(`${id}: released catalogs may not declare unavailable media`);
   }
   for (const id of communityById.keys()) {
     if (!expectedCommunity.some((item) => item.id === id)) failures.push(`${id}: media manifest community Skill is not in the public index`);
@@ -306,7 +289,7 @@ function main() {
     process.exit(1);
   }
   const sourceSilentCount = entries.filter((entry) => entry.audio_mode === "source_silent").length;
-  console.log(`Media-pack validation passed (${entries.length} distributable cases + ${expectedUnavailable.length} rights-limited catalog fallbacks + ${communityEntries.length} community Skills; hash-bound complete video traversal and complete audio traversal where present; source-silent=${sourceSilentCount}; recoverable-frame tolerance enabled).`);
+  console.log(`Media-pack validation passed (${entries.length} distributable released cases + ${communityEntries.length} community Skills; unavailable released cases=0; hash-bound complete video traversal and complete audio traversal where present; source-silent=${sourceSilentCount}; recoverable-frame tolerance enabled).`);
 }
 
 const invokedPath = process.argv[1] ? pathToFileURL(path.resolve(process.argv[1])).href : "";

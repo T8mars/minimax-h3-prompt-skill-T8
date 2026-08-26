@@ -21,9 +21,7 @@ const caseMediaStatuses = new Map(catalogManifest.cases.map((entry) => {
 const expectedPlayableCaseCount = [...caseMediaStatuses.values()].filter((status) => status === "available_in_electron_media_pack").length;
 const stablePlayableCaseId = "x-abulu8-2085626141759709286-browser-2085626141759709286-video-1";
 const playableXItem = normalizedCatalog.cases.find((item) => item.id === stablePlayableCaseId && caseMediaStatuses.get(item.id) === "available_in_electron_media_pack");
-const fallbackXItem = sortItems(normalizedCatalog.cases.filter((item) => String(item.platform).toLocaleLowerCase() === "x" && caseMediaStatuses.get(item.id) === "private_local_only_not_exported"), { mode: "newest-added", locale: "zh-CN" })[0];
 const expectedPlayableXItemKey = itemKey(playableXItem);
-const expectedFallbackXItemKey = itemKey(fallbackXItem);
 const expectedNewestItemKey = itemKey(sortItems(normalizedItems, { mode: "newest-added", locale: "zh-CN" })[0]);
 const expectedOldestItemKey = itemKey(sortItems(normalizedItems, { mode: "oldest-added", locale: "zh-CN" })[0]);
 const expectedNewestXItemKey = itemKey(sortItems(normalizedCatalog.cases.filter((item) => String(item.platform).toLocaleLowerCase() === "x"), { mode: "newest-added", locale: "zh-CN" })[0]);
@@ -202,12 +200,11 @@ async function run() {
     assert.ok(await page.locator(".case-card").count() > 10, "stable platform filter must retain the X case set");
 
     assert.equal(await page.locator(".case-card").first().getAttribute("data-item-key"), expectedNewestXItemKey, "newest-added must remain stable inside the X filter");
-    assert.equal(await page.locator(`.case-card[data-item-key="${expectedFallbackXItemKey}"] .media-badge`).textContent(), "Original mechanism animation", "rights-limited cases must identify the generated mechanism animation instead of claiming source GIF footage");
-    await page.locator(`.case-card[data-item-key="${expectedFallbackXItemKey}"]`).click();
+    assert.equal(expectedPlayableCaseCount, expectedCaseCount, "every released case must have a packaged source video");
+    assert.equal(await page.locator(`.case-card[data-item-key="${expectedNewestXItemKey}"] .media-badge`).textContent(), "Complete source video", "newest case must expose its packaged source video");
+    await page.locator(`.case-card[data-item-key="${expectedNewestXItemKey}"]`).click();
     await page.waitForSelector("#case-dialog[open]");
-    assert.equal(await page.locator("#detail-media video").count(), 0, "rights-limited cases must not fabricate a packaged source video");
-    assert.equal(await page.locator("#detail-media img").count(), 1, "rights-limited cases must keep the catalog GIF fallback");
-    assert.match(await page.locator("#detail-media .media-fallback").textContent(), /original mechanism animation.*no frames from the creator post/iu, "detail view must explain the preview/source boundary in plain language");
+    assert.equal(await page.locator("#detail-media video").count(), 1, "newest released case must play its packaged source video");
     await page.keyboard.press("Escape");
     await page.locator("#case-dialog").waitFor({ state: "hidden" });
     await page.locator(`.case-card[data-item-key="${favoriteItemKey}"]`).click();

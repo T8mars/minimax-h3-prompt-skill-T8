@@ -1,0 +1,21 @@
+{
+  "schema_version": "t8-media-distribution-authorization/v1",
+  "policy_id": "t8-library-owner-approved-media-distribution-2026-08-26",
+  "authorized_by": "library_owner",
+  "effective_at": "2026-08-26T00:00:00+08:00",
+  "scope": {
+    "case_state": "released",
+    "review_status": "approved",
+    "media_roles": [
+      "source_video",
+      "preview_gif",
+      "poster"
+    ]
+  },
+  "permissions": {
+    "redistribute": true,
+    "model_reference": false,
+    "gif_connected_to_model": false,
+    "source_video_connected_to_model": false
+  }
+}

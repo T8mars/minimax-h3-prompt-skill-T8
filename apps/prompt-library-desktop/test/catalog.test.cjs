@@ -76,24 +76,18 @@ test("loads a released case and prefers the external media pack", (t) => {
   assert.equal(item.catalogOrder, 0);
 });
 
-test("labels a rights-safe generated mechanism preview without fabricating source media", (t) => {
+test("keeps the real GIF preview available when a media pack is not mounted", (t) => {
   const data = fixture();
   t.after(() => fs.rmSync(data.root, { recursive: true, force: true }));
   fs.rmSync(path.join(data.mediaRoot, "case-one", "preview.mp4"));
   const manifestPath = path.join(data.catalogRoot, "cases", "case-one", "manifest.json");
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-  manifest.preview_status = {
-    gif: "generated_mechanism_animation_no_source_media",
-    poster: "generated_mechanism_poster_no_source_media",
-    mp4: "private_local_only_not_exported",
-    source_visuals_used: false
-  };
   fs.writeFileSync(manifestPath, JSON.stringify(manifest));
   const catalog = loadCatalog(data);
   assert.equal(catalog.cases[0].media.hasFullVideo, false);
   assert.equal(catalog.cases[0].media.video, null);
-  assert.equal(catalog.cases[0].media.previewKind, "original_mechanism_animation");
-  assert.deepEqual(catalog.cases[0].media.previewStatus, manifest.preview_status);
+  assert.ok(catalog.cases[0].media.gif);
+  assert.deepEqual(catalog.cases[0].media.previewStatus, {});
 });
 
 test("loads both display locales and rejects stale source bindings", (t) => {

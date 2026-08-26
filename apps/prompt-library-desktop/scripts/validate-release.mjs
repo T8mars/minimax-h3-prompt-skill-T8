@@ -42,18 +42,12 @@ const communityManifestFiles = new Map(
     ? mediaManifest.community_skill_files.map((entry) => [entry.skill_id, entry])
     : []
 );
-const unavailableManifestFiles = new Map(
-  Array.isArray(mediaManifest?.unavailable_cases)
-    ? mediaManifest.unavailable_cases.map((entry) => [entry.case_id, entry])
-    : []
-);
 const caseMediaStatus = new Map(catalogIndex.cases.map((entry) => {
   const manifestPath = path.join(catalogRoot, ...String(entry.manifest_path || "").split("/"));
   const caseManifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
   return [entry.case_id, caseManifest?.preview_status?.mp4 || ""];
 }));
 const distributableCaseCount = [...caseMediaStatus.values()].filter((status) => status === "available_in_electron_media_pack").length;
-const unavailableCaseCount = [...caseMediaStatus.values()].filter((status) => status === "private_local_only_not_exported").length;
 if (mediaManifest && mediaManifest.schema_version !== "1.2.0") errors.push(`unsupported media manifest schema_version=${mediaManifest.schema_version}`);
 
 if (!catalog.cases.length) errors.push("public catalog has no released cases");
@@ -63,25 +57,14 @@ if (mediaManifest && mediaManifest.catalog_case_count !== catalog.cases.length) 
 if (mediaManifest && mediaManifest.case_count !== distributableCaseCount) {
   errors.push(`media manifest case_count=${mediaManifest.case_count}, distributable cases=${distributableCaseCount}`);
 }
-if (mediaManifest && mediaManifest.unavailable_case_count !== unavailableCaseCount) {
-  errors.push(`media manifest unavailable_case_count=${mediaManifest.unavailable_case_count}, rights-limited cases=${unavailableCaseCount}`);
-}
+if (mediaManifest && mediaManifest.unavailable_case_count !== 0) errors.push("released media manifest must not contain unavailable cases");
+if (mediaManifest && Array.isArray(mediaManifest.unavailable_cases) && mediaManifest.unavailable_cases.length !== 0) errors.push("released media manifest unavailable_cases must be empty");
 if (mediaManifest && mediaManifest.community_skill_count !== catalog.communitySkills.length) {
   errors.push(`media manifest community_skill_count=${mediaManifest.community_skill_count}, catalog community Skills=${catalog.communitySkills.length}`);
 }
 for (const item of catalog.cases) {
   const videoPath = path.join(mediaRoot, item.id, "preview.mp4");
   const status = caseMediaStatus.get(item.id);
-  if (status === "private_local_only_not_exported") {
-    const unavailableEntry = unavailableManifestFiles.get(item.id);
-    if (fs.existsSync(videoPath)) errors.push(`${item.id}: rights-restricted MP4 must not be packaged`);
-    if (manifestFiles.has(item.id)) errors.push(`${item.id}: rights-restricted case must not appear in media files`);
-    if (!unavailableEntry) errors.push(`${item.id}: missing from media unavailable_cases`);
-    if (unavailableEntry?.reason !== "source_media_not_redistributable") errors.push(`${item.id}: unavailable reason must preserve the redistribution boundary`);
-    if (item.media.hasFullVideo || item.media.video) errors.push(`${item.id}: viewer must use the catalog GIF fallback without a video binding`);
-    if (!item.media.gif) errors.push(`${item.id}: rights-restricted case must retain a catalog GIF fallback`);
-    continue;
-  }
   if (status !== "available_in_electron_media_pack") {
     errors.push(`${item.id}: unsupported preview_status.mp4=${status || "missing"}`);
     continue;
@@ -143,11 +126,7 @@ for (const item of catalog.communitySkills) {
 }
 for (const caseId of manifestFiles.keys()) {
   if (!catalog.cases.some((item) => item.id === caseId)) errors.push(`${caseId}: media manifest contains an unknown case`);
-  if (caseMediaStatus.get(caseId) !== "available_in_electron_media_pack") errors.push(`${caseId}: media manifest includes a rights-restricted case`);
-}
-for (const caseId of unavailableManifestFiles.keys()) {
-  if (!catalog.cases.some((item) => item.id === caseId)) errors.push(`${caseId}: unavailable media manifest contains an unknown case`);
-  if (caseMediaStatus.get(caseId) !== "private_local_only_not_exported") errors.push(`${caseId}: unavailable media status disagrees with the catalog`);
+  if (caseMediaStatus.get(caseId) !== "available_in_electron_media_pack") errors.push(`${caseId}: media manifest includes a case without released distribution media`);
 }
 for (const skillId of communityManifestFiles.keys()) {
   if (!catalog.communitySkills.some((item) => item.id === skillId)) errors.push(`${skillId}: media manifest contains an unknown community Skill`);
@@ -158,4 +137,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`PASS Full media pack; catalogCases=${catalog.cases.length}; distributableVideos=${distributableCaseCount}; rightsLimitedFallbacks=${unavailableCaseCount}; communitySkills=${catalog.communitySkills.length}; bytes=${totalBytes}; root=${mediaRoot}`);
+console.log(`PASS Full media pack; catalogCases=${catalog.cases.length}; distributableVideos=${distributableCaseCount}; unavailableReleasedCases=0; communitySkills=${catalog.communitySkills.length}; bytes=${totalBytes}; root=${mediaRoot}`);

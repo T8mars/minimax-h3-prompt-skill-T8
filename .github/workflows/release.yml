@@ -6,7 +6,7 @@ on:
       version:
         description: "Decimal-carry version without v (for example 1.1.7)"
         required: true
-        default: "1.2.8"
+        default: "1.3.0"
         type: string
       media_sha256:
         description: "SHA-256 of prompt-library-media-v<version>.zip already uploaded to the Draft Release"
@@ -367,7 +367,7 @@ jobs:
 
           - Windows NSIS: verified
           - macOS universal DMG + ZIP: verified, unsigned and unnotarized
-          - Staged and packaged redistributable media: hash-bound and fully traversed on both platforms; rights-limited cases use catalog fallback only
+          - All 239 released case videos: distributable, hash-bound and fully traversed on both platforms; unavailable cases: 0
           - Packaged Electron E2E: required on both platforms
           - Publish requested: ${{ inputs.publish }}
           "@ | Add-Content -LiteralPath $env:GITHUB_STEP_SUMMARY

@@ -42,7 +42,7 @@ xattr -dr com.apple.quarantine "/Applications/T8 Prompt Library.app"
 
 Git 仓库只保存轻量 GIF/Poster。完整 MP4 位于对应 GitHub Release 的 `prompt-library-media-v<version>.zip`，并在正式构建时作为 Electron `extraResources` 打入完整安装包。因此：
 
-- 明确允许公开分发的案例在安装完成后可直接播放完整视频和声音；权利受限案例显示本地 GIF/Poster 并提供原帖入口；
+- 全部正式收录案例在安装完成后都可直接播放完整视频和声音；GIF、Poster 与来源视频均可随本地包分发，但不会自动连接到模型参考输入；
 - 不需要登录 X、Reddit 或 YouTube 才能查看本地视频；
 - 有原始帖子地址的案例保留来源按钮；用户提供但未附外部地址的非官方 Skill 不会伪造链接；
 - 普通源代码 CI 只验证无完整媒体构建，不会假装包含 MP4。
@@ -77,4 +77,4 @@ npm run app:pack
 
 ---
 
-**English summary:** Download either the Windows NSIS installer or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. Full releases bundle every rights-cleared MP4; rights-limited cases keep an offline GIF/Poster and an original-post link without redistributing source media. Windows supports explicit-confirmation updates; the unsigned macOS preview updates manually from Releases.
+**English summary:** Download either the Windows NSIS installer or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. Full releases bundle every released-case MP4, GIF and Poster; source media is never connected to model reference inputs automatically. Windows supports explicit-confirmation updates; the unsigned macOS preview updates manually from Releases.

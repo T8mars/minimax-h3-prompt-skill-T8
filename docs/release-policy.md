@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.2.9`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.2.9`。
+当前版本是 `v1.3.0`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.3.0`。
 
 版本采用十进制进位：
 
@@ -18,6 +18,7 @@
 1.2.6 -> 1.2.7
 1.2.7 -> 1.2.8
 1.2.8 -> 1.2.9
+1.2.9 -> 1.3.0
 1.9.9 -> 2.0.0
 ```
 
@@ -46,15 +47,14 @@ GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 M
 
 Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHub 单资产 2 GiB 上限，独立公开目录按用途分为三个无损 ZIP：`prompt-library-catalog` 保存 JSON、Markdown 与 Poster，两个 `prompt-library-previews` 分卷保存原始 GIF 并保留 `catalog/...` 相对路径。需要完整离线原始目录时，将三个 ZIP 解压到同一父目录即可还原；分卷只解决平台文件上限，不降低 GIF 质量或减少条目。
 
-媒体包只收录案例 manifest 中 `preview_status.mp4=available_in_electron_media_pack` 的 MP4。标记为 `private_local_only_not_exported` 的案例必须进入 manifest 的 `unavailable_cases`，安装包使用仓库内 GIF/Poster 和原帖链接；若媒体暂存目录中出现这类来源 MP4，打包脚本和验证器都会失败。`files` 与 `unavailable_cases` 必须无重叠、无遗漏地覆盖全部公开案例。
+库所有者已明确授权正式收录视频随本地包与 ComfyUI 交接分发。每个 `released/approved` 案例都必须满足 `preview_status.mp4=available_in_electron_media_pack`，媒体包 `files` 必须无遗漏覆盖全部公开案例，`unavailable_cases` 必须为空。分发授权与模型参考授权严格分离：GIF、海报和来源视频均不得自动连接到模型 reference 输入。
 
 ### 正式案例预览质量门（强制）
 
-- 正式收录的案例不得使用纯文字、双帧换色或“请打开原帖”占位 GIF。缺少可分发来源视频不是降低封面质量的理由。
-- `preview_status.mp4=private_local_only_not_exported` 时，只允许使用不含任何来源画面的原创机制动画：`gif=generated_mechanism_animation_no_source_media`、`poster=generated_mechanism_poster_no_source_media`、`source_visuals_used=false`，并在 `source.json` 明确 `preview_kind=original_mechanism_animation`。
-- 原创机制动画必须真实表现案例的因果阶段、运动路径或状态变化，并满足原始 GIF 至少 640×360、24 帧、1.8 秒、120 KiB；安装包紧凑副本至少 280×150、8 帧、1.8 秒、20 KiB。仅修改元数据不能绕过门禁。
-- 界面必须把这类资产显示为“原创机制动画”，不得标成“完整来源视频”或笼统的“GIF 预览”；详情页必须说明动画不含原帖画面，并保留作者原帖入口。
-- 每批正式收录、目录合并与 Release 前都运行 `npm run validate`。校验器发现旧状态 `derived_placeholder_no_source_media`、帧数/时长/尺寸/体积不足、状态不一致或来源画面边界缺失时必须停止发布。
+- 正式收录案例必须使用与已审核来源视频对应的真实动态 GIF 和海报，不得使用纯文字、双帧换色、机制示意图或“请打开原帖”占位封面。
+- 正式收录案例必须同时具有可校验的真实 GIF、海报和媒体包 MP4；任一缺失都阻断目录、安装包和 Release。
+- `catalog/media-distribution-authorization.json` 是公开分发授权的唯一当前策略记录；模型参考仍恒为 false，不得因分发授权而连接来源媒体。
+- 每批正式收录、目录合并与 Release 前都运行 `npm run validate`，并核对 GIF/MP4 数量与公开案例数量完全一致。
 
 ### 本地准备媒体包
 
@@ -72,10 +72,10 @@ Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHu
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.2.9
+npm run media:pack -- -Version 1.3.0
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个允许分发文件的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.2.9.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 分开记录可分发案例 `files`、权利受限案例 `unavailable_cases` 与非官方 Skill `community_skill_files`；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个正式案例和社区 Skill 媒体的时长、视频 codec 和音频 codec，输出 `.release-input/out/prompt-library-media-v1.3.0.zip`、`media-pack-manifest.json` 和对应 SHA-256。manifest 的 `files` 必须覆盖全部正式案例，`unavailable_cases` 必须为空，`community_skill_files` 单独记录非官方 Skill 样片；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 
@@ -86,13 +86,13 @@ npm run media:pack -- -Version 1.2.9
 5. 记录媒体 ZIP 的 SHA-256。
 6. 手动运行 `.github/workflows/release.yml`，输入不带 `v` 的版本与媒体 SHA-256。
 7. 工作流定位或安装 `ffmpeg`/`ffprobe`，从 Draft Release 下载指定媒体资产、校验 ZIP 哈希并解压。
-8. 每个 `files` 或 `community_skill_files` 中的 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨；`audio_mode=present` 的媒体还必须完整遍历音频轨，来源本身无音轨的媒体必须明确记录 `audio_mode=source_silent` 与 `audio_codec=null`。探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、声明存在的轨道、进程退出或完整遍历失败仍会阻断发布。`unavailable_cases` 必须与案例权利状态逐项一致且对应 MP4 不得存在。
-9. Windows runner 与 macOS runner 分别用单线程 FFmpeg 生成安装包专用的紧凑动态 GIF 副本，并核对其 manifest 与仓库完全一致；随后 Windows 构建完整 NSIS，macOS 构建 unsigned universal DMG + ZIP。两端都逐 path、size 与 SHA-256 对账安装包内可分发媒体，并再次确认受限媒体未进入成品。
-10. 两个平台都以打包后的应用运行 E2E，证明 239 个案例、9 个官方仓库条目、2 个非官方 Skills、219 个可分发案例视频、2 个社区 Skill 视频、20 个权利受限 GIF 回退，以及收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用。
+8. 每个 `files` 或 `community_skill_files` 中的 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨；`audio_mode=present` 的媒体还必须完整遍历音频轨，来源本身无音轨的媒体必须明确记录 `audio_mode=source_silent` 与 `audio_codec=null`。探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、声明存在的轨道、进程退出或完整遍历失败仍会阻断发布。`unavailable_cases` 必须为空。
+9. Windows runner 与 macOS runner 分别用单线程 FFmpeg 生成安装包专用的紧凑动态 GIF 副本，并核对其 manifest 与仓库完全一致；随后 Windows 构建完整 NSIS，macOS 构建 unsigned universal DMG + ZIP。两端都逐 path、size 与 SHA-256 对账安装包内全部正式案例媒体。
+10. 两个平台都以打包后的应用运行 E2E，证明 239 个案例、9 个官方仓库条目、2 个非官方 Skills、239 个可分发案例视频、2 个社区 Skill 视频、0 个不可用案例，以及收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用。
 11. 最终发布 Job 必须同时收到 Windows 与 macOS 已验证产物，核对精确资产集合后统一生成 `SHA256SUMS.txt`。
 12. 只有以上门禁通过，才上传全部目录包、Skills 包、媒体包、Windows 安装包和 macOS 安装包；`publish=true` 时才把 Draft 设为正式 Release。
 
-发布工作流不会从普通 CI 猜测或伪造 MP4。如果 Draft 中没有名称完全匹配的媒体包、SHA-256 不匹配、允许分发的案例媒体不完整，或权利受限媒体被误放入暂存目录，构建立即失败。
+发布工作流不会从普通 CI 猜测或伪造 MP4。如果 Draft 中没有名称完全匹配的媒体包、SHA-256 不匹配，或任一正式案例媒体不完整，构建立即失败。
 
 ## 自动更新
 
@@ -111,4 +111,4 @@ macOS 同步生成 ZIP、ZIP blockmap 和 `latest-mac.yml`，为未来签名更�
 
 ---
 
-**English summary:** Releases use decimal carry versioning and a pre-staged, rights-aware media asset. Redistributable videos are fully traversed with one decoder thread; rights-limited cases must be listed as unavailable and fall back to catalog GIF/Poster assets, and their source MP4s are forbidden from release staging. Source-silent files must be explicit. Isolated recoverable frames are tolerated while incomplete streams or non-zero decoder exits still fail. Packaged E2E runs before a final job assembles checksummed assets. Windows updates require explicit restart confirmation; unsigned macOS previews update manually.
+**English summary:** Releases use decimal-carry versioning and a pre-staged media asset. All released case videos are distributable and must be present in the media pack; `unavailable_cases` must stay empty. Videos are fully traversed with one decoder thread. Source-silent files must be explicit. Isolated recoverable frames are tolerated while incomplete streams or non-zero decoder exits still fail. Packaged E2E runs before a final job assembles checksummed assets. Windows updates require explicit restart confirmation; unsigned macOS previews update manually.

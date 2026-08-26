@@ -135,15 +135,12 @@ test("media manifest binds its schema/version and requires an explicit per-file 
   assert.ok(mediaEntryAudioContractErrors({ audio_mode: "source_silent", audio_codec: null }, { allowSourceSilent: false })[0].includes("must be 'present'"));
 });
 
-test("release media follows each case's explicit redistribution status", () => {
+test("every released case requires distribution media", () => {
   assert.deepEqual(caseMediaDisposition({ preview_status: { mp4: "available_in_electron_media_pack" } }), {
     status: "available_in_electron_media_pack",
     requiresMedia: true
   });
-  assert.deepEqual(caseMediaDisposition({ preview_status: { mp4: "private_local_only_not_exported" } }), {
-    status: "private_local_only_not_exported",
-    requiresMedia: false
-  });
+  assert.equal(caseMediaDisposition({ preview_status: { mp4: "unsupported" } }).requiresMedia, null);
   assert.equal(caseMediaDisposition({}).requiresMedia, null);
 });
 

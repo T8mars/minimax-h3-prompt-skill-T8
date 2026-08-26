@@ -2,7 +2,6 @@ import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { MECHANISM_GIF_STATUS, mechanismPreviewFailures } from "./gif-inspection.mjs";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 
@@ -122,17 +121,6 @@ export function prepareAppCatalog({ source, output, ffmpeg, maxDimension = 288, 
     throw new Error(`Compact catalog GIF count mismatch: source=${sourceGifs.length}, output=${outputGifs.length}`);
   }
   for (const outputGif of outputGifs) ensureGif(outputGif);
-
-  const compactManifest = JSON.parse(fs.readFileSync(path.join(outputRoot, "manifest.json"), "utf8"));
-  for (const entry of Array.isArray(compactManifest.cases) ? compactManifest.cases : []) {
-    const caseManifestPath = path.join(outputRoot, String(entry.manifest_path || ""));
-    if (!fs.existsSync(caseManifestPath)) continue;
-    const caseManifest = JSON.parse(fs.readFileSync(caseManifestPath, "utf8"));
-    if (caseManifest.preview_status?.gif !== MECHANISM_GIF_STATUS) continue;
-    const previewPath = path.join(path.dirname(caseManifestPath), String(caseManifest.preview_refs?.gif || "preview.gif"));
-    const failures = mechanismPreviewFailures(previewPath, { compact: true });
-    if (failures.length) throw new Error(`Compacted mechanism preview failed: ${failures.join("; ")}`);
-  }
 
   const sourceManifest = path.join(sourceRoot, "manifest.json");
   const outputManifest = path.join(outputRoot, "manifest.json");
