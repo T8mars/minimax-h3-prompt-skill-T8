@@ -14,12 +14,13 @@
 2. 选择最新稳定版本：Windows 下载 `T8-Prompt-Library-Setup-v<version>.exe`；macOS 下载 `T8-Prompt-Library-v<version>-mac-universal.dmg`。
 3. 可选：使用同一 Release 的 `SHA256SUMS.txt` 核对文件哈希。
 4. 运行安装程序并启动 **T8 Prompt Library**。
-5. 应用首次启动后检查目录版本；之后可通过“检查更新”获取稳定版更新。
+5. 如需在应用内播放完整 MP4，再下载同一 Release 的 `prompt-library-media-v<version>.zip`，按下文解压到媒体目录后重启应用；不安装媒体包时仍可离线查看全部真实 GIF/Poster。
+6. 应用首次启动后检查目录版本；之后可通过“检查更新”获取稳定版更新。
 
 Windows 校验示例：
 
 ```powershell
-Get-FileHash .\T8-Prompt-Library-Setup-v1.2.9.exe -Algorithm SHA256
+Get-FileHash .\T8-Prompt-Library-Setup-v1.3.1.exe -Algorithm SHA256
 ```
 
 将结果与 `SHA256SUMS.txt` 中对应文件比较。
@@ -27,7 +28,7 @@ Get-FileHash .\T8-Prompt-Library-Setup-v1.2.9.exe -Algorithm SHA256
 macOS 校验示例：
 
 ```bash
-shasum -a 256 T8-Prompt-Library-v1.2.9-mac-universal.dmg
+shasum -a 256 T8-Prompt-Library-v1.3.1-mac-universal.dmg
 ```
 
 macOS 包同时提供 DMG 与 ZIP，均为 universal（Intel + Apple Silicon）。当前公开版没有 Apple Developer ID，因此**未签名、未公证**：请先核对 `SHA256SUMS.txt`，再打开 DMG 并把应用拖入 Applications。首次启动优先在 Finder 中右键应用并选择“打开”；若系统仍阻止且你已确认哈希，可自行执行：
@@ -40,14 +41,30 @@ xattr -dr com.apple.quarantine "/Applications/T8 Prompt Library.app"
 
 ### 完整视频如何进入应用
 
-Git 仓库只保存轻量 GIF/Poster。完整 MP4 位于对应 GitHub Release 的 `prompt-library-media-v<version>.zip`，并在正式构建时作为 Electron `extraResources` 打入完整安装包。因此：
+Git 仓库只保存 GIF/Poster。全部正式案例 MP4 位于对应 GitHub Release 的 `prompt-library-media-v<version>.zip`。所有视频均已获库所有者授权分发；媒体包与桌面安装包分开，是为了避开 GitHub 单资产 2 GiB 的硬上限，不代表视频不可分发或不可下载。
 
-- 全部正式收录案例在安装完成后都可直接播放完整视频和声音；GIF、Poster 与来源视频均可随本地包分发，但不会自动连接到模型参考输入；
+把媒体 ZIP 的内容直接解压到下列 `media` 目录之一，确保 `media-pack-manifest.json` 位于该目录根部，然后重启应用：
+
+- Windows 推荐：`%APPDATA%\T8 Prompt Library\media\`；也支持应用可执行文件同级的 `media\`；
+- macOS 推荐：`~/Library/Application Support/T8 Prompt Library/media/`；也支持 `.app` 同级的 `media/`；
+- 旧版曾内置的 `resources/media/` 继续兼容；开发与自动化可通过 `T8_MEDIA_DIR` 显式指定。
+
+例如 Windows PowerShell：
+
+```powershell
+$mediaRoot = Join-Path $env:APPDATA "T8 Prompt Library\media"
+New-Item -ItemType Directory -Force -Path $mediaRoot | Out-Null
+Expand-Archive .\prompt-library-media-v1.3.1.zip -DestinationPath $mediaRoot -Force
+```
+
+因此：
+
+- 全部正式收录案例在安装媒体包后都可直接播放完整视频和声音；GIF、Poster 与来源视频均可分发，但不会自动连接到模型参考输入；
 - 不需要登录 X、Reddit 或 YouTube 才能查看本地视频；
 - 有原始帖子地址的案例保留来源按钮；用户提供但未附外部地址的非官方 Skill 不会伪造链接；
 - 普通源代码 CI 只验证无完整媒体构建，不会假装包含 MP4。
 
-安装包里的卡片预览仍是动态 GIF，但为控制跨平台安装资产体积，会使用 Release 构建时生成的紧凑副本；独立目录 ZIP 与 GitHub 页面保留仓库原始预览，完整 MP4 的画面、时长与声音不受影响。
+安装包里的卡片预览仍是动态 GIF，但为控制跨平台安装资产体积，会使用 Release 构建时生成的紧凑副本；独立目录 ZIP 与 GitHub 页面保留仓库原始预览，独立媒体包中的完整 MP4 画面、时长与声音不受影响。
 
 ### 自动更新
 
@@ -77,4 +94,4 @@ npm run app:pack
 
 ---
 
-**English summary:** Download either the Windows NSIS installer or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. Full releases bundle every released-case MP4, GIF and Poster; source media is never connected to model reference inputs automatically. Windows supports explicit-confirmation updates; the unsigned macOS preview updates manually from Releases.
+**English summary:** Download either the Windows NSIS installer or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. All released-case MP4s remain distributable in the separate, hash-bound `prompt-library-media-v<version>.zip`; extract it into the app user-data `media` directory (or a supported sibling `media` directory) for full playback. The split only avoids GitHub's 2 GiB per-asset limit. Source media is never connected to model reference inputs automatically. Windows supports explicit-confirmation updates; the unsigned macOS preview updates manually from Releases.

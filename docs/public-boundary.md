@@ -47,7 +47,7 @@
 
 ## 完整视频边界
 
-完整 MP4 位于本地忽略目录 `.release-input/media/`，由公开的打包脚本生成版本化 ZIP，再上传到 GitHub Draft Release。它不会进入 Git 历史。正式 Windows 与 macOS 安装包仅在校验媒体包哈希后才把 MP4 作为 `extraResources` 打入。
+完整 MP4 位于本地忽略目录 `.release-input/media/`，由公开的打包脚本生成版本化 ZIP，再上传到 GitHub Draft Release。它不会进入 Git 历史。所有正式案例视频均允许分发；正式 Windows 与 macOS 安装包在校验媒体包后以外置媒体包运行 E2E，但不再重复内嵌 MP4，以遵守 GitHub 单资产 2 GiB 上限。
 
 普通 CI 没有完整 MP4，只证明应用能够使用公开 fixture 构建；只有 Release 工作流的媒体校验与安装包烟雾测试才能证明“完整视频发行包”成立。
 

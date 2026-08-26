@@ -32,7 +32,7 @@
 
 ## Electron 展示方式
 
-Electron 优先播放安装包内的完整 MP4，并在标题附近显示平台、作者和“查看原帖”。本地播放与来源引用是并列信息：本地视频提供稳定、统一的观看体验，原帖提供作者、上下文和互动数据。
+Electron 在已挂载 Release 完整媒体包时优先播放对应 MP4，并在标题附近显示平台、作者和“查看原帖”；未挂载时显示与来源视频对应的真实 GIF/Poster。本地播放与来源引用是并列信息：本地视频提供稳定、统一的观看体验，原帖提供作者、上下文和互动数据。全部正式案例视频允许分发，媒体包独立于安装包仅为遵守 GitHub 单资产 2 GiB 上限。
 
 来源被删除、转为私密或暂时不可用时：
 
@@ -57,4 +57,4 @@ Electron 优先播放安装包内的完整 MP4，并在标题附近显示平台�
 
 ---
 
-**English summary:** Every case keeps a canonical source-post URL, creator, platform, model-attribution status, and media mapping. GitHub GIFs are clickable source references; Electron pairs local full-video playback with a visible “View original post” action.
+**English summary:** Every case keeps a canonical source-post URL, creator, platform, model-attribution status, and media mapping. GitHub GIFs are clickable source references; Electron pairs a mounted, distributable full-video sidecar with a visible “View original post” action and otherwise falls back to the real GIF/Poster.

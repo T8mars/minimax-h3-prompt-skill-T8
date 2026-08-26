@@ -25,6 +25,7 @@ const { PromptMediaStore } = require("./lib/prompt-media.cjs");
 const { PromptProjectStore } = require("./lib/prompt-projects.cjs");
 const { LocalQwenConfigStore } = require("./lib/local-qwen-config.cjs");
 const { LocalQwenManager } = require("./lib/local-qwen-runtime.cjs");
+const { resolveMediaRoot } = require("./lib/media-roots.cjs");
 const RELEASES_URL = "https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases";
 
 protocol.registerSchemesAsPrivileged([
@@ -76,14 +77,14 @@ function resolveRoots() {
     ? path.join(process.resourcesPath, "skills")
     : path.join(REPO_ROOT, "skills");
 
-  let mediaRoot;
-  if (process.env.T8_MEDIA_DIR) {
-    mediaRoot = path.resolve(REPO_ROOT, process.env.T8_MEDIA_DIR);
-  } else if (app.isPackaged) {
-    mediaRoot = path.join(process.resourcesPath, "media");
-  } else {
-    mediaRoot = path.join(REPO_ROOT, ".release-input", "media");
-  }
+  const mediaRoot = resolveMediaRoot({
+    env: process.env,
+    executablePath: process.execPath,
+    isPackaged: app.isPackaged,
+    repoRoot: REPO_ROOT,
+    resourcesPath: process.resourcesPath,
+    userDataDir: app.getPath("userData")
+  });
   return { catalogRoot, mediaRoot, skillsRoot };
 }
 

@@ -9,6 +9,19 @@
 - 首批持续扩充的 MiniMax H3 与 Seedance 2.0 Creative DNA 案例。
 - Linux 桌面发行评估。
 
+## [1.3.1] - 2026-08-26
+
+### Fixed
+
+- 修正“安装包未内置即不可分发”的错误说明：库所有者已授权全部 239 个正式案例视频分发，完整 MP4 继续作为独立、带哈希的 Release 媒体包发布，`unavailable_cases` 保持为 0。
+- Windows 与 macOS 安装包不再重复塞入同一份 1.73 GB MP4，避免 Windows NSIS 内存映射失败和 GitHub 单资产 2 GiB 上限；这只是交付拆包，不减少或限制视频。
+- 桌面应用新增媒体包自动挂载顺序：显式 `T8_MEDIA_DIR`、旧版内置 `resources/media`、用户数据 `media`、应用同级 `media`，没有媒体包时仍显示全部真实 GIF/Poster。
+
+### Validation
+
+- 发布工作流继续在 Windows 与 macOS 各自单线程完整遍历 239 个正式案例视频和 2 个社区 Skill 样片，并要求打包后应用挂载同一份已校验媒体包通过完整 E2E。
+- 新增门禁阻止 `resources/media` 意外进入桌面包；安装包、完整媒体包、目录分卷和 Skills 仍分别校验 GitHub 2 GiB 单资产上限并生成 SHA-256。
+
 ## [1.3.0] - 2026-08-26
 
 ### Fixed

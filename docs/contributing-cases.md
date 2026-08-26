@@ -49,7 +49,7 @@ catalog/cases/<case-id>/
 - GIF 静音，点击后必须能打开 `source.json` 中的原帖；
 - 不伪造、遮挡或移除原有作者标识。
 
-完整 MP4 不进入 Git 历史，由维护者通过私有 `.release-input/media/` 生成版本化媒体包并打入 Electron Release。
+完整 MP4 不进入 Git 历史，由维护者通过私有 `.release-input/media/` 生成可分发的版本化媒体包并作为 Electron Release 的独立资产发布；桌面包挂载该媒体包，不重复内嵌同一份 MP4。
 
 ## 分析质量
 

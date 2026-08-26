@@ -44,6 +44,15 @@ test("release packages a compact app catalog and lossless split public preview a
   assert.ok(workflow.includes("2147483648"), "the workflow must fail before upload when any asset reaches GitHub's 2 GiB limit");
 });
 
+test("release publishes complete videos as a verified sidecar instead of duplicating them into oversized installers", () => {
+  const builderSource = fs.readFileSync(path.resolve(__dirname, "..", "electron-builder.config.cjs"), "utf8");
+  assert.match(builderSource, /process\.env\.T8_EMBED_MEDIA === "1"/u);
+  assert.equal(builder.extraResources.some((entry) => entry.to === "media"), false, "default desktop packages must not duplicate the complete MP4 pack");
+  assert.ok(workflow.includes("Packaged application unexpectedly contains a duplicated media pack"));
+  assert.ok(workflow.includes('$env:T8_MEDIA_DIR = (Resolve-Path ".release-input/media").Path'), "packaged E2E must mount the verified sidecar media pack");
+  assert.ok(workflow.includes("prompt-library-media-v$version.zip"), "all distributable MP4s must remain a release asset");
+});
+
 test("media protocol resolves canonical paths and delegates range responses", () => {
   assert.match(main, /fs\.realpathSync\(root\)/u);
   assert.match(main, /fs\.realpathSync\(target\)/u);

@@ -10,6 +10,7 @@ const skillsDir = path.join(repoRoot, "skills");
 const configuredMediaDir = process.env.T8_MEDIA_DIR
   ? path.resolve(repoRoot, process.env.T8_MEDIA_DIR)
   : null;
+const embedMedia = process.env.T8_EMBED_MEDIA === "1";
 
 const extraResources = [];
 const localModelExclusions = ["!**/*.gguf", "!**/*.gguf.part", "!**/*.safetensors", "!**/*.ckpt", "!**/*.onnx", "!**/runtime/local_qwen/**/*", "!**/.cache/huggingface/**/*"];
@@ -30,7 +31,7 @@ if (fs.existsSync(skillsDir)) {
   });
 }
 
-if (configuredMediaDir && fs.existsSync(configuredMediaDir)) {
+if (embedMedia && configuredMediaDir && fs.existsSync(configuredMediaDir)) {
   extraResources.push({
     from: configuredMediaDir,
     to: "media",
