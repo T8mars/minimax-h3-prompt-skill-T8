@@ -116,7 +116,7 @@ jobs:
             if ($LASTEXITCODE -ne 0) { throw "Media asset download failed for $asset." }
             $mediaZip = Join-Path ".release-input/download" $asset
             $actual = (Get-FileHash -LiteralPath $mediaZip -Algorithm SHA256).Hash.ToLowerInvariant()
-            if ($actual -ne $expectedHashes[$partIndex]) { throw "Media SHA-256 mismatch for $asset: expected $($expectedHashes[$partIndex]), got $actual." }
+            if ($actual -ne $expectedHashes[$partIndex]) { throw "Media SHA-256 mismatch for ${asset}: expected $($expectedHashes[$partIndex]), got $actual." }
             Expand-Archive -LiteralPath $mediaZip -DestinationPath ".release-input/media" -Force
           }
 
