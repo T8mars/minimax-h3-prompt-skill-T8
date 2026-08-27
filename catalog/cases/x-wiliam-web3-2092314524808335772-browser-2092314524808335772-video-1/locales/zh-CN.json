@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "6ab6e480c11c07be0d4621f6900c3b27a3ac2b0a12188105158460dfd664c7e8",
+    "creative_dna_sha256": "78461e1726055181495a903ac7924d9593a1c3117436a5fa40017bc520bccd84"
+  },
+  "content": {
+    "title": "双材质舞斗｜水冰攻防、尺度升级与镜像终局",
+    "summary": "让两名原创成年对手分别绑定两种可区分材质；攻防从小尺度投射升级到全场结构，始终保持双方方位，最后用对称材质状态完成终局证明。",
+    "quick_start": {
+      "input_format": "巨大重型对手 + 小型主角 + 提前可见支点 + 重型攻击承诺 + 近身预判 + 杠杆重定向 + 非致命控制",
+      "recommended_input": "成年铜材舞者与成年玻璃舞者站在暗色铸造大厅两侧。；铜材舞者从碎片扇下滑过，玻璃舞者用一次转掌改变铜带方向。；两名舞者停在对立材质场内，最后用无害白色蒸汽封闭画面。",
+      "required_anchors": [
+        "两个成年对手有着截然不同的物质身份。",
+        "共享轴在每次交换时都保持可读。",
+        "攻击规模从手持设备扩展到环境。",
+        "结局将两个物质场和两个主体都展示在一起。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让两名原创成年对手分别绑定两种可区分材质；攻防从小尺度投射升级到全场结构，始终保持双方方位，最后用对称材质状态完成终局证明。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让两名原创成年对手分别绑定两种可区分材质；攻防从小尺度投射升级到全场结构，始终保持双方方位，最后用对称材质状态完成终局证明。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "两个成年对手有着截然不同的物质身份。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "共享轴在每次交换时都保持可读。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每个防御都会明显地重定向传入的材料。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "攻击规模从手持设备扩展到环境。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "结局将两个物质场和两个主体都展示在一起。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "铜和玻璃舞者从丝带升级为大厅规模的结构。",
+          "prompt_seed": "铜和玻璃舞者从丝带升级为大厅规模的结构。"
+        },
+        {
+          "concept": "纸墨书法家从笔画升级到房间尺度的折洗领域。",
+          "prompt_seed": "纸墨书法家从笔画升级到房间尺度的折洗领域。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "两个成年对手有着截然不同的物质身份。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "共享轴在每次交换时都保持可读。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每个防御都会明显地重定向传入的材料。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "攻击规模从手持设备扩展到环境。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "结局将两个物质场和两个主体都展示在一起。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "铜和玻璃舞者从丝带升级为大厅规模的结构。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "纸墨书法家从笔画升级到房间尺度的折洗领域。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

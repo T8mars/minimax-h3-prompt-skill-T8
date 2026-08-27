@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1",
+  "slug": "contact-triggered-transient-energy-feedback",
+  "title": "蓄能清场回稳｜手部微光、通道突进与人物复位",
+  "source_title": "蓝能量校园战｜沉默蓄力、多人清场与原路线恢复",
+  "summary": "在拥挤通道中先用手部微光提示准备，再让每次能量爆发绑定一个清楚身体动作；逐步扩大清场尺度后，人物回到正面步行基线。",
+  "status": "released",
+  "source_duration_seconds": 30.144,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/contact-triggered-transient-energy-feedback",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-contact-triggered-transient-energy-feedback-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-contact-triggered-transient-energy-feedback-v1",
+  "input_format": "明确成年原创主体、可读对手和稳定地面关系先建立 + 每次先完整承诺物理轨迹并真实接触 + 能量、尘屑、毛发、布料或灯光只在接触后局部短促响应 + 通过对手数量和反馈半径升级但轮廓始终清楚 + 终局效果归零并在同一空间稳定持有主体",
+  "recommended_input": "成年夜班技术员正面穿过拥挤维护通道。；低位支撑与肩部接触触发第一次短磁脉冲。；障碍清除后，同一人物恢复原正面步行，青光完全消退。",
+  "required_anchors": [
+    "The baseline walk and crowd geography are established first.",
+    "A small hand signal previews the capability.",
+    "Escalation moves along one corridor direction.",
+    "The final state returns to the original walk with no residual glow."
+  ],
+  "tags": [
+    "contact",
+    "triggered",
+    "transient",
+    "energy",
+    "feedback"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:47:23+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}

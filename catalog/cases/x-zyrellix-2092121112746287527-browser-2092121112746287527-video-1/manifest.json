@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1",
+  "slug": "destination-first-processional-scale-approach",
+  "title": "祭坛唤醒巨物｜目标先现、路径点亮与尺度兑现",
+  "source_title": "钥匙唤醒白龙｜环形祭坛逐级点亮到天穹开启",
+  "summary": "先展示不可忽视的天穹目标，再让单一人物沿发光路径接近祭坛；小物激活同心结构并逐级放大环境响应，最终巨物与天空同时兑现。",
+  "status": "released",
+  "source_duration_seconds": 30.093061,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/destination-first-processional-scale-approach",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-destination-first-processional-scale-approach-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-destination-first-processional-scale-approach-v1",
+  "input_format": "完整宏大目的地、可读接近路线与至少三名明确成年旅行者或载体在开场同现 + 全程保持单一目标方向和稳定目的地身份 + 旗帜、灯光、服装或载体等群体锚点重复形成仪式节奏 + 行进与克制前推、轻微升高共同让地标尺度层单调增加 + 终局目的地主导但仍保留至少两个旅行者或路线锚点",
+  "recommended_input": "先展示洪水采石场上方巨大悬浮种荚与一名成年护林员。；小型音叉触碰平台，同心沟槽向外逐级点亮。；护林员抬手，种荚打开成天光，广角同时证明人物与巨物尺度。",
+  "required_anchors": [
+    "The enormous destination is shown before the approach.",
+    "One small traveler follows a readable route.",
+    "Environmental responses grow in concentric scale.",
+    "The final wide frame proves traveler, giant entity and opened sky together."
+  ],
+  "tags": [
+    "destination",
+    "first",
+    "processional",
+    "scale",
+    "approach"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:45:50+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}

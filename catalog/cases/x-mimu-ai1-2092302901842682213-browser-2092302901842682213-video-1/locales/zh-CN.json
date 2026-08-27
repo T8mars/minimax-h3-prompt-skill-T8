@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "860c5872113ce40343c6f502d0e314d50909ecded5b6133022290c1c498d947e",
+    "creative_dna_sha256": "f65612f70b28076006d32e7aa8431269f07f675173f05f77e73dddbceadbb2dd"
+  },
+  "content": {
+    "title": "善意载体接力｜小动作跨人物传递到情绪兑现",
+    "summary": "用一个可辨识帮助动作作为载体，让不同人物在同一城市路线中接力；每次帮助同时解决眼前问题并引出下一位，最终回到明确的情绪结果。",
+    "quick_start": {
+      "input_format": "稳定主体与目的地 + 单职责短动作 + 姿态/手中物/方向接力 + 累积准备状态 + 单向路线 + 终点结果动作",
+      "recommended_input": "成年面包师在市场外把干毛巾递给淋雨的自行车递送员。；顾客截住滚动水果箱，避免撞到推婴儿车的家长。；清洁工把捡到的手套还给最初面包师，完成实用善意闭环。",
+      "required_anchors": [
+        "每一个节拍中都可以看到一个实际的帮助动作。",
+        "接收者成为下一个帮助者。",
+        "共享路线保持空间连续性。",
+        "最后的帮助将价值返回给开放的参与者。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用一个可辨识帮助动作作为载体，让不同人物在同一城市路线中接力；每次帮助同时解决眼前问题并引出下一位，最终回到明确的情绪结果。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用一个可辨识帮助动作作为载体，让不同人物在同一城市路线中接力；每次帮助同时解决眼前问题并引出下一位，最终回到明确的情绪结果。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "每一个节拍中都可以看到一个实际的帮助动作。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "接收者成为下一个帮助者。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "一个载体物体或手势穿过每次切换。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "共享路线保持空间连续性。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后的帮助将价值返回给开放的参与者。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "市场链传递毛巾、路线卡、板条箱挂钩、雨伞和回收的手套。",
+          "prompt_seed": "市场链传递毛巾、路线卡、板条箱挂钩、雨伞和回收的手套。"
+        },
+        {
+          "concept": "车站连锁店提供车票、行李箱升降机、座位优惠、充电器和归还的笔记本。",
+          "prompt_seed": "车站连锁店提供车票、行李箱升降机、座位优惠、充电器和归还的笔记本。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每一个节拍中都可以看到一个实际的帮助动作。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "接收者成为下一个帮助者。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个载体物体或手势穿过每次切换。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "共享路线保持空间连续性。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "最后的帮助将价值返回给开放的参与者。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "市场链传递毛巾、路线卡、板条箱挂钩、雨伞和回收的手套。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "车站连锁店提供车票、行李箱升降机、座位优惠、充电器和归还的笔记本。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

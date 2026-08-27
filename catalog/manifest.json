@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.3.2",
-  "generated_at": "2026-08-26T21:24:40+08:00",
-  "case_count": 260,
+  "catalog_version": "1.3.4",
+  "generated_at": "2026-08-27T16:28:36+08:00",
+  "case_count": 275,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -9492,6 +9492,618 @@
       ],
       "quality_score": 4.958,
       "updated_at": "2026-08-26T19:32:12+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-minuitia-2092285935056568787-browser-2092285935056568787-video-1",
+      "slug": "suspended-accident-repair-before-resumption",
+      "title": "全域冻结回溯｜唯一行动者触发环境复流",
+      "status": "released",
+      "summary": "先让整个环境在一次灾变中同时悬停，只保留一个行动者继续移动；行动者接触一个可辨识微物后，所有碎片沿原轨迹逆行并恢复为完整终态。",
+      "manifest_path": "cases/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/manifest.json",
+      "summary_path": "cases/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/SUMMARY.md",
+      "source_path": "cases/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/source.json",
+      "creative_dna_path": "cases/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/preview.gif",
+        "poster": "cases/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/poster.webp",
+        "mp4": "media/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/suspended-accident-repair-before-resumption",
+      "template_id": "t8-case-suspended-accident-repair-before-resumption-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "suspended",
+        "accident",
+        "repair",
+        "before",
+        "resumption"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1",
+      "slug": "switch-subjects-through-persistent-selector",
+      "title": "触屏造型切换｜固定界面、手势触发与人物实装",
+      "status": "released",
+      "summary": "把固定手机界面作为连续舞台，每次真实手势只改变一个明确槽位；文字、颜色与装饰先在界面响应，再由同一人物完成对应造型实装。",
+      "manifest_path": "cases/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/manifest.json",
+      "summary_path": "cases/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/SUMMARY.md",
+      "source_path": "cases/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/source.json",
+      "creative_dna_path": "cases/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/preview.gif",
+        "poster": "cases/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/poster.webp",
+        "mp4": "media/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/switch-subjects-through-persistent-selector",
+      "template_id": "t8-case-persistent-selector-subject-swap-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "persistent",
+        "selector",
+        "subject",
+        "swap"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1",
+      "slug": "redirect-mass-with-leverage",
+      "title": "体型差格斗｜身份插页、反应镜头与力量反制",
+      "status": "released",
+      "summary": "先通过稳定设定插页锁定两名原创对手，再用反应特写、交叉冲锋、低机位碰撞和终局停顿证明体型差与力量反制。",
+      "manifest_path": "cases/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/manifest.json",
+      "summary_path": "cases/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/SUMMARY.md",
+      "source_path": "cases/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/source.json",
+      "creative_dna_path": "cases/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/preview.gif",
+        "poster": "cases/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/poster.webp",
+        "mp4": "media/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/redirect-mass-with-leverage",
+      "template_id": "t8-case-asymmetric-mass-control-fight-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "asymmetric",
+        "mass",
+        "control",
+        "fight"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1",
+      "slug": "contact-triggered-transient-energy-feedback",
+      "title": "接触能量反击｜受压触发、连续清场与余波复位",
+      "status": "released",
+      "summary": "先让现实冲突与身体接触成立，再把短促能量限制为动作结果；能量沿接触方向连续传递并清出空间，最终人物回到稳定行走状态。",
+      "manifest_path": "cases/x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1/manifest.json",
+      "summary_path": "cases/x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1/SUMMARY.md",
+      "source_path": "cases/x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1/source.json",
+      "creative_dna_path": "cases/x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1/preview.gif",
+        "poster": "cases/x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1/poster.webp",
+        "mp4": "media/x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/contact-triggered-transient-energy-feedback",
+      "template_id": "t8-case-contact-triggered-transient-energy-feedback-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "contact",
+        "triggered",
+        "transient",
+        "energy",
+        "feedback"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1",
+      "slug": "destination-first-processional-scale-approach",
+      "title": "祭坛唤醒巨物｜目标先现、路径点亮与尺度兑现",
+      "status": "released",
+      "summary": "先展示不可忽视的天穹目标，再让单一人物沿发光路径接近祭坛；小物激活同心结构并逐级放大环境响应，最终巨物与天空同时兑现。",
+      "manifest_path": "cases/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/manifest.json",
+      "summary_path": "cases/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/SUMMARY.md",
+      "source_path": "cases/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/source.json",
+      "creative_dna_path": "cases/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/preview.gif",
+        "poster": "cases/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/poster.webp",
+        "mp4": "media/x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/destination-first-processional-scale-approach",
+      "template_id": "t8-case-destination-first-processional-scale-approach-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "destination",
+        "first",
+        "processional",
+        "scale",
+        "approach"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1",
+      "slug": "routine-compression-carrier-handoff-arrival",
+      "title": "善意载体接力｜小动作跨人物传递到情绪兑现",
+      "status": "released",
+      "summary": "用一个可辨识帮助动作作为载体，让不同人物在同一城市路线中接力；每次帮助同时解决眼前问题并引出下一位，最终回到明确的情绪结果。",
+      "manifest_path": "cases/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/manifest.json",
+      "summary_path": "cases/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/SUMMARY.md",
+      "source_path": "cases/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/source.json",
+      "creative_dna_path": "cases/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/preview.gif",
+        "poster": "cases/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/poster.webp",
+        "mp4": "media/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/routine-compression-carrier-handoff-arrival",
+      "template_id": "t8-case-routine-compression-carrier-handoff-arrival-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "routine",
+        "compression",
+        "carrier",
+        "handoff",
+        "arrival"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1",
+      "slug": "tactile-travel-chapters-scale-ascent",
+      "title": "生活触点旅行｜屋顶出发、街巷互动与私密纪念",
+      "status": "released",
+      "summary": "用同一人物与手持跟拍连接多个日常触点；每章都通过一次可触摸互动进入下一地点，最后把途中小物变成私密纪念。",
+      "manifest_path": "cases/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/manifest.json",
+      "summary_path": "cases/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/SUMMARY.md",
+      "source_path": "cases/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/source.json",
+      "creative_dna_path": "cases/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/preview.gif",
+        "poster": "cases/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/poster.webp",
+        "mp4": "media/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/tactile-travel-chapters-scale-ascent",
+      "template_id": "t8-case-tactile-travel-chapters-scale-ascent-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "tactile",
+        "travel",
+        "chapters",
+        "scale",
+        "ascent"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1",
+      "slug": "selfie-carrier-rapid-group-memory-montage",
+      "title": "旧DV美食漫游｜自拍锚点、摊位试吃与群体回应",
+      "status": "released",
+      "summary": "用同一自拍或跟随载体锁定人物，把食物制作、试吃反应和陌生人群体回应压缩成快速旅行记忆，最后回到人物继续前行。",
+      "manifest_path": "cases/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/manifest.json",
+      "summary_path": "cases/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/SUMMARY.md",
+      "source_path": "cases/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/source.json",
+      "creative_dna_path": "cases/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/preview.gif",
+        "poster": "cases/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/poster.webp",
+        "mp4": "media/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/selfie-carrier-rapid-group-memory-montage",
+      "template_id": "t8-case-selfie-carrier-rapid-group-memory-montage-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "selfie",
+        "carrier",
+        "rapid",
+        "group",
+        "memory",
+        "montage"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-techhalla-2092026849077371380-browser-2092026849077371380-video-1",
+      "slug": "contact-triggered-transient-energy-feedback",
+      "title": "车库写实格斗｜工具接触、车辆遮挡与近身反制",
+      "status": "released",
+      "summary": "先以写实伤势、工具与停车位建立实体冲突，再让车辆、烟雾和近身遮挡承担转场；每次反击都从清楚接触开始，终局以短促异常材质作为结果反馈。",
+      "manifest_path": "cases/x-techhalla-2092026849077371380-browser-2092026849077371380-video-1/manifest.json",
+      "summary_path": "cases/x-techhalla-2092026849077371380-browser-2092026849077371380-video-1/SUMMARY.md",
+      "source_path": "cases/x-techhalla-2092026849077371380-browser-2092026849077371380-video-1/source.json",
+      "creative_dna_path": "cases/x-techhalla-2092026849077371380-browser-2092026849077371380-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techhalla-2092026849077371380-browser-2092026849077371380-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techhalla-2092026849077371380-browser-2092026849077371380-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techhalla-2092026849077371380-browser-2092026849077371380-video-1/preview.gif",
+        "poster": "cases/x-techhalla-2092026849077371380-browser-2092026849077371380-video-1/poster.webp",
+        "mp4": "media/x-techhalla-2092026849077371380-browser-2092026849077371380-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/contact-triggered-transient-energy-feedback",
+      "template_id": "t8-case-contact-triggered-transient-energy-feedback-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "contact",
+        "triggered",
+        "transient",
+        "energy",
+        "feedback"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1",
+      "slug": "apparent-vulnerability-readiness-reversal-resumption",
+      "title": "围攻伪弱势反转｜静立诱近、近身爆发与路线继续",
+      "status": "released",
+      "summary": "让单一成年主体在废墟中先保持静止并允许多名对手逼近；用微小准备信号触发高速近身反制，清场后回到原站位与冷静状态。",
+      "manifest_path": "cases/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/manifest.json",
+      "summary_path": "cases/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/SUMMARY.md",
+      "source_path": "cases/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/source.json",
+      "creative_dna_path": "cases/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/preview.gif",
+        "poster": "cases/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/poster.webp",
+        "mp4": "media/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/apparent-vulnerability-readiness-reversal-resumption",
+      "template_id": "t8-case-apparent-vulnerability-readiness-reversal-resumption-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "apparent",
+        "vulnerability",
+        "readiness",
+        "reversal",
+        "resumption"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1",
+      "slug": "contact-triggered-transient-energy-feedback",
+      "title": "蓄能清场回稳｜手部微光、通道突进与人物复位",
+      "status": "released",
+      "summary": "在拥挤通道中先用手部微光提示准备，再让每次能量爆发绑定一个清楚身体动作；逐步扩大清场尺度后，人物回到正面步行基线。",
+      "manifest_path": "cases/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/manifest.json",
+      "summary_path": "cases/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/SUMMARY.md",
+      "source_path": "cases/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/source.json",
+      "creative_dna_path": "cases/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/preview.gif",
+        "poster": "cases/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/poster.webp",
+        "mp4": "media/x-strength04-x-2092427591814906005-browser-2092427591814906005-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/contact-triggered-transient-energy-feedback",
+      "template_id": "t8-case-contact-triggered-transient-energy-feedback-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "contact",
+        "triggered",
+        "transient",
+        "energy",
+        "feedback"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1",
+      "slug": "redirect-mass-with-leverage",
+      "title": "双材质舞斗｜水冰攻防、尺度升级与镜像终局",
+      "status": "released",
+      "summary": "让两名原创成年对手分别绑定两种可区分材质；攻防从小尺度投射升级到全场结构，始终保持双方方位，最后用对称材质状态完成终局证明。",
+      "manifest_path": "cases/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/manifest.json",
+      "summary_path": "cases/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/SUMMARY.md",
+      "source_path": "cases/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/source.json",
+      "creative_dna_path": "cases/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/preview.gif",
+        "poster": "cases/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/poster.webp",
+        "mp4": "media/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/redirect-mass-with-leverage",
+      "template_id": "t8-case-asymmetric-mass-control-fight-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "asymmetric",
+        "mass",
+        "control",
+        "fight"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1",
+      "slug": "structure-product-proof-launch",
+      "title": "单物微距英雄片｜材质证据、轮廓确认与静态收束",
+      "status": "released",
+      "summary": "围绕单一产品做由近到远的材质证明：先展示操作件与高光，再逐步扩展到完整轮廓、底座反射和稳定英雄构图，全程不引入无关人物。",
+      "manifest_path": "cases/x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1/manifest.json",
+      "summary_path": "cases/x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1/SUMMARY.md",
+      "source_path": "cases/x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1/source.json",
+      "creative_dna_path": "cases/x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1/preview.gif",
+        "poster": "cases/x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1/poster.webp",
+        "mp4": "media/x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/structure-product-proof-launch",
+      "template_id": "t8c001-product-proof-state-machine",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "t8c001",
+        "product",
+        "proof",
+        "state",
+        "machine"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1",
+      "slug": "form-reversible-material-typography",
+      "title": "功能材质成字｜丝束交叉、编织字标与实物铭牌落位",
+      "status": "released",
+      "summary": "让产品功能材质先以散线出现，沿两条正交方向交织成可读短词，再把同一结构压实为实物铭牌并落到最终产品表面。",
+      "manifest_path": "cases/x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1/manifest.json",
+      "summary_path": "cases/x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1/SUMMARY.md",
+      "source_path": "cases/x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1/source.json",
+      "creative_dna_path": "cases/x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1/preview.gif",
+        "poster": "cases/x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1/poster.webp",
+        "mp4": "media/x-hbcoop-2091889307200172438-browser-2091889307200172438-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/form-reversible-material-typography",
+      "template_id": "t8-case-reversible-material-typography-loop-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "reversible",
+        "material",
+        "typography",
+        "loop"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1",
+      "slug": "motion-contact-paint-trail-accumulation",
+      "title": "三人群舞锁步｜中心领舞、队形推进与同步手势收束",
+      "status": "released",
+      "summary": "用中心领舞和两名后排建立三角队形，动作从躯干波动扩展到同步前进与手势；镜头只做缓慢逼近，最终三人同时定格证明节奏一致。",
+      "manifest_path": "cases/x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1/manifest.json",
+      "summary_path": "cases/x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1/SUMMARY.md",
+      "source_path": "cases/x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1/source.json",
+      "creative_dna_path": "cases/x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1/preview.gif",
+        "poster": "cases/x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1/poster.webp",
+        "mp4": "media/x-sakhil-ai-2092197944846151794-browser-2092197944846151794-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/motion-contact-paint-trail-accumulation",
+      "template_id": "t8-case-motion-contact-paint-trail-accumulation-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "motion",
+        "contact",
+        "paint",
+        "trail",
+        "accumulation"
+      ],
+      "quality_score": 4.951,
+      "updated_at": "2026-08-27T16:19:55+08:00",
       "preview_status": {
         "gif": "available",
         "poster": "available",

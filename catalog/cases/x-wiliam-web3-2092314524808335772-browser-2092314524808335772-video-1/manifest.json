@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1",
+  "slug": "redirect-mass-with-leverage",
+  "title": "双材质舞斗｜水冰攻防、尺度升级与镜像终局",
+  "source_title": "冰窟双姝对决｜水袖、冰刃、冰柱与双向冻结",
+  "summary": "让两名原创成年对手分别绑定两种可区分材质；攻防从小尺度投射升级到全场结构，始终保持双方方位，最后用对称材质状态完成终局证明。",
+  "status": "released",
+  "source_duration_seconds": 29.024943,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/redirect-mass-with-leverage",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-wiliam-web3-2092314524808335772-browser-2092314524808335772-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-asymmetric-mass-control-fight-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-asymmetric-mass-control-fight-v1",
+  "input_format": "巨大重型对手 + 小型主角 + 提前可见支点 + 重型攻击承诺 + 近身预判 + 杠杆重定向 + 非致命控制",
+  "recommended_input": "成年铜材舞者与成年玻璃舞者站在暗色铸造大厅两侧。；铜材舞者从碎片扇下滑过，玻璃舞者用一次转掌改变铜带方向。；两名舞者停在对立材质场内，最后用无害白色蒸汽封闭画面。",
+  "required_anchors": [
+    "Two adult opponents have distinct material identities.",
+    "A shared axis remains readable through every exchange.",
+    "Attack scale grows from handheld to environmental.",
+    "The ending shows both material fields and both subjects together."
+  ],
+  "tags": [
+    "asymmetric",
+    "mass",
+    "control",
+    "fight"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:48:27+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}

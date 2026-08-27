@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1",
+  "slug": "switch-subjects-through-persistent-selector",
+  "title": "触屏造型切换｜固定界面、手势触发与人物实装",
+  "source_title": "时尚应用界面｜捏合缩放、滑动换色与真人造型同步",
+  "summary": "把固定手机界面作为连续舞台，每次真实手势只改变一个明确槽位；文字、颜色与装饰先在界面响应，再由同一人物完成对应造型实装。",
+  "status": "released",
+  "source_duration_seconds": 15.167318,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/switch-subjects-through-persistent-selector",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-onofumi-ai-2092528740475785520-browser-2092528740475785520-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-persistent-selector-subject-swap-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-persistent-selector-subject-swap-v1",
+  "input_format": "固定选择菜单 + 固定数据区 + 固定主视窗 + 至少4个原创对象 + 每次可见选择 + 同步字段更新 + 一个定义动作",
+  "recommended_input": "打开原创室内设计应用，固定房间卡片中站着同一成年建筑师。；第一次滑动只切换浅木材质，房间同步更新。；最终切换为钴蓝方案，同一人物与固定控件共同完成对照。",
+  "required_anchors": [
+    "A persistent interface frame survives every transition.",
+    "Each gesture changes only one named slot.",
+    "The same adult subject remains identity-locked.",
+    "The final state retains controls for direct comparison."
+  ],
+  "tags": [
+    "persistent",
+    "selector",
+    "subject",
+    "swap"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:41:43+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}

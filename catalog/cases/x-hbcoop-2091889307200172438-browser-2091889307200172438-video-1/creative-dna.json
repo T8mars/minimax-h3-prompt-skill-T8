@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Introduce a functional material before its wordmark, visibly interlace it into readable type, compress it into a badge and activate it on one product surface. The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "The functional material appears before the word.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Two directional families visibly interlace.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "The readable word preserves the same material topology.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "The word compresses into a product-ready badge without a reset.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The badge lands on one final product surface and receives a small activation proof.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "Ceramic ribbons braid into LINK and become a travel-case badge.",
+      "prompt_seed": "Ceramic ribbons braid into LINK and become a travel-case badge."
+    },
+    {
+      "concept": "Copper traces route into PULSE and become a wearable-device plate.",
+      "prompt_seed": "Copper traces route into PULSE and become a wearable-device plate."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The functional material appears before the word."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "Two directional families visibly interlace."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The readable word preserves the same material topology."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The word compresses into a product-ready badge without a reset."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The badge lands on one final product surface and receives a small activation proof."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Ceramic ribbons braid into LINK and become a travel-case badge.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Copper traces route into PULSE and become a wearable-device plate.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

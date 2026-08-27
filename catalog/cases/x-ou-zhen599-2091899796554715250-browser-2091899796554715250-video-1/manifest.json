@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1",
+  "slug": "apparent-vulnerability-readiness-reversal-resumption",
+  "title": "围攻伪弱势反转｜静立诱近、近身爆发与路线继续",
+  "source_title": "末世街口瞬移战｜多方围攻、近身反制与冷静复位",
+  "summary": "让单一成年主体在废墟中先保持静止并允许多名对手逼近；用微小准备信号触发高速近身反制，清场后回到原站位与冷静状态。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/apparent-vulnerability-readiness-reversal-resumption",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-apparent-vulnerability-readiness-reversal-resumption-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-apparent-vulnerability-readiness-reversal-resumption-v1",
+  "input_format": "稳定主体与中断目标 + 可读困境 + 因困境主动靠近的外部压力 + 至少两个准备微证据 + 单一能力链破局 + 回到原载体继续路线",
+  "recommended_input": "成年应急递送员站在被水淹的交通广场中心，三名掠夺者从两侧逼近。；递送员用一次落地转体把对手引向固定检票栏。；水雾沉降，递送员回到原中心线并继续送达路线。",
+  "required_anchors": [
+    "The protagonist appears vulnerable and remains centered.",
+    "Attackers visibly enter close range.",
+    "Fast displacements preserve one geographic axis.",
+    "The subject returns to the baseline and resumes the original goal."
+  ],
+  "tags": [
+    "apparent",
+    "vulnerability",
+    "readiness",
+    "reversal",
+    "resumption"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:47:15+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}

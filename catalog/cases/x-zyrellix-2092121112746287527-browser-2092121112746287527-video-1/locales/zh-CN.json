@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-zyrellix-2092121112746287527-browser-2092121112746287527-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d7411cb99536ea08ab225ee29dd7d902851f1799fe6d274bcf5da2def623f7bb",
+    "creative_dna_sha256": "c6186eaa1743219d98f5bbb84f0056be10d21eb02983071d492a416a81605b70"
+  },
+  "content": {
+    "title": "祭坛唤醒巨物｜目标先现、路径点亮与尺度兑现",
+    "summary": "先展示不可忽视的天穹目标，再让单一人物沿发光路径接近祭坛；小物激活同心结构并逐级放大环境响应，最终巨物与天空同时兑现。",
+    "quick_start": {
+      "input_format": "完整宏大目的地、可读接近路线与至少三名明确成年旅行者或载体在开场同现 + 全程保持单一目标方向和稳定目的地身份 + 旗帜、灯光、服装或载体等群体锚点重复形成仪式节奏 + 行进与克制前推、轻微升高共同让地标尺度层单调增加 + 终局目的地主导但仍保留至少两个旅行者或路线锚点",
+      "recommended_input": "先展示洪水采石场上方巨大悬浮种荚与一名成年护林员。；小型音叉触碰平台，同心沟槽向外逐级点亮。；护林员抬手，种荚打开成天光，广角同时证明人物与巨物尺度。",
+      "required_anchors": [
+        "在接近之前会显示巨大的目的地。",
+        "一名小旅行者沿着一条可读的路线行走。",
+        "环境响应以同心圆规模增长。",
+        "最后的宽幅画面共同证明了旅行者、巨大的实体和开阔的天空。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先展示不可忽视的天穹目标，再让单一人物沿发光路径接近祭坛；小物激活同心结构并逐级放大环境响应，最终巨物与天空同时兑现。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先展示不可忽视的天穹目标，再让单一人物沿发光路径接近祭坛；小物激活同心结构并逐级放大环境响应，最终巨物与天空同时兑现。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在接近之前会显示巨大的目的地。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一名小旅行者沿着一条可读的路线行走。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "手持物体激活目的地。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "环境响应以同心圆规模增长。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后的宽幅画面共同证明了旅行者、巨大的实体和开阔的天空。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名护林员打开一个悬浮的种子荚并召唤一条半透明的蝠鲼。",
+          "prompt_seed": "一名护林员打开一个悬浮的种子荚并召唤一条半透明的蝠鲼。"
+        },
+        {
+          "concept": "一名成年工程师激活了火山口信标，露出了巨大的云鲸。",
+          "prompt_seed": "一名成年工程师激活了火山口信标，露出了巨大的云鲸。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "在接近之前会显示巨大的目的地。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一名小旅行者沿着一条可读的路线行走。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "手持物体激活目的地。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "环境响应以同心圆规模增长。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "最后的宽幅画面共同证明了旅行者、巨大的实体和开阔的天空。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名护林员打开一个悬浮的种子荚并召唤一条半透明的蝠鲼。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年工程师激活了火山口信标，露出了巨大的云鲸。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithelisia-2092119695201837059-browser-2092119695201837059-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "9f870089eb058fe6a064cc51c2fb62d397f4365dc0c5f25238d9b26bc4c9a1c3",
+    "creative_dna_sha256": "c64c10e576894711d9541bfab79491299932daa8d93c8564c83fdbc51233b03d"
+  },
+  "content": {
+    "title": "接触能量反击｜受压触发、连续清场与余波复位",
+    "summary": "先让现实冲突与身体接触成立，再把短促能量限制为动作结果；能量沿接触方向连续传递并清出空间，最终人物回到稳定行走状态。",
+    "quick_start": {
+      "input_format": "明确成年原创主体、可读对手和稳定地面关系先建立 + 每次先完整承诺物理轨迹并真实接触 + 能量、尘屑、毛发、布料或灯光只在接触后局部短促响应 + 通过对手数量和反馈半径升级但轮廓始终清楚 + 终局效果归零并在同一空间稳定持有主体",
+      "recommended_input": "成年交通巡查员在拥挤地下通道被两名走私者拦住。；巡查员转体，让一道定向脉冲沿最近对手释放。；粒子沉降，同一巡查员恢复平静行走并穿过已清空通道。",
+      "required_anchors": [
+        "普通物理冲突在任何 VFX 之前读取。",
+        "能量从可见的接触点开始。",
+        "一根走廊轴线通过升级来保护空间关系。",
+        "在对象恢复原创的路线之前粒子会沉降。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让现实冲突与身体接触成立，再把短促能量限制为动作结果；能量沿接触方向连续传递并清出空间，最终人物回到稳定行走状态。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先让现实冲突与身体接触成立，再把短促能量限制为动作结果；能量沿接触方向连续传递并清出空间，最终人物回到稳定行走状态。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "普通物理冲突在任何 VFX 之前读取。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "能量从可见的接触点开始。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每次爆发都伴随着一个完整的身体动作。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "一根走廊轴线通过升级来保护空间关系。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在对象恢复原创的路线之前粒子会沉降。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "交通检查员使用接触式琥珀色脉冲清理隧道。",
+          "prompt_seed": "交通检查员使用接触式琥珀色脉冲清理隧道。"
+        },
+        {
+          "concept": "一名成年码头工人在每次工具接触后都会用简短的​​蓝色磁性反馈来引导攻击者。",
+          "prompt_seed": "一名成年码头工人在每次工具接触后都会用简短的​​蓝色磁性反馈来引导攻击者。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "普通物理冲突在任何 VFX 之前读取。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "能量从可见的接触点开始。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每次爆发都伴随着一个完整的身体动作。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一根走廊轴线通过升级来保护空间关系。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "在对象恢复原创的路线之前粒子会沉降。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "交通检查员使用接触式琥珀色脉冲清理隧道。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年码头工人在每次工具接触后都会用简短的​​蓝色磁性反馈来引导攻击者。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

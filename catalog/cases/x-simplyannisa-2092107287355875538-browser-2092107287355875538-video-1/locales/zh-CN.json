@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "f17fbf3acbf3205fbfe0cabb67a8eede569c27673201fd9a3d38ba08b856f381",
+    "creative_dna_sha256": "1c1e32e60bcdcf579d6a3c0b9ff2b78f7d99238af193588988dc305a81d4bc37"
+  },
+  "content": {
+    "title": "生活触点旅行｜屋顶出发、街巷互动与私密纪念",
+    "summary": "用同一人物与手持跟拍连接多个日常触点；每章都通过一次可触摸互动进入下一地点，最后把途中小物变成私密纪念。",
+    "quick_start": {
+      "input_format": "稳定旅行者身份/服装/方向 + 至少4个地理章节 + 每章1次本地材质接触 + 窄巷近物→社会场→移动地理→攀升全景 + 统一档案介质 + 高位稳定终景",
+      "recommended_input": "手持跟随一名成年陶艺学生从工作室阳台出发。；摊主递来一只温热纸杯，人物边走边品尝。；回到工作室，同伴把丝带系在成品杯柄上，人物回头微笑。",
+      "required_anchors": [
+        "一名身份锁定的成年人携带完整路线。",
+        "每一章都以一次触觉交互开始。",
+        "地点沿着一条合理的旅程前进。",
+        "遇到的一个小物体成为结束的纪念品。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用同一人物与手持跟拍连接多个日常触点；每章都通过一次可触摸互动进入下一地点，最后把途中小物变成私密纪念。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用同一人物与手持跟拍连接多个日常触点；每章都通过一次可触摸互动进入下一地点，最后把途中小物变成私密纪念。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名身份锁定的成年人携带完整路线。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每一章都以一次触觉交互开始。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "手持视角仍然具有社交密切性。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "地点沿着一条合理的旅程前进。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "遇到的一个小物体成为结束的纪念品。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位陶瓷学生将市场丝带变成了工作室纪念品。",
+          "prompt_seed": "一位陶瓷学生将市场丝带变成了工作室纪念品。"
+        },
+        {
+          "concept": "一位成年园丁沿着附近的路线将找到的种子包变成温室标签。",
+          "prompt_seed": "一位成年园丁沿着附近的路线将找到的种子包变成温室标签。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一名身份锁定的成年人携带完整路线。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每一章都以一次触觉交互开始。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "手持视角仍然具有社交密切性。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "地点沿着一条合理的旅程前进。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "遇到的一个小物体成为结束的纪念品。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位陶瓷学生将市场丝带变成了工作室纪念品。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年园丁沿着附近的路线将找到的种子包变成温室标签。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

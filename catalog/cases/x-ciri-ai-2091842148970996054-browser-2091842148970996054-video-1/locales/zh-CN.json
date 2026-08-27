@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "97897c8390d93666cbff9cef78955981d3dafe902dfbc8f8b990d3882e7bac2d",
+    "creative_dna_sha256": "cdcd19e82e203a71c92c0511f08ef9184678854cf2548814e6006bbb932d7eac"
+  },
+  "content": {
+    "title": "旧DV美食漫游｜自拍锚点、摊位试吃与群体回应",
+    "summary": "用同一自拍或跟随载体锁定人物，把食物制作、试吃反应和陌生人群体回应压缩成快速旅行记忆，最后回到人物继续前行。",
+    "quick_start": {
+      "input_format": "同一成年自拍者贯穿 + 单一活动地理与重复地标 + 活动插入和自拍回场交替 + 群体分阶段扩大 + 不完美手机快切 + 最大群体完成共同动作",
+      "recommended_input": "用小型DV跟随成年电台主持人进入室内花市。；附近年长摊主短暂挥手加入画面，但主角不丢失。；继续从后方跟随主持人穿过通道，花束始终可见，人物回头看镜头。",
+      "required_anchors": [
+        "一个手持载体可让成人主机保持可识别性。",
+        "每个位置都增加了一种具体的感官互动。",
+        "重复的市场灯光和蒸汽连接快速切换。",
+        "结局带着保留的物体恢复原创的前进路线。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用同一自拍或跟随载体锁定人物，把食物制作、试吃反应和陌生人群体回应压缩成快速旅行记忆，最后回到人物继续前行。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用同一自拍或跟随载体锁定人物，把食物制作、试吃反应和陌生人群体回应压缩成快速旅行记忆，最后回到人物继续前行。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个手持载体可让成人主机保持可识别性。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个位置都增加了一种具体的感官互动。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "群体反应可以在不更换宿主的情况下短暂扩大记忆。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "重复的市场灯光和蒸汽连接快速切换。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "结局带着保留的物体恢复原创的前进路线。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位电台主持人拿着一束花，通过花卉市场的记忆蒙太奇。",
+          "prompt_seed": "一位电台主持人拿着一束花，通过花卉市场的记忆蒙太奇。"
+        },
+        {
+          "concept": "一位成人插画家拿着一本盖章笔记本穿过夜间书展蒙太奇。",
+          "prompt_seed": "一位成人插画家拿着一本盖章笔记本穿过夜间书展蒙太奇。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个手持载体可让成人主机保持可识别性。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每个位置都增加了一种具体的感官互动。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "群体反应可以在不更换宿主的情况下短暂扩大记忆。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "重复的市场灯光和蒸汽连接快速切换。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "结局带着保留的物体恢复原创的前进路线。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位电台主持人拿着一束花，通过花卉市场的记忆蒙太奇。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成人插画家拿着一本盖章笔记本穿过夜间书展蒙太奇。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

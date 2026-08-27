@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1",
+  "slug": "tactile-travel-chapters-scale-ascent",
+  "title": "生活触点旅行｜屋顶出发、街巷互动与私密纪念",
+  "source_title": "首尔夏日随拍｜屋顶、巷道、冰品、猫与发饰回忆",
+  "summary": "用同一人物与手持跟拍连接多个日常触点；每章都通过一次可触摸互动进入下一地点，最后把途中小物变成私密纪念。",
+  "status": "released",
+  "source_duration_seconds": 30.112,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/tactile-travel-chapters-scale-ascent",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-simplyannisa-2092107287355875538-browser-2092107287355875538-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-tactile-travel-chapters-scale-ascent-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-tactile-travel-chapters-scale-ascent-v1",
+  "input_format": "稳定旅行者身份/服装/方向 + 至少4个地理章节 + 每章1次本地材质接触 + 窄巷近物→社会场→移动地理→攀升全景 + 统一档案介质 + 高位稳定终景",
+  "recommended_input": "手持跟随一名成年陶艺学生从工作室阳台出发。；摊主递来一只温热纸杯，人物边走边品尝。；回到工作室，同伴把丝带系在成品杯柄上，人物回头微笑。",
+  "required_anchors": [
+    "One identity-locked adult carries the full route.",
+    "Each chapter begins with one tactile interaction.",
+    "Locations progress along one plausible journey.",
+    "A small encountered object becomes the closing keepsake."
+  ],
+  "tags": [
+    "tactile",
+    "travel",
+    "chapters",
+    "scale",
+    "ascent"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:46:19+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}

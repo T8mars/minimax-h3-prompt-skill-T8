@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ou-zhen599-2091899796554715250-browser-2091899796554715250-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "66713e2b79429ccb77e4c496036a88906dbbec4611d8cb46d1eb1eaa75b2432d",
+    "creative_dna_sha256": "612e388afd3f4e4dc9a890cb96ac06fd7bd832bcd0094139688fa2a777edfd94"
+  },
+  "content": {
+    "title": "围攻伪弱势反转｜静立诱近、近身爆发与路线继续",
+    "summary": "让单一成年主体在废墟中先保持静止并允许多名对手逼近；用微小准备信号触发高速近身反制，清场后回到原站位与冷静状态。",
+    "quick_start": {
+      "input_format": "稳定主体与中断目标 + 可读困境 + 因困境主动靠近的外部压力 + 至少两个准备微证据 + 单一能力链破局 + 回到原载体继续路线",
+      "recommended_input": "成年应急递送员站在被水淹的交通广场中心，三名掠夺者从两侧逼近。；递送员用一次落地转体把对手引向固定检票栏。；水雾沉降，递送员回到原中心线并继续送达路线。",
+      "required_anchors": [
+        "主角显得脆弱，但仍处于中心位置。",
+        "攻击者明显进入近距离。",
+        "快速位移保留了一根空间关系轴。",
+        "对象回到基线并恢复原创的目标。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让单一成年主体在废墟中先保持静止并允许多名对手逼近；用微小准备信号触发高速近身反制，清场后回到原站位与冷静状态。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让单一成年主体在废墟中先保持静止并允许多名对手逼近；用微小准备信号触发高速近身反制，清场后回到原站位与冷静状态。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "主角显得脆弱，但仍处于中心位置。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "攻击者明显进入近距离。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在反转之前有一个小的准备提示。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "快速位移保留了一根空间关系轴。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "对象回到基线并恢复原创的目标。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "紧急信使清除袭击者并恢复被洪水淹没的广场路线。",
+          "prompt_seed": "紧急信使清除袭击者并恢复被洪水淹没的广场路线。"
+        },
+        {
+          "concept": "一名成年医生清除了医院中庭内的敌对无人机，并继续搬运补给箱。",
+          "prompt_seed": "一名成年医生清除了医院中庭内的敌对无人机，并继续搬运补给箱。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "主角显得脆弱，但仍处于中心位置。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "攻击者明显进入近距离。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "在反转之前有一个小的准备提示。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "快速位移保留了一根空间关系轴。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "对象回到基线并恢复原创的目标。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "紧急信使清除袭击者并恢复被洪水淹没的广场路线。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年医生清除了医院中庭内的敌对无人机，并继续搬运补给箱。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

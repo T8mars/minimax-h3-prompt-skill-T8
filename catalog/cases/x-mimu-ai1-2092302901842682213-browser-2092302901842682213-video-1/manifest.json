@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1",
+  "slug": "routine-compression-carrier-handoff-arrival",
+  "title": "善意载体接力｜小动作跨人物传递到情绪兑现",
+  "source_title": "城市善意短链｜围巾、地图、婴儿车与雨伞连续传递",
+  "summary": "用一个可辨识帮助动作作为载体，让不同人物在同一城市路线中接力；每次帮助同时解决眼前问题并引出下一位，最终回到明确的情绪结果。",
+  "status": "released",
+  "source_duration_seconds": 10.1239,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/routine-compression-carrier-handoff-arrival",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-routine-compression-carrier-handoff-arrival-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-routine-compression-carrier-handoff-arrival-v1",
+  "input_format": "稳定主体与目的地 + 单职责短动作 + 姿态/手中物/方向接力 + 累积准备状态 + 单向路线 + 终点结果动作",
+  "recommended_input": "成年面包师在市场外把干毛巾递给淋雨的自行车递送员。；顾客截住滚动水果箱，避免撞到推婴儿车的家长。；清洁工把捡到的手套还给最初面包师，完成实用善意闭环。",
+  "required_anchors": [
+    "One practical helping action is visible in every beat.",
+    "The recipient becomes the next helper.",
+    "A shared route preserves spatial continuity.",
+    "The last help returns value to the opening participant."
+  ],
+  "tags": [
+    "routine",
+    "compression",
+    "carrier",
+    "handoff",
+    "arrival"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:45:57+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-navi-ai2-2092612115970342970-browser-2092612115970342970-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "1eea5e4d5e8f45752ccfdec1ebe93f375220d083f7c84e2c175144e153f851d0",
+    "creative_dna_sha256": "ae954b589bcf432a200da0c2f66476f258d9f06550f7bb6e4d7fce4123918f9d"
+  },
+  "content": {
+    "title": "Product Silhouette Proof | Macro Detail, Reflective Base, Hero Hold",
+    "summary": "Keep one product as the only hero while evidence expands from controlled material detail to full silhouette, reflective proof and a stable recognition hold.",
+    "quick_start": {
+      "input_format": "One product remains the only hero object. + Evidence expands from control detail to full silhouette. + Lighting reveals material rather than hiding geometry. + The reflective base confirms shape and finish. + The final centered frame holds long enough for recognition.",
+      "recommended_input": "Open on an extreme macro of a fictional desk lamp's brass dimmer and beveled glass ring. Center the complete lamp against a restrained charcoal-to-amber gradient. Hold the entire original lamp in a symmetric hero frame with one warm edge light and no text.",
+      "required_anchors": [
+        "One product remains the only hero object.",
+        "Evidence expands from control detail to full silhouette.",
+        "The reflective base confirms shape and finish.",
+        "The final centered frame holds long enough for recognition."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Keep one product as the only hero while evidence expands from controlled material detail to full silhouette, reflective proof and a stable recognition hold.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Keep one product as the only hero while evidence expands from controlled material detail to full silhouette, reflective proof and a stable recognition hold. The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One product remains the only hero object.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Evidence expands from control detail to full silhouette.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Lighting reveals material rather than hiding geometry.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "The reflective base confirms shape and finish.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final centered frame holds long enough for recognition.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "A brass-and-glass desk lamp receives macro-to-hero material proof.",
+          "prompt_seed": "A brass-and-glass desk lamp receives macro-to-hero material proof."
+        },
+        {
+          "concept": "A ceramic speaker receives grille, control, body and reflection proof before a centered hold.",
+          "prompt_seed": "A ceramic speaker receives grille, control, body and reflection proof before a centered hold."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "One product remains the only hero object."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Evidence expands from control detail to full silhouette."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Lighting reveals material rather than hiding geometry."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "The reflective base confirms shape and finish."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "The final centered frame holds long enough for recognition."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A brass-and-glass desk lamp receives macro-to-hero material proof.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A ceramic speaker receives grille, control, body and reflection proof before a centered hold.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

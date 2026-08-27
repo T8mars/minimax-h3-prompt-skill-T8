@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1",
+  "slug": "selfie-carrier-rapid-group-memory-montage",
+  "title": "旧DV美食漫游｜自拍锚点、摊位试吃与群体回应",
+  "source_title": "釜山夜市旧DV｜跟随讲述、食物特写与陌生人共享",
+  "summary": "用同一自拍或跟随载体锁定人物，把食物制作、试吃反应和陌生人群体回应压缩成快速旅行记忆，最后回到人物继续前行。",
+  "status": "released",
+  "source_duration_seconds": 30.144,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/selfie-carrier-rapid-group-memory-montage",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ciri-ai-2091842148970996054-browser-2091842148970996054-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-selfie-carrier-rapid-group-memory-montage-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-selfie-carrier-rapid-group-memory-montage-v1",
+  "input_format": "同一成年自拍者贯穿 + 单一活动地理与重复地标 + 活动插入和自拍回场交替 + 群体分阶段扩大 + 不完美手机快切 + 最大群体完成共同动作",
+  "recommended_input": "用小型DV跟随成年电台主持人进入室内花市。；附近年长摊主短暂挥手加入画面，但主角不丢失。；继续从后方跟随主持人穿过通道，花束始终可见，人物回头看镜头。",
+  "required_anchors": [
+    "One handheld carrier keeps the adult host recognizable.",
+    "Every location adds one concrete sensory interaction.",
+    "Repeated market lights and steam connect fast cuts.",
+    "The ending resumes the original forward route with a retained object."
+  ],
+  "tags": [
+    "selfie",
+    "carrier",
+    "rapid",
+    "group",
+    "memory",
+    "montage"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:46:31+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mimu-ai1-2092302901842682213-browser-2092302901842682213-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "860c5872113ce40343c6f502d0e314d50909ecded5b6133022290c1c498d947e",
+    "creative_dna_sha256": "f65612f70b28076006d32e7aa8431269f07f675173f05f77e73dddbceadbb2dd"
+  },
+  "content": {
+    "title": "Kindness Relay Loop | Practical Help, Carrier Handoff, Return Value",
+    "summary": "Compress a chain of practical helping actions so each recipient becomes the next helper and the final handoff returns value to the opener.",
+    "quick_start": {
+      "input_format": "One practical helping action is visible in every beat. + The recipient becomes the next helper. + One carrier object or gesture crosses each handoff. + A shared route preserves spatial continuity. + The last help returns value to the opening participant.",
+      "recommended_input": "An adult baker gives a dry towel to a rain-soaked bicycle courier outside a market. The shopper catches a rolling fruit crate before it reaches a parent with a stroller. End on the cleaner returning one recovered glove to the original baker, closing the practical kindness chain.",
+      "required_anchors": [
+        "One practical helping action is visible in every beat.",
+        "The recipient becomes the next helper.",
+        "A shared route preserves spatial continuity.",
+        "The last help returns value to the opening participant."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Compress a chain of practical helping actions so each recipient becomes the next helper and the final handoff returns value to the opener.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Compress a chain of practical helping actions so each recipient becomes the next helper and the final handoff returns value to the opener. The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One practical helping action is visible in every beat.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "The recipient becomes the next helper.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "One carrier object or gesture crosses each handoff.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "A shared route preserves spatial continuity.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The last help returns value to the opening participant.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "A market chain passes towel, route card, crate catch, umbrella and recovered glove.",
+          "prompt_seed": "A market chain passes towel, route card, crate catch, umbrella and recovered glove."
+        },
+        {
+          "concept": "A station chain passes ticket, suitcase lift, seat offer, charger and returned notebook.",
+          "prompt_seed": "A station chain passes ticket, suitcase lift, seat offer, charger and returned notebook."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "One practical helping action is visible in every beat."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "The recipient becomes the next helper."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "One carrier object or gesture crosses each handoff."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "A shared route preserves spatial continuity."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "The last help returns value to the opening participant."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A market chain passes towel, route card, crate catch, umbrella and recovered glove.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A station chain passes ticket, suitcase lift, seat offer, charger and returned notebook.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

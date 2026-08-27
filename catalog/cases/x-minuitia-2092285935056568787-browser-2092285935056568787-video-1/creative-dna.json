@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Freeze a coherent disaster field while exactly one adult remains mobile; one small contact triggers exact material reversal and restores the environment. The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One readable disaster state precedes the freeze.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Exactly one subject remains mobile.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "One small contact point triggers the reversal.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Every displaced element retraces rather than respawns.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The ending proves a restored coherent environment.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "A flooded archive freezes around an adult conservator and rewinds from a brass tag.",
+      "prompt_seed": "A flooded archive freezes around an adult conservator and rewinds from a brass tag."
+    },
+    {
+      "concept": "A collapsing greenhouse freezes around an adult botanist and regrows from one intact seed capsule.",
+      "prompt_seed": "A collapsing greenhouse freezes around an adult botanist and regrows from one intact seed capsule."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "One readable disaster state precedes the freeze."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "Exactly one subject remains mobile."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "One small contact point triggers the reversal."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "Every displaced element retraces rather than respawns."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The ending proves a restored coherent environment."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A flooded archive freezes around an adult conservator and rewinds from a brass tag.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A collapsing greenhouse freezes around an adult botanist and regrows from one intact seed capsule.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

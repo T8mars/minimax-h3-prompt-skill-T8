@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1",
+  "slug": "redirect-mass-with-leverage",
+  "title": "体型差格斗｜身份插页、反应镜头与力量反制",
+  "source_title": "流浪虎僧对决｜设定插页与双能量近战闭环",
+  "summary": "先通过稳定设定插页锁定两名原创对手，再用反应特写、交叉冲锋、低机位碰撞和终局停顿证明体型差与力量反制。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/redirect-mass-with-leverage",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-itspixieverse-2092439841564995765-browser-2092439841564995765-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-asymmetric-mass-control-fight-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-asymmetric-mass-control-fight-v1",
+  "input_format": "巨大重型对手 + 小型主角 + 提前可见支点 + 重型攻击承诺 + 近身预判 + 杠杆重定向 + 非致命控制",
+  "recommended_input": "用两张原创身份卡锁定纤细成年玻璃决斗者与巨大陶瓷守卫。；双方行动前各给一次反应特写。；完整决斗者站在倒地守卫旁，再回到双身份卡收束。",
+  "required_anchors": [
+    "Both opponents receive stable identity anchors.",
+    "One shared fight axis is established before contact.",
+    "The smaller body wins through visible leverage, not unexplained force.",
+    "The ending proves both identities and the final power relation."
+  ],
+  "tags": [
+    "asymmetric",
+    "mass",
+    "control",
+    "fight"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:41:43+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}

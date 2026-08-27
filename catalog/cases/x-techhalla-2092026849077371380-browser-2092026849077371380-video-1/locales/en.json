@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techhalla-2092026849077371380-browser-2092026849077371380-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "ced7e4514c8073a37f7f98cf15e435792f3480f4ec64a3727bb18b2198603357",
+    "creative_dna_sha256": "aea6a258a17542370ad2d3152471ddab41ded267c99594a949e1ecf7e29f1152"
+  },
+  "content": {
+    "title": "Grounded Garage Fight | Occlusion, Tool Leverage, Transient Feedback",
+    "summary": "Ground a close-range fight in injury, tools, occlusion and leverage, then reserve the abnormal effect for brief feedback after physical contact.",
+    "quick_start": {
+      "input_format": "Physical injury, tools and geography read before stylization. + Vehicle occlusion motivates the location change. + Every exchange has visible contact and grounded weight. + One tool struggle proves leverage at close range. + The abnormal effect is brief feedback after contact, not a substitute for action.",
+      "recommended_input": "Establish an adult salvage worker beside a forklift with one heavy hook and visible fatigue. Return both adults to the same painted lane for one grounded kick-and-block exchange. At the final glove contact, release a brief spray of magnetic filings, then settle back into the physical stance.",
+      "required_anchors": [
+        "Physical injury, tools and geography read before stylization.",
+        "Vehicle occlusion motivates the location change.",
+        "One tool struggle proves leverage at close range.",
+        "The abnormal effect is brief feedback after contact, not a substitute for action."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Ground a close-range fight in injury, tools, occlusion and leverage, then reserve the abnormal effect for brief feedback after physical contact.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Ground a close-range fight in injury, tools, occlusion and leverage, then reserve the abnormal effect for brief feedback after physical contact. The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Physical injury, tools and geography read before stylization.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Vehicle occlusion motivates the location change.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Every exchange has visible contact and grounded weight.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "One tool struggle proves leverage at close range.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The abnormal effect is brief feedback after contact, not a substitute for action.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "A salvage worker fights around a forklift with magnetic filing feedback.",
+          "prompt_seed": "A salvage worker fights around a forklift with magnetic filing feedback."
+        },
+        {
+          "concept": "An adult mechanic fights around a tram car with brief electrical feedback after grounded impacts.",
+          "prompt_seed": "An adult mechanic fights around a tram car with brief electrical feedback after grounded impacts."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Physical injury, tools and geography read before stylization."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Vehicle occlusion motivates the location change."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Every exchange has visible contact and grounded weight."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "One tool struggle proves leverage at close range."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "The abnormal effect is brief feedback after contact, not a substitute for action."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A salvage worker fights around a forklift with magnetic filing feedback.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult mechanic fights around a tram car with brief electrical feedback after grounded impacts.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

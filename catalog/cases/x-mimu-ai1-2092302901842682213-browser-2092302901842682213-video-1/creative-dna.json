@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Compress a chain of practical helping actions so each recipient becomes the next helper and the final handoff returns value to the opener. The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One practical helping action is visible in every beat.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "The recipient becomes the next helper.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "One carrier object or gesture crosses each handoff.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "A shared route preserves spatial continuity.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The last help returns value to the opening participant.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "A market chain passes towel, route card, crate catch, umbrella and recovered glove.",
+      "prompt_seed": "A market chain passes towel, route card, crate catch, umbrella and recovered glove."
+    },
+    {
+      "concept": "A station chain passes ticket, suitcase lift, seat offer, charger and returned notebook.",
+      "prompt_seed": "A station chain passes ticket, suitcase lift, seat offer, charger and returned notebook."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "One practical helping action is visible in every beat."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The recipient becomes the next helper."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "One carrier object or gesture crosses each handoff."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "A shared route preserves spatial continuity."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The last help returns value to the opening participant."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A market chain passes towel, route card, crate catch, umbrella and recovered glove.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A station chain passes ticket, suitcase lift, seat offer, charger and returned notebook.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

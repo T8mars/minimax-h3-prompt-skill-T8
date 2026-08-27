@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-minuitia-2092285935056568787-browser-2092285935056568787-video-1",
+  "slug": "suspended-accident-repair-before-resumption",
+  "title": "全域冻结回溯｜唯一行动者触发环境复流",
+  "source_title": "猩红女祭司｜森林停滞、触点回溯与巨树复归",
+  "summary": "先让整个环境在一次灾变中同时悬停，只保留一个行动者继续移动；行动者接触一个可辨识微物后，所有碎片沿原轨迹逆行并恢复为完整终态。",
+  "status": "released",
+  "source_duration_seconds": 21.199819,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/suspended-accident-repair-before-resumption",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-minuitia-2092285935056568787-browser-2092285935056568787-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-suspended-accident-repair-before-resumption-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-suspended-accident-repair-before-resumption-v1",
+  "input_format": "完整物件与正常环境基线 + 一次事故拆散并冻结 + 唯一移动专业角色 + 同一组件可追踪回收与重建 + 完成交付后一次全域复流",
+  "recommended_input": "建立成年修复师与正在进水的玻璃档案馆。；修复师找到并触碰一枚悬浮黄铜目录牌。；档案馆恢复干燥完整，人物与空间锚点保持一致并停留。",
+  "required_anchors": [
+    "One readable disaster state precedes the freeze.",
+    "Exactly one subject remains mobile.",
+    "Every displaced element retraces rather than respawns.",
+    "The ending proves a restored coherent environment."
+  ],
+  "tags": [
+    "suspended",
+    "accident",
+    "repair",
+    "before",
+    "resumption"
+  ],
+  "quality": {
+    "weighted_score": 4.951,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-27T15:41:43+08:00",
+  "updated_at": "2026-08-27T16:19:55+08:00"
+}
