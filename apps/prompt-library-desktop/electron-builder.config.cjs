@@ -58,8 +58,10 @@ module.exports = {
   extraResources,
   win: {
     icon: "build/icon.ico",
-    target: ["nsis"],
-    artifactName: "T8-Prompt-Library-Setup-v${version}.${ext}"
+    target: [
+      { target: "nsis", arch: ["x64"] },
+      { target: "portable", arch: ["x64"] }
+    ]
   },
   mac: {
     icon: "build/icon.png",
@@ -77,6 +79,7 @@ module.exports = {
     title: "T8 Prompt Library ${version}"
   },
   nsis: {
+    artifactName: "T8-Prompt-Library-Setup-v${version}.${ext}",
     installerIcon: "build/icon.ico",
     uninstallerIcon: "build/icon.ico",
     oneClick: false,
@@ -86,6 +89,9 @@ module.exports = {
     createStartMenuShortcut: true,
     shortcutName: "T8 Prompt Library",
     deleteAppDataOnUninstall: false
+  },
+  portable: {
+    artifactName: "T8-Prompt-Library-Portable-v${version}.${ext}"
   },
   publish: [
     {

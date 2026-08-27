@@ -9,6 +9,24 @@
 - 首批持续扩充的 MiniMax H3 与 Seedance 2.0 Creative DNA 案例。
 - Linux 桌面发行评估。
 
+## [1.3.5] - 2026-08-27
+
+### Added
+
+- 新增 Windows x64 便携单文件 `T8-Prompt-Library-Portable-v1.3.5.exe`，无需安装即可运行。
+- 便携版把 Chromium 会话、API 凭据、收藏、合集、历史、实验项目和本地模型配置统一写入程序旁的 `T8-Prompt-Library-Data`，不占用安装版的系统数据目录。
+
+### Changed
+
+- Electron 从 43.4.0 升级到 43.4.1，纳入上游的崩溃、内存、ASAR、协议与沙箱修复。
+- 便携版禁用安装器式自动更新，检查更新时打开官方 Releases；安装版继续保留用户明确确认后的自动更新。
+- 安装、隐私、发布和中英文 README 同步说明便携包、外置媒体目录及跨机器凭据边界。
+
+### Validation
+
+- 便携模式具有独立单元测试、Release 资产硬门禁和实际便携 EXE 启动报告；发布时必须证明 `userData` 与 `sessionData` 都位于启动器旁。
+- 公共边界、完整目录、桌面应用测试、Windows 安装版/便携版和 universal macOS 发布合同继续作为正式发布门禁。
+
 ## [1.3.4] - 2026-08-27
 
 ### Added

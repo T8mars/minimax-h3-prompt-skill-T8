@@ -13,6 +13,18 @@ test("downloaded updates install only after explicit restart confirmation", () =
   assert.match(main, /autoUpdater\.quitAndInstall\(false, true\)/u);
 });
 
+test("Windows release includes a true portable target with isolated sibling data", () => {
+  const winTargets = builder.win.target.map((entry) => entry.target).sort();
+  assert.deepEqual(winTargets, ["nsis", "portable"]);
+  assert.equal(builder.portable.artifactName, "T8-Prompt-Library-Portable-v${version}.${ext}");
+  assert.match(main, /configurePortableMode/u);
+  assert.match(main, /portableMode\.enabled/u);
+  assert.match(main, /T8_PORTABLE_SMOKE/u);
+  assert.match(main, /path\.join\(portableMode\.userDataDir, "portable-smoke\.json"\)/u);
+  assert.ok(workflow.includes("T8-Prompt-Library-Portable-v$version.exe"));
+  assert.ok(workflow.includes("Validate packaged Windows portable mode"));
+});
+
 test("unsigned macOS preview uses a manual release-update boundary", () => {
   assert.match(main, /process\.platform === "darwin"/u);
   assert.match(main, /Unsigned macOS builds update through the Releases page/u);

@@ -26,6 +26,7 @@ const { PromptProjectStore } = require("./lib/prompt-projects.cjs");
 const { LocalQwenConfigStore } = require("./lib/local-qwen-config.cjs");
 const { LocalQwenManager } = require("./lib/local-qwen-runtime.cjs");
 const { resolveMediaRoot } = require("./lib/media-roots.cjs");
+const { configurePortableMode } = require("./lib/portable-mode.cjs");
 const RELEASES_URL = "https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases";
 
 protocol.registerSchemesAsPrivileged([
@@ -43,9 +44,18 @@ protocol.registerSchemesAsPrivileged([
 const APP_DIR = __dirname;
 const REPO_ROOT = path.resolve(APP_DIR, "../..");
 const RENDERER_PATH = path.join(APP_DIR, "src", "index.html");
+const portableMode = configurePortableMode({
+  app,
+  env: process.env,
+  platform: process.platform,
+  isPackaged: app.isPackaged,
+  executablePath: process.execPath
+});
 let mainWindow = null;
 let assetRoots = null;
-let updateStatus = { state: "idle" };
+let updateStatus = portableMode.enabled
+  ? { state: "manual", message: "便携版通过 Releases 页面手动更新" }
+  : { state: "idle" };
 let updateInFlight = false;
 let promptOrchestrator = null;
 let music3Orchestrator = null;
@@ -138,7 +148,7 @@ function sendUpdateStatus(next) {
 }
 
 function configureUpdater() {
-  if (process.platform === "darwin") return;
+  if (process.platform === "darwin" || portableMode.enabled) return;
   autoUpdater.autoDownload = false;
   autoUpdater.autoInstallOnAppQuit = false;
   autoUpdater.allowDowngrade = false;
@@ -176,6 +186,7 @@ function configureUpdater() {
 }
 
 function scheduleAutomaticUpdateCheck() {
+  if (portableMode.enabled) return;
   const delay = automaticUpdateDelay({ isPackaged: app.isPackaged, platform: process.platform, env: process.env });
   if (delay === null) return;
   setTimeout(async () => {
@@ -388,6 +399,12 @@ function configureIpc() {
 
   ipcMain.handle("updater:check", async (event) => {
     requireTrustedSender(event);
+    if (portableMode.enabled && app.isPackaged) {
+      const manual = { state: "manual", message: "便携版请从 Releases 页面手动下载新版" };
+      sendUpdateStatus(manual);
+      await shell.openExternal(RELEASES_URL, { activate: true });
+      return manual;
+    }
     if (process.platform === "darwin" && app.isPackaged) {
       const manual = { state: "manual", message: "Unsigned macOS builds update through the Releases page." };
       sendUpdateStatus(manual);
@@ -407,11 +424,26 @@ function configureIpc() {
 
   ipcMain.handle("updater:install", (event) => {
     requireTrustedSender(event);
-    if (process.platform === "darwin") return false;
+    if (process.platform === "darwin" || portableMode.enabled) return false;
     if (!app.isPackaged || updateStatus.state !== "downloaded") return false;
     setImmediate(() => autoUpdater.quitAndInstall(false, true));
     return true;
   });
+}
+
+function writePortableSmokeReport() {
+  if (process.env.T8_PORTABLE_SMOKE !== "1" || process.env.CI !== "true" || !portableMode.enabled) return false;
+  const outputPath = path.join(portableMode.userDataDir, "portable-smoke.json");
+  const report = {
+    enabled: portableMode.enabled,
+    executableDirectory: portableMode.executableDirectory,
+    userDataDir: app.getPath("userData"),
+    sessionDataDir: app.getPath("sessionData"),
+    version: app.getVersion()
+  };
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+  fs.writeFileSync(outputPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  return true;
 }
 
 function configureMediaProtocol() {
@@ -474,6 +506,10 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  if (writePortableSmokeReport()) {
+    app.quit();
+    return;
+  }
   assetRoots = resolveRoots();
   const mediaStore = new PromptMediaStore();
   promptProjectStore = new PromptProjectStore({ userDataDir: app.getPath("userData") });

@@ -351,11 +351,11 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 下载 `T8-Prompt-Library-Setup-v1.2.9.exe`；macOS 下载 `T8-Prompt-Library-v1.2.9-mac-universal.dmg`。
-3. 安装并打开应用；案例视频、分析与双模型提示词会一起出现。
-4. Windows 后续版本可在应用内检查并由用户确认安装；当前未签名 macOS 版本只会打开 Releases 页面，需要手动下载更新。
+2. Windows 可下载安装版 `T8-Prompt-Library-Setup-v1.3.5.exe`，或无需安装的 `T8-Prompt-Library-Portable-v1.3.5.exe`；macOS 下载 `T8-Prompt-Library-v1.3.5-mac-universal.dmg`。
+3. 安装版正常安装后启动；便携版放入可写目录直接运行，个人数据会保存在程序旁的 `T8-Prompt-Library-Data`。
+4. Windows 安装版可在应用内检查并由用户确认安装更新；Windows 便携版与当前未签名 macOS 版本通过 Releases 页面手动更新。
 
-当前提供 Windows x64 与 universal macOS（Intel + Apple Silicon）安装包。macOS 预览包尚未 Apple 签名或公证，安装前请核对 SHA-256；更详细说明见 [安装指南](./docs/installation.md)。
+当前提供 Windows x64 安装版、Windows x64 便携版与 universal macOS（Intel + Apple Silicon）安装包。macOS 预览包尚未 Apple 签名或公证，安装前请核对 SHA-256；更详细说明见 [安装指南](./docs/installation.md)。
 
 ### API 增强工作台
 
@@ -412,7 +412,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.2.9**。项目使用十进制进位：
+当前目标版本是 **v1.3.5**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -425,6 +425,7 @@ v1.2.4 -> v1.2.5
 v1.2.6 -> v1.2.7
 v1.2.7 -> v1.2.8
 v1.2.8 -> v1.2.9
+v1.3.4 -> v1.3.5
 v1.9.9 -> v2.0.0
 ```
 

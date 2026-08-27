@@ -6,7 +6,7 @@ on:
       version:
         description: "Decimal-carry version without v (for example 1.1.7)"
         required: true
-        default: "1.3.4"
+        default: "1.3.5"
         type: string
       media_sha256:
         description: "Comma-separated SHA-256 values for media part1 and part2 already uploaded to the Draft Release"
@@ -211,6 +211,42 @@ jobs:
           npm run test:e2e --prefix apps/prompt-library-desktop
           if ($LASTEXITCODE -ne 0) { throw "Packaged Windows E2E failed." }
 
+      - name: Validate packaged Windows portable mode
+        if: matrix.platform == 'windows'
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $version = "${{ inputs.version }}"
+          $dist = (Resolve-Path "apps/prompt-library-desktop/dist").Path
+          $portable = Join-Path $dist "T8-Prompt-Library-Portable-v$version.exe"
+          if (-not (Test-Path -LiteralPath $portable -PathType Leaf)) { throw "Windows portable executable is missing." }
+          $portableData = Join-Path $dist "T8-Prompt-Library-Data"
+          $smokeOutput = Join-Path $portableData "portable-smoke.json"
+          if (Test-Path -LiteralPath $portableData) { Remove-Item -LiteralPath $portableData -Recurse -Force }
+          if (Test-Path -LiteralPath $smokeOutput) { Remove-Item -LiteralPath $smokeOutput -Force }
+          $env:T8_PORTABLE_SMOKE = "1"
+          try {
+            $process = Start-Process -FilePath $portable -PassThru
+            if (-not $process.WaitForExit(60000)) {
+              $process.Kill()
+              throw "Windows portable smoke process did not exit within 60 seconds."
+            }
+          } finally {
+            Remove-Item Env:T8_PORTABLE_SMOKE -ErrorAction SilentlyContinue
+          }
+          $deadline = [DateTime]::UtcNow.AddSeconds(15)
+          while (-not (Test-Path -LiteralPath $smokeOutput -PathType Leaf) -and [DateTime]::UtcNow -lt $deadline) { Start-Sleep -Milliseconds 250 }
+          if (-not (Test-Path -LiteralPath $smokeOutput -PathType Leaf)) { throw "Windows portable app did not write its runtime smoke report." }
+          $report = Get-Content -LiteralPath $smokeOutput -Raw | ConvertFrom-Json
+          $expectedData = [System.IO.Path]::GetFullPath($portableData)
+          $expectedSession = Join-Path $expectedData "Session"
+          if (-not $report.enabled) { throw "Windows portable runtime did not detect the electron-builder portable launcher." }
+          if ($report.version -ne $version) { throw "Windows portable runtime version mismatch: $($report.version)." }
+          if ([System.IO.Path]::GetFullPath($report.userDataDir) -ne $expectedData) { throw "Windows portable userData escaped the launcher directory." }
+          if ([System.IO.Path]::GetFullPath($report.sessionDataDir) -ne $expectedSession) { throw "Windows portable sessionData escaped the launcher directory." }
+          if (-not (Test-Path -LiteralPath $expectedSession -PathType Container)) { throw "Windows portable data directories were not created." }
+          Remove-Item -LiteralPath $portableData -Recurse -Force
+
       - name: Run packaged macOS end-to-end test
         if: matrix.platform == 'macos'
         shell: pwsh
@@ -270,6 +306,10 @@ jobs:
           if (-not (Test-Path $installer -PathType Leaf)) { throw "Expected Windows installer is missing." }
           if ((Get-Item -LiteralPath $installer).Length -ge 2147483648) { throw "Windows installer exceeds GitHub's per-asset size limit." }
           Copy-Item $installer $assets
+          $portable = Join-Path $dist "T8-Prompt-Library-Portable-v$version.exe"
+          if (-not (Test-Path $portable -PathType Leaf)) { throw "Expected Windows portable executable is missing." }
+          if ((Get-Item -LiteralPath $portable).Length -ge 2147483648) { throw "Windows portable executable exceeds GitHub's per-asset size limit." }
+          Copy-Item $portable $assets
           Get-ChildItem $dist -File | Where-Object { $_.Name -eq "latest.yml" -or $_.Extension -eq ".blockmap" } | Copy-Item -Destination $assets
           if (-not (Test-Path (Join-Path $assets "latest.yml"))) { throw "latest.yml is missing." }
           foreach ($asset in Get-ChildItem $assets -File) {
@@ -330,6 +370,7 @@ jobs:
             "media-pack-manifest.json",
             "T8-Prompt-Library-Setup-v$version.exe",
             "T8-Prompt-Library-Setup-v$version.exe.blockmap",
+            "T8-Prompt-Library-Portable-v$version.exe",
             "latest.yml",
             "T8-Prompt-Library-v$version-mac-universal.dmg",
             "T8-Prompt-Library-v$version-mac-universal.zip",
@@ -378,6 +419,7 @@ jobs:
           ## T8 Prompt Library v${{ inputs.version }}
 
           - Windows NSIS: verified
+          - Windows portable executable with launcher-sibling user/session data: verified
           - macOS universal DMG + ZIP: verified, unsigned and unnotarized
           - All 275 released case videos: distributable, hash-bound, fully traversed on both platforms, and published in two lossless media-pack volumes; unavailable cases: 0
           - Desktop packages: compact catalog included; complete MP4s mounted from the verified sidecar media pack to stay below GitHub's 2 GiB per-asset limit

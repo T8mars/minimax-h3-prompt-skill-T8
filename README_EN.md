@@ -349,11 +349,11 @@ This section is generated from `catalog/manifest.json`, each case's reviewed Eng
 ### Use the desktop viewer
 
 1. Open [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases).
-2. On Windows, download `T8-Prompt-Library-Setup-v1.2.9.exe`; on macOS, download `T8-Prompt-Library-v1.2.9-mac-universal.dmg`.
-3. Install and open the app. Case videos, analysis, and both model prompts appear together.
-4. Windows can check for later releases and install only after user confirmation. The current unsigned macOS build opens the Releases page and must be updated manually.
+2. On Windows, download either `T8-Prompt-Library-Setup-v1.3.5.exe` or the no-install `T8-Prompt-Library-Portable-v1.3.5.exe`; on macOS, download `T8-Prompt-Library-v1.3.5-mac-universal.dmg`.
+3. Install the setup build normally, or place the portable executable in a writable folder and run it directly. Portable personal data stays in the adjacent `T8-Prompt-Library-Data` directory.
+4. The installed Windows build updates only after user confirmation. The Windows portable build and current unsigned macOS build update manually through the Releases page.
 
-The project ships Windows x64 and universal macOS packages for Intel and Apple Silicon. The macOS preview is not Apple-signed or notarized; verify its SHA-256 before installation. See the [installation guide](./docs/installation.md) for details.
+The project ships installed and portable Windows x64 builds plus universal macOS packages for Intel and Apple Silicon. The macOS preview is not Apple-signed or notarized; verify its SHA-256 before installation. See the [installation guide](./docs/installation.md) for details.
 
 ### API Enhancement Workbench
 
@@ -410,7 +410,7 @@ CI checks the public boundary, secrets, paths, directory layout, case status, an
 
 ## Versioning and updates
 
-The current target version is **v1.2.9**. Releases use decimal carry:
+The current target version is **v1.3.5**. Releases use decimal carry:
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -423,6 +423,7 @@ v1.2.4 -> v1.2.5
 v1.2.6 -> v1.2.7
 v1.2.7 -> v1.2.8
 v1.2.8 -> v1.2.9
+v1.3.4 -> v1.3.5
 v1.9.9 -> v2.0.0
 ```
 

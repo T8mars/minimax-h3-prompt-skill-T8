@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.3.4`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.3.4`。
+当前版本是 `v1.3.5`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.3.5`。
 
 版本采用十进制进位：
 
@@ -23,6 +23,7 @@
 1.3.1 -> 1.3.2
 1.3.2 -> 1.3.3
 1.3.3 -> 1.3.4
+1.3.4 -> 1.3.5
 1.9.9 -> 2.0.0
 ```
 
@@ -33,6 +34,7 @@
 稳定版至少包含：
 
 - `T8-Prompt-Library-Setup-v<version>.exe`；
+- `T8-Prompt-Library-Portable-v<version>.exe`；
 - `latest.yml` 与 Electron updater 所需 blockmap；
 - `T8-Prompt-Library-v<version>-mac-universal.dmg`；
 - `T8-Prompt-Library-v<version>-mac-universal.zip`、`latest-mac.yml` 与 ZIP blockmap；
@@ -76,10 +78,10 @@ Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHu
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.3.4
+npm run media:pack -- -Version 1.3.5
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个正式案例和社区 Skill 媒体的时长、视频 codec 和音频 codec，按原文件体积均衡输出 `.release-input/out/prompt-library-media-v1.3.4-part1.zip`、`prompt-library-media-v1.3.4-part2.zip`、`media-pack-manifest.json` 和两个对应 SHA-256。两个 ZIP 都带相同 manifest，解压到同一目录即可无损还原完整媒体。manifest 的 `files` 必须覆盖全部正式案例，`unavailable_cases` 必须为空，`community_skill_files` 单独记录非官方 Skill 样片；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个正式案例和社区 Skill 媒体的时长、视频 codec 和音频 codec，按原文件体积均衡输出 `.release-input/out/prompt-library-media-v1.3.5-part1.zip`、`prompt-library-media-v1.3.5-part2.zip`、`media-pack-manifest.json` 和两个对应 SHA-256。两个 ZIP 都带相同 manifest，解压到同一目录即可无损还原完整媒体。manifest 的 `files` 必须覆盖全部正式案例，`unavailable_cases` 必须为空，`community_skill_files` 单独记录非官方 Skill 样片；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 
@@ -91,8 +93,8 @@ npm run media:pack -- -Version 1.3.4
 6. 手动运行 `.github/workflows/release.yml`，输入不带 `v` 的版本与用英文逗号连接的两个媒体 SHA-256。
 7. 工作流定位或安装 `ffmpeg`/`ffprobe`，从 Draft Release 下载两个媒体分卷、逐个校验 ZIP 哈希并解压到同一目录。
 8. 每个 `files` 或 `community_skill_files` 中的 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨；`audio_mode=present` 的媒体还必须完整遍历音频轨，来源本身无音轨的媒体必须明确记录 `audio_mode=source_silent` 与 `audio_codec=null`。探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、声明存在的轨道、进程退出或完整遍历失败仍会阻断发布。`unavailable_cases` 必须为空。
-9. Windows runner 与 macOS runner 分别用单线程 FFmpeg 生成安装包专用的紧凑动态 GIF 副本，并核对其 manifest 与仓库完全一致；随后 Windows 构建不重复内嵌 MP4 的 NSIS，macOS 构建不重复内嵌 MP4 的 unsigned universal DMG + ZIP。门禁会阻止 `resources/media` 意外进入安装包。
-10. 两个平台都以打包后的应用挂载同一份已还原并校验的外置媒体目录运行 E2E，证明 275 个案例、9 个官方仓库条目、2 个非官方 Skills、275 个可分发案例视频、2 个社区 Skill 视频、0 个不可用案例，以及收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用。
+9. Windows runner 与 macOS runner 分别用单线程 FFmpeg 生成安装包专用的紧凑动态 GIF 副本，并核对其 manifest 与仓库完全一致；随后 Windows 同时构建不重复内嵌 MP4 的 NSIS 与 portable 单文件，macOS 构建不重复内嵌 MP4 的 unsigned universal DMG + ZIP。门禁会阻止 `resources/media` 意外进入任何桌面包。
+10. 两个平台都以打包后的应用挂载同一份已还原并校验的外置媒体目录运行 E2E，证明 275 个案例、9 个官方仓库条目、2 个非官方 Skills、275 个可分发案例视频、2 个社区 Skill 视频、0 个不可用案例，以及收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用；Windows 还会实际启动 portable EXE，确认 `userData` 与 `sessionData` 都落在启动器旁的 `T8-Prompt-Library-Data`。
 11. 最终发布 Job 必须同时收到 Windows 与 macOS 已验证产物，核对精确资产集合后统一生成 `SHA256SUMS.txt`。
 12. 只有以上门禁通过，才上传全部目录包、Skills 包、媒体包、Windows 安装包和 macOS 安装包；`publish=true` 时才把 Draft 设为正式 Release。
 
@@ -100,7 +102,7 @@ npm run media:pack -- -Version 1.3.4
 
 ## 自动更新
 
-Windows Electron updater 只查询本仓库的稳定 GitHub Releases。`latest.yml` 与安装包必须来自同一次构建。更新可以自动检查并下载，但 `autoInstallOnAppQuit` 关闭；只有用户点击界面的“重启安装”后才调用安装。
+Windows 安装版 Electron updater 只查询本仓库的稳定 GitHub Releases。`latest.yml` 与安装包必须来自同一次构建。更新可以自动检查并下载，但 `autoInstallOnAppQuit` 关闭；只有用户点击界面的“重启安装”后才调用安装。Windows 便携版不调用安装器式 updater，检查更新时只打开官方 Releases 页面，由用户核对哈希并替换 EXE；旁边的 `T8-Prompt-Library-Data` 保持不变。
 
 macOS 同步生成 ZIP、ZIP blockmap 和 `latest-mac.yml`，为未来签名更新保留完整产物合同；但当前公开构建没有 Apple Developer ID，自动更新在 macOS 上禁用，界面只打开 Releases 页面。获得 Apple 签名与公证密钥前，不得把 macOS 包宣称为已签名、已公证或可自动更新。
 
