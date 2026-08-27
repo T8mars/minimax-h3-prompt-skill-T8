@@ -415,15 +415,21 @@ jobs:
         if: always()
         shell: pwsh
         run: |
-          $catalog = Get-Content -LiteralPath "catalog/manifest.json" -Raw | ConvertFrom-Json
-          $caseCount = [int]$catalog.case_count
+          $mediaManifestPath = "release-assets/media-pack-manifest.json"
+          $caseCount = "unknown"
+          $unavailableCaseCount = "unknown"
+          if (Test-Path -LiteralPath $mediaManifestPath -PathType Leaf) {
+            $mediaManifest = Get-Content -LiteralPath $mediaManifestPath -Raw | ConvertFrom-Json
+            $caseCount = [int]$mediaManifest.case_count
+            $unavailableCaseCount = [int]$mediaManifest.unavailable_case_count
+          }
           @"
           ## T8 Prompt Library v${{ inputs.version }}
 
           - Windows NSIS: verified
           - Windows portable executable with launcher-sibling user/session data: verified
           - macOS universal DMG + ZIP: verified, unsigned and unnotarized
-          - All $caseCount released case videos: distributable, hash-bound, fully traversed on both platforms, and published in two lossless media-pack volumes; unavailable cases: 0
+          - All $caseCount released case videos: distributable, hash-bound, fully traversed on both platforms, and published in two lossless media-pack volumes; unavailable cases: $unavailableCaseCount
           - Desktop packages: compact catalog included; complete MP4s mounted from the verified sidecar media pack to stay below GitHub's 2 GiB per-asset limit
           - Packaged Electron E2E with sidecar media: required on both platforms
           - Publish requested: ${{ inputs.publish }}
