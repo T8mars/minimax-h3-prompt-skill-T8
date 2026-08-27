@@ -129,6 +129,8 @@ $manifest = [ordered]@{
     schema_version = "1.2.0"
     version = $Version
     generated_at = [DateTime]::UtcNow.ToString("o")
+    archive_part_count = 2
+    archive_layout = "balanced_lossless_zip_parts"
     catalog_case_count = $caseIds.Count
     case_count = $files.Count
     files = $files
@@ -144,31 +146,61 @@ $manifestOutput = Join-Path $OutputDir "media-pack-manifest.json"
 [System.IO.File]::WriteAllText($manifestOutput, $manifestJson + [Environment]::NewLine, [System.Text.UTF8Encoding]::new($false))
 $stagedManifest = Join-Path $InputDir "media-pack-manifest.json"
 [System.IO.File]::WriteAllText($stagedManifest, $manifestJson + [Environment]::NewLine, [System.Text.UTF8Encoding]::new($false))
-$zipPath = Join-Path $OutputDir "prompt-library-media-v$Version.zip"
-if (Test-Path -LiteralPath $zipPath) { Remove-Item -LiteralPath $zipPath -Force }
+$legacyZipPath = Join-Path $OutputDir "prompt-library-media-v$Version.zip"
+if (Test-Path -LiteralPath $legacyZipPath) { Remove-Item -LiteralPath $legacyZipPath -Force }
+$zipPaths = @(
+    (Join-Path $OutputDir "prompt-library-media-v$Version-part1.zip"),
+    (Join-Path $OutputDir "prompt-library-media-v$Version-part2.zip")
+)
+foreach ($zipPath in $zipPaths) {
+    if (Test-Path -LiteralPath $zipPath) { Remove-Item -LiteralPath $zipPath -Force }
+}
+
+$archiveInputs = @()
+foreach ($file in $files) {
+    $source = Join-Path $InputDir ($file.path.Replace('/', '\'))
+    $archiveInputs += [pscustomobject]@{ Source = $source; Path = $file.path; Size = [long](Get-Item -LiteralPath $source).Length }
+}
+foreach ($file in $communityFiles) {
+    $source = Join-Path $InputDir ($file.path.Replace('/', '\'))
+    $archiveInputs += [pscustomobject]@{ Source = $source; Path = $file.path; Size = [long](Get-Item -LiteralPath $source).Length }
+}
+$partFiles = @(
+    [System.Collections.Generic.List[object]]::new(),
+    [System.Collections.Generic.List[object]]::new()
+)
+$partBytes = [long[]]@(0, 0)
+foreach ($archiveInput in ($archiveInputs | Sort-Object @{ Expression = "Size"; Descending = $true }, @{ Expression = "Path"; Ascending = $true })) {
+    $partIndex = if ($partBytes[0] -le $partBytes[1]) { 0 } else { 1 }
+    $partFiles[$partIndex].Add($archiveInput)
+    $partBytes[$partIndex] += $archiveInput.Size
+}
+if ($partFiles[0].Count -eq 0 -or $partFiles[1].Count -eq 0) { throw "Media pack must produce two non-empty parts." }
 
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-$archive = [System.IO.Compression.ZipFile]::Open($zipPath, [System.IO.Compression.ZipArchiveMode]::Create)
-try {
-    foreach ($file in $files) {
-        $source = Join-Path $InputDir ($file.path.Replace('/', '\'))
-        [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive, $source, $file.path, [System.IO.Compression.CompressionLevel]::Optimal) | Out-Null
+$zipHashes = @()
+for ($partIndex = 0; $partIndex -lt $zipPaths.Count; $partIndex += 1) {
+    $zipPath = $zipPaths[$partIndex]
+    $archive = [System.IO.Compression.ZipFile]::Open($zipPath, [System.IO.Compression.ZipArchiveMode]::Create)
+    try {
+        foreach ($archiveInput in $partFiles[$partIndex]) {
+            [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive, $archiveInput.Source, $archiveInput.Path, [System.IO.Compression.CompressionLevel]::Optimal) | Out-Null
+        }
+        [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive, $manifestOutput, "media-pack-manifest.json", [System.IO.Compression.CompressionLevel]::Optimal) | Out-Null
     }
-    foreach ($file in $communityFiles) {
-        $source = Join-Path $InputDir ($file.path.Replace('/', '\'))
-        [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive, $source, $file.path, [System.IO.Compression.CompressionLevel]::Optimal) | Out-Null
+    finally {
+        $archive.Dispose()
     }
-    [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive, $manifestOutput, "media-pack-manifest.json", [System.IO.Compression.CompressionLevel]::Optimal) | Out-Null
+    $zipItem = Get-Item -LiteralPath $zipPath
+    if ($zipItem.Length -ge 2147483648) { throw "$($zipItem.Name) exceeds GitHub's per-asset size limit." }
+    $zipHashes += Get-Sha256Lower -LiteralPath $zipPath
+    Write-Output "Media pack part $($partIndex + 1): $zipPath"
+    Write-Output "Part $($partIndex + 1) bytes: $($zipItem.Length)"
+    Write-Output "Part $($partIndex + 1) SHA256: $($zipHashes[$partIndex])"
 }
-finally {
-    $archive.Dispose()
-}
-
-$zipHash = Get-Sha256Lower -LiteralPath $zipPath
-Write-Output "Media pack: $zipPath"
 Write-Output "Manifest: $manifestOutput"
-Write-Output "SHA256: $zipHash"
+Write-Output "Workflow media_sha256: $($zipHashes -join ',')"
 Write-Output "Cases: $($files.Count)"
 Write-Output "Unavailable released cases: 0"
 Write-Output "Community Skills: $($communityFiles.Count)"

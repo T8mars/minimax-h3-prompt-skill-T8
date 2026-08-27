@@ -23,7 +23,7 @@ A curated library of production-quality short-video Creative DNA cases, installa
 | `skills/` | Install a mechanism into an Agent that supports Skills | Each Skill points back to the same case and source evidence |
 | `catalog/official-skills/` | Pin the 9 Skills indexed by the official MiniMax repository | Local official-demo GIFs; H3 opens the pinned upstream version; Seedance uses this repository's original companion Skill |
 | `catalog/community-skills/` | Browse high-quality unofficial, user-contributed prompt Skills | GitHub includes GIFs/posters; Electron includes the complete sample with audio |
-| Electron desktop app | Bilingual search and details, newest-first and alternate sorting, filters, playback, favorites, collections, history, comparison, section copy, and full-case copy | Packages include real animated previews; the same Release provides every distributable MP4 in a verified sidecar media pack for offline playback with sound |
+| Electron desktop app | Bilingual search and details, newest-first and alternate sorting, filters, playback, favorites, collections, history, comparison, section copy, and full-case copy | Packages include real animated previews; two lossless sidecar volumes in the same Release provide every distributable MP4 for offline playback with sound after extraction into one directory |
 
 GitHub GIFs are quick previews, not substitutes for the source videos. Every case retains its creator, platform, and original-post citation; the Electron detail view also provides a direct source link.
 

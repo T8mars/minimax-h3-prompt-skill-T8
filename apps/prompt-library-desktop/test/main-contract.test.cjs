@@ -50,7 +50,8 @@ test("release publishes complete videos as a verified sidecar instead of duplica
   assert.equal(builder.extraResources.some((entry) => entry.to === "media"), false, "default desktop packages must not duplicate the complete MP4 pack");
   assert.ok(workflow.includes("Packaged application unexpectedly contains a duplicated media pack"));
   assert.ok(workflow.includes('$env:T8_MEDIA_DIR = (Resolve-Path ".release-input/media").Path'), "packaged E2E must mount the verified sidecar media pack");
-  assert.ok(workflow.includes("prompt-library-media-v$version.zip"), "all distributable MP4s must remain a release asset");
+  assert.ok(workflow.includes("prompt-library-media-v$version-part1.zip"), "the first lossless media volume must remain a release asset");
+  assert.ok(workflow.includes("prompt-library-media-v$version-part2.zip"), "the second lossless media volume must remain a release asset");
 });
 
 test("media protocol resolves canonical paths and delegates range responses", () => {

@@ -9,7 +9,7 @@ on:
         default: "1.3.4"
         type: string
       media_sha256:
-        description: "SHA-256 of prompt-library-media-v<version>.zip already uploaded to the Draft Release"
+        description: "Comma-separated SHA-256 values for media part1 and part2 already uploaded to the Draft Release"
         required: true
         type: string
       publish:
@@ -99,19 +99,26 @@ jobs:
           $ErrorActionPreference = "Stop"
           $version = "${{ inputs.version }}"
           $tag = "v$version"
-          $asset = "prompt-library-media-v$version.zip"
+          $assets = @("prompt-library-media-v$version-part1.zip", "prompt-library-media-v$version-part2.zip")
           $release = gh release view $tag --json isDraft,assets | ConvertFrom-Json
           if (-not $release.isDraft) { throw "$tag must remain a Draft Release during platform builds." }
-          if ($asset -notin @($release.assets | ForEach-Object { $_.name })) { throw "Draft Release is missing $asset." }
+          foreach ($asset in $assets) {
+            if ($asset -notin @($release.assets | ForEach-Object { $_.name })) { throw "Draft Release is missing $asset." }
+          }
           New-Item -ItemType Directory -Force -Path ".release-input/download", ".release-input/media" | Out-Null
-          gh release download $tag --pattern $asset --dir ".release-input/download"
-          if ($LASTEXITCODE -ne 0) { throw "Media asset download failed." }
-          $mediaZip = Join-Path ".release-input/download" $asset
-          $expected = "${{ inputs.media_sha256 }}".Trim().ToLowerInvariant()
-          if ($expected -notmatch "^[a-f0-9]{64}$") { throw "media_sha256 must contain exactly 64 hexadecimal characters." }
-          $actual = (Get-FileHash -LiteralPath $mediaZip -Algorithm SHA256).Hash.ToLowerInvariant()
-          if ($actual -ne $expected) { throw "Media SHA-256 mismatch: expected $expected, got $actual." }
-          Expand-Archive -LiteralPath $mediaZip -DestinationPath ".release-input/media" -Force
+          $expectedHashes = @("${{ inputs.media_sha256 }}".Split(',') | ForEach-Object { $_.Trim().ToLowerInvariant() })
+          if ($expectedHashes.Count -ne 2 -or @($expectedHashes | Where-Object { $_ -notmatch "^[a-f0-9]{64}$" }).Count -ne 0) {
+            throw "media_sha256 must contain exactly two comma-separated SHA-256 values in part1,part2 order."
+          }
+          for ($partIndex = 0; $partIndex -lt $assets.Count; $partIndex += 1) {
+            $asset = $assets[$partIndex]
+            gh release download $tag --pattern $asset --dir ".release-input/download"
+            if ($LASTEXITCODE -ne 0) { throw "Media asset download failed for $asset." }
+            $mediaZip = Join-Path ".release-input/download" $asset
+            $actual = (Get-FileHash -LiteralPath $mediaZip -Algorithm SHA256).Hash.ToLowerInvariant()
+            if ($actual -ne $expectedHashes[$partIndex]) { throw "Media SHA-256 mismatch for $asset: expected $($expectedHashes[$partIndex]), got $actual." }
+            Expand-Archive -LiteralPath $mediaZip -DestinationPath ".release-input/media" -Force
+          }
 
       - name: Traverse every staged MP4 with recoverable-frame tolerance
         shell: pwsh
@@ -255,7 +262,8 @@ jobs:
           Compress-Archive -Path $previewCatalogs[0] -DestinationPath (Join-Path $assets "prompt-library-previews-v$version-part1.zip") -CompressionLevel Optimal
           Compress-Archive -Path $previewCatalogs[1] -DestinationPath (Join-Path $assets "prompt-library-previews-v$version-part2.zip") -CompressionLevel Optimal
           Compress-Archive -Path skills -DestinationPath (Join-Path $assets "prompt-library-skills-v$version.zip") -CompressionLevel Optimal
-          Copy-Item ".release-input/download/prompt-library-media-v$version.zip" $assets
+          Copy-Item ".release-input/download/prompt-library-media-v$version-part1.zip" $assets
+          Copy-Item ".release-input/download/prompt-library-media-v$version-part2.zip" $assets
           Copy-Item ".release-input/media/media-pack-manifest.json" $assets
           $dist = "apps/prompt-library-desktop/dist"
           $installer = Join-Path $dist "T8-Prompt-Library-Setup-v$version.exe"
@@ -317,7 +325,8 @@ jobs:
             "prompt-library-previews-v$version-part1.zip",
             "prompt-library-previews-v$version-part2.zip",
             "prompt-library-skills-v$version.zip",
-            "prompt-library-media-v$version.zip",
+            "prompt-library-media-v$version-part1.zip",
+            "prompt-library-media-v$version-part2.zip",
             "media-pack-manifest.json",
             "T8-Prompt-Library-Setup-v$version.exe",
             "T8-Prompt-Library-Setup-v$version.exe.blockmap",
@@ -370,7 +379,7 @@ jobs:
 
           - Windows NSIS: verified
           - macOS universal DMG + ZIP: verified, unsigned and unnotarized
-          - All 275 released case videos: distributable, hash-bound, fully traversed on both platforms, and published as the separate media pack; unavailable cases: 0
+          - All 275 released case videos: distributable, hash-bound, fully traversed on both platforms, and published in two lossless media-pack volumes; unavailable cases: 0
           - Desktop packages: compact catalog included; complete MP4s mounted from the verified sidecar media pack to stay below GitHub's 2 GiB per-asset limit
           - Packaged Electron E2E with sidecar media: required on both platforms
           - Publish requested: ${{ inputs.publish }}

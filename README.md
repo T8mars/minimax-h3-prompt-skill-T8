@@ -25,7 +25,7 @@ A curated Creative DNA library, installable Skills, and a video-first Electron d
 | `skills/` | 安装到支持 Skills 的 Agent，直接复用案例机制 | Skill 引用同一案例与来源 |
 | `catalog/official-skills/` | 固定索引 MiniMax 官方仓库收录的 9 个 Skills | 本地官方示例 GIF；H3 打开上游固定版本；Seedance 使用本库原创伴侣 Skill |
 | `catalog/community-skills/` | 浏览非官方、用户贡献的高质量提示词 Skills | GitHub 有 GIF/海报；Electron 包含完整有声样片 |
-| Electron 桌面版 | 中英文搜索与详情、默认最新和多种排序、筛选、播放、收藏、合集、浏览历史、对比、分区复制和整案复制 | 安装包内置真实动态预览；同一 Release 的完整媒体包含全部可分发 MP4，挂载后支持声音和离线播放 |
+| Electron 桌面版 | 中英文搜索与详情、默认最新和多种排序、筛选、播放、收藏、合集、浏览历史、对比、分区复制和整案复制 | 安装包内置真实动态预览；同一 Release 的两个无损媒体分卷包含全部可分发 MP4，解压到同一目录后支持声音和离线播放 |
 
 GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作者、平台及原始帖子引用地址；Electron 详情页同时提供“查看原帖”。
 
