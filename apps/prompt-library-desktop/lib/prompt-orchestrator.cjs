@@ -80,6 +80,7 @@ function runSummary(run, includeOutput = false) {
     outputLanguage: run.plan.outputLanguage,
     templateId: run.plan.template.templateId,
     templateTitle: run.plan.template.title,
+    operation: run.plan.operation,
     planHash: run.plan.planHash,
     createdAt: run.createdAt,
     startedAt: run.startedAt,
@@ -131,6 +132,18 @@ class PromptOrchestrator {
     ));
   }
 
+  validateOutput(input = {}) {
+    const plan = normalizePlan(input);
+    return validateEnhancedPrompt({
+      target: plan.target,
+      outputLanguage: plan.outputLanguage,
+      intent: plan.intent,
+      output: input.output,
+      requiredAnchors: plan.template.requiredAnchors,
+      creativePlan: plan.creativePlan
+    });
+  }
+
   setCredential({ providerId, apiKey, remember = false }) {
     return this.credentialVault.set(providerId, apiKey, Boolean(remember));
   }
@@ -148,10 +161,11 @@ class PromptOrchestrator {
 
   clearMedia() { return this.mediaStore?.clear() || []; }
 
-  preflight(input) {
+  preflight(input, options = {}) {
     this.cleanup();
-    const mediaRecords = this.mediaStore ? this.mediaStore.resolve(input.mediaIds) : [];
-    const media = mediaRecords.map(({ filePath: _filePath, extension: _extension, ...item }) => item);
+    const useFrozenMedia = Array.isArray(options.frozenMedia);
+    const mediaRecords = useFrozenMedia ? [] : this.mediaStore ? this.mediaStore.resolve(input.mediaIds) : [];
+    const media = useFrozenMedia ? options.frozenMedia : mediaRecords.map(({ filePath: _filePath, extension: _extension, ...item }) => item);
     const plan = normalizePlan({ ...input, media });
     const local = plan.providerId === "local_qwen";
     const credential = local ? this.localQwen?.status() : this.credentialVault.status(plan.providerId);
@@ -183,6 +197,10 @@ class PromptOrchestrator {
       outputLanguage: plan.outputLanguage,
       rewriteMode: plan.rewriteMode,
       durationSeconds: plan.durationSeconds,
+      creativePlanValidation: plan.creativePlan.validation,
+      shotCount: plan.creativePlan.shots.length,
+      mediaAssignmentCount: plan.creativePlan.mediaAssignments.length,
+      continuityLockCount: plan.creativePlan.continuityLocks.length,
       templateId: plan.template.templateId,
       templateTitle: plan.template.title,
       requiredAnchorCount: plan.template.requiredAnchors.length,
@@ -195,7 +213,10 @@ class PromptOrchestrator {
       automaticRetries: 0,
       cost: local ? "0" : "unknown",
       confirmationRequired: true,
-      confirmationKind: local ? "local_compute" : "paid_remote"
+      confirmationKind: local ? "local_compute" : "paid_remote",
+      operation: plan.operation.kind,
+      sourceRevisionId: plan.operation.sourceRevisionId || null,
+      variantStyle: plan.operation.style || null
     };
   }
 
@@ -290,7 +311,8 @@ class PromptOrchestrator {
         outputLanguage: run.plan.outputLanguage,
         intent: run.plan.intent,
         output: result.output,
-        requiredAnchors: run.plan.template.requiredAnchors
+        requiredAnchors: run.plan.template.requiredAnchors,
+        creativePlan: run.plan.creativePlan
       });
       run.state = "completed";
     } catch (error) {
@@ -341,10 +363,12 @@ class PromptOrchestrator {
       templateId: run.plan.template.templateId,
       templateTitle: run.plan.template.title,
       templateHash: sha256Canonical(run.plan.template),
+      templateSnapshot: run.plan.template,
       target: run.plan.target,
       outputLanguage: run.plan.outputLanguage,
       durationSeconds: run.plan.durationSeconds,
       rewriteMode: run.plan.rewriteMode,
+      creativePlan: run.plan.creativePlan,
       providerId: run.plan.providerId,
       providerLabel: PROVIDERS[run.plan.providerId].label,
       endpointHost: run.plan.endpointHost,
@@ -352,7 +376,8 @@ class PromptOrchestrator {
       output: run.output,
       validation: run.validation,
       receipt: run.receipt,
-      media: run.plan.media
+      media: run.plan.media,
+      operation: run.plan.operation
     };
   }
 
@@ -373,6 +398,8 @@ class PromptOrchestrator {
       outputLanguage: run.plan.outputLanguage,
       templateId: run.plan.template.templateId,
       templateHash: sha256Canonical(run.plan.template),
+      operation: run.plan.operation.kind,
+      sourceRevisionId: run.plan.operation.sourceRevisionId || null,
       outputSha256: run.receipt?.outputSha256 || null,
       validationStatus: run.validation?.status || null,
       errorCode: run.error?.code || null

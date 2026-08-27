@@ -351,7 +351,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 可下载安装版 `T8-Prompt-Library-Setup-v1.3.5.exe`，或无需安装的 `T8-Prompt-Library-Portable-v1.3.5.exe`；macOS 下载 `T8-Prompt-Library-v1.3.5-mac-universal.dmg`。
+2. Windows 可下载安装版 `T8-Prompt-Library-Setup-v1.3.6.exe`，或无需安装的 `T8-Prompt-Library-Portable-v1.3.6.exe`；macOS 下载 `T8-Prompt-Library-v1.3.6-mac-universal.dmg`。
 3. 安装版正常安装后启动；便携版放入可写目录直接运行，个人数据会保存在程序旁的 `T8-Prompt-Library-Data`。
 4. Windows 安装版可在应用内检查并由用户确认安装更新；Windows 便携版与当前未签名 macOS 版本通过 Releases 页面手动更新。
 
@@ -359,7 +359,9 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 
 ### API 增强工作台
 
-主界面的“API 增强工作台”包含两个隔离能力：视频提示词模式提供本地 Top-3 机制推荐、模板实例化、MiniMax H3 / Seedance 2.0、参考图片/视频与静态锚点验收；MiniMax Music 3 模式按官方 Skill 渐进读取最多 2 个索引和 3 份模板，输出歌词、结构化描述、Payload JSON 与安全报告。
+主界面的“API 增强工作台”包含两个隔离能力：视频提示词模式提供由当前 API / 本地 Qwen 驱动的全库语义推荐、模板实例化、MiniMax H3 / Seedance 2.0、参考图片/视频与静态锚点验收；MiniMax Music 3 模式按官方 Skill 渐进读取最多 2 个索引和 3 份模板，输出歌词、结构化描述、Payload JSON 与安全报告。模板推荐不会按时长或关键词在前端猜测：第一次模型调用理解真实意图并扩展同义表达，随后对统一总索引做全量召回检查，第二次模型调用只从证据卡中语义复排，可靠结果不足时不会凑满 3 个。
+
+当前统一总索引记录 286 个目录条目、275 个案例行和 215 个可推荐的去重模板 / 社区 Skill；同机制的 62 个证据变体仍逐条记账。每次新增入库都会随目录生成器重建 `catalog/template-index.json`，验证发现漏记或陈旧索引会直接失败。AI 分镜、双机制组合、视频 / Music 3 桥接与模板改进提案同样必须使用当前配置的 API 或本地 Qwen；本地代码只做时码、ID、哈希与合同校验，不代替创意判断。
 
 工作台现有 4 个增强渠道：贞贞的平价小屋、贞贞的 AI 工坊、OpenAI 兼容接口，以及本地 GGUF。本地渠道会递归扫描用户选择的模型根目录，支持 ComfyUI 节点已实测的两个 Qwen3.8-27B 与轻量 Qwen3.8-9B，也允许选择其他 llama.cpp 兼容文字 GGUF；已验收型号和用户自备未验收型号会明确分开标记。图片/视频需要匹配的 mmproj，视频另需 FFmpeg。模型和本地运行时不会打包进 Release，也不会自动下载。
 
@@ -412,7 +414,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.3.5**。项目使用十进制进位：
+当前目标版本是 **v1.3.6**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -425,7 +427,7 @@ v1.2.4 -> v1.2.5
 v1.2.6 -> v1.2.7
 v1.2.7 -> v1.2.8
 v1.2.8 -> v1.2.9
-v1.3.4 -> v1.3.5
+v1.3.5 -> v1.3.6
 v1.9.9 -> v2.0.0
 ```
 

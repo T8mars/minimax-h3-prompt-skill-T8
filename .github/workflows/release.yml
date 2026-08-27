@@ -6,7 +6,7 @@ on:
       version:
         description: "Decimal-carry version without v (for example 1.1.7)"
         required: true
-        default: "1.3.5"
+        default: "1.3.6"
         type: string
       media_sha256:
         description: "Comma-separated SHA-256 values for media part1 and part2 already uploaded to the Draft Release"
@@ -415,13 +415,15 @@ jobs:
         if: always()
         shell: pwsh
         run: |
+          $catalog = Get-Content -LiteralPath "catalog/manifest.json" -Raw | ConvertFrom-Json
+          $caseCount = [int]$catalog.case_count
           @"
           ## T8 Prompt Library v${{ inputs.version }}
 
           - Windows NSIS: verified
           - Windows portable executable with launcher-sibling user/session data: verified
           - macOS universal DMG + ZIP: verified, unsigned and unnotarized
-          - All 275 released case videos: distributable, hash-bound, fully traversed on both platforms, and published in two lossless media-pack volumes; unavailable cases: 0
+          - All $caseCount released case videos: distributable, hash-bound, fully traversed on both platforms, and published in two lossless media-pack volumes; unavailable cases: 0
           - Desktop packages: compact catalog included; complete MP4s mounted from the verified sidecar media pack to stay below GitHub's 2 GiB per-asset limit
           - Packaged Electron E2E with sidecar media: required on both platforms
           - Publish requested: ${{ inputs.publish }}

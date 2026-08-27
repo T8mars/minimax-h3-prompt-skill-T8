@@ -38,6 +38,6 @@ test("saved experiment projects round-trip without credentials or absolute media
 
 test("project sanitizer keeps only hash-bound media descriptors", () => {
   const project = sanitizeProject(sample(), { id: "one", now: "2026-08-12T00:00:00Z" });
-  assert.deepEqual(Object.keys(project.media[0]), ["name", "kind", "mimeType", "sizeBytes", "sha256", "label"]);
+  assert.deepEqual(Object.keys(project.media[0]), ["name", "kind", "mimeType", "sizeBytes", "sha256", "label", "mediaId"]);
   assert.equal(project.receipt.attempts, 1);
 });

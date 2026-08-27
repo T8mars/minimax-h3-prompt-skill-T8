@@ -349,7 +349,7 @@ This section is generated from `catalog/manifest.json`, each case's reviewed Eng
 ### Use the desktop viewer
 
 1. Open [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases).
-2. On Windows, download either `T8-Prompt-Library-Setup-v1.3.5.exe` or the no-install `T8-Prompt-Library-Portable-v1.3.5.exe`; on macOS, download `T8-Prompt-Library-v1.3.5-mac-universal.dmg`.
+2. On Windows, download either `T8-Prompt-Library-Setup-v1.3.6.exe` or the no-install `T8-Prompt-Library-Portable-v1.3.6.exe`; on macOS, download `T8-Prompt-Library-v1.3.6-mac-universal.dmg`.
 3. Install the setup build normally, or place the portable executable in a writable folder and run it directly. Portable personal data stays in the adjacent `T8-Prompt-Library-Data` directory.
 4. The installed Windows build updates only after user confirmation. The Windows portable build and current unsigned macOS build update manually through the Releases page.
 
@@ -357,7 +357,9 @@ The project ships installed and portable Windows x64 builds plus universal macOS
 
 ### API Enhancement Workbench
 
-The main-screen API Enhancement Workbench contains two isolated modes. Video Prompt mode provides local Top-3 mechanism recommendations, template instantiation, MiniMax H3 / Seedance 2.0 output, reference image/video support, and static-anchor acceptance checks. MiniMax Music 3 mode progressively reads at most two official indexes and three templates, then produces lyrics, a structured description, Payload JSON, and a safety report.
+The main-screen API Enhancement Workbench contains two isolated modes. Video Prompt mode provides full-library semantic recommendation through the currently selected cloud API or local Qwen, template instantiation, MiniMax H3 / Seedance 2.0 output, reference image/video support, and static-anchor acceptance checks. MiniMax Music 3 mode progressively reads at most two official indexes and three templates, then produces lyrics, a structured description, Payload JSON, and a safety report. Recommendation never guesses in the renderer from duration or raw keyword overlap: one model call interprets the actual intent and expands genuine synonyms, deterministic code checks the complete unified index for recall, and a second model call semantically reranks evidence cards. The UI returns fewer than three results when fewer are defensible.
+
+The current unified index records all 286 catalog rows, all 275 case rows, and 215 canonical recommendable templates/community Skills; all 62 evidence variants remain individually ledgered. Every new intake regenerates `catalog/template-index.json`, and validation fails when a catalog row is omitted or the index is stale. AI shot planning, dual-mechanism composition, video/Music 3 bridges, and template-improvement proposals also require the selected API or local Qwen. Local code is limited to exact timing, identifiers, hashes, and contract validation; it does not substitute heuristic creative judgement.
 
 Four enhancement channels are available: Zhenzhen Affordable API, Zhenzhen AI Workshop, an OpenAI-compatible endpoint, and local GGUF. The local channel recursively scans the user-selected model root, supports the two Qwen3.8-27B variants and the lightweight Qwen3.8-9B variant validated by the ComfyUI node, and also lets users select other llama.cpp-compatible text GGUFs. Project-validated files and unreviewed user models are labelled separately. Images and video require a matching mmproj; video additionally requires FFmpeg. Models and local runtimes are never bundled into a Release and are never downloaded automatically.
 
@@ -410,7 +412,7 @@ CI checks the public boundary, secrets, paths, directory layout, case status, an
 
 ## Versioning and updates
 
-The current target version is **v1.3.5**. Releases use decimal carry:
+The current target version is **v1.3.6**. Releases use decimal carry:
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -423,7 +425,7 @@ v1.2.4 -> v1.2.5
 v1.2.6 -> v1.2.7
 v1.2.7 -> v1.2.8
 v1.2.8 -> v1.2.9
-v1.3.4 -> v1.3.5
+v1.3.5 -> v1.3.6
 v1.9.9 -> v2.0.0
 ```
 

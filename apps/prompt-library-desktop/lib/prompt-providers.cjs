@@ -1,5 +1,6 @@
 const crypto = require("node:crypto");
 const fs = require("node:fs/promises");
+const { normalizeCreativePlan, normalizeDuration } = require("./creative-plan.cjs");
 
 const PROVIDERS = Object.freeze({
   seedance_nz: Object.freeze({
@@ -60,6 +61,7 @@ const REWRITE_MODES = Object.freeze({ strict: 0.2, balanced: 0.7, creative: 1.2 
 const MAX_INTENT_CHARS = 12000;
 const MAX_TEMPLATE_CHARS = 80000;
 const MAX_RESPONSE_CHARS = 200000;
+const OPERATIONS = new Set(["initial", "repair", "variant"]);
 
 class PromptProviderError extends Error {
   constructor(message, details = {}) {
@@ -87,6 +89,10 @@ function stableStringify(value) {
 
 function sha256Canonical(value) {
   return crypto.createHash("sha256").update(stableStringify(value), "utf8").digest("hex");
+}
+
+function sha256Text(value) {
+  return crypto.createHash("sha256").update(String(value || ""), "utf8").digest("hex");
 }
 
 function cleanText(value, maxLength, field) {
@@ -143,6 +149,43 @@ function normalizeTemplate(input = {}) {
   return template;
 }
 
+function normalizeOperation(input = {}) {
+  const kind = OPERATIONS.has(input?.kind) ? input.kind : "initial";
+  if (kind === "initial") return { kind: "initial" };
+  const sourceRevisionId = String(input.sourceRevisionId || "").trim().slice(0, 120);
+  const rootRevisionId = String(input.rootRevisionId || sourceRevisionId).trim().slice(0, 120);
+  const projectId = String(input.projectId || "").trim().slice(0, 120);
+  const sourceOutput = cleanText(input.sourceOutput, MAX_RESPONSE_CHARS, "Source revision output");
+  const sourceOutputSha256 = sha256Text(sourceOutput);
+  if (!sourceRevisionId) throw new PromptProviderError("A source revision is required.", { code: "invalid_operation", phase: "preflight" });
+  if (input.sourceOutputSha256 && String(input.sourceOutputSha256) !== sourceOutputSha256) throw new PromptProviderError("The source revision output hash changed.", { code: "source_revision_changed", phase: "preflight" });
+  if (kind === "repair") {
+    return {
+      kind,
+      projectId,
+      sourceRevisionId,
+      rootRevisionId,
+      sourceOutput,
+      sourceOutputSha256,
+      instructions: cleanText(input.instructions, 12000, "Repair instructions")
+    };
+  }
+  const style = ["conservative", "director", "surprise"].includes(input.style) ? input.style : null;
+  if (!style) throw new PromptProviderError("A valid variant style is required.", { code: "invalid_operation", phase: "preflight" });
+  return {
+    kind,
+    projectId,
+    style,
+    sourceRevisionId,
+    rootRevisionId,
+    sourceOutput,
+    sourceOutputSha256,
+    instruction: cleanText(input.instruction, 12000, "Variant instruction"),
+    hardAnchorHash: String(input.hardAnchorHash || "").slice(0, 64),
+    axes: Array.isArray(input.axes) ? input.axes.map((item) => String(item).trim()).filter(Boolean).slice(0, 12) : []
+  };
+}
+
 function targetContract(target, outputLanguage = "zh-CN") {
   const chinese = outputLanguage === "zh-CN";
   if (target === "minimaxH3") {
@@ -183,9 +226,18 @@ function buildMessages(plan) {
     `OUTPUT LANGUAGE: ${plan.outputLanguage === "zh-CN" ? "Simplified Chinese" : "English"}`,
     `REWRITE MODE: ${plan.rewriteMode}`,
     plan.constraints ? `USER HARD CONSTRAINTS:\n${plan.constraints}` : "USER HARD CONSTRAINTS: none",
-    plan.media.length ? `REFERENCE MEDIA:\n${plan.media.map((item) => `${item.label} ${item.kind} ${item.sha256}`).join("\n")}` : "",
+    `SHOT PLAN (preserve IDs, order, timing and user-authored obligations):\n${stableStringify(plan.creativePlan.shots)}`,
+    plan.creativePlan.continuityLocks.length ? `CONTINUITY LOCKS (must remain stable across every applicable shot):\n${stableStringify(plan.creativePlan.continuityLocks)}` : "CONTINUITY LOCKS: none",
+    plan.media.length ? `REFERENCE MEDIA AND RESPONSIBILITIES:\n${stableStringify(plan.media.map((item) => ({
+      label: item.label,
+      kind: item.kind,
+      sha256: item.sha256,
+      assignment: plan.creativePlan.mediaAssignments.find((assignment) => assignment.mediaId === item.mediaId) || null
+    })))}` : "",
     `SELECTED TEMPLATE CONTRACT:\n${templateJson}`,
-    plan.template.surfaceGuide ? `CANONICAL FORMAT GUIDE (surface content is forbidden):\n${plan.template.surfaceGuide}` : ""
+    plan.template.surfaceGuide ? `CANONICAL FORMAT GUIDE (surface content is forbidden):\n${plan.template.surfaceGuide}` : "",
+    plan.operation.kind === "repair" ? `REPAIR OPERATION (one explicit local revision repair; do not rewrite accepted areas):\nSOURCE REVISION ${plan.operation.sourceRevisionId} SHA-256 ${plan.operation.sourceOutputSha256}\nREPAIR TARGETS:\n${plan.operation.instructions}\nSOURCE OUTPUT:\n${plan.operation.sourceOutput}` : "",
+    plan.operation.kind === "variant" ? `VARIANT OPERATION (${plan.operation.style}; preserve hard-anchor hash ${plan.operation.hardAnchorHash || "not recorded"}):\nCHANGE AXES: ${plan.operation.axes.join(", ")}\nVARIANT DIRECTIVE:\n${plan.operation.instruction}\nSOURCE REVISION ${plan.operation.sourceRevisionId} SHA-256 ${plan.operation.sourceOutputSha256}\nSOURCE OUTPUT:\n${plan.operation.sourceOutput}` : ""
   ].filter(Boolean).join("\n\n");
   return [{ role: "system", content: system }, { role: "user", content: user }];
 }
@@ -197,14 +249,39 @@ function normalizePlan(input = {}) {
   if (!TARGETS.has(target)) throw new PromptProviderError("Unsupported target model.", { code: "invalid_target", phase: "preflight" });
   const rewriteMode = Object.hasOwn(REWRITE_MODES, input.rewriteMode) ? input.rewriteMode : "balanced";
   const outputLanguage = OUTPUT_LANGUAGES.has(String(input.outputLanguage || "")) ? String(input.outputLanguage) : "zh-CN";
-  const durationSeconds = Number(input.durationSeconds || 15);
-  if (!Number.isFinite(durationSeconds) || durationSeconds < 2 || durationSeconds > 15) {
-    throw new PromptProviderError("Duration must be between 2 and 15 seconds.", { code: "invalid_duration", phase: "preflight" });
-  }
+  let durationSeconds;
+  try { durationSeconds = normalizeDuration(input.durationSeconds || 15); }
+  catch (error) { throw new PromptProviderError(error.message, { code: "invalid_duration", phase: "preflight" }); }
   const endpoint = provider.local ? "local://qwen" : provider.configurableEndpoint ? normalizeOpenAiChatUrl(input.baseUrl) : provider.chatUrl;
   const model = normalizeModel(input.model, provider);
+  const intent = cleanText(input.intent, MAX_INTENT_CHARS, "Intent");
+  const media = Array.isArray(input.media) ? input.media.map((item) => ({
+    mediaId: String(item.mediaId || "").slice(0, 120),
+    name: String(item.name || "").slice(0, 240),
+    kind: item.kind === "video" ? "video" : "image",
+    mimeType: String(item.mimeType || "").slice(0, 120),
+    sizeBytes: Number(item.sizeBytes || 0),
+    sha256: String(item.sha256 || "").slice(0, 64),
+    label: String(item.label || "").slice(0, 80)
+  })).filter((item) => item.mediaId && item.sha256) : [];
+  let creativePlan;
+  try {
+    creativePlan = normalizeCreativePlan({
+      durationSeconds,
+      intent,
+      media,
+      shots: input.shots,
+      mediaAssignments: input.mediaAssignments,
+      continuityLocks: input.continuityLocks
+    });
+  } catch (error) {
+    throw new PromptProviderError(error.message, { code: "invalid_creative_plan", phase: "preflight" });
+  }
+  if (creativePlan.validation.status === "fail") {
+    throw new PromptProviderError(creativePlan.validation.errors.map((item) => item.message).join(" "), { code: "invalid_creative_plan", phase: "preflight" });
+  }
   const normalized = {
-    schemaVersion: "t8-prompt-enhance-request/v1",
+    schemaVersion: "t8-prompt-enhance-request/v2",
     providerId: provider.id,
     endpoint,
     endpointHost: provider.local ? "local" : new URL(endpoint).host,
@@ -213,18 +290,12 @@ function normalizePlan(input = {}) {
     outputLanguage,
     rewriteMode,
     durationSeconds,
-    intent: cleanText(input.intent, MAX_INTENT_CHARS, "Intent"),
+    intent,
     constraints: String(input.constraints || "").replace(/\r\n/gu, "\n").trim().slice(0, 12000),
     template: normalizeTemplate(input.template),
-    media: Array.isArray(input.media) ? input.media.map((item) => ({
-      mediaId: String(item.mediaId || "").slice(0, 120),
-      name: String(item.name || "").slice(0, 240),
-      kind: item.kind === "video" ? "video" : "image",
-      mimeType: String(item.mimeType || "").slice(0, 120),
-      sizeBytes: Number(item.sizeBytes || 0),
-      sha256: String(item.sha256 || "").slice(0, 64),
-      label: String(item.label || "").slice(0, 80)
-    })).filter((item) => item.mediaId && item.sha256) : []
+    media,
+    creativePlan,
+    operation: normalizeOperation(input.operation)
   };
   normalized.messages = buildMessages(normalized);
   normalized.planHash = sha256Canonical({ ...normalized, messages: normalized.messages });

@@ -12,7 +12,7 @@
     planTitle: byId("workbench-plan-title"), preflight: byId("workbench-preflight"), preflightCard: byId("workbench-preflight-card"),
     preflightFacts: byId("workbench-preflight-facts"), confirm: byId("workbench-confirm-paid"), confirmLabel: byId("workbench-confirm-label"),
     start: byId("workbench-start"), cancel: byId("workbench-cancel-run"), resultTitle: byId("workbench-result-title"),
-    runStatus: byId("workbench-run-status"), output: byId("workbench-output"), validation: byId("workbench-validation"),
+    runStatus: byId("workbench-run-status"), runStatusMessage: byId("workbench-run-status-message"), runStatusAction: byId("workbench-run-status-action"), output: byId("workbench-output"), validation: byId("workbench-validation"),
     copyCurrent: byId("workbench-copy-result"), copyAll: byId("music3-copy-all"), resultTabs: byId("music3-result-tabs"),
     projectName: byId("workbench-project-name"), projectList: byId("workbench-project-list"), projectNotes: byId("workbench-project-notes"),
     saveProject: byId("workbench-save-project"), exportProject: byId("workbench-export-project"), deleteProject: byId("workbench-delete-project"),
@@ -122,12 +122,36 @@
   const state = {
     capability: localStorage.getItem("t8-workbench-capability") === "music3" ? "music3" : "video_prompt",
     plan: null, runId: null, poll: null, outputs: null, activeOutput: "lyrics", selectedProjectId: null,
-    videoIntent: "", musicIdea: localStorage.getItem("t8-music3-draft-idea") || "", videoSnapshot: null
+    videoIntent: "", musicIdea: localStorage.getItem("t8-music3-draft-idea") || "", videoSnapshot: null, musicStatusSnapshot: null
   };
   const locale = () => document.documentElement.lang === "en" ? "en" : "zh-CN";
   const t = (key) => COPY[locale()][key];
   const isMusic = () => state.capability === "music3";
   const hide = (element, hidden) => element?.classList.toggle("hidden", hidden);
+
+  function currentStatusSnapshot() {
+    return {
+      message: elements.runStatusMessage?.textContent || "",
+      state: elements.runStatus.dataset.state || "idle",
+      hidden: elements.runStatus.classList.contains("hidden"),
+      action: elements.runStatusAction?.dataset.action || ""
+    };
+  }
+
+  function applyStatusSnapshot(snapshot, { musicTouched = false } = {}) {
+    const value = snapshot || { message: "", state: "idle", hidden: true, action: "" };
+    if (elements.runStatusMessage) elements.runStatusMessage.textContent = value.message || "";
+    elements.runStatus.dataset.state = value.state || "idle";
+    elements.runStatus.classList.toggle("hidden", Boolean(value.hidden));
+    if (elements.runStatusAction) {
+      elements.runStatusAction.dataset.action = value.action || "";
+      elements.runStatusAction.classList.toggle("hidden", !value.action);
+      if (value.action) elements.runStatusAction.textContent = value.action === "advanced"
+        ? (locale() === "en" ? "Open advanced settings" : "打开高级设置")
+        : (locale() === "en" ? "Open API settings" : "打开 API 设置");
+    }
+    elements.runStatus.dataset.musicTouched = musicTouched ? "true" : "";
+  }
 
   function providerId() { return elements.providerCards.querySelector(".provider-card.active")?.dataset.providerId || "seedance_nz"; }
   function invalidate() {
@@ -218,7 +242,7 @@
       elements.copyCurrent.textContent = t("copy"); elements.copyAll.textContent = t("copyAll");
       const musicSteps = english ? [["Music idea", "Brief"], ["Lyrics & parameters", "Structure"], ["Results", "Copy & review"]] : [["音乐创意", "创作简报"], ["歌词与参数", "结构约束"], ["结果验收", "复制与复盘"]];
       steps.forEach((button, index) => { button.querySelector("strong").textContent = musicSteps[index][0]; button.querySelector("small").textContent = musicSteps[index][1]; });
-      if (!elements.runStatus.dataset.musicTouched) elements.runStatus.textContent = t("idle");
+      applyStatusSnapshot(state.musicStatusSnapshot || { message: t("idle"), state: "idle", hidden: false, action: "" }, { musicTouched: true });
       renderMusicFormLocale(); renderMusicPreview(); dynamicFields(); renderOutput();
     } else {
       elements.title.textContent = english ? "Prompt instantiation and API enhancement" : "提示词实例化与 API 增强";
@@ -226,33 +250,35 @@
       elements.intentTitle.textContent = english ? "What do you want to create?" : "你想做什么？";
       elements.intentLabel.textContent = english ? "Creative goal and facts that must remain" : "创作目标与必须保留的事实";
       elements.intent.placeholder = english ? "Example: prove three capabilities of a folding camera in 15 seconds and hold a clear result." : "例如：一位产品设计师在15秒内证明一台折叠相机的三项能力，结尾要有明确结果，不要旁白。";
-      elements.planTitle.textContent = english ? "Target and hard constraints" : "目标与硬约束";
-      elements.resultTitle.textContent = english ? "Enhanced result and mechanism check" : "增强结果与机制验收";
-      elements.preflight.textContent = english ? "Create call confirmation" : "生成调用确认单";
+      elements.planTitle.textContent = english ? "Choose how to generate" : "确认怎么生成";
+      elements.resultTitle.textContent = english ? "Generated result" : "生成结果";
+      elements.preflight.textContent = english ? "Generate prompt" : "生成提示词";
       elements.start.textContent = english ? "Confirm and enhance" : "确认并开始增强";
       elements.copyCurrent.textContent = english ? "Copy result" : "复制结果";
       elements.confirmLabel.textContent = english ? "I confirm one chat request; Seedance also uploads each selected media item. Cost is unknown and no retry is automatic." : "我确认：提交1次对话请求；平价小屋还会按素材数上传。费用未知，全部不自动重试。";
-      const videoSteps = english ? [["Mechanism", "Goal and template"], ["Parameters", "Model and constraints"], ["Review result", "Copy and evaluate"]] : [["选择机制", "目标与模板"], ["生成参数", "模型与约束"], ["结果验收", "复制与复盘"]];
+      const videoSteps = english ? [["Describe your goal", "What you want"], ["Choose how to generate", "Model, duration and media"], ["Get your prompt", "Copy or refine"]] : [["告诉我想做什么", "描述目标"], ["确认生成方式", "模型、时长和素材"], ["拿到提示词", "复制或修改"]];
       steps.forEach((button, index) => { button.querySelector("strong").textContent = videoSteps[index][0]; button.querySelector("small").textContent = videoSteps[index][1]; });
       if (state.videoSnapshot) {
-        elements.output.textContent = state.videoSnapshot.output;
+        elements.output.value = state.videoSnapshot.output;
         elements.validation.innerHTML = state.videoSnapshot.validation;
-        elements.runStatus.textContent = state.videoSnapshot.status;
-        elements.runStatus.dataset.state = state.videoSnapshot.statusState;
+        applyStatusSnapshot(state.videoSnapshot.status);
         elements.copyCurrent.disabled = !state.videoSnapshot.output;
       }
     }
   }
   function switchCapability(next) {
     if (next === state.capability) return;
-    if (isMusic()) { state.musicIdea = elements.intent.value; localStorage.setItem("t8-music3-draft-idea", state.musicIdea); }
+    if (isMusic()) {
+      state.musicIdea = elements.intent.value;
+      state.musicStatusSnapshot = currentStatusSnapshot();
+      localStorage.setItem("t8-music3-draft-idea", state.musicIdea);
+    }
     else {
       state.videoIntent = elements.intent.value;
       state.videoSnapshot = {
-        output: elements.output.textContent,
+        output: elements.output.value,
         validation: elements.validation.innerHTML,
-        status: elements.runStatus.textContent,
-        statusState: elements.runStatus.dataset.state || "idle"
+        status: currentStatusSnapshot()
       };
       byId("workbench-constraints")?.dispatchEvent(new Event("input", { bubbles: true }));
     }
@@ -284,9 +310,8 @@
   }
 
   function status(message, kind = "idle") {
-    elements.runStatus.textContent = message;
-    elements.runStatus.dataset.state = kind;
-    elements.runStatus.dataset.musicTouched = "true";
+    state.musicStatusSnapshot = { message, state: kind, hidden: false, action: "" };
+    applyStatusSnapshot(state.musicStatusSnapshot, { musicTouched: true });
   }
 
   function renderPreflight(plan) {
@@ -471,6 +496,18 @@
   }
   elements.intent.addEventListener("input", () => { if (isMusic()) { state.musicIdea = elements.intent.value; localStorage.setItem("t8-music3-draft-idea", state.musicIdea); invalidate(); renderMusicPreview(); } }, true);
   elements.providerCards.addEventListener("click", () => { if (isMusic()) invalidate(); });
+  window.addEventListener("t8:music3-bridge", (event) => {
+    const bridge = event.detail;
+    if (!bridge || bridge.schemaVersion !== "t8-video-music-bridge/v1") return;
+    if (!isMusic()) switchCapability("music3");
+    const beats = (bridge.beatPoints || []).join(", ");
+    const sounds = (bridge.soundEvents || []).map((item) => `${item.at}s ${item.requirement}`).join("；");
+    state.musicIdea = `${locale() === "en" ? "Video-bound Music 3 brief" : "视频绑定的 Music 3 创意简报"}\n${locale() === "en" ? "Duration" : "时长"}: ${bridge.durationSeconds}s\n${locale() === "en" ? "Beat points" : "节拍点"}: ${beats}\n${locale() === "en" ? "Sound events" : "声音事件"}: ${sounds || "—"}\nSource revision: ${bridge.sourceRevisionId} / ${bridge.sourceRevisionSha256}`;
+    elements.intent.value = state.musicIdea;
+    elements.duration.value = String(bridge.durationSeconds || 0);
+    localStorage.setItem("t8-music3-draft-idea", state.musicIdea);
+    invalidate(); renderCapability();
+  });
   for (const control of [byId("workbench-step-nav"), byId("workbench-prev-step"), byId("workbench-next-step")]) {
     control?.addEventListener("click", () => { if (isMusic()) queueMicrotask(renderCapability); });
   }

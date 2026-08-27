@@ -43,7 +43,7 @@ test("Music 3 projects round-trip all four outputs and editable inputs without c
   try {
     const store = new PromptProjectStore({ userDataDir: root, randomUUID: () => "music-three", now: () => "2026-08-15T00:00:00.000Z" });
     const saved = store.save(sampleMusicProject());
-    assert.equal(saved.schemaVersion, "t8-prompt-project/v2");
+    assert.equal(saved.schemaVersion, "t8-prompt-project/v4");
     assert.equal(saved.capability, "music3");
     assert.equal(saved.inputLyrics, "[Verse]\n原始歌词不得静默丢失");
     assert.equal(saved.customLyricsLanguage, "Cantonese");
@@ -57,8 +57,7 @@ test("Music 3 projects round-trip all four outputs and editable inputs without c
 test("legacy and current video projects retain the video capability boundary", () => {
   const value = sanitizeProject({ title: "Legacy video", output: "prompt", providerId: "seedance_nz" }, { id: "legacy", now: "2026-08-15T00:00:00.000Z" });
   assert.equal(value.capability, "video_prompt");
-  assert.equal(value.schemaVersion, "t8-prompt-project/v2");
+  assert.equal(value.schemaVersion, "t8-prompt-project/v4");
   assert.equal(value.output, "prompt");
   assert.equal(value.outputs, undefined);
 });
-

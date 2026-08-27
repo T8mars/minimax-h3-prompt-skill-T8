@@ -4,6 +4,12 @@ const os = require("node:os");
 const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
 const { loadCatalog } = require("../lib/catalog.cjs");
+const { PromptProjectStore } = require("../lib/prompt-projects.cjs");
+
+const CREATIVE_AI_RESPONSES = [
+    { subject: ["便携产品", "portable product"], actions: ["证明", "demonstrate", "proof"], goals: ["产品广告", "product ad", "功能证明", "capability proof", "发布"], styles: [], camera: [], emotion: [], sound: [], constraints: ["三项功能", "清楚结果"], exclusions: ["字幕"], ambiguity: "" },
+    { recommendations: [{ templateId: "t8c001-product-proof-state-machine", score: 96, confidence: "high", reasons: ["直接以多个可见证据递进证明产品能力并回收到清楚结果。"], risks: ["需要将示例美容产品替换为用户的便携产品。"], missingInformation: [] }], clarification: "" }
+];
 
 async function run() {
   const appDir = path.resolve(__dirname, "..");
@@ -17,15 +23,46 @@ async function run() {
     ...sourceCatalog.communitySkills.map((item) => item.templateId || item.skillRef || item.id)
   ]).size;
   const screenshotPath = path.join(os.tmpdir(), `t8-prompt-workbench-${Date.now()}.png`);
+  const simpleModeScreenshotPath = path.join(os.tmpdir(), `t8-prompt-workbench-simple-${Date.now()}.png`);
   const musicScreenshotPath = path.join(os.tmpdir(), `t8-music3-workbench-${Date.now()}.png`);
   const localSettingsScreenshotPath = path.join(os.tmpdir(), `t8-local-qwen-settings-${Date.now()}.png`);
   const e2eUserDataDir = fs.mkdtempSync(path.join(os.tmpdir(), "t8-workbench-e2e-userdata-"));
+  const legacyTemplate = sourceCatalog.cases[0];
+  const legacyLocalProject = new PromptProjectStore({ userDataDir: e2eUserDataDir }).save({
+    title: "旧版地模型项目",
+    topic: "provider-regression",
+    intent: "验证历史项目不会覆盖当前 API 渠道。",
+    constraints: "",
+    templateId: legacyTemplate.templateId || legacyTemplate.skillRef || legacyTemplate.id,
+    templateTitle: legacyTemplate.title,
+    templateHash: "b".repeat(64),
+    templateSnapshot: {
+      id: legacyTemplate.id,
+      title: legacyTemplate.title,
+      summary: legacyTemplate.summary,
+      requiredAnchors: legacyTemplate.requiredAnchors || ["结果"],
+      creativeDna: legacyTemplate.creativeDna || { mechanism: "先目标后证据" }
+    },
+    target: "minimaxH3",
+    outputLanguage: "zh-CN",
+    durationSeconds: 15,
+    rewriteMode: "balanced",
+    shots: [{ shotId: "shot-01", startSeconds: 0, endSeconds: 15, action: "历史项目内容", source: "legacy_intent" }],
+    continuityLocks: [],
+    providerId: "local_qwen",
+    providerLabel: "本地 GGUF",
+    endpointHost: "127.0.0.1",
+    model: "Qwen3.8-27B-Q4_K_M.gguf",
+    output: "历史项目结果",
+    validation: { status: "pass" },
+    media: []
+  });
   const packagedExecutable = process.env.T8_E2E_EXECUTABLE ? path.resolve(process.env.T8_E2E_EXECUTABLE) : null;
   const electronApp = await electron.launch({
     executablePath: packagedExecutable || require("electron"),
     args: packagedExecutable ? [`--user-data-dir=${e2eUserDataDir}`] : [appDir, `--user-data-dir=${e2eUserDataDir}`],
     cwd: appDir,
-    env: { ...process.env, T8_DISABLE_AUTO_UPDATE: "1", T8STAR_API_KEY: "", SEEDANCE_API_KEY: "", OPENAI_API_KEY: "", ELECTRON_DISABLE_SECURITY_WARNINGS: "true" }
+    env: { ...process.env, T8_DISABLE_AUTO_UPDATE: "1", T8_E2E_CREATIVE_AI: "1", T8_E2E_CREATIVE_RESPONSES: Buffer.from(JSON.stringify(CREATIVE_AI_RESPONSES), "utf8").toString("base64"), T8STAR_API_KEY: "", SEEDANCE_API_KEY: "", OPENAI_API_KEY: "", ELECTRON_DISABLE_SECURITY_WARNINGS: "true" }
   });
   try {
     const page = await electronApp.firstWindow();
@@ -44,6 +81,11 @@ async function run() {
     await page.waitForSelector("#prompt-workbench-dialog[open]");
     assert.equal(await page.locator('[data-workbench-step]').count(), 3, "creation flow must stay focused on mechanism, parameters, and result");
     assert.equal(await page.locator('[data-workbench-step="provider"]').count(), 0, "API configuration must not consume a creation step");
+    assert.equal(await page.locator("#workbench-advanced-settings").getAttribute("open"), null, "advanced controls must start collapsed");
+    assert.equal(await page.locator("#workbench-professional-tools").getAttribute("open"), null, "professional review tools must start collapsed");
+    assert.equal(await page.locator("#workbench-manual-shots").isChecked(), false, "manual shot design must be opt-in");
+    assert.equal(await page.locator("#workbench-manual-continuity").isChecked(), false, "manual continuity locks must be opt-in");
+    assert.equal(await page.locator("#workbench-shot-list .shot-card").count(), 0, "simple mode must not manufacture an empty shot form");
     await page.locator("#open-api-settings").click();
     await page.waitForSelector("#api-settings-dialog[open]");
     assert.equal(await page.locator("#workbench-provider-cards .provider-card").count(), 4);
@@ -56,6 +98,19 @@ async function run() {
     const localSettingsOverflow = await page.locator(".api-settings-content").evaluate((node) => ({ scrollHeight: node.scrollHeight, clientHeight: node.clientHeight }));
     assert.ok(localSettingsOverflow.scrollHeight <= localSettingsOverflow.clientHeight + 1, `local Qwen settings must fit one 1280x800 screen (${localSettingsOverflow.scrollHeight} > ${localSettingsOverflow.clientHeight})`);
     await page.screenshot({ path: localSettingsScreenshotPath, animations: "disabled" });
+    await page.locator("#close-api-settings").click();
+    await page.locator("#api-settings-dialog").waitFor({ state: "hidden" });
+    await page.locator('[data-workbench-step="target"]').click();
+    await page.locator("#workbench-next-step").click();
+    assert.equal(await page.locator('[data-workbench-panel="target"]').isVisible(), true, "configuration errors must keep beginners on the generation step");
+    assert.match(await page.locator("#workbench-setup-status-message").textContent(), /API Key/u);
+    assert.doesNotMatch(await page.locator("#workbench-setup-status-message").textContent(), /Error invoking remote method|PromptProviderError/u);
+    assert.equal(await page.locator("#workbench-setup-status-action").isVisible(), true, "the error must offer a direct route to API settings");
+    await page.locator("#workbench-setup-status-action").click();
+    await page.waitForSelector("#api-settings-dialog[open]");
+    await page.locator("#close-api-settings").click();
+    await page.locator("#api-settings-dialog").waitFor({ state: "hidden" });
+    await page.locator('[data-workbench-step="goal"]').click();
     assert.equal(await page.locator("#workbench-template option").count(), expectedTemplateCount, "workbench selector count must be derived from the current manifest and evidence-variant lineage");
     await page.locator("#workbench-template").selectOption("t8-case-earnest-upgrade-displacement-v1");
     try {
@@ -80,6 +135,8 @@ async function run() {
     assert.ok(wideLayout.dialog.height >= wideLayout.viewport.height * 0.94, "workbench must use the available viewport height");
     assert.ok(wideLayout.previewLeft > wideLayout.stageRight, "template preview must remain to the right of the active step on desktop");
 
+    await page.locator("#open-api-settings").click();
+    await page.waitForSelector("#api-settings-dialog[open]");
     await page.locator('[data-provider-id="t8star_workshop"]').click();
     await page.locator("#workbench-model").fill("e2e-model-choice");
     await page.locator("#workbench-api-key").fill("e2e-session-key-not-real");
@@ -89,7 +146,8 @@ async function run() {
     assert.equal(await page.locator("#workbench-remember-key").isChecked(), true, "persistent secure storage must be the default setting");
     await page.locator("#done-api-settings").click();
     await page.locator("#api-settings-dialog").waitFor({ state: "hidden" });
-    assert.match(await page.locator("#workbench-api-settings-status").textContent(), /1\/3/u);
+    assert.match(await page.locator("#workbench-api-settings-status").textContent(), /AI 工坊.*✓/u);
+    assert.match(await page.locator("#workbench-current-provider-state").textContent(), /已就绪/u);
 
     await page.locator("#workbench-capability-music").click();
     const musicCapabilityState = await page.locator("#prompt-workbench-dialog").getAttribute("data-capability");
@@ -134,7 +192,10 @@ async function run() {
     await page.locator('[data-workbench-step="goal"]').click();
     await page.locator("#workbench-intent").fill("一个便携产品在15秒内证明三项功能，最后停留在清楚结果，不要字幕。");
     await page.locator("#workbench-route").click();
-    assert.equal(await page.locator(".router-card").count(), 3, "goal router must return at most three visible recommendations");
+    await page.waitForFunction(() => document.querySelectorAll(".router-card").length > 0 || document.querySelector("#workbench-router-results")?.textContent.includes("请再补充"));
+    const recommendationCount = await page.locator(".router-card").count();
+    assert.ok(recommendationCount >= 1 && recommendationCount <= 3, "AI router must return one to three relevant recommendations without padding");
+    assert.ok((await page.locator("#workbench-router-results").textContent()).includes(`${expectedTemplateCount}/${expectedTemplateCount}`), "router must disclose full unified-index coverage");
     await page.locator(".router-card .button").first().click();
     assert.ok((await page.locator("#workbench-template-summary").textContent()).length > 20);
     assert.ok((await page.locator("#workbench-preview-title").textContent()).length > 4);
@@ -142,8 +203,13 @@ async function run() {
     await page.locator('[data-workbench-step="target"]').click();
     assert.equal(await page.locator("#workbench-output-language").inputValue(), "zh-CN", "new runs must default to Chinese output");
     assert.equal(await page.locator("#workbench-output-language option").count(), 2, "generation parameters must offer Chinese and English");
+    assert.equal(await page.locator("#workbench-advanced-settings").getAttribute("open"), null);
+    assert.equal(await page.locator("#workbench-shot-plan-panel").isVisible(), false);
+    assert.equal(await page.locator("#workbench-continuity-panel").isVisible(), false);
+    assert.equal(await page.locator("#workbench-next-step").textContent(), "生成提示词", "the prominent footer action must generate instead of navigating to an empty result");
+    await page.screenshot({ path: simpleModeScreenshotPath, animations: "disabled" });
     await page.locator("#workbench-target").selectOption("seedance20");
-    await page.locator("#workbench-preflight").click();
+    await page.locator("#workbench-next-step").click();
     await page.waitForSelector("#workbench-preflight-card:not(.hidden)");
     assert.match(await page.locator("#workbench-preflight-facts").textContent(), /ai\.t8star\.org/u);
     assert.match(await page.locator("#workbench-preflight-facts").textContent(), /中文/u, "preflight must bind the requested output language");
@@ -151,9 +217,16 @@ async function run() {
     await page.locator("#workbench-confirm-paid").check();
     assert.equal(await page.locator("#workbench-start").isEnabled(), true);
     assert.match(await page.locator("#workbench-confirm-label").textContent(), /1次对话请求.*素材数上传/u);
+    const plannedShotCount = await page.locator("#workbench-preflight-facts").evaluate((node) => {
+      const rows = [...node.children];
+      const index = rows.findIndex((item) => item.textContent.includes("计划镜头"));
+      return index >= 0 ? rows[index + 1]?.textContent : null;
+    });
+    assert.equal(plannedShotCount, "1", "simple mode must let the backend derive one complete fallback shot without showing an empty shot canvas");
     await page.locator("#workbench-add-media").waitFor({ state: "visible" });
     await page.locator('[data-workbench-step="result"]').click();
-    await page.locator("#workbench-save-project").waitFor({ state: "visible" });
+    await page.locator("#workbench-output").waitFor({ state: "visible" });
+    assert.equal(await page.locator("#workbench-professional-tools").getAttribute("open"), null, "result review and delivery tools must remain optional on the first result view");
 
     await page.setViewportSize({ width: 760, height: 760 });
     const overflow = await page.evaluate(() => {
@@ -179,10 +252,20 @@ async function run() {
     assert.equal(await page.locator("#workbench-model").inputValue(), "e2e-model-choice", "saved model must restore after renderer reload");
     assert.equal(await page.evaluate(() => localStorage.getItem("t8-workbench-provider")), "t8star_workshop", "default provider must persist locally");
     assert.match(await page.evaluate(() => localStorage.getItem("t8-workbench-provider-options")), /e2e-model-choice/u, "provider model preferences must persist without storing the key");
+    await page.locator("#close-api-settings").click();
+    await page.locator("#api-settings-dialog").waitFor({ state: "hidden" });
+    await page.locator('[data-workbench-step="result"]').click();
+    await page.locator("#workbench-professional-tools").evaluate((node) => { node.open = true; });
+    await page.locator("#workbench-project-list").selectOption(legacyLocalProject.projectId);
+    await page.waitForFunction((projectId) => document.querySelector("#workbench-project-list")?.value === projectId, legacyLocalProject.projectId);
+    assert.equal(await page.evaluate(() => localStorage.getItem("t8-workbench-provider")), "t8star_workshop", "loading a historical local project must never overwrite the configured cloud default");
+    assert.match(await page.locator("#workbench-current-provider").textContent(), /AI 工坊/u, "the next generation must continue using the explicit cloud default after a historical project is loaded");
+    await page.locator("#open-api-settings").click();
+    await page.waitForSelector("#api-settings-dialog[open]");
     await page.locator("#workbench-clear-key").click();
     await page.waitForFunction(() => !document.querySelector('[data-provider-state="t8star_workshop"]').textContent.includes("session"));
     assert.deepEqual(errors, [], `workbench renderer errors: ${errors.join(" | ")}`);
-    console.log(`PASS workbench E2E; templates=${expectedTemplateCount}; providers=4; confirmation=explicit; screenshot=${screenshotPath}; musicScreenshot=${musicScreenshotPath}; localSettingsScreenshot=${localSettingsScreenshotPath}`);
+    console.log(`PASS workbench E2E; templates=${expectedTemplateCount}; providers=4; confirmation=explicit; screenshot=${screenshotPath}; simpleModeScreenshot=${simpleModeScreenshotPath}; musicScreenshot=${musicScreenshotPath}; localSettingsScreenshot=${localSettingsScreenshotPath}`);
   } finally {
     await electronApp.close();
     fs.rmSync(e2eUserDataDir, { recursive: true, force: true });

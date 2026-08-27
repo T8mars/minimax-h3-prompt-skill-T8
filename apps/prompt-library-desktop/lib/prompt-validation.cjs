@@ -41,6 +41,37 @@ function anchorMatch(anchor, output) {
   return { matched: ratio >= Math.min(0.6, tokens.length === 1 ? 1 : 0.5), confidence: Number(ratio.toFixed(3)), tokens: found };
 }
 
+function timingTokens(value) {
+  const seconds = Number(value);
+  if (!Number.isFinite(seconds)) return [];
+  const compact = Number(seconds.toFixed(3)).toString();
+  return [`${compact}s`, `${compact} s`, `${compact}秒`, `${compact} sec`, `${compact} seconds`];
+}
+
+function validateShotPlan(creativePlan, output) {
+  if (!creativePlan?.shots?.length) return { trace: [], shotCoverage: null, continuityTrace: [], continuityCoverage: null, errors: [], warnings: [] };
+  const haystack = normalized(output);
+  const trace = creativePlan.shots.map((shot) => {
+    const timeMatched = [...timingTokens(shot.startSeconds), ...timingTokens(shot.endSeconds)].some((token) => haystack.includes(normalized(token)));
+    const action = anchorMatch(shot.action, output);
+    const camera = shot.camera ? anchorMatch(shot.camera, output) : { matched: null, confidence: 0 };
+    const matched = timeMatched && action.matched !== false && camera.matched !== false;
+    return { shotId: shot.shotId, startSeconds: shot.startSeconds, endSeconds: shot.endSeconds, timeMatched, actionMatched: action.matched, cameraMatched: camera.matched, matched };
+  });
+  const shotCoverage = trace.filter((item) => item.matched).length / trace.length;
+  const continuityTrace = (creativePlan.continuityLocks || []).map((lock) => {
+    const combined = [lock.name, lock.invariants].filter(Boolean).join(" ");
+    const match = anchorMatch(combined, output);
+    return { entityId: lock.entityId, name: lock.name, matched: match.matched, confidence: match.confidence };
+  });
+  const determinate = continuityTrace.filter((item) => item.matched !== null);
+  const continuityCoverage = determinate.length ? determinate.filter((item) => item.matched).length / determinate.length : null;
+  const warnings = [];
+  if (shotCoverage < 1) warnings.push({ code: "shot_plan_unverified", message: `${trace.filter((item) => !item.matched).length} planned shot(s) were not located deterministically.` });
+  if (continuityCoverage !== null && continuityCoverage < 1) warnings.push({ code: "continuity_lock_unverified", message: `${determinate.filter((item) => !item.matched).length} continuity lock(s) were not located deterministically.` });
+  return { trace, shotCoverage: Number(shotCoverage.toFixed(3)), continuityTrace, continuityCoverage: continuityCoverage === null ? null : Number(continuityCoverage.toFixed(3)), errors: [], warnings };
+}
+
 function validateTarget(target, output, outputLanguage = "zh-CN") {
   const text = String(output || "").trim();
   const errors = [];
@@ -63,7 +94,7 @@ function validateTarget(target, output, outputLanguage = "zh-CN") {
   return { errors, warnings };
 }
 
-function validateEnhancedPrompt({ target, outputLanguage = "zh-CN", intent, output, requiredAnchors = [] }) {
+function validateEnhancedPrompt({ target, outputLanguage = "zh-CN", intent, output, requiredAnchors = [], creativePlan = null }) {
   const targetResult = validateTarget(target, output, outputLanguage);
   const facts = userFacts(intent).map((fact) => ({ fact, matched: normalized(output).includes(normalized(fact)) }));
   const missingFacts = facts.filter((item) => !item.matched);
@@ -78,6 +109,9 @@ function validateEnhancedPrompt({ target, outputLanguage = "zh-CN", intent, outp
   const anchorCoverage = determinate.length ? matched / determinate.length : null;
   const missingAnchors = anchorTrace.filter((item) => item.matched === false);
   if (missingAnchors.length) targetResult.warnings.push({ code: "anchor_unverified", message: `${missingAnchors.length} required anchor(s) were not located deterministically.` });
+  const shotPlanResult = validateShotPlan(creativePlan, output);
+  targetResult.errors.push(...shotPlanResult.errors);
+  targetResult.warnings.push(...shotPlanResult.warnings);
   const status = targetResult.errors.length ? "fail" : targetResult.warnings.length ? "warning" : "pass";
   return {
     schemaVersion: "t8-prompt-validation-report/v1",
@@ -89,8 +123,12 @@ function validateEnhancedPrompt({ target, outputLanguage = "zh-CN", intent, outp
     warnings: targetResult.warnings,
     userFacts: facts,
     anchorCoverage: anchorCoverage === null ? null : Number(anchorCoverage.toFixed(3)),
-    realizedTrace: anchorTrace
+    realizedTrace: anchorTrace,
+    shotCoverage: shotPlanResult.shotCoverage,
+    shotTrace: shotPlanResult.trace,
+    continuityCoverage: shotPlanResult.continuityCoverage,
+    continuityTrace: shotPlanResult.continuityTrace
   };
 }
 
-module.exports = { anchorMatch, keywords, normalized, userFacts, validateEnhancedPrompt };
+module.exports = { anchorMatch, keywords, normalized, timingTokens, userFacts, validateEnhancedPrompt, validateShotPlan };

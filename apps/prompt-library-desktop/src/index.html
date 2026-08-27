@@ -322,7 +322,7 @@
           <section id="workbench-panel-goal" class="workbench-section workbench-intent-section" data-workbench-panel="goal" role="tabpanel" aria-labelledby="workbench-step-goal">
             <div class="section-heading">
               <div><p class="eyebrow">1 · GOAL ROUTER</p><h3 id="workbench-intent-title">你想做什么？</h3></div>
-              <button id="workbench-route" class="button copy-secondary" type="button">推荐 3 个机制</button>
+              <button id="workbench-route" class="button copy-secondary" type="button">AI 推荐模板（最多 2 次调用）</button>
             </div>
             <label class="workbench-field workbench-field-full">
               <span id="workbench-intent-label">创作目标与必须保留的事实</span>
@@ -338,18 +338,59 @@
 
           <section id="workbench-panel-target" class="workbench-section" data-workbench-panel="target" role="tabpanel" aria-labelledby="workbench-step-target" hidden>
             <div class="section-heading"><div><p class="eyebrow">2 · TARGET</p><h3 id="workbench-plan-title">目标与硬约束</h3></div></div>
-            <div id="workbench-video-parameters" class="workbench-grid">
-              <label class="workbench-field"><span id="workbench-target-label">目标模型</span><select id="workbench-target"><option value="minimaxH3">MiniMax H3</option><option value="seedance20">Seedance 2.0</option></select></label>
-              <label class="workbench-field"><span id="workbench-output-language-label">输出语言</span><select id="workbench-output-language"><option id="workbench-output-language-zh" value="zh-CN" selected>中文（默认）</option><option id="workbench-output-language-en" value="en">English</option></select></label>
-              <label class="workbench-field"><span id="workbench-duration-label">时长</span><select id="workbench-duration"><option value="5">5 秒</option><option value="10">10 秒</option><option value="15" selected>15 秒</option></select></label>
-              <label class="workbench-field"><span id="workbench-mode-label">改写强度</span><select id="workbench-mode"><option value="strict">严格保真</option><option value="balanced" selected>平衡</option><option value="creative">创意迁移</option></select></label>
+            <div id="workbench-video-parameters" class="video-parameter-flow">
+              <section class="active-provider-summary" aria-labelledby="workbench-current-provider-label">
+                <div>
+                  <span id="workbench-current-provider-label">当前使用的增强渠道</span>
+                  <strong id="workbench-current-provider">正在读取…</strong>
+                  <small id="workbench-current-provider-state">请稍候</small>
+                </div>
+                <button id="workbench-change-provider" class="button copy-secondary" type="button" aria-haspopup="dialog" aria-controls="api-settings-dialog">更换渠道</button>
+              </section>
 
-              <label class="workbench-field workbench-field-full"><span id="workbench-constraints-label">额外硬约束</span><textarea id="workbench-constraints" rows="3" maxlength="12000" placeholder="例如：不出现字幕；固定同一角色；结尾停留2秒。"></textarea></label>
-              <div class="workbench-field workbench-field-full media-picker-panel">
-                <div class="media-picker-heading"><strong id="workbench-media-title">参考图片 / 视频</strong><div><button id="workbench-add-media" class="button copy-secondary" type="button">添加素材</button><button id="workbench-clear-media" class="button ghost" type="button">清空</button></div></div>
-                <p id="workbench-media-note">图片最多9张，视频最多3个，单个不超过50 MiB。素材只由 Electron 主进程读取。</p>
-                <div id="workbench-media-list" class="media-chip-list" aria-live="polite"></div>
+              <div class="workbench-grid beginner-parameter-grid">
+                <label class="workbench-field"><span id="workbench-target-label">目标模型</span><select id="workbench-target"><option value="minimaxH3">MiniMax H3</option><option value="seedance20">Seedance 2.0</option></select></label>
+                <label class="workbench-field"><span id="workbench-duration-label">时长</span><select id="workbench-duration"><option value="5">5 秒</option><option value="10">10 秒</option><option value="15" selected>15 秒</option><option value="30">30 秒</option><option value="60">60 秒</option><option value="custom">自定义</option></select></label>
+                <label id="workbench-custom-duration-field" class="workbench-field hidden"><span id="workbench-custom-duration-label">自定义时长（秒）</span><input id="workbench-custom-duration" type="number" min="0.1" max="86400" step="0.1" value="45" inputmode="decimal"></label>
+                <label class="workbench-field workbench-field-full"><span id="workbench-constraints-label">补充要求（可选）</span><textarea id="workbench-constraints" rows="3" maxlength="12000" placeholder="例如：不要字幕；保持同一角色；结尾停留2秒。"></textarea></label>
+                <div class="workbench-field workbench-field-full media-picker-panel beginner-media-panel">
+                  <div class="media-picker-heading"><div><strong id="workbench-media-title">参考图片 / 视频（可选）</strong><p id="workbench-media-note">有参考素材就添加，没有也可以直接生成。</p></div><div><button id="workbench-add-media" class="button copy-secondary" type="button">添加素材</button><button id="workbench-clear-media" class="button ghost" type="button">清空</button></div></div>
+                  <div id="workbench-media-list" class="media-chip-list" aria-live="polite"></div>
+                </div>
               </div>
+
+              <details id="workbench-advanced-settings" class="workbench-advanced-settings">
+                <summary><div><strong id="workbench-advanced-title">高级创作设置（可选）</strong><small id="workbench-advanced-note">需要精确控制时再打开，新手可以直接跳过</small></div></summary>
+                <div class="advanced-settings-body">
+                  <section class="advanced-setting-group" aria-labelledby="workbench-creative-preferences-title">
+                    <div class="advanced-setting-heading"><strong id="workbench-creative-preferences-title">创作偏好</strong><span>可选</span></div>
+                    <div class="workbench-grid">
+                      <label class="workbench-field"><span id="workbench-output-language-label">输出语言</span><select id="workbench-output-language"><option id="workbench-output-language-zh" value="zh-CN" selected>中文（默认）</option><option id="workbench-output-language-en" value="en">English</option></select></label>
+                      <label class="workbench-field"><span id="workbench-mode-label">改写强度</span><select id="workbench-mode"><option value="strict">严格保真</option><option value="balanced" selected>平衡</option><option value="creative">创意迁移</option></select></label>
+                    </div>
+                  </section>
+
+                  <section class="advanced-setting-group" aria-labelledby="workbench-manual-shots-title">
+                    <label class="advanced-switch-row"><span><strong id="workbench-manual-shots-title">手动设计镜头</strong><small id="workbench-manual-shots-note">关闭时由模板按目标和时长自动规划</small></span><input id="workbench-manual-shots" type="checkbox" role="switch" aria-controls="workbench-shot-plan-panel" aria-expanded="false"></label>
+                    <section id="workbench-shot-plan-panel" class="creator-panel advanced-controlled-panel hidden" aria-labelledby="workbench-shot-plan-title">
+                      <div class="media-picker-heading">
+                        <div><strong id="workbench-shot-plan-title">镜头创作画布</strong><p id="workbench-shot-plan-note">为每个镜头设置时间、动作、运镜、声音和连续性。</p></div>
+                        <div><button id="workbench-ai-shot-plan" class="button source" type="button">AI 生成分镜（1 次调用）</button><button id="workbench-add-shot" class="button copy-secondary" type="button">新增镜头</button><button id="workbench-auto-time-shots" class="button ghost" type="button">平均分配时间</button></div>
+                      </div>
+                      <div id="workbench-shot-list" class="shot-plan-list"></div>
+                      <div id="workbench-shot-validation" class="inline-plan-validation" aria-live="polite"></div>
+                    </section>
+                  </section>
+
+                  <section class="advanced-setting-group" aria-labelledby="workbench-manual-continuity-title">
+                    <label class="advanced-switch-row"><span><strong id="workbench-manual-continuity-title">锁定人物或产品外观</strong><small id="workbench-manual-continuity-note">多镜头需要保持同一人物、产品或场景时再开启</small></span><input id="workbench-manual-continuity" type="checkbox" role="switch" aria-controls="workbench-continuity-panel" aria-expanded="false"></label>
+                    <section id="workbench-continuity-panel" class="creator-panel advanced-controlled-panel hidden" aria-labelledby="workbench-continuity-title">
+                      <div class="media-picker-heading"><div><strong id="workbench-continuity-title">人物 / 产品连续性锁</strong><p id="workbench-continuity-note">只填写在整个视频中绝对不能变化的事实。</p></div><button id="workbench-add-continuity" class="button copy-secondary" type="button">新增连续性锁</button></div>
+                      <div id="workbench-continuity-list" class="continuity-list"></div>
+                    </section>
+                  </section>
+                </div>
+              </details>
             </div>
             <div id="music3-parameters" class="music3-parameters hidden">
               <div class="music3-basic-grid">
@@ -382,7 +423,8 @@
                 <label class="workbench-field"><span>随机种子</span><input id="music3-seed" type="number" min="0" step="1" value="0"></label>
               </div>
             </div>
-            <button id="workbench-preflight" class="button source workbench-primary-action" type="button">生成调用确认单</button>
+            <div id="workbench-setup-status" class="run-status hidden" role="status" aria-live="polite" tabindex="-1"><span id="workbench-setup-status-message"></span><button id="workbench-setup-status-action" class="button copy-secondary hidden" type="button">打开 API 设置</button></div>
+            <button id="workbench-preflight" class="button source workbench-primary-action" type="button">生成提示词</button>
             <div id="workbench-preflight-card" class="preflight-card hidden" aria-live="polite">
               <dl id="workbench-preflight-facts"></dl>
               <label class="check-row confirmation-row"><input id="workbench-confirm-paid" type="checkbox"> <span id="workbench-confirm-label">我确认：提交 1 次对话请求；平价小屋还会按素材数上传。费用未知，全部不自动重试。</span></label>
@@ -395,30 +437,116 @@
 
           <section id="workbench-panel-result" class="workbench-section workbench-result-section" data-workbench-panel="result" role="tabpanel" aria-labelledby="workbench-step-result" hidden>
             <div class="section-heading">
-              <div><p class="eyebrow">3 · RESULT & CHECK</p><h3 id="workbench-result-title">增强结果与机制验收</h3></div>
+              <div><p class="eyebrow">3 · RESULT</p><h3 id="workbench-result-title">生成结果</h3></div>
               <div class="workbench-result-actions">
                 <button id="music3-copy-all" class="button copy-secondary hidden" type="button" disabled>复制全部</button>
               <button id="workbench-copy-result" class="button copy-secondary" type="button" disabled>复制结果</button>
               </div>
             </div>
-            <div id="workbench-run-status" class="run-status">尚未运行</div>
+            <div id="workbench-run-status" class="run-status hidden" role="status" aria-live="polite" tabindex="-1"><span id="workbench-run-status-message">尚未运行</span><button id="workbench-run-status-action" class="button copy-secondary hidden" type="button">打开 API 设置</button></div>
             <div id="music3-result-tabs" class="music3-result-tabs hidden" role="tablist" aria-label="Music 3 输出">
               <button class="active" type="button" role="tab" aria-selected="true" data-music3-output="lyrics">歌词</button>
               <button type="button" role="tab" aria-selected="false" data-music3-output="musicCaption">结构化描述</button>
               <button type="button" role="tab" aria-selected="false" data-music3-output="music3PayloadJson">Payload JSON</button>
               <button type="button" role="tab" aria-selected="false" data-music3-output="enhancementReportJson">报告 JSON</button>
             </div>
-            <pre id="workbench-output" class="prompt-text workbench-output" tabindex="0"></pre>
+            <textarea id="workbench-output" class="prompt-text workbench-output" rows="18" spellcheck="false" aria-label="增强提示词结果"></textarea>
             <div id="workbench-validation" class="validation-report"></div>
+            <div class="result-quick-actions">
+              <button id="workbench-generate-again" class="button copy-secondary" type="button">再生成一次</button>
+              <button id="workbench-edit-result" class="button ghost" type="button">我想修改结果</button>
+            </div>
+            <details id="workbench-professional-tools" class="professional-tools">
+              <summary><div><strong id="workbench-professional-title">专业复盘与交付（可选）</strong><small id="workbench-professional-note">保存版本、复盘成片或导出 ComfyUI 时再打开</small></div><span id="workbench-professional-status" class="status-pill">生成后可用</span></summary>
+              <div class="professional-tools-body">
             <div class="project-panel">
               <div class="section-heading"><div><p class="eyebrow">5 · EXPERIMENT</p><h3 id="workbench-project-title">实验项目与复盘</h3></div></div>
               <div class="workbench-grid">
                 <label class="workbench-field"><span id="workbench-project-name-label">项目名称</span><input id="workbench-project-name" type="text" maxlength="240"></label>
+                <label class="workbench-field"><span id="workbench-project-topic-label">题材 / 用途</span><input id="workbench-project-topic" type="text" maxlength="120" placeholder="例如：产品广告、剧情短片、角色展示"></label>
                 <label class="workbench-field"><span id="workbench-project-list-label">已保存项目</span><select id="workbench-project-list"><option value="">—</option></select></label>
                 <label class="workbench-field workbench-field-full"><span id="workbench-project-notes-label">人工复盘备注</span><textarea id="workbench-project-notes" rows="3" maxlength="12000"></textarea></label>
               </div>
+              <div class="revision-toolbar">
+                <label class="workbench-field"><span id="workbench-revision-label">版本</span><select id="workbench-revision-list"><option value="">—</option></select></label>
+                <div class="project-actions"><button id="workbench-validate-edit" class="button ghost" type="button" disabled>本地复验</button><button id="workbench-save-revision" class="button copy-secondary" type="button" disabled>保存为新版本</button></div>
+              </div>
+              <div id="workbench-acceptance-actions" class="acceptance-actions" role="group" aria-label="版本验收状态"><button id="workbench-accept-revision" class="button source" type="button" disabled>接受</button><button id="workbench-override-revision" class="button copy-secondary" type="button" disabled>说明后接受</button><button id="workbench-reject-revision" class="button danger" type="button" disabled>拒绝</button></div>
               <div class="project-actions"><button id="workbench-save-project" class="button source" type="button" disabled>保存实验项目</button><button id="workbench-export-project" class="button copy-secondary" type="button" disabled>导出 JSON + Markdown</button><button id="workbench-delete-project" class="button danger" type="button" disabled>删除项目</button></div>
+
+              <details class="creator-tool">
+                <summary><strong id="workbench-iteration-title">修稿、变体与版本对比</strong><span id="workbench-repair-quota" class="status-pill">先保存项目</span></summary>
+                <div class="creator-tool-body">
+                  <label class="workbench-field workbench-field-full"><span id="workbench-repair-label">局部修复目标</span><textarea id="workbench-repair-instructions" rows="3" maxlength="12000" placeholder="只修复明确失败的镜头或机制；其他已接受内容保持不变。"></textarea></label>
+                  <div class="project-actions"><button id="workbench-preflight-repair" class="button source" type="button" disabled>生成一次修稿确认单</button><button class="button copy-secondary" type="button" data-variant-style="conservative" disabled>保守变体</button><button class="button copy-secondary" type="button" data-variant-style="director" disabled>导演变体</button><button class="button copy-secondary" type="button" data-variant-style="surprise" disabled>惊喜变体</button></div>
+                  <div id="workbench-comparison-picker" class="comparison-picker" aria-label="选择要比较的版本"></div>
+                  <button id="workbench-compare-revisions" class="button ghost" type="button" disabled>并排比较所选版本</button>
+                  <div id="workbench-comparison-output" class="comparison-output" aria-live="polite"></div>
+                </div>
+              </details>
+
+              <details class="creator-tool">
+                <summary><strong id="workbench-review-title">成片回传与人工时间线复盘</strong><span id="workbench-review-status" class="status-pill">未导入</span></summary>
+                <div class="creator-tool-body">
+                  <div class="project-actions"><button id="workbench-import-result" class="button source" type="button" disabled>导入本机成片</button><button id="workbench-save-review" class="button copy-secondary" type="button" disabled>保存人工复盘</button></div>
+                  <video id="workbench-result-video" class="workbench-result-video" controls preload="metadata" hidden></video>
+                  <div class="review-entry-grid">
+                    <label class="workbench-field"><span>复盘维度</span><select id="workbench-review-dimension"><option value="identity_continuity">身份连续</option><option value="causal_order">因果顺序</option><option value="action_physics">动作物理</option><option value="camera">运镜</option><option value="onscreen_text">字幕 / 画面文字</option><option value="sound">声音</option><option value="dialogue">对白</option><option value="audio_sync">音画同步</option></select></label>
+                    <label class="workbench-field"><span>人工判断</span><select id="workbench-review-observation-status"><option value="visible">可见</option><option value="audible">可听</option><option value="missing">缺失</option><option value="wrong_order">顺序错误</option><option value="indeterminate">无法判断</option></select></label>
+                    <label class="workbench-field"><span>时间点（秒）</span><input id="workbench-review-time" type="number" min="0" step="0.001" value="0"></label>
+                    <label class="workbench-field"><span>镜头 ID</span><select id="workbench-review-shot"><option value="">不指定</option></select></label>
+                    <label class="workbench-field workbench-field-full"><span>观察证据 / 问题说明</span><input id="workbench-review-note" type="text" maxlength="2000"></label>
+                  </div>
+                  <button id="workbench-add-observation" class="button ghost" type="button" disabled>添加人工标记</button>
+                  <div id="workbench-observation-list" class="observation-list"></div>
+                  <div id="workbench-repair-brief" class="validation-report"></div>
+                </div>
+              </details>
+
+              <details class="creator-tool">
+                <summary><strong id="workbench-composition-title">双机制组合器</strong><span id="workbench-composition-status" class="status-pill">未组合</span></summary>
+                <div class="creator-tool-body">
+                  <div class="workbench-grid">
+                    <label class="workbench-field"><span>辅助机制</span><select id="workbench-secondary-template"></select></label>
+                    <label class="workbench-field"><span>辅助范围</span><select id="workbench-secondary-role"><option value="hook">钩子</option><option value="transition">转场</option><option value="performance">表现</option><option value="ending">结尾</option></select></label>
+                    <label class="workbench-field workbench-field-full"><span>冲突解决说明（检测到冲突时必填）</span><textarea id="workbench-composition-resolution" rows="2" maxlength="4000"></textarea></label>
+                  </div>
+                  <button id="workbench-compose" class="button source" type="button" disabled>AI 检查并组合（1 次调用）</button>
+                  <div id="workbench-composition-output" class="validation-report"></div>
+                </div>
+              </details>
+
+              <details class="creator-tool">
+                <summary><strong id="workbench-delivery-title">桥接、交接与个人 Skill</strong><span id="workbench-delivery-status" class="status-pill">本地操作</span></summary>
+                <div class="creator-tool-body">
+                  <div class="project-actions"><button id="workbench-video-music-bridge" class="button copy-secondary" type="button" disabled>AI 生成 Music 3 桥接（1 次调用）</button><button id="workbench-apply-music-bridge" class="button ghost" type="button" disabled>写入 Music 3 创意</button><select id="workbench-music-project" aria-label="选择 Music 3 项目"><option value="">选择 Music 3 项目</option></select><button id="workbench-music-video-bridge" class="button ghost" type="button" disabled>AI 读取节拍建议（1 次调用）</button><button id="workbench-export-handoff" class="button source" type="button" disabled>导出独立 ComfyUI 交接包</button><button id="workbench-export-skill" class="button source" type="button" disabled>导出个人 Skill 草稿</button></div>
+                  <pre id="workbench-bridge-output" class="bridge-output"></pre>
+                </div>
+              </details>
+
+              <details class="creator-tool">
+                <summary><strong id="workbench-board-title">项目看板与模板效果档案</strong><span id="workbench-board-status" class="status-pill">本地统计</span></summary>
+                <div class="creator-tool-body">
+                  <div class="review-entry-grid">
+                    <label class="workbench-field"><span>阶段筛选</span><select id="workbench-board-stage"><option value="">全部</option><option value="idea">想法</option><option value="ready">就绪</option><option value="generated">已生成</option><option value="review">复盘</option><option value="repair">待修复</option><option value="accepted">已接受</option><option value="archived">已归档</option></select></label>
+                    <label class="workbench-field"><span>更新时间</span><select id="workbench-board-sort"><option value="newest">最近更新</option><option value="oldest">最早更新</option></select></label>
+                    <label class="workbench-field"><span>目标模型</span><select id="workbench-board-target"><option value="">全部模型</option><option value="minimaxH3">MiniMax H3</option><option value="seedance20">Seedance 2.0</option></select></label>
+                    <label class="workbench-field"><span>模板</span><select id="workbench-board-template"><option value="">全部模板</option></select></label>
+                    <label class="workbench-field"><span>失败标签</span><input id="workbench-board-failure" type="text" maxlength="120" placeholder="例如：camera"></label>
+                    <label class="workbench-field"><span>当前项目阶段</span><select id="workbench-current-stage"><option value="idea">想法</option><option value="ready">就绪</option><option value="generated">已生成</option><option value="review">复盘</option><option value="repair">待修复</option><option value="accepted">已接受</option><option value="archived">已归档</option></select></label>
+                    <label class="workbench-field"><span>总体评分</span><select id="workbench-rating"><option value="0">未评分</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+                    <button id="workbench-save-stage" class="button ghost" type="button" disabled>保存项目阶段</button>
+                    <button id="workbench-save-rating" class="button ghost" type="button" disabled>保存当前版本评分</button>
+                    <button id="workbench-refresh-board" class="button copy-secondary" type="button">刷新看板</button>
+                    <button id="workbench-template-proposal" class="button copy-secondary" type="button" disabled>AI 生成模板改进提案（1 次调用）</button>
+                  </div>
+                  <div id="workbench-board-output" class="board-output"></div>
+                  <div id="workbench-effects-output" class="effects-output"></div>
+                </div>
+              </details>
             </div>
+              </div>
+            </details>
           </section>
           </div>
 

@@ -17,9 +17,10 @@ test("workbench exposes a three-step creator flow plus persistent provider setti
     "workbench-confirm-paid", "workbench-start", "workbench-run-status", "workbench-output", "workbench-validation",
     "workbench-step-nav", "workbench-template-preview", "workbench-preview-image", "workbench-prev-step", "workbench-next-step"
   ]) assert.match(html, new RegExp(`id=["']${id}["']`), `missing workbench control ${id}`);
-  for (const token of ["routeTemplates", "requiredAnchors", "creativeDna", "preflightPrompt", "startPrompt", "promptStatus", "anchorCoverage", "renderTemplatePreview", "setWorkbenchStep", "openApiSettings", "t8-workbench-provider"]) {
+  for (const token of ["routePromptTemplates", "currentIntelligenceConfig", "requiredAnchors", "creativeDna", "preflightPrompt", "startPrompt", "promptStatus", "anchorCoverage", "renderTemplatePreview", "setWorkbenchStep", "openApiSettings", "t8-workbench-provider"]) {
     assert.ok(renderer.includes(token), `missing workbench behavior ${token}`);
   }
+  assert.doesNotMatch(renderer, /function\s+routeTemplates\s*\(/u, "renderer must not guess template recommendations locally");
 });
 
 test("API settings add a fourth recursive local GGUF channel without exposing model paths through generic IPC", () => {
@@ -83,4 +84,26 @@ test("API provider configuration is a separate persistent settings dialog, not a
   assert.ok(renderer.includes('localStorage.setItem("t8-workbench-provider"'));
   assert.ok(renderer.includes('localStorage.setItem("t8-workbench-provider-options"'));
   assert.ok(renderer.includes('workbenchRememberKey') && html.includes('id="workbench-remember-key" type="checkbox" checked'));
+});
+
+test("new video work starts simple while advanced shot and professional controls remain optional", () => {
+  assert.match(html, /<details id="workbench-advanced-settings" class="workbench-advanced-settings">/u);
+  assert.match(html, /id="workbench-manual-shots" type="checkbox" role="switch"/u);
+  assert.match(html, /id="workbench-manual-continuity" type="checkbox" role="switch"/u);
+  assert.match(html, /<details id="workbench-professional-tools" class="professional-tools">/u);
+  assert.doesNotMatch(html, /<details id="workbench-(?:advanced-settings|professional-tools)"[^>]*\sopen(?:\s|>)/u);
+  assert.match(renderer, /manualShots:\s*false/u);
+  assert.match(renderer, /manualContinuity:\s*false/u);
+  assert.match(renderer, /shots:\s*state\.manualShots\s*\?\s*state\.shots\.map[\s\S]*?\s*:\s*\[\]/u);
+  assert.match(renderer, /continuityLocks:\s*state\.manualContinuity\s*\?\s*state\.continuityLocks\.map[\s\S]*?\s*:\s*\[\]/u);
+  assert.match(renderer, /state\.activeStep === "target"\) elements\.workbenchPreflight\.click\(\)/u);
+});
+
+test("loading a historical project restores content without changing the explicit default provider", () => {
+  const loadStart = renderer.indexOf("async function loadProject()");
+  const loadEnd = renderer.indexOf("async function saveProject()", loadStart);
+  const loadProjectSource = renderer.slice(loadStart, loadEnd);
+  assert.ok(loadStart >= 0 && loadEnd > loadStart);
+  assert.doesNotMatch(loadProjectSource, /selectProvider|persistDefaultProvider|t8-workbench-provider/u);
+  assert.match(loadProjectSource, /state\.manualShots/u);
 });

@@ -1,5 +1,6 @@
 const path = require("node:path");
 const fs = require("node:fs");
+const crypto = require("node:crypto");
 const { fileURLToPath } = require("node:url");
 const {
   app,
@@ -21,8 +22,20 @@ const { createFileResponse } = require("./lib/media-response.cjs");
 const { CredentialVault } = require("./lib/credential-vault.cjs");
 const { PromptOrchestrator } = require("./lib/prompt-orchestrator.cjs");
 const { Music3Orchestrator } = require("./lib/music3-orchestrator.cjs");
+const { CreativeIntelligence } = require("./lib/creative-intelligence.cjs");
+const { validateTemplateIndex } = require("./lib/template-index.cjs");
+const { normalizeCreativePlan } = require("./lib/creative-plan.cjs");
 const { PromptMediaStore } = require("./lib/prompt-media.cjs");
 const { PromptProjectStore } = require("./lib/prompt-projects.cjs");
+const { ProjectMediaStore } = require("./lib/project-media.cjs");
+const {
+  buildVariantRequest,
+  compareRevisions,
+  musicToVideoFacts,
+  normalizeReview,
+  videoToMusicFacts
+} = require("./lib/creative-loop.cjs");
+const { exportHandoff, exportPersonalSkill } = require("./lib/creative-artifacts.cjs");
 const { LocalQwenConfigStore } = require("./lib/local-qwen-config.cjs");
 const { LocalQwenManager } = require("./lib/local-qwen-runtime.cjs");
 const { resolveMediaRoot } = require("./lib/media-roots.cjs");
@@ -59,8 +72,76 @@ let updateStatus = portableMode.enabled
 let updateInFlight = false;
 let promptOrchestrator = null;
 let music3Orchestrator = null;
+let creativeIntelligence = null;
 let promptProjectStore = null;
+let projectMediaStore = null;
 let localQwen = null;
+
+function loadVerifiedTemplateIndex() {
+  const catalog = loadCatalog(assetRoots);
+  const indexPath = path.join(assetRoots.catalogRoot, "template-index.json");
+  if (!fs.existsSync(indexPath)) throw new Error("统一模板总索引缺失，请重新安装或重建目录。");
+  let index;
+  try { index = JSON.parse(fs.readFileSync(indexPath, "utf8")); }
+  catch { throw new Error("统一模板总索引无法读取，请重新安装或重建目录。"); }
+  const validation = validateTemplateIndex(index, catalog);
+  if (validation.status !== "pass") throw new Error(`统一模板总索引已过期：${validation.failures.join("；")}`);
+  return { catalog, index };
+}
+
+function intelligenceConfig(input = {}) {
+  return {
+    providerId: input.providerId,
+    model: input.model,
+    baseUrl: input.baseUrl,
+    locale: input.locale,
+    confirmed: input.confirmed === true
+  };
+}
+
+function e2eCreativeFetchFromEnvironment(env = process.env) {
+  if (env.T8_E2E_CREATIVE_AI !== "1") return null;
+  let queue;
+  try {
+    queue = JSON.parse(Buffer.from(String(env.T8_E2E_CREATIVE_RESPONSES || ""), "base64").toString("utf8"));
+  } catch {
+    throw new Error("Invalid E2E creative AI response fixture.");
+  }
+  if (!Array.isArray(queue) || !queue.length) throw new Error("E2E creative AI response fixture is empty.");
+  return async () => {
+    if (!queue.length) throw new Error("Unexpected extra E2E creative AI request.");
+    const content = JSON.stringify(queue.shift());
+    return new Response(JSON.stringify({ id: "e2e-ai", choices: [{ message: { content } }] }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" }
+    });
+  };
+}
+
+function hashBridge(payload) {
+  return crypto.createHash("sha256").update(JSON.stringify(payload), "utf8").digest("hex");
+}
+
+function projectIntelligenceSnapshot(project, revisionId = "") {
+  const revision = (project?.revisions || []).find((item) => item.revisionId === revisionId)
+    || (project?.revisions || []).find((item) => item.revisionId === project?.selectedRevisionId)
+    || project?.revisions?.[0]
+    || null;
+  return {
+    projectId: project?.projectId,
+    capability: project?.capability,
+    intent: project?.intent || project?.musicIdea || "",
+    constraints: project?.constraints || {},
+    target: project?.target,
+    outputLanguage: project?.outputLanguage,
+    durationSeconds: project?.durationSeconds,
+    template: project?.templateSnapshot || project?.template || null,
+    creativePlan: project?.creativePlan || null,
+    selectedRevision: revision ? { revisionId: revision.revisionId, output: String(revision.output || "").slice(0, 80000), validation: revision.validation || null } : null,
+    resultReview: project?.resultReview || null,
+    musicResult: project?.outputs || project?.result || project?.output || null
+  };
+}
 
 async function convertLocalReferenceImage(filePath, { sourceBytes, signal } = {}) {
   if (signal?.aborted) throw signal.reason || new Error("cancelled");
@@ -137,6 +218,54 @@ function serializeCatalog(catalog) {
     officialSkills: catalog.officialSkills.map(serializeMediaItem),
     communitySkills: catalog.communitySkills.map(serializeMediaItem),
     cases: catalog.cases.map(serializeMediaItem)
+  };
+}
+
+function requireVideoProject(projectId) {
+  const project = promptProjectStore.get(projectId);
+  if (!project || project.capability === "music3") throw new Error("Video prompt project not found.");
+  return project;
+}
+
+function requireProjectRevision(project, revisionId) {
+  const revision = (project.revisions || []).find((item) => item.revisionId === String(revisionId || ""));
+  if (!revision) throw new Error("Project revision not found.");
+  return revision;
+}
+
+function operationPlanInput(project, request, operation) {
+  const planInput = request?.planInput && typeof request.planInput === "object" ? request.planInput : {};
+  const creativePlan = project.creativePlan || {};
+  const frozenTemplate = project.templateSnapshot || planInput.template;
+  const template = project.composition?.status === "ready" && project.composition?.contract
+    ? { ...frozenTemplate, creativeDna: { ...(frozenTemplate?.creativeDna || {}), mechanismComposition: project.composition.contract } }
+    : frozenTemplate;
+  return {
+    providerId: planInput.providerId,
+    baseUrl: planInput.baseUrl,
+    model: planInput.model,
+    target: project.target,
+    outputLanguage: project.outputLanguage,
+    durationSeconds: project.durationSeconds,
+    rewriteMode: planInput.rewriteMode || project.rewriteMode,
+    intent: project.intent,
+    constraints: project.constraints,
+    template,
+    shots: creativePlan.shots || [],
+    mediaAssignments: creativePlan.mediaAssignments || [],
+    continuityLocks: creativePlan.continuityLocks || [],
+    operation
+  };
+}
+
+function projectForRenderer(project) {
+  if (!project) return null;
+  return {
+    ...project,
+    resultMedia: (project.resultMedia || []).map((item) => ({
+      ...item,
+      playbackUrl: `t8media://project/${encodeURIComponent(project.projectId)}/${encodeURIComponent(item.mediaId)}`
+    }))
   };
 }
 
@@ -304,6 +433,11 @@ function configureIpc() {
     requireTrustedSender(event);
     return promptOrchestrator.preflight(input || {});
   });
+
+  ipcMain.handle("prompt:validate", (event, input) => {
+    requireTrustedSender(event);
+    return promptOrchestrator.validateOutput(input || {});
+  });
   ipcMain.handle("music3:preflight", (event, input) => {
     requireTrustedSender(event);
     return music3Orchestrator.preflight(input || {});
@@ -353,7 +487,7 @@ function configureIpc() {
 
   ipcMain.handle("prompt:project:get", (event, projectId) => {
     requireTrustedSender(event);
-    return promptProjectStore.get(projectId);
+    return projectForRenderer(promptProjectStore.get(projectId));
   });
 
   ipcMain.handle("prompt:project:save", (event, input) => {
@@ -362,12 +496,264 @@ function configureIpc() {
     const runner = request.capability === "music3" ? music3Orchestrator : promptOrchestrator;
     const base = request.runId ? runner.projectSnapshot(request.runId) : promptProjectStore.get(request.projectId);
     if (!base) throw new Error("Prompt project not found.");
-    return promptProjectStore.save({ ...base, projectId: request.projectId || undefined, title: request.title || base.title, notes: request.notes ?? base.notes });
+    return projectForRenderer(promptProjectStore.save({ ...base, projectId: request.projectId || undefined, title: request.title || base.title, topic: request.topic || base.topic, notes: request.notes ?? base.notes }));
+  });
+
+  ipcMain.handle("prompt:project:revision:add", (event, input) => {
+    requireTrustedSender(event);
+    const request = input && typeof input === "object" ? input : {};
+    return projectForRenderer(promptProjectStore.addRevision(request.projectId, {
+      parentRevisionId: request.parentRevisionId,
+      source: request.source,
+      output: request.output,
+      validation: request.validation,
+      note: request.note,
+      variant: request.variant
+    }));
+  });
+
+  ipcMain.handle("prompt:project:revision:status", (event, input) => {
+    requireTrustedSender(event);
+    const request = input && typeof input === "object" ? input : {};
+    return projectForRenderer(promptProjectStore.setRevisionStatus(request.projectId, request.revisionId, request.status, request.note));
+  });
+
+  ipcMain.handle("prompt:repair:preflight", (event, input) => {
+    requireTrustedSender(event);
+    const request = input && typeof input === "object" ? input : {};
+    const project = requireVideoProject(request.projectId);
+    const revision = requireProjectRevision(project, request.revisionId);
+    const rootRevisionId = revision.rootRevisionId || revision.revisionId;
+    if (!promptProjectStore.canRepair(project.projectId, rootRevisionId)) throw new Error("This initial revision already used its one allowed repair.");
+    const operation = {
+      kind: "repair",
+      projectId: project.projectId,
+      sourceRevisionId: revision.revisionId,
+      rootRevisionId,
+      sourceOutput: revision.output,
+      sourceOutputSha256: revision.outputSha256,
+      instructions: String(request.instructions || project.resultReview?.repairBrief || "").trim()
+    };
+    return promptOrchestrator.preflight(operationPlanInput(project, request, operation), { frozenMedia: project.media || [] });
+  });
+
+  ipcMain.handle("prompt:variant:preflight", (event, input) => {
+    requireTrustedSender(event);
+    const request = input && typeof input === "object" ? input : {};
+    const project = requireVideoProject(request.projectId);
+    const revision = requireProjectRevision(project, request.revisionId);
+    const frozen = { ...project, selectedRevisionId: revision.revisionId };
+    const variant = buildVariantRequest(frozen, request.style);
+    const operation = { kind: "variant", projectId: project.projectId, rootRevisionId: revision.rootRevisionId || revision.revisionId, ...variant };
+    return promptOrchestrator.preflight(operationPlanInput(project, request, operation), { frozenMedia: project.media || [] });
+  });
+
+  ipcMain.handle("prompt:operation:commit", (event, input) => {
+    requireTrustedSender(event);
+    const request = input && typeof input === "object" ? input : {};
+    const project = requireVideoProject(request.projectId);
+    const snapshot = promptOrchestrator.projectSnapshot(request.runId);
+    const operation = snapshot.operation || {};
+    if (!operation.projectId || operation.projectId !== project.projectId) throw new Error("Operation run does not belong to this project.");
+    if (!["repair", "variant"].includes(operation.kind)) throw new Error("Only repair or variant runs can be committed as an operation revision.");
+    const parent = requireProjectRevision(project, operation.sourceRevisionId);
+    return projectForRenderer(promptProjectStore.addRevision(project.projectId, {
+      parentRevisionId: parent.revisionId,
+      rootRevisionId: operation.rootRevisionId || parent.rootRevisionId || parent.revisionId,
+      repairOfRevisionId: operation.kind === "repair" ? parent.revisionId : null,
+      source: operation.kind,
+      output: snapshot.output,
+      validation: snapshot.validation,
+      note: operation.kind === "repair" ? operation.instructions : operation.instruction,
+      variant: operation.kind === "variant" ? { label: operation.style, axis: (operation.axes || []).join(", ") } : null
+    }));
+  });
+
+  ipcMain.handle("prompt:revision:compare", (event, input) => {
+    requireTrustedSender(event);
+    const project = requireVideoProject(input?.projectId);
+    return compareRevisions(project, input?.revisionIds || []);
+  });
+
+  ipcMain.handle("prompt:mechanism:compose", async (event, input) => {
+    requireTrustedSender(event);
+    const execution = await creativeIntelligence.execute({
+      operation: "compose_mechanisms",
+      ...intelligenceConfig(input),
+      input: { primary: input?.primary, secondary: input?.secondary, resolution: input?.resolution || {} }
+    });
+    return {
+      ...execution.result,
+      schemaVersion: "t8-mechanism-composition/v2",
+      primaryTemplateId: input?.primary?.templateId || input?.primary?.id || null,
+      secondaryTemplateId: input?.secondary?.templateId || input?.secondary?.id || null,
+      intelligence: { providerId: execution.providerId, providerLabel: execution.providerLabel, model: execution.model, modelCallCount: execution.modelCallCount, resultSha256: execution.resultSha256 }
+    };
+  });
+
+  ipcMain.handle("prompt:shot-plan:generate", async (event, input) => {
+    requireTrustedSender(event);
+    const execution = await creativeIntelligence.execute({
+      operation: "create_shot_plan",
+      ...intelligenceConfig(input),
+      input: input?.input || {}
+    });
+    const request = input?.input || {};
+    const plan = normalizeCreativePlan({
+      durationSeconds: request.durationSeconds,
+      intent: request.intent,
+      media: request.media || [],
+      shots: execution.result.shots,
+      continuityLocks: execution.result.continuityLocks || [],
+      mediaAssignments: execution.result.mediaAssignments || [],
+      allowLegacyFallback: false
+    });
+    if (plan.validation.status === "fail") throw new Error(plan.validation.errors.map((item) => item.message).join(" "));
+    return { ...plan, intelligence: { providerId: execution.providerId, providerLabel: execution.providerLabel, model: execution.model, modelCallCount: execution.modelCallCount, resultSha256: execution.resultSha256 } };
+  });
+
+  ipcMain.handle("prompt:mechanism:save", (event, input) => {
+    requireTrustedSender(event);
+    const project = requireVideoProject(input?.projectId);
+    if (input?.composition?.status !== "ready" || !input?.composition?.contract) throw new Error("Only a conflict-resolved mechanism composition can be saved.");
+    return projectForRenderer(promptProjectStore.save({ ...project, composition: input.composition }));
+  });
+
+  ipcMain.handle("prompt:review:import", async (event, projectId) => {
+    requireTrustedSender(event);
+    const project = requireVideoProject(projectId);
+    const result = await dialog.showOpenDialog(mainWindow, {
+      title: "Import generated result video",
+      properties: ["openFile"],
+      filters: [{ name: "Generated video", extensions: ["mp4", "mov", "webm", "mkv", "avi"] }]
+    });
+    if (result.canceled || !result.filePaths[0]) return projectForRenderer(project);
+    const descriptor = projectMediaStore.importResult(project.projectId, result.filePaths[0]);
+    const saved = promptProjectStore.save({ ...project, resultMedia: [descriptor, ...(project.resultMedia || []).filter((item) => item.mediaId !== descriptor.mediaId)], stage: "review" });
+    return projectForRenderer(saved);
+  });
+
+  ipcMain.handle("prompt:review:save", (event, input) => {
+    requireTrustedSender(event);
+    const project = requireVideoProject(input?.projectId);
+    const mediaId = String(input?.mediaId || project.resultMedia?.[0]?.mediaId || "");
+    if (!(project.resultMedia || []).some((item) => item.mediaId === mediaId)) throw new Error("Imported result video not found.");
+    const review = normalizeReview({ durationSeconds: project.durationSeconds, shots: project.creativePlan?.shots || [], mediaId, observations: input?.observations || [] });
+    return projectForRenderer(promptProjectStore.saveReview(project.projectId, { resultMedia: project.resultMedia, review }));
+  });
+
+  ipcMain.handle("prompt:rating:save", (event, input) => {
+    requireTrustedSender(event);
+    return projectForRenderer(promptProjectStore.saveRating(input?.projectId, input?.revisionId, input?.rating || {}));
+  });
+
+  ipcMain.handle("prompt:project:stage", (event, input) => {
+    requireTrustedSender(event);
+    return projectForRenderer(promptProjectStore.setStage(input?.projectId, input?.stage));
+  });
+
+  ipcMain.handle("prompt:bridge:video-to-music", async (event, input) => {
+    requireTrustedSender(event);
+    const project = requireVideoProject(input?.projectId);
+    const exactFacts = videoToMusicFacts(project, input?.revisionId);
+    const execution = await creativeIntelligence.execute({
+      operation: "video_to_music",
+      ...intelligenceConfig(input),
+      input: { project: projectIntelligenceSnapshot(project, input?.revisionId), exactFacts }
+    });
+    const bridgePayload = { ...execution.result, ...exactFacts, schemaVersion: "t8-video-music-bridge/v1", sourceRevisionId: exactFacts.sourceRevisionId, suggestionsOnly: true, intelligence: { providerId: execution.providerId, providerLabel: execution.providerLabel, model: execution.model, modelCallCount: execution.modelCallCount, resultSha256: execution.resultSha256 } };
+    const bridge = { ...bridgePayload, bridgeHash: hashBridge(bridgePayload) };
+    promptProjectStore.saveBridge(project.projectId, bridge);
+    return bridge;
+  });
+
+  ipcMain.handle("prompt:bridge:music-to-video", async (event, input) => {
+    requireTrustedSender(event);
+    const musicProject = promptProjectStore.get(input?.musicProjectId);
+    if (!musicProject || musicProject.capability !== "music3") throw new Error("Music 3 project not found.");
+    const videoProject = requireVideoProject(input?.videoProjectId);
+    const exactFacts = musicToVideoFacts(musicProject);
+    const execution = await creativeIntelligence.execute({
+      operation: "music_to_video",
+      ...intelligenceConfig(input),
+      input: { exactFacts, musicProject: projectIntelligenceSnapshot(musicProject), videoProject: projectIntelligenceSnapshot(videoProject) }
+    });
+    const bridgePayload = { ...execution.result, ...exactFacts, schemaVersion: "t8-music-video-bridge/v1", sourceMusicProjectId: musicProject.projectId, suggestionsOnly: true, overwriteShots: false, intelligence: { providerId: execution.providerId, providerLabel: execution.providerLabel, model: execution.model, modelCallCount: execution.modelCallCount, resultSha256: execution.resultSha256 } };
+    const bridge = { ...bridgePayload, bridgeHash: hashBridge(bridgePayload) };
+    promptProjectStore.saveBridge(videoProject.projectId, bridge);
+    return bridge;
+  });
+
+  ipcMain.handle("prompt:board", (event, filters) => {
+    requireTrustedSender(event);
+    return promptProjectStore.board(filters || {});
+  });
+
+  ipcMain.handle("prompt:effects", (event, filters) => {
+    requireTrustedSender(event);
+    return promptProjectStore.effectStats(filters || {});
+  });
+
+  ipcMain.handle("prompt:template:proposal", async (event, input) => {
+    requireTrustedSender(event);
+    const project = requireVideoProject(input?.projectId);
+    const record = promptProjectStore.effectStats().find((item) => item.templateHash === project.template.hash && item.target === project.target && item.durationSeconds === project.durationSeconds && item.providerId === project.provider.id) || null;
+    const execution = await creativeIntelligence.execute({
+      operation: "template_proposal",
+      ...intelligenceConfig(input),
+      input: { project: projectIntelligenceSnapshot(project), effectRecord: record }
+    });
+    return {
+      ...execution.result,
+      schemaVersion: "t8-template-improvement-proposal/v1",
+      status: "draft",
+      canonicalWrite: false,
+      publicCatalogWrite: false,
+      sourceTemplateId: project.template.id,
+      sourceTemplateHash: project.template.hash,
+      denominator: Number(record?.denominator || record?.total || execution.result.denominator || 0),
+      intelligence: { providerId: execution.providerId, providerLabel: execution.providerLabel, model: execution.model, modelCallCount: execution.modelCallCount, resultSha256: execution.resultSha256 }
+    };
+  });
+
+  ipcMain.handle("prompt:handoff:export", async (event, input) => {
+    requireTrustedSender(event);
+    const project = requireVideoProject(input?.projectId);
+    const result = await dialog.showOpenDialog(mainWindow, { title: "Choose parent directory for isolated ComfyUI handoff", properties: ["openDirectory", "createDirectory"] });
+    if (result.canceled || !result.filePaths[0]) return { saved: false };
+    const exported = exportHandoff({ project, revisionId: input?.revisionId, parentDirectory: result.filePaths[0] });
+    return { saved: true, directoryName: exported.directoryName, files: exported.files };
+  });
+
+  ipcMain.handle("prompt:skill:export", async (event, input) => {
+    requireTrustedSender(event);
+    const project = requireVideoProject(input?.projectId);
+    const result = await dialog.showOpenDialog(mainWindow, { title: "Choose parent directory for personal Skill draft", properties: ["openDirectory", "createDirectory"] });
+    if (result.canceled || !result.filePaths[0]) return { saved: false };
+    const exported = exportPersonalSkill({ project, revisionId: input?.revisionId, parentDirectory: result.filePaths[0] });
+    return { saved: true, directoryName: exported.directoryName, files: exported.files, validation: exported.validation };
+  });
+
+  ipcMain.handle("prompt:router", async (event, input) => {
+    requireTrustedSender(event);
+    const { index } = loadVerifiedTemplateIndex();
+    return creativeIntelligence.execute({
+      operation: "recommend_templates",
+      ...intelligenceConfig(input),
+      input: { intent: input?.intent, durationSeconds: input?.durationSeconds },
+      templateIndex: index
+    });
   });
 
   ipcMain.handle("prompt:project:delete", (event, projectId) => {
     requireTrustedSender(event);
-    return promptProjectStore.remove(projectId);
+    const project = promptProjectStore.get(projectId);
+    const result = promptProjectStore.remove(projectId);
+    if (project) {
+      try { projectMediaStore.removeProject(project.projectId); }
+      catch { /* Project deletion remains successful if its optional copied result media was already absent. */ }
+    }
+    return result;
   });
 
   ipcMain.handle("prompt:project:export", async (event, projectId) => {
@@ -451,6 +837,12 @@ function configureMediaProtocol() {
     try {
       const requestUrl = new URL(request.url);
       const scope = requestUrl.hostname;
+      if (scope === "project") {
+        const segments = requestUrl.pathname.replace(/^\/+/, "").split("/").map(decodeURIComponent);
+        if (segments.length !== 2) return new Response("Not found", { status: 404 });
+        const target = projectMediaStore?.resolve(segments[0], segments[1]);
+        return target ? createFileResponse(target, request) : new Response("Not found", { status: 404 });
+      }
       const root = scope === "catalog" ? assetRoots.catalogRoot : scope === "media" ? assetRoots.mediaRoot : null;
       if (!root) return new Response("Not found", { status: 404 });
       const relative = decodeURIComponent(requestUrl.pathname.replace(/^\/+/, ""));
@@ -513,6 +905,7 @@ app.whenReady().then(() => {
   assetRoots = resolveRoots();
   const mediaStore = new PromptMediaStore();
   promptProjectStore = new PromptProjectStore({ userDataDir: app.getPath("userData") });
+  projectMediaStore = new ProjectMediaStore({ userDataDir: app.getPath("userData") });
   const credentialVault = new CredentialVault({
     userDataDir: app.getPath("userData"),
     safeStorage,
@@ -525,6 +918,8 @@ app.whenReady().then(() => {
   });
   promptOrchestrator = new PromptOrchestrator({ mediaStore, credentialVault, localQwen });
   music3Orchestrator = new Music3Orchestrator({ credentialVault, localQwen });
+  const e2eCreativeFetch = e2eCreativeFetchFromEnvironment();
+  creativeIntelligence = new CreativeIntelligence({ credentialVault, localQwen, fetchImpl: e2eCreativeFetch });
   configureMediaProtocol();
   configureUpdater();
   configureIpc();

@@ -91,3 +91,67 @@ test("running cancellation never promises remote cancellation or no billing", as
   });
   assert.equal(done.error.outcomeCertainty, "unknown");
 });
+
+test("repair is a separately confirmed single request bound to its immutable source revision", async () => {
+  let posts = 0;
+  let body = null;
+  const orchestrator = new PromptOrchestrator({
+    credentialVault: vault(true),
+    randomUUID: () => "run-repair",
+    fetchImpl: async (_url, options) => {
+      posts += 1;
+      body = JSON.parse(options.body);
+      return new Response(JSON.stringify({ choices: [{ message: { content: "Shot 1 0-3s camera locked. visible mechanism. Shot 2 3-15s held final result." } }] }), { status: 200 });
+    }
+  });
+  const plan = orchestrator.preflight({ ...input(), operation: { kind: "repair", projectId: "project-1", sourceRevisionId: "revision-1", rootRevisionId: "revision-1", sourceOutput: "Original immutable output", instructions: "Only repair the final hold." } }, { frozenMedia: [] });
+  assert.equal(plan.operation, "repair");
+  assert.equal(plan.plannedChatCalls, 1);
+  assert.throws(() => orchestrator.start({ planHash: plan.planHash, confirmed: false }), /confirmation/u);
+  orchestrator.start({ planHash: plan.planHash, confirmed: true });
+  await waitFor(() => orchestrator.status("run-repair").state === "completed");
+  assert.equal(posts, 1);
+  assert.match(JSON.stringify(body.messages), /Original immutable output/u);
+  assert.match(JSON.stringify(body.messages), /Only repair the final hold/u);
+  const snapshot = orchestrator.projectSnapshot("run-repair");
+  assert.equal(snapshot.operation.kind, "repair");
+  assert.equal(snapshot.operation.sourceRevisionId, "revision-1");
+});
+
+test("variant is a separately confirmed single request that preserves its hard-anchor hash", async () => {
+  let posts = 0;
+  let body = null;
+  const orchestrator = new PromptOrchestrator({
+    credentialVault: vault(true),
+    randomUUID: () => "run-variant",
+    fetchImpl: async (_url, options) => {
+      posts += 1;
+      body = JSON.parse(options.body);
+      return new Response(JSON.stringify({ choices: [{ message: { content: "Shot 1 0-3s director hook. visible mechanism. Shot 2 3-15s held final result." } }] }), { status: 200 });
+    }
+  });
+  const operation = {
+    kind: "variant",
+    projectId: "project-1",
+    sourceRevisionId: "revision-1",
+    rootRevisionId: "revision-1",
+    sourceOutput: "Original immutable output",
+    sourceOutputSha256: require("node:crypto").createHash("sha256").update("Original immutable output", "utf8").digest("hex"),
+    style: "director",
+    axes: ["camera", "rhythm", "blocking"],
+    instruction: "Change only the directing treatment.",
+    hardAnchorHash: "b".repeat(64)
+  };
+  const plan = orchestrator.preflight({ ...input(), operation }, { frozenMedia: [] });
+  assert.equal(plan.operation, "variant");
+  assert.equal(plan.plannedChatCalls, 1);
+  assert.throws(() => orchestrator.start({ planHash: plan.planHash, confirmed: false }), /confirmation/u);
+  orchestrator.start({ planHash: plan.planHash, confirmed: true });
+  await waitFor(() => orchestrator.status("run-variant").state === "completed");
+  assert.equal(posts, 1);
+  assert.match(JSON.stringify(body.messages), /director/u);
+  assert.match(JSON.stringify(body.messages), new RegExp("b{64}", "u"));
+  const snapshot = orchestrator.projectSnapshot("run-variant");
+  assert.equal(snapshot.operation.kind, "variant");
+  assert.equal(snapshot.operation.hardAnchorHash, "b".repeat(64));
+});
