@@ -117,7 +117,8 @@ async function run() {
     assert.equal(await page.locator("#workbench-export-handoff").isEnabled(), true, "accepted revision must enable formal handoff");
     assert.equal(await page.locator("#workbench-export-skill").isEnabled(), true, "accepted revision must enable Skill export");
 
-    await page.locator("#workbench-locale-en").click();
+    await page.locator("#workbench-locale-en").evaluate((node) => node.click());
+    await page.waitForFunction(() => document.querySelector("#workbench-locale-en")?.getAttribute("aria-pressed") === "true");
     assert.equal(await page.locator("label:has(#workbench-review-dimension) > span").textContent(), "Review dimension");
     assert.equal(await page.locator("label:has(#workbench-board-stage) > span").textContent(), "Stage filter");
     assert.equal(await page.locator("#workbench-delivery-status").textContent(), "AI bridge · local export");
