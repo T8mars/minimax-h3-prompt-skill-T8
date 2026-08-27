@@ -130,7 +130,7 @@ async function run() {
     // language switch.
     await page.locator("#workbench-locale-zh").evaluate((node) => node.click());
     await page.waitForFunction(() => document.querySelector("#workbench-locale-zh")?.getAttribute("aria-pressed") === "true");
-    assert.equal(await page.locator("label:has(#workbench-review-dimension) > span").textContent(), "复盘维度");
+    assert.equal(await page.locator("#workbench-title").textContent(), "提示词实例化与 API 增强");
 
     await page.locator("details.creator-tool").evaluateAll((nodes) => nodes.forEach((node) => { node.open = true; }));
     await page.locator("#workbench-compare-revisions").click();
