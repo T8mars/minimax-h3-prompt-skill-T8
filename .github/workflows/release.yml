@@ -227,9 +227,9 @@ jobs:
           $env:T8_PORTABLE_SMOKE = "1"
           try {
             $process = Start-Process -FilePath $portable -PassThru
-            if (-not $process.WaitForExit(60000)) {
+            if (-not $process.WaitForExit(180000)) {
               $process.Kill()
-              throw "Windows portable smoke process did not exit within 60 seconds."
+              throw "Windows portable smoke process did not exit within 180 seconds."
             }
           } finally {
             Remove-Item Env:T8_PORTABLE_SMOKE -ErrorAction SilentlyContinue

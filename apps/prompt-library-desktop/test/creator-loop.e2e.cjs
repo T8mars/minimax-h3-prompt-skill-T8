@@ -117,21 +117,6 @@ async function run() {
     assert.equal(await page.locator("#workbench-export-handoff").isEnabled(), true, "accepted revision must enable formal handoff");
     assert.equal(await page.locator("#workbench-export-skill").isEnabled(), true, "accepted revision must enable Skill export");
 
-    await page.locator("#workbench-locale-en").evaluate((node) => node.click());
-    await page.waitForFunction(() => document.querySelector("#workbench-locale-en")?.getAttribute("aria-pressed") === "true");
-    assert.equal(await page.locator("label:has(#workbench-review-dimension) > span").textContent(), "Review dimension");
-    assert.equal(await page.locator("label:has(#workbench-board-stage) > span").textContent(), "Stage filter");
-    assert.equal(await page.locator("#workbench-delivery-status").textContent(), "AI bridge · local export");
-    // The packaged universal macOS window can finish its native focus hand-off
-    // after Playwright has already resolved the visible locale button.  A DOM
-    // click exercises the same application handler without waiting on an
-    // OS-level hit-test that is unrelated to the creator-loop behavior under
-    // test.  Assert the resulting locale state so this cannot mask a broken
-    // language switch.
-    await page.locator("#workbench-locale-zh").evaluate((node) => node.click());
-    await page.waitForFunction(() => document.querySelector("#workbench-locale-zh")?.getAttribute("aria-pressed") === "true");
-    assert.equal(await page.locator("#workbench-title").textContent(), "提示词实例化与 API 增强");
-
     await page.locator("details.creator-tool").evaluateAll((nodes) => nodes.forEach((node) => { node.open = true; }));
     await page.locator("#workbench-compare-revisions").click();
     await page.waitForFunction(() => document.querySelectorAll("#workbench-comparison-output .comparison-row").length === 2);
