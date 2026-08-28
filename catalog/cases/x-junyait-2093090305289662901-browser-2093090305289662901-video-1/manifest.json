@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-junyait-2093090305289662901-browser-2093090305289662901-video-1",
+  "slug": "identity-locked-style-world-carousel",
+  "title": "单角材质轮转｜身份锚定、玻璃晶体与宇宙状态变换",
+  "source_title": "银发角色材质变身｜透明、晶体、星云与织物世界接力",
+  "summary": "锁定同一成年幻想角色的脸、银发、眼睛和轮廓，在玻璃、晶体、星云与白色织物状态间依次轮转；每次只改变一种材质或世界槽位，终局回到完整身份。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/identity-locked-style-world-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-junyait-2093090305289662901-browser-2093090305289662901-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-junyait-2093090305289662901-browser-2093090305289662901-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-identity-locked-style-world-carousel-v1",
+  "input_format": "固定主体身份与镜头关系 + 至少四个材质/版式不同的风格世界 + 每阶段改变两项风格通道 + 递增密度 + 可读身份终态",
+  "recommended_input": "建立原创成年天文台守护员：黑色卷发、单侧琥珀眼标与钴蓝斗篷。；只把玻璃平面转为浅色矿物棱镜，同一人物保持稳定。；白色纸带替代星空后，回到钴蓝棱镜环中的完整守护员。",
+  "required_anchors": [
+    "At least three identity anchors are established first.",
+    "Each beat changes one material or world slot only.",
+    "Scale expands without replacing the subject.",
+    "The final state returns to the complete identity and one retained motif."
+  ],
+  "tags": [
+    "identity",
+    "locked",
+    "style",
+    "world",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:13+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

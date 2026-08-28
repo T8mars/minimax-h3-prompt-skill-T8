@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sarischerika-2093136273603260680-browser-2093136273603260680-video-1",
+  "slug": "continuous-obstacle-route-fall-state-recovery-reunion",
+  "title": "触手追逐恢复弧｜连续路线、力竭跌倒与决心复起",
+  "source_title": "粉发动漫追逐｜巨型触手封路、转角倒地与眼神复燃",
+  "summary": "让同一成年角色沿一条可追踪巷道持续逃离巨型威胁，障碍逐步逼近而路线地标不丢；人物到转角后因力竭倒地，再用呼吸和眼神完成恢复。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/continuous-obstacle-route-fall-state-recovery-reunion",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sarischerika-2093136273603260680-browser-2093136273603260680-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sarischerika-2093136273603260680-browser-2093136273603260680-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-obstacle-route-fall-state-recovery-reunion-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-continuous-obstacle-route-fall-state-recovery-reunion-v1",
+  "input_format": "一名明确成年参与者与固定终点方向 + 至少三种要求不同身体策略的材质障碍 + 一次可恢复跌倒或浸水 + 湿痕/泥尘等失败状态持续保留 + 在路线内恢复且不重置地点身份 + 环境抵达信号与等待成年人或交付目标共同收束",
+  "recommended_input": "原创成年自行车递送员徒步穿过狭窄温室服务通道，巨型柔性根须从后方破出追赶。；人物抵达黄色转角栏杆并转入相连育苗走廊。；一次呼吸、一次撑地和聚焦抬眼证明恢复，在重新行动前停留。",
+  "required_anchors": [
+    "One identity-locked adult follows a continuous route.",
+    "Repeated landmarks preserve pursuit geography.",
+    "The fall occurs after a visible obstacle handoff.",
+    "Breath, brace and gaze visibly prove recovery."
+  ],
+  "tags": [
+    "continuous",
+    "obstacle",
+    "route",
+    "fall",
+    "state",
+    "recovery"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:15+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

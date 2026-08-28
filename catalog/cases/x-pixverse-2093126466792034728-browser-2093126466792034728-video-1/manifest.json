@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-pixverse-2093126466792034728-browser-2093126466792034728-video-1",
+  "slug": "semantic-typography-world-action-relay",
+  "title": "拟音字武侠接力｜动作承诺、语义撞击与三章升级",
+  "source_title": "黑白武侠字场｜刀锋、雨伞与奔马的语义动作接力",
+  "summary": "用同一高对比视觉语法串联三个独立动作章节；每章先给短标题承诺，再让人物、道具和拟音字在同一方向发生碰撞，最后以更大尺度运动兑现升级。",
+  "status": "released",
+  "source_duration_seconds": 15.25551,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/semantic-typography-world-action-relay",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-pixverse-2093126466792034728-browser-2093126466792034728-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-pixverse-2093126466792034728-browser-2093126466792034728-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-semantic-typography-world-action-relay-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-semantic-typography-world-action-relay-v1",
+  "input_format": "Establish one clearly adult original subject, three identity anchors and one continuous world axis. + Bind each decisive action to exactly one short original semantic word that appears only after the action begins. + Make each word occupy, divide, reflect or redirect the physical environment rather than float as a subtitle. + Escalate typography scale and spatial depth while preserving identity, travel direction and readable action. + Return to the same adult face or full-body anchor and resolve the word sequence into one terminal identity proof.",
+  "recommended_input": "象牙黑原创字场先显示准确章节标题【HOLD THE LINE】，成年桥梁巡检员携折叠测量杆入场。；切换准确标题【THROUGH THE FOG】，同一人物点亮信号灯并穿过斜向银雾。；路线与雾汇成一个原创终局标记，人物抵达桥端并停留。",
+  "required_anchors": [
+    "Each chapter begins with one readable short title.",
+    "One physical action drives one matching graphic stroke.",
+    "Motion scale grows from hand tool to environment route.",
+    "The final mark and completed action hold together."
+  ],
+  "tags": [
+    "semantic",
+    "typography",
+    "world",
+    "action",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:15+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

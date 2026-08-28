@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-laviniavelle-2093162800747282739-browser-2093162800747282739-video-1",
+  "slug": "contact-triggered-transient-energy-feedback",
+  "title": "地铁冲撞格斗｜环境碰撞、恢复动作与近身反制",
+  "source_title": "地铁柱爆裂追斗｜瓷砖冲击、快速回稳与终局出拳",
+  "summary": "先让人物与固定地铁立柱发生真实碰撞，再用碎片、尘雾和身体恢复连续交接到近身格斗；每次反击从清楚接触开始，最后以朝镜头的一拳结束。",
+  "status": "released",
+  "source_duration_seconds": 20.131701,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/contact-triggered-transient-energy-feedback",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-laviniavelle-2093162800747282739-browser-2093162800747282739-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-laviniavelle-2093162800747282739-browser-2093162800747282739-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-contact-triggered-transient-energy-feedback-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-contact-triggered-transient-energy-feedback-v1",
+  "input_format": "明确成年原创主体、可读对手和稳定地面关系先建立 + 每次先完整承诺物理轨迹并真实接触 + 能量、尘屑、毛发、布料或灯光只在接触后局部短促响应 + 通过对手数量和反馈半径升级但轮廓始终清楚 + 终局效果归零并在同一空间稳定持有主体",
+  "recommended_input": "成年车站机械师撞上固定玻璃时刻表墙，只产生局部裂纹。；成年破坏者沿已建立站台通道逼近。；机械师以戴手套手掌朝镜头推进，破坏者退出通道，画面结束。",
+  "required_anchors": [
+    "One fixed environment anchor proves the initial impact.",
+    "Recovery occurs in the same damaged location.",
+    "Every counter has grounded visible contact.",
+    "The final direct action follows a resolved spatial exchange."
+  ],
+  "tags": [
+    "contact",
+    "triggered",
+    "transient",
+    "energy",
+    "feedback"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:14+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

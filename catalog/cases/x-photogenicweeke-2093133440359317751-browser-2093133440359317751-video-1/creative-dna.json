@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A graphite hand constructs and colors an adult gardener from blank paper to held artwork. Preserve the five causal invariants, stable spatial anchors and terminal proof while replacing every source-specific surface. The reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "The real drawing tool is visible before the subject exists.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Every new contour grows from the current tool contact.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Objects are constructed through spatially related lines.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Color fills only established closed shapes.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The tool leaves before the completed artwork holds.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "A graphite hand constructs and colors an adult gardener from blank paper to held artwork.",
+      "prompt_seed": "A graphite hand constructs and colors an adult gardener from blank paper to held artwork."
+    },
+    {
+      "concept": "A chalk hand constructs an adult baker and oven scene on a blackboard before a clean final hold.",
+      "prompt_seed": "A chalk hand constructs an adult baker and oven scene on a blackboard before a clean final hold."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The real drawing tool is visible before the subject exists."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "Every new contour grows from the current tool contact."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "Objects are constructed through spatially related lines."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "Color fills only established closed shapes."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The tool leaves before the completed artwork holds."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A graphite hand constructs and colors an adult gardener from blank paper to held artwork.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A chalk hand constructs an adult baker and oven scene on a blackboard before a clean final hold.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

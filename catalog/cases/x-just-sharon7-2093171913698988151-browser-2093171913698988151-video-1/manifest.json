@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-just-sharon7-2093171913698988151-browser-2093171913698988151-video-1",
+  "slug": "switch-subjects-through-persistent-selector",
+  "title": "可见光标身份编辑｜拖拽改位、像素转换与人物连续",
+  "source_title": "巨型光标舞台｜人物拖拽、版式重排与身份保持",
+  "summary": "让一个持续可见的光标成为唯一编辑因果；每次点击或拖拽只改变位置、尺度或图形介质中的一个槽位，同一人物身份在所有变化中保持可辨。",
+  "status": "released",
+  "source_duration_seconds": 9.12,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/switch-subjects-through-persistent-selector",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-just-sharon7-2093171913698988151-browser-2093171913698988151-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-just-sharon7-2093171913698988151-browser-2093171913698988151-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-persistent-selector-subject-swap-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-persistent-selector-subject-swap-v1",
+  "input_format": "固定选择菜单 + 固定数据区 + 固定主视窗 + 至少4个原创对象 + 每次可见选择 + 同步字段更新 + 一个定义动作",
+  "recommended_input": "成年博物馆讲解员进入原创展览版式画布，一个巨型箭头光标持续可见。；一次点击只把背景变为蓝色半调网格，脸、制服和尺度不变。；光标释放，完整讲解员卡片与控件、注册标记共同停留。",
+  "required_anchors": [
+    "One visible cursor persists as the sole editing agent.",
+    "Each gesture changes exactly one named slot.",
+    "Interface registration survives every transformation.",
+    "The final state retains the cursor and completed layout as proof."
+  ],
+  "tags": [
+    "persistent",
+    "selector",
+    "subject",
+    "swap"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:13+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

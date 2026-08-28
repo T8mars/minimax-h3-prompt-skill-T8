@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.3.6`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.3.6`。
+当前版本是 `v1.3.7`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.3.7`。
 
 版本采用十进制进位：
 
@@ -24,6 +24,7 @@
 1.3.2 -> 1.3.3
 1.3.3 -> 1.3.4
 1.3.5 -> 1.3.6
+1.3.6 -> 1.3.7
 1.9.9 -> 2.0.0
 ```
 
@@ -78,10 +79,10 @@ Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHu
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.3.6
+npm run media:pack -- -Version 1.3.7
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个正式案例和社区 Skill 媒体的时长、视频 codec 和音频 codec，按原文件体积均衡输出 `.release-input/out/prompt-library-media-v1.3.6-part1.zip`、`prompt-library-media-v1.3.6-part2.zip`、`media-pack-manifest.json` 和两个对应 SHA-256。两个 ZIP 都带相同 manifest，解压到同一目录即可无损还原完整媒体。manifest 的 `files` 必须覆盖全部正式案例，`unavailable_cases` 必须为空，`community_skill_files` 单独记录非官方 Skill 样片；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个正式案例和社区 Skill 媒体的时长、视频 codec 和音频 codec，按原文件体积均衡输出 `.release-input/out/prompt-library-media-v1.3.7-part1.zip`、`prompt-library-media-v1.3.7-part2.zip`、`media-pack-manifest.json` 和两个对应 SHA-256。两个 ZIP 都带相同 manifest，解压到同一目录即可无损还原完整媒体。manifest 的 `files` 必须覆盖全部正式案例，`unavailable_cases` 必须为空，`community_skill_files` 单独记录非官方 Skill 样片；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-onofumi-ai-2093175677373845634-browser-2093175677373845634-video-1",
+  "slug": "live-subject-print-collage-ad-relay",
+  "title": "汽水平面冲击广告｜罐体锚定、气泡撞击与字标归位",
+  "source_title": "KUMO汽水广告｜矢量罐体、冰块飞溅与品牌字标闭环",
+  "summary": "锁定单一包装轮廓，用气泡、冰块、液体和大字依次证明清凉与冲击；每次图形爆发都从罐体接触或开启动作发生，最后回到完整包装。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/live-subject-print-collage-ad-relay",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-onofumi-ai-2093175677373845634-browser-2093175677373845634-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-onofumi-ai-2093175677373845634-browser-2093175677373845634-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-live-subject-print-collage-ad-relay-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-live-subject-print-collage-ad-relay-v1",
+  "input_format": "明确成年原创广告主体与至少三项稳定身份/服装锚点 + 统一纸张/撕边/墨色系统通过动作、细节或注册边缘进入 + 全身证明与至少两个材质微距接力 + 至少两种明显不同海报版式但身份和信息层级不漂移 + 短字只解释相邻证据 + 汇总已证明人物、细节和文字形成终局广告页并停留",
+  "recommended_input": "奶油底显示原创紫色【LUMA】气泡茶罐，包装轮廓清楚稳定。；同一罐体穿过准确短词【CHILL】字卡并完成一次清楚倒杯，标签注册不变。；所有图形回收到完整LUMA罐体与准确短语【SIP BRIGHT】，停留收束。",
+  "required_anchors": [
+    "One registered package silhouette anchors every beat.",
+    "Every graphic burst starts at a visible package action.",
+    "Copy remains short and readable during motion.",
+    "All elements return to the complete product lockup."
+  ],
+  "tags": [
+    "live",
+    "subject",
+    "print",
+    "collage",
+    "ad",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:14+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

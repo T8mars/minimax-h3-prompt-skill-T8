@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-sarischerika-2093136273603260680-browser-2093136273603260680-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "9b29a2eb4d774cf91e7b8701b50a853d2fee96456f52234a9a93af60331aca24",
+    "creative_dna_sha256": "85e0a83170454b464348138f4a8e833b743f1bdbc6743e8601daa27a25812c56"
+  },
+  "content": {
+    "title": "触手追逐恢复弧｜连续路线、力竭跌倒与决心复起",
+    "summary": "让同一成年角色沿一条可追踪巷道持续逃离巨型威胁，障碍逐步逼近而路线地标不丢；人物到转角后因力竭倒地，再用呼吸和眼神完成恢复。",
+    "quick_start": {
+      "input_format": "一名明确成年参与者与固定终点方向 + 至少三种要求不同身体策略的材质障碍 + 一次可恢复跌倒或浸水 + 湿痕/泥尘等失败状态持续保留 + 在路线内恢复且不重置地点身份 + 环境抵达信号与等待成年人或交付目标共同收束",
+      "recommended_input": "原创成年自行车递送员徒步穿过狭窄温室服务通道，巨型柔性根须从后方破出追赶。；人物抵达黄色转角栏杆并转入相连育苗走廊。；一次呼吸、一次撑地和聚焦抬眼证明恢复，在重新行动前停留。",
+      "required_anchors": [
+        "一名身份锁定的成年人遵循一条连续的路线。",
+        "重复的地标保留了追踪空间关系。",
+        "跌倒发生在可见的障碍物切换之后。",
+        "呼吸、支撑和凝视明显证明康复。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让同一成年角色沿一条可追踪巷道持续逃离巨型威胁，障碍逐步逼近而路线地标不丢；人物到转角后因力竭倒地，再用呼吸和眼神完成恢复。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让同一成年角色沿一条可追踪巷道持续逃离巨型威胁，障碍逐步逼近而路线地标不丢；人物到转角后因力竭倒地，再用呼吸和眼神完成恢复。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名身份锁定的成年人遵循一条连续的路线。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "重复的地标保留了追踪空间关系。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "整个路线上的威胁距离逐渐减小。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "跌倒发生在可见的障碍物切换之后。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "呼吸、支撑和凝视明显证明康复。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名温室信使逃离了巨大的树根，在转弯后摔倒并明显恢复了。",
+          "prompt_seed": "一名温室信使逃离了巨大的树根，在转弯后摔倒并明显恢复了。"
+        },
+        {
+          "concept": "一名成年档案快递员从滚动的货架上逃脱，在楼梯平台后摔倒并恢复过来。",
+          "prompt_seed": "一名成年档案快递员从滚动的货架上逃脱，在楼梯平台后摔倒并恢复过来。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一名身份锁定的成年人遵循一条连续的路线。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "重复的地标保留了追踪空间关系。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "整个路线上的威胁距离逐渐减小。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "跌倒发生在可见的障碍物切换之后。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "呼吸、支撑和凝视明显证明康复。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名温室信使逃离了巨大的树根，在转弯后摔倒并明显恢复了。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年档案快递员从滚动的货架上逃脱，在楼梯平台后摔倒并恢复过来。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

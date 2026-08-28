@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-avelyrahnai-2093190544335728719-browser-2093190544335728719-video-1",
+  "slug": "apparent-vulnerability-readiness-reversal-resumption",
+  "title": "伪装任务反转｜道具递送、身份揭示与连续突围",
+  "source_title": "女仆特工突围｜携箱奔跑、伪装解除与近身清场",
+  "summary": "让同一成年人物带着明确任务物奔跑并受阻，先以伪装身份承受追击；任务物安全落位后才揭示真实身份，再以连续近身动作完成突围。",
+  "status": "released",
+  "source_duration_seconds": 22.221497,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/apparent-vulnerability-readiness-reversal-resumption",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-avelyrahnai-2093190544335728719-browser-2093190544335728719-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-avelyrahnai-2093190544335728719-browser-2093190544335728719-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-apparent-vulnerability-readiness-reversal-resumption-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-apparent-vulnerability-readiness-reversal-resumption-v1",
+  "input_format": "稳定主体与中断目标 + 可读困境 + 因困境主动靠近的外部压力 + 至少两个准备微证据 + 单一能力链破局 + 回到原载体继续路线",
+  "recommended_input": "成年酒店技术员穿正式服务伪装，双手携一只密封银色维修箱前进。；在身份揭示前，先把箱子安全放到有标记的控制柜旁。；用一次格挡、一次肘部改向和一次关门动作清出路线，最后在安全箱旁停留。",
+  "required_anchors": [
+    "One mission object remains protected through the pursuit.",
+    "The disguised identity remains stable before the reveal.",
+    "The reveal preserves the same adult face and body.",
+    "The final actions clear the route and return to the secured object."
+  ],
+  "tags": [
+    "apparent",
+    "vulnerability",
+    "readiness",
+    "reversal",
+    "resumption"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:13+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

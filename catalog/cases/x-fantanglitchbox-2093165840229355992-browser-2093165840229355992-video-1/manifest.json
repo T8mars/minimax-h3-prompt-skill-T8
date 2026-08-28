@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-fantanglitchbox-2093165840229355992-browser-2093165840229355992-video-1",
+  "slug": "whole-first-component-grammar-returning-mark",
+  "title": "多载具机械组装｜组件到位、功能映射与机器人终局",
+  "source_title": "飞行与履带组件合体｜机翼、四肢、躯干到机器人英雄镜头",
+  "summary": "先分别建立多个载具或装甲组件的外观与运动功能，再让它们沿清楚路径到达共同装配轴；每个组件只映射一个身体部位，最终形成完整机器人并停留。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/whole-first-component-grammar-returning-mark",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-fantanglitchbox-2093165840229355992-browser-2093165840229355992-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-fantanglitchbox-2093165840229355992-browser-2093165840229355992-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-whole-first-component-grammar-returning-mark-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-whole-first-component-grammar-returning-mark-v1",
+  "input_format": "第0帧完整原创构造物先出现 + 第一秒完成唯一最大速度爆拆且组件顺序不变 + 各主要组件分别获得一种较慢且不同的材料或制造语法 + 至少两章之间短暂回到完整成品刷新装配记忆 + 组件逐步符号化并重组为原创身份标记而非简单恢复开场产品",
+  "recommended_input": "建立三种原创救援组件：紧凑履带车、双旋翼无人机和白色医疗舱。；无人机旋翼折为肩部支架，中央机身成为上躯干。；完整原创救援机器人出现，短暂高亮履带、无人机和医疗舱功能后以英雄轮廓停留。",
+  "required_anchors": [
+    "Every source module is established before assembly.",
+    "Each module maps to one body function only.",
+    "Assembly paths remain visible and non-overlapping.",
+    "The complete robot accounts for and proves every module."
+  ],
+  "tags": [
+    "whole",
+    "first",
+    "component",
+    "grammar",
+    "returning",
+    "mark"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:13+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

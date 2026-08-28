@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-nakazakifam-2093093073077023109-browser-2093093073077023109-video-1",
+  "slug": "performer-anchor-semantic-lyric-escalation",
+  "title": "双层表演语义同步｜真人锚点、图形回应与关键词推进",
+  "source_title": "真人与印刷图形双屏｜VOICE、SMILE、HIDE、HERE语义舞台",
+  "summary": "固定上层真人表演者作为身份锚点，下层图形空间逐词回应其表情或动作；每个关键词只触发一种印刷或墨迹反应，双层在终句同步收束。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/performer-anchor-semantic-lyric-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nakazakifam-2093093073077023109-browser-2093093073077023109-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nakazakifam-2093093073077023109-browser-2093093073077023109-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performer-anchor-semantic-lyric-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-performer-anchor-semantic-lyric-escalation-v1",
+  "input_format": "稳定原创表演者 + 3至4句原创歌词 + 每句语义图形行为 + 人物始终可辨 + 逐句升能 + 清字后的表演释放",
+  "recommended_input": "上层固定一名成年电台主持人，下层固定抽象纸质波形场。；一次小幅挥手触发准确短词【REACH】，一条墨线横向延伸。；双层共同收束到主持人静止凝视与准确终句【STAY TUNED】。",
+  "required_anchors": [
+    "One live performer remains registered in a stable band.",
+    "Each exact keyword follows one readable performance cue.",
+    "Typography never obscures the identity anchor.",
+    "Both bands resolve on one final performer-and-line state."
+  ],
+  "tags": [
+    "performer",
+    "anchor",
+    "semantic",
+    "lyric",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:14+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

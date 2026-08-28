@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-kan8888kawa-2093175490173677993-browser-2093175490173677993-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d4020bd691f5d6d4a6c235bf7e676d7d2dee2f6fce89bdeb195305a34c4d4ef6",
+    "creative_dna_sha256": "d580bdd03aec666ab8f1fae1dd38708d88198f9551d4e2453d9a17bebc58f340"
+  },
+  "content": {
+    "title": "双人近景合唱｜身份交替、视线接力与同步副歌",
+    "summary": "用两名明确成年表演者的稳定面孔与站位建立关系，主歌按视线和歌词轮流交接；副歌让两人同框同步，最终以共享停顿而非随机剪切收束。",
+    "quick_start": {
+      "input_format": "稳定原创表演者 + 3至4句原创歌词 + 每句语义图形行为 + 人物始终可辨 + 逐句升能 + 清字后的表演释放",
+      "recommended_input": "两名明确成年灯塔守护员站在暖色电台房的一张工作桌旁。；只反打一次，由年轻守护员回应第二句原创歌词。；以共享呼吸、相互凝视和静止双人构图结束，不增加表演者。",
+      "required_anchors": [
+        "两位表演者显然都是成年人并且身份锁定。",
+        "一个稳定的共享位置建立了这种关系。",
+        "副歌将两位表演者置于同一个画面中。",
+        "共同的回应结束了二重唱。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用两名明确成年表演者的稳定面孔与站位建立关系，主歌按视线和歌词轮流交接；副歌让两人同框同步，最终以共享停顿而非随机剪切收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用两名明确成年表演者的稳定面孔与站位建立关系，主歌按视线和歌词轮流交接；副歌让两人同框同步，最终以共享停顿而非随机剪切收束。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "两位表演者显然都是成年人并且身份锁定。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一个稳定的共享位置建立了这种关系。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "诗句通过可读的目光切换而交替。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "副歌将两位表演者置于同一个画面中。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "共同的回应结束了二重唱。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "两名成年灯塔看守人交替吟唱并共享一首广播室副歌。",
+          "prompt_seed": "两名成年灯塔看守人交替吟唱并共享一首广播室副歌。"
+        },
+        {
+          "concept": "两位成人陶艺老师交替创作工作歌曲并共享工作室副歌。",
+          "prompt_seed": "两位成人陶艺老师交替创作工作歌曲并共享工作室副歌。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "两位表演者显然都是成年人并且身份锁定。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个稳定的共享位置建立了这种关系。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "诗句通过可读的目光切换而交替。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "副歌将两位表演者置于同一个画面中。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "共同的回应结束了二重唱。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两名成年灯塔看守人交替吟唱并共享一首广播室副歌。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "两位成人陶艺老师交替创作工作歌曲并共享工作室副歌。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

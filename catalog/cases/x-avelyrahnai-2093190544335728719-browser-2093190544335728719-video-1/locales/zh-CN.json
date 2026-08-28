@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-avelyrahnai-2093190544335728719-browser-2093190544335728719-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "0b5b74ec94ba3b77266563fb4488566984840459bed5d6b7138e3852820f7ab7",
+    "creative_dna_sha256": "3441862bd2cf0eeff2d857ca7837ddcad4180bb333d815cf56ab3d5bf4610f9d"
+  },
+  "content": {
+    "title": "伪装任务反转｜道具递送、身份揭示与连续突围",
+    "summary": "让同一成年人物带着明确任务物奔跑并受阻，先以伪装身份承受追击；任务物安全落位后才揭示真实身份，再以连续近身动作完成突围。",
+    "quick_start": {
+      "input_format": "稳定主体与中断目标 + 可读困境 + 因困境主动靠近的外部压力 + 至少两个准备微证据 + 单一能力链破局 + 回到原载体继续路线",
+      "recommended_input": "成年酒店技术员穿正式服务伪装，双手携一只密封银色维修箱前进。；在身份揭示前，先把箱子安全放到有标记的控制柜旁。；用一次格挡、一次肘部改向和一次关门动作清出路线，最后在安全箱旁停留。",
+      "required_anchors": [
+        "一个任务目标在追击过程中仍然受到保护。",
+        "伪装的身份在揭露之前保持稳定。",
+        "揭示保留了相同的成人面孔和身体。",
+        "最后的动作清除路线并返回受保护的物体。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让同一成年人物带着明确任务物奔跑并受阻，先以伪装身份承受追击；任务物安全落位后才揭示真实身份，再以连续近身动作完成突围。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让同一成年人物带着明确任务物奔跑并受阻，先以伪装身份承受追击；任务物安全落位后才揭示真实身份，再以连续近身动作完成突围。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个任务目标在追击过程中仍然受到保护。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "伪装的身份在揭露之前保持稳定。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "该物体在战斗升级之前已被保护。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "揭示保留了相同的成人面孔和身体。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后的动作清除路线并返回受保护的物体。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名伪装的酒店技术人员保护了一个维修箱，以工程师的身份暴露并清理了路线。",
+          "prompt_seed": "一名伪装的酒店技术人员保护了一个维修箱，以工程师的身份暴露并清理了路线。"
+        },
+        {
+          "concept": "一名成年餐饮工作人员保护了药品冷却器，以医生身份现身，然后离开了被封锁的大厅。",
+          "prompt_seed": "一名成年餐饮工作人员保护了药品冷却器，以医生身份现身，然后离开了被封锁的大厅。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个任务目标在追击过程中仍然受到保护。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "伪装的身份在揭露之前保持稳定。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "该物体在战斗升级之前已被保护。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "揭示保留了相同的成人面孔和身体。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "最后的动作清除路线并返回受保护的物体。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名伪装的酒店技术人员保护了一个维修箱，以工程师的身份暴露并清理了路线。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年餐饮工作人员保护了药品冷却器，以医生身份现身，然后离开了被封锁的大厅。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

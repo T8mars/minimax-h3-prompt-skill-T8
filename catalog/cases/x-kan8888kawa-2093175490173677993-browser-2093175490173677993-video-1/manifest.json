@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-kan8888kawa-2093175490173677993-browser-2093175490173677993-video-1",
+  "slug": "performer-anchor-semantic-lyric-escalation",
+  "title": "双人近景合唱｜身份交替、视线接力与同步副歌",
+  "source_title": "母女感成人双人歌唱｜交替特写到同框副歌锁定",
+  "summary": "用两名明确成年表演者的稳定面孔与站位建立关系，主歌按视线和歌词轮流交接；副歌让两人同框同步，最终以共享停顿而非随机剪切收束。",
+  "status": "released",
+  "source_duration_seconds": 12.32,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/performer-anchor-semantic-lyric-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kan8888kawa-2093175490173677993-browser-2093175490173677993-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kan8888kawa-2093175490173677993-browser-2093175490173677993-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performer-anchor-semantic-lyric-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-performer-anchor-semantic-lyric-escalation-v1",
+  "input_format": "稳定原创表演者 + 3至4句原创歌词 + 每句语义图形行为 + 人物始终可辨 + 逐句升能 + 清字后的表演释放",
+  "recommended_input": "两名明确成年灯塔守护员站在暖色电台房的一张工作桌旁。；只反打一次，由年轻守护员回应第二句原创歌词。；以共享呼吸、相互凝视和静止双人构图结束，不增加表演者。",
+  "required_anchors": [
+    "Both performers are clearly adult and identity-locked.",
+    "One stable shared location establishes the relationship.",
+    "The refrain places both performers in one frame.",
+    "A mutual held response closes the duet."
+  ],
+  "tags": [
+    "performer",
+    "anchor",
+    "semantic",
+    "lyric",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:14+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

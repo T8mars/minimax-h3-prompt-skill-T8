@@ -6,7 +6,7 @@ on:
       version:
         description: "Decimal-carry version without v (for example 1.1.7)"
         required: true
-        default: "1.3.6"
+        default: "1.3.7"
         type: string
       media_sha256:
         description: "Comma-separated SHA-256 values for media part1 and part2 already uploaded to the Draft Release"

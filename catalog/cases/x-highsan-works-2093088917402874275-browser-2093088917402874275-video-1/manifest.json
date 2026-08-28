@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-highsan-works-2093088917402874275-browser-2093088917402874275-video-1",
+  "slug": "stage-performance-fall-rise-arc",
+  "title": "单人舞台动作链｜固定空间、连续舞姿与终拍锁定",
+  "source_title": "猫耳动漫独舞｜白色舞台、节拍姿势与身份稳定",
+  "summary": "在一个固定白色舞台中锁定同一成年动漫舞者，以连续可读的躯干、手臂和步伐动作推进；镜头克制，最终回到完整站姿并定格。",
+  "status": "released",
+  "source_duration_seconds": 10.208,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-performance-fall-rise-arc",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-highsan-works-2093088917402874275-browser-2093088917402874275-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-highsan-works-2093088917402874275-browser-2093088917402874275-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performance-fall-rise-arc-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-performance-fall-rise-arc-v1",
+  "input_format": "单人表演者 + 巨大空场 + 远景起势 + 近景表达 + 一次受控倒地 + 俯拍确认 + 连续复起",
+  "recommended_input": "原创成年舞台技术员戴青色耳机、穿橙色工具夹克，站在固定浅色排练地面。；连续完成两个步伐姿势，脸、耳机、夹克和地面标记不变。；同一人物回到正面平衡站姿，干净停留一拍。",
+  "required_anchors": [
+    "One adult identity is established in full body.",
+    "The stage and floor registration remain fixed.",
+    "The largest movement occurs only once.",
+    "The same subject returns to a readable held stance."
+  ],
+  "tags": [
+    "performance",
+    "fall",
+    "rise",
+    "arc"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:13+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

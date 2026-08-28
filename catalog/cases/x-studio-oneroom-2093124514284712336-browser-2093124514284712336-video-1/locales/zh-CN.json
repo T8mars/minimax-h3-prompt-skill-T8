@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-studio-oneroom-2093124514284712336-browser-2093124514284712336-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "124db1cb284bcad1ca453d7144c1e69e862ede8066c3866649ae70b2c2946c56",
+    "creative_dna_sha256": "5aa8b16100d25db0956fca7092997aca70fdbcf16d0b0b00b99a340ccf6b89f7"
+  },
+  "content": {
+    "title": "动画片头混合接力｜角色锚点、数字字卡与街景推进",
+    "summary": "同一角色身份在平面海报、巨型数字、街景和车辆模块中连续出现；每一模块只引入一个版式信息，并用动作或遮挡把角色交给下一场景，最后回到总片名。",
+    "quick_start": {
+      "input_format": "明确成年原创广告主体与至少三项稳定身份/服装锚点 + 统一纸张/撕边/墨色系统通过动作、细节或注册边缘进入 + 全身证明与至少两个材质微距接力 + 至少两种明显不同海报版式但身份和信息层级不漂移 + 短字只解释相邻证据 + 汇总已证明人物、细节和文字形成终局广告页并停留",
+      "recommended_input": "原创成年屋顶递送员肖像与准确红黑标题【NIGHT SHIFT】同场建立。；人物进入钴蓝电车站，一辆经过车厢擦镜交给街道奔跑动作。；同一肖像、07和准确标题NIGHT SHIFT归入稳定终局字卡。",
+      "required_anchors": [
+        "一个身份系统锚定平面和空间模块。",
+        "每个模块引入一个标题或数字字段。",
+        "城市模块保留角色锚点。",
+        "最后一张卡片整合了重复的肖像、数字和标题。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一角色身份在平面海报、巨型数字、街景和车辆模块中连续出现；每一模块只引入一个版式信息，并用动作或遮挡把角色交给下一场景，最后回到总片名。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一角色身份在平面海报、巨型数字、街景和车辆模块中连续出现；每一模块只引入一个版式信息，并用动作或遮挡把角色交给下一场景，最后回到准确总片名 NIGHT SHIFT。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个身份系统锚定平面和空间模块。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个模块引入一个标题或数字字段。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "动作和遮挡激发每次切换。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "城市模块保留角色锚点。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后一张卡片整合了重复的肖像、数字和标题。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "屋顶快递员将肖像、号码、电车、街道和路线图模块链接到 NIGHT SHIFT 中。",
+          "prompt_seed": "屋顶快递员将肖像、号码、电车、街道和路线图模块链接到 NIGHT SHIFT 中。"
+        },
+        {
+          "concept": "一名成年舞台工作人员将档案、提示编号、后台路线和幕布模块链接到 HOUSE OPEN 中。",
+          "prompt_seed": "一名成年舞台工作人员将档案、提示编号、后台路线和幕布模块链接到 HOUSE OPEN 中。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个身份系统锚定平面和空间模块。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每个模块引入一个标题或数字字段。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "动作和遮挡激发每次切换。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "城市模块保留角色锚点。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "最后一张卡片整合了重复的肖像、数字和标题。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "屋顶快递员将肖像、号码、电车、街道和路线图模块链接到 NIGHT SHIFT 中。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年舞台工作人员将档案、提示编号、后台路线和幕布模块链接到 HOUSE OPEN 中。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

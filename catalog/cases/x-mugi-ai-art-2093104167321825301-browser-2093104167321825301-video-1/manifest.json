@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mugi-ai-art-2093104167321825301-browser-2093104167321825301-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "几何通道角色MV｜身份钩子、环形穿越与模块复归",
+  "source_title": "动漫几何隧道｜眼手钩子、圆环穿越与方块节拍",
+  "summary": "以同一动漫成年角色的眼、手、发色和服装为身份锚点，在圆环、方块、网格和色块模块间快速穿越；每个模块只承担一个动作，终局回到完整角色。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mugi-ai-art-2093104167321825301-browser-2093104167321825301-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mugi-ai-art-2093104167321825301-browser-2093104167321825301-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "用一只琥珀眼、银色耳机弧与调音旋钮上的指尖建立原创成年电台工程师。；一个波形方块与一个黑色网格模块围绕稳定面孔、夹克和耳机轮转。；青色旋钮环回到完整人物和两个注册回声剪影周围，停留收束。",
+  "required_anchors": [
+    "At least three identity anchors precede the module changes.",
+    "Each geometry module carries one action only.",
+    "Color wipes change the field, not the identity.",
+    "The opening ring motif returns around the full subject."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:14+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

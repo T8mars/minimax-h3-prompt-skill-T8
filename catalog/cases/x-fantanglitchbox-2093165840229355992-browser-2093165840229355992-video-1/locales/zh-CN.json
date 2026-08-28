@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-fantanglitchbox-2093165840229355992-browser-2093165840229355992-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "b55e6056727c45fc29075163ee36c21584383f45f73ca7bca3f6af46ffd28de4",
+    "creative_dna_sha256": "b37e32f18e0639a1596165020c4ee9aa83f1d1836e229623b34ec81cbf159468"
+  },
+  "content": {
+    "title": "多载具机械组装｜组件到位、功能映射与机器人终局",
+    "summary": "先分别建立多个载具或装甲组件的外观与运动功能，再让它们沿清楚路径到达共同装配轴；每个组件只映射一个身体部位，最终形成完整机器人并停留。",
+    "quick_start": {
+      "input_format": "第0帧完整原创构造物先出现 + 第一秒完成唯一最大速度爆拆且组件顺序不变 + 各主要组件分别获得一种较慢且不同的材料或制造语法 + 至少两章之间短暂回到完整成品刷新装配记忆 + 组件逐步符号化并重组为原创身份标记而非简单恢复开场产品",
+      "recommended_input": "建立三种原创救援组件：紧凑履带车、双旋翼无人机和白色医疗舱。；无人机旋翼折为肩部支架，中央机身成为上躯干。；完整原创救援机器人出现，短暂高亮履带、无人机和医疗舱功能后以英雄轮廓停留。",
+      "required_anchors": [
+        "每个源模块都是在组装之前建立的。",
+        "每个模块仅映射到一个主体功能。",
+        "装配路径保持可见且不重叠。",
+        "完整的机器人对各个模块进行了核算和验证。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先分别建立多个载具或装甲组件的外观与运动功能，再让它们沿清楚路径到达共同装配轴；每个组件只映射一个身体部位，最终形成完整机器人并停留。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先分别建立多个载具或装甲组件的外观与运动功能，再让它们沿清楚路径到达共同装配轴；每个组件只映射一个身体部位，最终形成完整机器人并停留。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "每个源模块都是在组装之前建立的。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个模块仅映射到一个主体功能。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "承载部件先于上部部件锁定。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "装配路径保持可见且不重叠。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "完整的机器人对各个模块进行了核算和验证。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "爬行器、无人机和医疗吊舱组装成一个功能可读的救援机器人。",
+          "prompt_seed": "爬行器、无人机和医疗吊舱组装成一个功能可读的救援机器人。"
+        },
+        {
+          "concept": "船、起重机和泛光灯模块组装成一台港口维护机器。",
+          "prompt_seed": "船、起重机和泛光灯模块组装成一台港口维护机器。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每个源模块都是在组装之前建立的。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每个模块仅映射到一个主体功能。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "承载部件先于上部部件锁定。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "装配路径保持可见且不重叠。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "完整的机器人对各个模块进行了核算和验证。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "爬行器、无人机和医疗吊舱组装成一个功能可读的救援机器人。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "船、起重机和泛光灯模块组装成一台港口维护机器。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

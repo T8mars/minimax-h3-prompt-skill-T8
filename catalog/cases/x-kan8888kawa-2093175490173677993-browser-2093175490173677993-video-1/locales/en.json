@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-kan8888kawa-2093175490173677993-browser-2093175490173677993-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "d4020bd691f5d6d4a6c235bf7e676d7d2dee2f6fce89bdeb195305a34c4d4ef6",
+    "creative_dna_sha256": "d580bdd03aec666ab8f1fae1dd38708d88198f9551d4e2453d9a17bebc58f340"
+  },
+  "content": {
+    "title": "Adult Duet Close-Up | Alternating Gaze, Shared Refrain, Mutual Hold",
+    "summary": "Two adult lighthouse keepers alternate verses and share one radio-room refrain. Preserve the five causal invariants, stable spatial anchors and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "Both performers are clearly adult and identity-locked. + One stable shared location establishes the relationship. + Verse phrases alternate through readable gaze handoffs. + The refrain places both performers in one frame. + A mutual held response closes the duet.",
+      "recommended_input": "Place two clearly adult lighthouse keepers beside one worktable in a warm radio room. Reverse once as the younger keeper answers with a second original line. End on a shared breath, mutual glance and still two-person composition with no extra performers.",
+      "required_anchors": [
+        "Both performers are clearly adult and identity-locked.",
+        "One stable shared location establishes the relationship.",
+        "The refrain places both performers in one frame.",
+        "A mutual held response closes the duet."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Two adult lighthouse keepers alternate verses and share one radio-room refrain. Preserve the five causal invariants, stable spatial anchors and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Two adult lighthouse keepers alternate verses and share one radio-room refrain. Preserve the five causal invariants, stable spatial anchors and terminal proof while replacing every source-specific surface. The reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Both performers are clearly adult and identity-locked.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "One stable shared location establishes the relationship.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Verse phrases alternate through readable gaze handoffs.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "The refrain places both performers in one frame.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "A mutual held response closes the duet.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "Two adult lighthouse keepers alternate verses and share one radio-room refrain.",
+          "prompt_seed": "Two adult lighthouse keepers alternate verses and share one radio-room refrain."
+        },
+        {
+          "concept": "Two adult ceramics teachers alternate work-song lines and share a studio refrain.",
+          "prompt_seed": "Two adult ceramics teachers alternate work-song lines and share a studio refrain."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Both performers are clearly adult and identity-locked."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "One stable shared location establishes the relationship."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Verse phrases alternate through readable gaze handoffs."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "The refrain places both performers in one frame."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "A mutual held response closes the duet."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "Two adult lighthouse keepers alternate verses and share one radio-room refrain.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "Two adult ceramics teachers alternate work-song lines and share a studio refrain.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

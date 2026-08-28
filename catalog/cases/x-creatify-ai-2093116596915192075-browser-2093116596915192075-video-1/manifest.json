@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-creatify-ai-2093116596915192075-browser-2093116596915192075-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "饮品欲望证明链｜包装出现、液体微距与饮用反馈",
+  "source_title": "巧克力牛奶广告｜纸盒、巧克力飞溅与玻璃杯饮用闭环",
+  "summary": "让单一饮品包装先建立识别，再用原料微距、倒杯和真人饮用依次证明质地、流动与愉悦；最后以多包装阵列和短标语收束。",
+  "status": "released",
+  "source_duration_seconds": 26.791667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-creatify-ai-2093116596915192075-browser-2093116596915192075-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-creatify-ai-2093116596915192075-browser-2093116596915192075-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8c001-product-proof-state-machine",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "暖石台面先建立原创【VELA】燕麦可可纸盒。；VELA以一条连续液流倒入带棱透明杯。；三盒VELA与装满的玻璃杯组成终局，准确短句【SMOOTH ENERGY】停留。",
+  "required_anchors": [
+    "The package is identified before ingredient spectacle.",
+    "Macro ingredients visibly relate to the beverage.",
+    "An adult user reaction follows the serving proof.",
+    "The final pack array and exact short line hold together."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:13+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

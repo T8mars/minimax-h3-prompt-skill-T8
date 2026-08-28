@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-gane0wav-2093172023942078844-browser-2093172023942078844-video-1",
+  "slug": "material-credit-vignettes-to-master-title",
+  "title": "植物材质片头｜物种切片、粒子生长与总标题归拢",
+  "source_title": "单色植物MV｜仙人掌、枝叶、墨迹与标题卡生长接力",
+  "summary": "用多个植物物证承载分章标题，每段只让一种生长或散逸材质完成转场；重复单色纸面、日期和细线注册，最终归拢成完整总标题。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/material-credit-vignettes-to-master-title",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-gane0wav-2093172023942078844-browser-2093172023942078844-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-gane0wav-2093172023942078844-browser-2093172023942078844-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-credit-vignettes-to-master-title-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-material-credit-vignettes-to-master-title-v1",
+  "input_format": "至少三种独立材质职员表场景 + 每幕一条原创短职员表与材质动作 + 跨幕重复色形或标记 + 回到已建立材质族汇聚 + 大型原创总标题稳定停留",
+  "recommended_input": "原创石墨标本卡显示干蕨与准确短词【TRACE】。；纸尘揭示准确短词【CULTIVATE】，网格和日期始终注册。；三种材质痕迹汇入准确总标题【FIELD NOTES】，档案卡停留。",
+  "required_anchors": [
+    "Each vignette contains one concrete botanical evidence object.",
+    "Material growth begins on the visible object contour.",
+    "Each chapter uses a distinct material behavior.",
+    "All traces converge into one readable master title."
+  ],
+  "tags": [
+    "material",
+    "credit",
+    "vignettes",
+    "to",
+    "master",
+    "title"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:13+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}

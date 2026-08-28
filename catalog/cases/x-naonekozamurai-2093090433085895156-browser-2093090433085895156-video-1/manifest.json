@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-naonekozamurai-2093090433085895156-browser-2093090433085895156-video-1",
+  "slug": "product-macro-environment-extraction-sphere-return",
+  "title": "运动鞋功能证据｜运动承诺、微距材质与产品英雄收束",
+  "source_title": "篮球鞋动效广告｜黑白运动剪影到青色产品英雄镜头",
+  "summary": "先用运动动作提出功能问题，再以鞋底、鞋面和结构微距逐项证明；保持黑白青统一注册，最终让功能证据回到完整产品与行动号召。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/product-macro-environment-extraction-sphere-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naonekozamurai-2093090433085895156-browser-2093090433085895156-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-naonekozamurai-2093090433085895156-browser-2093090433085895156-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-product-macro-environment-extraction-sphere-return-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-product-macro-environment-extraction-sphere-return-v1",
+  "input_format": "Establish one original product through macro material anchors before showing the complete object. + Connect at least two visible ingredient or design details to one coherent environment identity. + Use one functional product action as the sole optical transition into the environment. + Expand the environment, then enclose its recognizable geometry inside one transparent carrier. + Return the carrier and environment to the same complete product with stable shape, label-free identity and hero proof.",
+  "recommended_input": "成年夜班递送员在炭黑仓库地面冲刺，反光包裹带建立使用情境。；三次微距依次证明鞋底抓地、密封接缝与脚踝支撑。；完整产品与准确原创短词【READY】并置，停留完成证明。",
+  "required_anchors": [
+    "Performance context precedes the product reveal.",
+    "The complete product profile remains recognizable.",
+    "The user action visibly exercises those functions.",
+    "The final hero frame reunites product, proof and exact short copy."
+  ],
+  "tags": [
+    "product",
+    "macro",
+    "environment",
+    "extraction",
+    "sphere",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T12:49:14+08:00",
+  "updated_at": "2026-08-28T13:12:11+08:00"
+}
