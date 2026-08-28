@@ -50,7 +50,7 @@
 
 GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 MP4 会迅速放大 Git 历史，所以从本地 `.release-input/media/` 构建两个按体积均衡的无损媒体 ZIP 分卷并上传为 Release 资产。分卷与桌面安装包分离，仅用于避开 GitHub 单资产 2 GiB 的硬上限；这不是分发限制，也不会重编码视频。正式案例视频全部允许分发，把两个分卷解压到同一媒体目录后，应用会从用户数据目录、应用同级目录或显式 `T8_MEDIA_DIR` 自动挂载。旧版 `resources/media/` 继续兼容。
 
-为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个压到最长边 288 px、4 fps、64 色，但仍保留全部动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。紧凑目录另有 420 MiB 硬门禁，超过即停止发布。该门槛覆盖当前 286 项目录的实测 418,936,173 字节；完整 MP4 不会被这一过程重编码。
+为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个压到最长边 288 px、4 fps、56 色，但仍保留全部动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。紧凑目录另有 420 MiB 硬门禁，超过即停止发布。v1.3.7 在 306 项目录下用旧 64 色配置实测为 445,133,255 字节并被正确阻断，因此从该版本起改用 56 色配置并由双平台 Release runner 实测验收；完整 MP4 不会被这一过程重编码。
 
 Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHub 单资产 2 GiB 上限，独立公开目录按用途分为三个无损 ZIP：`prompt-library-catalog` 保存 JSON、Markdown 与 Poster，两个 `prompt-library-previews` 分卷保存原始 GIF 并保留 `catalog/...` 相对路径。需要完整离线原始目录时，将三个 ZIP 解压到同一父目录即可还原；分卷只解决平台文件上限，不降低 GIF 质量或减少条目。
 
