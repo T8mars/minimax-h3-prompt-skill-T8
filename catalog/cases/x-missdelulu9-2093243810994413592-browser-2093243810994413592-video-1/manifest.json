@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-missdelulu9-2093243810994413592-browser-2093243810994413592-video-1",
+  "slug": "trigger-background-state-with-foreground-alignment",
+  "title": "微动作改写全场｜指尖触发、分布失衡与冷静穿行",
+  "source_title": "走廊指尖干预｜一人抬手触发周围人群连锁倒伏",
+  "summary": "先建立正常人群流动，再让中心人物一个小而明确的手势成为唯一触发；环境中的多人和纸张按传播顺序失衡，触发者保持稳定并穿过结果。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/trigger-background-state-with-foreground-alignment",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-missdelulu9-2093243810994413592-browser-2093243810994413592-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-missdelulu9-2093243810994413592-browser-2093243810994413592-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-foreground-effector-background-state-change-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-foreground-effector-background-state-change-v1",
+  "input_format": "固定前后景 + 可读基准状态 + 单一前景动作路径 + 一次对齐触发 + 状态保持 + 清开后确认",
+  "recommended_input": "一名成年植物巡检员沿繁忙温室中轴前进，两侧工作人员搬运育苗盘。；最近的灌溉阀先脉冲，清楚水压波沿连续苗床向后传播。；人物抵达干燥终点标记，身后所有阀门按顺序稳定并停留。",
+  "required_anchors": [
+    "An ordinary moving environment is established before the trigger.",
+    "One small visible gesture is the sole initiating cause.",
+    "The triggering subject remains identity- and route-stable.",
+    "The final frame proves both the traveler and accumulated result."
+  ],
+  "tags": [
+    "foreground",
+    "effector",
+    "background",
+    "state",
+    "change"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:17:25+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}

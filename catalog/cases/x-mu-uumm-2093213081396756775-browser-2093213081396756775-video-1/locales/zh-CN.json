@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mu-uumm-2093213081396756775-browser-2093213081396756775-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "4b15863a43d0d13f98757cec73aaad8ec9fe5955063833ec192fee8b28193548",
+    "creative_dna_sha256": "40a5ea2eb70f2e2aea0a05a6c7f5cc726ea2e3069baf61ea404f817f597ca4d9"
+  },
+  "content": {
+    "title": "吉祥物道具律动｜唱片托举、吞吐错觉与重复舞步",
+    "summary": "在纯黑舞台锁定一个原创毛绒角色和一张黑胶道具，让唱片在双手与嘴部开口之间来回交接；步伐和身体摆动保持简单，形成可循环喜剧节拍。",
+    "quick_start": {
+      "input_format": "锁定单人镜头 + 躺靠基线 + 连续坐起前倾 + 单一物证动作 + 停顿后带变化回位",
+      "recommended_input": "原创钴蓝毛绒灯塔吉祥物独自站在炭黑舞台，手持一枚黄铜罗盘圆片。；圆片在双手和袋口之间交替，形成一次清楚消失再返回错觉。；罗盘圆片回到双手居中位置，角色冻结在可循环姿势。",
+      "required_anchors": [
+        "一个吉祥物身份和一个手持道具保持不变。",
+        "该道具遵循可读的手动打开路径。",
+        "舞台和剪影不重置。",
+        "最终的道具位置与干净的循环点相匹配。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "在纯黑舞台锁定一个原创毛绒角色和一张黑胶道具，让唱片在双手与嘴部开口之间来回交接；步伐和身体摆动保持简单，形成可循环喜剧节拍。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在纯黑舞台锁定一个原创毛绒角色和一张黑胶道具，让唱片在双手与嘴部开口之间来回交接；步伐和身体摆动保持简单，形成可循环喜剧节拍。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个吉祥物身份和一个手持道具保持不变。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "该道具遵循可读的手动打开路径。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "只有简单的可重复步骤伴随着幻觉。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "舞台和剪影不重置。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的道具位置与干净的循环点相匹配。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "灯塔吉祥物环绕着一个罗盘圆盘口袋幻象。",
+          "prompt_seed": "灯塔吉祥物环绕着一个罗盘圆盘口袋幻象。"
+        },
+        {
+          "concept": "温室吉祥物环绕着一个种子包袋幻觉。",
+          "prompt_seed": "温室吉祥物环绕着一个种子包袋幻觉。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个吉祥物身份和一个手持道具保持不变。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "该道具遵循可读的手动打开路径。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "只有简单的可重复步骤伴随着幻觉。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "舞台和剪影不重置。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "最终的道具位置与干净的循环点相匹配。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "灯塔吉祥物环绕着一个罗盘圆盘口袋幻象。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "温室吉祥物环绕着一个种子包袋幻觉。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

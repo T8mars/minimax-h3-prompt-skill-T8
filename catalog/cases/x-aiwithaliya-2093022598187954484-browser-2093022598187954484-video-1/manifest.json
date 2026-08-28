@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithaliya-2093022598187954484-browser-2093022598187954484-video-1",
+  "slug": "mobility-route-to-human-benefit",
+  "title": "座驾旅程揭示｜地标俯瞰、车辆接管与驾驶者证明",
+  "source_title": "城市跑车路线｜高塔俯冲到车身追拍与驾驶者亮相",
+  "summary": "从目的地尺度逐步收缩到一辆明确载具，再用外观、开门、驾驶和道路追拍证明同一旅程；地标、车辆和成年驾驶者持续绑定。",
+  "status": "released",
+  "source_duration_seconds": 30.116281,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/mobility-route-to-human-benefit",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithaliya-2093022598187954484-browser-2093022598187954484-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithaliya-2093022598187954484-browser-2093022598187954484-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-mobility-route-to-human-benefit-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-mobility-route-to-human-benefit-v1",
+  "input_format": "载具与起点 + 1次改变通行方式的能力跃迁 + 可追踪路线 + 抵达物微距 + 人物实际使用结果",
+  "recommended_input": "从原创海岸风塔俯冲到检修道路上的一辆钴蓝电动工具车。；车门只开启一次，揭示穿橙色工装夹克的成年维护建筑师。；同一车辆停入标记服务区，风塔、车辆和驾驶目的共同闭环。",
+  "required_anchors": [
+    "A destination-scale view narrows to one identifiable carrier.",
+    "The same carrier and route direction persist.",
+    "Interior and exterior views preserve identity and vehicle geometry.",
+    "The final stop connects route, carrier and human purpose."
+  ],
+  "tags": [
+    "mobility",
+    "route",
+    "to",
+    "human",
+    "benefit"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:19:39+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}

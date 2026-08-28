@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-fathermerry-2093179789242667193-browser-2093179789242667193-video-1",
+  "slug": "stage-two-turn-pause-reaction",
+  "title": "车内紧急双人反应｜痛感发作、驾驶应答与拥堵压力",
+  "source_title": "拥堵车流中的产程反应｜乘客发作与驾驶者回望",
+  "summary": "在极短时长内锁定两名成年角色、同一车内轴线和外部拥堵；乘客先出现明确痛感，驾驶者完成一次视线应答，车辆仍被车流包围。",
+  "status": "released",
+  "source_duration_seconds": 5.248,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-two-turn-pause-reaction",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-fathermerry-2093179789242667193-browser-2093179789242667193-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-fathermerry-2093179789242667193-browser-2093179789242667193-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-two-turn-pause-reaction-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-two-turn-pause-reaction-v1",
+  "input_format": "稳定双人地理 + 第一轮完整说话 + 清楚停顿 + 第二轮短回答 + 更长无声反应",
+  "recommended_input": "原创紧凑河上出租船舱中，一名明确成年受伤递送员与一名年长成年驾驶者同场。；短暂停顿，前窗被其他船只阻挡。；两名成年人、受阻路线与无线电动作在同一稳定船舱构图中结束。",
+  "required_anchors": [
+    "Two clearly adult roles share one vehicle geography.",
+    "The passenger's visible condition creates the urgency.",
+    "The operator answers with one restrained glance and action.",
+    "External congestion remains visible at the endpoint."
+  ],
+  "tags": [
+    "two",
+    "turn",
+    "pause",
+    "reaction"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:26:55+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}

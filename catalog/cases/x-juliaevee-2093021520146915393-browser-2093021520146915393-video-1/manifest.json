@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-juliaevee-2093021520146915393-browser-2093021520146915393-video-1",
+  "slug": "local-object-conversion-to-environment-rewrite",
+  "title": "阅读触发身份转化｜书页发光、形态交接与动作连续",
+  "source_title": "魔法书与白猫｜阅读动作贯穿动物到成年角色转化",
+  "summary": "用同一本书和持续阅读动作锚定形态转换；光从书页升起，主体由动物逐步转为成年幻想人物，但视线、手位和阅读目的不变。",
+  "status": "released",
+  "source_duration_seconds": 13.258594,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/local-object-conversion-to-environment-rewrite",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-juliaevee-2093021520146915393-browser-2093021520146915393-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-juliaevee-2093021520146915393-browser-2093021520146915393-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-local-object-conversion-to-environment-rewrite-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-local-object-conversion-to-environment-rewrite-v1",
+  "input_format": "连续真实环境 + 可见选择工具 + 至少三次局部对象改写 + 原位空间配准 + 一次整片环境改写",
+  "recommended_input": "原创夜间档案室中，一只小型折纸狐狸阅读打开的黄铜装订野外日志。；轮廓连续延伸为一名明确成年的狐耳制图师，坐姿不变。；成年制图师只翻一页，图形成为书上方有边界的地图并停留。",
+  "required_anchors": [
+    "One book and reading action precede transformation.",
+    "Energy emerges from the visible page surface.",
+    "The adult final identity stabilizes before the endpoint.",
+    "Reading resumes to prove continuity rather than replacement."
+  ],
+  "tags": [
+    "local",
+    "object",
+    "conversion",
+    "to",
+    "environment",
+    "rewrite"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:21:09+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}

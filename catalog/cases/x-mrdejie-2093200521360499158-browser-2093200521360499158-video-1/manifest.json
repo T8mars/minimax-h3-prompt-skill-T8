@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mrdejie-2093200521360499158-browser-2093200521360499158-video-1",
+  "slug": "alternate-graphic-reset-and-action-proof",
+  "title": "产品配色章节｜固定轮廓、色名接力与英雄收束",
+  "source_title": "手机配色发布页｜同一原型机的六色章节轮转",
+  "summary": "固定一个产品轮廓和居中展示轴，让材质、灯光与大字色名按章节同步更换；每章只证明一种配色，最后回到完整产品阵列。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/alternate-graphic-reset-and-action-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mrdejie-2093200521360499158-browser-2093200521360499158-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mrdejie-2093200521360499158-browser-2093200521360499158-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-graphic-reset-action-proof-hero-lockup-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-graphic-reset-action-proof-hero-lockup-v1",
+  "input_format": "同一原创角色或机器 + 固定图形身份卡 + 至少2段不同动作证明 + 图形复位分隔 + 后段能力升级 + 动作轮廓回收到最终全身锁定",
+  "recommended_input": "炭黑原创产品页建立名为【ORBIT】的便携记录器，居中三分之四视角固定。；依次进入【SAND】与【SLATE】章节，机身比例、按键和镜头位置不变。；完整ICE记录器与五枚色卡同场，准确短句【CHOOSE YOUR SIGNAL】停留。",
+  "required_anchors": [
+    "One product geometry remains registered across every chapter.",
+    "Each chapter changes one color-and-light state only.",
+    "Camera orbit and product axis remain consistent.",
+    "The final frame reunites product and full color range."
+  ],
+  "tags": [
+    "graphic",
+    "reset",
+    "action",
+    "proof",
+    "hero",
+    "lockup"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:17:25+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}

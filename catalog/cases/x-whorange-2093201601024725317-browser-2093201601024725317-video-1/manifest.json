@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-whorange-2093201601024725317-browser-2093201601024725317-video-1",
+  "slug": "environmental-front-area-escalation",
+  "title": "扫描束环境耗竭｜局部变灰、跨景传播与有限回馈",
+  "source_title": "复古UFO抽取生命力｜花地到地球尺度的色彩退潮",
+  "summary": "把一个可见扫描束设为状态传播前沿，让彩色生态按相邻区域逐步变灰；范围从花地扩展到森林与水面，终局只恢复一个有限点而非无因重置。",
+  "status": "released",
+  "source_duration_seconds": 15.133477,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/environmental-front-area-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-whorange-2093201601024725317-browser-2093201601024725317-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-whorange-2093201601024725317-browser-2093201601024725317-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-environmental-front-area-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-environmental-front-area-escalation-v1",
+  "input_format": "有边界环境 + 单一连续变化前沿 + 至少2个固定地标 + 占据面积逐级扩大 + 终态广角对照",
+  "recommended_input": "原创剪纸气候无人机用一束窄紫光扫描鲜艳屋顶花园。；灰色状态抵达温室墙时，昆虫和小型风带向外撤离。；光束只反向覆盖一个花箱，仅恢复该处，并以仍有未恢复区域的屋顶广角结束。",
+  "required_anchors": [
+    "One visible moving front causes every state change.",
+    "Affected area grows through adjacent geography.",
+    "The effector remains spatially registered.",
+    "Recovery is limited and visibly caused, not a total reset."
+  ],
+  "tags": [
+    "environmental",
+    "front",
+    "area",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:21:00+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}

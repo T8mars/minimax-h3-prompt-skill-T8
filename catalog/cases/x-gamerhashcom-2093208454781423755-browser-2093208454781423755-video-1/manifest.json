@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-gamerhashcom-2093208454781423755-browser-2093208454781423755-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "宣讲到远端结果｜人物承诺、观众响应与设备证明",
+  "source_title": "会议演讲转远端设备｜台上说明、手机反应与家庭主机收束",
+  "summary": "用台上成年讲者提出行动承诺，切到观众的一次手机响应，再切到远端设备的稳定运行状态；三个空间通过同一功能因果而非随机蒙太奇连接。",
+  "status": "released",
+  "source_duration_seconds": 10.24,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-gamerhashcom-2093208454781423755-browser-2093208454781423755-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-gamerhashcom-2093208454781423755-browser-2093208454781423755-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8c001-product-proof-state-machine",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "成年能源工程师站在社区小型演讲台旁，准确原创标题【NIGHT SHIFT POWER】可读。；短暂回到工程师指向一张简单电流图，不增加不可见声明。；同一电池与持续点亮的台灯共同停留，让远端动作和可见结果闭环。",
+  "required_anchors": [
+    "One speaker makes one bounded functional promise.",
+    "One audience action visibly initiates the next state.",
+    "A remote device changes state after that action.",
+    "The final frame proves the device result without unsupported metrics."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:26:25+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mu-uumm-2093213081396756775-browser-2093213081396756775-video-1",
+  "slug": "stage-solo-posture-comedy-arc",
+  "title": "吉祥物道具律动｜唱片托举、吞吐错觉与重复舞步",
+  "source_title": "粉色毛绒吉祥物｜黑胶唱片的单角节拍表演",
+  "summary": "在纯黑舞台锁定一个原创毛绒角色和一张黑胶道具，让唱片在双手与嘴部开口之间来回交接；步伐和身体摆动保持简单，形成可循环喜剧节拍。",
+  "status": "released",
+  "source_duration_seconds": 9.44,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-solo-posture-comedy-arc",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mu-uumm-2093213081396756775-browser-2093213081396756775-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mu-uumm-2093213081396756775-browser-2093213081396756775-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-solo-posture-comedy-performance-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-solo-posture-comedy-performance-v1",
+  "input_format": "锁定单人镜头 + 躺靠基线 + 连续坐起前倾 + 单一物证动作 + 停顿后带变化回位",
+  "recommended_input": "原创钴蓝毛绒灯塔吉祥物独自站在炭黑舞台，手持一枚黄铜罗盘圆片。；圆片在双手和袋口之间交替，形成一次清楚消失再返回错觉。；罗盘圆片回到双手居中位置，角色冻结在可循环姿势。",
+  "required_anchors": [
+    "One mascot identity and one handheld prop remain fixed.",
+    "The prop follows a readable hand-to-opening path.",
+    "The stage and silhouette do not reset.",
+    "The final prop position matches a clean loop point."
+  ],
+  "tags": [
+    "solo",
+    "posture",
+    "comedy",
+    "performance"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:27:17+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}

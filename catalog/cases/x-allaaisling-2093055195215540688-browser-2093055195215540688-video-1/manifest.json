@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-allaaisling-2093055195215540688-browser-2093055195215540688-video-1",
+  "slug": "route-continuity-through-world-conversion",
+  "title": "天体事件改写路线｜新光源、障碍生成与航向适配",
+  "source_title": "第二太阳降临｜行星系统亮起后飞船穿越新生碎石带",
+  "summary": "用一个可见天体事件改变既有空间条件，让障碍和路线从同一事件连续生成；载具与镜头保留方向，最终以成功穿越证明适配。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/route-continuity-through-world-conversion",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-allaaisling-2093055195215540688-browser-2093055195215540688-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-allaaisling-2093055195215540688-browser-2093055195215540688-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-route-continuity-through-world-conversion-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-route-continuity-through-world-conversion-v1",
+  "input_format": "连续移动主体 + 原世界基线 + 单次全局换材 + 方向速度不断线 + 新世界终点",
+  "recommended_input": "原创勘测滑翔器在单一淡月下穿过平静高层大气。；弯折云带凝结成一串旋转冰环，横跨原有前进路线。；滑翔器离开最后冰环进入开阔天空，两个极光核心与改写后的云路仍可见。",
+  "required_anchors": [
+    "One route and carrier exist before the world event.",
+    "A visible global event changes the route conditions.",
+    "Carrier direction and recurring landmarks preserve geography.",
+    "The exit proves adaptation while the changed world persists."
+  ],
+  "tags": [
+    "route",
+    "continuity",
+    "through",
+    "world",
+    "conversion"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:19:30+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}

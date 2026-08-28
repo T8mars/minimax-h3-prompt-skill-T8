@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-caliraval-2093196455351902636-browser-2093196455351902636-video-1",
+  "slug": "irreversible-cooking-state-chain-serving-proof",
+  "title": "家常烹饪状态链｜备料、加热、成形与品尝证明",
+  "source_title": "厨房煎蛋｜打蛋搅拌到折叠装盘的连续完成链",
+  "summary": "把不可逆烹饪步骤按真实因果排列，原料状态只能向成品推进；同一厨师、灶台和器具贯穿，最终用装盘与一次品尝证明完成。",
+  "status": "released",
+  "source_duration_seconds": 15.232,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/irreversible-cooking-state-chain-serving-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-caliraval-2093196455351902636-browser-2093196455351902636-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-caliraval-2093196455351902636-browser-2093196455351902636-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+  "input_format": "一名明确成年原创操作者、固定空间、主材料组、主要容器与手部或工具锚点先建立 + 至少五个不可逆状态且每镜只执行一次清楚操作 + 上一状态的残留、形状、颜色、蒸汽或容器连续成为下一步输入 + 不得回到已消失的早期状态并保持数量合理 + 同一成品由同一成年人完成一次克制使用或品尝证明",
+  "recommended_input": "原创紧凑厨房中，一名成年夜班烘焙师与面粉、香草、钢碗和标记煎锅同场。；煎锅出现一次清楚油光后，把面团压入锅中。；饼落到木板，撕开一角露出蒸汽，人物只品尝一小块。",
+  "required_anchors": [
+    "Ingredient states advance irreversibly toward one dish.",
+    "One cook, bowl, pan and counter preserve continuity.",
+    "Each cooking action produces a readable state change.",
+    "Plating and one restrained taste prove the endpoint."
+  ],
+  "tags": [
+    "irreversible",
+    "cooking",
+    "state",
+    "chain",
+    "serving",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-28T20:17:25+08:00",
+  "updated_at": "2026-08-28T20:46:33+08:00"
+}
