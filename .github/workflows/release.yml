@@ -138,7 +138,7 @@ jobs:
         shell: pwsh
         run: |
           $ErrorActionPreference = "Stop"
-          node scripts/public/prepare-app-catalog.mjs --source catalog --output .release-input/app-catalog --ffmpeg "$env:T8_FFMPEG_PATH" --max-dimension 288 --fps 4 --colors 56
+          node scripts/public/prepare-app-catalog.mjs --source catalog --output .release-input/app-catalog --ffmpeg "$env:T8_FFMPEG_PATH" --max-dimension 280 --fps 4 --colors 48
           if ($LASTEXITCODE -ne 0) { throw "Packaged catalog preparation failed." }
           $compactBytes = (Get-ChildItem -LiteralPath ".release-input/app-catalog" -Recurse -File | Measure-Object Length -Sum).Sum
           if ($compactBytes -ge 440401920) { throw "Packaged catalog exceeds the 420 MiB preview budget: $compactBytes bytes." }
