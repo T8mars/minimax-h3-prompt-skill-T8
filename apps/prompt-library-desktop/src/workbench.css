@@ -364,9 +364,9 @@
 
 
 /* Dedicated persistent API settings */
-.workbench-header-actions { display: flex; align-items: center; gap: 9px; }
+.workbench-header-actions { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
 .workbench-locale-toggle .locale-button { min-width: 34px; padding-inline: 7px; }
-.api-settings-button { display: inline-flex; align-items: center; gap: 7px; min-height: 38px; border-color: rgba(204,255,76,.46); background: rgba(204,255,76,.08); color: var(--acid); }
+.api-settings-button { display: inline-flex; align-items: center; gap: 7px; min-height: 38px; border-color: rgba(204,255,76,.46); background: rgba(204,255,76,.08); color: var(--acid); white-space: nowrap; }
 .api-settings-button:hover, .api-settings-button:focus-visible { border-color: var(--acid); background: rgba(204,255,76,.14); }
 .api-settings-icon { font-size: 15px; line-height: 1; }
 .api-settings-button em { min-width: 30px; padding: 3px 6px; border-radius: 999px; background: #1d241d; color: #b9c2ba; font-size: 9px; font-style: normal; text-align: center; }
@@ -393,6 +393,16 @@
   .api-settings-content .provider-cards { grid-template-columns: 1fr; }
   .api-settings-dialog { width: calc(100vw - 12px); }
   .api-settings-header, .api-settings-content, .api-settings-footer { padding-inline: 14px; }
+}
+
+@media (max-width: 820px) {
+  .workbench-dialog .dialog-header { align-items: flex-start; flex-wrap: wrap; gap: 7px 12px; }
+  .workbench-dialog .dialog-header > div:first-child { flex: 1 1 calc(100% - 52px); }
+  .workbench-dialog .workbench-repository-links { display: none; }
+  .workbench-header-actions { flex: 1 0 100%; justify-content: flex-end; flex-wrap: nowrap; width: 100%; }
+  .workbench-header-actions > * { flex: 0 0 auto; }
+  .workbench-header-actions button { writing-mode: horizontal-tb; white-space: nowrap; }
+  #open-api-settings-label { display: none; }
 }
 
 .api-provider-options { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid #2b312c; }

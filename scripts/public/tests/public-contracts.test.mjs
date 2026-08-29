@@ -120,6 +120,33 @@ test("media validation probes codecs and duration and traverses video plus audio
   assert.equal(durationMatches(15.1, 15.125), false);
 });
 
+test("media validation retries one transient Windows decoder access violation without weakening the decode gate", () => {
+  let decodeAttempts = 0;
+  const runTool = (tool) => {
+    if (tool === "probe-tool") {
+      return {
+        status: 0,
+        stdout: JSON.stringify({
+          format: { duration: "15" },
+          streams: [{ codec_type: "video", codec_name: "h264" }]
+        }),
+        stderr: ""
+      };
+    }
+    decodeAttempts += 1;
+    return decodeAttempts === 1
+      ? { status: 3221225477, stdout: "", stderr: "" }
+      : { status: 0, stdout: "", stderr: "" };
+  };
+  const observed = probeAndDecodeMedia("transient.mp4", {
+    ffprobePath: "probe-tool",
+    ffmpegPath: "decode-tool",
+    runTool
+  });
+  assert.equal(observed.videoCodec, "h264");
+  assert.equal(decodeAttempts, 2);
+});
+
 test("media manifest binds its schema/version and requires an explicit per-file audio mode", () => {
   const errors = versionContractErrors({
     manifest: { schema_version: "unexpected/v9", version: "9.9.9" },

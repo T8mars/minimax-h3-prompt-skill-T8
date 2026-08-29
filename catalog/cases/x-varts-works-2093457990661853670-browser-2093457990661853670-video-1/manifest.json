@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-varts-works-2093457990661853670-browser-2093457990661853670-video-1",
+  "slug": "follow-geometry-as-progress-clock",
+  "title": "室内连续跟随｜侧向人物锚点、墙体穿越与俯视揭图",
+  "source_title": "多房间一镜到底｜女性反复穿墙后拉高揭示公寓结构",
+  "summary": "同一成年人物沿稳定侧向轴线连续行走，房间变化由墙体阈值触发；重复人物位置形成时间钟，最终拉高揭示此前路线的整体几何。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-geometry-as-progress-clock",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-varts-works-2093457990661853670-browser-2093457990661853670-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-varts-works-2093457990661853670-browser-2093457990661853670-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-follow-geometry-clock-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-continuous-follow-geometry-clock-v1",
+  "input_format": "单一主体 + 连续后方跟随 + 重复结构地标 + 弯曲路线视差 + 不切镜的可见进度终态",
+  "recommended_input": "成年博物馆修复师穿锈红外套，从左向右穿过闭馆档案层。；通过可见门槛依次进入修复室、地图室和冷藏室。；俯视终局显示完整档案平面，同一人物仍沿该线前进。",
+  "required_anchors": [
+    "One adult identity, direction and pace remain fixed.",
+    "Every room change occurs at a visible threshold.",
+    "Repeated screen position acts as a temporal clock.",
+    "The overhead payoff reveals the accumulated route geometry."
+  ],
+  "tags": [
+    "continuous",
+    "follow",
+    "geometry",
+    "clock"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:53:24+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

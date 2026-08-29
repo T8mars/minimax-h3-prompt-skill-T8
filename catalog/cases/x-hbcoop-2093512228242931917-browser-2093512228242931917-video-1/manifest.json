@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-hbcoop-2093512228242931917-browser-2093512228242931917-video-1",
+  "slug": "practical-adjustment-nonverbal-readiness-confirmation",
+  "title": "单工作位微表演｜控制确认、视线转移与静默待命",
+  "source_title": "飞船驾驶舱人物｜手扶控制台后抬眼确认并保持待命",
+  "summary": "在单一工作位锁定一名成年操作员、控制器和外部环境，通过手部调整、仪表反馈与一次视线转移证明状态确认；不虚构登船或超现实事件，终局保持克制待命。",
+  "status": "released",
+  "source_duration_seconds": 10.20043,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/practical-adjustment-nonverbal-readiness-confirmation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hbcoop-2093512228242931917-browser-2093512228242931917-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hbcoop-2093512228242931917-browser-2093512228242931917-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-practical-adjustment-nonverbal-readiness-confirmation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-practical-adjustment-nonverbal-readiness-confirmation-v1",
+  "input_format": "两名明确成年原创角色、一个可见服装或装备问题和稳定共用轴线 + 帮助者只用一次连续双手动作完成可核验调整 + 完成状态出现后停顿并退开 + 接触结束后两名成年人分别给出不同克制微反应 + 回到共同构图且完成物件与稳定姿态同时可见 + 不依赖未经验证对白语义",
+  "recommended_input": "成年潮汐站操作员坐在紧凑黄铜玻璃控制台前，窗外是月光海面。；流量杆移动一格，指针停到下一条标记区间。；同一人物、流量杆、仪表和安静海面共同保持待命。",
+  "required_anchors": [
+    "One adult operator, workstation and external view remain fixed.",
+    "One practical adjustment is small and visible.",
+    "A nonverbal check confirms readiness without dialogue claims.",
+    "The terminal state remains calm, stable and operational."
+  ],
+  "tags": [
+    "practical",
+    "adjustment",
+    "nonverbal",
+    "readiness",
+    "confirmation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:53+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

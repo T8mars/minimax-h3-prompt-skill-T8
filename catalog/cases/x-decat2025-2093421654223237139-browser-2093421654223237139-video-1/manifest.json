@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-decat2025-2093421654223237139-browser-2093421654223237139-video-1",
+  "slug": "solo-form-material-adversary-clash",
+  "title": "双材质对称决斗｜身份预备、远近交换与具象终撞",
+  "source_title": "古代竞技场对决｜火焰男性与冰系女性召唤兽碰撞",
+  "summary": "用两名成年对手的材质、颜色和站位建立对称身份；近战与远程攻击交替升级，最终各自能量具象为不同生物轮廓，并在同一中心线发生终撞。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/solo-form-material-adversary-clash",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2093421654223237139-browser-2093421654223237139-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2093421654223237139-browser-2093421654223237139-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-solo-form-material-adversary-clash-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-solo-form-material-adversary-clash-v1",
+  "input_format": "单体招式与材质签名 + 环境材质凝成独立对手 + 空间跃迁建立对抗 + 第二能量材质碰撞 + 主体可读终态",
+  "recommended_input": "圆形测试场两侧分别建立成年玻璃工的琥珀热与成年低温工程师的青色蒸汽。；两人分开，琥珀热带与青色压力波沿同一中心线交换。；两种原创材质形态在中心标记碰撞，两名成年人停在残留环外。",
+  "required_anchors": [
+    "Two adult roles have distinct material identities and fixed sides.",
+    "Close contact proves both materials before ranged escalation.",
+    "Each material grows into a distinct coherent form.",
+    "The final collision preserves both origins and one shared impact point."
+  ],
+  "tags": [
+    "solo",
+    "form",
+    "material",
+    "adversary",
+    "clash"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:53+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-charaspowerai-2093262336811503893-browser-2093262336811503893-video-1",
+  "slug": "product-macro-environment-extraction-sphere-return",
+  "title": "运动鞋使用证据｜涉水步态、路面压力与产品英雄镜头",
+  "source_title": "雨夜跑鞋广告｜湿地行进到鞋底微距与成对落版",
+  "summary": "先让明确成年使用者在湿滑路线中提出需求，再用鞋底、鞋面和落地压力的微距逐项证明；完整产品始终可辨，最终回到单只与成对产品英雄镜头。",
+  "status": "released",
+  "source_duration_seconds": 15.146667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/product-macro-environment-extraction-sphere-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2093262336811503893-browser-2093262336811503893-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2093262336811503893-browser-2093262336811503893-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-product-macro-environment-extraction-sphere-return-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-product-macro-environment-extraction-sphere-return-v1",
+  "input_format": "Establish one original product through macro material anchors before showing the complete object. + Connect at least two visible ingredient or design details to one coherent environment identity. + Use one functional product action as the sole optical transition into the environment. + Expand the environment, then enclose its recognizable geometry inside one transparent carrier. + Return the carrier and environment to the same complete product with stable shape, label-free identity and hero proof.",
+  "recommended_input": "成年夜班急救员穿原创白蓝救援靴，穿过雨湿仓库地面。；三次微距依次证明排水纹路、密封接缝和受控鞋底压缩。；成对产品与湿地路线同场停留，三个功能证据同时可辨。",
+  "required_anchors": [
+    "Use context establishes the product need before macros.",
+    "One product geometry remains recognizable throughout.",
+    "Adult movement visibly exercises those functions.",
+    "The final hero frame reunites product, route and proof."
+  ],
+  "tags": [
+    "product",
+    "macro",
+    "environment",
+    "extraction",
+    "sphere",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:53+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

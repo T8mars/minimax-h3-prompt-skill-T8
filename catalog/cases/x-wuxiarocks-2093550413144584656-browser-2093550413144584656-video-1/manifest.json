@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-wuxiarocks-2093550413144584656-browser-2093550413144584656-video-1",
+  "slug": "pursuit-route-collapse-remote-survivor-reframe",
+  "title": "高速追逐再解释｜侧跟载具、巨物介入与爆炸余波",
+  "source_title": "燃烧森林追逐｜摩托手遭巨型威胁后冲出爆炸",
+  "summary": "在同一前进轴线上先建立载具速度，再用巨物短暂夺走画面尺度；障碍、规避与爆炸都改变路线，终局必须重新找到原载具证明幸存。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/pursuit-route-collapse-remote-survivor-reframe",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-wuxiarocks-2093550413144584656-browser-2093550413144584656-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-wuxiarocks-2093550413144584656-browser-2093550413144584656-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-pursuit-route-collapse-remote-survivor-reframe-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-pursuit-route-collapse-remote-survivor-reframe-v1",
+  "input_format": "明确成年原创主角、逼近群体和唯一可见逃生载体在可读出发地理中同现 + 同向追逐持续到主角登上载体 + 登载后短暂停留形成虚假脱险 + 一次不可逆事件移除原路线并通过遮挡暂时隐藏主角状态 + 同一成年人带至少三项身份锚点在异地安全高位重现并稳定回望",
+  "recommended_input": "成年盐原递送员驾驶白色电动滑橇，沿红色信标线侧向前进。；一片断裂涡轮叶迫使递送员贴近通过，尘沙压缩路线。；有限沙尘柱爆发后，同一滑橇从另一侧驶出，信标与机器位置仍可追踪。",
+  "required_anchors": [
+    "One adult rider and one vehicle remain identity anchors.",
+    "The pursuing scale threat enters established geography.",
+    "One evasive action remains spatially readable.",
+    "The terminal wide shot proves survival with the original carrier."
+  ],
+  "tags": [
+    "pursuit",
+    "route",
+    "collapse",
+    "remote",
+    "survivor",
+    "reframe"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:51:16+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

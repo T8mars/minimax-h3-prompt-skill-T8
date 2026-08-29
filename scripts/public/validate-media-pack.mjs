@@ -10,12 +10,14 @@ function argument(name, fallback = null) {
   return index >= 0 && process.argv[index + 1] ? process.argv[index + 1] : fallback;
 }
 
-function runChecked(tool, args, label, runTool = spawnSync) {
-  const result = runTool(tool, args, {
+function runChecked(tool, args, label, runTool = spawnSync, { retryStatuses = [] } = {}) {
+  const options = {
     encoding: "utf8",
     windowsHide: true,
     maxBuffer: 16 * 1024 * 1024
-  });
+  };
+  let result = runTool(tool, args, options);
+  if (retryStatuses.includes(Number(result.status))) result = runTool(tool, args, options);
   if (result.error) throw new Error(`${label}: unable to run '${tool}': ${result.error.message}`);
   if (result.status !== 0) {
     const detail = String(result.stderr || result.stdout || `exit ${result.status}`).trim();
@@ -71,7 +73,7 @@ export function probeAndDecodeMedia(filePath, {
     "-c:v", "rawvideo",
     "-f", "null",
     nullTarget
-  ], `${path.basename(filePath)} full video decode`, runTool);
+  ], `${path.basename(filePath)} full video decode`, runTool, { retryStatuses: [3221225477] });
   if (audio?.codec_name) {
     runChecked(ffmpegPath, [
       "-v", "error",
@@ -81,7 +83,7 @@ export function probeAndDecodeMedia(filePath, {
       "-c:a", "pcm_s16le",
       "-f", "null",
       nullTarget
-    ], `${path.basename(filePath)} full audio decode`, runTool);
+    ], `${path.basename(filePath)} full audio decode`, runTool, { retryStatuses: [3221225477] });
   }
 
   return {

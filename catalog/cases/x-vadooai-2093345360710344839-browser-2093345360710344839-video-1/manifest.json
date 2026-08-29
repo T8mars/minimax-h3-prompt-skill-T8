@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-vadooai-2093345360710344839-browser-2093345360710344839-video-1",
+  "slug": "relay-silhouette-action-states",
+  "title": "水墨兵器接力｜轮廓成形、招式交接与烟墨消散",
+  "source_title": "水墨武士组曲｜弓、双刀、长枪与重甲连续换形",
+  "summary": "把黑墨当作角色和招式的共同载体：每名成年战士由墨雾成形，完成一个清楚动作后以同一运动轨迹消散并交接给下一轮廓。",
+  "status": "released",
+  "source_duration_seconds": 14.272,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/relay-silhouette-action-states",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vadooai-2093345360710344839-browser-2093345360710344839-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vadooai-2093345360710344839-browser-2093345360710344839-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-silhouette-attack-state-relay-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-silhouette-attack-state-relay-v1",
+  "input_format": "原创动作主体 + 清楚工具轮廓 + 2个落地动作几何 + 1次遮挡换形 + 效果动作与位移证明 + 落地终态",
+  "recommended_input": "暖色宣纸上，靛蓝颜料形成一名成年剪纸信号员。；第二道扇弧形成成年长绸杆表演者，不硬切。；鼓击波向外扩成渐淡靛蓝水洗，最终只剩一枚小圆印。",
+  "required_anchors": [
+    "One monochrome medium governs every figure.",
+    "Each adult figure completes one readable action.",
+    "Mass and silhouette escalate without mixing identities.",
+    "The final wash resolves to one bounded mark or empty field."
+  ],
+  "tags": [
+    "silhouette",
+    "attack",
+    "state",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:54:19+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

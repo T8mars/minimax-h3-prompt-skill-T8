@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-varts-works-2093457990661853670-browser-2093457990661853670-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "0cc89f1d3afc71ec4387f3d2cfcc798676d1a9978a6a8ce08415e210d137c379",
+    "creative_dna_sha256": "553e605ff08f6220b77eced9eb9803ec4d90957c0d07ac4fe017bd40eceb250e"
+  },
+  "content": {
+    "title": "室内连续跟随｜侧向人物锚点、墙体穿越与俯视揭图",
+    "summary": "同一成年人物沿稳定侧向轴线连续行走，房间变化由墙体阈值触发；重复人物位置形成时间钟，最终拉高揭示此前路线的整体几何。",
+    "quick_start": {
+      "input_format": "单一主体 + 连续后方跟随 + 重复结构地标 + 弯曲路线视差 + 不切镜的可见进度终态",
+      "recommended_input": "成年博物馆修复师穿锈红外套，从左向右穿过闭馆档案层。；通过可见门槛依次进入修复室、地图室和冷藏室。；俯视终局显示完整档案平面，同一人物仍沿该线前进。",
+      "required_anchors": [
+        "一名成年人的身份、方向和步伐保持不变。",
+        "每次房间更换都发生在可见的阈值处。",
+        "重复的屏幕位置充当时间时钟。",
+        "开销收束揭示了累积的路线几何形状。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一成年人物沿稳定侧向轴线连续行走，房间变化由墙体阈值触发；重复人物位置形成时间钟，最终拉高揭示此前路线的整体几何。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一成年人物沿稳定侧向轴线连续行走，房间变化由墙体阈值触发；重复人物位置形成时间钟，最终拉高揭示此前路线的整体几何。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名成年人的身份、方向和步伐保持不变。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每次房间更换都发生在可见的阈值处。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "前景遮挡保留而不是重置连续性。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "重复的屏幕位置充当时间时钟。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "开销收束揭示了累积的路线几何形状。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "管理员穿过三个档案室，最终看到了俯视图。",
+          "prompt_seed": "管理员穿过三个档案室，最终看到了俯视图。"
+        },
+        {
+          "concept": "一名成年厨师穿过三个厨房区域，然后上方的服务路线显露出来。",
+          "prompt_seed": "一名成年厨师穿过三个厨房区域，然后上方的服务路线显露出来。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一名成年人的身份、方向和步伐保持不变。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每次房间更换都发生在可见的阈值处。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "前景遮挡保留而不是重置连续性。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "重复的屏幕位置充当时间时钟。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "开销收束揭示了累积的路线几何形状。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "管理员穿过三个档案室，最终看到了俯视图。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年厨师穿过三个厨房区域，然后上方的服务路线显露出来。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

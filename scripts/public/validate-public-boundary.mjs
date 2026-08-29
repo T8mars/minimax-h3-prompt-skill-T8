@@ -10,6 +10,7 @@ const allowedRootFiles = new Set([
   "CHANGELOG.md",
   "CODE_OF_CONDUCT.md",
   "CONTRIBUTING.md",
+  "design-qa.md",
   "LICENSE",
   "LICENSE-CONTENT",
   "README.md",

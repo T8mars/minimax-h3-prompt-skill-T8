@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-imaginaldomain-2093497840358264932-browser-2093497840358264932-video-1",
+  "slug": "use-material-as-progress-clock",
+  "title": "安静书写进度钟｜落笔推进、蘸墨复位与无缝续写",
+  "source_title": "书桌墨水循环｜成年女性蘸取黑墨后持续完成账册",
+  "summary": "用固定书桌、同一成年书写者、笔尖位置和已写行数形成进度钟；墨量下降触发一次蘸墨，笔尖必须回到原停止位置之后继续，最终以新增行证明任务前进。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/use-material-as-progress-clock",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-imaginaldomain-2093497840358264932-browser-2093497840358264932-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-imaginaldomain-2093497840358264932-browser-2093497840358264932-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-progress-clock-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-material-progress-clock-v1",
+  "input_format": "同一工艺物 + 一个只增不减的材料变量 + 4个阶段 + 成品揭晓",
+  "recommended_input": "成年地图档案员坐在固定橡木桌前，面前是奶油色路线册、黄铜笔尖和绿色墨水瓶。；线条变细时暂停，同一笔尖只蘸一次绿色墨水。；笔尖抬起，三条新完成的绿色路线与同一墨水瓶共同停留。",
+  "required_anchors": [
+    "One workspace, adult worker and tool remain fixed.",
+    "Visible progress accumulates monotonically.",
+    "The tool resumes beyond the exact prior stopping point.",
+    "The terminal frame proves additional completed work."
+  ],
+  "tags": [
+    "material",
+    "progress",
+    "clock"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:54+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

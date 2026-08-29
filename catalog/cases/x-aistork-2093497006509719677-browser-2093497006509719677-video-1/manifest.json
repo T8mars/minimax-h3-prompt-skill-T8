@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aistork-2093497006509719677-browser-2093497006509719677-video-1",
+  "slug": "bounded-render-band-progressive-conversion",
+  "title": "固定地点历史建造｜年份阶梯、施工累积与地标完成",
+  "source_title": "六本木双地点演化｜固定航拍坐标中的城市建造时间压缩",
+  "summary": "锁定同一地点的俯视构图与边界，用可读年份推进空地、拆建、基础、主体和完成状态；每个年代只能继承前一状态，两个地点分别完成后再并列比较。",
+  "status": "released",
+  "source_duration_seconds": 27.422766,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/bounded-render-band-progressive-conversion",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aistork-2093497006509719677-browser-2093497006509719677-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aistork-2093497006509719677-browser-2093497006509719677-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-bounded-render-band-progressive-conversion-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-bounded-render-band-progressive-conversion-v1",
+  "input_format": "稳定主体 + 边界清楚的转换带 + 新旧状态同框 + 单向累积覆盖 + 载体退出后的完整结果",
+  "recommended_input": "固定原创河岸图书馆地点的航拍坐标，显示准确年份【1970、1995、2010、2020、2028】。；同一图书馆依次出现框架、屋顶和完成立面，周边背景继承。；两个完成的公共地点分屏，准确短句【TWO PLACES / ONE CITY】停留。",
+  "required_anchors": [
+    "Each site uses one fixed recoverable coordinate.",
+    "Exact dates advance monotonically.",
+    "The second site repeats the same state grammar independently.",
+    "The final view compares two completed locations without coordinate drift."
+  ],
+  "tags": [
+    "bounded",
+    "render",
+    "band",
+    "progressive",
+    "conversion"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:52+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

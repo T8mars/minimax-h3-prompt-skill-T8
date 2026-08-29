@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-kiril-ai-art-2093322991602176374-browser-2093322991602176374-video-1",
+  "slug": "continuous-emotion-escalation-conceal-residue",
+  "title": "灾后情绪收紧｜双人依靠、环境浪压与泪痕终局",
+  "source_title": "海岸史诗余波｜战士被同伴扶持后由风暴推向泪眼",
+  "summary": "用固定双人关系建立情绪基线，环境压力逐步增加但不替代人物；镜头从双人中景收紧到单人眼部，终局保留泪痕和风暴残留而不虚构新冲突。",
+  "status": "released",
+  "source_duration_seconds": 14.464,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/continuous-emotion-escalation-conceal-residue",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kiril-ai-art-2093322991602176374-browser-2093322991602176374-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kiril-ai-art-2093322991602176374-browser-2093322991602176374-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-emotion-escalation-conceal-residue-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-continuous-emotion-escalation-conceal-residue-v1",
+  "input_format": "固定成年单人近景、背景、光线与焦段 + 中性校准 + 至少3项不重置的压力信号 + 仅1次情绪峰值 + 峰值后短暂保护性遮挡 + 重新露面并保留情绪残余",
+  "recommended_input": "成年灯塔守望员坐在进水石阶，成年医护人员扶住他的肩。；风与水雾分两级增强，医护手位和守望员姿势保持注册。；守望员湿润双眼与盐痕面部停留，灯标光只横扫一次，风暴残留持续。",
+  "required_anchors": [
+    "One adult support relationship anchors the opening.",
+    "Environmental pressure escalates in bounded steps.",
+    "A partial support cue bridges the companion leaving frame.",
+    "The final close view preserves visible emotional and environmental residue."
+  ],
+  "tags": [
+    "continuous",
+    "emotion",
+    "escalation",
+    "conceal",
+    "residue"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:55:36+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

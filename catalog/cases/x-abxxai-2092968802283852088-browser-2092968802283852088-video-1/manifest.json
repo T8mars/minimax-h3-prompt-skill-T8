@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-abxxai-2092968802283852088-browser-2092968802283852088-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "平面饮品证据链｜包装锚定、开启因果与倒杯落版",
+  "source_title": "气泡饮料广告｜罐体开启、冰与液体证明到终局包装",
+  "summary": "用一个注册稳定的原创包装贯穿平面广告，开启动作先触发气泡与冰，随后倒杯证明液体状态，最后所有图形回收到完整包装与短标语。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-abxxai-2092968802283852088-browser-2092968802283852088-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-abxxai-2092968802283852088-browser-2092968802283852088-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8c001-product-proof-state-machine",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "象牙底建立原创钴蓝【CITRA】气泡水罐，平面轮廓稳定。；CITRA以一条连续液流倒入带棱透明杯。；完整罐体与满杯回收到准确原创短句【OPEN THE DAY】旁。",
+  "required_anchors": [
+    "One registered package silhouette anchors every beat.",
+    "Graphic effects begin at visible package actions.",
+    "All copy is short, exact and readable.",
+    "The final lockup reunites package, serving and promise."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:52+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-floopers966-2093544965485859087-browser-2093544965485859087-video-1",
+  "slug": "traverse-incompatible-medium-to-scale-reveal",
+  "title": "工业载体失控｜海面异常、驾驶反应与港区余波",
+  "source_title": "未来货轮事故｜集装箱船遇浪后把危机抛向码头",
+  "summary": "用一个稳定工业载体建立尺度，再让不可控介质从船体传播到驾驶舱和港区；每次切换都保留同一事故方向，终局以陆地残留证明影响跨域。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/traverse-incompatible-medium-to-scale-reveal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-floopers966-2093544965485859087-browser-2093544965485859087-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-floopers966-2093544965485859087-browser-2093544965485859087-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-incompatible-medium-travel-scale-reveal-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-incompatible-medium-travel-scale-reveal-v1",
+  "input_format": "载具与操作员 + 出发前准备 + 明确启动 + 不相容介质持续航行 + 近/远尺度证明 + 巨尺度揭示",
+  "recommended_input": "无人冰区货船穿过狭窄融水通道，甲板白色货舱清楚注册。；切入驾驶舱，成年航线控制员旁的罗盘杯和悬挂海图向同一方向摆动。；一个货舱卡在空服务架旁，水流退去，原货船仍在近海可见。",
+  "required_anchors": [
+    "One industrial carrier establishes scale and inventory.",
+    "The external medium causes every displacement.",
+    "Geography remains recoverable across exterior and interior cuts.",
+    "The final shore state preserves a visible consequence and source carrier."
+  ],
+  "tags": [
+    "incompatible",
+    "medium",
+    "travel",
+    "scale",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:51:46+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

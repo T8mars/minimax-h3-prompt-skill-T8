@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-vigocreativeai-2093291618673578434-browser-2093291618673578434-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "fd2a76bdb28e6556dff1d8d429de2b27127bd8d080479f16345806c7b43ef050",
+    "creative_dna_sha256": "432855b9dd77d470869dadbe64f32ce03ce78fc37ae2760a4bf2ed8e14f2e6aa"
+  },
+  "content": {
+    "title": "插画战斗相态接力｜冲刺、接触弧、碎石与远景余波",
+    "summary": "固定手绘蓝色排线世界与两名成年对手，让红色能量线只在动作接触时出现；近战升级后以碎石和空场余波证明结果，不把插画质感改成写实。",
+    "quick_start": {
+      "input_format": "明确成年实体主角与原创相态敌手共享一条攻防轴 + 每次决定性接触从命中点触发定向丝束/粒子/流体相变 + 被位移物质持续留在共享空间并重组为同一敌手 + 从局部变形升级到一次全身分散 + 看似终结后在已建立区域反向重组并停留",
+      "recommended_input": "奶油纸上的棕褐铅笔排线形成成年芦苇斗篷决斗者和高大石卫。；完成两次落地交锋，每次钴蓝弧只在真实接触点出现。；镜头拉远，双方停在画面两侧，碎片落下，钴蓝路线仍留在二人之间。",
+      "required_anchors": [
+        "一张手绘中号和两个成人身份保持稳定。",
+        "重音能量仅在运动或接触时开始。",
+        "碎片源自一个可见的受损基材。",
+        "终端宽帧保留了位置和累积的残差。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定手绘蓝色排线世界与两名成年对手，让红色能量线只在动作接触时出现；近战升级后以碎石和空场余波证明结果，不把插画质感改成写实。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定手绘蓝色排线世界与两名成年对手，让红色能量线只在动作接触时出现；近战升级后以碎石和空场余波证明结果，不把插画质感改成写实。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一张手绘中号和两个成人身份保持稳定。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "重音能量仅在运动或接触时开始。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每个交换都有可读的接近、接触和位移。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "碎片源自一个可见的受损基材。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端宽帧保留了位置和累积的残差。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "棕褐色决斗者在废纸平台上交换钴接触弧。",
+          "prompt_seed": "棕褐色决斗者在废纸平台上交换钴接触弧。"
+        },
+        {
+          "concept": "木炭建筑机器人在蓝图龙门上交换橙色接触弧。",
+          "prompt_seed": "木炭建筑机器人在蓝图龙门上交换橙色接触弧。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一张手绘中号和两个成人身份保持稳定。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "重音能量仅在运动或接触时开始。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每个交换都有可读的接近、接触和位移。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "碎片源自一个可见的受损基材。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "终端宽帧保留了位置和累积的残差。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "棕褐色决斗者在废纸平台上交换钴接触弧。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "木炭建筑机器人在蓝图龙门上交换橙色接触弧。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

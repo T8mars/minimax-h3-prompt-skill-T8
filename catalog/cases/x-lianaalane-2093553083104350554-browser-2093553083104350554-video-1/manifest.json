@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-lianaalane-2093553083104350554-browser-2093553083104350554-video-1",
+  "slug": "fatigue-reset-final-set-exit",
+  "title": "晨间训练递进｜准备、力量组、补水与离场兑现",
+  "source_title": "健身房广告｜同一成年女性从起床准备到完成训练",
+  "summary": "锁定同一成年人物，以换装、进入、力量动作、短恢复和离场组成可读训练弧；每章只新增一个负荷，终局用步态证明状态改变。",
+  "status": "released",
+  "source_duration_seconds": 15.836009,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/fatigue-reset-final-set-exit",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-lianaalane-2093553083104350554-browser-2093553083104350554-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-lianaalane-2093553083104350554-browser-2093553083104350554-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-fatigue-reset-final-set-exit-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-fatigue-reset-final-set-exit-v1",
+  "input_format": "固定观察机位、成年执行者与未完成任务 + 可见疲劳和呼吸 + 1次有边界的短恢复并收起恢复物 + 主动回到同一任务 + 至少2次可比较控制重复和1次更难末次 + 安全释放、自我确认、离场与空工作区停留",
+  "recommended_input": "一名成年救援潜水员从黎明宿舍进入蓝灰训练机库。；沿标记通道跟拍，依次完成一次负重行走和一次绳索牵拉。；同一人物走向亮起的泳池门，准确短句【READY AGAIN】停留。",
+  "required_anchors": [
+    "At least three adult identity anchors stay fixed.",
+    "Preparation precedes exertion.",
+    "Recovery is brief and physically motivated.",
+    "Departure proves readiness instead of adding a new task."
+  ],
+  "tags": [
+    "fatigue",
+    "reset",
+    "final",
+    "set",
+    "exit"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:50:17+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-0xemotions-2093348913101050293-browser-2093348913101050293-video-1",
+  "slug": "link-skills-with-base-loop",
+  "title": "单道具技巧阶梯｜基础循环、空中升级与英雄回位",
+  "source_title": "雨夜棍术表演｜旋棍、翻跃、击水与抛接连续链",
+  "summary": "锁定一名成年表演者和一件长道具，以基础旋转建立节拍，再依次加入换手、腾空、环境接触与抛接；每级建立在前一级上，终局回到稳定英雄姿势。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/link-skills-with-base-loop",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-0xemotions-2093348913101050293-browser-2093348913101050293-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-0xemotions-2093348913101050293-browser-2093348913101050293-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-base-loop-skill-ladder-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-base-loop-skill-ladder-v1",
+  "input_format": "持续基础动作 + 3种高级技能 + 每次不同功能机位 + 节奏/接触声连续 + 回到基础动作",
+  "recommended_input": "成年夜间救援教官持橙色伸缩杆站在湿润仓库屋顶。；增加一次跨过标记通风口的低位腾跃，长杆全程可见。；完成一次短抛接后，人物在同一通风口旁回到开场守势。",
+  "required_anchors": [
+    "One adult performer and one prop remain identity anchors.",
+    "A repeatable base loop is proven before escalation.",
+    "Environmental effects occur only at visible contact.",
+    "The prop returns to the opening guard state."
+  ],
+  "tags": [
+    "base",
+    "loop",
+    "skill",
+    "ladder"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:51+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

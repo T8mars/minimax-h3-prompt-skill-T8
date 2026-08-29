@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sahilvermaai-2093371555350716920-browser-2093371555350716920-video-1",
+  "slug": "identity-locked-fashion-world-rhythm-carousel",
+  "title": "编号时装章节｜同一造型跨天气、材质与姿势回归",
+  "source_title": "档案时装片｜红发模特在五个编号环境中保持身份",
+  "summary": "锁定成年模特的脸、发色和核心外套，用编号章节控制场景与材质变化；每章只测试一个视觉变量，结尾回到完整人物与总标题。",
+  "status": "released",
+  "source_duration_seconds": 15.232,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/identity-locked-fashion-world-rhythm-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sahilvermaai-2093371555350716920-browser-2093371555350716920-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sahilvermaai-2093371555350716920-browser-2093371555350716920-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-identity-locked-fashion-world-rhythm-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-identity-locked-fashion-world-rhythm-carousel-v1",
+  "input_format": "Establish one clearly adult original fashion subject with at least three stable identity anchors. + Rotate distinct style modules while changing only declared wardrobe, accessory, palette and typography variables. + Bind every module to subject action, camera movement and foreground motion while preserving identity. + Insert one authored low-density pause after the maximum-intensity phase. + Return prior modules as a compressed recall and finish on the same adult in one stable hero frame.",
+  "recommended_input": "原创成年模特保持银色短发、钴蓝长外套和三角黄铜耳环，标题为【FIELD NOTES】。；章节【02 / SALT】与【03 / GLASS】只改变环境和反射光，外套不变。；回到开场黑底，同一脸、外套、耳环与准确标题【FIELD NOTES / 05】共同停留。",
+  "required_anchors": [
+    "At least three adult identity anchors persist.",
+    "One exact numbered chapter controls each environment.",
+    "Detail shots reconnect to the full-body identity.",
+    "The final card restores all anchors and master title."
+  ],
+  "tags": [
+    "identity",
+    "locked",
+    "fashion",
+    "world",
+    "rhythm",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:53:41+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

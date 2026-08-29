@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-missdelulu9-2093553021817073718-browser-2093553021817073718-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "色材围绕产品成形｜液态环、粒子爆发与英雄复位",
+  "source_title": "口红色号广告｜同一支口红驱动环形液态与粉尘状态",
+  "summary": "让完整产品保持中心注册，颜色介质从小滴变成环、液池与粉雾，所有效果都由同一材质因果推进并在终局回收到清洁产品英雄镜头。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-missdelulu9-2093553021817073718-browser-2093553021817073718-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-missdelulu9-2093553021817073718-browser-2093553021817073718-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8c001-product-proof-state-machine",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "原创铜色香水瓶完整直立在炭黑舞台，轮廓清楚。；细环增厚为两层透明玻璃质折叠，瓶身标签始终无遮挡。；粒子全部沉入透明圆台，完整香水瓶与准确字样【AURA / 01】共同停留。",
+  "required_anchors": [
+    "One registered product geometry anchors every state.",
+    "Material begins from one visible product-adjacent trigger.",
+    "Effects never obscure the product identity.",
+    "The clean lockup restores the complete product and one exact line."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:50:25+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

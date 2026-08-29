@@ -236,6 +236,18 @@ async function run() {
     assert.ok(overflow.document[0] <= overflow.document[1], `document overflow at 760px: ${overflow.document.join(" > ")}`);
     assert.ok(overflow.dialog[0] <= overflow.dialog[1], `workbench overflow at 760px: ${overflow.dialog.join(" > ")}`);
     assert.equal(await page.locator("#workbench-template-preview").isVisible(), true, "responsive workbench must keep the selected-template preview visible");
+    const narrowHeader = await page.evaluate(() => {
+      const header = document.querySelector("#prompt-workbench-dialog .dialog-header").getBoundingClientRect();
+      const controls = [...document.querySelectorAll("#prompt-workbench-dialog .workbench-header-actions button")].map((node) => {
+        const rect = node.getBoundingClientRect();
+        const style = getComputedStyle(node);
+        return { left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom, writingMode: style.writingMode, whiteSpace: style.whiteSpace };
+      });
+      return { header: { left: header.left, right: header.right }, controls };
+    });
+    assert.ok(narrowHeader.controls.every((control) => control.left >= narrowHeader.header.left && control.right <= narrowHeader.header.right), "all narrow-header controls must stay inside the dialog");
+    assert.ok(narrowHeader.controls.every((control) => control.writingMode === "horizontal-tb"), "narrow-header labels must remain horizontal");
+    assert.ok(narrowHeader.controls.every((control) => control.whiteSpace === "nowrap"), "narrow-header labels must not wrap into vertical stacks");
     await page.screenshot({ path: screenshotPath, animations: "disabled" });
 
     await page.reload();

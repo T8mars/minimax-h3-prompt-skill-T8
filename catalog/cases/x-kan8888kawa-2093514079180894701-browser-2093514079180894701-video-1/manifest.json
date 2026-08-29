@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-kan8888kawa-2093514079180894701-browser-2093514079180894701-video-1",
+  "slug": "relay-multi-agent-entry-actions",
+  "title": "近距威胁接触链｜单体打击、抓握挣脱与逃跑转接",
+  "source_title": "市场僵尸追击｜球棒近战后转入走廊群体逃生",
+  "summary": "先在近距离建立一名成年逃生者与单个威胁，用短动作和可见接触逐步脱困；当威胁数量增加时，动作目标从击退切换为逃跑，并沿同一走廊轴线完成转接。",
+  "status": "released",
+  "source_duration_seconds": 13.024,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/relay-multi-agent-entry-actions",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kan8888kawa-2093514079180894701-browser-2093514079180894701-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kan8888kawa-2093514079180894701-browser-2093514079180894701-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-multi-agent-attack-entry-relay-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-multi-agent-attack-entry-relay-v1",
+  "input_format": "固定中央挑战 + 至少3个角色/系统 + 各自独立入场路线与职责 + 延迟的高位路线 + 同步收束",
+  "recommended_input": "一名成年温室守卫持蓝色软杆，面对一台故障训练人偶。；每次接触都让人偶移出标记地块，下一动作才开始。；同一守卫沿温室中线向镜头撤退，人偶群在身后追随。",
+  "required_anchors": [
+    "One adult and one close threat are established before contact.",
+    "Each combat unit has a readable beginning, contact and displacement.",
+    "Threat multiplication visibly changes the objective to escape.",
+    "The same route axis carries the final pursuit."
+  ],
+  "tags": [
+    "multi",
+    "agent",
+    "attack",
+    "entry",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:54+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

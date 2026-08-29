@@ -386,6 +386,8 @@ async function run() {
     assert.equal(await page.locator(".compare-toggle").count(), 0, "official Skills do not enter case comparison");
     assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "all official entries must render local GIFs instead of placeholder art");
     const officialImages = page.locator(".case-card.official-skill img");
+    assert.equal(await officialImages.first().getAttribute("loading"), "eager", "official GIF previews must not wait for off-screen lazy loading");
+    assert.equal(await officialImages.first().getAttribute("fetchpriority"), "high", "official GIF previews must receive explicit loading priority");
     for (let index = 0; index < 9; index += 1) {
       const image = officialImages.nth(index);
       await image.scrollIntoViewIfNeeded();

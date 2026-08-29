@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-polloaijp-2093498113583439908-browser-2093498113583439908-video-1",
+  "slug": "direct-imperfect-memory-farewell",
+  "title": "季节记忆组曲｜群体活动、空场残留与个人回望",
+  "source_title": "夏日学生回忆｜向日葵、骑行、烟花到车站告别",
+  "summary": "通过同一群体的活动碎片与空场交替压缩一段季节记忆；物件和地点持续回声，最后让一名明确成年人物在起点意象前完成回望。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/direct-imperfect-memory-farewell",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-polloaijp-2093498113583439908-browser-2093498113583439908-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-polloaijp-2093498113583439908-browser-2093498113583439908-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-imperfect-memory-farewell-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-imperfect-memory-farewell-v1",
+  "input_format": "观察者媒介 + 日常人物/地点 + 两个日常动作 + 外部信号改变目标 + 一次回应 + 有动机录制失误",
+  "recommended_input": "四名明确成年社区剧团朋友度过一个晚秋日，红枫叶是固定锚点。；屋顶灯笼圈成为温暖群体峰值。；成年女性面对枫林停留，四名成年人的透明记忆在身后聚合。",
+  "required_anchors": [
+    "One seasonal motif recurs across every chapter.",
+    "The same clearly adult group anchors activity fragments.",
+    "Recurring props bridge populated and empty scenes.",
+    "One adult viewpoint closes the memory without inventing a new event."
+  ],
+  "tags": [
+    "imperfect",
+    "memory",
+    "farewell"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:52:16+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

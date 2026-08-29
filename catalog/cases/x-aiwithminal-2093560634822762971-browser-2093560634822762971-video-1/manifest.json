@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithminal-2093560634822762971-browser-2093560634822762971-video-1",
+  "slug": "diegetic-doodle-response-escalation",
+  "title": "雾窗触痕回应｜人物注视、指尖作画与情绪回望",
+  "source_title": "雨夜车窗｜女性在雾玻璃上画笑脸后转向镜头",
+  "summary": "把固定观察窗当作可写介质：先建立人物与窗外情绪，再让一次触摸留下可见痕迹，最后由人物反应完成含义闭环。",
+  "status": "released",
+  "source_duration_seconds": 15.20907,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/diegetic-doodle-response-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithminal-2093560634822762971-browser-2093560634822762971-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithminal-2093560634822762971-browser-2093560634822762971-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-diegetic-doodle-response-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-diegetic-doodle-response-escalation-v1",
+  "input_format": "现实第一视角互动 + 首个画内线稿回应 + 连续表面路径 + 至少三类响应图形 + 真实空间与完整绘制世界同框",
+  "recommended_input": "一名成年夜间植物学家坐在起雾温室玻璃旁，窗外只有琥珀检修灯。；指尖只通过推开冷凝水画出一条连续叶片轮廓，不出现魔法光效。；她从完成的叶片看向镜头，以一次安静释然的呼吸停留。",
+  "required_anchors": [
+    "One adult, one writable surface and one environment remain registered.",
+    "A visible touch must cause the mark.",
+    "Weather and background motion remain secondary witnesses.",
+    "The final human reaction answers the completed mark."
+  ],
+  "tags": [
+    "diegetic",
+    "doodle",
+    "response",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:49:40+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

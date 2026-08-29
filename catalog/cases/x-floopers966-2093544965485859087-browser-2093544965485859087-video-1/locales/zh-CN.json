@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-floopers966-2093544965485859087-browser-2093544965485859087-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "a064e3a52938c10486036b49d9b00abd1addcf7a4851029c290c3f39a424f174",
+    "creative_dna_sha256": "47379929a0de4c5d93904f7e9687d5395f83f5cdee096cd63aabe91bf2a16ce6"
+  },
+  "content": {
+    "title": "工业载体失控｜海面异常、驾驶反应与港区余波",
+    "summary": "用一个稳定工业载体建立尺度，再让不可控介质从船体传播到驾驶舱和港区；每次切换都保留同一事故方向，终局以陆地残留证明影响跨域。",
+    "quick_start": {
+      "input_format": "载具与操作员 + 出发前准备 + 明确启动 + 不相容介质持续航行 + 近/远尺度证明 + 巨尺度揭示",
+      "recommended_input": "无人冰区货船穿过狭窄融水通道，甲板白色货舱清楚注册。；切入驾驶舱，成年航线控制员旁的罗盘杯和悬挂海图向同一方向摆动。；一个货舱卡在空服务架旁，水流退去，原货船仍在近海可见。",
+      "required_anchors": [
+        "一个产业载体建立规模和库存。",
+        "外部介质导致每一次位移。",
+        "空间关系在外部和内部剪辑中仍然可以恢复。",
+        "最终的岸边状态保留了可见的结果和源载体。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用一个稳定工业载体建立尺度，再让不可控介质从船体传播到驾驶舱和港区；每次切换都保留同一事故方向，终局以陆地残留证明影响跨域。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用一个稳定工业载体建立尺度，再让不可控介质从船体传播到驾驶舱和港区；每次切换都保留同一事故方向，终局以陆地残留证明影响跨域。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个产业载体建立规模和库存。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "外部介质导致每一次位移。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "内部反作用力与力方向一致。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "空间关系在外部和内部剪辑中仍然可以恢复。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的岸边状态保留了可见的结果和源载体。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一艘冰货船将货架倒塌的后果从航道转移到码头。",
+          "prompt_seed": "一艘冰货船将货架倒塌的后果从航道转移到码头。"
+        },
+        {
+          "concept": "沙漠履带车将沙尘锋后果从车队转移到仓库。",
+          "prompt_seed": "沙漠履带车将沙尘锋后果从车队转移到仓库。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个产业载体建立规模和库存。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "外部介质导致每一次位移。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "内部反作用力与力方向一致。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "空间关系在外部和内部剪辑中仍然可以恢复。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "最终的岸边状态保留了可见的结果和源载体。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一艘冰货船将货架倒塌的后果从航道转移到码头。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "沙漠履带车将沙尘锋后果从车队转移到仓库。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

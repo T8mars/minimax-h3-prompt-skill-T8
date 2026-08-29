@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-applete77191758-2093340157621760470-browser-2093340157621760470-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "赛博时装动作字卡｜身份近景、道具触发与载具离场",
+  "source_title": "未来街头广告｜橙发女性从棚拍字卡进入摩托城市",
+  "summary": "固定成年模特的脸、发色与服装模块，让近景动作触发短词和界面，再用同一造型进入载具动态，终局回到品牌化远景而不丢身份。",
+  "status": "released",
+  "source_duration_seconds": 17.386667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-applete77191758-2093340157621760470-browser-2093340157621760470-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-applete77191758-2093340157621760470-browser-2093340157621760470-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "原创成年递送员保持青色短发、白手套和红色工具背心，站在钴蓝独轮载具旁，准确标题【NIGHT SHIFT】出现。；一次护目镜调整激活眼部周围的细琥珀路线网格。；拉到后方远景，人物、载具、青色路线网和准确终句【NIGHT SHIFT / ACTIVE】共同停留。",
+  "required_anchors": [
+    "At least three adult identity anchors persist.",
+    "One body or prop action triggers each graphic module.",
+    "The vehicle chapter retains the same wardrobe and face.",
+    "The final wide frame restores person, carrier, world and title."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:55:09+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

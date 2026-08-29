@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-vadooai-2093345360710344839-browser-2093345360710344839-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "b4be2d6943555d6bfabe2d950692a425a8abdf34d0fbf215342d82c59e6a4d17",
+    "creative_dna_sha256": "b6477686090cd0d8deee29a584901f73d5951179b6e8092f2c0bf565e661fc96"
+  },
+  "content": {
+    "title": "水墨兵器接力｜轮廓成形、招式交接与烟墨消散",
+    "summary": "把黑墨当作角色和招式的共同载体：每名成年战士由墨雾成形，完成一个清楚动作后以同一运动轨迹消散并交接给下一轮廓。",
+    "quick_start": {
+      "input_format": "原创动作主体 + 清楚工具轮廓 + 2个落地动作几何 + 1次遮挡换形 + 效果动作与位移证明 + 落地终态",
+      "recommended_input": "暖色宣纸上，靛蓝颜料形成一名成年剪纸信号员。；第二道扇弧形成成年长绸杆表演者，不硬切。；鼓击波向外扩成渐淡靛蓝水洗，最终只剩一枚小圆印。",
+      "required_anchors": [
+        "一种单色介质控制着每个人物。",
+        "每个成人人物完成一个可读的动作。",
+        "质量和轮廓在不混合身份的情况下升级。",
+        "最终清洗解析为一个有界标记或空白字段。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "把黑墨当作角色和招式的共同载体：每名成年战士由墨雾成形，完成一个清楚动作后以同一运动轨迹消散并交接给下一轮廓。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把黑墨当作角色和招式的共同载体：每名成年战士由墨雾成形，完成一个清楚动作后以同一运动轨迹消散并交接给下一轮廓。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一种单色介质控制着每个人物。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个成人人物完成一个可读的动作。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "动作轨迹成为下一个过渡载体。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "质量和轮廓在不混合身份的情况下升级。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终清洗解析为一个有界标记或空白字段。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "靛蓝剪纸表演者通过旗帜、扇子、丝带和鼓进行传递。",
+          "prompt_seed": "靛蓝剪纸表演者通过旗帜、扇子、丝带和鼓进行传递。"
+        },
+        {
+          "concept": "木炭产业工人通过电缆、扳手、软管和锤子轮廓进行中继。",
+          "prompt_seed": "木炭产业工人通过电缆、扳手、软管和锤子轮廓进行中继。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一种单色介质控制着每个人物。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每个成人人物完成一个可读的动作。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "动作轨迹成为下一个过渡载体。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "质量和轮廓在不混合身份的情况下升级。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "最终清洗解析为一个有界标记或空白字段。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "靛蓝剪纸表演者通过旗帜、扇子、丝带和鼓进行传递。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "木炭产业工人通过电缆、扳手、软管和锤子轮廓进行中继。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

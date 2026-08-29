@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-yudotanaka-2093481504139591787-browser-2093481504139591787-video-1",
+  "slug": "registered-geometry-material-match-credit-title",
+  "title": "几何形态转场链｜实体箭头、圆形遮罩与像素故障",
+  "source_title": "通勤角色图形片｜箭头从街景进入室内再故障成霓虹",
+  "summary": "固定一个成年风格化角色，让同一组方向图标先作为实体道具、再成为遮罩、像素和霓虹；每次媒介变化都保持构图注册，人物身份不丢失。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/registered-geometry-material-match-credit-title",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yudotanaka-2093481504139591787-browser-2093481504139591787-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yudotanaka-2093481504139591787-browser-2093481504139591787-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-registered-geometry-material-match-credit-title-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-registered-geometry-material-match-credit-title-v1",
+  "input_format": "至少三个稳定几何交点与一个颜色锚点 + 工具动作揭示第一条原创职员表 + 相同屏幕坐标精确匹配到不同实体材质 + 光或阴影揭示第二条原创职员表 + 颜色锚点接收一个主题物并发生一次触觉变化 + 材质铺满并稳定承载原创主标题",
+  "recommended_input": "原创成年动画交通规划师站在珊瑚左箭头和钴蓝上箭头之间。；银色短发、绿色外套和方形徽章保持注册，图标只改变尺度。；方块解析成发光轨道线符号，准确标题【NEXT PLATFORM】环绕同一人物停留。",
+  "required_anchors": [
+    "One adult identity stays registered through all media changes.",
+    "A shared geometry motivates every transition.",
+    "Composition remains matchable before and after the wipe.",
+    "The final title restores all identity and geometry anchors."
+  ],
+  "tags": [
+    "registered",
+    "geometry",
+    "material",
+    "match",
+    "credit",
+    "title"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:52:22+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

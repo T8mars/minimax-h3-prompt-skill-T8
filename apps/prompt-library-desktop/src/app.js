@@ -593,6 +593,27 @@ function installLazyHoverPreview(card, media, videoUrl) {
   card.addEventListener("pointerleave", release);
 }
 
+function appendCardPreviewImage(media, item, alt, { eager = false } = {}) {
+  const gifUrl = item.media.gifUrl || "";
+  const posterUrl = item.media.posterUrl || "";
+  const imageUrl = gifUrl || posterUrl;
+  if (!imageUrl) return false;
+  const image = document.createElement("img");
+  image.src = imageUrl;
+  image.alt = alt;
+  image.loading = eager ? "eager" : "lazy";
+  image.decoding = "async";
+  if (eager) image.fetchPriority = "high";
+  if (gifUrl && posterUrl && posterUrl !== gifUrl) {
+    image.addEventListener("error", () => {
+      image.src = posterUrl;
+      image.dataset.previewFallback = "poster";
+    }, { once: true });
+  }
+  media.append(image);
+  return true;
+}
+
 function renderCard(item) {
   const display = localized(item);
   const card = el("article", "case-card");
@@ -602,15 +623,7 @@ function renderCard(item) {
   card.setAttribute("aria-label", `${t("openPlay")} ${display.title}`);
 
   const media = el("div", "card-media");
-  const imageUrl = item.media.gifUrl || item.media.posterUrl;
-  if (imageUrl) {
-    const image = document.createElement("img");
-    image.src = imageUrl;
-    image.alt = `${display.title} ${mediaPreviewLabel(item)}`;
-    image.loading = "lazy";
-    image.decoding = "async";
-    media.append(image);
-  } else {
+  if (!appendCardPreviewImage(media, item, `${display.title} ${mediaPreviewLabel(item)}`)) {
     media.append(el("div", "card-placeholder", "VP"));
   }
 
@@ -666,15 +679,7 @@ function renderOfficialSkillCard(item) {
   card.setAttribute("aria-label", `${t("openModels")} ${display.title}`);
 
   const media = el("div", "card-media");
-  const imageUrl = item.media.gifUrl || item.media.posterUrl;
-  if (imageUrl) {
-    const image = document.createElement("img");
-    image.src = imageUrl;
-    image.alt = `${display.title} ${previewLabel}`;
-    image.loading = "lazy";
-    image.decoding = "async";
-    media.append(image);
-  } else {
+  if (!appendCardPreviewImage(media, item, `${display.title} ${previewLabel}`, { eager: true })) {
     const art = el("div", "official-skill-art");
     art.append(el("strong", "", "H3 ↔ S2"), el("span", "", "UPSTREAM + T8 COMPANION"));
     media.append(art);
@@ -724,15 +729,7 @@ function renderCommunitySkillCard(item) {
   card.setAttribute("aria-label", `${t("openPlay")} ${display.title}`);
 
   const media = el("div", "card-media");
-  const imageUrl = item.media.gifUrl || item.media.posterUrl;
-  if (imageUrl) {
-    const image = document.createElement("img");
-    image.src = imageUrl;
-    image.alt = `${display.title} ${mediaPreviewLabel(item)}`;
-    image.loading = "lazy";
-    image.decoding = "async";
-    media.append(image);
-  } else {
+  if (!appendCardPreviewImage(media, item, `${display.title} ${mediaPreviewLabel(item)}`)) {
     media.append(el("div", "card-placeholder", "US"));
   }
   installLazyHoverPreview(card, media, item.media.videoUrl);

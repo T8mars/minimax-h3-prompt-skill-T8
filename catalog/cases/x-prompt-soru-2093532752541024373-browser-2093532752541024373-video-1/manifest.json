@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-prompt-soru-2093532752541024373-browser-2093532752541024373-video-1",
+  "slug": "break-contained-space-into-impossible-world",
+  "title": "封闭路线自由物越界｜手工建立、窗口释放与远景提问",
+  "source_title": "列车纸飞机｜车内折叠后越窗飞行并展开成留言",
+  "summary": "在受限交通空间里用双手完成一个轻质物，再让它穿过清楚边界进入开放环境；载具保持原路线，自由物体获得独立轨迹，终局由物体留下一个原创可读问题。",
+  "status": "released",
+  "source_duration_seconds": 26.470748,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/break-contained-space-into-impossible-world",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-prompt-soru-2093532752541024373-browser-2093532752541024373-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-prompt-soru-2093532752541024373-browser-2093532752541024373-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-contained-space-rule-break-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-contained-space-rule-break-v1",
+  "input_format": "锁定密闭空间 + 普通操作检查 + 室内物理异常 + 连续见证物 + 不可能外部",
+  "recommended_input": "两只成年人的手在原创河岸电车内折出一架铜色纸滑翔机。；滑翔机先与电车并行一拍，再升到河面上方的独立路线。；滑翔机展开为纸条，准确原创问题【WHERE WOULD YOU BEGIN?】出现，并在任何界面或产品宣传前结束。",
+  "required_anchors": [
+    "A lightweight object is visibly made inside a contained carrier.",
+    "One clear boundary crossing separates carrier and free object.",
+    "The free object preserves its physical identity across open space.",
+    "The terminal message belongs to the object and precedes unrelated promotion."
+  ],
+  "tags": [
+    "contained",
+    "space",
+    "rule",
+    "break"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:54+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

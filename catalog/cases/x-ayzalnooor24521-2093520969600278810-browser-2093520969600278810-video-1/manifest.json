@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ayzalnooor24521-2093520969600278810-browser-2093520969600278810-video-1",
+  "slug": "tactile-travel-chapters-scale-ascent",
+  "title": "同装旅行章节｜地标换景、街头触感与目的地收束",
+  "source_title": "首尔一日游｜同一成年女性跨夜景、街市与宫殿路线",
+  "summary": "锁定同一成年人物、外套与随身物，用夜景、步行、食物、历史空间和高处日落构成有方向的旅行章节；每章包含一次可见触感或行动，最后回到目的地总览。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/tactile-travel-chapters-scale-ascent",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ayzalnooor24521-2093520969600278810-browser-2093520969600278810-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ayzalnooor24521-2093520969600278810-browser-2093520969600278810-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-tactile-travel-chapters-scale-ascent-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-tactile-travel-chapters-scale-ascent-v1",
+  "input_format": "稳定旅行者身份/服装/方向 + 至少4个地理章节 + 每章1次本地材质接触 + 窄巷近物→社会场→移动地理→攀升全景 + 统一档案介质 + 高位稳定终景",
+  "recommended_input": "成年纺织研究员穿钴蓝外套，从原创河城夜景平台出发。；她触摸一块织样并品尝一片本地梨，形成两次有限地点证据。；人物抵达山顶观景台，准确原创标题【RIVER CITY / ONE DAY】停留。",
+  "required_anchors": [
+    "One adult identity, wardrobe and carried anchor persist.",
+    "Locations form a plausible route rather than random tourism cuts.",
+    "Day and night changes do not reset identity.",
+    "The destination overview closes the route and title."
+  ],
+  "tags": [
+    "tactile",
+    "travel",
+    "chapters",
+    "scale",
+    "ascent"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:52+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

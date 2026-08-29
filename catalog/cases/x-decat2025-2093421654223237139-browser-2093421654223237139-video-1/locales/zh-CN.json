@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-decat2025-2093421654223237139-browser-2093421654223237139-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "af05208d6e1c1531a92bc831ddb24706232126cbe9d94b7c38e57f7cf8a0a3ec",
+    "creative_dna_sha256": "211ea53aa3b680328b72a2efbd37cf3370cc414bd5f530a885ac101f7cf0c473"
+  },
+  "content": {
+    "title": "双材质对称决斗｜身份预备、远近交换与具象终撞",
+    "summary": "用两名成年对手的材质、颜色和站位建立对称身份；近战与远程攻击交替升级，最终各自能量具象为不同生物轮廓，并在同一中心线发生终撞。",
+    "quick_start": {
+      "input_format": "单体招式与材质签名 + 环境材质凝成独立对手 + 空间跃迁建立对抗 + 第二能量材质碰撞 + 主体可读终态",
+      "recommended_input": "圆形测试场两侧分别建立成年玻璃工的琥珀热与成年低温工程师的青色蒸汽。；两人分开，琥珀热带与青色压力波沿同一中心线交换。；两种原创材质形态在中心标记碰撞，两名成年人停在残留环外。",
+      "required_anchors": [
+        "两个成人角色有着截然不同的物质身份和固定的侧面。",
+        "密切接触证明了范围升级之前的两种材料。",
+        "每种材料都会成长为独特的连贯形式。",
+        "最终碰撞保留了两个起点和一个共享撞击点。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用两名成年对手的材质、颜色和站位建立对称身份；近战与远程攻击交替升级，最终各自能量具象为不同生物轮廓，并在同一中心线发生终撞。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用两名成年对手的材质、颜色和站位建立对称身份；近战与远程攻击交替升级，最终各自能量具象为不同生物轮廓，并在同一中心线发生终撞。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "两个成人角色有着截然不同的物质身份和固定的侧面。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "密切接触证明了范围升级之前的两种材料。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "攻击方向穿过中心线仍然可读。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "每种材料都会成长为独特的连贯形式。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终碰撞保留了两个起点和一个共享撞击点。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名玻璃吹制工和低温工程师将热量和蒸汽升级为一次测试地板碰撞。",
+          "prompt_seed": "一名玻璃吹制工和低温工程师将热量和蒸汽升级为一次测试地板碰撞。"
+        },
+        {
+          "concept": "磁性焊工和陶瓷声学艺术家将锉屑和振动升级为一级碰撞。",
+          "prompt_seed": "磁性焊工和陶瓷声学艺术家将锉屑和振动升级为一级碰撞。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "两个成人角色有着截然不同的物质身份和固定的侧面。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "密切接触证明了范围升级之前的两种材料。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "攻击方向穿过中心线仍然可读。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每种材料都会成长为独特的连贯形式。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "最终碰撞保留了两个起点和一个共享撞击点。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名玻璃吹制工和低温工程师将热量和蒸汽升级为一次测试地板碰撞。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "磁性焊工和陶瓷声学艺术家将锉屑和振动升级为一级碰撞。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

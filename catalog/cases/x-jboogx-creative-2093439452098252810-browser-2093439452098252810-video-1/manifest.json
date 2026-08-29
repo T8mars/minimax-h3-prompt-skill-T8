@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-jboogx-creative-2093439452098252810-browser-2093439452098252810-video-1",
+  "slug": "symbolic-layout-single-move-embodied-consequence",
+  "title": "日常规则具象后果｜提醒出现、忽视停顿与清理行动",
+  "source_title": "浴室刷牙寓言｜忽视提醒后具象麻烦迫使完成清洁",
+  "summary": "在同一日常空间先给一个简单可执行提醒，让成年风格化角色明确忽视；后果以可见实体逐步占据空间，只有完成对应清理动作后才允许恢复。",
+  "status": "released",
+  "source_duration_seconds": 29.791202,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/symbolic-layout-single-move-embodied-consequence",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-jboogx-creative-2093439452098252810-browser-2093439452098252810-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-jboogx-creative-2093439452098252810-browser-2093439452098252810-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-symbolic-layout-single-move-embodied-consequence-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-symbolic-layout-single-move-embodied-consequence-v1",
+  "input_format": "从原创符号阵列内部低位穿行 + 揭示与阵列绑定的更大实体或系统 + 外部手或操纵器进入且周围标记保持稳定 + 只移动一个可识别标记并显示接触 + 以更大系统的单一克制状态变化证明后果",
+  "recommended_input": "原创成年夜间插画师坐在杂乱书桌旁，小型蓝色计时器指向准确提醒【SAVE YOUR WORK】。；三只透明纸蛾从红色图标长出，各携一块未完成画面。；碎片回到页面，图标变绿，计时器克制点头确认。",
+  "required_anchors": [
+    "One simple rule is visible before it is ignored.",
+    "The subject performs a clear refusal or delay.",
+    "The consequence remains in the same daily geography.",
+    "Only the matching corrective action restores order."
+  ],
+  "tags": [
+    "symbolic",
+    "layout",
+    "single",
+    "move",
+    "embodied",
+    "consequence"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:54+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-nicolasmariar-2093534643395940382-browser-2093534643395940382-video-1",
+  "slug": "stage-threshold-inspection-passage",
+  "title": "赛博潜入三段式｜高处抵达、能力证明与室内揭面",
+  "source_title": "雨夜刺客潜入｜屋顶落地、短促制服与办公室摘面具",
+  "summary": "用三个明确空间完成悬念：外部高处抵达、路线上一次能力证明、内部目标门槛；同一成年角色、面具与服装贯穿，只有抵达目标后才揭面。",
+  "status": "released",
+  "source_duration_seconds": 15.116822,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-threshold-inspection-passage",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nicolasmariar-2093534643395940382-browser-2093534643395940382-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nicolasmariar-2093534643395940382-browser-2093534643395940382-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-threshold-inspection-passage-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-threshold-inspection-passage-v1",
+  "input_format": "远景入口 + 跨过阈值 + 连续通行 + 局部异常检查 + 可见路线终态（不下诊断）",
+  "recommended_input": "一名戴面具的成年信号审计员携铜线圈，落到原创雨夜中继站屋顶。；手套与面具近景中，同一门上的绿色通行灯亮起。；门关闭后才摘下面具，并把铜线圈放到桌面。",
+  "required_anchors": [
+    "One masked adult identity persists across all spaces.",
+    "The exterior arrival precedes one bounded competence proof.",
+    "The target room is spatially distinct but causally connected.",
+    "Identity reveal occurs only after the final threshold closes."
+  ],
+  "tags": [
+    "threshold",
+    "inspection",
+    "passage"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T12:36:54+08:00",
+  "updated_at": "2026-08-29T13:02:55+08:00"
+}

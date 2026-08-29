@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-vigocreativeai-2093291618673578434-browser-2093291618673578434-video-1",
+  "slug": "phase-state-opponent-dispersal-reassembly-combat",
+  "title": "插画战斗相态接力｜冲刺、接触弧、碎石与远景余波",
+  "source_title": "蓝色圆珠笔战斗｜兜帽战士与巨汉连续四阶段交锋",
+  "summary": "固定手绘蓝色排线世界与两名成年对手，让红色能量线只在动作接触时出现；近战升级后以碎石和空场余波证明结果，不把插画质感改成写实。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/phase-state-opponent-dispersal-reassembly-combat",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vigocreativeai-2093291618673578434-browser-2093291618673578434-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vigocreativeai-2093291618673578434-browser-2093291618673578434-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-phase-state-opponent-dispersal-reassembly-combat-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-phase-state-opponent-dispersal-reassembly-combat-v1",
+  "input_format": "明确成年实体主角与原创相态敌手共享一条攻防轴 + 每次决定性接触从命中点触发定向丝束/粒子/流体相变 + 被位移物质持续留在共享空间并重组为同一敌手 + 从局部变形升级到一次全身分散 + 看似终结后在已建立区域反向重组并停留",
+  "recommended_input": "奶油纸上的棕褐铅笔排线形成成年芦苇斗篷决斗者和高大石卫。；完成两次落地交锋，每次钴蓝弧只在真实接触点出现。；镜头拉远，双方停在画面两侧，碎片落下，钴蓝路线仍留在二人之间。",
+  "required_anchors": [
+    "One hand-drawn medium and two adult identities remain stable.",
+    "Accent energy begins only at motion or contact.",
+    "Debris originates from one visible damaged substrate.",
+    "The terminal wide frame preserves both positions and accumulated residue."
+  ],
+  "tags": [
+    "phase",
+    "state",
+    "opponent",
+    "dispersal",
+    "reassembly",
+    "combat"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:56:45+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}

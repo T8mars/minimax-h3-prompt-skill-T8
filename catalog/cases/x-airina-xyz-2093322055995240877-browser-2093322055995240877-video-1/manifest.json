@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-airina-xyz-2093322055995240877-browser-2093322055995240877-video-1",
+  "slug": "stage-two-turn-pause-reaction",
+  "title": "双轮对话反应｜固定轴线、表情加压与悬念停顿",
+  "source_title": "七十年代悬疑对话｜地铁男女交替说话后由女性惊惧收束",
+  "summary": "在同一空间轴线内交替两名成年人的近景，每一轮由说话、停顿和无声反应组成；相似面孔和冷色环境只提供不安，终局停在未解释的表情变化。",
+  "status": "released",
+  "source_duration_seconds": 15.104,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-two-turn-pause-reaction",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2093322055995240877-browser-2093322055995240877-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2093322055995240877-browser-2093322055995240877-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-two-turn-pause-reaction-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-two-turn-pause-reaction-v1",
+  "input_format": "稳定双人地理 + 第一轮完整说话 + 清楚停顿 + 第二轮短回答 + 更长无声反应",
+  "recommended_input": "两名明确成年气候巡检员穿暗橄榄制服，站在狭窄镜面观察走廊两端。；巡检员B只回答一次，同一盏红色状态灯和走廊反射保持轴线。；收紧到A受控惊惧的表情，静默停留两秒，延迟倒影仍可见。",
+  "required_anchors": [
+    "Two clearly adult roles and one eyeline axis remain fixed.",
+    "Each turn contains speech, pause and reaction.",
+    "The second turn increases only one anomaly.",
+    "The final reaction holds without revealing a new source."
+  ],
+  "tags": [
+    "two",
+    "turn",
+    "pause",
+    "reaction"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-29T13:55:47+08:00",
+  "updated_at": "2026-08-29T14:39:38+08:00"
+}
