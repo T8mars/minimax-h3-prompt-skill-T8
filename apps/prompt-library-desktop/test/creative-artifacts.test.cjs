@@ -10,16 +10,16 @@ function sampleProject(status = "accepted") {
     projectId: "project-1",
     title: "证据递进广告",
     target: "minimaxH3",
-    durationSeconds: 75,
+    durationSeconds: 30,
     template: { id: "t8-template", title: "证据递进", hash: "a".repeat(64) },
     templateSnapshot: { summary: "通过结果到证据的递进完成产品证明", requiredAnchors: ["结果", "证据", "行动"], creativeDna: { mechanism: "先展示结果，再逐层给出证据，最后回收到行动。", anti_copy_exclusions: ["不得复用原品牌"] } },
     creativePlan: {
-      shots: [{ shotId: "shot-1", startSeconds: 0, endSeconds: 75, action: "展示", stateChange: "完成证明" }],
+      shots: [{ shotId: "shot-1", startSeconds: 0, endSeconds: 30, action: "展示", stateChange: "完成证明" }],
       continuityLocks: [{ entityId: "product", name: "产品", invariants: ["材质不变"] }],
       mediaAssignments: [{ mediaId: "m1", role: "product", notes: "仅参考产品几何" }]
     },
     media: [{ mediaId: "m1", name: "product.png", kind: "image", sha256: "d".repeat(64) }],
-    revisions: [{ revisionId: "r1", source: "initial", status, output: "0–75秒，完整产品广告提示词。", outputSha256: "b".repeat(64), validation: { status: "pass", shotCoverage: { ratio: 1 } } }],
+    revisions: [{ revisionId: "r1", source: "initial", status, output: "0–30秒，完整产品广告提示词。", outputSha256: "b".repeat(64), validation: { status: "pass", shotCoverage: { ratio: 1 } } }],
     selectedRevisionId: "r1",
     resultReview: { failures: [] }
   };

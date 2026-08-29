@@ -36,7 +36,9 @@ function inspectVideo(filePath) {
   try { fs.readSync(descriptor, head, 0, head.length, 0); }
   finally { fs.closeSync(descriptor); }
   const type = sniffMedia(head, path.extname(resolved));
-  if (!type || type.kind !== "video") throw new Error("Result review accepts MP4, MOV, WebM, MKV, or AVI video only.");
+  if (!type || type.kind !== "video" || !new Set(["mp4", "webm"]).has(type.extension)) {
+    throw new Error("Result review accepts MP4 or WebM video only so the built-in Chromium player can preview it reliably.");
+  }
   return { filePath: resolved, stat, type };
 }
 

@@ -43,7 +43,9 @@ class PromptMediaStore {
   addPaths(paths) {
     const candidates = Array.isArray(paths) ? paths.slice(0, MAX_MEDIA) : [];
     if (!candidates.length) return [];
-    const added = [];
+    const pending = [];
+    const projectedCounts = this.counts();
+    const pendingIds = new Set();
     for (const value of candidates) {
       const filePath = path.resolve(String(value || ""));
       const stat = fs.statSync(filePath);
@@ -54,12 +56,13 @@ class PromptMediaStore {
       finally { fs.closeSync(descriptor); }
       const type = sniffMedia(head, path.extname(filePath));
       if (!type) throw new Error("Unsupported or invalid reference media. Use PNG, JPEG, WebP, MP4, MOV, WebM, MKV, or AVI.");
-      const existingCounts = this.counts();
       const limit = type.kind === "image" ? MAX_IMAGES : MAX_VIDEOS;
-      if (existingCounts[type.kind] >= limit) throw new Error(`Reference media supports at most ${limit} ${type.kind} file(s).`);
+      if (projectedCounts[type.kind] >= limit) throw new Error(`Reference media supports at most ${limit} ${type.kind} file(s).`);
       const data = fs.readFileSync(filePath);
       const mediaId = this.randomUUID();
-      const number = existingCounts[type.kind] + 1;
+      if (this.records.has(mediaId) || pendingIds.has(mediaId)) throw new Error("Reference media ID collision; choose the files again.");
+      pendingIds.add(mediaId);
+      projectedCounts[type.kind] += 1;
       const record = {
         mediaId,
         filePath,
@@ -69,12 +72,12 @@ class PromptMediaStore {
         extension: type.extension,
         sizeBytes: stat.size,
         sha256: crypto.createHash("sha256").update(data).digest("hex"),
-        label: type.kind === "image" ? `<Picture ${number}>` : `<Video ${number}>`
+        label: type.kind === "image" ? `<Picture ${projectedCounts.image}>` : `<Video ${projectedCounts.video}>`
       };
-      this.records.set(mediaId, record);
-      added.push(publicDescriptor(record));
+      pending.push(record);
     }
-    return added;
+    for (const record of pending) this.records.set(record.mediaId, record);
+    return pending.map(publicDescriptor);
   }
 
   counts() {

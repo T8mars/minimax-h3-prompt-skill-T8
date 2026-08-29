@@ -106,4 +106,6 @@ test("loading a historical project restores content without changing the explici
   assert.ok(loadStart >= 0 && loadEnd > loadStart);
   assert.doesNotMatch(loadProjectSource, /selectProvider|persistDefaultProvider|t8-workbench-provider/u);
   assert.match(loadProjectSource, /state\.manualShots/u);
+  assert.match(loadProjectSource, /if \(!projectId\) \{[\s\S]*resetDraftState\(\)/u, "selecting no saved project must clear hidden advanced state");
+  assert.match(renderer, /function resetDraftState\(\)[\s\S]*state\.shots = \[\][\s\S]*state\.continuityLocks = \[\][\s\S]*state\.manualShots = false[\s\S]*state\.manualContinuity = false/u);
 });

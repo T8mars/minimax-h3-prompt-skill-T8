@@ -36,3 +36,18 @@ test("remembered credentials are encrypted and can be cleared", () => {
     assert.equal(vault.clear("seedance_nz").configured, false);
   } finally { fs.rmSync(root, { recursive: true, force: true }); }
 });
+
+test("failed secure persistence leaves the previous session state unchanged", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "t8-vault-atomic-"));
+  const vault = new CredentialVault({
+    userDataDir: root,
+    safeStorage: { isEncryptionAvailable: () => false },
+    env: {}
+  });
+  try {
+    assert.throws(() => vault.set("seedance_nz", "new-secret-value", true), /unavailable/u);
+    assert.deepEqual(vault.resolve("seedance_nz"), { key: "", source: null });
+    assert.equal(vault.status("seedance_nz").configured, false);
+    assert.equal(fs.existsSync(vault.filePath), false);
+  } finally { fs.rmSync(root, { recursive: true, force: true }); }
+});

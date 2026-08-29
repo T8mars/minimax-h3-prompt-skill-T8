@@ -56,3 +56,29 @@ test("AI-expanded dance intent recalls performance mechanisms instead of duratio
   assert.equal(ids.includes("t8-case-ensemble-dyad-position-realignment-v1"), false, "relationship rearrangement must not win on duration alone");
   assert.equal(ids.includes("t8-case-background-recording-anomaly-v1"), false, "background anomaly must not win on duration alone");
 });
+
+test("Latin action terms use semantic word boundaries and never match model names", () => {
+  const index = buildTemplateIndex(catalog());
+  const rows = shortlistRecommendationEntities(index, {
+    subject: ["adult woman"],
+    actions: ["dance", "dancing"]
+  }, "", 24);
+  assert.ok(rows.length > 0, "a dance request must recall at least one mechanism");
+  assert.ok(rows.every((row) => row.matched.some((term) => term === "dance" || term === "dancing")), "action matches must dominate generic subject matches");
+  assert.equal(rows.some((row) => row.entity.templateId === "t8-case-background-recording-anomaly-v1"), false);
+  assert.ok(rows.some((row) => /performance|performer|motion-contact|character-action/iu.test(row.entity.templateId)), "dance recall must contain a performance mechanism");
+});
+
+test("a model name can never masquerade as a Latin action match", () => {
+  const index = {
+    recommendationEntities: [{
+      templateId: "model-only",
+      card: { titleEn: "Background anomaly", summaryEn: "A recording device reveals evidence.", models: ["Seedance 2.0"] }
+    }, {
+      templateId: "dance-action",
+      card: { titleEn: "Adult dance performance", summaryEn: "A dancer performs clear choreography.", models: ["Seedance 2.0"] }
+    }]
+  };
+  const rows = shortlistRecommendationEntities(index, { actions: ["dance"] }, "", 24);
+  assert.deepEqual(rows.map((row) => row.entity.templateId), ["dance-action"]);
+});

@@ -45,14 +45,14 @@ test('creative-plan validation reports shot and continuity realization separatel
   const report = validateEnhancedPrompt({
     target: 'minimaxH3',
     outputLanguage: 'zh-CN',
-    intent: '“SOLVERA”产品在42秒内完成证据递进。',
-    output: 'Shot 1 0-12秒：固定广角展示 SOLVERA 的完整轮廓和银色金属外壳。Shot 2 12-34秒：跟拍产品完成三项功能证明。Shot 3 34-42秒：镜头回到相同的 SOLVERA 银色金属外壳并停留。',
+    intent: '“SOLVERA”产品在30秒内完成证据递进。',
+    output: 'Shot 1 0-8秒：固定广角展示 SOLVERA 的完整轮廓和银色金属外壳。Shot 2 8-22秒：跟拍产品完成三项功能证明。Shot 3 22-30秒：镜头回到相同的 SOLVERA 银色金属外壳并停留。',
     requiredAnchors: [],
     creativePlan: {
       shots: [
-        { shotId: 'opening', startSeconds: 0, endSeconds: 12, action: '展示完整轮廓', camera: '固定广角' },
-        { shotId: 'proof', startSeconds: 12, endSeconds: 34, action: '完成三项功能证明', camera: '跟拍' },
-        { shotId: 'finish', startSeconds: 34, endSeconds: 42, action: '回到相同产品并停留', camera: '' }
+        { shotId: 'opening', startSeconds: 0, endSeconds: 8, action: '展示完整轮廓', camera: '固定广角' },
+        { shotId: 'proof', startSeconds: 8, endSeconds: 22, action: '完成三项功能证明', camera: '跟拍' },
+        { shotId: 'finish', startSeconds: 22, endSeconds: 30, action: '回到相同产品并停留', camera: '' }
       ],
       continuityLocks: [{ entityId: 'product', name: 'SOLVERA', invariants: '银色金属外壳' }]
     }

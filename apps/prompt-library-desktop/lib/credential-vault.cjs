@@ -50,7 +50,6 @@ class CredentialVault {
   set(providerId, apiKey, remember = false) {
     const id = validProviderId(providerId);
     const key = validKey(apiKey);
-    this.session.set(id, key);
     if (remember) {
       if (!this.persistentAvailable()) throw new Error("Secure credential storage is unavailable on this system");
       const document = this.readDisk();
@@ -58,6 +57,7 @@ class CredentialVault {
       document.providers[id] = { encrypted, updatedAt: new Date().toISOString() };
       this.writeDisk(document);
     }
+    this.session.set(id, key);
     return this.status(id);
   }
 

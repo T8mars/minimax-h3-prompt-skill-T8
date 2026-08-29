@@ -670,7 +670,7 @@ function renderCard(item) {
   return card;
 }
 
-function renderOfficialSkillCard(item) {
+function renderOfficialSkillCard(item, { eager = false } = {}) {
   const display = localized(item);
   const previewLabel = state.locale === "zh-CN" ? (item.previewLabel || t("gifPreview")) : t("gifPreview");
   const card = el("article", "case-card official-skill");
@@ -679,7 +679,7 @@ function renderOfficialSkillCard(item) {
   card.setAttribute("aria-label", `${t("openModels")} ${display.title}`);
 
   const media = el("div", "card-media");
-  if (!appendCardPreviewImage(media, item, `${display.title} ${previewLabel}`, { eager: true })) {
+  if (!appendCardPreviewImage(media, item, `${display.title} ${previewLabel}`, { eager })) {
     const art = el("div", "official-skill-art");
     art.append(el("strong", "", "H3 ↔ S2"), el("span", "", "UPSTREAM + T8 COMPANION"));
     media.append(art);
@@ -843,7 +843,7 @@ function updateViewChrome(resultCount) {
 
 function render() {
   const items = filteredItems();
-  const renderer = (item) => item.kind === "officialSkill" ? renderOfficialSkillCard(item) : item.kind === "communitySkill" ? renderCommunitySkillCard(item) : renderCard(item);
+  const renderer = (item, index) => item.kind === "officialSkill" ? renderOfficialSkillCard(item, { eager: index < 4 }) : item.kind === "communitySkill" ? renderCommunitySkillCard(item) : renderCard(item);
   releaseCardPreviewVideos();
   elements.caseGrid.replaceChildren(...items.map(renderer));
   elements.caseGrid.setAttribute("aria-busy", "false");

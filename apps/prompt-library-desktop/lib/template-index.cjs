@@ -181,23 +181,38 @@ function profileTerms(profile, intent = "") {
 }
 
 function searchableCard(entity) {
-  return normalizeSearch(Object.values(entity?.card || {}).flat(Infinity).join(" "));
+  const card = entity?.card || {};
+  const semanticFields = Object.entries(card)
+    .filter(([key]) => key !== "models" && key !== "targetDurationRangeSeconds")
+    .map(([, value]) => value);
+  return normalizeSearch(semanticFields.flat(Infinity).join(" "));
+}
+
+function termMatches(haystack, term) {
+  if (/\p{Script=Han}/u.test(term)) return haystack.includes(term);
+  return new Set(haystack.split(" ").filter(Boolean)).has(term);
 }
 
 function shortlistRecommendationEntities(index, profile, intent, limit = 24) {
   const terms = profileTerms(profile, intent);
+  const actionTerms = new Set(profileTerms({ actions: profile?.actions || profile?.action || [] }));
   const rows = (index?.recommendationEntities || []).map((entity) => {
     const haystack = searchableCard(entity);
     let score = 0;
     const matched = [];
+    let actionMatch = false;
     for (const term of terms) {
-      if (!haystack.includes(term)) continue;
-      score += term.length >= 4 ? 5 : 2;
+      if (!termMatches(haystack, term)) continue;
+      const isAction = actionTerms.has(term);
+      score += isAction ? 12 : term.length >= 4 ? 5 : 2;
+      actionMatch ||= isAction;
       matched.push(term);
     }
-    return { entity, score, matched: [...new Set(matched)].slice(0, 12) };
+    return { entity, score, actionMatch, matched: [...new Set(matched)].slice(0, 12) };
   });
-  return rows.filter((row) => row.score > 0)
+  const matchedRows = rows.filter((row) => row.score > 0);
+  const actionRows = matchedRows.filter((row) => row.actionMatch);
+  return (actionRows.length ? actionRows : matchedRows)
     .sort((left, right) => right.score - left.score || left.entity.templateId.localeCompare(right.entity.templateId))
     .slice(0, Math.max(1, Math.min(60, Number(limit) || 24)));
 }

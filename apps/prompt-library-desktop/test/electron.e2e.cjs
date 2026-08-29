@@ -5,6 +5,7 @@ const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
 const { loadCatalog } = require("../lib/catalog.cjs");
 const { itemKey, sortItems } = require("../src/catalog-sort.js");
+const { installElectronExitCleanup, setElectronContentSize } = require("./electron-window.cjs");
 
 const repoRoot = path.resolve(__dirname, "../../..");
 const catalogManifest = require(path.join(repoRoot, "catalog", "manifest.json"));
@@ -55,6 +56,7 @@ async function waitForAnyCard(page, timeout = 30000) {
 
 async function run() {
   const appDir = path.resolve(__dirname, "..");
+  const e2eUserDataDir = fs.mkdtempSync(path.join(os.tmpdir(), "t8-catalog-e2e-userdata-"));
   const screenshotStem = path.join(os.tmpdir(), `t8-prompt-library-${Date.now()}`);
   const screenshotPath = `${screenshotStem}-catalog.png`;
   const detailScreenshotPath = `${screenshotStem}-detail.png`;
@@ -69,7 +71,7 @@ async function run() {
   const packagedExecutable = process.env.T8_E2E_EXECUTABLE ? path.resolve(process.env.T8_E2E_EXECUTABLE) : null;
   const electronApp = await electron.launch({
     executablePath: packagedExecutable || require("electron"),
-    args: packagedExecutable ? [] : [appDir],
+    args: packagedExecutable ? [`--user-data-dir=${e2eUserDataDir}`] : [appDir, `--user-data-dir=${e2eUserDataDir}`],
     cwd: appDir,
     env: {
       ...process.env,
@@ -77,10 +79,11 @@ async function run() {
       ELECTRON_DISABLE_SECURITY_WARNINGS: "true"
     }
   });
+  const removeExitCleanup = installElectronExitCleanup(electronApp);
 
   try {
     const page = await electronApp.firstWindow();
-    await page.setViewportSize({ width: 1280, height: 720 });
+    await setElectronContentSize(electronApp, page, { width: 1280, height: 720 });
     await page.evaluate(() => {
       localStorage.setItem("t8-display-locale", "en");
       localStorage.removeItem("t8-display-locale-default-zh-v1");
@@ -118,11 +121,11 @@ async function run() {
     await page.locator("#sort-order").selectOption("newest-added");
     assert.equal(await page.locator(".case-card").first().getAttribute("data-item-key"), expectedNewestItemKey);
     for (const width of [720, 520]) {
-      await page.setViewportSize({ width, height: 720 });
+      await setElectronContentSize(electronApp, page, { width, height: 720 });
       assert.equal(await page.locator("#sort-order").isVisible(), true, `sort control must remain visible at ${width}px`);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth), true, `sorting layout must not create horizontal overflow at ${width}px`);
     }
-    await page.setViewportSize({ width: 1280, height: 720 });
+    await setElectronContentSize(electronApp, page, { width: 1280, height: 720 });
     await page.locator("#global-locale-en").click();
     await page.reload();
     await waitForCardCount(page, expectedAggregateCount);
@@ -386,8 +389,10 @@ async function run() {
     assert.equal(await page.locator(".compare-toggle").count(), 0, "official Skills do not enter case comparison");
     assert.equal(await page.locator(".case-card.official-skill img").count(), 9, "all official entries must render local GIFs instead of placeholder art");
     const officialImages = page.locator(".case-card.official-skill img");
-    assert.equal(await officialImages.first().getAttribute("loading"), "eager", "official GIF previews must not wait for off-screen lazy loading");
+    assert.equal(await officialImages.first().getAttribute("loading"), "eager", "the first visible official GIF previews must load immediately");
     assert.equal(await officialImages.first().getAttribute("fetchpriority"), "high", "official GIF previews must receive explicit loading priority");
+    assert.equal(await officialImages.nth(4).getAttribute("loading"), "lazy", "off-screen official GIF previews must be staged to avoid startup decode spikes");
+    assert.notEqual(await officialImages.nth(4).getAttribute("fetchpriority"), "high", "off-screen official GIF previews must not compete with visible cards");
     for (let index = 0; index < 9; index += 1) {
       const image = officialImages.nth(index);
       await image.scrollIntoViewIfNeeded();
@@ -482,7 +487,7 @@ async function run() {
     await page.locator("#tab-seedance").click();
     assert.match(await page.locator("#prompt-text").textContent(), /镜头1|深海/u);
     await page.screenshot({ path: communitySecondDetailScreenshotPath, animations: "disabled" });
-    await page.setViewportSize({ width: 760, height: 720 });
+    await setElectronContentSize(electronApp, page, { width: 760, height: 720 });
     assert.equal(await page.locator("#copy-full-item").isVisible(), true, "full-copy action must remain visible at narrow width");
     assert.equal(await page.locator("#detail-locale-zh").isVisible(), true, "locale switch must remain visible at narrow width");
     assert.equal(await page.locator("#quick-start").evaluate((node) => getComputedStyle(node).gridTemplateColumns.split(" ").length), 1, "quick-start cards must collapse to one column");
@@ -494,7 +499,9 @@ async function run() {
 
     console.log(`PASS Electron runtime; all=${allCount}; cases=${caseCount}; officialSkills=9; communitySkills=2; video=${videoState.duration.toFixed(3)}s; seekable=${videoState.seekableStart.toFixed(3)}-${videoState.seekableEnd.toFixed(3)}s; seek=${videoState.seekTarget.toFixed(3)}->${videoState.soughtTime.toFixed(3)}->${videoState.playedTime.toFixed(3)}s; screenshots=${screenshotPath};${detailScreenshotPath};${detailZhScreenshotPath};${compareScreenshotPath};${officialScreenshotPath};${officialDetailScreenshotPath};${communityScreenshotPath};${communityDetailScreenshotPath};${communitySecondDetailScreenshotPath};${responsiveDetailScreenshotPath}`);
   } finally {
+    removeExitCleanup();
     await electronApp.close();
+    fs.rmSync(e2eUserDataDir, { recursive: true, force: true, maxRetries: 8, retryDelay: 125 });
   }
 }
 

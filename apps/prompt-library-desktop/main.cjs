@@ -625,7 +625,7 @@ function configureIpc() {
     const result = await dialog.showOpenDialog(mainWindow, {
       title: "Import generated result video",
       properties: ["openFile"],
-      filters: [{ name: "Generated video", extensions: ["mp4", "mov", "webm", "mkv", "avi"] }]
+      filters: [{ name: "Generated video (Chromium preview compatible)", extensions: ["mp4", "webm"] }]
     });
     if (result.canceled || !result.filePaths[0]) return projectForRenderer(project);
     const descriptor = projectMediaStore.importResult(project.projectId, result.filePaths[0]);

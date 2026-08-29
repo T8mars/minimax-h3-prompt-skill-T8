@@ -5,6 +5,7 @@ const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
 const { loadCatalog } = require("../lib/catalog.cjs");
 const { PromptProjectStore } = require("../lib/prompt-projects.cjs");
+const { installElectronExitCleanup, setElectronContentSize } = require("./electron-window.cjs");
 
 function smallestPlayableVideo(catalog, mediaRoot) {
   const candidates = catalog.cases.map((item) => item.media?.video?.relativePath).filter(Boolean).map((relativePath) => path.join(mediaRoot, ...relativePath.split("/"))).filter((filePath) => fs.existsSync(filePath)).map((filePath) => ({ filePath, size: fs.statSync(filePath).size })).sort((left, right) => left.size - right.size);
@@ -20,8 +21,8 @@ async function setDialogResult(electronApp, filePath) {
 
 const CREATIVE_AI_RESPONSES = [
     { status: "ready", contract: { causalMechanism: "保留主模板的三段证据递进。", secondaryScope: "辅助机制只用于转场。", invariants: ["主因果链不变"], exclusions: ["不得替换主证据"] }, conflicts: [] },
-    { status: "ready", suggestionsOnly: true, sourceRevisionId: "", timing: [{ startSeconds: 0, endSeconds: 45.5, energy: "递进后收束", rhythm: "三段式", soundRole: "证据重音与结尾静默" }], globalDirection: "用三段音乐能量对应三段视频证据。", constraints: ["不覆盖音乐项目"] },
-    { status: "ready", suggestionsOnly: true, timing: [{ section: "Intro-Chorus-Outro", startSeconds: 0, endSeconds: 45.5, visualEnergy: "由低到高后收束", cutGuidance: "只作为剪辑建议" }], globalDirection: "让视觉证据跟随段落升级。", constraints: ["不覆盖镜头画布"] },
+    { status: "ready", suggestionsOnly: true, sourceRevisionId: "", timing: [{ startSeconds: 0, endSeconds: 30, energy: "递进后收束", rhythm: "三段式", soundRole: "证据重音与结尾静默" }], globalDirection: "用三段音乐能量对应三段视频证据。", constraints: ["不覆盖音乐项目"] },
+    { status: "ready", suggestionsOnly: true, timing: [{ section: "Intro-Chorus-Outro", startSeconds: 0, endSeconds: 30, visualEnergy: "由低到高后收束", cutGuidance: "只作为剪辑建议" }], globalDirection: "让视觉证据跟随段落升级。", constraints: ["不覆盖镜头画布"] },
     { status: "draft", canonicalWrite: false, evidenceStrength: "low", denominator: 1, suggestedChanges: [{ area: "camera", evidenceCount: 1, suggestion: "根据当前人工复盘，补充一条只修复第二镜头运镜节奏的检查点。", evidence: ["当前项目人工复盘"] }] }
 ];
 
@@ -40,13 +41,14 @@ async function run() {
     cwd: appDir,
     env: { ...process.env, T8_DISABLE_AUTO_UPDATE: "1", T8_E2E_CREATIVE_AI: "1", T8_E2E_CREATIVE_RESPONSES: Buffer.from(JSON.stringify(CREATIVE_AI_RESPONSES), "utf8").toString("base64"), T8STAR_API_KEY: "", SEEDANCE_API_KEY: "", OPENAI_API_KEY: "", ELECTRON_DISABLE_SECURITY_WARNINGS: "true" }
   });
+  const removeExitCleanup = installElectronExitCleanup(electronApp);
   try {
     const page = await electronApp.firstWindow();
     const userDataDir = browserDataRoot;
     let tick = 0;
     const store = new PromptProjectStore({ userDataDir, randomUUID: () => `creator-e2e-${++tick}`, now: () => `2026-08-27T12:00:${String(tick++).padStart(2, "0")}.000Z` });
     const initial = store.save({
-      title: "45.5 秒创作闭环验收",
+      title: "30 秒创作闭环验收",
       topic: "产品广告",
       intent: "同一成年创作者用三段递进证据证明一台虚构相机的便携、稳定和夜拍能力，结尾清楚停留。",
       constraints: "身份、产品外观和因果顺序不变；不要复用来源品牌。",
@@ -62,26 +64,26 @@ async function run() {
       },
       target: "minimaxH3",
       outputLanguage: "zh-CN",
-      durationSeconds: 45.5,
+      durationSeconds: 30,
       rewriteMode: "balanced",
       shots: [
-        { shotId: "shot-01", startSeconds: 0, endSeconds: 12.5, action: "先展示便携结果", camera: "近景跟拍", sceneChange: "普通街道到移动测试", sound: "轻快节拍", stateChange: "建立结果" },
-        { shotId: "shot-02", startSeconds: 12.5, endSeconds: 30, action: "稳定器和夜拍证据依次出现", camera: "环绕后推近", sceneChange: "进入夜景", sound: "两次证据重音", stateChange: "补齐证据" },
-        { shotId: "shot-03", startSeconds: 30, endSeconds: 45.5, action: "回到创作者与成片，最终定格停留", camera: "缓慢拉远并静止", sceneChange: "结果墙完成", sound: "收束后静默", stateChange: "完成行动回收" }
+        { shotId: "shot-01", startSeconds: 0, endSeconds: 8, action: "先展示便携结果", camera: "近景跟拍", sceneChange: "普通街道到移动测试", sound: "轻快节拍", stateChange: "建立结果" },
+        { shotId: "shot-02", startSeconds: 8, endSeconds: 20, action: "稳定器和夜拍证据依次出现", camera: "环绕后推近", sceneChange: "进入夜景", sound: "两次证据重音", stateChange: "补齐证据" },
+        { shotId: "shot-03", startSeconds: 20, endSeconds: 30, action: "回到创作者与成片，最终定格停留", camera: "缓慢拉远并静止", sceneChange: "结果墙完成", sound: "收束后静默", stateChange: "完成行动回收" }
       ],
       continuityLocks: [{ entityId: "creator", type: "character", name: "成年创作者", invariants: "同一面容、年龄、发型和服装主色" }, { entityId: "camera", type: "product", name: "虚构相机", invariants: "机身比例、材质和镜头结构不变" }],
       providerId: "t8star_workshop",
       providerLabel: "AI Workshop",
       endpointHost: "ai.t8star.org",
       model: "e2e-model",
-      output: "0–12.5秒先展示便携结果并跟拍；12.5–30秒以环绕和推近依次证明稳定与夜拍；30–45.5秒回到同一创作者与成片墙，音乐收束后静默，最终画面定格停留。",
+      output: "0–8秒先展示便携结果并跟拍；8–20秒以环绕和推近依次证明稳定与夜拍；20–30秒回到同一创作者与成片墙，音乐收束后静默，最终画面定格停留。",
       validation: { status: "pass", anchorCoverage: 1, shotCoverage: 1, continuityCoverage: 1 },
       media: []
     });
     const revised = store.addRevision(initial.projectId, {
       parentRevisionId: initial.revisions[0].revisionId,
       source: "manual",
-      output: "0–12.5秒以近景钩子展示便携结果；12.5–30秒用节奏递进的环绕和推近证明稳定与夜拍并加入声音重音；30–45.5秒回到同一成年创作者与成片墙，音乐停顿后最终定格停留。",
+      output: "0–8秒以近景钩子展示便携结果；8–20秒用节奏递进的环绕和推近证明稳定与夜拍并加入声音重音；20–30秒回到同一成年创作者与成片墙，音乐停顿后最终定格停留。",
       validation: { status: "pass", anchorCoverage: 1, shotCoverage: 1, continuityCoverage: 1 }
     });
     const accepted = store.setRevisionStatus(revised.projectId, revised.selectedRevisionId, "accepted", "E2E accepted");
@@ -98,7 +100,7 @@ async function run() {
       validation: { status: "pass" }
     });
 
-    await page.setViewportSize({ width: 1440, height: 900 });
+    await setElectronContentSize(electronApp, page, { width: 1440, height: 900 });
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
     page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
@@ -110,12 +112,19 @@ async function run() {
     await page.locator("#workbench-project-list").selectOption(accepted.projectId);
     await page.waitForFunction((projectId) => document.querySelector("#workbench-project-list")?.value === projectId && !document.querySelector("#workbench-import-result")?.disabled, accepted.projectId);
 
-    assert.equal(await page.locator("#workbench-duration").inputValue(), "custom");
-    assert.equal(await page.locator("#workbench-custom-duration").inputValue(), "45.5");
+    assert.equal(await page.locator("#workbench-duration").inputValue(), "30");
     assert.equal(await page.locator("#workbench-shot-list .shot-card").count(), 3);
     assert.equal(await page.locator("#workbench-revision-list option").count(), 2);
     assert.equal(await page.locator("#workbench-export-handoff").isEnabled(), true, "accepted revision must enable formal handoff");
     assert.equal(await page.locator("#workbench-export-skill").isEnabled(), true, "accepted revision must enable Skill export");
+
+    await page.locator("#workbench-project-list").selectOption("");
+    assert.equal(await page.locator("#workbench-manual-shots").isChecked(), false, "a blank project must disable inherited manual shots");
+    assert.equal(await page.locator("#workbench-manual-continuity").isChecked(), false, "a blank project must disable inherited continuity locks");
+    assert.equal(await page.locator("#workbench-shot-list .shot-card").count(), 0, "a blank project must discard inherited shot rows");
+    assert.equal(await page.locator("#workbench-advanced-settings").evaluate((node) => node.open), false, "a blank project must collapse advanced settings");
+    await page.locator("#workbench-project-list").selectOption(accepted.projectId);
+    await page.waitForFunction((projectId) => document.querySelector("#workbench-project-list")?.value === projectId && document.querySelectorAll("#workbench-shot-list .shot-card").length === 3, accepted.projectId);
 
     await page.locator("details.creator-tool").evaluateAll((nodes) => nodes.forEach((node) => { node.open = true; }));
     await page.locator("#workbench-compare-revisions").click();
@@ -215,8 +224,9 @@ async function run() {
     await page.locator("#workbench-template-proposal").click();
     await page.waitForFunction(() => document.querySelector("#workbench-effects-output")?.textContent.includes("canonicalWrite=false"));
     assert.deepEqual(errors, [], `creator-loop renderer errors: ${errors.join(" | ")}`);
-    console.log(`PASS creator-loop E2E; duration=45.5; revisions=2; result-video=range-streamed; bridges=2; isolated-exports=2; output=${exportRoot}`);
+    console.log(`PASS creator-loop E2E; duration=30; revisions=2; blank-reset=verified; result-video=range-streamed; bridges=2; isolated-exports=2; output=${exportRoot}`);
   } finally {
+    removeExitCleanup();
     await electronApp.close();
     fs.rmSync(browserDataRoot, { recursive: true, force: true });
     fs.rmSync(exportRoot, { recursive: true, force: true });

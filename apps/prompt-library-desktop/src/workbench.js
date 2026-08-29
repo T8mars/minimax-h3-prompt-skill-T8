@@ -278,7 +278,6 @@
     const image = elements.workbenchPreviewImage;
     const previewRequest = String(Number(image.dataset.previewRequest || 0) + 1);
     image.dataset.previewRequest = previewRequest;
-    image._t8GifPreloader = null;
     image.onload = null;
     image.onerror = null;
     image.hidden = true;
@@ -315,22 +314,28 @@
       image.src = url;
     };
     if (gifUrl && posterUrl) {
-      show(posterUrl, "poster");
-      const preloader = new Image();
-      image._t8GifPreloader = preloader;
-      preloader.onload = () => {
+      image.onload = () => {
         if (image.dataset.previewRequest !== previewRequest) return;
-        image.onload = null;
+        image.hidden = false;
+        elements.workbenchPreviewPlaceholder.classList.add("hidden");
+        elements.workbenchPreviewMedia.dataset.state = "poster";
+        image.onload = () => {
+          if (image.dataset.previewRequest !== previewRequest) return;
+          image.hidden = false;
+          elements.workbenchPreviewPlaceholder.classList.add("hidden");
+          elements.workbenchPreviewMedia.dataset.state = "ready";
+        };
         image.onerror = () => {
           if (image.dataset.previewRequest !== previewRequest) return;
           show(posterUrl, "poster");
         };
         image.src = gifUrl;
-        image.hidden = false;
-        elements.workbenchPreviewPlaceholder.classList.add("hidden");
-        elements.workbenchPreviewMedia.dataset.state = "ready";
       };
-      preloader.src = gifUrl;
+      image.onerror = () => {
+        if (image.dataset.previewRequest !== previewRequest) return;
+        show(gifUrl, "ready");
+      };
+      image.src = posterUrl;
     } else {
       show(imageUrl, isGif ? "ready" : "poster");
     }
@@ -646,7 +651,7 @@
       renderProviders();
       setRunStatus(`${t("keySaved")} ${locale() === "en" ? "This provider is now active." : "已设为当前使用渠道。"}`, "success");
     } catch (error) {
-      elements.workbenchApiKey.value = "";
+      try { await refreshProviders(); } catch {}
       setRunStatus(error.message, "error");
     }
   }
@@ -729,7 +734,51 @@
 
   function effectiveDuration() {
     const value = elements.workbenchDuration.value === "custom" ? Number(elements.workbenchCustomDuration.value) : Number(elements.workbenchDuration.value);
-    return Number.isFinite(value) && value > 0 ? Number(value.toFixed(3)) : 15;
+    return Number.isFinite(value) && value > 0 ? Number(Math.min(30, value).toFixed(3)) : 15;
+  }
+
+  function resetDraftState() {
+    state.currentProject = null;
+    state.reviewObservations = [];
+    state.bridge = null;
+    state.composition = null;
+    state.plan = null;
+    state.pendingOperation = null;
+    state.runId = null;
+    state.output = "";
+    state.validation = null;
+    state.shots = [];
+    state.mediaAssignments = [];
+    state.continuityLocks = [];
+    state.manualShots = false;
+    state.manualContinuity = false;
+    state.expandedMediaIds = new Set();
+    elements.workbenchProjectName.value = "";
+    elements.workbenchProjectTopic.value = "";
+    elements.workbenchProjectNotes.value = "";
+    elements.workbenchIntent.value = "";
+    elements.workbenchConstraints.value = "";
+    elements.workbenchDuration.value = "15";
+    elements.workbenchCustomDuration.value = "30";
+    elements.workbenchCustomDurationField.classList.add("hidden");
+    elements.workbenchMode.value = "balanced";
+    elements.workbenchManualShots.checked = false;
+    elements.workbenchManualContinuity.checked = false;
+    elements.workbenchManualShots.setAttribute("aria-expanded", "false");
+    elements.workbenchManualContinuity.setAttribute("aria-expanded", "false");
+    elements.workbenchShotPlanPanel.classList.add("hidden");
+    elements.workbenchContinuityPanel.classList.add("hidden");
+    elements.workbenchAdvancedSettings.open = false;
+    elements.workbenchOutput.value = "";
+    elements.workbenchCopyResult.disabled = true;
+    elements.workbenchSaveProject.disabled = true;
+    renderShots();
+    renderContinuityLocks();
+    renderMedia();
+    renderValidation(null);
+    renderRevisions(null);
+    renderCreatorTools(null);
+    invalidatePlan();
   }
 
   function blankShot(startSeconds = 0, endSeconds = effectiveDuration()) {
@@ -1377,7 +1426,7 @@
     state.selectedProjectId = projectId || null;
     elements.workbenchExportProject.disabled = !projectId;
     elements.workbenchDeleteProject.disabled = !projectId;
-    if (!projectId) { state.currentProject = null; state.reviewObservations = []; state.bridge = null; state.composition = null; renderRevisions(null); return; }
+    if (!projectId) { resetDraftState(); return; }
     const project = await api.promptProject(projectId);
     if (!project) return;
     state.currentProject = project;
@@ -1392,8 +1441,8 @@
     if (state.templates.some((item) => templateKey(item) === project.template?.id)) elements.workbenchTemplate.value = project.template.id;
     elements.workbenchTarget.value = project.target || "minimaxH3";
     elements.workbenchOutputLanguage.value = project.outputLanguage === "en" ? "en" : "zh-CN";
-    const duration = Number(project.durationSeconds || 15);
-    if ([5, 10, 15, 30, 60].includes(duration)) elements.workbenchDuration.value = String(duration);
+    const duration = Math.min(30, Math.max(0.1, Number(project.durationSeconds || 15)));
+    if ([5, 10, 15, 30].includes(duration)) elements.workbenchDuration.value = String(duration);
     else { elements.workbenchDuration.value = "custom"; elements.workbenchCustomDuration.value = String(duration); }
     elements.workbenchCustomDurationField.classList.toggle("hidden", elements.workbenchDuration.value !== "custom");
     elements.workbenchMode.value = project.rewriteMode || "balanced";
@@ -1712,8 +1761,8 @@
     elements.localQwenUnload.querySelector('[value="keep_warm"]').textContent = locale() === "en" ? "Keep loaded" : "保持驻留";
     elements.localQwenUnload.querySelector('[value="idle_10m"]').textContent = locale() === "en" ? "Unload after 10 idle minutes" : "空闲10分钟后卸载";
     elements.workbenchPlanTitle.textContent = locale() === "en" ? "Choose how to generate" : "确认怎么生成"; elements.workbenchCurrentProviderLabel.textContent = locale() === "en" ? "Provider used for this generation" : "当前使用的增强渠道"; elements.workbenchChangeProvider.textContent = locale() === "en" ? "Change provider" : "更换渠道"; elements.workbenchTargetLabel.textContent = t("target"); elements.workbenchDurationLabel.textContent = t("duration");
-    elements.workbenchCustomDurationLabel.textContent = locale() === "en" ? "Custom duration (seconds)" : "自定义时长（秒）";
-    const durationLabels = locale() === "en" ? ["5 seconds", "10 seconds", "15 seconds", "30 seconds", "60 seconds", "Custom"] : ["5 秒", "10 秒", "15 秒", "30 秒", "60 秒", "自定义"];
+    elements.workbenchCustomDurationLabel.textContent = locale() === "en" ? "Custom duration (seconds, max 30)" : "自定义时长（秒，最多 30）";
+    const durationLabels = locale() === "en" ? ["5 seconds", "10 seconds", "15 seconds", "30 seconds", "Custom (max 30 seconds)"] : ["5 秒", "10 秒", "15 秒", "30 秒", "自定义（最多 30 秒）"];
     [...elements.workbenchDuration.options].forEach((option, index) => { option.textContent = durationLabels[index]; });
     elements.workbenchOutputLanguageLabel.textContent = t("outputLanguage"); elements.workbenchOutputLanguageZh.textContent = t("languageChinese"); elements.workbenchOutputLanguageEn.textContent = t("languageEnglish");
     elements.workbenchModeLabel.textContent = t("mode"); elements.workbenchModelLabel.textContent = t("model"); elements.workbenchBaseUrlLabel.textContent = t("baseUrl");

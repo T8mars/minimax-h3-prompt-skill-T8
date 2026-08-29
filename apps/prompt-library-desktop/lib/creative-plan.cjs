@@ -1,6 +1,6 @@
 const crypto = require("node:crypto");
 
-const MAX_DURATION_SECONDS = 86_400;
+const MAX_DURATION_SECONDS = 30;
 const MAX_SHOTS = 240;
 const MEDIA_ROLES = new Set(["identity", "wardrobe", "product", "scene", "action", "style", "first_frame", "last_frame", "inspiration"]);
 const ENTITY_TYPES = new Set(["character", "product", "scene", "prop"]);

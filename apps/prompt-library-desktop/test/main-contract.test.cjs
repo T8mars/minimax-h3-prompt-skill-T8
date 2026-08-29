@@ -54,6 +54,16 @@ test("release packages a compact app catalog and lossless split public preview a
   assert.ok(workflow.includes('Where-Object { $_.Extension -eq ".gif" }'), "original GIF previews must be split without recompression");
   assert.ok(workflow.includes("New-Item -ItemType HardLink"), "release staging must not duplicate multi-gigabyte preview bytes");
   assert.ok(workflow.includes("2147483648"), "the workflow must fail before upload when any asset reaches GitHub's 2 GiB limit");
+  assert.ok(workflow.includes("mac-universal.zip.blockmap"), "the generated macOS ZIP blockmap must be explicit");
+  assert.ok(!workflow.includes("mac-universal.dmg.blockmap"), "release validation must not require a DMG blockmap that electron-builder does not generate");
+  assert.match(workflow, /Compare-Object[\s\S]*Release asset set does not exactly match the contract/u, "release staging must reject missing and unexpected assets");
+  assert.match(workflow, /gh release delete-asset[\s\S]*--yes/u, "stale Draft Release assets must be removed before publication");
+  assert.match(workflow, /Draft Release asset set does not exactly match the contract/u, "the remote Draft asset set must be verified exactly");
+});
+
+test("release execution binds the workflow recipe commit to the release tag", () => {
+  assert.match(workflow, /\$workflowCommit = "\$\{\{ github\.sha \}\}"/u);
+  assert.match(workflow, /Release workflow commit and release tag are not identical/u);
 });
 
 test("release publishes complete videos as a verified sidecar instead of duplicating them into oversized installers", () => {

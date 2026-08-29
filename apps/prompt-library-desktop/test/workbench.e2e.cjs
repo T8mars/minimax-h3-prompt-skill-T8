@@ -5,6 +5,7 @@ const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
 const { loadCatalog } = require("../lib/catalog.cjs");
 const { PromptProjectStore } = require("../lib/prompt-projects.cjs");
+const { installElectronExitCleanup, setElectronContentSize } = require("./electron-window.cjs");
 
 const CREATIVE_AI_RESPONSES = [
     { subject: ["便携产品", "portable product"], actions: ["证明", "demonstrate", "proof"], goals: ["产品广告", "product ad", "功能证明", "capability proof", "发布"], styles: [], camera: [], emotion: [], sound: [], constraints: ["三项功能", "清楚结果"], exclusions: ["字幕"], ambiguity: "" },
@@ -64,9 +65,10 @@ async function run() {
     cwd: appDir,
     env: { ...process.env, T8_DISABLE_AUTO_UPDATE: "1", T8_E2E_CREATIVE_AI: "1", T8_E2E_CREATIVE_RESPONSES: Buffer.from(JSON.stringify(CREATIVE_AI_RESPONSES), "utf8").toString("base64"), T8STAR_API_KEY: "", SEEDANCE_API_KEY: "", OPENAI_API_KEY: "", ELECTRON_DISABLE_SECURITY_WARNINGS: "true" }
   });
+  const removeExitCleanup = installElectronExitCleanup(electronApp);
   try {
     const page = await electronApp.firstWindow();
-    await page.setViewportSize({ width: 1280, height: 800 });
+    await setElectronContentSize(electronApp, page, { width: 1280, height: 800 });
     await page.evaluate(() => localStorage.removeItem("t8-display-locale"));
     await page.reload();
     const errors = [];
@@ -228,7 +230,7 @@ async function run() {
     await page.locator("#workbench-output").waitFor({ state: "visible" });
     assert.equal(await page.locator("#workbench-professional-tools").getAttribute("open"), null, "result review and delivery tools must remain optional on the first result view");
 
-    await page.setViewportSize({ width: 760, height: 760 });
+    await setElectronContentSize(electronApp, page, { width: 760, height: 760 });
     const overflow = await page.evaluate(() => {
       const shell = document.querySelector("#prompt-workbench-dialog .dialog-shell");
       return { document: [document.documentElement.scrollWidth, document.documentElement.clientWidth], dialog: [shell.scrollWidth, shell.clientWidth] };
@@ -279,8 +281,9 @@ async function run() {
     assert.deepEqual(errors, [], `workbench renderer errors: ${errors.join(" | ")}`);
     console.log(`PASS workbench E2E; templates=${expectedTemplateCount}; providers=4; confirmation=explicit; screenshot=${screenshotPath}; simpleModeScreenshot=${simpleModeScreenshotPath}; musicScreenshot=${musicScreenshotPath}; localSettingsScreenshot=${localSettingsScreenshotPath}`);
   } finally {
+    removeExitCleanup();
     await electronApp.close();
-    fs.rmSync(e2eUserDataDir, { recursive: true, force: true });
+    fs.rmSync(e2eUserDataDir, { recursive: true, force: true, maxRetries: 8, retryDelay: 125 });
   }
 }
 

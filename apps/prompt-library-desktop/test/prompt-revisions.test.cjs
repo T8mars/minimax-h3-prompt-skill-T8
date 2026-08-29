@@ -9,12 +9,12 @@ function base() {
   return {
     capability: "video_prompt",
     title: "Revision demo",
-    intent: "A 45-second product proof.",
-    durationSeconds: 45,
-    output: "Shot 1 0-45 seconds: a wide camera follows the same product through a complete visible proof and holds the result.",
+    intent: "A 30-second product proof.",
+    durationSeconds: 30,
+    output: "Shot 1 0-30 seconds: a wide camera follows the same product through a complete visible proof and holds the result.",
     validation: { status: "pass" },
     creativePlan: {
-      shots: [{ shotId: "shot-01", startSeconds: 0, endSeconds: 45, action: "Complete visible proof", camera: "wide follow" }],
+      shots: [{ shotId: "shot-01", startSeconds: 0, endSeconds: 30, action: "Complete visible proof", camera: "wide follow" }],
       mediaAssignments: [],
       continuityLocks: []
     }
@@ -26,8 +26,8 @@ test("legacy single-output projects migrate to v4 with an immutable initial revi
   assert.equal(project.schemaVersion, "t8-prompt-project/v4");
   assert.equal(project.revisions.length, 1);
   assert.equal(project.revisions[0].source, "initial");
-  assert.equal(project.durationSeconds, 45);
-  assert.equal(project.creativePlan.shots[0].endSeconds, 45);
+  assert.equal(project.durationSeconds, 30);
+  assert.equal(project.creativePlan.shots[0].endSeconds, 30);
 });
 
 test("manual revisions retain the original output and acceptance state", () => {

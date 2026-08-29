@@ -3,11 +3,15 @@ const path = require("node:path");
 const { Readable } = require("node:stream");
 
 const MIME_TYPES = Object.freeze({
+  ".avi": "video/x-msvideo",
   ".gif": "image/gif",
   ".jpeg": "image/jpeg",
   ".jpg": "image/jpeg",
+  ".mkv": "video/x-matroska",
+  ".mov": "video/quicktime",
   ".mp4": "video/mp4",
   ".png": "image/png",
+  ".webm": "video/webm",
   ".webp": "image/webp"
 });
 

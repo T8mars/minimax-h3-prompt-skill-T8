@@ -62,6 +62,10 @@ test("sets strict MIME types and rejects unsupported methods", (t) => {
   const filePath = fixture(t);
   assert.equal(mediaContentType("preview.gif"), "image/gif");
   assert.equal(mediaContentType("poster.webp"), "image/webp");
+  assert.equal(mediaContentType("result.mov"), "video/quicktime");
+  assert.equal(mediaContentType("result.webm"), "video/webm");
+  assert.equal(mediaContentType("result.mkv"), "video/x-matroska");
+  assert.equal(mediaContentType("result.avi"), "video/x-msvideo");
   assert.equal(mediaContentType("unknown.bin"), "application/octet-stream");
   const response = createFileResponse(filePath, new Request("https://local.invalid/preview.mp4", { method: "POST" }));
   assert.equal(response.status, 405);

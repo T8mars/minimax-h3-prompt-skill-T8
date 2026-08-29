@@ -9,9 +9,10 @@ const renderer = fs.readFileSync(path.join(root, "src", "workbench.js"), "utf8")
 const preload = fs.readFileSync(path.join(root, "preload.cjs"), "utf8");
 const main = fs.readFileSync(path.join(root, "main.cjs"), "utf8");
 
-test("P0 creator UI exposes uncapped custom duration, shot plan, continuity, revisions and one repair", () => {
+test("P0 creator UI enforces the 30-second video contract and exposes shot, continuity, revision and repair tools", () => {
   for (const id of ["workbench-custom-duration", "workbench-shot-list", "workbench-add-shot", "workbench-auto-time-shots", "workbench-media-list", "workbench-continuity-list", "workbench-revision-list", "workbench-validate-edit", "workbench-preflight-repair", "workbench-repair-quota"]) assert.match(html, new RegExp(`id=["']${id}["']`));
-  assert.match(html, /id="workbench-custom-duration"[^>]+max="86400"/u);
+  assert.match(html, /id="workbench-custom-duration"[^>]+max="30"/u);
+  assert.doesNotMatch(html, /<option value="60">/u);
   for (const token of ["effectiveDuration", "autoTimeShots", "mediaAssignments", "continuityLocks", "preflightPromptRepair", "commitPromptOperation"]) assert.ok(renderer.includes(token), `missing ${token}`);
 });
 

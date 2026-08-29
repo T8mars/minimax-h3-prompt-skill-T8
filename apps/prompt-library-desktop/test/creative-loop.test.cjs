@@ -13,20 +13,20 @@ function project() {
     projectId: "project-1",
     intent: "一名成年跑者穿越雨夜城市后抵达终点",
     constraints: "身份不变",
-    durationSeconds: 45,
+    durationSeconds: 30,
     target: "minimaxH3",
     template: { hash: "a".repeat(64) },
     templateSnapshot: { requiredAnchors: ["抵达终点"] },
     creativePlan: {
       shots: [
-        { shotId: "shot-1", startSeconds: 0, endSeconds: 20, action: "奔跑", stateChange: "离开起点", sound: "雨声" },
-        { shotId: "shot-2", startSeconds: 20, endSeconds: 45, action: "抵达", stateChange: "完成目标", sound: "音乐高潮后静默" }
+        { shotId: "shot-1", startSeconds: 0, endSeconds: 12, action: "奔跑", stateChange: "离开起点", sound: "雨声" },
+        { shotId: "shot-2", startSeconds: 12, endSeconds: 30, action: "抵达", stateChange: "完成目标", sound: "音乐高潮后静默" }
       ],
       continuityLocks: [{ entityId: "hero", type: "character", invariants: ["同一成年人物"] }]
     },
     revisions: [
-      { revisionId: "r1", rootRevisionId: "r1", source: "initial", output: "0秒开场钩子，雨声。20秒跟拍，45秒结尾定格。", outputSha256: "b".repeat(64), validation: { anchorCoverage: { ratio: 1 }, shotCoverage: { ratio: 1 } } },
-      { revisionId: "r2", rootRevisionId: "r1", source: "variant", output: "0秒开场，节奏快切。20秒环绕，45秒音乐停顿后最终收束。", outputSha256: "c".repeat(64), validation: { anchorCoverage: { ratio: 1 }, shotCoverage: { ratio: 1 } } }
+      { revisionId: "r1", rootRevisionId: "r1", source: "initial", output: "0秒开场钩子，雨声。12秒跟拍，30秒结尾定格。", outputSha256: "b".repeat(64), validation: { anchorCoverage: { ratio: 1 }, shotCoverage: { ratio: 1 } } },
+      { revisionId: "r2", rootRevisionId: "r1", source: "variant", output: "0秒开场，节奏快切。12秒环绕，30秒音乐停顿后最终收束。", outputSha256: "c".repeat(64), validation: { anchorCoverage: { ratio: 1 }, shotCoverage: { ratio: 1 } } }
     ],
     selectedRevisionId: "r1",
     ratings: { r2: { overall: 5 } }
@@ -35,20 +35,20 @@ function project() {
 
 test("human result review creates time-bound failures without claiming automatic analysis", () => {
   const review = normalizeReview({
-    durationSeconds: 45,
+    durationSeconds: 30,
     shots: project().creativePlan.shots,
     mediaId: "result-1",
     observations: [
       { dimension: "identity_continuity", status: "visible", timeSeconds: 3, shotId: "shot-1" },
-      { dimension: "causal_order", status: "wrong_order", timeSeconds: 23, shotId: "shot-2", note: "终点先于跨越出现" },
-      { dimension: "sound", status: "audible", timeSeconds: 40, shotId: "shot-2" }
+      { dimension: "causal_order", status: "wrong_order", timeSeconds: 18, shotId: "shot-2", note: "终点先于跨越出现" },
+      { dimension: "sound", status: "audible", timeSeconds: 28, shotId: "shot-2" }
     ]
   });
   assert.equal(review.reviewerKind, "human");
   assert.equal(review.status, "needs_repair");
   assert.equal(review.failures.length, 1);
   assert.match(review.repairBrief, /Only repair causal_order/u);
-  assert.throws(() => normalizeReview({ durationSeconds: 45, shots: project().creativePlan.shots, observations: [{ dimension: "camera", status: "audible", timeSeconds: 2 }] }), /non-audio/u);
+  assert.throws(() => normalizeReview({ durationSeconds: 30, shots: project().creativePlan.shots, observations: [{ dimension: "camera", status: "audible", timeSeconds: 2 }] }), /non-audio/u);
 });
 
 test("three variants retain one hard-anchor hash while exposing materially different axes", () => {
@@ -66,7 +66,7 @@ test("three variants retain one hard-anchor hash while exposing materially diffe
 
 test("Video and Music 3 exact facts stay deterministic while creative suggestions are delegated to AI", () => {
   const bridge = videoToMusicFacts(project(), "r1");
-  assert.deepEqual(bridge.beatPoints, [0, 20, 45]);
+  assert.deepEqual(bridge.beatPoints, [0, 12, 30]);
   assert.equal(bridge.sourceRevisionSha256, "b".repeat(64));
   const reverse = musicToVideoFacts({ projectId: "music-1", fixedBpm: 0, outputs: { musicCaption: "BPM: 150\n[Intro]\n[Chorus]", music3PayloadJson: "{}" } });
   assert.equal(reverse.bpm, 150);

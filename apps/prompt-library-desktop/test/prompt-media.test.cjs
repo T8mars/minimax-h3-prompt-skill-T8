@@ -46,6 +46,17 @@ test("media store validates magic bytes, labels media, and never exposes absolut
   } finally { fs.rmSync(files.root, { recursive: true, force: true }); }
 });
 
+test("multi-select import is atomic when a later file is invalid", () => {
+  const files = fixtureFiles();
+  const invalid = path.join(files.root, "invalid.txt");
+  fs.writeFileSync(invalid, "not media");
+  try {
+    const store = new PromptMediaStore({ randomUUID: () => "media-atomic" });
+    assert.throws(() => store.addPaths([files.image, invalid]), /Unsupported or invalid/u);
+    assert.deepEqual(store.list(), []);
+  } finally { fs.rmSync(files.root, { recursive: true, force: true }); }
+});
+
 test("AI Workshop sends local video as image_url exactly like the audited node", async () => {
   const files = fixtureFiles();
   try {

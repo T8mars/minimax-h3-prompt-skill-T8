@@ -1,6 +1,6 @@
 {
   "name": "t8-prompt-library-desktop",
-  "version": "1.3.9",
+  "version": "1.4.0",
   "private": true,
   "description": "T8 Creative DNA video prompt library desktop viewer",
   "main": "main.cjs",
@@ -11,8 +11,8 @@
   },
   "scripts": {
     "start": "electron .",
-    "test": "node --test test/*.test.cjs",
-    "test:e2e": "npm run test:e2e:catalog && npm run test:e2e:workbench && npm run test:e2e:creator",
+    "test": "node --test --test-concurrency=1 test/*.test.cjs",
+    "test:e2e": "npm run test:e2e:layout && npm run test:e2e:catalog && npm run test:e2e:workbench && npm run test:e2e:creator",
     "validate": "node scripts/validate.mjs",
     "validate:release": "node scripts/validate-release.mjs",
     "pack": "electron-builder --dir --config electron-builder.config.cjs",
@@ -21,6 +21,7 @@
     "dist:mac": "electron-builder --mac dmg zip --universal --config electron-builder.config.cjs",
     "test:providers:live": "node scripts/live-provider-smoke.cjs",
     "test:e2e:catalog": "node test/electron.e2e.cjs",
+    "test:e2e:layout": "node test/layout-regression.e2e.cjs",
     "test:e2e:workbench": "node test/workbench.e2e.cjs",
     "test:e2e:creator": "node test/creator-loop.e2e.cjs"
   },
