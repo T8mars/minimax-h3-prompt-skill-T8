@@ -68,7 +68,8 @@ async function run() {
   const removeExitCleanup = installElectronExitCleanup(electronApp);
   try {
     const page = await electronApp.firstWindow();
-    await setElectronContentSize(electronApp, page, { width: 1280, height: 800 });
+    const requestedWorkbenchViewport = { width: 1280, height: 800 };
+    const actualWorkbenchViewport = await setElectronContentSize(electronApp, page, requestedWorkbenchViewport);
     await page.evaluate(() => localStorage.removeItem("t8-display-locale"));
     await page.reload();
     const errors = [];
@@ -97,8 +98,30 @@ async function run() {
     assert.equal(await page.locator("#workbench-credential-panel").isVisible(), false, "local Qwen must not ask for an API key");
     assert.equal(await page.locator("#local-qwen-model option").count(), 3, "all three node-validated models must be advertised before a folder is selected");
     assert.equal(await page.locator("#local-qwen-projector option").count(), 1, "projector selection must start in safe automatic matching mode");
-    const localSettingsOverflow = await page.locator(".api-settings-content").evaluate((node) => ({ scrollHeight: node.scrollHeight, clientHeight: node.clientHeight }));
-    assert.ok(localSettingsOverflow.scrollHeight <= localSettingsOverflow.clientHeight + 1, `local Qwen settings must fit one 1280x800 screen (${localSettingsOverflow.scrollHeight} > ${localSettingsOverflow.clientHeight})`);
+    const readLocalSettingsLayout = () => page.locator(".api-settings-content").evaluate((node) => {
+      const footer = document.querySelector(".api-settings-footer").getBoundingClientRect();
+      return {
+        scrollHeight: node.scrollHeight,
+        clientHeight: node.clientHeight,
+        overflowY: getComputedStyle(node).overflowY,
+        footerTop: footer.top,
+        footerBottom: footer.bottom,
+        viewportHeight: innerHeight
+      };
+    });
+    const assertClampedSettingsRemainUsable = (layout) => {
+      assert.match(layout.overflowY, /auto|scroll/u, "OS-clamped workbench settings must remain vertically scrollable");
+      assert.ok(layout.footerTop >= 0 && layout.footerBottom <= layout.viewportHeight + 1, "OS-clamped workbench settings must keep the Done footer visible");
+    };
+    const localSettingsOverflow = await readLocalSettingsLayout();
+    if (actualWorkbenchViewport.height >= requestedWorkbenchViewport.height) {
+      assert.ok(localSettingsOverflow.scrollHeight <= localSettingsOverflow.clientHeight + 1, `local Qwen settings must fit one actual 1280x800 content viewport (${localSettingsOverflow.scrollHeight} > ${localSettingsOverflow.clientHeight})`);
+      await setElectronContentSize(electronApp, page, { width: 1280, height: 648 });
+      assertClampedSettingsRemainUsable(await readLocalSettingsLayout());
+      await setElectronContentSize(electronApp, page, requestedWorkbenchViewport);
+    } else {
+      assertClampedSettingsRemainUsable(localSettingsOverflow);
+    }
     await page.screenshot({ path: localSettingsScreenshotPath, animations: "disabled" });
     await page.locator("#close-api-settings").click();
     await page.locator("#api-settings-dialog").waitFor({ state: "hidden" });
