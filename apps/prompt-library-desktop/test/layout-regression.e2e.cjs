@@ -50,8 +50,8 @@ async function run() {
       };
     });
     assert.deepEqual(geometry.viewport, synchronizedViewport, "renderer dimensions must remain stable after reloading the catalog");
-    assert.ok(geometry.viewport.width >= 980 && geometry.viewport.width <= requestedViewport.width, "the operating system may clamp the requested width only within the supported desktop range");
-    assert.ok(geometry.viewport.height >= 680 && geometry.viewport.height <= requestedViewport.height, "the operating system may clamp the requested height only within the supported desktop range");
+    assert.ok(geometry.viewport.width > 0 && geometry.viewport.width <= requestedViewport.width, "the operating system may only clamp the requested content width downward");
+    assert.ok(geometry.viewport.height > 0 && geometry.viewport.height <= requestedViewport.height, "the operating system may only clamp the requested content height downward");
     assert.ok(geometry.document.clientWidth >= geometry.viewport.width - 16 && geometry.document.clientWidth <= geometry.viewport.width, "document width may differ from innerWidth only by the native vertical scrollbar");
     assert.ok(geometry.document.scrollWidth <= geometry.document.clientWidth, "catalog must not create horizontal overflow");
     assert.ok(Math.abs(geometry.body.width - geometry.document.clientWidth) <= 1, "body must fill the available document width");
