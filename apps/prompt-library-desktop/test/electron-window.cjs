@@ -32,18 +32,33 @@ async function setElectronContentSize(electronApp, page, { width, height }) {
     for (let attempt = 0; attempt < 40; attempt += 1) {
       geometry = await browserWindow.evaluate((window) => {
         if (window.isDestroyed()) throw new Error("Electron E2E window is unavailable");
-        const bounds = window.getContentBounds();
-        return { width: bounds.width, height: bounds.height };
+        const content = window.getContentBounds();
+        const frame = window.getBounds();
+        return {
+          content: { width: content.width, height: content.height },
+          frame: { width: frame.width, height: frame.height }
+        };
       });
       viewport = await page.evaluate(() => ({ width: innerWidth, height: innerHeight }));
-      if (viewport.width === geometry.width && viewport.height === geometry.height) break;
+      if (viewport.width === geometry.content.width && viewport.height === geometry.content.height) break;
       await page.waitForTimeout(250);
     }
   } finally {
     await browserWindow.dispose();
   }
-  assert.deepEqual(viewport, geometry, "Electron content bounds and renderer viewport must stay synchronized; otherwise a blank right/bottom gutter appears");
-  assert.ok(viewport.width >= originalMinimum.width && viewport.height >= originalMinimum.height, "the operating system may clamp the requested size, but never below the application's supported minimum");
+  assert.deepEqual(viewport, geometry.content, "Electron content bounds and renderer viewport must stay synchronized; otherwise a blank right/bottom gutter appears");
+  const frameInsets = {
+    width: Math.max(0, geometry.frame.width - geometry.content.width),
+    height: Math.max(0, geometry.frame.height - geometry.content.height)
+  };
+  const minimumContent = {
+    width: Math.max(1, originalMinimum.width - frameInsets.width),
+    height: Math.max(1, originalMinimum.height - frameInsets.height)
+  };
+  assert.ok(
+    viewport.width >= minimumContent.width && viewport.height >= minimumContent.height,
+    `the operating system may clamp the requested content size, but not below the framed window minimum; viewport=${viewport.width}x${viewport.height}, minimumContent=${minimumContent.width}x${minimumContent.height}`
+  );
   return viewport;
 }
 

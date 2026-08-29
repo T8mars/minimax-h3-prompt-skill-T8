@@ -15,6 +15,8 @@ test("Electron E2E resizes the BrowserWindow content instead of emulating a narr
   const helper = fs.readFileSync(path.join(testRoot, "electron-window.cjs"), "utf8");
   assert.match(helper, /setContentSize/u);
   assert.match(helper, /getContentBounds/u, "cross-platform resize checks must observe the actual OS-clamped content bounds");
+  assert.match(helper, /getBounds/u, "cross-platform minimum-size checks must account for native window chrome");
+  assert.match(helper, /frameInsets/u, "macOS title-bar height must not be mistaken for missing renderer content");
   assert.match(helper, /content bounds and renderer viewport must stay synchronized/u);
   assert.match(helper, /SIGINT/u, "interrupted E2E runs must close their Electron window");
 });
