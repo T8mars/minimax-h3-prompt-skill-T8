@@ -26,20 +26,25 @@ async function setElectronContentSize(electronApp, page, { width, height }) {
     }
   }, { width, height, originalMinimum });
 
-  await page.waitForFunction(
-    (requested) => window.innerWidth === requested.width && window.innerHeight === requested.height,
-    { width, height },
-    { timeout: 5000 }
-  );
-
-  const geometry = await browserWindow.evaluate((window) => {
-    if (window.isDestroyed()) throw new Error("Electron E2E window is unavailable");
-    const bounds = window.getContentBounds();
-    return { width: bounds.width, height: bounds.height };
-  });
-  await browserWindow.dispose();
-  const viewport = await page.evaluate(() => ({ width: innerWidth, height: innerHeight }));
+  let geometry;
+  let viewport;
+  try {
+    for (let attempt = 0; attempt < 40; attempt += 1) {
+      geometry = await browserWindow.evaluate((window) => {
+        if (window.isDestroyed()) throw new Error("Electron E2E window is unavailable");
+        const bounds = window.getContentBounds();
+        return { width: bounds.width, height: bounds.height };
+      });
+      viewport = await page.evaluate(() => ({ width: innerWidth, height: innerHeight }));
+      if (viewport.width === geometry.width && viewport.height === geometry.height) break;
+      await page.waitForTimeout(250);
+    }
+  } finally {
+    await browserWindow.dispose();
+  }
   assert.deepEqual(viewport, geometry, "Electron content bounds and renderer viewport must stay synchronized; otherwise a blank right/bottom gutter appears");
+  assert.ok(viewport.width >= originalMinimum.width && viewport.height >= originalMinimum.height, "the operating system may clamp the requested size, but never below the application's supported minimum");
+  return viewport;
 }
 
 function installElectronExitCleanup(electronApp) {

@@ -18,7 +18,8 @@ async function run() {
   const removeExitCleanup = installElectronExitCleanup(electronApp);
   try {
     const page = await electronApp.firstWindow();
-    await setElectronContentSize(electronApp, page, { width: 1464, height: 900 });
+    const requestedViewport = { width: 1464, height: 900 };
+    const synchronizedViewport = await setElectronContentSize(electronApp, page, requestedViewport);
     await page.evaluate(() => {
       localStorage.setItem("t8-display-locale", "zh-CN");
       localStorage.setItem("t8-display-locale-default-zh-v1", "done");
@@ -48,15 +49,17 @@ async function run() {
         topbar: topbar.toJSON()
       };
     });
-    assert.equal(geometry.viewport.width, 1464);
-    assert.ok(geometry.document.clientWidth >= 1448 && geometry.document.clientWidth <= 1464, "document width may differ from innerWidth only by the native vertical scrollbar");
+    assert.deepEqual(geometry.viewport, synchronizedViewport, "renderer dimensions must remain stable after reloading the catalog");
+    assert.ok(geometry.viewport.width >= 980 && geometry.viewport.width <= requestedViewport.width, "the operating system may clamp the requested width only within the supported desktop range");
+    assert.ok(geometry.viewport.height >= 680 && geometry.viewport.height <= requestedViewport.height, "the operating system may clamp the requested height only within the supported desktop range");
+    assert.ok(geometry.document.clientWidth >= geometry.viewport.width - 16 && geometry.document.clientWidth <= geometry.viewport.width, "document width may differ from innerWidth only by the native vertical scrollbar");
     assert.ok(geometry.document.scrollWidth <= geometry.document.clientWidth, "catalog must not create horizontal overflow");
     assert.ok(Math.abs(geometry.body.width - geometry.document.clientWidth) <= 1, "body must fill the available document width");
     assert.ok(Math.abs(geometry.main.left) <= 1 && Math.abs(geometry.main.right - geometry.document.clientWidth) <= 1, "main catalog area must fill the document width without a right gutter");
     assert.ok(Math.abs(geometry.topbar.left) <= 1 && Math.abs(geometry.topbar.right - geometry.document.clientWidth) <= 1, "top bar must fill the document width without a right gutter");
     assert.deepEqual(rendererErrors, [], `renderer errors: ${rendererErrors.join(" | ")}`);
     await page.screenshot({ path: screenshotPath, animations: "disabled" });
-    console.log(`PASS catalog layout regression; viewport=1464x900; screenshot=${screenshotPath}`);
+    console.log(`PASS catalog layout regression; viewport=${geometry.viewport.width}x${geometry.viewport.height}; screenshot=${screenshotPath}`);
   } finally {
     removeExitCleanup();
     await electronApp.close();
