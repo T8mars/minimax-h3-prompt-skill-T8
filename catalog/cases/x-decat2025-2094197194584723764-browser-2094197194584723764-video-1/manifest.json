@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-decat2025-2094197194584723764-browser-2094197194584723764-video-1",
+  "slug": "route-continuity-through-world-conversion",
+  "title": "固定试验室换灾态｜门槛进入、四种介质与中心碰撞",
+  "source_title": "武器化天气室｜电、沙、雪与龙卷在同一空间叠加",
+  "summary": "用同一走廊与圆形试验室保持空间注册，逐章切换电弧、沙尘、积雪和风涡；最后让此前状态从固定方向回流并在中心碰撞。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/route-continuity-through-world-conversion",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2094197194584723764-browser-2094197194584723764-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2094197194584723764-browser-2094197194584723764-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-route-continuity-through-world-conversion-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-route-continuity-through-world-conversion-v1",
+  "input_format": "连续移动主体 + 原世界基线 + 单次全局换材 + 方向速度不断线 + 新世界终点",
+  "recommended_input": "沿石墨色温室检修走廊进入圆形气候实验室，四个墙面风口固定。；只把活动介质依次替换为后方琥珀花粉和右侧白霜。；四种介质在一个有限亮脉冲中相遇，随后同一干燥网格与关闭风口重现。",
+  "required_anchors": [
+    "One room geometry registers every state.",
+    "Each chapter changes one dominant environmental medium.",
+    "The central vortex follows the established chapters.",
+    "The final reset proves the same chamber survived the collision."
+  ],
+  "tags": [
+    "route",
+    "continuity",
+    "through",
+    "world",
+    "conversion"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:10:28+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}

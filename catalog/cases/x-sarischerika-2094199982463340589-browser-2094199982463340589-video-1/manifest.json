@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sarischerika-2094199982463340589-browser-2094199982463340589-video-1",
+  "slug": "constricted-route-open-release",
+  "title": "室内暴走破界｜骑乘基线、障碍冲撞与彩窗出口",
+  "source_title": "暴走白马｜天使骑手从教堂失控冲出彩窗",
+  "summary": "先在高约束室内建立骑手与坐骑，再让坐骑连续加速、冲撞墙面和长椅改变路线；终局只用一个巨大出口释放速度，并留下破损空间作为后果。",
+  "status": "released",
+  "source_duration_seconds": 15.069751,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/constricted-route-open-release",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sarischerika-2094199982463340589-browser-2094199982463340589-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sarischerika-2094199982463340589-browser-2094199982463340589-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-constricted-route-open-release-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-constricted-route-open-release-v1",
+  "input_format": "同一载具与路线轴 + 至少三种逐步收窄障碍 + 唯一最窄门槛 + 开阔空间释放",
+  "recommended_input": "一名明确成年原创动画递送员保持银色辫发和蓝色披风，骑白色机械鹿置于玻璃温室大厅。；一次肩部撞击打破薄石膏隔墙，留下清楚鹿形开口。；机械鹿与递送员只从该窗口冲入开阔日光，留下受损大厅和一条清楚路线。",
+  "required_anchors": [
+    "One adult rider and one carrier remain attached.",
+    "Every impact alters the established interior route.",
+    "Escalation moves from narrow obstacles to one final opening.",
+    "The terminal release preserves the origin space as aftermath."
+  ],
+  "tags": [
+    "constricted",
+    "route",
+    "open",
+    "release"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:15:04+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}

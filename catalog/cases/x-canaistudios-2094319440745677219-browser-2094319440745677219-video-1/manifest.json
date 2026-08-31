@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-canaistudios-2094319440745677219-browser-2094319440745677219-video-1",
+  "slug": "asymmetric-scale-evasion-exchange",
+  "title": "双巨兽近身交换｜同场尺度、咬合试探与侧向压迫",
+  "source_title": "巨兽对决｜两只恐龙在河岸持续近身攻防",
+  "summary": "两个体型、头冠与攻击方式不同的巨兽始终共处同一河岸，轮流逼近、张口和侧身避让；尘土与水岸作为接触证据，镜头不切走逃避攻防。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/asymmetric-scale-evasion-exchange",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-canaistudios-2094319440745677219-browser-2094319440745677219-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-canaistudios-2094319440745677219-browser-2094319440745677219-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-asymmetric-scale-evasion-exchange-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-asymmetric-scale-evasion-exchange-v1",
+  "input_format": "大小尺度明确的两主体 + 共享地面 + 巨体承诺动作 + 小体型可见变线 + 无虚构胜负的共享终态",
+  "recommended_input": "原创角状石兽与长颈甲兽位于同一湿火山平原。；一次肩部与甲板接触清楚可见，黑色水雾从脚边升起。；两只完整巨兽仍被开场熔岩缝分隔，不虚构胜者。",
+  "required_anchors": [
+    "Two distinct creature identities remain readable.",
+    "Every attack has a visible commitment and response.",
+    "Environmental residue supports rather than replaces impact.",
+    "The final state preserves both opponents and shared geography."
+  ],
+  "tags": [
+    "asymmetric",
+    "scale",
+    "evasion",
+    "exchange"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:13:23+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}

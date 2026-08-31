@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ayzalnooor24521-2094243156225315270-browser-2094243156225315270-video-1",
+  "slug": "continuous-locomotion-carrier-escalation-sky-payoff",
+  "title": "雪板路线升级｜装备确认、滑轨通过与腾空兑现",
+  "source_title": "雪板运动片｜同一女性从雪场准备连续滑到大跳台",
+  "summary": "先锁定人物与雪板装备，再用第一人称滑入、侧跟滑轨和连续坡面保持路线；速度和高度逐级增加，终局大跳必须回连同一人物与雪板。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/continuous-locomotion-carrier-escalation-sky-payoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ayzalnooor24521-2094243156225315270-browser-2094243156225315270-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ayzalnooor24521-2094243156225315270-browser-2094243156225315270-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-locomotion-carrier-escalation-sky-payoff-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-continuous-locomotion-carrier-escalation-sky-payoff-v1",
+  "input_format": "同一明确成年原创主体、至少三项身份锚点与单一前进方向先建立 + 至少四种移动状态都在可见边缘、接触、尾迹或发射阈值发生交接 + 每次至少继承速度、姿态或尾迹之一 + 接触表面、载体尺度或高度单调升级 + 终局同一成年人在最高层级完成短促空中释放",
+  "recommended_input": "锁定成年山地测绘员：红色头盔、象牙外套和钴蓝雪板，位于标记雪道。；跟随她通过一条低银轨，并用同一雪板双脚清楚落地。；以一次直坡跳和单次半转收尾，同一雪板重新连接到落地区。",
+  "required_anchors": [
+    "Adult identity and equipment remain fixed.",
+    "The course direction is established before tricks.",
+    "Speed and height escalate monotonically.",
+    "The terminal jump preserves board-body attachment through landing."
+  ],
+  "tags": [
+    "continuous",
+    "locomotion",
+    "carrier",
+    "escalation",
+    "sky",
+    "payoff"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:13:29+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}

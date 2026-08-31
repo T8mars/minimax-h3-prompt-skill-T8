@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-just-sharon7-2094305294117429711-browser-2094305294117429711-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "动作触发漫画字效｜角色锁定、冲击字与海报定格",
+  "source_title": "动漫朋克 MV｜同一绿衣角色用动作驱动拼贴图形",
+  "summary": "锁定同一动画角色，用奔跑、落地与姿态变化逐拍触发撕纸、莲花、唱片和冲击字；终局把累计图形回收到人物海报。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-just-sharon7-2094305294117429711-browser-2094305294117429711-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-just-sharon7-2094305294117429711-browser-2094305294117429711-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "锁定原创成年动画递送员：银色短发、琥珀面罩、钴蓝夹克和白靴，置于珊瑚纸面。；一次受控屈膝落地触发准确冲击词【CLACK】，海军蓝棋盘同时在双靴下展开。；完整人物回到钴蓝海报框，准确标题【NIGHT ROUTE】停留。",
+  "required_anchors": [
+    "One character identity anchors every graphic chapter.",
+    "A visible action precedes each graphic response.",
+    "Detail shots reconnect to the complete body.",
+    "The final poster reunites character, palette and title."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:08:35+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}

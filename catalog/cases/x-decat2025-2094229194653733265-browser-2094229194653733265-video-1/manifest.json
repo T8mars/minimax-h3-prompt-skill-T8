@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-decat2025-2094229194653733265-browser-2094229194653733265-video-1",
+  "slug": "reveal-scale-through-environment-deformation",
+  "title": "平台尺度揭危｜小人物锚点、漂石逼近与巨面苏醒",
+  "source_title": "破碎星球信号｜宇航员面前的空间平台显出巨型面孔",
+  "summary": "先用平台、星球和小人物建立尺度，再让漂浮岩体与地表纹路逐步汇聚；相机持续靠近人物后方，最终把平台结构解释为巨大面部。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reveal-scale-through-environment-deformation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2094229194653733265-browser-2094229194653733265-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2094229194653733265-browser-2094229194653733265-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-environment-deformation-scale-reveal-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-environment-deformation-scale-reveal-v1",
+  "input_format": "环境局部异常 + 单一身份特征 + 高位完整几何证明 + 环境尺度影响 + 低位近距离逼近",
+  "recommended_input": "在云层月球上方建立圆形冰观测台，一名成年测绘员位于中央。；镜头靠近，白色宇航服、红色背包和中心位置不变。；拉宽揭示观测台是休眠机器的眼区，同一测绘员仍作为人类尺度标尺。",
+  "required_anchors": [
+    "One human scale anchor remains readable.",
+    "Environmental pieces approach before the larger interpretation appears.",
+    "The camera preserves platform geography through the reveal.",
+    "The final giant structure contains rather than replaces the opening space."
+  ],
+  "tags": [
+    "environment",
+    "deformation",
+    "scale",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:11:36+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}

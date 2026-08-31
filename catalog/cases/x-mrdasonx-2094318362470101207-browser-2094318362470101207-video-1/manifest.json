@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mrdasonx-2094318362470101207-browser-2094318362470101207-video-1",
+  "slug": "material-scale-expansion-exact-return-loop",
+  "title": "散叶成灵鸟｜粒子聚合、展翼升空与光尘消散",
+  "source_title": "粒子凤凰｜秋叶与火光连续形成发光巨鸟",
+  "summary": "把同一组叶片和光粒作为唯一材料载体，从森林微小旋涡逐步成形为完整鸟体、展翼与升空，终局重新散回粒子并保留森林基线。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/material-scale-expansion-exact-return-loop",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mrdasonx-2094318362470101207-browser-2094318362470101207-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mrdasonx-2094318362470101207-browser-2094318362470101207-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-scale-expansion-exact-return-loop-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-material-scale-expansion-exact-return-loop-v1",
+  "input_format": "微小材质锚点 + 可见触发 + 至少两级尺度扩张 + 最大世界保持 + 沿同一谱系精确回收原点",
+  "recommended_input": "浅蓝纸纤维在暗色档案大厅地面聚成一个小旋涡。；完整纸鹤在书架之间展翼，层叠纸羽清楚。；纸鹤重新散成纸屑，落回同一个空地标记。",
+  "required_anchors": [
+    "One material family drives every phase.",
+    "Form growth remains monotonic and readable.",
+    "The flight path preserves the established environment axis.",
+    "The terminal dissolution returns material to the original location."
+  ],
+  "tags": [
+    "material",
+    "scale",
+    "expansion",
+    "exact",
+    "return",
+    "loop"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:11:16+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}

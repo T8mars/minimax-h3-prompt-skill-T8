@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ejaz-bashir1-2094292563704643811-browser-2094292563704643811-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "2734185f7a113912aa62a5e333074a154f49490e022b003a13e1639bc16d7c04",
+    "creative_dna_sha256": "4cd5b671fe4fd1a00456039c4bc6bab8e43a12bab7b10bc8e10825e8dfc19573"
+  },
+  "content": {
+    "title": "道具反复失控｜展开失败、短暂恢复与飞走收梗",
+    "summary": "同一人物和同一道具在固定雨街中反复尝试：错误形态、手动修复、短暂成功再升级失控；最后让道具脱离并带走人物完成明确笑点。",
+    "quick_start": {
+      "input_format": "固定角色关系 + 三轮准备/动作/后果/反应 + 场景复位 + 后果逐轮升级 + 最大结果同框",
+      "recommended_input": "一名明确成年动画递送员穿橙色雨衣，站在积水仓库门口，身旁是青绿色包裹车。；一次手动复位让车棚短暂正确展开，她继续推行两步。；车辆驶出画面，递送员在后方追赶，原门口与一个旋转车轮留在画面。",
+      "required_anchors": [
+        "一个角色、道具和位置保持不变。",
+        "每一次新的尝试都会伴随着明显的失败。",
+        "升级会改变道具行为而不重置历史记录。",
+        "最终的离开，换来了屡次失败的收束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一人物和同一道具在固定雨街中反复尝试：错误形态、手动修复、短暂成功再升级失控；最后让道具脱离并带走人物完成明确笑点。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一人物和同一道具在固定雨街中反复尝试：错误形态、手动修复、短暂成功再升级失控；最后让道具脱离并带走人物完成明确笑点。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个角色、道具和位置保持不变。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个角色、道具和位置保持固定。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每一次新的尝试都会伴随着明显的失败。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除了规则：“每次新的尝试都会出现明显的失败。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "短暂的成功先于更强劲的逆转。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“短暂的成功先于更强烈的逆转。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "升级会改变道具行为而不重置历史记录。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“升级会更改道具行为而不重置历史记录。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的离开，换来了屡次失败的收束。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“最后的离开会弥补屡次的失败。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名快递员在包裹车车顶滚落之前反复修复它。",
+          "prompt_seed": "一名快递员在包裹车车顶滚落之前反复修复它。"
+        },
+        {
+          "concept": "一名成年园丁在遮阳篷升过院子之前反复将其固定住。",
+          "prompt_seed": "一名成年园丁在遮阳篷升过院子之前反复将其固定住。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个角色、道具和位置保持固定。”",
+          "repair": "一个角色、道具和位置保持不变。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除了规则：“每次新的尝试都会出现明显的失败。”",
+          "repair": "每一次新的尝试都会伴随着明显的失败。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“短暂的成功先于更强烈的逆转。”",
+          "repair": "短暂的成功先于更强劲的逆转。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“升级会更改道具行为而不重置历史记录。”",
+          "repair": "升级会改变道具行为而不重置历史记录。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“最后的离开会弥补屡次的失败。”",
+          "repair": "最终的离开，换来了屡次失败的收束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名快递员在包裹车车顶滚落之前反复修复它。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年园丁在遮阳篷升过院子之前反复将其固定住。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-nexlowx-2094144180884849051-browser-2094144180884849051-video-1",
+  "slug": "destination-first-processional-scale-approach",
+  "title": "云门巨兽逼近｜人类剪影、雾中显形与鼻端停留",
+  "source_title": "石龙巨构｜云海中的巨型龙首靠近崖台人群",
+  "summary": "用固定崖台与多个人类剪影建立尺度，巨型生物从云层中逐步显出眼睛、鳞片和头部；它只完成一次缓慢靠近并在接触前停下，保留敬畏张力。",
+  "status": "released",
+  "source_duration_seconds": 15.23229,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/destination-first-processional-scale-approach",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nexlowx-2094144180884849051-browser-2094144180884849051-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nexlowx-2094144180884849051-browser-2094144180884849051-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-destination-first-processional-scale-approach-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-destination-first-processional-scale-approach-v1",
+  "input_format": "完整宏大目的地、可读接近路线与至少三名明确成年旅行者或载体在开场同现 + 全程保持单一目标方向和稳定目的地身份 + 旗帜、灯光、服装或载体等群体锚点重复形成仪式节奏 + 行进与克制前推、轻微升高共同让地标尺度层单调增加 + 终局目的地主导但仍保留至少两个旅行者或路线锚点",
+  "recommended_input": "三名明确成年天文学家站在银色云海上的玄武岩天桥。；它靠近一次，琥珀镜片、层叠矿物板和两枚冠鳍逐渐清楚。；机器在距天桥一个身位处停下，不发生撞击，保持安静尺度对照。",
+  "required_anchors": [
+    "Human scale anchors appear before the giant subject.",
+    "The giant emerges progressively from an occluding medium.",
+    "Camera geography remains stable enough to compare scale.",
+    "The final near-contact state stops before impact."
+  ],
+  "tags": [
+    "destination",
+    "first",
+    "processional",
+    "scale",
+    "approach"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:12:36+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}

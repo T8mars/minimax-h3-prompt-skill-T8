@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ponyodong-2094282576542470337-browser-2094282576542470337-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "拼贴舞姿字效｜黑白红角色、海报墙与短词接力",
+  "source_title": "复古拼贴 MV｜同一角色穿越海报、屏幕与字场",
+  "summary": "锁定黑白红角色，让撕纸墙、屏幕框、透视地字和巨型竖排短词随姿态变化接力；每章保持三色系统，终局回到完整人物与总句。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ponyodong-2094282576542470337-browser-2094282576542470337-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ponyodong-2094282576542470337-browser-2094282576542470337-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "锁定原创成年动画贝斯手：白色短发、青色眼纹和炭黑外套，置于撕裂灰纸隧道。；同一脸进入黑色监视器边框，准确短词【WAIT】仍在身后可读。；完整人物回到海报墙，准确总句【HOLD THE LINE】停留。",
+  "required_anchors": [
+    "One adult animated identity anchors every format.",
+    "A visible pose change precedes each typography module.",
+    "Text stays exact and readable despite perspective.",
+    "The final card restores the complete character and master line."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:12:43+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}

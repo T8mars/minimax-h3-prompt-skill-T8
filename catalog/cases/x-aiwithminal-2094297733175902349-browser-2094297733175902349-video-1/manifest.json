@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithminal-2094297733175902349-browser-2094297733175902349-video-1",
+  "slug": "suspended-world-terminal-resumption",
+  "title": "灾难停时释放｜静止人物、悬浮废墟与重力恢复",
+  "source_title": "城市灾难定场｜红衣女性保持静止后让废墟落地",
+  "summary": "同一人物在城市破坏中心保持静止，手势让公交车、石块和尘埃悬停；镜头环绕验证冻结范围，人物结束动作后重力同时恢复，最后以近脸确认她未被替换。",
+  "status": "released",
+  "source_duration_seconds": 20.038821,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/suspended-world-terminal-resumption",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithminal-2094297733175902349-browser-2094297733175902349-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithminal-2094297733175902349-browser-2094297733175902349-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-suspended-world-terminal-resumption-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-suspended-world-terminal-resumption-v1",
+  "input_format": "复杂环境整体悬停 + 第一视角连续移动 + 至少3个冻结地标 + 局部对齐但不强称接触 + 末端只复流一次",
+  "recommended_input": "成年交通工程师穿深绿色外套，站在受损车站大道中央，标牌、行李和一辆电车悬浮。；镜头从背后环绕到侧面和正面，绿外套、金色徽章与道路中心线不变。；尘埃沉降后停在同一脸部近景，原中心线仍在身后可见。",
+  "required_anchors": [
+    "One adult and one world position remain fixed.",
+    "Suspension affects registered objects across depth layers.",
+    "One visible gesture ends suspension.",
+    "The final close view reconnects identity and aftermath."
+  ],
+  "tags": [
+    "suspended",
+    "world",
+    "terminal",
+    "resumption"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-31T16:14:29+08:00",
+  "updated_at": "2026-08-31T17:49:49+08:00"
+}
