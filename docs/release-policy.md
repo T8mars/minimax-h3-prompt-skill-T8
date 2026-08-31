@@ -41,7 +41,7 @@
 - `T8-Prompt-Library-v<version>-mac-universal.zip`、`latest-mac.yml` 与 ZIP blockmap；
 - `prompt-library-media-v<version>-part1.zip` 与 `prompt-library-media-v<version>-part2.zip`；
 - `prompt-library-catalog-v<version>.zip`；
-- `prompt-library-previews-v<version>-part1.zip` 与 `prompt-library-previews-v<version>-part2.zip`；
+- `prompt-library-previews-v<version>-part1.zip`、`prompt-library-previews-v<version>-part2.zip` 与 `prompt-library-previews-v<version>-part3.zip`；
 - `prompt-library-skills-v<version>.zip`；
 - `media-pack-manifest.json`；
 - `SHA256SUMS.txt`。
@@ -52,7 +52,7 @@ GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 M
 
 为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个压缩，但仍保留全部动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。紧凑目录另有 420 MiB 硬门禁，超过即停止发布。v1.3.7 在 306 项目录下用旧 64 色配置实测为 445,133,255 字节并被正确阻断；v1.3.8 扩充到 326 项后，288 px / 4 fps / 56 色配置实测为 457,624,307 字节并再次正确阻断，随后 280 px / 4 fps / 48 色配置实测为 419,036,870 字节。当前 v1.4.1 的 386 项目录使用更紧凑的 256 px / 4 fps / 40 色配置，并继续受同一 420 MiB 硬门禁约束。完整 MP4、仓库原始 GIF和独立原始预览分卷不会被这一过程重编码。
 
-Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHub 单资产 2 GiB 上限，独立公开目录按用途分为三个无损 ZIP：`prompt-library-catalog` 保存 JSON、Markdown 与 Poster，两个 `prompt-library-previews` 分卷保存原始 GIF 并保留 `catalog/...` 相对路径。需要完整离线原始目录时，将三个 ZIP 解压到同一父目录即可还原；分卷只解决平台文件上限，不降低 GIF 质量或减少条目。
+Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHub 单资产 2 GiB 上限，独立公开目录按用途分为四个无损 ZIP：`prompt-library-catalog` 保存 JSON、Markdown 与 Poster，三个 `prompt-library-previews` 分卷按原文件体积均衡保存原始 GIF 并保留 `catalog/...` 相对路径。需要完整离线原始目录时，将四个 ZIP 解压到同一父目录即可还原；分卷只解决平台文件上限，不降低 GIF 质量或减少条目。发布工作流会在上传前拒绝任何达到 2 GiB 的分卷，防止案例增长后再次生成 GitHub 无法接收的附件。
 
 库所有者已明确授权正式收录视频随本地包、独立媒体包与 ComfyUI 交接分发。每个 `released/approved` 案例都必须满足 `preview_status.mp4=available_in_electron_media_pack`，媒体包 `files` 必须无遗漏覆盖全部公开案例，`unavailable_cases` 必须为空。分发授权与模型参考授权严格分离：GIF、海报和来源视频均不得自动连接到模型 reference 输入。
 

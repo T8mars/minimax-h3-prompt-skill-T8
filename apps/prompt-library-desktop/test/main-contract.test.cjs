@@ -51,6 +51,8 @@ test("release packages a compact app catalog and lossless split public preview a
   assert.ok(workflow.includes("Packaged and repository catalog manifests differ"));
   assert.ok(workflow.includes("prompt-library-previews-v$version-part1.zip"));
   assert.ok(workflow.includes("prompt-library-previews-v$version-part2.zip"));
+  assert.ok(workflow.includes("prompt-library-previews-v$version-part3.zip"));
+  assert.ok(workflow.includes("$previewBytes = [long[]]@(0, 0, 0)"), "original GIF previews must be balanced across three release volumes");
   assert.ok(workflow.includes('Where-Object { $_.Extension -eq ".gif" }'), "original GIF previews must be split without recompression");
   assert.ok(workflow.includes("New-Item -ItemType HardLink"), "release staging must not duplicate multi-gigabyte preview bytes");
   assert.ok(workflow.includes("2147483648"), "the workflow must fail before upload when any asset reaches GitHub's 2 GiB limit");
