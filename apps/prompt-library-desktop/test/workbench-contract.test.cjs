@@ -25,7 +25,7 @@ test("workbench exposes a three-step creator flow plus persistent provider setti
 
 test("API settings add a fourth recursive local GGUF channel without exposing model paths through generic IPC", () => {
   assert.equal((html.match(/<button class="provider-card\b/g) || []).length, 4);
-  for (const id of ["workbench-local-qwen-panel", "local-qwen-directory", "local-qwen-model", "local-qwen-projector", "local-qwen-runtime", "local-qwen-ffmpeg", "local-qwen-rescan", "local-qwen-verify", "local-qwen-release"]) {
+  for (const id of ["workbench-local-qwen-panel", "local-qwen-directory", "local-qwen-model", "local-qwen-projector", "local-qwen-runtime", "local-qwen-ffmpeg", "local-qwen-feedback", "local-qwen-rescan", "local-qwen-verify", "local-qwen-release"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`), `missing local GGUF control ${id}`);
   }
   for (const channel of ["prompt:local:status", "prompt:local:configure", "prompt:local:verify", "prompt:local:release", "prompt:local:rescan", "prompt:local:pick-model-directory", "prompt:local:pick-runtime", "prompt:local:pick-ffmpeg"]) {
@@ -34,6 +34,9 @@ test("API settings add a fourth recursive local GGUF channel without exposing mo
   }
   assert.match(main, /for \(const key of \["modelFilename", "projectorFilename", "contextSize"/u, "renderer settings IPC must whitelist non-path fields");
   assert.doesNotMatch(renderer, /localStorage\.setItem\([^\n]+(?:modelDirectory|runtimeExecutable|ffmpegExecutable)/u);
+  assert.match(renderer, /项目兼容型号 · 仍需完整校验/u, "a project-compatible filename must not be presented as already verified on this computer");
+  assert.match(renderer, /state\.localQwen = await api\.configureLocalQwen\(localConfigInput\(\)\);[\s\S]*renderLocalQwen\(state\.localQwen\);[\s\S]*api\.verifyLocalQwen\(\)/u, "full verification must save and render the visible selections before hashing files");
+  assert.match(renderer, /llama\.cpp b10436（commit 6fed9f6ff）/u, "runtime incompatibility must be explained inside the Chinese UI");
 });
 
 test("generation parameters expose Chinese and English output with Chinese as the default", () => {

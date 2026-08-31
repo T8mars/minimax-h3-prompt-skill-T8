@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-iamahmedfaraz66-2090285193307271614-browser-2090285193307271614-video-1",
+  "slug": "prove-product-through-first-person-test",
+  "title": "采摘一口实证｜环境基线、成熟选择、品尝与离场",
+  "source_title": "草莓园手机记录｜同一女性采摘、展示并试吃一颗草莓",
+  "summary": "真实画面是单一采摘任务而非七镜家庭蒙太奇：人物进入植株区，选择一颗成熟果，向镜头展示、吃下并带篮离场。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/prove-product-through-first-person-test",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-iamahmedfaraz66-2090285193307271614-browser-2090285193307271614-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-iamahmedfaraz66-2090285193307271614-browser-2090285193307271614-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-first-person-testimonial-proof-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-first-person-testimonial-proof-v1",
+  "input_format": "出镜测评者 + 未开封产品 + 完整内容展示 + 一个产品专属微距证据 + 一次完整使用 + 产品与反应同框",
+  "recommended_input": "成年温室管理员带小帆布袋进入香草床。；把同一枝薄荷举向镜头，叶缘和纹理清楚。；同一管理员沿开场通道离开，帆布袋和薄荷仍在手中。",
+  "required_anchors": [
+    "One person and one selected item remain bound.",
+    "Selection follows visible inspection.",
+    "Reaction follows the sensory test.",
+    "Departure closes the original task route."
+  ],
+  "tags": [
+    "first",
+    "person",
+    "testimonial",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-30T16:41:11+08:00",
+  "updated_at": "2026-08-30T17:05:58+08:00"
+}

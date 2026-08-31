@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-itswsm105f-2077666970707890376-browser-2077666970707890376-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "37e70ffc8610cb7f6f7059b633d534fd3bff1da21e94754f4c8d3552d163a765",
+    "creative_dna_sha256": "7c7546c16ca42ff95733f4e64afc35c6c7f05be427d792f4f8c989a2058814a9"
+  },
+  "content": {
+    "title": "Luxury Cleanser Proof | Bathroom Trust, Use Process, Texture and Packshot",
+    "summary": "A field medic proves a hand-cleaning pump through dose, lather and rinse. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One product and one user remain fixed. + A measured dose precedes application. + Texture change remains visibly verifiable. + Rinsing removes the applied material. + The final result returns to the complete product.",
+      "recommended_input": "Have one adult field medic present an original charcoal hand-cleaning pump in a bright mobile clinic. She rubs both hands until a thin visible lather covers fingers and backs of hands. Show the clean-hand result, then hold the complete original pump beside the exact line READY TO RETURN.",
+      "required_anchors": [
+        "One product and one user remain fixed.",
+        "A measured dose precedes application.",
+        "Rinsing removes the applied material.",
+        "The final result returns to the complete product."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A field medic proves a hand-cleaning pump through dose, lather and rinse. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A field medic proves a hand-cleaning pump through dose, lather and rinse. Preserve the five causal invariants and terminal proof while replacing every source-specific surface. The reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One product and one user remain fixed.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "A measured dose precedes application.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Texture change remains visibly verifiable.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Rinsing removes the applied material.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final result returns to the complete product.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "A field medic proves a hand-cleaning pump through dose, lather and rinse.",
+          "prompt_seed": "A field medic proves a hand-cleaning pump through dose, lather and rinse."
+        },
+        {
+          "concept": "An adult ceramicist proves a barrier cream through dose, spread and clay-residue release.",
+          "prompt_seed": "An adult ceramicist proves a barrier cream through dose, spread and clay-residue release."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "One product and one user remain fixed."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "A measured dose precedes application."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Texture change remains visibly verifiable."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Rinsing removes the applied material."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "The final result returns to the complete product."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A field medic proves a hand-cleaning pump through dose, lather and rinse.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult ceramicist proves a barrier cream through dose, spread and clay-residue release.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

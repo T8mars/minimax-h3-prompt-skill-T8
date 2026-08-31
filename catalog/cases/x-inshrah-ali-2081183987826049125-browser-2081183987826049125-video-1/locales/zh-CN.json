@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-inshrah-ali-2081183987826049125-browser-2081183987826049125-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "06e6053ac6a523620754d28ddfef2d795baac76de5ee12d581978703e8344e5b",
+    "creative_dna_sha256": "c5a0c2925e6607766461881a47f26ce73e2a853e2f31ad371a3f4f0ccbc9a2f6"
+  },
+  "content": {
+    "title": "抵达庆祝升级｜奔入人群、蛋糕峰值与城市烟花",
+    "summary": "主角先奔入等待人群，蛋糕和烛光集中注意，舞蹈、自拍、碰杯和共同许愿逐层扩展参与范围，终局拉远到屋顶与城市烟花。",
+    "quick_start": {
+      "input_format": "安静旅人 + 步行转奔跑 + 延迟目的地揭示 + 环境庆祝 + 人路目的地同框",
+      "recommended_input": "成年海洋生物学家抵达黄昏码头，成年队友正在等待。；一次团队合影、一次举杯和一段短集体步扩展参与。；镜头远拉，完整码头依次亮起，近海研究船以灯光回应。",
+      "required_anchors": [
+        "一位到达的成年人成为情感的锚点。",
+        "一个共享的焦点对象聚集了整个小组。",
+        "小组在顶峰前重新汇聚。",
+        "终端的全景视角证明了目的地和集体的收束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "主角先奔入等待人群，蛋糕和烛光集中注意，舞蹈、自拍、碰杯和共同许愿逐层扩展参与范围，终局拉远到屋顶与城市烟花。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "主角先奔入等待人群，蛋糕和烛光集中注意，舞蹈、自拍、碰杯和共同许愿逐层扩展参与范围，终局拉远到屋顶与城市烟花。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一位到达的成年人成为情感的锚点。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一个共享的焦点对象聚集了整个小组。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每个庆祝行动都扩大了参与度。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "小组在顶峰前重新汇聚。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端的全景视角证明了目的地和集体的收束。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个海洋团队将一个码头的到达变成了一次发射庆典。",
+          "prompt_seed": "一个海洋团队将一个码头的到达变成了一次发射庆典。"
+        },
+        {
+          "concept": "成年剧院工作人员将一个后台的到达变成了一次首映庆典。",
+          "prompt_seed": "成年剧院工作人员将一个后台的到达变成了一次首映庆典。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一位到达的成年人成为情感的锚点。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个共享的焦点对象聚集了整个小组。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每个庆祝行动都扩大了参与度。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "小组在顶峰前重新汇聚。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "终端的全景视角证明了目的地和集体的收束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个海洋团队将一个码头的到达变成了一次发射庆典。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "成年剧院工作人员将一个后台的到达变成了一次首映庆典。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

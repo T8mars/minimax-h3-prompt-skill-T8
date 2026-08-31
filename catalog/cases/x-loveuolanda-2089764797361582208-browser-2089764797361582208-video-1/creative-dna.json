@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Three research guides hand off through hair and hood occlusions before a group walk. Preserve the five causal invariants and terminal proof while replacing every source-specific surface. The reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One continuous room axis survives every swap.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Each person is established by a complete wardrobe proof.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "A real foreground body occlusion motivates each reveal.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Camera direction remains continuous across the occlusion.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The final group view proves all revealed people share the space.",
+      "purpose": "Preserves the mechanism's causal readability.",
+      "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "Three research guides hand off through hair and hood occlusions before a group walk.",
+      "prompt_seed": "Three research guides hand off through hair and hood occlusions before a group walk."
+    },
+    {
+      "concept": "Three adult chefs hand off behind apron and shoulder occlusions before one kitchen lineup.",
+      "prompt_seed": "Three adult chefs hand off behind apron and shoulder occlusions before one kitchen lineup."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "One continuous room axis survives every swap."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "Each person is established by a complete wardrobe proof."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "A real foreground body occlusion motivates each reveal."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "Camera direction remains continuous across the occlusion."
+    },
+    {
+      "failure": "Removing it breaks continuity, causality or the final proof.",
+      "repair": "The final group view proves all revealed people share the space."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "Three research guides hand off through hair and hood occlusions before a group walk.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "Three adult chefs hand off behind apron and shoulder occlusions before one kitchen lineup.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

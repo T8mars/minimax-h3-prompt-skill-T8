@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-meng-dagg695-2088521954940813636-browser-2088521954940813636-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "4ed6154ede989d26f37bfa403a02752ce642386d4e95e5407f674fefc3a87424",
+    "creative_dna_sha256": "169ef7fb118e205250e23ae05426dd0f0d95c17c973c1f05df8b2c349a029487"
+  },
+  "content": {
+    "title": "Eleven-Frame Fashion Moodboard | Environment, Angle and Pose Relay",
+    "summary": "A ceramicist's work trousers are verified across detail and full-body views. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One adult identity and garment remain fixed. + Every macro detail reconnects to a full view. + Front, side and rear geometry are all shown. + Pose changes do not alter fit or anatomy. + The final full body verifies the product board.",
+      "recommended_input": "Lock one adult ceramicist in a black shirt and sand-colored work trousers against a pale gray studio. Reconnect each detail to complete front, side and rear standing views. Return to the same ceramicist in a complete standing pose with all garment geometry readable.",
+      "required_anchors": [
+        "One adult identity and garment remain fixed.",
+        "Every macro detail reconnects to a full view.",
+        "Pose changes do not alter fit or anatomy.",
+        "The final full body verifies the product board."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A ceramicist's work trousers are verified across detail and full-body views. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A ceramicist's work trousers are verified across detail and full-body views. Preserve the five causal invariants and terminal proof while replacing every source-specific surface. The reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One adult identity and garment remain fixed.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Every macro detail reconnects to a full view.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Front, side and rear geometry are all shown.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Pose changes do not alter fit or anatomy.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final full body verifies the product board.",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "A ceramicist's work trousers are verified across detail and full-body views.",
+          "prompt_seed": "A ceramicist's work trousers are verified across detail and full-body views."
+        },
+        {
+          "concept": "An adult mechanic's jacket is verified across hardware, sleeve and complete fit views.",
+          "prompt_seed": "An adult mechanic's jacket is verified across hardware, sleeve and complete fit views."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "One adult identity and garment remain fixed."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Every macro detail reconnects to a full view."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Front, side and rear geometry are all shown."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "Pose changes do not alter fit or anatomy."
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "The final full body verifies the product board."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A ceramicist's work trousers are verified across detail and full-body views.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult mechanic's jacket is verified across hardware, sleeve and complete fit views.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

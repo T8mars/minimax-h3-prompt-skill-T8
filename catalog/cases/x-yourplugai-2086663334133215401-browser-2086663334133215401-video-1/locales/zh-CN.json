@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-yourplugai-2086663334133215401-browser-2086663334133215401-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "6690ecb9a71b19b25482c347f165d0931da26810671f2b7c0cb46c36fcdc68ed",
+    "creative_dna_sha256": "55ae5267a2b6e3e88c694b6537c95526dbb94e12be5c4939af32fd9b263da888"
+  },
+  "content": {
+    "title": "饮品感官跃迁｜搅拌基线、吸饮触发与包装回归",
+    "summary": "同一杯饮品先在现实环境被搅拌和吸饮，吸管动作触发背景跃迁；人物体验后返回干净棚拍，并用完整杯身和短句完成产品回归。",
+    "quick_start": {
+      "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+      "recommended_input": "成年天文馆向导在安静大厅搅拌原创紫色柑橘饮品。；吸饮期间只把背景变成缓慢星图穹顶和漂浮柑橘球。；重置到浅色摄影棚，完整原创杯放在黑玻璃台上，准确短句【TASTE THE NIGHT】停留。",
+      "required_anchors": [
+        "一个人和一只杯子仍然登记在册。",
+        "一个明显的抿嘴触发状态变化。",
+        "反应跟随完成的感官动作。",
+        "干净的工作室返回恢复完整包装。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一杯饮品先在现实环境被搅拌和吸饮，吸管动作触发背景跃迁；人物体验后返回干净棚拍，并用完整杯身和短句完成产品回归。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一杯饮品先在现实环境被搅拌和吸饮，吸管动作触发背景跃迁；人物体验后返回干净棚拍，并用完整杯身和短句完成产品回归。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个人和一只杯子仍然登记在册。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一个明显的抿嘴触发状态变化。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "背景变化但不替换产品。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "反应跟随完成的感官动作。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "干净的工作室返回恢复完整包装。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "紫色柑橘饮料在包装返回前开启了一种星图感官状态。",
+          "prompt_seed": "紫色柑橘饮料在包装返回前开启了一种星图感官状态。"
+        },
+        {
+          "concept": "草药茶在包装返回前开启了一种漂浮温室感官状态。",
+          "prompt_seed": "草药茶在包装返回前开启了一种漂浮温室感官状态。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个人和一只杯子仍然登记在册。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个明显的抿嘴触发状态变化。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "背景变化但不替换产品。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "反应跟随完成的感官动作。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "干净的工作室返回恢复完整包装。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "紫色柑橘饮料在包装返回前开启了一种星图感官状态。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "草药茶在包装返回前开启了一种漂浮温室感官状态。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -417,6 +417,7 @@
 .local-qwen-file-status span { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-width: 0; padding: 8px 10px; border: 1px solid #2c332d; border-radius: 9px; background: #0b0e0c; font-size: 10px; }
 .local-qwen-file-status strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .local-qwen-file-status em { color: #aeb7b0; font-style: normal; text-align: right; }
+.local-qwen-feedback { grid-column: 1 / -1; margin: 0; }
 @media (max-width: 1000px) {
   .api-settings-content .provider-cards { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .local-qwen-options { grid-template-columns: repeat(3,minmax(0,1fr)); }
@@ -425,7 +426,7 @@
 @media (max-width: 680px) {
   .api-settings-content .provider-cards { grid-template-columns: 1fr; }
   .local-qwen-panel, .local-qwen-options, .local-qwen-file-status { grid-template-columns: 1fr; }
-  .local-qwen-heading, .local-qwen-options, .local-qwen-file-status { grid-column: auto; }
+  .local-qwen-heading, .local-qwen-options, .local-qwen-file-status, .local-qwen-feedback { grid-column: auto; }
   .path-picker-row { grid-template-columns: 1fr; }
 }
 

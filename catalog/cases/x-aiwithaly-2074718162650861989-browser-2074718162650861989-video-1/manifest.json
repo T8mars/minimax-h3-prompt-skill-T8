@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithaly-2074718162650861989-browser-2074718162650861989-video-1",
+  "slug": "handoff-pursuit-into-faster-escape",
+  "title": "雨夜线索追入｜街道建立、门锁突破与仓库对峙",
+  "source_title": "最后证人｜侦探从霓虹街追入工业仓库",
+  "summary": "一名成年调查者沿雨夜地点链追踪：街道基线、门锁操作、仓库空场、目标出现、走廊追逐与双人终态；每次推进保留湿地反光和方向。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/handoff-pursuit-into-faster-escape",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithaly-2074718162650861989-browser-2074718162650861989-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithaly-2074718162650861989-browser-2074718162650861989-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-pursuit-handoff-escape-corridor-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-pursuit-handoff-escape-corridor-v1",
+  "input_format": "被追主体 + 单一追逐轴线 + 一次紧凑阻断 + 立即步行→更快载具交接 + 持续加速结尾",
+  "recommended_input": "成年水务巡检员沿雾港通道走向蓝色泵房信标。；进入积水泵厅，在涡轮后方揭示一名成年维修工。；全景收束，两名成年人被一台损坏水泵分隔，准确标题【PRESSURE LINE】出现。",
+  "required_anchors": [
+    "One adult investigator follows one recoverable route.",
+    "Each threshold is opened by a visible action.",
+    "The pursued figure remains spatially ahead.",
+    "The terminal wide frame locates both adults and the route payoff."
+  ],
+  "tags": [
+    "pursuit",
+    "handoff",
+    "escape",
+    "corridor"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-30T16:40:57+08:00",
+  "updated_at": "2026-08-30T17:05:58+08:00"
+}

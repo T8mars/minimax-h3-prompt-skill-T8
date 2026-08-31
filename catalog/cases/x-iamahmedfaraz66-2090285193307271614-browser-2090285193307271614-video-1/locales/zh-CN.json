@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-iamahmedfaraz66-2090285193307271614-browser-2090285193307271614-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "744b8da3891f3a2a0b0d2a876fb8598a0f483ba117b6c6682fbe8ad082a77538",
+    "creative_dna_sha256": "4aad55ec0278c805932437881b233a0bd50c1b2d00ca9e31a8d42aa00b3f7105"
+  },
+  "content": {
+    "title": "采摘一口实证｜环境基线、成熟选择、品尝与离场",
+    "summary": "真实画面是单一采摘任务而非七镜家庭蒙太奇：人物进入植株区，选择一颗成熟果，向镜头展示、吃下并带篮离场。",
+    "quick_start": {
+      "input_format": "出镜测评者 + 未开封产品 + 完整内容展示 + 一个产品专属微距证据 + 一次完整使用 + 产品与反应同框",
+      "recommended_input": "成年温室管理员带小帆布袋进入香草床。；把同一枝薄荷举向镜头，叶缘和纹理清楚。；同一管理员沿开场通道离开，帆布袋和薄荷仍在手中。",
+      "required_anchors": [
+        "一个人和一个选定的物品保持绑定。",
+        "选择遵循可见检查。",
+        "反应遵循感官测试。",
+        "出发关闭了原始任务路线。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "真实画面是单一采摘任务而非七镜家庭蒙太奇：人物进入植株区，选择一颗成熟果，向镜头展示、吃下并带篮离场。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "真实画面是单一采摘任务而非七镜家庭蒙太奇：人物进入植株区，选择一颗成熟果，向镜头展示、吃下并带篮离场。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个人和一个选定的物品保持绑定。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "选择遵循可见检查。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "展示的物品是后来进行测试的那个。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "反应遵循感官测试。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "出发关闭了原始任务路线。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位温室管理员挑选并闻了一株薄荷。",
+          "prompt_seed": "一位温室管理员挑选并闻了一株薄荷。"
+        },
+        {
+          "concept": "一位成年果园工人挑选并品尝了一颗李子，然后离开那行。",
+          "prompt_seed": "一位成年果园工人挑选并品尝了一颗李子，然后离开那行。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个人和一个选定的物品保持绑定。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "选择遵循可见检查。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "展示的物品是后来进行测试的那个。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "反应遵循感官测试。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "出发关闭了原始任务路线。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位温室管理员挑选并闻了一株薄荷。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年果园工人挑选并品尝了一颗李子，然后离开那行。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

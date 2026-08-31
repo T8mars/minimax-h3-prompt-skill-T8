@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-dheepanratnam-2042020362091720848-browser-2042020362091720848-video-1",
+  "slug": "solo-form-material-adversary-clash",
+  "title": "双材质攻防｜人物墨域、纸龙环绕与接触后回落",
+  "source_title": "墨僧对纸龙｜墨盾、水环与纸符围成终局",
+  "summary": "一名成年僧人与纸片长龙共享雨湿寺院，墨、水、纸三种介质各自承担防御、路径和围困；所有爆发都由清楚接触触发，终局回到地面残留。",
+  "status": "released",
+  "source_duration_seconds": 15.150143,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/solo-form-material-adversary-clash",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-dheepanratnam-2042020362091720848-browser-2042020362091720848-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-dheepanratnam-2042020362091720848-browser-2042020362091720848-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-solo-form-material-adversary-clash-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-solo-form-material-adversary-clash-v1",
+  "input_format": "单体招式与材质签名 + 环境材质凝成独立对手 + 空间跃迁建立对抗 + 第二能量材质碰撞 + 主体可读终态",
+  "recommended_input": "成年玻璃工在积水窑场面对铜箔带状生物。；跟随玻璃工穿过炉间通道，铜箔身体沿同一通道追随。；俯视拉远，轨道沉降为湿石面上的铜玻璃印记。",
+  "required_anchors": [
+    "Two material roles remain visually distinct.",
+    "Defense appears only at visible contact.",
+    "The redirecting action motivates the orbit.",
+    "The final residue records the clash without adding a new attack."
+  ],
+  "tags": [
+    "solo",
+    "form",
+    "material",
+    "adversary",
+    "clash"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-30T16:43:00+08:00",
+  "updated_at": "2026-08-30T17:05:58+08:00"
+}

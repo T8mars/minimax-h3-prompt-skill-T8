@@ -633,7 +633,7 @@
               <div class="local-qwen-heading">
                 <div>
                   <strong id="local-qwen-title">配置本地 GGUF</strong>
-                  <p id="local-qwen-note">递归扫描模型目录；三个实测型号会标为已验收，其他 llama.cpp 兼容 GGUF 会标为用户模型。</p>
+                  <p id="local-qwen-note">递归扫描模型目录；项目兼容型号仍需校验本机文件、投影器与 llama-server b10436，选择下拉项不等于已就绪。</p>
                 </div>
                 <span id="local-qwen-readiness" class="status-pill">未配置</span>
               </div>
@@ -643,7 +643,7 @@
               </label>
               <label class="workbench-field">
                 <span id="local-qwen-model-label">本地模型</span>
-                <select id="local-qwen-model"><option value="Qwen3.8-27B-Q4_K_M.gguf">Qwen3.8-27B Q4_K_M（官方，推荐）</option><option value="qwen3.8-27b-uncensored-fp8-q4_k_m.gguf">Qwen3.8-27B Uncensored FP8 Q4_K_M</option><option value="Qwen3.8-9B-heretic-uncensored.i1-Q6_K.gguf">Qwen3.8-9B Heretic（轻量，已验收）</option></select>
+                <select id="local-qwen-model"><option value="Qwen3.8-27B-Q4_K_M.gguf">Qwen3.8-27B Q4_K_M（官方，推荐）· 需完整校验</option><option value="qwen3.8-27b-uncensored-fp8-q4_k_m.gguf">Qwen3.8-27B Uncensored FP8 Q4_K_M · 需完整校验</option><option value="Qwen3.8-9B-heretic-uncensored.i1-Q6_K.gguf">Qwen3.8-9B Heretic（轻量）· 需完整校验</option></select>
               </label>
               <label class="workbench-field">
                 <span id="local-qwen-projector-label">视觉投影器</span>
@@ -666,6 +666,7 @@
                 <label class="workbench-field"><span id="local-qwen-unload-label">显存策略</span><select id="local-qwen-unload"><option value="after_run" selected>执行后卸载（推荐）</option><option value="keep_warm">保持驻留</option><option value="idle_10m">空闲10分钟后卸载</option></select></label>
               </div>
               <div class="local-qwen-file-status" id="local-qwen-file-status" aria-live="polite"></div>
+              <div id="local-qwen-feedback" class="run-status local-qwen-feedback hidden" role="status" aria-live="assertive"><span id="local-qwen-feedback-message"></span></div>
               <div class="credential-actions">
                 <button id="local-qwen-save" class="button copy-secondary" type="button">保存设置</button>
                 <button id="local-qwen-rescan" class="button copy-secondary" type="button">扫描 GGUF</button>

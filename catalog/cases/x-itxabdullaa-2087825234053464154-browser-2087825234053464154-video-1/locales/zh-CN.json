@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-itxabdullaa-2087825234053464154-browser-2087825234053464154-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "cc207743f1689a712f222acf9a010bcf16c4926e076d16a945f9de04d3871017",
+    "creative_dna_sha256": "2b10b43a09c4f3fd96a78b570767bccbd67b56444945b11806110d25148c0751"
+  },
+  "content": {
+    "title": "困倦晨间复位｜打哈欠、刷牙失误与毛巾清醒",
+    "summary": "固定手机机位记录一个可读晨间任务：困倦基线、挤牙膏失误、短暂自我整理、毛巾擦脸和状态复位，人物身份与浴室位置不变。",
+    "quick_start": {
+      "input_format": "一名明确成年原创主体以至少三项身份锚点先完成一个普通触觉任务 + 用一个真实前景物、门框或建筑边缘过渡到独立休息地理 + 准确展示一次慢呼吸和至少两项头发、服装、植物或光线微响应 + 呼吸期间摄影只做克制慢推或静止 + 同一成年人复位后沿既定方向穿过可见出口",
+      "recommended_input": "一名困倦成年灯塔管理员站在固定工具间镜头前，手持工作手套。；她揉眼并扎起散发，手套仍放在长凳上。；她放下围巾、戴好手套，朝不变镜头清醒点头。",
+      "required_anchors": [
+        "一个人、相机和房间保持固定。",
+        "一个小任务错误证明了疲劳。",
+        "一个前景布的过渡是任务驱动的。",
+        "最终状态变化通过动作和表情来展示。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定手机机位记录一个可读晨间任务：困倦基线、挤牙膏失误、短暂自我整理、毛巾擦脸和状态复位，人物身份与浴室位置不变。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定手机机位记录一个可读晨间任务：困倦基线、挤牙膏失误、短暂自我整理、毛巾擦脸和状态复位，人物身份与浴室位置不变。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个人、相机和房间保持固定。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一个小任务错误证明了疲劳。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "纠正内容仍然物理可读。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "一个前景布的过渡是任务驱动的。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终状态变化通过动作和表情来展示。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个灯塔管理员通过一个纠正的靴子任务恢复了准备状态。",
+          "prompt_seed": "一个灯塔管理员通过一个纠正的靴子任务恢复了准备状态。"
+        },
+        {
+          "concept": "一个成年人通过一个纠正的围裙和烤箱任务恢复了准备状态。",
+          "prompt_seed": "一个成年人通过一个纠正的围裙和烤箱任务恢复了准备状态。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个人、相机和房间保持固定。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个小任务错误证明了疲劳。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "纠正内容仍然物理可读。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一个前景布的过渡是任务驱动的。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "最终状态变化通过动作和表情来展示。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个灯塔管理员通过一个纠正的靴子任务恢复了准备状态。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个成年人通过一个纠正的围裙和烤箱任务恢复了准备状态。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

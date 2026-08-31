@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-noor-ul-ain43-2092184590001799236-browser-2092184590001799236-video-1",
+  "slug": "stage-progressive-character-reveal",
+  "title": "暗场人物揭晓｜眼部钩子、步态全身与外套释放",
+  "source_title": "未来女性登场｜红眼近景到步行、脱外套与飞吻",
+  "summary": "先用狭窄光带中的眼睛建立钩子，再按全身步行、服装动作、鞋部节拍和脸部表演逐层揭示同一成年人物。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-progressive-character-reveal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noor-ul-ain43-2092184590001799236-browser-2092184590001799236-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noor-ul-ain43-2092184590001799236-browser-2092184590001799236-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-staged-character-reveal-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-staged-character-reveal-v1",
+  "input_format": "标志细节→局部轮廓→面部→一次动作→全身英雄定格",
+  "recommended_input": "窄光缝只揭示原创成年轨道递送员的琥珀眼睛。；她脱下披风放在一个标记地格上，步态不断。；脸部以克制半笑和小幅敬礼结束，光缝闭合。",
+  "required_anchors": [
+    "One adult identity anchors every reveal level.",
+    "The opening detail belongs to the later full body.",
+    "Foot detail reconnects to the same walk.",
+    "The final facial gesture closes the staged reveal."
+  ],
+  "tags": [
+    "staged",
+    "character",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-30T16:40:28+08:00",
+  "updated_at": "2026-08-30T17:05:58+08:00"
+}

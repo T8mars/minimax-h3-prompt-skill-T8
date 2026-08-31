@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-inshrah-ali-2081183987826049125-browser-2081183987826049125-video-1",
+  "slug": "build-pace-to-destination-celebration",
+  "title": "抵达庆祝升级｜奔入人群、蛋糕峰值与城市烟花",
+  "source_title": "屋顶生日会｜来宾抵达后群体情绪逐级升温",
+  "summary": "主角先奔入等待人群，蛋糕和烛光集中注意，舞蹈、自拍、碰杯和共同许愿逐层扩展参与范围，终局拉远到屋顶与城市烟花。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/build-pace-to-destination-celebration",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-inshrah-ali-2081183987826049125-browser-2081183987826049125-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-inshrah-ali-2081183987826049125-browser-2081183987826049125-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-pace-to-destination-celebration-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-pace-to-destination-celebration-v1",
+  "input_format": "安静旅人 + 步行转奔跑 + 延迟目的地揭示 + 环境庆祝 + 人路目的地同框",
+  "recommended_input": "成年海洋生物学家抵达黄昏码头，成年队友正在等待。；一次团队合影、一次举杯和一段短集体步扩展参与。；镜头远拉，完整码头依次亮起，近海研究船以灯光回应。",
+  "required_anchors": [
+    "One arriving adult remains the emotional anchor.",
+    "A shared focal object gathers the group.",
+    "The group reconverges before the peak.",
+    "The terminal wide view proves destination and collective payoff."
+  ],
+  "tags": [
+    "pace",
+    "to",
+    "destination",
+    "celebration"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-30T16:44:01+08:00",
+  "updated_at": "2026-08-30T17:05:58+08:00"
+}

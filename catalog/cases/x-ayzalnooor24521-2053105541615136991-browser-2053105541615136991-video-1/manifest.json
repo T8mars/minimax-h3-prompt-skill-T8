@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ayzalnooor24521-2053105541615136991-browser-2053105541615136991-video-1",
+  "slug": "motion-contact-paint-trail-accumulation",
+  "title": "舞步生墨｜足底触发、身体带流与山水终态",
+  "source_title": "水墨舞者｜每次落足把黑墨扩展成彩色长卷",
+  "summary": "脚掌首次接触纸面产生墨迹，随后身体旋转持续拖带黑墨，并逐步加入红、蓝、金流线；终局人物淡出而累计轨迹保留为完整山水画。",
+  "status": "released",
+  "source_duration_seconds": 15.25551,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/motion-contact-paint-trail-accumulation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ayzalnooor24521-2053105541615136991-browser-2053105541615136991-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ayzalnooor24521-2053105541615136991-browser-2053105541615136991-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-motion-contact-paint-trail-accumulation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-motion-contact-paint-trail-accumulation-v1",
+  "input_format": "有边界表演区 + 明确成年多主体基线 + 站立到地面接触升级 + 每人独立留痕家族 + 轨迹只增不减 + 俯拍路径证明 + 完整队形收束",
+  "recommended_input": "成年书法表演者的靴子落到空白石膏地面，只产生一个钴蓝颜料池。；每次长杖挥动只延长已有带状轨迹，不生成断裂痕迹。；人物停止，全部累计线条沉降为原创风图壁画。",
+  "required_anchors": [
+    "The first visible contact creates the trail.",
+    "The performer remains the sole motion source.",
+    "Color additions follow distinct contacts.",
+    "The terminal artwork preserves the accumulated movement history."
+  ],
+  "tags": [
+    "motion",
+    "contact",
+    "paint",
+    "trail",
+    "accumulation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-30T16:41:04+08:00",
+  "updated_at": "2026-08-30T17:05:58+08:00"
+}

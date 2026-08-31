@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-meng-dagg695-2088521954940813636-browser-2088521954940813636-video-1",
+  "slug": "verify-recurring-identity-board",
+  "title": "基础服装验真｜面料细节、正侧背面与姿态回归",
+  "source_title": "牛仔裤试装板｜同一模特跨细节和全身镜位保持一致",
+  "summary": "用同一成年模特、白背心、蓝色牛仔裤和暖米背景建立商品试装板；细节镜头必须回连正面、侧面、背面和最终全身。",
+  "status": "released",
+  "source_duration_seconds": 15.136,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/verify-recurring-identity-board",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-meng-dagg695-2088521954940813636-browser-2088521954940813636-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-meng-dagg695-2088521954940813636-browser-2088521954940813636-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-recurring-identity-board-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-recurring-identity-board-v1",
+  "input_format": "固定角色板 + 同一原创主体 + 至少4种不同验证职责 + 广角/近景双证明 + 最终对照",
+  "recommended_input": "锁定一名成年陶艺师，穿黑色上衣和沙色工装裤，置于浅灰摄影棚。；每个细节都回连完整正面、侧面和背面站姿。；回到同一陶艺师完整站姿，全部服装几何清楚。",
+  "required_anchors": [
+    "One adult identity and garment remain fixed.",
+    "Every macro detail reconnects to a full view.",
+    "Pose changes do not alter fit or anatomy.",
+    "The final full body verifies the product board."
+  ],
+  "tags": [
+    "recurring",
+    "identity",
+    "board"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-30T16:41:57+08:00",
+  "updated_at": "2026-08-30T17:05:58+08:00"
+}

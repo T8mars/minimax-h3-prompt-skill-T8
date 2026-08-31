@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithaly-2074718162650861989-browser-2074718162650861989-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "abc8999d9a3feea4e2724d60a9a868cb0c72fd038e983fad9287798cde687f8a",
+    "creative_dna_sha256": "d599cbe4a676e794024ae52e05b07b2f8b2055a3c67d14a42b9ec829d5219f29"
+  },
+  "content": {
+    "title": "雨夜线索追入｜街道建立、门锁突破与仓库对峙",
+    "summary": "一名成年调查者沿雨夜地点链追踪：街道基线、门锁操作、仓库空场、目标出现、走廊追逐与双人终态；每次推进保留湿地反光和方向。",
+    "quick_start": {
+      "input_format": "被追主体 + 单一追逐轴线 + 一次紧凑阻断 + 立即步行→更快载具交接 + 持续加速结尾",
+      "recommended_input": "成年水务巡检员沿雾港通道走向蓝色泵房信标。；进入积水泵厅，在涡轮后方揭示一名成年维修工。；全景收束，两名成年人被一台损坏水泵分隔，准确标题【PRESSURE LINE】出现。",
+      "required_anchors": [
+        "一名成年调查员跟随一条可恢复的路线。",
+        "每个门槛通过一个可见的动作被打开。",
+        "被追逐的人在空间上仍然在前面。",
+        "终端宽镜头定位了成年人和路线的收束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "一名成年调查者沿雨夜地点链追踪：街道基线、门锁操作、仓库空场、目标出现、走廊追逐与双人终态；每次推进保留湿地反光和方向。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "一名成年调查者沿雨夜地点链追踪：街道基线、门锁操作、仓库空场、目标出现、走廊追逐与双人终态；每次推进保留湿地反光和方向。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名成年调查员跟随一条可恢复的路线。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个门槛通过一个可见的动作被打开。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "环境标记保留了旅行方向。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "被追逐的人在空间上仍然在前面。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端宽镜头定位了成年人和路线的收束。",
+          "purpose": "Preserves the mechanism's causal readability.",
+          "ablation_failure": "Removing it breaks continuity, causality or the final proof.",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名水 inspector 追赶一名维护工人进入 flooded 泵房。",
+          "prompt_seed": "一名水 inspector 追赶一名维护工人进入 flooded 泵房。"
+        },
+        {
+          "concept": "一位成年档案管理员在烟雾弥漫的记录仓库中追赶一名快递员。",
+          "prompt_seed": "一位成年档案管理员在烟雾弥漫的记录仓库中追赶一名快递员。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "一名成年调查员跟随一条可恢复的路线。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "每个门槛通过一个可见的动作被打开。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "环境标记保留了旅行方向。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "被追逐的人在空间上仍然在前面。"
+        },
+        {
+          "failure": "Removing it breaks continuity, causality or the final proof.",
+          "repair": "终端宽镜头定位了成年人和路线的收束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名水 inspector 追赶一名维护工人进入 flooded 泵房。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年档案管理员在烟雾弥漫的记录仓库中追赶一名快递员。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

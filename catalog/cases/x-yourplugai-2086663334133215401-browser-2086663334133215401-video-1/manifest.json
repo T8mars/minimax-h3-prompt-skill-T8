@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-yourplugai-2086663334133215401-browser-2086663334133215401-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "饮品感官跃迁｜搅拌基线、吸饮触发与包装回归",
+  "source_title": "珍珠奶茶传送感｜同一杯饮品把现实切换到云中世界",
+  "summary": "同一杯饮品先在现实环境被搅拌和吸饮，吸管动作触发背景跃迁；人物体验后返回干净棚拍，并用完整杯身和短句完成产品回归。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yourplugai-2086663334133215401-browser-2086663334133215401-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yourplugai-2086663334133215401-browser-2086663334133215401-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8c001-product-proof-state-machine",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "成年天文馆向导在安静大厅搅拌原创紫色柑橘饮品。；吸饮期间只把背景变成缓慢星图穹顶和漂浮柑橘球。；重置到浅色摄影棚，完整原创杯放在黑玻璃台上，准确短句【TASTE THE NIGHT】停留。",
+  "required_anchors": [
+    "One person and one cup remain registered.",
+    "A visible sip triggers the state change.",
+    "Reaction follows the completed sensory action.",
+    "The clean studio return restores the full package."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-30T16:44:17+08:00",
+  "updated_at": "2026-08-30T17:05:58+08:00"
+}

@@ -123,6 +123,9 @@ async function run() {
       assertClampedSettingsRemainUsable(localSettingsOverflow);
     }
     await page.screenshot({ path: localSettingsScreenshotPath, animations: "disabled" });
+    await page.locator("#local-qwen-verify").click();
+    await page.waitForSelector("#local-qwen-feedback:not(.hidden)");
+    assert.match(await page.locator("#local-qwen-feedback-message").textContent(), /请.*选择.*GGUF.*目录/u, "local verification errors must stay visible inside the settings window");
     await page.locator("#close-api-settings").click();
     await page.locator("#api-settings-dialog").waitFor({ state: "hidden" });
     await page.locator('[data-workbench-step="target"]').click();

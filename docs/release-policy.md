@@ -2,7 +2,7 @@
 
 ## 版本规则
 
-当前版本是 `v1.4.0`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.4.0`。
+当前版本是 `v1.4.1`。Git Tag 和 GitHub Release 带 `v`，`package.json` 使用不带 `v` 的 `1.4.1`。
 
 版本采用十进制进位：
 
@@ -50,7 +50,7 @@
 
 GitHub 页面需要快速浏览，因此提交优化后的 GIF/Poster。完整 MP4 会迅速放大 Git 历史，所以从本地 `.release-input/media/` 构建两个按体积均衡的无损媒体 ZIP 分卷并上传为 Release 资产。分卷与桌面安装包分离，仅用于避开 GitHub 单资产 2 GiB 的硬上限；这不是分发限制，也不会重编码视频。正式案例视频全部允许分发，把两个分卷解压到同一媒体目录后，应用会从用户数据目录、应用同级目录或显式 `T8_MEDIA_DIR` 自动挂载。旧版 `resources/media/` 继续兼容。
 
-为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个压缩，但仍保留全部动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。紧凑目录另有 420 MiB 硬门禁，超过即停止发布。v1.3.7 在 306 项目录下用旧 64 色配置实测为 445,133,255 字节并被正确阻断；v1.3.8 扩充到 326 项后，288 px / 4 fps / 56 色配置实测为 457,624,307 字节并再次正确阻断，随后 280 px / 4 fps / 48 色配置实测为 419,036,870 字节。当前 v1.4.0 的 366 项目录使用更紧凑的 256 px / 4 fps / 40 色配置，并继续受同一 420 MiB 硬门禁约束。完整 MP4、仓库原始 GIF和独立原始预览分卷不会被这一过程重编码。
+为保证 Windows 与 universal macOS 安装资产都低于 GitHub 的单文件大小上限，Release runner 会在 `.release-input/app-catalog/` 创建仅供 Electron 打包的紧凑目录副本：GIF 以单线程逐个压缩，但仍保留全部动态预览；JSON、Markdown、Poster、案例数量和 manifest 不变。紧凑目录另有 420 MiB 硬门禁，超过即停止发布。v1.3.7 在 306 项目录下用旧 64 色配置实测为 445,133,255 字节并被正确阻断；v1.3.8 扩充到 326 项后，288 px / 4 fps / 56 色配置实测为 457,624,307 字节并再次正确阻断，随后 280 px / 4 fps / 48 色配置实测为 419,036,870 字节。当前 v1.4.1 的 386 项目录使用更紧凑的 256 px / 4 fps / 40 色配置，并继续受同一 420 MiB 硬门禁约束。完整 MP4、仓库原始 GIF和独立原始预览分卷不会被这一过程重编码。
 
 Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHub 单资产 2 GiB 上限，独立公开目录按用途分为三个无损 ZIP：`prompt-library-catalog` 保存 JSON、Markdown 与 Poster，两个 `prompt-library-previews` 分卷保存原始 GIF 并保留 `catalog/...` 相对路径。需要完整离线原始目录时，将三个 ZIP 解压到同一父目录即可还原；分卷只解决平台文件上限，不降低 GIF 质量或减少条目。
 
@@ -79,10 +79,10 @@ Git 仓库继续保留原始 GIF。由于原始动态预览合计已超过 GitHu
 运行：
 
 ```powershell
-npm run media:pack -- -Version 1.4.0
+npm run media:pack -- -Version 1.4.1
 ```
 
-本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个正式案例和社区 Skill 媒体的时长、视频 codec 和音频 codec，按原文件体积均衡输出 `.release-input/out/prompt-library-media-v1.4.0-part1.zip`、`prompt-library-media-v1.4.0-part2.zip`、`media-pack-manifest.json` 和两个对应 SHA-256。两个 ZIP 都带相同 manifest，解压到同一目录即可无损还原完整媒体。manifest 的 `files` 必须覆盖全部正式案例，`unavailable_cases` 必须为空，`community_skill_files` 单独记录非官方 Skill 样片；`.release-input/` 已被 Git 忽略。
+本地需要可用的 `ffprobe`；不在 `PATH` 时可增加 `-FfprobePath <path>`。脚本实探测每个正式案例和社区 Skill 媒体的时长、视频 codec 和音频 codec，按原文件体积均衡输出 `.release-input/out/prompt-library-media-v1.4.1-part1.zip`、`prompt-library-media-v1.4.1-part2.zip`、`media-pack-manifest.json` 和两个对应 SHA-256。两个 ZIP 都带相同 manifest，解压到同一目录即可无损还原完整媒体。manifest 的 `files` 必须覆盖全部正式案例，`unavailable_cases` 必须为空，`community_skill_files` 单独记录非官方 Skill 样片；`.release-input/` 已被 Git 忽略。
 
 ## 手动发布流程
 
@@ -95,7 +95,7 @@ npm run media:pack -- -Version 1.4.0
 7. 工作流定位或安装 `ffmpeg`/`ffprobe`，从 Draft Release 下载两个媒体分卷、逐个校验 ZIP 哈希并解压到同一目录。
 8. 每个 `files` 或 `community_skill_files` 中的 MP4 都重新探测时长与 codec，并以单解码线程完整遍历视频轨；`audio_mode=present` 的媒体还必须完整遍历音频轨，来源本身无音轨的媒体必须明确记录 `audio_mode=source_silent` 与 `audio_codec=null`。探针结果必须与 manifest 一致。允许解码器自行恢复的孤立损坏帧，但容器、声明存在的轨道、进程退出或完整遍历失败仍会阻断发布。`unavailable_cases` 必须为空。
 9. Windows runner 与 macOS runner 分别用单线程 FFmpeg 生成安装包专用的紧凑动态 GIF 副本，并核对其 manifest 与仓库完全一致；随后 Windows 同时构建不重复内嵌 MP4 的 NSIS 与 portable 单文件，macOS 构建不重复内嵌 MP4 的 unsigned universal DMG + ZIP。门禁会阻止 `resources/media` 意外进入任何桌面包。
-10. 两个平台都以打包后的应用挂载同一份已还原并校验的外置媒体目录运行 E2E，证明 355 个案例、9 个官方仓库条目、2 个非官方 Skills、355 个可分发案例视频、2 个社区 Skill 视频、0 个不可用案例，以及收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用；Windows 还会实际启动 portable EXE，确认 `userData` 与 `sessionData` 都落在启动器旁的 `T8-Prompt-Library-Data`。
+10. 两个平台都以打包后的应用挂载同一份已还原并校验的外置媒体目录运行 E2E，证明 375 个案例、9 个官方仓库条目、2 个非官方 Skills、375 个可分发案例视频、2 个社区 Skill 视频、0 个不可用案例，以及收藏/合集/历史、双语、复制、音频播放（对有音轨媒体）、提示词和对比界面可用；Windows 还会实际启动 portable EXE，确认 `userData` 与 `sessionData` 都落在启动器旁的 `T8-Prompt-Library-Data`。
 11. 最终发布 Job 必须同时收到 Windows 与 macOS 已验证产物，核对精确资产集合后统一生成 `SHA256SUMS.txt`。
 12. 只有以上门禁通过，才上传全部目录包、Skills 包、媒体包、Windows 安装包和 macOS 安装包；`publish=true` 时才把 Draft 设为正式 Release。
 

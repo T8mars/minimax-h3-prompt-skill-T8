@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-inshrah-ali-2078316824328872040-browser-2078316824328872040-video-1",
+  "slug": "direct-imperfect-memory-farewell",
+  "title": "告别物证回环｜雨中回望、戒指落桌与空街余震",
+  "source_title": "雨夜关系断裂｜共同记忆交替后女方离场",
+  "summary": "当前雨中人物与暖色共同记忆交替，眼泪把回忆推回现实；一枚戒指落在湿桌成为关系物证，女方离场，男方追出却只面对驶过的列车和空路。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/direct-imperfect-memory-farewell",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-inshrah-ali-2078316824328872040-browser-2078316824328872040-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-inshrah-ali-2078316824328872040-browser-2078316824328872040-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-imperfect-memory-farewell-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-imperfect-memory-farewell-v1",
+  "input_format": "观察者媒介 + 日常人物/地点 + 两个日常动作 + 外部信号改变目标 + 一次回应 + 有动机录制失误",
+  "recommended_input": "成年地质学家戴透明雨帽站在暴雨车站外。；回到车站，她的克制表情破裂，雨水沿雨帽流下。；货运列车驶过空站台，伙伴独自停留，罗盘仍在原处。",
+  "required_anchors": [
+    "The same two adults anchor present and memory.",
+    "A recurring object bridges the time layers.",
+    "One placed object proves the separation.",
+    "The final empty route preserves the aftermath instead of reconciliation."
+  ],
+  "tags": [
+    "imperfect",
+    "memory",
+    "farewell"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-08-30T16:44:09+08:00",
+  "updated_at": "2026-08-30T17:05:58+08:00"
+}
