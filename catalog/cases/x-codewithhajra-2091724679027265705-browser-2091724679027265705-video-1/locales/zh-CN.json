@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-codewithhajra-2091724679027265705-browser-2091724679027265705-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "f6c2cd199ba0b77e0fe5915bef1bc3aafe960e51e8749e429b886580f50e9dc6",
+    "creative_dna_sha256": "e091507b376f5cc0925181abfa6bce94ab7281f488e553a8ea4f70c1820c6535"
+  },
+  "content": {
+    "title": "山谷巨龙显形｜人物尺度、地貌眼睛与完整头部揭示",
+    "summary": "先以成年独行者和固定山谷建立人类尺度，再让草坡中的单只眼睛、鳞片和头部轮廓逐层显形；人物持续靠近但不换位，终局用完整龙首和人物同框确认尺度。",
+    "quick_start": {
+      "input_format": "环境局部异常 + 单一身份特征 + 高位完整几何证明 + 环境尺度影响 + 低位近距离逼近",
+      "recommended_input": "成年冰川测量员穿黄色外套、背黑色背包，沿固定蓝冰路线前进。；半透明鳞板和鲸形机械头部从该准确冰壁显形，她停在同一标记处。；镜头拉宽，把头部、一个鳍边、测量员和开场蓝冰路线同框。",
+      "required_anchors": [
+        "一名成年观察者和一条路线建立了人体尺度。",
+        "一条有限的感官线索出现在完整的生物形态之前。",
+        "通过比例升级，观察者仍然可见。",
+        "最终的宽框架重新连接了完整的生物特征、观察者和原始空间关系。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先以成年独行者和固定山谷建立人类尺度，再让草坡中的单只眼睛、鳞片和头部轮廓逐层显形；人物持续靠近但不换位，终局用完整龙首和人物同框确认尺度。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先以成年独行者和固定山谷建立人类尺度，再让草坡中的单只眼睛、鳞片和头部轮廓逐层显形；人物持续靠近但不换位，终局用完整龙首和人物同框确认尺度。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名成年观察者和一条路线建立了人体尺度。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一名成年观察员和一条路线建立了人类规模。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一条有限的感官线索出现在完整的生物形态之前。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“在完整的生物形态之前出现一个有限的感官线索。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "生物几何形状从既定地形中出现，而不是从其他地方进入。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“生物几何体从已建立的地形中出现，而不是从其他地方进入。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "通过比例升级，观察者仍然可见。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“观察者在规模升级时仍然可见。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的宽框架重新连接了完整的生物特征、观察者和原始空间关系。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的宽框架重新连接了完整的生物特征、观察者和原始空间关系。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名冰川测量员在冰墙下方发现了一台类似鲸鱼的机器。",
+          "prompt_seed": "一名冰川测量员在冰墙下方发现了一台类似鲸鱼的机器。"
+        },
+        {
+          "concept": "一名成年沙漠工程师在峡谷表面下发现了埋藏的石头守护者。",
+          "prompt_seed": "一名成年沙漠工程师在峡谷表面下发现了埋藏的石头守护者。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一名成年观察员和一条路线建立了人类规模。”",
+          "repair": "一名成年观察者和一条路线建立了人体尺度。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“在完整的生物形态之前出现一个有限的感官线索。”",
+          "repair": "一条有限的感官线索出现在完整的生物形态之前。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“生物几何体从已建立的地形中出现，而不是从其他地方进入。”",
+          "repair": "生物几何形状从既定地形中出现，而不是从其他地方进入。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“观察者在规模升级时仍然可见。”",
+          "repair": "通过比例升级，观察者仍然可见。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的宽框架重新连接了完整的生物特征、观察者和原始空间关系。”",
+          "repair": "最终的宽框架重新连接了完整的生物特征、观察者和原始空间关系。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名冰川测量员在冰墙下方发现了一台类似鲸鱼的机器。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年沙漠工程师在峡谷表面下发现了埋藏的石头守护者。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-alin-reaper05-2094686295951859825-browser-2094686295951859825-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "5077a9bfa69db5332dcc72d63391eb1ff40edee153ff55c898362a154477d111",
+    "creative_dna_sha256": "4dfa9ffddc7862ff08a9105b559a197490f32f2eb4c29132767c113e9819b212"
+  },
+  "content": {
+    "title": "群体路线个体停步｜共同奔跑、微物吸引与静场余韵",
+    "summary": "先用统一方向的群体运动建立强路线，再让一个成员因微小发现脱离节奏并停步；镜头从群体尺度收紧到接触细节，最终以个体凝视和空场恢复代替继续奔跑。",
+    "quick_start": {
+      "input_format": "至少三名明确成年原创成员按同一方向组成可读队列 + 一名成员因局部目标减速并偏离群体节奏 + 其余成员继续保持路线 + 好奇目标被近景验证 + 群体停步或回连并共同确认该发现",
+      "recommended_input": "六名明确成年档案递送员穿统一灰外套，快速走过同一纸库通道。；停下的人发现文件箱上连着一根松散蓝线，并小心提起。；短暂停留她的识别反应，再回到已经空下来的通道，蓝线仍标记原箱体。",
+      "required_anchors": [
+        "在出现任何个人偏差之前，先建立一条共享的团体路线和节奏。",
+        "恰好有一个成员减速，而其余成员保持原创的方向。",
+        "详细证据重新连接到同一个人和地点。",
+        "航站楼安静的场地或过道保留了出发和发现的物理痕迹。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用统一方向的群体运动建立强路线，再让一个成员因微小发现脱离节奏并停步；镜头从群体尺度收紧到接触细节，最终以个体凝视和空场恢复代替继续奔跑。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先用统一方向的群体运动建立强路线，再让一个成员因微小发现脱离节奏并停步；镜头从群体尺度收紧到接触细节，最终以个体凝视和空场恢复代替继续奔跑。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在出现任何个人偏差之前，先建立一条共享的团体路线和节奏。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在任何个人偏差之前建立一个共享的团体路线和节奏。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "恰好有一个成员减速，而其余成员保持原创的方向。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“只有一名成员减速，而其余成员保持原始方向。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "一个可见的小发现，而不是随意的情绪，导致了停止。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“导致停止的是一个可见的小发现，而不是任意的情绪。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "详细证据重新连接到同一个人和地点。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“详细证据重新连接到同一个人和地点。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "航站楼安静的场地或过道保留了出发和发现的物理痕迹。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“航站楼安静区域或过道保留出发和发现的物理痕迹。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年档案信使离开移动小组去检查一条蓝线。",
+          "prompt_seed": "一名成年档案信使离开移动小组去检查一条蓝线。"
+        },
+        {
+          "concept": "一位成年田野科学家留下一条测量线来检查一个振动的种荚。",
+          "prompt_seed": "一位成年田野科学家留下一条测量线来检查一个振动的种荚。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在任何个人偏差之前建立一个共享的团体路线和节奏。”",
+          "repair": "在出现任何个人偏差之前，先建立一条共享的团体路线和节奏。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“只有一名成员减速，而其余成员保持原始方向。”",
+          "repair": "恰好有一个成员减速，而其余成员保持原创的方向。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“导致停止的是一个可见的小发现，而不是任意的情绪。”",
+          "repair": "一个可见的小发现，而不是随意的情绪，导致了停止。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“详细证据重新连接到同一个人和地点。”",
+          "repair": "详细证据重新连接到同一个人和地点。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“航站楼安静区域或过道保留出发和发现的物理痕迹。”",
+          "repair": "航站楼安静的场地或过道保留了出发和发现的物理痕迹。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年档案信使离开移动小组去检查一条蓝线。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年田野科学家留下一条测量线来检查一个振动的种荚。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

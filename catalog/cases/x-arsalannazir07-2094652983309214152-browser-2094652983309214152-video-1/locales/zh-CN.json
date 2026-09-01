@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-arsalannazir07-2094652983309214152-browser-2094652983309214152-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "5b869ed6b0dfb24f61c68d007f8450149560ae6dba30cee7568abd05b961e0ff",
+    "creative_dna_sha256": "1a644fa915cee8c58961e7a0b549099906863cdfacd82064d5ed50d7cb1458d1"
+  },
+  "content": {
+    "title": "违规者自摔反制｜偷取、逃跑失衡与目击者追加惩罚",
+    "summary": "固定高位观察视角先见证一个违规者从成年人身后偷走物件并逃跑，随后违规者自行失衡倒地；被偷者走近取回物件，再用重复但受控的动作完成喜剧惩罚并离场。",
+    "quick_start": {
+      "input_format": "两名明确成年原创角色与一件归属清楚的物品 + 一次非暴力违规夺取和可追踪逃离 + 违规者因自身路线失误发生安全可恢复的喜剧跌倒 + 原主人取回物品并只做一次安全反制 + 双方状态清楚后离场",
+      "recommended_input": "固定高位住宅窗视角中，成年单车递送员悄悄从成年花店主推车上拿走一个红色包裹。；松散配送带缠住后轮，只造成一次低速受控摔倒，包裹完整滑到路缘。；花店主带包裹离开，递送员尴尬坐起，故障自行车仍在原位。",
+      "required_anchors": [
+        "一个固定的目击者视图显示了任何报复之前的违规行为。",
+        "通过接近、飞行、坠落和恢复，准确的被盗物品仍然可见。",
+        "在有限的喜剧报复之前恢复物体。",
+        "最终状态将恢复的所有者、停止的违规者和持久的后果分开。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定高位观察视角先见证一个违规者从成年人身后偷走物件并逃跑，随后违规者自行失衡倒地；被偷者走近取回物件，再用重复但受控的动作完成喜剧惩罚并离场。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定高位观察视角先见证一个违规者从成年人身后偷走物件并逃跑，随后违规者自行失衡倒地；被偷者走近取回物件，再用重复但受控的动作完成喜剧惩罚并离场。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个固定的目击者视图显示了任何报复之前的违规行为。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“在任何报复之前，一个固定的证人视图会显示违规行为。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "通过接近、飞行、坠落和恢复，准确的被盗物品仍然可见。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“通过进近、飞行、坠落和恢复，确切的被盗物体仍然可见。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "违规者自身动作导致摔倒；证人没有造成伤害。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“违规者自己的动作导致跌倒；目击者并未造成伤害。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在有限的喜剧报复之前恢复物体。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“在有限的喜剧报复之前恢复物体。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终状态将恢复的所有者、停止的违规者和持久的后果分开。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终状态将恢复的所有者、停止的违规者和持久的后果分开。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名花店在一名快递员骑自行车摔倒后捡回了一个包裹。",
+          "prompt_seed": "一名花店在一名快递员骑自行车摔倒后捡回了一个包裹。"
+        },
+        {
+          "concept": "失控的服务车卡住了自己松动的电缆后，一名成年商贩恢复了标牌。",
+          "prompt_seed": "失控的服务车卡住了自己松动的电缆后，一名成年商贩恢复了标牌。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“在任何报复之前，一个固定的证人视图会显示违规行为。”",
+          "repair": "一个固定的目击者视图显示了任何报复之前的违规行为。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“通过进近、飞行、坠落和恢复，确切的被盗物体仍然可见。”",
+          "repair": "通过接近、飞行、坠落和恢复，准确的被盗物品仍然可见。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“违规者自己的动作导致跌倒；目击者并未造成伤害。”",
+          "repair": "违规者自身动作导致摔倒；证人没有造成伤害。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“在有限的喜剧报复之前恢复物体。”",
+          "repair": "在有限的喜剧报复之前恢复物体。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终状态将恢复的所有者、停止的违规者和持久的后果分开。”",
+          "repair": "最终状态将恢复的所有者、停止的违规者和持久的后果分开。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名花店在一名快递员骑自行车摔倒后捡回了一个包裹。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "失控的服务车卡住了自己松动的电缆后，一名成年商贩恢复了标牌。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

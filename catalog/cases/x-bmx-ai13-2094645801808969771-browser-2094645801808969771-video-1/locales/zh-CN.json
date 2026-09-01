@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-bmx-ai13-2094645801808969771-browser-2094645801808969771-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "6d16dc35ac70816ad082b889f10c9d2d4a010535f63aba585d21e7e1804eaf5f",
+    "creative_dna_sha256": "7fdf23f07cfc0222cb54a711787ebee179a7e6e307c0fe82b05fbbd635a1079e"
+  },
+  "content": {
+    "title": "庭院喂狗微任务｜进食基线、等待观察与轻触收束",
+    "summary": "在固定低机位中保持同一成年照料者、狗、食盆和庭院位置，先完整记录进食，再让人物等待、观察并做一次轻柔接触；取走空碗后，狗留在原位完成安静终态。",
+    "quick_start": {
+      "input_format": "一名明确成年原创主体以至少三项身份锚点先完成一个普通触觉任务 + 用一个真实前景物、门框或建筑边缘过渡到独立休息地理 + 准确展示一次慢呼吸和至少两项头发、服装、植物或光线微响应 + 呼吸期间摄影只做克制慢推或静止 + 同一成年人复位后沿既定方向穿过可见出口",
+      "recommended_input": "固定低位广角记录成年夜班面包师、年长店犬和安静装卸院中的一个蓝色水碗。；狗、水碗、院门和人物跪姿保持连续，不切镜也不重置机位。；人物带碗离开，最后停留同一条狗在院门旁安静休息。",
+      "required_anchors": [
+        "一名成年护理人员、一只动物、一艘船和一个固定地点保持连续。",
+        "动物的限界进食或饮水任务达到可见的完成状态。",
+        "完成后和清理前轻轻接触一次。",
+        "最终的安静状态将移除的容器与静止的动物分开并证明关闭。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "在固定低机位中保持同一成年照料者、狗、食盆和庭院位置，先完整记录进食，再让人物等待、观察并做一次轻柔接触；取走空碗后，狗留在原位完成安静终态。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在固定低机位中保持同一成年照料者、狗、食盆和庭院位置，先完整记录进食，再让人物等待、观察并做一次轻柔接触；取走空碗后，狗留在原位完成安静终态。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名成年护理人员、一只动物、一艘船和一个固定地点保持连续。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名成年护理人员、一只动物、一艘船和一个固定地点保持连续。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "动物的限界进食或饮水任务达到可见的完成状态。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“动物的有限进食或饮水任务达到可见的完成状态。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "等待行为不会中断或替换任务。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“等待行为不会中断或取代任务。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "完成后和清理前轻轻接触一次。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“完成后并在清理之前进行一次温和的接触。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的安静状态将移除的容器与静止的动物分开并证明关闭。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的安静状态将移除的容器与休息的动物分开并证明关闭。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年面包师等待一只年长的商店狗喝完后再进行清理。",
+          "prompt_seed": "一名成年面包师等待一只年长的商店狗喝完后再进行清理。"
+        },
+        {
+          "concept": "一名成年马厩工作人员等待一匹马吃完饲料，然后拆下食槽插件。",
+          "prompt_seed": "一名成年马厩工作人员等待一匹马吃完饲料，然后拆下食槽插件。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名成年护理人员、一只动物、一艘船和一个固定地点保持连续。”",
+          "repair": "一名成年护理人员、一只动物、一艘船和一个固定地点保持连续。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“动物的有限进食或饮水任务达到可见的完成状态。”",
+          "repair": "动物的限界进食或饮水任务达到可见的完成状态。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“等待行为不会中断或取代任务。”",
+          "repair": "等待行为不会中断或替换任务。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“完成后并在清理之前进行一次温和的接触。”",
+          "repair": "完成后和清理前轻轻接触一次。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的安静状态将移除的容器与休息的动物分开并证明关闭。”",
+          "repair": "最终的安静状态将移除的容器与静止的动物分开并证明关闭。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年面包师等待一只年长的商店狗喝完后再进行清理。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年马厩工作人员等待一匹马吃完饲料，然后拆下食槽插件。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

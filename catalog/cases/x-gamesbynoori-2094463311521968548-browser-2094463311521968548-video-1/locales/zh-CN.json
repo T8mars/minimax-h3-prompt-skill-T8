@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-gamesbynoori-2094463311521968548-browser-2094463311521968548-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "09abf806436c2340766c59b2e77c08942eabee0a1a4ab82c20e2332040a2d839",
+    "creative_dna_sha256": "b55daa9fa05c95b20c60e1bd401b4f1dc43e04f4bbf2077376291eeaef3ae532"
+  },
+  "content": {
+    "title": "第一视角工具调查｜雨镇抵达、器材切换与窥孔验真",
+    "summary": "第一视角玩家先在雨雾小镇建立目标建筑，再通过室内楼梯、工具栏、双筒镜和手持探测器逐步缩小调查范围；抵达诊所走廊后，只通过一个窥孔确认人物异常。",
+    "quick_start": {
+      "input_format": "远景入口 + 跨过阈值 + 连续通行 + 局部异常检查 + 可见路线终态（不下诊断）",
+      "recommended_input": "第一视角穿过雨湿港区，走向以圆形蓝色信标标记的原创海洋档案馆。；只切换一次手持热成像板，同一扇窗内显出一个静止暖色人影。；通过一个圆形检查孔停留门内成年档案员与闪烁蓝柜，不进入房间。",
+      "required_anchors": [
+        "一条第一人称路线在任何工具证据之前建立了一个遥远的目标。",
+        "每个选定的工具都会缩小相同的位置问题，并具有不同的可读结果。",
+        "内部通道保留了目标和第一人称方向。",
+        "一个有界检查孔可提供终端确认，而不会造成不正当进入或攻击。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "第一视角玩家先在雨雾小镇建立目标建筑，再通过室内楼梯、工具栏、双筒镜和手持探测器逐步缩小调查范围；抵达诊所走廊后，只通过一个窥孔确认人物异常。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "第一视角玩家先在雨雾小镇建立目标建筑，再通过室内楼梯、工具栏、双筒镜和手持探测器逐步缩小调查范围；抵达诊所走廊后，只通过一个窥孔确认人物异常。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一条第一人称路线在任何工具证据之前建立了一个遥远的目标。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一条第一人称路线在任何工具证据之前建立一个遥远的目标。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个选定的工具都会缩小相同的位置问题，并具有不同的可读结果。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“每个选定的工具都会缩小相同的位置问题，并具有不同的可读结果。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "工具证据不是作为装饰，而是促使玩家移动到目标建筑物。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“工具证据促使移动到目标建筑物而不是用作装饰。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "内部通道保留了目标和第一人称方向。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“内部通道保留目标和第一人称方向。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "一个有界检查孔可提供终端确认，而不会造成不正当进入或攻击。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“一个有界检查孔可提供终端确认，而不会出现不正当进入或攻击。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "港口档案调查范围从双筒望远镜缩小到热证据和一个检查口。",
+          "prompt_seed": "港口档案调查范围从双筒望远镜缩小到热证据和一个检查口。"
+        },
+        {
+          "concept": "山地中继站的调查范围从望远镜缩小到无线电扫描仪和一个维护舱口。",
+          "prompt_seed": "山地中继站的调查范围从望远镜缩小到无线电扫描仪和一个维护舱口。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一条第一人称路线在任何工具证据之前建立一个遥远的目标。”",
+          "repair": "一条第一人称路线在任何工具证据之前建立了一个遥远的目标。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“每个选定的工具都会缩小相同的位置问题，并具有不同的可读结果。”",
+          "repair": "每个选定的工具都会缩小相同的位置问题，并具有不同的可读结果。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“工具证据促使移动到目标建筑物而不是用作装饰。”",
+          "repair": "工具证据不是作为装饰，而是促使玩家移动到目标建筑物。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“内部通道保留目标和第一人称方向。”",
+          "repair": "内部通道保留了目标和第一人称方向。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“一个有界检查孔可提供终端确认，而不会出现不正当进入或攻击。”",
+          "repair": "一个有界检查孔可提供终端确认，而不会造成不正当进入或攻击。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "港口档案调查范围从双筒望远镜缩小到热证据和一个检查口。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "山地中继站的调查范围从望远镜缩小到无线电扫描仪和一个维护舱口。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

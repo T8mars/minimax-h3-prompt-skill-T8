@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-100xmart-2094545772012257382-browser-2094545772012257382-video-1",
+  "slug": "reveal-scale-through-environment-deformation",
+  "title": "埋沙古城揭露｜空旷基线、轮廓显形与城门抵达",
+  "source_title": "失落沙漠城｜风沙退去后从地貌显出完整城市",
+  "summary": "先用连续沙丘建立无人基线，再让同一区域的道路、墙体和塔楼按尺度逐层显形；镜头持续前进，最终穿过可识别城门并把外部地貌与内部花园回连。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reveal-scale-through-environment-deformation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-100xmart-2094545772012257382-browser-2094545772012257382-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-100xmart-2094545772012257382-browser-2094545772012257382-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-environment-deformation-scale-reveal-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-environment-deformation-scale-reveal-v1",
+  "input_format": "环境局部异常 + 单一身份特征 + 高位完整几何证明 + 环境尺度影响 + 低位近距离逼近",
+  "recommended_input": "沿空旷白色盐湖盆地连续航拍前进，开场不出现建筑。；原创太阳能档案城从近到远依次升起，盆地地理不得被替换。；只穿过城门一次，以广角回连完整档案城和开场盐湖地平线。",
+  "required_anchors": [
+    "One empty terrain and one continuous approach axis establish the baseline.",
+    "Subsurface traces precede all full architectural emergence.",
+    "One threshold converts distant discovery into physical arrival.",
+    "The terminal view reconnects the complete revealed settlement to the opening terrain."
+  ],
+  "tags": [
+    "environment",
+    "deformation",
+    "scale",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:31+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

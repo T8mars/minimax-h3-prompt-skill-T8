@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-taliaaariz-2093755381050929623-browser-2093755381050929623-video-1",
+  "slug": "accessory-detail-material-motif-fashion-relay",
+  "title": "孔雀高定展开｜正面步态、尾扇增长与完整礼服回连",
+  "source_title": "孔雀礼服展示｜同一女性由窄裙逐步展开巨大尾扇",
+  "summary": "同一成年模特在固定宫殿轴线上前进，先证明脸部和窄身礼服，再让孔雀纹样、肩部结构和尾扇按尺度逐层展开；终局完整礼服、人物和背景对称轴同时可读。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/accessory-detail-material-motif-fashion-relay",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-taliaaariz-2093755381050929623-browser-2093755381050929623-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-taliaaariz-2093755381050929623-browser-2093755381050929623-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-accessory-detail-material-motif-fashion-relay-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-accessory-detail-material-motif-fashion-relay-v1",
+  "input_format": "一名明确成年原创模特、至少三项身份锚点和一种原创材质母题先建立 + 至少四类不同配饰且每章先完成一次触觉或结构证明 + 同一高光、纹理、边缘或声音逐件匹配接力 + 细节模块最终回连同一成年人的完整姿态与步态 + 只以完全原创短品牌收束且不得保留来源标志与产品轮廓",
+  "recommended_input": "锁定原创成年歌剧设计师：黑色短发、琥珀眼和贴身炭灰礼服，站在浅石画廊中心线。；折叠铜纸纹样从下裙摆分两层注册展开。；全身英雄镜头中，人物、完整礼服、铜扇和画廊对称轴均清楚。",
+  "required_anchors": [
+    "One adult identity and one symmetrical runway axis remain fixed.",
+    "The fitted baseline garment is proven before structural expansion.",
+    "The expanded fan remains physically attached and does not replace the person.",
+    "The final full-body frame proves complete garment, identity and environment symmetry."
+  ],
+  "tags": [
+    "accessory",
+    "detail",
+    "material",
+    "motif",
+    "fashion",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:34+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

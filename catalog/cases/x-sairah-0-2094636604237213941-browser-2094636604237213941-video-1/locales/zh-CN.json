@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-sairah-0-2094636604237213941-browser-2094636604237213941-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "a2b27304fba906604fc59639ecb9501494a994c1c3e13635a6b5a87a65d8e0d9",
+    "creative_dna_sha256": "b87c067c14cf9659eba9eb8ea93ca0c0cc83e705a268e467f2454a9998b07876"
+  },
+  "content": {
+    "title": "晨间自拍视频压缩｜卧室问候、饮水、换装与出门",
+    "summary": "以手持自拍视频持续锁定同一成年人物，按卧室问候、厨房饮水、换装束发、地面准备和户外步行压缩晨间流程；每次地点切换都由脸部或手势接力。",
+    "quick_start": {
+      "input_format": "稳定主体与目的地 + 单职责短动作 + 姿态/手中物/方向接力 + 累积准备状态 + 单向路线 + 终点结果动作",
+      "recommended_input": "手持晨间自拍视频锁定原创成年博物馆讲解员：黑色短发和银色耳扣，起始于小公寓。；人物穿锈红工作夹克回连，固定同一耳扣并装入一张折叠地图。；户外保持同一身份和夹克，她挥手一次、转向前方并走向博物馆入口。",
+      "required_anchors": [
+        "一个成人身份和手持自拍载体贯穿所有常规章节。",
+        "每次位置变化都使用可见的脸部、手或道具切换。",
+        "服装变化是有限的，并保持相同的面部、头发和身体比例。",
+        "最后的户外运动证明了从私人日常活动到目的地路线的偏离。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "以手持自拍视频持续锁定同一成年人物，按卧室问候、厨房饮水、换装束发、地面准备和户外步行压缩晨间流程；每次地点切换都由脸部或手势接力。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "以手持自拍视频持续锁定同一成年人物，按卧室问候、厨房饮水、换装束发、地面准备和户外步行压缩晨间流程；每次地点切换都由脸部或手势接力。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个成人身份和手持自拍载体贯穿所有常规章节。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“在所有常规章节中始终保留一个成人身份和手持自拍载体。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每次位置变化都使用可见的脸部、手或道具切换。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每次位置变化都使用可见的脸部、手或道具交接。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每一章都贡献一个完成的早晨动作，而不是装饰性的姿势。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“每一章都贡献一个完成的早晨动作，而不是装饰性的姿势。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "服装变化是有限的，并保持相同的面部、头发和身体比例。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“衣柜变化是有限的，并且保留相同的面部、头发和身体比例。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后的户外运动证明了从私人日常活动到目的地路线的偏离。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最后的户外运动证明从私人日常活动出发进入目的地路线。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成人博物馆导游将五个早晨的活动压缩为一条出发路线。",
+          "prompt_seed": "一名成人博物馆导游将五个早晨的活动压缩为一条出发路线。"
+        },
+        {
+          "concept": "一名成年战地医务人员从起床、补水和收拾行李到到达诊所。",
+          "prompt_seed": "一名成年战地医务人员从起床、补水和收拾行李到到达诊所。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“在所有常规章节中始终保留一个成人身份和手持自拍载体。”",
+          "repair": "一个成人身份和手持自拍载体贯穿所有常规章节。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每次位置变化都使用可见的脸部、手或道具交接。”",
+          "repair": "每次位置变化都使用可见的脸部、手或道具切换。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“每一章都贡献一个完成的早晨动作，而不是装饰性的姿势。”",
+          "repair": "每一章都贡献一个完成的早晨动作，而不是装饰性的姿势。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“衣柜变化是有限的，并且保留相同的面部、头发和身体比例。”",
+          "repair": "服装变化是有限的，并保持相同的面部、头发和身体比例。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最后的户外运动证明从私人日常活动出发进入目的地路线。”",
+          "repair": "最后的户外运动证明了从私人日常活动到目的地路线的偏离。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成人博物馆导游将五个早晨的活动压缩为一条出发路线。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年战地医务人员从起床、补水和收拾行李到到达诊所。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

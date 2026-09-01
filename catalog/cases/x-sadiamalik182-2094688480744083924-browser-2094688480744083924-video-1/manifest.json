@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sadiamalik182-2094688480744083924-browser-2094688480744083924-video-1",
+  "slug": "irreversible-cooking-state-chain-serving-proof",
+  "title": "拉面冲击状态链｜火焰、落锅、配料爆发与成品停留",
+  "source_title": "方便面动作广告｜包装、面饼与酱料按冲击节奏连续出招",
+  "summary": "把炉火、沸水、面饼入锅、配料落下、酱料混合和成品装碗组织为不可逆状态链；每次冲击都改变同一食材状态，最后用蛋黄与热气完成可食证明。",
+  "status": "released",
+  "source_duration_seconds": 13.119274,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/irreversible-cooking-state-chain-serving-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sadiamalik182-2094688480744083924-browser-2094688480744083924-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sadiamalik182-2094688480744083924-browser-2094688480744083924-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+  "input_format": "一名明确成年原创操作者、固定空间、主材料组、主要容器与手部或工具锚点先建立 + 至少五个不可逆状态且每镜只执行一次清楚操作 + 上一状态的残留、形状、颜色、蒸汽或容器连续成为下一步输入 + 不得回到已消失的早期状态并保持数量合理 + 同一成品由同一成年人完成一次克制使用或品尝证明",
+  "recommended_input": "点亮浅铜锅下的一圈感应火光，建立一张原创干米糕片和正在微沸的汤底。；绿香草、红椒油和烤芝麻分三次明确接触加入，先前配料持续可追踪。；顶部放一枚水波蛋，热气、酱汁包裹、完整碗体和干净盘边共同停留。",
+  "required_anchors": [
+    "Heat is established before the first ingredient state change.",
+    "Each addition visibly contacts and remains part of one continuous food inventory.",
+    "Transfer to the serving vessel preserves the completed food rather than replacing it.",
+    "A final garnish and steam hold prove a complete edible result."
+  ],
+  "tags": [
+    "irreversible",
+    "cooking",
+    "state",
+    "chain",
+    "serving",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:58+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

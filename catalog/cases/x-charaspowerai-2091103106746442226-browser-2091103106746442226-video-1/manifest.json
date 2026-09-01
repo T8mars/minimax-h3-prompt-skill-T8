@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-charaspowerai-2091103106746442226-browser-2091103106746442226-video-1",
+  "slug": "material-scale-expansion-exact-return-loop",
+  "title": "液态铬字凝聚｜水滴汇流、字形锁定与粒子消散",
+  "source_title": "金属标题变形｜液滴聚成 EVOLVE 后重新解体",
+  "summary": "同一银色流体从水面波纹和液滴逐步汇聚为立体字形，材质、运动方向和高光连续；完整词语清楚停留后，再从末端开始解体为粒子并回到黑色基线。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/material-scale-expansion-exact-return-loop",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2091103106746442226-browser-2091103106746442226-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2091103106746442226-browser-2091103106746442226-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-scale-expansion-exact-return-loop-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-material-scale-expansion-exact-return-loop-v1",
+  "input_format": "微小材质锚点 + 可见触发 + 至少两级尺度扩张 + 最大世界保持 + 沿同一谱系精确回收原点",
+  "recommended_input": "琥珀玻璃液滴沿同一由左向右水流穿过深蓝反光平面。；玻璃团从左到右解析为准确完整单词【TIDAL】，字距清楚。；文字从右到左重新散成原液滴，留下同一空深蓝平面。",
+  "required_anchors": [
+    "One material family and one directional flow drive every phase.",
+    "Mass aggregation remains monotonic before letter formation.",
+    "Typography geometry remains stable during the hold.",
+    "The terminal dissolution returns the material to the opening field and particle scale."
+  ],
+  "tags": [
+    "material",
+    "scale",
+    "expansion",
+    "exact",
+    "return",
+    "loop"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:32+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

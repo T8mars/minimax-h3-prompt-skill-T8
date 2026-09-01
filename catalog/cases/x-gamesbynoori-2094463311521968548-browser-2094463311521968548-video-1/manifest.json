@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-gamesbynoori-2094463311521968548-browser-2094463311521968548-video-1",
+  "slug": "stage-threshold-inspection-passage",
+  "title": "第一视角工具调查｜雨镇抵达、器材切换与窥孔验真",
+  "source_title": "第一视角诊所调查｜雨镇移动、工具筛选与门孔揭示",
+  "summary": "第一视角玩家先在雨雾小镇建立目标建筑，再通过室内楼梯、工具栏、双筒镜和手持探测器逐步缩小调查范围；抵达诊所走廊后，只通过一个窥孔确认人物异常。",
+  "status": "released",
+  "source_duration_seconds": 16.384,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-threshold-inspection-passage",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-gamesbynoori-2094463311521968548-browser-2094463311521968548-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-gamesbynoori-2094463311521968548-browser-2094463311521968548-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-threshold-inspection-passage-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-threshold-inspection-passage-v1",
+  "input_format": "远景入口 + 跨过阈值 + 连续通行 + 局部异常检查 + 可见路线终态（不下诊断）",
+  "recommended_input": "第一视角穿过雨湿港区，走向以圆形蓝色信标标记的原创海洋档案馆。；只切换一次手持热成像板，同一扇窗内显出一个静止暖色人影。；通过一个圆形检查孔停留门内成年档案员与闪烁蓝柜，不进入房间。",
+  "required_anchors": [
+    "One first-person route establishes a distant target before any tool evidence.",
+    "Each selected tool narrows the same location question and has a distinct readable result.",
+    "Interior passage preserves the target and first-person orientation.",
+    "One bounded inspection aperture provides the terminal confirmation without an unjustified entry or attack."
+  ],
+  "tags": [
+    "threshold",
+    "inspection",
+    "passage"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:59+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

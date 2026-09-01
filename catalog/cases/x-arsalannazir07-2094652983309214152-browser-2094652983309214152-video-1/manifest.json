@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-arsalannazir07-2094652983309214152-browser-2094652983309214152-video-1",
+  "slug": "misdirected-violation-comic-retaliation-exit",
+  "title": "违规者自摔反制｜偷取、逃跑失衡与目击者追加惩罚",
+  "source_title": "老人机器人街头反转｜偷包逃跑、自摔后手杖喜剧反制",
+  "summary": "固定高位观察视角先见证一个违规者从成年人身后偷走物件并逃跑，随后违规者自行失衡倒地；被偷者走近取回物件，再用重复但受控的动作完成喜剧惩罚并离场。",
+  "status": "released",
+  "source_duration_seconds": 15.210667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/misdirected-violation-comic-retaliation-exit",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-arsalannazir07-2094652983309214152-browser-2094652983309214152-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-arsalannazir07-2094652983309214152-browser-2094652983309214152-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-misdirected-violation-comic-retaliation-exit-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "两名明确成年原创角色与一件归属清楚的物品 + 一次非暴力违规夺取和可追踪逃离 + 违规者因自身路线失误发生安全可恢复的喜剧跌倒 + 原主人取回物品并只做一次安全反制 + 双方状态清楚后离场",
+  "recommended_input": "固定高位住宅窗视角中，成年单车递送员悄悄从成年花店主推车上拿走一个红色包裹。；松散配送带缠住后轮，只造成一次低速受控摔倒，包裹完整滑到路缘。；花店主带包裹离开，递送员尴尬坐起，故障自行车仍在原位。",
+  "required_anchors": [
+    "One fixed witness view shows the violation before any retaliation.",
+    "The exact stolen object remains visible through approach, flight, fall and recovery.",
+    "Recovery of the object precedes the bounded comic retaliation.",
+    "The terminal state separates recovered owner, stopped violator and persistent aftermath."
+  ],
+  "tags": [
+    "misdirected",
+    "violation",
+    "comic",
+    "retaliation",
+    "exit"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:58+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

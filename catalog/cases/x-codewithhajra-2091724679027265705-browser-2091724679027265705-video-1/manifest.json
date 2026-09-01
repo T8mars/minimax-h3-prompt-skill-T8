@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-codewithhajra-2091724679027265705-browser-2091724679027265705-video-1",
+  "slug": "reveal-scale-through-environment-deformation",
+  "title": "山谷巨龙显形｜人物尺度、地貌眼睛与完整头部揭示",
+  "source_title": "巨兽尺度片｜独行者由山壁眼睛发现完整龙首",
+  "summary": "先以成年独行者和固定山谷建立人类尺度，再让草坡中的单只眼睛、鳞片和头部轮廓逐层显形；人物持续靠近但不换位，终局用完整龙首和人物同框确认尺度。",
+  "status": "released",
+  "source_duration_seconds": 14.72,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reveal-scale-through-environment-deformation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-codewithhajra-2091724679027265705-browser-2091724679027265705-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-codewithhajra-2091724679027265705-browser-2091724679027265705-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-environment-deformation-scale-reveal-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-environment-deformation-scale-reveal-v1",
+  "input_format": "环境局部异常 + 单一身份特征 + 高位完整几何证明 + 环境尺度影响 + 低位近距离逼近",
+  "recommended_input": "成年冰川测量员穿黄色外套、背黑色背包，沿固定蓝冰路线前进。；半透明鳞板和鲸形机械头部从该准确冰壁显形，她停在同一标记处。；镜头拉宽，把头部、一个鳍边、测量员和开场蓝冰路线同框。",
+  "required_anchors": [
+    "One adult observer and one route establish human scale.",
+    "One bounded sensory clue appears before the complete creature form.",
+    "The observer remains visible through the scale escalation.",
+    "The final wide frame reconnects complete creature feature, observer and original geography."
+  ],
+  "tags": [
+    "environment",
+    "deformation",
+    "scale",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:33+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

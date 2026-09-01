@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A mechanical bird becomes a chrome desk lamp after one induction pulse. Preserve the five causal invariants and terminal proof while replacing every source-specific surface. The reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One readable threat and one adult responder share a continuous space before intervention.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One readable threat and one adult responder share a continuous space before intervention.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "A single committed counter-action visibly causes the conversion.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A single committed counter-action visibly causes the conversion.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "The source threat remains traceable through the intermediate material change.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The source threat remains traceable through the intermediate material change.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "The final product occupies the threat's registered impact position and is complete.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The final product occupies the threat's registered impact position and is complete.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "A terminal human reaction confirms the product state after an isolated hero hold.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"A terminal human reaction confirms the product state after an isolated hero hold.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "A mechanical bird becomes a chrome desk lamp after one induction pulse.",
+      "prompt_seed": "A mechanical bird becomes a chrome desk lamp after one induction pulse."
+    },
+    {
+      "concept": "A rolling ice creature becomes a translucent cooler after one thermal countermeasure.",
+      "prompt_seed": "A rolling ice creature becomes a translucent cooler after one thermal countermeasure."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One readable threat and one adult responder share a continuous space before intervention.\"",
+      "repair": "One readable threat and one adult responder share a continuous space before intervention."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A single committed counter-action visibly causes the conversion.\"",
+      "repair": "A single committed counter-action visibly causes the conversion."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The source threat remains traceable through the intermediate material change.\"",
+      "repair": "The source threat remains traceable through the intermediate material change."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The final product occupies the threat's registered impact position and is complete.\"",
+      "repair": "The final product occupies the threat's registered impact position and is complete."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"A terminal human reaction confirms the product state after an isolated hero hold.\"",
+      "repair": "A terminal human reaction confirms the product state after an isolated hero hold."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A mechanical bird becomes a chrome desk lamp after one induction pulse.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A rolling ice creature becomes a translucent cooler after one thermal countermeasure.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

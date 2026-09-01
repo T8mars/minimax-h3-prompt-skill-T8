@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-afrinxai-2094628869592748271-browser-2094628869592748271-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "97a2c56d54fd9e9cc534c458336e8c44dd9f15bd867af9fb904e7c4073df769e",
+    "creative_dna_sha256": "a45eda4e18aab6c2db8a75d39aa427a396d903db28204c966b8c1145304e1f24"
+  },
+  "content": {
+    "title": "空街回望追逐｜孤立基线、远端人影与巷道逼近",
+    "summary": "同一成年人物先在空街反复回望建立寂静异常，远处人影从单个增加为群体并开始接近；人物确认威胁后沿狭窄巷道逃跑，追逐者在背景持续缩短距离。",
+    "quick_start": {
+      "input_format": "明确成年原创主体和一个小型可重复前景任务先建立 + 背景危险至少经过三档接近等级升级且方向可读 + 每次危险后双手与视线都回到同一任务物 + 早期只做最小避让并把最大身体位移保留给一次近接峰值 + 危险过去后重新执行原任务而非庆祝或击败威胁",
+      "recommended_input": "成年勘测员穿黄色夹克站在空旷雾港，反复检查身后寂静水面。；堆放货箱旁再出现两个人影，勘测员转身并确认三者。；到达锁住的网门时，追逐距离继续缩短，不切走也不凭空出现救援。",
+      "required_anchors": [
+        "空基线和一次重复的向后检查确定了未解决的威胁问题。",
+        "第一个远处的图形出现在已经建立的背景轴上。",
+        "逃生路线将追赶者保留在相同的背景空间关系中。",
+        "终端障碍物将追踪转换为可测量的未解析距离，而不会出现错误解析。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一成年人物先在空街反复回望建立寂静异常，远处人影从单个增加为群体并开始接近；人物确认威胁后沿狭窄巷道逃跑，追逐者在背景持续缩短距离。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一成年人物先在空街反复回望建立寂静异常，远处人影从单个增加为群体并开始接近；人物确认威胁后沿狭窄巷道逃跑，追逐者在背景持续缩短距离。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "空基线和一次重复的向后检查确定了未解决的威胁问题。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除的规则：“空基线和一次重复的向后检查确定了未解决的威胁问题。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "第一个远处的图形出现在已经建立的背景轴上。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“第一个远处的图形出现在已经建立的背景轴上。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在主角开始逃跑之前，威胁数量或接近度会升级。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“在主角开始奔跑之前，威胁数量或接近度会升级。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "逃生路线将追赶者保留在相同的背景空间关系中。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“逃生路线将追赶者保留在相同的背景空间关系中。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端障碍物将追踪转换为可测量的未解析距离，而不会出现错误解析。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端障碍物将追踪转换为可测量的未解决距离，而不会出现错误解决。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年测量员被从空荡荡的码头追赶到上锁的集装箱通道中。",
+          "prompt_seed": "一名成年测量员被从空荡荡的码头追赶到上锁的集装箱通道中。"
+        },
+        {
+          "concept": "一名成年档案管理员被从安静的阅览室追赶到堵塞的书架过道中。",
+          "prompt_seed": "一名成年档案管理员被从安静的阅览室追赶到堵塞的书架过道中。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除的规则：“空基线和一次重复的向后检查确定了未解决的威胁问题。”",
+          "repair": "空基线和一次重复的向后检查确定了未解决的威胁问题。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“第一个远处的图形出现在已经建立的背景轴上。”",
+          "repair": "第一个远处的图形出现在已经建立的背景轴上。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“在主角开始奔跑之前，威胁数量或接近度会升级。”",
+          "repair": "在主角开始逃跑之前，威胁数量或接近度会升级。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“逃生路线将追赶者保留在相同的背景空间关系中。”",
+          "repair": "逃生路线将追赶者保留在相同的背景空间关系中。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端障碍物将追踪转换为可测量的未解决距离，而不会出现错误解决。”",
+          "repair": "终端障碍物将追踪转换为可测量的未解析距离，而不会出现错误解析。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年测量员被从空荡荡的码头追赶到上锁的集装箱通道中。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年档案管理员被从安静的阅览室追赶到堵塞的书架过道中。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

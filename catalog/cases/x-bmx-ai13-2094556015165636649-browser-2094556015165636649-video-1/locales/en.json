@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-bmx-ai13-2094556015165636649-browser-2094556015165636649-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "6aec06472a1998ecc781ceee994de7f5951e53c30d8178b9aeaffb7ea40ba250",
+    "creative_dna_sha256": "2393cba26c1e3719888dd29eed1a4cf39ad36261e063bfb7986084f140e53099"
+  },
+  "content": {
+    "title": "Birthday Candle Interruption | Warm Expectation, Blackout and Cold Return",
+    "summary": "An adult archivist's candle ritual is interrupted by an emergency-light return. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One adult, one ritual object and one fixed frontal composition establish the expectation. + A single visible blow causes both flame extinction and room blackout. + The blackout holds long enough to function as an information break rather than a flash transition. + The return preserves person, object and composition while changing the lighting regime. + The final subdued performance externalizes the interrupted expectation without explanatory copy.",
+      "recommended_input": "Center one adult night archivist behind a single pastry and one tall blue candle in a small amber reading room. She blows once; let the flame and all room practicals cut to black while one ember fades in place. Hold her lowered gaze beside the unlit candle for one quiet beat; do not restart the ritual or add another person.",
+      "required_anchors": [
+        "One adult, one ritual object and one fixed frontal composition establish the expectation.",
+        "A single visible blow causes both flame extinction and room blackout.",
+        "The return preserves person, object and composition while changing the lighting regime.",
+        "The final subdued performance externalizes the interrupted expectation without explanatory copy."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult archivist's candle ritual is interrupted by an emergency-light return. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "An adult archivist's candle ritual is interrupted by an emergency-light return. Preserve the five causal invariants and terminal proof while replacing every source-specific surface. The reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One adult, one ritual object and one fixed frontal composition establish the expectation.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One adult, one ritual object and one fixed frontal composition establish the expectation.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "A single visible blow causes both flame extinction and room blackout.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A single visible blow causes both flame extinction and room blackout.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "The blackout holds long enough to function as an information break rather than a flash transition.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The blackout holds long enough to function as an information break rather than a flash transition.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "The return preserves person, object and composition while changing the lighting regime.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The return preserves person, object and composition while changing the lighting regime.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final subdued performance externalizes the interrupted expectation without explanatory copy.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final subdued performance externalizes the interrupted expectation without explanatory copy.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult archivist's candle ritual is interrupted by an emergency-light return.",
+          "prompt_seed": "An adult archivist's candle ritual is interrupted by an emergency-light return."
+        },
+        {
+          "concept": "An adult stage manager's toast is interrupted by a theater power reset and silent work-light return.",
+          "prompt_seed": "An adult stage manager's toast is interrupted by a theater power reset and silent work-light return."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One adult, one ritual object and one fixed frontal composition establish the expectation.\"",
+          "repair": "One adult, one ritual object and one fixed frontal composition establish the expectation."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A single visible blow causes both flame extinction and room blackout.\"",
+          "repair": "A single visible blow causes both flame extinction and room blackout."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The blackout holds long enough to function as an information break rather than a flash transition.\"",
+          "repair": "The blackout holds long enough to function as an information break rather than a flash transition."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The return preserves person, object and composition while changing the lighting regime.\"",
+          "repair": "The return preserves person, object and composition while changing the lighting regime."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final subdued performance externalizes the interrupted expectation without explanatory copy.\"",
+          "repair": "The final subdued performance externalizes the interrupted expectation without explanatory copy."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult archivist's candle ritual is interrupted by an emergency-light return.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult stage manager's toast is interrupted by a theater power reset and silent work-light return.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

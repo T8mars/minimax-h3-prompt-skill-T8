@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A fictional cushion proves one conductor's finish from morning colonnade to night gallery. Preserve the five causal invariants and terminal proof while replacing every source-specific surface. The reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One adult identity and one applied result anchor both time states.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One adult identity and one applied result anchor both time states.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "A continuous movement or threshold links daylight and night.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A continuous movement or threshold links daylight and night.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "The night close-up verifies persistence without applying another product.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The night close-up verifies persistence without applying another product.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "One complete original package appears after the human proof.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"One complete original package appears after the human proof.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The final frame reconnects person, persistent result, package and one exact claim.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final frame reconnects person, persistent result, package and one exact claim.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "A fictional cushion proves one conductor's finish from morning colonnade to night gallery.",
+      "prompt_seed": "A fictional cushion proves one conductor's finish from morning colonnade to night gallery."
+    },
+    {
+      "concept": "A fictional fabric spray proves one curator's jacket from outdoor setup to evening opening.",
+      "prompt_seed": "A fictional fabric spray proves one curator's jacket from outdoor setup to evening opening."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One adult identity and one applied result anchor both time states.\"",
+      "repair": "One adult identity and one applied result anchor both time states."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A continuous movement or threshold links daylight and night.\"",
+      "repair": "A continuous movement or threshold links daylight and night."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The night close-up verifies persistence without applying another product.\"",
+      "repair": "The night close-up verifies persistence without applying another product."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"One complete original package appears after the human proof.\"",
+      "repair": "One complete original package appears after the human proof."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final frame reconnects person, persistent result, package and one exact claim.\"",
+      "repair": "The final frame reconnects person, persistent result, package and one exact claim."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A fictional cushion proves one conductor's finish from morning colonnade to night gallery.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A fictional fabric spray proves one curator's jacket from outdoor setup to evening opening.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

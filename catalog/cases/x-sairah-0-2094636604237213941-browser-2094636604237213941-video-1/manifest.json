@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sairah-0-2094636604237213941-browser-2094636604237213941-video-1",
+  "slug": "routine-compression-carrier-handoff-arrival",
+  "title": "晨间自拍视频压缩｜卧室问候、饮水、换装与出门",
+  "source_title": "清晨自拍身份锁定｜同一人物跨房间完成晨间流程",
+  "summary": "以手持自拍视频持续锁定同一成年人物，按卧室问候、厨房饮水、换装束发、地面准备和户外步行压缩晨间流程；每次地点切换都由脸部或手势接力。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/routine-compression-carrier-handoff-arrival",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sairah-0-2094636604237213941-browser-2094636604237213941-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sairah-0-2094636604237213941-browser-2094636604237213941-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-routine-compression-carrier-handoff-arrival-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-routine-compression-carrier-handoff-arrival-v1",
+  "input_format": "稳定主体与目的地 + 单职责短动作 + 姿态/手中物/方向接力 + 累积准备状态 + 单向路线 + 终点结果动作",
+  "recommended_input": "手持晨间自拍视频锁定原创成年博物馆讲解员：黑色短发和银色耳扣，起始于小公寓。；人物穿锈红工作夹克回连，固定同一耳扣并装入一张折叠地图。；户外保持同一身份和夹克，她挥手一次、转向前方并走向博物馆入口。",
+  "required_anchors": [
+    "One adult identity and handheld selfie carrier persist through all routine chapters.",
+    "Each location change uses a visible face, hand or prop handoff.",
+    "Wardrobe change is bounded and preserves the same face, hair and body proportions.",
+    "The final outdoor movement proves departure from the private routine into a destination route."
+  ],
+  "tags": [
+    "routine",
+    "compression",
+    "carrier",
+    "handoff",
+    "arrival"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:59+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

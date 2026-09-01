@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithaly-2091749172361978149-browser-2091749172361978149-video-1",
+  "slug": "ordinary-task-to-breathing-reset-exit",
+  "title": "洗衣任务到喘息复位｜装载、完成证明与阳台收束",
+  "source_title": "日常洗衣短片｜同一人物完成任务后在窗边整理",
+  "summary": "同一成年人物把衣物从床边篮筐装入洗衣机，等待并取回干净衣物，再在窗边展开、折叠和归置；任务完成后用短暂停顿与开阔视野完成呼吸复位。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/ordinary-task-to-breathing-reset-exit",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithaly-2091749172361978149-browser-2091749172361978149-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithaly-2091749172361978149-browser-2091749172361978149-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-ordinary-task-to-breathing-reset-exit-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-ordinary-task-to-breathing-reset-exit-v1",
+  "input_format": "一名明确成年原创主体以至少三项身份锚点先完成一个普通触觉任务 + 用一个真实前景物、门框或建筑边缘过渡到独立休息地理 + 准确展示一次慢呼吸和至少两项头发、服装、植物或光线微响应 + 呼吸期间摄影只做克制慢推或静止 + 同一成年人复位后沿既定方向穿过可见出口",
+  "recommended_input": "一名成年修复师把档案工作间的五块亚麻防尘布收进一辆蓝色推车。；指示达到完成后，把同一批防尘布取回蓝色推车。；她在开阔视野旁停留一次呼吸，再把完整折叠堆放回原货架区域。",
+  "required_anchors": [
+    "One adult, one bounded task and one inventory remain continuous.",
+    "Each task action visibly changes the inventory state.",
+    "The open-view pause follows completion rather than interrupting it.",
+    "The final return places the completed inventory at its intended destination."
+  ],
+  "tags": [
+    "ordinary",
+    "task",
+    "to",
+    "breathing",
+    "reset",
+    "exit"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:31+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

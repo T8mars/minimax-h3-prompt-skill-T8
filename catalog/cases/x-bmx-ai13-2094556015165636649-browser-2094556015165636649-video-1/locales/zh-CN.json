@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-bmx-ai13-2094556015165636649-browser-2094556015165636649-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "6aec06472a1998ecc781ceee994de7f5951e53c30d8178b9aeaffb7ea40ba250",
+    "creative_dna_sha256": "2393cba26c1e3719888dd29eed1a4cf39ad36261e063bfb7986084f140e53099"
+  },
+  "content": {
+    "title": "仪式黑场复位｜期待微笑、吹灭中断与冷光回归",
+    "summary": "用固定正面构图和一根蜡烛建立成年人物的温暖仪式期待，吹灭动作立刻让空间完全黑场；随后同一人物和同一桌面在冷亮环境回归，表情由期待转为失落，完成因果反差。",
+    "quick_start": {
+      "input_format": "一名明确成年原创主体与一个可识别的庆祝或启动仪式 + 预期触发物在完成前建立等待 + 一次有因的突然黑场中断仪式 + 同一空间以不同光温回归并保留中断痕迹 + 人物、触发物和改变后的状态共同停留",
+      "recommended_input": "成年夜间档案员居中坐在一块小点心和一根高蓝蜡烛后，空间为小型琥珀阅览室。；她只吹一次，火焰与全部室内实用灯同时熄灭，只留原位余烬渐暗。；她在未点燃蜡烛旁低下视线停留一拍，不重启仪式，也不增加他人。",
+      "required_anchors": [
+        "一名成人、一件礼器和一幅固定的正面构图确立了这一期望。",
+        "一次可见的打击会导致火焰熄灭和房间停电。",
+        "返回保留人物、物体和构图，同时改变照明方式。",
+        "最终压抑的表演将被打断的期望具体化，没有解释性的文案。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用固定正面构图和一根蜡烛建立成年人物的温暖仪式期待，吹灭动作立刻让空间完全黑场；随后同一人物和同一桌面在冷亮环境回归，表情由期待转为失落，完成因果反差。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用固定正面构图和一根蜡烛建立成年人物的温暖仪式期待，吹灭动作立刻让空间完全黑场；随后同一人物和同一桌面在冷亮环境回归，表情由期待转为失落，完成因果反差。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名成人、一件礼器和一幅固定的正面构图确立了这一期望。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于相同的主体、对象或地点，因此序列失去了其参考状态。删除规则：“一名成人、一件仪式物品和一件固定的正面构图确立了期望。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一次可见的打击会导致火焰熄灭和房间停电。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“一次可见的打击会导致火焰熄灭和房间停电。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "停电持续的时间足够长，可以起到信息中断的作用，而不是闪光过渡。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“停电持续的时间足够长，可以作为信息中断而不是闪光过渡。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "返回保留人物、物体和构图，同时改变照明方式。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“返回时保留人物、物体和构图，同时改变照明方式。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终压抑的表演将被打断的期望具体化，没有解释性的文案。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的压抑表现将中断的期望具体化，没有解释性的副本。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年档案保管员的蜡烛仪式被应急灯返回打断。",
+          "prompt_seed": "一名成年档案保管员的蜡烛仪式被应急灯返回打断。"
+        },
+        {
+          "concept": "一位成年舞台监督的祝酒词被剧院电源重置和无声工作灯恢复打断。",
+          "prompt_seed": "一位成年舞台监督的祝酒词被剧院电源重置和无声工作灯恢复打断。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于相同的主体、对象或地点，因此序列失去了其参考状态。删除规则：“一名成人、一件仪式物品和一件固定的正面构图确立了期望。”",
+          "repair": "一名成人、一件礼器和一幅固定的正面构图确立了这一期望。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“一次可见的打击会导致火焰熄灭和房间停电。”",
+          "repair": "一次可见的打击会导致火焰熄灭和房间停电。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“停电持续的时间足够长，可以作为信息中断而不是闪光过渡。”",
+          "repair": "停电持续的时间足够长，可以起到信息中断的作用，而不是闪光过渡。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“返回时保留人物、物体和构图，同时改变照明方式。”",
+          "repair": "返回保留人物、物体和构图，同时改变照明方式。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的压抑表现将中断的期望具体化，没有解释性的副本。”",
+          "repair": "最终压抑的表演将被打断的期望具体化，没有解释性的文案。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年档案保管员的蜡烛仪式被应急灯返回打断。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年舞台监督的祝酒词被剧院电源重置和无声工作灯恢复打断。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-awesome-visuals-2094698010055696386-browser-2094698010055696386-video-1",
+  "slug": "threatening-object-energy-conversion-product",
+  "title": "威胁转商品｜危险逼近、反制命中与材质定型",
+  "source_title": "鲨鱼反制成手袋｜逼近攻击转为虹彩产品揭示",
+  "summary": "先让一个明确威胁在同一空间逼近成年主角，再由主角取出单一反制工具命中；威胁的体量和轮廓经连续能量变化收缩为完整商品，最后由人物反应确认转化。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/threatening-object-energy-conversion-product",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-awesome-visuals-2094698010055696386-browser-2094698010055696386-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-awesome-visuals-2094698010055696386-browser-2094698010055696386-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-threatening-object-energy-conversion-product-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一个可读危险对象沿明确方向逼近 + 一名成年原创主体执行一次安全反制并产生可追踪能量接触 + 危险对象在原位置连续发生材质与轮廓转化 + 转化完成后成为可使用的原创产品 + 人物与完整产品同框确认终局",
+  "recommended_input": "成年回收工程师置于昏暗钢铁分拣厅，一只巨大锈蚀机械鸟沿同一通道冲来。；一次青色脉冲命中机械鸟，折叠过程中保持其轮廓可读并沿原地面轴线收缩。；台灯单独停留后，再与工程师同框，她只用克制视线确认转化。",
+  "required_anchors": [
+    "One readable threat and one adult responder share a continuous space before intervention.",
+    "A single committed counter-action visibly causes the conversion.",
+    "The final product occupies the threat's registered impact position and is complete.",
+    "A terminal human reaction confirms the product state after an isolated hero hold."
+  ],
+  "tags": [
+    "threatening",
+    "object",
+    "energy",
+    "conversion",
+    "product"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:58+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-allaaisling-2094479832419799506-browser-2094479832419799506-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "de7b9ab995c0bb1762da97af149a0aa70dc50ecb43c43b04546768b01ba059d8",
+    "creative_dna_sha256": "e798c8160983f2f676b0a1b981f9e9e940ae7287b4784196e7a0f4c521722f9e"
+  },
+  "content": {
+    "title": "外线超车证明｜并排行驶、较长路线与车头领先",
+    "summary": "先在海上桥梁建立两辆车并排行驶，再交替使用航拍、车内和低位跟拍证明内外线关系；外线车辆以更长弧线维持速度，终局侧面同框显示车头从齐平变成领先。",
+    "quick_start": {
+      "input_format": "两个可区分的原创移动载体从同一起点与方向出发 + 一条内线较短而另一条外线较长 + 两者沿各自路线连续移动且位置关系始终可追踪 + 外线载体通过更高持续速度完成一次清楚超越 + 终点同框证明领先距离",
+      "recommended_input": "两辆原创电动拉力车并排进入高架沙漠测试弯道，琥珀车在外线，石墨车在内线。；利用路面标线和中央观测塔，让琥珀车更长的外弧可测量。；琥珀车头领先半车身时两车仍同框停留，不用切镜、碰撞或瞬移完成超车。",
+      "required_anchors": [
+        "在弯道前可以读取两辆不同的车辆和固定的车道分配。",
+        "多个拍摄平台保持相同的相对位置和方向。",
+        "一侧对比，超车增益不断累积。",
+        "最终的共享框架在两辆车保持运动的同时测量新的领先优势。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先在海上桥梁建立两辆车并排行驶，再交替使用航拍、车内和低位跟拍证明内外线关系；外线车辆以更长弧线维持速度，终局侧面同框显示车头从齐平变成领先。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先在海上桥梁建立两辆车并排行驶，再交替使用航拍、车内和低位跟拍证明内外线关系；外线车辆以更长弧线维持速度，终局侧面同框显示车头从齐平变成领先。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在弯道前可以读取两辆不同的车辆和固定的车道分配。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在弯道前可以读取两辆不同的车辆和固定车道分配。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "多个拍摄平台保持相同的相对位置和方向。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“多个拍摄平台保持相同的相对位置和方向。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "环境几何证明哪条路线更长，而不仅仅是标记它。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“环境几何证明哪条路线更长，而不仅仅是标记它。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "一侧对比，超车增益不断累积。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“在一个比较侧面视图中，超车增益持续累积。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的共享框架在两辆车保持运动的同时测量新的领先优势。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的共享框架在两辆车保持运动的情况下测量新的领先优势。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一辆琥珀色拉力赛车通过更长的沙漠外弧线，长度增加了一半。",
+          "prompt_seed": "一辆琥珀色拉力赛车通过更长的沙漠外弧线，长度增加了一半。"
+        },
+        {
+          "concept": "一名成年速滑运动员在保持动力的同时，可以通过更宽的冰道线获得一侧肩膀的力量。",
+          "prompt_seed": "一名成年速滑运动员在保持动力的同时，可以通过更宽的冰道线获得一侧肩膀的力量。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在弯道前可以读取两辆不同的车辆和固定车道分配。”",
+          "repair": "在弯道前可以读取两辆不同的车辆和固定的车道分配。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“多个拍摄平台保持相同的相对位置和方向。”",
+          "repair": "多个拍摄平台保持相同的相对位置和方向。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“环境几何证明哪条路线更长，而不仅仅是标记它。”",
+          "repair": "环境几何证明哪条路线更长，而不仅仅是标记它。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“在一个比较侧面视图中，超车增益持续累积。”",
+          "repair": "一侧对比，超车增益不断累积。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的共享框架在两辆车保持运动的情况下测量新的领先优势。”",
+          "repair": "最终的共享框架在两辆车保持运动的同时测量新的领先优势。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一辆琥珀色拉力赛车通过更长的沙漠外弧线，长度增加了一半。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年速滑运动员在保持动力的同时，可以通过更宽的冰道线获得一侧肩膀的力量。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

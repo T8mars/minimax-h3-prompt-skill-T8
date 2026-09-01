@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-bmx-ai13-2094541985466216780-browser-2094541985466216780-video-1",
+  "slug": "follow-one-encounter-and-departure",
+  "title": "加油站固定广角互动｜迎镜表演、坐上车身与同伴入画",
+  "source_title": "加油站坐姿互动｜固定倾斜广角从单人靠近到双人占位",
+  "summary": "固定轻微倾斜的广角机位记录一名成年人物从车旁靠近镜头、连续做表情和手势，再后退坐上同一车身；第二名成年人从侧后方进入并靠近，画面由单人表演变成双人空间关系。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-one-encounter-and-departure",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bmx-ai13-2094541985466216780-browser-2094541985466216780-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bmx-ai13-2094541985466216780-browser-2094541985466216780-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-observer-follow-encounter-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-observer-follow-encounter-v1",
+  "input_format": "侧面连续跟拍 + 狭窄起点 + 行进中空间揭示 + 一次偶发横穿 + 一次克制回应 + 继续离开",
+  "recommended_input": "固定低位轻倾广角在原创蓝色服务车旁，场景是安静公路充电站。；她后退并坐在同一车辆保险杠上，屏幕方向和机位几何不变。；两名人物、保险杠、线缆和充电桩共同停留，递送员转向机械师，单人表演转成相遇。",
+  "required_anchors": [
+    "One fixed observer frame establishes person, carrier object and environment before the approach.",
+    "The first adult's foreground performance preserves the background spatial anchors.",
+    "A second adult enters from established background geography rather than appearing through a reset.",
+    "The final shared frame converts solo display into a readable two-person encounter."
+  ],
+  "tags": [
+    "observer",
+    "follow",
+    "encounter"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:38:00+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

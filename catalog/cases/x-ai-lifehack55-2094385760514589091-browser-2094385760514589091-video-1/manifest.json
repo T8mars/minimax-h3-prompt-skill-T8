@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ai-lifehack55-2094385760514589091-browser-2094385760514589091-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "黑白红动作字场｜身份锁定、短词碰撞与角色回标",
+  "source_title": "都市动漫字效｜同一角色把滑行踢击变成排版结构",
+  "summary": "锁定同一成年动画角色，用滑行、俯冲、踢击和落地逐拍触发黑白红短词、网格与圆环；每个字效都回应可见动作，终局回到人物和主标题。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-lifehack55-2094385760514589091-browser-2094385760514589091-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-lifehack55-2094385760514589091-browser-2094385760514589091-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "锁定原创成年动画单车递送员：银发、琥珀眼、海军蓝夹克和珊瑚红长裤，置于象牙色标题网格。；一次脚跟转向触发珊瑚圆环，一次受控跳跃把圆环拆成三个标有【TURN】的斜向面板。；圆环复原，人物回到象牙海报框，准确标题【NIGHT LINE】停留。",
+  "required_anchors": [
+    "One adult character identity anchors every graphic module.",
+    "Each bounded body action visibly precedes one typography response.",
+    "Detail shots reconnect to the complete character before the next module.",
+    "The final lockup reunites character, palette, graphic motif and one exact title."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:31+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

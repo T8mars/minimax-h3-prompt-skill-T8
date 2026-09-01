@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-afrinxai-2094628869592748271-browser-2094628869592748271-video-1",
+  "slug": "foreground-fixation-background-hazard-escalation",
+  "title": "空街回望追逐｜孤立基线、远端人影与巷道逼近",
+  "source_title": "空城感染者转身｜寂静搜索到群体威胁揭示",
+  "summary": "同一成年人物先在空街反复回望建立寂静异常，远处人影从单个增加为群体并开始接近；人物确认威胁后沿狭窄巷道逃跑，追逐者在背景持续缩短距离。",
+  "status": "released",
+  "source_duration_seconds": 15.136,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/foreground-fixation-background-hazard-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-afrinxai-2094628869592748271-browser-2094628869592748271-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-afrinxai-2094628869592748271-browser-2094628869592748271-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-foreground-fixation-background-hazard-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-foreground-fixation-background-hazard-escalation-v1",
+  "input_format": "明确成年原创主体和一个小型可重复前景任务先建立 + 背景危险至少经过三档接近等级升级且方向可读 + 每次危险后双手与视线都回到同一任务物 + 早期只做最小避让并把最大身体位移保留给一次近接峰值 + 危险过去后重新执行原任务而非庆祝或击败威胁",
+  "recommended_input": "成年勘测员穿黄色夹克站在空旷雾港，反复检查身后寂静水面。；堆放货箱旁再出现两个人影，勘测员转身并确认三者。；到达锁住的网门时，追逐距离继续缩短，不切走也不凭空出现救援。",
+  "required_anchors": [
+    "An empty baseline and one repeated backward check establish the unresolved threat question.",
+    "The first distant figure appears on the already established background axis.",
+    "The escape route preserves pursuers in the same background geography.",
+    "The terminal obstacle converts pursuit into a measurable unresolved distance without false resolution."
+  ],
+  "tags": [
+    "foreground",
+    "fixation",
+    "background",
+    "hazard",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:59+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-sadiamalik182-2094688480744083924-browser-2094688480744083924-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "f2be80e5ce65843e7008922406d4c5389ad2a93ae19890461e175d7657bc6fb2",
+    "creative_dna_sha256": "78e55424c77a1bdb133621558602c9f7a9a07c089924a256dfa0df4550632daa"
+  },
+  "content": {
+    "title": "拉面冲击状态链｜火焰、落锅、配料爆发与成品停留",
+    "summary": "把炉火、沸水、面饼入锅、配料落下、酱料混合和成品装碗组织为不可逆状态链；每次冲击都改变同一食材状态，最后用蛋黄与热气完成可食证明。",
+    "quick_start": {
+      "input_format": "一名明确成年原创操作者、固定空间、主材料组、主要容器与手部或工具锚点先建立 + 至少五个不可逆状态且每镜只执行一次清楚操作 + 上一状态的残留、形状、颜色、蒸汽或容器连续成为下一步输入 + 不得回到已消失的早期状态并保持数量合理 + 同一成品由同一成年人完成一次克制使用或品尝证明",
+      "recommended_input": "点亮浅铜锅下的一圈感应火光，建立一张原创干米糕片和正在微沸的汤底。；绿香草、红椒油和烤芝麻分三次明确接触加入，先前配料持续可追踪。；顶部放一枚水波蛋，热气、酱汁包裹、完整碗体和干净盘边共同停留。",
+      "required_anchors": [
+        "热量在第一次成分状态变化之前建立。",
+        "每次添加都明显接触并保留为连续食品库存的一部分。",
+        "转移到服务容器中可以保存完成的食物，而不是更换它。",
+        "最后的装饰和蒸汽保持证明了完全可食用的结果。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "把炉火、沸水、面饼入锅、配料落下、酱料混合和成品装碗组织为不可逆状态链；每次冲击都改变同一食材状态，最后用蛋黄与热气完成可食证明。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把炉火、沸水、面饼入锅、配料落下、酱料混合和成品装碗组织为不可逆状态链；每次冲击都改变同一食材状态，最后用蛋黄与热气完成可食证明。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "热量在第一次成分状态变化之前建立。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“在第一个成分状态发生变化之前就建立了热量。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每次添加都明显接触并保留为连续食品库存的一部分。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除了规则：“每次添加都明显接触并保留为连续食品库存的一部分。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "烹饪状态从干燥到软化再到涂层不可逆地进行。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“烹饪状态从干燥到软化再到涂层不可逆转地进行。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "转移到服务容器中可以保存完成的食物，而不是更换它。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“转移到服务容器中可以保存完成的食物，而不是更换它。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后的装饰和蒸汽保持证明了完全可食用的结果。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最后的装饰和蒸汽保持证明是完全可食用的结果。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "年糕从干片转移到涂有一颗荷包蛋的碗中。",
+          "prompt_seed": "年糕从干片转移到涂有一颗荷包蛋的碗中。"
+        },
+        {
+          "concept": "饺子从冷冻托盘中穿过肉汤、釉料和镀香草精。",
+          "prompt_seed": "饺子从冷冻托盘中穿过肉汤、釉料和镀香草精。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“在第一个成分状态发生变化之前就建立了热量。”",
+          "repair": "热量在第一次成分状态变化之前建立。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除了规则：“每次添加都明显接触并保留为连续食品库存的一部分。”",
+          "repair": "每次添加都明显接触并保留为连续食品库存的一部分。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“烹饪状态从干燥到软化再到涂层不可逆转地进行。”",
+          "repair": "烹饪状态从干燥到软化再到涂层不可逆地进行。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“转移到服务容器中可以保存完成的食物，而不是更换它。”",
+          "repair": "转移到服务容器中可以保存完成的食物，而不是更换它。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最后的装饰和蒸汽保持证明是完全可食用的结果。”",
+          "repair": "最后的装饰和蒸汽保持证明了完全可食用的结果。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "年糕从干片转移到涂有一颗荷包蛋的碗中。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "饺子从冷冻托盘中穿过肉汤、釉料和镀香草精。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

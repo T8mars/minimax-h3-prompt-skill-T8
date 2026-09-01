@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aimikoda-2094490203335352524-browser-2094490203335352524-video-1",
+  "slug": "route-continuity-through-world-conversion",
+  "title": "流体地貌成城｜金色路径、山脊生长与实景回归",
+  "source_title": "爱丁堡油画航行｜抽象金线逐步凝成山城",
+  "summary": "同一前进路径先以金色流体和暗色褶皱出现，再逐层形成山脊、城堡与完整城市；终局从微缩油画质感过渡到可定位实景，路线和天际线始终连续。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/route-continuity-through-world-conversion",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2094490203335352524-browser-2094490203335352524-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2094490203335352524-browser-2094490203335352524-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-route-continuity-through-world-conversion-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-route-continuity-through-world-conversion-v1",
+  "input_format": "连续移动主体 + 原世界基线 + 单次全局换材 + 方向速度不断线 + 新世界终点",
+  "recommended_input": "沿折叠黑纸地貌中的一条青色发光缝隙低位前进。；原创白色观测村落从同一峭壁由近到远依次升起。；纸质地貌过渡为蓝调写实海岸，河流、穹顶和地平线位置不变。",
+  "required_anchors": [
+    "One route line and camera heading survive every material conversion.",
+    "Terrain formation precedes architecture.",
+    "One landmark stays registered through miniature and wide scales.",
+    "The final realistic state preserves the opening route and horizon."
+  ],
+  "tags": [
+    "route",
+    "continuity",
+    "through",
+    "world",
+    "conversion"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:31+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

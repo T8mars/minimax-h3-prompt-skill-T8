@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-bmx-ai13-2094645801808969771-browser-2094645801808969771-video-1",
+  "slug": "ordinary-task-to-breathing-reset-exit",
+  "title": "庭院喂狗微任务｜进食基线、等待观察与轻触收束",
+  "source_title": "庭院喂狗日常｜固定低机位记录进食、等待与抚摸",
+  "summary": "在固定低机位中保持同一成年照料者、狗、食盆和庭院位置，先完整记录进食，再让人物等待、观察并做一次轻柔接触；取走空碗后，狗留在原位完成安静终态。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/ordinary-task-to-breathing-reset-exit",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bmx-ai13-2094645801808969771-browser-2094645801808969771-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bmx-ai13-2094645801808969771-browser-2094645801808969771-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-ordinary-task-to-breathing-reset-exit-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-ordinary-task-to-breathing-reset-exit-v1",
+  "input_format": "一名明确成年原创主体以至少三项身份锚点先完成一个普通触觉任务 + 用一个真实前景物、门框或建筑边缘过渡到独立休息地理 + 准确展示一次慢呼吸和至少两项头发、服装、植物或光线微响应 + 呼吸期间摄影只做克制慢推或静止 + 同一成年人复位后沿既定方向穿过可见出口",
+  "recommended_input": "固定低位广角记录成年夜班面包师、年长店犬和安静装卸院中的一个蓝色水碗。；狗、水碗、院门和人物跪姿保持连续，不切镜也不重置机位。；人物带碗离开，最后停留同一条狗在院门旁安静休息。",
+  "required_anchors": [
+    "One adult caregiver, one animal, one vessel and one fixed place remain continuous.",
+    "The animal's bounded eating or drinking task reaches a visible completion state.",
+    "One gentle contact follows completion and precedes cleanup.",
+    "The final quiet state separates removed vessel from the resting animal and proves closure."
+  ],
+  "tags": [
+    "ordinary",
+    "task",
+    "to",
+    "breathing",
+    "reset",
+    "exit"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:59+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

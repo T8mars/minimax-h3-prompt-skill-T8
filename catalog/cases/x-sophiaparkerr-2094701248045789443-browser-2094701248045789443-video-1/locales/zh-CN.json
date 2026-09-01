@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-sophiaparkerr-2094701248045789443-browser-2094701248045789443-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "8dda0e3677985cf06368bf1f905fc22682bdc9e50615cc180a3df62b69109d6c",
+    "creative_dna_sha256": "625652b63c37f28c039581ee4933d3e5de5ba4dfeacdfee88cc51abe512d2676"
+  },
+  "content": {
+    "title": "颜色规则搜寻｜任务宣布、同色取物与满载回报",
+    "summary": "先让同一成年人物和购物车建立单色搜寻规则，再用多次货架取物、购物车累积和人物反应证明规则被执行；结尾把满载结果与发起者重新同框。",
+    "quick_start": {
+      "input_format": "一名明确成年原创主体与一个清楚可见的筛选规则 + 至少三次不同类别的可验证搜寻接触 + 合格物件逐项保留且不合格物件不被带走 + 同一容器与路线连续 + 终局完整库存和人物反应共同证明完成",
+      "recommended_input": "原创成年海洋研究员穿钴蓝夹克，推空灰色样品车进入白色实验物资库；规则是只收集蓝色物件。；同一推车和前进路线保持连续，已接受的蓝色物件始终可见，非蓝色物件留在货架。；回到同一研究员与满载推车同框，她核对三类物件并只做一次完成手势。",
+      "required_anchors": [
+        "在第一次拾取之前，有一个明确的选择规则是可以理解的。",
+        "每个被接受的对象显然都满足相同的规则。",
+        "至少三个不同的对象类别表明该规则具有普遍性。",
+        "发起成人和完成的集合在终端验证框架中重新连接。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让同一成年人物和购物车建立单色搜寻规则，再用多次货架取物、购物车累积和人物反应证明规则被执行；结尾把满载结果与发起者重新同框。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先让同一成年人物和购物车建立单色搜寻规则，再用多次货架取物、购物车累积和人物反应证明规则被执行；结尾把满载结果与发起者重新同框。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在第一次拾取之前，有一个明确的选择规则是可以理解的。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在第一次拾取之前可以理解一个明确的选择规则。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个被接受的对象显然都满足相同的规则。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除的规则：“每个接受的对象明显满足相同的规则。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "原承运人保留所有之前的取件并证明累积。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“原始承运人保留所有先前的取件并证明累积。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "至少三个不同的对象类别表明该规则具有普遍性。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“至少三个不同的对象类别证明该规则具有普遍性。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "发起成人和完成的集合在终端验证框架中重新连接。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“发起成人和完成的集合在终端证明框架中重新连接。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年研究人员完成了蓝色实验室用品挑战。",
+          "prompt_seed": "一名成年研究人员完成了蓝色实验室用品挑战。"
+        },
+        {
+          "concept": "一名成人布景师完成了剧院储藏室中的圆形道具挑战。",
+          "prompt_seed": "一名成人布景师完成了剧院储藏室中的圆形道具挑战。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在第一次拾取之前可以理解一个明确的选择规则。”",
+          "repair": "在第一次拾取之前，有一个明确的选择规则是可以理解的。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除的规则：“每个接受的对象明显满足相同的规则。”",
+          "repair": "每个被接受的对象显然都满足相同的规则。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“原始承运人保留所有先前的取件并证明累积。”",
+          "repair": "原承运人保留所有之前的取件并证明累积。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“至少三个不同的对象类别证明该规则具有普遍性。”",
+          "repair": "至少三个不同的对象类别表明该规则具有普遍性。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“发起成人和完成的集合在终端证明框架中重新连接。”",
+          "repair": "发起成人和完成的集合在终端验证框架中重新连接。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年研究人员完成了蓝色实验室用品挑战。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成人布景师完成了剧院储藏室中的圆形道具挑战。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

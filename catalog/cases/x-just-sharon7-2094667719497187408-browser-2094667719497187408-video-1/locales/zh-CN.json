@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-just-sharon7-2094667719497187408-browser-2094667719497187408-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "fd9e1b187947b1b75655ad4315c435bdcd00abd16efc024608ad3b6cd077e015",
+    "creative_dna_sha256": "10fa59c87a29e9c89fa258826fd13f6894e8b21173a4177046167110a6988e77"
+  },
+  "content": {
+    "title": "平面巧克力饮品链｜液滴聚杯、包装倾倒与字标收束",
+    "summary": "用扁平液滴先形成饮品基线，再让包装倾倒补全杯体和配料；棕色液面成为遮罩进入可读主字，最终让杯、包装、装饰和短句在同一版面收束。",
+    "quick_start": {
+      "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+      "recommended_input": "靛蓝茶滴落在浅沙色平面，并汇入一个透明轮廓杯。；满杯、直立茶包、两片薄荷叶和一道珊瑚色飞溅在同一平面版式回连。；主字、短句【ONE CUP, ONE CLEAN PAUSE】、杯子和茶包共同组成终版海报。",
+      "required_anchors": [
+        "一种液体系列可驱动产品形成和图形过渡。",
+        "包装引起可见的填充动作，然后返回直立状态。",
+        "液体擦拭巾可显示准确可读的文本，而不是覆盖或改变它。",
+        "最终的平面海报将产品、包装、母题和声明结合在一起。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用扁平液滴先形成饮品基线，再让包装倾倒补全杯体和配料；棕色液面成为遮罩进入可读主字，最终让杯、包装、装饰和短句在同一版面收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用扁平液滴先形成饮品基线，再让包装倾倒补全杯体和配料；棕色液面成为遮罩进入可读主字，最终让杯、包装、装饰和短句在同一版面收束。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一种液体系列可驱动产品形成和图形过渡。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一个液体系列驱动产品形成和图形过渡。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "包装引起可见的填充动作，然后返回直立状态。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“包裹导致可见的填充动作，然后直立返回。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "杯子、包装和配料图案在排版接管之前重新连接起来。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“杯子、包装和成分图案在排版接管之前重新连接。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "液体擦拭巾可显示准确可读的文本，而不是覆盖或改变它。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“液体擦拭物显示准确可读的文本，而不是覆盖或改变它。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的平面海报将产品、包装、母题和声明结合在一起。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“最终的平面海报将产品、包装、母题和声明结合在一起。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一杯靛蓝茶成为干净的平面海报标题。",
+          "prompt_seed": "一杯靛蓝茶成为干净的平面海报标题。"
+        },
+        {
+          "concept": "珊瑚果滋补品倾倒成为几何夏季标签锁定。",
+          "prompt_seed": "珊瑚果滋补品倾倒成为几何夏季标签锁定。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一个液体系列驱动产品形成和图形过渡。”",
+          "repair": "一种液体系列可驱动产品形成和图形过渡。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“包裹导致可见的填充动作，然后直立返回。”",
+          "repair": "包装引起可见的填充动作，然后返回直立状态。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“杯子、包装和成分图案在排版接管之前重新连接。”",
+          "repair": "杯子、包装和配料图案在排版接管之前重新连接起来。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“液体擦拭物显示准确可读的文本，而不是覆盖或改变它。”",
+          "repair": "液体擦拭巾可显示准确可读的文本，而不是覆盖或改变它。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“最终的平面海报将产品、包装、母题和声明结合在一起。”",
+          "repair": "最终的平面海报将产品、包装、母题和声明结合在一起。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一杯靛蓝茶成为干净的平面海报标题。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "珊瑚果滋补品倾倒成为几何夏季标签锁定。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

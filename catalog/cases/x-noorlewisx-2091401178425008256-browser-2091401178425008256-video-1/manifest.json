@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-noorlewisx-2091401178425008256-browser-2091401178425008256-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "昼夜底妆证明｜街景基线、持妆跨时与包装收束",
+  "source_title": "宫殿底妆广告｜同一女性从日光街道进入烛光长廊",
+  "summary": "同一成年女性和同一底妆结果从日光街道过渡到夜间烛光长廊，以近脸、脚步和环境变化证明跨时稳定；终局完整气垫包装和人物共同收束，正式模板替换来源品牌。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noorlewisx-2091401178425008256-browser-2091401178425008256-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-noorlewisx-2091401178425008256-browser-2091401178425008256-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8c001-product-proof-state-machine",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "锁定原创成年小提琴指挥：黑色短发、银项链和海军蓝长裙，置于浅色晨间柱廊。；通过一个门口把同一步态带入琥珀夜间长廊，身份和妆容不变。；完整展示虚构气垫【LONG ARC】，再与同一人物同框，准确短句【MORNING TO LAST NOTE】停留。",
+  "required_anchors": [
+    "One adult identity and one applied result anchor both time states.",
+    "A continuous movement or threshold links daylight and night.",
+    "One complete original package appears after the human proof.",
+    "The final frame reconnects person, persistent result, package and one exact claim."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:33+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

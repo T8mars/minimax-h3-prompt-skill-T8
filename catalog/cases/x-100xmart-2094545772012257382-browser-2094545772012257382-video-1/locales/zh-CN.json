@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-100xmart-2094545772012257382-browser-2094545772012257382-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7bb796b816c6855954b5e0c3dcd3bee6f49cc8c6f24138b3ce47639a1d18083f",
+    "creative_dna_sha256": "cc545433fc26f5261b74da395f34ce3625389311ba1ab79d8f463c67bc2cfca6"
+  },
+  "content": {
+    "title": "埋沙古城揭露｜空旷基线、轮廓显形与城门抵达",
+    "summary": "先用连续沙丘建立无人基线，再让同一区域的道路、墙体和塔楼按尺度逐层显形；镜头持续前进，最终穿过可识别城门并把外部地貌与内部花园回连。",
+    "quick_start": {
+      "input_format": "环境局部异常 + 单一身份特征 + 高位完整几何证明 + 环境尺度影响 + 低位近距离逼近",
+      "recommended_input": "沿空旷白色盐湖盆地连续航拍前进，开场不出现建筑。；原创太阳能档案城从近到远依次升起，盆地地理不得被替换。；只穿过城门一次，以广角回连完整档案城和开场盐湖地平线。",
+      "required_anchors": [
+        "一个空旷的地形和一个连续的接近轴建立了基线。",
+        "地下痕迹先于所有完整的建筑出现。",
+        "一个门槛将遥远的发现转化为物理到达。",
+        "终端视图将完整暴露的定居点重新连接到开放地形。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用连续沙丘建立无人基线，再让同一区域的道路、墙体和塔楼按尺度逐层显形；镜头持续前进，最终穿过可识别城门并把外部地貌与内部花园回连。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先用连续沙丘建立无人基线，再让同一区域的道路、墙体和塔楼按尺度逐层显形；镜头持续前进，最终穿过可识别城门并把外部地貌与内部花园回连。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个空旷的地形和一个连续的接近轴建立了基线。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个空的地形和一个连续的接近轴建立基线。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "地下痕迹先于所有完整的建筑出现。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“地下痕迹先于所有完整的建筑出现。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "建筑规模单调增加，而不取代周围的空间关系。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“建筑规模单调增加，而不取代周围的空间关系。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "一个门槛将遥远的发现转化为物理到达。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“一个门槛将遥远的发现转化为物理到达。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端视图将完整暴露的定居点重新连接到开放地形。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端视图将完整显示的定居点重新连接到开放地形。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一座太阳档案馆从盐盆中升起，最终停在一扇铜门处。",
+          "prompt_seed": "一座太阳档案馆从盐盆中升起，最终停在一扇铜门处。"
+        },
+        {
+          "concept": "一座水下的天文台出现在消退的冰层下方，并在一个玻璃舱口处解析。",
+          "prompt_seed": "一座水下的天文台出现在消退的冰层下方，并在一个玻璃舱口处解析。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个空的地形和一个连续的接近轴建立基线。”",
+          "repair": "一个空旷的地形和一个连续的接近轴建立了基线。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“地下痕迹先于所有完整的建筑出现。”",
+          "repair": "地下痕迹先于所有完整的建筑出现。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“建筑规模单调增加，而不取代周围的空间关系。”",
+          "repair": "建筑规模单调增加，而不取代周围的空间关系。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“一个门槛将遥远的发现转化为物理到达。”",
+          "repair": "一个门槛将遥远的发现转化为物理到达。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端视图将完整显示的定居点重新连接到开放地形。”",
+          "repair": "终端视图将完整暴露的定居点重新连接到开放地形。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一座太阳档案馆从盐盆中升起，最终停在一扇铜门处。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一座水下的天文台出现在消退的冰层下方，并在一个玻璃舱口处解析。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

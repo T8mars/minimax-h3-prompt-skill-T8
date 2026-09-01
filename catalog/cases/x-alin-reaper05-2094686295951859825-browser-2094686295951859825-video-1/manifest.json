@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-alin-reaper05-2094686295951859825-browser-2094686295951859825-video-1",
+  "slug": "group-route-individual-curiosity-halt",
+  "title": "群体路线个体停步｜共同奔跑、微物吸引与静场余韵",
+  "source_title": "玉米地群跑停步｜编号队列中一人发现甲虫",
+  "summary": "先用统一方向的群体运动建立强路线，再让一个成员因微小发现脱离节奏并停步；镜头从群体尺度收紧到接触细节，最终以个体凝视和空场恢复代替继续奔跑。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/group-route-individual-curiosity-halt",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-alin-reaper05-2094686295951859825-browser-2094686295951859825-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-alin-reaper05-2094686295951859825-browser-2094686295951859825-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-group-route-individual-curiosity-halt-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "至少三名明确成年原创成员按同一方向组成可读队列 + 一名成员因局部目标减速并偏离群体节奏 + 其余成员继续保持路线 + 好奇目标被近景验证 + 群体停步或回连并共同确认该发现",
+  "recommended_input": "六名明确成年档案递送员穿统一灰外套，快速走过同一纸库通道。；停下的人发现文件箱上连着一根松散蓝线，并小心提起。；短暂停留她的识别反应，再回到已经空下来的通道，蓝线仍标记原箱体。",
+  "required_anchors": [
+    "One shared group route and tempo are established before any individual deviation.",
+    "Exactly one member slows while the rest preserve the original direction.",
+    "Detail evidence reconnects to the same individual and place.",
+    "The terminal quiet field or aisle preserves the physical trace of both departure and discovery."
+  ],
+  "tags": [
+    "group",
+    "route",
+    "individual",
+    "curiosity",
+    "halt"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:58+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

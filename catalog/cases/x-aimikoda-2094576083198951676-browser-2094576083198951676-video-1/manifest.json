@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aimikoda-2094576083198951676-browser-2094576083198951676-video-1",
+  "slug": "bounded-render-band-progressive-conversion",
+  "title": "绘图界面渐成角色｜骨架、线稿、上色与完成态回连",
+  "source_title": "数字绘画过程｜同一画布从空白轮廓到完整红发人物",
+  "summary": "保持同一软件画布和人物构图，用骨架、轮廓、细化、底色和明暗五个连续阶段证明创作进度；工具面板变化必须服务当前步骤，终局展示完整角色而非另起成图。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/bounded-render-band-progressive-conversion",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2094576083198951676-browser-2094576083198951676-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2094576083198951676-browser-2094576083198951676-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-bounded-render-band-progressive-conversion-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-bounded-render-band-progressive-conversion-v1",
+  "input_format": "稳定主体 + 边界清楚的转换带 + 新旧状态同框 + 单向累积覆盖 + 载体退出后的完整结果",
+  "recommended_input": "打开原创插画画布，以成年深海机械师的松散结构草图起始。；用干净海军蓝轮廓替换粗线，全部关节和头盔边缘保持注册。；同一画布停留完整人物，并短暂显示五阶段图层栈作为证明。",
+  "required_anchors": [
+    "One canvas, crop and pose remain fixed through the process.",
+    "Each new rendering stage preserves the prior structural decisions.",
+    "Color remains inside the established clean contours.",
+    "The final artwork visibly descends from the opening construction rather than replacing it."
+  ],
+  "tags": [
+    "bounded",
+    "render",
+    "band",
+    "progressive",
+    "conversion"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:31+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

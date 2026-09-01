@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-bmx-ai13-2094556015165636649-browser-2094556015165636649-video-1",
+  "slug": "ritual-expectation-blackout-return",
+  "title": "仪式黑场复位｜期待微笑、吹灭中断与冷光回归",
+  "source_title": "生日蜡烛中断｜暖光期待被黑场切断后冷光回归",
+  "summary": "用固定正面构图和一根蜡烛建立成年人物的温暖仪式期待，吹灭动作立刻让空间完全黑场；随后同一人物和同一桌面在冷亮环境回归，表情由期待转为失落，完成因果反差。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/ritual-expectation-blackout-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bmx-ai13-2094556015165636649-browser-2094556015165636649-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bmx-ai13-2094556015165636649-browser-2094556015165636649-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-ritual-expectation-blackout-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创主体与一个可识别的庆祝或启动仪式 + 预期触发物在完成前建立等待 + 一次有因的突然黑场中断仪式 + 同一空间以不同光温回归并保留中断痕迹 + 人物、触发物和改变后的状态共同停留",
+  "recommended_input": "成年夜间档案员居中坐在一块小点心和一根高蓝蜡烛后，空间为小型琥珀阅览室。；她只吹一次，火焰与全部室内实用灯同时熄灭，只留原位余烬渐暗。；她在未点燃蜡烛旁低下视线停留一拍，不重启仪式，也不增加他人。",
+  "required_anchors": [
+    "One adult, one ritual object and one fixed frontal composition establish the expectation.",
+    "A single visible blow causes both flame extinction and room blackout.",
+    "The return preserves person, object and composition while changing the lighting regime.",
+    "The final subdued performance externalizes the interrupted expectation without explanatory copy."
+  ],
+  "tags": [
+    "ritual",
+    "expectation",
+    "blackout",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:59+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}

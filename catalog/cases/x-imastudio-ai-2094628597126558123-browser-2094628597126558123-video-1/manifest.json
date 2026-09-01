@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-imastudio-ai-2094628597126558123-browser-2094628597126558123-video-1",
+  "slug": "reveal-environment-through-performance-pullback",
+  "title": "洗衣房近距表演｜自拍邀请、机器互动与道具回环",
+  "source_title": "偶像洗衣房短片｜同一人物在近镜中完成舞步和洗衣动作",
+  "summary": "同一成年表演者在粉彩自助洗衣房保持近距广角身份，先以手势邀请，再展示清洁剂和滚筒运行，随后用衣物道具完成短舞步；终局回到篮筐和完整空间。",
+  "status": "released",
+  "source_duration_seconds": 15.37161,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reveal-environment-through-performance-pullback",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-imastudio-ai-2094628597126558123-browser-2094628597126558123-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-imastudio-ai-2094628597126558123-browser-2094628597126558123-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performance-environment-pullback-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-performance-environment-pullback-v1",
+  "input_format": "近脸表演基准 + 连续后退镜头 + 逐层环境参照 + 人物动作不中断 + 人景关系全景终态",
+  "recommended_input": "锁定原创成年舞蹈教练：铜色短发、薄荷背带裤和一枚星形耳环，站在青色洗衣房黄色篮筐旁。；她转向一台有标记的洗衣机，用手指沿旋转滚筒描一圈。；两只袜子放回黄色篮筐，同一人物与完整洗衣机列共同停留。",
+  "required_anchors": [
+    "One adult identity, one room and one close camera relationship remain fixed.",
+    "A direct invitation precedes the practical prop demonstration.",
+    "Performance uses accounted laundry props and stays physically bounded.",
+    "The final frame returns every prop and reconnects performer to the complete room."
+  ],
+  "tags": [
+    "performance",
+    "environment",
+    "pullback"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T15:55:33+08:00",
+  "updated_at": "2026-09-01T16:40:09+08:00"
+}

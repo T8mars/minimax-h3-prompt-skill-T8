@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ai-lifehack55-2094385760514589091-browser-2094385760514589091-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7b09963386fb13596b1c16d01e3dda8f28eacb300733784467d86c76c82bf5e0",
+    "creative_dna_sha256": "2d7803cb2ff4d80832abac0f527751125e1636553ffc9b1e8fe0bdc512346d5f"
+  },
+  "content": {
+    "title": "黑白红动作字场｜身份锁定、短词碰撞与角色回标",
+    "summary": "锁定同一成年动画角色，用滑行、俯冲、踢击和落地逐拍触发黑白红短词、网格与圆环；每个字效都回应可见动作，终局回到人物和主标题。",
+    "quick_start": {
+      "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+      "recommended_input": "锁定原创成年动画单车递送员：银发、琥珀眼、海军蓝夹克和珊瑚红长裤，置于象牙色标题网格。；一次脚跟转向触发珊瑚圆环，一次受控跳跃把圆环拆成三个标有【TURN】的斜向面板。；圆环复原，人物回到象牙海报框，准确标题【NIGHT LINE】停留。",
+      "required_anchors": [
+        "一个成人角色身份锚定每个图形模块。",
+        "每个有界身体动作明显先于一个排版响应。",
+        "细节镜头在下一个模块之前重新连接到完整的角色。",
+        "最终的锁定将角色、调色板、图形母题和一个确切的标题重新组合在一起。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "锁定同一成年动画角色，用滑行、俯冲、踢击和落地逐拍触发黑白红短词、网格与圆环；每个字效都回应可见动作，终局回到人物和主标题。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "锁定同一成年动画角色，用滑行、俯冲、踢击和落地逐拍触发黑白红短词、网格与圆环；每个字效都回应可见动作，终局回到人物和主标题。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个成人角色身份锚定每个图形模块。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一个成人角色身份锚定每个图形模块。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个有界身体动作明显先于一个排版响应。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个有界身体动作明显先于一个排版响应。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "简短而准确的单词仍然可读并且在空间上与触发动作相关。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“简短的精确单词仍然可读并且在空间上与触发操作相关。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "细节镜头在下一个模块之前重新连接到完整的角色。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“细节镜头在下一个模块之前重新连接到完整的角色。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的锁定将角色、调色板、图形母题和一个确切的标题重新组合在一起。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“最终的锁定将角色、调色板、图形母题和一个确切的标题重新组合在一起。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年快递员将四条路线的动作变成了一张模块化的夜线海报。",
+          "prompt_seed": "一名成年快递员将四条路线的动作变成了一张模块化的夜线海报。"
+        },
+        {
+          "concept": "一名成年鼓手将四首热门歌曲变成青橙色音乐会标题旋转木马。",
+          "prompt_seed": "一名成年鼓手将四首热门歌曲变成青橙色音乐会标题旋转木马。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一个成人角色身份锚定每个图形模块。”",
+          "repair": "一个成人角色身份锚定每个图形模块。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个有界身体动作明显先于一个排版响应。”",
+          "repair": "每个有界身体动作明显先于一个排版响应。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“简短的精确单词仍然可读并且在空间上与触发操作相关。”",
+          "repair": "简短而准确的单词仍然可读并且在空间上与触发动作相关。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“细节镜头在下一个模块之前重新连接到完整的角色。”",
+          "repair": "细节镜头在下一个模块之前重新连接到完整的角色。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“最终的锁定将角色、调色板、图形母题和一个确切的标题重新组合在一起。”",
+          "repair": "最终的锁定将角色、调色板、图形母题和一个确切的标题重新组合在一起。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年快递员将四条路线的动作变成了一张模块化的夜线海报。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年鼓手将四首热门歌曲变成青橙色音乐会标题旋转木马。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

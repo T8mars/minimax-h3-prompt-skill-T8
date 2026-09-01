@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-projectalivedev-2094498350922141870-browser-2094498350922141870-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "166db3ea1b954647241b8a1f9290249905709a94b809046003a48eb4642181aa",
+    "creative_dna_sha256": "565503fc02c4d2c45e67121d4851325ea0fe42f9a1e5f0725e4f6c063baf68a8"
+  },
+  "content": {
+    "title": "俯视战场双波打击｜密集基线、空投冲击与回程齐射",
+    "summary": "在持续俯视的策略战场中先建立大规模单位、阵地和固定目标，再用第一波空中投放制造局部缺口；镜头保留同一地理关系，第二波飞行单位沿回程路线齐射并留下更大范围余波。",
+    "quick_start": {
+      "input_format": "一个可持续找回的发光目标 + 成年机动精确角色与成年重型控场角色 + 连续镜头内至少3次方向/遮挡/结果接力 + 至少1个工具效果从发出到命中 + 威胁由外圈压到近身再改变环境 + 双角色与目标状态同框收束",
+      "recommended_input": "建立原创桌面风格海岸防御图，两支由成年指挥官控制的舰队、三座港口设施和一座中央雷达塔清楚可见。；雷达、港口和舰队位置保持注册，一支护航队穿过缺口，防守方转向应对。；最终冲击后停留同一俯视地理，受损雷达、幸存单位和持续烟幕通道均可读。",
+      "required_anchors": [
+        "一种连续的头顶空间关系在攻击前确定目标、编队和结构。",
+        "第一次打击改变局部路线或防御状态，而不是起到装饰作用。",
+        "第二条可区分的路线或武器模式以更大的镜头覆盖重新访问相同的目标。",
+        "终点站保留了原始地图上的幸存单位、损坏的目标和持久的后果。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "在持续俯视的策略战场中先建立大规模单位、阵地和固定目标，再用第一波空中投放制造局部缺口；镜头保留同一地理关系，第二波飞行单位沿回程路线齐射并留下更大范围余波。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在持续俯视的策略战场中先建立大规模单位、阵地和固定目标，再用第一波空中投放制造局部缺口；镜头保留同一空间关系关系，第二波飞行单位沿回程路线齐射并留下更大范围余波。 可复用机制保留因果顺序、空间锚点和终态证明，同时替换来源特有的人物、地点、对象、措辞、动作编排与设计。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一种连续的头顶空间关系在攻击前确定目标、编队和结构。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在攻击前，通过连续的空中空间关系确定目标、阵型和结构。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "第一次打击改变局部路线或防御状态，而不是起到装饰作用。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“第一次攻击会改变当地路线或防御状态，而不是起到装饰作用。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "单位在攻击波之间的同一注册地图内做出反应。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“单位在攻击波之间的同一注册地图内做出反应。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "第二条可区分的路线或武器模式以更大的镜头覆盖重新访问相同的目标。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“第二条可区分的路线或武器模式以更大的镜头覆盖重新访问相同的目标。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终点站保留了原始地图上的幸存单位、损坏的目标和持久的后果。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终点站保留了原始地图上的幸存单位、受损目标和持久后果。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "沿海舰队使用烟幕开口和返航火炬汇聚。",
+          "prompt_seed": "沿海舰队使用烟幕开口和返航火炬汇聚。"
+        },
+        {
+          "concept": "轨道采矿群在一个反应​​堆节点上使用诱饵通道和第二波禁用脉冲。",
+          "prompt_seed": "轨道采矿群在一个反应​​堆节点上使用诱饵通道和第二波禁用脉冲。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在攻击前，通过连续的空中空间关系确定目标、阵型和结构。”",
+          "repair": "一种连续的头顶空间关系在攻击前确定目标、编队和结构。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“第一次攻击会改变当地路线或防御状态，而不是起到装饰作用。”",
+          "repair": "第一次打击改变局部路线或防御状态，而不是起到装饰作用。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“单位在攻击波之间的同一注册地图内做出反应。”",
+          "repair": "单位在攻击波之间的同一注册地图内做出反应。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“第二条可区分的路线或武器模式以更大的镜头覆盖重新访问相同的目标。”",
+          "repair": "第二条可区分的路线或武器模式以更大的镜头覆盖重新访问相同的目标。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终点站保留了原始地图上的幸存单位、受损目标和持久后果。”",
+          "repair": "终点站保留了原始地图上的幸存单位、损坏的目标和持久的后果。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "沿海舰队使用烟幕开口和返航火炬汇聚。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "轨道采矿群在一个反应​​堆节点上使用诱饵通道和第二波禁用脉冲。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sophiaparkerr-2094701248045789443-browser-2094701248045789443-video-1",
+  "slug": "rule-bounded-search-reaction-payoff",
+  "title": "颜色规则搜寻｜任务宣布、同色取物与满载回报",
+  "source_title": "橙色超市挑战｜颜色规则推动商品搜寻与人物反应",
+  "summary": "先让同一成年人物和购物车建立单色搜寻规则，再用多次货架取物、购物车累积和人物反应证明规则被执行；结尾把满载结果与发起者重新同框。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/rule-bounded-search-reaction-payoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sophiaparkerr-2094701248045789443-browser-2094701248045789443-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sophiaparkerr-2094701248045789443-browser-2094701248045789443-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-rule-bounded-search-reaction-payoff-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创主体与一个清楚可见的筛选规则 + 至少三次不同类别的可验证搜寻接触 + 合格物件逐项保留且不合格物件不被带走 + 同一容器与路线连续 + 终局完整库存和人物反应共同证明完成",
+  "recommended_input": "原创成年海洋研究员穿钴蓝夹克，推空灰色样品车进入白色实验物资库；规则是只收集蓝色物件。；同一推车和前进路线保持连续，已接受的蓝色物件始终可见，非蓝色物件留在货架。；回到同一研究员与满载推车同框，她核对三类物件并只做一次完成手势。",
+  "required_anchors": [
+    "One explicit selection rule is understandable before the first pickup.",
+    "Every accepted object visibly satisfies the same rule.",
+    "At least three different object categories demonstrate that the rule generalizes.",
+    "The initiating adult and the completed collection reconnect in the terminal proof frame."
+  ],
+  "tags": [
+    "rule",
+    "bounded",
+    "search",
+    "reaction",
+    "payoff"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-01T17:37:06+08:00",
+  "updated_at": "2026-09-01T18:20:23+08:00"
+}
