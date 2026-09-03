@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "903811c59c8cd166c5f4b17556be0f8a1eca0fe2caf52d2bd4567bd9575c0e19",
+    "creative_dna_sha256": "ff74a8a579c862386fb2a7a23e24027799b70faea0a8256742f19b9404031d49"
+  },
+  "content": {
+    "title": "和风角色谱系｜纹样框架、身份符号与群像归档",
+    "summary": "固定一套和风图鉴框架和字段顺序，让多个成年原创角色逐一以面孔、姿态、职责物与主题符号完成登记；每人只占一个清楚槽位，终局把全体角色聚合为可比较群像。",
+    "quick_start": {
+      "input_format": "固定人物区/标题/字段顺序/计数器 + 至少5个编号原型 + 每个原型同步改变主色/轮廓/姿态微动作/职责图标 + 界面全程不滑动 + 最终编号档案稳定停留",
+      "recommended_input": "建立固定靛蓝纸质档案框，包含人物槽、职责图标、两项字段和编号印章，用于六名明确成年原创山地氏族角色。；桥梁守卫、草药裁判、钟铃信使、档案潜水员和风暴谈判者沿用相同字段顺序，每人只改变脸、轮廓、姿态和一件职责物。；六名成年角色围绕原创标题【RIDGE COVENANT】完成终局谱系，全部编号和职责图标仍可读。",
+      "required_anchors": [
+        "一个固定的名单框架、场上顺序和编号的进展始终保持注册状态。",
+        "每个明显成人的原创角色都会一起改变脸部、轮廓、姿势和一个角色对象。",
+        "重复出现的调色板和装饰保留了分类，而角色证据发生了变化。",
+        "终端集合包括每个已建立的成年人，具有可读的数字和职责符号。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定一套和风图鉴框架和字段顺序，让多个成年原创角色逐一以面孔、姿态、职责物与主题符号完成登记；每人只占一个清楚槽位，终局把全体角色聚合为可比较群像。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定一套和风图鉴框架和字段顺序，让多个成年原创角色逐一以面孔、姿态、职责物与主题符号完成登记；每人只占一个清楚槽位，终局把全体角色聚合为可比较群像。 必须满足：One fixed roster frame, field order and numbered progression remain registered throughout. + Every clearly adult original character changes face, silhouette, pose and one role object together. + One card contains one identity; transitions cannot morph two characters into an ambiguous hybrid. + Recurring palette and ornament preserve the taxonomy while role evidence changes. + The terminal ensemble includes every established adult with readable number and duty symbol.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个固定的名单框架、场上顺序和编号的进展始终保持注册状态。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个固定的名单框架、场序和编号的进展始终保持注册。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个明显成人的原创角色都会一起改变脸部、轮廓、姿势和一个角色对象。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个明显成人的原创角色都会一起改变脸部、轮廓、姿势和一个角色对象。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "一卡一个身份；转换不能将两个角色变成模糊的混合体。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“一张卡牌包含一个身份；转换不能将两个角色变成模糊的混合体。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "重复出现的调色板和装饰保留了分类，而角色证据发生了变化。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“重复出现的调色板和装饰保留了分类，而角色证据发生了变化。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端集合包括每个已建立的成年人，具有可读的数字和职责符号。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端集合包括每个已建立的成年人，并具有可读的数字和职责符号。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "六名成年山族专家进入一份固定的靛蓝档案，并在角色地图中重聚。",
+          "prompt_seed": "六名成年山族专家进入一份固定的靛蓝档案，并在角色地图中重聚。"
+        },
+        {
+          "concept": "五名成年深海站工作人员进入一个固定的玻璃档案，并围绕压力图重新聚集。",
+          "prompt_seed": "五名成年深海站工作人员进入一个固定的玻璃档案，并围绕压力图重新聚集。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个固定的名单框架、场序和编号的进展始终保持注册。”",
+          "repair": "一个固定的名单框架、场上顺序和编号的进展始终保持注册状态。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个明显成人的原创角色都会一起改变脸部、轮廓、姿势和一个角色对象。”",
+          "repair": "每个明显成人的原创角色都会一起改变脸部、轮廓、姿势和一个角色对象。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“一张卡牌包含一个身份；转换不能将两个角色变成模糊的混合体。”",
+          "repair": "一卡一个身份；转换不能将两个角色变成模糊的混合体。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“重复出现的调色板和装饰保留了分类，而角色证据发生了变化。”",
+          "repair": "重复出现的调色板和装饰保留了分类，而角色证据发生了变化。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端集合包括每个已建立的成年人，并具有可读的数字和职责符号。”",
+          "repair": "终端集合包括每个已建立的成年人，具有可读的数字和职责符号。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "六名成年山族专家进入一份固定的靛蓝档案，并在角色地图中重聚。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "五名成年深海站工作人员进入一个固定的玻璃档案，并围绕压力图重新聚集。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

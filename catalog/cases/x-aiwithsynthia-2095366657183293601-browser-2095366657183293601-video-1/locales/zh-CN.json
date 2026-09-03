@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "fcbbec25c6ae7e7d6d1bee515a7b4d3429c64e070e830aaee3930680c0beb29b",
+    "creative_dna_sha256": "1d503a66c429d035a9845c388ab8dd18e45d21a492e169d17cfb838d16811711"
+  },
+  "content": {
+    "title": "四季步行轮播｜身份锁定、服装气候同步与春景回归",
+    "summary": "锁定同一成年人物、正面步行轴和同一商业街结构，让夏、秋、冬、春依次同步改写树木、地面、光线和服装；人物的脸、发型、杯子与步态连续，终局回到明亮季节并靠近镜头。",
+    "quick_start": {
+      "input_format": "固定主体身份与镜头关系 + 至少四个材质/版式不同的风格世界 + 每阶段改变两项风格通道 + 递增密度 + 可读身份终态",
+      "recommended_input": "锁定原创成年城市生态学家：栗色短发、圆形深色眼镜、白色随行杯，沿固定石质商业街正面走向镜头，街边有四个铁制树池。；前景围巾擦拭切换到蓝调冬季：树木光秃、浅雪、炭灰外套，同一面孔、眼镜、杯子、步幅和中心线保持固定。；她只举起同一个白杯一次，在春季中景停下，准确原创标题【ONE STREET / FOUR SEASONS】出现。",
+      "required_anchors": [
+        "同一名明确成年人物、正面步行轴、随行杯和固定街道结构贯穿全部季节状态。",
+        "每次季节转换必须同时更新树叶、地面、光线和已声明服装。",
+        "每个季节只出现一次前景转场载体，并重新露出原先注册的店面，而不是切换到全新地点。",
+        "终局近景保留最终季节中的同一名成年人物和随行杯，并显示准确的原创标题。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "锁定同一成年人物、正面步行轴和同一商业街结构，让夏、秋、冬、春依次同步改写树木、地面、光线和服装；人物的脸、发型、杯子与步态连续，终局回到明亮季节并靠近镜头。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "锁定同一成年人物、正面步行轴和同一商业街结构，让夏、秋、冬、春依次同步改写树木、地面、光线和服装；人物的脸、发型、杯子与步态连续，终局回到明亮季节并靠近镜头。 必须满足：One clearly adult identity, one frontal walking axis, one carried cup and fixed street geometry persist through all states. + Every seasonal transition simultaneously updates foliage, ground, light and declared wardrobe. + Face, hairstyle, glasses, cup, stride and body proportions cannot change with the environment. + Foreground transition carriers occur once per season and reveal registered storefronts rather than new geography. + The terminal closer view retains the same adult and cup in the final season under one exact original title.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "同一名明确成年人物、正面步行轴、随行杯和固定街道结构贯穿全部季节状态。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果删除这条基线规则，后续季节变化便无法证明仍属于同一人物、随行物和街道，序列将失去可比较的参考状态。删除规则：『全部季节状态都保留同一名明确成年人物、正面步行轴、随行杯和固定街道结构。』",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每次季节转换必须同时更新树叶、地面、光线和已声明服装。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果删除这条同步变化规则，环境或服装会像无因跳切，无法证明一次转场确实完成了完整季节切换。删除规则：『每次季节转换必须同时更新树叶、地面、光线和已声明服装。』",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "面孔、发型、眼镜、随行杯、步幅和身体比例不得随环境改变。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果删除这条身份连续规则，中间季节可以换成另一个人物或另一件随行物，轮播便无法证明身份保持。删除规则：『面孔、发型、眼镜、随行杯、步幅和身体比例不得随环境改变。』",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "每个季节只出现一次前景转场载体，并重新露出原先注册的店面，而不是切换到全新地点。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果删除这条空间回连规则，转场后可能落到无关街道，观众无法验证同一地点的季节变化。删除规则：『每个季节只出现一次前景转场载体，并重新露出原先注册的店面，而不是切换到全新地点。』",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终局近景保留最终季节中的同一名成年人物和随行杯，并显示准确的原创标题。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果删除这条终局证明规则，序列只会停止运动，却无法确认最终季节仍保留同一人物、随行杯和原创标题。删除规则：『终局近景保留最终季节中的同一名成年人物和随行杯，并显示准确的原创标题。』",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年生态学家穿过一个拱廊，穿越四个同步季节，并在春天停下来，拿着同一个杯子。",
+          "prompt_seed": "一位成年生态学家穿过一个拱廊，穿越四个同步季节，并在春天停下来，拿着同一个杯子。"
+        },
+        {
+          "concept": "一位成年站长穿过一个站台，经历四种天气状态，并在黎明时分带着同样的黄铜手表停下来。",
+          "prompt_seed": "一位成年站长穿过一个站台，经历四种天气状态，并在黎明时分带着同样的黄铜手表停下来。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果删除这条基线规则，后续季节变化便无法证明仍属于同一人物、随行物和街道，序列将失去可比较的参考状态。",
+          "repair": "同一名明确成年人物、正面步行轴、随行杯和固定街道结构贯穿全部季节状态。"
+        },
+        {
+          "failure": "如果删除这条同步变化规则，环境或服装会像无因跳切，无法证明完整季节切换。",
+          "repair": "每次季节转换必须同时更新树叶、地面、光线和已声明服装。"
+        },
+        {
+          "failure": "如果删除这条身份连续规则，中间季节可以换成另一个人物或另一件随行物，轮播便无法证明身份保持。",
+          "repair": "面孔、发型、眼镜、随行杯、步幅和身体比例不得随环境改变。"
+        },
+        {
+          "failure": "如果删除这条空间回连规则，转场后可能落到无关街道，观众无法验证同一地点的季节变化。",
+          "repair": "每个季节只出现一次前景转场载体，并重新露出原先注册的店面，而不是切换到全新地点。"
+        },
+        {
+          "failure": "如果删除这条终局证明规则，序列只会停止运动，却无法确认最终季节仍保留同一人物、随行杯和原创标题。",
+          "repair": "终局近景保留最终季节中的同一名成年人物和随行杯，并显示准确的原创标题。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年生态学家穿过一个拱廊，穿越四个同步季节，并在春天停下来，拿着同一个杯子。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年站长穿过一个站台，经历四种天气状态，并在黎明时分带着同样的黄铜手表停下来。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

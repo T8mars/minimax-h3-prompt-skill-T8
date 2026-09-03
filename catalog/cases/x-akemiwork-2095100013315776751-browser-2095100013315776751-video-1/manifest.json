@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1",
+  "slug": "contact-triggered-transient-energy-feedback",
+  "title": "荧光格斗反馈｜包围升级、真实接触与命名终招",
+  "source_title": "停车场武打短片｜成年武者以接触后紫光清场",
+  "summary": "先在停车场建立成年武者与逐渐逼近的轮廓对手，动作轨迹和身体接触必须先成立；紫色能量只能在命中后短促反馈并逐级增强，终局以原创招式名和稳定站姿收束。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/contact-triggered-transient-energy-feedback",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-contact-triggered-transient-energy-feedback-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-contact-triggered-transient-energy-feedback-v1",
+  "input_format": "明确成年原创主体、可读对手和稳定地面关系先建立 + 每次先完整承诺物理轨迹并真实接触 + 能量、尘屑、毛发、布料或灯光只在接触后局部短促响应 + 通过对手数量和反馈半径升级但轮廓始终清楚 + 终局效果归零并在同一空间稳定持有主体",
+  "recommended_input": "锁定原创成年跑酷教练：铜色辫发、石板灰训练服和一只青色前臂护具，站在空旷混凝土渡轮甲板中央。；只有掌挡发生接触后，才沿无人机后退方向释放短促青色光弧，光效不得代替命中。；最终双掌击让圆形青色残影穿过既有路线，光效全部衰减后，成年人物在准确原创招式名【TIDELINE BREAK】下稳定站立。",
+  "required_anchors": [
+    "One clearly adult fighter, one fixed arena axis and readable opponent lanes establish spatial truth.",
+    "Every evade, block or strike completes a physical trajectory before energy feedback begins.",
+    "Opponent count and proximity may escalate without changing the fighter's identity or resetting geography.",
+    "The final named move is original, follows the strongest contact and ends with a stable adult stance after all light decays."
+  ],
+  "tags": [
+    "contact",
+    "triggered",
+    "transient",
+    "energy",
+    "feedback"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:17+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

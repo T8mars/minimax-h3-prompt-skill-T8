@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "赤黑角色字卡轮转｜镜像手势、情绪词与终门回标",
+  "source_title": "动漫情绪片头｜同一成年角色穿过镜像字场与门廊",
+  "summary": "锁定同一成年原创动画角色，用手势、转身和奔跑触发赤黑白字卡、镜像手掌与对称几何；单人与复制模块交替升级，最终让完整角色抵达一扇可读终门。",
+  "status": "released",
+  "source_duration_seconds": 15.146667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "锁定原创成年夜间递送员：白发、炭灰长外套、一只橙色手套和三角面颊标记，统一使用海军蓝、奶油白与橙色图形系统。；向前一步把人物复制进三个注册面板，面板只标记【WAIT】，每个版本保持相同面孔、外套和面颊标记。；人物独自停在橙色终门前，准确原创标题【LAST ROUTE】出现，调色、手套和路线圆环同时可见。",
+  "required_anchors": [
+    "One clearly adult original character retains at least three identity anchors across every graphic module.",
+    "Each module follows one visible body action and introduces no more than one exact short word.",
+    "Module density may rise, but recurring palette, hand motif and circular geometry remain traceable.",
+    "The final gate recombines duplicates and returns the complete character under one exact original title."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:17+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

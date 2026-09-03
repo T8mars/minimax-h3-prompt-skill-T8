@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "ac888dc51c1d63121b2022ad3ecdd43f79b8131eb91ad39e45e0a8c3f84d7533",
+    "creative_dna_sha256": "49c766910fb9fd5d2276250e273a2e93716b7527a4a2dda0660e211ac7a2b92a"
+  },
+  "content": {
+    "title": "灾难幻象拆台｜环境吞没、尺度破绽与微缩片场证明",
+    "summary": "先让列车、海岸与建筑共享一个可信地理，再让巨浪沿同一轴线逐层吞没铁路和街区；水雾遮满画面后揭开微缩布景、轨道摄影机、操作人员与水槽，让最后一层明确解释前面的灾难效果。",
+    "quick_start": {
+      "input_format": "一个真实尺度灾变状态与可辨认地标 + 灾变过程保持空间因果连续 + 摄影机沿同一轴线逐步拉远并揭示尺度边界 + 场景被证明属于完整微缩装置 + 人手或工作台与模型同框完成终局验证",
+      "recommended_input": "建立原创银色单轨列车穿过微缩沙漠天文台的完整地理：一条红色峡谷、三座白色圆顶与固定从左向右的路线。；尘墙依次越过第一座圆顶、吞没轨道，并把一块轻质天线板推向镜头；人物或车辆身份都不改变。；揭示桌面峡谷、两台受控扬尘机、一条运动控制轨道和三名明确成年工作人员剪影；一块监视器保留开场单轨画面，并显示准确短问句【HOW BIG?】。",
+      "required_anchors": [
+        "在危险增加之前建立一个虚构的空间关系区域和至少三个重复尺度的锚点。",
+        "灾难以可读的顺序穿过相同的空间关系区域，而不是重置位置。",
+        "所揭示的集合包含至少三个清晰的生产线索，可以因果地解释前面的效果。",
+        "监控层保留开头的虚构内容并确认微型图与图像的关系。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让列车、海岸与建筑共享一个可信地理，再让巨浪沿同一轴线逐层吞没铁路和街区；水雾遮满画面后揭开微缩布景、轨道摄影机、操作人员与水槽，让最后一层明确解释前面的灾难效果。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先让列车、海岸与建筑共享一个可信空间关系，再让巨浪沿同一轴线逐层吞没铁路和街区；水雾遮满画面后揭开微缩布景、轨道摄影机、操作人员与水槽，让最后一层明确解释前面的灾难效果。 必须满足：One fictional geography and at least three repeated scale anchors are established before the hazard grows. + The catastrophe advances through the same geography in a readable order rather than resetting locations. + One full-frame physical occlusion bridges the fictional event to the production layer. + The revealed set contains at least three legible production cues that causally explain the preceding effect. + A monitoring layer preserves the opening fiction and confirms the miniature-to-image relationship.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "在危险增加之前建立一个虚构的空间关系区域和至少三个重复尺度的锚点。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在危险增加之前建立一个虚构的空间关系区域和至少三个重复的比例锚点。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "灾难以可读的顺序穿过相同的空间关系区域，而不是重置位置。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“灾难以可读的顺序穿过相同的空间关系区域，而不是重置位置。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "一个全帧物理遮挡将虚构事件与生产层联系起来。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“一个全帧物理遮挡将虚构事件桥接到生产层。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "所揭示的集合包含至少三个清晰的生产线索，可以因果地解释前面的效果。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“显示的集合包含至少三个清晰的生产线索，可以因果地解释前面的效果。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "监控层保留开头的虚构内容并确认微型图与图像的关系。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“监控层保留开头的虚构内容并确认微型图与图像的关系。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一场沙漠沙尘灾难席卷了模型天文台，然后吹尘器、摄像机导轨和监视器揭示了其构造。",
+          "prompt_seed": "一场沙漠沙尘灾难席卷了模型天文台，然后吹尘器、摄像机导轨和监视器揭示了其构造。"
+        },
+        {
+          "concept": "一场微型高山雪崩吞噬了一个电缆站，然后雪车和桌面地形证明了舞台规模。",
+          "prompt_seed": "一场微型高山雪崩吞噬了一个电缆站，然后雪车和桌面地形证明了舞台规模。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“在危险增加之前建立一个虚构的空间关系区域和至少三个重复的比例锚点。”",
+          "repair": "在危险增加之前建立一个虚构的空间关系区域和至少三个重复尺度的锚点。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“灾难以可读的顺序穿过相同的空间关系区域，而不是重置位置。”",
+          "repair": "灾难以可读的顺序穿过相同的空间关系区域，而不是重置位置。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“一个全帧物理遮挡将虚构事件桥接到生产层。”",
+          "repair": "一个全帧物理遮挡将虚构事件与生产层联系起来。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“显示的集合包含至少三个清晰的生产线索，可以因果地解释前面的效果。”",
+          "repair": "所揭示的集合包含至少三个清晰的生产线索，可以因果地解释前面的效果。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“监控层保留开头的虚构内容并确认微型图与图像的关系。”",
+          "repair": "监控层保留开头的虚构内容并确认微型图与图像的关系。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一场沙漠沙尘灾难席卷了模型天文台，然后吹尘器、摄像机导轨和监视器揭示了其构造。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一场微型高山雪崩吞噬了一个电缆站，然后雪车和桌面地形证明了舞台规模。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

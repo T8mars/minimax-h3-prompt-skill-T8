@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "19aecef00a68dd67495438efa3295b278e8f35beb4318f607196edecce6a7767",
+    "creative_dna_sha256": "20b9a437cda07c00a07db25b79e3e637546cb7b5e86e9caa4599e33d2c16df5d"
+  },
+  "content": {
+    "title": "人生字场旅程｜手写触发、空间短词与眼神收束",
+    "summary": "先用成年人物的一次书写动作提出主题，再让原创短词依次变成圆环、道路、台阶和环境标记；人物持续穿过这些文字结构，终局回到同一身份的眼神或静止主标。",
+    "quick_start": {
+      "input_format": "Establish one clearly adult original subject, three identity anchors and one continuous world axis. + Bind each decisive action to exactly one short original semantic word that appears only after the action begins. + Make each word occupy, divide, reflect or redirect the physical environment rather than float as a subtitle. + Escalate typography scale and spatial depth while preserving identity, travel direction and readable action. + Return to the same adult face or full-body anchor and resolve the word sequence into one terminal identity proof.",
+      "recommended_input": "锁定原创成年城市规划师：黑色短发、锈红外套、黄铜笔记本，位于蓝调时刻的安静车站。；她穿过通道，准确短词【CROSS】变成通往远端站台的琥珀色地面横条。；以稳定眼神收束，全部结构折叠成可读原创句【MAKE THE NEXT MAP】并同时静止。",
+      "required_anchors": [
+        "一个明确的成人身份和一个初始书写动作确立了该词系统的作者身份。",
+        "每个新的精确短单词都遵循一个可见的动作，并成为一个独特的环境结构。",
+        "随着后续章节规模或密度的增加，前面的单词仍然可追溯。",
+        "最终的近景将所有语义阶段重新组合成一个精确的原始句子和稳定的个人反应。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用成年人物的一次书写动作提出主题，再让原创短词依次变成圆环、道路、台阶和环境标记；人物持续穿过这些文字结构，终局回到同一身份的眼神或静止主标。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先用成年人物的一次书写动作提出主题，再让原创短词依次变成圆环、道路、台阶和环境标记；人物持续穿过这些文字结构，终局回到同一身份的眼神或静止主标。 必须满足：One clearly adult identity and one initial writing action establish authorship of the word system. + Each new exact short word follows one visible action and becomes one distinct environmental structure. + The character crosses or touches every word structure while retaining one route direction and stable identity. + Previous words remain traceable as later chapters increase scale or density. + The final close view recombines all semantic stages into one exact original sentence and a stable personal reaction.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个明确的成人身份和一个初始书写动作确立了该词系统的作者身份。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个明确的成人身份和一个初始写作行为确立了该词系统的作者身份。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个新的精确短单词都遵循一个可见的动作，并成为一个独特的环境结构。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个新的精确短词都遵循一个可见的动作，并成为一个独特的环境结构。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "角色跨越或接触每一个单词结构，同时保持单一的路线方向和稳定的身份。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“角色跨越或触及每个单词结构，同时保留一个路线方向和稳定的身份。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "随着后续章节规模或密度的增加，前面的单词仍然可追溯。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“随着后面的章节增加规模或密度，前面的单词仍然可追溯。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的近景将所有语义阶段重新组合成一个精确的原始句子和稳定的个人反应。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的近距离视图将所有语义阶段重新组合成一个精确的原始句子和稳定的个人反应。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成人规划师写下三个行动词，这些词成为一条车站路线，并折叠成一个原创的生活宣言。",
+          "prompt_seed": "一位成人规划师写下三个行动词，这些词成为一条车站路线，并折叠成一个原创的生活宣言。"
+        },
+        {
+          "concept": "一位成年厨师写下三个动词，这些动词成为厨房工作站，并解析为新的餐厅座右铭。",
+          "prompt_seed": "一位成年厨师写下三个动词，这些动词成为厨房工作站，并解析为新的餐厅座右铭。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个明确的成人身份和一个初始写作行为确立了该词系统的作者身份。”",
+          "repair": "一个明确的成人身份和一个初始书写动作确立了该词系统的作者身份。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个新的精确短词都遵循一个可见的动作，并成为一个独特的环境结构。”",
+          "repair": "每个新的精确短单词都遵循一个可见的动作，并成为一个独特的环境结构。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“角色跨越或触及每个单词结构，同时保留一个路线方向和稳定的身份。”",
+          "repair": "角色跨越或接触每一个单词结构，同时保持单一的路线方向和稳定的身份。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“随着后面的章节增加规模或密度，前面的单词仍然可追溯。”",
+          "repair": "随着后续章节规模或密度的增加，前面的单词仍然可追溯。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的近距离视图将所有语义阶段重新组合成一个精确的原始句子和稳定的个人反应。”",
+          "repair": "最终的近景将所有语义阶段重新组合成一个精确的原始句子和稳定的个人反应。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成人规划师写下三个行动词，这些词成为一条车站路线，并折叠成一个原创的生活宣言。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年厨师写下三个动词，这些动词成为厨房工作站，并解析为新的餐厅座右铭。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

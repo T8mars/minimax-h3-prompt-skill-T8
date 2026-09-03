@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1",
+  "slug": "routine-tool-shoreline-interruption-recovery-return",
+  "title": "岸边任务回路｜营地准备、带物行进、浪击恢复与返回",
+  "source_title": "孤岛晨间取水｜成年人物携锅到海边遇浪后回营",
+  "summary": "先让成年人物在固定营地完成一项带工具的晨间准备，再携带同一器具沿清楚路线走到水边；一次海浪打断任务后，人物保持器具并恢复站立，随后沿原方向返回营地。",
+  "status": "released",
+  "source_duration_seconds": 15.136,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/routine-tool-shoreline-interruption-recovery-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-routine-tool-shoreline-interruption-recovery-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创主体、一个固定营地和一件持续携带的工具 + 出发前完成一项可见准备动作 + 沿可追踪路线抵达环境边界 + 只发生一次外部扰动并保留工具与身份 + 人物恢复后沿既有路线回到同一营地终态",
+  "recommended_input": "建立明确成年原创岛屿生态学家：黑发扎起、宽松沙色衬衫、橄榄短裤和银色取样壶，日出时位于帆布海滩棚旁。；水线处只放低取样壶一次，宽景中持续保留帐棚、脚印和海岸方向。；她站稳、检查盖紧的取样壶，并沿同一串脚印返回帆布棚，终局宽景同时包含成年人物与营地。",
+  "required_anchors": [
+    "One clearly adult subject, one carried tool, one camp anchor and one shoreline route establish the task.",
+    "A complete preparation action precedes departure with the same tool.",
+    "Exactly one environmental interruption causes a readable brace while tool possession and identity persist.",
+    "The subject visibly recovers and returns along the established route to the same camp terminal state."
+  ],
+  "tags": [
+    "routine",
+    "tool",
+    "shoreline",
+    "interruption",
+    "recovery",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:19+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

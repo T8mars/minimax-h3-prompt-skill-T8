@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1",
+  "slug": "selfie-route-local-find-taste-resume",
+  "title": "自拍地标路线｜街行转身、饮品停点与河岸续行",
+  "source_title": "伦敦旅行随拍｜成年旅者从街头自拍走到河岸日落",
+  "summary": "用同一成年旅者、手持自拍距离和步行方向串联街道、地标道路与河岸；一次转身负责揭示地点，一次饮品停点完成体验证明，随后人物恢复行走并以日落地标收束。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/selfie-route-local-find-taste-resume",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-selfie-route-local-find-taste-resume-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-selfie-route-local-find-taste-resume-v1",
+  "input_format": "同一成年自拍主体与固定路线 + 一次目光或转头动机发现 + 一个地方物品的完整嗅闻或品尝动作 + 克制身体反应且无广告台词 + 手持结果继续原路线",
+  "recommended_input": "跟随原创成年旅行插画师：黑色长发、白色罩衫、银色手表和牛皮纸饮品杯，以近距离手持自拍沿繁忙河岸城市路线前进。；一辆掠过的深色出租车只擦拭切换一次到河岸步道，面孔、头发、罩衫、手表、杯子和前进路线保持连续。；她放下同一个杯子，继续走三步并只回看一次，让日落钟楼占据终局背景。",
+  "required_anchors": [
+    "One clearly adult traveler, one handheld selfie distance and one route direction anchor every chapter.",
+    "A single visible turn reveals landmarks without replacing the traveler or resetting the route.",
+    "Exactly one drink stop contains a complete sip and a restrained visible response.",
+    "The subject resumes movement with the same cup and ends against a readable destination landmark."
+  ],
+  "tags": [
+    "selfie",
+    "route",
+    "local",
+    "find",
+    "taste",
+    "resume"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:18+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

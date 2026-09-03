@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1",
+  "slug": "private-ritual-object-release-detail-route-return",
+  "title": "私密夜间仪式｜物件收尾、细节路线与同场回归",
+  "source_title": "夜室动作路线｜烟具收尾后沿身体细节回到床边",
+  "summary": "在同一私密夜间空间先建立明确成年人物与一个正在进行的个人仪式；人物完成并放下核心物件后，镜头沿手、肩、服装、步伐和家具接触组成连续细节路线，最后回到同一房间和同一成年人已安定的状态。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/private-ritual-object-release-detail-route-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-private-ritual-object-release-detail-route-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创主体与一个私密固定空间 + 一件被克制释放的个人物件 + 至少两个沿物件表面推进的材质细节证据 + 一条连续离开与返回路线 + 终局回到原空间并保留仪式后的状态",
+  "recommended_input": "原创成年电台档案员独处于午夜录音间，保持铜色短发、靛蓝工作衫和银色耳扣；桌上只有一台卷盘录音机与陶瓷茶杯。；连续细节路线从她扣好磁带盒开始，依次连接耳扣、卷起的袖口、肩包带和离开桌面的靴子。；回到开场轴线的较宽画面，同一成年人安静坐定，录音机关灯、耳机放下、磁带盒闭合；不出现他人、来源水印或复制字幕。",
+  "required_anchors": [
+    "One clearly adult identity, one private room and one active ritual object establish the baseline.",
+    "The adult visibly completes and releases the ritual object before the camera begins the detail route.",
+    "Body movement and tactile contacts form one traceable route from the object station to a resting zone.",
+    "The final wide return preserves person and geography while proving the ritual object is inactive and the adult has settled."
+  ],
+  "tags": [
+    "private",
+    "ritual",
+    "object",
+    "release",
+    "detail",
+    "route"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-02T19:27:38+08:00",
+  "updated_at": "2026-09-02T20:33:51+08:00"
+}

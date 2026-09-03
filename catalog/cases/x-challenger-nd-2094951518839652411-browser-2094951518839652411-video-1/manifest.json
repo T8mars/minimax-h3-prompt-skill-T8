@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1",
+  "slug": "fixed-dossier-archetype-roster",
+  "title": "机械光圈角色谱系｜单人揭示、职责差异与放射群像",
+  "source_title": "蒸汽角色名册｜同一齿轮光圈依次登记成年人物",
+  "summary": "用同一齿轮、管线和机械光圈作为固定角色槽，让多个成年原创人物逐一显露面孔、服装、姿态和职责物；每次只登记一人，终局把全部人物汇入放射式机械名册。",
+  "status": "released",
+  "source_duration_seconds": 15.146667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/fixed-dossier-archetype-roster",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-fixed-dossier-archetype-roster-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-fixed-dossier-archetype-roster-v1",
+  "input_format": "固定人物区/标题/字段顺序/计数器 + 至少5个编号原型 + 每个原型同步改变主色/轮廓/姿态微动作/职责图标 + 界面全程不滑动 + 最终编号档案稳定停留",
+  "recommended_input": "建立固定氧化铜机械光圈，包含人物槽、编号压力表和职责铭牌，用于五名明确成年原创飞艇工程师。；成年导航员、线缆医师、锅炉审计员和风帆机械师沿用相同槽位，每次只改变脸、轮廓、站姿和一件工具。；镜头拉远，五名成年人物围绕中心涡轮排列，准确原创标题【AEROWORKS CREW】出现，全部编号和工具保留。",
+  "required_anchors": [
+    "One fixed mechanical aperture, portrait bay, dial and field order remain registered.",
+    "Every clearly adult original role changes four comparison fields together: face, silhouette, stance and tool.",
+    "One reveal interval contains exactly one adult identity and readable role evidence.",
+    "The terminal radial roster restores every established adult, number and tool around the same central mechanism."
+  ],
+  "tags": [
+    "fixed",
+    "dossier",
+    "archetype",
+    "roster"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:17+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

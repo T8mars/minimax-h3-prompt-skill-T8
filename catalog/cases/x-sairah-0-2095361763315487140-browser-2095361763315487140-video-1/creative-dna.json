@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "用同一成年旅者、手持自拍距离和步行方向串联街道、地标道路与河岸；一次转身负责揭示地点，一次饮品停点完成体验证明，随后人物恢复行走并以日落地标收束。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One clearly adult traveler, one handheld selfie distance and one route direction anchor every chapter.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult traveler, one handheld selfie distance and one route direction anchor every chapter.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "A single visible turn reveals landmarks without replacing the traveler or resetting the route.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A single visible turn reveals landmarks without replacing the traveler or resetting the route.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "One declared occlusion carrier may bridge locations while all identity and prop anchors persist.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"One declared occlusion carrier may bridge locations while all identity and prop anchors persist.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Exactly one drink stop contains a complete sip and a restrained visible response.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Exactly one drink stop contains a complete sip and a restrained visible response.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The subject resumes movement with the same cup and ends against a readable destination landmark.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The subject resumes movement with the same cup and ends against a readable destination landmark.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult illustrator turns through a riverside city route, pauses for one drink and resumes toward a sunset clock tower.",
+      "prompt_seed": "An adult illustrator turns through a riverside city route, pauses for one drink and resumes toward a sunset clock tower."
+    },
+    {
+      "concept": "An adult marine reporter turns through a harbor route, pauses for one local fruit and resumes toward a lighthouse.",
+      "prompt_seed": "An adult marine reporter turns through a harbor route, pauses for one local fruit and resumes toward a lighthouse."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult traveler, one handheld selfie distance and one route direction anchor every chapter.\"",
+      "repair": "One clearly adult traveler, one handheld selfie distance and one route direction anchor every chapter."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A single visible turn reveals landmarks without replacing the traveler or resetting the route.\"",
+      "repair": "A single visible turn reveals landmarks without replacing the traveler or resetting the route."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"One declared occlusion carrier may bridge locations while all identity and prop anchors persist.\"",
+      "repair": "One declared occlusion carrier may bridge locations while all identity and prop anchors persist."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Exactly one drink stop contains a complete sip and a restrained visible response.\"",
+      "repair": "Exactly one drink stop contains a complete sip and a restrained visible response."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The subject resumes movement with the same cup and ends against a readable destination landmark.\"",
+      "repair": "The subject resumes movement with the same cup and ends against a readable destination landmark."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult illustrator turns through a riverside city route, pauses for one drink and resumes toward a sunset clock tower.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult marine reporter turns through a harbor route, pauses for one local fruit and resumes toward a lighthouse.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

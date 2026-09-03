@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "Y2K气泡字卡产品片｜角色动作、物件证明与主标复归",
+  "source_title": "赛博气泡广告｜成年角色在多模块中驱动产品、鞋履与字卡",
+  "summary": "固定同一成年赛博时尚角色，以眼部、发色、服装和轮廓为身份锚点；气泡、镀铬短词、光标框、产品近景和运动姿势按动作逐模块接力，每章只承担一个信息职责，终局把人物、原创物件与主标重新汇合。",
+  "status": "released",
+  "source_duration_seconds": 15.146667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "一枚虹彩镜头气泡开场，随后显出原创明确成年夜间骑行者：钴蓝短发、琥珀脸颊条、银色夹克与紧凑彗星标记；准确标题【NOVA LOOP】出现。；可见彗星光标选中一个原创棱镜水瓶；随后只切一次青柠银骑行鞋特写，同一只脚踩上圆形地标。；骑行者、水瓶、鞋履证明和两个气泡汇入稳定钴蓝海报；准确完整主标【NOVA LOOP / MOVE BRIGHT】停住，人物与图形运动全部停止。",
+  "required_anchors": [
+    "One clearly adult character, at least four identity anchors and one compact original mark precede the module carousel.",
+    "Every graphic module introduces no more than one new short word and follows one visible body, prop or pointer action.",
+    "At least two recurring graphic anchors preserve continuity while layout geometry changes.",
+    "The final lockup reunites the complete adult, proven objects and original master mark in one still frame."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-02T19:27:38+08:00",
+  "updated_at": "2026-09-02T20:33:51+08:00"
+}

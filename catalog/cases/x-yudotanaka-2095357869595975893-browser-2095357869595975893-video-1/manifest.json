@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1",
+  "slug": "identity-locked-style-world-carousel",
+  "title": "动画角色城市轮播｜身份锚点、场景换装与起点回归",
+  "source_title": "粉发角色穿城｜同一成年动画人物跨多地造型切换",
+  "summary": "锁定同一成年动画人物的粉色发型、绿眼和身体比例，让城市、昼夜与服装在多个章节切换；每次变换后先证明完整人物，终局回到与开场呼应的夜间街口。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/identity-locked-style-world-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-identity-locked-style-world-carousel-v1",
+  "input_format": "固定主体身份与镜头关系 + 至少四个材质/版式不同的风格世界 + 每阶段改变两项风格通道 + 递增密度 + 可读身份终态",
+  "recommended_input": "锁定明确成年原创动画声音工程师：紫色齐短发、金色眼睛、小方形耳扣和稳定身体比例，位于钴蓝雨夜路口。；沿用同一转身载体，依次进入琥珀市场与锈色街装、绿色地铁站与海军蓝工装外套、浅色雪巷与炭灰羽绒服。；最终转身回到钴蓝雨夜路口和开场深色夹克，准确原创标题【SAME SIGNAL / NEW CITY】出现。",
+  "required_anchors": [
+    "One clearly adult original identity retains face, hair, eye color, accessory and body proportions across all chapters.",
+    "A single repeated full-turn carrier precedes every location and wardrobe change.",
+    "A complete front-facing verification pose follows every transition before another change begins.",
+    "The terminal chapter returns to the opening environment and wardrobe under one exact original title."
+  ],
+  "tags": [
+    "identity",
+    "locked",
+    "style",
+    "world",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:18+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

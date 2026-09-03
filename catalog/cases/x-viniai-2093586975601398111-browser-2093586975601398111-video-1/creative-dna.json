@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "锁定同一成年动画厨师、暖光厨房、蔬菜、刀具、炒锅、餐盘与食客；原料依次经历切开、混合、加热、熟化和装盘等不可逆状态，厨师把同一份成品沿连续路线递交，最后由同一成年食客的第一口反应证明完成。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One clearly adult chef, one workspace, one ingredient set, one cutting tool, one heated vessel, one plate and one adult diner remain bound.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult chef, one workspace, one ingredient set, one cutting tool, one heated vessel, one plate and one adult diner remain bound.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Each beat performs one irreversible food-state operation and preserves visible material traces from the prior state.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Each beat performs one irreversible food-state operation and preserves visible material traces from the prior state.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Prepared ingredients enter the same heated vessel and cannot reset to whole raw form after cooking begins.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Prepared ingredients enter the same heated vessel and cannot reset to whole raw form after cooking begins.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "The plated food carried through the route is the same cooked batch proven in the wok.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The plated food carried through the route is the same cooked batch proven in the wok.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The final adult tasting reaction occurs only after handoff and keeps the remaining dish visible as completion evidence.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final adult tasting reaction occurs only after handoff and keeps the remaining dish visible as completion evidence.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult night-cafe chef cuts vegetables, wok-cooks one batch, plates it and receives one diner's satisfied first-bite proof.",
+      "prompt_seed": "An adult night-cafe chef cuts vegetables, wok-cooks one batch, plates it and receives one diner's satisfied first-bite proof."
+    },
+    {
+      "concept": "An adult field cook trims mushrooms, sautés the same batch, serves it at one camp table and receives one guest's quiet approval.",
+      "prompt_seed": "An adult field cook trims mushrooms, sautés the same batch, serves it at one camp table and receives one guest's quiet approval."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult chef, one workspace, one ingredient set, one cutting tool, one heated vessel, one plate and one adult diner remain bound.\"",
+      "repair": "One clearly adult chef, one workspace, one ingredient set, one cutting tool, one heated vessel, one plate and one adult diner remain bound."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Each beat performs one irreversible food-state operation and preserves visible material traces from the prior state.\"",
+      "repair": "Each beat performs one irreversible food-state operation and preserves visible material traces from the prior state."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Prepared ingredients enter the same heated vessel and cannot reset to whole raw form after cooking begins.\"",
+      "repair": "Prepared ingredients enter the same heated vessel and cannot reset to whole raw form after cooking begins."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The plated food carried through the route is the same cooked batch proven in the wok.\"",
+      "repair": "The plated food carried through the route is the same cooked batch proven in the wok."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final adult tasting reaction occurs only after handoff and keeps the remaining dish visible as completion evidence.\"",
+      "repair": "The final adult tasting reaction occurs only after handoff and keeps the remaining dish visible as completion evidence."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult night-cafe chef cuts vegetables, wok-cooks one batch, plates it and receives one diner's satisfied first-bite proof.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult field cook trims mushrooms, sautés the same batch, serves it at one camp table and receives one guest's quiet approval.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

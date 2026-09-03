@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "c72172b7d2c4717a5fbe748a9eb3443fd3f4d842eccdaae869e0ec6c162cdee4",
+    "creative_dna_sha256": "b59c933bb723eba502f9afacb4da029c2cfa590404c5fb738972c9dd7817ce5e"
+  },
+  "content": {
+    "title": "同乘反应曲线｜设施加速、共同峰值、骤停与离场",
+    "summary": "把两名原创伙伴固定在同一游乐设施和相邻座位，用共同外部运动依次推动戒备、加速反应和情绪峰值；设施骤停后双方必须互相确认、恢复，再共同离开。",
+    "quick_start": {
+      "input_format": "两个稳定原创成年或非人伙伴身份与相邻座位 + 一个共同载具及可测量运动强度 + 反应随载具速度逐级增加并只有一个共同峰值 + 载具只完整停止一次 + 双方互相确认并恢复 + 共同解除约束并离开同一载具",
+      "recommended_input": "让两名原创成年布偶音乐家并排坐在灯笼动力山坡车首排：高个青色鹤佩红围巾，矮个铜色狐狸戴圆眼镜。；最陡下降处保持双人同框，两者只出现一次共同张口反应峰值，灯笼尾迹证明载具速度。；两者松开安全杆、共同踏上平台，在准确原创标牌【HILL NOTE RIDE】下小幅鞠躬后一起离场。",
+      "required_anchors": [
+        "两个稳定的原始身份、相邻的座位位置和一个共享的载体建立了基线。",
+        "反应强度遵循通过握力、倾斜和面部证据可测量的载体运动。",
+        "在相互检查和可见恢复之前一次完全停止。",
+        "航站楼出口显示，释放约束后，两名同伴一起离开同一个车厢。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "把两名原创伙伴固定在同一游乐设施和相邻座位，用共同外部运动依次推动戒备、加速反应和情绪峰值；设施骤停后双方必须互相确认、恢复，再共同离开。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把两名原创伙伴固定在同一游乐设施和相邻座位，用共同外部运动依次推动戒备、加速反应和情绪峰值；设施骤停后双方必须互相确认、恢复，再共同离开。 必须满足：Two stable original identities, adjacent seat positions and one shared carrier establish the baseline. + Reaction intensity follows measurable carrier motion through grip, lean and facial evidence. + Both companions reach one shared peak without swapping seats or losing identity. + A single complete stop precedes mutual checking and visible recovery. + The terminal exit shows both companions leaving the same carrier together after releasing the restraint.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "两个稳定的原始身份、相邻的座位位置和一个共享的载体建立了基线。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“两个稳定的原始身份、相邻的座位位置和一个共享载体建立基线。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "反应强度遵循通过握力、倾斜和面部证据可测量的载体运动。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“反应强度遵循通过握力、倾斜和面部证据可测量的载体运动。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "两个同伴在没有交换座位或失去身份的情况下达到了一个共同的顶峰。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“两个同伴在不交换座位或失去身份的情况下达到一个共同的顶峰。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "在相互检查和可见恢复之前一次完全停止。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“在相互检查和可见恢复之前进行一次完全停止。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "航站楼出口显示，释放约束后，两名同伴一起离开同一个车厢。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“航站楼出口显示两个同伴在释放约束后一起离开同一个承运人。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "两名成年木偶音乐家共用一辆山地过山车，停一站后恢复并鞠躬后一起离开。",
+          "prompt_seed": "两名成年木偶音乐家共用一辆山地过山车，停一站后恢复并鞠躬后一起离开。"
+        },
+        {
+          "concept": "两名成年机器人植物学家共用一个风洞舱，关机后恢复状态，一起走进实验室。",
+          "prompt_seed": "两名成年机器人植物学家共用一个风洞舱，关机后恢复状态，一起走进实验室。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“两个稳定的原始身份、相邻的座位位置和一个共享载体建立基线。”",
+          "repair": "两个稳定的原始身份、相邻的座位位置和一个共享的载体建立了基线。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“反应强度遵循通过握力、倾斜和面部证据可测量的载体运动。”",
+          "repair": "反应强度遵循通过握力、倾斜和面部证据可测量的载体运动。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“两个同伴在不交换座位或失去身份的情况下达到一个共同的顶峰。”",
+          "repair": "两个同伴在没有交换座位或失去身份的情况下达到了一个共同的顶峰。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“在相互检查和可见恢复之前进行一次完全停止。”",
+          "repair": "在相互检查和可见恢复之前一次完全停止。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“航站楼出口显示两个同伴在释放约束后一起离开同一个承运人。”",
+          "repair": "航站楼出口显示，释放约束后，两名同伴一起离开同一个车厢。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两名成年木偶音乐家共用一辆山地过山车，停一站后恢复并鞠躬后一起离开。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "两名成年机器人植物学家共用一个风洞舱，关机后恢复状态，一起走进实验室。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

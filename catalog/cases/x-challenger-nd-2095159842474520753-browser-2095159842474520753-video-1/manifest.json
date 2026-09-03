@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1",
+  "slug": "fixed-dossier-archetype-roster",
+  "title": "和风角色谱系｜纹样框架、身份符号与群像归档",
+  "source_title": "和风悬疑片头｜固定纹样系统依次登记原创角色",
+  "summary": "固定一套和风图鉴框架和字段顺序，让多个成年原创角色逐一以面孔、姿态、职责物与主题符号完成登记；每人只占一个清楚槽位，终局把全体角色聚合为可比较群像。",
+  "status": "released",
+  "source_duration_seconds": 15.232,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/fixed-dossier-archetype-roster",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-fixed-dossier-archetype-roster-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-fixed-dossier-archetype-roster-v1",
+  "input_format": "固定人物区/标题/字段顺序/计数器 + 至少5个编号原型 + 每个原型同步改变主色/轮廓/姿态微动作/职责图标 + 界面全程不滑动 + 最终编号档案稳定停留",
+  "recommended_input": "建立固定靛蓝纸质档案框，包含人物槽、职责图标、两项字段和编号印章，用于六名明确成年原创山地氏族角色。；桥梁守卫、草药裁判、钟铃信使、档案潜水员和风暴谈判者沿用相同字段顺序，每人只改变脸、轮廓、姿态和一件职责物。；六名成年角色围绕原创标题【RIDGE COVENANT】完成终局谱系，全部编号和职责图标仍可读。",
+  "required_anchors": [
+    "One fixed roster frame, field order and numbered progression remain registered throughout.",
+    "Every clearly adult original character changes face, silhouette, pose and one role object together.",
+    "Recurring palette and ornament preserve the taxonomy while role evidence changes.",
+    "The terminal ensemble includes every established adult with readable number and duty symbol."
+  ],
+  "tags": [
+    "fixed",
+    "dossier",
+    "archetype",
+    "roster"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:17+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

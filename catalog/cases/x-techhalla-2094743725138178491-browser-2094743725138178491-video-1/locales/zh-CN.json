@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-techhalla-2094743725138178491-browser-2094743725138178491-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "319d2767623b98c33e0d3561100724a8f9d72d0da6570ce8531f7527fd11761c",
+    "creative_dna_sha256": "21f49b1fec443b60e947a5680a3ac13bddd14780eb68676835be9acd23f77700"
+  },
+  "content": {
+    "title": "自主收纳回路｜物件逐层入箱、空间扰动与闭合恢复",
+    "summary": "固定房间、床面和旅行箱的注册关系，先逐件建立衣物从散置状态到分区入箱的可见路径；装满后用一次空间扰动打散局部秩序，再让同一批物件沿可追踪路径恢复，并以同一旅行箱完整闭合收尾。",
+    "quick_start": {
+      "input_format": "一个可读自动包装系统与连续物料路线 + 至少三类物件按固定规则折叠、分拣或入盒 + 一次局部阻塞打乱但不重置既有状态 + 系统沿可追踪步骤恢复运行 + 终局用完整包装、剩余路线和稳定节拍证明闭环",
+      "recommended_input": "建立原创森林绿野外设备箱，打开在工作台上；灰色折叠地图、铜色线缆、蓝色手套、琥珀仪表与奶油夹克分别位于周围五个固定区域。；琥珀仪表锁入中央泡棉槽，奶油夹克折叠覆盖顶部；任何扰动发生前，先明确证明完整装箱基线。；只反向执行被扰动物件的路径，让所有物品回到已验证仓位；同一设备箱只闭合一次，并保持准确小标【FIELD READY】，不增删设备。",
+      "required_anchors": [
+        "一个固定容器、一个稳定的房间或桌子以及一组可数的物体建立基线。",
+        "在下一个对象移动之前，每个对象都会遵循一条可见的一次一个路径进入一个持久隔间。",
+        "破坏可能会移动物体，但不能替换、复制或擦除容器或库存。",
+        "恢复会追溯移位的关系，并以同一容器在稳定框架中关闭一次而结束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定房间、床面和旅行箱的注册关系，先逐件建立衣物从散置状态到分区入箱的可见路径；装满后用一次空间扰动打散局部秩序，再让同一批物件沿可追踪路径恢复，并以同一旅行箱完整闭合收尾。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定房间、床面和旅行箱的注册关系，先逐件建立衣物从散置状态到分区入箱的可见路径；装满后用一次空间扰动打散局部秩序，再让同一批物件沿可追踪路径恢复，并以同一旅行箱完整闭合收尾。 必须满足：One fixed container, one stable room or table and a countable set of objects establish the baseline. + Each object follows a visible one-at-a-time path into one persistent compartment before the next object moves. + A complete packed state is visibly verified before one bounded disruption occurs. + The disruption may displace objects but cannot replace, duplicate or erase the container or inventory. + Recovery retraces displaced relations and ends with the same container closed once in a stable frame.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个固定容器、一个稳定的房间或桌子以及一组可数的物体建立基线。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个固定容器、一个稳定的房间或桌子以及一组可数的物体建立基线。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在下一个对象移动之前，每个对象都会遵循一条可见的一次一个路径进入一个持久隔间。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除的规则：“在下一个对象移动之前，每个对象都遵循一条可见的一次一个路径进入一个持久隔间。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在发生有界破坏之前，可以明显地验证完整的打包状态。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“在发生有限破坏之前，可以明显验证完整的打包状态。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "破坏可能会移动物体，但不能替换、复制或擦除容器或库存。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“破坏可能会移动物体，但不能替换、复制或擦除容器或库存。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "恢复会追溯移位的关系，并以同一容器在稳定框架中关闭一次而结束。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“恢复会追溯移位的关系，并以同一容器在稳定框架中关闭一次而结束。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个现场设备箱装有五件工具，一次磁力提升后仍能幸存，并在关闭前恢复经过验证的库存。",
+          "prompt_seed": "一个现场设备箱装有五件工具，一次磁力提升后仍能幸存，并在关闭前恢复经过验证的库存。"
+        },
+        {
+          "concept": "糕点配送箱可自动嵌套托盘，经受一张桌子的摇晃，并在密封前重新订购相同的内容。",
+          "prompt_seed": "糕点配送箱可自动嵌套托盘，经受一张桌子的摇晃，并在密封前重新订购相同的内容。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个固定容器、一个稳定的房间或桌子以及一组可数的物体建立基线。”",
+          "repair": "一个固定容器、一个稳定的房间或桌子以及一组可数的物体建立基线。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除的规则：“在下一个对象移动之前，每个对象都遵循一条可见的一次一个路径进入一个持久隔间。”",
+          "repair": "在下一个对象移动之前，每个对象都会遵循一条可见的一次一个路径进入一个持久隔间。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“在发生有限破坏之前，可以明显验证完整的打包状态。”",
+          "repair": "在发生有界破坏之前，可以明显地验证完整的打包状态。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“破坏可能会移动物体，但不能替换、复制或擦除容器或库存。”",
+          "repair": "破坏可能会移动物体，但不能替换、复制或擦除容器或库存。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“恢复会追溯移位的关系，并以同一容器在稳定框架中关闭一次而结束。”",
+          "repair": "恢复会追溯移位的关系，并以同一容器在稳定框架中关闭一次而结束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个现场设备箱装有五件工具，一次磁力提升后仍能幸存，并在关闭前恢复经过验证的库存。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "糕点配送箱可自动嵌套托盘，经受一张桌子的摇晃，并在密封前重新订购相同的内容。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

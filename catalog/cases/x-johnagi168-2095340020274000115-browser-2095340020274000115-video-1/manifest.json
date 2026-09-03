@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1",
+  "slug": "cross-medium-paired-route-chapter-synchrony",
+  "title": "跨媒介旅伴路线｜地标换章、同步动作与共同终姿",
+  "source_title": "真人与动画旅伴｜两种材质身份共同穿越旅行章节",
+  "summary": "固定一名成年真人和一名成年二维原创旅伴，两者保持不同材质却共享方向、节拍与地标路线；每章由一次同步手势或步态证明同场，最终以共同动作结束而非互相替换。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/cross-medium-paired-route-chapter-synchrony",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-cross-medium-paired-route-chapter-synchrony-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年真人原创角色和一名明确成年二维原创旅伴 + 两种材质身份始终分离 + 至少三个由可见载体连接的路线章节 + 每章一次同步动作与一致行进方向 + 至少一次交替前景遮挡证明共享深度 + 终局共同操作同一目的地对象",
+  "recommended_input": "配对原创真人成年植物调查员和明确二维的成年地图师：真人佩戴红围巾与帆布挎包，动画旅伴为海军蓝短发、黄色外套和墨线阴影。；路线圆盘擦拭切换到峭壁小路、室内市场和盐湖码头；每章都保留两种身份、向右路线和一次同步本地动作。；两人在山顶观测站共同转身、触碰同一投影地图，并肩完成一步，在准确原创标题【TWO MEDIA / ONE ROUTE】下结束。",
+  "required_anchors": [
+    "One clearly adult live-action identity and one clearly adult illustrated identity retain different media signatures throughout.",
+    "Every location change preserves paired travel direction and follows a visible shared transition carrier.",
+    "Alternating foreground occlusion proves shared depth without merging faces, bodies or rendering media.",
+    "The terminal frame reunites both adults, one destination object and one exact original route title in a shared action."
+  ],
+  "tags": [
+    "cross",
+    "medium",
+    "paired",
+    "route",
+    "chapter",
+    "synchrony"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:17+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

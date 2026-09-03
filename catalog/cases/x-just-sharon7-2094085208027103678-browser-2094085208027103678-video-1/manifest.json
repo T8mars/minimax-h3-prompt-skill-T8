@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "音频界面字卡变体｜成年角色、波形、耳机与动作模块",
+  "source_title": "播放界面角色片｜耳机动作、波形轨道与版式接力",
+  "summary": "同一成年动画角色以薄荷双发髻、橙色耳机和藏蓝橙夹克保持身份；播放界面、波形、音量环、下落字、跑跳、编号肖像和圆环破碎按动作分章，最后人物站在完整原创播放主标前。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "奶油色原创媒体面板先输入准确短词【SYNC】，随后显出原创明确成年声音编辑：钴蓝辫发、琥珀耳机、石墨夹克与薄荷波形徽章。；一次向前奔跑穿过轮廓字【FLOW】，直接衔接受控滑行动作沿藏蓝播放条前进；不出现额外角色或替换服装。；成年人穿过落定碎片，在同心圆中停止；准确完整主标【SYNC / KEEP THE BEAT】同框并保持全部文字可读。",
+  "required_anchors": [
+    "One clearly adult identity and at least four appearance anchors precede every interface module.",
+    "Each module is triggered by one visible body or headphone action and introduces no more than one exact short word.",
+    "Boot and portrait-grid proofs verify the same character before the terminal movement.",
+    "The final lockup reunites the adult, settled fragments, recurring rings and one readable original master mark."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-02T19:27:39+08:00",
+  "updated_at": "2026-09-02T20:33:51+08:00"
+}

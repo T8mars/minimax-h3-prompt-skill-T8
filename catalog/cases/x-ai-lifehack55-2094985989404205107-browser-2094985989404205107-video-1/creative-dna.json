@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "先把平面角色、书页边界和现实房间同时建立，再让同一身份沿可见破口从绘制状态转为实体；实体离开页面后检查自身并回看原载体，终局让平面与现实两种版本互相反应，证明越界不是普通换镜。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One flat character, one physical room and one persistent carrier boundary are readable before any breach.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One flat character, one physical room and one persistent carrier boundary are readable before any breach.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "A visible action by the flat character causes one local opening in the same registered carrier.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A visible action by the flat character causes one local opening in the same registered carrier.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Identity anchors remain traceable while the character crosses from drawn representation into a physical adult body.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Identity anchors remain traceable while the character crosses from drawn representation into a physical adult body.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "The physical adult leaves the carrier, verifies the new state and deliberately reconnects attention to the unchanged opening.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The physical adult leaves the carrier, verifies the new state and deliberately reconnects attention to the unchanged opening.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The terminal frame proves both media states and a reciprocal counterpart reaction at the same boundary.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The terminal frame proves both media states and a reciprocal counterpart reaction at the same boundary.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "A drawn meteorologist exits a weather atlas and exchanges a final look with the version still inside the storm panel.",
+      "prompt_seed": "A drawn meteorologist exits a weather atlas and exchanges a final look with the version still inside the storm panel."
+    },
+    {
+      "concept": "A blueprint mechanic steps out of one machine schematic, tests physical tools and faces the sketched counterpart across the torn plan.",
+      "prompt_seed": "A blueprint mechanic steps out of one machine schematic, tests physical tools and faces the sketched counterpart across the torn plan."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One flat character, one physical room and one persistent carrier boundary are readable before any breach.\"",
+      "repair": "One flat character, one physical room and one persistent carrier boundary are readable before any breach."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A visible action by the flat character causes one local opening in the same registered carrier.\"",
+      "repair": "A visible action by the flat character causes one local opening in the same registered carrier."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Identity anchors remain traceable while the character crosses from drawn representation into a physical adult body.\"",
+      "repair": "Identity anchors remain traceable while the character crosses from drawn representation into a physical adult body."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The physical adult leaves the carrier, verifies the new state and deliberately reconnects attention to the unchanged opening.\"",
+      "repair": "The physical adult leaves the carrier, verifies the new state and deliberately reconnects attention to the unchanged opening."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The terminal frame proves both media states and a reciprocal counterpart reaction at the same boundary.\"",
+      "repair": "The terminal frame proves both media states and a reciprocal counterpart reaction at the same boundary."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A drawn meteorologist exits a weather atlas and exchanges a final look with the version still inside the storm panel.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A blueprint mechanic steps out of one machine schematic, tests physical tools and faces the sketched counterpart across the torn plan.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "在同一私密夜间空间先建立明确成年人物与一个正在进行的个人仪式；人物完成并放下核心物件后，镜头沿手、肩、服装、步伐和家具接触组成连续细节路线，最后回到同一房间和同一成年人已安定的状态。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One clearly adult identity, one private room and one active ritual object establish the baseline.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult identity, one private room and one active ritual object establish the baseline.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "The adult visibly completes and releases the ritual object before the camera begins the detail route.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The adult visibly completes and releases the ritual object before the camera begins the detail route.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Every detail crop inherits an identity, wardrobe, prop or furniture anchor from the same room.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Every detail crop inherits an identity, wardrobe, prop or furniture anchor from the same room.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Body movement and tactile contacts form one traceable route from the object station to a resting zone.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Body movement and tactile contacts form one traceable route from the object station to a resting zone.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The final wide return preserves person and geography while proving the ritual object is inactive and the adult has settled.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final wide return preserves person and geography while proving the ritual object is inactive and the adult has settled.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "A radio archivist closes a recorder session, traverses tactile identity details and settles beside the sealed tape.",
+      "prompt_seed": "A radio archivist closes a recorder session, traverses tactile identity details and settles beside the sealed tape."
+    },
+    {
+      "concept": "An adult ceramicist washes one tool, follows apron and hand details across a night studio and returns seated beside the covered kiln shelf.",
+      "prompt_seed": "An adult ceramicist washes one tool, follows apron and hand details across a night studio and returns seated beside the covered kiln shelf."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult identity, one private room and one active ritual object establish the baseline.\"",
+      "repair": "One clearly adult identity, one private room and one active ritual object establish the baseline."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The adult visibly completes and releases the ritual object before the camera begins the detail route.\"",
+      "repair": "The adult visibly completes and releases the ritual object before the camera begins the detail route."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Every detail crop inherits an identity, wardrobe, prop or furniture anchor from the same room.\"",
+      "repair": "Every detail crop inherits an identity, wardrobe, prop or furniture anchor from the same room."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Body movement and tactile contacts form one traceable route from the object station to a resting zone.\"",
+      "repair": "Body movement and tactile contacts form one traceable route from the object station to a resting zone."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final wide return preserves person and geography while proving the ritual object is inactive and the adult has settled.\"",
+      "repair": "The final wide return preserves person and geography while proving the ritual object is inactive and the adult has settled."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A radio archivist closes a recorder session, traverses tactile identity details and settles beside the sealed tape.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult ceramicist washes one tool, follows apron and hand details across a night studio and returns seated beside the covered kiln shelf.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

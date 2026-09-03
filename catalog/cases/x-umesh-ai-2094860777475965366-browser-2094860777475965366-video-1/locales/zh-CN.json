@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "94d016c4289f005692e80fe593f90e8170d4bd5ad852be6d77c4e35dd33b3d3b",
+    "creative_dna_sha256": "af8e042396dd65d8dc003ea8b97f5444ee8fa0e05bde098d06418f803d71b994"
+  },
+  "content": {
+    "title": "织物光影职员表｜连续载体、球形压痕与字幕接力",
+    "summary": "只用一条连续可追踪的悬浮织物作为字幕载体，让移动光球、阴影、条纹切片与柔性褶皱依次改变文字的显隐和尺度；每条职员表都绑定一次可见材质变形，最后织物退出黑场而不混入无关画面。",
+    "quick_start": {
+      "input_format": "一块连续可追踪的原创织物与一种固定光色 + 至少三条短原创职员表依次出现 + 每条文字由织物折叠或光影变化承载 + 材质和运动方向不断裂 + 终局汇入一个完整可读总标题",
+      "recommended_input": "深海军蓝黑场中，一条原创半透明铜色欧根纱长带悬浮；小型青色光球在布下压出可读凹痕，并显出准确职员表【A FILM BY / INA MERCER】。；圆环只收紧一次并显出准确第二条职员表【MOTION / ELI ROAN】；哑光深蓝切片从前景经过，但不能把载体真正切断。；所有压力释放，铜色织物展平到足以承载准确主标题【TIDAL THREAD】；保持可读后，只让同一条布尾缓慢退出黑场。",
+      "required_anchors": [
+        "一个连续的灵活载体从打开到最终标题都保持可识别性。",
+        "每个积分仅在一次可见光、压力、折叠或遮挡事件作用于该载体后才会出现。",
+        "颜色和图形叠加永远不会取代底层布料或引入第二个不相关的场景。",
+        "在相同的材料退出为黑色之前，终端标题保留在已释放的载体上。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "只用一条连续可追踪的悬浮织物作为字幕载体，让移动光球、阴影、条纹切片与柔性褶皱依次改变文字的显隐和尺度；每条职员表都绑定一次可见材质变形，最后织物退出黑场而不混入无关画面。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "只用一条连续可追踪的悬浮织物作为字幕载体，让移动光球、阴影、条纹切片与柔性褶皱依次改变文字的显隐和尺度；每条职员表都绑定一次可见材质变形，最后织物退出黑场而不混入无关画面。 必须满足：One continuous flexible carrier remains identifiable from opening through the final title. + Every credit appears only after one visible light, pressure, fold or occlusion event acts on that carrier. + Deformation may distort text transiently but each exact credit must recover to a readable state. + Color and graphic overlays never replace the underlying cloth or introduce a second unrelated scene. + The terminal title is held on the released carrier before the same material exits into black.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个连续的灵活载体从打开到最终标题都保持可识别性。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“从打开到最终标题，一个连续的灵活载体仍然是可识别的。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个积分仅在一次可见光、压力、折叠或遮挡事件作用于该载体后才会出现。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个积分仅在一次可见光、压力、折叠或遮挡事件作用于该载体后才会出现。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "变形可能会暂时扭曲文本，但每个确切的信用必须恢复到可读状态。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“变形可能会暂时扭曲文本，但每个确切的信用必须恢复到可读状态。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "颜色和图形叠加永远不会取代底层布料或引入第二个不相关的场景。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“颜色和图形叠加永远不会取代下面的布料或引入第二个不相关的场景。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "在相同的材料退出为黑色之前，终端标题保留在已释放的载体上。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“在相同材料退出为黑色之前，终端所有权保留在已释放的载体上。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "铜质欧根纱丝带通过球体压力、环张力和平坦的主标题释放承载四个学分。",
+          "prompt_seed": "铜质欧根纱丝带通过球体压力、环张力和平坦的主标题释放承载四个学分。"
+        },
+        {
+          "concept": "一张半透明的纸膜通过空气脉冲、移动的阴影和一个终端展平来承载博物馆的信用。",
+          "prompt_seed": "一张半透明的纸膜通过空气脉冲、移动的阴影和一个终端展平来承载博物馆的信用。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“从打开到最终标题，一个连续的灵活载体仍然是可识别的。”",
+          "repair": "一个连续的灵活载体从打开到最终标题都保持可识别性。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个积分仅在一次可见光、压力、折叠或遮挡事件作用于该载体后才会出现。”",
+          "repair": "每个积分仅在一次可见光、压力、折叠或遮挡事件作用于该载体后才会出现。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“变形可能会暂时扭曲文本，但每个确切的信用必须恢复到可读状态。”",
+          "repair": "变形可能会暂时扭曲文本，但每个确切的信用必须恢复到可读状态。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“颜色和图形叠加永远不会取代下面的布料或引入第二个不相关的场景。”",
+          "repair": "颜色和图形叠加永远不会取代底层布料或引入第二个不相关的场景。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“在相同材料退出为黑色之前，终端所有权保留在已释放的载体上。”",
+          "repair": "在相同的材料退出为黑色之前，终端标题保留在已释放的载体上。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "铜质欧根纱丝带通过球体压力、环张力和平坦的主标题释放承载四个学分。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一张半透明的纸膜通过空气脉冲、移动的阴影和一个终端展平来承载博物馆的信用。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

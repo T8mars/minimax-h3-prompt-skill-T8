@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1",
+  "slug": "human-scale-display-writing-completion",
+  "title": "人屏同尺度书写｜既有字面、实体补笔与完成姿态",
+  "source_title": "户外大屏补字｜成年人物以实体笔完成整幅字面",
+  "summary": "先建立成年人、巨型显示面和未完成文字的尺度关系，再让人物用实体书写工具沿同一表面补齐可见笔画；每次身体移动都对应一段新增墨迹，完成后离开接触点并回到全景，用人物、工具和完整原创字面共同证明结果。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/human-scale-display-writing-completion",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-human-scale-display-writing-completion-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创书写者、一个固定巨型显示面与一段不完整原创文字 + 每次新增笔画只在工具接触后出现 + 已有文字和显示框保持注册准确 + 工具完成后被释放或盖好 + 终局全景同时证明人物、工具与完整可读文字",
+  "recommended_input": "建立原创明确成年标牌画师：铜色短发、钴蓝工作服与白色方形胸贴；她站在巨型奶油交通显示板前，板上准确未完成短句【MEET AT DA__】，右手持宽头炭黑记号笔。；跟随手部，一条弧形笔画把准确单词【DAWN】补完整；显示板边框、已有文字、服装与工具保持不变。；回到广场全景，成年人、已盖帽记号笔与完整可读短句【MEET AT DAWN】同框；文字与身体运动全部停住。",
+  "required_anchors": [
+    "One clearly adult operator, one fixed display and one incomplete exact text establish the baseline.",
+    "Every new stroke begins only after visible tool-to-surface contact at a registered location.",
+    "The tool is visibly released or capped before the operator leaves the writing surface.",
+    "The final wide proves adult, tool and complete readable original message together."
+  ],
+  "tags": [
+    "human",
+    "scale",
+    "display",
+    "writing",
+    "completion"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-02T19:27:39+08:00",
+  "updated_at": "2026-09-02T20:33:51+08:00"
+}

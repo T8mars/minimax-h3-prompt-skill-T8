@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7f8bc8b8bcc1ed5fb66911b48a9af87a8c8f1ef0d39c4e8f9e61c669fd5c1aa7",
+    "creative_dna_sha256": "089223658ac1e6be4dea72837bc38a52e919a635682d4d0e64551941951ea665"
+  },
+  "content": {
+    "title": "成年造型姿态阶梯｜面孔、发型、手势与全身回连",
+    "summary": "先用面孔和薄荷色发型建立成年原创角色，再通过手部、肩部、坐姿和全身站姿逐级扩展；每个局部必须回连完整人物，服装、年龄和身体比例保持一致。",
+    "quick_start": {
+      "input_format": "标志细节→局部轮廓→面部→一次动作→全身英雄定格",
+      "recommended_input": "创建明确成年原创香水设计师：银绿色齐短发、琥珀眼、象牙白裹身西装和一枚钴蓝戒指，位于浅陶土色工作室。；扩大到戴戒指的手整理一次翻领，再在中景中回连手、面孔和双肩后才改变姿态。；以钴蓝矮台旁的完整全身站姿结束，同一画面清楚呈现面孔、短发、裹身西装和戒指。",
+      "required_anchors": [
+        "通过脸、头发、衣柜和一件小配饰建立了一个清晰的成人原始身份。",
+        "每个细节区间都会添加一个有界身份证明并重新连接到完整的主体。",
+        "坐姿、后视和转身视图可保留服装接缝、配件侧面和工作室照明。",
+        "终端全身视图将每个先前经过验证的身份锚包含在一张连贯的肖像中。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用面孔和薄荷色发型建立成年原创角色，再通过手部、肩部、坐姿和全身站姿逐级扩展；每个局部必须回连完整人物，服装、年龄和身体比例保持一致。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先用面孔和薄荷色发型建立成年原创角色，再通过手部、肩部、坐姿和全身站姿逐级扩展；每个局部必须回连完整人物，服装、年龄和身体比例保持一致。 必须满足：One clearly adult original identity is established through face, hair, wardrobe and one small accessory. + Each detail interval adds one bounded identity proof and reconnects to the complete subject. + Age, facial geometry, hairstyle and body proportions remain stable across pose changes. + Seated, rear and turning views preserve garment seams, accessory side and studio lighting. + The terminal full-body view includes every previously proven identity anchor in one coherent portrait.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "通过脸、头发、衣柜和一件小配饰建立了一个清晰的成人原始身份。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“通过面部、头发、衣柜和一件小配饰来建立一个明显的成人原始身份。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个细节区间都会添加一个有界身份证明并重新连接到完整的主体。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个细节间隔都会添加一个有界身份证明并重新连接到完整的主体。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "年龄、面部几何形状、发型和身体比例在姿势变化时保持稳定。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“年龄、面部几何形状、发型和身体比例在姿势变化时保持稳定。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "坐姿、后视和转身视图可保留服装接缝、配件侧面和工作室照明。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“坐姿、后视和转身视图保留了服装接缝、配件侧面和工作室照明。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端全身视图将每个先前经过验证的身份锚包含在一张连贯的肖像中。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除的规则：“终端全身视图包括一张连贯肖像中的每个先前已被证明的身份锚。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年香水设计师从脸部和戒指细节发展到一幅完整的象牙色西装肖像。",
+          "prompt_seed": "一位成年香水设计师从脸部和戒指细节发展到一幅完整的象牙色西装肖像。"
+        },
+        {
+          "concept": "一位成年小提琴制作者从眼睛和工具细节发展到一张完整的车间站立肖像。",
+          "prompt_seed": "一位成年小提琴制作者从眼睛和工具细节发展到一张完整的车间站立肖像。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“通过面部、头发、衣柜和一件小配饰来建立一个明显的成人原始身份。”",
+          "repair": "通过脸、头发、衣柜和一件小配饰建立了一个清晰的成人原始身份。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个细节间隔都会添加一个有界身份证明并重新连接到完整的主体。”",
+          "repair": "每个细节区间都会添加一个有界身份证明并重新连接到完整的主体。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“年龄、面部几何形状、发型和身体比例在姿势变化时保持稳定。”",
+          "repair": "年龄、面部几何形状、发型和身体比例在姿势变化时保持稳定。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“坐姿、后视和转身视图保留了服装接缝、配件侧面和工作室照明。”",
+          "repair": "坐姿、后视和转身视图可保留服装接缝、配件侧面和工作室照明。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除的规则：“终端全身视图包括一张连贯肖像中的每个先前已被证明的身份锚。”",
+          "repair": "终端全身视图将每个先前经过验证的身份锚包含在一张连贯的肖像中。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年香水设计师从脸部和戒指细节发展到一幅完整的象牙色西装肖像。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年小提琴制作者从眼睛和工具细节发展到一张完整的车间站立肖像。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

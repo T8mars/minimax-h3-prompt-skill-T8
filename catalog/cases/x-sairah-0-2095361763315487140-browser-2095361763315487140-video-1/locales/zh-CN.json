@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "28289afd3c2bfb80c136a87bd0c11c57adb6e6140cf995fe13e60d07b297568a",
+    "creative_dna_sha256": "0032194d14bc40197010fcea954a52000004632ff31769b05ad4b4fb621aa469"
+  },
+  "content": {
+    "title": "自拍地标路线｜街行转身、饮品停点与河岸续行",
+    "summary": "用同一成年旅者、手持自拍距离和步行方向串联街道、地标道路与河岸；一次转身负责揭示地点，一次饮品停点完成体验证明，随后人物恢复行走并以日落地标收束。",
+    "quick_start": {
+      "input_format": "同一成年自拍主体与固定路线 + 一次目光或转头动机发现 + 一个地方物品的完整嗅闻或品尝动作 + 克制身体反应且无广告台词 + 手持结果继续原路线",
+      "recommended_input": "跟随原创成年旅行插画师：黑色长发、白色罩衫、银色手表和牛皮纸饮品杯，以近距离手持自拍沿繁忙河岸城市路线前进。；一辆掠过的深色出租车只擦拭切换一次到河岸步道，面孔、头发、罩衫、手表、杯子和前进路线保持连续。；她放下同一个杯子，继续走三步并只回看一次，让日落钟楼占据终局背景。",
+      "required_anchors": [
+        "每章有一名明确的成年旅行者、一个手持自拍距离和一个路线方向锚点。",
+        "单个可见转弯即可显示地标，无需更换旅行者或重置路线。",
+        "一次饮酒包含完整的一小口和克制的可见反应。",
+        "对象用同一个杯子恢复运动，并以可读的目的地地标结束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用同一成年旅者、手持自拍距离和步行方向串联街道、地标道路与河岸；一次转身负责揭示地点，一次饮品停点完成体验证明，随后人物恢复行走并以日落地标收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用同一成年旅者、手持自拍距离和步行方向串联街道、地标道路与河岸；一次转身负责揭示地点，一次饮品停点完成体验证明，随后人物恢复行走并以日落地标收束。 必须满足：One clearly adult traveler, one handheld selfie distance and one route direction anchor every chapter. + A single visible turn reveals landmarks without replacing the traveler or resetting the route. + One declared occlusion carrier may bridge locations while all identity and prop anchors persist. + Exactly one drink stop contains a complete sip and a restrained visible response. + The subject resumes movement with the same cup and ends against a readable destination landmark.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "每章有一名明确的成年旅行者、一个手持自拍距离和一个路线方向锚点。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“每章有一名明显的成年旅行者、一个手持自拍距离和一个路线方向锚点。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "单个可见转弯即可显示地标，无需更换旅行者或重置路线。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“单个可见转弯即可显示地标，无需更换旅行者或重置路线。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "一个声明的遮挡载体可以桥接位置，同时所有身份和道具锚点仍然存在。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“一个声明的遮挡载体可以桥接位置，同时所有身份和支撑锚点仍然存在。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "一次饮酒包含完整的一小口和克制的可见反应。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“一次饮酒包含完整的一小口和克制的可见反应。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "对象用同一个杯子恢复运动，并以可读的目的地地标结束。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“受试者用同一个杯子恢复运动，并以可读的目的地地标结束。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年插画家穿过河边的城市路线，停下来喝一杯，然后继续走向日落钟楼。",
+          "prompt_seed": "一位成年插画家穿过河边的城市路线，停下来喝一杯，然后继续走向日落钟楼。"
+        },
+        {
+          "concept": "一名成年海事记者穿过一条港口路线，停下来吃一种当地水果，然后继续朝灯塔走去。",
+          "prompt_seed": "一名成年海事记者穿过一条港口路线，停下来吃一种当地水果，然后继续朝灯塔走去。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“每章有一名明显的成年旅行者、一个手持自拍距离和一个路线方向锚点。”",
+          "repair": "每章有一名明确的成年旅行者、一个手持自拍距离和一个路线方向锚点。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“单个可见转弯即可显示地标，无需更换旅行者或重置路线。”",
+          "repair": "单个可见转弯即可显示地标，无需更换旅行者或重置路线。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“一个声明的遮挡载体可以桥接位置，同时所有身份和支撑锚点仍然存在。”",
+          "repair": "一个声明的遮挡载体可以桥接位置，同时所有身份和道具锚点仍然存在。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“一次饮酒包含完整的一小口和克制的可见反应。”",
+          "repair": "一次饮酒包含完整的一小口和克制的可见反应。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“受试者用同一个杯子恢复运动，并以可读的目的地地标结束。”",
+          "repair": "对象用同一个杯子恢复运动，并以可读的目的地地标结束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年插画家穿过河边的城市路线，停下来喝一杯，然后继续走向日落钟楼。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年海事记者穿过一条港口路线，停下来吃一种当地水果，然后继续朝灯塔走去。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

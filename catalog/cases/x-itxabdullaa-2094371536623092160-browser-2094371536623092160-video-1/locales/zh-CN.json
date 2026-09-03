@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d8bb60dc6109c4c09f110689d76f6e4cedb8af7ca9de3d2d5d27a71d33432a56",
+    "creative_dna_sha256": "7ab16d3f0f3f3f0dfb01167d070608d76a44e812c043310a8f11596c4a08c5cb"
+  },
+  "content": {
+    "title": "都市字卡角色轮播｜固定身份、鞋履证明与短词动作接力",
+    "summary": "用同一成年风格化角色的蓝色面部、橙帽、奶油帽衫、棋盘短裤与黑包锁定身份；大字、步伐、鞋履、复制残影、杯具和贴纸模块逐项响应动作，最终回到人物与原创主标同框的清晰终卡。",
+    "quick_start": {
+      "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+      "recommended_input": "原创明确成年快递员从深蓝剪影显形：钴蓝面部、青柠帽、沙色夹克、紫色工装裤与白色螺旋徽章；准确标题【EASY PACE】同框出现。；一只脚跟踩上紫色地面圆片，触发可读鞋履特写与准确短词【STEP】；不出现第二个人或替换服装。；回到单人全身静止画面，快递员、交通牌和重复圆片位于准确主标【PACE CLUB】前；所有文字保持清晰并停止全部残影。",
+      "required_anchors": [
+        "每个图形模块之前都有一个明确的成人身份和至少五个外观锚点。",
+        "每个模块引入不超过一个精确的短词，并遵循一个可见的动作或道具证明。",
+        "回声和贴纸仍然从属于成人，永远不会成为替代角色。",
+        "最终的锁定将完整的成人、经过验证的道具、重复的形状和一个原创的可读主标记重新组合在一起。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用同一成年风格化角色的蓝色面部、橙帽、奶油帽衫、棋盘短裤与黑包锁定身份；大字、步伐、鞋履、复制残影、杯具和贴纸模块逐项响应动作，最终回到人物与原创主标同框的清晰终卡。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用同一成年风格化角色的蓝色面部、橙帽、奶油帽衫、棋盘短裤与黑包锁定身份；大字、步伐、鞋履、复制残影、杯具和贴纸模块逐项响应动作，最终回到人物与原创主标同框的清晰终卡。 必须满足：One clearly adult identity and at least five appearance anchors precede every graphic module. + Each module introduces no more than one exact short word and follows one visible action or prop proof. + At least one full-body grid and one footwear close proof re-verify the same identity. + Echoes and stickers remain subordinate to the adult and never become replacement characters. + The final lockup reunites the complete adult, proven prop, recurring shape and one original readable master mark.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "每个图形模块之前都有一个明确的成人身份和至少五个外观锚点。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“每个图形模块之前有一个明确的成人身份和至少五个外观锚点。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个模块引入不超过一个精确的短词，并遵循一个可见的动作或道具证明。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个模块引入不超过一个精确的短词，并遵循一个可见的动作或道具证明。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "至少一张全身网格和一张鞋密证明重新验证同一身份。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“至少一张全身网格和一张鞋类密闭证明重新验证相同的身份。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "回声和贴纸仍然从属于成人，永远不会成为替代角色。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“回声和贴纸仍然从属于成人，并且永远不会成为替代角色。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的锁定将完整的成人、经过验证的道具、重复的形状和一个原创的可读主标记重新组合在一起。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的锁定将完整的成人、经过验证的道具、重复的形状和一个原创的可读主标记重新组合在一起。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年快递员在 PACE CLUB 锁定之前进行步行、鞋子、代币和回声活动。",
+          "prompt_seed": "一名成年快递员在 PACE CLUB 锁定之前进行步行、鞋子、代币和回声活动。"
+        },
+        {
+          "concept": "一名成人夜市主持人围绕一个稳定的身份标记开展帽子、靴子、通行卡和贴纸活动。",
+          "prompt_seed": "一名成人夜市主持人围绕一个稳定的身份标记开展帽子、靴子、通行卡和贴纸活动。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“每个图形模块之前有一个明确的成人身份和至少五个外观锚点。”",
+          "repair": "每个图形模块之前都有一个明确的成人身份和至少五个外观锚点。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个模块引入不超过一个精确的短词，并遵循一个可见的动作或道具证明。”",
+          "repair": "每个模块引入不超过一个精确的短词，并遵循一个可见的动作或道具证明。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“至少一张全身网格和一张鞋类密闭证明重新验证相同的身份。”",
+          "repair": "至少一张全身网格和一张鞋密证明重新验证同一身份。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“回声和贴纸仍然从属于成人，并且永远不会成为替代角色。”",
+          "repair": "回声和贴纸仍然从属于成人，永远不会成为替代角色。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的锁定将完整的成人、经过验证的道具、重复的形状和一个原创的可读主标记重新组合在一起。”",
+          "repair": "最终的锁定将完整的成人、经过验证的道具、重复的形状和一个原创的可读主标记重新组合在一起。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年快递员在 PACE CLUB 锁定之前进行步行、鞋子、代币和回声活动。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成人夜市主持人围绕一个稳定的身份标记开展帽子、靴子、通行卡和贴纸活动。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

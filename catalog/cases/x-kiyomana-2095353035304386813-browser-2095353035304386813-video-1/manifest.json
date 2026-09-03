@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1",
+  "slug": "stage-progressive-character-reveal",
+  "title": "成年造型姿态阶梯｜面孔、发型、手势与全身回连",
+  "source_title": "薄荷发型肖像｜同一成年角色以景别和姿态证明身份",
+  "summary": "先用面孔和薄荷色发型建立成年原创角色，再通过手部、肩部、坐姿和全身站姿逐级扩展；每个局部必须回连完整人物，服装、年龄和身体比例保持一致。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-progressive-character-reveal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-staged-character-reveal-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-staged-character-reveal-v1",
+  "input_format": "标志细节→局部轮廓→面部→一次动作→全身英雄定格",
+  "recommended_input": "创建明确成年原创香水设计师：银绿色齐短发、琥珀眼、象牙白裹身西装和一枚钴蓝戒指，位于浅陶土色工作室。；扩大到戴戒指的手整理一次翻领，再在中景中回连手、面孔和双肩后才改变姿态。；以钴蓝矮台旁的完整全身站姿结束，同一画面清楚呈现面孔、短发、裹身西装和戒指。",
+  "required_anchors": [
+    "One clearly adult original identity is established through face, hair, wardrobe and one small accessory.",
+    "Each detail interval adds one bounded identity proof and reconnects to the complete subject.",
+    "Seated, rear and turning views preserve garment seams, accessory side and studio lighting.",
+    "The terminal full-body view includes every previously proven identity anchor in one coherent portrait."
+  ],
+  "tags": [
+    "staged",
+    "character",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:18+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

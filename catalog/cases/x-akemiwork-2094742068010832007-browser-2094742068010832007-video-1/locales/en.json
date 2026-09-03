@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "fe3cb1f0860a13a259c1c7f2cc1a257cfd3bfee402504b476755bf152614a5c0",
+    "creative_dna_sha256": "a212044d8e1666ac42fd3ebcd616370ca7769997f4a15e1a96ddc6a6563702e9"
+  },
+  "content": {
+    "title": "Human-Scale Display Writing | Physical Stroke and Completion Proof",
+    "summary": "An adult transit sign painter completes one missing word on a fixed board and steps back for a full proof. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One clearly adult operator, one fixed display and one incomplete exact text establish the baseline. + Every new stroke begins only after visible tool-to-surface contact at a registered location. + Existing letters, display frame and operator identity remain unchanged while the missing text is completed. + The tool is visibly released or capped before the operator leaves the writing surface. + The final wide proves adult, tool and complete readable original message together.",
+      "recommended_input": "Establish one original clearly adult sign painter with a copper bob, cobalt coveralls and a white square patch before a giant cream transit board carrying the incomplete exact phrase \"MEET AT DA__\"; place one broad charcoal marker in her right hand. Follow her hand as one curved stroke completes the exact word \"DAWN\" while board frame, prior letters, clothing and tool remain unchanged. Return to a wide plaza proof with the adult, capped marker and complete readable message \"MEET AT DAWN\"; hold all writing and body movement still.",
+      "required_anchors": [
+        "One clearly adult operator, one fixed display and one incomplete exact text establish the baseline.",
+        "Every new stroke begins only after visible tool-to-surface contact at a registered location.",
+        "The tool is visibly released or capped before the operator leaves the writing surface.",
+        "The final wide proves adult, tool and complete readable original message together."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult transit sign painter completes one missing word on a fixed board and steps back for a full proof. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先建立成年人、巨型显示面和未完成文字的尺度关系，再让人物用实体书写工具沿同一表面补齐可见笔画；每次身体移动都对应一段新增墨迹，完成后离开接触点并回到全景，用人物、工具和完整原创字面共同证明结果。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult operator, one fixed display and one incomplete exact text establish the baseline.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult operator, one fixed display and one incomplete exact text establish the baseline.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Every new stroke begins only after visible tool-to-surface contact at a registered location.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every new stroke begins only after visible tool-to-surface contact at a registered location.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Existing letters, display frame and operator identity remain unchanged while the missing text is completed.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Existing letters, display frame and operator identity remain unchanged while the missing text is completed.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "The tool is visibly released or capped before the operator leaves the writing surface.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The tool is visibly released or capped before the operator leaves the writing surface.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final wide proves adult, tool and complete readable original message together.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final wide proves adult, tool and complete readable original message together.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult transit sign painter completes one missing word on a fixed board and steps back for a full proof.",
+          "prompt_seed": "An adult transit sign painter completes one missing word on a fixed board and steps back for a full proof."
+        },
+        {
+          "concept": "An adult theater calligrapher adds two missing strokes to a stage title and caps the brush before the final wide.",
+          "prompt_seed": "An adult theater calligrapher adds two missing strokes to a stage title and caps the brush before the final wide."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult operator, one fixed display and one incomplete exact text establish the baseline.\"",
+          "repair": "One clearly adult operator, one fixed display and one incomplete exact text establish the baseline."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every new stroke begins only after visible tool-to-surface contact at a registered location.\"",
+          "repair": "Every new stroke begins only after visible tool-to-surface contact at a registered location."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Existing letters, display frame and operator identity remain unchanged while the missing text is completed.\"",
+          "repair": "Existing letters, display frame and operator identity remain unchanged while the missing text is completed."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The tool is visibly released or capped before the operator leaves the writing surface.\"",
+          "repair": "The tool is visibly released or capped before the operator leaves the writing surface."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final wide proves adult, tool and complete readable original message together.\"",
+          "repair": "The final wide proves adult, tool and complete readable original message together."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult transit sign painter completes one missing word on a fixed board and steps back for a full proof.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult theater calligrapher adds two missing strokes to a stage title and caps the brush before the final wide.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

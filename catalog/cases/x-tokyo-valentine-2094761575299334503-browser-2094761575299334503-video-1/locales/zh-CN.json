@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7c8bba769c179e041f553684b8e5e118ee36623f158d5b7c9c91892709f4d075",
+    "creative_dna_sha256": "30cc72b6ed287dea5aa688b6ee629a1882ddfd958ff7377e8c35674a7e8fc802"
+  },
+  "content": {
+    "title": "酸性色彩字卡轮播｜成年角色、动作触发与主标归拢",
+    "summary": "锁定同一成年时装角色，以发色、服装和眼镜作为身份锚点；巨型立体短词、气球字与图案卡按走动、抬镜和转身逐段切换，最终把人物和完整原创主标汇回同一静止终卡。",
+    "quick_start": {
+      "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+      "recommended_input": "白色无影棚中建立一名原创明确成年布景设计师：薄荷色短发、琥珀椭圆眼镜、靛蓝工作服与一枚青柠三角胸针；准确标题【SIGNAL】同框出现。；她只抬一次眼镜，钴蓝气球字【BRIGHT】在身后展开；青柠前景圆片只负责擦除这一次转场。；成年人物、四色锚点与青柠三角标记汇入一张静止红色终卡，准确显示【SIGNAL / SHIFT BRIGHT】；人物与图形全部停住。",
+      "required_anchors": [
+        "每个排版模块之前都有一个明确的成人身份和至少四个外观锚点。",
+        "每个模块最多引入一个精确的短单词，并由一个可见的角色动作触发。",
+        "没有任何模块可以取代具有不同面孔、年龄、身体或衣柜身份的成人。",
+        "终端锁定将完整的成人和原始主标记重新组合在一个可读的静止帧中。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "锁定同一成年时装角色，以发色、服装和眼镜作为身份锚点；巨型立体短词、气球字与图案卡按走动、抬镜和转身逐段切换，最终把人物和完整原创主标汇回同一静止终卡。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "锁定同一成年时装角色，以发色、服装和眼镜作为身份锚点；巨型立体短词、气球字与图案卡按走动、抬镜和转身逐段切换，最终把人物和完整原创主标汇回同一静止终卡。 必须满足：One clearly adult identity and at least four appearance anchors precede every typography module. + Each module introduces at most one exact short word and is triggered by one visible character action. + Recurring color and shape anchors preserve continuity while typography scale and layout change. + No module replaces the adult with a different face, age, body or wardrobe identity. + The terminal lockup reunites the complete adult and the original master mark in one readable still frame.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "每个排版模块之前都有一个明确的成人身份和至少四个外观锚点。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“每个排版模块之前有一个明确的成人身份和至少四个外观锚点。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个模块最多引入一个精确的短单词，并由一个可见的角色动作触发。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个模块最多引入一个精确的短单词，并由一个可见的角色动作触发。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "重复出现的颜色和形状锚点在版式比例和布局发生变化时保持连续性。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“当版式比例和布局发生变化时，重复出现的颜色和形状锚点保持连续性。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "没有任何模块可以取代具有不同面孔、年龄、身体或衣柜身份的成人。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“没有模块可以用不同的面孔、年龄、身体或衣柜身份替换成人。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端锁定将完整的成人和原始主标记重新组合在一个可读的静止帧中。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端锁定将完整的成人和原始主标记重新组合在一个可读的静止帧中。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位布景设计师走过酸流行的单词模块，这些模块的变化是由她的脚步和手势引起的。",
+          "prompt_seed": "一位布景设计师走过酸流行的单词模块，这些模块的变化是由她的脚步和手势引起的。"
+        },
+        {
+          "concept": "一位成人鞋类造型师通过抬起遮阳板、四分之一转和最后的全身行走来推动四卡活动。",
+          "prompt_seed": "一位成人鞋类造型师通过抬起遮阳板、四分之一转和最后的全身行走来推动四卡活动。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“每个排版模块之前有一个明确的成人身份和至少四个外观锚点。”",
+          "repair": "每个排版模块之前都有一个明确的成人身份和至少四个外观锚点。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个模块最多引入一个精确的短单词，并由一个可见的角色动作触发。”",
+          "repair": "每个模块最多引入一个精确的短单词，并由一个可见的角色动作触发。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“当版式比例和布局发生变化时，重复出现的颜色和形状锚点保持连续性。”",
+          "repair": "重复出现的颜色和形状锚点在版式比例和布局发生变化时保持连续性。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“没有模块可以用不同的面孔、年龄、身体或衣柜身份替换成人。”",
+          "repair": "没有任何模块可以取代具有不同面孔、年龄、身体或衣柜身份的成人。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端锁定将完整的成人和原始主标记重新组合在一个可读的静止帧中。”",
+          "repair": "终端锁定将完整的成人和原始主标记重新组合在一个可读的静止帧中。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位布景设计师走过酸流行的单词模块，这些模块的变化是由她的脚步和手势引起的。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成人鞋类造型师通过抬起遮阳板、四分之一转和最后的全身行走来推动四卡活动。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "50e1f3354830ef77b758a1f6f36d3d2f4af682e70632f0632c04c3b25133da1a",
+    "creative_dna_sha256": "5138e375f0086196b52bee0d9a496d7b085244794aabad9a62a0d0dc3a001d12"
+  },
+  "content": {
+    "title": "建筑字形穿行｜空间构件、尺度碰撞与广场回标",
+    "summary": "先建立白色公共建筑和微小行人的稳定尺度，再让黑色字形构件与门洞、圆环和立柱共用空间骨架；镜头连续穿过可读孔洞，字形由标记升级为空间实体，终局回到完整广场。",
+    "quick_start": {
+      "input_format": "Declare a small exact text set, one restricted palette and one primary title before animation begins. + Build the primary title from visible components and reuse one of its letterform structures as the layout carrier. + Give each secondary word one distinct readable physical action inside the inherited structure. + Compress prior cards or grids into one central collision while preserving exact spelling. + Resolve all fragments into one complete terminal lockup and stop background, decoration and foreground together.",
+      "recommended_input": "建立原创象牙白雕塑园区，一名穿钴蓝外套的成年导览员横穿网格广场。；镜头跟随导览员穿过圆拱并从横梁下通过，同一批构件拆成三个可读空间分栏。；镜头拉远，把完整园区、导览员和重新组装的标题【AXIS / ARRIVE】统一在静止建筑主标中。",
+      "required_anchors": [
+        "一个建筑场地、一个成人比例锚点和一个运动轴建立基线。",
+        "每个印刷组件都是根据已在该站点注册的可见结构构建的。",
+        "字形可以分离或放大，但不能用不相关的场景代替既定的建筑。",
+        "终端广角镜头将完整的地点、主体和确切的原始标题重新组合在一个稳定的锁定中。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先建立白色公共建筑和微小行人的稳定尺度，再让黑色字形构件与门洞、圆环和立柱共用空间骨架；镜头连续穿过可读孔洞，字形由标记升级为空间实体，终局回到完整广场。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先建立白色公共建筑和微小行人的稳定尺度，再让黑色字形构件与门洞、圆环和立柱共用空间骨架；镜头连续穿过可读孔洞，字形由标记升级为空间实体，终局回到完整广场。 必须满足：One architectural site, one adult scale anchor and one movement axis establish the baseline. + Every typographic component is built from visible structures already registered in that site. + Successive openings preserve camera direction, floor geometry and pedestrian scale. + Letterforms may separate or enlarge but cannot replace the established architecture with an unrelated scene. + The terminal wide shot reunites complete site, subject and exact original title in one stable lockup.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个建筑场地、一个成人比例锚点和一个运动轴建立基线。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个建筑场地、一个成人比例锚点和一个运动轴建立基线。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个印刷组件都是根据已在该站点注册的可见结构构建的。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个印刷组件都是根据已在该站点注册的可见结构构建的。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "连续的开口保留了摄像机方向、地板几何形状和行人规模。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“连续的开口保留摄像机方向、地板几何形状和行人规模。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "字形可以分离或放大，但不能用不相关的场景代替既定的建筑。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“字母形式可以分离或放大，但不能用不相关的场景取代已建立的架构。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端广角镜头将完整的地点、主体和确切的原始标题重新组合在一个稳定的锁定中。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这种精确的最终证明规则，序列就会仅在运动中停止，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“终端广角镜头将完整的地点、主体和确切的原始标题重新组合在一个稳定的锁定中。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成人画廊导游穿过象牙雕塑园区，园区的横梁组成了原创的展览标题。",
+          "prompt_seed": "一名成人画廊导游穿过象牙雕塑园区，园区的横梁组成了原创的展览标题。"
+        },
+        {
+          "concept": "一名夜间快递员穿过一个黑色的交通枢纽，其平台上贴有青色的路线文字标记。",
+          "prompt_seed": "一名夜间快递员穿过一个黑色的交通枢纽，其平台上贴有青色的路线文字标记。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个建筑场地、一个成人比例锚点和一个运动轴建立基线。”",
+          "repair": "一个建筑场地、一个成人比例锚点和一个运动轴建立基线。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“每个印刷组件都是根据已在该站点注册的可见结构构建的。”",
+          "repair": "每个印刷组件都是根据已在该站点注册的可见结构构建的。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“连续的开口保留摄像机方向、地板几何形状和行人规模。”",
+          "repair": "连续的开口保留了摄像机方向、地板几何形状和行人规模。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“字母形式可以分离或放大，但不能用不相关的场景取代已建立的架构。”",
+          "repair": "字形可以分离或放大，但不能用不相关的场景代替既定的建筑。"
+        },
+        {
+          "failure": "如果没有这种精确的最终证明规则，序列就会仅在运动中停止，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“终端广角镜头将完整的地点、主体和确切的原始标题重新组合在一个稳定的锁定中。”",
+          "repair": "终端广角镜头将完整的地点、主体和确切的原始标题重新组合在一个稳定的锁定中。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成人画廊导游穿过象牙雕塑园区，园区的横梁组成了原创的展览标题。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名夜间快递员穿过一个黑色的交通枢纽，其平台上贴有青色的路线文字标记。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

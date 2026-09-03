@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "ca9c977d1dd917fb8341dde108ada08d170632204434134467f31c3ab92f33f9",
+    "creative_dna_sha256": "74bc3ab774f83dd26a748ec62841a5f260f7006a4fdcc446e163cab72c7ee09d"
+  },
+  "content": {
+    "title": "像素偶像角色板变体｜设定页复归与舞台身份验真",
+    "summary": "固定一张包含正背面、色板、配饰和局部特写的角色设定板，在每次舞台姿态、近景、转身或道具展示后重新出现；用设定页持续核验同一成年身份，并在终卡让完整人物、原创名标与角色板共同可见。",
+    "quick_start": {
+      "input_format": "固定角色板 + 同一原创主体 + 至少4种不同验证职责 + 广角/近景双证明 + 最终对照",
+      "recommended_input": "为原创明确成年街机作曲人【MIRA】建立固定角色设定板：银色双丸子头、一缕钴蓝刘海、琥珀眼、紫色飞行夹克、黑色百褶长裤与白色菱形胸针；包含正面、背面、侧面、色板和四个细节框。；脸部近景和一次朝镜头伸开手掌之前必须先回到设定板，核验同一缕刘海、眼睛、夹克领和菱形胸针。；终局让角色板与人物共同出现在准确原创主标【MIRA / NIGHT PATCH】旁；身份锚点和文字全部静止。",
+      "required_anchors": [
+        "一个持久性身份板占据稳定的屏幕区域，并且永远不会改变其参考内容。",
+        "该板至少提供了一个清晰的成人身份的正面、背面、侧面、调色板和细节证明。",
+        "面部、头发、服装、配饰和身体比例在全身和近距离视图中保持一致。",
+        "最终框架包含木板、完整的成人和一个原始可读身份标记。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定一张包含正背面、色板、配饰和局部特写的角色设定板，在每次舞台姿态、近景、转身或道具展示后重新出现；用设定页持续核验同一成年身份，并在终卡让完整人物、原创名标与角色板共同可见。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定一张包含正背面、色板、配饰和局部特写的角色设定板，在每次舞台姿态、近景、转身或道具展示后重新出现；用设定页持续核验同一成年身份，并在终卡让完整人物、原创名标与角色板共同可见。 必须满足：One persistent identity board occupies a stable screen region and never changes its reference content. + The board provides at least front, back, side, palette and detail proofs for one clearly adult identity. + Every performance module returns to or remains comparable with the unchanged board. + Face, hair, costume, accessory and body proportions stay consistent across full-body and close views. + The final frame contains board, complete adult and one original readable identity mark together.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个持久性身份板占据稳定的屏幕区域，并且永远不会改变其参考内容。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一个持久身份板占据稳定的屏幕区域，并且永远不会更改其参考内容。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "该板至少提供了一个清晰的成人身份的正面、背面、侧面、调色板和细节证明。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“该板至少提供一个明确的成人身份的正面、背面、侧面、调色板和细节证明。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每个性能模块都返回到未更改的板或保持与未更改的板相当。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“每个性能模块都返回到未更改的主板或保持与未更改的主板相当。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "面部、头发、服装、配饰和身体比例在全身和近距离视图中保持一致。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“脸部、头发、服装、配饰和身体比例在全身和近距离视图中保持一致。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终框架包含木板、完整的成人和一个原始可读身份标记。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终框架包含板、完整的成人和一个原始可读身份标记。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成人街机作曲家根据舞台、手部、设备和靴子校样的持久设计板进行审核。",
+          "prompt_seed": "一名成人街机作曲家根据舞台、手部、设备和靴子校样的持久设计板进行审核。"
+        },
+        {
+          "concept": "成人体育播音员通过步行、个人资料、麦克风和夹克模块根据固定参考条进行审核。",
+          "prompt_seed": "成人体育播音员通过步行、个人资料、麦克风和夹克模块根据固定参考条进行审核。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一个持久身份板占据稳定的屏幕区域，并且永远不会更改其参考内容。”",
+          "repair": "一个持久性身份板占据稳定的屏幕区域，并且永远不会改变其参考内容。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“该板至少提供一个明确的成人身份的正面、背面、侧面、调色板和细节证明。”",
+          "repair": "该板至少提供了一个清晰的成人身份的正面、背面、侧面、调色板和细节证明。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“每个性能模块都返回到未更改的主板或保持与未更改的主板相当。”",
+          "repair": "每个性能模块都返回到未更改的板或保持与未更改的板相当。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“脸部、头发、服装、配饰和身体比例在全身和近距离视图中保持一致。”",
+          "repair": "面部、头发、服装、配饰和身体比例在全身和近距离视图中保持一致。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终框架包含板、完整的成人和一个原始可读身份标记。”",
+          "repair": "最终框架包含木板、完整的成人和一个原始可读身份标记。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成人街机作曲家根据舞台、手部、设备和靴子校样的持久设计板进行审核。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "成人体育播音员通过步行、个人资料、麦克风和夹克模块根据固定参考条进行审核。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

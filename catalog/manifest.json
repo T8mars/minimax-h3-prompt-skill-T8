@@ -1,8 +1,8 @@
 {
   "schema_version": "public-catalog/v1",
-  "catalog_version": "1.4.3",
-  "generated_at": "2026-09-01T18:29:28+08:00",
-  "case_count": 435,
+  "catalog_version": "1.4.4",
+  "generated_at": "2026-09-03T15:32:03+08:00",
+  "case_count": 475,
   "official_skill_count": 9,
   "official_skills_manifest": "official-skills/manifest.json",
   "community_skill_count": 2,
@@ -16650,6 +16650,1638 @@
       ],
       "quality_score": 4.953,
       "updated_at": "2026-09-01T18:20:23+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1",
+      "slug": "page-character-breach-counterpart-reaction",
+      "title": "纸页角色越界｜原画基线、实体脱离与双媒介互证",
+      "status": "released",
+      "summary": "先把平面角色、书页边界和现实房间同时建立，再让同一身份沿可见破口从绘制状态转为实体；实体离开页面后检查自身并回看原载体，终局让平面与现实两种版本互相反应，证明越界不是普通换镜。",
+      "manifest_path": "cases/x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1/manifest.json",
+      "summary_path": "cases/x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1/SUMMARY.md",
+      "source_path": "cases/x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1/source.json",
+      "creative_dna_path": "cases/x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1/preview.gif",
+        "poster": "cases/x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1/poster.webp",
+        "mp4": "media/x-ai-lifehack55-2094985989404205107-browser-2094985989404205107-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/page-character-breach-counterpart-reaction",
+      "template_id": "t8-case-page-character-breach-counterpart-reaction-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "page",
+        "character",
+        "breach",
+        "counterpart",
+        "reaction"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1",
+      "slug": "private-ritual-object-release-detail-route-return",
+      "title": "私密夜间仪式｜物件收尾、细节路线与同场回归",
+      "status": "released",
+      "summary": "在同一私密夜间空间先建立明确成年人物与一个正在进行的个人仪式；人物完成并放下核心物件后，镜头沿手、肩、服装、步伐和家具接触组成连续细节路线，最后回到同一房间和同一成年人已安定的状态。",
+      "manifest_path": "cases/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/manifest.json",
+      "summary_path": "cases/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/SUMMARY.md",
+      "source_path": "cases/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/source.json",
+      "creative_dna_path": "cases/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/preview.gif",
+        "poster": "cases/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/poster.webp",
+        "mp4": "media/x-studio-oneroom-2094736167681826950-browser-2094736167681826950-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/private-ritual-object-release-detail-route-return",
+      "template_id": "t8-case-private-ritual-object-release-detail-route-return-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "private",
+        "ritual",
+        "object",
+        "release",
+        "detail",
+        "route"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1",
+      "slug": "character-action-typography-module-carousel",
+      "title": "Y2K气泡字卡产品片｜角色动作、物件证明与主标复归",
+      "status": "released",
+      "summary": "固定同一成年赛博时尚角色，以眼部、发色、服装和轮廓为身份锚点；气泡、镀铬短词、光标框、产品近景和运动姿势按动作逐模块接力，每章只承担一个信息职责，终局把人物、原创物件与主标重新汇合。",
+      "manifest_path": "cases/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/manifest.json",
+      "summary_path": "cases/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/SUMMARY.md",
+      "source_path": "cases/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/source.json",
+      "creative_dna_path": "cases/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/preview.gif",
+        "poster": "cases/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/poster.webp",
+        "mp4": "media/x-airina-xyz-2094787420210553036-browser-2094787420210553036-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/character-action-typography-module-carousel",
+      "template_id": "t8-case-character-action-typography-module-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "character",
+        "action",
+        "typography",
+        "module",
+        "carousel"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1",
+      "slug": "character-action-typography-module-carousel",
+      "title": "酸性色彩字卡轮播｜成年角色、动作触发与主标归拢",
+      "status": "released",
+      "summary": "锁定同一成年时装角色，以发色、服装和眼镜作为身份锚点；巨型立体短词、气球字与图案卡按走动、抬镜和转身逐段切换，最终把人物和完整原创主标汇回同一静止终卡。",
+      "manifest_path": "cases/x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1/manifest.json",
+      "summary_path": "cases/x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1/SUMMARY.md",
+      "source_path": "cases/x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1/source.json",
+      "creative_dna_path": "cases/x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1/preview.gif",
+        "poster": "cases/x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1/poster.webp",
+        "mp4": "media/x-tokyo-valentine-2094761575299334503-browser-2094761575299334503-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/character-action-typography-module-carousel",
+      "template_id": "t8-case-character-action-typography-module-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "character",
+        "action",
+        "typography",
+        "module",
+        "carousel"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1",
+      "slug": "material-typography-world-pass-through",
+      "title": "实体文字世界穿行｜固定方向、材质接力与终点人像",
+      "status": "released",
+      "summary": "同一成年时装人物沿固定方向穿过由巨型实体短词构成的空间；每个词用不同材质承担一段地理和动作职责，镜头持续证明人物与字块的前后关系，最后以完整人像和原创主标收束。",
+      "manifest_path": "cases/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/manifest.json",
+      "summary_path": "cases/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/SUMMARY.md",
+      "source_path": "cases/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/source.json",
+      "creative_dna_path": "cases/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/preview.gif",
+        "poster": "cases/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/poster.webp",
+        "mp4": "media/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/material-typography-world-pass-through",
+      "template_id": "t8-case-material-typography-world-pass-through-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "material",
+        "typography",
+        "world",
+        "pass",
+        "through"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1",
+      "slug": "asymmetric-scale-evasion-exchange",
+      "title": "非对称体量闪避｜共享地理、路线改写与非胜负终态",
+      "status": "released",
+      "summary": "在同一可追踪地理中建立体量悬殊的两方，让重型角色以明确承诺动作压迫路线，小型角色通过平台、转轮和桥面连续改道而非瞬移；终局保持双方同场且不凭空宣布胜负。仅迁移运动机制，不保留来源角色、服装、世界观或IP外观。",
+      "manifest_path": "cases/x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1/manifest.json",
+      "summary_path": "cases/x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1/SUMMARY.md",
+      "source_path": "cases/x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1/source.json",
+      "creative_dna_path": "cases/x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1/preview.gif",
+        "poster": "cases/x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1/poster.webp",
+        "mp4": "media/x-eternityspring-2094780794552361367-browser-2094780794552361367-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/asymmetric-scale-evasion-exchange",
+      "template_id": "t8-case-asymmetric-scale-evasion-exchange-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "asymmetric",
+        "scale",
+        "evasion",
+        "exchange"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1",
+      "slug": "fabric-light-credit-continuum",
+      "title": "织物光影职员表｜连续载体、球形压痕与字幕接力",
+      "status": "released",
+      "summary": "只用一条连续可追踪的悬浮织物作为字幕载体，让移动光球、阴影、条纹切片与柔性褶皱依次改变文字的显隐和尺度；每条职员表都绑定一次可见材质变形，最后织物退出黑场而不混入无关画面。",
+      "manifest_path": "cases/x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1/manifest.json",
+      "summary_path": "cases/x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1/SUMMARY.md",
+      "source_path": "cases/x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1/source.json",
+      "creative_dna_path": "cases/x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1/preview.gif",
+        "poster": "cases/x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1/poster.webp",
+        "mp4": "media/x-umesh-ai-2094860777475965366-browser-2094860777475965366-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/fabric-light-credit-continuum",
+      "template_id": "t8-case-fabric-light-credit-continuum-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "fabric",
+        "light",
+        "credit",
+        "continuum"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1",
+      "slug": "catastrophe-to-miniature-set-proof",
+      "title": "灾难幻象拆台｜环境吞没、尺度破绽与微缩片场证明",
+      "status": "released",
+      "summary": "先让列车、海岸与建筑共享一个可信地理，再让巨浪沿同一轴线逐层吞没铁路和街区；水雾遮满画面后揭开微缩布景、轨道摄影机、操作人员与水槽，让最后一层明确解释前面的灾难效果。",
+      "manifest_path": "cases/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/manifest.json",
+      "summary_path": "cases/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/SUMMARY.md",
+      "source_path": "cases/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/source.json",
+      "creative_dna_path": "cases/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/preview.gif",
+        "poster": "cases/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/poster.webp",
+        "mp4": "media/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/catastrophe-to-miniature-set-proof",
+      "template_id": "t8-case-catastrophe-to-miniature-set-proof-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "catastrophe",
+        "to",
+        "miniature",
+        "set",
+        "proof"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1",
+      "slug": "character-action-typography-module-carousel",
+      "title": "黏土字母舞台｜成年舞者动作触发、字形飞入与终句合成",
+      "status": "released",
+      "summary": "同一明确成年动画舞者在固定彩色黏土舞台上完成连续舞步；散落字母只能在对应动作后弹起、滚动或进入构图，身份与舞台轴线不重置，结尾把全部字母拼成一个清晰原创终句。",
+      "manifest_path": "cases/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/manifest.json",
+      "summary_path": "cases/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/SUMMARY.md",
+      "source_path": "cases/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/source.json",
+      "creative_dna_path": "cases/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/preview.gif",
+        "poster": "cases/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/poster.webp",
+        "mp4": "media/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/character-action-typography-module-carousel",
+      "template_id": "t8-case-character-action-typography-module-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "character",
+        "action",
+        "typography",
+        "module",
+        "carousel"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-techhalla-2094743725138178491-browser-2094743725138178491-video-1",
+      "slug": "autonomous-packing-disruption-recovery",
+      "title": "自主收纳回路｜物件逐层入箱、空间扰动与闭合恢复",
+      "status": "released",
+      "summary": "固定房间、床面和旅行箱的注册关系，先逐件建立衣物从散置状态到分区入箱的可见路径；装满后用一次空间扰动打散局部秩序，再让同一批物件沿可追踪路径恢复，并以同一旅行箱完整闭合收尾。",
+      "manifest_path": "cases/x-techhalla-2094743725138178491-browser-2094743725138178491-video-1/manifest.json",
+      "summary_path": "cases/x-techhalla-2094743725138178491-browser-2094743725138178491-video-1/SUMMARY.md",
+      "source_path": "cases/x-techhalla-2094743725138178491-browser-2094743725138178491-video-1/source.json",
+      "creative_dna_path": "cases/x-techhalla-2094743725138178491-browser-2094743725138178491-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techhalla-2094743725138178491-browser-2094743725138178491-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techhalla-2094743725138178491-browser-2094743725138178491-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techhalla-2094743725138178491-browser-2094743725138178491-video-1/preview.gif",
+        "poster": "cases/x-techhalla-2094743725138178491-browser-2094743725138178491-video-1/poster.webp",
+        "mp4": "media/x-techhalla-2094743725138178491-browser-2094743725138178491-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/autonomous-packing-disruption-recovery",
+      "template_id": "t8-case-autonomous-packing-disruption-recovery-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "autonomous",
+        "packing",
+        "disruption",
+        "recovery"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1",
+      "slug": "character-action-typography-module-carousel",
+      "title": "都市字卡角色轮播｜固定身份、鞋履证明与短词动作接力",
+      "status": "released",
+      "summary": "用同一成年风格化角色的蓝色面部、橙帽、奶油帽衫、棋盘短裤与黑包锁定身份；大字、步伐、鞋履、复制残影、杯具和贴纸模块逐项响应动作，最终回到人物与原创主标同框的清晰终卡。",
+      "manifest_path": "cases/x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1/manifest.json",
+      "summary_path": "cases/x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1/SUMMARY.md",
+      "source_path": "cases/x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1/source.json",
+      "creative_dna_path": "cases/x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1/preview.gif",
+        "poster": "cases/x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1/poster.webp",
+        "mp4": "media/x-itxabdullaa-2094371536623092160-browser-2094371536623092160-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/character-action-typography-module-carousel",
+      "template_id": "t8-case-character-action-typography-module-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "character",
+        "action",
+        "typography",
+        "module",
+        "carousel"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1",
+      "slug": "character-action-typography-module-carousel",
+      "title": "编辑时装字卡轮播｜身份锁定、姿态证明与版式总归拢",
+      "status": "released",
+      "summary": "锁定同一成年金发模特的脸、发型、粉格西装和金色耳饰，让巨型字母、车镜、姿态组、圆环短词、建筑剪影和编号肖像逐模块响应人物动作；终局必须把完整人物和原创主标收拢到同一静止版式。",
+      "manifest_path": "cases/x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1/manifest.json",
+      "summary_path": "cases/x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1/SUMMARY.md",
+      "source_path": "cases/x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1/source.json",
+      "creative_dna_path": "cases/x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1/preview.gif",
+        "poster": "cases/x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1/poster.webp",
+        "mp4": "media/x-just-sharon7-2094333791904923946-browser-2094333791904923946-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/character-action-typography-module-carousel",
+      "template_id": "t8-case-character-action-typography-module-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "character",
+        "action",
+        "typography",
+        "module",
+        "carousel"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1",
+      "slug": "verify-recurring-identity-board",
+      "title": "像素偶像角色板变体｜设定页复归与舞台身份验真",
+      "status": "released",
+      "summary": "固定一张包含正背面、色板、配饰和局部特写的角色设定板，在每次舞台姿态、近景、转身或道具展示后重新出现；用设定页持续核验同一成年身份，并在终卡让完整人物、原创名标与角色板共同可见。",
+      "manifest_path": "cases/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/manifest.json",
+      "summary_path": "cases/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/SUMMARY.md",
+      "source_path": "cases/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/source.json",
+      "creative_dna_path": "cases/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/preview.gif",
+        "poster": "cases/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/poster.webp",
+        "mp4": "media/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/verify-recurring-identity-board",
+      "template_id": "t8-case-recurring-identity-board-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "recurring",
+        "identity",
+        "board"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1",
+      "slug": "semantic-typography-world-action-relay",
+      "title": "粉黑动作字场变体｜成年奔跑者以行动生成空间短词",
+      "status": "released",
+      "summary": "把来源的青少年与刺客表面完全排除，改用原创明确成年人；角色在固定粉黑城市轴线上奔跑、落地、挥击和停步，每次动作开始后只生成一个语义短词，并让文字成为可落脚、可击中或可穿越的空间结构。",
+      "manifest_path": "cases/x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1/manifest.json",
+      "summary_path": "cases/x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1/SUMMARY.md",
+      "source_path": "cases/x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1/source.json",
+      "creative_dna_path": "cases/x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1/preview.gif",
+        "poster": "cases/x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1/poster.webp",
+        "mp4": "media/x-aiwithaliya-2094108309011980339-browser-2094108309011980339-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/semantic-typography-world-action-relay",
+      "template_id": "t8-case-semantic-typography-world-action-relay-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "semantic",
+        "typography",
+        "world",
+        "action",
+        "relay"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1",
+      "slug": "character-action-typography-module-carousel",
+      "title": "音频界面字卡变体｜成年角色、波形、耳机与动作模块",
+      "status": "released",
+      "summary": "同一成年动画角色以薄荷双发髻、橙色耳机和藏蓝橙夹克保持身份；播放界面、波形、音量环、下落字、跑跳、编号肖像和圆环破碎按动作分章，最后人物站在完整原创播放主标前。",
+      "manifest_path": "cases/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/manifest.json",
+      "summary_path": "cases/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/SUMMARY.md",
+      "source_path": "cases/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/source.json",
+      "creative_dna_path": "cases/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/preview.gif",
+        "poster": "cases/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/poster.webp",
+        "mp4": "media/x-just-sharon7-2094085208027103678-browser-2094085208027103678-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/character-action-typography-module-carousel",
+      "template_id": "t8-case-character-action-typography-module-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "character",
+        "action",
+        "typography",
+        "module",
+        "carousel"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1",
+      "slug": "human-scale-display-writing-completion",
+      "title": "人屏同尺度书写｜既有字面、实体补笔与完成姿态",
+      "status": "released",
+      "summary": "先建立成年人、巨型显示面和未完成文字的尺度关系，再让人物用实体书写工具沿同一表面补齐可见笔画；每次身体移动都对应一段新增墨迹，完成后离开接触点并回到全景，用人物、工具和完整原创字面共同证明结果。",
+      "manifest_path": "cases/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/manifest.json",
+      "summary_path": "cases/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/SUMMARY.md",
+      "source_path": "cases/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/source.json",
+      "creative_dna_path": "cases/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/preview.gif",
+        "poster": "cases/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/poster.webp",
+        "mp4": "media/x-akemiwork-2094742068010832007-browser-2094742068010832007-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/human-scale-display-writing-completion",
+      "template_id": "t8-case-human-scale-display-writing-completion-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "human",
+        "scale",
+        "display",
+        "writing",
+        "completion"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1",
+      "slug": "irreversible-cooking-state-chain-serving-proof",
+      "title": "层压可颂状态链变体｜揉压、包油、折叠、切卷与烤色证明",
+      "status": "released",
+      "summary": "同一工作台、面团、黄油、擀杖、刀具和烤盘持续锁定；面团依次经历包油、折叠、层压、切片、卷形、入盘、刷面和烤色等不可逆状态，终局掰开同一批成品证明层次与拉丝。",
+      "manifest_path": "cases/x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1/manifest.json",
+      "summary_path": "cases/x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1/SUMMARY.md",
+      "source_path": "cases/x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1/source.json",
+      "creative_dna_path": "cases/x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1/preview.gif",
+        "poster": "cases/x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1/poster.webp",
+        "mp4": "media/x-0xemotions-2094717352973619547-browser-2094717352973619547-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/irreversible-cooking-state-chain-serving-proof",
+      "template_id": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "irreversible",
+        "cooking",
+        "state",
+        "chain",
+        "serving",
+        "proof"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1",
+      "slug": "paired-flotation-water-route",
+      "title": "双脚浮具水面路线｜交替承重、连续尾流与远端抵达",
+      "status": "released",
+      "summary": "固定同一成年人物、码头、水面和远方地标，先证明双脚分别绑定独立透明浮具；人物以左右脚交替承重离开码头，每次接触都产生可归因圆波和连续尾流，短暂回看后继续沿同一方向远离并接近既定目标。",
+      "manifest_path": "cases/x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1/manifest.json",
+      "summary_path": "cases/x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1/SUMMARY.md",
+      "source_path": "cases/x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1/source.json",
+      "creative_dna_path": "cases/x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1/preview.gif",
+        "poster": "cases/x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1/poster.webp",
+        "mp4": "media/x-johnagi168-2095057466874527798-browser-2095057466874527798-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/paired-flotation-water-route",
+      "template_id": "t8-case-paired-flotation-water-route-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "paired",
+        "flotation",
+        "water",
+        "route"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1",
+      "slug": "switch-subjects-through-persistent-selector",
+      "title": "梗图选择器变体｜固定菜单、点击切换与发送反馈",
+      "status": "released",
+      "summary": "固定应用框架、左侧选项栏、当前高亮和发送按钮持续不变；可见光标每次只选择一个反应类型，主画布随即换成对应人物、配色、短文案和定义动作，最后一次发送反馈证明所有变化来自同一选择系统。",
+      "manifest_path": "cases/x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1/manifest.json",
+      "summary_path": "cases/x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1/SUMMARY.md",
+      "source_path": "cases/x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1/source.json",
+      "creative_dna_path": "cases/x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1/preview.gif",
+        "poster": "cases/x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1/poster.webp",
+        "mp4": "media/x-techiebysa-2094739935139893587-browser-2094739935139893587-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/switch-subjects-through-persistent-selector",
+      "template_id": "t8-case-persistent-selector-subject-swap-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "persistent",
+        "selector",
+        "subject",
+        "swap"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-viniai-2093586975601398111-browser-2093586975601398111-video-1",
+      "slug": "irreversible-cooking-state-chain-serving-proof",
+      "title": "动画快炒状态链｜切配、下锅、装盘、递交与食客反应",
+      "status": "released",
+      "summary": "锁定同一成年动画厨师、暖光厨房、蔬菜、刀具、炒锅、餐盘与食客；原料依次经历切开、混合、加热、熟化和装盘等不可逆状态，厨师把同一份成品沿连续路线递交，最后由同一成年食客的第一口反应证明完成。",
+      "manifest_path": "cases/x-viniai-2093586975601398111-browser-2093586975601398111-video-1/manifest.json",
+      "summary_path": "cases/x-viniai-2093586975601398111-browser-2093586975601398111-video-1/SUMMARY.md",
+      "source_path": "cases/x-viniai-2093586975601398111-browser-2093586975601398111-video-1/source.json",
+      "creative_dna_path": "cases/x-viniai-2093586975601398111-browser-2093586975601398111-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-viniai-2093586975601398111-browser-2093586975601398111-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-viniai-2093586975601398111-browser-2093586975601398111-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-viniai-2093586975601398111-browser-2093586975601398111-video-1/preview.gif",
+        "poster": "cases/x-viniai-2093586975601398111-browser-2093586975601398111-video-1/poster.webp",
+        "mp4": "media/x-viniai-2093586975601398111-browser-2093586975601398111-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/irreversible-cooking-state-chain-serving-proof",
+      "template_id": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "irreversible",
+        "cooking",
+        "state",
+        "chain",
+        "serving",
+        "proof"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-02T20:33:51+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1",
+      "slug": "letterform-structure-motion-system-lockup",
+      "title": "建筑字形穿行｜空间构件、尺度碰撞与广场回标",
+      "status": "released",
+      "summary": "先建立白色公共建筑和微小行人的稳定尺度，再让黑色字形构件与门洞、圆环和立柱共用空间骨架；镜头连续穿过可读孔洞，字形由标记升级为空间实体，终局回到完整广场。",
+      "manifest_path": "cases/x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1/manifest.json",
+      "summary_path": "cases/x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1/SUMMARY.md",
+      "source_path": "cases/x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1/source.json",
+      "creative_dna_path": "cases/x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1/preview.gif",
+        "poster": "cases/x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1/poster.webp",
+        "mp4": "media/x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/letterform-structure-motion-system-lockup",
+      "template_id": "t8-case-letterform-structure-motion-system-lockup-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "letterform",
+        "structure",
+        "motion",
+        "system",
+        "lockup"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1",
+      "slug": "scale-paired-stage-response-orbit-hand-rest",
+      "title": "跨尺度舞台搭档｜环绕回应、手掌落点与共同定格",
+      "status": "released",
+      "summary": "锁定成年表演者、微型原创伙伴和同一舞台，先用独立动作建立双方身份，再让小伙伴沿可追踪环线回应人物手势；终局必须落到人物手掌或近身位置，并以共同姿态证明跨尺度关系。",
+      "manifest_path": "cases/x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1/manifest.json",
+      "summary_path": "cases/x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1/SUMMARY.md",
+      "source_path": "cases/x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1/source.json",
+      "creative_dna_path": "cases/x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1/preview.gif",
+        "poster": "cases/x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1/poster.webp",
+        "mp4": "media/x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/scale-paired-stage-response-orbit-hand-rest",
+      "template_id": "t8-case-scale-paired-stage-response-orbit-hand-rest-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "scale",
+        "paired",
+        "stage",
+        "response",
+        "orbit",
+        "hand"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1",
+      "slug": "semantic-typography-world-action-relay",
+      "title": "人生字场旅程｜手写触发、空间短词与眼神收束",
+      "status": "released",
+      "summary": "先用成年人物的一次书写动作提出主题，再让原创短词依次变成圆环、道路、台阶和环境标记；人物持续穿过这些文字结构，终局回到同一身份的眼神或静止主标。",
+      "manifest_path": "cases/x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1/manifest.json",
+      "summary_path": "cases/x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1/SUMMARY.md",
+      "source_path": "cases/x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1/source.json",
+      "creative_dna_path": "cases/x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1/preview.gif",
+        "poster": "cases/x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1/poster.webp",
+        "mp4": "media/x-tokyo-valentine-2095340165602636109-browser-2095340165602636109-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/semantic-typography-world-action-relay",
+      "template_id": "t8-case-semantic-typography-world-action-relay-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "semantic",
+        "typography",
+        "world",
+        "action",
+        "relay"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1",
+      "slug": "character-action-typography-module-carousel",
+      "title": "赤黑角色字卡轮转｜镜像手势、情绪词与终门回标",
+      "status": "released",
+      "summary": "锁定同一成年原创动画角色，用手势、转身和奔跑触发赤黑白字卡、镜像手掌与对称几何；单人与复制模块交替升级，最终让完整角色抵达一扇可读终门。",
+      "manifest_path": "cases/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/manifest.json",
+      "summary_path": "cases/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/SUMMARY.md",
+      "source_path": "cases/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/source.json",
+      "creative_dna_path": "cases/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/preview.gif",
+        "poster": "cases/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/poster.webp",
+        "mp4": "media/x-sailorv321-2095297706445144066-browser-2095297706445144066-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/character-action-typography-module-carousel",
+      "template_id": "t8-case-character-action-typography-module-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "character",
+        "action",
+        "typography",
+        "module",
+        "carousel"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1",
+      "slug": "fixed-dossier-archetype-roster",
+      "title": "和风角色谱系｜纹样框架、身份符号与群像归档",
+      "status": "released",
+      "summary": "固定一套和风图鉴框架和字段顺序，让多个成年原创角色逐一以面孔、姿态、职责物与主题符号完成登记；每人只占一个清楚槽位，终局把全体角色聚合为可比较群像。",
+      "manifest_path": "cases/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/manifest.json",
+      "summary_path": "cases/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/SUMMARY.md",
+      "source_path": "cases/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/source.json",
+      "creative_dna_path": "cases/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/preview.gif",
+        "poster": "cases/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/poster.webp",
+        "mp4": "media/x-challenger-nd-2095159842474520753-browser-2095159842474520753-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/fixed-dossier-archetype-roster",
+      "template_id": "t8-case-fixed-dossier-archetype-roster-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "fixed",
+        "dossier",
+        "archetype",
+        "roster"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1",
+      "slug": "handoff-ensemble-focus",
+      "title": "三人舞台接力｜身份分色、中心位轮换与合舞收束",
+      "status": "released",
+      "summary": "先以全景建立三名成年舞者、固定舞台和分色服装，再由中心位把动作依次交给左右两人；近景只能短暂聚焦一人，随后必须回到三人同框和同步终态。",
+      "manifest_path": "cases/x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1/manifest.json",
+      "summary_path": "cases/x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1/SUMMARY.md",
+      "source_path": "cases/x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1/source.json",
+      "creative_dna_path": "cases/x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1/preview.gif",
+        "poster": "cases/x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1/poster.webp",
+        "mp4": "media/x-sakura-machine7-2095120303324070216-browser-2095120303324070216-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/handoff-ensemble-focus",
+      "template_id": "t8-case-ensemble-focus-handoff-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "ensemble",
+        "focus",
+        "handoff"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-romi2656-2095376965293269453-browser-2095376965293269453-video-1",
+      "slug": "structure-product-proof-launch",
+      "title": "发质功效证明｜用量、接触、顺滑结果与产品回标",
+      "status": "released",
+      "summary": "先让同一成年人物与原创护理产品同框，再依次证明用量、手部接触、沿发丝涂抹和顺滑结果；每一步都保留同一房间与发型锚点，结尾回到人物、发丝和产品同框。",
+      "manifest_path": "cases/x-romi2656-2095376965293269453-browser-2095376965293269453-video-1/manifest.json",
+      "summary_path": "cases/x-romi2656-2095376965293269453-browser-2095376965293269453-video-1/SUMMARY.md",
+      "source_path": "cases/x-romi2656-2095376965293269453-browser-2095376965293269453-video-1/source.json",
+      "creative_dna_path": "cases/x-romi2656-2095376965293269453-browser-2095376965293269453-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-romi2656-2095376965293269453-browser-2095376965293269453-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-romi2656-2095376965293269453-browser-2095376965293269453-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-romi2656-2095376965293269453-browser-2095376965293269453-video-1/preview.gif",
+        "poster": "cases/x-romi2656-2095376965293269453-browser-2095376965293269453-video-1/poster.webp",
+        "mp4": "media/x-romi2656-2095376965293269453-browser-2095376965293269453-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/structure-product-proof-launch",
+      "template_id": "t8c001-product-proof-state-machine",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "t8c001",
+        "product",
+        "proof",
+        "state",
+        "machine"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1",
+      "slug": "contact-triggered-transient-energy-feedback",
+      "title": "荧光格斗反馈｜包围升级、真实接触与命名终招",
+      "status": "released",
+      "summary": "先在停车场建立成年武者与逐渐逼近的轮廓对手，动作轨迹和身体接触必须先成立；紫色能量只能在命中后短促反馈并逐级增强，终局以原创招式名和稳定站姿收束。",
+      "manifest_path": "cases/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/manifest.json",
+      "summary_path": "cases/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/SUMMARY.md",
+      "source_path": "cases/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/source.json",
+      "creative_dna_path": "cases/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/preview.gif",
+        "poster": "cases/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/poster.webp",
+        "mp4": "media/x-akemiwork-2095100013315776751-browser-2095100013315776751-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/contact-triggered-transient-energy-feedback",
+      "template_id": "t8-case-contact-triggered-transient-energy-feedback-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "contact",
+        "triggered",
+        "transient",
+        "energy",
+        "feedback"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1",
+      "slug": "cross-medium-paired-route-chapter-synchrony",
+      "title": "跨媒介旅伴路线｜地标换章、同步动作与共同终姿",
+      "status": "released",
+      "summary": "固定一名成年真人和一名成年二维原创旅伴，两者保持不同材质却共享方向、节拍与地标路线；每章由一次同步手势或步态证明同场，最终以共同动作结束而非互相替换。",
+      "manifest_path": "cases/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/manifest.json",
+      "summary_path": "cases/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/SUMMARY.md",
+      "source_path": "cases/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/source.json",
+      "creative_dna_path": "cases/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/preview.gif",
+        "poster": "cases/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/poster.webp",
+        "mp4": "media/x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/cross-medium-paired-route-chapter-synchrony",
+      "template_id": "t8-case-cross-medium-paired-route-chapter-synchrony-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "cross",
+        "medium",
+        "paired",
+        "route",
+        "chapter",
+        "synchrony"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1",
+      "slug": "follow-one-encounter-and-departure",
+      "title": "单车路线偶遇｜出门、社交停点与继续离场",
+      "status": "released",
+      "summary": "锁定同一成年人物、单车、篮筐和巷道方向，先完成离家与起步，再让路线中只发生一次可读社交停点；回应结束后人物重新骑行并向既定方向离场。",
+      "manifest_path": "cases/x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1/manifest.json",
+      "summary_path": "cases/x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1/SUMMARY.md",
+      "source_path": "cases/x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1/source.json",
+      "creative_dna_path": "cases/x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1/preview.gif",
+        "poster": "cases/x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1/poster.webp",
+        "mp4": "media/x-rosey-watson-2095356984455508309-browser-2095356984455508309-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/follow-one-encounter-and-departure",
+      "template_id": "t8-case-observer-follow-encounter-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "observer",
+        "follow",
+        "encounter"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1",
+      "slug": "fixed-dossier-archetype-roster",
+      "title": "机械光圈角色谱系｜单人揭示、职责差异与放射群像",
+      "status": "released",
+      "summary": "用同一齿轮、管线和机械光圈作为固定角色槽，让多个成年原创人物逐一显露面孔、服装、姿态和职责物；每次只登记一人，终局把全部人物汇入放射式机械名册。",
+      "manifest_path": "cases/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/manifest.json",
+      "summary_path": "cases/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/SUMMARY.md",
+      "source_path": "cases/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/source.json",
+      "creative_dna_path": "cases/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/preview.gif",
+        "poster": "cases/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/poster.webp",
+        "mp4": "media/x-challenger-nd-2094951518839652411-browser-2094951518839652411-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/fixed-dossier-archetype-roster",
+      "template_id": "t8-case-fixed-dossier-archetype-roster-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "fixed",
+        "dossier",
+        "archetype",
+        "roster"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1",
+      "slug": "shared-ride-reaction-stop-recovery-exit",
+      "title": "同乘反应曲线｜设施加速、共同峰值、骤停与离场",
+      "status": "released",
+      "summary": "把两名原创伙伴固定在同一游乐设施和相邻座位，用共同外部运动依次推动戒备、加速反应和情绪峰值；设施骤停后双方必须互相确认、恢复，再共同离开。",
+      "manifest_path": "cases/x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1/manifest.json",
+      "summary_path": "cases/x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1/SUMMARY.md",
+      "source_path": "cases/x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1/source.json",
+      "creative_dna_path": "cases/x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1/preview.gif",
+        "poster": "cases/x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1/poster.webp",
+        "mp4": "media/x-sailorv321-2095143791061766504-browser-2095143791061766504-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/shared-ride-reaction-stop-recovery-exit",
+      "template_id": "t8-case-shared-ride-reaction-stop-recovery-exit-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "shared",
+        "ride",
+        "reaction",
+        "stop",
+        "recovery",
+        "exit"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1",
+      "slug": "delayed-turn-silhouette-contamination-lens-breach",
+      "title": "延迟转身惊变｜固定走廊、轮廓污染与贴镜突破",
+      "status": "released",
+      "summary": "固定走廊中先让成年人物背对镜头保持普通基线，再以一次缓慢转身建立面孔；黑色发丝或烟影从肩部连续扩张，表情和轮廓逐级异变，最终只发生一次贴近镜头的突破。",
+      "manifest_path": "cases/x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1/manifest.json",
+      "summary_path": "cases/x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1/SUMMARY.md",
+      "source_path": "cases/x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1/source.json",
+      "creative_dna_path": "cases/x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1/preview.gif",
+        "poster": "cases/x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1/poster.webp",
+        "mp4": "media/x-challenger-nd-2095071613201109151-browser-2095071613201109151-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/delayed-turn-silhouette-contamination-lens-breach",
+      "template_id": "t8-case-delayed-turn-silhouette-contamination-lens-breach-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "delayed",
+        "turn",
+        "silhouette",
+        "contamination",
+        "lens",
+        "breach"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1",
+      "slug": "stage-progressive-character-reveal",
+      "title": "成年造型姿态阶梯｜面孔、发型、手势与全身回连",
+      "status": "released",
+      "summary": "先用面孔和薄荷色发型建立成年原创角色，再通过手部、肩部、坐姿和全身站姿逐级扩展；每个局部必须回连完整人物，服装、年龄和身体比例保持一致。",
+      "manifest_path": "cases/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/manifest.json",
+      "summary_path": "cases/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/SUMMARY.md",
+      "source_path": "cases/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/source.json",
+      "creative_dna_path": "cases/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/preview.gif",
+        "poster": "cases/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/poster.webp",
+        "mp4": "media/x-kiyomana-2095353035304386813-browser-2095353035304386813-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/stage-progressive-character-reveal",
+      "template_id": "t8-case-staged-character-reveal-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "staged",
+        "character",
+        "reveal"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1",
+      "slug": "follow-geometry-as-progress-clock",
+      "title": "连续街头后跟｜人群遮挡、路线地标与一次偏移动作",
+      "status": "released",
+      "summary": "用一次不中断的后方跟随锁定成年人物和街道方向，让树影、店面与人群横穿成为进度标记；人物只允许一次克制侧看或步态偏移，随后回到原路线继续前进。",
+      "manifest_path": "cases/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/manifest.json",
+      "summary_path": "cases/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/SUMMARY.md",
+      "source_path": "cases/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/source.json",
+      "creative_dna_path": "cases/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/preview.gif",
+        "poster": "cases/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/poster.webp",
+        "mp4": "media/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/follow-geometry-as-progress-clock",
+      "template_id": "t8-case-continuous-follow-geometry-clock-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "continuous",
+        "follow",
+        "geometry",
+        "clock"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1",
+      "slug": "identity-locked-style-world-carousel",
+      "title": "四季步行轮播｜身份锁定、服装气候同步与春景回归",
+      "status": "released",
+      "summary": "锁定同一成年人物、正面步行轴和同一商业街结构，让夏、秋、冬、春依次同步改写树木、地面、光线和服装；人物的脸、发型、杯子与步态连续，终局回到明亮季节并靠近镜头。",
+      "manifest_path": "cases/x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1/manifest.json",
+      "summary_path": "cases/x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1/SUMMARY.md",
+      "source_path": "cases/x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1/source.json",
+      "creative_dna_path": "cases/x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1/preview.gif",
+        "poster": "cases/x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1/poster.webp",
+        "mp4": "media/x-aiwithsynthia-2095366657183293601-browser-2095366657183293601-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/identity-locked-style-world-carousel",
+      "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "identity",
+        "locked",
+        "style",
+        "world",
+        "carousel"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1",
+      "slug": "selfie-route-local-find-taste-resume",
+      "title": "自拍地标路线｜街行转身、饮品停点与河岸续行",
+      "status": "released",
+      "summary": "用同一成年旅者、手持自拍距离和步行方向串联街道、地标道路与河岸；一次转身负责揭示地点，一次饮品停点完成体验证明，随后人物恢复行走并以日落地标收束。",
+      "manifest_path": "cases/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/manifest.json",
+      "summary_path": "cases/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/SUMMARY.md",
+      "source_path": "cases/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/source.json",
+      "creative_dna_path": "cases/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/preview.gif",
+        "poster": "cases/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/poster.webp",
+        "mp4": "media/x-sairah-0-2095361763315487140-browser-2095361763315487140-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/selfie-route-local-find-taste-resume",
+      "template_id": "t8-case-selfie-route-local-find-taste-resume-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "selfie",
+        "route",
+        "local",
+        "find",
+        "taste",
+        "resume"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1",
+      "slug": "environment-interrupted-duel-resumption",
+      "title": "环境介入对决｜攻防交换、外力中断与原位复战",
+      "status": "released",
+      "summary": "先在同一危险环境中建立两名成年对手和可读攻防轴，让风、雨和载体摇摆逐步改变脚步；一次强烈环境事件必须同时打断双方，双方恢复站位后沿原轴继续交锋。",
+      "manifest_path": "cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/manifest.json",
+      "summary_path": "cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/SUMMARY.md",
+      "source_path": "cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/source.json",
+      "creative_dna_path": "cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/preview.gif",
+        "poster": "cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/poster.webp",
+        "mp4": "media/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/environment-interrupted-duel-resumption",
+      "template_id": "t8-case-environment-interrupted-duel-resumption-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "environment",
+        "interrupted",
+        "duel",
+        "resumption"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1",
+      "slug": "identity-locked-style-world-carousel",
+      "title": "动画角色城市轮播｜身份锚点、场景换装与起点回归",
+      "status": "released",
+      "summary": "锁定同一成年动画人物的粉色发型、绿眼和身体比例，让城市、昼夜与服装在多个章节切换；每次变换后先证明完整人物，终局回到与开场呼应的夜间街口。",
+      "manifest_path": "cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/manifest.json",
+      "summary_path": "cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/SUMMARY.md",
+      "source_path": "cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/source.json",
+      "creative_dna_path": "cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/preview.gif",
+        "poster": "cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/poster.webp",
+        "mp4": "media/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/identity-locked-style-world-carousel",
+      "template_id": "t8-case-identity-locked-style-world-carousel-v1",
+      "template_action": "evidence_variant",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "identity",
+        "locked",
+        "style",
+        "world",
+        "carousel"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
+      "preview_status": {
+        "gif": "available",
+        "poster": "available",
+        "mp4": "available_in_electron_media_pack"
+      }
+    },
+    {
+      "case_id": "x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1",
+      "slug": "routine-tool-shoreline-interruption-recovery-return",
+      "title": "岸边任务回路｜营地准备、带物行进、浪击恢复与返回",
+      "status": "released",
+      "summary": "先让成年人物在固定营地完成一项带工具的晨间准备，再携带同一器具沿清楚路线走到水边；一次海浪打断任务后，人物保持器具并恢复站立，随后沿原方向返回营地。",
+      "manifest_path": "cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/manifest.json",
+      "summary_path": "cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/SUMMARY.md",
+      "source_path": "cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/source.json",
+      "creative_dna_path": "cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/creative-dna.json",
+      "prompt_paths": {
+        "minimax_h3": "cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/prompts/minimax-h3.md",
+        "seedance_2_0": "cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/prompts/seedance-2.0.md"
+      },
+      "preview_paths": {
+        "gif": "cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/preview.gif",
+        "poster": "cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/poster.webp",
+        "mp4": "media/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/preview.mp4"
+      },
+      "skill_path": "../skills/routine-tool-shoreline-interruption-recovery-return",
+      "template_id": "t8-case-routine-tool-shoreline-interruption-recovery-return-v1",
+      "template_action": "selector",
+      "models": [
+        "MiniMax H3",
+        "Seedance 2.0"
+      ],
+      "tags": [
+        "routine",
+        "tool",
+        "shoreline",
+        "interruption",
+        "recovery",
+        "return"
+      ],
+      "quality_score": 4.953,
+      "updated_at": "2026-09-03T15:21:59+08:00",
       "preview_status": {
         "gif": "available",
         "poster": "available",

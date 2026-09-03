@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1",
+  "slug": "material-typography-world-pass-through",
+  "title": "实体文字世界穿行｜固定方向、材质接力与终点人像",
+  "source_title": "时装人物穿行巨型文字｜空间单词接力后回到完整身份",
+  "summary": "同一成年时装人物沿固定方向穿过由巨型实体短词构成的空间；每个词用不同材质承担一段地理和动作职责，镜头持续证明人物与字块的前后关系，最后以完整人像和原创主标收束。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/material-typography-world-pass-through",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-isabellahan-2094785101603168279-browser-2094785101603168279-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-typography-world-pass-through-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-material-typography-world-pass-through-v1",
+  "input_format": "Establish one clearly adult original subject and a fixed dark spatial axis before material typography appears. + Assign each module one short original word, one material family and one physical behavior. + Keep the subject identity and travel direction continuous while material physics change. + Compress prior modules through a bounded aperture, ribbon or paper relay rather than random cuts. + Converge all material channels into one stable terminal portrait and readable original title.",
+  "recommended_input": "建立一名原创明确成年城市规划师：铜色辫发、炭灰外套、青绿色围巾与方形银框眼镜；她站在狭长混凝土文字廊入口。；空间方向不反转，依次穿过半透明琥珀材质【FORM】与粗糙蓝石材质【BUILD】；每次转场只由一条前景字边遮挡触发。；在文字廊出口以干净近景人像和准确短标【CITY IN WORDS】结束并停留到可读；不复制任何来源名称、造型或字幕。",
+  "required_anchors": [
+    "One clearly adult identity and one forward spatial route are established before the first word crossing.",
+    "Every word is a physical volume with readable foreground, interior and background relationships.",
+    "At least one visible body-to-letter contact proves the typography belongs to the same world.",
+    "The final portrait occurs beyond the last word and carries one exact original master title."
+  ],
+  "tags": [
+    "material",
+    "typography",
+    "world",
+    "pass",
+    "through"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-02T19:27:38+08:00",
+  "updated_at": "2026-09-02T20:33:51+08:00"
+}

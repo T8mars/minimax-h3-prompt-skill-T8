@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "e702eb739760b6a55c7f5f933735520932c1274d7cc84dda0b4228afda2c78c5",
+    "creative_dna_sha256": "2e1352d29b1f3e96f49daf829f43f2513ce253291fc0ae3bfa338710c6eabd11"
+  },
+  "content": {
+    "title": "岸边任务回路｜营地准备、带物行进、浪击恢复与返回",
+    "summary": "先让成年人物在固定营地完成一项带工具的晨间准备，再携带同一器具沿清楚路线走到水边；一次海浪打断任务后，人物保持器具并恢复站立，随后沿原方向返回营地。",
+    "quick_start": {
+      "input_format": "一名明确成年原创主体、一个固定营地和一件持续携带的工具 + 出发前完成一项可见准备动作 + 沿可追踪路线抵达环境边界 + 只发生一次外部扰动并保留工具与身份 + 人物恢复后沿既有路线回到同一营地终态",
+      "recommended_input": "建立明确成年原创岛屿生态学家：黑发扎起、宽松沙色衬衫、橄榄短裤和银色取样壶，日出时位于帆布海滩棚旁。；水线处只放低取样壶一次，宽景中持续保留帐棚、脚印和海岸方向。；她站稳、检查盖紧的取样壶，并沿同一串脚印返回帆布棚，终局宽景同时包含成年人物与营地。",
+      "required_anchors": [
+        "一名明确的成人受试者、一件携带工具、一名营地锚和一条海岸线路线确定了任务。",
+        "在出发前使用相同的工具进行完整的准备动作。",
+        "恰好一个环境中断会导致可读大括号，同时工具占有和身份仍然存在。",
+        "对象明显恢复并沿着既定路线返回同一营地终点状态。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让成年人物在固定营地完成一项带工具的晨间准备，再携带同一器具沿清楚路线走到水边；一次海浪打断任务后，人物保持器具并恢复站立，随后沿原方向返回营地。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先让成年人物在固定营地完成一项带工具的晨间准备，再携带同一器具沿清楚路线走到水边；一次海浪打断任务后，人物保持器具并恢复站立，随后沿原方向返回营地。 必须满足：One clearly adult subject, one carried tool, one camp anchor and one shoreline route establish the task. + A complete preparation action precedes departure with the same tool. + The route from camp to water remains visible through landmarks or footprints. + Exactly one environmental interruption causes a readable brace while tool possession and identity persist. + The subject visibly recovers and returns along the established route to the same camp terminal state.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名明确的成人受试者、一件携带工具、一名营地锚和一条海岸线路线确定了任务。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名明确的成人受试者、一件携带工具、一名营地锚和一条海岸线路线确定任务。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "在出发前使用相同的工具进行完整的准备动作。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“在出发前使用相同的工具进行完整的准备行动。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "从营地到水域的路线通过地标或脚印仍然可见。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“从营地到水域的路线通过地标或脚印仍然可见。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "恰好一个环境中断会导致可读大括号，同时工具占有和身份仍然存在。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“在工具占有和身份持续存在的同时，恰好一个环境中断会导致可读大括号。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "对象明显恢复并沿着既定路线返回同一营地终点状态。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“对象明显恢复并沿着既定路线返回同一营地终点状态。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年岛屿生态学家拎着采样壶来到岸边，顶住波浪，沿着脚印返回。",
+          "prompt_seed": "一位成年岛屿生态学家拎着采样壶来到岸边，顶住波浪，沿着脚印返回。"
+        },
+        {
+          "concept": "一名成年高山厨师将一个有盖的锅带到融雪通道，撑过一条冰滑，然后沿着带有标记的木桩返回。",
+          "prompt_seed": "一名成年高山厨师将一个有盖的锅带到融雪通道，撑过一条冰滑，然后沿着带有标记的木桩返回。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名明确的成人受试者、一件携带工具、一名营地锚和一条海岸线路线确定任务。”",
+          "repair": "一名明确的成人受试者、一件携带工具、一名营地锚和一条海岸线路线确定了任务。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“在出发前使用相同的工具进行完整的准备行动。”",
+          "repair": "在出发前使用相同的工具进行完整的准备动作。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“从营地到水域的路线通过地标或脚印仍然可见。”",
+          "repair": "从营地到水域的路线通过地标或脚印仍然可见。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“在工具占有和身份持续存在的同时，恰好一个环境中断会导致可读大括号。”",
+          "repair": "恰好一个环境中断会导致可读大括号，同时工具占有和身份仍然存在。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“对象明显恢复并沿着既定路线返回同一营地终点状态。”",
+          "repair": "对象明显恢复并沿着既定路线返回同一营地终点状态。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年岛屿生态学家拎着采样壶来到岸边，顶住波浪，沿着脚印返回。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年高山厨师将一个有盖的锅带到融雪通道，撑过一条冰滑，然后沿着带有标记的木桩返回。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

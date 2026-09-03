@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1",
+  "slug": "verify-recurring-identity-board",
+  "title": "像素偶像角色板变体｜设定页复归与舞台身份验真",
+  "source_title": "霓虹偶像身份核验｜角色设定板与表演镜头反复对照",
+  "summary": "固定一张包含正背面、色板、配饰和局部特写的角色设定板，在每次舞台姿态、近景、转身或道具展示后重新出现；用设定页持续核验同一成年身份，并在终卡让完整人物、原创名标与角色板共同可见。",
+  "status": "released",
+  "source_duration_seconds": 14.814331,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/verify-recurring-identity-board",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2094782705577996727-browser-2094782705577996727-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-recurring-identity-board-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-recurring-identity-board-v1",
+  "input_format": "固定角色板 + 同一原创主体 + 至少4种不同验证职责 + 广角/近景双证明 + 最终对照",
+  "recommended_input": "为原创明确成年街机作曲人【MIRA】建立固定角色设定板：银色双丸子头、一缕钴蓝刘海、琥珀眼、紫色飞行夹克、黑色百褶长裤与白色菱形胸针；包含正面、背面、侧面、色板和四个细节框。；脸部近景和一次朝镜头伸开手掌之前必须先回到设定板，核验同一缕刘海、眼睛、夹克领和菱形胸针。；终局让角色板与人物共同出现在准确原创主标【MIRA / NIGHT PATCH】旁；身份锚点和文字全部静止。",
+  "required_anchors": [
+    "One persistent identity board occupies a stable screen region and never changes its reference content.",
+    "The board provides at least front, back, side, palette and detail proofs for one clearly adult identity.",
+    "Face, hair, costume, accessory and body proportions stay consistent across full-body and close views.",
+    "The final frame contains board, complete adult and one original readable identity mark together."
+  ],
+  "tags": [
+    "recurring",
+    "identity",
+    "board"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-02T19:27:39+08:00",
+  "updated_at": "2026-09-02T20:33:51+08:00"
+}

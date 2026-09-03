@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "先在停车场建立成年武者与逐渐逼近的轮廓对手，动作轨迹和身体接触必须先成立；紫色能量只能在命中后短促反馈并逐级增强，终局以原创招式名和稳定站姿收束。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One clearly adult fighter, one fixed arena axis and readable opponent lanes establish spatial truth.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult fighter, one fixed arena axis and readable opponent lanes establish spatial truth.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Every evade, block or strike completes a physical trajectory before energy feedback begins.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every evade, block or strike completes a physical trajectory before energy feedback begins.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Energy color, direction and duration remain consequences of verified contact.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Energy color, direction and duration remain consequences of verified contact.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Opponent count and proximity may escalate without changing the fighter's identity or resetting geography.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Opponent count and proximity may escalate without changing the fighter's identity or resetting geography.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The final named move is original, follows the strongest contact and ends with a stable adult stance after all light decays.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final named move is original, follows the strongest contact and ends with a stable adult stance after all light decays.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult parkour instructor clears training drones with contact-bound cyan arcs and an original finishing-move card.",
+      "prompt_seed": "An adult parkour instructor clears training drones with contact-bound cyan arcs and an original finishing-move card."
+    },
+    {
+      "concept": "An adult temple guard redirects wooden automatons with contact-bound amber dust and an original finishing seal.",
+      "prompt_seed": "An adult temple guard redirects wooden automatons with contact-bound amber dust and an original finishing seal."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult fighter, one fixed arena axis and readable opponent lanes establish spatial truth.\"",
+      "repair": "One clearly adult fighter, one fixed arena axis and readable opponent lanes establish spatial truth."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every evade, block or strike completes a physical trajectory before energy feedback begins.\"",
+      "repair": "Every evade, block or strike completes a physical trajectory before energy feedback begins."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Energy color, direction and duration remain consequences of verified contact.\"",
+      "repair": "Energy color, direction and duration remain consequences of verified contact."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Opponent count and proximity may escalate without changing the fighter's identity or resetting geography.\"",
+      "repair": "Opponent count and proximity may escalate without changing the fighter's identity or resetting geography."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final named move is original, follows the strongest contact and ends with a stable adult stance after all light decays.\"",
+      "repair": "The final named move is original, follows the strongest contact and ends with a stable adult stance after all light decays."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult parkour instructor clears training drones with contact-bound cyan arcs and an original finishing-move card.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult temple guard redirects wooden automatons with contact-bound amber dust and an original finishing seal.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

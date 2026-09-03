@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "1ada3546c4d38ff37ae017edf4f15a8e769aab39431cf6921dd38c6d7a1c6518",
+    "creative_dna_sha256": "9359fdb316836d59e19a6d80b7d51b30e056d4d8419342db6458358abeb552f3"
+  },
+  "content": {
+    "title": "连续街头后跟｜人群遮挡、路线地标与一次偏移动作",
+    "summary": "用一次不中断的后方跟随锁定成年人物和街道方向，让树影、店面与人群横穿成为进度标记；人物只允许一次克制侧看或步态偏移，随后回到原路线继续前进。",
+    "quick_start": {
+      "input_format": "单一主体 + 连续后方跟随 + 重复结构地标 + 弯曲路线视差 + 不切镜的可见进度终态",
+      "recommended_input": "在一个不中断镜头中，从后方跟随原创成年图书递送员：短发、棕褐色罩衫和海军蓝矩形挎包，沿有阴影的市场拱廊前进。；两名近景顾客短暂遮住肩部和挎包，随后在预测位置重新显出同一成年人物，不切镜、不跳速。；继续后方跟随越过第五个雨棚，人物沿同一拱廊轴逐渐变小；不虚构抵达或第二事件。",
+      "required_anchors": [
+        "一个清晰的成人身份、一个后跟摄像头关系和一个向前的街道轴保持连续。",
+        "重复的环境标记可以在不依赖削减的情况下提供可数的进展。",
+        "恰好发生一次受约束的侧向偏差，并且明显返回到原始路线。",
+        "终端状态证明了更大的路线深度，而无需发明机制中未见的目的地、触发器或叙述性收束。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用一次不中断的后方跟随锁定成年人物和街道方向，让树影、店面与人群横穿成为进度标记；人物只允许一次克制侧看或步态偏移，随后回到原路线继续前进。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用一次不中断的后方跟随锁定成年人物和街道方向，让树影、店面与人群横穿成为进度标记；人物只允许一次克制侧看或步态偏移，随后回到原路线继续前进。 必须满足：One clearly adult identity, one rear-follow camera relationship and one forward street axis remain continuous. + Repeated environmental markers provide countable progress without relying on cuts. + Foreground occlusions must reveal the same subject at the physically predicted position. + Exactly one restrained lateral deviation occurs and visibly returns to the original route. + The terminal state proves greater route depth without inventing a destination, trigger or narrative payoff not seen in the mechanism.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个清晰的成人身份、一个后跟摄像头关系和一个向前的街道轴保持连续。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个明显的成人身份、一个后跟摄像头关系和一个前方街道轴保持连续。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "重复的环境标记可以在不依赖削减的情况下提供可数的进展。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“重复的环境标记可以在不依赖削减的情况下提供可数的进展。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "前景遮挡必须在物理预测位置显示相同的主体。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“前景遮挡必须在物理预测位置显示同一主体。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "恰好发生一次受约束的侧向偏差，并且明显返回到原始路线。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“恰好发生一次克制的侧向偏差，并且明显返回到原始路线。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端状态证明了更大的路线深度，而无需发明机制中未见的目的地、触发器或叙述性收束。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端状态证明了更大的路线深度，而无需发明机制中未见的目的地、触发器或叙述性收束。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成人图书快递员经过五个遮阳篷，避开一辆花车，继续穿过同一个拱廊。",
+          "prompt_seed": "一名成人图书快递员经过五个遮阳篷，避开一辆花车，继续穿过同一个拱廊。"
+        },
+        {
+          "concept": "一名成年实验室搬运工经过六个窗台，避开一个服务机器人，继续穿过同一个研究大厅。",
+          "prompt_seed": "一名成年实验室搬运工经过六个窗台，避开一个服务机器人，继续穿过同一个研究大厅。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一个明显的成人身份、一个后跟摄像头关系和一个前方街道轴保持连续。”",
+          "repair": "一个清晰的成人身份、一个后跟摄像头关系和一个向前的街道轴保持连续。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“重复的环境标记可以在不依赖削减的情况下提供可数的进展。”",
+          "repair": "重复的环境标记可以在不依赖削减的情况下提供可数的进展。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“前景遮挡必须在物理预测位置显示同一主体。”",
+          "repair": "前景遮挡必须在物理预测位置显示相同的主体。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“恰好发生一次克制的侧向偏差，并且明显返回到原始路线。”",
+          "repair": "恰好发生一次受约束的侧向偏差，并且明显返回到原始路线。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“终端状态证明了更大的路线深度，而无需发明机制中未见的目的地、触发器或叙述性收束。”",
+          "repair": "终端状态证明了更大的路线深度，而无需发明机制中未见的目的地、触发器或叙述性收束。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成人图书快递员经过五个遮阳篷，避开一辆花车，继续穿过同一个拱廊。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年实验室搬运工经过六个窗台，避开一个服务机器人，继续穿过同一个研究大厅。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

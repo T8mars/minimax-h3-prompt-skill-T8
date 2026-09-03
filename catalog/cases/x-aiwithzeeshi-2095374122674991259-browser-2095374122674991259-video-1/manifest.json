@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1",
+  "slug": "follow-geometry-as-progress-clock",
+  "title": "连续街头后跟｜人群遮挡、路线地标与一次偏移动作",
+  "source_title": "城市步行长镜头｜成年人物沿同一路线穿过人群",
+  "summary": "用一次不中断的后方跟随锁定成年人物和街道方向，让树影、店面与人群横穿成为进度标记；人物只允许一次克制侧看或步态偏移，随后回到原路线继续前进。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-geometry-as-progress-clock",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithzeeshi-2095374122674991259-browser-2095374122674991259-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-follow-geometry-clock-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-continuous-follow-geometry-clock-v1",
+  "input_format": "单一主体 + 连续后方跟随 + 重复结构地标 + 弯曲路线视差 + 不切镜的可见进度终态",
+  "recommended_input": "在一个不中断镜头中，从后方跟随原创成年图书递送员：短发、棕褐色罩衫和海军蓝矩形挎包，沿有阴影的市场拱廊前进。；两名近景顾客短暂遮住肩部和挎包，随后在预测位置重新显出同一成年人物，不切镜、不跳速。；继续后方跟随越过第五个雨棚，人物沿同一拱廊轴逐渐变小；不虚构抵达或第二事件。",
+  "required_anchors": [
+    "One clearly adult identity, one rear-follow camera relationship and one forward street axis remain continuous.",
+    "Repeated environmental markers provide countable progress without relying on cuts.",
+    "Exactly one restrained lateral deviation occurs and visibly returns to the original route.",
+    "The terminal state proves greater route depth without inventing a destination, trigger or narrative payoff not seen in the mechanism."
+  ],
+  "tags": [
+    "continuous",
+    "follow",
+    "geometry",
+    "clock"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-03T14:49:18+08:00",
+  "updated_at": "2026-09-03T15:21:59+08:00"
+}

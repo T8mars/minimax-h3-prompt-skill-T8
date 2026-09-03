@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "黏土字母舞台｜成年舞者动作触发、字形飞入与终句合成",
+  "source_title": "彩色黏土舞蹈｜动作逐步召集字母并拼成终场口号",
+  "summary": "同一明确成年动画舞者在固定彩色黏土舞台上完成连续舞步；散落字母只能在对应动作后弹起、滚动或进入构图，身份与舞台轴线不重置，结尾把全部字母拼成一个清晰原创终句。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-challenger-nd-2094591519005331813-browser-2094591519005331813-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "软珊瑚与蓝色泡棉字母房中建立原创明确成年动画编舞者：紫色短发、青色发带、奶油夹克与钴蓝长裤，人物位于舞台中心。；一次双臂上举让三枚蓝色字母从地面升起，组成准确短词【UP】；脸、发带、夹克与长裤保持不变。；她以稳定终姿把所有已用字母吸引到前景，拼成准确可读短句【MOVE TOGETHER】；同一成年人保持在文字上方可见，全部字母停止。",
+  "required_anchors": [
+    "One clearly adult performer, four appearance anchors and one fixed stage axis precede all letter motion.",
+    "Each letter group moves only after one corresponding readable dance action begins.",
+    "Typography may cross foreground and background but cannot erase performer identity or reset geography.",
+    "The final phrase uses the accumulated letters, remains fully readable and shares the frame with the same adult."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-02T19:27:39+08:00",
+  "updated_at": "2026-09-02T20:33:51+08:00"
+}

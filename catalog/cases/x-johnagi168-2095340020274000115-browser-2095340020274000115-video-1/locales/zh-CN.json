@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-johnagi168-2095340020274000115-browser-2095340020274000115-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "b6eaec0e420d610710ca2a16c148574c878ee298a183dd6d548053490be7bee8",
+    "creative_dna_sha256": "fbc2bbf67b384f469b1e55793d5fd45a84f7c731d95afd53a734fb646fe0557d"
+  },
+  "content": {
+    "title": "跨媒介旅伴路线｜地标换章、同步动作与共同终姿",
+    "summary": "固定一名成年真人和一名成年二维原创旅伴，两者保持不同材质却共享方向、节拍与地标路线；每章由一次同步手势或步态证明同场，最终以共同动作结束而非互相替换。",
+    "quick_start": {
+      "input_format": "一名明确成年真人原创角色和一名明确成年二维原创旅伴 + 两种材质身份始终分离 + 至少三个由可见载体连接的路线章节 + 每章一次同步动作与一致行进方向 + 至少一次交替前景遮挡证明共享深度 + 终局共同操作同一目的地对象",
+      "recommended_input": "配对原创真人成年植物调查员和明确二维的成年地图师：真人佩戴红围巾与帆布挎包，动画旅伴为海军蓝短发、黄色外套和墨线阴影。；路线圆盘擦拭切换到峭壁小路、室内市场和盐湖码头；每章都保留两种身份、向右路线和一次同步本地动作。；两人在山顶观测站共同转身、触碰同一投影地图，并肩完成一步，在准确原创标题【TWO MEDIA / ONE ROUTE】下结束。",
+      "required_anchors": [
+        "一个清晰的成人真人身份和一个清晰的成人插图身份始终保留着不同的媒体特征。",
+        "每次位置更改都会保留配对的行进方向，并遵循可见的共享过渡载体。",
+        "交替前景遮挡证明共享深度，无需合并面部、身体或渲染媒体。",
+        "终端框架将两个成年人、一个目的地对象和一个确切的原始路线标题重新组合到一个共享操作中。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定一名成年真人和一名成年二维原创旅伴，两者保持不同材质却共享方向、节拍与地标路线；每章由一次同步手势或步态证明同场，最终以共同动作结束而非互相替换。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定一名成年真人和一名成年二维原创旅伴，两者保持不同材质却共享方向、节拍与地标路线；每章由一次同步手势或步态证明同场，最终以共同动作结束而非互相替换。 必须满足：One clearly adult live-action identity and one clearly adult illustrated identity retain different media signatures throughout. + Every location change preserves paired travel direction and follows a visible shared transition carrier. + Each chapter contains one synchronized action that proves common timing and local geography. + Alternating foreground occlusion proves shared depth without merging faces, bodies or rendering media. + The terminal frame reunites both adults, one destination object and one exact original route title in a shared action.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个清晰的成人真人身份和一个清晰的成人插图身份始终保留着不同的媒体特征。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一个明显的成人真人身份和一个明显的成人插图身份始终保留不同的媒体签名。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每次位置更改都会保留配对的行进方向，并遵循可见的共享过渡载体。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除了规则：“每次位置更改都会保留配对的行进方向并遵循可见的共享过渡载体。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每一章都包含一个同步动作，证明了共同的时间和当地空间关系。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“每一章都包含一个同步动作，证明共同的时间和当地空间关系。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "交替前景遮挡证明共享深度，无需合并面部、身体或渲染媒体。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“交替前景遮挡证明共享深度，无需合并面部、身体或渲染媒体。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端框架将两个成年人、一个目的地对象和一个确切的原始路线标题重新组合到一个共享操作中。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“终端框架在共享操作中将两个成年人、一个目标对象和一个确切的原始路线标题重新组合在一起。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位现场成年植物学家和一位绘制的成年地图制作者通过匹配的手势和深度交换跨越四个景观章节。",
+          "prompt_seed": "一位现场成年植物学家和一位绘制的成年地图制作者通过匹配的手势和深度交换跨越四个景观章节。"
+        },
+        {
+          "concept": "一名现场成人建筑师和一名剪纸成人测量员通过匹配的工具动作和深度交换跨越四个建筑工地。",
+          "prompt_seed": "一名现场成人建筑师和一名剪纸成人测量员通过匹配的工具动作和深度交换跨越四个建筑工地。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除了规则：“一个明显的成人真人身份和一个明显的成人插图身份始终保留不同的媒体签名。”",
+          "repair": "一个清晰的成人真人身份和一个清晰的成人插图身份始终保留着不同的媒体特征。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除了规则：“每次位置更改都会保留配对的行进方向并遵循可见的共享过渡载体。”",
+          "repair": "每次位置更改都会保留配对的行进方向，并遵循可见的共享过渡载体。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“每一章都包含一个同步动作，证明共同的时间和当地空间关系。”",
+          "repair": "每一章都包含一个同步动作，证明了共同的时间和当地空间关系。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“交替前景遮挡证明共享深度，无需合并面部、身体或渲染媒体。”",
+          "repair": "交替前景遮挡证明共享深度，无需合并面部、身体或渲染媒体。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除了规则：“终端框架在共享操作中将两个成年人、一个目标对象和一个确切的原始路线标题重新组合在一起。”",
+          "repair": "终端框架将两个成年人、一个目的地对象和一个确切的原始路线标题重新组合到一个共享操作中。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位现场成年植物学家和一位绘制的成年地图制作者通过匹配的手势和深度交换跨越四个景观章节。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名现场成人建筑师和一名剪纸成人测量员通过匹配的工具动作和深度交换跨越四个建筑工地。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

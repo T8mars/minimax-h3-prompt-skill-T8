@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1",
+  "slug": "catastrophe-to-miniature-set-proof",
+  "title": "灾难幻象拆台｜环境吞没、尺度破绽与微缩片场证明",
+  "source_title": "海岸列车巨浪｜灾难镜头被揭示为微缩水景片场",
+  "summary": "先让列车、海岸与建筑共享一个可信地理，再让巨浪沿同一轴线逐层吞没铁路和街区；水雾遮满画面后揭开微缩布景、轨道摄影机、操作人员与水槽，让最后一层明确解释前面的灾难效果。",
+  "status": "released",
+  "source_duration_seconds": 15.23229,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/catastrophe-to-miniature-set-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-rosey-watson-2094359148590969166-browser-2094359148590969166-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-catastrophe-to-miniature-set-proof-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一个真实尺度灾变状态与可辨认地标 + 灾变过程保持空间因果连续 + 摄影机沿同一轴线逐步拉远并揭示尺度边界 + 场景被证明属于完整微缩装置 + 人手或工作台与模型同框完成终局验证",
+  "recommended_input": "建立原创银色单轨列车穿过微缩沙漠天文台的完整地理：一条红色峡谷、三座白色圆顶与固定从左向右的路线。；尘墙依次越过第一座圆顶、吞没轨道，并把一块轻质天线板推向镜头；人物或车辆身份都不改变。；揭示桌面峡谷、两台受控扬尘机、一条运动控制轨道和三名明确成年工作人员剪影；一块监视器保留开场单轨画面，并显示准确短问句【HOW BIG?】。",
+  "required_anchors": [
+    "One fictional geography and at least three repeated scale anchors are established before the hazard grows.",
+    "The catastrophe advances through the same geography in a readable order rather than resetting locations.",
+    "The revealed set contains at least three legible production cues that causally explain the preceding effect.",
+    "A monitoring layer preserves the opening fiction and confirms the miniature-to-image relationship."
+  ],
+  "tags": [
+    "catastrophe",
+    "to",
+    "miniature",
+    "set",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-02T19:27:38+08:00",
+  "updated_at": "2026-09-02T20:33:51+08:00"
+}

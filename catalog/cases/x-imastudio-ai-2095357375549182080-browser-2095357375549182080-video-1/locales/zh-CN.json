@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-imastudio-ai-2095357375549182080-browser-2095357375549182080-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "1e5380727e63f88261e876804da487a5c475863ca01ce66dbd7e5b790462711a",
+    "creative_dna_sha256": "05b56cc8173d2f7a9b8f89741722acd6302a904311ce12be4baac89583539079"
+  },
+  "content": {
+    "title": "跨尺度舞台搭档｜环绕回应、手掌落点与共同定格",
+    "summary": "锁定成年表演者、微型原创伙伴和同一舞台，先用独立动作建立双方身份，再让小伙伴沿可追踪环线回应人物手势；终局必须落到人物手掌或近身位置，并以共同姿态证明跨尺度关系。",
+    "quick_start": {
+      "input_format": "一名明确成年原创主表演者和一个原创微型伙伴 + 固定舞台与连续尺度参照 + 主体手势先发生、微型伙伴沿可追踪路线回应 + 一次完整环绕与手掌或近身落点 + 终局同框同时证明两种尺度、两个身份和共同姿态",
+      "recommended_input": "建立原创成年爵士歌手：银色短发、祖母绿西装、月牙胸针，位于午夜蓝俱乐部舞台和奶油色三角钢琴旁。；歌手用持麦手画出一个缓慢半圆，飞蛾沿同一弧线穿过前景灯光，并以两次振翅闪光回应。；两者在准确原创标题【SMALL LIGHT / BIG STAGE】下共同鞠躬，歌手、飞蛾、钢琴和舞台结构保持不变。",
+      "required_anchors": [
+        "一名明显成年的主要表演者和一名原创的微型同伴保留​​了明显的稳定身份。",
+        "环境为两个角色提供连续的比例参考。",
+        "微型同伴通过一个连续的轨道到达手部，没有任意比例变化或隐形传送。",
+        "共享的终端姿势可以同时保持比例、身份和原始舞台的可读性。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "锁定成年表演者、微型原创伙伴和同一舞台，先用独立动作建立双方身份，再让小伙伴沿可追踪环线回应人物手势；终局必须落到人物手掌或近身位置，并以共同姿态证明跨尺度关系。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "锁定成年表演者、微型原创伙伴和同一舞台，先用独立动作建立双方身份，再让小伙伴沿可追踪环线回应人物手势；终局必须落到人物手掌或近身位置，并以共同姿态证明跨尺度关系。 必须满足：One clearly adult primary performer and one original miniature companion retain distinct stable identities. + The environment supplies continuous scale references for both characters. + Every companion move visibly answers a preceding adult gesture along a traceable route. + The miniature companion reaches the hand through one continuous orbit without arbitrary scale change or teleportation. + A shared terminal pose keeps both scales, identities and the original stage readable at once.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名明显成年的主要表演者和一名原创的微型同伴保留​​了明显的稳定身份。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名明显成年的主要表演者和一名原始微型同伴保留​​明显的稳定身份。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "环境为两个角色提供连续的比例参考。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“环境为两个角色提供连续的比例参考。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "同伴的每个动作都明显地响应了前面的成人手势，沿着可追踪的路线。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除的规则：“同伴的每个动作都明显地响应了前面的成人手势，沿着可追踪的路线。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "微型同伴通过一个连续的轨道到达手部，没有任意比例变化或隐形传送。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“微型同伴通过一个连续的轨道到达手部，没有任意比例变化或隐形传送。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "共享的终端姿势可以同时保持比例、身份和原始舞台的可读性。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除的规则：“共享的终端姿势可以同时保持比例、身份和原始舞台可读。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年歌手和一只手掌大小的玻璃蛾将一只手的弧线变成了俱乐部舞台上共用的弓。",
+          "prompt_seed": "一名成年歌手和一只手掌大小的玻璃蛾将一只手的弧线变成了俱乐部舞台上共用的弓。"
+        },
+        {
+          "concept": "一名成年钟表匠和一只拇指大小的黄铜小鸟交换工具，然后小鸟落在手套上。",
+          "prompt_seed": "一名成年钟表匠和一只拇指大小的黄铜小鸟交换工具，然后小鸟落在手套上。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名明显成年的主要表演者和一名原始微型同伴保留​​明显的稳定身份。”",
+          "repair": "一名明显成年的主要表演者和一名原创的微型同伴保留​​了明显的稳定身份。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“环境为两个角色提供连续的比例参考。”",
+          "repair": "环境为两个角色提供连续的比例参考。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除的规则：“同伴的每个动作都明显地响应了前面的成人手势，沿着可追踪的路线。”",
+          "repair": "同伴的每个动作都明显地响应了前面的成人手势，沿着可追踪的路线。"
+        },
+        {
+          "failure": "如果没有这个精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“微型同伴通过一个连续的轨道到达手部，没有任意比例变化或隐形传送。”",
+          "repair": "微型同伴通过一个连续的轨道到达手部，没有任意比例变化或隐形传送。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除的规则：“共享的终端姿势可以同时保持比例、身份和原始舞台可读。”",
+          "repair": "共享的终端姿势可以同时保持比例、身份和原始舞台的可读性。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年歌手和一只手掌大小的玻璃蛾将一只手的弧线变成了俱乐部舞台上共用的弓。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年钟表匠和一只拇指大小的黄铜小鸟交换工具，然后小鸟落在手套上。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

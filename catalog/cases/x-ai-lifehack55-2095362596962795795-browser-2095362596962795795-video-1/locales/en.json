@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ai-lifehack55-2095362596962795795-browser-2095362596962795795-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "50e1f3354830ef77b758a1f6f36d3d2f4af682e70632f0632c04c3b25133da1a",
+    "creative_dna_sha256": "5138e375f0086196b52bee0d9a496d7b085244794aabad9a62a0d0dc3a001d12"
+  },
+  "content": {
+    "title": "Architectural Letterform Passage | Spatial Components and Plaza Lockup",
+    "summary": "An adult gallery guide crosses an ivory sculpture campus whose beams assemble an original exhibition title. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One architectural site, one adult scale anchor and one movement axis establish the baseline. + Every typographic component is built from visible structures already registered in that site. + Successive openings preserve camera direction, floor geometry and pedestrian scale. + Letterforms may separate or enlarge but cannot replace the established architecture with an unrelated scene. + The terminal wide shot reunites complete site, subject and exact original title in one stable lockup.",
+      "recommended_input": "Establish an original ivory sculpture campus with one adult gallery guide in a cobalt coat crossing a gridded plaza. Track the guide through the arch and beneath the beam while the same components separate into three readable spatial bays. Pull back to reunite the full campus, the guide and the rebuilt title \"AXIS / ARRIVE\" in one still architectural lockup.",
+      "required_anchors": [
+        "One architectural site, one adult scale anchor and one movement axis establish the baseline.",
+        "Every typographic component is built from visible structures already registered in that site.",
+        "Letterforms may separate or enlarge but cannot replace the established architecture with an unrelated scene.",
+        "The terminal wide shot reunites complete site, subject and exact original title in one stable lockup."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult gallery guide crosses an ivory sculpture campus whose beams assemble an original exhibition title. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先建立白色公共建筑和微小行人的稳定尺度，再让黑色字形构件与门洞、圆环和立柱共用空间骨架；镜头连续穿过可读孔洞，字形由标记升级为空间实体，终局回到完整广场。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One architectural site, one adult scale anchor and one movement axis establish the baseline.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One architectural site, one adult scale anchor and one movement axis establish the baseline.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Every typographic component is built from visible structures already registered in that site.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every typographic component is built from visible structures already registered in that site.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Successive openings preserve camera direction, floor geometry and pedestrian scale.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Successive openings preserve camera direction, floor geometry and pedestrian scale.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Letterforms may separate or enlarge but cannot replace the established architecture with an unrelated scene.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Letterforms may separate or enlarge but cannot replace the established architecture with an unrelated scene.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The terminal wide shot reunites complete site, subject and exact original title in one stable lockup.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The terminal wide shot reunites complete site, subject and exact original title in one stable lockup.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult gallery guide crosses an ivory sculpture campus whose beams assemble an original exhibition title.",
+          "prompt_seed": "An adult gallery guide crosses an ivory sculpture campus whose beams assemble an original exhibition title."
+        },
+        {
+          "concept": "A night courier passes through a black transit hub whose platforms assemble a cyan route wordmark.",
+          "prompt_seed": "A night courier passes through a black transit hub whose platforms assemble a cyan route wordmark."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One architectural site, one adult scale anchor and one movement axis establish the baseline.\"",
+          "repair": "One architectural site, one adult scale anchor and one movement axis establish the baseline."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every typographic component is built from visible structures already registered in that site.\"",
+          "repair": "Every typographic component is built from visible structures already registered in that site."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Successive openings preserve camera direction, floor geometry and pedestrian scale.\"",
+          "repair": "Successive openings preserve camera direction, floor geometry and pedestrian scale."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Letterforms may separate or enlarge but cannot replace the established architecture with an unrelated scene.\"",
+          "repair": "Letterforms may separate or enlarge but cannot replace the established architecture with an unrelated scene."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The terminal wide shot reunites complete site, subject and exact original title in one stable lockup.\"",
+          "repair": "The terminal wide shot reunites complete site, subject and exact original title in one stable lockup."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult gallery guide crosses an ivory sculpture campus whose beams assemble an original exhibition title.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A night courier passes through a black transit hub whose platforms assemble a cyan route wordmark.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}
