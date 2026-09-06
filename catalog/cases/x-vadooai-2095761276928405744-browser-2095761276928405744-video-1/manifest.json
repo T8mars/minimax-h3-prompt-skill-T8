@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-vadooai-2095761276928405744-browser-2095761276928405744-video-1",
+  "slug": "material-skill-escalation-finished-proof",
+  "title": "手工半身像装配｜骨架、覆泥、服装与真人化终态",
+  "source_title": "赛博半身像制作｜双手逐层塑形到完整人物揭晓",
+  "summary": "同一工作台和双手持续可见，依次完成金属骨架、黏土躯干、服装、头发与配饰；每一步保留上一层的可见因果，最后让成品在不换位的情况下完成真人化回应。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/material-skill-escalation-finished-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vadooai-2095761276928405744-browser-2095761276928405744-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vadooai-2095761276928405744-browser-2095761276928405744-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-skill-escalation-finished-proof-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-material-skill-escalation-finished-proof-v1",
+  "input_format": "单一原料 + 至少3种功能不同的形变操作 + 1次不可逆加工 + 成品组装 + 保留前序痕迹的微距终证",
+  "recommended_input": "从一张浅色石材工作台开始，两只成年工匠的手弯折出黄铜丝躯干骨架。；依次安装黑色内搭与象牙白短夹克两个独立层，身体尺度不得改变。；保持成品原位，让皮肤、布料与头发逐步获得真实质感，以成年人物眨眼一次收束。",
+  "required_anchors": [
+    "One tabletop, one armature and one pair of hands preserve spatial continuity.",
+    "Each construction layer remains visibly supported by the preceding layer.",
+    "Accessories are original, countable and attached in a readable order.",
+    "The terminal realism shift preserves the exact completed design and location."
+  ],
+  "tags": [
+    "material",
+    "skill",
+    "escalation",
+    "finished",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:49+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

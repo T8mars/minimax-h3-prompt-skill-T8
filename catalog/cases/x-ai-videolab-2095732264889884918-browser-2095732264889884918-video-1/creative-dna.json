@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "用同一成年表演者、同一道路背景和一件手持道具建立连续性；人物边走边表演，镜头缓慢逼近，表情与道具动作形成可读的小节拍，最后稳定在近景回应。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One clearly adult performer retains face, clothing, route direction and prop identity throughout.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult performer retains face, clothing, route direction and prop identity throughout.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "The camera changes distance continuously rather than substituting unrelated shots.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The camera changes distance continuously rather than substituting unrelated shots.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Each hand or facial beat remains physically compatible with the held prop.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Each hand or facial beat remains physically compatible with the held prop.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "The same environment supplies stable depth and continuity evidence.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The same environment supplies stable depth and continuity evidence.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The final close view preserves performer, prop and route in one readable frame.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final close view preserves performer, prop and route in one readable frame.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult poet walks a riverside lane while a recorder anchors a continuous spoken performance.",
+      "prompt_seed": "An adult poet walks a riverside lane while a recorder anchors a continuous spoken performance."
+    },
+    {
+      "concept": "An adult product host crosses a market aisle while one sample box anchors a continuous demonstration.",
+      "prompt_seed": "An adult product host crosses a market aisle while one sample box anchors a continuous demonstration."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult performer retains face, clothing, route direction and prop identity throughout.\"",
+      "repair": "One clearly adult performer retains face, clothing, route direction and prop identity throughout."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The camera changes distance continuously rather than substituting unrelated shots.\"",
+      "repair": "The camera changes distance continuously rather than substituting unrelated shots."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Each hand or facial beat remains physically compatible with the held prop.\"",
+      "repair": "Each hand or facial beat remains physically compatible with the held prop."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The same environment supplies stable depth and continuity evidence.\"",
+      "repair": "The same environment supplies stable depth and continuity evidence."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final close view preserves performer, prop and route in one readable frame.\"",
+      "repair": "The final close view preserves performer, prop and route in one readable frame."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult poet walks a riverside lane while a recorder anchors a continuous spoken performance.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "An adult product host crosses a market aisle while one sample box anchors a continuous demonstration.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nusratsid1-2095795648012661127-browser-2095795648012661127-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "459b6613a4c38678c16581824dc252346ab6b56a1378d2e8495b67b192696b00",
+    "creative_dna_sha256": "215c35fa72a12278147b1ab485ae1fdb043cd90638761aafc9fd3c7a7897ad78"
+  },
+  "content": {
+    "title": "Missed-Train Redirection | Urgent Route, Closed Threshold and Alternate Exit",
+    "summary": "An adult botanist misses a ferry, receives a bus direction and continues by a new route. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One clearly adult traveler, one handheld urgency prop and one destination persist. + The route to the threshold is continuous and geographically readable. + The vehicle has visibly departed before the traveler's reaction is evaluated. + A local authority cue confirms closure and identifies one alternative direction. + The final action redirects the same journey without teleportation, rewind or false success.",
+      "recommended_input": "One original adult botanist runs through a rainy plaza toward a glass ferry terminal while holding a red field notebook. Hold a side medium view as the botanist stops and watches the widening water gap behind the ferry. After one visible decision beat, the botanist turns, secures the notebook and runs toward the indicated bus lane.",
+      "required_anchors": [
+        "One clearly adult traveler, one handheld urgency prop and one destination persist.",
+        "The route to the threshold is continuous and geographically readable.",
+        "A local authority cue confirms closure and identifies one alternative direction.",
+        "The final action redirects the same journey without teleportation, rewind or false success."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult botanist misses a ferry, receives a bus direction and continues by a new route. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用一个清晰目的地和连续急行路线制造时间压力；人物到站时载具已经越过可进入阈值，工作人员的方向手势确认失败，人物必须停顿、判断并沿新方向离开，而不是无因果重置。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult traveler, one handheld urgency prop and one destination persist.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult traveler, one handheld urgency prop and one destination persist.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "The route to the threshold is continuous and geographically readable.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The route to the threshold is continuous and geographically readable.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "The vehicle has visibly departed before the traveler's reaction is evaluated.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The vehicle has visibly departed before the traveler's reaction is evaluated.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "A local authority cue confirms closure and identifies one alternative direction.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"A local authority cue confirms closure and identifies one alternative direction.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final action redirects the same journey without teleportation, rewind or false success.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final action redirects the same journey without teleportation, rewind or false success.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult botanist misses a ferry, receives a bus direction and continues by a new route.",
+          "prompt_seed": "An adult botanist misses a ferry, receives a bus direction and continues by a new route."
+        },
+        {
+          "concept": "An adult courier reaches a closed loading gate, receives a service-road cue and redirects without losing the parcel.",
+          "prompt_seed": "An adult courier reaches a closed loading gate, receives a service-road cue and redirects without losing the parcel."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult traveler, one handheld urgency prop and one destination persist.\"",
+          "repair": "One clearly adult traveler, one handheld urgency prop and one destination persist."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The route to the threshold is continuous and geographically readable.\"",
+          "repair": "The route to the threshold is continuous and geographically readable."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The vehicle has visibly departed before the traveler's reaction is evaluated.\"",
+          "repair": "The vehicle has visibly departed before the traveler's reaction is evaluated."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"A local authority cue confirms closure and identifies one alternative direction.\"",
+          "repair": "A local authority cue confirms closure and identifies one alternative direction."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final action redirects the same journey without teleportation, rewind or false success.\"",
+          "repair": "The final action redirects the same journey without teleportation, rewind or false success."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult botanist misses a ferry, receives a bus direction and continues by a new route.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult courier reaches a closed loading gate, receives a service-road cue and redirects without losing the parcel.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

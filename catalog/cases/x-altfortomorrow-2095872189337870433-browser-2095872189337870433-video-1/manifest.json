@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-altfortomorrow-2095872189337870433-browser-2095872189337870433-video-1",
+  "slug": "build-pace-to-destination-celebration",
+  "title": "赛道抵达庆祝｜起点检修、连续冲刺与终点回场",
+  "source_title": "早餐角色赛车｜杯形小车起跑、过弯并回到伙伴庆祝",
+  "summary": "用一组原创食物角色和一辆杯形小车建立起点检修，载具沿同一赛道连续加速、过弯并穿越明确终点；终点后回到原伙伴群体，以彩屑和手势验证抵达。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/build-pace-to-destination-celebration",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-altfortomorrow-2095872189337870433-browser-2095872189337870433-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-altfortomorrow-2095872189337870433-browser-2095872189337870433-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-pace-to-destination-celebration-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-pace-to-destination-celebration-v1",
+  "input_format": "安静旅人 + 步行转奔跑 + 延迟目的地揭示 + 环境庆祝 + 人路目的地同框",
+  "recommended_input": "让五个原创烘焙吉祥物围在茶壶形卡丁车旁，头顶是准确横幅【SUNRISE LAP】。；让茶壶车从左向右驶入红白烘焙赛道，并用一次连续侧跟完成巡回。；让五个吉祥物回到停稳的茶壶车周围，释放面包形彩屑并保持共同欢呼。",
+  "required_anchors": [
+    "One original vehicle, driver and support group retain stable designs.",
+    "The start group, circuit and finish stripe belong to one continuous venue.",
+    "The finish is proven by the complete vehicle crossing the marked threshold.",
+    "The terminal celebration reunites the original group and stopped vehicle."
+  ],
+  "tags": [
+    "pace",
+    "to",
+    "destination",
+    "celebration"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:48:56+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

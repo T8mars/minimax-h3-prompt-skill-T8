@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ai-videolab-2095732264889884918-browser-2095732264889884918-video-1",
+  "slug": "reveal-environment-through-performance-pullback",
+  "title": "街头近景表演｜稳定身份、手机道具与连续逼近",
+  "source_title": "街头演唱跟拍｜成年女性持手机迎镜到近景收束",
+  "summary": "用同一成年表演者、同一道路背景和一件手持道具建立连续性；人物边走边表演，镜头缓慢逼近，表情与道具动作形成可读的小节拍，最后稳定在近景回应。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reveal-environment-through-performance-pullback",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-videolab-2095732264889884918-browser-2095732264889884918-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-videolab-2095732264889884918-browser-2095732264889884918-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performance-environment-pullback-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-performance-environment-pullback-v1",
+  "input_format": "近脸表演基准 + 连续后退镜头 + 逐层环境参照 + 人物动作不中断 + 人景关系全景终态",
+  "recommended_input": "建立原创成年街头诗人：苔绿色外套，手持黄铜录音器，在安静河畔道路上朝镜头走来。；每次手势后都让录音器回到胸前同一位置，形状与尺度不得变化。；以正面克制半笑收束，录音器仍可见，原创道路在身后柔和延伸。",
+  "required_anchors": [
+    "One clearly adult performer retains face, clothing, route direction and prop identity throughout.",
+    "The camera changes distance continuously rather than substituting unrelated shots.",
+    "The same environment supplies stable depth and continuity evidence.",
+    "The final close view preserves performer, prop and route in one readable frame."
+  ],
+  "tags": [
+    "performance",
+    "environment",
+    "pullback"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:49+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aimikoda-2095651474797641955-browser-2095651474797641955-video-1",
+  "slug": "external-assembly-integrated-audition",
+  "title": "数字服装装配｜人体线框、裁片贴合与身份完成",
+  "source_title": "虚拟裁片试装｜线框人体逐层获得服装与成年角色身份",
+  "summary": "先用线框人体和常驻服装设计板建立结构，裁片沿可见路径贴合躯干，再依次恢复材质、肤色与头发；终局离开装配态进入干净人物主视图，证明所有部件属于同一身份。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/external-assembly-integrated-audition",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2095651474797641955-browser-2095651474797641955-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2095651474797641955-browser-2095651474797641955-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-external-assembly-integrated-audition-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-external-assembly-integrated-audition-v1",
+  "input_format": "稳定基础主体 + 分阶段外部装配 + 接合近景与全身复核 + 细节校准 + 整机动作验收",
+  "recommended_input": "建立一名成年中性线框角色，旁边常驻三块原创短夹克设计板。；用近景验证四枚铜色扣件、肩缝和下摆对齐，禁止用切镜掩盖贴合过程。；让同一成年角色转入浅色建筑摄影棚，并保持一个全身就绪姿态。",
+  "required_anchors": [
+    "One clearly adult body scaffold retains fixed proportions throughout assembly.",
+    "Persistent design panels identify the same original garment from start to finish.",
+    "Material and identity resolve only after structural fit is complete.",
+    "The final full-body pose proves integrated clothing, anatomy and identity without replacement."
+  ],
+  "tags": [
+    "external",
+    "assembly",
+    "integrated",
+    "audition"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:49+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

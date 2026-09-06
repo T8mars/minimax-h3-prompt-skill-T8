@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-oreimohensan-2095863372789289389-browser-2095863372789289389-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "ecd409722a90a14dfe0c7e37f06e23e6b7a0434bf3e1ecaabee50894645297bd",
+    "creative_dna_sha256": "e36ee514c31fd60fb066d76388ffe980c07abf07a61f65876d44dda29c780424"
+  },
+  "content": {
+    "title": "绘制带推进｜骨架、线稿、上色与角色板验真",
+    "summary": "把完整人物限制在固定纸面和角色板区域内，按骨架、结构线、服装线、局部上色、全彩和数字扫描的顺序推进；每层保留前层轮廓，最后用同一面容近景证明身份连续。",
+    "quick_start": {
+      "input_format": "稳定主体 + 边界清楚的转换带 + 新旧状态同框 + 单向累积覆盖 + 载体退出后的完整结果",
+      "recommended_input": "一名成年插画师在暖色纸张上，用蓝色结构线开始绘制一名原创成年植物学家角色。；用四个受控步骤填充肤色、橄榄绿夹克、锈红长裤和黑靴，姿态保持固定。；让一道青色扫描从靴子上移到头部，再以同一面容轻眨一次的近景收束，不重新设计。",
+      "required_anchors": [
+        "一个固定的成年角色姿态和比例系统贯穿于每一层绘画。",
+        "每一层都明显地保留并精炼了早期的建设证据。",
+        "参考板在正面、侧面和背面视图中重复相同的标识。",
+        "数字扫描以完成的面部结束，并仅提供一个有界的生活动作。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "把完整人物限制在固定纸面和角色板区域内，按骨架、结构线、服装线、局部上色、全彩和数字扫描的顺序推进；每层保留前层轮廓，最后用同一面容近景证明身份连续。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把完整人物限制在固定纸面和角色板区域内，按骨架、结构线、服装线、局部上色、全彩和数字扫描的顺序推进；每层保留前层轮廓，最后用同一面容近景证明身份连续。 必须满足：One fixed adult character pose and proportion system persists through every drawing layer. + Each later layer visibly preserves and refines earlier construction evidence. + Color fills bounded regions and never creates unrelated anatomy or costume parts. + The reference board repeats the same identity across front, side and face views. + The digital scan ends on the same completed face and supplies only one bounded living motion.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个固定的成年角色姿态和比例系统贯穿于每一层绘画。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基准规则，后续的更改将无法归因于同一主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一个固定的成年角色姿态和比例系统贯穿于每一层绘画。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每一层都明显地保留并精炼了早期的建设证据。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再得到证明。已移除的规则：\"每一层都明显地保留并精炼了早期的建设证据。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "颜色填充有界区域，从不创建无关的解剖或服装部件。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这个确切的进展规则，中间部分可以跳到替换状态，累积的结果将不再可追溯。已移除的规则：\"颜色填充有界区域，从不创建无关的解剖或服装部件。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "参考板在正面、侧面和背面视图中重复相同的标识。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条精确的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"参考板在正面、侧面和背面视图中重复相同的标识。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "数字扫描以完成的面部结束，并仅提供一个有界的生活动作。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终端验证规则，序列仅以动作结束，从未确认承诺的结果或保存的后果。已移除规则：\"数字扫描以完成的面部结束，并仅提供一个有界的生活动作。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年植物学家从施工图进展到色彩板和一个单一的活生生的眨眼。",
+          "prompt_seed": "一位成年植物学家从施工图进展到色彩板和一个单一的活生生的眨眼。"
+        },
+        {
+          "concept": "一位成年机械师从粗略的蓝图人物进展到彩色翻转和一个最终的头部转动。",
+          "prompt_seed": "一位成年机械师从粗略的蓝图人物进展到彩色翻转和一个最终的头部转动。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基准规则，后续的更改将无法归因于同一主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一个固定的成年角色姿态和比例系统贯穿于每一层绘画。\"",
+          "repair": "一个固定的成年角色姿态和比例系统贯穿于每一层绘画。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再得到证明。已移除的规则：\"每一层都明显地保留并精炼了早期的建设证据。\"",
+          "repair": "每一层都明显地保留并精炼了早期的建设证据。"
+        },
+        {
+          "failure": "没有这个确切的进展规则，中间部分可以跳到替换状态，累积的结果将不再可追溯。已移除的规则：\"颜色填充有界区域，从不创建无关的解剖或服装部件。\"",
+          "repair": "颜色填充有界区域，从不创建无关的解剖或服装部件。"
+        },
+        {
+          "failure": "没有这条精确的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"参考板在正面、侧面和背面视图中重复相同的标识。\"",
+          "repair": "参考板在正面、侧面和背面视图中重复相同的标识。"
+        },
+        {
+          "failure": "没有这条精确的终端验证规则，序列仅以动作结束，从未确认承诺的结果或保存的后果。已移除规则：\"数字扫描以完成的面部结束，并仅提供一个有界的生活动作。\"",
+          "repair": "数字扫描以完成的面部结束，并仅提供一个有界的生活动作。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年植物学家从施工图进展到色彩板和一个单一的活生生的眨眼。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年机械师从粗略的蓝图人物进展到彩色翻转和一个最终的头部转动。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

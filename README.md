@@ -543,6 +543,26 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 | [![环境介入对决｜攻防交换、外力中断与原位复战](catalog/cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/preview.gif)](https://x.com/aiwithaly/status/2095361506863091963) | **[环境介入对决｜攻防交换、外力中断与原位复战](catalog/cases/x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1/SUMMARY.md)**<br><sub>x-aiwithaly-2095361506863091963-browser-2095361506863091963-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![动画角色城市轮播｜身份锚点、场景换装与起点回归](catalog/cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/preview.gif)](https://x.com/yudotanaka/status/2095357869595975893) | **[动画角色城市轮播｜身份锚点、场景换装与起点回归](catalog/cases/x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1/SUMMARY.md)**<br><sub>x-yudotanaka-2095357869595975893-browser-2095357869595975893-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 | [![岸边任务回路｜营地准备、带物行进、浪击恢复与返回](catalog/cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/preview.gif)](https://x.com/afrinxai/status/2095346478248264085) | **[岸边任务回路｜营地准备、带物行进、浪击恢复与返回](catalog/cases/x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1/SUMMARY.md)**<br><sub>x-afrinxai-2095346478248264085-browser-2095346478248264085-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![街头近景表演｜稳定身份、手机道具与连续逼近](catalog/cases/x-ai-videolab-2095732264889884918-browser-2095732264889884918-video-1/preview.gif)](https://x.com/AI_VideoLab/status/2095732264889884918) | **[街头近景表演｜稳定身份、手机道具与连续逼近](catalog/cases/x-ai-videolab-2095732264889884918-browser-2095732264889884918-video-1/SUMMARY.md)**<br><sub>x-ai-videolab-2095732264889884918-browser-2095732264889884918-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![时装板式轮播｜同一成年模特、服装章节与主标回归](catalog/cases/x-imastudio-ai-2095725066109804603-browser-2095725066109804603-video-1/preview.gif)](https://x.com/ImaStudio_ai/status/2095725066109804603) | **[时装板式轮播｜同一成年模特、服装章节与主标回归](catalog/cases/x-imastudio-ai-2095725066109804603-browser-2095725066109804603-video-1/SUMMARY.md)**<br><sub>x-imastudio-ai-2095725066109804603-browser-2095725066109804603-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![三人群舞聚焦｜全阵建立、中心逼近与合舞回归](catalog/cases/x-caliraval-2095734903883342292-browser-2095734903883342292-video-1/preview.gif)](https://x.com/CaliraVal/status/2095734903883342292) | **[三人群舞聚焦｜全阵建立、中心逼近与合舞回归](catalog/cases/x-caliraval-2095734903883342292-browser-2095734903883342292-video-1/SUMMARY.md)**<br><sub>x-caliraval-2095734903883342292-browser-2095734903883342292-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![糖果赛博歌词片｜主唱锚点、甜品世界与语义字卡](catalog/cases/x-xvisualneufx-2095788469364924704-browser-2095788469364924704-video-1/preview.gif)](https://x.com/XVisualneuFX/status/2095788469364924704) | **[糖果赛博歌词片｜主唱锚点、甜品世界与语义字卡](catalog/cases/x-xvisualneufx-2095788469364924704-browser-2095788469364924704-video-1/SUMMARY.md)**<br><sub>x-xvisualneufx-2095788469364924704-browser-2095788469364924704-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![手工半身像装配｜骨架、覆泥、服装与真人化终态](catalog/cases/x-vadooai-2095761276928405744-browser-2095761276928405744-video-1/preview.gif)](https://x.com/vadooai/status/2095761276928405744) | **[手工半身像装配｜骨架、覆泥、服装与真人化终态](catalog/cases/x-vadooai-2095761276928405744-browser-2095761276928405744-video-1/SUMMARY.md)**<br><sub>x-vadooai-2095761276928405744-browser-2095761276928405744-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![数字服装装配｜人体线框、裁片贴合与身份完成](catalog/cases/x-aimikoda-2095651474797641955-browser-2095651474797641955-video-1/preview.gif)](https://x.com/aimikoda/status/2095651474797641955) | **[数字服装装配｜人体线框、裁片贴合与身份完成](catalog/cases/x-aimikoda-2095651474797641955-browser-2095651474797641955-video-1/SUMMARY.md)**<br><sub>x-aimikoda-2095651474797641955-browser-2095651474797641955-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![海报空间重组｜人物层、对话块与品牌页回环](catalog/cases/x-ponzponz15-2095753904550191133-browser-2095753904550191133-video-1/preview.gif)](https://x.com/ponzponz15/status/2095753904550191133) | **[海报空间重组｜人物层、对话块与品牌页回环](catalog/cases/x-ponzponz15-2095753904550191133-browser-2095753904550191133-video-1/SUMMARY.md)**<br><sub>x-ponzponz15-2095753904550191133-browser-2095753904550191133-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![日常取物流程｜手持零食、连续步行与柜台交接](catalog/cases/x-nusratsid1-2095440075907821978-browser-2095440075907821978-video-1/preview.gif)](https://x.com/nusratsid1/status/2095440075907821978) | **[日常取物流程｜手持零食、连续步行与柜台交接](catalog/cases/x-nusratsid1-2095440075907821978-browser-2095440075907821978-video-1/SUMMARY.md)**<br><sub>x-nusratsid1-2095440075907821978-browser-2095440075907821978-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![光路动作字卡｜角色启动、横向冲刺与落地宣言](catalog/cases/x-mugi-ai-art-2095782340031312112-browser-2095782340031312112-video-1/preview.gif)](https://x.com/mugi_AI_Art/status/2095782340031312112) | **[光路动作字卡｜角色启动、横向冲刺与落地宣言](catalog/cases/x-mugi-ai-art-2095782340031312112-browser-2095782340031312112-video-1/SUMMARY.md)**<br><sub>x-mugi-ai-art-2095782340031312112-browser-2095782340031312112-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![空中巨兽尺度阶梯｜山谷建立、伴飞逼近与城堡回连](catalog/cases/x-aqib-786ai-2095739111172972548-browser-2095739111172972548-video-1/preview.gif)](https://x.com/Aqib__786Ai/status/2095739111172972548) | **[空中巨兽尺度阶梯｜山谷建立、伴飞逼近与城堡回连](catalog/cases/x-aqib-786ai-2095739111172972548-browser-2095739111172972548-video-1/SUMMARY.md)**<br><sub>x-aqib-786ai-2095739111172972548-browser-2095739111172972548-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![黑色侦探片头｜唱片母题、案件拼贴与总标题归拢](catalog/cases/x-ai-videolab-2094810208715624906-browser-2094810208715624906-video-1/preview.gif)](https://x.com/AI_VideoLab/status/2094810208715624906) | **[黑色侦探片头｜唱片母题、案件拼贴与总标题归拢](catalog/cases/x-ai-videolab-2094810208715624906-browser-2094810208715624906-video-1/SUMMARY.md)**<br><sub>x-ai-videolab-2094810208715624906-browser-2094810208715624906-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![动画快炒状态链｜抛料、火焰、翻锅与食客见证](catalog/cases/x-byaiden-vu-2095780130312618329-browser-2095780130312618329-video-1/preview.gif)](https://x.com/byaiden_vu/status/2095780130312618329) | **[动画快炒状态链｜抛料、火焰、翻锅与食客见证](catalog/cases/x-byaiden-vu-2095780130312618329-browser-2095780130312618329-video-1/SUMMARY.md)**<br><sub>x-byaiden-vu-2095780130312618329-browser-2095780130312618329-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![错过阈值转向｜急行路线、离站证据与新方向](catalog/cases/x-nusratsid1-2095795648012661127-browser-2095795648012661127-video-1/preview.gif)](https://x.com/nusratsid1/status/2095795648012661127) | **[错过阈值转向｜急行路线、离站证据与新方向](catalog/cases/x-nusratsid1-2095795648012661127-browser-2095795648012661127-video-1/SUMMARY.md)**<br><sub>x-nusratsid1-2095795648012661127-browser-2095795648012661127-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![膨胀巨兽追逐｜误判接近、尺度突变与障碍逃生](catalog/cases/x-vadooai-2095882073546571953-browser-2095882073546571953-video-1/preview.gif)](https://x.com/vadooai/status/2095882073546571953) | **[膨胀巨兽追逐｜误判接近、尺度突变与障碍逃生](catalog/cases/x-vadooai-2095882073546571953-browser-2095882073546571953-video-1/SUMMARY.md)**<br><sub>x-vadooai-2095882073546571953-browser-2095882073546571953-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![赛道抵达庆祝｜起点检修、连续冲刺与终点回场](catalog/cases/x-altfortomorrow-2095872189337870433-browser-2095872189337870433-video-1/preview.gif)](https://x.com/altfortomorrow/status/2095872189337870433) | **[赛道抵达庆祝｜起点检修、连续冲刺与终点回场](catalog/cases/x-altfortomorrow-2095872189337870433-browser-2095872189337870433-video-1/SUMMARY.md)**<br><sub>x-altfortomorrow-2095872189337870433-browser-2095872189337870433-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![产品表面交替｜整体基线、微距材质与英雄复归](catalog/cases/x-kiber-alla-2095867010919845981-browser-2095867010919845981-video-1/preview.gif)](https://x.com/Kiber_Alla/status/2095867010919845981) | **[产品表面交替｜整体基线、微距材质与英雄复归](catalog/cases/x-kiber-alla-2095867010919845981-browser-2095867010919845981-video-1/SUMMARY.md)**<br><sub>x-kiber-alla-2095867010919845981-browser-2095867010919845981-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![物件仪式增幅｜交付基线、环形锁定与能量释放](catalog/cases/x-ou-zhen599-2095866920990105639-browser-2095866920990105639-video-1/preview.gif)](https://x.com/ou_zhen599/status/2095866920990105639) | **[物件仪式增幅｜交付基线、环形锁定与能量释放](catalog/cases/x-ou-zhen599-2095866920990105639-browser-2095866920990105639-video-1/SUMMARY.md)**<br><sub>x-ou-zhen599-2095866920990105639-browser-2095866920990105639-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![绘制带推进｜骨架、线稿、上色与角色板验真](catalog/cases/x-oreimohensan-2095863372789289389-browser-2095863372789289389-video-1/preview.gif)](https://x.com/oreimohensan/status/2095863372789289389) | **[绘制带推进｜骨架、线稿、上色与角色板验真](catalog/cases/x-oreimohensan-2095863372789289389-browser-2095863372789289389-video-1/SUMMARY.md)**<br><sub>x-oreimohensan-2095863372789289389-browser-2095863372789289389-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![户外肖像微表情｜正面微笑、举花回应与侧望回稳](catalog/cases/x-taliaaariz-2095857062987120666-browser-2095857062987120666-video-1/preview.gif)](https://x.com/TaliaAariz/status/2095857062987120666) | **[户外肖像微表情｜正面微笑、举花回应与侧望回稳](catalog/cases/x-taliaaariz-2095857062987120666-browser-2095857062987120666-video-1/SUMMARY.md)**<br><sub>x-taliaaariz-2095857062987120666-browser-2095857062987120666-video-1</sub> | MiniMax H3 · Seedance 2.0 |
+| [![古典肖像布置｜幕后系巾、颜料细节与正面复归](catalog/cases/x-itspolloai-2095859437353263543-browser-2095859437353263543-video-1/preview.gif)](https://x.com/itsPolloAI/status/2095859437353263543) | **[古典肖像布置｜幕后系巾、颜料细节与正面复归](catalog/cases/x-itspolloai-2095859437353263543-browser-2095859437353263543-video-1/SUMMARY.md)**<br><sub>x-itspolloai-2095859437353263543-browser-2095859437353263543-video-1</sub> | MiniMax H3 · Seedance 2.0 |
 
 <!-- CASE_GALLERY:END -->
 
@@ -551,7 +571,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 可下载安装版 `T8-Prompt-Library-Setup-v1.4.4.exe`，或无需安装的 `T8-Prompt-Library-Portable-v1.4.4.exe`；macOS 下载 `T8-Prompt-Library-v1.4.4-mac-universal.dmg`。
+2. Windows 可下载安装版 `T8-Prompt-Library-Setup-v1.4.5.exe`，或无需安装的 `T8-Prompt-Library-Portable-v1.4.5.exe`；macOS 下载 `T8-Prompt-Library-v1.4.5-mac-universal.dmg`。
 3. 安装版正常安装后启动；便携版放入可写目录直接运行，个人数据会保存在程序旁的 `T8-Prompt-Library-Data`。
 4. Windows 安装版可在应用内检查并由用户确认安装更新；Windows 便携版与当前未签名 macOS 版本通过 Releases 页面手动更新。
 
@@ -561,7 +581,7 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 
 主界面的“API 增强工作台”包含两个隔离能力：视频提示词模式提供由当前 API / 本地 Qwen 驱动的全库语义推荐、模板实例化、MiniMax H3 / Seedance 2.0、参考图片/视频与静态锚点验收；MiniMax Music 3 模式按官方 Skill 渐进读取最多 2 个索引和 3 份模板，输出歌词、结构化描述、Payload JSON 与安全报告。模板推荐不会按时长或关键词在前端猜测：第一次模型调用理解真实意图并扩展同义表达，随后对统一总索引做全量召回检查，第二次模型调用只从证据卡中语义复排，可靠结果不足时不会凑满 3 个。
 
-当前统一总索引记录 486 个目录条目、475 个案例行和 236 个可推荐的去重模板 / 社区 Skill；同机制的 241 个证据变体仍逐条记账。每次新增入库都会随目录生成器重建 `catalog/template-index.json`，验证发现漏记或陈旧索引会直接失败。AI 分镜、双机制组合、视频 / Music 3 桥接与模板改进提案同样必须使用当前配置的 API 或本地 Qwen；本地代码只做时码、ID、哈希与合同校验，不代替创意判断。
+当前统一总索引记录 506 个目录条目、495 个案例行和 239 个可推荐的去重模板 / 社区 Skill；同机制的 258 个证据变体仍逐条记账。每次新增入库都会随目录生成器重建 `catalog/template-index.json`，验证发现漏记或陈旧索引会直接失败。AI 分镜、双机制组合、视频 / Music 3 桥接与模板改进提案同样必须使用当前配置的 API 或本地 Qwen；本地代码只做时码、ID、哈希与合同校验，不代替创意判断。
 
 工作台现有 4 个增强渠道：贞贞的平价小屋、贞贞的 AI 工坊、OpenAI 兼容接口，以及本地 GGUF。本地渠道会递归扫描用户选择的模型根目录，支持 ComfyUI 节点已实测的两个 Qwen3.8-27B 与轻量 Qwen3.8-9B，也允许选择其他 llama.cpp 兼容文字 GGUF；已验收型号和用户自备未验收型号会明确分开标记。图片/视频需要匹配的 mmproj，视频另需 FFmpeg。模型和本地运行时不会打包进 Release，也不会自动下载。
 
@@ -614,7 +634,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.4.4**。项目使用十进制进位：
+当前目标版本是 **v1.4.5**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -634,6 +654,7 @@ v1.4.0 -> v1.4.1
 v1.4.1 -> v1.4.2
 v1.4.2 -> v1.4.3
 v1.4.3 -> v1.4.4
+v1.4.4 -> v1.4.5
 v1.9.9 -> v2.0.0
 ```
 

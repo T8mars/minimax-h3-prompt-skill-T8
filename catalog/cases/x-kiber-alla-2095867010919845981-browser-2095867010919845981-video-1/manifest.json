@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-kiber-alla-2095867010919845981-browser-2095867010919845981-video-1",
+  "slug": "product-finish-alternation-detail-return",
+  "title": "产品表面交替｜整体基线、微距材质与英雄复归",
+  "source_title": "开口戒指材质展示｜银色线框、玫瑰金成品与钻石微距",
+  "summary": "先以完整产品和柔软承托面建立轮廓，再在同一角度交替展示中性建模态与成品材质；微距只验证镶嵌、倒角和反光，最后回到完整英雄构图，禁止随机改变结构。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/product-finish-alternation-detail-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kiber-alla-2095867010919845981-browser-2095867010919845981-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-kiber-alla-2095867010919845981-browser-2095867010919845981-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-product-finish-alternation-detail-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一个原创产品与固定背景、尺度和构图参照 + 至少两种可清楚区分且可逆切换的表面状态 + 每次状态切换都回到同一主体位置 + 一次能证明真实材质细节的微距检查 + 终局返回完整产品英雄画面并锁定指定表面状态",
+  "recommended_input": "把一枚原创双六边形端头的开口胸针戒指置于午夜蓝天鹅绒褶皱上，以中性泥模材质呈现。；推进到双端头微距，清楚展示八颗透明宝石、浅镶口和一道狭窄中央开口。；拉回到原天鹅绒褶皱上的完整香槟金戒指，并保持一次干净英雄闪光。",
+  "required_anchors": [
+    "One original product geometry and one support surface remain registered throughout.",
+    "Material-state alternation changes finish only, never topology, stone count or proportions.",
+    "Macro views verify countable construction details rather than adding new decoration.",
+    "The terminal full-product frame restores the opening composition in the finished material."
+  ],
+  "tags": [
+    "product",
+    "finish",
+    "alternation",
+    "detail",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:51+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

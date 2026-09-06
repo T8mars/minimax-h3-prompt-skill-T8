@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ponzponz15-2095753904550191133-browser-2095753904550191133-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "5b7b8a90f1740e51ed01a85f8592619c88aeeb83c2c650467a6c15f0ca3a9c9c",
+    "creative_dna_sha256": "4a18062e2ee4dc168d66e198b1c263af6e9bb7df624e582b22d6d4c72718eb76"
+  },
+  "content": {
+    "title": "Conversation Block Advance | Paired Speakers, Moving Platform and Graphic Return",
+    "summary": "An adult creative-team poster turns one speech block into a message and reconstructs before its logo card. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One persistent poster grid defines every element's home position. + All human figures are clearly adult and remain tied to their original graphic blocks. + Only one speech block leaves the layout to carry the information peak. + The complete poster must visibly reconstruct before the end card. + Exact original title and logo remain readable and are not inferred from source text.",
+      "recommended_input": "Establish an original vertical poster titled \"MAKE TOGETHER\" with four adult creators and coral-blue speech blocks. Move the blue block forward until it fills the frame and reveal the exact short message \"BUILD ONE MORE\". Let one coral speech shape wipe into a coral-blue gradient end card carrying the exact logo \"MAKEROOM\".",
+      "required_anchors": [
+        "One persistent poster grid defines every element's home position.",
+        "All human figures are clearly adult and remain tied to their original graphic blocks.",
+        "The complete poster must visibly reconstruct before the end card.",
+        "Exact original title and logo remain readable and are not inferred from source text."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult creative-team poster turns one speech block into a message and reconstructs before its logo card. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "保持同一竖版海报的文字区、人物和红蓝对话块，让人物从平面层获得轻微空间关系；一个对话块前移承担信息转场，随后全部元素归回版式并收束到品牌色页。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One persistent poster grid defines every element's home position.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One persistent poster grid defines every element's home position.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "All human figures are clearly adult and remain tied to their original graphic blocks.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"All human figures are clearly adult and remain tied to their original graphic blocks.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Only one speech block leaves the layout to carry the information peak.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Only one speech block leaves the layout to carry the information peak.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "The complete poster must visibly reconstruct before the end card.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The complete poster must visibly reconstruct before the end card.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Exact original title and logo remain readable and are not inferred from source text.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"Exact original title and logo remain readable and are not inferred from source text.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult creative-team poster turns one speech block into a message and reconstructs before its logo card.",
+          "prompt_seed": "An adult creative-team poster turns one speech block into a message and reconstructs before its logo card."
+        },
+        {
+          "concept": "A conference poster turns one schedule tile into a session detail and reconstructs before registration lockup.",
+          "prompt_seed": "A conference poster turns one schedule tile into a session detail and reconstructs before registration lockup."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One persistent poster grid defines every element's home position.\"",
+          "repair": "One persistent poster grid defines every element's home position."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"All human figures are clearly adult and remain tied to their original graphic blocks.\"",
+          "repair": "All human figures are clearly adult and remain tied to their original graphic blocks."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Only one speech block leaves the layout to carry the information peak.\"",
+          "repair": "Only one speech block leaves the layout to carry the information peak."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The complete poster must visibly reconstruct before the end card.\"",
+          "repair": "The complete poster must visibly reconstruct before the end card."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"Exact original title and logo remain readable and are not inferred from source text.\"",
+          "repair": "Exact original title and logo remain readable and are not inferred from source text."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult creative-team poster turns one speech block into a message and reconstructs before its logo card.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A conference poster turns one schedule tile into a session detail and reconstructs before registration lockup.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

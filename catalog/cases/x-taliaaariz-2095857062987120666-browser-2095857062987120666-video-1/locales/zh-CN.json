@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-taliaaariz-2095857062987120666-browser-2095857062987120666-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "3c1e4a31a1a2e00ca567102ed54b7635738fb4a90034bb5b621663ae298dac45",
+    "creative_dna_sha256": "bbd549651ead70e8fd1fb2c8a779dcb83e9e6643cd8be613297b744e6341706f"
+  },
+  "content": {
+    "title": "户外肖像微表情｜正面微笑、举花回应与侧望回稳",
+    "summary": "固定同一湖岸人物、花束和中景构图，只用呼吸、一次举花、一次眨眼和缓慢侧望构成微表情弧；背景水光与丝带提供轻微环境响应，禁止突然换姿或换人。",
+    "quick_start": {
+      "input_format": "单一人像 + 侧身开始 + 稳定直视 + 垂眼停顿 + 1次峰值表情 + 开放表情回稳",
+      "recommended_input": "用稳定竖版中景拍摄原创成年陶艺师：浅蓝连衣裙，手持纸花束，站在银色湖边。；空手抬起一次，轻触脸旁的一片纸花瓣，再放回花束。；以克制的四分之三侧面收束，花束居中，原始山水线保持不变。",
+      "required_anchors": [
+        "一个明显的成年人身份、服装、花束和相机位置保持固定。",
+        "只有小的面部、手部、呼吸和头部动作驱动表现。",
+        "环境运动仍然次要且物理上温和。",
+        "最终画面保留相同的主体、道具和景观构图。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "固定同一湖岸人物、花束和中景构图，只用呼吸、一次举花、一次眨眼和缓慢侧望构成微表情弧；背景水光与丝带提供轻微环境响应，禁止突然换姿或换人。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定同一湖岸人物、花束和中景构图，只用呼吸、一次举花、一次眨眼和缓慢侧望构成微表情弧；背景水光与丝带提供轻微环境响应，禁止突然换姿或换人。 必须满足：One clearly adult identity, wardrobe, bouquet and camera position remain fixed. + Only small facial, hand, breathing and head actions drive the performance. + Every gesture completes before the next one begins. + Environmental motion remains secondary and physically gentle. + The final profile preserves the same subject, prop and landscape composition.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个明显的成年人身份、服装、花束和相机位置保持固定。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一个明显的成年人身份、服装、花束和相机位置保持固定。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "只有小的面部、手部、呼吸和头部动作驱动表现。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再展示。移除的规则：\"只有小的面部、手部、呼吸和头部动作驱动表现。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每个手势完成前，下一个手势才开始。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这个确切的顺序规则，中间会跳到一个替代状态，累积的结果将不再可追踪。移除的规则：\"每个手势完成前，下一个手势才开始。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "环境运动仍然次要且物理上温和。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条确切的重新连接规则，细节或转换的镜头可以属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"环境运动仍然次要且物理上温和。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终画面保留相同的主体、道具和景观构图。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条确切的最终画面规则，序列仅以运动结束，从未确认承诺的结果或保留的后果。已移除规则：\"最终画面保留相同的主体、道具和景观构图。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个成年人用纸花从直接的问候动作变为平静的向湖面的侧脸。",
+          "prompt_seed": "一个成年人用纸花从直接的问候动作变为平静的向湖面的侧脸。"
+        },
+        {
+          "concept": "一个成年人拿着香草从小的问候动作变为平静的向窗户的侧脸。",
+          "prompt_seed": "一个成年人拿着香草从小的问候动作变为平静的向窗户的侧脸。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一个明显的成年人身份、服装、花束和相机位置保持固定。\"",
+          "repair": "一个明显的成年人身份、服装、花束和相机位置保持固定。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再展示。移除的规则：\"只有小的面部、手部、呼吸和头部动作驱动表现。\"",
+          "repair": "只有小的面部、手部、呼吸和头部动作驱动表现。"
+        },
+        {
+          "failure": "没有这个确切的顺序规则，中间会跳到一个替代状态，累积的结果将不再可追踪。移除的规则：\"每个手势完成前，下一个手势才开始。\"",
+          "repair": "每个手势完成前，下一个手势才开始。"
+        },
+        {
+          "failure": "没有这条确切的重新连接规则，细节或转换的镜头可以属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"环境运动仍然次要且物理上温和。\"",
+          "repair": "环境运动仍然次要且物理上温和。"
+        },
+        {
+          "failure": "没有这条确切的最终画面规则，序列仅以运动结束，从未确认承诺的结果或保留的后果。已移除规则：\"最终画面保留相同的主体、道具和景观构图。\"",
+          "repair": "最终画面保留相同的主体、道具和景观构图。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个成年人用纸花从直接的问候动作变为平静的向湖面的侧脸。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个成年人拿着香草从小的问候动作变为平静的向窗户的侧脸。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

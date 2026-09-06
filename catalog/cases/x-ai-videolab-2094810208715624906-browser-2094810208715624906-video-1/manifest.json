@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ai-videolab-2094810208715624906-browser-2094810208715624906-video-1",
+  "slug": "material-credit-vignettes-to-master-title",
+  "title": "黑色侦探片头｜唱片母题、案件拼贴与总标题归拢",
+  "source_title": "午夜案件片头｜旋转唱片展开蓝橙紫线索拼贴",
+  "summary": "以旋转唱片和侦探剪影建立母题，再让列车、便签、人物剪影和案件标签进入统一蓝橙紫漫画格；职员表与物证共用版式，终局归拢成可读总标题。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/material-credit-vignettes-to-master-title",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-videolab-2094810208715624906-browser-2094810208715624906-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-videolab-2094810208715624906-browser-2094810208715624906-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-material-credit-vignettes-to-master-title-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-material-credit-vignettes-to-master-title-v1",
+  "input_format": "至少三种独立材质职员表场景 + 每幕一条原创短职员表与材质动作 + 跨幕重复色形或标记 + 回到已建立材质族汇聚 + 大型原创总标题稳定停留",
+  "recommended_input": "以一盘黑色开盘磁带开场，盘面带原创象牙色灯塔剪影，背景保持黑暗。；为每个物证章节分配固定格子和一张准确原创职员卡，文字不得越过格线。；将全部格子压缩成准确总标题【NIGHT SIGNAL】，并保留灯塔、渡轮和档案员的小型证据剪影。",
+  "required_anchors": [
+    "One recurring evidence carrier opens the title system and remains traceable.",
+    "Every vignette uses the same limited palette and registered comic grid.",
+    "Connections between clues remain visually causal rather than decorative clutter.",
+    "The master title contains miniature residues of the earlier evidence modules."
+  ],
+  "tags": [
+    "material",
+    "credit",
+    "vignettes",
+    "to",
+    "master",
+    "title"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:50+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

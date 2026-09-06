@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-itspolloai-2095859437353263543-browser-2095859437353263543-video-1",
+  "slug": "service-transformation-private-fit-public-return",
+  "title": "古典肖像布置｜幕后系巾、颜料细节与正面复归",
+  "source_title": "画中人物准备仪式｜成年模特系头巾后回到古典肖像",
+  "summary": "先让成年模特在布景中接受可见的服装整理，再用调色盘细节证明造型来源；助手退出后人物正面回归经典但原创的肖像构图，以轻微眼神回应完成从准备到展示的闭环。",
+  "status": "released",
+  "source_duration_seconds": 17.194667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/service-transformation-private-fit-public-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-itspolloai-2095859437353263543-browser-2095859437353263543-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-itspolloai-2095859437353263543-browser-2095859437353263543-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-service-transformation-private-fit-public-return-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-service-transformation-private-fit-public-return-v1",
+  "input_format": "成年客户的可见缺陷基线 + 专业服务空间与服务者 + 评估和至少2种可见工具或手工介入 + 身份与身体注册连续的分阶段改造 + 专业验收和客户主动调整 + 公开空间功能与旁观反应证明",
+  "recommended_input": "展示一名原创成年博物馆表演者坐着，另一名成年服装师在身后系好靛蓝头巾。；只切一次到同一工作台上的黑色陶杯、三支画笔和一道靛蓝颜料痕。；以原创暖珍珠光正面肖像收束，表演者只移动一次眼神，然后保持静止。",
+  "required_anchors": [
+    "All depicted people are clearly adult and keep stable identities.",
+    "The dressing process is visible, countable and tied to the final costume state.",
+    "The assistant exits before the public portrait pose begins.",
+    "The terminal living motion is subtle and does not redesign the face or artwork."
+  ],
+  "tags": [
+    "service",
+    "transformation",
+    "private",
+    "fit",
+    "public",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:52+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nusratsid1-2095795648012661127-browser-2095795648012661127-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "459b6613a4c38678c16581824dc252346ab6b56a1378d2e8495b67b192696b00",
+    "creative_dna_sha256": "215c35fa72a12278147b1ab485ae1fdb043cd90638761aafc9fd3c7a7897ad78"
+  },
+  "content": {
+    "title": "错过阈值转向｜急行路线、离站证据与新方向",
+    "summary": "用一个清晰目的地和连续急行路线制造时间压力；人物到站时载具已经越过可进入阈值，工作人员的方向手势确认失败，人物必须停顿、判断并沿新方向离开，而不是无因果重置。",
+    "quick_start": {
+      "input_format": "一名明确成年原创主体、一个可追踪目标和连续路线 + 人物用动作与环境位移逐级证明紧迫性 + 在可见且不可逆的阈值事件发生后才确认错过 + 一名辅助角色只提供一次明确替代方向 + 主体接受信息并沿新的可追踪路线离开，身份、道具和空间关系不重置",
+      "recommended_input": "一名原创成年植物学家穿过雨夜广场跑向玻璃渡轮码头，手持红色野外笔记本。；保持侧面中景，让植物学家停下，目视渡轮后方不断扩大的水面间隙。；经过一次可见的判断停顿后，植物学家转身收好笔记本，跑向被指示的公交车道。",
+      "required_anchors": [
+        "一位明显成年旅行者，一个手持紧急道具，一个目的地保持不变。",
+        "通往门槛的路径是连续且空间关系可读的。",
+        "一个地方当局的提示确认了关闭并指出了一个替代方向。",
+        "最终动作在同一旅程中进行重定向，而没有传送、倒带或虚假成功。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用一个清晰目的地和连续急行路线制造时间压力；人物到站时载具已经越过可进入阈值，工作人员的方向手势确认失败，人物必须停顿、判断并沿新方向离开，而不是无因果重置。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用一个清晰目的地和连续急行路线制造时间压力；人物到站时载具已经越过可进入阈值，工作人员的方向手势确认失败，人物必须停顿、判断并沿新方向离开，而不是无因果重置。 必须满足：One clearly adult traveler, one handheld urgency prop and one destination persist. + The route to the threshold is continuous and geographically readable. + The vehicle has visibly departed before the traveler's reaction is evaluated. + A local authority cue confirms closure and identifies one alternative direction. + The final action redirects the same journey without teleportation, rewind or false success.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一位明显成年旅行者，一个手持紧急道具，一个目的地保持不变。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这条确切的基线规则，后续的变化将无法归因于同一主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一位明显成年旅行者，一个手持紧急道具，一个目的地保持不变。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "通往门槛的路径是连续且空间关系可读的。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再成立。已移除规则：\"通往门槛的路径是连续且空间关系可读的。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "车辆在旅行者反应被评估之前已经明显离开了。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这个确切的进展规则，中间部分可以跳到替代状态，累积的结果也就不再可追踪。已移除规则：\"车辆在旅行者反应被评估之前已经明显离开了。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "一个地方当局的提示确认了关闭并指出了一个替代方向。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这个确切的重新连接规则，细节或转换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"一个地方当局的提示确认了关闭并指出了一个替代方向。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终动作在同一旅程中进行重定向，而没有传送、倒带或虚假成功。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这个确切的终端验证规则，序列仅在运动上停止，从未确认承诺的结果或保留的后果。已移除规则：\"最终动作在同一旅程中进行重定向，而没有传送、倒带或虚假成功。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年植物学家错过了一班渡轮，收到一条公交方向，继续沿着新路线前进。",
+          "prompt_seed": "一位成年植物学家错过了一班渡轮，收到一条公交方向，继续沿着新路线前进。"
+        },
+        {
+          "concept": "一位成年快递员到达一个关闭的装卸门，收到一条服务道路的指示，重新定向而没有丢失包裹。",
+          "prompt_seed": "一位成年快递员到达一个关闭的装卸门，收到一条服务道路的指示，重新定向而没有丢失包裹。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这条确切的基线规则，后续的变化将无法归因于同一主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一位明显成年旅行者，一个手持紧急道具，一个目的地保持不变。\"",
+          "repair": "一位明显成年旅行者，一个手持紧急道具，一个目的地保持不变。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再成立。已移除规则：\"通往门槛的路径是连续且空间关系可读的。\"",
+          "repair": "通往门槛的路径是连续且空间关系可读的。"
+        },
+        {
+          "failure": "没有这个确切的进展规则，中间部分可以跳到替代状态，累积的结果也就不再可追踪。已移除规则：\"车辆在旅行者反应被评估之前已经明显离开了。\"",
+          "repair": "车辆在旅行者反应被评估之前已经明显离开了。"
+        },
+        {
+          "failure": "没有这个确切的重新连接规则，细节或转换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"一个地方当局的提示确认了关闭并指出了一个替代方向。\"",
+          "repair": "一个地方当局的提示确认了关闭并指出了一个替代方向。"
+        },
+        {
+          "failure": "没有这个确切的终端验证规则，序列仅在运动上停止，从未确认承诺的结果或保留的后果。已移除规则：\"最终动作在同一旅程中进行重定向，而没有传送、倒带或虚假成功。\"",
+          "repair": "最终动作在同一旅程中进行重定向，而没有传送、倒带或虚假成功。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年植物学家错过了一班渡轮，收到一条公交方向，继续沿着新路线前进。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年快递员到达一个关闭的装卸门，收到一条服务道路的指示，重新定向而没有丢失包裹。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

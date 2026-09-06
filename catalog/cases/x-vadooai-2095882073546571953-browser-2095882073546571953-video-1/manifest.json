@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-vadooai-2095882073546571953-browser-2095882073546571953-video-1",
+  "slug": "asymmetric-scale-evasion-exchange",
+  "title": "膨胀巨兽追逐｜误判接近、尺度突变与障碍逃生",
+  "source_title": "热带村落追逐｜成年守卫探查变色兽后撞翻鼓阵",
+  "summary": "先用成年守卫和灌木中的小型生物建立可控距离，再让生物连续膨胀造成尺度反转；人物的惊愕必须先于逃跑，追逐路线穿过同一村落并由可见鼓阵碰撞收束。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/asymmetric-scale-evasion-exchange",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vadooai-2095882073546571953-browser-2095882073546571953-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-vadooai-2095882073546571953-browser-2095882073546571953-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-asymmetric-scale-evasion-exchange-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-asymmetric-scale-evasion-exchange-v1",
+  "input_format": "大小尺度明确的两主体 + 共享地面 + 巨体承诺动作 + 小体型可见变线 + 无虚构胜负的共享终态",
+  "recommended_input": "原创成年海岛制图师靠近港口花园旁一只掌心大小的条纹蜥蜴。；先展示一次从观察到惊慌的清晰表情变化，再让制图师转身起跑。；以制图师撞上三只堆叠鱼箱收束，鱼箱依次倒下，蜥蜴在其后停住。",
+  "required_anchors": [
+    "One clearly adult protagonist and one original creature retain stable identities.",
+    "Scale changes continuously in place and remains consistent through the chase.",
+    "Both subjects share one continuous environment and lateral route.",
+    "A visible obstacle collision closes the chase with physical consequence rather than disappearance."
+  ],
+  "tags": [
+    "asymmetric",
+    "scale",
+    "evasion",
+    "exchange"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:51+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

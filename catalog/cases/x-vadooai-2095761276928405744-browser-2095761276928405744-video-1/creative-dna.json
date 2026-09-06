@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "同一工作台和双手持续可见，依次完成金属骨架、黏土躯干、服装、头发与配饰；每一步保留上一层的可见因果，最后让成品在不换位的情况下完成真人化回应。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One tabletop, one armature and one pair of hands preserve spatial continuity.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One tabletop, one armature and one pair of hands preserve spatial continuity.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Each construction layer remains visibly supported by the preceding layer.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Each construction layer remains visibly supported by the preceding layer.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Head, torso and costume proportions do not reset between material stages.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Head, torso and costume proportions do not reset between material stages.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "Accessories are original, countable and attached in a readable order.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Accessories are original, countable and attached in a readable order.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The terminal realism shift preserves the exact completed design and location.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The terminal realism shift preserves the exact completed design and location.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "A brass-wire aviator bust is built layer by layer and blinks after becoming realistic.",
+      "prompt_seed": "A brass-wire aviator bust is built layer by layer and blinks after becoming realistic."
+    },
+    {
+      "concept": "A ceramic robot mascot is assembled from armature, shell, decals and lights before one functional head turn.",
+      "prompt_seed": "A ceramic robot mascot is assembled from armature, shell, decals and lights before one functional head turn."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One tabletop, one armature and one pair of hands preserve spatial continuity.\"",
+      "repair": "One tabletop, one armature and one pair of hands preserve spatial continuity."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Each construction layer remains visibly supported by the preceding layer.\"",
+      "repair": "Each construction layer remains visibly supported by the preceding layer."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Head, torso and costume proportions do not reset between material stages.\"",
+      "repair": "Head, torso and costume proportions do not reset between material stages."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Accessories are original, countable and attached in a readable order.\"",
+      "repair": "Accessories are original, countable and attached in a readable order."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The terminal realism shift preserves the exact completed design and location.\"",
+      "repair": "The terminal realism shift preserves the exact completed design and location."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A brass-wire aviator bust is built layer by layer and blinks after becoming realistic.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A ceramic robot mascot is assembled from armature, shell, decals and lights before one functional head turn.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-kiber-alla-2095867010919845981-browser-2095867010919845981-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "629c99128b5910216eb38f3e49d6f20fd7ef79512f8408aef16fa12424e9bfec",
+    "creative_dna_sha256": "51370018bfddcedc9f7417f073cca0486a96e266b5da58b162817530a04447a4"
+  },
+  "content": {
+    "title": "产品表面交替｜整体基线、微距材质与英雄复归",
+    "summary": "先以完整产品和柔软承托面建立轮廓，再在同一角度交替展示中性建模态与成品材质；微距只验证镶嵌、倒角和反光，最后回到完整英雄构图，禁止随机改变结构。",
+    "quick_start": {
+      "input_format": "一个原创产品与固定背景、尺度和构图参照 + 至少两种可清楚区分且可逆切换的表面状态 + 每次状态切换都回到同一主体位置 + 一次能证明真实材质细节的微距检查 + 终局返回完整产品英雄画面并锁定指定表面状态",
+      "recommended_input": "把一枚原创双六边形端头的开口胸针戒指置于午夜蓝天鹅绒褶皱上，以中性泥模材质呈现。；推进到双端头微距，清楚展示八颗透明宝石、浅镶口和一道狭窄中央开口。；拉回到原天鹅绒褶皱上的完整香槟金戒指，并保持一次干净英雄闪光。",
+      "required_anchors": [
+        "一个原始产品几何形状和一个支撑表面在整个过程中保持注册。",
+        "材料状态变化仅改变表面， never拓扑结构、石头数量或比例。",
+        "微距视图验证可计数的施工细节，而不是添加新的装饰。",
+        "终端完整产品帧恢复成品材料中的开头构图。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先以完整产品和柔软承托面建立轮廓，再在同一角度交替展示中性建模态与成品材质；微距只验证镶嵌、倒角和反光，最后回到完整英雄构图，禁止随机改变结构。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先以完整产品和柔软承托面建立轮廓，再在同一角度交替展示中性建模态与成品材质；微距只验证镶嵌、倒角和反光，最后回到完整英雄构图，禁止随机改变结构。 必须满足：One original product geometry and one support surface remain registered throughout. + Material-state alternation changes finish only, never topology, stone count or proportions. + Matched camera angles make every comparison visually valid. + Macro views verify countable construction details rather than adding new decoration. + The terminal full-product frame restores the opening composition in the finished material.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个原始产品几何形状和一个支撑表面在整个过程中保持注册。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后续的更改无法归因于同一个主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一个原始产品几何形状和一个支撑表面在整个过程中保持注册。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "材料状态变化仅改变表面， never拓扑结构、石头数量或比例。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再得到证明。已移除规则：\"材料状态变化仅改变表面， never拓扑结构、石头数量或比例。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "匹配的摄像机角度使每个比较在视觉上都是有效的。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这个确切的进展规则，中间可以跳到一个替代状态，累积结果将不再可追踪。已移除规则：\"匹配的摄像机角度使每个比较在视觉上都是有效的。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "微距视图验证可计数的施工细节，而不是添加新的装饰。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条确切的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"微距视图验证可计数的施工细节，而不是添加新的装饰。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "终端完整产品帧恢复成品材料中的开头构图。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条确切的终端验证规则，序列仅基于运动停止，从未确认承诺的结果或保存的后果。已移除规则：\"终端完整产品帧恢复成品材料中的开头构图。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个几何环交替使用粘土和香槟金的表面，然后回到完整的英雄视角。",
+          "prompt_seed": "一个几何环交替使用粘土和香槟金的表面，然后回到完整的英雄视角。"
+        },
+        {
+          "concept": "一只精密手表交替使用哑光原型和抛光钢，角度匹配，然后是一个完整的表盘锁定。",
+          "prompt_seed": "一只精密手表交替使用哑光原型和抛光钢，角度匹配，然后是一个完整的表盘锁定。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后续的更改无法归因于同一个主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一个原始产品几何形状和一个支撑表面在整个过程中保持注册。\"",
+          "repair": "一个原始产品几何形状和一个支撑表面在整个过程中保持注册。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再得到证明。已移除规则：\"材料状态变化仅改变表面， never拓扑结构、石头数量或比例。\"",
+          "repair": "材料状态变化仅改变表面， never拓扑结构、石头数量或比例。"
+        },
+        {
+          "failure": "没有这个确切的进展规则，中间可以跳到一个替代状态，累积结果将不再可追踪。已移除规则：\"匹配的摄像机角度使每个比较在视觉上都是有效的。\"",
+          "repair": "匹配的摄像机角度使每个比较在视觉上都是有效的。"
+        },
+        {
+          "failure": "没有这条确切的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"微距视图验证可计数的施工细节，而不是添加新的装饰。\"",
+          "repair": "微距视图验证可计数的施工细节，而不是添加新的装饰。"
+        },
+        {
+          "failure": "没有这条确切的终端验证规则，序列仅基于运动停止，从未确认承诺的结果或保存的后果。已移除规则：\"终端完整产品帧恢复成品材料中的开头构图。\"",
+          "repair": "终端完整产品帧恢复成品材料中的开头构图。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个几何环交替使用粘土和香槟金的表面，然后回到完整的英雄视角。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一只精密手表交替使用哑光原型和抛光钢，角度匹配，然后是一个完整的表盘锁定。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

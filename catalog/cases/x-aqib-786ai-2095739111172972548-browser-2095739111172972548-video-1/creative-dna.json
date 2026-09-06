@@ -1,0 +1,177 @@
+{
+  "complexity": "moderate",
+  "mechanism": "先用雪山谷地、阳光和远处城堡建立尺度，再让一条原创巨龙沿可追踪航线进入；镜头从广域景观逐步逼近翼、头部与吼叫，最后退回城堡关系，形成尺度阶梯。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "One landscape and one distant man-made landmark establish the scale baseline.",
+      "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+      "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One landscape and one distant man-made landmark establish the scale baseline.\"",
+      "evidence_ids": [
+        "beat-01",
+        "obs-01",
+        "obs-02",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "One original flying creature follows a continuous route through that geography.",
+      "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+      "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"One original flying creature follows a continuous route through that geography.\"",
+      "evidence_ids": [
+        "beat-02",
+        "obs-03",
+        "obs-04",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Each shot tightens scale while retaining a previous landmark or terrain cue.",
+      "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+      "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Each shot tightens scale while retaining a previous landmark or terrain cue.\"",
+      "evidence_ids": [
+        "beat-03",
+        "obs-05",
+        "obs-06",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-04",
+      "rule": "The closest view supplies one bounded biological action rather than a new attack scene.",
+      "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+      "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The closest view supplies one bounded biological action rather than a new attack scene.\"",
+      "evidence_ids": [
+        "beat-04",
+        "obs-07",
+        "obs-08",
+        "obs-16"
+      ]
+    },
+    {
+      "id": "inv-05",
+      "rule": "The final wide view reconnects creature, route and landmark in the original world.",
+      "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+      "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final wide view reconnects creature, route and landmark in the original world.\"",
+      "evidence_ids": [
+        "beat-05",
+        "obs-09",
+        "obs-10",
+        "obs-16"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead_subject",
+      "constraint": "An original stable subject or pair with a readable role."
+    },
+    {
+      "name": "setting",
+      "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+    },
+    {
+      "name": "escalation_variable",
+      "constraint": "One causal variable that changes through visible stages."
+    },
+    {
+      "name": "performance_rule",
+      "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "An information order that proves each state without copying source shot boundaries."
+    },
+    {
+      "name": "payoff",
+      "constraint": "A clean final physical, informational or social consequence."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+    "the source location, set dressing, props, products and exact environmental geometry",
+    "all source words, logos, watermarks, typefaces and brand identifiers",
+    "the source choreography, exact camera path, shot durations and transition timing",
+    "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+  ],
+  "instantiations": [
+    {
+      "concept": "A copper-winged creature approaches a glacier observatory through a five-step scale ladder.",
+      "prompt_seed": "A copper-winged creature approaches a glacier observatory through a five-step scale ladder."
+    },
+    {
+      "concept": "A silent airship approaches a desert archive through dune, tower, hull and cockpit scale chapters.",
+      "prompt_seed": "A silent airship approaches a desert archive through dune, tower, hull and cockpit scale chapters."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One landscape and one distant man-made landmark establish the scale baseline.\"",
+      "repair": "One landscape and one distant man-made landmark establish the scale baseline."
+    },
+    {
+      "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"One original flying creature follows a continuous route through that geography.\"",
+      "repair": "One original flying creature follows a continuous route through that geography."
+    },
+    {
+      "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Each shot tightens scale while retaining a previous landmark or terrain cue.\"",
+      "repair": "Each shot tightens scale while retaining a previous landmark or terrain cue."
+    },
+    {
+      "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The closest view supplies one bounded biological action rather than a new attack scene.\"",
+      "repair": "The closest view supplies one bounded biological action rather than a new attack scene."
+    },
+    {
+      "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final wide view reconnects creature, route and landmark in the original world.\"",
+      "repair": "The final wide view reconnects creature, route and landmark in the original world."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "A copper-winged creature approaches a glacier observatory through a five-step scale ladder.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A silent airship approaches a desert archive through dune, tower, hull and cockpit scale chapters.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03",
+        "inv-04",
+        "inv-05"
+      ],
+      "changed_slots": [
+        "lead_subject",
+        "setting",
+        "escalation_variable",
+        "performance_rule",
+        "camera_grammar",
+        "payoff",
+        "sound_family"
+      ]
+    }
+  ]
+}

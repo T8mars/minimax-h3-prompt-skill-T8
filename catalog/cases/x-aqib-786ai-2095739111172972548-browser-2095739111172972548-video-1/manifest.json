@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aqib-786ai-2095739111172972548-browser-2095739111172972548-video-1",
+  "slug": "build-viewpoint-scale-spectacle-ladder",
+  "title": "空中巨兽尺度阶梯｜山谷建立、伴飞逼近与城堡回连",
+  "source_title": "雪山龙航线｜远景城堡到贴翼近景再回归地标",
+  "summary": "先用雪山谷地、阳光和远处城堡建立尺度，再让一条原创巨龙沿可追踪航线进入；镜头从广域景观逐步逼近翼、头部与吼叫，最后退回城堡关系，形成尺度阶梯。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/build-viewpoint-scale-spectacle-ladder",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aqib-786ai-2095739111172972548-browser-2095739111172972548-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aqib-786ai-2095739111172972548-browser-2095739111172972548-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-viewpoint-scale-spectacle-ladder-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-viewpoint-scale-spectacle-ladder-v1",
+  "input_format": "5个熟悉尺度参照 + 每镜1个巨型原创形态 + 视点变化 + 距离逐步缩短 + 近距离终态",
+  "recommended_input": "以原创琥珀光冰川山谷开场，黑色悬崖观测站作为固定目标地标。；从山谷广景收紧到巨兽完整侧面，并让观测站保留在一侧翅膀后方以证明尺度。；镜头拉远，把巨兽、冰川山脊和观测站重新放回同一飞行轴线，不重置地点。",
+  "required_anchors": [
+    "One landscape and one distant man-made landmark establish the scale baseline.",
+    "One original flying creature follows a continuous route through that geography.",
+    "The closest view supplies one bounded biological action rather than a new attack scene.",
+    "The final wide view reconnects creature, route and landmark in the original world."
+  ],
+  "tags": [
+    "viewpoint",
+    "scale",
+    "spectacle",
+    "ladder"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:50+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

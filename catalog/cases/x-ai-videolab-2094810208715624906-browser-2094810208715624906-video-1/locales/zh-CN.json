@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ai-videolab-2094810208715624906-browser-2094810208715624906-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "bc1f68b1c473f2031e639d59f6eac8900e4e8bc96ba442138024cbecca6b9900",
+    "creative_dna_sha256": "b218d6d143636342fabe55f9b9edfce0a6e7c40aba82931e711596a829450b72"
+  },
+  "content": {
+    "title": "黑色侦探片头｜唱片母题、案件拼贴与总标题归拢",
+    "summary": "以旋转唱片和侦探剪影建立母题，再让列车、便签、人物剪影和案件标签进入统一蓝橙紫漫画格；职员表与物证共用版式，终局归拢成可读总标题。",
+    "quick_start": {
+      "input_format": "至少三种独立材质职员表场景 + 每幕一条原创短职员表与材质动作 + 跨幕重复色形或标记 + 回到已建立材质族汇聚 + 大型原创总标题稳定停留",
+      "recommended_input": "以一盘黑色开盘磁带开场，盘面带原创象牙色灯塔剪影，背景保持黑暗。；为每个物证章节分配固定格子和一张准确原创职员卡，文字不得越过格线。；将全部格子压缩成准确总标题【NIGHT SIGNAL】，并保留灯塔、渡轮和档案员的小型证据剪影。",
+      "required_anchors": [
+        "一个反复出现的证据载体打开标题系统并保持可追踪性。",
+        "每个短片都使用相同的有限调色板和注册漫画网格。",
+        "线索之间的连接保持视觉上的因果关系，而不是装饰性的杂乱。",
+        "主标题包含早期证据模块的微小残留。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "以旋转唱片和侦探剪影建立母题，再让列车、便签、人物剪影和案件标签进入统一蓝橙紫漫画格；职员表与物证共用版式，终局归拢成可读总标题。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "以旋转唱片和侦探剪影建立母题，再让列车、便签、人物剪影和案件标签进入统一蓝橙紫漫画格；职员表与物证共用版式，终局归拢成可读总标题。 必须满足：One recurring evidence carrier opens the title system and remains traceable. + Every vignette uses the same limited palette and registered comic grid. + Credits are exact original text and occupy bounded readable regions. + Connections between clues remain visually causal rather than decorative clutter. + The master title contains miniature residues of the earlier evidence modules.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个反复出现的证据载体打开标题系统并保持可追踪性。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一个反复出现的证据载体打开标题系统并保持可追踪性。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个短片都使用相同的有限调色板和注册漫画网格。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再得到证明。已移除规则：\"每个短片都使用相同的有限调色板和注册漫画网格。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "信用信息是精确的原始文本，并占据有界可读区域。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这个确切的进展规则，中间部分可以跳到替换状态，累积结果将不再可追踪。已移除规则：\"信用信息是精确的原始文本，并占据有界可读区域。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "线索之间的连接保持视觉上的因果关系，而不是装饰性的杂乱。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条确切的重新连接规则，细节或转换的镜头可以属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"线索之间的连接保持视觉上的因果关系，而不是装饰性的杂乱。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "主标题包含早期证据模块的微小残留。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条确切的终端证明规则，序列仅在运动上停止，从未确认承诺的结果或保存的后果。已移除规则：\"主标题包含早期证据模块的微小残留。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "灯塔调查使用胶带、渡轮日志和雷达面板构建一个原创的黑色电影标题。",
+          "prompt_seed": "灯塔调查使用胶带、渡轮日志和雷达面板构建一个原创的黑色电影标题。"
+        },
+        {
+          "concept": "植物学谜团使用标本信封、温室地图和实验室笔记构建一个原创的系列标题。",
+          "prompt_seed": "植物学谜团使用标本信封、温室地图和实验室笔记构建一个原创的系列标题。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列会失去参考状态。移除的规则：\"一个反复出现的证据载体打开标题系统并保持可追踪性。\"",
+          "repair": "一个反复出现的证据载体打开标题系统并保持可追踪性。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再得到证明。已移除规则：\"每个短片都使用相同的有限调色板和注册漫画网格。\"",
+          "repair": "每个短片都使用相同的有限调色板和注册漫画网格。"
+        },
+        {
+          "failure": "没有这个确切的进展规则，中间部分可以跳到替换状态，累积结果将不再可追踪。已移除规则：\"信用信息是精确的原始文本，并占据有界可读区域。\"",
+          "repair": "信用信息是精确的原始文本，并占据有界可读区域。"
+        },
+        {
+          "failure": "没有这条确切的重新连接规则，细节或转换的镜头可以属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"线索之间的连接保持视觉上的因果关系，而不是装饰性的杂乱。\"",
+          "repair": "线索之间的连接保持视觉上的因果关系，而不是装饰性的杂乱。"
+        },
+        {
+          "failure": "没有这条确切的终端证明规则，序列仅在运动上停止，从未确认承诺的结果或保存的后果。已移除规则：\"主标题包含早期证据模块的微小残留。\"",
+          "repair": "主标题包含早期证据模块的微小残留。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "灯塔调查使用胶带、渡轮日志和雷达面板构建一个原创的黑色电影标题。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "植物学谜团使用标本信封、温室地图和实验室笔记构建一个原创的系列标题。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

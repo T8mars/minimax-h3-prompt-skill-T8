@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-nusratsid1-2095440075907821978-browser-2095440075907821978-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "ab10743eff4c21a929893760e7c1b86bf9b29db9f97a9ea0c11525b545ee65be",
+    "creative_dna_sha256": "42a948c50f253975f7acdda0ff2af3f6efdd062cca4b9ef77aa95eca3a0f1a9d"
+  },
+  "content": {
+    "title": "Neighborhood Errand Compression | Treat, Shop Handoff and Bagged Exit",
+    "summary": "An adult cyclist walks into a repair kiosk and exits with a service envelope and repaired bicycle. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One clearly adult subject keeps the same clothing, bag and route direction. + The opening handheld object remains traceable until the destination is entered. + A visible counter handoff provides the causal completion event. + The received object differs clearly from the opening object and remains readable at the end. + The route, destination and payoff form one ordinary task without unrelated flashbacks.",
+      "recommended_input": "Establish one original adult cyclist resting in a quiet courtyard while drinking from a cobalt bottle. Use one rear-follow move to carry the same adult through the kiosk door on a single left-to-right route. End with the cyclist facing camera outside the kiosk, envelope in one hand and repaired bicycle beside them.",
+      "required_anchors": [
+        "One clearly adult subject keeps the same clothing, bag and route direction.",
+        "The opening handheld object remains traceable until the destination is entered.",
+        "The received object differs clearly from the opening object and remains readable at the end.",
+        "The route, destination and payoff form one ordinary task without unrelated flashbacks."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult cyclist walks into a repair kiosk and exits with a service envelope and repaired bicycle. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用同一人物、手持物和街区路线压缩一个简单日常任务：先建立边吃边停留的状态，再连续步行进入小店，与柜台人物完成物品交接，最后让新纸袋成为任务完成证据。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult subject keeps the same clothing, bag and route direction.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult subject keeps the same clothing, bag and route direction.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "The opening handheld object remains traceable until the destination is entered.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The opening handheld object remains traceable until the destination is entered.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "A visible counter handoff provides the causal completion event.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"A visible counter handoff provides the causal completion event.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "The received object differs clearly from the opening object and remains readable at the end.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The received object differs clearly from the opening object and remains readable at the end.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The route, destination and payoff form one ordinary task without unrelated flashbacks.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The route, destination and payoff form one ordinary task without unrelated flashbacks.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult cyclist walks into a repair kiosk and exits with a service envelope and repaired bicycle.",
+          "prompt_seed": "An adult cyclist walks into a repair kiosk and exits with a service envelope and repaired bicycle."
+        },
+        {
+          "concept": "An adult gardener enters a seed shop and exits with a labeled paper packet after a visible counter handoff.",
+          "prompt_seed": "An adult gardener enters a seed shop and exits with a labeled paper packet after a visible counter handoff."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult subject keeps the same clothing, bag and route direction.\"",
+          "repair": "One clearly adult subject keeps the same clothing, bag and route direction."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The opening handheld object remains traceable until the destination is entered.\"",
+          "repair": "The opening handheld object remains traceable until the destination is entered."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"A visible counter handoff provides the causal completion event.\"",
+          "repair": "A visible counter handoff provides the causal completion event."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The received object differs clearly from the opening object and remains readable at the end.\"",
+          "repair": "The received object differs clearly from the opening object and remains readable at the end."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The route, destination and payoff form one ordinary task without unrelated flashbacks.\"",
+          "repair": "The route, destination and payoff form one ordinary task without unrelated flashbacks."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult cyclist walks into a repair kiosk and exits with a service envelope and repaired bicycle.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult gardener enters a seed shop and exits with a labeled paper packet after a visible counter handoff.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

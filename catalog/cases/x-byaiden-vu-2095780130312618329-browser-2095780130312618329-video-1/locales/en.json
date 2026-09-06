@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-byaiden-vu-2095780130312618329-browser-2095780130312618329-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "bcca5454f8924ba0f39202e49558bd4c933320f024a4d57c2afa53f19b9c16da",
+    "creative_dna_sha256": "1afd864c90b0cc6553c597ef7dde4911290182373a38a6ee0e6b9ef913bbbda7"
+  },
+  "content": {
+    "title": "Animated Wok Service | Ingredient Toss, Fire Peak and Bowl Delivery",
+    "summary": "An adult market cook turns three airborne ingredients into one plated wok dish before witnesses. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One adult cook, one wok and one ingredient set persist through the entire state chain. + Raw, heated, mixed and plated states remain visually distinguishable and irreversible. + Every flame or utensil action causes the next visible food state. + Crowd reaction occurs in the same stall and witnesses the real preparation. + The terminal bowl contains the same cooked ingredients and receives a stable proof shot.",
+      "recommended_input": "An original adult night-market cook throws mushrooms, peppers and tofu above one black steel wok. Use two continuous wok turns and one ladle sweep to change matte raw surfaces into a glossy cooked mixture. Pour the complete dish into one blue-patterned bowl and hold a clear overhead hero frame for one second.",
+      "required_anchors": [
+        "One adult cook, one wok and one ingredient set persist through the entire state chain.",
+        "Raw, heated, mixed and plated states remain visually distinguishable and irreversible.",
+        "Crowd reaction occurs in the same stall and witnesses the real preparation.",
+        "The terminal bowl contains the same cooked ingredients and receives a stable proof shot."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult market cook turns three airborne ingredients into one plated wok dish before witnesses. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "让同一成年厨师、同一口锅和同一批可辨食材贯穿全片：抛料形成钩子，火焰与翻锅完成不可逆烹饪，食客反应验证过程，最后盛入一只固定碗完成成品证明。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One adult cook, one wok and one ingredient set persist through the entire state chain.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One adult cook, one wok and one ingredient set persist through the entire state chain.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Raw, heated, mixed and plated states remain visually distinguishable and irreversible.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Raw, heated, mixed and plated states remain visually distinguishable and irreversible.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Every flame or utensil action causes the next visible food state.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Every flame or utensil action causes the next visible food state.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Crowd reaction occurs in the same stall and witnesses the real preparation.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Crowd reaction occurs in the same stall and witnesses the real preparation.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The terminal bowl contains the same cooked ingredients and receives a stable proof shot.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The terminal bowl contains the same cooked ingredients and receives a stable proof shot.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult market cook turns three airborne ingredients into one plated wok dish before witnesses.",
+          "prompt_seed": "An adult market cook turns three airborne ingredients into one plated wok dish before witnesses."
+        },
+        {
+          "concept": "An adult pastry chef turns layered dough and fruit into one finished tart before a tasting table.",
+          "prompt_seed": "An adult pastry chef turns layered dough and fruit into one finished tart before a tasting table."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One adult cook, one wok and one ingredient set persist through the entire state chain.\"",
+          "repair": "One adult cook, one wok and one ingredient set persist through the entire state chain."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Raw, heated, mixed and plated states remain visually distinguishable and irreversible.\"",
+          "repair": "Raw, heated, mixed and plated states remain visually distinguishable and irreversible."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Every flame or utensil action causes the next visible food state.\"",
+          "repair": "Every flame or utensil action causes the next visible food state."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Crowd reaction occurs in the same stall and witnesses the real preparation.\"",
+          "repair": "Crowd reaction occurs in the same stall and witnesses the real preparation."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The terminal bowl contains the same cooked ingredients and receives a stable proof shot.\"",
+          "repair": "The terminal bowl contains the same cooked ingredients and receives a stable proof shot."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult market cook turns three airborne ingredients into one plated wok dish before witnesses.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult pastry chef turns layered dough and fruit into one finished tart before a tasting table.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

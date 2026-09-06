@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-byaiden-vu-2095780130312618329-browser-2095780130312618329-video-1",
+  "slug": "irreversible-cooking-state-chain-serving-proof",
+  "title": "动画快炒状态链｜抛料、火焰、翻锅与食客见证",
+  "source_title": "夜市快炒英雄｜食材悬浮入锅到盛盘与围观回应",
+  "summary": "让同一成年厨师、同一口锅和同一批可辨食材贯穿全片：抛料形成钩子，火焰与翻锅完成不可逆烹饪，食客反应验证过程，最后盛入一只固定碗完成成品证明。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/irreversible-cooking-state-chain-serving-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-byaiden-vu-2095780130312618329-browser-2095780130312618329-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-byaiden-vu-2095780130312618329-browser-2095780130312618329-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-irreversible-cooking-state-chain-serving-proof-v1",
+  "input_format": "一名明确成年原创操作者、固定空间、主材料组、主要容器与手部或工具锚点先建立 + 至少五个不可逆状态且每镜只执行一次清楚操作 + 上一状态的残留、形状、颜色、蒸汽或容器连续成为下一步输入 + 不得回到已消失的早期状态并保持数量合理 + 同一成品由同一成年人完成一次克制使用或品尝证明",
+  "recommended_input": "原创成年夜市厨师把蘑菇、彩椒和豆腐抛到同一口黑钢炒锅上方。；用两次连续翻锅和一次锅铲横扫，把哑光生食材转成有光泽的熟制混合物。；把完整菜品倒入一只蓝纹碗，并保持一秒清晰俯拍英雄镜头。",
+  "required_anchors": [
+    "One adult cook, one wok and one ingredient set persist through the entire state chain.",
+    "Raw, heated, mixed and plated states remain visually distinguishable and irreversible.",
+    "Crowd reaction occurs in the same stall and witnesses the real preparation.",
+    "The terminal bowl contains the same cooked ingredients and receives a stable proof shot."
+  ],
+  "tags": [
+    "irreversible",
+    "cooking",
+    "state",
+    "chain",
+    "serving",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:50+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-taliaaariz-2095857062987120666-browser-2095857062987120666-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "3c1e4a31a1a2e00ca567102ed54b7635738fb4a90034bb5b621663ae298dac45",
+    "creative_dna_sha256": "bbd549651ead70e8fd1fb2c8a779dcb83e9e6643cd8be613297b744e6341706f"
+  },
+  "content": {
+    "title": "Lakeside Greeting Micro-Arc | Bouquet Anchor, Eye Response and Quiet Hold",
+    "summary": "An adult artist with paper flowers moves from direct greeting to a calm lakeward profile. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One clearly adult identity, wardrobe, bouquet and camera position remain fixed. + Only small facial, hand, breathing and head actions drive the performance. + Every gesture completes before the next one begins. + Environmental motion remains secondary and physically gentle. + The final profile preserves the same subject, prop and landscape composition.",
+      "recommended_input": "Frame one original adult ceramic artist in a pale blue dress holding a bouquet of paper flowers beside a silver lake. Raise the free hand once to touch one paper petal beside the cheek, then lower it to the bouquet. End on a calm three-quarter profile, bouquet centered and the original mountain-water line unchanged.",
+      "required_anchors": [
+        "One clearly adult identity, wardrobe, bouquet and camera position remain fixed.",
+        "Only small facial, hand, breathing and head actions drive the performance.",
+        "Environmental motion remains secondary and physically gentle.",
+        "The final profile preserves the same subject, prop and landscape composition."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult artist with paper flowers moves from direct greeting to a calm lakeward profile. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定同一湖岸人物、花束和中景构图，只用呼吸、一次举花、一次眨眼和缓慢侧望构成微表情弧；背景水光与丝带提供轻微环境响应，禁止突然换姿或换人。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult identity, wardrobe, bouquet and camera position remain fixed.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult identity, wardrobe, bouquet and camera position remain fixed.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Only small facial, hand, breathing and head actions drive the performance.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Only small facial, hand, breathing and head actions drive the performance.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Every gesture completes before the next one begins.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Every gesture completes before the next one begins.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Environmental motion remains secondary and physically gentle.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Environmental motion remains secondary and physically gentle.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final profile preserves the same subject, prop and landscape composition.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final profile preserves the same subject, prop and landscape composition.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult artist with paper flowers moves from direct greeting to a calm lakeward profile.",
+          "prompt_seed": "An adult artist with paper flowers moves from direct greeting to a calm lakeward profile."
+        },
+        {
+          "concept": "An adult baker holding herbs moves from a small greeting to a calm windowward profile.",
+          "prompt_seed": "An adult baker holding herbs moves from a small greeting to a calm windowward profile."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult identity, wardrobe, bouquet and camera position remain fixed.\"",
+          "repair": "One clearly adult identity, wardrobe, bouquet and camera position remain fixed."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Only small facial, hand, breathing and head actions drive the performance.\"",
+          "repair": "Only small facial, hand, breathing and head actions drive the performance."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Every gesture completes before the next one begins.\"",
+          "repair": "Every gesture completes before the next one begins."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Environmental motion remains secondary and physically gentle.\"",
+          "repair": "Environmental motion remains secondary and physically gentle."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final profile preserves the same subject, prop and landscape composition.\"",
+          "repair": "The final profile preserves the same subject, prop and landscape composition."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult artist with paper flowers moves from direct greeting to a calm lakeward profile.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult baker holding herbs moves from a small greeting to a calm windowward profile.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

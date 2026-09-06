@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ou-zhen599-2095866920990105639-browser-2095866920990105639-video-1",
+  "slug": "object-ritual-augmentation-release",
+  "title": "物件仪式增幅｜交付基线、环形锁定与能量释放",
+  "source_title": "林中双人剑仪式｜悬剑、圆环校准与青光解除",
+  "summary": "在同一封闭环境里建立两名成年角色和一件中立物件；物件先被竖直悬停，再由另一角色生成可数环形结构完成校准，能量沿物件自下而上释放，最后双方回到不攻击的稳定关系。",
+  "status": "released",
+  "source_duration_seconds": 14.997333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/object-ritual-augmentation-release",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2095866920990105639-browser-2095866920990105639-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2095866920990105639-browser-2095866920990105639-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-object-ritual-augmentation-release-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创施术者与一个稳定核心物件 + 至少两级可见环形或分层结构依次附着于物件 + 环境反馈只由物件增强触发且保留固定空间轴 + 能量峰值不转化为无依据的攻击或破坏 + 施术者解除控制后增强结构按相反顺序消退，原物件完整留在终局",
+  "recommended_input": "让两名原创成年气象术士在浅水雪松林中相对站立，一根青铜法杖位于两人之间。；第二名术士在法杖下三分之一和上三分之一位置生成恰好两道琥珀校准环。；让圆环和能量消散，法杖落回第一名术士手掌，并以两名成年人各后退一步收束。",
+  "required_anchors": [
+    "Exactly two clearly adult characters, one neutral object and one location persist.",
+    "The object enters a stable vertical hover before any energy appears.",
+    "Energy travels continuously along the object's axis and produces one visible terminal change.",
+    "The ritual resolves without an attack, identity swap or unexplained location change."
+  ],
+  "tags": [
+    "object",
+    "ritual",
+    "augmentation",
+    "release"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:51+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

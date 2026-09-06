@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2095651474797641955-browser-2095651474797641955-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "b33d76b561c8e39f07795f7c7bf2cbed228bcaa3c68bd6f4a4c7ea88b508f1d1",
+    "creative_dna_sha256": "0e5fb18d06d4088812acf7a6a6e0ad3aadfcbcf8aacdf9bbfe7caf88894ec415"
+  },
+  "content": {
+    "title": "数字服装装配｜人体线框、裁片贴合与身份完成",
+    "summary": "先用线框人体和常驻服装设计板建立结构，裁片沿可见路径贴合躯干，再依次恢复材质、肤色与头发；终局离开装配态进入干净人物主视图，证明所有部件属于同一身份。",
+    "quick_start": {
+      "input_format": "稳定基础主体 + 分阶段外部装配 + 接合近景与全身复核 + 细节校准 + 整机动作验收",
+      "recommended_input": "建立一名成年中性线框角色，旁边常驻三块原创短夹克设计板。；用近景验证四枚铜色扣件、肩缝和下摆对齐，禁止用切镜掩盖贴合过程。；让同一成年角色转入浅色建筑摄影棚，并保持一个全身就绪姿态。",
+      "required_anchors": [
+        "一个明显成人的身体支架在组装过程中保持固定的比例。",
+        "持久设计面板从头到尾标识同一原始服装。",
+        "材料和身份只有在结构契合完成后才能确定。",
+        "最终的全身姿态证明了集成的服装、解剖和身份，无需替换。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先用线框人体和常驻服装设计板建立结构，裁片沿可见路径贴合躯干，再依次恢复材质、肤色与头发；终局离开装配态进入干净人物主视图，证明所有部件属于同一身份。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先用线框人体和常驻服装设计板建立结构，裁片沿可见路径贴合躯干，再依次恢复材质、肤色与头发；终局离开装配态进入干净人物主视图，证明所有部件属于同一身份。 必须满足：One clearly adult body scaffold retains fixed proportions throughout assembly. + Persistent design panels identify the same original garment from start to finish. + Every panel follows a visible attachment path to its intended body region. + Material and identity resolve only after structural fit is complete. + The final full-body pose proves integrated clothing, anatomy and identity without replacement.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个明显成人的身体支架在组装过程中保持固定的比例。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个确切的基准规则，后续的更改将无法归因于同一主体、对象或地点，因此序列会失去参考状态。被移除的规则：\"一个明显成人的身体支架在组装过程中保持固定的比例。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "持久设计面板从头到尾标识同一原始服装。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再得到证明。已移除规则：\"持久设计面板从头到尾标识同一原始服装。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每个面板都有一个可见的连接路径到其目标身体部位。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这个确切的进展规则，中间部分可以跳到替换状态，累积结果将不再可追踪。已移除规则：\"每个面板都有一个可见的连接路径到其目标身体部位。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "材料和身份只有在结构契合完成后才能确定。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条精确的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"材料和身份只有在结构契合完成后才能确定。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的全身姿态证明了集成的服装、解剖和身份，无需替换。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的最终证明规则，序列仅基于运动停止，从未确认承诺的结果或保存的后果。已移除规则：\"最终的全身姿态证明了集成的服装、解剖和身份，无需替换。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个虚拟裁缝在干净的试镜室里为一个成年角色装配一件原创夹克。",
+          "prompt_seed": "一个虚拟裁缝在干净的试镜室里为一个成年角色装配一件原创夹克。"
+        },
+        {
+          "concept": "一个科幻医生在移动性检查前为一个成年救援角色装配一件防护服。",
+          "prompt_seed": "一个科幻医生在移动性检查前为一个成年救援角色装配一件防护服。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个确切的基准规则，后续的更改将无法归因于同一主体、对象或地点，因此序列会失去参考状态。被移除的规则：\"一个明显成人的身体支架在组装过程中保持固定的比例。\"",
+          "repair": "一个明显成人的身体支架在组装过程中保持固定的比例。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明将不再得到证明。已移除规则：\"持久设计面板从头到尾标识同一原始服装。\"",
+          "repair": "持久设计面板从头到尾标识同一原始服装。"
+        },
+        {
+          "failure": "没有这个确切的进展规则，中间部分可以跳到替换状态，累积结果将不再可追踪。已移除规则：\"每个面板都有一个可见的连接路径到其目标身体部位。\"",
+          "repair": "每个面板都有一个可见的连接路径到其目标身体部位。"
+        },
+        {
+          "failure": "没有这条精确的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"材料和身份只有在结构契合完成后才能确定。\"",
+          "repair": "材料和身份只有在结构契合完成后才能确定。"
+        },
+        {
+          "failure": "没有这条精确的最终证明规则，序列仅基于运动停止，从未确认承诺的结果或保存的后果。已移除规则：\"最终的全身姿态证明了集成的服装、解剖和身份，无需替换。\"",
+          "repair": "最终的全身姿态证明了集成的服装、解剖和身份，无需替换。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个虚拟裁缝在干净的试镜室里为一个成年角色装配一件原创夹克。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个科幻医生在移动性检查前为一个成年救援角色装配一件防护服。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

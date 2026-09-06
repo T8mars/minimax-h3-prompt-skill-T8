@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-oreimohensan-2095863372789289389-browser-2095863372789289389-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "ecd409722a90a14dfe0c7e37f06e23e6b7a0434bf3e1ecaabee50894645297bd",
+    "creative_dna_sha256": "e36ee514c31fd60fb066d76388ffe980c07abf07a61f65876d44dda29c780424"
+  },
+  "content": {
+    "title": "Illustration Build Band | Construction Lines, Color Pass and Character-Sheet Proof",
+    "summary": "An adult botanist progresses from construction drawing to color board and a single living blink. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One fixed adult character pose and proportion system persists through every drawing layer. + Each later layer visibly preserves and refines earlier construction evidence. + Color fills bounded regions and never creates unrelated anatomy or costume parts. + The reference board repeats the same identity across front, side and face views. + The digital scan ends on the same completed face and supplies only one bounded living motion.",
+      "recommended_input": "An adult illustrator begins one original adult botanist character from blue construction lines on warm paper. Fill skin, olive jacket, rust trousers and black boots in four bounded passes while the pose stays fixed. Sweep one cyan scan from boots to head, then close on the same face with one subtle blink and no redesign.",
+      "required_anchors": [
+        "One fixed adult character pose and proportion system persists through every drawing layer.",
+        "Each later layer visibly preserves and refines earlier construction evidence.",
+        "The reference board repeats the same identity across front, side and face views.",
+        "The digital scan ends on the same completed face and supplies only one bounded living motion."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult botanist progresses from construction drawing to color board and a single living blink. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把完整人物限制在固定纸面和角色板区域内，按骨架、结构线、服装线、局部上色、全彩和数字扫描的顺序推进；每层保留前层轮廓，最后用同一面容近景证明身份连续。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One fixed adult character pose and proportion system persists through every drawing layer.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One fixed adult character pose and proportion system persists through every drawing layer.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Each later layer visibly preserves and refines earlier construction evidence.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Each later layer visibly preserves and refines earlier construction evidence.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Color fills bounded regions and never creates unrelated anatomy or costume parts.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Color fills bounded regions and never creates unrelated anatomy or costume parts.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "The reference board repeats the same identity across front, side and face views.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The reference board repeats the same identity across front, side and face views.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The digital scan ends on the same completed face and supplies only one bounded living motion.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The digital scan ends on the same completed face and supplies only one bounded living motion.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult botanist progresses from construction drawing to color board and a single living blink.",
+          "prompt_seed": "An adult botanist progresses from construction drawing to color board and a single living blink."
+        },
+        {
+          "concept": "An adult mechanic progresses from rough blueprint figure to colored turnaround and one final head turn.",
+          "prompt_seed": "An adult mechanic progresses from rough blueprint figure to colored turnaround and one final head turn."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One fixed adult character pose and proportion system persists through every drawing layer.\"",
+          "repair": "One fixed adult character pose and proportion system persists through every drawing layer."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Each later layer visibly preserves and refines earlier construction evidence.\"",
+          "repair": "Each later layer visibly preserves and refines earlier construction evidence."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Color fills bounded regions and never creates unrelated anatomy or costume parts.\"",
+          "repair": "Color fills bounded regions and never creates unrelated anatomy or costume parts."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The reference board repeats the same identity across front, side and face views.\"",
+          "repair": "The reference board repeats the same identity across front, side and face views."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The digital scan ends on the same completed face and supplies only one bounded living motion.\"",
+          "repair": "The digital scan ends on the same completed face and supplies only one bounded living motion."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult botanist progresses from construction drawing to color board and a single living blink.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult mechanic progresses from rough blueprint figure to colored turnaround and one final head turn.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

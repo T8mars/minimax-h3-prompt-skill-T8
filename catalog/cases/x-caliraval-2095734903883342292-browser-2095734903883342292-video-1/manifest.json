@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-caliraval-2095734903883342292-browser-2095734903883342292-video-1",
+  "slug": "handoff-ensemble-focus",
+  "title": "三人群舞聚焦｜全阵建立、中心逼近与合舞回归",
+  "source_title": "霓虹三人舞台｜同步群舞收紧到中心人物再归队",
+  "summary": "先在反光霓虹舞台建立三人队形，让全员同步动作证明空间关系；镜头连续收紧到中心成年表演者的面部和上身，再后退恢复完整队形与共同终拍。",
+  "status": "released",
+  "source_duration_seconds": 14.675011,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/handoff-ensemble-focus",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-caliraval-2095734903883342292-browser-2095734903883342292-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-caliraval-2095734903883342292-browser-2095734903883342292-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-ensemble-focus-handoff-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-ensemble-focus-handoff-v1",
+  "input_format": "全体建立 + 主位聚焦 + 次主位回归 + 群体节奏持续 + 回到全体合奏终态",
+  "recommended_input": "在青色灯光的反射棚地面建立三名原创成年舞者，分别穿琥珀、白色与钴蓝服装。；沿中心轴从全队形连续前移到胸像近景，不切镜，并在边缘保留两名搭档。；镜头后退恢复原始三人队形，三人在同一节拍落到一致的低位宽姿。",
+  "required_anchors": [
+    "Exactly three clearly adult performers remain distinct and spatially stable.",
+    "The center performer receives focus without deleting or replacing the side partners.",
+    "Group choreography brackets one bounded solo close-up phrase.",
+    "The final formation matches the opening role order and closes on one shared beat."
+  ],
+  "tags": [
+    "ensemble",
+    "focus",
+    "handoff"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:49+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}

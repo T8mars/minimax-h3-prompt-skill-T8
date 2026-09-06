@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-nusratsid1-2095795648012661127-browser-2095795648012661127-video-1",
+  "slug": "urgent-route-missed-threshold-redirection",
+  "title": "错过阈值转向｜急行路线、离站证据与新方向",
+  "source_title": "夜路赶车失败｜成年旅客追入站台、目送离站再转身",
+  "summary": "用一个清晰目的地和连续急行路线制造时间压力；人物到站时载具已经越过可进入阈值，工作人员的方向手势确认失败，人物必须停顿、判断并沿新方向离开，而不是无因果重置。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/urgent-route-missed-threshold-redirection",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nusratsid1-2095795648012661127-browser-2095795648012661127-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-nusratsid1-2095795648012661127-browser-2095795648012661127-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-urgent-route-missed-threshold-redirection-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创主体、一个可追踪目标和连续路线 + 人物用动作与环境位移逐级证明紧迫性 + 在可见且不可逆的阈值事件发生后才确认错过 + 一名辅助角色只提供一次明确替代方向 + 主体接受信息并沿新的可追踪路线离开，身份、道具和空间关系不重置",
+  "recommended_input": "一名原创成年植物学家穿过雨夜广场跑向玻璃渡轮码头，手持红色野外笔记本。；保持侧面中景，让植物学家停下，目视渡轮后方不断扩大的水面间隙。；经过一次可见的判断停顿后，植物学家转身收好笔记本，跑向被指示的公交车道。",
+  "required_anchors": [
+    "One clearly adult traveler, one handheld urgency prop and one destination persist.",
+    "The route to the threshold is continuous and geographically readable.",
+    "A local authority cue confirms closure and identifies one alternative direction.",
+    "The final action redirects the same journey without teleportation, rewind or false success."
+  ],
+  "tags": [
+    "urgent",
+    "route",
+    "missed",
+    "threshold",
+    "redirection"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-04T23:27:51+08:00",
+  "updated_at": "2026-09-06T14:45:30+08:00"
+}
