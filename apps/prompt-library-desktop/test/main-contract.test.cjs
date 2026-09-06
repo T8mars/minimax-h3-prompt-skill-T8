@@ -5,7 +5,16 @@ const test = require("node:test");
 
 const main = fs.readFileSync(path.resolve(__dirname, "..", "main.cjs"), "utf8");
 const builder = require("../electron-builder.config.cjs");
+const packageJson = require("../package.json");
+const ciWorkflow = fs.readFileSync(path.resolve(__dirname, "..", "..", "..", ".github", "workflows", "ci.yml"), "utf8");
 const workflow = fs.readFileSync(path.resolve(__dirname, "..", "..", "..", ".github", "workflows", "release.yml"), "utf8");
+
+test("Electron 44 upgrade awaits clipboard completion and runs a real media-free smoke in PR CI", () => {
+  assert.equal(packageJson.devDependencies.electron, "44.1.1");
+  assert.match(main, /ipcMain\.handle\("clipboard:write", async \(event, value\)/u);
+  assert.match(main, /await clipboard\.writeText\(value\)/u);
+  assert.ok(ciWorkflow.includes("npm run test:e2e:smoke --prefix apps/prompt-library-desktop"));
+});
 
 test("downloaded updates install only after explicit restart confirmation", () => {
   assert.match(main, /autoUpdater\.autoInstallOnAppQuit = false/u);
@@ -35,11 +44,20 @@ test("builder and release workflow require universal macOS DMG and ZIP artifacts
   const macTargets = builder.mac.target.map((entry) => entry.target).sort();
   assert.deepEqual(macTargets, ["dmg", "zip"]);
   assert.ok(builder.mac.target.every((entry) => entry.arch.includes("universal")));
+  assert.equal(builder.mac.minimumSystemVersion, "13.0");
   assert.equal(builder.mac.notarize, false);
   for (const token of ["macos-latest", "dist:mac", "latest-mac.yml", "mac-universal.dmg", "mac-universal.zip", "Run packaged macOS end-to-end test"]) {
     assert.ok(workflow.includes(token), `missing macOS release gate: ${token}`);
   }
   assert.match(workflow, /GH_REPO: \$\{\{ github\.repository \}\}/u, "the checkout-free publish job must bind gh to this repository");
+});
+
+test("file pickers retain Main-owned recent directories instead of relying on Electron defaults", () => {
+  assert.match(main, /new DialogPathStore\(\{ userDataDir: app\.getPath\("userData"\) \}\)/u);
+  for (const key of ["local-model", "local-runtime", "local-ffmpeg", "reference-media", "result-video", "handoff-export", "skill-export", "project-export"]) {
+    assert.ok(main.includes(`withDialogDefault("${key}"`), `missing explicit default directory for ${key}`);
+    assert.ok(main.includes(`rememberDialogPath("${key}"`), `missing recent-directory persistence for ${key}`);
+  }
 });
 
 test("release packages a compact app catalog and lossless split public preview archives", () => {

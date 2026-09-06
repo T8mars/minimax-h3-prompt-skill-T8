@@ -40,6 +40,7 @@ const { LocalQwenConfigStore } = require("./lib/local-qwen-config.cjs");
 const { LocalQwenManager } = require("./lib/local-qwen-runtime.cjs");
 const { resolveMediaRoot } = require("./lib/media-roots.cjs");
 const { configurePortableMode } = require("./lib/portable-mode.cjs");
+const { DialogPathStore } = require("./lib/dialog-paths.cjs");
 const RELEASES_URL = "https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases";
 
 protocol.registerSchemesAsPrivileged([
@@ -76,6 +77,21 @@ let creativeIntelligence = null;
 let promptProjectStore = null;
 let projectMediaStore = null;
 let localQwen = null;
+let dialogPathStore = null;
+
+function parentDirectory(filePath) {
+  const candidate = String(filePath || "");
+  return path.isAbsolute(candidate) ? path.dirname(candidate) : "";
+}
+
+function withDialogDefault(key, options, fallback = "") {
+  const defaultPath = dialogPathStore?.get(key, fallback) || "";
+  return defaultPath ? { ...options, defaultPath } : options;
+}
+
+function rememberDialogPath(key, selectedPath, options) {
+  dialogPathStore?.remember(key, selectedPath, options);
+}
 
 function loadVerifiedTemplateIndex() {
   const catalog = loadCatalog(assetRoots);
@@ -345,12 +361,12 @@ function configureIpc() {
     return true;
   });
 
-  ipcMain.handle("clipboard:write", (event, value) => {
+  ipcMain.handle("clipboard:write", async (event, value) => {
     requireTrustedSender(event);
     if (typeof value !== "string" || !value.trim() || value.length > 100000) {
       throw new Error("Invalid clipboard content");
     }
-    clipboard.writeText(value);
+    await clipboard.writeText(value);
     return true;
   });
 
@@ -402,30 +418,39 @@ function configureIpc() {
 
   ipcMain.handle("prompt:local:pick-model-directory", async (event) => {
     requireTrustedSender(event);
-    const result = await dialog.showOpenDialog(mainWindow, { title: "Choose a GGUF model root (for example ComfyUI/models/LLM)", properties: ["openDirectory"] });
+    const status = localQwen.status();
+    const result = await dialog.showOpenDialog(mainWindow, withDialogDefault("local-model", {
+      title: "Choose a GGUF model root (for example ComfyUI/models/LLM)",
+      properties: ["openDirectory"]
+    }, status.modelDirectory));
     if (result.canceled || !result.filePaths[0]) return localQwen.status();
+    rememberDialogPath("local-model", result.filePaths[0], { directory: true });
     return localQwen.setConfig({ modelDirectory: result.filePaths[0] });
   });
 
   ipcMain.handle("prompt:local:pick-runtime", async (event) => {
     requireTrustedSender(event);
-    const result = await dialog.showOpenDialog(mainWindow, {
+    const status = localQwen.status();
+    const result = await dialog.showOpenDialog(mainWindow, withDialogDefault("local-runtime", {
       title: "Choose llama-server executable",
       properties: ["openFile"],
       filters: process.platform === "win32" ? [{ name: "llama-server", extensions: ["exe"] }] : []
-    });
+    }, parentDirectory(status.runtimeExecutable)));
     if (result.canceled || !result.filePaths[0]) return localQwen.status();
+    rememberDialogPath("local-runtime", result.filePaths[0]);
     return localQwen.setConfig({ runtimeExecutable: result.filePaths[0] });
   });
 
   ipcMain.handle("prompt:local:pick-ffmpeg", async (event) => {
     requireTrustedSender(event);
-    const result = await dialog.showOpenDialog(mainWindow, {
+    const status = localQwen.status();
+    const result = await dialog.showOpenDialog(mainWindow, withDialogDefault("local-ffmpeg", {
       title: "Choose FFmpeg executable for local video sampling",
       properties: ["openFile"],
       filters: process.platform === "win32" ? [{ name: "FFmpeg", extensions: ["exe"] }] : []
-    });
+    }, parentDirectory(status.ffmpegExecutable)));
     if (result.canceled || !result.filePaths[0]) return localQwen.status();
+    rememberDialogPath("local-ffmpeg", result.filePaths[0]);
     return localQwen.setConfig({ ffmpegExecutable: result.filePaths[0] });
   });
 
@@ -460,12 +485,13 @@ function configureIpc() {
 
   ipcMain.handle("prompt:media:pick", async (event) => {
     requireTrustedSender(event);
-    const result = await dialog.showOpenDialog(mainWindow, {
+    const result = await dialog.showOpenDialog(mainWindow, withDialogDefault("reference-media", {
       title: "Choose reference images or videos",
       properties: ["openFile", "multiSelections"],
       filters: [{ name: "Reference media", extensions: ["png", "jpg", "jpeg", "webp", "mp4", "mov", "webm", "mkv", "avi"] }]
-    });
+    }));
     if (result.canceled) return promptOrchestrator.mediaList();
+    if (result.filePaths[0]) rememberDialogPath("reference-media", result.filePaths[0]);
     promptOrchestrator.addMediaPaths(result.filePaths);
     return promptOrchestrator.mediaList();
   });
@@ -622,12 +648,13 @@ function configureIpc() {
   ipcMain.handle("prompt:review:import", async (event, projectId) => {
     requireTrustedSender(event);
     const project = requireVideoProject(projectId);
-    const result = await dialog.showOpenDialog(mainWindow, {
+    const result = await dialog.showOpenDialog(mainWindow, withDialogDefault("result-video", {
       title: "Import generated result video",
       properties: ["openFile"],
       filters: [{ name: "Generated video (Chromium preview compatible)", extensions: ["mp4", "webm"] }]
-    });
+    }));
     if (result.canceled || !result.filePaths[0]) return projectForRenderer(project);
+    rememberDialogPath("result-video", result.filePaths[0]);
     const descriptor = projectMediaStore.importResult(project.projectId, result.filePaths[0]);
     const saved = promptProjectStore.save({ ...project, resultMedia: [descriptor, ...(project.resultMedia || []).filter((item) => item.mediaId !== descriptor.mediaId)], stage: "review" });
     return projectForRenderer(saved);
@@ -719,8 +746,9 @@ function configureIpc() {
   ipcMain.handle("prompt:handoff:export", async (event, input) => {
     requireTrustedSender(event);
     const project = requireVideoProject(input?.projectId);
-    const result = await dialog.showOpenDialog(mainWindow, { title: "Choose parent directory for isolated ComfyUI handoff", properties: ["openDirectory", "createDirectory"] });
+    const result = await dialog.showOpenDialog(mainWindow, withDialogDefault("handoff-export", { title: "Choose parent directory for isolated ComfyUI handoff", properties: ["openDirectory", "createDirectory"] }));
     if (result.canceled || !result.filePaths[0]) return { saved: false };
+    rememberDialogPath("handoff-export", result.filePaths[0], { directory: true });
     const exported = exportHandoff({ project, revisionId: input?.revisionId, parentDirectory: result.filePaths[0] });
     return { saved: true, directoryName: exported.directoryName, files: exported.files };
   });
@@ -728,8 +756,9 @@ function configureIpc() {
   ipcMain.handle("prompt:skill:export", async (event, input) => {
     requireTrustedSender(event);
     const project = requireVideoProject(input?.projectId);
-    const result = await dialog.showOpenDialog(mainWindow, { title: "Choose parent directory for personal Skill draft", properties: ["openDirectory", "createDirectory"] });
+    const result = await dialog.showOpenDialog(mainWindow, withDialogDefault("skill-export", { title: "Choose parent directory for personal Skill draft", properties: ["openDirectory", "createDirectory"] }));
     if (result.canceled || !result.filePaths[0]) return { saved: false };
+    rememberDialogPath("skill-export", result.filePaths[0], { directory: true });
     const exported = exportPersonalSkill({ project, revisionId: input?.revisionId, parentDirectory: result.filePaths[0] });
     return { saved: true, directoryName: exported.directoryName, files: exported.files, validation: exported.validation };
   });
@@ -760,8 +789,9 @@ function configureIpc() {
     requireTrustedSender(event);
     const project = promptProjectStore.get(projectId);
     const bundle = promptProjectStore.exportBundle(project);
-    const result = await dialog.showOpenDialog(mainWindow, { title: "Export T8 prompt project", properties: ["openDirectory", "createDirectory"] });
+    const result = await dialog.showOpenDialog(mainWindow, withDialogDefault("project-export", { title: "Export T8 prompt project", properties: ["openDirectory", "createDirectory"] }));
     if (result.canceled || !result.filePaths[0]) return { saved: false };
+    rememberDialogPath("project-export", result.filePaths[0], { directory: true });
     const directory = result.filePaths[0];
     fs.writeFileSync(path.join(directory, bundle.filename + ".json"), bundle.json, "utf8");
     fs.writeFileSync(path.join(directory, bundle.filename + ".md"), bundle.markdown, "utf8");
@@ -906,6 +936,7 @@ app.whenReady().then(() => {
   const mediaStore = new PromptMediaStore();
   promptProjectStore = new PromptProjectStore({ userDataDir: app.getPath("userData") });
   projectMediaStore = new ProjectMediaStore({ userDataDir: app.getPath("userData") });
+  dialogPathStore = new DialogPathStore({ userDataDir: app.getPath("userData") });
   const credentialVault = new CredentialVault({
     userDataDir: app.getPath("userData"),
     safeStorage,

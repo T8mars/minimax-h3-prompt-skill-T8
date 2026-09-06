@@ -4,7 +4,7 @@
 
 ### 系统要求
 
-- Windows 10/11 x64，或 Intel / Apple Silicon Mac（universal 包）；
+- Windows 10/11 x64，或 macOS 13 Ventura 及以上的 Intel / Apple Silicon Mac（universal 包）；
 - 安装时可访问 GitHub Releases；
 - 预留足够空间保存完整 MP4 案例媒体。
 
@@ -102,4 +102,4 @@ npm run app:pack
 
 ---
 
-**English summary:** Download the Windows NSIS installer, the no-install Windows portable executable, or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. The portable build stores all app/session data in the adjacent `T8-Prompt-Library-Data` directory and updates manually. All released-case MP4s remain distributable in two hash-bound media ZIP volumes; extract both into the same supported `media` directory for full playback. The split only avoids GitHub's 2 GiB per-asset limit and does not re-encode the videos. Source media is never connected to model reference inputs automatically.
+**English summary:** Download the Windows NSIS installer, the no-install Windows portable executable, or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. The universal macOS build requires macOS 13 Ventura or newer. The portable build stores all app/session data in the adjacent `T8-Prompt-Library-Data` directory and updates manually. All released-case MP4s remain distributable in two hash-bound media ZIP volumes; extract both into the same supported `media` directory for full playback. The split only avoids GitHub's 2 GiB per-asset limit and does not re-encode the videos. Source media is never connected to model reference inputs automatically.

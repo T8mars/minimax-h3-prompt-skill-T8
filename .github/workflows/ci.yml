@@ -54,6 +54,9 @@ jobs:
       - name: Test Electron application
         run: npm test --prefix apps/prompt-library-desktop
 
+      - name: Run media-free Electron compatibility smoke
+        run: npm run test:e2e:smoke --prefix apps/prompt-library-desktop
+
       - name: Validate media-free application contract
         run: npm run validate --prefix apps/prompt-library-desktop
 
