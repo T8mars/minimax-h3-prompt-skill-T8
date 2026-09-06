@@ -3,20 +3,13 @@ const fs = require("node:fs");
 const os = require("node:os");
 const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
+const { installElectronExitCleanup, launchElectronApplication } = require("./electron-window.cjs");
 
 async function run() {
   const appDir = path.resolve(__dirname, "..");
   const userDataDir = fs.mkdtempSync(path.join(os.tmpdir(), "t8-compatibility-smoke-"));
-  const electronApp = await electron.launch({
-    executablePath: require("electron"),
-    args: [appDir, `--user-data-dir=${userDataDir}`],
-    cwd: appDir,
-    env: {
-      ...process.env,
-      T8_DISABLE_AUTO_UPDATE: "1",
-      ELECTRON_DISABLE_SECURITY_WARNINGS: "true"
-    }
-  });
+  const electronApp = await launchElectronApplication(electron, { appDir, userDataDir });
+  const removeExitCleanup = installElectronExitCleanup(electronApp);
 
   try {
     const page = await electronApp.firstWindow();
@@ -34,6 +27,7 @@ async function run() {
 
     console.log("PASS Electron compatibility smoke: launch, Chinese default, dialog and clipboard");
   } finally {
+    removeExitCleanup();
     await electronApp.close();
     fs.rmSync(userDataDir, { recursive: true, force: true });
   }

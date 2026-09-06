@@ -5,7 +5,7 @@ const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
 const { loadCatalog } = require("../lib/catalog.cjs");
 const { PromptProjectStore } = require("../lib/prompt-projects.cjs");
-const { installElectronExitCleanup, setElectronContentSize } = require("./electron-window.cjs");
+const { installElectronExitCleanup, launchElectronApplication, setElectronContentSize } = require("./electron-window.cjs");
 
 function smallestPlayableVideo(catalog, mediaRoot) {
   const candidates = catalog.cases.map((item) => item.media?.video?.relativePath).filter(Boolean).map((relativePath) => path.join(mediaRoot, ...relativePath.split("/"))).filter((filePath) => fs.existsSync(filePath)).map((filePath) => ({ filePath, size: fs.statSync(filePath).size })).sort((left, right) => left.size - right.size);
@@ -35,11 +35,10 @@ async function run() {
   const resultVideoPath = smallestPlayableVideo(catalog, mediaRoot);
   const exportRoot = fs.mkdtempSync(path.join(os.tmpdir(), "t8-creator-e2e-export-"));
   const browserDataRoot = fs.mkdtempSync(path.join(os.tmpdir(), "t8-creator-e2e-browser-"));
-  const electronApp = await electron.launch({
-    executablePath: require("electron"),
-    args: [appDir, `--user-data-dir=${browserDataRoot}`],
-    cwd: appDir,
-    env: { ...process.env, T8_DISABLE_AUTO_UPDATE: "1", T8_E2E_CREATIVE_AI: "1", T8_E2E_CREATIVE_RESPONSES: Buffer.from(JSON.stringify(CREATIVE_AI_RESPONSES), "utf8").toString("base64"), T8STAR_API_KEY: "", SEEDANCE_API_KEY: "", OPENAI_API_KEY: "", ELECTRON_DISABLE_SECURITY_WARNINGS: "true" }
+  const electronApp = await launchElectronApplication(electron, {
+    appDir,
+    userDataDir: browserDataRoot,
+    env: { T8_E2E_CREATIVE_AI: "1", T8_E2E_CREATIVE_RESPONSES: Buffer.from(JSON.stringify(CREATIVE_AI_RESPONSES), "utf8").toString("base64"), T8STAR_API_KEY: "", SEEDANCE_API_KEY: "", OPENAI_API_KEY: "" }
   });
   const removeExitCleanup = installElectronExitCleanup(electronApp);
   try {

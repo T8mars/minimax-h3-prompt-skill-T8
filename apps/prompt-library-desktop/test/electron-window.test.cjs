@@ -10,7 +10,6 @@ test("Electron E2E resizes the BrowserWindow content instead of emulating a narr
     const source = fs.readFileSync(path.join(testRoot, fileName), "utf8");
     assert.doesNotMatch(source, /\.setViewportSize\s*\(/u, `${fileName} must not leave a blank gutter by overriding only the renderer viewport`);
     assert.match(source, /setElectronContentSize/u, `${fileName} must synchronize Electron window and renderer dimensions`);
-    assert.match(source, /--user-data-dir=/u, `${fileName} must isolate its browser profile from user and sibling test state`);
   }
   const layoutRegression = fs.readFileSync(path.join(testRoot, "layout-regression.e2e.cjs"), "utf8");
   assert.doesNotMatch(layoutRegression, /viewport\.height\s*>=\s*680/u, "macOS content height must not be compared with BrowserWindow's framed minHeight");
@@ -19,4 +18,15 @@ test("Electron E2E resizes the BrowserWindow content instead of emulating a narr
   assert.match(helper, /getContentBounds/u, "cross-platform resize checks must observe the actual OS-clamped content bounds");
   assert.match(helper, /content bounds and renderer viewport must stay synchronized/u);
   assert.match(helper, /SIGINT/u, "interrupted E2E runs must close their Electron window");
+});
+
+test("every Electron E2E uses the shared packaged-application launch contract", () => {
+  for (const fileName of ["compatibility-smoke.e2e.cjs", "layout-regression.e2e.cjs", "electron.e2e.cjs", "workbench.e2e.cjs", "creator-loop.e2e.cjs"]) {
+    const source = fs.readFileSync(path.join(testRoot, fileName), "utf8");
+    assert.match(source, /launchElectronApplication/u, `${fileName} must use the shared packaged/dev launcher`);
+    assert.doesNotMatch(source, /electron\.launch\s*\(/u, `${fileName} must not bypass the packaged executable selected by the release workflow`);
+  }
+  const helper = fs.readFileSync(path.join(testRoot, "electron-window.cjs"), "utf8");
+  assert.match(helper, /T8_E2E_EXECUTABLE/u, "the shared launcher must honor the packaged executable selected by the release workflow");
+  assert.match(helper, /--user-data-dir=/u, "every E2E launch must isolate its browser profile from user and sibling test state");
 });

@@ -599,17 +599,17 @@ function appendCardPreviewImage(media, item, alt, { eager = false } = {}) {
   const imageUrl = gifUrl || posterUrl;
   if (!imageUrl) return false;
   const image = document.createElement("img");
-  image.src = imageUrl;
   image.alt = alt;
   image.loading = eager ? "eager" : "lazy";
   image.decoding = "async";
-  if (eager) image.fetchPriority = "high";
+  image.fetchPriority = eager ? "high" : "low";
   if (gifUrl && posterUrl && posterUrl !== gifUrl) {
     image.addEventListener("error", () => {
       image.src = posterUrl;
       image.dataset.previewFallback = "poster";
     }, { once: true });
   }
+  image.src = imageUrl;
   media.append(image);
   return true;
 }

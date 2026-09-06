@@ -5,7 +5,11 @@ const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
 const { loadCatalog } = require("../lib/catalog.cjs");
 const { PromptProjectStore } = require("../lib/prompt-projects.cjs");
-const { installElectronExitCleanup, setElectronContentSize } = require("./electron-window.cjs");
+const {
+  installElectronExitCleanup,
+  launchElectronApplication,
+  setElectronContentSize
+} = require("./electron-window.cjs");
 
 const CREATIVE_AI_RESPONSES = [
     { subject: ["便携产品", "portable product"], actions: ["证明", "demonstrate", "proof"], goals: ["产品广告", "product ad", "功能证明", "capability proof", "发布"], styles: [], camera: [], emotion: [], sound: [], constraints: ["三项功能", "清楚结果"], exclusions: ["字幕"], ambiguity: "" },
@@ -58,12 +62,10 @@ async function run() {
     validation: { status: "pass" },
     media: []
   });
-  const packagedExecutable = process.env.T8_E2E_EXECUTABLE ? path.resolve(process.env.T8_E2E_EXECUTABLE) : null;
-  const electronApp = await electron.launch({
-    executablePath: packagedExecutable || require("electron"),
-    args: packagedExecutable ? [`--user-data-dir=${e2eUserDataDir}`] : [appDir, `--user-data-dir=${e2eUserDataDir}`],
-    cwd: appDir,
-    env: { ...process.env, T8_DISABLE_AUTO_UPDATE: "1", T8_E2E_CREATIVE_AI: "1", T8_E2E_CREATIVE_RESPONSES: Buffer.from(JSON.stringify(CREATIVE_AI_RESPONSES), "utf8").toString("base64"), T8STAR_API_KEY: "", SEEDANCE_API_KEY: "", OPENAI_API_KEY: "", ELECTRON_DISABLE_SECURITY_WARNINGS: "true" }
+  const electronApp = await launchElectronApplication(electron, {
+    appDir,
+    userDataDir: e2eUserDataDir,
+    env: { T8_E2E_CREATIVE_AI: "1", T8_E2E_CREATIVE_RESPONSES: Buffer.from(JSON.stringify(CREATIVE_AI_RESPONSES), "utf8").toString("base64"), T8STAR_API_KEY: "", SEEDANCE_API_KEY: "", OPENAI_API_KEY: "" }
   });
   const removeExitCleanup = installElectronExitCleanup(electronApp);
   try {

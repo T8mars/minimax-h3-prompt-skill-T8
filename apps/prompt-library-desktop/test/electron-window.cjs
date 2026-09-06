@@ -1,9 +1,47 @@
 const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
 
 const originalMinimumSizes = new WeakMap();
 
+function electronLaunchOptions({ appDir, userDataDir, env = {} }) {
+  const packagedExecutable = process.env.T8_E2E_EXECUTABLE
+    ? path.resolve(process.env.T8_E2E_EXECUTABLE)
+    : null;
+  if (packagedExecutable && !fs.existsSync(packagedExecutable)) {
+    throw new Error(`T8_E2E_EXECUTABLE does not exist: ${packagedExecutable}`);
+  }
+  return {
+    executablePath: packagedExecutable || require("electron"),
+    args: packagedExecutable
+      ? [`--user-data-dir=${userDataDir}`]
+      : [appDir, `--user-data-dir=${userDataDir}`],
+    cwd: appDir,
+    env: {
+      ...process.env,
+      T8_DISABLE_AUTO_UPDATE: "1",
+      ELECTRON_DISABLE_SECURITY_WARNINGS: "true",
+      ...env
+    }
+  };
+}
+
+async function launchElectronApplication(electron, options) {
+  return electron.launch(electronLaunchOptions(options));
+}
+
+async function waitForRendererShell(page, timeout = 60_000) {
+  await page.waitForFunction(
+    () => location.protocol === "file:"
+      && document.readyState !== "loading"
+      && Boolean(document.querySelector("#case-grid")),
+    undefined,
+    { timeout }
+  );
+}
+
 async function setElectronContentSize(electronApp, page, { width, height }) {
-  await page.waitForLoadState("domcontentloaded");
+  await waitForRendererShell(page);
   await page.waitForTimeout(250);
   const browserWindow = await electronApp.browserWindow(page);
   if (!originalMinimumSizes.has(electronApp)) {
@@ -67,4 +105,10 @@ function installElectronExitCleanup(electronApp) {
   };
 }
 
-module.exports = { installElectronExitCleanup, setElectronContentSize };
+module.exports = {
+  electronLaunchOptions,
+  installElectronExitCleanup,
+  launchElectronApplication,
+  setElectronContentSize,
+  waitForRendererShell
+};

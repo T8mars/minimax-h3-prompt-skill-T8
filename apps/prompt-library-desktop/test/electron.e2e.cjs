@@ -5,7 +5,11 @@ const path = require("node:path");
 const { _electron: electron } = require("playwright-core");
 const { loadCatalog } = require("../lib/catalog.cjs");
 const { itemKey, sortItems } = require("../src/catalog-sort.js");
-const { installElectronExitCleanup, setElectronContentSize } = require("./electron-window.cjs");
+const {
+  installElectronExitCleanup,
+  launchElectronApplication,
+  setElectronContentSize
+} = require("./electron-window.cjs");
 
 const repoRoot = path.resolve(__dirname, "../../..");
 const catalogManifest = require(path.join(repoRoot, "catalog", "manifest.json"));
@@ -68,17 +72,7 @@ async function run() {
   const communityDetailScreenshotPath = `${screenshotStem}-community-skill-detail.png`;
   const communitySecondDetailScreenshotPath = `${screenshotStem}-community-skill-detail-2.png`;
   const responsiveDetailScreenshotPath = `${screenshotStem}-responsive-detail.png`;
-  const packagedExecutable = process.env.T8_E2E_EXECUTABLE ? path.resolve(process.env.T8_E2E_EXECUTABLE) : null;
-  const electronApp = await electron.launch({
-    executablePath: packagedExecutable || require("electron"),
-    args: packagedExecutable ? [`--user-data-dir=${e2eUserDataDir}`] : [appDir, `--user-data-dir=${e2eUserDataDir}`],
-    cwd: appDir,
-    env: {
-      ...process.env,
-      T8_DISABLE_AUTO_UPDATE: "1",
-      ELECTRON_DISABLE_SECURITY_WARNINGS: "true"
-    }
-  });
+  const electronApp = await launchElectronApplication(electron, { appDir, userDataDir: e2eUserDataDir });
   const removeExitCleanup = installElectronExitCleanup(electronApp);
 
   try {
@@ -242,13 +236,17 @@ async function run() {
       const seekableStart = node.seekable.start(0);
       const seekableEnd = node.seekable.end(node.seekable.length - 1);
       const seekTarget = node.duration * 0.55;
-      const seeked = new Promise((resolve, reject) => {
-        const timeout = setTimeout(() => reject(new Error("video seek timeout")), 12000);
-        node.addEventListener("seeked", () => { clearTimeout(timeout); resolve(); }, { once: true });
-        node.addEventListener("error", () => { clearTimeout(timeout); reject(new Error(node.error?.message || "video seek error")); }, { once: true });
-      });
       node.currentTime = seekTarget;
-      await seeked;
+      await new Promise((resolve, reject) => {
+        const startedAt = performance.now();
+        const poll = () => {
+          if (node.error) return reject(new Error(node.error.message || `video error ${node.error.code}`));
+          if (!node.seeking && Math.abs(node.currentTime - seekTarget) <= 0.25) return resolve();
+          if (performance.now() - startedAt > 30000) return reject(new Error("video seek timeout"));
+          setTimeout(poll, 50);
+        };
+        poll();
+      });
       const soughtTime = node.currentTime;
       await node.play();
       const playedTime = await new Promise((resolve, reject) => {
@@ -399,9 +397,24 @@ async function run() {
       await image.evaluate(async (node) => {
         if (!node.complete) {
           await new Promise((resolve, reject) => {
-            const timeout = setTimeout(() => reject(new Error(`official GIF timed out: ${node.src}`)), 30000);
-            node.addEventListener("load", () => { clearTimeout(timeout); resolve(); }, { once: true });
-            node.addEventListener("error", () => { clearTimeout(timeout); reject(new Error(`official GIF failed: ${node.src}`)); }, { once: true });
+            let settled = false;
+            const finish = (callback) => {
+              if (settled) return;
+              settled = true;
+              clearTimeout(timeout);
+              node.removeEventListener("load", onLoad);
+              node.removeEventListener("error", onError);
+              callback();
+            };
+            const onLoad = () => finish(resolve);
+            const onError = () => finish(() => reject(new Error(`official GIF failed: ${node.src}`)));
+            const timeout = setTimeout(() => finish(() => reject(new Error(`official GIF timed out: ${node.src}`))), 30000);
+            node.addEventListener("load", onLoad, { once: true });
+            node.addEventListener("error", onError, { once: true });
+            if (node.complete) {
+              if (node.naturalWidth > 0) onLoad();
+              else onError();
+            }
           });
         }
         if (node.naturalWidth <= 0 || node.naturalHeight <= 0) throw new Error(`official GIF did not decode: ${node.src}`);

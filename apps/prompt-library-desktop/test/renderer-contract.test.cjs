@@ -84,6 +84,19 @@ test("catalog cards create hover players lazily and release them immediately", (
   assert.doesNotMatch(renderer, /media\.append\(video\);\s*card\.addEventListener\("pointerenter"/u, "cards must not attach every player before hover");
 });
 
+test("catalog preview images enable lazy loading before assigning their source", () => {
+  const start = renderer.indexOf("function appendCardPreviewImage");
+  const end = renderer.indexOf("\nfunction renderCard", start);
+  assert.ok(start >= 0 && end > start, "appendCardPreviewImage must remain independently testable");
+  const helper = renderer.slice(start, end);
+  const loadingIndex = helper.indexOf('image.loading = eager ? "eager" : "lazy"');
+  const decodingIndex = helper.indexOf('image.decoding = "async"');
+  const sourceIndex = helper.indexOf("image.src = imageUrl");
+  assert.ok(loadingIndex >= 0 && loadingIndex < sourceIndex, "loading policy must be applied before src can initiate a request");
+  assert.ok(decodingIndex >= 0 && decodingIndex < sourceIndex, "async decoding must be applied before src can initiate a decode");
+  assert.match(helper, /image\.fetchPriority = eager \? "high" : "low"/u);
+});
+
 test("detail view exposes bilingual, section copy and full-item copy controls", () => {
   for (const id of ["global-locale-en", "global-locale-zh", "detail-locale-en", "detail-locale-zh", "copy-full-item", "copy-overview", "copy-quick-start", "copy-dna", "copy-validation", "quick-start", "validation-grid"]) {
     assert.match(html, new RegExp(`id=["']${id}["']`), `missing bilingual/copy control: ${id}`);
