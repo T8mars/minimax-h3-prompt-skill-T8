@@ -66,6 +66,7 @@ module.exports = {
   mac: {
     icon: "build/icon.png",
     category: "public.app-category.graphics-design",
+    minimumSystemVersion: "13.0",
     target: [
       { target: "dmg", arch: ["universal"] },
       { target: "zip", arch: ["universal"] }
