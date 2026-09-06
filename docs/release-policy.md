@@ -107,6 +107,8 @@ Windows 安装版 Electron updater 只查询本仓库的稳定 GitHub Releases�
 
 macOS 同步生成 ZIP、ZIP blockmap 和 `latest-mac.yml`，为未来签名更新保留完整产物合同；但当前公开构建没有 Apple Developer ID，自动更新在 macOS 上禁用，界面只打开 Releases 页面。获得 Apple 签名与公证密钥前，不得把 macOS 包宣称为已签名、已公证或可自动更新。
 
+桌面运行时从 Electron 44 起，macOS 安装包明确要求 macOS 13 Ventura 或更高版本；`electron-builder` 的 `minimumSystemVersion`、安装文档与 Release Notes 必须保持一致。每次 Electron 大版本升级还必须在普通 PR CI 中运行不依赖完整媒体包的真实桌面冒烟测试，至少覆盖应用启动、默认中文、案例弹窗和异步剪贴板完成反馈；完整外置媒体回归继续由 Release 门禁负责。
+
 建议启用仓库的 Immutable Releases、分支保护和 Actions 审批。正式签名证书可用后，Windows 与 macOS 安装包都应加入代码签名，macOS 还需 notarization；未签名版本必须在 Release Notes 中明确说明。
 
 ## 回滚
