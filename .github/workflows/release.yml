@@ -273,9 +273,10 @@ jobs:
           $previewCatalogs = @(
             (Join-Path $catalogStage "previews-part1/catalog"),
             (Join-Path $catalogStage "previews-part2/catalog"),
-            (Join-Path $catalogStage "previews-part3/catalog")
+            (Join-Path $catalogStage "previews-part3/catalog"),
+            (Join-Path $catalogStage "previews-part4/catalog")
           )
-          New-Item -ItemType Directory -Force -Path $coreCatalog, $previewCatalogs[0], $previewCatalogs[1], $previewCatalogs[2] | Out-Null
+          New-Item -ItemType Directory -Force -Path $coreCatalog, $previewCatalogs[0], $previewCatalogs[1], $previewCatalogs[2], $previewCatalogs[3] | Out-Null
 
           function Add-CatalogHardLink([System.IO.FileInfo] $file, [string] $destinationCatalog) {
             $relative = [System.IO.Path]::GetRelativePath($catalogRoot, $file.FullName)
@@ -288,7 +289,7 @@ jobs:
           foreach ($file in $catalogFiles | Where-Object { $_.Extension -ne ".gif" } | Sort-Object FullName) {
             Add-CatalogHardLink $file $coreCatalog
           }
-          $previewBytes = [long[]]@(0, 0, 0)
+          $previewBytes = [long[]]@(0, 0, 0, 0)
           $previewFiles = @($catalogFiles | Where-Object { $_.Extension -eq ".gif" } | Sort-Object @{ Expression = "Length"; Descending = $true }, @{ Expression = "FullName"; Ascending = $true })
           foreach ($file in $previewFiles) {
             $bucket = 0
@@ -304,6 +305,7 @@ jobs:
           Compress-Archive -Path $previewCatalogs[0] -DestinationPath (Join-Path $assets "prompt-library-previews-v$version-part1.zip") -CompressionLevel Optimal
           Compress-Archive -Path $previewCatalogs[1] -DestinationPath (Join-Path $assets "prompt-library-previews-v$version-part2.zip") -CompressionLevel Optimal
           Compress-Archive -Path $previewCatalogs[2] -DestinationPath (Join-Path $assets "prompt-library-previews-v$version-part3.zip") -CompressionLevel Optimal
+          Compress-Archive -Path $previewCatalogs[3] -DestinationPath (Join-Path $assets "prompt-library-previews-v$version-part4.zip") -CompressionLevel Optimal
           Compress-Archive -Path skills -DestinationPath (Join-Path $assets "prompt-library-skills-v$version.zip") -CompressionLevel Optimal
           Copy-Item ".release-input/download/prompt-library-media-v$version-part1.zip" $assets
           Copy-Item ".release-input/download/prompt-library-media-v$version-part2.zip" $assets
@@ -376,6 +378,7 @@ jobs:
             "prompt-library-previews-v$version-part1.zip",
             "prompt-library-previews-v$version-part2.zip",
             "prompt-library-previews-v$version-part3.zip",
+            "prompt-library-previews-v$version-part4.zip",
             "prompt-library-skills-v$version.zip",
             "prompt-library-media-v$version-part1.zip",
             "prompt-library-media-v$version-part2.zip",
