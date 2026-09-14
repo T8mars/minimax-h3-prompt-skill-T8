@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-liluocheng13-2097484183849570771-browser-2097484183849570771-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "e30f142ef1289d87906a082d882a30ba39acd6e09fb9fdcb2f901aae2ff7a0be",
+    "creative_dna_sha256": "2b30804f98cce78df2496c3b862b1d52c17dd15e17727f4af26ba7ed6f4ba341"
+  },
+  "content": {
+    "title": "寺院滑板闯阵｜阶梯落差、转经筒长廊与庭院腾跃",
+    "summary": "同一成年滑手以黑色长袍、红帽和固定滑板为身份锚点，从壁画阶梯下滑，贴近轮组进入转经筒长廊，再穿入庭院完成一次腾跃；终局停在佛画前，完整路线连续可追踪。",
+    "quick_start": {
+      "input_format": "明确成年主角、便携动作工具、前进目标轴和至少两个重复地标 + 全程一次连续前向摄影且至少三层防守闸门从不同方向进入 + 每层使用不同身体策略并把出力方向直接交给下一次推进 + 不重置路线或身份 + 最后沿先前建立的垂直通道登高 + 安放原创高点标志并用远景同时证明完整路线",
+      "recommended_input": "一名原创成年滑手从彩绘山寺长廊的三级宽台阶开始下滑。；跟随滑手经过八只铜制转经筒，长袍与红帽向后飘动，双脚保持在板上。；滑向中央壁画，减速一次后停下，让滑板、成年滑手和完整壁画同时可读。",
+      "required_anchors": [
+        "一个明显成年骑手、板子和服装持续存在。",
+        "路线连续通过三个区域。",
+        "恰好发生一次跳跃，且有可见的着陆。",
+        "最终站保留了骑行者、板子和目的地。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一成年滑手以黑色长袍、红帽和固定滑板为身份锚点，从壁画阶梯下滑，贴近轮组进入转经筒长廊，再穿入庭院完成一次腾跃；终局停在佛画前，完整路线连续可追踪。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一成年滑手以黑色长袍、红帽和固定滑板为身份锚点，从壁画阶梯下滑，贴近轮组进入转经筒长廊，再穿入庭院完成一次腾跃；终局停在佛画前，完整路线连续可追踪。 必须满足：One clearly adult rider, board and costume persist. + The route advances continuously through three zones. + Wheel contact proves traversal. + Exactly one jump occurs with visible landing. + The final stop preserves rider, board and destination.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个明显成年骑手、板子和服装持续存在。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明显成年骑手、板子和服装持续存在。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "路线连续通过三个区域。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"路线连续通过三个区域。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "轮接触证明通过。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这条精确的进展规则，中间可以跳到替换状态，累积结果将不再可追溯。已移除规则：\"轮接触证明通过。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "恰好发生一次跳跃，且有可见的着陆。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条精确的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系，连续性无法验证。已移除规则：\"恰好发生一次跳跃，且有可见的着陆。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终站保留了骑行者、板子和目的地。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终点规则，序列仅在运动中停止，从未确认承诺的结果或保留的后果。被移除的规则：\"最终站保留了骑行者、板子和目的地。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个成年人在穿过寺庙的台阶、走廊和庭院后，到达了一幅壁画。",
+          "prompt_seed": "一个成年人在穿过寺庙的台阶、走廊和庭院后，到达了一幅壁画。"
+        },
+        {
+          "concept": "一个成年人在穿过档案馆的坡道、堆栈和大堂后，到达了一堵封印墙。",
+          "prompt_seed": "一个成年人在穿过档案馆的坡道、堆栈和大堂后，到达了一堵封印墙。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明显成年骑手、板子和服装持续存在。\"",
+          "repair": "一个明显成年骑手、板子和服装持续存在。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"路线连续通过三个区域。\"",
+          "repair": "路线连续通过三个区域。"
+        },
+        {
+          "failure": "没有这条精确的进展规则，中间可以跳到替换状态，累积结果将不再可追溯。已移除规则：\"轮接触证明通过。\"",
+          "repair": "轮接触证明通过。"
+        },
+        {
+          "failure": "没有这条精确的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系，连续性无法验证。已移除规则：\"恰好发生一次跳跃，且有可见的着陆。\"",
+          "repair": "恰好发生一次跳跃，且有可见的着陆。"
+        },
+        {
+          "failure": "没有这条精确的终点规则，序列仅在运动中停止，从未确认承诺的结果或保留的后果。被移除的规则：\"最终站保留了骑行者、板子和目的地。\"",
+          "repair": "最终站保留了骑行者、板子和目的地。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个成年人在穿过寺庙的台阶、走廊和庭院后，到达了一幅壁画。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一个成年人在穿过档案馆的坡道、堆栈和大堂后，到达了一堵封印墙。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

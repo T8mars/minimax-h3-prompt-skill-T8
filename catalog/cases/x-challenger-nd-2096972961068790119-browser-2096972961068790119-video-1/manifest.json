@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-challenger-nd-2096972961068790119-browser-2096972961068790119-video-1",
+  "slug": "multi-medium-character-module-ensemble-convergence",
+  "title": "黏土字母伙伴集结｜独立世界、载体飞行与终词合并",
+  "source_title": "HAPPY 黏土片｜五个角色乘字母穿越后同台定格",
+  "summary": "五个不同颜色的黏土伙伴各自绑定一个大字母和独立小世界，字母同时是交通载体与身份标记；它们依次穿越浪、草地、云、城市和花田，最后拆件飞入白棚并拼成完整终词。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/multi-medium-character-module-ensemble-convergence",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-challenger-nd-2096972961068790119-browser-2096972961068790119-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-challenger-nd-2096972961068790119-browser-2096972961068790119-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-multi-medium-character-module-ensemble-convergence-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-multi-medium-character-module-ensemble-convergence-v1",
+  "input_format": "至少四个独立风格模块 + 每模块一个原创角色、一条材料或线条行为规则和一个能证明媒介的短动作 + 重复构图位置、徽记或运动方向连接章节 + 出场角色在下一锚点到达前保持可读 + 终局所有角色以原材质进入同一中性舞台且不得统一重绘",
+  "recommended_input": "让一只黄色云朵伙伴乘橙色字母 V 穿过柔软蓝色纸浪。；让紫色豆形伙伴乘青色 V 穿过棉花云，再让棕色小熊乘金色 A 穿过玩具城市。；让五个字母飞入同一白色摄影棚，拼成准确单词【VIVID】，每个伙伴坐在对应字母上。",
+  "required_anchors": [
+    "Exactly five distinct characters remain bound to five distinct letters.",
+    "Each chapter has one environment and one readable travel action.",
+    "The convergence begins only after every module has been established.",
+    "The final word is exact, fully readable and contains all five characters."
+  ],
+  "tags": [
+    "multi",
+    "medium",
+    "character",
+    "module",
+    "ensemble",
+    "convergence"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-08T14:38:03+08:00",
+  "updated_at": "2026-09-08T16:11:02+08:00"
+}

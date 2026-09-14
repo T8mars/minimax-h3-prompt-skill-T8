@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ou-zhen599-2098707751857737867-browser-2098707751857737867-video-1",
+  "slug": "single-decision-impact-return-lockup",
+  "title": "掩护任务兑现｜持续防线、支援呼叫与结果落点",
+  "source_title": "战地掩护撤离｜成年指挥官坚持到支援命中",
+  "summary": "同一成年指挥官在燃烧巷道维持防线，受压后仍完成一次无线电呼叫；远端打击成为可见结果，人物倒地作为代价收束，动作克制且无血腥特写。",
+  "status": "released",
+  "source_duration_seconds": 15.146667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/single-decision-impact-return-lockup",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2098707751857737867-browser-2098707751857737867-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2098707751857737867-browser-2098707751857737867-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-single-decision-impact-return-lockup-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-single-decision-impact-return-lockup-v1",
+  "input_format": "威胁或失效状态 + 责任主体 + 准备动作 + 校准确认 + 一次决定性动作 + 可见后果 + 主体或结果终版锁定",
+  "recommended_input": "一名成年救援队长守住积水交通通道，并示意撤离人员前进。；她举起无线电完成一次支援呼叫，身后的出口持续可见。；她因疲惫单膝落地，撤离人员从身后已清开的阈值通过。",
+  "required_anchors": [
+    "One clearly adult lead and one objective axis persist.",
+    "Interruptions leave visible continuity rather than resetting the scene.",
+    "The call precedes a visible external result.",
+    "The final state proves both objective completion and personal cost without graphic injury."
+  ],
+  "tags": [
+    "single",
+    "decision",
+    "impact",
+    "return",
+    "lockup"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:18+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

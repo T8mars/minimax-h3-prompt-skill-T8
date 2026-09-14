@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithminal-2098284373372018792-browser-2098284373372018792-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "42ccac5de8e2a5db6a235e9214ff879e0f3423e232ff9c8932906aac2204f466",
+    "creative_dna_sha256": "f8cf8396ed3031a438015e8d084972d74b9df45e1bffd35baef78a8740c36356"
+  },
+  "content": {
+    "title": "白地巨鲸尺度揭示｜微小人物、地貌误读与近体压境",
+    "summary": "官方原视频实测为 25.067 秒而非候选阶段记录的 17 秒；同一成年人物在白色裂地建立微小尺度，远处地貌逐步显出巨鲸身份，巨体起身掀起尘浪并从人物上方经过。",
+    "quick_start": {
+      "input_format": "环境局部异常 + 单一身份特征 + 高位完整几何证明 + 环境尺度影响 + 低位近距离逼近",
+      "recommended_input": "让一名明确成年的盐地勘测员独自站在无尽白色矿物平原，手持一只红杯。；高位拉宽，直到一只眼睛、鳍边和完整原创天鲸轮廓清楚可读。；跟随巨体腹部从勘测员上方经过，她遮住面部，并在最终尘雾停留中保持完整可见。",
+      "required_anchors": [
+        "一名明显成年的受试者仍然是人类尺度的锚。",
+        "巨大的形态一开始是一个合理的地形特征。",
+        "一次巨体行动后会发生环境位移。",
+        "最后一帧保留了成人和巨人的空间关系特征，但并不意味着受伤。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "官方原视频实测为 25.067 秒而非候选阶段记录的 17 秒；同一成年人物在白色裂地建立微小尺度，远处地貌逐步显出巨鲸身份，巨体起身掀起尘浪并从人物上方经过。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "官方原视频实测为 25.067 秒而非候选阶段记录的 17 秒；同一成年人物在白色裂地建立微小尺度，远处地貌逐步显出巨鲸身份，巨体起身掀起尘浪并从人物上方经过。 必须满足：One clearly adult subject remains the human scale anchor. + The giant form begins as a plausible terrain feature. + Identity clues are revealed progressively before full scale. + Environmental displacement follows one giant-body action. + The final frame preserves both adult and giant geography without implying injury.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名明显成年的受试者仍然是人类尺度的锚。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名明显成年的受试者仍然是人类尺度的锚。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "巨大的形态一开始是一个合理的地形特征。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“巨型形态开始时是一个合理的地形特征。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "身份线索在全面展开前逐渐显露出来。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除了规则：“身份线索在全面曝光之前逐渐显露出来。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "一次巨体行动后会发生环境位移。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“环境位移伴随着一个巨体的动作。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后一帧保留了成人和巨人的空间关系特征，但并不意味着受伤。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最后一帧保留了成人和巨人的空间关系特征，且不暗示受伤。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年测量员发现一条白色山脊是一头天鲸，并在尘埃尾流中幸存下来。",
+          "prompt_seed": "一名成年测量员发现一条白色山脊是一头天鲸，并在尘埃尾流中幸存下来。"
+        },
+        {
+          "concept": "一位成年极地工程师发现冰架是一个沉睡的蝠鲼结构，并观察它的升起。",
+          "prompt_seed": "一位成年极地工程师发现冰架是一个沉睡的蝠鲼结构，并观察它的升起。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名明显成年的受试者仍然是人类尺度的锚。”",
+          "repair": "一名明显成年的受试者仍然是人类尺度的锚。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“巨型形态开始时是一个合理的地形特征。”",
+          "repair": "巨大的形态一开始是一个合理的地形特征。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除了规则：“身份线索在全面曝光之前逐渐显露出来。”",
+          "repair": "身份线索在全面展开前逐渐显露出来。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“环境位移伴随着一个巨体的动作。”",
+          "repair": "一次巨体行动后会发生环境位移。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最后一帧保留了成人和巨人的空间关系特征，且不暗示受伤。”",
+          "repair": "最后一帧保留了成人和巨人的空间关系特征，但并不意味着受伤。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年测量员发现一条白色山脊是一头天鲸，并在尘埃尾流中幸存下来。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年极地工程师发现冰架是一个沉睡的蝠鲼结构，并观察它的升起。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

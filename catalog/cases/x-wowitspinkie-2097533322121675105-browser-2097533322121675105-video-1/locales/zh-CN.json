@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-wowitspinkie-2097533322121675105-browser-2097533322121675105-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "a230df5a9f31cf7c0ad55f4c7fa8a3377b3af2348afe8353d439b3814b254396",
+    "creative_dna_sha256": "32083f95fa4f365a358664c3c8d44523f90de0953e7af5eafd695e7969f24016"
+  },
+  "content": {
+    "title": "水晶心递近｜物件展示、镜头遮挡与双手回礼",
+    "summary": "同一成年角色在固定粉紫棚景依次举起两颗虹彩水晶心，让物件从胸前靠近镜头并产生短暂遮挡，再分别回到双手；人物始终直视镜头，终局以双心并列和微笑确认赠礼。",
+    "quick_start": {
+      "input_format": "稳定体验者与完整对象 + 独立微距质感证明 + 第一次试用/身体反应/缓冲 + 不同第二证明 + 改变后的对象终态",
+      "recommended_input": "一名原创成年珠宝师在胸前举着一片青色水晶叶并直视镜头。；让同一片水晶叶退回胸前，露出不变的面容和银色服装。；把两片水晶叶对称举在脸旁，以一次轻微微笑和稳定对视收束。",
+      "required_anchors": [
+        "一个明确的成年人身份和固定环境持续存在。",
+        "第一个对象在接近和退却过程中保持不变。",
+        "第二个对象被添加而不是替换。",
+        "最终状态清楚地展示了两份礼物。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一成年角色在固定粉紫棚景依次举起两颗虹彩水晶心，让物件从胸前靠近镜头并产生短暂遮挡，再分别回到双手；人物始终直视镜头，终局以双心并列和微笑确认赠礼。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一成年角色在固定粉紫棚景依次举起两颗虹彩水晶心，让物件从胸前靠近镜头并产生短暂遮挡，再分别回到双手；人物始终直视镜头，终局以双心并列和微笑确认赠礼。 必须满足：One clearly adult identity and fixed environment persist. + The first object remains the same through approach and retreat. + Lens occlusion is brief and bounded. + The second object is added rather than substituted. + The final state clearly shows both gifts.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个明确的成年人身份和固定环境持续存在。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明确的成年人身份和固定环境持续存在。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "第一个对象在接近和退却过程中保持不变。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再成立。已移除规则：\"第一个对象在接近和退却过程中保持不变。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "镜头遮挡时间短暂且有限。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这条确切的进展规则，中间部分可能会跳到替换状态，累积结果将不再可追踪。已移除规则：\"镜头遮挡时间短暂且有限。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "第二个对象被添加而不是替换。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条确切的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"第二个对象被添加而不是替换。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终状态清楚地展示了两份礼物。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终端验证规则，序列仅在运动上停止，并从未确认承诺的结果或保留的后果。移除的规则：\"最终状态清楚地展示了两份礼物。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年珠宝商通过有界镜头-近交互方式展示了两片水晶叶子。",
+          "prompt_seed": "一位成年珠宝商通过有界镜头-近交互方式展示了两片水晶叶子。"
+        },
+        {
+          "concept": "一位成年花艺师依次向配对锁定前展示两朵玻璃花。",
+          "prompt_seed": "一位成年花艺师依次向配对锁定前展示两朵玻璃花。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明确的成年人身份和固定环境持续存在。\"",
+          "repair": "一个明确的成年人身份和固定环境持续存在。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再成立。已移除规则：\"第一个对象在接近和退却过程中保持不变。\"",
+          "repair": "第一个对象在接近和退却过程中保持不变。"
+        },
+        {
+          "failure": "没有这条确切的进展规则，中间部分可能会跳到替换状态，累积结果将不再可追踪。已移除规则：\"镜头遮挡时间短暂且有限。\"",
+          "repair": "镜头遮挡时间短暂且有限。"
+        },
+        {
+          "failure": "没有这条确切的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"第二个对象被添加而不是替换。\"",
+          "repair": "第二个对象被添加而不是替换。"
+        },
+        {
+          "failure": "没有这条精确的终端验证规则，序列仅在运动上停止，并从未确认承诺的结果或保留的后果。移除的规则：\"最终状态清楚地展示了两份礼物。\"",
+          "repair": "最终状态清楚地展示了两份礼物。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年珠宝商通过有界镜头-近交互方式展示了两片水晶叶子。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年花艺师依次向配对锁定前展示两朵玻璃花。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

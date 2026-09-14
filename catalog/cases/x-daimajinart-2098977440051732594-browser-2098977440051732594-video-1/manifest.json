@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-daimajinart-2098977440051732594-browser-2098977440051732594-video-1",
+  "slug": "sensory-trial-proof-reaction-terminal-state",
+  "title": "收藏卡发现｜货架浏览、近景验真与双人共同确认",
+  "source_title": "赛博收藏店｜成年顾客发现一张卡片并与同伴确认",
+  "summary": "以两名成年顾客在收藏店浏览为基线，视线和手指锁定一张卡片；卡面近景、拿取与同伴靠近构成三层证据，终局二人带着已确认物件离开。",
+  "status": "released",
+  "source_duration_seconds": 15.104,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/sensory-trial-proof-reaction-terminal-state",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-daimajinart-2098977440051732594-browser-2098977440051732594-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-daimajinart-2098977440051732594-browser-2098977440051732594-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-sensory-trial-proof-reaction-terminal-state-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-sensory-trial-proof-reaction-terminal-state-v1",
+  "input_format": "稳定体验者与完整对象 + 独立微距质感证明 + 第一次试用/身体反应/缓冲 + 不同第二证明 + 改变后的对象终态",
+  "recommended_input": "两名明确成年的原创制图师在霓虹档案店浏览密封路线卡。；切到卡片近景，显示原创蓝色避难所符号和三个刻口，不保留来源品牌文字。；二人交换一次微笑，把卡片封入透明套，再走向同一出口。",
+  "required_anchors": [
+    "Both human subjects are clearly adult and original.",
+    "One selected object remains traceable from shelf to hand.",
+    "The companion confirms rather than replaces the first observer.",
+    "The final departure preserves the verified object."
+  ],
+  "tags": [
+    "sensory",
+    "trial",
+    "proof",
+    "reaction",
+    "terminal",
+    "state"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:27+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

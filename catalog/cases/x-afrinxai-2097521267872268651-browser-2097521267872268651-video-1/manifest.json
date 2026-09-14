@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-afrinxai-2097521267872268651-browser-2097521267872268651-video-1",
+  "slug": "product-finish-alternation-detail-return",
+  "title": "香水材质联想｜露珠微距、瓶身持握与花瓣英雄镜头",
+  "source_title": "暖金香氛广告｜触觉自然细节回连同一产品",
+  "summary": "以花瓣露珠中的瓶身折射提出材质承诺，同一成年模特在暖金室内举瓶回标；香草、花朵与柑橘微距交替后完成一次喷洒，终局让花瓣、瓶身与人物同框并保持原创标识可读。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/product-finish-alternation-detail-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-afrinxai-2097521267872268651-browser-2097521267872268651-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-afrinxai-2097521267872268651-browser-2097521267872268651-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-product-finish-alternation-detail-return-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-product-finish-alternation-detail-return-v1",
+  "input_format": "一个原创产品与固定背景、尺度和构图参照 + 至少两种可清楚区分且可逆切换的表面状态 + 每次状态切换都回到同一主体位置 + 一次能证明真实材质细节的微距检查 + 终局返回完整产品英雄画面并锁定指定表面状态",
+  "recommended_input": "指尖触碰一片覆露的铜色叶片，露珠中反射一只原创香水瓶。；交替三个微距插入：香草荚、象牙白花朵和湿润柑橘皮，保持琥珀高光。；让浅色花瓣掠过一次，再把原创瓶身固定在石台，并让准确标识【AFTERLIGHT】与调香师同框。",
+  "required_anchors": [
+    "One adult model and one product design persist.",
+    "Material inserts share one controlled highlight family.",
+    "Typography is original and exact.",
+    "The final frame reconnects product, person and motif."
+  ],
+  "tags": [
+    "product",
+    "finish",
+    "alternation",
+    "detail",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-09T17:01:08+08:00",
+  "updated_at": "2026-09-10T01:52:36+08:00"
+}

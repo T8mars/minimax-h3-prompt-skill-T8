@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-measifai-2098844089324343720-browser-2098844089324343720-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "bcf8d3eb03ad552e9dff483f53675a62838a875fbce428f3dfddc0e35123d1a5",
+    "creative_dna_sha256": "1868d51512dbf2d2f44e570f40dc0cc11b828237e381459f88326eb4eb8c942c"
+  },
+  "content": {
+    "title": "Snowboard Skill Ladder | Gear Baseline, Rail Proof and Final Jump",
+    "summary": "An adult snowboard instructor proves glide, rail and one final jump. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+    "quick_start": {
+      "input_format": "One clearly adult original athlete and one equipment set persist. + Difficulty increases from preparation to glide, rail and jump. + Camera handoffs preserve clothing and direction. + A stable landing separates intermediate proof from final peak. + Exactly one large airborne action closes the sequence.",
+      "recommended_input": "One clearly adult original snowboard instructor tightens red goggles and checks one black board at a marked start gate. Hand off to a low rear follow; preserve helmet, goggles and shadow as the rider approaches one yellow rail. Accelerate toward one white ramp, launch once and hold the silhouetted grab against the sun before descent.",
+      "required_anchors": [
+        "One clearly adult original athlete and one equipment set persist.",
+        "Difficulty increases from preparation to glide, rail and jump.",
+        "A stable landing separates intermediate proof from final peak.",
+        "Exactly one large airborne action closes the sequence."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult snowboard instructor proves glide, rail and one final jump. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先用头盔、雪镜和雪板建立成年运动员，再由第一视角滑行切到外部跟拍；直线加速、上杆、落地与跳台腾空逐级提高难度，单一大跳作为终局峰值。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult original athlete and one equipment set persist.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult original athlete and one equipment set persist.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Difficulty increases from preparation to glide, rail and jump.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Difficulty increases from preparation to glide, rail and jump.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Camera handoffs preserve clothing and direction.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Camera handoffs preserve clothing and direction.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "A stable landing separates intermediate proof from final peak.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"A stable landing separates intermediate proof from final peak.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Exactly one large airborne action closes the sequence.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"Exactly one large airborne action closes the sequence.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult snowboard instructor proves glide, rail and one final jump.",
+          "prompt_seed": "An adult snowboard instructor proves glide, rail and one final jump."
+        },
+        {
+          "concept": "An adult inline skater progresses from setup to curb slide and one final stair gap.",
+          "prompt_seed": "An adult inline skater progresses from setup to curb slide and one final stair gap."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult original athlete and one equipment set persist.\"",
+          "repair": "One clearly adult original athlete and one equipment set persist."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Difficulty increases from preparation to glide, rail and jump.\"",
+          "repair": "Difficulty increases from preparation to glide, rail and jump."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Camera handoffs preserve clothing and direction.\"",
+          "repair": "Camera handoffs preserve clothing and direction."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"A stable landing separates intermediate proof from final peak.\"",
+          "repair": "A stable landing separates intermediate proof from final peak."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"Exactly one large airborne action closes the sequence.\"",
+          "repair": "Exactly one large airborne action closes the sequence."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult snowboard instructor proves glide, rail and one final jump.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult inline skater progresses from setup to curb slide and one final stair gap.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

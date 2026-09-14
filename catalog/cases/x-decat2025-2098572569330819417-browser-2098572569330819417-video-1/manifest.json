@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-decat2025-2098572569330819417-browser-2098572569330819417-video-1",
+  "slug": "stage-two-turn-pause-reaction",
+  "title": "异常求职面谈｜正式问答、反应停顿与手势收梗",
+  "source_title": "僵尸求职面试｜怪异成年申请者与正常招聘者正反打",
+  "summary": "在明亮办公室锁定一名外形异常的成年申请者和一名成年招聘者；两轮问答由正反打和记笔记支撑，中段停顿放大反差，最终以申请者竖拇指收梗，不臆测对白。",
+  "status": "released",
+  "source_duration_seconds": 15.175508,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-two-turn-pause-reaction",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2098572569330819417-browser-2098572569330819417-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2098572569330819417-browser-2098572569330819417-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-two-turn-pause-reaction-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-two-turn-pause-reaction-v1",
+  "input_format": "稳定双人地理 + 第一轮完整说话 + 清楚停顿 + 第二轮短回答 + 更长无声反应",
+  "recommended_input": "一名原创成年石像人穿宽大海军蓝西装，与一名成年博物馆招聘者相对而坐。；招聘者抬起一侧眉毛提出第二个问题；石像人仔细整理领带。；石像人小幅竖起拇指；招聘者微笑一次并合上写字板。",
+  "required_anchors": [
+    "Two clearly adult participants and one formal setting persist.",
+    "Each speaking turn is followed by a visible response.",
+    "The pause occurs after two exchanges.",
+    "The final gesture and clipboard closure provide a visual ending."
+  ],
+  "tags": [
+    "two",
+    "turn",
+    "pause",
+    "reaction"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:31+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

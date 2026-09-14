@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-mayz1169-2094762730825867632-browser-2094762730825867632-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "5d09aa2b62f0e31a604c6af5ca4ea29956272b27e698cbea8a0f7c8f3fefd7b5",
+    "creative_dna_sha256": "cc037f0681d28ec1d14ff146cba9306042c73c8330ce4978cebcdf6d00d9376f"
+  },
+  "content": {
+    "title": "Concept Board Performance | Persistent Reference, Mecha Action and Design Proof",
+    "summary": "An adult rescue-mecha pilot proves a concept sheet through walk, deployment and tool test. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+    "quick_start": {
+      "input_format": "One clearly adult original character remains continuous. + The reference strip stays visible and registered. + Each live action maps to a sheet component. + Mechanical deployment precedes the tool test. + The final pose reconnects the moving design to its concept evidence.",
+      "recommended_input": "Place one original adult rescue-mecha pilot above a persistent lower reference strip showing front, back and tool silhouettes. Open two folded rescue arms from her back and align them with the reference silhouettes below. Settle into a full-body inspection pose above the unchanged reference strip for the final hold.",
+      "required_anchors": [
+        "One clearly adult original character remains continuous.",
+        "The reference strip stays visible and registered.",
+        "Mechanical deployment precedes the tool test.",
+        "The final pose reconnects the moving design to its concept evidence."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult rescue-mecha pilot proves a concept sheet through walk, deployment and tool test. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把角色概念板固定为持续参考层，同一成年机甲角色从步行、结构展开到武器动作逐级实演；每个动作都能回查到板上的轮廓、配色和部件。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult original character remains continuous.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult original character remains continuous.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "The reference strip stays visible and registered.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The reference strip stays visible and registered.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Each live action maps to a sheet component.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Each live action maps to a sheet component.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Mechanical deployment precedes the tool test.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Mechanical deployment precedes the tool test.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final pose reconnects the moving design to its concept evidence.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final pose reconnects the moving design to its concept evidence.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult rescue-mecha pilot proves a concept sheet through walk, deployment and tool test.",
+          "prompt_seed": "An adult rescue-mecha pilot proves a concept sheet through walk, deployment and tool test."
+        },
+        {
+          "concept": "An adult exosuit medic proves a turnaround board through reach, shield and stabilization actions.",
+          "prompt_seed": "An adult exosuit medic proves a turnaround board through reach, shield and stabilization actions."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult original character remains continuous.\"",
+          "repair": "One clearly adult original character remains continuous."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The reference strip stays visible and registered.\"",
+          "repair": "The reference strip stays visible and registered."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Each live action maps to a sheet component.\"",
+          "repair": "Each live action maps to a sheet component."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Mechanical deployment precedes the tool test.\"",
+          "repair": "Mechanical deployment precedes the tool test."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final pose reconnects the moving design to its concept evidence.\"",
+          "repair": "The final pose reconnects the moving design to its concept evidence."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult rescue-mecha pilot proves a concept sheet through walk, deployment and tool test.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult exosuit medic proves a turnaround board through reach, shield and stabilization actions.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

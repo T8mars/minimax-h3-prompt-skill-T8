@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aitopiaai-2096976623652233505-browser-2096976623652233505-video-1",
+  "slug": "stage-one-external-miniature-intervention",
+  "title": "微缩队伍餐桌任务｜环境巨物、绳索协作与人手中断",
+  "source_title": "薯条微缩行动片｜三名成年玩具队员穿越餐桌固定食物",
+  "summary": "以餐桌常物建立巨大尺度，三名成年微缩队员从地图规划、绳索滑行、攀爬吸管到捆绑薯条依次协作；真实人手只在终局进入一次，打断他们的成果并证明尺度关系。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-one-external-miniature-intervention",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aitopiaai-2096976623652233505-browser-2096976623652233505-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aitopiaai-2096976623652233505-browser-2096976623652233505-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-inert-scale-active-intervention-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-inert-scale-active-intervention-v1",
+  "input_format": "静态标准物开场校准 + 微型日常 + 校准物保持不动 + 不同外部执行物只进入一次 + 局部状态改变与反应同框",
+  "recommended_input": "三名原创微缩成年维修员在咖啡馆桌面、巨大玻璃胡椒研磨器旁研究蓝图。；三人依次攀爬一根红色吸管，每一步都保持手和靴子的可见接触。；一只正常尺度的成年人手只进入一次，拿走玉米条后离开，三名维修员留在松弛绳索旁。",
+  "required_anchors": [
+    "Exactly three clearly adult miniature workers retain identity and scale.",
+    "Each task step uses visible tools and contact.",
+    "A full-size hand enters only once at the terminal interruption.",
+    "The slack rope proves the direct consequence of the removed object."
+  ],
+  "tags": [
+    "inert",
+    "scale",
+    "active",
+    "intervention"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-08T14:38:02+08:00",
+  "updated_at": "2026-09-08T16:11:02+08:00"
+}

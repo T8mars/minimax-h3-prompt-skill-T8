@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ofse2749841-2098699245364867383-browser-2098699245364867383-video-1",
+  "slug": "choreograph-anomaly-materialization",
+  "title": "窗台入境回环｜静态黑猫、月夜疾走与原位归返",
+  "source_title": "月夜黑猫｜窗边静止展开星空旅程再回原位",
+  "summary": "一只可辨黑猫从月夜窗台静止基线出发，穿过室内并跃入星空尺度；月亮、窗框和蓝色光线持续回声，最后回到原窗台完成闭环。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/choreograph-anomaly-materialization",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ofse2749841-2098699245364867383-browser-2098699245364867383-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ofse2749841-2098699245364867383-browser-2098699245364867383-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c003-dimensional-carrier-loop",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8c003-dimensional-carrier-loop",
+  "input_format": "现实锚点 + 单一载体 + 平面→空间→体积→环境峰值 + 回到原位的残留",
+  "recommended_input": "一只银色狐狸摆件静置在蓝光观测窗台，圆月位于上方。；银狐穿过一个圆形开口跃入星空，耳朵、尾巴和银色毛皮保持。；让星路折回圆形开口，银狐回到开场窗台的准确姿态。",
+  "required_anchors": [
+    "One nonhuman subject retains exact identity.",
+    "The opening sill and moon define the return target.",
+    "Repeated geometry links room and star world.",
+    "The final frame matches the opening position with one small residual glow."
+  ],
+  "tags": [
+    "t8c003",
+    "dimensional",
+    "carrier",
+    "loop"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:18+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

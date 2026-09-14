@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ai-yukichi2910-2097571154622025782-browser-2097571154622025782-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "展览信息渐显｜角色近景、标题排版与合影回标",
+  "source_title": "猫咪插画活动片｜主角动作过渡到完整展讯",
+  "summary": "固定同一原创成年风格化插画角色和黑猫，先以挥手、靠近与表情建立关系，再让展览标题、日期、时间和地点按层级渐显，最后回到角色与完整信息同框。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-yukichi2910-2097571154622025782-browser-2097571154622025782-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-yukichi2910-2097571154622025782-browser-2097571154622025782-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "让一名原创且明确成年的风格化插画师与一只黑猫在干净户外肖像中同框。；把两者重新居中于下三分之一，并在上方留出一个干净信息区。；完整信息保持时，成年插画师最后小幅挥手一次，黑猫看向前方。",
+  "required_anchors": [
+    "One clearly adult figure and one cat persist.",
+    "Information appears only after visual identity is established.",
+    "No line covers the face.",
+    "The final frame contains character, cat and complete lockup."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-09T17:01:08+08:00",
+  "updated_at": "2026-09-10T01:52:36+08:00"
+}

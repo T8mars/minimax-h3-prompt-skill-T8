@@ -14,7 +14,7 @@
 2. 选择最新稳定版本：Windows 安装版下载 `T8-Prompt-Library-Setup-v<version>.exe`，Windows 便携版下载 `T8-Prompt-Library-Portable-v<version>.exe`；macOS 下载 `T8-Prompt-Library-v<version>-mac-universal.dmg`。
 3. 可选：使用同一 Release 的 `SHA256SUMS.txt` 核对文件哈希。
 4. 安装版运行安装程序；便携版放入具有写权限的固定目录后直接运行，不需要安装。
-5. 如需在应用内播放完整 MP4，再下载同一 Release 的 `prompt-library-media-v<version>-part1.zip` 与 `prompt-library-media-v<version>-part2.zip`，把两份内容解压到同一媒体目录后重启应用；不安装媒体分卷时仍可离线查看全部真实 GIF/Poster。
+5. 如需在应用内播放完整 MP4，再下载同一 Release 的 `prompt-library-media-v<version>-part1.zip`、`prompt-library-media-v<version>-part2.zip` 与 `prompt-library-media-v<version>-part3.zip`，把三份内容解压到同一媒体目录后重启应用；不安装媒体分卷时仍可离线查看全部真实 GIF/Poster。
 6. 安装版首次启动后可通过“检查更新”获取稳定版；便携版的同一按钮会打开官方 Releases 页面，由用户手动替换 EXE。
 
 Windows 校验示例：
@@ -47,9 +47,9 @@ xattr -dr com.apple.quarantine "/Applications/T8 Prompt Library.app"
 
 ### 完整视频如何进入应用
 
-Git 仓库只保存 GIF/Poster。全部正式案例 MP4 位于对应 GitHub Release 的两个无损分卷：`prompt-library-media-v<version>-part1.zip` 与 `prompt-library-media-v<version>-part2.zip`。所有视频均已获库所有者授权分发；媒体分卷与桌面安装包分开，是为了避开 GitHub 单资产 2 GiB 的硬上限，不代表视频不可分发或不可下载，也不会降低视频质量。
+Git 仓库只保存 GIF/Poster。全部正式案例 MP4 位于对应 GitHub Release 的三个无损分卷：`prompt-library-media-v<version>-part1.zip`、`prompt-library-media-v<version>-part2.zip` 与 `prompt-library-media-v<version>-part3.zip`。所有视频均已获库所有者授权分发；媒体分卷与桌面安装包分开，是为了避开 GitHub 单资产 2 GiB 的硬上限，不代表视频不可分发或不可下载，也不会降低视频质量。
 
-把两个媒体 ZIP 的内容都直接解压到下列同一个 `media` 目录，确保 `media-pack-manifest.json` 位于该目录根部，然后重启应用：
+把三个媒体 ZIP 的内容都直接解压到下列同一个 `media` 目录，确保 `media-pack-manifest.json` 位于该目录根部，然后重启应用：
 
 - Windows 安装版推荐：`%APPDATA%\T8 Prompt Library\media\`；也支持应用可执行文件同级的 `media\`；
 - Windows 便携版推荐：便携 EXE 同级的 `T8-Prompt-Library-Data\media\`；也支持 EXE 同级的 `media\`；
@@ -61,8 +61,9 @@ Git 仓库只保存 GIF/Poster。全部正式案例 MP4 位于对应 GitHub Rele
 ```powershell
 $mediaRoot = Join-Path $env:APPDATA "T8 Prompt Library\media"
 New-Item -ItemType Directory -Force -Path $mediaRoot | Out-Null
-Expand-Archive .\prompt-library-media-v1.4.2-part1.zip -DestinationPath $mediaRoot -Force
-Expand-Archive .\prompt-library-media-v1.4.2-part2.zip -DestinationPath $mediaRoot -Force
+Expand-Archive .\prompt-library-media-v1.4.6-part1.zip -DestinationPath $mediaRoot -Force
+Expand-Archive .\prompt-library-media-v1.4.6-part2.zip -DestinationPath $mediaRoot -Force
+Expand-Archive .\prompt-library-media-v1.4.6-part3.zip -DestinationPath $mediaRoot -Force
 ```
 
 因此：
@@ -102,4 +103,4 @@ npm run app:pack
 
 ---
 
-**English summary:** Download the Windows NSIS installer, the no-install Windows portable executable, or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. The universal macOS build requires macOS 13 Ventura or newer. The portable build stores all app/session data in the adjacent `T8-Prompt-Library-Data` directory and updates manually. All released-case MP4s remain distributable in two hash-bound media ZIP volumes; extract both into the same supported `media` directory for full playback. The split only avoids GitHub's 2 GiB per-asset limit and does not re-encode the videos. Source media is never connected to model reference inputs automatically.
+**English summary:** Download the Windows NSIS installer, the no-install Windows portable executable, or the unsigned universal macOS DMG from GitHub Releases and verify it with `SHA256SUMS.txt`. The universal macOS build requires macOS 13 Ventura or newer. The portable build stores all app/session data in the adjacent `T8-Prompt-Library-Data` directory and updates manually. All released-case MP4s remain distributable in three hash-bound media ZIP volumes; extract all three into the same supported `media` directory for full playback. The split only avoids GitHub's 2 GiB per-asset limit and does not re-encode the videos. Source media is never connected to model reference inputs automatically.

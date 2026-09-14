@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithminal-2098284373372018792-browser-2098284373372018792-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "42ccac5de8e2a5db6a235e9214ff879e0f3423e232ff9c8932906aac2204f466",
+    "creative_dna_sha256": "f8cf8396ed3031a438015e8d084972d74b9df45e1bffd35baef78a8740c36356"
+  },
+  "content": {
+    "title": "White-Plain Whale Reveal | Human Scale, Terrain Misread and Giant Passage",
+    "summary": "An adult surveyor discovers that a white ridge is a sky-whale and survives its dust wake. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+    "quick_start": {
+      "input_format": "One clearly adult subject remains the human scale anchor. + The giant form begins as a plausible terrain feature. + Identity clues are revealed progressively before full scale. + Environmental displacement follows one giant-body action. + The final frame preserves both adult and giant geography without implying injury.",
+      "recommended_input": "Place one clearly adult salt surveyor alone on an endless white mineral plain holding one red cup. Pull high and wide until one eye, fin edge and complete original sky-whale silhouette become readable. Track the underside passing above the surveyor as she shields her face and remains fully visible in the final dust hold.",
+      "required_anchors": [
+        "One clearly adult subject remains the human scale anchor.",
+        "The giant form begins as a plausible terrain feature.",
+        "Environmental displacement follows one giant-body action.",
+        "The final frame preserves both adult and giant geography without implying injury."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult surveyor discovers that a white ridge is a sky-whale and survives its dust wake. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "官方原视频实测为 25.067 秒而非候选阶段记录的 17 秒；同一成年人物在白色裂地建立微小尺度，远处地貌逐步显出巨鲸身份，巨体起身掀起尘浪并从人物上方经过。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult subject remains the human scale anchor.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult subject remains the human scale anchor.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "The giant form begins as a plausible terrain feature.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The giant form begins as a plausible terrain feature.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Identity clues are revealed progressively before full scale.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Identity clues are revealed progressively before full scale.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Environmental displacement follows one giant-body action.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Environmental displacement follows one giant-body action.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final frame preserves both adult and giant geography without implying injury.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final frame preserves both adult and giant geography without implying injury.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult surveyor discovers that a white ridge is a sky-whale and survives its dust wake.",
+          "prompt_seed": "An adult surveyor discovers that a white ridge is a sky-whale and survives its dust wake."
+        },
+        {
+          "concept": "An adult polar engineer discovers that an ice shelf is a sleeping manta structure and observes it lifting.",
+          "prompt_seed": "An adult polar engineer discovers that an ice shelf is a sleeping manta structure and observes it lifting."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult subject remains the human scale anchor.\"",
+          "repair": "One clearly adult subject remains the human scale anchor."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The giant form begins as a plausible terrain feature.\"",
+          "repair": "The giant form begins as a plausible terrain feature."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Identity clues are revealed progressively before full scale.\"",
+          "repair": "Identity clues are revealed progressively before full scale."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Environmental displacement follows one giant-body action.\"",
+          "repair": "Environmental displacement follows one giant-body action."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final frame preserves both adult and giant geography without implying injury.\"",
+          "repair": "The final frame preserves both adult and giant geography without implying injury."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult surveyor discovers that a white ridge is a sky-whale and survives its dust wake.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult polar engineer discovers that an ice shelf is a sleeping manta structure and observes it lifting.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

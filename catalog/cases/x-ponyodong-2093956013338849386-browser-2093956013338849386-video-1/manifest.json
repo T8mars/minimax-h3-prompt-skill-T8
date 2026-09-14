@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ponyodong-2093956013338849386-browser-2093956013338849386-video-1",
+  "slug": "diegetic-doodle-response-escalation",
+  "title": "手绘能量接管｜实景载体换形、动作贴合与整屋改写",
+  "source_title": "洗衣店涂鸦奇遇｜一条手绘能量连续换形并接管实景",
+  "summary": "一条可追踪手绘能量贴合手持实景运动，依次变成浮游生物、织物符号、鱼形与列车轨迹；每次换形都由接触触发，最终从局部线条扩散为整屋星空涂鸦。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/diegetic-doodle-response-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ponyodong-2093956013338849386-browser-2093956013338849386-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ponyodong-2093956013338849386-browser-2093956013338849386-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-diegetic-doodle-response-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-diegetic-doodle-response-escalation-v1",
+  "input_format": "现实第一视角互动 + 首个画内线稿回应 + 连续表面路径 + 至少三类响应图形 + 真实空间与完整绘制世界同框",
+  "recommended_input": "从一个原创深夜维修亭开始，以克制手持漂移拍摄，不出现图形效果。；让丝带鳐依次触碰悬挂电缆、工具袋和风扇，变成绳结、鱼和轮子，同时保留一条紫色尾迹。；让电车轨迹扩散成星图，在保持实景几何注册的同时重绘全部墙面和物体。",
+  "required_anchors": [
+    "One continuous hand-drawn carrier persists.",
+    "Every form change follows visible contact.",
+    "Escalation moves from local object to room scale.",
+    "The final graphic world preserves the original physical layout."
+  ],
+  "tags": [
+    "diegetic",
+    "doodle",
+    "response",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:27+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

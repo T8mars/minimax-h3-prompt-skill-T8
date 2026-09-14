@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-m-zubaair-2098962733106655282-browser-2098962733106655282-video-1",
+  "slug": "follow-geometry-as-progress-clock",
+  "title": "山路环绕跟拍｜车辆路线、连续航拍与全景地理回证",
+  "source_title": "山路汽车航拍｜同一车辆沿弯道前进并由环绕证明地理",
+  "summary": "实片主体为汽车而非候选标题中的单车。无人机以侧跟、前绕、后跟和高位拉远连续交接，同一深色车辆始终沿山路前进，终局用广角同时证明车辆、弯道与山体。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-geometry-as-progress-clock",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-m-zubaair-2098962733106655282-browser-2098962733106655282-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-m-zubaair-2098962733106655282-browser-2098962733106655282-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-follow-geometry-clock-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-continuous-follow-geometry-clock-v1",
+  "input_format": "单一主体 + 连续后方跟随 + 重复结构地标 + 弯曲路线视差 + 不切镜的可见进度终态",
+  "recommended_input": "一辆原创石墨色电动轿跑从画面左侧进入潮湿雪松山路。；升高并向车前环绕三十度，车辆保持居中，下一段回头弯出现。；高位拉远，直到轿跑、已通过的回头弯和雪松山谷同框可读。",
+  "required_anchors": [
+    "One vehicle identity and one route remain continuous.",
+    "Wheel motion agrees with camera and road direction.",
+    "The orbit reveals rather than changes geography.",
+    "The final wide frame proves the completed path."
+  ],
+  "tags": [
+    "continuous",
+    "follow",
+    "geometry",
+    "clock"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:27+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

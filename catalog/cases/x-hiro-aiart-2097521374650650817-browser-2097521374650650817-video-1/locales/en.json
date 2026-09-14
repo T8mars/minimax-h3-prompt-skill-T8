@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-hiro-aiart-2097521374650650817-browser-2097521374650650817-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "7b28d8bc5475068e8d34fec2ffddca3b87d614bb5efe3c8f53ee03d70fa96679",
+    "creative_dna_sha256": "ac3cb65dadee1861fa4a6369780a6925d6e5a042958060a2443b87dfedcd64bc"
+  },
+  "content": {
+    "title": "Red-Stage Solo Dance | Continuous Phrase, Framing Shift and Knee-Lift Finish",
+    "summary": "An adult animated drummer performs one continuous eight-count stage phrase. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+    "quick_start": {
+      "input_format": "One clearly adult performer and wardrobe persist. + The phrase remains continuous and countable. + Framing changes do not reset posture continuity. + Only one half-turn reveals the back. + The final full-body pose is stable and readable.",
+      "recommended_input": "Place one original adult animated drummer full-body on an amber-lit rehearsal deck. Move from full body to waist and chest framing without changing face, jacket or stage axis. Return to full body and end on one lifted right knee with both hands above the shoulders for a two-beat hold.",
+      "required_anchors": [
+        "One clearly adult performer and wardrobe persist.",
+        "The phrase remains continuous and countable.",
+        "Only one half-turn reveals the back.",
+        "The final full-body pose is stable and readable."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult animated drummer performs one continuous eight-count stage phrase. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定同一成年动漫舞者、黑灰服装和红色工业舞台；步伐、手臂、转身和髋部动作形成连续短句，景别在全身与中近景间变化但不切换身份，最后用正面抬膝动作收束。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult performer and wardrobe persist.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult performer and wardrobe persist.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "The phrase remains continuous and countable.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The phrase remains continuous and countable.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Framing changes do not reset posture continuity.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Framing changes do not reset posture continuity.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Only one half-turn reveals the back.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Only one half-turn reveals the back.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final full-body pose is stable and readable.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final full-body pose is stable and readable.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult animated drummer performs one continuous eight-count stage phrase.",
+          "prompt_seed": "An adult animated drummer performs one continuous eight-count stage phrase."
+        },
+        {
+          "concept": "An adult fashion host completes a compact runway dance and returns to a full-body mark.",
+          "prompt_seed": "An adult fashion host completes a compact runway dance and returns to a full-body mark."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult performer and wardrobe persist.\"",
+          "repair": "One clearly adult performer and wardrobe persist."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"The phrase remains continuous and countable.\"",
+          "repair": "The phrase remains continuous and countable."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Framing changes do not reset posture continuity.\"",
+          "repair": "Framing changes do not reset posture continuity."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Only one half-turn reveals the back.\"",
+          "repair": "Only one half-turn reveals the back."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final full-body pose is stable and readable.\"",
+          "repair": "The final full-body pose is stable and readable."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult animated drummer performs one continuous eight-count stage phrase.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult fashion host completes a compact runway dance and returns to a full-body mark.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

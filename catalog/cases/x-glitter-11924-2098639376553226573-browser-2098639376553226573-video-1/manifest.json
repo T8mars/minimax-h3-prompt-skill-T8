@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-glitter-11924-2098639376553226573-browser-2098639376553226573-video-1",
+  "slug": "character-action-typography-module-carousel",
+  "title": "双人时装字卡｜造型轮转、姿态微动与版式回标",
+  "source_title": "时尚女孩短篇｜多组成年搭档在字卡节奏中轮转",
+  "summary": "高对比色卡依次呈现多组明确成年时装搭档；每组只执行一个姿态变化并与一个原创短词绑定，重复边框和节拍把独立造型收束为同一系列。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/character-action-typography-module-carousel",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-glitter-11924-2098639376553226573-browser-2098639376553226573-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-glitter-11924-2098639376553226573-browser-2098639376553226573-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-character-action-typography-module-carousel-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-character-action-typography-module-carousel-v1",
+  "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+  "recommended_input": "在青色字卡中呈现两名明确成年的原创时装搭档，并显示准确短词【PULSE】。；准确短词【TANDEM】从两人身后滑过，两人各交叉一只手臂。；让搭档回到青色网格，并停留准确原创标题【TWO SIGNALS】。",
+  "required_anchors": [
+    "Every depicted human is clearly adult.",
+    "One layout grammar connects all cards.",
+    "Typography never obscures identity anchors.",
+    "The final card reunites the pair and series title."
+  ],
+  "tags": [
+    "character",
+    "action",
+    "typography",
+    "module",
+    "carousel"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:30+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

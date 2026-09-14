@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aqib-786ai-2098596391920750638-browser-2098596391920750638-video-1",
+  "slug": "single-decision-impact-return-lockup",
+  "title": "孤城围攻决断｜行进基线、无人机收网与迎战定格",
+  "source_title": "霓虹孤城突袭｜成年战士被无人机包围后选择迎战",
+  "summary": "从雨夜空城和同一成年战士的独行路线开始，无人机由远到近汇聚；头盔警报确认威胁后，人物转身举起装备，停在行动前的明确决断状态。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/single-decision-impact-return-lockup",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aqib-786ai-2098596391920750638-browser-2098596391920750638-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aqib-786ai-2098596391920750638-browser-2098596391920750638-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-single-decision-impact-return-lockup-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-single-decision-impact-return-lockup-v1",
+  "input_format": "威胁或失效状态 + 责任主体 + 准备动作 + 校准确认 + 一次决定性动作 + 可见后果 + 主体或结果终版锁定",
+  "recommended_input": "先建立空旷雨光港口大道，再让一名成年信号巡查员走入画面。；无人机增加到九架并形成可读包围圈，街道和信标方向保持。；巡查员只转身一次，举起脉冲盾，在不虚构攻击结果前停住。",
+  "required_anchors": [
+    "One clearly adult subject and one destination axis persist.",
+    "Threat count and proximity increase monotonically.",
+    "Exactly one final decision gesture occurs.",
+    "The sequence stops before inventing victory or injury."
+  ],
+  "tags": [
+    "single",
+    "decision",
+    "impact",
+    "return",
+    "lockup"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:30+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

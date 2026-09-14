@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-renoiseaijp-2092500355724775488-browser-2092500355724775488-video-1",
+  "slug": "alternate-graphic-reset-and-action-proof",
+  "title": "黑橙角色动作卡｜身份板复位、武器挥扫与英雄锁定",
+  "source_title": "动画角色广告｜设定板和斧刃动作在图形网格中交替",
+  "summary": "锁定同一成年原创动画角色的橙黑发色、服装与重型工具；白底身份板和黑橙文字场反复复位，每次只放行一个挥扫或持械姿态，终局回到完整角色板。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/alternate-graphic-reset-and-action-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-renoiseaijp-2092500355724775488-browser-2092500355724775488-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-renoiseaijp-2092500355724775488-browser-2092500355724775488-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-graphic-reset-action-proof-hero-lockup-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-graphic-reset-action-proof-hero-lockup-v1",
+  "input_format": "同一原创角色或机器 + 固定图形身份卡 + 至少2段不同动作证明 + 图形复位分隔 + 后段能力升级 + 动作轮廓回收到最终全身锁定",
+  "recommended_input": "在干净身份板上建立一名明确成年的原创打捞队长：铜黑双色头发、工装长裤和磁力破拆工具。；她完成一次横向破拆挥扫；一道琥珀弧跟随工具头后消失。；回到完整全身身份板，破拆工具落地，并显示准确原创标记【VANTA / SALVAGE CAPTAIN】。",
+  "required_anchors": [
+    "One clearly adult original identity remains fixed.",
+    "Graphic resets separate proof chapters.",
+    "All detail cards map to the same tool geometry.",
+    "The final hero card uses only original copy and design."
+  ],
+  "tags": [
+    "graphic",
+    "reset",
+    "action",
+    "proof",
+    "hero",
+    "lockup"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:28+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

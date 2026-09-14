@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-hiro-aiart-2097159489317478698-browser-2097159489317478698-video-1",
+  "slug": "stage-performance-fall-rise-arc",
+  "title": "单人舞台动作链｜全身节拍、近脸回应与终拍回位",
+  "source_title": "晴空动漫舞蹈｜同一成年角色连续完成轻快动作组合",
+  "summary": "锁定同一成年动漫舞者、白色文字 T 恤、宽腿裤和圆形天空舞台；全身步法与手臂动作连续推进，中段收紧到眨眼近脸，再回到全身完成最后一个抬膝与侧步。",
+  "status": "released",
+  "source_duration_seconds": 14.058667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/stage-performance-fall-rise-arc",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hiro-aiart-2097159489317478698-browser-2097159489317478698-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hiro-aiart-2097159489317478698-browser-2097159489317478698-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performance-fall-rise-arc-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-performance-fall-rise-arc-v1",
+  "input_format": "单人表演者 + 巨大空场 + 远景起势 + 近景表达 + 一次受控倒地 + 俯拍确认 + 连续复起",
+  "recommended_input": "让一名原创成年动画电台主持人以全身景站在晴空下的圆形屋顶舞台。；不切镜地从全身推进到胸像，面容、白色【RADIO DAY】T 恤和天际线保持注册。；拉回全身，完成一次向左侧步，双脚落回开场中心标记收束。",
+  "required_anchors": [
+    "One clearly adult character, wardrobe and stage persist.",
+    "The body phrase remains continuous and countable.",
+    "Only one wink marks the performance peak.",
+    "The final full-body stance returns to the opening center mark."
+  ],
+  "tags": [
+    "performance",
+    "fall",
+    "rise",
+    "arc"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-08T14:38:03+08:00",
+  "updated_at": "2026-09-08T16:11:02+08:00"
+}

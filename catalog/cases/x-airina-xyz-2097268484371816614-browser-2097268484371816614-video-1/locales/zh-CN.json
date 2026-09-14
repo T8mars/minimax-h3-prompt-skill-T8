@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-airina-xyz-2097268484371816614-browser-2097268484371816614-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d74adad628353e1172acf1b447c52e30a43e133e796982d149fb0c5ecd9185cc",
+    "creative_dna_sha256": "0162239efa9cabd365dee51b7280f933be874e0949b35e9ae1c9ef7aecd66662"
+  },
+  "content": {
+    "title": "陶杯手作工序｜拉坯、描花、成组与晨光洗手",
+    "summary": "同一成年动画陶艺师在暖光作坊完成拉坯塑形、杯体稳定、蓝花描绘和成组摆放；终局从成品桌自然过渡到门外水池洗手，以可见泥水残留证明工序完成。",
+    "quick_start": {
+      "input_format": "固定处理表面 + 多工具单一职责 + 层层累积 + 单次揭除 + 两种独立验收",
+      "recommended_input": "一名明确成年的动画陶艺师在晨间暖光中用同一陶轮塑造一只茶杯。；在同一只烧制后的杯子上画一枝蓝色枝条和五朵小花，近景保持稳定。；跟随她穿过开门走到水池，在流水下洗去双手可见陶泥。",
+      "required_anchors": [
+        "一位明显成年的工匠和一个工作坊持续存在。",
+        "每个工艺阶段明显改变了对象。",
+        "群组镜头证明了一个完成的系列。",
+        "洗手后并确认完成的过程。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一成年动画陶艺师在暖光作坊完成拉坯塑形、杯体稳定、蓝花描绘和成组摆放；终局从成品桌自然过渡到门外水池洗手，以可见泥水残留证明工序完成。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一成年动画陶艺师在暖光作坊完成拉坯塑形、杯体稳定、蓝花描绘和成组摆放；终局从成品桌自然过渡到门外水池洗手，以可见泥水残留证明工序完成。 必须满足：One clearly adult craftsperson and one workshop persist. + Each craft stage visibly changes the object. + Decoration follows a stable vessel state. + The group shot proves a finished series. + Hand washing follows and confirms the completed process.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一位明显成年的工匠和一个工作坊持续存在。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这条确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一位明显成年的工匠和一个工作坊持续存在。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个工艺阶段明显改变了对象。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这条确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"每个工艺阶段明显改变了对象。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "装饰遵循稳定的容器状态。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这条确切的进展规则，中间部分可以跳到替换状态，累积的结果将不再可追溯。已移除规则：\"装饰遵循稳定的容器状态。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "群组镜头证明了一个完成的系列。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条确切的重新连接规则，细节或转换镜头可以属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"群组镜头证明了一个完成的系列。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "洗手后并确认完成的过程。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条确切的终端验证规则，序列仅在动作上停止，永远不会确认承诺的结果或保留的后果。被移除的规则：\"洗手后并确认完成的过程。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年人在洗手前塑造、绘画并分组茶杯系列。",
+          "prompt_seed": "一位成年人在洗手前塑造、绘画并分组茶杯系列。"
+        },
+        {
+          "concept": "一位成年人在清洁滚筒前雕刻、上墨并装版。",
+          "prompt_seed": "一位成年人在清洁滚筒前雕刻、上墨并装版。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这条确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一位明显成年的工匠和一个工作坊持续存在。\"",
+          "repair": "一位明显成年的工匠和一个工作坊持续存在。"
+        },
+        {
+          "failure": "没有这条确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"每个工艺阶段明显改变了对象。\"",
+          "repair": "每个工艺阶段明显改变了对象。"
+        },
+        {
+          "failure": "没有这条确切的进展规则，中间部分可以跳到替换状态，累积的结果将不再可追溯。已移除规则：\"装饰遵循稳定的容器状态。\"",
+          "repair": "装饰遵循稳定的容器状态。"
+        },
+        {
+          "failure": "没有这条确切的重新连接规则，细节或转换镜头可以属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"群组镜头证明了一个完成的系列。\"",
+          "repair": "群组镜头证明了一个完成的系列。"
+        },
+        {
+          "failure": "没有这条确切的终端验证规则，序列仅在动作上停止，永远不会确认承诺的结果或保留的后果。被移除的规则：\"洗手后并确认完成的过程。\"",
+          "repair": "洗手后并确认完成的过程。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年人在洗手前塑造、绘画并分组茶杯系列。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年人在清洁滚筒前雕刻、上墨并装版。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

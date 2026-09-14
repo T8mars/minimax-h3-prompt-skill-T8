@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-yourplugai-2098306219903492133-browser-2098306219903492133-video-1",
+  "slug": "product-finish-alternation-detail-return",
+  "title": "植物香水材质接力｜露珠、花叶、喷洒与瓶身回归",
+  "source_title": "植物香水广告｜自然微距逐层过渡到奢华英雄镜头",
+  "summary": "用同一成年调香师和原创香水瓶连接温室、叶片露珠、花朵、雾气与一次喷洒；相同金绿高光贯穿材质镜头，最终回到瓶身与人物共同英雄状态。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/product-finish-alternation-detail-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yourplugai-2098306219903492133-browser-2098306219903492133-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yourplugai-2098306219903492133-browser-2098306219903492133-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-product-finish-alternation-detail-return-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-product-finish-alternation-detail-return-v1",
+  "input_format": "一个原创产品与固定背景、尺度和构图参照 + 至少两种可清楚区分且可逆切换的表面状态 + 每次状态切换都回到同一主体位置 + 一次能证明真实材质细节的微距检查 + 终局返回完整产品英雄画面并锁定指定表面状态",
+  "recommended_input": "让一名明确成年的原创调香师和一只切面瓶出现在晨光温室。；把坠落露珠匹配到一滴透明液体进入同一切面瓶。；形成一个克制金色花瓣舞台，让准确原创名称【VERDANT NOTE】与瓶身、调香师同框。",
+  "required_anchors": [
+    "One clearly adult model and one original bottle persist.",
+    "Macro materials share one controlled highlight family.",
+    "Exactly one spray action occurs.",
+    "Source brand names, labels, identity and watermark are excluded."
+  ],
+  "tags": [
+    "product",
+    "finish",
+    "alternation",
+    "detail",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:32+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

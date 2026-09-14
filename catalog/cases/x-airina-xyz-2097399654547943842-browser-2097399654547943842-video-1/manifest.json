@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-airina-xyz-2097399654547943842-browser-2097399654547943842-video-1",
+  "slug": "single-accent-scale-activation-relay",
+  "title": "灯火引出海光｜孤崖基线、光泡汇聚与眼部回标",
+  "source_title": "月夜守塔人｜提灯者被海上蓝光逐层包围",
+  "summary": "从月夜海崖和远处灯塔建立孤独尺度，同一成年守塔人提灯走近；少量青蓝光泡从海面出现并逐级围绕人物，暖灯与冷光保持双锚，终局推进到一只眼睛被同色光点点亮。",
+  "status": "released",
+  "source_duration_seconds": 15.104,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/single-accent-scale-activation-relay",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2097399654547943842-browser-2097399654547943842-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2097399654547943842-browser-2097399654547943842-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-single-accent-scale-activation-relay-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-single-accent-scale-activation-relay-v1",
+  "input_format": "近单色低饱和世界 + 至少3级可比较尺度 + 唯一高饱和激活色与局部源点 + 同色沿可见载体跨尺度接力 + 保留早期锚点 + 最大环境网络稳定映射",
+  "recommended_input": "让一名原创成年信号守护者站在风暴水库上方，手持一盏琥珀色检修灯。；他抬起琥珀灯一次后，从水线释放六枚青色信号光泡。；推进到单眼近景，让虹膜中出现一个青色反光点，同时保留面部与暖灯溢光。",
+  "required_anchors": [
+    "One clearly adult keeper, lantern and cliff persist.",
+    "The gesture visibly triggers the accent light.",
+    "Warm and cool anchors never swap roles.",
+    "The final eye detail is causally linked to the same light family."
+  ],
+  "tags": [
+    "single",
+    "accent",
+    "scale",
+    "activation",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-09T17:01:08+08:00",
+  "updated_at": "2026-09-10T01:52:36+08:00"
+}

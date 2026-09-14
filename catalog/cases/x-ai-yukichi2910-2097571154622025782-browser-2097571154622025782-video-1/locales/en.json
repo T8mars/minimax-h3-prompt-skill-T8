@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ai-yukichi2910-2097571154622025782-browser-2097571154622025782-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "df3b4bb6616ac533500249f8a7b67dd27bad0b43ea97e5bddeb06b4435e8d6ad",
+    "creative_dna_sha256": "62c1ea96ef185381adf075f251daae90378d177e5026284fec1711f84afc4dd2"
+  },
+  "content": {
+    "title": "Exhibition Information Reveal | Character Anchor, Type Hierarchy and Final Lockup",
+    "summary": "An adult illustrator and cat introduce a SMALL WORLDS exhibition through staged information. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+    "quick_start": {
+      "input_format": "One clearly adult figure and one cat persist. + Information appears only after visual identity is established. + Text hierarchy is exact and readable. + No line covers the face. + The final frame contains character, cat and complete lockup.",
+      "recommended_input": "Place one original clearly adult stylized illustrator and one black cat together in a clean outdoor portrait. Recenter both figures in the lower third and open one clean information field above them. Hold the complete lockup while the adult illustrator gives one final small wave and the cat looks forward.",
+      "required_anchors": [
+        "One clearly adult figure and one cat persist.",
+        "Information appears only after visual identity is established.",
+        "No line covers the face.",
+        "The final frame contains character, cat and complete lockup."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult illustrator and cat introduce a SMALL WORLDS exhibition through staged information. Preserve the five causal invariants and terminal proof while replacing all source-specific surfaces.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "固定同一原创成年风格化插画角色和黑猫，先以挥手、靠近与表情建立关系，再让展览标题、日期、时间和地点按层级渐显，最后回到角色与完整信息同框。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult figure and one cat persist.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult figure and one cat persist.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Information appears only after visual identity is established.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Information appears only after visual identity is established.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Text hierarchy is exact and readable.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Text hierarchy is exact and readable.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "No line covers the face.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"No line covers the face.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final frame contains character, cat and complete lockup.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final frame contains character, cat and complete lockup.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult illustrator and cat introduce a SMALL WORLDS exhibition through staged information.",
+          "prompt_seed": "An adult illustrator and cat introduce a SMALL WORLDS exhibition through staged information."
+        },
+        {
+          "concept": "An adult ceramicist and dog introduce a studio open day with the same hierarchy.",
+          "prompt_seed": "An adult ceramicist and dog introduce a studio open day with the same hierarchy."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult figure and one cat persist.\"",
+          "repair": "One clearly adult figure and one cat persist."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Information appears only after visual identity is established.\"",
+          "repair": "Information appears only after visual identity is established."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Text hierarchy is exact and readable.\"",
+          "repair": "Text hierarchy is exact and readable."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"No line covers the face.\"",
+          "repair": "No line covers the face."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final frame contains character, cat and complete lockup.\"",
+          "repair": "The final frame contains character, cat and complete lockup."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult illustrator and cat introduce a SMALL WORLDS exhibition through staged information.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult ceramicist and dog introduce a studio open day with the same hierarchy.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

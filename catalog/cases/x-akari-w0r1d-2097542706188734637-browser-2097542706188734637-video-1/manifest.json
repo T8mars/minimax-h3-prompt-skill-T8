@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-akari-w0r1d-2097542706188734637-browser-2097542706188734637-video-1",
+  "slug": "procedure-ladder-layered-finish",
+  "title": "蛋料理工序链｜切分、混合、回填与摆盘证明",
+  "source_title": "厨房微距制作｜同一批鸡蛋逐步变成完整冷盘",
+  "summary": "以同一位原创成年动画厨师、同一砧板和同一批熟鸡蛋建立工序连续性；切开、取黄、混合、裱花回填和撒料均不可逆，最后用整盘成品证明全部步骤。",
+  "status": "released",
+  "source_duration_seconds": 15.061333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/procedure-ladder-layered-finish",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-akari-w0r1d-2097542706188734637-browser-2097542706188734637-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-akari-w0r1d-2097542706188734637-browser-2097542706188734637-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-procedure-ladder-layered-finish-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-procedure-ladder-layered-finish-v1",
+  "input_format": "固定处理表面 + 多工具单一职责 + 层层累积 + 单次揭除 + 两种独立验收",
+  "recommended_input": "一名原创且明确成年的动画厨师在同一块蓝色砧板上切开六枚熟鸡蛋。；加入一勺香草酱，搅拌至蛋黄变成均匀馅料。；依次撒一次红色与绿色配料，再拉宽证明同一托盘上十二份成品。",
+  "required_anchors": [
+    "One clearly adult cook and one ingredient batch persist.",
+    "Every state change is visible and irreversible.",
+    "Counts remain consistent from halves to tray.",
+    "The final tray proves completion."
+  ],
+  "tags": [
+    "procedure",
+    "ladder",
+    "layered",
+    "finish"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-09T17:01:08+08:00",
+  "updated_at": "2026-09-10T01:52:36+08:00"
+}

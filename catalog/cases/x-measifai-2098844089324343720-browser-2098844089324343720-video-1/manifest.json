@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-measifai-2098844089324343720-browser-2098844089324343720-video-1",
+  "slug": "link-skills-with-base-loop",
+  "title": "雪地技巧递进｜装备基线、第一视角加速与腾空峰值",
+  "source_title": "单板滑雪展示｜成年运动员从准备到滑杆与跳台腾空",
+  "summary": "先用头盔、雪镜和雪板建立成年运动员，再由第一视角滑行切到外部跟拍；直线加速、上杆、落地与跳台腾空逐级提高难度，单一大跳作为终局峰值。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/link-skills-with-base-loop",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-measifai-2098844089324343720-browser-2098844089324343720-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-measifai-2098844089324343720-browser-2098844089324343720-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-base-loop-skill-ladder-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-base-loop-skill-ladder-v1",
+  "input_format": "持续基础动作 + 3种高级技能 + 每次不同功能机位 + 节奏/接触声连续 + 回到基础动作",
+  "recommended_input": "一名明确成年的原创单板教练收紧红色雪镜，并在标记起点检查一块黑色雪板。；切换到低位后跟，保持头盔、雪镜和影子一致，接近一根黄色滑杆。；加速冲向一座白色跳台，只腾空一次，并让抓板剪影在太阳前停留后开始下降。",
+  "required_anchors": [
+    "One clearly adult original athlete and one equipment set persist.",
+    "Difficulty increases from preparation to glide, rail and jump.",
+    "A stable landing separates intermediate proof from final peak.",
+    "Exactly one large airborne action closes the sequence."
+  ],
+  "tags": [
+    "base",
+    "loop",
+    "skill",
+    "ladder"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:28+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

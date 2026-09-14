@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aqib-786ai-2099000890938228747-browser-2099000890938228747-video-1",
+  "slug": "follow-geometry-as-progress-clock",
+  "title": "雨城行进｜孤身步态、纵深地标与持续跟随压迫",
+  "source_title": "霓虹雨城步行｜同一成年战士沿稳定轴线穿过巨构",
+  "summary": "让同一成年战士保持一个持续前进目标，镜头在正面、侧后和低位跟随间平稳接力；路面反光、无人机和高楼逐级扩大城市尺度，人物步态是全片时钟。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-geometry-as-progress-clock",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aqib-786ai-2099000890938228747-browser-2099000890938228747-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aqib-786ai-2099000890938228747-browser-2099000890938228747-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-continuous-follow-geometry-clock-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-continuous-follow-geometry-clock-v1",
+  "input_format": "单一主体 + 连续后方跟随 + 重复结构地标 + 弯曲路线视差 + 不切镜的可见进度终态",
+  "recommended_input": "一名明确成年的信号巡查员独自进入雨光港口大道，携带一根折叠测量杆。；切换到侧后跟随，两辆服务车和三架无人机从不同纵深层掠过。；在信标门前停下；巡查员只立起一次测量杆，面对仍关闭的入口。",
+  "required_anchors": [
+    "One clearly adult subject and one route persist.",
+    "Walking cadence clocks every camera handoff.",
+    "No unobserved victory or combat is invented.",
+    "The final threshold is visibly connected to the opening destination."
+  ],
+  "tags": [
+    "continuous",
+    "follow",
+    "geometry",
+    "clock"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:26+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

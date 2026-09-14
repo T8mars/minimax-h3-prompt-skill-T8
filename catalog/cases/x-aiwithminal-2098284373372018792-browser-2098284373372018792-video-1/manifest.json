@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithminal-2098284373372018792-browser-2098284373372018792-video-1",
+  "slug": "reveal-scale-through-environment-deformation",
+  "title": "白地巨鲸尺度揭示｜微小人物、地貌误读与近体压境",
+  "source_title": "微小人类与巨鲸｜二十五秒完整原片中的极端尺度揭示",
+  "summary": "官方原视频实测为 25.067 秒而非候选阶段记录的 17 秒；同一成年人物在白色裂地建立微小尺度，远处地貌逐步显出巨鲸身份，巨体起身掀起尘浪并从人物上方经过。",
+  "status": "released",
+  "source_duration_seconds": 25.109333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reveal-scale-through-environment-deformation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithminal-2098284373372018792-browser-2098284373372018792-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithminal-2098284373372018792-browser-2098284373372018792-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-environment-deformation-scale-reveal-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-environment-deformation-scale-reveal-v1",
+  "input_format": "环境局部异常 + 单一身份特征 + 高位完整几何证明 + 环境尺度影响 + 低位近距离逼近",
+  "recommended_input": "让一名明确成年的盐地勘测员独自站在无尽白色矿物平原，手持一只红杯。；高位拉宽，直到一只眼睛、鳍边和完整原创天鲸轮廓清楚可读。；跟随巨体腹部从勘测员上方经过，她遮住面部，并在最终尘雾停留中保持完整可见。",
+  "required_anchors": [
+    "One clearly adult subject remains the human scale anchor.",
+    "The giant form begins as a plausible terrain feature.",
+    "Environmental displacement follows one giant-body action.",
+    "The final frame preserves both adult and giant geography without implying injury."
+  ],
+  "tags": [
+    "environment",
+    "deformation",
+    "scale",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:32+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

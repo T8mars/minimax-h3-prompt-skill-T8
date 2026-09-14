@@ -6,10 +6,10 @@ on:
       version:
         description: "Decimal-carry version without v (for example 1.1.7)"
         required: true
-        default: "1.4.5"
+        default: "1.4.6"
         type: string
       media_sha256:
-        description: "Comma-separated SHA-256 values for media part1 and part2 already uploaded to the Draft Release"
+        description: "Comma-separated SHA-256 values for media part1, part2, and part3 already uploaded to the Draft Release"
         required: true
         type: string
       publish:
@@ -101,7 +101,7 @@ jobs:
           $ErrorActionPreference = "Stop"
           $version = "${{ inputs.version }}"
           $tag = "v$version"
-          $assets = @("prompt-library-media-v$version-part1.zip", "prompt-library-media-v$version-part2.zip")
+          $assets = @("prompt-library-media-v$version-part1.zip", "prompt-library-media-v$version-part2.zip", "prompt-library-media-v$version-part3.zip")
           $release = gh release view $tag --json isDraft,assets | ConvertFrom-Json
           if (-not $release.isDraft) { throw "$tag must remain a Draft Release during platform builds." }
           foreach ($asset in $assets) {
@@ -109,8 +109,8 @@ jobs:
           }
           New-Item -ItemType Directory -Force -Path ".release-input/download", ".release-input/media" | Out-Null
           $expectedHashes = @("${{ inputs.media_sha256 }}".Split(',') | ForEach-Object { $_.Trim().ToLowerInvariant() })
-          if ($expectedHashes.Count -ne 2 -or @($expectedHashes | Where-Object { $_ -notmatch "^[a-f0-9]{64}$" }).Count -ne 0) {
-            throw "media_sha256 must contain exactly two comma-separated SHA-256 values in part1,part2 order."
+          if ($expectedHashes.Count -ne 3 -or @($expectedHashes | Where-Object { $_ -notmatch "^[a-f0-9]{64}$" }).Count -ne 0) {
+            throw "media_sha256 must contain exactly three comma-separated SHA-256 values in part1,part2,part3 order."
           }
           for ($partIndex = 0; $partIndex -lt $assets.Count; $partIndex += 1) {
             $asset = $assets[$partIndex]
@@ -140,7 +140,7 @@ jobs:
         shell: pwsh
         run: |
           $ErrorActionPreference = "Stop"
-          node scripts/public/prepare-app-catalog.mjs --source catalog --output .release-input/app-catalog --ffmpeg "$env:T8_FFMPEG_PATH" --max-dimension 232 --fps 4 --colors 32
+          node scripts/public/prepare-app-catalog.mjs --source catalog --output .release-input/app-catalog --ffmpeg "$env:T8_FFMPEG_PATH" --max-dimension 208 --fps 4 --colors 32
           if ($LASTEXITCODE -ne 0) { throw "Packaged catalog preparation failed." }
           $compactBytes = (Get-ChildItem -LiteralPath ".release-input/app-catalog" -Recurse -File | Measure-Object Length -Sum).Sum
           if ($compactBytes -ge 440401920) { throw "Packaged catalog exceeds the 420 MiB preview budget: $compactBytes bytes." }
@@ -307,6 +307,7 @@ jobs:
           Compress-Archive -Path skills -DestinationPath (Join-Path $assets "prompt-library-skills-v$version.zip") -CompressionLevel Optimal
           Copy-Item ".release-input/download/prompt-library-media-v$version-part1.zip" $assets
           Copy-Item ".release-input/download/prompt-library-media-v$version-part2.zip" $assets
+          Copy-Item ".release-input/download/prompt-library-media-v$version-part3.zip" $assets
           Copy-Item ".release-input/media/media-pack-manifest.json" $assets
           $dist = "apps/prompt-library-desktop/dist"
           $installer = Join-Path $dist "T8-Prompt-Library-Setup-v$version.exe"
@@ -378,6 +379,7 @@ jobs:
             "prompt-library-skills-v$version.zip",
             "prompt-library-media-v$version-part1.zip",
             "prompt-library-media-v$version-part2.zip",
+            "prompt-library-media-v$version-part3.zip",
             "media-pack-manifest.json",
             "T8-Prompt-Library-Setup-v$version.exe",
             "T8-Prompt-Library-Setup-v$version.exe.blockmap",
@@ -456,7 +458,7 @@ jobs:
           - Windows NSIS: verified
           - Windows portable executable with launcher-sibling user/session data: verified
           - macOS universal DMG + ZIP: verified, unsigned and unnotarized
-          - All $caseCount released case videos: distributable, hash-bound, fully traversed on both platforms, and published in two lossless media-pack volumes; unavailable cases: $unavailableCaseCount
+          - All $caseCount released case videos: distributable, hash-bound, fully traversed on both platforms, and published in three lossless media-pack volumes; unavailable cases: $unavailableCaseCount
           - Desktop packages: compact catalog included; complete MP4s mounted from the verified sidecar media pack to stay below GitHub's 2 GiB per-asset limit
           - Packaged Electron E2E with sidecar media: required on both platforms
           - Publish requested: ${{ inputs.publish }}

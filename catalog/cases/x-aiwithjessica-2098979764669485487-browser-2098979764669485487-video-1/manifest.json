@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithjessica-2098979764669485487-browser-2098979764669485487-video-1",
+  "slug": "foreground-fixation-background-hazard-escalation",
+  "title": "冷静仪式对抗乱局｜前景微动作与后景冲突升级",
+  "source_title": "冷静主角｜成年女性完成一次点火仪式而后景失控",
+  "summary": "把同一成年女性的克制点火、吸气和行走固定为前景任务，后景人群冲突由站立、推搡到倒地逐级升级；人物只做一次必要闪避并回到冷静节奏。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/foreground-fixation-background-hazard-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithjessica-2098979764669485487-browser-2098979764669485487-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithjessica-2098979764669485487-browser-2098979764669485487-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-foreground-fixation-background-hazard-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-foreground-fixation-background-hazard-escalation-v1",
+  "input_format": "明确成年原创主体和一个小型可重复前景任务先建立 + 背景危险至少经过三档接近等级升级且方向可读 + 每次危险后双手与视线都回到同一任务物 + 早期只做最小避让并把最大身体位移保留给一次近接峰值 + 危险过去后重新执行原任务而非庆祝或击败威胁",
+  "recommended_input": "一名明确成年的夜间巡查员身穿石墨外套，在一排蒙面舞台工人前冷静点燃一支线香。；舞台工人进入编排好的推搡与倒地接力，巡查员保持居中静止。；她放下已经熄灭的线香，从恢复静止的人群中穿过，不再回头。",
+  "required_anchors": [
+    "One clearly adult original lead remains calm and identifiable.",
+    "A small foreground ritual never loses continuity.",
+    "Any physical conflict is non-graphic and choreographed.",
+    "The ending returns attention to the lead's completed ritual."
+  ],
+  "tags": [
+    "foreground",
+    "fixation",
+    "background",
+    "hazard",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:27+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

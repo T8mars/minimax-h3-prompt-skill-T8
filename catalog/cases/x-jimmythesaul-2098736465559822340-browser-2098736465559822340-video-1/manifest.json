@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-jimmythesaul-2098736465559822340-browser-2098736465559822340-video-1",
+  "slug": "foreground-fixation-background-hazard-escalation",
+  "title": "沉睡主角反差｜静态前景锚点与同伴灾难升级",
+  "source_title": "睡过冒险｜成年主角始终沉睡而同伴完成求生路线",
+  "summary": "把一名明确成年主角的沉睡状态固定为持续前景任务，同伴在周围经历跳鱼、激流、隧道和操舵危机；危险不断升级但主角只保留呼吸微动，最后回到平静水面。",
+  "status": "released",
+  "source_duration_seconds": 15.183659,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/foreground-fixation-background-hazard-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-jimmythesaul-2098736465559822340-browser-2098736465559822340-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-jimmythesaul-2098736465559822340-browser-2098736465559822340-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-foreground-fixation-background-hazard-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-foreground-fixation-background-hazard-escalation-v1",
+  "input_format": "明确成年原创主体和一个小型可重复前景任务先建立 + 背景危险至少经过三档接近等级升级且方向可读 + 每次危险后双手与视线都回到同一任务物 + 早期只做最小避让并把最大身体位移保留给一次近接峰值 + 危险过去后重新执行原任务而非庆祝或击败威胁",
+  "recommended_input": "一名明确成年的河道制图师睡在宽阔芦苇筏上，一名成年向导观察水道。；木筏进入蓝色矿洞，水流和摄影速度同步提高。；驶入平静晨光水池；向导松懈坐下，睡者只翻身一次后继续沉睡。",
+  "required_anchors": [
+    "All human subjects are clearly adult.",
+    "The sleeping state is proven through restrained micro-motion.",
+    "The guide performs all active recovery actions.",
+    "The final calm state preserves the original comic contrast."
+  ],
+  "tags": [
+    "foreground",
+    "fixation",
+    "background",
+    "hazard",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:30+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-yudotanaka-2097528168810996121-browser-2097528168810996121-video-1",
+  "slug": "persistent-matchup-strip-causal-rally-payoff",
+  "title": "棒球跑垒闭环｜击球、接球、裁判手势与滑垒庆祝",
+  "source_title": "动漫球场冲刺｜同一击球手从挥棒跑到本垒",
+  "summary": "锁定同一成年动漫击球手、白色七号球衣和同一球场；击球后沿垒线持续奔跑，外野手接球与裁判手势并行制造压力，人物最终滑入本垒并以举臂庆祝结束，不虚构比分。",
+  "status": "released",
+  "source_duration_seconds": 15.104,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/persistent-matchup-strip-causal-rally-payoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yudotanaka-2097528168810996121-browser-2097528168810996121-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-yudotanaka-2097528168810996121-browser-2097528168810996121-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-persistent-matchup-strip-causal-rally-payoff-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-persistent-matchup-strip-causal-rally-payoff-v1",
+  "input_format": "固定双人对阵信息条 + 先交代动作轴线 + 同一小物体发出/接回/反击/决胜 + 每次切镜继承方向/击打侧/重心 + 1次俯视重校 + 可见得分结果和双方反应",
+  "recommended_input": "一名明确成年的动画击球手身穿十一号球衣，在本垒击中一球。；外野手接住同一球，高位镜头同时保留跑者、垒包和传球路线。；完成一次脚先滑入本垒，随后起身举起双臂，队友作出可见反应；不展示比分。",
+  "required_anchors": [
+    "One clearly adult player and jersey persist.",
+    "The same ball links hit and fielding.",
+    "Exactly one slide completes the route.",
+    "Celebration follows arrival without inventing a score."
+  ],
+  "tags": [
+    "persistent",
+    "matchup",
+    "strip",
+    "causal",
+    "rally",
+    "payoff"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-09T17:01:10+08:00",
+  "updated_at": "2026-09-10T01:52:36+08:00"
+}

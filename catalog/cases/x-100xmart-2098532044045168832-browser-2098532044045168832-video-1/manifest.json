@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-100xmart-2098532044045168832-browser-2098532044045168832-video-1",
+  "slug": "build-viewpoint-scale-spectacle-ladder",
+  "title": "深渊横移揭示｜熔岩尺度、前景锁链与远端城塞",
+  "source_title": "深渊成真｜连续横移逐层揭出地下巨构",
+  "summary": "用一次缓慢连续横移从近处岩壁和锁链进入广阔地下峡谷；熔岩瀑布、桥梁和远端蓝光城塞依次提供尺度参照，终局停在完整深渊地理。",
+  "status": "released",
+  "source_duration_seconds": 12.144036,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/build-viewpoint-scale-spectacle-ladder",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-100xmart-2098532044045168832-browser-2098532044045168832-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-100xmart-2098532044045168832-browser-2098532044045168832-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-viewpoint-scale-spectacle-ladder-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-viewpoint-scale-spectacle-ladder-v1",
+  "input_format": "5个熟悉尺度参照 + 每镜1个巨型原创形态 + 视点变化 + 距离逐步缩短 + 近距离终态",
+  "recommended_input": "从地下巨型水库的一道黑色玄武岩肋和悬挂铜链后开始。；揭示三道发光水瀑和两座狭窄维修桥，作为尺度参照。；稳定在广角画面，同时包含前景锁链、裂谷、桥梁、水瀑和完整城塞。",
+  "required_anchors": [
+    "One continuous camera path reveals scale.",
+    "Foreground objects remain as registration anchors.",
+    "The destination structure appears only after depth is proven.",
+    "The final wide frame retains all major depth layers."
+  ],
+  "tags": [
+    "viewpoint",
+    "scale",
+    "spectacle",
+    "ladder"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:31+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

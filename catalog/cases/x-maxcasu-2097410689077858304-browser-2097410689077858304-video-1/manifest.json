@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-maxcasu-2097410689077858304-browser-2097410689077858304-video-1",
+  "slug": "scale-mismatch-sports-token-challenge",
+  "title": "微缩寿司怪对决｜城市比例、目光蓄能与正面撞击",
+  "source_title": "玩具城市战斗｜小型英雄迎战巨型寿司蜘蛛",
+  "summary": "在微缩城市中用同一小型成年英雄和巨大寿司蜘蛛建立尺度反差；双方先对峙，寿司怪眼睛发光，英雄随后以同类光能蓄力并只冲锋一次，终局爆闪和烟柱保留双方位置，不虚构胜负。",
+  "status": "released",
+  "source_duration_seconds": 15.146667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/scale-mismatch-sports-token-challenge",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-maxcasu-2097410689077858304-browser-2097410689077858304-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-maxcasu-2097410689077858304-browser-2097410689077858304-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-scale-mismatch-sports-token-challenge-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-scale-mismatch-sports-token-challenge-v1",
+  "input_format": "两种明显尺度 + 共享球体或令牌 + 固定目标 + 可见变线 + 单一轨迹 + 不虚构结果的反应终态",
+  "recommended_input": "一名微缩成年维修英雄隔着模型交通街区面对一只线轴身体的巨型昆虫。；在琥珀威胁建立后，英雄的青色面罩与双手光芒依次激活。；在接触点产生一次受控青琥珀撞击闪光和两道蒸汽柱，在显示胜负前收束。",
+  "required_anchors": [
+    "One clearly adult miniature hero and one giant opponent persist.",
+    "Scale anchors remain visible.",
+    "Exactly one charge and one impact occur.",
+    "No winner or destruction is invented."
+  ],
+  "tags": [
+    "scale",
+    "mismatch",
+    "sports",
+    "token",
+    "challenge"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-09T17:01:09+08:00",
+  "updated_at": "2026-09-10T01:52:36+08:00"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ponzponz15-2089152585869722077-browser-2089152585869722077-video-1",
+  "slug": "letterform-structure-motion-system-lockup",
+  "title": "四象限字形系统｜触点启动、分栏接力与手机锁定",
+  "source_title": "动态图形宣言｜四格图标和大字逐章组成移动设计系统",
+  "summary": "固定黑、奶油、薄荷、橙红四色与四象限网格，手指触点启动图标和字块；分栏、推移、旋转与唱片式圆环逐步合并，最终在手机框中锁定完整原创短句。",
+  "status": "released",
+  "source_duration_seconds": 15.34839,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/letterform-structure-motion-system-lockup",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ponzponz15-2089152585869722077-browser-2089152585869722077-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ponzponz15-2089152585869722077-browser-2089152585869722077-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-letterform-structure-motion-system-lockup-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-letterform-structure-motion-system-lockup-v1",
+  "input_format": "Declare a small exact text set, one restricted palette and one primary title before animation begins. + Build the primary title from visible components and reuse one of its letterform structures as the layout carrier. + Give each secondary word one distinct readable physical action inside the inherited structure. + Compress prior cards or grids into one central collision while preserving exact spelling. + Resolve all fragments into one complete terminal lockup and stop background, decoration and foreground together.",
+  "recommended_input": "建立奶油色四格网格，包含手指图标、圆点轨道、折叠盒和字母碎片。；在两个分栏中组装准确原创词【SHAPE】和【MOVE】，圆点与盒子保持同一节拍。；拉远到简洁手机框，停留准确原创短句【FIFTEEN SECONDS, MANY DIRECTIONS】。",
+  "required_anchors": [
+    "One fixed four-color system persists.",
+    "A single accent dot initiates the sequence.",
+    "Letter assembly remains legible before collapse.",
+    "The final lockup contains only original copy and preserves the earlier geometry."
+  ],
+  "tags": [
+    "letterform",
+    "structure",
+    "motion",
+    "system",
+    "lockup"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:28+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

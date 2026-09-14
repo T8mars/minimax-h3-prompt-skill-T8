@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-jimmythesaul-2098736465559822340-browser-2098736465559822340-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7d21e69e2ddc850da7852eec67cbcef38b5579478134f4638ae9bf32fef9150f",
+    "creative_dna_sha256": "adb96514a9c2fd0fc5b5b354b59a2d724d71e258d30e7d3944d181fa2c7e0625"
+  },
+  "content": {
+    "title": "沉睡主角反差｜静态前景锚点与同伴灾难升级",
+    "summary": "把一名明确成年主角的沉睡状态固定为持续前景任务，同伴在周围经历跳鱼、激流、隧道和操舵危机；危险不断升级但主角只保留呼吸微动，最后回到平静水面。",
+    "quick_start": {
+      "input_format": "明确成年原创主体和一个小型可重复前景任务先建立 + 背景危险至少经过三档接近等级升级且方向可读 + 每次危险后双手与视线都回到同一任务物 + 早期只做最小避让并把最大身体位移保留给一次近接峰值 + 危险过去后重新执行原任务而非庆祝或击败威胁",
+      "recommended_input": "一名明确成年的河道制图师睡在宽阔芦苇筏上，一名成年向导观察水道。；木筏进入蓝色矿洞，水流和摄影速度同步提高。；驶入平静晨光水池；向导松懈坐下，睡者只翻身一次后继续沉睡。",
+      "required_anchors": [
+        "所有人类对象显然都是成年人。",
+        "通过抑制微动证明睡眠状态。",
+        "指南执行所有主动恢复操作。",
+        "最后的平静状态保留了原本的喜剧对比。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "把一名明确成年主角的沉睡状态固定为持续前景任务，同伴在周围经历跳鱼、激流、隧道和操舵危机；危险不断升级但主角只保留呼吸微动，最后回到平静水面。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "把一名明确成年主角的沉睡状态固定为持续前景任务，同伴在周围经历跳鱼、激流、隧道和操舵危机；危险不断升级但主角只保留呼吸微动，最后回到平静水面。 必须满足：All human subjects are clearly adult. + The sleeping state is proven through restrained micro-motion. + Background hazard escalates without replacing the raft geography. + The guide performs all active recovery actions. + The final calm state preserves the original comic contrast.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "所有人类对象显然都是成年人。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“所有人类受试者显然都是成年人。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "通过抑制微动证明睡眠状态。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“睡眠状态是通过受约束的微动作来证明的。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "在不更换筏空间关系位置的情况下，背景危险会升级。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“背景危险升级而不更换筏空间关系位置。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "指南执行所有主动恢复操作。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“指南执行所有主动恢复操作。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后的平静状态保留了原本的喜剧对比。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的平静状态保留了原创的喜剧对比。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年制图师在木筏危险中睡觉，而一名成人向导则保存路线。",
+          "prompt_seed": "一名成年制图师在木筏危险中睡觉，而一名成人向导则保存路线。"
+        },
+        {
+          "concept": "一名成年乘客在故障的缆车之旅中睡着了，而技术人员则处理着每一次危机。",
+          "prompt_seed": "一名成年乘客在故障的缆车之旅中睡着了，而技术人员则处理着每一次危机。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“所有人类受试者显然都是成年人。”",
+          "repair": "所有人类对象显然都是成年人。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“睡眠状态是通过受约束的微动作来证明的。”",
+          "repair": "通过抑制微动证明睡眠状态。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“背景危险升级而不更换筏空间关系位置。”",
+          "repair": "在不更换筏空间关系位置的情况下，背景危险会升级。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除了规则：“指南执行所有主动恢复操作。”",
+          "repair": "指南执行所有主动恢复操作。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终的平静状态保留了原创的喜剧对比。”",
+          "repair": "最后的平静状态保留了原本的喜剧对比。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年制图师在木筏危险中睡觉，而一名成人向导则保存路线。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年乘客在故障的缆车之旅中睡着了，而技术人员则处理着每一次危机。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

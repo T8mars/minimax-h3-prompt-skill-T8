@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ai-lifehack55-2097150941388771724-browser-2097150941388771724-video-1",
+  "slug": "emotional-purge-conversion-payoff",
+  "title": "情绪物证清空｜低谷表情、旧物处置与价值回报",
+  "source_title": "失恋照片变现片｜成年女性整理旧照后换成现金笑颜",
+  "summary": "先用同一成年人物的泪痕和旧照片建立关系低谷，再让她把照片装入一个可追踪袋子、发现可变现物件并完成柜台交易；现金结果必须来自已展示物件，终局情绪由悲伤转为释然。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/emotional-purge-conversion-payoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-lifehack55-2097150941388771724-browser-2097150941388771724-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-lifehack55-2097150941388771724-browser-2097150941388771724-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-emotional-purge-conversion-payoff-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创主体与一组可见旧情绪载体 + 主体主动完成一次不可逆的整理或舍弃动作 + 该动作直接触发一个现实可验证的价值转换流程 + 中间用物件、空间与人物反应连续证明因果关系而非突然幸运 + 终局让主体以新的情绪状态和明确获得物返回，旧载体不再复位",
+  "recommended_input": "以一名原创成年钟表师开场：眼含泪水，身旁有六张照片和一个黑色收纳袋。；她注意到黑袋旁的一只铜色机械钟盒，拿起并确认三处黄铜配件。；钟表师收到明确款项，呼气一次，并以暖色插画肖像收束，手持收据而非已丢弃照片。",
+  "required_anchors": [
+    "One clearly adult protagonist and one disposal container persist.",
+    "The emotional low is evidenced before any solution appears.",
+    "Payment follows a completed inspection and cannot appear from nowhere.",
+    "The final relief preserves memory of the preceding causal chain."
+  ],
+  "tags": [
+    "emotional",
+    "purge",
+    "conversion",
+    "payoff"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-08T14:38:02+08:00",
+  "updated_at": "2026-09-08T16:11:02+08:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tokyo-valentine-2098600085416456332-browser-2098600085416456332-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "563c5f4f7b1ef4c16902363d16d0a305fe39a26d6680f37dbb3c22f361a43809",
+    "creative_dna_sha256": "60a8db6de19544952a52e2d71d7ed8b68832bcbb744fce4d4d31ae5a29b1c333"
+  },
+  "content": {
+    "title": "抓取目标错位｜奖品基线、机械爪承诺与人物被夹反转",
+    "summary": "先让两名明确成年玩家与机器内玩偶共同建立预期，机械爪对准并下降；终局爪子没有抓走玩偶，而是夹起玩家，正反视角共同证明主客体错位。",
+    "quick_start": {
+      "input_format": "超尺度主体 + 熟悉程序 + 3个不同尺度失配 + 扫描先显示嵌套对象 + 同一对象实体出现并同框",
+      "recommended_input": "两名明确成年的博物馆值班员观察取物柜内的一只小型铜鸟。；取物臂下降，三爪包围铜鸟但不闭合。；同时提起两名成年值班员，未被触碰的铜鸟仍清楚留在柜内。",
+      "required_anchors": [
+        "首先建立两名明显成年观察者和一个可见目标。",
+        "该机制明显致力于逆转之前的目标。",
+        "目标留在后面作为检索失败的证据。",
+        "人体升降机有趣、无伤害且具有物理可读性。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先让两名明确成年玩家与机器内玩偶共同建立预期，机械爪对准并下降；终局爪子没有抓走玩偶，而是夹起玩家，正反视角共同证明主客体错位。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先让两名明确成年玩家与机器内玩偶共同建立预期，机械爪对准并下降；终局爪子没有抓走玩偶，而是夹起玩家，正反视角共同证明主客体错位。 必须满足：Two clearly adult observers and one visible target are established first. + The mechanism visibly commits toward the target before the reversal. + One reverse view explains the spatial rule break. + The target remains behind as proof of failed retrieval. + The human lift is playful, non-injurious and physically readable.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "首先建立两名明显成年观察者和一个可见目标。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“首先建立两名明显成年观察员和一个可见目标。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "该机制明显致力于逆转之前的目标。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“该机制在逆转之前明显致力于目标。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "一个反向视图解释了空间规则的打破。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“一个反向视图解释了空间规则的破坏。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "目标留在后面作为检索失败的证据。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“目标留在后面作为检索失败的证据。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "人体升降机有趣、无伤害且具有物理可读性。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“人类电梯是有趣的、无伤害性的并且是可读的。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一个检索柜忽略了一只青铜鸟并举起了两名成年服务员。",
+          "prompt_seed": "一个检索柜忽略了一只青铜鸟并举起了两名成年服务员。"
+        },
+        {
+          "concept": "自动行李臂忽略了手提箱，并通过安全带举起了两名成年检查员。",
+          "prompt_seed": "自动行李臂忽略了手提箱，并通过安全带举起了两名成年检查员。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“首先建立两名明显成年观察员和一个可见目标。”",
+          "repair": "首先建立两名明显成年观察者和一个可见目标。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“该机制在逆转之前明显致力于目标。”",
+          "repair": "该机制明显致力于逆转之前的目标。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“一个反向视图解释了空间规则的破坏。”",
+          "repair": "一个反向视图解释了空间规则的打破。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“目标留在后面作为检索失败的证据。”",
+          "repair": "目标留在后面作为检索失败的证据。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“人类电梯是有趣的、无伤害性的并且是可读的。”",
+          "repair": "人体升降机有趣、无伤害且具有物理可读性。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一个检索柜忽略了一只青铜鸟并举起了两名成年服务员。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "自动行李臂忽略了手提箱，并通过安全带举起了两名成年检查员。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

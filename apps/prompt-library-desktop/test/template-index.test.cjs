@@ -82,3 +82,24 @@ test("a model name can never masquerade as a Latin action match", () => {
   const rows = shortlistRecommendationEntities(index, { actions: ["dance"] }, "", 24);
   assert.deepEqual(rows.map((row) => row.entity.templateId), ["dance-action"]);
 });
+
+test("generic anti-copy boilerplate cannot turn an unrelated template into a dance match", () => {
+  const index = {
+    recommendationEntities: [{
+      templateId: "unrelated-dyad",
+      card: {
+        titleEn: "Market cat dyad",
+        summaryEn: "Two adults crouch beside one cat and exchange reactions.",
+        mechanismEn: "The reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design."
+      }
+    }, {
+      templateId: "solo-performance",
+      card: {
+        titleEn: "Solo dance performance",
+        summaryEn: "An adult dancer performs clear choreography."
+      }
+    }]
+  };
+  const rows = shortlistRecommendationEntities(index, { actions: ["dance", "choreography"] }, "", 24);
+  assert.deepEqual(rows.map((row) => row.entity.templateId), ["solo-performance"]);
+});

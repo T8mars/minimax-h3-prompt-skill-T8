@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-0xemotions-2098333421223260374-browser-2098333421223260374-video-1",
+  "slug": "direct-imperfect-memory-farewell",
+  "title": "夏日感官记忆｜人物锚点、自然碎片与海边回望",
+  "source_title": "夏日记忆组接｜同一成年旅行者贯穿海岛感官碎片",
+  "summary": "同一成年旅行者以面容、花饰和衣装贯穿山景、热气、海浪、食物、音乐和雨后彩虹；不完美手持与感官特写把分散地点组织成一天记忆，终局回到海边笑容。",
+  "status": "released",
+  "source_duration_seconds": 15.092971,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/direct-imperfect-memory-farewell",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-0xemotions-2098333421223260374-browser-2098333421223260374-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-0xemotions-2098333421223260374-browser-2098333421223260374-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-imperfect-memory-farewell-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-imperfect-memory-farewell-v1",
+  "input_format": "观察者媒介 + 日常人物/地点 + 两个日常动作 + 外部信号改变目标 + 一次回应 + 有动机录制失误",
+  "recommended_input": "以火山岛日出和一处黑沙海湾开场。；快速串联一次冲浪、一只海龟掠过、一次水果品尝和四拍尤克里里，同一成年人持续出现。；以植物学家在日落海边略带手持误差的自拍微笑收束。",
+  "required_anchors": [
+    "One clearly adult subject and three identity anchors persist.",
+    "Every fragment contains one readable sensory action.",
+    "Handheld imperfections remain motivated and restrained.",
+    "The final close-up reconnects subject and opening location."
+  ],
+  "tags": [
+    "imperfect",
+    "memory",
+    "farewell"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:31+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

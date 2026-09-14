@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-zetogroovin-2097087515543187908-browser-2097087515543187908-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "4e3edc78640109aaf26293dc3fecd7f8252df8f9ae76d089fd676432a4c34144",
+    "creative_dna_sha256": "887621b9f6c33bb98a32ac9991fa976be4b539a21c741cc39fb44fbd59a2fe12"
+  },
+  "content": {
+    "title": "副词角色卡接力｜一词一人物、一动作一图形世界",
+    "summary": "五个准确短词各绑定一个不同成年动漫角色、主色和动作语气；字形既是标题也是构图结构，章节间用字母形状或光带擦屏，最终五名角色与五个词在同一版式汇合。",
+    "quick_start": {
+      "input_format": "Establish one clearly adult original subject, three identity anchors and one continuous world axis. + Bind each decisive action to exactly one short original semantic word that appears only after the action begins. + Make each word occupy, divide, reflect or redirect the physical environment rather than float as a subtitle. + Escalate typography scale and spatial depth while preserving identity, travel direction and readable action. + Return to the same adult face or full-body anchor and resolve the word sequence into one terminal identity proof.",
+      "recommended_input": "把准确单词【PRECISELY】与一名原创成年制图师绑定在黑白线框网格中。；把【WILDLY】与一名成年鼓手绑定在青洋红撕纸爆发中，并安排一次有力转头。；让五名成年人在准确标题【FIVE MODES】下汇合，每个单词仍与对应人物和颜色相邻。",
+      "required_anchors": [
+        "五个短词一对一对应五个明确的成人角色。",
+        "每个章节使用不同的调色板、姿态和图形语法。",
+        "过渡使用字母形状或图形模式，而不是随机剪辑。",
+        "最终面板同时保留所有五个映射。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "五个准确短词各绑定一个不同成年动漫角色、主色和动作语气；字形既是标题也是构图结构，章节间用字母形状或光带擦屏，最终五名角色与五个词在同一版式汇合。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "五个准确短词各绑定一个不同成年动漫角色、主色和动作语气；字形既是标题也是构图结构，章节间用字母形状或光带擦屏，最终五名角色与五个词在同一版式汇合。 必须满足：Exactly five short words map one-to-one to five clearly adult characters. + Each chapter uses a distinct palette, pose and graphic grammar. + Every word remains exact and readable during its chapter. + Transitions reuse letter shapes or graphic motifs rather than random cuts. + The final board preserves all five mappings simultaneously.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "五个短词一对一对应五个明确的成人角色。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"五个短词一对一对应五个明确的成人角色。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个章节使用不同的调色板、姿态和图形语法。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明也就不再得到证明。已移除规则：\"每个章节使用不同的调色板、姿态和图形语法。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每一句话在章节中保持精确且可读。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这条精确的进展规则，中间部分可能会跳到替换状态，累积的结果将不再可追踪。已移除规则：\"每一句话在章节中保持精确且可读。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "过渡使用字母形状或图形模式，而不是随机剪辑。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条精确的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"过渡使用字母形状或图形模式，而不是随机剪辑。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终面板同时保留所有五个映射。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终端规则，序列仅在运动时停止，永远不会确认承诺的结果或保留的后果。被移除的规则：\"最终面板同时保留所有五个映射。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "五个副词变成五个成人角色世界，在FIVE MODES下汇聚。",
+          "prompt_seed": "五个副词变成五个成人角色世界，在FIVE MODES下汇聚。"
+        },
+        {
+          "concept": "五个设计价值观变成五个成人工艺专家，在ONE STANDARD下汇聚。",
+          "prompt_seed": "五个设计价值观变成五个成人工艺专家，在ONE STANDARD下汇聚。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"五个短词一对一对应五个明确的成人角色。\"",
+          "repair": "五个短词一对一对应五个明确的成人角色。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明也就不再得到证明。已移除规则：\"每个章节使用不同的调色板、姿态和图形语法。\"",
+          "repair": "每个章节使用不同的调色板、姿态和图形语法。"
+        },
+        {
+          "failure": "没有这条精确的进展规则，中间部分可能会跳到替换状态，累积的结果将不再可追踪。已移除规则：\"每一句话在章节中保持精确且可读。\"",
+          "repair": "每一句话在章节中保持精确且可读。"
+        },
+        {
+          "failure": "没有这条精确的重新连接规则，细节或变换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"过渡使用字母形状或图形模式，而不是随机剪辑。\"",
+          "repair": "过渡使用字母形状或图形模式，而不是随机剪辑。"
+        },
+        {
+          "failure": "没有这条精确的终端规则，序列仅在运动时停止，永远不会确认承诺的结果或保留的后果。被移除的规则：\"最终面板同时保留所有五个映射。\"",
+          "repair": "最终面板同时保留所有五个映射。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "五个副词变成五个成人角色世界，在FIVE MODES下汇聚。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "五个设计价值观变成五个成人工艺专家，在ONE STANDARD下汇聚。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

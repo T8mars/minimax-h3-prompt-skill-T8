@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-akari-w0r1d-2097542706188734637-browser-2097542706188734637-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "030ee0bd2ad1228e2bb3de73a585a76145ecc76cba2acd6bf70b0f98be613f37",
+    "creative_dna_sha256": "c456e35d8bcd76238e82b6b80ab09d6d4443188bcd48dbee29d2ae97625d3344"
+  },
+  "content": {
+    "title": "蛋料理工序链｜切分、混合、回填与摆盘证明",
+    "summary": "以同一位原创成年动画厨师、同一砧板和同一批熟鸡蛋建立工序连续性；切开、取黄、混合、裱花回填和撒料均不可逆，最后用整盘成品证明全部步骤。",
+    "quick_start": {
+      "input_format": "固定处理表面 + 多工具单一职责 + 层层累积 + 单次揭除 + 两种独立验收",
+      "recommended_input": "一名原创且明确成年的动画厨师在同一块蓝色砧板上切开六枚熟鸡蛋。；加入一勺香草酱，搅拌至蛋黄变成均匀馅料。；依次撒一次红色与绿色配料，再拉宽证明同一托盘上十二份成品。",
+      "required_anchors": [
+        "一个明显成年厨师和一个食材批次持续存在。",
+        "每个状态变化都是可见且不可逆的。",
+        "计数从半部分到托盘保持一致。",
+        "最终托盘证明完成。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "以同一位原创成年动画厨师、同一砧板和同一批熟鸡蛋建立工序连续性；切开、取黄、混合、裱花回填和撒料均不可逆，最后用整盘成品证明全部步骤。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "以同一位原创成年动画厨师、同一砧板和同一批熟鸡蛋建立工序连续性；切开、取黄、混合、裱花回填和撒料均不可逆，最后用整盘成品证明全部步骤。 必须满足：One clearly adult cook and one ingredient batch persist. + Every state change is visible and irreversible. + Tools appear only for their assigned operation. + Counts remain consistent from halves to tray. + The final tray proves completion.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个明显成年厨师和一个食材批次持续存在。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明显成年厨师和一个食材批次持续存在。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个状态变化都是可见且不可逆的。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"每个状态变化都是可见且不可逆的。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "工具仅在指定操作时出现。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这条确切的顺序规则，中间部分可以跳到替换状态，累积结果将不再可追溯。已移除规则：\"工具仅在指定操作时出现。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "计数从半部分到托盘保持一致。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条确切的重新连接规则，细节或转换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"计数从半部分到托盘保持一致。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终托盘证明完成。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终端验证规则，序列仅在运动时停止，永远不会确认承诺的结果或保留的后果。移除的规则：\"最终托盘证明完成。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年人厨师通过五个可见的操作将六个鸡蛋变成十二个填满的开胃菜。",
+          "prompt_seed": "一位成年人厨师通过五个可见的操作将六个鸡蛋变成十二个填满的开胃菜。"
+        },
+        {
+          "concept": "一位成年人工匠通过一个有界完成阶梯将六个泥坯变成十二个釉面瓷砖。",
+          "prompt_seed": "一位成年人工匠通过一个有界完成阶梯将六个泥坯变成十二个釉面瓷砖。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明显成年厨师和一个食材批次持续存在。\"",
+          "repair": "一个明显成年厨师和一个食材批次持续存在。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"每个状态变化都是可见且不可逆的。\"",
+          "repair": "每个状态变化都是可见且不可逆的。"
+        },
+        {
+          "failure": "没有这条确切的顺序规则，中间部分可以跳到替换状态，累积结果将不再可追溯。已移除规则：\"工具仅在指定操作时出现。\"",
+          "repair": "工具仅在指定操作时出现。"
+        },
+        {
+          "failure": "没有这条确切的重新连接规则，细节或转换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"计数从半部分到托盘保持一致。\"",
+          "repair": "计数从半部分到托盘保持一致。"
+        },
+        {
+          "failure": "没有这条精确的终端验证规则，序列仅在运动时停止，永远不会确认承诺的结果或保留的后果。移除的规则：\"最终托盘证明完成。\"",
+          "repair": "最终托盘证明完成。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年人厨师通过五个可见的操作将六个鸡蛋变成十二个填满的开胃菜。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年人工匠通过一个有界完成阶梯将六个泥坯变成十二个釉面瓷砖。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

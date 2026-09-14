@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-airina-xyz-2097268484371816614-browser-2097268484371816614-video-1",
+  "slug": "procedure-ladder-layered-finish",
+  "title": "陶杯手作工序｜拉坯、描花、成组与晨光洗手",
+  "source_title": "乡间陶艺片｜同一成年匠人完成杯体并回到日常",
+  "summary": "同一成年动画陶艺师在暖光作坊完成拉坯塑形、杯体稳定、蓝花描绘和成组摆放；终局从成品桌自然过渡到门外水池洗手，以可见泥水残留证明工序完成。",
+  "status": "released",
+  "source_duration_seconds": 12.096,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/procedure-ladder-layered-finish",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2097268484371816614-browser-2097268484371816614-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-airina-xyz-2097268484371816614-browser-2097268484371816614-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-procedure-ladder-layered-finish-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-procedure-ladder-layered-finish-v1",
+  "input_format": "固定处理表面 + 多工具单一职责 + 层层累积 + 单次揭除 + 两种独立验收",
+  "recommended_input": "一名明确成年的动画陶艺师在晨间暖光中用同一陶轮塑造一只茶杯。；在同一只烧制后的杯子上画一枝蓝色枝条和五朵小花，近景保持稳定。；跟随她穿过开门走到水池，在流水下洗去双手可见陶泥。",
+  "required_anchors": [
+    "One clearly adult craftsperson and one workshop persist.",
+    "Each craft stage visibly changes the object.",
+    "The group shot proves a finished series.",
+    "Hand washing follows and confirms the completed process."
+  ],
+  "tags": [
+    "procedure",
+    "ladder",
+    "layered",
+    "finish"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-09T17:01:08+08:00",
+  "updated_at": "2026-09-10T01:52:36+08:00"
+}

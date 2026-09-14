@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ladywasabee-2097324075853271454-browser-2097324075853271454-video-1",
+  "slug": "single-accent-scale-activation-relay",
+  "title": "赤刃战意激活｜静止凝视、冲阵与能量终势",
+  "source_title": "黑白战场独行｜成年武士从刀锋近景转入红光爆发",
+  "summary": "以黑白战场、同一成年武士和带血刀锋建立低谷基线；人物抬眼后沿同一轴线冲入敌阵，刀刃红光从细线升级为大面积能量轨迹，终局英雄姿态保持可读且不宣称具体战果。",
+  "status": "released",
+  "source_duration_seconds": 15.16263,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/single-accent-scale-activation-relay",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ladywasabee-2097324075853271454-browser-2097324075853271454-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ladywasabee-2097324075853271454-browser-2097324075853271454-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-single-accent-scale-activation-relay-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-single-accent-scale-activation-relay-v1",
+  "input_format": "近单色低饱和世界 + 至少3级可比较尺度 + 唯一高饱和激活色与局部源点 + 同色沿可见载体跨尺度接力 + 保留早期锚点 + 最大环境网络稳定映射",
+  "recommended_input": "以一名原创成年灰烬战场守卫者开场，刀刃上保留一条狭窄红色残痕。；成年对手轮廓保持在路线两侧，尘土和碎片增强但不遮断路线。；以同一守卫者稳定低姿收束，刀刃可见，身后三道红色残光逐渐消退；不宣称胜利。",
+  "required_anchors": [
+    "One clearly adult warrior, blade and field persist.",
+    "One red accent family carries every activation stage.",
+    "Exactly one principal sword cut occurs.",
+    "The final stance is readable without inventing casualties or victory."
+  ],
+  "tags": [
+    "single",
+    "accent",
+    "scale",
+    "activation",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-09T17:01:09+08:00",
+  "updated_at": "2026-09-10T01:52:36+08:00"
+}

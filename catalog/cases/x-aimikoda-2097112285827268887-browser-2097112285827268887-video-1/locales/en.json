@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2097112285827268887-browser-2097112285827268887-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "6d83d8131fedd85461da326d2dc24f0454fad65b27c3ee6cef55ad321657d656",
+    "creative_dna_sha256": "0493e201e684290a4b62023b92f9e6697092c7cc51ccefc18a4c78696d0caa35"
+  },
+  "content": {
+    "title": "Stone Garden Carrier Relay | Shared World Chapters and Monumental Lockup",
+    "summary": "An amber seed and paper flowers relay across adult archivists before revealing a basalt archive guardian. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One accent carrier color recurs through every chapter. + Every role change is bridged by a visible object, plant or bird handoff. + All chapters share one dark palette and compatible world physics. + The monumental reveal contains residues of the earlier carriers. + One exact original title appears only after the relay converges.",
+      "recommended_input": "An adult archivist reaches through indigo leaves and receives one luminous amber seed. The courier runs left to right through amber flowers under one storm-dark sky while the bowl stays intact. Reveal a monumental basalt librarian above the amber field and end on the exact original title THE SEED ARCHIVE.",
+      "required_anchors": [
+        "One accent carrier color recurs through every chapter.",
+        "Every role change is bridged by a visible object, plant or bird handoff.",
+        "The monumental reveal contains residues of the earlier carriers.",
+        "One exact original title appears only after the relay converges."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An amber seed and paper flowers relay across adult archivists before revealing a basalt archive guardian. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用一种高对比色载体在多名成年角色之间接力，让花、果实、器皿和鸟群把看似分散的章节绑定到同一世界；终局把全部载体痕迹汇聚到巨像与准确片名。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One accent carrier color recurs through every chapter.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One accent carrier color recurs through every chapter.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Every role change is bridged by a visible object, plant or bird handoff.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every role change is bridged by a visible object, plant or bird handoff.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "All chapters share one dark palette and compatible world physics.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"All chapters share one dark palette and compatible world physics.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "The monumental reveal contains residues of the earlier carriers.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The monumental reveal contains residues of the earlier carriers.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "One exact original title appears only after the relay converges.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"One exact original title appears only after the relay converges.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An amber seed and paper flowers relay across adult archivists before revealing a basalt archive guardian.",
+          "prompt_seed": "An amber seed and paper flowers relay across adult archivists before revealing a basalt archive guardian."
+        },
+        {
+          "concept": "A cyan shell and salt ribbon relay across adult navigators before revealing a monumental tidal observatory.",
+          "prompt_seed": "A cyan shell and salt ribbon relay across adult navigators before revealing a monumental tidal observatory."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One accent carrier color recurs through every chapter.\"",
+          "repair": "One accent carrier color recurs through every chapter."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every role change is bridged by a visible object, plant or bird handoff.\"",
+          "repair": "Every role change is bridged by a visible object, plant or bird handoff."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"All chapters share one dark palette and compatible world physics.\"",
+          "repair": "All chapters share one dark palette and compatible world physics."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The monumental reveal contains residues of the earlier carriers.\"",
+          "repair": "The monumental reveal contains residues of the earlier carriers."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"One exact original title appears only after the relay converges.\"",
+          "repair": "One exact original title appears only after the relay converges."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An amber seed and paper flowers relay across adult archivists before revealing a basalt archive guardian.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "A cyan shell and salt ribbon relay across adult navigators before revealing a monumental tidal observatory.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

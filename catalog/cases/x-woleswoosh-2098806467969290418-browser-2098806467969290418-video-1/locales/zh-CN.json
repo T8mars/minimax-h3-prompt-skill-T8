@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-woleswoosh-2098806467969290418-browser-2098806467969290418-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "505eb6581bec60e403f100e179348bf9d79d43e1fbb678286b6083fb9d168609",
+    "creative_dna_sha256": "3c635478d9973b3a315fb6f463968ccdb7a537a60adc41b370b89668cbcf959d"
+  },
+  "content": {
+    "title": "屋顶夺械撤离｜伏击逼近、武器接管与门槛逃生",
+    "summary": "同一成年女性先借设备掩体观察追兵，追兵进入近距后她完成一次夺械；武器使用只为打开撤离窗口，探照灯与爆点保持远端，终局穿过屋顶门槛离场。",
+    "quick_start": {
+      "input_format": "一个明确的成年原始主角和一个出口必须持续存在。 + 追捕者在单次解除武装之前采取行动。 + 物理冲突保持在边界内且不具象。 + 获得的工具改变访问权限，而不是为了自身而成为 spectacle。 + 最终关闭的阈值证明了逃脱。",
+      "recommended_input": "一名明确成年的广播工程师躲在空调机旁，一名装甲安保演员穿过屋顶。；她引导对方手腕，夺下一件道具发射器，让对方坐倒但不受伤。；她到达维修门，只进入一次并关门，探照灯扫过空屋顶。",
+      "required_anchors": [
+        "一个明确的成年原始主角和一个出口必须持续存在。",
+        "追捕者在单次解除武装之前采取行动。",
+        "获得的工具改变访问权限，而不是为了自身而成为 spectacle。",
+        "最终关闭的阈值证明了逃脱。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一成年女性先借设备掩体观察追兵，追兵进入近距后她完成一次夺械；武器使用只为打开撤离窗口，探照灯与爆点保持远端，终局穿过屋顶门槛离场。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "同一成年女性先借设备掩体观察追兵，追兵进入近距后她完成一次夺械；武器使用只为打开撤离窗口，探照灯与爆点保持远端，终局穿过屋顶门槛离场。 必须满足：一个明确的成年原始主角和一个出口必须持续存在。；追捕者在单次解除武装之前采取行动。；物理冲突保持在边界内且不具象。；获得的工具改变访问权限，而不是为了自身而成为 spectacle。；最终关闭的阈值证明了逃脱。。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个明确的成年原始主角和一个出口必须持续存在。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这个确切的基线规则，后续的变化无法归因于同一个主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明确的成年原始主角和一个出口必须持续存在。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "追捕者在单次解除武装之前采取行动。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再成立。已移除规则：\"追捕者在单次解除武装之前采取行动。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "物理冲突保持在边界内且不具象。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这条确切的进展规则，中间部分可以跳到一个替代状态，累积结果将不再可追踪。已移除规则：\"物理冲突保持在边界内且不具象。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "获得的工具改变访问权限，而不是为了自身而成为 spectacle。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条确切的重新连接规则，细节或转换后的镜头可以属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"获得的工具改变访问权限，而不是为了自身而成为 spectacle。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终关闭的阈值证明了逃脱。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终端证明规则，序列仅在运动时停止，永远不会确认承诺的结果或保留的后果。移除的规则：\"最终关闭的阈值证明了逃脱。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年广播工程师解除一名追捕者的武装，并到达一个屋顶服务门。",
+          "prompt_seed": "一位成年广播工程师解除一名追捕者的武装，并到达一个屋顶服务门。"
+        },
+        {
+          "concept": "一位成年实验室快递员重新定向一个守卫工具，并通过一个密封的货运电梯退出。",
+          "prompt_seed": "一位成年实验室快递员重新定向一个守卫工具，并通过一个密封的货运电梯退出。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这个确切的基线规则，后续的变化无法归因于同一个主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明确的成年原始主角和一个出口必须持续存在。\"",
+          "repair": "一个明确的成年原始主角和一个出口必须持续存在。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再成立。已移除规则：\"追捕者在单次解除武装之前采取行动。\"",
+          "repair": "追捕者在单次解除武装之前采取行动。"
+        },
+        {
+          "failure": "没有这条确切的进展规则，中间部分可以跳到一个替代状态，累积结果将不再可追踪。已移除规则：\"物理冲突保持在边界内且不具象。\"",
+          "repair": "物理冲突保持在边界内且不具象。"
+        },
+        {
+          "failure": "没有这条确切的重新连接规则，细节或转换后的镜头可以属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"获得的工具改变访问权限，而不是为了自身而成为 spectacle。\"",
+          "repair": "获得的工具改变访问权限，而不是为了自身而成为 spectacle。"
+        },
+        {
+          "failure": "没有这条精确的终端证明规则，序列仅在运动时停止，永远不会确认承诺的结果或保留的后果。移除的规则：\"最终关闭的阈值证明了逃脱。\"",
+          "repair": "最终关闭的阈值证明了逃脱。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年广播工程师解除一名追捕者的武装，并到达一个屋顶服务门。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年实验室快递员重新定向一个守卫工具，并通过一个密封的货运电梯退出。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ai-yukichi2910-2098943559177289917-browser-2098943559177289917-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "9abf795bc7e06fcdeb9c00721f4ed32c3d860ed9549be1399d54dbbd8566d07e",
+    "creative_dna_sha256": "d649adc35df68d5155af8b7ac636933988089e072a2cec9000d398924ce96b22"
+  },
+  "content": {
+    "title": "展览角色告知片｜双角色微表演、模块切换与活动落版",
+    "summary": "用两名原创成年风格化角色和一只动物伙伴建立可记忆动作卡；表情、挥手与同框按模块轮换，终局切到完整原创展览名称、日期和地点，角色不遮挡信息。",
+    "quick_start": {
+      "input_format": "每个人类主体都是明确的成年人且原创的。 + 一个边框和调色板系统统一所有模块。 + 每个角色卡片包含一个限定动作。 + 信息卡片获得足够的不间断保持时间。 + 没有复制任何源标题、日期、标志或角色设计。",
+      "recommended_input": "在薄荷色角色卡中呈现一名明确成年的原创玩具设计师和一只小黑猫。；切到小猫眨眼并抬起一只爪子，沿用同一边框语法。；切到准确原创标题【SMALL WORLDS】、日期【18 OCT】和地点【EAST HALL】，停留三拍。",
+      "required_anchors": [
+        "每个人类主体都是明确的成年人且原创的。",
+        "一个边框和调色板系统统一所有模块。",
+        "信息卡片获得足够的不间断保持时间。",
+        "没有复制任何源标题、日期、标志或角色设计。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用两名原创成年风格化角色和一只动物伙伴建立可记忆动作卡；表情、挥手与同框按模块轮换，终局切到完整原创展览名称、日期和地点，角色不遮挡信息。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用两名原创成年风格化角色和一只动物伙伴建立可记忆动作卡；表情、挥手与同框按模块轮换，终局切到完整原创展览名称、日期和地点，角色不遮挡信息。 必须满足：每个人类主体都是明确的成年人且原创的。；一个边框和调色板系统统一所有模块。；每个角色卡片包含一个限定动作。；信息卡片获得足够的不间断保持时间。；没有复制任何源标题、日期、标志或角色设计。。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "每个人类主体都是明确的成年人且原创的。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这个确切的基线规则，后续的变化无法归因于同一个主体、对象或地点，因此序列失去了参考状态。已移除规则：\"每个人类主体都是明确的成年人且原创的。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一个边框和调色板系统统一所有模块。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明也就不再成立。已移除规则：\"一个边框和调色板系统统一所有模块。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每个角色卡片包含一个限定动作。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这个确切的进展规则，中间可以跳到一个替代状态，累积结果将不再可追踪。已移除规则：\"每个角色卡片包含一个限定动作。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "信息卡片获得足够的不间断保持时间。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这个确切的重新连接规则，细节或转换的镜头可能属于不同的主体或空间关系，连续性无法验证。已移除规则：\"信息卡片获得足够的不间断保持时间。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "没有复制任何源标题、日期、标志或角色设计。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条确切的终端验证规则，序列仅基于动作停止，永远不会确认承诺的结果或保留的后果。已移除规则：\"没有复制任何源标题、日期、标志或角色设计。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成人玩具设计师和一只猫介绍一个原创的小世界展览。",
+          "prompt_seed": "一位成人玩具设计师和一只猫介绍一个原创的小世界展览。"
+        },
+        {
+          "concept": "一位成人陶瓷师和一只鸟通过三张行动卡介绍一个周末工作室展示。",
+          "prompt_seed": "一位成人陶瓷师和一只鸟通过三张行动卡介绍一个周末工作室展示。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这个确切的基线规则，后续的变化无法归因于同一个主体、对象或地点，因此序列失去了参考状态。已移除规则：\"每个人类主体都是明确的成年人且原创的。\"",
+          "repair": "每个人类主体都是明确的成年人且原创的。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会自发出现，中心的因果关系声明也就不再成立。已移除规则：\"一个边框和调色板系统统一所有模块。\"",
+          "repair": "一个边框和调色板系统统一所有模块。"
+        },
+        {
+          "failure": "没有这个确切的进展规则，中间可以跳到一个替代状态，累积结果将不再可追踪。已移除规则：\"每个角色卡片包含一个限定动作。\"",
+          "repair": "每个角色卡片包含一个限定动作。"
+        },
+        {
+          "failure": "没有这个确切的重新连接规则，细节或转换的镜头可能属于不同的主体或空间关系，连续性无法验证。已移除规则：\"信息卡片获得足够的不间断保持时间。\"",
+          "repair": "信息卡片获得足够的不间断保持时间。"
+        },
+        {
+          "failure": "没有这条确切的终端验证规则，序列仅基于动作停止，永远不会确认承诺的结果或保留的后果。已移除规则：\"没有复制任何源标题、日期、标志或角色设计。\"",
+          "repair": "没有复制任何源标题、日期、标志或角色设计。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成人玩具设计师和一只猫介绍一个原创的小世界展览。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成人陶瓷师和一只鸟通过三张行动卡介绍一个周末工作室展示。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

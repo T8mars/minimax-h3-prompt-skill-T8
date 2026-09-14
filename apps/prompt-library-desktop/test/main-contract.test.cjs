@@ -63,7 +63,7 @@ test("file pickers retain Main-owned recent directories instead of relying on El
 test("release packages a compact app catalog and lossless split public preview archives", () => {
   assert.match(fs.readFileSync(path.resolve(__dirname, "..", "electron-builder.config.cjs"), "utf8"), /process\.env\.T8_CATALOG_DIR/u);
   assert.ok(workflow.includes("prepare-app-catalog.mjs"));
-  assert.ok(workflow.includes("--max-dimension 232 --fps 4 --colors 32"), "the installer preview budget must use the cross-platform compact GIF profile");
+  assert.ok(workflow.includes("--max-dimension 208 --fps 4 --colors 32"), "the installer preview budget must use the cross-platform compact GIF profile");
   assert.ok(workflow.includes("440401920"), "the compact app catalog must stay below its 420 MiB release budget");
   assert.ok(workflow.includes("T8_CATALOG_DIR"));
   assert.ok(workflow.includes("Packaged and repository catalog manifests differ"));
@@ -94,6 +94,7 @@ test("release publishes complete videos as a verified sidecar instead of duplica
   assert.ok(workflow.includes('$env:T8_MEDIA_DIR = (Resolve-Path ".release-input/media").Path'), "packaged E2E must mount the verified sidecar media pack");
   assert.ok(workflow.includes("prompt-library-media-v$version-part1.zip"), "the first lossless media volume must remain a release asset");
   assert.ok(workflow.includes("prompt-library-media-v$version-part2.zip"), "the second lossless media volume must remain a release asset");
+  assert.ok(workflow.includes("prompt-library-media-v$version-part3.zip"), "the third lossless media volume must remain a release asset");
   assert.ok(workflow.includes('mismatch for ${asset}: expected'), "PowerShell must delimit the asset variable before a colon");
 });
 

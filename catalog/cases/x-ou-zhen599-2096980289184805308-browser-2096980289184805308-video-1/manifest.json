@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ou-zhen599-2096980289184805308-browser-2096980289184805308-video-1",
+  "slug": "tactile-climb-risk-release-summit-scale",
+  "title": "雪崖触觉攀登｜手脚支点、绳索受力与连续恢复",
+  "source_title": "峭壁求生片｜成年攀登者从失足到重新获得支点",
+  "summary": "用近身手部、靴底、冰雪与绳索受力持续证明同一攀登路线；成年人物在一次支点滑脱后由绳索和另一只手恢复，不瞬移、不切换山体，最后重新站稳并确认上方路线。",
+  "status": "released",
+  "source_duration_seconds": 15.146667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/tactile-climb-risk-release-summit-scale",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2096980289184805308-browser-2096980289184805308-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2096980289184805308-browser-2096980289184805308-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-tactile-climb-risk-release-summit-scale-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-tactile-climb-risk-release-summit-scale-v1",
+  "input_format": "一名成年攀登者作为巨大竖向目标前的小型主体 + 至少三种负重接触以近景证明 + 一次接触失效、可见损失与同地理明确制动恢复 + 至少三项装备身份锚点跨尺度保持 + 近身越过最终边缘后稳定拉远证明顶点尺度且不庆祝",
+  "recommended_input": "让一名原创成年救援攀登者位于蓝色冰壁，一根红绳连接安全带，上方可见气象桅杆。；左侧冰台只断裂一次，身体下坠不足一个身长，红绳明显绷紧。；以成年攀登者呼吸一次、望向气象桅杆并向上稳步移动一步收束。",
+  "required_anchors": [
+    "One clearly adult climber, route, rope and wall persist.",
+    "Every move is supported by visible hand or foot contact.",
+    "Recovery restores a countable three-point stance.",
+    "The final upward action follows proven stabilization."
+  ],
+  "tags": [
+    "tactile",
+    "climb",
+    "risk",
+    "release",
+    "summit",
+    "scale"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-08T14:38:04+08:00",
+  "updated_at": "2026-09-08T16:11:02+08:00"
+}

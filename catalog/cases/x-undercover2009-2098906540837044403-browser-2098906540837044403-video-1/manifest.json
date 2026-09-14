@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-undercover2009-2098906540837044403-browser-2098906540837044403-video-1",
+  "slug": "performer-anchor-semantic-lyric-escalation",
+  "title": "残像单曲预告｜主唱锚点、意象换章与歌名回标",
+  "source_title": "梦幻单曲短片｜成年主唱在马、花水与霓虹残像间回归",
+  "summary": "让同一成年原创主唱以脸、发色和圆形光环保持身份，白马、花水、珠链眼部与彩色残像按歌词意象换章；每章回到主唱，终局用原创歌名和一次闪电击中节拍。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/performer-anchor-semantic-lyric-escalation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-undercover2009-2098906540837044403-browser-2098906540837044403-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-undercover2009-2098906540837044403-browser-2098906540837044403-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performer-anchor-semantic-lyric-escalation-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-performer-anchor-semantic-lyric-escalation-v1",
+  "input_format": "稳定原创表演者 + 3至4句原创歌词 + 每句语义图形行为 + 人物始终可辨 + 逐句升能 + 清字后的表演释放",
+  "recommended_input": "以一次靛蓝脉冲开场，再揭示一名明确成年的原创歌手与银色马并行于镜面平原。；用发丝水流匹配到珠链眼睑近景，再睁眼回到同一面容。；在她的肖像下落下准确原创歌名【SECOND LIGHT】，一道细闪电线命中最后重拍。",
+  "required_anchors": [
+    "One clearly adult original performer retains three identity anchors.",
+    "Every image chapter maps to a distinct musical phrase.",
+    "Afterimages follow rather than replace the lead.",
+    "The final original title and light event synchronize to one downbeat."
+  ],
+  "tags": [
+    "performer",
+    "anchor",
+    "semantic",
+    "lyric",
+    "escalation"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:28+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-charaspowerai-2098728353503089019-browser-2098728353503089019-video-1",
+  "slug": "structure-product-proof-launch",
+  "title": "收藏设备英雄片｜完整外观、细节巡检与正面回标",
+  "source_title": "收藏版掌机幻想｜机身细节巡检后回到完整英雄镜头",
+  "summary": "先以完整收藏设备建立结果，再用背面、接口、控制件和材质微距逐项证明设计；运镜始终围绕同一产品，最终回到完整正面英雄构图。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/structure-product-proof-launch",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2098728353503089019-browser-2098728353503089019-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2098728353503089019-browser-2098728353503089019-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8c001-product-proof-state-machine",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8c001-product-proof-state-machine",
+  "input_format": "结果先行画面 + 原创产品身份 + 组装/状态证据 + 佩戴或使用证明 + 环境化结果终态",
+  "recommended_input": "在黑色台座上完整呈现一台原创琥珀与石板灰野外控制台。；用三个保持注册的微距镜头检查侧面接口、后部散热口和铜色接缝。；回到开场正面角度，以准确原创名称【AURORA FIELD】停留两拍。",
+  "required_anchors": [
+    "One original product design remains continuous.",
+    "The complete product precedes all detail proof.",
+    "Lighting reveals material without changing shape.",
+    "The final hero frame uses only original branding."
+  ],
+  "tags": [
+    "t8c001",
+    "product",
+    "proof",
+    "state",
+    "machine"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:18+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-glitter-11924-2098639376553226573-browser-2098639376553226573-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "925747ea1531d67df1a385912f821621fa8182d33b02066ef8b4cc24be2e7e14",
+    "creative_dna_sha256": "98e561aef0b541065c5b16bf8b3302abc3708a87e44ccaae4d224d2f174af930"
+  },
+  "content": {
+    "title": "双人时装字卡｜造型轮转、姿态微动与版式回标",
+    "summary": "高对比色卡依次呈现多组明确成年时装搭档；每组只执行一个姿态变化并与一个原创短词绑定，重复边框和节拍把独立造型收束为同一系列。",
+    "quick_start": {
+      "input_format": "原创成年风格化角色的至少三项稳定身份锚点与紧凑原创名称标志 + 至少四种版式逻辑不同的图形模块 + 每模块最多一个新短词或身份字段 + 角色用一次语义动作跨过/击中/占据/揭示文字 + 显式身份核验 + 角色进入完整名称与符号标志并稳定停留",
+      "recommended_input": "在青色字卡中呈现两名明确成年的原创时装搭档，并显示准确短词【PULSE】。；准确短词【TANDEM】从两人身后滑过，两人各交叉一只手臂。；让搭档回到青色网格，并停留准确原创标题【TWO SIGNALS】。",
+      "required_anchors": [
+        "每个描绘的人显然都是成年人。",
+        "一种布局语法连接所有卡片。",
+        "版式永远不会掩盖身份锚。",
+        "最后一张牌重新组合了这对组合和系列标题。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "高对比色卡依次呈现多组明确成年时装搭档；每组只执行一个姿态变化并与一个原创短词绑定，重复边框和节拍把独立造型收束为同一系列。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "高对比色卡依次呈现多组明确成年时装搭档；每组只执行一个姿态变化并与一个原创短词绑定，重复边框和节拍把独立造型收束为同一系列。 必须满足：Every depicted human is clearly adult. + One layout grammar connects all cards. + Each card contains one pose and one exact original word. + Typography never obscures identity anchors. + The final card reunites the pair and series title.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "每个描绘的人显然都是成年人。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“每个描绘的人显然都是成年人。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一种布局语法连接所有卡片。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除了规则：“一种布局语法连接所有卡片。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每张卡片包含一个姿势和一个准确的原始单词。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“每张卡片包含一个姿势和一个准确的原始单词。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "版式永远不会掩盖身份锚。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“版式永远不会掩盖身份锚。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最后一张牌重新组合了这对组合和系列标题。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最后一张牌重新组合了配对和系列标题。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "两个成人时尚伙伴轮流浏览四张与动作相关的标题卡。",
+          "prompt_seed": "两个成人时尚伙伴轮流浏览四张与动作相关的标题卡。"
+        },
+        {
+          "concept": "三位成年音乐家轮流浏览四张与乐器相关的海报卡。",
+          "prompt_seed": "三位成年音乐家轮流浏览四张与乐器相关的海报卡。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“每个描绘的人显然都是成年人。”",
+          "repair": "每个描绘的人显然都是成年人。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除了规则：“一种布局语法连接所有卡片。”",
+          "repair": "一种布局语法连接所有卡片。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除规则：“每张卡片包含一个姿势和一个准确的原始单词。”",
+          "repair": "每张卡片包含一个姿势和一个准确的原始单词。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“版式永远不会掩盖身份锚。”",
+          "repair": "版式永远不会掩盖身份锚。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最后一张牌重新组合了配对和系列标题。”",
+          "repair": "最后一张牌重新组合了这对组合和系列标题。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两个成人时尚伙伴轮流浏览四张与动作相关的标题卡。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "三位成年音乐家轮流浏览四张与乐器相关的海报卡。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

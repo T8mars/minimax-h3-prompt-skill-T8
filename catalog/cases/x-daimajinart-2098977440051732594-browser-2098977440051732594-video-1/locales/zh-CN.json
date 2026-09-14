@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-daimajinart-2098977440051732594-browser-2098977440051732594-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "0f29be967f93353a1c44311033c88472d31bd7228e717259e183e43f601e95dd",
+    "creative_dna_sha256": "65112707f02e2b207097e4bd2162e52d0507dfb0c9ee81b5ec129b0270b71be6"
+  },
+  "content": {
+    "title": "收藏卡发现｜货架浏览、近景验真与双人共同确认",
+    "summary": "以两名成年顾客在收藏店浏览为基线，视线和手指锁定一张卡片；卡面近景、拿取与同伴靠近构成三层证据，终局二人带着已确认物件离开。",
+    "quick_start": {
+      "input_format": "两个受试者都是明显成年且原创的。 + 一个选定的对象可以从货架一直追踪到手中。 + 特写证据 precedes 反应。 + 同伴确认而不是取代第一个观察者。 + 最终离开保留验证过的对象。",
+      "recommended_input": "两名明确成年的原创制图师在霓虹档案店浏览密封路线卡。；切到卡片近景，显示原创蓝色避难所符号和三个刻口，不保留来源品牌文字。；二人交换一次微笑，把卡片封入透明套，再走向同一出口。",
+      "required_anchors": [
+        "两个受试者都是明显成年且原创的。",
+        "一个选定的对象可以从货架一直追踪到手中。",
+        "同伴确认而不是取代第一个观察者。",
+        "最终离开保留验证过的对象。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "以两名成年顾客在收藏店浏览为基线，视线和手指锁定一张卡片；卡面近景、拿取与同伴靠近构成三层证据，终局二人带着已确认物件离开。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "以两名成年顾客在收藏店浏览为基线，视线和手指锁定一张卡片；卡面近景、拿取与同伴靠近构成三层证据，终局二人带着已确认物件离开。 必须满足：两个受试者都是明显成年且原创的。；一个选定的对象可以从货架一直追踪到手中。；特写证据 precedes 反应。；同伴确认而不是取代第一个观察者。；最终离开保留验证过的对象。。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "两个受试者都是明显成年且原创的。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这个确切的基线规则，后续的变化无法归因于同一个主体、对象或地点，因此序列失去了参考状态。已移除规则：\"两个受试者都是明显成年且原创的。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一个选定的对象可以从货架一直追踪到手中。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"一个选定的对象可以从货架一直追踪到手中。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "特写证据 precedes 反应。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Close-up evidence precedes reaction.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "同伴确认而不是取代第一个观察者。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The companion confirms rather than replaces the first observer.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终离开保留验证过的对象。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终端验证规则，序列仅在运动时停止，永远不会确认承诺的结果或保留的后果。被移除的规则：\"最终离开保留验证过的对象。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "两名成年地图学家验证一张路线卡并带着它离开。",
+          "prompt_seed": "两名成年地图学家验证一张路线卡并带着它离开。"
+        },
+        {
+          "concept": "两名成年保护员发现一张标记的标本幻灯片，检查后将其带到实验室。",
+          "prompt_seed": "两名成年保护员发现一张标记的标本幻灯片，检查后将其带到实验室。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这个确切的基线规则，后续的变化无法归因于同一个主体、对象或地点，因此序列失去了参考状态。已移除规则：\"两个受试者都是明显成年且原创的。\"",
+          "repair": "两个受试者都是明显成年且原创的。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"一个选定的对象可以从货架一直追踪到手中。\"",
+          "repair": "一个选定的对象可以从货架一直追踪到手中。"
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Close-up evidence precedes reaction.\"",
+          "repair": "特写证据 precedes 反应。"
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The companion confirms rather than replaces the first observer.\"",
+          "repair": "同伴确认而不是取代第一个观察者。"
+        },
+        {
+          "failure": "没有这条精确的终端验证规则，序列仅在运动时停止，永远不会确认承诺的结果或保留的后果。被移除的规则：\"最终离开保留验证过的对象。\"",
+          "repair": "最终离开保留验证过的对象。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两名成年地图学家验证一张路线卡并带着它离开。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "两名成年保护员发现一张标记的标本幻灯片，检查后将其带到实验室。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

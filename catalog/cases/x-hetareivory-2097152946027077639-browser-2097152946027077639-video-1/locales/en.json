@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-hetareivory-2097152946027077639-browser-2097152946027077639-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "bdb3d6495d54562c931721fc36de6bcd203832d38cb46c225dc9fa65164b9d49",
+    "creative_dna_sha256": "042047063fe85016c94adae01a8fcc9619cb57229db4003f21251fadda08f097"
+  },
+  "content": {
+    "title": "Anime Fashion Identity Board | Outfit Details, Pose Ladder and Full-Body Return",
+    "summary": "An adult animated bassist cycles through identity-verifying fashion poses and returns full-body. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "One clearly adult identity and fixed wardrobe anchors persist. + Every detail view reconnects to a complete body pose. + Pose changes are discrete and anatomically plausible. + The studio axis and palette remain constant. + The final full-body composition matches the opening identity proof.",
+      "recommended_input": "Establish one original adult animated bassist in an ivory shirt, navy vest, copper plaid trousers and a black cap. Show two seated leg poses and one boot detail while every clothing anchor and body proportion stays unchanged. Pull back to the opening full-body mark and finish with both feet planted on the same studio reflection line.",
+      "required_anchors": [
+        "One clearly adult identity and fixed wardrobe anchors persist.",
+        "Every detail view reconnects to a complete body pose.",
+        "The studio axis and palette remain constant.",
+        "The final full-body composition matches the opening identity proof."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "An adult animated bassist cycles through identity-verifying fashion poses and returns full-body. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "以银白长发、黑帽、红黑格裤和同一棚景锁定成年角色，按全身站姿、帽檐特写、坐姿、鞋部近景、领带动作、回身和伸手的顺序轮换，终局回到完整站姿。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult identity and fixed wardrobe anchors persist.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult identity and fixed wardrobe anchors persist.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Every detail view reconnects to a complete body pose.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every detail view reconnects to a complete body pose.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Pose changes are discrete and anatomically plausible.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Pose changes are discrete and anatomically plausible.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "The studio axis and palette remain constant.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The studio axis and palette remain constant.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The final full-body composition matches the opening identity proof.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final full-body composition matches the opening identity proof.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult animated bassist cycles through identity-verifying fashion poses and returns full-body.",
+          "prompt_seed": "An adult animated bassist cycles through identity-verifying fashion poses and returns full-body."
+        },
+        {
+          "concept": "An adult animated mechanic cycles through tool-and-uniform verification views before returning to the work bay.",
+          "prompt_seed": "An adult animated mechanic cycles through tool-and-uniform verification views before returning to the work bay."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult identity and fixed wardrobe anchors persist.\"",
+          "repair": "One clearly adult identity and fixed wardrobe anchors persist."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every detail view reconnects to a complete body pose.\"",
+          "repair": "Every detail view reconnects to a complete body pose."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Pose changes are discrete and anatomically plausible.\"",
+          "repair": "Pose changes are discrete and anatomically plausible."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"The studio axis and palette remain constant.\"",
+          "repair": "The studio axis and palette remain constant."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The final full-body composition matches the opening identity proof.\"",
+          "repair": "The final full-body composition matches the opening identity proof."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult animated bassist cycles through identity-verifying fashion poses and returns full-body.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult animated mechanic cycles through tool-and-uniform verification views before returning to the work bay.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

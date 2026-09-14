@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-heyabhishek-2096961839154545127-browser-2096961839154545127-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d8c21de41ff5a7b160deddf7f8d406359221e37ffdbe3bb0281cfff47143d0b3",
+    "creative_dna_sha256": "e53cf9d19189ddc1ffee64997922387e54b4364cda27ae8d85c47c4166862774"
+  },
+  "content": {
+    "title": "日常巷道偶遇｜背后跟拍、蹲下接触与并行离开",
+    "summary": "从背后跟随同一成年人物穿过窄巷，猫的出现中断路线；人物停下、蹲低、伸手并完成一次抚摸，随后起身按原方向继续行走，猫在脚边同行。",
+    "quick_start": {
+      "input_format": "侧面连续跟拍 + 狭窄起点 + 行进中空间揭示 + 一次偶发横穿 + 一次克制回应 + 继续离开",
+      "recommended_input": "从背后跟拍一名原创成年装帧师穿过暖色石墙巷道，朝青绿色门前进。；她在原地蹲下，把一只手张开在膝盖高度，等待猫主动靠近。；她起身继续朝青绿色门行走，同一只猫沿右腿旁伴随。",
+      "required_anchors": [
+        "一个明显成年主体、一条路线和一种动物保持连续。",
+        "相遇打断了一个已经建立的旅行方向。",
+        "反应保持小且物理合理。",
+        "原始路线恢复，两名参与者均已到场。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "从背后跟随同一成年人物穿过窄巷，猫的出现中断路线；人物停下、蹲低、伸手并完成一次抚摸，随后起身按原方向继续行走，猫在脚边同行。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "从背后跟随同一成年人物穿过窄巷，猫的出现中断路线；人物停下、蹲低、伸手并完成一次抚摸，随后起身按原方向继续行走，猫在脚边同行。 必须满足：One clearly adult subject, one route and one animal remain continuous. + The encounter interrupts an already established travel direction. + Approach precedes contact and contact occurs only once. + The reaction remains small and physically plausible. + The original route resumes with both participants accounted for.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一个明显成年主体、一条路线和一种动物保持连续。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这个确切的基线规则，后续的变化无法归因于同一个主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明显成年主体、一条路线和一种动物保持连续。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "相遇打断了一个已经建立的旅行方向。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再成立。已移除规则：\"相遇打断了一个已经建立的旅行方向。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "接近先于接触，接触仅发生一次。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这条确切的进展规则，中间部分可以跳到替换状态，累积的结果将不再可追踪。移除规则：\"接近先于接触，接触仅发生一次。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "反应保持小且物理合理。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这条确切的重新连接规则，细节或转换镜头可能属于不同的主体或空间关系区域，连续性无法验证。移除规则：\"反应保持小且物理合理。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "原始路线恢复，两名参与者均已到场。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终端验证规则，序列仅在动作上停止，从未确认承诺的结果或保留的后果。被移除的规则：\"原始路线恢复，两名参与者均已到场。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一位成年人在书本装订过程中停下来，让一只猫打招呼，然后继续，猫在她身边。",
+          "prompt_seed": "一位成年人在书本装订过程中停下来，让一只猫打招呼，然后继续，猫在她身边。"
+        },
+        {
+          "concept": "一位成年人在温室路线中停下来，与一只鸟相遇，鸟停在一辆车上后，他继续前进。",
+          "prompt_seed": "一位成年人在温室路线中停下来，与一只鸟相遇，鸟停在一辆车上后，他继续前进。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这个确切的基线规则，后续的变化无法归因于同一个主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一个明显成年主体、一条路线和一种动物保持连续。\"",
+          "repair": "一个明显成年主体、一条路线和一种动物保持连续。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再成立。已移除规则：\"相遇打断了一个已经建立的旅行方向。\"",
+          "repair": "相遇打断了一个已经建立的旅行方向。"
+        },
+        {
+          "failure": "没有这条确切的进展规则，中间部分可以跳到替换状态，累积的结果将不再可追踪。移除规则：\"接近先于接触，接触仅发生一次。\"",
+          "repair": "接近先于接触，接触仅发生一次。"
+        },
+        {
+          "failure": "没有这条确切的重新连接规则，细节或转换镜头可能属于不同的主体或空间关系区域，连续性无法验证。移除规则：\"反应保持小且物理合理。\"",
+          "repair": "反应保持小且物理合理。"
+        },
+        {
+          "failure": "没有这条精确的终端验证规则，序列仅在动作上停止，从未确认承诺的结果或保留的后果。被移除的规则：\"原始路线恢复，两名参与者均已到场。\"",
+          "repair": "原始路线恢复，两名参与者均已到场。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一位成年人在书本装订过程中停下来，让一只猫打招呼，然后继续，猫在她身边。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一位成年人在温室路线中停下来，与一只鸟相遇，鸟停在一辆车上后，他继续前进。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

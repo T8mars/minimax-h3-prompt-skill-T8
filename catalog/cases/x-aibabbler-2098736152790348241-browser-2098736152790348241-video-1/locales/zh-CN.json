@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aibabbler-2098736152790348241-browser-2098736152790348241-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "1d82c00e7d4adcd2d168b4b7e9e6d42d03abfbe06611c0bc97efdec254ef8e56",
+    "creative_dna_sha256": "a76c384e2efccf21b4f11e0482fca495c8140ad9f7c85451a86e2253cb7c9d71"
+  },
+  "content": {
+    "title": "奇幻预告升阶｜伙伴相遇、队伍集结与风暴巨敌",
+    "summary": "以同一成年英雄、法杖和小型伙伴贯穿快速预告；山谷相遇、村落关系、地图与队伍组建逐步扩大任务，魔法、瀑布和巨影将冲突推至峰值，最后以原创片名封口。",
+    "quick_start": {
+      "input_format": "固定主角与关系锚点 + 公共世界扩展 + 私人脆弱阶段 + 物理危险升级 + 独立原创片名终卡",
+      "recommended_input": "一名明确成年的风暴档案师在金色玄武岩山谷遇见小型角兽伙伴。；云层压向山谷时，加入一名成年护盾守卫和一名成年滑翔员组成队伍。；在闪电中揭示一个巨型云层生物，随后切到准确原创片名【STORM VAULT】。",
+      "required_anchors": [
+        "一名明显成年的主角和两名身份锚依然存在。",
+        "关系先于公共规模的危险。",
+        "巨大的威胁只有在政党成立后才会出现。",
+        "仅使用原创字符和标题排版。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "以同一成年英雄、法杖和小型伙伴贯穿快速预告；山谷相遇、村落关系、地图与队伍组建逐步扩大任务，魔法、瀑布和巨影将冲突推至峰值，最后以原创片名封口。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "以同一成年英雄、法杖和小型伙伴贯穿快速预告；山谷相遇、村落关系、地图与队伍组建逐步扩大任务，魔法、瀑布和巨影将冲突推至峰值，最后以原创片名封口。 必须满足：One clearly adult protagonist and two identity anchors persist. + Relationship precedes public-scale danger. + Each trailer chapter raises scope or consequence. + The giant threat appears only after the party is established. + Only original characters and title typography are used.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一名明显成年的主角和两名身份锚依然存在。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名明显成年的主角和两名身份锚仍然存在。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "关系先于公共规模的危险。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“关系先于公共规模的危险。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每个预告片章节都会提出范围或后果。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“每个预告片章节都会提出范围或后果。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "巨大的威胁只有在政党成立后才会出现。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“巨大威胁只有在政党成立后才会出现。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "仅使用原创字符和标题排版。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“仅使用原始字符和标题排版。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年风暴档案管理员召集了一支队伍，并在 STORM VAULT 面前对抗云生物。",
+          "prompt_seed": "一名成年风暴档案管理员召集了一支队伍，并在 STORM VAULT 面前对抗云生物。"
+        },
+        {
+          "concept": "一名成年沙漠导航员在埋藏的机器苏醒之前召集了三名专家。",
+          "prompt_seed": "一名成年沙漠导航员在埋藏的机器苏醒之前召集了三名专家。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“一名明显成年的主角和两名身份锚仍然存在。”",
+          "repair": "一名明显成年的主角和两名身份锚依然存在。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且中心因果关系不再被证明。删除规则：“关系先于公共规模的危险。”",
+          "repair": "关系先于公共规模的危险。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，并且累积的结果不再可追溯。删除了规则：“每个预告片章节都会提出范围或后果。”",
+          "repair": "每个预告片章节都会提出范围或后果。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“巨大威胁只有在政党成立后才会出现。”",
+          "repair": "巨大的威胁只有在政党成立后才会出现。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“仅使用原始字符和标题排版。”",
+          "repair": "仅使用原创字符和标题排版。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年风暴档案管理员召集了一支队伍，并在 STORM VAULT 面前对抗云生物。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年沙漠导航员在埋藏的机器苏醒之前召集了三名专家。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

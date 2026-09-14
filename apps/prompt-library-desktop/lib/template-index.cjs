@@ -185,7 +185,10 @@ function searchableCard(entity) {
   const semanticFields = Object.entries(card)
     .filter(([key]) => key !== "models" && key !== "targetDurationRangeSeconds")
     .map(([, value]) => value);
-  return normalizeSearch(semanticFields.flat(Infinity).join(" "));
+  const source = semanticFields.flat(Infinity).join(" ")
+    .replace(/the reusable mechanism\b[^.]*\bwhile replacing every source-specific\b[^.]*\.?/giu, " ")
+    .replace(/the reusable mechanism retains causal order and evidence duties while replacing source identity, setting, wording, objects, choreography and design\.?/giu, " ");
+  return normalizeSearch(source);
 }
 
 function termMatches(haystack, term) {

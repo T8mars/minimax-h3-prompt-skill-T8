@@ -129,7 +129,7 @@ $manifest = [ordered]@{
     schema_version = "1.2.0"
     version = $Version
     generated_at = [DateTime]::UtcNow.ToString("o")
-    archive_part_count = 2
+    archive_part_count = 3
     archive_layout = "balanced_lossless_zip_parts"
     catalog_case_count = $caseIds.Count
     case_count = $files.Count
@@ -150,7 +150,8 @@ $legacyZipPath = Join-Path $OutputDir "prompt-library-media-v$Version.zip"
 if (Test-Path -LiteralPath $legacyZipPath) { Remove-Item -LiteralPath $legacyZipPath -Force }
 $zipPaths = @(
     (Join-Path $OutputDir "prompt-library-media-v$Version-part1.zip"),
-    (Join-Path $OutputDir "prompt-library-media-v$Version-part2.zip")
+    (Join-Path $OutputDir "prompt-library-media-v$Version-part2.zip"),
+    (Join-Path $OutputDir "prompt-library-media-v$Version-part3.zip")
 )
 foreach ($zipPath in $zipPaths) {
     if (Test-Path -LiteralPath $zipPath) { Remove-Item -LiteralPath $zipPath -Force }
@@ -167,15 +168,19 @@ foreach ($file in $communityFiles) {
 }
 $partFiles = @(
     [System.Collections.Generic.List[object]]::new(),
+    [System.Collections.Generic.List[object]]::new(),
     [System.Collections.Generic.List[object]]::new()
 )
-$partBytes = [long[]]@(0, 0)
+$partBytes = [long[]]@(0, 0, 0)
 foreach ($archiveInput in ($archiveInputs | Sort-Object @{ Expression = "Size"; Descending = $true }, @{ Expression = "Path"; Ascending = $true })) {
-    $partIndex = if ($partBytes[0] -le $partBytes[1]) { 0 } else { 1 }
+    $partIndex = 0
+    for ($candidate = 1; $candidate -lt $partBytes.Count; $candidate += 1) {
+        if ($partBytes[$candidate] -lt $partBytes[$partIndex]) { $partIndex = $candidate }
+    }
     $partFiles[$partIndex].Add($archiveInput)
     $partBytes[$partIndex] += $archiveInput.Size
 }
-if ($partFiles[0].Count -eq 0 -or $partFiles[1].Count -eq 0) { throw "Media pack must produce two non-empty parts." }
+if (@($partFiles | Where-Object { $_.Count -eq 0 }).Count -ne 0) { throw "Media pack must produce three non-empty parts." }
 
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem

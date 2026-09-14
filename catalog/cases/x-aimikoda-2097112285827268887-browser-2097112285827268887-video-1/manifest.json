@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aimikoda-2097112285827268887-browser-2097112285827268887-video-1",
+  "slug": "carrier-relay-shared-world-trailer",
+  "title": "意象载体预告接力｜花果传递、角色轮换与巨像回标",
+  "source_title": "石园预告片｜红果、花器与黑鸟串联同一暗色世界",
+  "summary": "用一种高对比色载体在多名成年角色之间接力，让花、果实、器皿和鸟群把看似分散的章节绑定到同一世界；终局把全部载体痕迹汇聚到巨像与准确片名。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/carrier-relay-shared-world-trailer",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2097112285827268887-browser-2097112285827268887-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2097112285827268887-browser-2097112285827268887-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-carrier-relay-shared-world-trailer-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一组身份稳定的明确成年原创角色 + 一个可辨识的核心载体在多个角色之间依次交接 + 每次交接都引出同一世界中的一个新地点、关系或能力证据 + 所有支线保持共享的色彩、道具与空间逻辑并逐步汇聚 + 最终通过载体回收或群像会合确认这些片段属于同一完整世界",
+  "recommended_input": "一名成年档案员穿过靛蓝叶片伸手，接到一颗发光琥珀种子。；信使在同一暗色风暴天空下从左向右跑过琥珀花田，花碗保持完整。；在琥珀花田上方揭示巨型玄武岩图书守护者，以准确原创片名【THE SEED ARCHIVE】收束。",
+  "required_anchors": [
+    "One accent carrier color recurs through every chapter.",
+    "Every role change is bridged by a visible object, plant or bird handoff.",
+    "The monumental reveal contains residues of the earlier carriers.",
+    "One exact original title appears only after the relay converges."
+  ],
+  "tags": [
+    "carrier",
+    "relay",
+    "shared",
+    "world",
+    "trailer"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-08T14:38:02+08:00",
+  "updated_at": "2026-09-08T16:11:02+08:00"
+}

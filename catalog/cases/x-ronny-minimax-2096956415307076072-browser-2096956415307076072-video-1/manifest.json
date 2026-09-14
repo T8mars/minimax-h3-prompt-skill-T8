@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ronny-minimax-2096956415307076072-browser-2096956415307076072-video-1",
+  "slug": "social-interface-prank-materialization",
+  "title": "界面恶作剧实体化｜屏内内容、屏外清除与手写回执",
+  "source_title": "社交页面恶作剧｜成年人物从吃苹果到清屏写下成功",
+  "summary": "先把成年人物限制在圆形社交视频窗内完成普通动作，再让同一人物走出屏幕边界、用实体工具清除页面内容并直接在空白界面写下结果；终局回到人物与手写字同框。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/social-interface-prank-materialization",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ronny-minimax-2096956415307076072-browser-2096956415307076072-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ronny-minimax-2096956415307076072-browser-2096956415307076072-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-social-interface-prank-materialization-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "一名明确成年原创主体与一个可辨识的屏幕或社交界面 + 主体跨越界面边界进入其内容空间 + 至少两项界面元素被转化为可触碰、移动或删除的实体并产生连续反馈 + 操作始终保留屏幕内外的空间对应关系且不重置主体身份 + 最终以界面状态发生可读改变和主体的明确反应完成恶作剧回报",
+  "recommended_input": "让一名原创成年实验主持人在圆形研究动态视频窗内品尝一颗红色浆果。；他读取一条显示内容，把文字块作为白色纸片撕下并放入一个托盘。；用白色手写准确短句【TEST COMPLETE】，盖好笔帽，以成年主持人与清晰结果同框微笑收束。",
+  "required_anchors": [
+    "One clearly adult identity persists inside and outside the interface.",
+    "The transition crosses one visible screen boundary exactly once.",
+    "The writing area is visibly cleared before any new text appears.",
+    "The final exact phrase and the responsible character remain together."
+  ],
+  "tags": [
+    "social",
+    "interface",
+    "prank",
+    "materialization"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-08T14:38:04+08:00",
+  "updated_at": "2026-09-08T16:11:02+08:00"
+}

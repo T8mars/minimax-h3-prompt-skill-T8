@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aitopiaai-2096976623652233505-browser-2096976623652233505-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "b8054199bf3265a8ce7ef17dd7a853e46f3bebd217acec4118fd269743e2fe84",
+    "creative_dna_sha256": "5c0cd13047013b935c4245f3daf16d1f246446e68e03cfabdd68af96f4a7e5e9"
+  },
+  "content": {
+    "title": "Miniature Table Mission | Tactical Route, Giant Food Retrieval and Hand Reveal",
+    "summary": "Three miniature adult workers rig a giant corn stick before one full-size hand removes it. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+    "quick_start": {
+      "input_format": "Exactly three clearly adult miniature workers retain identity and scale. + Each task step uses visible tools and contact. + The giant table geography remains continuous. + A full-size hand enters only once at the terminal interruption. + The slack rope proves the direct consequence of the removed object.",
+      "recommended_input": "Three original miniature adult repair workers study a blueprint beside a giant glass pepper mill on a cafe table. All three climb one red straw in order, maintaining hand and boot contact at every step. A full-size adult hand enters once, lifts the corn stick and exits; the three workers remain beside one slack rope.",
+      "required_anchors": [
+        "Exactly three clearly adult miniature workers retain identity and scale.",
+        "Each task step uses visible tools and contact.",
+        "A full-size hand enters only once at the terminal interruption.",
+        "The slack rope proves the direct consequence of the removed object."
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Three miniature adult workers rig a giant corn stick before one full-size hand removes it. Preserve the five causal invariants and terminal proof while replacing every source-specific surface.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "以餐桌常物建立巨大尺度，三名成年微缩队员从地图规划、绳索滑行、攀爬吸管到捆绑薯条依次协作；真实人手只在终局进入一次，打断他们的成果并证明尺度关系。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Exactly three clearly adult miniature workers retain identity and scale.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"Exactly three clearly adult miniature workers retain identity and scale.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Each task step uses visible tools and contact.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Each task step uses visible tools and contact.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "The giant table geography remains continuous.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The giant table geography remains continuous.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "A full-size hand enters only once at the terminal interruption.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"A full-size hand enters only once at the terminal interruption.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The slack rope proves the direct consequence of the removed object.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The slack rope proves the direct consequence of the removed object.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "Three miniature adult workers rig a giant corn stick before one full-size hand removes it.",
+          "prompt_seed": "Three miniature adult workers rig a giant corn stick before one full-size hand removes it."
+        },
+        {
+          "concept": "Three miniature adult climbers secure a giant paintbrush before an artist lifts it from the table.",
+          "prompt_seed": "Three miniature adult climbers secure a giant paintbrush before an artist lifts it from the table."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"Exactly three clearly adult miniature workers retain identity and scale.\"",
+          "repair": "Exactly three clearly adult miniature workers retain identity and scale."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Each task step uses visible tools and contact.\"",
+          "repair": "Each task step uses visible tools and contact."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"The giant table geography remains continuous.\"",
+          "repair": "The giant table geography remains continuous."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"A full-size hand enters only once at the terminal interruption.\"",
+          "repair": "A full-size hand enters only once at the terminal interruption."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The slack rope proves the direct consequence of the removed object.\"",
+          "repair": "The slack rope proves the direct consequence of the removed object."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "Three miniature adult workers rig a giant corn stick before one full-size hand removes it.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "Three miniature adult climbers secure a giant paintbrush before an artist lifts it from the table.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

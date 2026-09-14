@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-maybeegreen-2099001169222017511-browser-2099001169222017511-video-1",
+  "slug": "follow-one-encounter-and-departure",
+  "title": "林间初遇｜远距发现、试探接近与双向安全确认",
+  "source_title": "夏林奇遇｜成年旅者与幼小幻想生物从戒备到亲近",
+  "summary": "先由成年旅者在林地发现蜷缩生物，双方保持距离并以目光和小动作试探；接触只发生一次，生物抬头回应，终局以共同安全空间而非强行抱持收束。",
+  "status": "released",
+  "source_duration_seconds": 15.150273,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/follow-one-encounter-and-departure",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-maybeegreen-2099001169222017511-browser-2099001169222017511-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-maybeegreen-2099001169222017511-browser-2099001169222017511-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-observer-follow-encounter-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-observer-follow-encounter-v1",
+  "input_format": "侧面连续跟拍 + 狭窄起点 + 行进中空间揭示 + 一次偶发横穿 + 一次克制回应 + 继续离开",
+  "recommended_input": "一名明确成年的野外植物学家发现一只小型苔翼生物睡在倒下的雪松上。；她把一只摊开的手掌放到木头旁，不主动触碰，并静止一拍。；拉到广角，让植物学家与生物共同停在雪松旁同一片阳光中。",
+  "required_anchors": [
+    "One clearly adult human and one original creature persist.",
+    "Distance closes monotonically without a jump cut substitution.",
+    "Exactly one voluntary contact confirms trust.",
+    "The ending preserves both identities and the established forest location."
+  ],
+  "tags": [
+    "observer",
+    "follow",
+    "encounter"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-13T16:10:16+08:00",
+  "updated_at": "2026-09-14T17:41:56+08:00"
+}

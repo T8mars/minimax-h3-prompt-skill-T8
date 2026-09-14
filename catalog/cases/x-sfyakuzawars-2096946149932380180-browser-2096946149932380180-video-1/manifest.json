@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-sfyakuzawars-2096946149932380180-browser-2096946149932380180-video-1",
+  "slug": "apparent-vulnerability-readiness-reversal-resumption",
+  "title": "倒地翻盘动作弧｜受压基线、近身脱困与站立回稳",
+  "source_title": "室内防身短片｜成年角色从倒地受压到制服威胁",
+  "summary": "明确两名成年角色和同一和室空间，先建立主角倒地受压，再通过一次抓腕、转身和扫腿形成连续脱困；冲突必须非血腥，终局主角站稳、威胁倒地并停止攻击。",
+  "status": "released",
+  "source_duration_seconds": 14.117732,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/apparent-vulnerability-readiness-reversal-resumption",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sfyakuzawars-2096946149932380180-browser-2096946149932380180-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-sfyakuzawars-2096946149932380180-browser-2096946149932380180-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-apparent-vulnerability-readiness-reversal-resumption-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-apparent-vulnerability-readiness-reversal-resumption-v1",
+  "input_format": "稳定主体与中断目标 + 可读困境 + 因困境主动靠近的外部压力 + 至少两个准备微证据 + 单一能力链破局 + 回到原载体继续路线",
+  "recommended_input": "让一名原创成年递送员倒在软垫训练场，一名穿护具的成年教练靠近。；近景展示一次非血腥扣腕，再用转肩把教练的力量带过身体中线。；递送员起身后退一步，保持平静防守姿态，教练示意训练结束。",
+  "required_anchors": [
+    "Both participants are clearly adult and remain distinct.",
+    "The action is a non-graphic controlled training exchange.",
+    "Only one takedown occurs in the unchanged room.",
+    "The final state ends aggression and restores stable spacing."
+  ],
+  "tags": [
+    "apparent",
+    "vulnerability",
+    "readiness",
+    "reversal",
+    "resumption"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-08T14:38:04+08:00",
+  "updated_at": "2026-09-08T16:11:02+08:00"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-neco1751662-2098604621753467184-browser-2098604621753467184-video-1",
+  "slug": "whole-first-component-grammar-returning-mark",
+  "title": "汉堡爆拆回装｜整品先现、部件处理与完整复归",
+  "source_title": "汉堡拆解重组｜食材弹出、炙烤融化后重新装配",
+  "summary": "先展示完整原创汉堡，随后按固定顺序爆拆；肉饼、芝士、蔬菜和酱料分别获得独立处理镜头，再沿原轴重组，最终回到完整成品。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/whole-first-component-grammar-returning-mark",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-neco1751662-2098604621753467184-browser-2098604621753467184-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-neco1751662-2098604621753467184-browser-2098604621753467184-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-whole-first-component-grammar-returning-mark-v1",
+  "template_action": "evidence_variant",
+  "duplicate_of": "t8-case-whole-first-component-grammar-returning-mark-v1",
+  "input_format": "第0帧完整原创构造物先出现 + 第一秒完成唯一最大速度爆拆且组件顺序不变 + 各主要组件分别获得一种较慢且不同的材料或制造语法 + 至少两章之间短暂回到完整成品刷新装配记忆 + 组件逐步符号化并重组为原创身份标记而非简单恢复开场产品",
+  "recommended_input": "先在钴蓝托盘上呈现一个完整原创蘑菇甜椒汉堡。；肉饼落到热板完成一次炙烤，再沿同一方向让芝士融化覆盖。；落下顶层面包，让全部层稳定，回到开场钴蓝托盘英雄角度。",
+  "required_anchors": [
+    "The complete whole appears before disassembly.",
+    "Component order remains stable in both directions.",
+    "Reassembly preserves accumulated cooked states.",
+    "The final product matches the opening geometry with improved finish."
+  ],
+  "tags": [
+    "whole",
+    "first",
+    "component",
+    "grammar",
+    "returning",
+    "mark"
+  ],
+  "quality": {
+    "weighted_score": 4.953,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-12T21:47:30+08:00",
+  "updated_at": "2026-09-12T22:17:42+08:00"
+}

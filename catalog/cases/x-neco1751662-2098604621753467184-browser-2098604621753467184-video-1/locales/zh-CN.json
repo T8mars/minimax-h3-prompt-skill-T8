@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-neco1751662-2098604621753467184-browser-2098604621753467184-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "35ac51c5a84e6a2c199a523a135b2f46eafc1a614c6241ac6d76e5ba4a0a8935",
+    "creative_dna_sha256": "87f819ed73dc33ca96d7bb25ac01cebbce3e9573b33cfd54ca4d148a40d6333d"
+  },
+  "content": {
+    "title": "汉堡爆拆回装｜整品先现、部件处理与完整复归",
+    "summary": "先展示完整原创汉堡，随后按固定顺序爆拆；肉饼、芝士、蔬菜和酱料分别获得独立处理镜头，再沿原轴重组，最终回到完整成品。",
+    "quick_start": {
+      "input_format": "第0帧完整原创构造物先出现 + 第一秒完成唯一最大速度爆拆且组件顺序不变 + 各主要组件分别获得一种较慢且不同的材料或制造语法 + 至少两章之间短暂回到完整成品刷新装配记忆 + 组件逐步符号化并重组为原创身份标记而非简单恢复开场产品",
+      "recommended_input": "先在钴蓝托盘上呈现一个完整原创蘑菇甜椒汉堡。；肉饼落到热板完成一次炙烤，再沿同一方向让芝士融化覆盖。；落下顶层面包，让全部层稳定，回到开场钴蓝托盘英雄角度。",
+      "required_anchors": [
+        "拆解前完整的整体出现。",
+        "元件订单双向保持稳定。",
+        "重新组装保留累积的熟状态。",
+        "最终产品与开口几何形状相匹配，并改善了光洁度。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先展示完整原创汉堡，随后按固定顺序爆拆；肉饼、芝士、蔬菜和酱料分别获得独立处理镜头，再沿原轴重组，最终回到完整成品。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "先展示完整原创汉堡，随后按固定顺序爆拆；肉饼、芝士、蔬菜和酱料分别获得独立处理镜头，再沿原轴重组，最终回到完整成品。 必须满足：The complete whole appears before disassembly. + Component order remains stable in both directions. + Every processing chapter changes one assigned ingredient. + Reassembly preserves accumulated cooked states. + The final product matches the opening geometry with improved finish.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "拆解前完整的整体出现。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“完整的整体出现在拆卸之前。”",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "元件订单双向保持稳定。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“组件顺序在两个方向上保持稳定。”",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "每个加工章节都会更改一种指定的成分。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“每个加工章节都会更改一种指定的成分。”",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "重新组装保留累积的熟状态。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“重新组装保留累积的熟状态。”",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终产品与开口几何形状相匹配，并改善了光洁度。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终产品与开口几何形状相匹配，并改善了光洁度。”",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "蘑菇汉堡爆炸，按成分烹饪并返回整个。",
+          "prompt_seed": "蘑菇汉堡爆炸，按成分烹饪并返回整个。"
+        },
+        {
+          "concept": "分层机械手表分离、接收材料并返回组装。",
+          "prompt_seed": "分层机械手表分离、接收材料并返回组装。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "如果没有这个精确的基线规则，后来的变化就不能归因于同一个主体、客体或地点，因此序列就失去了参考状态。删除规则：“完整的整体出现在拆卸之前。”",
+          "repair": "拆解前完整的整体出现。"
+        },
+        {
+          "failure": "如果没有这个确切的触发规则，响应会自发出现，并且不再证明中心因果关系。删除规则：“组件顺序在两个方向上保持稳定。”",
+          "repair": "元件订单双向保持稳定。"
+        },
+        {
+          "failure": "如果没有这个精确的进展规则，中间可以跳转到替换状态，累加的结果不再可追溯。删除规则：“每个加工章节都会更改一种指定的成分。”",
+          "repair": "每个加工章节都会更改一种指定的成分。"
+        },
+        {
+          "failure": "如果没有这种精确的重新连接规则，细节或变换后的镜头可能属于不同的主体或空间关系位置，并且无法验证连续性。删除规则：“重新组装保留累积的熟状态。”",
+          "repair": "重新组装保留累积的熟状态。"
+        },
+        {
+          "failure": "如果没有这个精确的终端证明规则，序列就会单独停止运动，并且永远不会确认所承诺的结果或保留的后果。删除规则：“最终产品与开口几何形状相匹配，并改善了光洁度。”",
+          "repair": "最终产品与开口几何形状相匹配，并改善了光洁度。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "蘑菇汉堡爆炸，按成分烹饪并返回整个。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "分层机械手表分离、接收材料并返回组装。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

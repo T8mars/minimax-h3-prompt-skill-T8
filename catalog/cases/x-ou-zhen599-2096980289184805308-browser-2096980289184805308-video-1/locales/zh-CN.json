@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ou-zhen599-2096980289184805308-browser-2096980289184805308-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "7057a4618a6f8a7f24cdc66dbc4ab29ba79de187e68918aa5ee9806cb0ec1b30",
+    "creative_dna_sha256": "2b0d48e74ec487c657b7203d29b16f53450ae6c73d1d8e1ce461805145a0b77c"
+  },
+  "content": {
+    "title": "雪崖触觉攀登｜手脚支点、绳索受力与连续恢复",
+    "summary": "用近身手部、靴底、冰雪与绳索受力持续证明同一攀登路线；成年人物在一次支点滑脱后由绳索和另一只手恢复，不瞬移、不切换山体，最后重新站稳并确认上方路线。",
+    "quick_start": {
+      "input_format": "一名成年攀登者作为巨大竖向目标前的小型主体 + 至少三种负重接触以近景证明 + 一次接触失效、可见损失与同地理明确制动恢复 + 至少三项装备身份锚点跨尺度保持 + 近身越过最终边缘后稳定拉远证明顶点尺度且不庆祝",
+      "recommended_input": "让一名原创成年救援攀登者位于蓝色冰壁，一根红绳连接安全带，上方可见气象桅杆。；左侧冰台只断裂一次，身体下坠不足一个身长，红绳明显绷紧。；以成年攀登者呼吸一次、望向气象桅杆并向上稳步移动一步收束。",
+      "required_anchors": [
+        "一位明显成年攀爬者、路线、绳索和墙壁持续存在。",
+        "每个动作都由可见的手或脚接触支持。",
+        "恢复时恢复一个可数的三点支撑。",
+        "最终的向上动作遵循已证明的稳定化。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "用近身手部、靴底、冰雪与绳索受力持续证明同一攀登路线；成年人物在一次支点滑脱后由绳索和另一只手恢复，不瞬移、不切换山体，最后重新站稳并确认上方路线。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "用近身手部、靴底、冰雪与绳索受力持续证明同一攀登路线；成年人物在一次支点滑脱后由绳索和另一只手恢复，不瞬移、不切换山体，最后重新站稳并确认上方路线。 必须满足：One clearly adult climber, route, rope and wall persist. + Every move is supported by visible hand or foot contact. + Only one bounded slip occurs and the rope catches it. + Recovery restores a countable three-point stance. + The final upward action follows proven stabilization.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "一位明显成年攀爬者、路线、绳索和墙壁持续存在。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这条确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一位明显成年攀爬者、路线、绳索和墙壁持续存在。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "每个动作都由可见的手或脚接触支持。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这条确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"每个动作都由可见的手或脚接触支持。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "只有一次有界滑动发生，并且绳子抓住了它。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这个精确的进展规则，中间可以跳到一个替代状态，累积的结果将不再可追踪。移除的规则：\"只有一次有界滑动发生，并且绳子抓住了它。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "恢复时恢复一个可数的三点支撑。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这个精确的重新连接规则，细节或变换的镜头可以属于不同的主体或空间关系，连续性无法验证。移除的规则：\"恢复时恢复一个可数的三点支撑。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终的向上动作遵循已证明的稳定化。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终端证明规则，序列仅在运动上停止，永远不会确认承诺的结果或保留的后果。被移除的规则：\"最终的向上动作遵循已证明的稳定化。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "一名成年冰救援人员失去一个立足点，恢复三点接触并继续向上。",
+          "prompt_seed": "一名成年冰救援人员失去一个立足点，恢复三点接触并继续向上。"
+        },
+        {
+          "concept": "一名成年工业检查员在一根横梁上滑倒，加载安全绳并继续攀登。",
+          "prompt_seed": "一名成年工业检查员在一根横梁上滑倒，加载安全绳并继续攀登。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这条确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"一位明显成年攀爬者、路线、绳索和墙壁持续存在。\"",
+          "repair": "一位明显成年攀爬者、路线、绳索和墙壁持续存在。"
+        },
+        {
+          "failure": "没有这条确切的触发规则，响应会显得自发，中心的因果关系声明也就不再得到证明。已移除规则：\"每个动作都由可见的手或脚接触支持。\"",
+          "repair": "每个动作都由可见的手或脚接触支持。"
+        },
+        {
+          "failure": "没有这个精确的进展规则，中间可以跳到一个替代状态，累积的结果将不再可追踪。移除的规则：\"只有一次有界滑动发生，并且绳子抓住了它。\"",
+          "repair": "只有一次有界滑动发生，并且绳子抓住了它。"
+        },
+        {
+          "failure": "没有这个精确的重新连接规则，细节或变换的镜头可以属于不同的主体或空间关系，连续性无法验证。移除的规则：\"恢复时恢复一个可数的三点支撑。\"",
+          "repair": "恢复时恢复一个可数的三点支撑。"
+        },
+        {
+          "failure": "没有这条精确的终端证明规则，序列仅在运动上停止，永远不会确认承诺的结果或保留的后果。被移除的规则：\"最终的向上动作遵循已证明的稳定化。\"",
+          "repair": "最终的向上动作遵循已证明的稳定化。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "一名成年冰救援人员失去一个立足点，恢复三点接触并继续向上。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "一名成年工业检查员在一根横梁上滑倒，加载安全绳并继续攀登。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}

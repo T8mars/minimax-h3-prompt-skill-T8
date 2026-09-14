@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tokyo-valentine-2097123773636059318-browser-2097123773636059318-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "4e17493c0a58b1e6ab3a7b12059fb2b075bf70cf3ed5863ee4edc4d595d29eb2",
+    "creative_dna_sha256": "089f35b09f78df2e3adb6111f58602c4e496ce1c6a0a9727fbdb9fe962d2fd5d"
+  },
+  "content": {
+    "title": "双人街角微互动｜固定站位、共同蹲下与表情接力",
+    "summary": "在高密度彩色街角固定两名成年动漫人物、服装差异和左右站位；两人同步蹲下靠近一只猫，再通过视线、遮嘴轻笑和互看完成关系推进，环境与身份始终不切换。",
+    "quick_start": {
+      "input_format": "公开群体三角色 + 双人隔离 + 逐级收紧的可见交流与微动作 + 单次越轴 + 新前后关系终态",
+      "recommended_input": "让两名原创成年动画街头艺术家并肩站在青珊瑚色市场巷道，一只虎斑猫位于前方。；猫起身转向一次，从两人张开的手之间经过，不离开共同画面。；以双人近景收束，两名成年人柔和微笑，猫坐在下方，原市场招牌位置保持注册。",
+      "required_anchors": [
+        "确切的两个成年身份保持左右顺序。",
+        "一个共享的动物和一个地点仍然被记录。",
+        "社交反应通过可见的视线从一个人传递到另一个人。",
+        "最终特写保留相同的双人组和环境锚点。"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "在高密度彩色街角固定两名成年动漫人物、服装差异和左右站位；两人同步蹲下靠近一只猫，再通过视线、遮嘴轻笑和互看完成关系推进，环境与身份始终不切换。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "在高密度彩色街角固定两名成年动漫人物、服装差异和左右站位；两人同步蹲下靠近一只猫，再通过视线、遮嘴轻笑和互看完成关系推进，环境与身份始终不切换。 必须满足：Exactly two clearly adult identities retain left-right order. + One shared animal and one location remain accounted for. + Both subjects enter the lower pose continuously. + The social response passes from one person to the other through visible eye line. + The final close view preserves the same dyad and environmental anchors.。只迁移抽象机制；来源人物、地点、品牌、文字、道具造型、精确动作、构图和时间均不得复制。",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "确切的两个成年身份保持左右顺序。",
+          "purpose": "建立每个后续状态必须保留的基线身份、对象或空间关系。",
+          "ablation_failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"确切的两个成年身份保持左右顺序。\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "一个共享的动物和一个地点仍然被记录。",
+          "purpose": "使可见触发器先于并解释第一个机制响应。",
+          "ablation_failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再被证明。已移除规则：\"一个共享的动物和一个地点仍然被记录。\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "两个主体连续进入低姿势。",
+          "purpose": "保持中间进度注册，而不是允许不明原因的重置。",
+          "ablation_failure": "没有这个确切的进展规则，中间部分可以跳到替换状态，累积结果将不再可追踪。已移除规则：\"两个主体连续进入低姿势。\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "社交反应通过可见的视线从一个人传递到另一个人。",
+          "purpose": "将更改或部分状态重新连接到已建立的主体和空间锚点。",
+          "ablation_failure": "没有这个确切的重新连接规则，细节或转换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"社交反应通过可见的视线从一个人传递到另一个人。\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "最终特写保留相同的双人组和环境锚点。",
+          "purpose": "将终端保持转变为机制完成的可观察证据。",
+          "ablation_failure": "没有这条精确的终端规则，序列仅在运动上停止，从未确认承诺的结果或保留的后果。被移除的规则：\"最终特写保留相同的双人组和环境锚点。\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "具有清楚职责的原创稳定主体或双人组合。"
+        },
+        {
+          "name": "setting",
+          "constraint": "带固定空间锚点且不含来源特有外观的新场景。"
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "一个通过可见阶段持续变化的因果变量。"
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "一条克制的表演或运动规则，确保机制始终清楚。"
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "能够证明各状态且不复制来源镜头边界的信息顺序。"
+        },
+        {
+          "name": "payoff",
+          "constraint": "一个干净、明确的物理、信息或社会结果。"
+        },
+        {
+          "name": "sound_family",
+          "constraint": "原创画内提示层级；不得声称没有证据支持的来源音频。"
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "两位成年人的街头艺术家蹲在一个猫身边，交换着克制的笑声。",
+          "prompt_seed": "两位成年人的街头艺术家蹲在一个猫身边，交换着克制的笑声。"
+        },
+        {
+          "concept": "两位成年人的田野研究员跪在一个发现的设备旁边，交换着沉默的认同眼神。",
+          "prompt_seed": "两位成年人的田野研究员跪在一个发现的设备旁边，交换着沉默的认同眼神。"
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "没有这个确切的基线规则，后续的变化无法归因于同一主体、对象或地点，因此序列失去了参考状态。已移除规则：\"确切的两个成年身份保持左右顺序。\"",
+          "repair": "确切的两个成年身份保持左右顺序。"
+        },
+        {
+          "failure": "没有这个确切的触发规则，响应会显得自发，中心的因果关系声明也就不再被证明。已移除规则：\"一个共享的动物和一个地点仍然被记录。\"",
+          "repair": "一个共享的动物和一个地点仍然被记录。"
+        },
+        {
+          "failure": "没有这个确切的进展规则，中间部分可以跳到替换状态，累积结果将不再可追踪。已移除规则：\"两个主体连续进入低姿势。\"",
+          "repair": "两个主体连续进入低姿势。"
+        },
+        {
+          "failure": "没有这个确切的重新连接规则，细节或转换的镜头可能属于不同的主体或空间关系区域，连续性无法验证。已移除规则：\"社交反应通过可见的视线从一个人传递到另一个人。\"",
+          "repair": "社交反应通过可见的视线从一个人传递到另一个人。"
+        },
+        {
+          "failure": "没有这条精确的终端规则，序列仅在运动上停止，从未确认承诺的结果或保留的后果。被移除的规则：\"最终特写保留相同的双人组和环境锚点。\"",
+          "repair": "最终特写保留相同的双人组和环境锚点。"
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "两位成年人的街头艺术家蹲在一个猫身边，交换着克制的笑声。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "两位成年人的田野研究员跪在一个发现的设备旁边，交换着沉默的认同眼神。",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "source-bound Chinese editorial pass with film-language glossary, stable-token, structure, and anti-copy validation"
+  }
+}
