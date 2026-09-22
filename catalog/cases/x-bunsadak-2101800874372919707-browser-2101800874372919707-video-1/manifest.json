@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-bunsadak-2101800874372919707-browser-2101800874372919707-video-1",
+  "slug": "three-across-synchronized-orientation",
+  "title": "三角色同拍｜固定阵形与同步转向",
+  "source_title": "三兔同拍舞步｜阵形与方向切换",
+  "summary": "三个不同主体在稳定场地内同步小动作、共同转向并落在统一终姿。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/three-across-synchronized-orientation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bunsadak-2101800874372919707-browser-2101800874372919707-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-bunsadak-2101800874372919707-browser-2101800874372919707-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-three-across-synchronized-orientation-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "三个可区分主体＋固定间距＋同步转向＋共同停住",
+  "recommended_input": "橙、白、钴蓝三台半身高发条测量机器人，哑光蓝绿展示台，各自脚下有圆形标记。",
+  "required_anchors": [
+    "全程恰好三个",
+    "转向中仍保留左右关系",
+    "最终都真实着地"
+  ],
+  "tags": [
+    "three",
+    "across",
+    "synchronized",
+    "orientation"
+  ],
+  "quality": {
+    "weighted_score": 4.312,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:54:49+08:00",
+  "updated_at": "2026-09-21T19:40:28+08:00"
+}

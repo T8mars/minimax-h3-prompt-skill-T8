@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithmaha-2100787710424416603-browser-2100787710424416603-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "25ef0ab90fc9d2debc19121b62e3a5f1f07f83251b6790354fd2e8bea66b3bb9",
+    "creative_dna_sha256": "7b676b630a0ca19e9565e076a9ca9f83c981108fac9a7ee2d419840aa204b886"
+  },
+  "content": {
+    "title": "前景执念对抗背景灾难｜危险升级但微小任务不断线",
+    "summary": "把一名明确成年原创人物和一个微小、可持续操作的前景任务锁在画面中心，让背景危险从人群混乱、横穿武器、爆炸到贴脸擦过逐级升级；人物只做必要闪避并始终返回同一任务，结尾危险退去而注意力依旧不变，以尺度与行为反差形成喜剧。",
+    "quick_start": {
+      "input_format": "明确成年原创主体和一个小型可重复前景任务先建立 + 背景危险至少经过三档接近等级升级且方向可读 + 每次危险后双手与视线都回到同一任务物 + 早期只做最小避让并把最大身体位移保留给一次近接峰值 + 危险过去后重新执行原任务而非庆祝或击败威胁",
+      "recommended_input": "成年温室技术员在中央校准琥珀湿度计，仪表屏幕、双手和低头视线清楚；空推车横穿中景，技术员只转一个肩膀避让，然后恢复同一正面任务；技术员恢复站直、低头并继续校准，湿地与远处喷淋逐渐稳定",
+      "required_anchors": [
+        "Establish one clearly adult original protagonist and one small repeatable foreground task before hazards escalate.",
+        "Escalate at least three hazards from background activity to near contact while keeping their direction legible.",
+        "Use the minimum avoidance needed until one near-contact peak causes the largest body displacement.",
+        "End with the adult resuming the task after danger passes, not celebrating or defeating the threat."
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "把一名明确成年原创人物和一个微小、可持续操作的前景任务锁在画面中心，让背景危险从人群混乱、横穿武器、爆炸到贴脸擦过逐级升级；人物只做必要闪避并始终返回同一任务，结尾危险退去而注意力依旧不变，以尺度与行为反差形成喜剧。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "将明确成年原创人物和一个极小前景动作锁在中心，后景从纸张、家具移动到人群奔跑逐级升压；人物只作必要响应并回到原节奏。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One clearly adult original lead remains centered and identifiable.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult original lead remains centered and identifiable.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "A small foreground action stays continuous.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A small foreground action stays continuous.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Background disorder escalates in readable stages.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Background disorder escalates in readable stages.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Conflict remains non-graphic and safely choreographed.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Conflict remains non-graphic and safely choreographed.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "The ending returns to the foreground task and pose.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The ending returns to the foreground task and pose.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult archive supervisor holds one folder while a civic hall grows chaotic.",
+          "prompt_seed": "An adult archive supervisor holds one folder while a civic hall grows chaotic."
+        },
+        {
+          "concept": "An adult baker continues piping one cake while the kitchen background enters controlled disorder.",
+          "prompt_seed": "An adult baker continues piping one cake while the kitchen background enters controlled disorder."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One clearly adult original lead remains centered and identifiable.\"",
+          "repair": "One clearly adult original lead remains centered and identifiable."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"A small foreground action stays continuous.\"",
+          "repair": "A small foreground action stays continuous."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Background disorder escalates in readable stages.\"",
+          "repair": "Background disorder escalates in readable stages."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Conflict remains non-graphic and safely choreographed.\"",
+          "repair": "Conflict remains non-graphic and safely choreographed."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"The ending returns to the foreground task and pose.\"",
+          "repair": "The ending returns to the foreground task and pose."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult archive supervisor holds one folder while a civic hall grows chaotic.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "An adult baker continues piping one cake while the kitchen background enters controlled disorder.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved"
+  }
+}

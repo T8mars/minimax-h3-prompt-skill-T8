@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-hbcoop-2101762862083690640-browser-2101762862083690640-video-1",
+  "slug": "micro-ecology-world-title-scale",
+  "title": "微观到世界｜生态线索扩张与片名",
+  "source_title": "科幻片头｜生命微观线索扩展至地球尺度",
+  "summary": "从微小生态证据扩到建成环境和世界尺度，最后停在原创片名。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/micro-ecology-world-title-scale",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hbcoop-2101762862083690640-browser-2101762862083690640-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-hbcoop-2101762862083690640-browser-2101762862083690640-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-micro-ecology-world-title-scale-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "微观线索＋中景环境＋世界远景＋原创片名",
+  "recommended_input": "极地冰芯、显微镜显示器、同一块实物样本、成年野外研究员、短冰道和小型研究站；琥珀色标记从显微图连到实物样本标签，再连到冰原俯瞰图。",
+  "required_anchors": [
+    "同一线索跨尺度",
+    "空间逐级扩大",
+    "片名在最终尺度稳定可读"
+  ],
+  "tags": [
+    "micro",
+    "ecology",
+    "world",
+    "title",
+    "scale"
+  ],
+  "quality": {
+    "weighted_score": 4.394,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:50:30+08:00",
+  "updated_at": "2026-09-21T18:25:34+08:00"
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aimikoda-2100859492451676273-browser-2100859492451676273-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "64f14269a6e9aebfa4d982d5faa2d65f01be6a8a48fe4ce2e1393999d9b28d95",
+    "creative_dna_sha256": "5a0499731030bab7591d0f50e6578fb5a671388b1c5a38c78b95ba1d758f7993"
+  },
+  "content": {
+    "title": "Owner and Tool | Detail Slices to Full Action",
+    "summary": "Introduce a stable person and their tool together, briefly isolate several owner-tool details, then connect those clues through one coherent body-tool action and a broad resulting stance. The source shows the face and tool early; the ending confirms action ownership rather than revealing a never-seen identity.",
+    "quick_start": {
+      "input_format": "Establish one stable tool owner before using close inserts. + Keep tool geometry and attachment to the same person consistent through detail views and the main action. + After the action, show a broad enough pose to confirm where the tool ended relative to the owner.",
+      "recommended_input": "An adult avalanche-rescue trainee plants one search probe into a marked snow-training patch after boot, radio and tool details.",
+      "required_anchors": [
+        "人物与工具先建立关系",
+        "细节保持同一设计",
+        "动作和全身姿态回证归属"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "Introduce a stable person and their tool together, briefly isolate several owner-tool details, then connect those clues through one coherent body-tool action and a broad resulting stance. The source shows the face and tool early; the ending confirms action ownership rather than revealing a never-seen identity.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "Introduce a stable person and their tool together, briefly isolate several owner-tool details, then connect those clues through one coherent body-tool action and a broad resulting stance. The source shows the face and tool early; the ending confirms action ownership rather than revealing a never-seen identity.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one stable tool owner before using close inserts.",
+          "purpose": "Gives every later grip or equipment crop a clear subject anchor.",
+          "ablation_failure": "Without an established owner, close inserts could belong to several people and the action connection fails.",
+          "evidence_ids": [
+            "obs-01",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Keep tool geometry and attachment to the same person consistent through detail views and the main action.",
+          "purpose": "Makes the action legible as one carried object, not a sequence of swapped props.",
+          "ablation_failure": "If the tool or its hand changes between crops, the final action cannot be causally traced.",
+          "evidence_ids": [
+            "obs-06",
+            "obs-08",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "After the action, show a broad enough pose to confirm where the tool ended relative to the owner.",
+          "purpose": "Supplies a spatial outcome for the detail-and-action montage.",
+          "ablation_failure": "If the edit ends on another isolated detail, the viewer cannot verify the final tool-owner relation.",
+          "evidence_ids": [
+            "obs-10",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "subject_role",
+          "constraint": "One original stable tool owner; when human, visibly adult. Preserve body, costume and handedness across all views."
+        },
+        {
+          "name": "tool",
+          "constraint": "One role-appropriate non-branded tool with stable shape and grip location."
+        },
+        {
+          "name": "environment",
+          "constraint": "An original environment with persistent geography and a legible surface or target for the tool action."
+        },
+        {
+          "name": "main_action",
+          "constraint": "One physically readable owner-tool action, not copied sword choreography."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "A broad owner-tool anchor, selective inserts, one action view, and a confirming pose; exact source cuts are not copied."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "Original action-linked ambience and contact sound, not a claim about unheard source audio."
+        },
+        {
+          "name": "medium",
+          "constraint": "Visual medium may be live action, stop motion or another original form while owner-tool continuity remains legible."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No source anime face, hair, pale glowing coat, butterfly ornaments, blade pattern or exact color scheme.",
+        "No source sword choreography, exact cut cadence, character identity, creator text or prompt wording.",
+        "No franchise marks, source username, logo or weapon violence in the transferable preset."
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult avalanche-rescue trainee plants one search probe into a marked snow-training patch after boot, radio and tool details.",
+          "prompt_seed": "In a realistic snow-safety training area, one adult worker carries a single probe; inserts establish its owner before one insertion and a final full-body gear check."
+        },
+        {
+          "concept": "A stop-motion clockwork repair puppet tightens one loose carousel wheel with a small wrench, then the carousel turns while puppet and wrench remain in a wide tabletop view.",
+          "prompt_seed": "On an original miniature clockwork stage, establish one adult-coded repair puppet and its one wrench together; preserve the grip through a few inserts and one continuous wheel-tightening action, then reveal the moving carousel and owner-tool result in a wide pose."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Tool changes shape or hand between inserts.",
+          "repair": "Define one tool, one owner and one handedness; carry each through the action and end view."
+        },
+        {
+          "failure": "The action is replaced by unrelated flashy cuts.",
+          "repair": "Reserve one uninterrupted cause-and-effect view at the point where the tool is used."
+        },
+        {
+          "failure": "The ending omits the owner or tool.",
+          "repair": "Hold a broad final pose that makes both visible in their resultant relation."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult avalanche-rescue trainee plants one search probe into a marked snow-training patch after boot, radio and tool details.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "subject_role",
+            "tool",
+            "environment",
+            "main_action",
+            "camera_grammar",
+            "sound_family",
+            "medium"
+          ]
+        },
+        {
+          "concept": "A stop-motion clockwork repair puppet tightens one loose carousel wheel with a small wrench, then the carousel turns while puppet and wrench remain in a wide tabletop view.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "subject_role",
+            "tool",
+            "environment",
+            "main_action",
+            "camera_grammar",
+            "sound_family",
+            "medium"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

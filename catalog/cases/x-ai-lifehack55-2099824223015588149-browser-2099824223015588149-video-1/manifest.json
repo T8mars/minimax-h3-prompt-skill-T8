@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ai-lifehack55-2099824223015588149-browser-2099824223015588149-video-1",
+  "slug": "graphic-course-gate-obstacle-solo-finish",
+  "title": "图形赛道｜穿越圆门、障碍升级与单人收束",
+  "source_title": "字形空间跑跳｜图形环转多人对抗",
+  "summary": "同一主体把抽象图形空间当作路线，跨门、分解障碍、最终独立展示结果。",
+  "status": "released",
+  "source_duration_seconds": 30.046621,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/graphic-course-gate-obstacle-solo-finish",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-lifehack55-2099824223015588149-browser-2099824223015588149-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-lifehack55-2099824223015588149-browser-2099824223015588149-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-graphic-course-gate-obstacle-solo-finish-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "单一主体＋可穿行图形路线＋圆门＋两障碍＋成果定格",
+  "recommended_input": "一名成年钴蓝工作服递送员、一个琥珀发光包裹、米白几何展厅、抽象条形墙、钴蓝圆门、两道泡棉安全挡板、发光展示台。",
+  "required_anchors": [
+    "主体身份跨空间不变",
+    "图形成为真实可走结构",
+    "终点结果与单人姿态稳定"
+  ],
+  "tags": [
+    "graphic",
+    "course",
+    "gate",
+    "obstacle",
+    "solo",
+    "finish"
+  ],
+  "quality": {
+    "weighted_score": 4.352,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:54:56+08:00",
+  "updated_at": "2026-09-21T19:43:51+08:00"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-tangpanqing-2100752656193220631-browser-2100752656193220631-video-1",
+  "slug": "flat-avatar-world-crossing-return",
+  "title": "平面角色越界｜桌面基线、实体世界互动与来源回归",
+  "source_title": "月色桌面穿越｜壁纸人物进入实景后回到界面",
+  "summary": "先锁定平面界面、角色和图标关系，再让同一角色跨越屏幕边界进入具纵深的实体世界；互动结束后沿可辨路径回归原界面，身份与布局均得到回证。",
+  "status": "released",
+  "source_duration_seconds": 10.208,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/flat-avatar-world-crossing-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tangpanqing-2100752656193220631-browser-2100752656193220631-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tangpanqing-2100752656193220631-browser-2100752656193220631-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-flat-avatar-world-crossing-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "平面角色＋共享边界＋实体世界互动＋界面回归",
+  "recommended_input": "成年天气信使、靛蓝地图界面、盐沼、发光测量标记。",
+  "required_anchors": [
+    "角色跨媒介身份不变",
+    "只通过一个可见边界穿越",
+    "返回后界面仅发生有因果的变化"
+  ],
+  "tags": [
+    "flat",
+    "avatar",
+    "world",
+    "crossing",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.93,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-22T21:57:15+08:00",
+  "updated_at": "2026-09-22T22:31:48+08:00"
+}

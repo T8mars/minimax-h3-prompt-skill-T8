@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-koyori-hana-2101635986279321978-browser-2101635986279321978-video-1",
+  "slug": "protection-lull-delayed-burst",
+  "title": "保护暂停｜短暂暴露后的迟发反转",
+  "source_title": "雨伞状态切换｜人物行进与天气反转",
+  "summary": "防护道具先有用，暂时移开后保留暴露空档，随后发生一次温和迟发反转。",
+  "status": "released",
+  "source_duration_seconds": 15.232,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/protection-lull-delayed-burst",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-koyori-hana-2101635986279321978-browser-2101635986279321978-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-koyori-hana-2101635986279321978-browser-2101635986279321978-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-protection-lull-delayed-burst-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "成年人物＋防护物＋短暂安全错觉＋迟发变化",
+  "recommended_input": "专业烘焙演示台，一位明确成年的烘焙师、一只固定上方面粉料斗、一块在料斗与人物/蛋糕之间的浅斜透明接粉罩、侧边接粉盘和台上的蛋糕。",
+  "required_anchors": [
+    "防护先证明用途",
+    "移开后有可见等待",
+    "同一环境给出延迟回击"
+  ],
+  "tags": [
+    "protection",
+    "lull",
+    "delayed",
+    "burst"
+  ],
+  "quality": {
+    "weighted_score": 4.386,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:53:18+08:00",
+  "updated_at": "2026-09-21T18:59:13+08:00"
+}

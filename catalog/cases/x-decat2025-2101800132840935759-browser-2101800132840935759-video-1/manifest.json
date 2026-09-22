@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-decat2025-2101800132840935759-browser-2101800132840935759-video-1",
+  "slug": "paired-carrier-clearance-axis",
+  "title": "双载具间距｜同轴移动与安全错位",
+  "source_title": "双载具同向追拍｜相对高度与距离变化",
+  "summary": "两种载具保持同一行进轴线，以高度与距离变化形成无碰撞张力。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/paired-carrier-clearance-axis",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2101800132840935759-browser-2101800132840935759-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2101800132840935759-browser-2101800132840935759-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-paired-carrier-clearance-axis-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "两种载具＋共同方向＋间距变化＋安全收束",
+  "recommended_input": "封闭测试山谷，只有一辆原创蓝色缆车和一艘小型琥珀色维护飞艇；两者都朝同一上站移动，山坡、索道和上站位置固定。",
+  "required_anchors": [
+    "共同运动轴明确",
+    "相对高度和间距可读",
+    "不发生穿模或碰撞"
+  ],
+  "tags": [
+    "paired",
+    "carrier",
+    "clearance",
+    "axis"
+  ],
+  "quality": {
+    "weighted_score": 4.378,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:45:28+08:00",
+  "updated_at": "2026-09-21T18:04:11+08:00"
+}

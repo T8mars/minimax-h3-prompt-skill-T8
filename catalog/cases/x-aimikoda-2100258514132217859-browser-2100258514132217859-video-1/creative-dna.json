@@ -1,0 +1,130 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Build one stable identity through partial but mutually consistent visual clues; after they accumulate, return to a recognizable head/face marker already glimpsed earlier. The source never supplies a final full-body proof, and the face is not fully concealed at the start. An original transfer may strengthen the closing proof without claiming the source did so.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Recurring visual design markers across different close crops must remain attributable to one stable character.",
+      "purpose": "A later identity echo can only resolve the clue sequence if the earlier clues have one common owner.",
+      "ablation_failure": "If details come from different unmarked subjects, the ending cannot support an identity connection and becomes an arbitrary montage.",
+      "evidence_ids": [
+        "obs-07",
+        "beat-02",
+        "beat-04"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "The sequence must alternate several body regions while repeating at least one design marker; not every crop has to introduce new information.",
+      "purpose": "The middle sustains familiarity and variation before the final identity echo.",
+      "ablation_failure": "If the montage stays on only one undifferentiated crop, the later eye/head echo no longer gathers dispersed details into one recognizable design.",
+      "evidence_ids": [
+        "obs-04",
+        "obs-09",
+        "beat-03"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "The ending returns to a previously glimpsed identity marker and preserves recurring design cues, without requiring a source full-body view.",
+      "purpose": "Provides a recognizable identity echo after the detail ladder rather than an unrelated final insert.",
+      "ablation_failure": "If the ending drops the earlier identity marker and recurring cues, the fragment sequence no longer resolves to a recognizable stable character.",
+      "evidence_ids": [
+        "obs-01",
+        "obs-10",
+        "beat-04"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "subject_identity",
+      "constraint": "One original figure with a stable design; a human version must be clearly adult, but the mechanism also works with a non-human figure."
+    },
+    {
+      "name": "clue_objects",
+      "constraint": "Three or more original details attributable to one subject; a transfer may reconnect them more explicitly than the source."
+    },
+    {
+      "name": "setting",
+      "constraint": "One new environment with a stable direction or landmark; avoid the source's blank-field anime design."
+    },
+    {
+      "name": "camera_grammar",
+      "constraint": "Close detail views and a final recognizable identity echo; an optional wider whole-subject proof is an original strengthening, not a source claim."
+    },
+    {
+      "name": "decisive_action",
+      "constraint": "An optional original role-confirming action can strengthen the new instance without being attributed to the source."
+    },
+    {
+      "name": "sound_family",
+      "constraint": "Original, action-linked sound design; no claim that the source music or effects were heard."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "Do not reproduce the source anime character's face, red eyes, black strappy costume, gold hair ornaments or body proportions.",
+    "Do not copy the original exact crop order, cut timings, palette or bare-white visual field.",
+    "Do not use creator names, franchise identifiers, source caption wording or creator prompt text."
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult offshore lighthouse maintainer is identified through salt-stained gloves, a wrist compass and safety line before activating a beacon.",
+      "prompt_seed": "A live-action offshore lighthouse maintainer performs one beacon activation; three accumulated equipment clues reconnect in a final whole-person tower view."
+    },
+    {
+      "concept": "A stop-motion brass courier automaton is introduced through a stamped wheel, folded paper wing and blue-glass eye before its head returns in a miniature post-office set.",
+      "prompt_seed": "A handcrafted stop-motion automaton cycles through wheel, paper wing and eye details; a final head/eye echo recalls the opening, without copying the source costume or requiring a full-body reveal."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Details drift between actors or outfits.",
+      "repair": "Define one subject and retain three identical visual anchors through every crop and the final whole-person view."
+    },
+    {
+      "failure": "Crops are pretty but do not add information.",
+      "repair": "Make each crop reveal a different role clue and omit repetitive purely decorative inserts."
+    },
+    {
+      "failure": "The final shot shows an unrelated person or drops all earlier design cues.",
+      "repair": "Repeat a previously seen identity marker and at least one recurring cue; an original whole-subject framing may strengthen the result but is not required by source evidence."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult offshore lighthouse maintainer is identified through salt-stained gloves, a wrist compass and safety line before activating a beacon.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "subject_identity",
+        "clue_objects",
+        "setting",
+        "camera_grammar",
+        "decisive_action",
+        "sound_family"
+      ]
+    },
+    {
+      "concept": "A stop-motion brass courier automaton is introduced through a stamped wheel, folded paper wing and blue-glass eye before its head returns in a miniature post-office set.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "subject_identity",
+        "clue_objects",
+        "setting",
+        "camera_grammar",
+        "decisive_action",
+        "sound_family"
+      ]
+    }
+  ]
+}

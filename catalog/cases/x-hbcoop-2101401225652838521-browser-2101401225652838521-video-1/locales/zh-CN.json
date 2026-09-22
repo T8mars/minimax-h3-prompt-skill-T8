@@ -1,0 +1,179 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-hbcoop-2101401225652838521-browser-2101401225652838521-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "af8e85e6f12f27ad7c631551db61887f1ac623ae67802b9c269770d0f8b3fdee",
+    "creative_dna_sha256": "6388e4d6675f05fb160b6b3176da5fea0affb3578ad8ba99b5f1cc12909e96c5"
+  },
+  "content": {
+    "title": "空场异常｜物质扩张与片名停留",
+    "summary": "先建立有序空场和一个物件，再让单一材质异常扩散并留给标题空间。",
+    "quick_start": {
+      "input_format": "有序空场＋锚定物件＋单一异常＋原创片名",
+      "recommended_input": "无人小天文台、一台黄铜望远镜、其下的一张纸质星图；望远镜目镜处出现唯一连续霜线。",
+      "required_anchors": [
+        "异常有起点",
+        "变化后证据持续存在",
+        "标题不被误写成异常产物"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "先建立有序空场和一个物件，再让单一材质异常扩散并留给标题空间。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "An ordered empty location and one marked mundane object create a baseline. A single traceable material anomaly spreads in relation to that locus, then the camera holds the changed evidence under a distinct overlaid original title; the material is not assumed to generate the title or to have an unseen exact cause.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish an orderly, visibly unoccupied location and isolate one ordinary marked object within it.",
+          "purpose": "Fixes the visual baseline and gives attention a concrete locus.",
+          "ablation_failure": "Many anomalies or shifting geography make the later change arbitrary.",
+          "evidence_ids": [
+            "obs-02",
+            "obs-06",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Introduce one connected material anomaly that grows in a stable area while the camera proves its relation to the marked object/location; do not assert an unseen cause.",
+          "purpose": "Allows unease to escalate through visible evidence.",
+          "ablation_failure": "Unrelated jump scares or disconnected patches break the single-clue mechanism.",
+          "evidence_ids": [
+            "obs-09",
+            "obs-10",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Use short credits before the anomaly peaks; place a distinct original legible title as overlay on a held evidence composition.",
+          "purpose": "Maintains title-sequence hierarchy without pretending the material spells the letters.",
+          "ablation_failure": "Illegible moving text or title appearing before evidence blunts the payoff.",
+          "evidence_ids": [
+            "obs-05",
+            "obs-11",
+            "beat-03"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "empty_location",
+          "constraint": "Stable, orderly place with no visible person."
+        },
+        {
+          "name": "marked_object",
+          "constraint": "One visually distinguishable object that attracts attention."
+        },
+        {
+          "name": "material_anomaly",
+          "constraint": "One connected progressive change, with source not falsely asserted."
+        },
+        {
+          "name": "evidence_view",
+          "constraint": "View that proves changed material relative to stable setting."
+        },
+        {
+          "name": "credits",
+          "constraint": "Short invented readable overlays before final reveal."
+        },
+        {
+          "name": "title",
+          "constraint": "Original legible text separate from physical anomaly."
+        },
+        {
+          "name": "sound",
+          "constraint": "Original sparse sound arc, not attributed to unheard source."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No pear, black bow, dinner table, orchard, wine-red tabletop spill or source title/credit names.",
+        "No claim that the source liquid is blood or that the pear causes it.",
+        "No exact table-tracking/plate-overhead composition transfer or source serif layout."
+      ],
+      "instantiations": [
+        {
+          "concept": "In an original empty observatory, one abandoned paper star chart lies beneath a brass telescope; a small frost crystal appears on the eyepiece and spreads continuously along the connected brass tube and ring mount; a final overhead view holds the frosted instrument while the original title 'COLD MERIDIAN' overlays it.",
+          "prompt_seed": "Empty observatory, marked star chart, one continuous frost growth on brass instrument, original title COLD MERIDIAN."
+        },
+        {
+          "concept": "In an original deserted ferry terminal, one unclaimed blue luggage tag hangs from a bench; a single connected wet drag mark appears at its base and extends continuously across the same tiled concourse; a stable high view holds the trace and the original title 'LAST DEPARTURE' as an overlay.",
+          "prompt_seed": "Deserted ferry terminal, blue luggage tag, one continuous wet drag mark across fixed tiles, original title LAST DEPARTURE."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Many spooky objects appear without a single tracked anomaly.",
+          "repair": "Keep one marked object and one continuous material trace."
+        },
+        {
+          "failure": "Title text is shown as if the material magically forms letters.",
+          "repair": "Use a clean overlaid title after evidence is clear."
+        },
+        {
+          "failure": "Space resets between details and final view.",
+          "repair": "Repeat fixed landmarks and show the anomaly on the same object or floor."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "In an original empty observatory, one abandoned paper star chart lies beneath a brass telescope; a small frost crystal appears on the eyepiece and spreads continuously along the connected brass tube and ring mount; a final overhead view holds the frosted instrument while the original title 'COLD MERIDIAN' overlays it.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "empty_location",
+            "marked_object",
+            "material_anomaly",
+            "evidence_view",
+            "credits",
+            "title",
+            "sound"
+          ]
+        },
+        {
+          "concept": "In an original deserted ferry terminal, one unclaimed blue luggage tag hangs from a bench; a single connected wet drag mark appears at its base and extends continuously across the same tiled concourse; a stable high view holds the trace and the original title 'LAST DEPARTURE' as an overlay.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "empty_location",
+            "marked_object",
+            "material_anomaly",
+            "evidence_view",
+            "credits",
+            "title",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

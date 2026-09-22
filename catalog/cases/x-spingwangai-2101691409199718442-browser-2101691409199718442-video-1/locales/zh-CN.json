@@ -1,0 +1,172 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-spingwangai-2101691409199718442-browser-2101691409199718442-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "222fb33c643570c899ce30e2604961d9cc8e2572e8a73d9fb2cccec73966414e",
+    "creative_dna_sha256": "1c18a8ea093f3278469afb97917483189d1bc55c1456d635bd6c3ce2edddd238"
+  },
+  "content": {
+    "title": "平面物件落地｜打断表演与收拾恢复",
+    "summary": "稳定平面布局中，图形落成实体打断动作，人物收拾后继续原活动。",
+    "quick_start": {
+      "input_format": "表演者＋原创平面图形＋实体掉落＋收拾恢复",
+      "recommended_input": "米白排程板、六个无品牌彩色圆点、一名素蓝罩衫的成年纸偶表演者、小托盘。",
+      "required_anchors": [
+        "先建立稳定平面布局",
+        "图形落成实体并打断活动",
+        "收拾后回到同一人物动作"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "稳定平面布局中，图形落成实体打断动作，人物收拾后继续原活动。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A performer moves within a stable graphic layout. Her movement sits immediately beside the flat-token-to-physical-prop spill, though the source does not prove one gesture caused it. The sudden fall interrupts the routine; a brief recovery restores performance. The paper-theatre transfer adds an explicit sweep trigger as an original causal enhancement, not a claimed source fact. Preserve boundary crossing and reaction-repair, not the branded desktop.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one performer inside a stable graphic layout first.",
+          "purpose": "The audience knows the boundary.",
+          "ablation_failure": "Without stable layout the spill looks like generic confetti.",
+          "evidence_ids": [
+            "obs-02",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Place performer motion immediately beside flat tokens gaining mass and falling, without claiming the source proves a particular trigger gesture; a new transfer may make the trigger explicit.",
+          "purpose": "Creates a readable graphic-to-physical surprise while preserving source uncertainty.",
+          "ablation_failure": "Without motion adjacency the boundary break reads as unrelated decoration.",
+          "evidence_ids": [
+            "obs-05",
+            "obs-06",
+            "beat-02"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Pause for reaction and recovery, then resume the same performer routine.",
+          "purpose": "Completes comic arc.",
+          "ablation_failure": "Without repair and return this is only a VFX demonstration.",
+          "evidence_ids": [
+            "obs-13",
+            "beat-03",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "performer",
+          "constraint": "One persistent adult."
+        },
+        {
+          "name": "layout",
+          "constraint": "Original unbranded 2D tokens."
+        },
+        {
+          "name": "gesture",
+          "constraint": "One clear trigger."
+        },
+        {
+          "name": "physical_props",
+          "constraint": "Limited count, visible landings."
+        },
+        {
+          "name": "repair",
+          "constraint": "Visible collection."
+        },
+        {
+          "name": "return",
+          "constraint": "Resumes original routine."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No branded OS desktop, recognizable app icons or logo art.",
+        "No source person's face, costume or exact dance.",
+        "No copied wallpaper or layout."
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult paper-theatre performer sweeps a hand across an unbranded schedule board. Six printed circles become small weighted discs and fall to the floor. She pauses, collects them in a tray and resumes her puppet routine.",
+          "prompt_seed": "Paper theatre, schedule board, physical discs, tray recovery."
+        },
+        {
+          "concept": "An adult museum guide points at an original projected star chart. Five plain glyphs become foam stars and drop onto a padded stage. She stacks them below the projection and resumes explaining.",
+          "prompt_seed": "Museum guide, projected stars, foam props, recovery."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Props fall without a trigger.",
+          "repair": "Show hand sweep and first detachment together."
+        },
+        {
+          "failure": "Props resemble real app icons.",
+          "repair": "Use simple original circles."
+        },
+        {
+          "failure": "Performer changes identity.",
+          "repair": "Keep face and costume continuous."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult paper-theatre performer sweeps a hand across an unbranded schedule board. Six printed circles become small weighted discs and fall to the floor. She pauses, collects them in a tray and resumes her puppet routine.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "performer",
+            "layout",
+            "gesture",
+            "physical_props",
+            "repair",
+            "return"
+          ]
+        },
+        {
+          "concept": "An adult museum guide points at an original projected star chart. Five plain glyphs become foam stars and drop onto a padded stage. She stacks them below the projection and resumes explaining.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "performer",
+            "layout",
+            "gesture",
+            "physical_props",
+            "repair",
+            "return"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

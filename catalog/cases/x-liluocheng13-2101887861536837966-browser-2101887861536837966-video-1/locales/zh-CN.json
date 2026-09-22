@@ -1,0 +1,171 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-liluocheng13-2101887861536837966-browser-2101887861536837966-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "8950ad9b5608f1abeb9718fbe34472b40ddebec9a29a22c57715b304c488edd7",
+    "creative_dna_sha256": "ff6d0fe106238fcf128b8eb5f32d20cfb5f9809ce8310932ca35332d723dad6d"
+  },
+  "content": {
+    "title": "静态人像转义｜微表情改写前段含义",
+    "summary": "让近静镜头留出观察时间，再用少量可见状态变化改变读法。",
+    "quick_start": {
+      "input_format": "成年主体＋稳定环境＋一个后段可见变化",
+      "recommended_input": "原创成年跑者，一条雨后空旷终点跑道，灰色跑步夹克，右手攥着一张无品牌号码布；人物和场地保持固定。",
+      "required_anchors": [
+        "主体与机位稳定",
+        "后段变化清楚但克制",
+        "变化重释前段静止"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "让近静镜头留出观察时间，再用少量可见状态变化改变读法。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "simple",
+      "mechanism": "Hold one stable subject and place almost motionless under a coherent slow camera approach; in the latter portion of the same view, a small coherent sequence of gaze, expression and visible-state changes becomes readable and reframes the preceding stillness. A transfer may deliberately simplify this to one clear cue. Source-specific bilateral tears and styling are excluded.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Keep one subject and one spatial setting stable through a long near-still hold.",
+          "purpose": "Lets the viewer notice a small late difference rather than track changing geography.",
+          "ablation_failure": "Rapid location or identity changes consume attention and erase the subtle payoff.",
+          "evidence_ids": [
+            "obs-03",
+            "obs-08",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Use one slow, legible camera approach or progressive reframing while the subject's motion stays smaller than the camera movement.",
+          "purpose": "Builds attention without substituting montage spectacle for performance.",
+          "ablation_failure": "Abrupt cuts or fast camera motion make a micro-change hard to perceive.",
+          "evidence_ids": [
+            "obs-03",
+            "obs-05",
+            "beat-02"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Reserve a small, coherent visible-state development for the later close view and hold long enough to read it; a transfer may simplify this to one cue.",
+          "purpose": "The delayed cue changes how the earlier restraint is interpreted.",
+          "ablation_failure": "If the cue occurs early, is invisible, or is replaced by explanatory text, the delayed reinterpretation disappears.",
+          "evidence_ids": [
+            "obs-07",
+            "obs-12",
+            "beat-03"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "subject",
+          "constraint": "One original stable adult person or clearly designed nonhuman subject; preserve identity."
+        },
+        {
+          "name": "setting",
+          "constraint": "One persistent original space, not the source's ornate room."
+        },
+        {
+          "name": "camera",
+          "constraint": "One slow approach or tightening frame; no rapid montage."
+        },
+        {
+          "name": "late_state_change",
+          "constraint": "One original small visible cue, not the source's exact smile-and-tear pairing."
+        },
+        {
+          "name": "palette_medium",
+          "constraint": "Original visual medium and color design."
+        },
+        {
+          "name": "sound",
+          "constraint": "Optional original restrained sound timed to the cue; not inferred source audio."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "Do not copy the source person's face, hair ornaments, costume, luxury setting, pose, lighting palette or bilateral-tears-plus-smile combination.",
+        "Do not import creator caption wording, brand/tool credits or the original framing trajectory frame by frame.",
+        "Do not treat the source emotion or backstory as known."
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult marathon runner stands nearly still at an empty finish line; a slow approach ends with one hand unclenching to release a crumpled race bib.",
+          "prompt_seed": "Original documentary daylight, one adult runner and one finish-line environment; slow approach, minimal motion, then one legible hand release changes the reading from defeat to relief."
+        },
+        {
+          "concept": "A stop-motion maintenance robot holds position in a silent observatory; a slow approach ends when its single chest light changes from amber to green.",
+          "prompt_seed": "Original miniature stop-motion science setting, one consistent nonhuman robot; no source face or jewelry, slow approach and one delayed chest-light state change."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Camera push becomes a fast zoom or cuts away before the cue.",
+          "repair": "Use one gradual move and hold the late changed state."
+        },
+        {
+          "failure": "The cue is too large or overly literal.",
+          "repair": "Specify one small filmable motion or object/light change, with no explanatory title."
+        },
+        {
+          "failure": "Identity or environment drifts across a nearly static shot.",
+          "repair": "Lock the subject's two or three visual anchors and background geography."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult marathon runner stands nearly still at an empty finish line; a slow approach ends with one hand unclenching to release a crumpled race bib.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "subject",
+            "setting",
+            "late_state_change",
+            "palette_medium",
+            "sound"
+          ]
+        },
+        {
+          "concept": "A stop-motion maintenance robot holds position in a silent observatory; a slow approach ends when its single chest light changes from amber to green.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "subject",
+            "setting",
+            "late_state_change",
+            "palette_medium",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

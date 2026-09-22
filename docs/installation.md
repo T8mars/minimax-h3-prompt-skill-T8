@@ -61,9 +61,9 @@ Git 仓库只保存 GIF/Poster。全部正式案例 MP4 位于对应 GitHub Rele
 ```powershell
 $mediaRoot = Join-Path $env:APPDATA "T8 Prompt Library\media"
 New-Item -ItemType Directory -Force -Path $mediaRoot | Out-Null
-Expand-Archive .\prompt-library-media-v1.4.6-part1.zip -DestinationPath $mediaRoot -Force
-Expand-Archive .\prompt-library-media-v1.4.6-part2.zip -DestinationPath $mediaRoot -Force
-Expand-Archive .\prompt-library-media-v1.4.6-part3.zip -DestinationPath $mediaRoot -Force
+Expand-Archive .\prompt-library-media-v1.4.7-part1.zip -DestinationPath $mediaRoot -Force
+Expand-Archive .\prompt-library-media-v1.4.7-part2.zip -DestinationPath $mediaRoot -Force
+Expand-Archive .\prompt-library-media-v1.4.7-part3.zip -DestinationPath $mediaRoot -Force
 ```
 
 因此：

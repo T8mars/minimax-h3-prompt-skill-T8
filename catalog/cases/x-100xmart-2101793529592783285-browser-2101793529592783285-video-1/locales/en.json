@@ -1,0 +1,167 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-100xmart-2101793529592783285-browser-2101793529592783285-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "d8628caecd7f533303e56da4bbc6903d60a5d3d0d87dae8558cef2a89bed3348",
+    "creative_dna_sha256": "5405a4d4855ac4ad03b0a8475895901a67143456eb30f196541722de3ef76055"
+  },
+  "content": {
+    "title": "Foreground Witness | Motion Handoff to Monument",
+    "summary": "A human-scale foreground witness establishes a remote monumental destination; a continuous camera drift leaves the witness, a distinct near-plane motion crosses the path, and a clear far-wide hold delivers the landscape.",
+    "quick_start": {
+      "input_format": "Establish a near observer against a stable distant destination. + Clear the initial foreground while keeping the destination anchored. + A separate nearer-plane motion crosses the view before the final uncluttered destination hold.",
+      "recommended_input": "At an original near-future cargo port just before dawn, an adult route engineer stands by a railing facing a gigantic suspension transfer bridge across container cranes. The camera begins behind her, then glides beyond the rail as she exits frame. Several small autonomous inspection carts cross the near pier laterally, their white work lamps tracing separate paths. Hold the unchanged huge bridge and shipping channel after the carts clear; no fantasy beasts or magical activation.",
+      "required_anchors": [
+        "远端目标先有锚点",
+        "前景移动有独立层次",
+        "最终远景清楚交接尺度"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A human-scale foreground witness establishes a remote monumental destination; a continuous camera drift leaves the witness, a distinct near-plane motion crosses the path, and a clear far-wide hold delivers the landscape.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A human-scale foreground witness establishes a remote monumental destination; a continuous camera drift leaves the witness, a distinct near-plane motion crosses the path, and a clear far-wide hold delivers the landscape.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish a near observer against a stable distant destination.",
+          "purpose": "Lets audience read the scale crossing.",
+          "ablation_failure": "Without near/far contrast, the move becomes an unmotivated landscape pan.",
+          "evidence_ids": [
+            "obs-02",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Clear the initial foreground while keeping the destination anchored.",
+          "purpose": "Transfers the viewpoint from watching to entering.",
+          "ablation_failure": "If the destination jumps or the observer stays dominant, the transition does not read.",
+          "evidence_ids": [
+            "obs-05",
+            "obs-07",
+            "beat-02"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "A separate nearer-plane motion crosses the view before the final uncluttered destination hold.",
+          "purpose": "Guides eye and emphasizes layered depth.",
+          "ablation_failure": "Without near-plane movement, the final wide is only another static vista.",
+          "evidence_ids": [
+            "obs-09",
+            "obs-10",
+            "beat-03",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "witness",
+          "constraint": "One adult or clear scale marker in near plane."
+        },
+        {
+          "name": "destination",
+          "constraint": "One fixed monumental place with stable horizon."
+        },
+        {
+          "name": "near_plane_guides",
+          "constraint": "Several independently moving entities with readable direction and depth."
+        },
+        {
+          "name": "camera_path",
+          "constraint": "Smooth move past witness toward established destination."
+        },
+        {
+          "name": "medium_palette",
+          "constraint": "Original physical setting; no copied fantasy light-animal motif."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No moonlit castle, gothic silhouettes, deer, cloak, glowing wolves or source waterfall layout.",
+        "Do not invent a physical connection between the moving near-plane figures and distant architecture.",
+        "No original creator name, branding or exact panoramic composition."
+      ],
+      "instantiations": [
+        {
+          "concept": "At an original near-future cargo port just before dawn, an adult route engineer stands by a railing facing a gigantic suspension transfer bridge across container cranes. The camera begins behind her, then glides beyond the rail as she exits frame. Several small autonomous inspection carts cross the near pier laterally, their white work lamps tracing separate paths. Hold the unchanged huge bridge and shipping channel after the carts clear; no fantasy beasts or magical activation.",
+          "prompt_seed": "Cargo port engineer, colossal bridge, near inspection carts, clear final port vista."
+        },
+        {
+          "concept": "At a sunlit salt-flat observatory, a solitary adult meteorologist frames a distant radio array from the lip of a low ridge. The camera glides past him. A line of wind-driven sensor kites crosses the close ground in a staggered wave, then clears to show the same array in an open wide view.",
+          "prompt_seed": "Salt-flat meteorologist, distant radio array, near sensor kites, clear final array."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Moving guides look attached to the distant structure.",
+          "repair": "Keep parallax and foreground occlusion separate."
+        },
+        {
+          "failure": "Camera jumps to unrelated skyline.",
+          "repair": "Retain one landmark in all phases."
+        },
+        {
+          "failure": "Observer never clears frame.",
+          "repair": "Move beyond the near rail while destination remains centered."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "At an original near-future cargo port just before dawn, an adult route engineer stands by a railing facing a gigantic suspension transfer bridge across container cranes. The camera begins behind her, then glides beyond the rail as she exits frame. Several small autonomous inspection carts cross the near pier laterally, their white work lamps tracing separate paths. Hold the unchanged huge bridge and shipping channel after the carts clear; no fantasy beasts or magical activation.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "witness",
+            "destination",
+            "near_plane_guides",
+            "camera_path",
+            "medium_palette"
+          ]
+        },
+        {
+          "concept": "At a sunlit salt-flat observatory, a solitary adult meteorologist frames a distant radio array from the lip of a low ridge. The camera glides past him. A line of wind-driven sensor kites crosses the close ground in a staggered wave, then clears to show the same array in an open wide view.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "witness",
+            "destination",
+            "near_plane_guides",
+            "camera_path",
+            "medium_palette"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

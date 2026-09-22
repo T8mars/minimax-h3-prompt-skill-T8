@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aimikoda-2100859492451676273-browser-2100859492451676273-video-1",
+  "slug": "owner-tool-detail-to-action",
+  "title": "人物装备归属｜局部切片到全身动作",
+  "source_title": "人物装备局部切片｜回连全身姿态",
+  "summary": "人物与工具先同框，再逐项核对细节，最后用一次动作证明归属。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/owner-tool-detail-to-action",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2100859492451676273-browser-2100859492451676273-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2100859492451676273-browser-2100859492451676273-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-owner-tool-detail-to-action-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "人物＋工具＋三个细节＋一次完整动作",
+  "recommended_input": "一名明确成年的女性雪崩搜救训练员；石板灰和橙色工装、左肩无线电、右手手套、同一支无品牌探杆。训练坡面与标记区全程不换。",
+  "required_anchors": [
+    "人物与工具先建立关系",
+    "细节保持同一设计",
+    "动作和全身姿态回证归属"
+  ],
+  "tags": [
+    "owner",
+    "tool",
+    "detail",
+    "to",
+    "action"
+  ],
+  "quality": {
+    "weighted_score": 4.434,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:49:46+08:00",
+  "updated_at": "2026-09-21T17:29:58+08:00"
+}

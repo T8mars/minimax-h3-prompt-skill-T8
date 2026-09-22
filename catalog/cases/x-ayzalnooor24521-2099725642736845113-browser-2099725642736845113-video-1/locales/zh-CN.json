@@ -1,0 +1,175 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ayzalnooor24521-2099725642736845113-browser-2099725642736845113-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "6f3cdee6397caf172e2987840e00d60ffeb7578c95634538d82eb1b2bcaf3446",
+    "creative_dna_sha256": "b4ad6a75866f6f3a725ab24af5462c5d44ea223c5e4300e532370f2f1b6cb667"
+  },
+  "content": {
+    "title": "冲击停顿｜第二角色入场与近景确认",
+    "summary": "局部冲击固定空间，短暂停顿后第二角色入场回应，最终以主角近景确认。",
+    "quick_start": {
+      "input_format": "固定空间＋一次冲击＋警觉停顿＋第二角色回应",
+      "recommended_input": "洁净工业测试厅、红框校准区、一块轻质泡棉测试块、两台外形不同的自动巡检机器人。",
+      "required_anchors": [
+        "冲击位置清楚",
+        "第二角色在停顿后入场",
+        "主角最终身份可辨"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "局部冲击固定空间，短暂停顿后第二角色入场回应，最终以主角近景确认。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A sudden localized impact pins the first agent in one geometry; a guarded pause and offscreen anticipation precede a second entrant's brief tightly bounded exchange, then a close stable view identifies the primary agent.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "An abrupt arrival or impact establishes one fixed pressure point in the scene.",
+          "purpose": "Creates a concrete spatial problem.",
+          "ablation_failure": "Without the pressure point the later hold lacks cause.",
+          "evidence_ids": [
+            "obs-05",
+            "obs-06",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Hold the first agent visibly poised while a second agent is delayed offscreen.",
+          "purpose": "Lets stillness store energy and direct gaze.",
+          "ablation_failure": "Immediate back-to-back impacts erase contrast and anticipation.",
+          "evidence_ids": [
+            "obs-09",
+            "obs-10",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "The second arrival triggers one short readable exchange, then isolate the first agent in a final identity hold.",
+          "purpose": "Converts tension into action and closes on a stable subject.",
+          "ablation_failure": "If the final frame is only chaotic motion, response and continuity are lost.",
+          "evidence_ids": [
+            "obs-11",
+            "obs-14",
+            "beat-04",
+            "beat-05"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "first_agent",
+          "constraint": "One clearly stable adult or machine."
+        },
+        {
+          "name": "pressure_point",
+          "constraint": "Visible safe localized impact and persistent mark or object."
+        },
+        {
+          "name": "second_agent",
+          "constraint": "Enters only after readable quiet hold."
+        },
+        {
+          "name": "exchange",
+          "constraint": "Short legible interaction without inferred injury."
+        },
+        {
+          "name": "final_identity",
+          "constraint": "Close stable subject/marker after exchange."
+        },
+        {
+          "name": "setting",
+          "constraint": "Original location, not copied station."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No subway platform, passing train, tiled cylinder, damaged wall pattern, original woman's likeness or exact fighting choreography.",
+        "No unsupported injury, fatality or hidden motive claim.",
+        "Targets use safe non-contact or machine interaction, not real interpersonal harm."
+      ],
+      "instantiations": [
+        {
+          "concept": "In a clean industrial test hall, one autonomous inspection robot stops abruptly beside a red-marked pressure pad after a harmless foam calibration block drops from a ceiling rig directly into its forward sensor lane. The robot visibly detects the block and brakes before it. Its front sensor remains aimed at an empty entry lane during a long motor-idle hold. A second contrasting robot rolls in; the two execute a tightly spaced but non-colliding exchange of calibration arms at the same pad. End close on the first robot's sensor, both machines and dropped foam block still in their original positions.",
+          "prompt_seed": "Two industrial inspection robots, foam block impact, waiting sensor, safe calibration-arm exchange."
+        },
+        {
+          "concept": "In a brightly lit competitive dance rehearsal, an unambiguously adult lead dancer lands on one marked stage square as a lightweight scenic curtain snaps down behind her. She holds a poised stance while another adult partner enters from offstage; they trade three precise non-contact gesture phrases. End on the lead dancer's controlled gaze, with the curtain and stage mark unchanged.",
+          "prompt_seed": "Adult dance rehearsal, scenic curtain drop, poised dancer, non-contact duet and final gaze."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Second agent enters before a distinct held pause.",
+          "repair": "Leave several beats with first agent visibly ready."
+        },
+        {
+          "failure": "Exchange becomes continuous chaotic camera motion.",
+          "repair": "Keep marked floor location and short alternating actions visible."
+        },
+        {
+          "failure": "Final portrait resets damaged environment.",
+          "repair": "Retain the original safe impact object/mark in the ending geography."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "In a clean industrial test hall, one autonomous inspection robot stops abruptly beside a red-marked pressure pad after a harmless foam calibration block drops from a ceiling rig directly into its forward sensor lane. The robot visibly detects the block and brakes before it. Its front sensor remains aimed at an empty entry lane during a long motor-idle hold. A second contrasting robot rolls in; the two execute a tightly spaced but non-colliding exchange of calibration arms at the same pad. End close on the first robot's sensor, both machines and dropped foam block still in their original positions.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "first_agent",
+            "pressure_point",
+            "second_agent",
+            "exchange",
+            "final_identity",
+            "setting"
+          ]
+        },
+        {
+          "concept": "In a brightly lit competitive dance rehearsal, an unambiguously adult lead dancer lands on one marked stage square as a lightweight scenic curtain snaps down behind her. She holds a poised stance while another adult partner enters from offstage; they trade three precise non-contact gesture phrases. End on the lead dancer's controlled gaze, with the curtain and stage mark unchanged.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "first_agent",
+            "pressure_point",
+            "second_agent",
+            "exchange",
+            "final_identity",
+            "setting"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

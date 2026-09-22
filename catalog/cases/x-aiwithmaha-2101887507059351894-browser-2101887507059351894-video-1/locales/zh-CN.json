@@ -1,0 +1,180 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-aiwithmaha-2101887507059351894-browser-2101887507059351894-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "d073f363801a93326a440ea0c44bc2f53ef3c27d34d9b20cb3948acfe40bbfc3",
+    "creative_dna_sha256": "86a44ea0afe5a75247540b019cb432bda94b4f5e8d7def264b7e1b45c90a22ce"
+  },
+  "content": {
+    "title": "材质到使用｜产品关联与实证回归",
+    "summary": "同一产品在材料、实际使用和回归镜头之间建立可检查的联系。",
+    "quick_start": {
+      "input_format": "原创产品＋两种材料线索＋使用动作＋结果回归",
+      "recommended_input": "同一无品牌不锈钢冷饮瓶，浅绿色硅胶密封圈，一名明确成年的徒步者、深色帆布包和一条短林径；不得改动瓶身形状或角色身份。",
+      "required_anchors": [
+        "产品身份连续",
+        "材质与使用有可见关系",
+        "不把暗示写成未经验证的功效"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一产品在材料、实际使用和回归镜头之间建立可检查的联系。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "The source maintains one product identity while associating it with water, cream-like textures and a brief skin-touch use image, returns the product, then ends on an isolated droplet. This is an associative material-to-use-to-product sequence, not observed proof of efficacy. A reusable transfer can strengthen the structure by replacing implication with a practical visible test and bounded outcome.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one stable product shape before close material inserts.",
+          "purpose": "Lets each texture and usage shot refer to the same object.",
+          "ablation_failure": "If shape or owner changes, the montage cannot be attributed to one product.",
+          "evidence_ids": [
+            "obs-01",
+            "obs-11",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Keep material associations and a brief use context attributable to the same established product; do not mistake source spectacle for observed efficacy.",
+          "purpose": "Links attractive material cues to the product without inventing a measured skin result.",
+          "ablation_failure": "If material and use imagery lose their product anchor, the montage becomes generic decoration.",
+          "evidence_ids": [
+            "obs-04",
+            "obs-05",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Return to a readable product view after material and use imagery; an abstract coda may follow.",
+          "purpose": "Closes the product-identity chain before any final decorative image.",
+          "ablation_failure": "Ending on abstraction alone without a prior product return weakens the identity payoff.",
+          "evidence_ids": [
+            "obs-06",
+            "obs-07",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "product",
+          "constraint": "One original unbranded, stable object with consistent geometry."
+        },
+        {
+          "name": "material_test",
+          "constraint": "Source-level material association or, in an original transfer, one visible practical property test; never claim invisible health efficacy."
+        },
+        {
+          "name": "environment",
+          "constraint": "A coherent setting that materially participates in the test."
+        },
+        {
+          "name": "user",
+          "constraint": "Optional clearly adult user, same identity if present."
+        },
+        {
+          "name": "camera",
+          "constraint": "Product establishing view, material/contact view, use/result view, end product proof."
+        },
+        {
+          "name": "medium_palette",
+          "constraint": "Original medium and colors; avoid source's blue-white water/flower/cream package."
+        },
+        {
+          "name": "sound",
+          "constraint": "Original synchronized contact sounds, not source audio attribution."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No AQUA LUXE brand, exact label, jar, flower arrangement, splash composition or skin model.",
+        "Do not infer measured hydration, medical results or before/after proof from the original clip.",
+        "Do not copy the creator's source prompt wording or the exact shot order/cut timing."
+      ],
+      "instantiations": [
+        {
+          "concept": "An unbranded reusable cold-drink bottle demonstrates its cap seal, condensation and leak-free short carry before a legible product return.",
+          "prompt_seed": "Original outdoor travel setting, one stable stainless bottle, one adult hiker, one cap closure, water/condensation, sealed bag carry and visible leak-free result."
+        },
+        {
+          "concept": "An original insulated lunch box shows a safe carry, then releases visible steam only after its lid opens to reveal the warm meal.",
+          "prompt_seed": "Original work-break setting, one stable lunch box and adult worker; sealed carry, then one lid opening with visible steam and meal; no nutritional or health claim."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Product label or geometry shifts between material shots.",
+          "repair": "Lock one unbranded silhouette, cap detail and surface marks across all views."
+        },
+        {
+          "failure": "A transfer repeats attractive material spectacle but never demonstrates a practical result.",
+          "repair": "When making a practical claim in an original transfer, show one action and its directly visible bounded result; do not attribute that proof to the source."
+        },
+        {
+          "failure": "Ending loses the product and only shows an abstract droplet.",
+          "repair": "Hold the product and evidence of outcome together; an abstract coda may follow only after closure."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An unbranded reusable cold-drink bottle demonstrates its cap seal, condensation and leak-free short carry before a legible product return.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "product",
+            "material_test",
+            "environment",
+            "user",
+            "camera",
+            "medium_palette",
+            "sound"
+          ]
+        },
+        {
+          "concept": "An original insulated lunch box shows a safe carry, then releases visible steam only after its lid opens to reveal the warm meal.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "product",
+            "material_test",
+            "environment",
+            "user",
+            "camera",
+            "medium_palette",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

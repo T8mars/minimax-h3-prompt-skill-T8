@@ -1,0 +1,171 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-bunsadak-2101800874372919707-browser-2101800874372919707-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "57d3c036387a59654d3f993f9bb86f307450faebb06b3aaa3e141ef9d9f46eca",
+    "creative_dna_sha256": "f44777348e02371a2af83cad8ed31d864f38d1d6a0d030fec00682a614c3cd57"
+  },
+  "content": {
+    "title": "Three Across | Synchronized Turn and Finish",
+    "summary": "A stable frontal stage and equal three-across spacing make small synchronized movement readable; coordinated orientation changes refresh the repeated dance while preserving group identity. The source has no additional proven narrative causality.",
+    "quick_start": {
+      "input_format": "Start with exactly three visibly distinct performers in a stable horizontal formation. + Coordinate small movement phrases and at least one shared direction change while retaining left-center-right spacing. + End in a shared planted pose after a final orientation change.",
+      "recommended_input": "On a matte turquoise factory display platform, three waist-high wind-up measuring robots in orange, white and cobalt perform a calibrated demonstration. Each alternately lifts its feet three times in place over its own floor circle, turns 90 degrees together to show side profiles, returns front, lifts arms in a pulse, and finishes with all three feet planted on their respective circles.",
+      "required_anchors": [
+        "全程恰好三个",
+        "转向中仍保留左右关系",
+        "最终都真实着地"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A stable frontal stage and equal three-across spacing make small synchronized movement readable; coordinated orientation changes refresh the repeated dance while preserving group identity. The source has no additional proven narrative causality.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "simple",
+      "mechanism": "A stable frontal stage and equal three-across spacing make small synchronized movement readable; coordinated orientation changes refresh the repeated dance while preserving group identity. The source has no additional proven narrative causality.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Start with exactly three visibly distinct performers in a stable horizontal formation.",
+          "purpose": "Supports immediate group counting and rhythm.",
+          "ablation_failure": "If the row is not established the turns cannot be tracked.",
+          "evidence_ids": [
+            "obs-02",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Coordinate small movement phrases and at least one shared direction change while retaining left-center-right spacing.",
+          "purpose": "Turns repetition into a readable formation pattern.",
+          "ablation_failure": "Uncoordinated figures lose synchronized-group premise.",
+          "evidence_ids": [
+            "obs-05",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "End in a shared planted pose after a final orientation change.",
+          "purpose": "Provides a decisive end state.",
+          "ablation_failure": "An arbitrary cutoff leaves the phrase unresolved.",
+          "evidence_ids": [
+            "obs-06",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "performers",
+          "constraint": "Exactly three persistent distinct performers."
+        },
+        {
+          "name": "stage",
+          "constraint": "Fixed floor with orientation cues."
+        },
+        {
+          "name": "formation",
+          "constraint": "Equal spacing and no overlap."
+        },
+        {
+          "name": "movement",
+          "constraint": "Simple repeatable step/hop/pivot."
+        },
+        {
+          "name": "direction_change",
+          "constraint": "At least one shared turn."
+        },
+        {
+          "name": "final_pose",
+          "constraint": "All three stop together."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No source rabbit likeness, tuxedo or red curtain setting.",
+        "No copied exact dance sequence or music claim.",
+        "No additional clones appearing or disappearing."
+      ],
+      "instantiations": [
+        {
+          "concept": "On a matte turquoise factory display platform, three waist-high wind-up measuring robots in orange, white and cobalt perform a calibrated demonstration. Each alternately lifts its feet three times in place over its own floor circle, turns 90 degrees together to show side profiles, returns front, lifts arms in a pulse, and finishes with all three feet planted on their respective circles.",
+          "prompt_seed": "Three color-coded measuring robots, turquoise platform, synchronized calibrated steps."
+        },
+        {
+          "concept": "In a modern art gallery, three adult dancers in clearly different solid-color coats demonstrate a mirrored movement exercise: equal spacing, synchronized quarter-turn, two traveling steps, return front and hold a shared final line.",
+          "prompt_seed": "Three adult gallery dancers, different coats, shared turn and final line."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "One performer vanishes behind another.",
+          "repair": "Keep fixed equal spacing in frontal wide shot."
+        },
+        {
+          "failure": "Turns desynchronize without intent.",
+          "repair": "Use one shared quarter-turn cue."
+        },
+        {
+          "failure": "Final pose floats.",
+          "repair": "Hold visible ground contact and floor shadows."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "On a matte turquoise factory display platform, three waist-high wind-up measuring robots in orange, white and cobalt perform a calibrated demonstration. Each alternately lifts its feet three times in place over its own floor circle, turns 90 degrees together to show side profiles, returns front, lifts arms in a pulse, and finishes with all three feet planted on their respective circles.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "performers",
+            "stage",
+            "formation",
+            "movement",
+            "direction_change",
+            "final_pose"
+          ]
+        },
+        {
+          "concept": "In a modern art gallery, three adult dancers in clearly different solid-color coats demonstrate a mirrored movement exercise: equal spacing, synchronized quarter-turn, two traveling steps, return front and hold a shared final line.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "performers",
+            "stage",
+            "formation",
+            "movement",
+            "direction_change",
+            "final_pose"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

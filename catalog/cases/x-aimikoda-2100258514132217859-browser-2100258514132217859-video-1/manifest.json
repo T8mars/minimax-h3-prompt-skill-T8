@@ -1,0 +1,65 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aimikoda-2100258514132217859-browser-2100258514132217859-video-1",
+  "slug": "identity-clue-reconnection",
+  "title": "身份线索回连｜局部累积到主体确认",
+  "source_title": "角色局部线索累积｜逐步回连完整身份",
+  "summary": "先用一致的局部线索建立身份，再回到已见过的面部标记完成确认。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/identity-clue-reconnection",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2100258514132217859-browser-2100258514132217859-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aimikoda-2100258514132217859-browser-2100258514132217859-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-identity-clue-reconnection-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "主体＋三项可复认的局部线索＋最终回连",
+  "recommended_input": "原创成年海上灯塔维修员；深蓝工作服、普通透明护目镜、沾盐手套、腕部罗盘、肩部安全绳全程固定。晨光下同一座海上灯塔和同一盏信标。",
+  "required_anchors": [
+    "同一主体",
+    "局部线索相互一致",
+    "结尾回连已见标记"
+  ],
+  "tags": [
+    "identity",
+    "clue",
+    "reconnection"
+  ],
+  "quality": {
+    "weighted_score": 4.387,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:45:15+08:00",
+  "updated_at": "2026-09-21T17:29:29+08:00"
+}

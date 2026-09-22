@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-tokyo-valentine-2100779948617376246-browser-2100779948617376246-video-1",
+  "slug": "linear-threat-contact-redirection-residue",
+  "title": "直线威胁改道｜接触截获、轨迹弯折与残留确认",
+  "source_title": "徒手折转光束｜正面威胁被接住后导离目标",
+  "summary": "先建立攻击者、目标与直线威胁路径，被攻击者必须在可见接触点截获能量并连续弯折轨迹；威胁离开目标后以烟尘或灼痕证明改道结果。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/linear-threat-contact-redirection-residue",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tokyo-valentine-2100779948617376246-browser-2100779948617376246-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tokyo-valentine-2100779948617376246-browser-2100779948617376246-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-linear-threat-contact-redirection-residue-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "两名成年对手＋直线威胁＋接触改道＋残留证明",
+  "recommended_input": "水库决斗场、两名成年信号决斗者、琥珀光束、弧形灼痕。",
+  "required_anchors": [
+    "威胁先形成清楚直线路径",
+    "改道从可见接触点开始",
+    "新轨迹与残留共同证明结果"
+  ],
+  "tags": [
+    "linear",
+    "threat",
+    "contact",
+    "redirection",
+    "residue"
+  ],
+  "quality": {
+    "weighted_score": 4.93,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-22T21:57:15+08:00",
+  "updated_at": "2026-09-22T22:31:48+08:00"
+}

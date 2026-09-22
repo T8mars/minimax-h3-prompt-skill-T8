@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-tokyo-valentine-2101861841739899212-browser-2101861841739899212-video-1",
+  "slug": "one-to-group-photo-reaction",
+  "title": "一人变群像｜合影后近景反应",
+  "source_title": "群像转向摄影者｜友好合影反差",
+  "summary": "一人与独立观察者先建立关系，再出现可数的新群体，合影后用面部反应收束。",
+  "status": "released",
+  "source_duration_seconds": 14.464,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/one-to-group-photo-reaction",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tokyo-valentine-2101861841739899212-browser-2101861841739899212-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-tokyo-valentine-2101861841739899212-browser-2101861841739899212-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-one-to-group-photo-reaction-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "原始人物＋独立摄影者＋逐渐成群＋近景反应",
+  "recommended_input": "蓝实验外套成年讲解员、橙夹克成年摄影者、空白展墙、数码相机。",
+  "required_anchors": [
+    "人数从一清楚增加",
+    "摄影者保持独立",
+    "结尾反应不臆造原因"
+  ],
+  "tags": [
+    "one",
+    "to",
+    "group",
+    "photo",
+    "reaction"
+  ],
+  "quality": {
+    "weighted_score": 4.337,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:54:24+08:00",
+  "updated_at": "2026-09-21T19:37:06+08:00"
+}

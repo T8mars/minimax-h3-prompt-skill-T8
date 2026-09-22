@@ -1,0 +1,171 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tokyo-valentine-2101861841739899212-browser-2101861841739899212-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "9a2258a60468935c7504bd6de8a9228ff397b29073ac7f299244fba779a52a35",
+    "creative_dna_sha256": "2e9585d03b443c6c668b4643343a6a9469bbcc6fab1d813dde53d0aae1341bfa"
+  },
+  "content": {
+    "title": "一人变群像｜合影后近景反应",
+    "summary": "一人与独立观察者先建立关系，再出现可数的新群体，合影后用面部反应收束。",
+    "quick_start": {
+      "input_format": "原始人物＋独立摄影者＋逐渐成群＋近景反应",
+      "recommended_input": "蓝实验外套成年讲解员、橙夹克成年摄影者、空白展墙、数码相机。",
+      "required_anchors": [
+        "人数从一清楚增加",
+        "摄影者保持独立",
+        "结尾反应不臆造原因"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "一人与独立观察者先建立关系，再出现可数的新群体，合影后用面部反应收束。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A two-person setup leaves space for one figure to become a visible group. The separate observer frames the new group as a photo; a close face reaction acts as a punchline, with its exact cause deliberately open.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one lead and one distinct observer across a clear spatial gap.",
+          "purpose": "Makes later count change legible.",
+          "ablation_failure": "Without a visible original and observer, the new figures may read as an ordinary crowd.",
+          "evidence_ids": [
+            "obs-02",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Show repeated figures appearing into the gap before the observer captures or frames them.",
+          "purpose": "Converts a simple meeting into a count surprise.",
+          "ablation_failure": "If duplicates are present from the beginning there is no reveal.",
+          "evidence_ids": [
+            "obs-06",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "End with a close facial reaction after the group pose while leaving the source's exact cause unclaimed.",
+          "purpose": "Gives a human-scale comic payoff.",
+          "ablation_failure": "Without the close reaction, multiplication is only a visual effect.",
+          "evidence_ids": [
+            "obs-13",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead",
+          "constraint": "One persistent adult lead."
+        },
+        {
+          "name": "observer",
+          "constraint": "Visually separate from lead."
+        },
+        {
+          "name": "space",
+          "constraint": "Empty gap for controlled group arrival."
+        },
+        {
+          "name": "multiplication_medium",
+          "constraint": "Original visual method, no source glow required."
+        },
+        {
+          "name": "capture_prop",
+          "constraint": "One visible capture device."
+        },
+        {
+          "name": "reaction",
+          "constraint": "Clear close facial change."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No source anime faces, costumes, armor, courtyard or character identities.",
+        "No source-specific violet glow and exact peace-sign pose.",
+        "No invented source reason for final surprise."
+      ],
+      "instantiations": [
+        {
+          "concept": "At an original science museum, one adult guide stands before a blank exhibit wall while a separate adult technician lifts a digital camera. Three additional versions of the guide emerge as neutral light silhouettes, gain solid matching blue lab coats and cluster for a group image. After the photo, the front guide shifts from smile to wide-eyed surprise; the cause remains unspecified.",
+          "prompt_seed": "Museum guide multiplied into lab-coat group before separate photographer; close surprise."
+        },
+        {
+          "concept": "At a mountain visitor center, one adult trail mapper faces an adult camera operator. Three paper-cut copies step out of a wall map, stand as physical visitors and pose; after the photo a close view of one copy changes from delighted to startled for an unspecified reason.",
+          "prompt_seed": "Visitor-center map copies become group photo subjects; close surprise."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Observer and lead look identical.",
+          "repair": "Different silhouettes and clothing."
+        },
+        {
+          "failure": "Extra people appear without arrival.",
+          "repair": "Show count increasing in frame."
+        },
+        {
+          "failure": "Reaction has no setup.",
+          "repair": "Hold group pose before final close-up."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "At an original science museum, one adult guide stands before a blank exhibit wall while a separate adult technician lifts a digital camera. Three additional versions of the guide emerge as neutral light silhouettes, gain solid matching blue lab coats and cluster for a group image. After the photo, the front guide shifts from smile to wide-eyed surprise; the cause remains unspecified.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "lead",
+            "observer",
+            "space",
+            "multiplication_medium",
+            "capture_prop",
+            "reaction"
+          ]
+        },
+        {
+          "concept": "At a mountain visitor center, one adult trail mapper faces an adult camera operator. Three paper-cut copies step out of a wall map, stand as physical visitors and pose; after the photo a close view of one copy changes from delighted to startled for an unspecified reason.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "lead",
+            "observer",
+            "space",
+            "multiplication_medium",
+            "capture_prop",
+            "reaction"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

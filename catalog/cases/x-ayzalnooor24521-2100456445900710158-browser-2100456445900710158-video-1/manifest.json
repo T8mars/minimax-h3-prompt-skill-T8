@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ayzalnooor24521-2100456445900710158-browser-2100456445900710158-video-1",
+  "slug": "window-display-garment-transfer-result-proof",
+  "title": "橱窗造型接管｜凝视触发、服装转移与街头结果证明",
+  "source_title": "白裙变红裙｜橱窗服装以光带接管行人造型",
+  "summary": "先让成年行人与橱窗成衣建立清楚对应，一次凝视或手势触发服装沿可见载体转移；转变完成后以连续街头行走和日常动作证明新造型稳定。",
+  "status": "released",
+  "source_duration_seconds": 15.11619,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/window-display-garment-transfer-result-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ayzalnooor24521-2100456445900710158-browser-2100456445900710158-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ayzalnooor24521-2100456445900710158-browser-2100456445900710158-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-window-display-garment-transfer-result-proof-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "成年行人＋橱窗服装＋可见转移载体＋街头结果证明",
+  "recommended_input": "成年建筑师、橱窗钴蓝外套、三条光带、路口行走和一次喝水。",
+  "required_anchors": [
+    "橱窗服装先清楚出现",
+    "只有衣物发生改变",
+    "转变后日常动作证明造型稳定"
+  ],
+  "tags": [
+    "window",
+    "display",
+    "garment",
+    "transfer",
+    "result",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.93,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-22T21:57:16+08:00",
+  "updated_at": "2026-09-22T22:31:48+08:00"
+}

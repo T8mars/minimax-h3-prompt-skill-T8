@@ -1,0 +1,180 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ou-zhen599-2101691337838104675-browser-2101691337838104675-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "21fd0d5dc2a5d74f46c88f6a672f35b427cbda70b2368e2495b3d3ace83abb88",
+    "creative_dna_sha256": "7e397ded8a224ee50aa1feebb180607ad35e0dfb569317e2ecb92eb58f41bc64"
+  },
+  "content": {
+    "title": "单次投入｜容器延迟变化与失控收束",
+    "summary": "一个小输入在封闭系统中延迟引发可追踪的扩张，人尝试纠正后留下终态。",
+    "quick_start": {
+      "input_format": "容器＋一个投入物＋延迟反应＋纠正尝试＋终态",
+      "recommended_input": "一名成年技师、一座桌面布料充气城市模型、一根可见总气管、一个压力表与一只上方回收气囊。",
+      "required_anchors": [
+        "只发生一次清楚投入",
+        "反应沿容器连续扩张",
+        "纠正行为与残留结果都可见"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "一个小输入在封闭系统中延迟引发可追踪的扩张，人尝试纠正后留下终态。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "One clearly visible small input into a bounded system is followed by delayed local change, accelerating connected expansion and an attempted human correction that arrives too late to prevent an altered but traceable final state.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One small deliberate input occurs in a visibly bounded, initially stable system before the anomaly.",
+          "purpose": "Makes the later reaction causally legible.",
+          "ablation_failure": "Without a visible input the runaway result feels like an unrelated effect.",
+          "evidence_ids": [
+            "obs-03",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "A local material response expands continuously through the same system in distinguishable stages.",
+          "purpose": "Preserves escalation and physical continuity.",
+          "ablation_failure": "If the system jumps directly to maximum scale, there is no readable delayed-response curve.",
+          "evidence_ids": [
+            "obs-07",
+            "obs-11",
+            "beat-02",
+            "beat-04"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "The operator notices and makes a concrete checking or control action after onset but before the changed state settles.",
+          "purpose": "Converts spectacle into a character-versus-system mini-story.",
+          "ablation_failure": "If the operator never tries to intervene, the middle beat and human reaction arc disappear.",
+          "evidence_ids": [
+            "obs-09",
+            "obs-10",
+            "obs-13",
+            "beat-03"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "system",
+          "constraint": "One visibly bounded original mechanism with traceable material or stored energy."
+        },
+        {
+          "name": "small_input",
+          "constraint": "Single deliberate gesture that initiates the response."
+        },
+        {
+          "name": "expanding_response",
+          "constraint": "Local onset followed by connected growth within one environment."
+        },
+        {
+          "name": "operator_check",
+          "constraint": "Concrete, readable check after the response begins."
+        },
+        {
+          "name": "terminal_state",
+          "constraint": "A materially changed end state, preferably controlled for the new instance."
+        },
+        {
+          "name": "medium",
+          "constraint": "May change from fluid/foam to air-filled fabric or spring paper."
+        },
+        {
+          "name": "sound",
+          "constraint": "New material-specific effects; do not attribute unheard source audio."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No mage costume, spell book, potion flask, black cauldron, yellow-green pour, pale twin foam bubble, source dialogue/subtitle fragments or exact workbench framing.",
+        "Do not claim an exact original formula or source prompt from an unbound X reply.",
+        "No arbitrary repair action that resets the system or violates stored matter/energy."
+      ],
+      "instantiations": [
+        {
+          "concept": "In a modern theatre model shop, one adult technician nudges a pneumatic valve beside a miniature inflatable city. A single roof rises beyond its measuring mark, then linked buildings swell in sequence. She checks the pressure gauge and closes the inlet; pressure trapped downstream still lifts one connected fabric street. A clearly marked relief vent opens into an overhead collection canopy, leaving the model safely deflated and the technician stunned.",
+          "prompt_seed": "Theatre model-shop pneumatic miniature city: one valve error, staged linked inflation, gauge check, trapped downstream pressure, visible relief canopy."
+        },
+        {
+          "concept": "In a printmaking studio, one apprentice pulls a single tension cord on a collapsible paper display. One panel opens, then connected spring-loaded leaves extend beyond their stop marks. She checks the release diagram and clamps the drive, but stored spring tension unfolds the remaining panels until a tether catches them in a final fan-shaped sculpture.",
+          "prompt_seed": "Printmaking studio spring-paper display: cord pull, staged panel unfolding, release check, stored spring tension, tethered sculptural endpoint."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Material appears from nowhere or disconnected sections expand independently.",
+          "repair": "Show the valve/tubing or cord/hinge continuity and one bounded expansion path."
+        },
+        {
+          "failure": "Operator check is only a facial expression.",
+          "repair": "Show a specific gauge/diagram and a physical control attempt."
+        },
+        {
+          "failure": "Final state abruptly resets.",
+          "repair": "Release residual pressure through a visible vent or arrest motion with a tether while retaining changed geometry."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "In a modern theatre model shop, one adult technician nudges a pneumatic valve beside a miniature inflatable city. A single roof rises beyond its measuring mark, then linked buildings swell in sequence. She checks the pressure gauge and closes the inlet; pressure trapped downstream still lifts one connected fabric street. A clearly marked relief vent opens into an overhead collection canopy, leaving the model safely deflated and the technician stunned.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "system",
+            "small_input",
+            "expanding_response",
+            "operator_check",
+            "terminal_state",
+            "medium",
+            "sound"
+          ]
+        },
+        {
+          "concept": "In a printmaking studio, one apprentice pulls a single tension cord on a collapsible paper display. One panel opens, then connected spring-loaded leaves extend beyond their stop marks. She checks the release diagram and clamps the drive, but stored spring tension unfolds the remaining panels until a tether catches them in a final fan-shaped sculpture.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "system",
+            "small_input",
+            "expanding_response",
+            "operator_check",
+            "terminal_state",
+            "medium",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

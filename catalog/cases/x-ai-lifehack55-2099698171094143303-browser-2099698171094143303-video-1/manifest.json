@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ai-lifehack55-2099698171094143303-browser-2099698171094143303-video-1",
+  "slug": "registered-look-card-outfit-motion-roster",
+  "title": "时装定版卡｜同一模特、造型轮换与动作证明",
+  "source_title": "四套造型目录｜固定版式内以步态证明每次换装",
+  "summary": "锁定同一成年模特和注册版式，每套造型先以全身卡建立，再用一步或转身证明衣物运动；卡片编号只承担比较，终局把多套造型汇成同一系列。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/registered-look-card-outfit-motion-roster",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-lifehack55-2099698171094143303-browser-2099698171094143303-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ai-lifehack55-2099698171094143303-browser-2099698171094143303-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-registered-look-card-outfit-motion-roster-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "同一成年模特＋固定造型卡＋多套服装＋动作证明",
+  "recommended_input": "成年原创模特、四张注册造型卡、青色外套、沙色套装、钴蓝裙装、铜色工装。",
+  "required_anchors": [
+    "人物身份与卡片版式不变",
+    "每套服装有独立动作证明",
+    "终局并排比较全部造型"
+  ],
+  "tags": [
+    "registered",
+    "look",
+    "card",
+    "outfit",
+    "motion",
+    "roster"
+  ],
+  "quality": {
+    "weighted_score": 4.93,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-22T21:57:15+08:00",
+  "updated_at": "2026-09-22T22:31:47+08:00"
+}

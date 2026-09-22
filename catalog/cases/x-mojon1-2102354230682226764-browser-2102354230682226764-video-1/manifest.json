@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mojon1-2102354230682226764-browser-2102354230682226764-video-1",
+  "slug": "whole-machine-component-activation-energy-proof",
+  "title": "整机激活证明｜总览、部件旋转与能量回证",
+  "source_title": "暗场机械启动｜从整机静止到核心旋转放能",
+  "summary": "以完整装置建立结构基线，再依次进入齿环、管线与核心的局部动作；能量只在机械接触和旋转之后出现，最终回到整机证明所有变化属于同一设备。",
+  "status": "released",
+  "source_duration_seconds": 10.005333,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/whole-machine-component-activation-energy-proof",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mojon1-2102354230682226764-browser-2102354230682226764-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mojon1-2102354230682226764-browser-2102354230682226764-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-whole-machine-component-activation-energy-proof-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "完整装置＋部件联动＋能量阈值＋整机回证",
+  "recommended_input": "暗场磁力压力机、铜环、冷却管、青色核心、一次聚焦脉冲。",
+  "required_anchors": [
+    "整机先保持静止可读",
+    "部件按机械关系启动",
+    "能量出现后回到整机证明"
+  ],
+  "tags": [
+    "whole",
+    "machine",
+    "component",
+    "activation",
+    "energy",
+    "proof"
+  ],
+  "quality": {
+    "weighted_score": 4.93,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-22T21:57:14+08:00",
+  "updated_at": "2026-09-22T22:31:47+08:00"
+}

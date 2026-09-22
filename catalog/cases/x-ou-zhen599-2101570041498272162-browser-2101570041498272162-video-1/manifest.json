@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ou-zhen599-2101570041498272162-browser-2101570041498272162-video-1",
+  "slug": "reciprocal-touch-state-confirmation",
+  "title": "双向接触｜动作回应与状态确认",
+  "source_title": "人机互触｜权限字幕变化",
+  "summary": "一方轻触之后另一方主动回应，再以独立状态信号证明关系变化。",
+  "status": "released",
+  "source_duration_seconds": 15.146667,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/reciprocal-touch-state-confirmation",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2101570041498272162-browser-2101570041498272162-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ou-zhen599-2101570041498272162-browser-2101570041498272162-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-reciprocal-touch-state-confirmation-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "两个主体＋首次接触＋反向回应＋状态信号",
+  "recommended_input": "一位成年灯光技师、一盏固定在地面的黄铜机械追光灯、空舞台上的白色定点；只用一套设备。",
+  "required_anchors": [
+    "主动与回应次序清楚",
+    "状态信号独立可见",
+    "结束时两主体仍可区分"
+  ],
+  "tags": [
+    "reciprocal",
+    "touch",
+    "state",
+    "confirmation"
+  ],
+  "quality": {
+    "weighted_score": 4.38,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:52:08+08:00",
+  "updated_at": "2026-09-21T18:51:43+08:00"
+}

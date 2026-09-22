@@ -1,0 +1,180 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-ou-zhen599-2101570041498272162-browser-2101570041498272162-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "206a5b0c56b90e2859d2e632763c43796740c50e67e48e2c9a8cc798b930a5d7",
+    "creative_dna_sha256": "541f79873e13c17f5c9acac6320c208dbfaf507b2195bb08396d7f4c6b5a1ce4"
+  },
+  "content": {
+    "title": "Reciprocal Touch | Response and State Proof",
+    "summary": "A human approaches a responsive engineered counterpart; one tactile initiative is followed by a distinct reciprocal movement, then an independently visible state acknowledgement and a final separated pose that proves the relationship changed.",
+    "quick_start": {
+      "input_format": "Establish a stable two-sided gap and delay the engineered system's response until after a human initiative. + Human touch or insertion and system reciprocity are separate readable events across a continuous spatial anchor. + Show the acknowledged state and a changed final spatial relation after the reciprocal action.",
+      "recommended_input": "On a dim empty stage, an adult lighting technician approaches an autonomous tracking spotlight fixed to its floor base. She slowly presents a gloved hand near its cold brass sensor ring; the lamp head first resists, then rotates a few degrees to mirror her hand, and a small mechanical iris opens. Only after a visible sensor contact and motor response does its own panel illuminate the original text 'OPERATOR READY'. She steps aside; the spotlight turns away from her and projects one clean circle on the empty stage.",
+      "required_anchors": [
+        "主动与回应次序清楚",
+        "状态信号独立可见",
+        "结束时两主体仍可区分"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A human approaches a responsive engineered counterpart; one tactile initiative is followed by a distinct reciprocal movement, then an independently visible state acknowledgement and a final separated pose that proves the relationship changed.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A human approaches a responsive engineered counterpart; one tactile initiative is followed by a distinct reciprocal movement, then an independently visible state acknowledgement and a final separated pose that proves the relationship changed.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish a stable two-sided gap and delay the engineered system's response until after a human initiative.",
+          "purpose": "Creates a clear question of recognition rather than an already-active machine.",
+          "ablation_failure": "If the system begins fully responsive, the contact has no dramatic function.",
+          "evidence_ids": [
+            "obs-02",
+            "obs-03",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Human touch or insertion and system reciprocity are separate readable events across a continuous spatial anchor.",
+          "purpose": "Makes acceptance visible rather than merely declared.",
+          "ablation_failure": "A status caption alone would claim an outcome without physical confirmation.",
+          "evidence_ids": [
+            "obs-07",
+            "obs-10",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Show the acknowledged state and a changed final spatial relation after the reciprocal action.",
+          "purpose": "Completes the interaction with a functional new state.",
+          "ablation_failure": "If the scene ends at contact, the audience cannot tell what the interaction enabled.",
+          "evidence_ids": [
+            "obs-12",
+            "obs-14",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "human_role",
+          "constraint": "Adult initiator with a concrete task, not source character identity."
+        },
+        {
+          "name": "counterpart",
+          "constraint": "One engineered responsive object/system with a physical response."
+        },
+        {
+          "name": "contact_interface",
+          "constraint": "One visible sensor, slot or tactile control."
+        },
+        {
+          "name": "reciprocal_motion",
+          "constraint": "Physical acknowledgement distinct from the initial touch."
+        },
+        {
+          "name": "status_signal",
+          "constraint": "Original short visible state change after response, not source dialogue."
+        },
+        {
+          "name": "final_function",
+          "constraint": "Demonstrate newly enabled function in same geography."
+        },
+        {
+          "name": "setting",
+          "constraint": "Can change lab to stage, dock or another controlled environment."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No source woman's face, tattoos or wardrobe, no white humanoid robot, no intimate near-kiss framing, shoulder embrace, glowing robot chest or source status wording.",
+        "Do not assert source dialogue, actual authentication details or unseen AI intentions.",
+        "No status overlay before the physical response."
+      ],
+      "instantiations": [
+        {
+          "concept": "On a dim empty stage, an adult lighting technician approaches an autonomous tracking spotlight fixed to its floor base. She slowly presents a gloved hand near its cold brass sensor ring; the lamp head first resists, then rotates a few degrees to mirror her hand, and a small mechanical iris opens. Only after a visible sensor contact and motor response does its own panel illuminate the original text 'OPERATOR READY'. She steps aside; the spotlight turns away from her and projects one clean circle on the empty stage.",
+          "prompt_seed": "Empty theatre stage, adult technician, fixed motorized spotlight, sensor contact, head and iris reciprocation, operator-ready panel, clean light cue."
+        },
+        {
+          "concept": "At a coastal research dock, a field scientist approaches a silent buoy-launch rail. She places one coded sample tag into a physical slot; a small robotic clamp mirrors her hand movement and closes around the tag. A green mechanical flag rises only after the tag is seated; she steps back while the now-enabled rail advances one buoy into its ready cradle.",
+          "prompt_seed": "Coastal dock, scientist, buoy-launch rail, sample-tag insertion, clamp reciprocity, mechanical flag and buoy-ready cradle."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Machine moves before the human's initiating gesture.",
+          "repair": "Hold a visible dormant baseline then let the gesture trigger the response."
+        },
+        {
+          "failure": "Permission text claims change without any physical reaction.",
+          "repair": "Make the system's reciprocal motion precede the panel or flag."
+        },
+        {
+          "failure": "Final state repeats the opening proximity with no new function.",
+          "repair": "End with a clear newly enabled action and separated human/system framing."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "On a dim empty stage, an adult lighting technician approaches an autonomous tracking spotlight fixed to its floor base. She slowly presents a gloved hand near its cold brass sensor ring; the lamp head first resists, then rotates a few degrees to mirror her hand, and a small mechanical iris opens. Only after a visible sensor contact and motor response does its own panel illuminate the original text 'OPERATOR READY'. She steps aside; the spotlight turns away from her and projects one clean circle on the empty stage.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "human_role",
+            "counterpart",
+            "contact_interface",
+            "reciprocal_motion",
+            "status_signal",
+            "final_function",
+            "setting"
+          ]
+        },
+        {
+          "concept": "At a coastal research dock, a field scientist approaches a silent buoy-launch rail. She places one coded sample tag into a physical slot; a small robotic clamp mirrors her hand movement and closes around the tag. A green mechanical flag rises only after the tag is seated; she steps back while the now-enabled rail advances one buoy into its ready cradle.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "human_role",
+            "counterpart",
+            "contact_interface",
+            "reciprocal_motion",
+            "status_signal",
+            "final_function",
+            "setting"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

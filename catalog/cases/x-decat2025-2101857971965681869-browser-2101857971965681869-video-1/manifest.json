@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-decat2025-2101857971965681869-browser-2101857971965681869-video-1",
+  "slug": "center-trigger-radial-world-change",
+  "title": "中心触发｜径向环境变形与余波",
+  "source_title": "一人对众｜触地后地面逐圈塌成巨坑",
+  "summary": "中心动作依次触发外扩边界和场景几何变化，最终保留原点与余波。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/center-trigger-radial-world-change",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2101857971965681869-browser-2101857971965681869-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-decat2025-2101857971965681869-browser-2101857971965681869-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-center-trigger-radial-world-change-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "中心主体＋单次触发＋径向扩张＋空间余波",
+  "recommended_input": "同一座原创温室、一个成年维护工程师和多个无品牌小车；工程师站在有支撑的中央平台，按钮固定在平台上；小车在启动前停到不下降的外侧安全平台。",
+  "required_anchors": [
+    "中心主体锚定",
+    "传播先于几何变化",
+    "终态仍可追溯原空间"
+  ],
+  "tags": [
+    "center",
+    "trigger",
+    "radial",
+    "world",
+    "change"
+  ],
+  "quality": {
+    "weighted_score": 4.423,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:50:10+08:00",
+  "updated_at": "2026-09-21T18:15:55+08:00"
+}

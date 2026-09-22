@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-ponzponz15-2100423940833521744-browser-2100423940833521744-video-1",
+  "slug": "performer-physical-letterform-stage-relay",
+  "title": "实体字台表演｜人物接触、标点搬运与新词接力",
+  "source_title": "巨型字体互动｜模特移动字形组件并换章",
+  "summary": "把巨型原创字形作为真实舞台结构，成年人必须以倚靠、穿越或搬运标点证明物理接触；一个可拆组件完成转场后，人物和造型变化但字形规则保持。",
+  "status": "released",
+  "source_duration_seconds": 20.178141,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/performer-physical-letterform-stage-relay",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ponzponz15-2100423940833521744-browser-2100423940833521744-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-ponzponz15-2100423940833521744-browser-2100423940833521744-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-performer-physical-letterform-stage-relay-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "成年表演者＋实体字形舞台＋可拆组件＋新词接力",
+  "recommended_input": "两名成年舞者、泡棉字词、可滚动圆点、两个原创短词。",
+  "required_anchors": [
+    "字形必须表现真实物理接触",
+    "一个组件承担换章",
+    "最终恢复完整可读字标"
+  ],
+  "tags": [
+    "performer",
+    "physical",
+    "letterform",
+    "stage",
+    "relay"
+  ],
+  "quality": {
+    "weighted_score": 4.93,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-22T21:57:16+08:00",
+  "updated_at": "2026-09-22T22:31:48+08:00"
+}

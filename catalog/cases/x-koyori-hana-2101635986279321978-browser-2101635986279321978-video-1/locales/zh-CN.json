@@ -1,0 +1,181 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-koyori-hana-2101635986279321978-browser-2101635986279321978-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "da8521884dfb7485100ea72fae21d0eaad28f96c60bdc548e81eb599a461df96",
+    "creative_dna_sha256": "3a73f909d2eaf1081d751d8e4dabaede09235bc5dd41e52e54c7131fb779d0b5"
+  },
+  "content": {
+    "title": "保护暂停｜短暂暴露后的迟发反转",
+    "summary": "防护道具先有用，暂时移开后保留暴露空档，随后发生一次温和迟发反转。",
+    "quick_start": {
+      "input_format": "成年人物＋防护物＋短暂安全错觉＋迟发变化",
+      "recommended_input": "专业烘焙演示台，一位明确成年的烘焙师、一只固定上方面粉料斗、一块在料斗与人物/蛋糕之间的浅斜透明接粉罩、侧边接粉盘和台上的蛋糕。",
+      "required_anchors": [
+        "防护先证明用途",
+        "移开后有可见等待",
+        "同一环境给出延迟回击"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "防护道具先有用，暂时移开后保留暴露空档，随后发生一次温和迟发反转。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "simple",
+      "mechanism": "A protective prop first reads as necessary, then a brief lull tempts an adult operator to move it aside; the camera holds a confident exposed interval before the same environment delivers one delayed benign material burst and an immediately readable reaction.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish active shelter and a stable external material source in one shared geography.",
+          "purpose": "Makes protection and later exposure physically intelligible.",
+          "ablation_failure": "Without visible initial protection, the late burst becomes generic slapstick.",
+          "evidence_ids": [
+            "obs-02",
+            "obs-03",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Show the protection being deliberately removed, then a short confidently exposed action before the burst.",
+          "purpose": "Creates timing and anticipatory vulnerability.",
+          "ablation_failure": "If burst arrives at the exact instant of removal, there is no reversal beat.",
+          "evidence_ids": [
+            "obs-09",
+            "obs-11",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "The late burst comes from the already established environment and leaves a persistent changed material state and visible reaction.",
+          "purpose": "Closes the comic cause-effect chain.",
+          "ablation_failure": "An unrelated surprise or instantly dry reset breaks payoff continuity.",
+          "evidence_ids": [
+            "obs-12",
+            "obs-13",
+            "obs-14",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "adult_operator",
+          "constraint": "Unambiguously adult practitioner with a task."
+        },
+        {
+          "name": "shelter",
+          "constraint": "One movable protective prop with visible open/closed or in/out state."
+        },
+        {
+          "name": "hazard_source",
+          "constraint": "Visible, harmless material source established before lull."
+        },
+        {
+          "name": "confident_action",
+          "constraint": "Brief task advance after removing shelter."
+        },
+        {
+          "name": "late_burst",
+          "constraint": "Single delayed event from same source."
+        },
+        {
+          "name": "reaction",
+          "constraint": "Visible, grounded change without injury."
+        },
+        {
+          "name": "material",
+          "constraint": "Physical flour, paper, mist or another benign medium."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No student-coded uniform, youthful anime face, burgundy umbrella, maple street or exact rain splash pose.",
+        "No sexualized youthful framing; all transfer performers are clearly adult.",
+        "Do not add a fabricated weather forecast or claim intentional sabotage."
+      ],
+      "instantiations": [
+        {
+          "concept": "At a bright professional pastry demonstration, an adult baker works under a transparent, shallow-sloped receiving hood hinged above the counter between the flour hopper and both baker and cake. The motor falls silent; she waits for loose flour on the hood to settle, then tilts the hood toward a built-in catch tray and swings it up sideways, checks that the cake is clear, and steps forward smiling to reveal it. A delayed latch in the same visible hopper releases one harmless flour cascade onto the now-open counter and her apron. She freezes, eyebrows raised, with the hood still raised and the new white flour accumulated below.",
+          "prompt_seed": "Adult pastry demo, shallow sloped overhead receiving hood between hopper and work area, catch tray, hood raised, proud cake reveal, delayed benign flour cascade."
+        },
+        {
+          "concept": "At an adult puppetry rehearsal, a stage maker waits under a clear safety canopy while a confetti test rig runs. The rig becomes quiet, she swings the canopy aside and steps forward to inspect a puppet. A delayed last batch of paper strips drops from the visible overhead chute; she stops with an exaggerated surprised look while the strips pile around the puppet stand.",
+          "prompt_seed": "Adult puppet stage, safety canopy, quiet paper-strip test rig, canopy aside, brief inspection, delayed confetti fall."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Delayed burst comes from an unseen new device.",
+          "repair": "Show the hopper/chute before the lull and retain its spatial position."
+        },
+        {
+          "failure": "No time between removal and burst.",
+          "repair": "Give one clear confident task action and facial shift before the late event."
+        },
+        {
+          "failure": "Subject and prop become clean again immediately.",
+          "repair": "Hold the deposited material, open shield and startled performer in one final frame."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "At a bright professional pastry demonstration, an adult baker works under a transparent, shallow-sloped receiving hood hinged above the counter between the flour hopper and both baker and cake. The motor falls silent; she waits for loose flour on the hood to settle, then tilts the hood toward a built-in catch tray and swings it up sideways, checks that the cake is clear, and steps forward smiling to reveal it. A delayed latch in the same visible hopper releases one harmless flour cascade onto the now-open counter and her apron. She freezes, eyebrows raised, with the hood still raised and the new white flour accumulated below.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "adult_operator",
+            "shelter",
+            "hazard_source",
+            "confident_action",
+            "late_burst",
+            "reaction",
+            "material"
+          ]
+        },
+        {
+          "concept": "At an adult puppetry rehearsal, a stage maker waits under a clear safety canopy while a confetti test rig runs. The rig becomes quiet, she swings the canopy aside and steps forward to inspect a puppet. A delayed last batch of paper strips drops from the visible overhead chute; she stops with an exaggerated surprised look while the strips pile around the puppet stand.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "adult_operator",
+            "shelter",
+            "hazard_source",
+            "confident_action",
+            "late_burst",
+            "reaction",
+            "material"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

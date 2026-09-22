@@ -1,0 +1,136 @@
+{
+  "complexity": "complex",
+  "mechanism": "A single color-locked lead travels through a graphic environment that behaves as a course: oversized planar signs, directional graphic gates, spatial reset, denser multi-object obstacle interval and solo final poster. Preserve progressive route and graphic-to-spatial coupling, not the source typography, outfit or violence.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Identify one lead with a persistent silhouette/accent color before moving through the oversized graphic course.",
+      "purpose": "Keeps spatial changes trackable.",
+      "ablation_failure": "Without one stable lead, rapid zones seem unrelated.",
+      "evidence_ids": [
+        "obs-01",
+        "obs-15",
+        "beat-01"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Make two or more graphic structures function as traversable space and use one circular gate as a visible transition.",
+      "purpose": "Gives the course a specific graphic-motion grammar.",
+      "ablation_failure": "If graphics remain mere overlays, travel lacks environmental stakes.",
+      "evidence_ids": [
+        "obs-02",
+        "obs-14",
+        "beat-02",
+        "beat-03"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "After a short identity reset, raise density with multiple obstacles and then isolate the lead in a held final frame.",
+      "purpose": "Provides escalation and decisive visual closure.",
+      "ablation_failure": "Without reset and isolation, the climax becomes uninterrupted action noise.",
+      "evidence_ids": [
+        "obs-07",
+        "beat-04",
+        "beat-05",
+        "beat-06"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead",
+      "constraint": "One identifiable adult performer."
+    },
+    {
+      "name": "course_graphics",
+      "constraint": "Original non-branded large geometry."
+    },
+    {
+      "name": "accent_color",
+      "constraint": "Single stable subject accent distinct from source red."
+    },
+    {
+      "name": "transition_gate",
+      "constraint": "Circular but original visual construction."
+    },
+    {
+      "name": "obstacles",
+      "constraint": "Readable multi-object challenge, no injury required."
+    },
+    {
+      "name": "final_display",
+      "constraint": "Solo stable end frame with no copied wordmark."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "No source title, wordmark, exact English letterform walls or typography layout.",
+    "No source character face, hair, red trousers, fight poses or opponent designs.",
+    "Do not imply original source sound or precise portal lore was verified."
+  ],
+  "instantiations": [
+    {
+      "concept": "An adult urban wayfinding courier in cobalt workwear carries a glowing parcel through an original geometric exhibition course. Scale-changing floor stripes and a neutral circle gate lead through connected corridors. She walks around a slow side-closing padded barrier, then crouches under a raised foam beam whose lower edge stays safely above her crouched height. Without collision she places the parcel on a lit pedestal and stands alone in a clean final display frame.",
+      "prompt_seed": "Cobalt courier, geometric exhibition route, circle gate, two safety barriers, lit pedestal."
+    },
+    {
+      "concept": "An adult swimmer in an abstract dry-land training film runs between oversized wave diagrams, passes a circular timing arch, dodges two moving foam obstacles and ends beside a completed lap counter. All visual language is original and no rival is harmed.",
+      "prompt_seed": "Dry-land swimmer training, wave diagrams, timing arch, foam obstacles, lap counter."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Lead costume/identity changes between zones.",
+      "repair": "Hold same cobalt uniform and parcel throughout."
+    },
+    {
+      "failure": "Circle gate becomes meaningless decoration.",
+      "repair": "Show lead approaching, crossing and emerging in a new but connected lane."
+    },
+    {
+      "failure": "Multiple obstacles merge into a battle scene.",
+      "repair": "Show two distinct moving barriers, no opponent or physical strike."
+    },
+    {
+      "failure": "Final frame is only moving text.",
+      "repair": "Hold performer and completed pedestal result in a readable stable composition."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "An adult urban wayfinding courier in cobalt workwear carries a glowing parcel through an original geometric exhibition course. Scale-changing floor stripes and a neutral circle gate lead through connected corridors. She walks around a slow side-closing padded barrier, then crouches under a raised foam beam whose lower edge stays safely above her crouched height. Without collision she places the parcel on a lit pedestal and stands alone in a clean final display frame.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "lead",
+        "course_graphics",
+        "accent_color",
+        "transition_gate",
+        "obstacles",
+        "final_display"
+      ]
+    },
+    {
+      "concept": "An adult swimmer in an abstract dry-land training film runs between oversized wave diagrams, passes a circular timing arch, dodges two moving foam obstacles and ends beside a completed lap counter. All visual language is original and no rival is harmed.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "lead",
+        "course_graphics",
+        "accent_color",
+        "transition_gate",
+        "obstacles",
+        "final_display"
+      ]
+    }
+  ]
+}

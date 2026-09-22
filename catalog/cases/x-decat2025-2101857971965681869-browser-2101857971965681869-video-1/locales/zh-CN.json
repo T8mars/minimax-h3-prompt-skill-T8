@@ -1,0 +1,178 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-decat2025-2101857971965681869-browser-2101857971965681869-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "6e86d420de9a7914cafb9445908b272f45f5b48ef55b77b4eec4c61d9f71d74d",
+    "creative_dna_sha256": "47f000be47d5f8d107c17c774f90768a270f173aa7c6d2f998fdef9a28fdf036"
+  },
+  "content": {
+    "title": "中心触发｜径向环境变形与余波",
+    "summary": "中心动作依次触发外扩边界和场景几何变化，最终保留原点与余波。",
+    "quick_start": {
+      "input_format": "中心主体＋单次触发＋径向扩张＋空间余波",
+      "recommended_input": "同一座原创温室、一个成年维护工程师和多个无品牌小车；工程师站在有支撑的中央平台，按钮固定在平台上；小车在启动前停到不下降的外侧安全平台。",
+      "required_anchors": [
+        "中心主体锚定",
+        "传播先于几何变化",
+        "终态仍可追溯原空间"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "中心动作依次触发外扩边界和场景几何变化，最终保留原点与余波。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "complex",
+      "mechanism": "A single center-anchored action converts a one-versus-many scale problem into a large radial restructuring of the existing environment. The outward boundary must precede physical geometry change, and the aftermath must retain the actor at the original center while surrounding objects remain spatially accountable.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Show one clearly located central actor or initiator against a much larger distributed opposing field before activation.",
+          "purpose": "Scale establishes the problem and fixes the origin.",
+          "ablation_failure": "Without a stable center and surrounding field, radial consequence has no readable before state.",
+          "evidence_ids": [
+            "obs-02",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "One physical contact or control action visibly starts an outward radial signal; existing terrain/structure changes only after that signal reaches it.",
+          "purpose": "Preserves cause before effect and direction of propagation.",
+          "ablation_failure": "Random cuts or pre-existing deformation break the actor-to-world causal chain.",
+          "evidence_ids": [
+            "obs-07",
+            "obs-08",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Finish with a wide view that retains the original center and proves a changed large-scale geometry around it.",
+          "purpose": "Makes the action's consequence measurable by composition.",
+          "ablation_failure": "A close-up ending or swapped geography leaves the structural result unproven.",
+          "evidence_ids": [
+            "obs-10",
+            "obs-11",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "initiator",
+          "constraint": "One stable center actor/controller with a visible single trigger."
+        },
+        {
+          "name": "distributed_field",
+          "constraint": "A much larger visible group or hazard before activation; avoid source army."
+        },
+        {
+          "name": "terrain_system",
+          "constraint": "Existing floor or landscape with physical material continuity."
+        },
+        {
+          "name": "propagation",
+          "constraint": "One outward-moving boundary preceding each structural change."
+        },
+        {
+          "name": "geometry_result",
+          "constraint": "Large-scale radial structure demonstrably different at the end."
+        },
+        {
+          "name": "camera",
+          "constraint": "Before wide scale, close trigger, overhead progression, wide result."
+        },
+        {
+          "name": "sound",
+          "constraint": "Original sound may track trigger and progressive structure; no source audio attribution."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No wizard, staff, armored army, siege beasts, gold rune circle, dark-fantasy battlefield or copied sky treatment.",
+        "Do not reproduce the source exact crater shot or creator's long live-page prompt as if it were hash-bound prompt evidence.",
+        "No unexplained destruction of people or buildings; new structures and affected objects remain physically accountable."
+      ],
+      "instantiations": [
+        {
+          "concept": "An adult greenhouse engineer presses one central floor control while autonomous pest-collection machines approach but stop on a permanent outer safety platform before activation; an amber warning ring travels across the existing floor and the segmented substrate descends into a circular quarantine basin, leaving the machines on the undescending outer platform and the engineer supported on a stable center platform whose control descends with it.",
+          "prompt_seed": "Original grounded greenhouse quarantine engineering film: adult engineer, advancing collector bots, one amber signal and descending circular substrate basin."
+        },
+        {
+          "concept": "In a handmade stop-motion paper theater, one adult stage carpenter taps a center pedal as numerous tiny clockwork dancers approach but stop on a rigid outer stage before activation; a blue line spreads along the paper floor and its existing panels fold downward into concentric stepped rows, leaving the dancers on the unchanged outer stage and the carpenter supported on a stable center platform that keeps the pedal attached.",
+          "prompt_seed": "Original handcrafted paper stop-motion stage: carpenter, clockwork dancers, blue pedal signal and folding concentric floor rows."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Radial terrain change happens before the trigger or appears everywhere simultaneously.",
+          "repair": "Show contact then traveling boundary then local panel motion in the same geographic axis."
+        },
+        {
+          "failure": "The group or initiator vanishes during the effect.",
+          "repair": "Return to wide views that keep center and affected edge visible."
+        },
+        {
+          "failure": "Final structure is a disconnected replacement environment.",
+          "repair": "Use same floor marks/material and preserve actor/objects at recognizable positions."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An adult greenhouse engineer presses one central floor control while autonomous pest-collection machines approach but stop on a permanent outer safety platform before activation; an amber warning ring travels across the existing floor and the segmented substrate descends into a circular quarantine basin, leaving the machines on the undescending outer platform and the engineer supported on a stable center platform whose control descends with it.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "initiator",
+            "distributed_field",
+            "terrain_system",
+            "propagation",
+            "geometry_result",
+            "sound"
+          ]
+        },
+        {
+          "concept": "In a handmade stop-motion paper theater, one adult stage carpenter taps a center pedal as numerous tiny clockwork dancers approach but stop on a rigid outer stage before activation; a blue line spreads along the paper floor and its existing panels fold downward into concentric stepped rows, leaving the dancers on the unchanged outer stage and the carpenter supported on a stable center platform that keeps the pedal attached.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "initiator",
+            "distributed_field",
+            "terrain_system",
+            "propagation",
+            "geometry_result",
+            "camera",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-aiwithelisia-2102269278489903244-browser-2102269278489903244-video-1",
+  "slug": "weather-listening-touch-snack-micro-ritual",
+  "title": "天气微仪式｜听觉准备、触雨确认与食物收束",
+  "source_title": "雨棚下独处｜戴耳机、接雨水与咬苹果的静默链",
+  "summary": "固定同一成年人物与雨棚边界，用帽檐、耳机、伸手接雨和一次咬食组成由听觉到触觉再到味觉的微仪式；镜头只在关键接触后收近。",
+  "status": "released",
+  "source_duration_seconds": 15.58059,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/weather-listening-touch-snack-micro-ritual",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithelisia-2102269278489903244-browser-2102269278489903244-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-aiwithelisia-2102269278489903244-browser-2102269278489903244-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-weather-listening-touch-snack-micro-ritual-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "成年人物＋天气边界＋听觉准备＋触觉与味觉收束",
+  "recommended_input": "成年果园工人、木棚、雨幕、有线耳机、红李子。",
+  "required_anchors": [
+    "同一人物与屋檐边界持续",
+    "先听觉准备再伸手接雨",
+    "只以一次咬食完成微仪式"
+  ],
+  "tags": [
+    "weather",
+    "listening",
+    "touch",
+    "snack",
+    "micro",
+    "ritual"
+  ],
+  "quality": {
+    "weighted_score": 4.93,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-22T21:57:16+08:00",
+  "updated_at": "2026-09-22T22:31:48+08:00"
+}

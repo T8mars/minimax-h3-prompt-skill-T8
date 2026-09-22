@@ -1,0 +1,171 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-tokyo-valentine-2101861841739899212-browser-2101861841739899212-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "9a2258a60468935c7504bd6de8a9228ff397b29073ac7f299244fba779a52a35",
+    "creative_dna_sha256": "2e9585d03b443c6c668b4643343a6a9469bbcc6fab1d813dde53d0aae1341bfa"
+  },
+  "content": {
+    "title": "One to Group | Photo and Close Reaction",
+    "summary": "A two-person setup leaves space for one figure to become a visible group. The separate observer frames the new group as a photo; a close face reaction acts as a punchline, with its exact cause deliberately open.",
+    "quick_start": {
+      "input_format": "Establish one lead and one distinct observer across a clear spatial gap. + Show repeated figures appearing into the gap before the observer captures or frames them. + End with a close facial reaction after the group pose while leaving the source's exact cause unclaimed.",
+      "recommended_input": "At an original science museum, one adult guide stands before a blank exhibit wall while a separate adult technician lifts a digital camera. Three additional versions of the guide emerge as neutral light silhouettes, gain solid matching blue lab coats and cluster for a group image. After the photo, the front guide shifts from smile to wide-eyed surprise; the cause remains unspecified.",
+      "required_anchors": [
+        "人数从一清楚增加",
+        "摄影者保持独立",
+        "结尾反应不臆造原因"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A two-person setup leaves space for one figure to become a visible group. The separate observer frames the new group as a photo; a close face reaction acts as a punchline, with its exact cause deliberately open.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A two-person setup leaves space for one figure to become a visible group. The separate observer frames the new group as a photo; a close face reaction acts as a punchline, with its exact cause deliberately open.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Establish one lead and one distinct observer across a clear spatial gap.",
+          "purpose": "Makes later count change legible.",
+          "ablation_failure": "Without a visible original and observer, the new figures may read as an ordinary crowd.",
+          "evidence_ids": [
+            "obs-02",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Show repeated figures appearing into the gap before the observer captures or frames them.",
+          "purpose": "Converts a simple meeting into a count surprise.",
+          "ablation_failure": "If duplicates are present from the beginning there is no reveal.",
+          "evidence_ids": [
+            "obs-06",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "End with a close facial reaction after the group pose while leaving the source's exact cause unclaimed.",
+          "purpose": "Gives a human-scale comic payoff.",
+          "ablation_failure": "Without the close reaction, multiplication is only a visual effect.",
+          "evidence_ids": [
+            "obs-13",
+            "beat-04"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead",
+          "constraint": "One persistent adult lead."
+        },
+        {
+          "name": "observer",
+          "constraint": "Visually separate from lead."
+        },
+        {
+          "name": "space",
+          "constraint": "Empty gap for controlled group arrival."
+        },
+        {
+          "name": "multiplication_medium",
+          "constraint": "Original visual method, no source glow required."
+        },
+        {
+          "name": "capture_prop",
+          "constraint": "One visible capture device."
+        },
+        {
+          "name": "reaction",
+          "constraint": "Clear close facial change."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No source anime faces, costumes, armor, courtyard or character identities.",
+        "No source-specific violet glow and exact peace-sign pose.",
+        "No invented source reason for final surprise."
+      ],
+      "instantiations": [
+        {
+          "concept": "At an original science museum, one adult guide stands before a blank exhibit wall while a separate adult technician lifts a digital camera. Three additional versions of the guide emerge as neutral light silhouettes, gain solid matching blue lab coats and cluster for a group image. After the photo, the front guide shifts from smile to wide-eyed surprise; the cause remains unspecified.",
+          "prompt_seed": "Museum guide multiplied into lab-coat group before separate photographer; close surprise."
+        },
+        {
+          "concept": "At a mountain visitor center, one adult trail mapper faces an adult camera operator. Three paper-cut copies step out of a wall map, stand as physical visitors and pose; after the photo a close view of one copy changes from delighted to startled for an unspecified reason.",
+          "prompt_seed": "Visitor-center map copies become group photo subjects; close surprise."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Observer and lead look identical.",
+          "repair": "Different silhouettes and clothing."
+        },
+        {
+          "failure": "Extra people appear without arrival.",
+          "repair": "Show count increasing in frame."
+        },
+        {
+          "failure": "Reaction has no setup.",
+          "repair": "Hold group pose before final close-up."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "At an original science museum, one adult guide stands before a blank exhibit wall while a separate adult technician lifts a digital camera. Three additional versions of the guide emerge as neutral light silhouettes, gain solid matching blue lab coats and cluster for a group image. After the photo, the front guide shifts from smile to wide-eyed surprise; the cause remains unspecified.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "lead",
+            "observer",
+            "space",
+            "multiplication_medium",
+            "capture_prop",
+            "reaction"
+          ]
+        },
+        {
+          "concept": "At a mountain visitor center, one adult trail mapper faces an adult camera operator. Three paper-cut copies step out of a wall map, stand as physical visitors and pose; after the photo a close view of one copy changes from delighted to startled for an unspecified reason.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "lead",
+            "observer",
+            "space",
+            "multiplication_medium",
+            "capture_prop",
+            "reaction"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

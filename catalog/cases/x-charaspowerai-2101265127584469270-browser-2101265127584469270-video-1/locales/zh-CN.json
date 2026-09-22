@@ -1,0 +1,185 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-charaspowerai-2101265127584469270-browser-2101265127584469270-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "aadf0f63330141813ed223abab17129b9495f88cbe23d02d34d846a4a8ca71aa",
+    "creative_dna_sha256": "02644767b30a299c7253ac44159ba1c95144507af717808add0b593e2f3bd52c"
+  },
+  "content": {
+    "title": "切线成字｜材料变化与可读停留",
+    "summary": "数次线性操作改写同一材料，让原创字形从物理变化中形成。",
+    "quick_start": {
+      "input_format": "原始材料＋线性操作＋原创短字＋终态",
+      "recommended_input": "深蓝摄影棚一整块透明冰和下方透明接冰托盘；三道琥珀色局部热裂线依次发生，最终真实负空间显示英文 LIFE。",
+      "required_anchors": [
+        "操作与材料反应同框",
+        "字形由同一材料形成",
+        "可读停留与后续终态分开"
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "数次线性操作改写同一材料，让原创字形从物理变化中形成。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A first sparse line operation produces a material effect; additional line actions physically change the same substrate so a readable original word emerges from its geometry, followed by a deliberate title hold and new ending state.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Begin with one visible line operation on a stable material surface, with no fully formed title yet.",
+          "purpose": "Makes the first intervention and baseline readable.",
+          "ablation_failure": "Starting with the word removes the material-to-type reveal.",
+          "evidence_ids": [
+            "obs-02",
+            "obs-04",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Later line operations cause bounded physical material changes that accumulate into legible negative or positive letter geometry.",
+          "purpose": "Connects graphic motion to object construction.",
+          "ablation_failure": "If letters simply fade in, the line actions become decorative and causal coherence disappears.",
+          "evidence_ids": [
+            "obs-05",
+            "obs-08",
+            "obs-09",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Hold the resulting original word long enough to read and give it a deliberate ending state.",
+          "purpose": "Makes the typographic payoff functional.",
+          "ablation_failure": "A blurred or instantly shattered word fails as a title, even if material effects look impressive.",
+          "evidence_ids": [
+            "obs-09",
+            "obs-10",
+            "beat-03"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "material",
+          "constraint": "One stable original substrate with consistent physical properties."
+        },
+        {
+          "name": "line_operation",
+          "constraint": "Sequential visible marks/cuts/unpicking actions, first one before title."
+        },
+        {
+          "name": "bounded_change",
+          "constraint": "Only affected material changes at each line."
+        },
+        {
+          "name": "letter_formation",
+          "constraint": "Readable new word emerges from physically traceable result."
+        },
+        {
+          "name": "title_hold",
+          "constraint": "Final typography readable, not random glyphs."
+        },
+        {
+          "name": "ending_state",
+          "constraint": "Purposeful resolution distinct from copied source explosion."
+        },
+        {
+          "name": "sound",
+          "constraint": "Original material-specific sounds, not source audio attribution."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No weapon/titanium wall, bright orange metal sparks, source word 'BLADE', exact metal fragment choreography or terminal blast.",
+        "Do not copy the live-page creator prompt or treat it as hash-bound canonical prompt evidence.",
+        "No sudden after-effect text overlay that ignores the earlier material operations."
+      ],
+      "instantiations": [
+        {
+          "concept": "A cold translucent ice monolith in a blue studio has four pre-scored, self-supporting letter-core shapes concealed within the block. Three amber thermal seams successively unlock the small connecting bridges, letting the cores fall into a clear tray and revealing the original open-form word 'LIFE' in through-cavities; the surrounding outer frame remains intact.",
+          "prompt_seed": "Cold blue ice monolith, three bounded thermal seams unlock concealed letter cores, negative-space LIFE remains intact."
+        },
+        {
+          "concept": "A tactile woven stage cloth carries one cream thread under tension; three successive unpicking pulls free connected stitch runs and reveal a hidden contrasting weave spelling the original word 'HOME'; the cloth relaxes and folds gently rather than shattering.",
+          "prompt_seed": "Handwoven cloth, sequential unpicking of cream thread, underlying weave reveals HOME, soft final fold."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Text appears as an unrelated overlay before the material moves.",
+          "repair": "Track the same pieces or negative-space cavity from each line to letters."
+        },
+        {
+          "failure": "Cuts occur everywhere at once and obscure the first cause.",
+          "repair": "Give one clear first mark, then separate later operations."
+        },
+        {
+          "failure": "Word unreadable or destroyed immediately.",
+          "repair": "Reserve an unobstructed stable legibility hold before a controlled ending."
+        },
+        {
+          "failure": "A closed glyph leaves a floating unsupported center or missing removed material.",
+          "repair": "Use open-form letters; show pre-scored letter cores and their physical descent into a visible tray."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "A cold translucent ice monolith in a blue studio has four pre-scored, self-supporting letter-core shapes concealed within the block. Three amber thermal seams successively unlock the small connecting bridges, letting the cores fall into a clear tray and revealing the original open-form word 'LIFE' in through-cavities; the surrounding outer frame remains intact.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "material",
+            "line_operation",
+            "bounded_change",
+            "letter_formation",
+            "title_hold",
+            "ending_state",
+            "sound"
+          ]
+        },
+        {
+          "concept": "A tactile woven stage cloth carries one cream thread under tension; three successive unpicking pulls free connected stitch runs and reveal a hidden contrasting weave spelling the original word 'HOME'; the cloth relaxes and folds gently rather than shattering.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "material",
+            "line_operation",
+            "bounded_change",
+            "letter_formation",
+            "title_hold",
+            "ending_state",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved after translation service rate limit"
+  }
+}

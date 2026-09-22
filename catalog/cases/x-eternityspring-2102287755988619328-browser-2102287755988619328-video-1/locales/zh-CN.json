@@ -1,0 +1,221 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-eternityspring-2102287755988619328-browser-2102287755988619328-video-1",
+  "locale": "zh-CN",
+  "source_bindings": {
+    "manifest_sha256": "6bb94d8a621618d446a941f03dac96fb5e800e96b0c726d01f201acb2c641ae5",
+    "creative_dna_sha256": "121ac42733ed42ae9685edf58b1738adbe9e9c0366d85ab9f795e51b86b261de"
+  },
+  "content": {
+    "title": "不可逆烹饪状态链｜食材、工具、锅体、成品与品尝连续证明",
+    "summary": "同一明确成年厨师、厨房、主食材与关键工具持续锁定，每镜只推动一次不可逆食品状态变化，并让上一状态残留成为下一步原料；用颜色、容器和手部锚点防止食材跳变。成品装盘后必须由同一人物完成一次克制品尝。",
+    "quick_start": {
+      "input_format": "一名明确成年原创操作者、固定空间、主材料组、主要容器与手部或工具锚点先建立 + 至少五个不可逆状态且每镜只执行一次清楚操作 + 上一状态的残留、形状、颜色、蒸汽或容器连续成为下一步输入 + 不得回到已消失的早期状态并保持数量合理 + 同一成品由同一成年人完成一次克制使用或品尝证明",
+      "recommended_input": "原创陶瓷工作室内，一名明确成年釉料师、钴蓝围裙、铜色戒指、标记矿物粉、一只黑研钵和一块白测试砖稳定同框。；向残留粉末加入一次定量透明液体，搅成连续灰蓝釉液，再把同一混合物通过小筛进入标记杯；不得重置为干粉。；烧成砖回到原工作台，同一成年人把它在灯下倾斜一次，再用戴手套的手沿完整边缘摸过；成品材料证明稳定收束，不复制厨师、意面、食材和配方。",
+      "required_anchors": [
+        "Lock one clearly adult original cook, kitchen, ingredient set, primary vessel and hand or tool anchors.",
+        "Perform exactly one irreversible operation per beat and preserve visible residue into the next.",
+        "Keep food color, quantity and container transitions plausible through cooking and plating.",
+        "End with the same plated serving and one restrained taste by the same adult."
+      ],
+      "usage_steps": [
+        "把示例主体、场景和表层元素替换为原创概念。",
+        "让每个必需锚点和 Creative DNA 不可变条件都能在画面因果链中被看见。",
+        "选择 MiniMax H3 或 Seedance 2.0 模板，只填写已声明的可替换项。",
+        "生成前检查时长、事件顺序、镜头连续性、声音和反复制约束。"
+      ],
+      "applicable_scope": [
+        "同一明确成年厨师、厨房、主食材与关键工具持续锁定，每镜只推动一次不可逆食品状态变化，并让上一状态残留成为下一步原料；用颜色、容器和手部锚点防止食材跳变。成品装盘后必须由同一人物完成一次克制品尝。",
+        "能够保留全部必需锚点的原创 4–15 秒短片。",
+        "需要可复用因果视频结构的 MiniMax H3 或 Seedance 2.0 项目。"
+      ],
+      "not_suitable_for": [
+        "要求复制来源人物、场景、道具、对白或镜头顺序的任务。",
+        "无法在目标时长内展示全部必需锚点的概念。",
+        "缺少紧凑因果链的长篇讲解或无关多地点叙事。"
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "锁定同一成年厨师、厨房与主食材，每一步只推进一次不可逆烹饪状态；前一步残留进入下一步，最后由装盘和品尝证明成品。 The reusable mechanism preserves causal order, spatial anchors and the final proof while replacing every source-specific person, location, object, wording, choreography and design.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "One adult cook, kitchen and ingredient set persist.",
+          "purpose": "Establishes the baseline identity, object or geography that every later state must preserve.",
+          "ablation_failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One adult cook, kitchen and ingredient set persist.\"",
+          "evidence_ids": [
+            "beat-01",
+            "obs-01",
+            "obs-02",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Every step creates an observable state change.",
+          "purpose": "Makes the visible trigger precede and explain the first mechanism response.",
+          "ablation_failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every step creates an observable state change.\"",
+          "evidence_ids": [
+            "beat-02",
+            "obs-03",
+            "obs-04",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Previous-state material remains available to the next step.",
+          "purpose": "Keeps the middle progression registered instead of allowing an unexplained reset.",
+          "ablation_failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Previous-state material remains available to the next step.\"",
+          "evidence_ids": [
+            "beat-03",
+            "obs-05",
+            "obs-06",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-04",
+          "rule": "Tool and container identity stay stable.",
+          "purpose": "Reconnects the changed or partial state to the established subject and spatial anchor.",
+          "ablation_failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Tool and container identity stay stable.\"",
+          "evidence_ids": [
+            "beat-04",
+            "obs-07",
+            "obs-08",
+            "obs-16"
+          ]
+        },
+        {
+          "id": "inv-05",
+          "rule": "Plating and tasting provide final proof.",
+          "purpose": "Turns the terminal hold into observable proof that the mechanism completed.",
+          "ablation_failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"Plating and tasting provide final proof.\"",
+          "evidence_ids": [
+            "beat-05",
+            "obs-09",
+            "obs-10",
+            "obs-16"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "lead_subject",
+          "constraint": "An original stable subject or pair with a readable role."
+        },
+        {
+          "name": "setting",
+          "constraint": "A new setting with fixed spatial anchors and no source-specific surface."
+        },
+        {
+          "name": "escalation_variable",
+          "constraint": "One causal variable that changes through visible stages."
+        },
+        {
+          "name": "performance_rule",
+          "constraint": "A restrained acting or motion rule that keeps the mechanism legible."
+        },
+        {
+          "name": "camera_grammar",
+          "constraint": "An information order that proves each state without copying source shot boundaries."
+        },
+        {
+          "name": "payoff",
+          "constraint": "A clean final physical, informational or social consequence."
+        },
+        {
+          "name": "sound_family",
+          "constraint": "An original hierarchy of diegetic cues; no unsupported source-audio claim."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "all source faces, bodies, wardrobe, identities and creator-specific character designs",
+        "the source location, set dressing, props, products and exact environmental geometry",
+        "all source words, logos, watermarks, typefaces and brand identifiers",
+        "the source choreography, exact camera path, shot durations and transition timing",
+        "the source palette, signature effects, prompt wording, creator handle and narrative particulars"
+      ],
+      "instantiations": [
+        {
+          "concept": "Pear and oat batter become a browned skillet pancake and are tasted.",
+          "prompt_seed": "Pear and oat batter become a browned skillet pancake and are tasted."
+        },
+        {
+          "concept": "Beetroot and rice become filled rolls, are plated and receive one bite test.",
+          "prompt_seed": "Beetroot and rice become filled rolls, are plated and receive one bite test."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Without this exact baseline rule, later changes cannot be attributed to the same subject, object or place, so the sequence loses its reference state. Removed rule: \"One adult cook, kitchen and ingredient set persist.\"",
+          "repair": "One adult cook, kitchen and ingredient set persist."
+        },
+        {
+          "failure": "Without this exact trigger rule, the response appears spontaneously and the central cause-and-effect claim is no longer demonstrated. Removed rule: \"Every step creates an observable state change.\"",
+          "repair": "Every step creates an observable state change."
+        },
+        {
+          "failure": "Without this exact progression rule, the middle can jump to a replacement state and the accumulated result is no longer traceable. Removed rule: \"Previous-state material remains available to the next step.\"",
+          "repair": "Previous-state material remains available to the next step."
+        },
+        {
+          "failure": "Without this exact reconnection rule, detail or transformed shots can belong to a different subject or geography and continuity cannot be verified. Removed rule: \"Tool and container identity stay stable.\"",
+          "repair": "Tool and container identity stay stable."
+        },
+        {
+          "failure": "Without this exact terminal-proof rule, the sequence stops on motion alone and never confirms the promised outcome or preserved aftermath. Removed rule: \"Plating and tasting provide final proof.\"",
+          "repair": "Plating and tasting provide final proof."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "Pear and oat batter become a browned skillet pancake and are tasted.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        },
+        {
+          "concept": "Beetroot and rice become filled rolls, are plated and receive one bite test.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03",
+            "inv-04",
+            "inv-05"
+          ],
+          "changed_slots": [
+            "lead_subject",
+            "setting",
+            "escalation_variable",
+            "performance_rule",
+            "camera_grammar",
+            "payoff",
+            "sound_family"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "Chinese interface editorial pass with canonical English Creative DNA preserved"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "complexity": "moderate",
+  "mechanism": "Track one lead through a crowded airborne opening, one direction change visibly close to a fixed surface, a brief wide geography reset and a final weighted landing that resolves accumulated motion. The source touches a roof in the middle phase; the drone transfer stays airborne above a deck until the final pad landing.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Keep one tracked lead through an opening airborne cluster and a direction change visibly close to a fixed surface; source contact and transferred near-surface flight need not have identical physics.",
+      "purpose": "Audience can follow a protagonist despite high motion density.",
+      "ablation_failure": "Without stable lead and terrain, the action reads as unrelated clips.",
+      "evidence_ids": [
+        "obs-02",
+        "obs-05",
+        "beat-01",
+        "beat-02"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Reopen geography after the near-surface direction-change phase before the final descent.",
+      "purpose": "Restores travel direction and depth.",
+      "ablation_failure": "Without the wider reset the final landing has no readable origin.",
+      "evidence_ids": [
+        "obs-08",
+        "obs-13",
+        "beat-03"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "Close on a physical braced landing with visible residual motion.",
+      "purpose": "Provides a measurable payoff and end state.",
+      "ablation_failure": "An airborne freeze or weightless disappearance leaves motion unresolved.",
+      "evidence_ids": [
+        "obs-14",
+        "obs-16",
+        "beat-04"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "lead",
+      "constraint": "One visually persistent adult performer or machine."
+    },
+    {
+      "name": "airspace",
+      "constraint": "Clear elevation and near/far lanes."
+    },
+    {
+      "name": "ground_plane",
+      "constraint": "A physical surface for the mid-beat and final landing."
+    },
+    {
+      "name": "secondary_movers",
+      "constraint": "Distinct from lead, no duplicate identity."
+    },
+    {
+      "name": "camera_reset",
+      "constraint": "One wider view before final descent."
+    },
+    {
+      "name": "landing_residue",
+      "constraint": "Small material movement that settles after contact."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "No source faces, dark martial costume, traditional rooftops, skyline combination, sparks or blows.",
+    "No unverified injury or lethal force.",
+    "No hovering final pose: land with contact and residual motion."
+  ],
+  "instantiations": [
+    {
+      "concept": "At a coastal wind-energy test range, one orange inspection drone is the tracked lead among several dark service drones. In one ten-second run it crosses above turbine support platforms, drops to skim over a marked deck, banks around a stationary safety mast, then the camera opens to show the full array and the lead descends onto its dedicated landing pad. Rotor wash moves only lightweight dust at the pad; all drones stay separate and no collisions occur.",
+      "prompt_seed": "Orange inspection drone, coastal wind array, deck skim, wide reset, marked landing pad."
+    },
+    {
+      "concept": "At a bright indoor aerial-acrobatics arena, one adult performer in a teal safety harness passes through two suspended rings, lands briefly on a sprung mat to change direction, takes a second assisted swing as the camera widens to show rigging, then returns to a stable mat landing. All aerial movement has visible rig and safe mat contact.",
+      "prompt_seed": "Adult harness acrobat, indoor rings, sprung mat, wider rig reveal, safe final landing."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Lead loses identity among secondary movers.",
+      "repair": "Assign one consistent color/silhouette and track it through all beats."
+    },
+    {
+      "failure": "Near-surface phase has no readable relation to the surface.",
+      "repair": "For a drone show a consistent low altitude above the deck; for an acrobat show actual mat contact."
+    },
+    {
+      "failure": "Final landing happens offscreen.",
+      "repair": "Keep pad and contact in frame through dust settlement."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "At a coastal wind-energy test range, one orange inspection drone is the tracked lead among several dark service drones. In one ten-second run it crosses above turbine support platforms, drops to skim over a marked deck, banks around a stationary safety mast, then the camera opens to show the full array and the lead descends onto its dedicated landing pad. Rotor wash moves only lightweight dust at the pad; all drones stay separate and no collisions occur.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "lead",
+        "airspace",
+        "ground_plane",
+        "secondary_movers",
+        "camera_reset",
+        "landing_residue"
+      ]
+    },
+    {
+      "concept": "At a bright indoor aerial-acrobatics arena, one adult performer in a teal safety harness passes through two suspended rings, lands briefly on a sprung mat to change direction, takes a second assisted swing as the camera widens to show rigging, then returns to a stable mat landing. All aerial movement has visible rig and safe mat contact.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "lead",
+        "airspace",
+        "ground_plane",
+        "secondary_movers",
+        "camera_reset",
+        "landing_residue"
+      ]
+    }
+  ]
+}

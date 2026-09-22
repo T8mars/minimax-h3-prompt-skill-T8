@@ -1,0 +1,68 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-samuraipreneur-2102376128321315148-browser-2102376128321315148-video-1",
+  "slug": "familiar-object-interior-world-descent-return",
+  "title": "熟悉物件内藏世界｜透明揭示、下潜进入与来源回证",
+  "source_title": "键帽城市下潜｜从桌面按键进入微缩霓虹世界",
+  "summary": "先把普通物件作为尺度基线，再让局部透明揭示内部世界；镜头沿同一开口下潜、在内部完成空间证明，最后用原物件结构回证来源。",
+  "status": "released",
+  "source_duration_seconds": 14.464,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/familiar-object-interior-world-descent-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-samuraipreneur-2102376128321315148-browser-2102376128321315148-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-samuraipreneur-2102376128321315148-browser-2102376128321315148-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-familiar-object-interior-world-descent-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "熟悉物件＋内部世界＋进入开口＋来源回证",
+  "recommended_input": "黄铜桌面按键、微缩植物车站、透明键帽、同一开口下潜。",
+  "required_anchors": [
+    "先建立普通物件尺度",
+    "内部世界从原物件内显出",
+    "结尾回证仍在原容器内"
+  ],
+  "tags": [
+    "familiar",
+    "object",
+    "interior",
+    "world",
+    "descent",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.93,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-22T21:57:14+08:00",
+  "updated_at": "2026-09-22T22:31:47+08:00"
+}

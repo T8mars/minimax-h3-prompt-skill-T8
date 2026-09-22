@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-maybeegreen-2101766400230781294-browser-2101766400230781294-video-1",
+  "slug": "monument-scale-near-contact-return",
+  "title": "巨构近触｜尺度远景与微动作回望",
+  "source_title": "白鹿近树｜巨树尺度、足步特写与静止近景",
+  "summary": "巨型场景先把旅行者缩小，再靠近一个可读微动作，最后回原远景。",
+  "status": "released",
+  "source_duration_seconds": 15.13941,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/monument-scale-near-contact-return",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-maybeegreen-2101766400230781294-browser-2101766400230781294-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-maybeegreen-2101766400230781294-browser-2101766400230781294-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-monument-scale-near-contact-return-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "巨构＋旅行者＋近接微动作＋原位远景",
+  "recommended_input": "一名成年文物修复师、一座巨大的青铜水钟大厅、从开头已亮的少量校准灯和一个待检查的固定齿轮盒。",
+  "required_anchors": [
+    "远景建立大小对比",
+    "微动作位置可追踪",
+    "回远景维持同一地理"
+  ],
+  "tags": [
+    "monument",
+    "scale",
+    "near",
+    "contact",
+    "return"
+  ],
+  "quality": {
+    "weighted_score": 4.284,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:53:37+08:00",
+  "updated_at": "2026-09-21T19:09:43+08:00"
+}

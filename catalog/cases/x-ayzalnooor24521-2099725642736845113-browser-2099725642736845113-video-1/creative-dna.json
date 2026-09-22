@@ -1,0 +1,132 @@
+{
+  "complexity": "moderate",
+  "mechanism": "A sudden localized impact pins the first agent in one geometry; a guarded pause and offscreen anticipation precede a second entrant's brief tightly bounded exchange, then a close stable view identifies the primary agent.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "An abrupt arrival or impact establishes one fixed pressure point in the scene.",
+      "purpose": "Creates a concrete spatial problem.",
+      "ablation_failure": "Without the pressure point the later hold lacks cause.",
+      "evidence_ids": [
+        "obs-05",
+        "obs-06",
+        "beat-01"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Hold the first agent visibly poised while a second agent is delayed offscreen.",
+      "purpose": "Lets stillness store energy and direct gaze.",
+      "ablation_failure": "Immediate back-to-back impacts erase contrast and anticipation.",
+      "evidence_ids": [
+        "obs-09",
+        "obs-10",
+        "beat-02",
+        "beat-03"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "The second arrival triggers one short readable exchange, then isolate the first agent in a final identity hold.",
+      "purpose": "Converts tension into action and closes on a stable subject.",
+      "ablation_failure": "If the final frame is only chaotic motion, response and continuity are lost.",
+      "evidence_ids": [
+        "obs-11",
+        "obs-14",
+        "beat-04",
+        "beat-05"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "first_agent",
+      "constraint": "One clearly stable adult or machine."
+    },
+    {
+      "name": "pressure_point",
+      "constraint": "Visible safe localized impact and persistent mark or object."
+    },
+    {
+      "name": "second_agent",
+      "constraint": "Enters only after readable quiet hold."
+    },
+    {
+      "name": "exchange",
+      "constraint": "Short legible interaction without inferred injury."
+    },
+    {
+      "name": "final_identity",
+      "constraint": "Close stable subject/marker after exchange."
+    },
+    {
+      "name": "setting",
+      "constraint": "Original location, not copied station."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "No subway platform, passing train, tiled cylinder, damaged wall pattern, original woman's likeness or exact fighting choreography.",
+    "No unsupported injury, fatality or hidden motive claim.",
+    "Targets use safe non-contact or machine interaction, not real interpersonal harm."
+  ],
+  "instantiations": [
+    {
+      "concept": "In a clean industrial test hall, one autonomous inspection robot stops abruptly beside a red-marked pressure pad after a harmless foam calibration block drops from a ceiling rig directly into its forward sensor lane. The robot visibly detects the block and brakes before it. Its front sensor remains aimed at an empty entry lane during a long motor-idle hold. A second contrasting robot rolls in; the two execute a tightly spaced but non-colliding exchange of calibration arms at the same pad. End close on the first robot's sensor, both machines and dropped foam block still in their original positions.",
+      "prompt_seed": "Two industrial inspection robots, foam block impact, waiting sensor, safe calibration-arm exchange."
+    },
+    {
+      "concept": "In a brightly lit competitive dance rehearsal, an unambiguously adult lead dancer lands on one marked stage square as a lightweight scenic curtain snaps down behind her. She holds a poised stance while another adult partner enters from offstage; they trade three precise non-contact gesture phrases. End on the lead dancer's controlled gaze, with the curtain and stage mark unchanged.",
+      "prompt_seed": "Adult dance rehearsal, scenic curtain drop, poised dancer, non-contact duet and final gaze."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Second agent enters before a distinct held pause.",
+      "repair": "Leave several beats with first agent visibly ready."
+    },
+    {
+      "failure": "Exchange becomes continuous chaotic camera motion.",
+      "repair": "Keep marked floor location and short alternating actions visible."
+    },
+    {
+      "failure": "Final portrait resets damaged environment.",
+      "repair": "Retain the original safe impact object/mark in the ending geography."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "In a clean industrial test hall, one autonomous inspection robot stops abruptly beside a red-marked pressure pad after a harmless foam calibration block drops from a ceiling rig directly into its forward sensor lane. The robot visibly detects the block and brakes before it. Its front sensor remains aimed at an empty entry lane during a long motor-idle hold. A second contrasting robot rolls in; the two execute a tightly spaced but non-colliding exchange of calibration arms at the same pad. End close on the first robot's sensor, both machines and dropped foam block still in their original positions.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "first_agent",
+        "pressure_point",
+        "second_agent",
+        "exchange",
+        "final_identity",
+        "setting"
+      ]
+    },
+    {
+      "concept": "In a brightly lit competitive dance rehearsal, an unambiguously adult lead dancer lands on one marked stage square as a lightweight scenic curtain snaps down behind her. She holds a poised stance while another adult partner enters from offstage; they trade three precise non-contact gesture phrases. End on the lead dancer's controlled gaze, with the curtain and stage mark unchanged.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "first_agent",
+        "pressure_point",
+        "second_agent",
+        "exchange",
+        "final_identity",
+        "setting"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schema_version": "public-display-locale/v1",
+  "resource_kind": "case",
+  "resource_id": "x-hbcoop-2101762862083690640-browser-2101762862083690640-video-1",
+  "locale": "en",
+  "source_bindings": {
+    "manifest_sha256": "6c7d3af46da30daec20eeb0af7686272341a413b9ef0ccaef727a0e9b247e01e",
+    "creative_dna_sha256": "207dfc9f3480e374f0dd976baa6fd28eb641beece57f9dfe80f0c17ebe2179dd"
+  },
+  "content": {
+    "title": "Micro Ecology to World | Scale Ladder and Title",
+    "summary": "A tiny lit ecological clue becomes a recognizable thread through an intermediate built habitat to a much larger world context, while readable credits accompany movement and a fresh title holds after the scale reveal.",
+    "quick_start": {
+      "input_format": "Introduce one small light/life cue in an intimate composition and retain a recognizable visual motif as the scale grows. + Advance through at least one inhabited/constructed intermediate ecology before revealing its larger geographic or planetary container. + Place credits as readable overlays during travel and hold a distinct final original title on a visually calmer largest-scale frame.",
+      "recommended_input": "An original polar ecology documentary opening: a microscope view of a living microbe inside an ice-core bubble catches an amber glint; the camera then pulls back to the microscope table and the amber motif recurs on the physical ice-core sample tag and across an ice tunnel toward a field station, then resolves as one amber survey route on an overhead ice-field map; hold the new title 'LIVING ICE' in a steady final frame.",
+      "required_anchors": [
+        "同一线索跨尺度",
+        "空间逐级扩大",
+        "片名在最终尺度稳定可读"
+      ],
+      "usage_steps": [
+        "Replace the example subject, setting, and surface details with an original concept.",
+        "Keep every required anchor and Creative DNA invariant causally visible.",
+        "Choose the MiniMax H3 or Seedance 2.0 prompt and fill only the declared variable slots.",
+        "Check duration, event order, camera continuity, sound, and anti-copy constraints before generation."
+      ],
+      "applicable_scope": [
+        "A tiny lit ecological clue becomes a recognizable thread through an intermediate built habitat to a much larger world context, while readable credits accompany movement and a fresh title holds after the scale reveal.",
+        "Original 4–15 second concepts that can preserve every required anchor.",
+        "MiniMax H3 or Seedance 2.0 projects that need a reusable causal video structure."
+      ],
+      "not_suitable_for": [
+        "Requests that copy the source identity, setting, props, dialogue, or shot order.",
+        "Concepts that cannot show all required anchors inside the target duration.",
+        "Long-form exposition or unrelated multi-location stories without a compact causal chain."
+      ]
+    },
+    "creative_dna": {
+      "complexity": "moderate",
+      "mechanism": "A tiny lit ecological clue becomes a recognizable thread through an intermediate built habitat to a much larger world context, while readable credits accompany movement and a fresh title holds after the scale reveal.",
+      "invariants": [
+        {
+          "id": "inv-01",
+          "rule": "Introduce one small light/life cue in an intimate composition and retain a recognizable visual motif as the scale grows.",
+          "purpose": "Gives the audience a thread across spaces.",
+          "ablation_failure": "Unrelated pretty macro images will not connect to the later environment.",
+          "evidence_ids": [
+            "obs-02",
+            "obs-15",
+            "beat-01"
+          ]
+        },
+        {
+          "id": "inv-02",
+          "rule": "Advance through at least one inhabited/constructed intermediate ecology before revealing its larger geographic or planetary container.",
+          "purpose": "Creates a stepped scale ladder rather than an arbitrary cut to space.",
+          "ablation_failure": "Skipping the middle habitat makes the cosmic image decorative rather than earned.",
+          "evidence_ids": [
+            "obs-06",
+            "obs-10",
+            "beat-02",
+            "beat-03"
+          ]
+        },
+        {
+          "id": "inv-03",
+          "rule": "Place credits as readable overlays during travel and hold a distinct final original title on a visually calmer largest-scale frame.",
+          "purpose": "Makes the sequence function as a usable title opening.",
+          "ablation_failure": "Moving text or premature title loses hierarchy and readability.",
+          "evidence_ids": [
+            "obs-05",
+            "obs-09",
+            "obs-12",
+            "beat-03"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "name": "micro_clue",
+          "constraint": "One distinctive life/light/material cue visible first at close scale."
+        },
+        {
+          "name": "intermediate_habitat",
+          "constraint": "A coherent built or natural environment that spatially relates to the micro cue."
+        },
+        {
+          "name": "large_container",
+          "constraint": "Larger world/context revealed after the habitat, not immediately."
+        },
+        {
+          "name": "motif_handoff",
+          "constraint": "A traceable color/shape/light feature across all scales."
+        },
+        {
+          "name": "credit_system",
+          "constraint": "Small readable credits that do not obscure the visual clue."
+        },
+        {
+          "name": "title",
+          "constraint": "Original short legible title, held in a calmer final frame."
+        },
+        {
+          "name": "sound",
+          "constraint": "Original audio arc; no attribution to unheard source soundtrack."
+        }
+      ],
+      "anti_copy_exclusions": [
+        "No source title 'NINE MINUTES OF SUN', creator names, exact credit wording or source series premise.",
+        "No orbital seed archive, plant racks, circular planet porthole, space-station glide, exact droplet lens flare or source color/camera compositions in the primary output.",
+        "Do not invent a visible countdown or assert source sound events."
+      ],
+      "instantiations": [
+        {
+          "concept": "An original polar ecology documentary opening: a microscope view of a living microbe inside an ice-core bubble catches an amber glint; the camera then pulls back to the microscope table and the amber motif recurs on the physical ice-core sample tag and across an ice tunnel toward a field station, then resolves as one amber survey route on an overhead ice-field map; hold the new title 'LIVING ICE' in a steady final frame.",
+          "prompt_seed": "Polar ecology documentary; living microbe in ice bubble, amber physical sample tag, field tunnel and ice survey route, original title LIVING ICE."
+        },
+        {
+          "concept": "An original underwater reef-monitoring opening: one fluorescent coral polyp emits a violet pulse; the pulse appears on a diver's sample gauge, then is tracked by an exterior sensor buoy before an overhead reef-current chart reveals the larger ecosystem; hold the new title 'REEF PULSE' in a calm final frame.",
+          "prompt_seed": "Underwater reef-monitoring opening; violet coral pulse, diver gauge, sensor buoy and reef-current chart, original title REEF PULSE."
+        }
+      ],
+      "failure_modes": [
+        {
+          "failure": "Macro clue vanishes and the later environment is unrelated.",
+          "repair": "Repeat one measurable light/color/shape signal at intermediate and large scale."
+        },
+        {
+          "failure": "Credits become unreadable over busy moving imagery.",
+          "repair": "Place short credits in protected negative space and reserve a stable end frame for title."
+        },
+        {
+          "failure": "Scale jumps directly from micro to planet.",
+          "repair": "Include an intermediate habitat shot with directional camera travel."
+        }
+      ],
+      "transfer_tests": [
+        {
+          "concept": "An original polar ecology documentary opening: a microscope view of a living microbe inside an ice-core bubble catches an amber glint; the camera then pulls back to the microscope table and the amber motif recurs on the physical ice-core sample tag and across an ice tunnel toward a field station, then resolves as one amber survey route on an overhead ice-field map; hold the new title 'LIVING ICE' in a steady final frame.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "micro_clue",
+            "intermediate_habitat",
+            "large_container",
+            "motif_handoff",
+            "credit_system",
+            "title",
+            "sound"
+          ]
+        },
+        {
+          "concept": "An original underwater reef-monitoring opening: one fluorescent coral polyp emits a violet pulse; the pulse appears on a diver's sample gauge, then is tracked by an exterior sensor buoy before an overhead reef-current chart reveals the larger ecosystem; hold the new title 'REEF PULSE' in a calm final frame.",
+          "result": "pass",
+          "preserved_invariant_ids": [
+            "inv-01",
+            "inv-02",
+            "inv-03"
+          ],
+          "changed_slots": [
+            "micro_clue",
+            "intermediate_habitat",
+            "large_container",
+            "motif_handoff",
+            "credit_system",
+            "title",
+            "sound"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "approved",
+    "method": "canonical-source English editorial pass with terminology, identity, and stable-token validation"
+  }
+}

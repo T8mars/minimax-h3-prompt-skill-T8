@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-charaspowerai-2101265127584469270-browser-2101265127584469270-video-1",
+  "slug": "line-cut-material-word-reveal",
+  "title": "切线成字｜材料变化与可读停留",
+  "source_title": "切线破墙｜立体字形显露与解体",
+  "summary": "数次线性操作改写同一材料，让原创字形从物理变化中形成。",
+  "status": "released",
+  "source_duration_seconds": 15.168,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/line-cut-material-word-reveal",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2101265127584469270-browser-2101265127584469270-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-charaspowerai-2101265127584469270-browser-2101265127584469270-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-line-cut-material-word-reveal-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "原始材料＋线性操作＋原创短字＋终态",
+  "recommended_input": "深蓝摄影棚一整块透明冰和下方透明接冰托盘；三道琥珀色局部热裂线依次发生，最终真实负空间显示英文 LIFE。",
+  "required_anchors": [
+    "操作与材料反应同框",
+    "字形由同一材料形成",
+    "可读停留与后续终态分开"
+  ],
+  "tags": [
+    "line",
+    "cut",
+    "material",
+    "word",
+    "reveal"
+  ],
+  "quality": {
+    "weighted_score": 4.406,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:50:47+08:00",
+  "updated_at": "2026-09-21T18:45:07+08:00"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-100xmart-2101793529592783285-browser-2101793529592783285-video-1",
+  "slug": "foreground-witness-monument-handoff",
+  "title": "见证者退场｜前景横穿到远端巨构",
+  "source_title": "月下巨构｜前景退场、光形横穿与远景推进",
+  "summary": "以近处见证者建立尺度，镜头离开前景后让一次近景运动带出远方目的地。",
+  "status": "released",
+  "source_duration_seconds": 12.144036,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/foreground-witness-monument-handoff",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-100xmart-2101793529592783285-browser-2101793529592783285-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-100xmart-2101793529592783285-browser-2101793529592783285-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-foreground-witness-monument-handoff-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "前景见证者＋远端目标＋近景横穿＋远景停留",
+  "recommended_input": "清晨货港，一位成年线路工程师，安全栏杆，对岸同一座巨型悬索转运桥，近处三辆小型自动巡检车。",
+  "required_anchors": [
+    "远端目标先有锚点",
+    "前景移动有独立层次",
+    "最终远景清楚交接尺度"
+  ],
+  "tags": [
+    "foreground",
+    "witness",
+    "monument",
+    "handoff"
+  ],
+  "quality": {
+    "weighted_score": 4.342,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-21T15:53:47+08:00",
+  "updated_at": "2026-09-21T19:12:07+08:00"
+}

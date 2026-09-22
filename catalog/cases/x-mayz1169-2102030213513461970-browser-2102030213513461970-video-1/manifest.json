@@ -1,0 +1,67 @@
+{
+  "schema_version": "public-case/v1",
+  "case_id": "x-mayz1169-2102030213513461970-browser-2102030213513461970-video-1",
+  "slug": "interface-character-trigger-disruption-recovery",
+  "title": "界面角色触发扰动｜生理动作、图标失序与恢复",
+  "source_title": "桌面喷嚏事故｜角色动作使界面元素跳离后回收",
+  "summary": "先建立角色与原创界面的稳定关系，一次明确生理动作触发图标和窗口失序；角色主动追踪并回收关键元素，最终回到可辨工作状态。",
+  "status": "released",
+  "source_duration_seconds": 8.986122,
+  "target_duration_seconds": 15.0,
+  "models": [
+    "MiniMax H3",
+    "Seedance 2.0"
+  ],
+  "source_ref": "source.json",
+  "creative_dna_ref": "creative-dna.json",
+  "summary_ref": "SUMMARY.md",
+  "prompt_refs": {
+    "minimax_h3": "prompts/minimax-h3.md",
+    "seedance_2_0": "prompts/seedance-2.0.md"
+  },
+  "skill_ref": "../../../skills/interface-character-trigger-disruption-recovery",
+  "preview_refs": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2102030213513461970-browser-2102030213513461970-video-1/preview.mp4"
+  },
+  "preview_paths": {
+    "gif": "preview.gif",
+    "poster": "poster.webp",
+    "mp4": "media/x-mayz1169-2102030213513461970-browser-2102030213513461970-video-1/preview.mp4"
+  },
+  "preview_status": {
+    "gif": "available",
+    "poster": "available",
+    "mp4": "available_in_electron_media_pack"
+  },
+  "template_id": "t8-case-interface-character-trigger-disruption-recovery-v1",
+  "template_action": "selector",
+  "duplicate_of": null,
+  "input_format": "界面角色＋单次触发＋封闭图标组＋主动恢复",
+  "recommended_input": "成年纸片技师、中性工作台界面、六个几何工具图标、一次喷嚏。",
+  "required_anchors": [
+    "先建立稳定界面",
+    "一次触发导致全部偏移",
+    "同一角色恢复并保留轻微痕迹"
+  ],
+  "tags": [
+    "interface",
+    "character",
+    "trigger",
+    "disruption",
+    "recovery"
+  ],
+  "quality": {
+    "weighted_score": 4.93,
+    "scale": 5,
+    "anti_copy_passed": true,
+    "prompt_validation": {
+      "minimax_h3": true,
+      "seedance_2_0": true
+    },
+    "release_passed": true
+  },
+  "created_at": "2026-09-22T21:57:14+08:00",
+  "updated_at": "2026-09-22T22:31:47+08:00"
+}

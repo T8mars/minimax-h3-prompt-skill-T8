@@ -1,0 +1,138 @@
+{
+  "complexity": "simple",
+  "mechanism": "A protective prop first reads as necessary, then a brief lull tempts an adult operator to move it aside; the camera holds a confident exposed interval before the same environment delivers one delayed benign material burst and an immediately readable reaction.",
+  "invariants": [
+    {
+      "id": "inv-01",
+      "rule": "Establish active shelter and a stable external material source in one shared geography.",
+      "purpose": "Makes protection and later exposure physically intelligible.",
+      "ablation_failure": "Without visible initial protection, the late burst becomes generic slapstick.",
+      "evidence_ids": [
+        "obs-02",
+        "obs-03",
+        "beat-01"
+      ]
+    },
+    {
+      "id": "inv-02",
+      "rule": "Show the protection being deliberately removed, then a short confidently exposed action before the burst.",
+      "purpose": "Creates timing and anticipatory vulnerability.",
+      "ablation_failure": "If burst arrives at the exact instant of removal, there is no reversal beat.",
+      "evidence_ids": [
+        "obs-09",
+        "obs-11",
+        "beat-02",
+        "beat-03"
+      ]
+    },
+    {
+      "id": "inv-03",
+      "rule": "The late burst comes from the already established environment and leaves a persistent changed material state and visible reaction.",
+      "purpose": "Closes the comic cause-effect chain.",
+      "ablation_failure": "An unrelated surprise or instantly dry reset breaks payoff continuity.",
+      "evidence_ids": [
+        "obs-12",
+        "obs-13",
+        "obs-14",
+        "beat-04"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "adult_operator",
+      "constraint": "Unambiguously adult practitioner with a task."
+    },
+    {
+      "name": "shelter",
+      "constraint": "One movable protective prop with visible open/closed or in/out state."
+    },
+    {
+      "name": "hazard_source",
+      "constraint": "Visible, harmless material source established before lull."
+    },
+    {
+      "name": "confident_action",
+      "constraint": "Brief task advance after removing shelter."
+    },
+    {
+      "name": "late_burst",
+      "constraint": "Single delayed event from same source."
+    },
+    {
+      "name": "reaction",
+      "constraint": "Visible, grounded change without injury."
+    },
+    {
+      "name": "material",
+      "constraint": "Physical flour, paper, mist or another benign medium."
+    }
+  ],
+  "anti_copy_exclusions": [
+    "No student-coded uniform, youthful anime face, burgundy umbrella, maple street or exact rain splash pose.",
+    "No sexualized youthful framing; all transfer performers are clearly adult.",
+    "Do not add a fabricated weather forecast or claim intentional sabotage."
+  ],
+  "instantiations": [
+    {
+      "concept": "At a bright professional pastry demonstration, an adult baker works under a transparent, shallow-sloped receiving hood hinged above the counter between the flour hopper and both baker and cake. The motor falls silent; she waits for loose flour on the hood to settle, then tilts the hood toward a built-in catch tray and swings it up sideways, checks that the cake is clear, and steps forward smiling to reveal it. A delayed latch in the same visible hopper releases one harmless flour cascade onto the now-open counter and her apron. She freezes, eyebrows raised, with the hood still raised and the new white flour accumulated below.",
+      "prompt_seed": "Adult pastry demo, shallow sloped overhead receiving hood between hopper and work area, catch tray, hood raised, proud cake reveal, delayed benign flour cascade."
+    },
+    {
+      "concept": "At an adult puppetry rehearsal, a stage maker waits under a clear safety canopy while a confetti test rig runs. The rig becomes quiet, she swings the canopy aside and steps forward to inspect a puppet. A delayed last batch of paper strips drops from the visible overhead chute; she stops with an exaggerated surprised look while the strips pile around the puppet stand.",
+      "prompt_seed": "Adult puppet stage, safety canopy, quiet paper-strip test rig, canopy aside, brief inspection, delayed confetti fall."
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure": "Delayed burst comes from an unseen new device.",
+      "repair": "Show the hopper/chute before the lull and retain its spatial position."
+    },
+    {
+      "failure": "No time between removal and burst.",
+      "repair": "Give one clear confident task action and facial shift before the late event."
+    },
+    {
+      "failure": "Subject and prop become clean again immediately.",
+      "repair": "Hold the deposited material, open shield and startled performer in one final frame."
+    }
+  ],
+  "transfer_tests": [
+    {
+      "concept": "At a bright professional pastry demonstration, an adult baker works under a transparent, shallow-sloped receiving hood hinged above the counter between the flour hopper and both baker and cake. The motor falls silent; she waits for loose flour on the hood to settle, then tilts the hood toward a built-in catch tray and swings it up sideways, checks that the cake is clear, and steps forward smiling to reveal it. A delayed latch in the same visible hopper releases one harmless flour cascade onto the now-open counter and her apron. She freezes, eyebrows raised, with the hood still raised and the new white flour accumulated below.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "adult_operator",
+        "shelter",
+        "hazard_source",
+        "confident_action",
+        "late_burst",
+        "reaction",
+        "material"
+      ]
+    },
+    {
+      "concept": "At an adult puppetry rehearsal, a stage maker waits under a clear safety canopy while a confetti test rig runs. The rig becomes quiet, she swings the canopy aside and steps forward to inspect a puppet. A delayed last batch of paper strips drops from the visible overhead chute; she stops with an exaggerated surprised look while the strips pile around the puppet stand.",
+      "result": "pass",
+      "preserved_invariant_ids": [
+        "inv-01",
+        "inv-02",
+        "inv-03"
+      ],
+      "changed_slots": [
+        "adult_operator",
+        "shelter",
+        "hazard_source",
+        "confident_action",
+        "late_burst",
+        "reaction",
+        "material"
+      ]
+    }
+  ]
+}
