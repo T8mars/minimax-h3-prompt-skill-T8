@@ -687,9 +687,18 @@ This section is generated from `catalog/manifest.json`, each case's reviewed Eng
 ### Use the desktop viewer
 
 1. Open [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases).
-2. On Windows, download either `T8-Prompt-Library-Setup-v1.4.7.exe` or the no-install `T8-Prompt-Library-Portable-v1.4.7.exe`; on macOS, download `T8-Prompt-Library-v1.4.7-mac-universal.dmg`.
+2. On Windows, download either `T8-Prompt-Library-Setup-v1.4.8.exe` or the no-install `T8-Prompt-Library-Portable-v1.4.8.exe`; on macOS, download `T8-Prompt-Library-v1.4.8-mac-universal.dmg`.
 3. Install the setup build normally, or place the portable executable in a writable folder and run it directly. Portable personal data stays in the adjacent `T8-Prompt-Library-Data` directory.
-4. The installed Windows build updates only after user confirmation. The Windows portable build and current unsigned macOS build update manually through the Releases page.
+4. If a case says that the full MP4 is not installed, download only `prompt-library-media-v1.4.8-part1.zip`, `prompt-library-media-v1.4.8-part2.zip`, and `prompt-library-media-v1.4.8-part3.zip` from that same Release. Click **Where do the files go? → Open media folder** in the notice, then extract the contents of all three ZIP files directly into that one folder. Confirm that `media-pack-manifest.json` is at the folder root and restart the app. Do not extract the three parts into three separate folders.
+5. The installed Windows build updates only after user confirmation. The Windows portable build and current unsigned macOS build update manually through the Releases page.
+
+Default full-video locations:
+
+- installed Windows build: `%APPDATA%\T8 Prompt Library\media\`;
+- Windows portable build: `T8-Prompt-Library-Data\media\` beside the portable EXE;
+- macOS: `~/Library/Application Support/T8 Prompt Library/media/`.
+
+You do **not** need `prompt-library-catalog-*.zip`, `prompt-library-previews-*.zip`, or `prompt-library-skills-*.zip` merely to enable full MP4 playback; those are separate catalog, original-GIF, and Skills archives. The in-app button shows the actual path used on the current computer and takes precedence. See [Installing the complete videos](./docs/installation.md#完整视频如何进入应用) for the full instructions.
 
 The project ships installed and portable Windows x64 builds plus universal macOS packages for Intel and Apple Silicon. The macOS preview is not Apple-signed or notarized; verify its SHA-256 before installation. See the [installation guide](./docs/installation.md) for details.
 
@@ -750,7 +759,7 @@ CI checks the public boundary, secrets, paths, directory layout, case status, an
 
 ## Versioning and updates
 
-The current target version is **v1.4.7**. Releases use decimal carry:
+The current target version is **v1.4.8**. Releases use decimal carry:
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -773,6 +782,7 @@ v1.4.3 -> v1.4.4
 v1.4.4 -> v1.4.5
 v1.4.5 -> v1.4.6
 v1.4.6 -> v1.4.7
+v1.4.7 -> v1.4.8
 v1.9.9 -> v2.0.0
 ```
 

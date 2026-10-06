@@ -2,6 +2,8 @@ const { contextBridge, ipcRenderer } = require("electron");
 
 const api = Object.freeze({
   loadCatalog: () => ipcRenderer.invoke("catalog:load"),
+  mediaInstallInfo: () => ipcRenderer.invoke("media:install-info"),
+  openMediaFolder: () => ipcRenderer.invoke("media:open-folder"),
   openExternal: (url) => ipcRenderer.invoke("external:open", url),
   copyText: (text) => ipcRenderer.invoke("clipboard:write", text),
   promptProviders: () => ipcRenderer.invoke("prompt:providers"),

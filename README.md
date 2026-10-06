@@ -689,9 +689,18 @@ GitHub 的 GIF 是快速预览，不替代原视频。每个案例都保留作�
 ### 使用桌面查看器
 
 1. 打开 [Releases](https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases)。
-2. Windows 可下载安装版 `T8-Prompt-Library-Setup-v1.4.7.exe`，或无需安装的 `T8-Prompt-Library-Portable-v1.4.7.exe`；macOS 下载 `T8-Prompt-Library-v1.4.7-mac-universal.dmg`。
+2. Windows 可下载安装版 `T8-Prompt-Library-Setup-v1.4.8.exe`，或无需安装的 `T8-Prompt-Library-Portable-v1.4.8.exe`；macOS 下载 `T8-Prompt-Library-v1.4.8-mac-universal.dmg`。
 3. 安装版正常安装后启动；便携版放入可写目录直接运行，个人数据会保存在程序旁的 `T8-Prompt-Library-Data`。
-4. Windows 安装版可在应用内检查并由用户确认安装更新；Windows 便携版与当前未签名 macOS 版本通过 Releases 页面手动更新。
+4. 如果详情页提示“完整 MP4 尚未安装”，只需再下载同一 Release 的 `prompt-library-media-v1.4.8-part1.zip`、`prompt-library-media-v1.4.8-part2.zip`、`prompt-library-media-v1.4.8-part3.zip`。在提示条中点击“这些文件放哪里？”→“打开媒体目录”，把三个 ZIP 的内容全部直接解压到这个同一个目录，确认 `media-pack-manifest.json` 位于目录根部，然后重启应用。不要把三个分卷分别解压成三个文件夹。
+5. Windows 安装版可在应用内检查并由用户确认安装更新；Windows 便携版与当前未签名 macOS 版本通过 Releases 页面手动更新。
+
+完整视频的默认放置位置：
+
+- Windows 安装版：`%APPDATA%\T8 Prompt Library\media\`；
+- Windows 便携版：便携 EXE 同级的 `T8-Prompt-Library-Data\media\`；
+- macOS：`~/Library/Application Support/T8 Prompt Library/media/`。
+
+为了播放完整 MP4，**不需要**下载 `prompt-library-catalog-*.zip`、`prompt-library-previews-*.zip` 或 `prompt-library-skills-*.zip`；它们是独立目录、原始 GIF 预览和 Skills 资源包。应用内按钮显示的是本机实际使用路径，优先以它为准。完整图文说明见 [安装指南：完整视频如何进入应用](./docs/installation.md#完整视频如何进入应用)。
 
 当前提供 Windows x64 安装版、Windows x64 便携版与 universal macOS（Intel + Apple Silicon）安装包。macOS 预览包尚未 Apple 签名或公证，安装前请核对 SHA-256；更详细说明见 [安装指南](./docs/installation.md)。
 
@@ -752,7 +761,7 @@ CI 会执行公开边界、秘密、路径、目录结构、案例状态和 Skil
 
 ## 版本与更新
 
-当前目标版本是 **v1.4.7**。项目使用十进制进位：
+当前目标版本是 **v1.4.8**。项目使用十进制进位：
 
 ```text
 v1.0.0 -> ... -> v1.0.9 -> v1.1.0
@@ -775,6 +784,7 @@ v1.4.3 -> v1.4.4
 v1.4.4 -> v1.4.5
 v1.4.5 -> v1.4.6
 v1.4.6 -> v1.4.7
+v1.4.7 -> v1.4.8
 v1.9.9 -> v2.0.0
 ```
 

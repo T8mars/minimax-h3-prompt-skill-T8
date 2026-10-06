@@ -4,7 +4,7 @@ const os = require("node:os");
 const path = require("node:path");
 const test = require("node:test");
 
-const { resolveMediaRoot } = require("../lib/media-roots.cjs");
+const { hasMediaManifest, resolveMediaRoot } = require("../lib/media-roots.cjs");
 
 function fixture(t) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "t8-media-roots-"));
@@ -69,4 +69,13 @@ test("missing sidecar falls back to the stable user-data extraction target", (t)
     userDataDir
   });
   assert.equal(resolved, path.join(userDataDir, "media"));
+});
+
+test("media readiness requires the manifest at the extraction root", (t) => {
+  const root = fixture(t);
+  fs.mkdirSync(path.join(root, "part1"), { recursive: true });
+  fs.writeFileSync(path.join(root, "part1", "media-pack-manifest.json"), "{}\n");
+  assert.equal(hasMediaManifest(root), false, "a separately nested archive must not look mounted");
+  fs.writeFileSync(path.join(root, "media-pack-manifest.json"), "{}\n");
+  assert.equal(hasMediaManifest(root), true);
 });

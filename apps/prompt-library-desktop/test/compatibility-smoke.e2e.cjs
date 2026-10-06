@@ -8,7 +8,8 @@ const { installElectronExitCleanup, launchElectronApplication } = require("./ele
 async function run() {
   const appDir = path.resolve(__dirname, "..");
   const userDataDir = fs.mkdtempSync(path.join(os.tmpdir(), "t8-compatibility-smoke-"));
-  const electronApp = await launchElectronApplication(electron, { appDir, userDataDir });
+  const emptyMediaDir = path.join(userDataDir, "empty-media");
+  const electronApp = await launchElectronApplication(electron, { appDir, userDataDir, env: { T8_MEDIA_DIR: emptyMediaDir } });
   const removeExitCleanup = installElectronExitCleanup(electronApp);
 
   try {
@@ -18,6 +19,13 @@ async function run() {
 
     await page.locator(".case-card").first().click();
     await page.waitForSelector("#case-dialog[open]");
+    await page.locator("#detail-media .media-fallback button").click();
+    await page.waitForSelector("#media-install-dialog[open]");
+    assert.equal(await page.locator("#media-install-path").textContent(), emptyMediaDir, "the guide must show the actual Main-resolved media directory");
+    assert.match(await page.locator("#media-install-steps").textContent(), /prompt-library-media-v[\d.]+-part1\.zip/u);
+    assert.match(await page.locator("#media-install-steps").textContent(), /media-pack-manifest\.json/u);
+    await page.locator("#done-media-install").click();
+    await page.locator("#media-install-dialog").waitFor({ state: "hidden" });
     await electronApp.evaluate(async ({ clipboard }) => clipboard.writeText("t8-copy-sentinel"));
     await page.locator("#copy-overview").click();
     await page.waitForFunction(() => document.querySelector("#copy-overview")?.dataset.copyState === "success");
@@ -25,7 +33,7 @@ async function run() {
     assert.match(copied, /^# .+\n/u, "copy success feedback must follow a completed clipboard write");
     assert.equal(await page.locator("#copy-overview").isDisabled(), false, "copy feedback must not disable repeated use");
 
-    console.log("PASS Electron compatibility smoke: launch, Chinese default, dialog and clipboard");
+    console.log("PASS Electron compatibility smoke: launch, Chinese default, media guide, dialog and clipboard");
   } finally {
     removeExitCleanup();
     await electronApp.close();

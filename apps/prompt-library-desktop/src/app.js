@@ -132,7 +132,19 @@ const elements = {
   collectionMembershipItem: document.querySelector("#collection-membership-item"),
   collectionMembershipList: document.querySelector("#collection-membership-list"),
   membershipNewCollection: document.querySelector("#membership-new-collection"),
-  closeCollectionMembership: document.querySelector("#close-collection-membership")
+  closeCollectionMembership: document.querySelector("#close-collection-membership"),
+  mediaInstallDialog: document.querySelector("#media-install-dialog"),
+  mediaInstallTitle: document.querySelector("#media-install-title"),
+  mediaInstallIntro: document.querySelector("#media-install-intro"),
+  mediaInstallSteps: document.querySelector("#media-install-steps"),
+  mediaInstallPathLabel: document.querySelector("#media-install-path-label"),
+  mediaInstallPath: document.querySelector("#media-install-path"),
+  mediaInstallPathNote: document.querySelector("#media-install-path-note"),
+  mediaInstallStatus: document.querySelector("#media-install-status"),
+  closeMediaInstall: document.querySelector("#close-media-install"),
+  openMediaRelease: document.querySelector("#open-media-release"),
+  openMediaFolder: document.querySelector("#open-media-folder"),
+  doneMediaInstall: document.querySelector("#done-media-install")
 };
 
 const DISPLAY_LOCALE_KEY = "t8-display-locale";
@@ -167,6 +179,7 @@ const state = {
   locale: initialDisplayLocale(),
   sortMode: initialSortMode(),
   updateStatus: { state: "idle" },
+  mediaInstallInfo: null,
   toastTimer: null
 };
 
@@ -198,7 +211,8 @@ const UI = {
     h3ExecutableTitle: "MiniMax H3 executable prompt · English", h3ContractNote: "The official strict_english contract requires English prompt prose. The display-language switch changes the guide only; Copy preserves the validated English original.",
     seedanceExecutableTitle: "Seedance 2.0 executable prompt · Chinese", seedanceContractNote: "This Seedance 2.0 executable prompt is natively Chinese. Copy preserves the validated original.",
     metadataPromptTitle: "Localized access metadata", metadataPromptNote: "This is reviewed installation/access guidance rather than a generated-video prompt.",
-    structureGuideTitle: "Chinese structure guide (not executable)", structureGuideExecution: "Execution: keep the English original for MiniMax H3.", structureGuideShots: "Shot structure: {count} ordered shots.", structureGuideAnchors: "Required anchors: ", structureGuideSound: "Sound contract: overall_soundscape and non_diegetic_music remain English fields and prose."
+    structureGuideTitle: "Chinese structure guide (not executable)", structureGuideExecution: "Execution: keep the English original for MiniMax H3.", structureGuideShots: "Shot structure: {count} ordered shots.", structureGuideAnchors: "Required anchors: ", structureGuideSound: "Sound contract: overall_soundscape and non_diegetic_music remain English fields and prose.",
+    mediaFallbackNotice: "Full MP4 not installed; showing the real GIF/poster.", mediaInstallHelp: "Where do the files go?", mediaInstallTitle: "Install the full video pack", mediaInstallIntro: "Only the three media ZIP volumes from the same Release are required for full video playback. The catalog, preview, and Skills ZIP files do not need to be downloaded for this purpose.", mediaInstallPathLabel: "Extract all three archives into this folder", mediaInstallPathNote: "After extraction, media-pack-manifest.json must be directly inside this folder. Restart the app when extraction is complete.", mediaInstallMissing: "No complete media pack is detected at this location yet.", mediaInstallReady: "A media-pack manifest is present. Restart the app if videos still show GIF previews.", mediaOpenRelease: "Open Release downloads ↗", mediaOpenFolder: "Open media folder", mediaInstallDone: "Done", mediaFolderFailed: "Could not open the media folder", mediaReleaseFailed: "Could not open the Release page"
   },
   "zh-CN": {
     all: "全部", cases: "创意案例", official: "MiniMax 官方仓库 Skills", community: "非官方 Skills", favorites: "收藏", collections: "合集", history: "浏览历史",
@@ -227,7 +241,8 @@ const UI = {
     h3ExecutableTitle: "MiniMax H3 英文可执行原文", h3ContractNote: "官方 strict_english 合同要求提示词主体使用英文。中文按钮只切换讲解内容；复制仍保留经过验证的英文原文。",
     seedanceExecutableTitle: "Seedance 2.0 中文可执行原文", seedanceContractNote: "此案例的 Seedance 2.0 可执行提示词原生为中文；复制内容与经过验证的原文一致。",
     metadataPromptTitle: "本地化安装入口元数据", metadataPromptNote: "这里展示的是经过审核的安装与访问说明，不是视频生成提示词。",
-    structureGuideTitle: "中文结构导读（非可执行提示词）", structureGuideExecution: "执行要求：MiniMax H3 必须使用下方英文原文。", structureGuideShots: "镜头结构：共 {count} 个按顺序执行的镜头。", structureGuideAnchors: "必须保留：", structureGuideSound: "声音合同：overall_soundscape 与 non_diegetic_music 的字段名及正文保持英文。"
+    structureGuideTitle: "中文结构导读（非可执行提示词）", structureGuideExecution: "执行要求：MiniMax H3 必须使用下方英文原文。", structureGuideShots: "镜头结构：共 {count} 个按顺序执行的镜头。", structureGuideAnchors: "必须保留：", structureGuideSound: "声音合同：overall_soundscape 与 non_diegetic_music 的字段名及正文保持英文。",
+    mediaFallbackNotice: "完整 MP4 尚未安装，当前显示真实 GIF/海报。", mediaInstallHelp: "这些文件放哪里？", mediaInstallTitle: "安装完整视频包", mediaInstallIntro: "完整视频只需下载同一 Release 中的 3 个 media ZIP 分卷；为了播放 MP4，不需要下载 catalog、previews 或 skills ZIP。", mediaInstallPathLabel: "把 3 个分卷全部解压到这个目录", mediaInstallPathNote: "解压后，media-pack-manifest.json 必须直接位于此目录根部。全部解压完成后重启应用。", mediaInstallMissing: "此位置尚未检测到完整媒体包。", mediaInstallReady: "已检测到媒体包清单；如果仍显示 GIF，请重启应用。", mediaOpenRelease: "打开 Release 下载页 ↗", mediaOpenFolder: "打开媒体目录", mediaInstallDone: "完成", mediaFolderFailed: "无法打开媒体目录", mediaReleaseFailed: "无法打开 Release 下载页"
   }
 };
 
@@ -301,6 +316,7 @@ function updateGlobalChrome() {
   elements.closeCollectionMembership.textContent = t("done");
   renderUpdateStatus();
   updateDetailChrome();
+  if (elements.mediaInstallDialog.open && state.mediaInstallInfo) renderMediaInstallGuide(state.mediaInstallInfo);
 }
 
 function el(tag, className, text) {
@@ -1105,6 +1121,49 @@ function renderValidation(item) {
   }));
 }
 
+function renderMediaInstallGuide(info) {
+  const zh = state.locale === "zh-CN";
+  const version = state.catalog.catalogVersion || "<version>";
+  const archiveNames = [1, 2, 3].map((part) => `prompt-library-media-v${version}-part${part}.zip`);
+  elements.mediaInstallTitle.textContent = t("mediaInstallTitle");
+  elements.mediaInstallIntro.textContent = t("mediaInstallIntro");
+  elements.mediaInstallPathLabel.textContent = t("mediaInstallPathLabel");
+  elements.mediaInstallPath.textContent = info.mediaRoot || "media";
+  elements.mediaInstallPathNote.textContent = t("mediaInstallPathNote");
+  elements.mediaInstallStatus.textContent = t(info.manifestPresent ? "mediaInstallReady" : "mediaInstallMissing");
+  elements.mediaInstallStatus.classList.toggle("ready", info.manifestPresent === true);
+  elements.openMediaRelease.textContent = t("mediaOpenRelease");
+  elements.openMediaFolder.textContent = t("mediaOpenFolder");
+  elements.doneMediaInstall.textContent = t("mediaInstallDone");
+  elements.closeMediaInstall.setAttribute("aria-label", zh ? "关闭完整视频安装说明" : "Close full-video installation guide");
+  const stepTexts = zh
+    ? [
+        `在同一版本的 Release 中只下载这 3 个文件：${archiveNames.join("、")}。`,
+        "点击“打开媒体目录”，把 3 个 ZIP 的内容全部直接解压到该同一个目录；不要分别解压成 part1、part2、part3 文件夹。",
+        "确认目录根部能直接看到 media-pack-manifest.json，然后完全退出并重新启动应用。"
+      ]
+    : [
+        `From the same Release, download only these three files: ${archiveNames.join(", ")}.`,
+        "Click “Open media folder” and extract the contents of all three ZIP files directly into that one folder. Do not create separate part1, part2, or part3 folders.",
+        "Confirm that media-pack-manifest.json is directly inside the folder, then quit and restart the app."
+      ];
+  elements.mediaInstallSteps.replaceChildren(...stepTexts.map((text) => el("li", "", text)));
+}
+
+async function openMediaInstallGuide() {
+  try {
+    state.mediaInstallInfo = await api.mediaInstallInfo();
+    renderMediaInstallGuide(state.mediaInstallInfo);
+    if (!elements.mediaInstallDialog.open) elements.mediaInstallDialog.showModal();
+  } catch (error) {
+    showToast(`${t("mediaFolderFailed")}: ${error.message}`);
+  }
+}
+
+function closeMediaInstallGuide() {
+  if (elements.mediaInstallDialog.open) elements.mediaInstallDialog.close();
+}
+
 function renderDetailMedia(item) {
   const display = localized(item);
   elements.detailMedia.replaceChildren();
@@ -1142,9 +1201,13 @@ function renderDetailMedia(item) {
   } else {
     elements.detailMedia.append(el("div", "card-placeholder", "VP"));
   }
-  elements.detailMedia.append(el("p", "media-fallback", state.locale === "zh-CN"
-    ? "当前环境未挂载完整 MP4；显示真实 GIF/海报预览。安装完整媒体包后可直接播放视频。"
-    : "The full MP4 is not mounted in this environment. The real GIF/poster preview is shown; install the full media pack for video playback."));
+  const notice = el("div", "media-fallback");
+  notice.append(el("span", "", t("mediaFallbackNotice")));
+  const help = el("button", "button copy-secondary", t("mediaInstallHelp"));
+  help.type = "button";
+  help.addEventListener("click", openMediaInstallGuide);
+  notice.append(help);
+  elements.detailMedia.append(notice);
 }
 
 function activePrompt(item, model, locale = state.locale) {
@@ -1644,6 +1707,24 @@ elements.closeCollectionMembership.addEventListener("click", closeCollectionMemb
 elements.collectionMembershipDialog.addEventListener("cancel", (event) => {
   event.preventDefault();
   closeCollectionMembership();
+});
+elements.closeMediaInstall.addEventListener("click", closeMediaInstallGuide);
+elements.doneMediaInstall.addEventListener("click", closeMediaInstallGuide);
+elements.mediaInstallDialog.addEventListener("cancel", (event) => {
+  event.preventDefault();
+  closeMediaInstallGuide();
+});
+elements.mediaInstallDialog.addEventListener("click", (event) => {
+  if (event.target === elements.mediaInstallDialog) closeMediaInstallGuide();
+});
+elements.openMediaFolder.addEventListener("click", async () => {
+  try { await api.openMediaFolder(); }
+  catch (error) { showToast(`${t("mediaFolderFailed")}: ${error.message}`); }
+});
+elements.openMediaRelease.addEventListener("click", async () => {
+  const releaseUrl = state.mediaInstallInfo?.releaseUrl || "https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases";
+  try { await api.openExternal(releaseUrl); }
+  catch { showToast(t("mediaReleaseFailed")); }
 });
 elements.membershipNewCollection.addEventListener("click", () => {
   elements.collectionMembershipDialog.close();

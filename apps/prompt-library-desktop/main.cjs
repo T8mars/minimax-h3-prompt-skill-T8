@@ -38,7 +38,7 @@ const {
 const { exportHandoff, exportPersonalSkill } = require("./lib/creative-artifacts.cjs");
 const { LocalQwenConfigStore } = require("./lib/local-qwen-config.cjs");
 const { LocalQwenManager } = require("./lib/local-qwen-runtime.cjs");
-const { resolveMediaRoot } = require("./lib/media-roots.cjs");
+const { hasMediaManifest, resolveMediaRoot } = require("./lib/media-roots.cjs");
 const { configurePortableMode } = require("./lib/portable-mode.cjs");
 const { DialogPathStore } = require("./lib/dialog-paths.cjs");
 const RELEASES_URL = "https://github.com/T8mars/minimax-h3-prompt-skill-T8/releases";
@@ -351,6 +351,24 @@ function configureIpc() {
     requireTrustedSender(event);
     const catalog = loadCatalog(assetRoots);
     return serializeCatalog(catalog);
+  });
+
+  ipcMain.handle("media:install-info", (event) => {
+    requireTrustedSender(event);
+    return {
+      mediaRoot: assetRoots.mediaRoot,
+      manifestPresent: hasMediaManifest(assetRoots.mediaRoot),
+      archivePartCount: 3,
+      releaseUrl: RELEASES_URL
+    };
+  });
+
+  ipcMain.handle("media:open-folder", async (event) => {
+    requireTrustedSender(event);
+    fs.mkdirSync(assetRoots.mediaRoot, { recursive: true });
+    const error = await shell.openPath(assetRoots.mediaRoot);
+    if (error) throw new Error(error);
+    return true;
   });
 
   ipcMain.handle("external:open", async (event, value) => {

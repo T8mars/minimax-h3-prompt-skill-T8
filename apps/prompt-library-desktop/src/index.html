@@ -232,6 +232,28 @@
       </div>
     </dialog>
 
+    <dialog id="media-install-dialog" class="small-dialog media-install-dialog" aria-labelledby="media-install-title">
+      <div class="small-dialog-shell">
+        <div class="media-install-heading">
+          <div><p class="eyebrow">FULL VIDEO PACK</p><h2 id="media-install-title">安装完整视频包</h2></div>
+          <button id="close-media-install" class="icon-button" type="button" aria-label="关闭完整视频安装说明">×</button>
+        </div>
+        <p id="media-install-intro" class="media-install-intro"></p>
+        <ol id="media-install-steps" class="media-install-steps"></ol>
+        <div class="media-install-path-card">
+          <span id="media-install-path-label">请解压到这个目录</span>
+          <code id="media-install-path"></code>
+          <small id="media-install-path-note"></small>
+        </div>
+        <p id="media-install-status" class="media-install-status" role="status"></p>
+        <div class="small-dialog-actions media-install-actions">
+          <button id="open-media-release" class="button copy-secondary" type="button">打开 Release 下载页 ↗</button>
+          <button id="open-media-folder" class="button source" type="button">打开媒体目录</button>
+          <button id="done-media-install" class="button ghost" type="button">完成</button>
+        </div>
+      </div>
+    </dialog>
+
     <dialog id="collection-editor-dialog" class="small-dialog" aria-labelledby="collection-editor-title">
       <form id="collection-editor-form" method="dialog" class="small-dialog-shell">
         <h2 id="collection-editor-title">New collection</h2>

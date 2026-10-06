@@ -20,7 +20,7 @@
 Windows 校验示例：
 
 ```powershell
-Get-FileHash .\T8-Prompt-Library-Setup-v1.4.2.exe -Algorithm SHA256
+Get-FileHash .\T8-Prompt-Library-Setup-v1.4.8.exe -Algorithm SHA256
 ```
 
 将结果与 `SHA256SUMS.txt` 中对应文件比较。
@@ -28,7 +28,7 @@ Get-FileHash .\T8-Prompt-Library-Setup-v1.4.2.exe -Algorithm SHA256
 macOS 校验示例：
 
 ```bash
-shasum -a 256 T8-Prompt-Library-v1.4.2-mac-universal.dmg
+shasum -a 256 T8-Prompt-Library-v1.4.8-mac-universal.dmg
 ```
 
 macOS 包同时提供 DMG 与 ZIP，均为 universal（Intel + Apple Silicon）。当前公开版没有 Apple Developer ID，因此**未签名、未公证**：请先核对 `SHA256SUMS.txt`，再打开 DMG 并把应用拖入 Applications。首次启动优先在 Finder 中右键应用并选择“打开”；若系统仍阻止且你已确认哈希，可自行执行：
@@ -49,6 +49,8 @@ xattr -dr com.apple.quarantine "/Applications/T8 Prompt Library.app"
 
 Git 仓库只保存 GIF/Poster。全部正式案例 MP4 位于对应 GitHub Release 的三个无损分卷：`prompt-library-media-v<version>-part1.zip`、`prompt-library-media-v<version>-part2.zip` 与 `prompt-library-media-v<version>-part3.zip`。所有视频均已获库所有者授权分发；媒体分卷与桌面安装包分开，是为了避开 GitHub 单资产 2 GiB 的硬上限，不代表视频不可分发或不可下载，也不会降低视频质量。
 
+最简单的做法是在任意案例的 GIF/海报提示条中点击“这些文件放哪里？”，再点击“打开媒体目录”。应用会创建并打开当前电脑实际使用的媒体目录；用户只需把同一版本的三个 `prompt-library-media` ZIP 全部解压进去。为了启用完整视频，不需要下载名称含 `catalog`、`previews` 或 `skills` 的 ZIP。
+
 把三个媒体 ZIP 的内容都直接解压到下列同一个 `media` 目录，确保 `media-pack-manifest.json` 位于该目录根部，然后重启应用：
 
 - Windows 安装版推荐：`%APPDATA%\T8 Prompt Library\media\`；也支持应用可执行文件同级的 `media\`；
@@ -61,9 +63,9 @@ Git 仓库只保存 GIF/Poster。全部正式案例 MP4 位于对应 GitHub Rele
 ```powershell
 $mediaRoot = Join-Path $env:APPDATA "T8 Prompt Library\media"
 New-Item -ItemType Directory -Force -Path $mediaRoot | Out-Null
-Expand-Archive .\prompt-library-media-v1.4.7-part1.zip -DestinationPath $mediaRoot -Force
-Expand-Archive .\prompt-library-media-v1.4.7-part2.zip -DestinationPath $mediaRoot -Force
-Expand-Archive .\prompt-library-media-v1.4.7-part3.zip -DestinationPath $mediaRoot -Force
+Expand-Archive .\prompt-library-media-v1.4.8-part1.zip -DestinationPath $mediaRoot -Force
+Expand-Archive .\prompt-library-media-v1.4.8-part2.zip -DestinationPath $mediaRoot -Force
+Expand-Archive .\prompt-library-media-v1.4.8-part3.zip -DestinationPath $mediaRoot -Force
 ```
 
 因此：
