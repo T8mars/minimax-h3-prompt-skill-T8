@@ -1,0 +1,106 @@
+name: Stage verified v1.4.8 media
+
+on:
+  push:
+    branches:
+      - codex/release-media-v1.4.8
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stage-media-v1.4.8
+  cancel-in-progress: false
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Restore identical published videos into the new media volumes
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import pathlib
+          import subprocess
+          import zipfile
+
+          def gh(*args):
+              return subprocess.check_output(["gh", *args], text=True).strip()
+
+          def digest(file):
+              checksum = hashlib.sha256()
+              with file.open("rb") as stream:
+                  for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                      checksum.update(chunk)
+              return checksum.hexdigest()
+
+          target = "v1.4.8"
+          source = "v1.4.7"
+          release = json.loads(gh("release", "view", target, "--json", "isDraft,tagName"))
+          assert release["isDraft"] and release["tagName"] == target, "Target must remain a draft"
+          source_release = json.loads(gh("release", "view", source, "--json", "isDraft,tagName"))
+          assert not source_release["isDraft"] and source_release["tagName"] == source
+          root = pathlib.Path("media-stage")
+          root.mkdir()
+          gh("release", "download", target, "--pattern", "media-pack-manifest.json", "--dir", str(root))
+          gh("release", "download", source, "--pattern", "SHA256SUMS.txt", "--dir", str(root))
+          manifest_bytes = (root / "media-pack-manifest.json").read_bytes()
+          manifest = json.loads(manifest_bytes)
+          assert manifest["version"] == "1.4.8" and manifest["case_count"] == 613
+          assert manifest["community_skill_count"] == 2 and manifest["unavailable_case_count"] == 0
+          assert manifest["archive_part_count"] == 3
+          files = manifest["files"] + manifest["community_skill_files"]
+          expected = {item["path"]: item for item in files}
+          assert len(expected) == len(files) == 615
+          checksums = {}
+          for line in (root / "SHA256SUMS.txt").read_text().splitlines():
+              checksum, name = line.split(maxsplit=1)
+              checksums[name.lstrip("*")] = checksum
+          seen = set()
+          outputs = []
+          for part in range(1, 4):
+              old_name = f"prompt-library-media-{source}-part{part}.zip"
+              new_name = f"prompt-library-media-{target}-part{part}.zip"
+              gh("release", "download", source, "--pattern", old_name, "--dir", str(root))
+              old_path = root / old_name
+              assert digest(old_path) == checksums[old_name], f"Source ZIP checksum mismatch: {old_name}"
+              new_path = root / new_name
+              with zipfile.ZipFile(old_path) as old, zipfile.ZipFile(new_path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as new:
+                  previous = json.loads(old.read("media-pack-manifest.json"))
+                  assert previous["version"] == "1.4.7"
+                  previous_files = previous["files"] + previous["community_skill_files"]
+                  previous_bindings = {item["path"]: (item["sha256"], item["size_bytes"]) for item in previous_files}
+                  current_bindings = {item["path"]: (item["sha256"], item["size_bytes"]) for item in files}
+                  assert previous_bindings == current_bindings, "Published media does not match the target inventory"
+                  for entry in old.infolist():
+                      if entry.filename == "media-pack-manifest.json":
+                          continue
+                      assert entry.filename in expected and entry.filename not in seen, f"Unexpected or duplicate file: {entry.filename}"
+                      wanted = expected[entry.filename]
+                      assert entry.file_size == wanted["size_bytes"]
+                      checksum = hashlib.sha256()
+                      size = 0
+                      with old.open(entry) as input_stream, new.open(entry.filename, "w") as output_stream:
+                          for chunk in iter(lambda: input_stream.read(1024 * 1024), b""):
+                              checksum.update(chunk)
+                              size += len(chunk)
+                              output_stream.write(chunk)
+                      assert size == wanted["size_bytes"] and checksum.hexdigest() == wanted["sha256"], f"Video checksum mismatch: {entry.filename}"
+                      seen.add(entry.filename)
+                  new.writestr("media-pack-manifest.json", manifest_bytes)
+              assert new_path.stat().st_size < 2147483648
+              outputs.append(new_path)
+              old_path.unlink()
+              print(f"Verified media part {part}: {new_path.stat().st_size} bytes", flush=True)
+          assert seen == set(expected), "Missing target videos"
+          hashes = [digest(file) for file in outputs]
+          subprocess.run(["gh", "release", "upload", target, *map(str, outputs), "--clobber"], check=True)
+          print("Workflow media_sha256: " + ",".join(hashes), flush=True)
+          print("Verified videos: 615; unavailable cases: 0", flush=True)
+          PY
